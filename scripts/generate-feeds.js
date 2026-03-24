@@ -134,6 +134,14 @@ function baseItem({ id, title, title_zh, description, description_zh, authors, u
   };
 }
 
+function looksMostlyEnglish(text) {
+  const value = String(text || '').trim();
+  if (!value) return false;
+  const asciiLetters = (value.match(/[A-Za-z]/g) || []).length;
+  const cjkChars = (value.match(/[\u4e00-\u9fff]/g) || []).length;
+  return asciiLetters > 8 && cjkChars < 2;
+}
+
 async function buildGitHubFeed() {
   const html = await fetchHtml('https://github.com/trending');
   const $ = cheerio.load(html);
@@ -150,20 +158,23 @@ async function buildGitHubFeed() {
     const starLink = $(el).find('a[href$="/stargazers"]').first();
     const stars = starLink.length > 0 ? starLink.text().trim() : '0';
 
+    const [owner, repo] = repoTitle.split('/');
     items.push(baseItem({
       id: repoTitle.replace(/\//g, '-'),
-      title: repoTitle,
-      title_zh: repoTitle,
+      title: repo || repoTitle,
+      title_zh: repo || repoTitle,
       description: repoDesc,
       description_zh: await translateText(repoDesc),
-      authors: repoTitle.split('/')[0],
+      authors: owner || repoTitle,
       url: repoUrl,
       score: Number(String(stars).replace(/[^\d.]/g, '') || 0),
       meta: {
         source: 'github',
         stars,
         language,
-        repo: repoTitle
+        repo: repoTitle,
+        owner: owner || '',
+        repoName: repo || repoTitle
       }
     }));
   }
@@ -312,7 +323,7 @@ function extractSubsection(section, headingRegex) {
 }
 
 function parseHighlightEntries(section) {
-  const entryRegex = /-\s+\*\*\[(.*?)\]\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
+  const entryRegex = /-\s+\*\*\[(.*?)\]\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n###\s+\*\*|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
   const entries = [];
   let match;
   while ((match = entryRegex.exec(section)) !== null) {
@@ -327,7 +338,7 @@ function parseHighlightEntries(section) {
       if (/^[-*]\s*\*?为何重要|^\*Why it matters:/i.test(line)) continue;
       if (/^[-*]\s*帖子链接：|^Post link:/i.test(line)) continue;
       let cleaned = line.replace(/^[-*]\s*/, '').replace(/^详细内容：/, '').replace(/^What happened:/i, '').trim();
-      cleaned = cleaned.replace(/^\*为何重要：\*/,'').replace(/^\*Why it matters:\*/i,'').trim();
+      cleaned = cleaned.replace(/^\*为何重要：\*/,'').replace(/^\*Why it matters:\*/i,'').replace(/\s*--+\s*$/,'').trim();
       if (cleaned) summaryParts.push(cleaned);
     }
     if (url) {
@@ -352,15 +363,15 @@ async function buildRedditFeed() {
   const zhHighlights = zhTrend ? parseHighlightEntries(zhTrend) : [];
   const zhMap = new Map(zhHighlights.map(entry => [entry.url, entry]));
 
-  const items = enHighlights.slice(0, 10).map((entry, index) => {
+  const rawItems = enHighlights.slice(0, 10).map((entry, index) => {
     const zhEntry = zhMap.get(entry.url);
     const metrics = metricsMap.get(entry.url) || {};
     return baseItem({
       id: entry.url.split('/').pop() || `reddit-highlight-${index}`,
       title: entry.title,
-      title_zh: zhEntry?.title || entry.title,
+      title_zh: zhEntry?.title || '',
       description: entry.summary,
-      description_zh: zhEntry?.summary || entry.summary,
+      description_zh: zhEntry?.summary || '',
       authors: metrics.subreddit || 'Reddit',
       url: entry.url,
       score: Number(metrics.score || 0),
@@ -376,6 +387,22 @@ async function buildRedditFeed() {
       }
     });
   });
+
+  const items = [];
+  for (const item of rawItems) {
+    const finalTitleZh = item.title_zh && !looksMostlyEnglish(item.title_zh)
+      ? item.title_zh
+      : await translateText(item.title);
+    const finalDescriptionZh = item.description_zh && !looksMostlyEnglish(item.description_zh)
+      ? item.description_zh
+      : await translateText(item.description);
+
+    items.push({
+      ...item,
+      title_zh: finalTitleZh,
+      description_zh: finalDescriptionZh
+    });
+  }
 
   return {
     source: 'reddit',
