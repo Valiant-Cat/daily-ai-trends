@@ -2,7 +2,8 @@ name: Generate AI Trend Feeds
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    # 每天北京时间 09:00 (UTC 时间 01:00)
+    - cron: '0 1 * * *'
   workflow_dispatch:
 
 jobs:
