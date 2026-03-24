@@ -14,7 +14,7 @@
 它的目标是服务网站、机器人、仪表盘、日报系统以及各类 agent workflow，为它们提供来自多个上游来源的标准化 AI 热点数据。
 
 - **面向人类用户：** `echo.xbreak.ai` 是一个使用这些 feed 的消费端示例
-- **面向 AI Agent：** 可以通过仓库内的 `SKILL.md` 以 skill 方式接入本项目
+- **面向 AI Agent：** 可以通过仓库内的 [`SKILL.md`](./SKILL.md) 以 skill 方式接入本项目
 
 这个仓库的目标，是把**热点采集**和**热点展示**彻底拆开。
 下游消费方只需要读取这里生成的标准化 JSON feed，而不需要自己维护每个上游来源的抓取、解析和聚合逻辑。
@@ -30,6 +30,63 @@
 
 这个仓库会尽量保持在“feed 生成与标准化”这一层。
 产品级 fallback、展示方式、排序策略、UI 交互等，更适合由下游消费方自行实现。
+
+## 面向智能体的安装方式
+
+### 让你的智能体自行安装
+
+你可以把下面这段话直接发给你的智能体：
+
+```text
+请把 GitHub 仓库 https://github.com/Valiant-Cat/daily-ai-trends 安装为一个本地 skill，名称为 daily-ai-trends。
+安装完成后先读取 SKILL.md。
+默认直接使用仓库中已经发布的 feed 文件。
+```
+
+### 手动安装示例
+
+#### OpenClaw
+
+```bash
+git clone https://github.com/Valiant-Cat/daily-ai-trends.git ~/.agents/skills/daily-ai-trends
+```
+
+#### Claude Code
+
+```bash
+git clone https://github.com/Valiant-Cat/daily-ai-trends.git ~/.claude/skills/daily-ai-trends
+```
+
+#### Codex
+
+```bash
+git clone https://github.com/Valiant-Cat/daily-ai-trends.git ~/.codex/skills/daily-ai-trends
+```
+
+如果你的环境使用的是其他 skill 路径，就替换为对应目录即可。
+
+## 输出文件
+
+生成结果位于 `data/` 目录：
+
+- `feed-github.json`
+- `feed-huggingface.json`
+- `feed-x.json`
+- `feed-reddit.json`
+- `feed-all.json`
+
+## 本地使用
+
+如果你是开发者，想在本地验证、调试或手动刷新数据，可以运行：
+
+```bash
+npm install
+npm run generate
+```
+
+## GitHub Actions
+
+仓库内已包含定时 workflow，会每天自动生成 feed，并将更新后的 JSON 文件提交回仓库。
 
 ## 署名 / Attribution
 
@@ -47,24 +104,3 @@
 本项目采用 **MIT License** 开源。详见 [LICENSE](./LICENSE)。
 
 请注意：上游数据源和被集成项目可能有其各自的许可证与署名要求。使用时应同时遵守本仓库的 MIT 协议，以及相关上游项目的适用许可。
-
-## 输出文件
-
-生成结果位于 `data/` 目录：
-
-- `feed-github.json`
-- `feed-huggingface.json`
-- `feed-x.json`
-- `feed-reddit.json`
-- `feed-all.json`
-
-## 本地使用
-
-```bash
-npm install
-npm run generate
-```
-
-## GitHub Actions
-
-仓库内已包含定时 workflow，会每天自动生成 feed，并将更新后的 JSON 文件提交回仓库。
