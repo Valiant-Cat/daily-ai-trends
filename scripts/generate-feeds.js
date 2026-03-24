@@ -222,7 +222,6 @@ async function buildXFeed() {
   const tweets = (xFeed?.x || [])
     .flatMap(builder => (builder.tweets || []).map(tweet => ({ builder, tweet })))
     .filter(({ tweet }) => tweet && tweet.text && tweet.url)
-    .sort((a, b) => scoreTweet(b.tweet) - scoreTweet(a.tweet))
     .slice(0, 15);
 
   const items = [];
