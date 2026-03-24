@@ -1,0 +1,18 @@
+{
+  "name": "daily-ai-trends",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Daily AI trend feeds for GitHub, Hugging Face, X, and Reddit.",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "generate": "node scripts/generate-feeds.js",
+    "generate:github": "node scripts/generate-feeds.js --only=github",
+    "generate:hf": "node scripts/generate-feeds.js --only=huggingface",
+    "generate:x": "node scripts/generate-feeds.js --only=x",
+    "generate:reddit": "node scripts/generate-feeds.js --only=reddit"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2"
+  }
+}
