@@ -1,27 +1,52 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-24T14:13:13.422Z",
+  "updatedAt": "2026-03-24T15:37:01.083Z",
   "count": 15,
   "items": [
+    {
+      "id": "2603.22017",
+      "title": "AdditiveLLM2: A Multi-modal Large Language Model for Additive Manufacturing",
+      "title_zh": "AdditiveLLM2：增材制造的多模式大语言模型",
+      "description": "This work presents AdditiveLLM2 a multi-modal, domain adapted large language model built upon the instruction tuned variant of the Gemma 3 model using a relatively small dataset of around 50 million tokens. The dataset (AdditiveLLM2-OA) consists of open-access additive manufacturing journal articles with data extracted for the domain adaptive pretraining and visual instruction tuning processes. Various stages of the developed model are evaluated with the Additive-Manufacturing-Benchmark which consists of additive manufacturing domain specific tasks compiled published resources. AdditiveLLM2 exhibits proficiency in both language and vision based tasks, achieving accuracies upwards of 90% in general additive manufacturing knowledge. This domain adaptive pretraining and instruction tuning strategy outline an accessible specialization method for large language models to a domain such as additive manufacturing.",
+      "description_zh": "这项工作提出了 AdditiveLLM2 一个多模态、领域适应的大型语言模型，该模型基于 Gemma 3 模型的指令调整变体，使用大约 5000 万个标记的相对较小的数据集。该数据集 (AdditiveLLM2-OA) 由开放获取的增材制造期刊文章组成，其中包含为域自适应预训练和视觉指令调整过程提取的数据。所开发模型的各个阶段均使用增材制造基准进行评估，该基准由增材制造领域特定任务编译的已发布资源组成。 AdditiveLLM2 表现出对基于语言和视觉的任务的熟练程度，在一般增材制造知识方面的准确率高达 90% 以上。这种领域自适应预训练和指令调整策略概述了一种适用于增材制造等领域的大型语言模型的可访问专业化方法。",
+      "authors": "Peter Pak, Amir Barati Farimani",
+      "url": "https://huggingface.co/papers/2603.22017",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.22017"
+      }
+    },
     {
       "id": "2603.15136",
       "title": "Safe Flow Q-Learning: Offline Safe Reinforcement Learning with Reachability-Based Flow Policies",
       "title_zh": "Safe Flow Q-Learning：具有基于可达性的流策略的离线安全强化学习",
       "description": "Offline safe reinforcement learning (RL) seeks reward-maximizing policies from static datasets under strict safety constraints. Existing methods often rely on soft expected-cost objectives or iterative generative inference, which can be insufficient for safety-critical real-time control. We propose Safe Flow Q-Learning (SafeFQL), which extends FQL to safe offline RL by combining a Hamilton--Jacobi reachability-inspired safety value function with an efficient one-step flow policy. SafeFQL learns the safety value via a self-consistency Bellman recursion, trains a flow policy by behavioral cloning, and distills it into a one-step actor for reward-maximizing safe action selection without rejection sampling at deployment. To account for finite-data approximation error in the learned safety boundary, we add a conformal prediction calibration step that adjusts the safety threshold and provides finite-sample probabilistic safety coverage. Empirically, SafeFQL trades modestly higher offline training cost for substantially lower inference latency than diffusion-style safe generative baselines, which is advantageous for real-time safety-critical deployment. Across boat navigation, and Safety Gymnasium MuJoCo tasks, SafeFQL matches or exceeds prior offline safe RL performance while substantially reducing constraint violations.",
       "description_zh": "离线安全强化学习（RL）在严格的安全约束下从静态数据集中寻求奖励最大化的策略。现有方法通常依赖于软预期成本目标或迭代生成推理，这对于安全关键的实时控制来说是不够的。我们提出了安全流 Q 学习 (SafeFQL)，它将受 Hamilton-Jacobi 可达性启发的安全值函数与高效的一步流策略相结合，将 FQL 扩展到安全离线 RL。 SafeFQL 通过自洽 Bellman 递归学习安全值，通过行为克隆训练流策略，并将其提炼为一步执行器，以实现奖励最大化的安全操作选择，而无需在部署时进行拒绝采样。为了解决学习安全边界中的有限数据近似误差，我们添加了一个共形预测校准步骤，该步骤调整安全阈值并提供有限样本概率安全覆盖。根据经验，与扩散式安全生成基线相比，SafeFQL 以较高的离线训练成本换取显着较低的推理延迟，这对于实时安全关键型部署是有利的。在船舶导航和 Safety Gymnasium MuJoCo 任务中，SafeFQL 匹配或超过了之前的离线安全 RL 性能，同时大大减少了约束违规。",
+      "authors": "Mumuksh Tayal, Manan Tayal, Ravi Prakash",
       "url": "https://huggingface.co/papers/2603.15136",
-      "upvotes": "1",
-      "authors": "Mumuksh Tayal, Manan Tayal, Ravi Prakash"
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2603.15136"
+      }
     },
     {
       "id": "2603.16932",
       "title": "Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs",
       "title_zh": "关注重要之处：高效 VLM 的高分辨率作物检索",
       "description": "Vision-language models (VLMs) typically process images at a native high-resolution, forcing a trade-off between accuracy and computational efficiency: high-resolution inputs capture fine details but incur significant computational costs, while low-resolution inputs advocate for efficiency, they potentially miss critical visual information, like small text. We present AwaRes, a spatial-on-demand framework that resolves this accuracy-efficiency trade-off by operating on a low-resolution global view and using tool-calling to retrieve only high-resolution segments needed for a given query. We construct supervised data automatically: a judge compares low- vs.\\ high-resolution answers to label whether cropping is needed, and an oracle grounding model localizes the evidence for the correct answer, which we map to a discrete crop set to form multi-turn tool-use trajectories. We train our framework with cold-start SFT followed by multi-turn GRPO with a composite reward that combines semantic answer correctness with explicit crop-cost penalties. Project page: https://nimrodshabtay.github.io/AwaRes",
-      "description_zh": "视觉语言模型（VLM）通常以原生高分辨率处理图像，迫使在准确性和计算效率之间进行权衡：高分辨率输入捕获精细细节，但会产生大量计算成本，而低分辨率输入提倡效率，它们可能会错过关键的视觉信息，例如小文本。我们提出了 AwaRes，这是一种空间按需框架，它通过在低分辨率全局视图上运行并使用工具调用仅检索给定查询所需的高分辨率片段来解决这种准确性与效率的权衡。我们自动构建监督数据：法官比较低分辨率和高分辨率答案来标记是否需要裁剪，并且预言机基础模型定位正确答案的证据，我们将其映射到离散裁剪集以��成多轮工具使用轨迹。我们使用冷启动 SFT 来训练我们的框架，然后使用多轮 GRPO 来训练我们的框架，并结合语义答案正确性和显式作物成本惩罚的复合奖励。项目页面：https://nimrodshabtay.github.io/AwaRes",
+      "description_zh": "视觉语言模型（VLM）通常以原生高分辨率处理图像，迫使在准确性和计算效率之间进行权衡：高分辨率输入捕获精细细节，但会产生大量计算成本，而低分辨率输入提倡效率，它们可能会错过关键的视觉信息，例如小文本。我们提出了 AwaRes，这是一种空间按需框架，它通过在低分辨率全局视图上运行并使用工具调用仅检索给定查询所需的高分辨率片段来解决这种准确性与效率的权衡。我们自动构建监督数据：法官比较低分辨率和高分辨率答案来标记是否需要裁剪，并且预言机基础模型定位正确答案的证据，我们将其映射到离散裁剪集以���成多轮工具使用轨迹。我们使用冷启动 SFT 来训练我们的框架，然后使用多轮 GRPO 来训练我们的框架，并结合语义答案正确性和显式作物成本惩罚的复合奖励。项目页面：https://nimrodshabtay.github.io/AwaRes",
+      "authors": "Nimrod Shabtay, Moshe Kimhi, Artem Spector, Sivan Haray, Ehud Rivlin, Chaim Baskin, Raja Giryes, Eli Schwartz",
       "url": "https://huggingface.co/papers/2603.16932",
-      "upvotes": "18",
-      "authors": "Nimrod Shabtay, Moshe Kimhi, Artem Spector, Sivan Haray, Ehud Rivlin, Chaim Baskin, Raja Giryes, Eli Schwartz"
+      "score": 34,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "34",
+        "paperId": "2603.16932"
+      }
     },
     {
       "id": "2603.22275",
@@ -29,19 +54,29 @@
       "title_zh": "重新利用几何基础模型进行多视图扩散",
       "description": "While recent advances in generative latent spaces have driven substantial progress in single-image generation, the optimal latent space for novel view synthesis (NVS) remains largely unexplored. In particular, NVS requires geometrically consistent generation across viewpoints, but existing approaches typically operate in a view-independent VAE latent space. In this paper, we propose Geometric Latent Diffusion (GLD), a framework that repurposes the geometrically consistent feature space of geometric foundation models as the latent space for multi-view diffusion. We show that these features not only support high-fidelity RGB reconstruction but also encode strong cross-view geometric correspondences, providing a well-suited latent space for NVS. Our experiments demonstrate that GLD outperforms both VAE and RAE on 2D image quality and 3D consistency metrics, while accelerating training by more than 4.4x compared to the VAE latent space. Notably, GLD remains competitive with state-of-the-art methods that leverage large-scale text-to-image pretraining, despite training its diffusion model from scratch without such generative pretraining.",
       "description_zh": "虽然生成潜在空间的最新进展推动了单图像生成的实质性进展，但新视图合成（NVS）的最佳潜在空间在很大程度上仍未被探索。特别是，NVS 需要跨视点进行几何一致的生成，但现有方法通常在与视图无关的 VAE 潜在空间中运行。在本文中，我们提出了几何潜在扩散（GLD），这是一个框架，它将几何基础模型的几何一致特征空间重新用作多视图扩散的潜在空间。我们证明这些特征不仅支持高保真 RGB 重建，而且还编码强跨视图几何对应关系，为 NVS 提供了非常适合的潜在空间。我们的实验表明，GLD 在 2D 图像质量和 3D 一致性指标上均优于 VAE 和 RAE，同时与 VAE 潜在空间相比，训练速度提高了 4.4 倍以上。值得注意的是，GLD 与利用大规模文本到图像预训练的最先进方法仍然具有竞争力，尽管在没有这种生成预训练的情况下从头开始训练其扩散模型。",
+      "authors": "Wooseok Jang, Seonghu Jeon, Jisang Han, Jinhyeok Choi, Minkyung Kwon, Seungryong Kim, Saining Xie, Sainan Liu",
       "url": "https://huggingface.co/papers/2603.22275",
-      "upvotes": "18",
-      "authors": "Wooseok Jang, Seonghu Jeon, Jisang Han, Jinhyeok Choi, Minkyung Kwon, Seungryong Kim, Saining Xie, Sainan Liu"
+      "score": 18,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "18",
+        "paperId": "2603.22275"
+      }
     },
     {
       "id": "2603.20278",
       "title": "OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis",
       "title_zh": "OpenResearcher：用于长期深度研究轨迹合成的完全开放管道",
       "description": "Training deep research agents requires long-horizon trajectories that interleave search, evidence aggregation, and multi-step reasoning. However, existing data collection pipelines typically rely on proprietary web APIs, making large-scale trajectory synthesis costly, unstable, and difficult to reproduce. We present OpenResearcher, a reproducible pipeline that decouples one-time corpus bootstrapping from multi-turn trajectory synthesis and executes the search-and-browse loop entirely offline using three explicit browser primitives: search, open, and find, over a 15M-document corpus. Using GPT-OSS-120B as the teacher model, we synthesize over 97K trajectories, including a substantial long-horizon tail with 100+ tool calls. Supervised fine-tuning a 30B-A3B backbone on these trajectories achieves 54.8\\% accuracy on BrowseComp-Plus, a +34.0 point improvement over the base model, while remaining competitive on BrowseComp, GAIA, and xbench-DeepSearch. Because the environment is offline and fully instrumented, it also enables controlled analysis, where our study reveals practical insights into deep research pipeline design, including data filtering strategies, agent configuration choices, and how retrieval success relates to final answer accuracy. We release the pipeline, synthesized trajectories, model checkpoints, and the offline search environment at https://github.com/TIGER-AI-Lab/OpenResearcher.",
-      "description_zh": "训练深度研究代理需要将搜索、证据聚合和多步骤推理交织在一起的长视野轨迹。然而，现有的数据收集管道通常依赖于专有的 Web API，使得大规模轨迹合成成本高昂、不稳定且难以重现。我们提出了 OpenResearcher，一种可重复的管道，它将一次性语料库引导与多轮轨迹合成分离，并使用三个显式浏览器原语：搜索、打开和查找，在 1500 万文档语料库上完全离线执行搜索和浏览循环。使用 GPT-OSS-120B 作为教师模型，我们合成了超过 97K 条轨迹，包括带有 100 多个工具调用的长���平尾部。在这些轨迹上对 30B-A3B 主干进行监督微调，在 BrowseComp-Plus 上实现了 54.8% 的准确率，比基本模型提高了 +34.0 点，同时在 BrowseComp、GAIA 和 xbench-DeepSearch 上保持竞争力。由于该环境是离线且完全仪表化的，因此它还可以实现受控分析，我们的研究揭示了深入研究管道设计的实用见解，包括数据过滤策略、代理配置选择以及检索成功与最终答案准确性之间的关系。我们在 https://github.com/TIGER-AI-Lab/OpenResearcher 发布了管道、合成轨迹、模型检查点和离线搜索环境。",
+      "description_zh": "训练深度研究代理需要将搜索、证据聚合和多步骤推理交织在一起的长视野轨迹。然而，现有的数据收集管道通常依赖于专有的 Web API，使得大规模轨迹合成成本高昂、不稳定且难以重现。我们提出了 OpenResearcher，一种可重复的管道，它将一次性语料库引导与多轮轨迹合成分离，并使用三个显式浏览器原语：搜索、打开和查找，在 1500 万文档语料库上完全离线执行搜索和浏览循环。使用 GPT-OSS-120B 作为教师模型，我们合成了超过 97K 条轨迹，包括带有 100 多个工具调用的��水平尾部。在这些轨迹上对 30B-A3B 主干进行监督微调，在 BrowseComp-Plus 上实现了 54.8% 的准确率，比基本模型提高了 +34.0 点，同时在 BrowseComp、GAIA 和 xbench-DeepSearch 上保持竞争力。由于该环境是离线且完全仪表化的，因此它还可以实现受控分析，我们的研究揭示了深入研究管道设计的实用见解，包括数据过滤策略、代理配置选择以及检索成功与最终答案准确性之间的关系。我们在 https://github.com/TIGER-AI-Lab/OpenResearcher ��布了管道、合成轨迹、模型检查点和离线搜索环境。",
+      "authors": "Zhuofeng Li, Dongfu Jiang, Xueguang Ma, Haoxiang Zhang, Ping Nie, Yuyu Zhang, Kai Zou, Jianwen Xie, Yu Zhang, Wenhu Chen",
       "url": "https://huggingface.co/papers/2603.20278",
-      "upvotes": "22",
-      "authors": "Zhuofeng Li, Dongfu Jiang, Xueguang Ma, Haoxiang Zhang, Ping Nie, Yuyu Zhang, Kai Zou, Jianwen Xie, Yu Zhang, Wenhu Chen"
+      "score": 27,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "27",
+        "paperId": "2603.20278"
+      }
     },
     {
       "id": "2603.21315",
@@ -49,9 +84,14 @@
       "title_zh": "FluidWorld：反应扩散动力学作为世界模型的预测基础",
       "description": "World models learn to predict future states of an environment, enabling planning and mental simulation. Current approaches default to Transformer-based predictors operating in learned latent spaces. This comes at a cost: O(N^2) computation and no explicit spatial inductive bias. This paper asks a foundational question: is self-attention necessary for predictive world modeling, or can alternative computational substrates achieve comparable or superior results? I introduce FluidWorld, a proof-of-concept world model whose predictive dynamics are governed by partial differential equations (PDEs) of reaction-diffusion type. Instead of using a separate neural network predictor, the PDE integration itself produces the future state prediction. In a strictly parameter-matched three-way ablation on unconditional UCF-101 video prediction (64x64, ~800K parameters, identical encoder, decoder, losses, and data), FluidWorld is compared against both a Transformer baseline (self-attention) and a ConvLSTM baseline (convolutional recurrence). While all three models converge to comparable single-step prediction loss, FluidWorld achieves 2x lower reconstruction error, produces representations with 10-15% higher spatial structure preservation and 18-25% more effective dimensionality, and critically maintains coherent multi-step rollouts where both baselines degrade rapidly. All experiments were conducted on a single consumer-grade PC (Intel Core i5, NVIDIA RTX 4070 Ti), without any large-scale compute. These results establish that PDE-based dynamics, which natively provide O(N) spatial complexity, adaptive computation, and global spatial coherence through diffusion, are a viable and parameter-efficient alternative to both attention and convolutional recurrence for world modeling.",
       "description_zh": "世界模型学习预测环境的未来状态，从而实现规划和心理模拟。当前的方法默认使用在学习的潜在空间中运行的基于 Transformer 的预测器。这是有代价的：O(N^2) 计算并且没有显式的空间归纳偏差。本文提出了一个基本问题：自注意力对于预测世界建模是否必要，或者替代计算基底能否获得可比或更好的结果？我介绍 FluidWorld，这是一个概念验证的世界模型，其预测动力学由反应扩散类型的偏微分方程 (PDE) 控制。 PDE 积分本身会产生未来状态预测，而不是使用单独的神经网络预测器。在无条件 UCF-101 视频预测（64x64、~800K 参数、相同的编码器、解码器、损失和数据）上进行严格参数匹配的三向消融中，FluidWorld 与 Transformer 基线（自注意力）和 ConvLSTM 基线（卷积递归）进行比较。虽然所有三个模型都收敛到可比较的单步预测损失，但 FluidWorld 实现了 2 倍的较低重建误差，生成的表示形式的空间结构保留率提高了 10-15%，有效维度提高了 18-25%，并且在两个基线快速退化的情况下严格保持了连贯的多步推出。所有实验均在一台消费级 PC（Intel Core i5、NVIDIA RTX 4070 Ti）上进行，没有任何大规模计算。这些结果表明，基于偏微分方程的动力学本质上提供了 O(N) 空间复杂度、自适应计算和通过扩散的全局空间一致性，是世界建模中注意力和卷积递归的可行且参数高效的替代方案。",
+      "authors": "Fabien Polly",
       "url": "https://huggingface.co/papers/2603.21315",
-      "upvotes": "1",
-      "authors": "Fabien Polly"
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.21315"
+      }
     },
     {
       "id": "2603.19028",
@@ -59,9 +99,14 @@
       "title_zh": "SEM：用于视觉语言模型事后去偏的稀疏嵌入调制",
       "description": "Models that bridge vision and language, such as CLIP, are key components of multimodal AI, yet their large-scale, uncurated training data introduce severe social and spurious biases. Existing post-hoc debiasing methods often operate directly in the dense CLIP embedding space, where bias and task-relevant information are highly entangled. This entanglement limits their ability to remove bias without degrading semantic fidelity. In this work, we propose Sparse Embedding Modulation (SEM), a post-hoc, zero-shot debiasing framework that operates in a Sparse Autoencoder (SAE) latent space. By decomposing CLIP text embeddings into disentangled features, SEM identifies and modulates bias-relevant neurons while preserving query-relevant ones. This enables more precise, non-linear interventions. Across four benchmark datasets and two CLIP backbones, SEM achieves substantial fairness gains in retrieval and zero-shot classification. Our results demonstrate that sparse latent representations provide an effective foundation for post-hoc debiasing of vision-language models.",
       "description_zh": "连接视觉和语言的模型（例如 CLIP）是多模式人工智能的关键组成部分，但其大规模、未经整理的训练数据引入了严重的社会和虚假偏见。现有的事后去偏差方法通常直接在密集的 CLIP 嵌入空间中运行，其中偏差和任务相关信息高度纠缠。这种纠缠限制了他们在不降低语义保真度的情况下消除偏见的能力。在这项工作中，我们提出了稀疏嵌入调制（SEM），这是一种在稀疏自动编码器（SAE）潜在空间中运行的事后零样本去偏框架。通过将 CLIP 文本嵌入分解为解开的特征，SEM 可以识别和调节与偏差相关的神经元，同时保留与查询相关的神经元。这可以实现更精确的非线性干预。在四个基准数据集和两个 CLIP 主干上，SEM 在检索和零样本分类方面实现了显着的公平性提升。我们的结果表明，稀疏潜在表示为视觉语言模型的事后去偏提供了有效的基础。",
+      "authors": "Quentin Guimard, Federico Bartsch, Simone Caldarella, Rahaf Aljundi, Elisa Ricci, Massimiliano Mancini",
       "url": "https://huggingface.co/papers/2603.19028",
-      "upvotes": "12",
-      "authors": "Quentin Guimard, Federico Bartsch, Simone Caldarella, Rahaf Aljundi, Elisa Ricci, Massimiliano Mancini"
+      "score": 13,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "13",
+        "paperId": "2603.19028"
+      }
     },
     {
       "id": "2603.21304",
@@ -69,9 +114,14 @@
       "title_zh": "F4Splat：前馈 3D 高斯分布的前馈预测致密化",
       "description": "Feed-forward 3D Gaussian Splatting methods enable single-pass reconstruction and real-time rendering. However, they typically adopt rigid pixel-to-Gaussian or voxel-to-Gaussian pipelines that uniformly allocate Gaussians, leading to redundant Gaussians across views. Moreover, they lack an effective mechanism to control the total number of Gaussians while maintaining reconstruction fidelity. To address these limitations, we present F4Splat, which performs Feed-Forward predictive densification for Feed-Forward 3D Gaussian Splatting, introducing a densification-score-guided allocation strategy that adaptively distributes Gaussians according to spatial complexity and multi-view overlap. Our model predicts per-region densification scores to estimate the required Gaussian density and allows explicit control over the final Gaussian budget without retraining. This spatially adaptive allocation reduces redundancy in simple regions and minimizes duplicate Gaussians across overlapping views, producing compact yet high-quality 3D representations. Extensive experiments demonstrate that our model achieves superior novel-view synthesis performance compared to prior uncalibrated feed-forward methods, while using significantly fewer Gaussians.",
       "description_zh": "前馈 3D 高斯分布方法可实现单通道重建和实时渲染。然而，它们通常采用严格的像素到高斯或体素到高斯管道，统一分配高斯，导致跨视图出现冗余高斯。此外，他们缺乏有效的机制来控制高斯总数，同时保持重建保真度。为了解决这些限制，我们提出了 F4Splat，它对前馈 3D 高斯分布执行前馈预测致密化，引入了一种致密化分数引导的分配策略，该策略根据空间复杂性和多视图重叠自适应地分配高斯。我们的模型预测每个区域的致密化分数以估计所需的高斯密度，并允许在无需重新训练的情况下显式控制最终的高斯预算。这种空间自适应分配减少了简单区域中的冗余，并最大限度地减少了重叠视图中的重复高斯分布，从而产生紧凑而高质量的 3D 表示。大量的实验表明，与之前未校准的前馈方法相比，我们的模型实现了卓越的新颖视图合成性能，同时使用的高斯函数明显减少。",
+      "authors": "Injae Kim, Chaehyeon Kim, Minseong Bae, Minseok Joo, Hyunwoo J. Kim",
       "url": "https://huggingface.co/papers/2603.21304",
-      "upvotes": "29",
-      "authors": "Injae Kim, Chaehyeon Kim, Minseong Bae, Minseok Joo, Hyunwoo J. Kim"
+      "score": 30,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "30",
+        "paperId": "2603.21304"
+      }
     },
     {
       "id": "2603.20309",
@@ -79,9 +129,14 @@
       "title_zh": "BubbleRAG：黑盒知识图的证据驱动检索增强生成",
       "description": "Large Language Models (LLMs) exhibit hallucinations in knowledge-intensive tasks. Graph-based retrieval augmented generation (RAG) has emerged as a promising solution, yet existing approaches suffer from fundamental recall and precision limitations when operating over black-box knowledge graphs -- graphs whose schema and structure are unknown in advance. We identify three core challenges that cause recall loss (semantic instantiation uncertainty and structural path uncertainty) and precision loss (evidential comparison uncertainty). To address these challenges, we formalize the retrieval task as the Optimal Informative Subgraph Retrieval (OISR) problem -- a variant of Group Steiner Tree -- and prove it to be NP-hard and APX-hard. We propose BubbleRAG, a training-free pipeline that systematically optimizes for both recall and precision through semantic anchor grouping, heuristic bubble expansion to discover candidate evidence graphs (CEGs), composite ranking, and reasoning-aware expansion. Experiments on multi-hop QA benchmarks demonstrate that BubbleRAG achieves state-of-the-art results, outperforming strong baselines in both F1 and accuracy while remaining plug-and-play.",
       "description_zh": "大型语言模型（LLM）在知识密集型任务中表现出幻觉。基于图的检索增强生成（RAG）已成为一种有前景的解决方案，但现有方法在黑盒知识图（其模式和结构事先未知）上操作时受到基本召回和精度限制。我们确定了导致召回损失（语义实例化不确定性和结构路径不确定性）和精度损失（证据比较不确定性）的三个核心挑战。为了解决这些挑战，我们将检索任务形式化为最优信息子图检索（OISR）问题——斯坦纳树组的一个变体——并证明它是 NP 难和 APX 难的。我们提出了 BubbleRAG，这是一种免训练的管道，通过语义锚分组、启发式气泡扩展来发现候选证据图 (CEG)、综合排名和推理感知扩展，系统地优化召回率和精度。多跳 QA 基准实验表明，BubbleRAG 实现了最先进的结果，在 F1 和准确性方面均优于强大的基线，同时保持即插即用。",
+      "authors": "Duyi Pan, Tianao Lou, Xin Li, Haoze Song, Yiwen Wu, Mengyi Deng, Mingyu Yang, Wei Wang",
       "url": "https://huggingface.co/papers/2603.20309",
-      "upvotes": "15",
-      "authors": "Duyi Pan, Tianao Lou, Xin Li, Haoze Song, Yiwen Wu, Mengyi Deng, Mingyu Yang, Wei Wang"
+      "score": 17,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "17",
+        "paperId": "2603.20309"
+      }
     },
     {
       "id": "2603.20686",
@@ -89,9 +144,14 @@
       "title_zh": "SNAP：语音 Deepfake 检测中用于伪影投影的扬声器归零",
       "description": "Recent advancements in text-to-speech technologies enable generating high-fidelity synthetic speech nearly indistinguishable from real human voices. While recent studies show the efficacy of self-supervised learning-based speech encoders for deepfake detection, these models struggle to generalize across unseen speakers. Our quantitative analysis suggests these encoder representations are substantially influenced by speaker information, causing detectors to exploit speaker-specific correlations rather than artifact-related cues. We call this phenomenon speaker entanglement. To mitigate this reliance, we introduce SNAP, a speaker-nulling framework. We estimate a speaker subspace and apply orthogonal projection to suppress speaker-dependent components, isolating synthesis artifacts within the residual features. By reducing speaker entanglement, SNAP encourages detectors to focus on artifact-related patterns, leading to state-of-the-art performance.",
       "description_zh": "文本转语音技术的最新进展使得能够生成与真实人类声音几乎无法区分的高保真合成语音。虽然最近的研究表明基于自监督学习的语音编码器对于深度伪造检测的有效性，但这些模型很难在看不见的说话者中推广。我们的定量分析表明，这些编码器表示很大程度上受到说话者信息的影响，导致检测器利用特定于说话者的相关性，而不是与伪影相关的线索。我们将这种现象称为扬声器纠缠。为了减轻这种依赖��我们引入了 SNAP，一种扬声器无效框架。我们估计说话者子空间并应用正交投影来抑制与说话者相关的分量，从而隔离残留特征内的合成伪影。通过减少说话者纠缠，SNAP 鼓励检测器专注于与伪影相关的模式，从而实现最先进的性能。",
+      "authors": "Kyudan Jung, Jihwan Kim, Minwoo Lee, Soyoon Kim, Jeonghoon Kim, Jaegul Choo, Cheonbok Park",
       "url": "https://huggingface.co/papers/2603.20686",
-      "upvotes": "2",
-      "authors": "Kyudan Jung, Jihwan Kim, Minwoo Lee, Soyoon Kim, Jeonghoon Kim, Jaegul Choo, Cheonbok Park"
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2603.20686"
+      }
     },
     {
       "id": "2603.21884",
@@ -99,9 +159,14 @@
       "title_zh": "并非所有层都是一样的：用于个性化图像生成的自适应 LoRA 排名",
       "description": "Low Rank Adaptation (LoRA) is the de facto fine-tuning strategy to generate personalized images from pre-trained diffusion models. Choosing a good rank is extremely critical, since it trades off performance and memory consumption, but today the decision is often left to the community's consensus, regardless of the personalized subject's complexity. The reason is evident: the cost of selecting a good rank for each LoRA component is combinatorial, so we opt for practical shortcuts such as fixing the same rank for all components. In this paper, we take a first step to overcome this challenge. Inspired by variational methods that learn an adaptive width of neural networks, we let the ranks of each layer freely adapt during fine-tuning on a subject. We achieve it by imposing an ordering of importance on the rank's positions, effectively encouraging the creation of higher ranks when strictly needed. Qualitatively and quantitatively, our approach, LoRA^2, achieves a competitive trade-off between DINO, CLIP-I, and CLIP-T across 29 subjects while requiring much less memory and lower rank than high rank LoRA versions. Code: https://github.com/donaldssh/NotAllLayersAreCreatedEqual.",
       "description_zh": "低秩适应 (LoRA) 是事实上的微调策略，用于从预训练的扩散模型生成个性化图像。选择一个好的排名非常关键，因为它会权衡性能和内存消耗，但如今，无论个性化主题的复杂性如何，决定通常取决于社区的共识。原因很明显：为每个 LoRA 组件选择一个好的排名的成本是组合的，因此我们选择实用的捷径，例如为所有组件固定相同的排名。在本文中，我们迈出了克服这一挑战的第一步。受到学​​习神经网络自适应宽度的变分方法的启发，我们让每一层的等级在对主题进行微调时自由适应。我们通过对军衔职位的重要性进行排序来实现这一目标，有效地鼓励在严格需要时创建更高的军衔。从定性和定量角度来看，我们的方法 LoRA^2 在 29 个受试者中实现了 DINO、CLIP-I 和 CLIP-T 之间的竞争性权衡，同时比高等级 LoRA 版本需要更少的内存和更低的等级。代码：https://github.com/donaldssh/NotAllLayersAreCreatedEqual。",
+      "authors": "Donald Shenaj, Federico Errica, Antonio Carta",
       "url": "https://huggingface.co/papers/2603.21884",
-      "upvotes": "1",
-      "authors": "Donald Shenaj, Federico Errica, Antonio Carta"
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2603.21884"
+      }
     },
     {
       "id": "2603.20667",
@@ -109,19 +174,29 @@
       "title_zh": "REVERE：科学工作流程的反思性进化研究工程师",
       "description": "Existing prompt-optimization techniques rely on local signals to update behavior, often neglecting broader and recurring patterns across tasks, leading to poor generalization; they further rely on full-prompt rewrites or unstructured merges, resulting in knowledge loss. These limitations are magnified in research-coding workflows, which involve heterogeneous repositories, underspecified environments, and weak feedback, where reproducing results from public codebases is an established evaluation regime. We introduce Reflective Evolving Research Engineer (REVERE), a framework that continuously learns from Global Training Context, recognizes recurring failure modes in cross-repository execution trajectories, distills them into reusable heuristics, and performs targeted edits across three configurable fields: the system prompt, a task-prompt template, and a cumulative cheatsheet. REVERE, via this reflective optimization framework, improves performance over prior state-of-the-art expert-crafted instructions on research coding tasks by 4.50% on SUPER, 3.51% on ResearchCodeBench, and 4.89% on ScienceAgentBench across their respective metrics. These results demonstrate that agents equipped with mechanisms for continual learning and global memory consolidation can meaningfully evolve their capabilities over time.",
       "description_zh": "现有的提示优化技术依赖于本地信号来更新行为，常常忽略任务中更广泛和重复的模式，导致泛化能力较差；他们进一步依赖于完全即时重写或非结构化合并，从而导致知识丢失。这些限制在研究编码工作流程中被放大，其中涉及异构存储库、未指定的环境和弱反馈，其中从公共代码库复制结果是一种既定的评估制度。我们引入了反射进化研究工程师（REVERE），这是一个不断从全局训练环境中学习的框架，识别跨存储库执行轨迹中重复出现的故障模式，将它们提炼成可重用的启发式方法，并在三个可配置字段中执行有针对性的编辑：系统提示、任务提示模板和累积备忘单。通过这种反射优化框架，REVERE 在各自指标上的性能比之前最先进的专家制作的研究编码任务指令的性能在 SUPER 上提高了 4.50%，在 ResearchCodeBench 上提高了 3.51%，在 ScienceAgentBench 上提高了 4.89%。这些结果表明，配备持续学习和全局记忆巩固机制的智能体可以随着时间的推移有意义地发展其能力。",
+      "authors": "Balaji Dinesh Gangireddi, Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan",
       "url": "https://huggingface.co/papers/2603.20667",
-      "upvotes": "2",
-      "authors": "Balaji Dinesh Gangireddi, Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan"
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2603.20667"
+      }
     },
     {
       "id": "2603.21341",
       "title": "RoboAlign: Learning Test-Time Reasoning for Language-Action Alignment in Vision-Language-Action Models",
       "title_zh": "RoboAlign：学习视觉-语言-动作模型中语言-动作对齐的测试时推理",
       "description": "Improving embodied reasoning in multimodal-large-language models (MLLMs) is essential for building vision-language-action models (VLAs) on top of them to readily translate multimodal understanding into low-level actions. Accordingly, recent work has explored enhancing embodied reasoning in MLLMs through supervision of vision-question-answering type. However, these approaches have been reported to result in unstable VLA performance, often yielding only marginal or even negative gains. In this paper, we propose a more systematic MLLM training framework RoboAlign that reliably improves VLA performance. Our key idea is to sample action tokens via zero-shot natural language reasoning and refines this reasoning using reinforcement learning (RL) to improve action accuracy. As a result, RoboAlign bridges the modality gap between language and low-level actions in MLLMs, and facilitate knowledge transfer from MLLM to VLA. To validate the effectiveness of RoboAlign, we train VLAs by adding a diffusion-based action head on top of an MLLM backbone and evaluate them on major robotics benchmarks. Remarkably, by performing RL-based alignment after SFT using less than 1\\% of the data, RoboAlign achieves performance improvements of 17.5\\%, 18.9\\%, and 106.6\\% over SFT baselines on LIBERO, CALVIN, and real-world environments, respectively.",
-      "description_zh": "改进多模态大语言模型 (MLLM) 中的体现推理对于在其之上构建视觉语言动作模型 (VLA) 至关重要，以便轻松地将多模态理解转化为低级动作。因此，最近的工作探索了通过视觉问答类型的监督来增强 MLLM 的体现推理。然而，据报道，这些方法会导致 VLA 性能不稳定，通常只能产生边际甚至负收益。在本文中，我们提出了一种更系统的 MLLM 训练框架 RoboAlign，可以可靠地提高 VLA 性能。我们的��键思想是通过零样本自然语言推理对动作标记进行采样，并使用强化学习（RL）改进这种推理以提高动作准确性。因此，RoboAlign 弥合了 MLLM 中语言和低级操作之间的模态差距，并促进从 MLLM 到 VLA 的知识转移。为了验证 RoboAlign 的有效性，我们通过在 MLLM 主干之上添加基于扩散的动作头来训练 VLA，并在主要机器人基准上对其进行评估。值得注意的是，通过在 SFT 后使用不到 1% 的数据执行基于 RL 的对齐，RoboAlign 在 LIBERO、CALVIN 和现实环境中的 SFT 基线上分别实现了 17.5%、18.9% 和 106.6% 的性能改进。",
+      "description_zh": "改进多模态大语言模型 (MLLM) 中的体现推理对于在其之上构建视觉语言动作模型 (VLA) 至关重要，以便轻松地将多模态理解转化为低级动作。因此，最近的工作探索了通过视觉问答类型的监督来增强 MLLM 的体现推理。然而，据报道，这些方法会导致 VLA 性能不稳定，通常只能产生边际甚至负收益。在本文中，我们提出了一种更系统的 MLLM 训练框架 RoboAlign，可以可靠地提高 VLA 性能。我们的关���思想是通过零样本自然语言推理对动作标记进行采样，并使用强化学习（RL）改进这种推理以提高动作准确性。因此，RoboAlign 弥合了 MLLM 中语言和低级操作之间的模态差距，并促进从 MLLM 到 VLA 的知识转移。为了验证 RoboAlign 的有效性，我们通过在 MLLM 主干之上添加基于扩散的动作头来训练 VLA，并在主要机器人基准上对其进行评估。值得注意的是，通过在 SFT 后使用不到 1% 的数据执行基于 RL 的对齐，RoboAlign 在 LIBERO、CALVIN 和现实环境中的 SFT 基线上分别实现了 17.5%、18.9% 和 106.6% 的性能改进。",
+      "authors": "Dongyoung Kim, Sumin Park, Woomin Song, Seungku Kim, Taeyoung Kim, Huiwon Jang, Jinwoo Shin, Jaehyung Kim, Younggyo Seo",
       "url": "https://huggingface.co/papers/2603.21341",
-      "upvotes": "18",
-      "authors": "Dongyoung Kim, Sumin Park, Woomin Song, Seungku Kim, Taeyoung Kim, Huiwon Jang, Jinwoo Shin, Jaehyung Kim, Younggyo Seo"
+      "score": 19,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "19",
+        "paperId": "2603.21341"
+      }
     },
     {
       "id": "2603.21786",
@@ -129,9 +204,14 @@
       "title_zh": "通用法线嵌入",
       "description": "Generative models and vision encoders have largely advanced on separate tracks, optimized for different goals and grounded in different mathematical principles. Yet, they share a fundamental property: latent space Gaussianity. Generative models map Gaussian noise to images, while encoders map images to semantic embeddings whose coordinates empirically behave as Gaussian. We hypothesize that both are views of a shared latent source, the Universal Normal Embedding (UNE): an approximately Gaussian latent space from which encoder embeddings and DDIM-inverted noise arise as noisy linear projections. To test our hypothesis, we introduce NoiseZoo, a dataset of per-image latents comprising DDIM-inverted diffusion noise and matching encoder representations (CLIP, DINO). On CelebA, linear probes in both spaces yield strong, aligned attribute predictions, indicating that generative noise encodes meaningful semantics along linear directions. These directions further enable faithful, controllable edits (e.g., smile, gender, age) without architectural changes, where simple orthogonalization mitigates spurious entanglements. Taken together, our results provide empirical support for the UNE hypothesis and reveal a shared Gaussian-like latent geometry that concretely links encoding and generation. Code and data are available https://rbetser.github.io/UNE/",
       "description_zh": "生成模型和视觉编码器在不同的轨道上取得了很大的进步，针对不同的目标进行了优化，并基于不同的数学原理。然而，它们有一个共同的基本属性：潜在空间高斯性。生成模型将高斯噪声映射到图像，而编码器将图像映射到语义嵌入，其坐标根据经验表现为高斯分布。我们假设两者都是共享潜在源的视图，通用法线嵌入（UNE）：一个近似高斯的潜在空间，编码器嵌入和 DDIM 反转噪声以噪声线性投影的形式出现。为了检验我们的假设，我们引入了 NoiseZoo，这是一个包含 DDIM 反转扩散噪声和匹配编码器表示（CLIP、DINO）的每图像潜在数据集。在 CelebA 上，两个空间中的线性探针都会产生强大的、对齐的属性预测，表明生成噪声沿着线性方向编码有意义的语义。这些方向进一步实现了忠实、可控的编辑（例如微笑、性别、年龄），而无需进行架构更改，其中简单的正交化可以减轻虚假纠缠。总而言之，我们的结果为 UNE 假设提供了实证支持，并揭示了一个共享的类高斯潜在几何结构，该几何结构具体链接了编码和生成。代码和数据可获取 https://rbetser.github.io/UNE/",
+      "authors": "Chen Tasker, Roy Betser, Eyal Gofer, Meir Yossef Levi, Guy Gilboa",
       "url": "https://huggingface.co/papers/2603.21786",
-      "upvotes": "2",
-      "authors": "Chen Tasker, Roy Betser, Eyal Gofer, Meir Yossef Levi, Guy Gilboa"
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2603.21786"
+      }
     },
     {
       "id": "2603.22057",
@@ -139,19 +219,14 @@
       "title_zh": "SpatialBoost：通过语言引导推理增强视觉表示",
       "description": "Despite the remarkable success of large-scale pre-trained image representation models (i.e., vision encoders) across various vision tasks, they are predominantly trained on 2D image data and therefore often fail to capture 3D spatial relationships between objects and backgrounds in the real world, constraining their effectiveness in many downstream applications. To address this, we propose SpatialBoost, a scalable framework that enhances the spatial awareness of existing pre-trained vision encoders by injecting 3D spatial knowledge expressed in linguistic descriptions. The core idea involves converting dense 3D spatial information from 2D images into linguistic expressions, which is then used to inject such spatial knowledge into vision encoders through a Large Language Model (LLM). To this end, we adopt a multi-turn Chain-of-Thought (CoT) reasoning process that progressively incorporates dense spatial knowledge and builds hierarchical spatial understanding. To validate effectiveness, we adapt SpatialBoost to state-of-the-art vision encoders such as DINOv3, and evaluate its performance gains on a wide range of benchmarks requiring both 3D perception and general vision abilities. For instance, SpatialBoost improves DINOv3 performance from 55.9 to 59.7 mIoU on ADE20K, achieving state-of-the-art performance with 3.8% gain over the pre-trained DINOv3.",
       "description_zh": "尽管大规模预训练图像表示模型（即视觉编码器）在各种视觉任务中取得了显着的成功，但它们主要是在 2D 图像数据上进行训练，因此通常无法捕获现实世界中对象和背景之间的 3D 空间关系，从而限制了它们在许多下游应用中的有效性。为了解决这个问题，我们提出了 SpatialBoost，这是一个可扩展的框架，通过注入以语言描述表示的 3D 空间知识来增强现有预训练视觉编码器的空间意识。其核心思想是将密集的 3D 空间信息从 2D 图像转换为语言表达，然后通过大型语言模型 (LLM) 将此类空间知识注入视觉编码器。为此，我们采用多轮思维链（CoT）推理过程，逐步融入密集的空间知识并建立层次空间理解。为了验证有效性，我们将 SpatialBoost 应用于最先进的视觉编码器（例如 DINOv3），并在需要 3D 感知和一般视觉能力的各种基准上评估其性能增益。例如，SpatialBoost 将 ADE20K 上的 DINOv3 性能从 55.9 mIoU 提高到 59.7 mIoU，实现了最先进的性能，比预训练的 DINOv3 提高了 3.8%。",
+      "authors": "Byungwoo Jeon, Dongyoung Kim, Huiwon Jang, Insoo Kim, Jinwoo Shin",
       "url": "https://huggingface.co/papers/2603.22057",
-      "upvotes": "34",
-      "authors": "Byungwoo Jeon, Dongyoung Kim, Huiwon Jang, Insoo Kim, Jinwoo Shin"
-    },
-    {
-      "id": "2603.21972",
-      "title": "Demystifying Reinforcement Learning for Long-Horizon Tool-Using Agents: A Comprehensive Recipe",
-      "title_zh": "揭秘长期工具使用代理的强化学习：综合秘诀",
-      "description": "Reinforcement Learning (RL) is essential for evolving Large Language Models (LLMs) into autonomous agents capable of long-horizon planning, yet a practical recipe for scaling RL in complex, multi-turn environments remains elusive. This paper presents a systematic empirical study using TravelPlanner, a challenging testbed requiring tool orchestration to satisfy multifaceted constraints. We decompose the agentic RL design space along 5 axes: reward shaping, model scaling, data composition, algorithm selection, and environmental stability. Our controlled experiments yield 7 key takeaways, e.g., (1) reward and algorithm choices are scale-dependent as smaller models benefit from staged rewards and enhanced exploration, whereas larger models converge efficiently with simpler dense rewards, (2) ~ 1K training samples with a balanced difficulty mixture mark a sweet spot for both in-domain and out-of-domain performance, and (3) environmental stability is critical to prevent policy degradation. Based on our distilled recipe, our RL-trained models achieve state-of-the-art performance on TravelPlanner, significantly outperforming leading LLMs.",
-      "description_zh": "强化学习 (RL) 对于将大型语言模型 (LLM) 发展为能够进行长期规划的自主代理至关重要，但在复杂的多轮环境中扩展 RL 的实用方法仍然难以捉摸。本文提出了使用 TravelPlanner 进行的系统实证研究，这是一个具有挑战性的测试平台，需要工具编排以满足多方面的约束。我们沿着 5 个轴分解代理 RL 设计空间：奖励塑造、模型缩放、数据构成、算法选择和环境稳定性。我们的对照实验得出了 7 个关键结论，例如，(1) 奖励和算法选择与规模相关，因为较小的模型受益于阶段性奖励和增强的探索，而较大的模型可以通过更简单的密集奖励有效收敛，(2) 具有平衡难度混合的约 1K 训练样本标志着域内和域外性能的最佳点，(3) 环境稳定性对于防止策略退化至关重要。基于我们的精炼配方，我们经过 RL 训练的模型在 TravelPlanner 上实现了最先进的性能，显着优于领先的法学硕士。",
-      "url": "https://huggingface.co/papers/2603.21972",
-      "upvotes": "2",
-      "authors": "Xixi Wu, Qianguo Sun, Ruiyang Zhang, Chao Song, Junlong Wu, Yiyan Qi, Hong Cheng"
+      "score": 35,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "35",
+        "paperId": "2603.22057"
+      }
     }
   ]
 }

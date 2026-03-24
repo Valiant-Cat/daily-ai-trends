@@ -32,19 +32,11 @@ function httpsGetText(url, headers = {}) {
 }
 
 async function fetchJson(url) {
-  try {
-    return JSON.parse(await httpsGetText(url));
-  } catch {
-    return null;
-  }
+  return JSON.parse(await httpsGetText(url));
 }
 
 async function fetchText(url) {
-  try {
-    return await httpsGetText(url);
-  } catch {
-    return null;
-  }
+  return httpsGetText(url);
 }
 
 async function fetchHtml(url) {
@@ -57,6 +49,26 @@ function truncateText(text, maxLength = 220) {
   return normalized.slice(0, maxLength - 1).trimEnd() + '…';
 }
 
+function normalizeText(text) {
+  return String(text || '').replace(/\s+/g, ' ').trim();
+}
+
+function normalizeTweetText(text) {
+  return String(text || '').replace(/https?:\/\/\S+/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function titleCaseHeuristic(text, maxLength = 84) {
+  const clean = normalizeTweetText(text)
+    .replace(/^['"“”]+/, '')
+    .replace(/['"“”]+$/, '')
+    .trim();
+  if (!clean) return 'Untitled signal';
+
+  const sentenceSplit = clean.split(/(?<=[.!?。！？])\s+/)[0] || clean;
+  const firstClause = sentenceSplit.split(/\s[-—–:]\s/)[0] || sentenceSplit;
+  return truncateText(firstClause, maxLength);
+}
+
 function formatRelativeAge(isoString) {
   if (!isoString) return 'recent';
   const ms = Date.now() - new Date(isoString).getTime();
@@ -64,10 +76,6 @@ function formatRelativeAge(isoString) {
   if (hours < 24) return `${hours}h ago`;
   const days = Math.round(hours / 24);
   return `${days}d ago`;
-}
-
-function normalizeTweetText(text) {
-  return String(text || '').replace(/https?:\/\/\S+/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 function scoreTweet(tweet) {
@@ -99,7 +107,7 @@ async function translateText(text) {
   if (!text || text.trim() === '') return text;
   try {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(text)}`;
-    const data = await fetchJson(url);
+    const data = JSON.parse(await httpsGetText(url));
     if (data && data[0]) return data[0].map(item => item[0]).join('');
     return text;
   } catch {
@@ -110,6 +118,20 @@ async function translateText(text) {
 function parseArgs() {
   const arg = process.argv.find(v => v.startsWith('--only='));
   return { only: arg ? arg.split('=')[1] : null };
+}
+
+function baseItem({ id, title, title_zh, description, description_zh, authors, url, score, meta }) {
+  return {
+    id,
+    title,
+    title_zh,
+    description,
+    description_zh,
+    authors,
+    url,
+    score,
+    meta: meta || {}
+  };
 }
 
 async function buildGitHubFeed() {
@@ -128,16 +150,22 @@ async function buildGitHubFeed() {
     const starLink = $(el).find('a[href$="/stargazers"]').first();
     const stars = starLink.length > 0 ? starLink.text().trim() : '0';
 
-    items.push({
+    items.push(baseItem({
       id: repoTitle.replace(/\//g, '-'),
       title: repoTitle,
       title_zh: repoTitle,
       description: repoDesc,
       description_zh: await translateText(repoDesc),
+      authors: repoTitle.split('/')[0],
       url: repoUrl,
-      stars,
-      language
-    });
+      score: Number(String(stars).replace(/[^\d.]/g, '') || 0),
+      meta: {
+        source: 'github',
+        stars,
+        language,
+        repo: repoTitle
+      }
+    }));
   }
 
   return {
@@ -151,18 +179,25 @@ async function buildGitHubFeed() {
 async function buildHuggingFaceFeed() {
   const data = await fetchJson('https://huggingface.co/api/daily_papers');
   const items = [];
+
   for (const item of (Array.isArray(data) ? data.slice(0, 15) : [])) {
-    items.push({
+    items.push(baseItem({
       id: item.paper.id,
       title: item.paper.title,
       title_zh: await translateText(item.paper.title),
       description: item.paper.summary,
       description_zh: await translateText(item.paper.summary),
+      authors: item.paper.authors.map(a => a.name).join(', '),
       url: 'https://huggingface.co/papers/' + item.paper.id,
-      upvotes: String(item.paper.upvotes || 0),
-      authors: item.paper.authors.map(a => a.name).join(', ')
-    });
+      score: Number(item.paper.upvotes || 0),
+      meta: {
+        source: 'huggingface',
+        upvotes: String(item.paper.upvotes || 0),
+        paperId: item.paper.id
+      }
+    }));
   }
+
   return {
     source: 'huggingface',
     updatedAt: new Date().toISOString(),
@@ -182,26 +217,29 @@ async function buildXFeed() {
   const items = [];
   for (const { builder, tweet } of tweets) {
     const cleanText = truncateText(tweet.text, 240);
-    const normalized = normalizeTweetText(tweet.text);
-    items.push({
+    const title = titleCaseHeuristic(tweet.text, 90);
+    const itemScore = Number(scoreTweet(tweet).toFixed(2));
+    items.push(baseItem({
       id: tweet.id,
-      title: `${builder.name} · @${builder.handle}`,
-      title_zh: `${builder.name} · @${builder.handle}`,
+      title,
+      title_zh: await translateText(title),
       description: cleanText,
       description_zh: await translateText(cleanText),
+      authors: builder.name,
       url: tweet.url,
-      handle: `@${builder.handle}`,
-      author: builder.name,
-      bio: truncateText(builder.bio || '', 96),
-      likes: String(tweet.likes || 0),
-      retweets: String(tweet.retweets || 0),
-      replies: String(tweet.replies || 0),
-      age: formatRelativeAge(tweet.createdAt),
-      createdAt: tweet.createdAt,
-      wordCount: normalized ? normalized.split(' ').filter(Boolean).length : 0,
-      score: Number(scoreTweet(tweet).toFixed(2)),
-      xSource: 'follow-builders'
-    });
+      score: itemScore,
+      meta: {
+        source: 'x',
+        handle: `@${builder.handle}`,
+        bio: truncateText(builder.bio || '', 96),
+        likes: String(tweet.likes || 0),
+        retweets: String(tweet.retweets || 0),
+        replies: String(tweet.replies || 0),
+        age: formatRelativeAge(tweet.createdAt),
+        createdAt: tweet.createdAt,
+        xSource: 'follow-builders'
+      }
+    }));
   }
 
   return {
@@ -214,10 +252,14 @@ async function buildXFeed() {
 }
 
 function extractSection(markdown, heading) {
-  const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const regex = new RegExp(`(^## ${escaped}\\n[\\s\\S]*?)(?=^## |\\Z)`, 'm');
-  const match = markdown.match(regex);
-  return match ? match[1] : '';
+  const marker = `## ${heading}`;
+  const start = markdown.indexOf(marker);
+  if (start === -1) return '';
+  const afterStart = start + marker.length;
+  const rest = markdown.slice(afterStart);
+  const next = rest.search(/\n##\s+/);
+  if (next === -1) return rest.trim();
+  return rest.slice(0, next).trim();
 }
 
 function parseMarkdownLink(cell) {
@@ -239,58 +281,130 @@ function parseMarkdownTable(section) {
   return rows;
 }
 
-async function buildRedditFeed() {
-  const [en, zh] = await Promise.all([fetchText(REDDIT_REPORT_EN_URL), fetchText(REDDIT_REPORT_ZH_URL)]);
-  if (!en) {
-    return {
-      source: 'reddit',
-      updatedAt: new Date().toISOString(),
-      count: 0,
-      mode: 'error',
-      error: 'Could not fetch reddit-ai-trends latest_report_en.md',
-      items: []
-    };
-  }
-
-  const todaySectionEn = extractSection(en, "Today's Trending Posts");
-  const todaySectionZh = zh ? (extractSection(zh, '今日热门帖子') || extractSection(zh, '今日热门帖子'.replace(/ /g,''))) : '';
-  const rowsEn = parseMarkdownTable(todaySectionEn);
-  const rowsZh = parseMarkdownTable(todaySectionZh);
-  const items = [];
-
-  for (let i = 0; i < Math.min(rowsEn.length, 15); i++) {
-    const [titleCell, communityCell, score, comments, category, posted] = rowsEn[i];
-    const zhRow = rowsZh[i] || [];
-    const zhTitleCell = zhRow[0] || titleCell;
+function buildRedditMetricsMap(markdown, heading) {
+  const table = parseMarkdownTable(extractSection(markdown, heading));
+  const map = new Map();
+  for (const row of table) {
+    const [titleCell, communityCell, score, comments, category, posted] = row;
     const title = parseMarkdownLink(titleCell);
-    const titleZh = parseMarkdownLink(zhTitleCell);
-    const community = parseMarkdownLink(communityCell);
-
-    items.push({
-      id: title.url.split('/').pop() || `reddit-${i}`,
+    const community = parseMarkdownLink(communityCell || '');
+    map.set(title.url, {
       title: title.text,
-      title_zh: titleZh.text,
-      description: `${community.text} · ${category} · Score ${score} · ${comments} comments`,
-      description_zh: `${community.text} · ${category} · 分数 ${score} · ${comments} 条评论`,
-      url: title.url,
       subreddit: community.text,
       subredditUrl: community.url,
-      score: String(score),
-      comments: String(comments),
-      category,
-      posted,
-      redditSource: 'liyedanpdx/reddit-ai-trends'
+      score: String(score || '0'),
+      comments: String(comments || '0'),
+      category: category || '',
+      posted: posted || ''
     });
   }
+  return map;
+}
+
+function extractSubsection(section, headingRegex) {
+  const match = section.match(headingRegex);
+  if (!match) return '';
+  const start = match.index;
+  const rest = section.slice(start);
+  const endMatch = rest.slice(match[0].length).match(/\n###\s+\*\*|\n####\s+\*\*\d+\.|\n## /);
+  if (!endMatch) return rest;
+  return rest.slice(0, match[0].length + endMatch.index);
+}
+
+function parseHighlightEntries(section) {
+  const entryRegex = /-\s+\*\*\[(.*?)\]\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
+  const entries = [];
+  let match;
+  while ((match = entryRegex.exec(section)) !== null) {
+    const block = match[0];
+    const title = normalizeText(match[1]);
+    const urlMatch = block.match(/(?:Post link:|帖子链接：)\s*\[(.*?)\]\((https?:\/\/[^)]+)\)/i);
+    const url = urlMatch?.[2]?.trim() || '';
+    const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+    const summaryParts = [];
+    for (const line of lines) {
+      if (line.startsWith('- **[')) continue;
+      if (/^[-*]\s*\*?为何重要|^\*Why it matters:/i.test(line)) continue;
+      if (/^[-*]\s*帖子链接：|^Post link:/i.test(line)) continue;
+      let cleaned = line.replace(/^[-*]\s*/, '').replace(/^详细内容：/, '').replace(/^What happened:/i, '').trim();
+      cleaned = cleaned.replace(/^\*为何重要：\*/,'').replace(/^\*Why it matters:\*/i,'').trim();
+      if (cleaned) summaryParts.push(cleaned);
+    }
+    if (url) {
+      entries.push({
+        title,
+        url,
+        summary: truncateText(normalizeText(summaryParts.join(' ')), 260)
+      });
+    }
+  }
+  return entries;
+}
+
+async function buildRedditFeed() {
+  const [en, zh] = await Promise.all([fetchText(REDDIT_REPORT_EN_URL), fetchText(REDDIT_REPORT_ZH_URL)]);
+  if (!en) throw new Error('Could not fetch reddit-ai-trends latest_report_en.md');
+
+  const metricsMap = buildRedditMetricsMap(en, "Today's Trending Posts");
+  const enTrend = extractSection(en, 'Trend Analysis');
+  const zhTrend = zh ? extractSection(zh, '趋势分析') : '';
+  const enHighlights = parseHighlightEntries(enTrend).filter(entry => metricsMap.has(entry.url));
+  const zhHighlights = zhTrend ? parseHighlightEntries(zhTrend) : [];
+  const zhMap = new Map(zhHighlights.map(entry => [entry.url, entry]));
+
+  const items = enHighlights.slice(0, 10).map((entry, index) => {
+    const zhEntry = zhMap.get(entry.url);
+    const metrics = metricsMap.get(entry.url) || {};
+    return baseItem({
+      id: entry.url.split('/').pop() || `reddit-highlight-${index}`,
+      title: entry.title,
+      title_zh: zhEntry?.title || entry.title,
+      description: entry.summary,
+      description_zh: zhEntry?.summary || entry.summary,
+      authors: metrics.subreddit || 'Reddit',
+      url: entry.url,
+      score: Number(metrics.score || 0),
+      meta: {
+        source: 'reddit',
+        subreddit: metrics.subreddit || '',
+        subredditUrl: metrics.subredditUrl || '',
+        comments: metrics.comments || '0',
+        category: metrics.category || '',
+        posted: metrics.posted || '',
+        redditSource: 'liyedanpdx/reddit-ai-trends',
+        section: 'today-highlights'
+      }
+    });
+  });
 
   return {
     source: 'reddit',
     updatedAt: new Date().toISOString(),
     count: items.length,
-    mode: 'report-artifact',
+    mode: 'report-highlights',
     upstream: 'liyedanpdx/reddit-ai-trends',
     items
   };
+}
+
+function errorFeed(source, error) {
+  return {
+    source,
+    updatedAt: new Date().toISOString(),
+    count: 0,
+    mode: 'error',
+    error: error.message,
+    items: []
+  };
+}
+
+async function buildSourceSafely(source, builder) {
+  try {
+    return await builder();
+  } catch (error) {
+    console.error(`[${source}] failed:`, error.message);
+    return errorFeed(source, error);
+  }
 }
 
 async function main() {
@@ -300,25 +414,25 @@ async function main() {
   const feedAll = { generatedAt };
 
   if (!only || only === 'github') {
-    const github = await buildGitHubFeed();
+    const github = await buildSourceSafely('github', buildGitHubFeed);
     writeJson('feed-github.json', github);
     feedAll.github = github;
   }
 
   if (!only || only === 'huggingface') {
-    const huggingface = await buildHuggingFaceFeed();
+    const huggingface = await buildSourceSafely('huggingface', buildHuggingFaceFeed);
     writeJson('feed-huggingface.json', huggingface);
     feedAll.huggingface = huggingface;
   }
 
   if (!only || only === 'x') {
-    const x = await buildXFeed();
+    const x = await buildSourceSafely('x', buildXFeed);
     writeJson('feed-x.json', x);
     feedAll.x = x;
   }
 
   if (!only || only === 'reddit') {
-    const reddit = await buildRedditFeed();
+    const reddit = await buildSourceSafely('reddit', buildRedditFeed);
     writeJson('feed-reddit.json', reddit);
     feedAll.reddit = reddit;
   }
