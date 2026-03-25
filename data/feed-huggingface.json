@@ -1,8 +1,38 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-24T15:53:25.525Z",
+  "updatedAt": "2026-03-25T01:28:49.645Z",
   "count": 15,
   "items": [
+    {
+      "id": "2603.19415",
+      "title": "Scalable Prompt Routing via Fine-Grained Latent Task Discovery",
+      "title_zh": "通过细粒度潜在任务发现实现可扩展的提示路由",
+      "description": "Prompt routing dynamically selects the most appropriate large language model from a pool of candidates for each query, optimizing performance while managing costs. As model pools scale to include dozens of frontier models with narrow performance gaps, existing approaches face significant challenges: manually defined task taxonomies cannot capture fine-grained capability distinctions, while monolithic routers struggle to differentiate subtle differences across diverse tasks. We propose a two-stage routing architecture that addresses these limitations through automated fine-grained task discovery and task-aware quality estimation. Our first stage employs graph-based clustering to discover latent task types and trains a classifier to assign prompts to discovered tasks. The second stage uses a mixture-of-experts architecture with task-specific prediction heads for specialized quality estimates. At inference, we aggregate predictions from both stages to balance task-level stability with prompt-specific adaptability. Evaluated on 10 benchmarks with 11 frontier models, our method consistently outperforms existing baselines and surpasses the strongest individual model while incurring less than half its cost.",
+      "description_zh": "提示路由会从每个查询的候选池中动态选择最合适的大型语言模型，从而在管理成本的同时优化性能。随着模型池规模扩大到包含数十种性能差距较小的前沿模型，现有方法面临着重大挑战：手动定义的任务分类法无法捕获细粒度的功能差异，而整体路由器则难以区分不同任务之间的细微差异。我们提出了一种两阶段路由架构，通过自动细粒度任务发现和任务感知质量估计来解决这些限制。我们的第一阶段采用基于图的聚类来发现潜在任务类型，并训练分类器为发现的任务分配提示。第二阶段使用混合专家架构，具有特定于任务的预测头，用于专门的质量估计。在推理时，我们汇总两个阶段的预测，以平衡任务级稳定性与提示特定的适应性。通过对 11 个前沿模型的 10 个基准进行评估，我们的方法始终优于现有基线，并超越了最强的单个模型，同时成本不到其一半。",
+      "authors": "Yunyi Zhang, Soji Adeshina, Patrick Guan, Ashwin Ganesh, Zhen Han, Vassilis N. Ioannidis, Huzefa Rangwala, George Karypis",
+      "url": "https://huggingface.co/papers/2603.19415",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2603.19415"
+      }
+    },
+    {
+      "id": "2603.14999",
+      "title": "Aperiodic Structures Never Collapse: Fibonacci Hierarchies for Lossless Compression",
+      "title_zh": "非周期结构永不崩溃：无损压缩的斐波那契层次结构",
+      "description": "We study whether an aperiodic hierarchy can provide a structural advantage for lossless compression over periodic alternatives. We show that Fibonacci quasicrystal tilings avoid the finite-depth collapse that affects periodic hierarchies: usable n-gram lookup positions remain non-zero at every level, while periodic tilings collapse after O(log p) levels for period p. This yields an aperiodic hierarchy advantage: dictionary reuse remains available across all scales instead of vanishing beyond a finite depth. Our analysis gives four main consequences. First, the Golden Compensation property shows that the exponential decay in the number of positions is exactly balanced by the exponential growth in phrase length, so potential coverage remains scale-invariant with asymptotic value Wvarphi/5. Second, using the Sturmian complexity law p(n)=n+1, we show that Fibonacci/Sturmian hierarchies maximize codebook coverage efficiency among binary aperiodic tilings. Third, under long-range dependence, the resulting hierarchy achieves lower coding entropy than comparable periodic hierarchies. Fourth, redundancy decays super-exponentially with depth, whereas periodic systems remain locked at the depth where collapse occurs. We validate these results with Quasicryth, a lossless text compressor built on a ten-level Fibonacci hierarchy with phrase lengths {2,3,5,8,13,21,34,55,89,144}. In controlled A/B experiments with identical codebooks, the aperiodic advantage over a Period-5 baseline grows from 36{,}243 B at 3 MB to 11{,}089{,}469 B at 1 GB, explained by the activation of deeper hierarchy levels. On enwik9, Quasicryth achieves 225{,}918{,}349 B (22.59%), with 20{,}735{,}733 B saved by the Fibonacci tiling relative to no tiling.",
+      "description_zh": "我们研究非周期性层次结构是否可以为无损压缩提供相对于周期性替代方案的结构优势。我们证明斐波那契准晶平铺避免了影响周期性层次结构的有限深度崩溃：可用的 n 元语法查找位置在每个级别都保持非零，而周期平铺在周期 p 的 O(log p) 级别后崩溃。这产生了非周期性层次结构的优势：字典重用在所有尺度上仍然可用，而不是在超出有限深度后消失。我们的分析给出了四个主要后果。首先，黄金补偿属性表明，位置数量���指数衰减与短语长度的指数增长完全平衡，因此潜在覆盖范围保持尺度不变，渐近值 Wvarphi/5。其次，使用 Sturmian 复杂度定律 p(n)=n+1，我们表明斐波那契/Sturmian 层次结构最大化了二进制非周期平铺中的码本覆盖效率。第三，在长程依赖性下，所得到的层次结构比可比较的周期性层次结构实现了更低的编码熵。第四，冗余度随深度呈超指数衰减，而周期系统则保持锁定在发生崩溃的深度。我们使用 Quasicryth 验证这些结果，Quasicryth 是一种无损文本压缩器，构建在十级斐波那契层次结构上，短语长度为 {2,3,5,8,13,21,34,55,89,144}。在使用相同密码本的受控 A/B 实验中，相对于 period-5 基线的非周期优势从 3 MB 时的 36{,}243 B 增长到 1 GB 时的 11{,}089{,}469 B，这可以通过更深层级的激活来解释。在 enwik9 上，Quasicryth 达到了 225{,}918{,}349 B (22.59%)，相对于无平铺，斐波那契平铺节省了 20{,}735{,}733 B。",
+      "authors": "Roberto Tacconelli",
+      "url": "https://huggingface.co/papers/2603.14999",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.14999"
+      }
+    },
     {
       "id": "2603.18911",
       "title": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Hallucination to Zero in English-Hindi LLMs",
@@ -23,7 +53,7 @@
       "title": "AdditiveLLM2: A Multi-modal Large Language Model for Additive Manufacturing",
       "title_zh": "AdditiveLLM2：增材制造的多模式大语言模型",
       "description": "This work presents AdditiveLLM2 a multi-modal, domain adapted large language model built upon the instruction tuned variant of the Gemma 3 model using a relatively small dataset of around 50 million tokens. The dataset (AdditiveLLM2-OA) consists of open-access additive manufacturing journal articles with data extracted for the domain adaptive pretraining and visual instruction tuning processes. Various stages of the developed model are evaluated with the Additive-Manufacturing-Benchmark which consists of additive manufacturing domain specific tasks compiled published resources. AdditiveLLM2 exhibits proficiency in both language and vision based tasks, achieving accuracies upwards of 90% in general additive manufacturing knowledge. This domain adaptive pretraining and instruction tuning strategy outline an accessible specialization method for large language models to a domain such as additive manufacturing.",
-      "description_zh": "这项工作提出了 AdditiveLLM2 一个多模态、领域适应的大型语言模型，该模型基于 Gemma 3 模型的指令调整变体，使用大约 5000 万个标记的相对较小的数据集。该数据集 (AdditiveLLM2-OA) 由开放获取的增材制造期刊文章组成，其中包含为域自适应预训练和视觉指令调整过程提取的数据。所开发模型的各个阶段均使用增材制造基准进行评估，该基准由增材制造领域特定任务编译的已发布资源组成。 AdditiveLLM2 表现出对基于语言和视觉的任务的熟练程度，在一般增材制造知识方面的准确���高达 90% 以上。这种领域自适应预训练和指令调整策略概述了一种适用于增材制造等领域的大型语言模型的可访问专业化方法。",
+      "description_zh": "这项工作提出了 AdditiveLLM2 一个多模态、领域适应的大型语言模型，该模型基于 Gemma 3 模型的指令调整变体，使用大约 5000 万个标记的相对较小的数据集。该数据集 (AdditiveLLM2-OA) 由开放获取的增材制造期刊文章组成，其中包含为域自适应预训练和视觉指令调整过程提取的数据。所开发模型的各个阶段均使用增材制造基准进行评估，该基准由增材制造领域特定任务编译的已发布资源组成。 AdditiveLLM2 表现出对基于语言和视觉的任务的熟练程度，在一般增材制造知识方面的准确率高达 90% 以上。这种领域自适应预训练和指令调整策略概述了一种适用于增材制造等领域的大型语言模型的可访问专业化方法。",
       "authors": "Peter Pak, Amir Barati Farimani",
       "url": "https://huggingface.co/papers/2603.22017",
       "score": 1,
@@ -53,13 +83,13 @@
       "title": "Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs",
       "title_zh": "关注重要之处：高效 VLM 的高分辨率作物检索",
       "description": "Vision-language models (VLMs) typically process images at a native high-resolution, forcing a trade-off between accuracy and computational efficiency: high-resolution inputs capture fine details but incur significant computational costs, while low-resolution inputs advocate for efficiency, they potentially miss critical visual information, like small text. We present AwaRes, a spatial-on-demand framework that resolves this accuracy-efficiency trade-off by operating on a low-resolution global view and using tool-calling to retrieve only high-resolution segments needed for a given query. We construct supervised data automatically: a judge compares low- vs.\\ high-resolution answers to label whether cropping is needed, and an oracle grounding model localizes the evidence for the correct answer, which we map to a discrete crop set to form multi-turn tool-use trajectories. We train our framework with cold-start SFT followed by multi-turn GRPO with a composite reward that combines semantic answer correctness with explicit crop-cost penalties. Project page: https://nimrodshabtay.github.io/AwaRes",
-      "description_zh": "视觉语言模型（VLM）通常以原生高分辨率处理图像，迫使在准确性和计算效率之间进行权衡：高分辨率输入捕获精细细节，但会产生大量计算成本，而低分辨率输入提倡效率，它们可能会错过关键的视觉信息，例如小文本。我们提出了 AwaRes，这是一种空间按需框架，它通过在低分辨率全局视图上运行并使用工具调用仅检索给定查询所需的高分辨率片段来解决这种准确性与效率的权衡。我们自动构建监督数据：法官比较低分辨率和高分辨率答案来标记是否需要裁剪，并且预言机基础模型定位正确答案的证据，我们将其映射到离散裁剪集以��成多轮工具使用轨迹。我们使用冷启动 SFT 来训练我们的框架，然后使用多轮 GRPO 来训练我们的框架，并结合语义答案正确性和显式作物成本惩罚的复合奖励。项目页面：https://nimrodshabtay.github.io/AwaRes",
+      "description_zh": "视觉语言模型（VLM）通常以原生高分辨率处理图像，迫使在准确性和计算效率之间进行权衡：高分辨率输入捕获精细细节，但会产生大量计算成本，而低分辨率输入提倡效率，它们可能会错过关键的视觉信息，例如小文本。我们提出了 AwaRes，这是一种空间按需框架，它通过在低分辨率全局视图上运行并使用工具调用仅检索给定查询所需的高分辨率片段来解决这种准确性与效率的权衡。我们自动构建监督数据：法官比较低分辨率和高分辨率答案来标记是否需要裁剪，并且预言机基础模型定位正确答案的证据，我们将其映射到离散裁剪集以形成多轮工具使用轨迹。我们使用冷启动 SFT 来训练我们的框架，然后使用多轮 GRPO 来训练我们的框架，并结合语义答案正确性和显式作物成本惩罚的复合奖励。项目页面：https://nimrodshabtay.github.io/AwaRes",
       "authors": "Nimrod Shabtay, Moshe Kimhi, Artem Spector, Sivan Haray, Ehud Rivlin, Chaim Baskin, Raja Giryes, Eli Schwartz",
       "url": "https://huggingface.co/papers/2603.16932",
-      "score": 36,
+      "score": 56,
       "meta": {
         "source": "huggingface",
-        "upvotes": "36",
+        "upvotes": "56",
         "paperId": "2603.16932"
       }
     },
@@ -71,10 +101,10 @@
       "description_zh": "虽然生成潜在空间的最新进展推动了单图像生成的实质性进展，但新视图合成（NVS）的最佳潜在空间在很大程度上仍未被探索。特别是，NVS 需要跨视点进行几何一致的生成，但现有方法通常在与视图无关的 VAE 潜在空间中运行。在本文中，我们提出了几何潜在扩散（GLD），这是一个框架，它将几何基础模型的几何一致特征空间重新用作多视图扩散的潜在空间。我们证明这些特征不仅支持高保真 RGB 重建，而且还编码强跨视图几何对应关系，为 NVS 提供了非常适合的潜在空间。我们的实验表明，GLD 在 2D 图像质量和 3D 一致性指标上均优于 VAE 和 RAE，同时与 VAE 潜在空间相比，训练速度提高了 4.4 倍以上。值得注意的是，GLD 与利用大规模文本到图像预训练的最先进方法仍然具有竞争力，尽管在没有这种生成预训练的情况下从头开始训练其扩散模型。",
       "authors": "Wooseok Jang, Seonghu Jeon, Jisang Han, Jinhyeok Choi, Minkyung Kwon, Seungryong Kim, Saining Xie, Sainan Liu",
       "url": "https://huggingface.co/papers/2603.22275",
-      "score": 18,
+      "score": 21,
       "meta": {
         "source": "huggingface",
-        "upvotes": "18",
+        "upvotes": "21",
         "paperId": "2603.22275"
       }
     },
@@ -83,13 +113,13 @@
       "title": "OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis",
       "title_zh": "OpenResearcher：用于长期深度研究轨迹合成的完全开放管道",
       "description": "Training deep research agents requires long-horizon trajectories that interleave search, evidence aggregation, and multi-step reasoning. However, existing data collection pipelines typically rely on proprietary web APIs, making large-scale trajectory synthesis costly, unstable, and difficult to reproduce. We present OpenResearcher, a reproducible pipeline that decouples one-time corpus bootstrapping from multi-turn trajectory synthesis and executes the search-and-browse loop entirely offline using three explicit browser primitives: search, open, and find, over a 15M-document corpus. Using GPT-OSS-120B as the teacher model, we synthesize over 97K trajectories, including a substantial long-horizon tail with 100+ tool calls. Supervised fine-tuning a 30B-A3B backbone on these trajectories achieves 54.8\\% accuracy on BrowseComp-Plus, a +34.0 point improvement over the base model, while remaining competitive on BrowseComp, GAIA, and xbench-DeepSearch. Because the environment is offline and fully instrumented, it also enables controlled analysis, where our study reveals practical insights into deep research pipeline design, including data filtering strategies, agent configuration choices, and how retrieval success relates to final answer accuracy. We release the pipeline, synthesized trajectories, model checkpoints, and the offline search environment at https://github.com/TIGER-AI-Lab/OpenResearcher.",
-      "description_zh": "训练深度研究代理需要将搜索、证据聚合和多步骤推理交织在一起的长视野轨迹。然而，现有的数据收集管道通常依赖于专有的 Web API，使得大规模轨迹合成成本高昂、不稳定且难以重现。我们提出了 OpenResearcher，一种可重复的管道，它将一次性语料库引导与多轮轨迹合成分离，并使用三个显式浏览器原语：搜索、打开和查找，在 1500 万文档语料库上完全离线执行搜索和浏览循环。使用 GPT-OSS-120B 作为教师模型，我们合成了超过 97K 条轨迹，包括带有 100 多个工具调用的长水平尾部。在这些轨迹上对 30B-A3B 主干进行监督微调，在 BrowseComp-Plus 上实现了 54.8% 的准确率，比基本模型提高了 +34.0 点，同时在 BrowseComp、GAIA 和 xbench-DeepSearch 上保持竞争力。由于该环境是离线且完全仪表化的，因此它还可以实现受控分析，我们的研究揭示了深入研究管道设计的实用见解，包括数据过滤策略、代理配置选择以及检索成功与最终答案准确性之间的关系。我们在 https://github.com/TIGER-AI-Lab/OpenResearcher 发���了管道、合成轨迹、模型检查点和离线搜索环境。",
+      "description_zh": "训练深度研究代理需要将搜索、证据聚合和多步骤推理交织在一起的长视野轨迹。然而，现有的数据收集管道通常依赖于专有的 Web API，使得大规模轨迹合成成本高昂、不稳定且难以重现。我们提出了 OpenResearcher，一种可重复的管道，它将一次性语料库引导与多轮轨迹合成分离，并使用三个显式浏览器原语：搜索、打开和查找，在 1500 万文档语料库上完全离线执行搜索和浏览循环。使用 GPT-OSS-120B 作为教师模型，我们合成了超过 97K 条轨迹，包括带有 100 多个工具调用的长���平尾部。在这些轨迹上对 30B-A3B 主干进行监督微调，在 BrowseComp-Plus 上实现了 54.8% 的准确率，比基本模型提高了 +34.0 点，同时在 BrowseComp、GAIA 和 xbench-DeepSearch 上保持竞争力。由于该环境是离线且完全仪表化的，因此它还可以实现受控分析，我们的研究揭示了深入研究管道设计的实用见解，包括数据过滤策略、代理配置选择以及检索成功与最终答案准确性之间的关系。我们在 https://github.com/TIGER-AI-Lab/OpenResearcher 发布了管道、合成轨迹、模型检查点和离线搜索环境。",
       "authors": "Zhuofeng Li, Dongfu Jiang, Xueguang Ma, Haoxiang Zhang, Ping Nie, Yuyu Zhang, Kai Zou, Jianwen Xie, Yu Zhang, Wenhu Chen",
       "url": "https://huggingface.co/papers/2603.20278",
-      "score": 27,
+      "score": 53,
       "meta": {
         "source": "huggingface",
-        "upvotes": "27",
+        "upvotes": "53",
         "paperId": "2603.20278"
       }
     },
@@ -116,10 +146,10 @@
       "description_zh": "连接视觉和语言的模型（例如 CLIP）是多模式人工智能的关键组成部分，但其大规模、未经整理的训练数据引入了严重的社会和虚假偏见。现有的事后去偏差方法通常直接在密集的 CLIP 嵌入空间中运行，其中偏差和任务相关信息高度纠缠。这种纠缠限制了他们在不降低语义保真度的情况下消除偏见的能力。在这项工作中，我们提出了稀疏嵌入调制（SEM），这是一种在稀疏自动编码器（SAE）潜在空间中运行的事后零样本去偏框架。通过将 CLIP 文本嵌入分解为解开的特征，SEM 可以识别和调节与偏差相关的神经元，同时保留与查询相关的神经元。这可以实现更精确的非线性干预。在四个基准数据集和两个 CLIP 主干上，SEM 在检索和零样本分类方面实现了显着的公平性提升。我们的结果表明，稀疏潜在表示为视觉语言模型的事后去偏提供了有效的基础。",
       "authors": "Quentin Guimard, Federico Bartsch, Simone Caldarella, Rahaf Aljundi, Elisa Ricci, Massimiliano Mancini",
       "url": "https://huggingface.co/papers/2603.19028",
-      "score": 13,
+      "score": 15,
       "meta": {
         "source": "huggingface",
-        "upvotes": "13",
+        "upvotes": "15",
         "paperId": "2603.19028"
       }
     },
@@ -131,10 +161,10 @@
       "description_zh": "前馈 3D 高斯分布方法可实现单通道重建和实时渲染。然而，它们通常采用严格的像素到高斯或体素到高斯管道，统一分配高斯，导致跨视图出现冗余高斯。此外，他们缺乏有效的机制来控制高斯总数，同时保持重建保真度。为了解决这些限制，我们提出了 F4Splat，它对前馈 3D 高斯分布执行前馈预测致密化，引入了一种致密化分数引导的分配策略，该策略根据空间复杂性和多视图重叠自适应地分配高斯。我们的模型预测每个区域的致密化分数以估计所需的高斯密度，并允许在无需重新训练的情况下显式控制最终的高斯预算。这种空间自适应分配减少了简单区域中的冗余，并最大限度地减少了重叠视图中的重复高斯分布，从而产生紧凑而高质量的 3D 表示。大量的实验表明，与之前未校准的前馈方法相比，我们的模型实现了卓越的新颖视图合成性能，同时使用的高斯函数明显减少。",
       "authors": "Injae Kim, Chaehyeon Kim, Minseong Bae, Minseok Joo, Hyunwoo J. Kim",
       "url": "https://huggingface.co/papers/2603.21304",
-      "score": 30,
+      "score": 31,
       "meta": {
         "source": "huggingface",
-        "upvotes": "30",
+        "upvotes": "31",
         "paperId": "2603.21304"
       }
     },
@@ -146,10 +176,10 @@
       "description_zh": "大型语言模型（LLM）在知识密集型任务中表现出幻觉。基于图的检索增强生成（RAG）已成为一种有前景的解决方案，但现有方法在黑盒知识图（其模式和结构事先未知）上操作时受到基本召回和精度限制。我们确定了导致召回损失（语义实例化不确定性和结构路径不确定性）和精度损失（证据比较不确定性）的三个核心挑战。为了解决这些挑战，我们将检索任务形式化为最优信息子图检索（OISR）问题——斯坦纳树组的一个变体——并证明它是 NP 难和 APX 难的。我们提出了 BubbleRAG，这是一种免训练的管道，通过语义锚分组、启发式气泡扩展来发现候选证据图 (CEG)、综合排名和推理感知扩展，系统地优化召回率和精度。多跳 QA 基准实验表明，BubbleRAG 实现了最先进的结果，在 F1 和准确性方面均优于强大的基线，同时保持即插即用。",
       "authors": "Duyi Pan, Tianao Lou, Xin Li, Haoze Song, Yiwen Wu, Mengyi Deng, Mingyu Yang, Wei Wang",
       "url": "https://huggingface.co/papers/2603.20309",
-      "score": 17,
+      "score": 18,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "18",
         "paperId": "2603.20309"
       }
     },
@@ -158,7 +188,7 @@
       "title": "SNAP: Speaker Nulling for Artifact Projection in Speech Deepfake Detection",
       "title_zh": "SNAP：语音 Deepfake 检测中用于伪影投影的扬声器归零",
       "description": "Recent advancements in text-to-speech technologies enable generating high-fidelity synthetic speech nearly indistinguishable from real human voices. While recent studies show the efficacy of self-supervised learning-based speech encoders for deepfake detection, these models struggle to generalize across unseen speakers. Our quantitative analysis suggests these encoder representations are substantially influenced by speaker information, causing detectors to exploit speaker-specific correlations rather than artifact-related cues. We call this phenomenon speaker entanglement. To mitigate this reliance, we introduce SNAP, a speaker-nulling framework. We estimate a speaker subspace and apply orthogonal projection to suppress speaker-dependent components, isolating synthesis artifacts within the residual features. By reducing speaker entanglement, SNAP encourages detectors to focus on artifact-related patterns, leading to state-of-the-art performance.",
-      "description_zh": "文本转语音技术的最新进展使得能够生成与真实人类声音几乎无法区分的高保真合成语音。虽然最近的研究表明基于自监督学习的语音编码器对于深度伪造检测的有效性，但这些模型很难在看不见的说话者中推广。我们的定量分析表明，这些编码器表示很大程度上受到说话者信息的影响，导致检测器利用特定于说话者的相关性，而不是与伪影相关的线索。我们将这种现象称为扬声器纠缠。为了减轻这种依赖，我们引入了 SNAP，一种扬声器无效框架。我们估计说话者子空间并应用正交投影来抑制与说话者相关的分量，从而隔离残留特征内的合成伪影。通过减少说话者纠缠，SNAP 鼓励检测器专注于与伪影相关的模式，从而实现最先进的性能。",
+      "description_zh": "文本转语音技术的最新进展使得能够生成与真实人类声音几乎无法区分的高保真合成语音。虽然最近的研究表明基于自监督学习的语音编码器对于深度伪造检测的有效性，但这些模型很难在看不见的说话者中推广。我们的定量分析表明，这些编码器表示很大程度上受到说话者信息的影响，导致检测器利用特定于说话者的相关性，而不是与伪影相关的线索。我们将这种现象称为扬声器纠缠。为了减轻这种依赖���我们引入了 SNAP，一种扬声器无效框架。我们估计说话者子空间并应用正交投影来抑制与说话者相关的分量，从而隔离残留特征内的合成伪影。通过减少说话者纠缠，SNAP 鼓励检测器专注于与伪影相关的模式，从而实现最先进的性能。",
       "authors": "Kyudan Jung, Jihwan Kim, Minwoo Lee, Soyoon Kim, Jeonghoon Kim, Jaegul Choo, Cheonbok Park",
       "url": "https://huggingface.co/papers/2603.20686",
       "score": 2,
@@ -188,44 +218,14 @@
       "title": "REVERE: Reflective Evolving Research Engineer for Scientific Workflows",
       "title_zh": "REVERE：科学工作流程的反思性进化研究工程师",
       "description": "Existing prompt-optimization techniques rely on local signals to update behavior, often neglecting broader and recurring patterns across tasks, leading to poor generalization; they further rely on full-prompt rewrites or unstructured merges, resulting in knowledge loss. These limitations are magnified in research-coding workflows, which involve heterogeneous repositories, underspecified environments, and weak feedback, where reproducing results from public codebases is an established evaluation regime. We introduce Reflective Evolving Research Engineer (REVERE), a framework that continuously learns from Global Training Context, recognizes recurring failure modes in cross-repository execution trajectories, distills them into reusable heuristics, and performs targeted edits across three configurable fields: the system prompt, a task-prompt template, and a cumulative cheatsheet. REVERE, via this reflective optimization framework, improves performance over prior state-of-the-art expert-crafted instructions on research coding tasks by 4.50% on SUPER, 3.51% on ResearchCodeBench, and 4.89% on ScienceAgentBench across their respective metrics. These results demonstrate that agents equipped with mechanisms for continual learning and global memory consolidation can meaningfully evolve their capabilities over time.",
-      "description_zh": "现有的提示优化技术依赖于本地信号来更新行为，常常忽略任务中更广泛和重复的模式，导致泛化能力较差；他们进一步依赖于完全即时重写或非结构化合并，从而导致知识丢失。这些限制在研究编码工作流程中被放大，其中涉及异构存储库、未指定的环境和弱反馈，其中从公共代码库复制结果是一种既定的评估制度。我们引入了反射进化研究工程师（REVERE），这是一个不断从全局训练环境中学习的框架，识别跨存储库执行轨迹中重复出现的故障模式，将它们提炼成可重用的启发式方法，并在三个可配置字段中执行有针对性的编��：系统提示、任务提示模板和累积备忘单。通过这种反射优化框架，REVERE 在各自指标上的性能比之前最先进的专家制作的研究编码任务指令的性能在 SUPER 上提高了 4.50%，在 ResearchCodeBench 上提高了 3.51%，在 ScienceAgentBench 上提高了 4.89%。这些结果表明，配备持续学习和全局记忆巩固机制的智能体可以随着时间的推移有意义地发展其能力。",
+      "description_zh": "现有的提示优化技术依赖于本地信号来更新行为，常常忽略任务中更广泛和重复的模式，导致泛化能力较差；他们进一步依赖于完全即时重写或非结构化合并，从而导致知识丢失。这些限制在研究编码工作流程中被放大，其中涉及异构存储库、未指定的环境和弱反馈，其中从公共代码库复制结果是一种既定的评估制度。我们引入了反射进化研究工程师（REVERE），这是一个不断从全局训练环境中学习的框架，识别跨存储库执行轨迹中重复出现的故障模式，将它们提炼成可重用的启发式方法，并在三个可配置字段中执行有针对性的编辑：系统提示、任务提示模板和累积备忘单。通过这种反射优化框架，REVERE 在各自指标上的性能比之前最先进的专家制作的研究编码任务指令的性能在 SUPER 上提高了 4.50%，在 ResearchCodeBench 上提高了 3.51%，在 ScienceAgentBench 上提高了 4.89%。这些结果表明，配备持续学习和全局记忆巩固机制的智能体可以随着时间的推移有意义地发展其能力。",
       "authors": "Balaji Dinesh Gangireddi, Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan",
       "url": "https://huggingface.co/papers/2603.20667",
-      "score": 4,
+      "score": 11,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "11",
         "paperId": "2603.20667"
-      }
-    },
-    {
-      "id": "2603.21341",
-      "title": "RoboAlign: Learning Test-Time Reasoning for Language-Action Alignment in Vision-Language-Action Models",
-      "title_zh": "RoboAlign：学习视觉-语言-动作模型中语言-动作对齐的测试时推理",
-      "description": "Improving embodied reasoning in multimodal-large-language models (MLLMs) is essential for building vision-language-action models (VLAs) on top of them to readily translate multimodal understanding into low-level actions. Accordingly, recent work has explored enhancing embodied reasoning in MLLMs through supervision of vision-question-answering type. However, these approaches have been reported to result in unstable VLA performance, often yielding only marginal or even negative gains. In this paper, we propose a more systematic MLLM training framework RoboAlign that reliably improves VLA performance. Our key idea is to sample action tokens via zero-shot natural language reasoning and refines this reasoning using reinforcement learning (RL) to improve action accuracy. As a result, RoboAlign bridges the modality gap between language and low-level actions in MLLMs, and facilitate knowledge transfer from MLLM to VLA. To validate the effectiveness of RoboAlign, we train VLAs by adding a diffusion-based action head on top of an MLLM backbone and evaluate them on major robotics benchmarks. Remarkably, by performing RL-based alignment after SFT using less than 1\\% of the data, RoboAlign achieves performance improvements of 17.5\\%, 18.9\\%, and 106.6\\% over SFT baselines on LIBERO, CALVIN, and real-world environments, respectively.",
-      "description_zh": "改进多模态大语言模型 (MLLM) 中的体现推理对于在其之上构建视觉语言动作模型 (VLA) 至关重要，以便轻松地将多模态理解转化为低级动作。因此，最近的工作探索了通过视觉问答类型的监督来增强 MLLM 的体现推理。然而，据报道，这些方法会导致 VLA 性能不稳定，通常只能产生边际甚至负收益。在本文中，我们提出了一种更系统的 MLLM 训练框架 RoboAlign，可以可靠地提高 VLA 性能。我们的关���思想是通过零样本自然语言推理对动作标记进行采样，并使用强化学习（RL）改进这种推理以提高动作准确性。因此，RoboAlign 弥合了 MLLM 中语言和低级操作之间的模态差距，并促进从 MLLM 到 VLA 的知识转移。为了验证 RoboAlign 的有效性，我们通过在 MLLM 主干之上添加基于扩散的动作头来训练 VLA，并在主要机器人基准上对其进行评估。值得注意的是，通过在 SFT 后使用不到 1% 的数据执行基于 RL 的对齐，RoboAlign 在 LIBERO、CALVIN 和现实环境中的 SFT 基线上分别实现了 17.5%、18.9% 和 106.6% 的性能改进。",
-      "authors": "Dongyoung Kim, Sumin Park, Woomin Song, Seungku Kim, Taeyoung Kim, Huiwon Jang, Jinwoo Shin, Jaehyung Kim, Younggyo Seo",
-      "url": "https://huggingface.co/papers/2603.21341",
-      "score": 19,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "19",
-        "paperId": "2603.21341"
-      }
-    },
-    {
-      "id": "2603.21786",
-      "title": "The Universal Normal Embedding",
-      "title_zh": "通用法线嵌入",
-      "description": "Generative models and vision encoders have largely advanced on separate tracks, optimized for different goals and grounded in different mathematical principles. Yet, they share a fundamental property: latent space Gaussianity. Generative models map Gaussian noise to images, while encoders map images to semantic embeddings whose coordinates empirically behave as Gaussian. We hypothesize that both are views of a shared latent source, the Universal Normal Embedding (UNE): an approximately Gaussian latent space from which encoder embeddings and DDIM-inverted noise arise as noisy linear projections. To test our hypothesis, we introduce NoiseZoo, a dataset of per-image latents comprising DDIM-inverted diffusion noise and matching encoder representations (CLIP, DINO). On CelebA, linear probes in both spaces yield strong, aligned attribute predictions, indicating that generative noise encodes meaningful semantics along linear directions. These directions further enable faithful, controllable edits (e.g., smile, gender, age) without architectural changes, where simple orthogonalization mitigates spurious entanglements. Taken together, our results provide empirical support for the UNE hypothesis and reveal a shared Gaussian-like latent geometry that concretely links encoding and generation. Code and data are available https://rbetser.github.io/UNE/",
-      "description_zh": "生成模型和视觉编码器在不同的轨道上取得了很大的进步，针对不同的目标进行了优化，并基于不同的数学原理。然而，它们有一个共同的基本属性：潜在空间高斯性。生成模型将高斯噪声映射到图像，而编码器将图像映射到语义嵌入，其坐标根据经验表现为高斯分布。我们假设两者都是共享潜在源的视图，通用法线嵌入（UNE）：一个近似高斯的潜在空间，编码器嵌入和 DDIM 反转噪声以噪声线性投影的形式出现。为了检验我们的假设，我们引入了 NoiseZoo，这是一个包含 DDIM 反转扩散噪声和匹配编码器表示（CLIP、DINO）的每图像潜在数据集。在 CelebA 上，两个空间中的线性探针都会产生强大的、对齐的属性预测，表明生成噪声沿着线性方向编码有意义的语义。这些方向进一步实现了忠实、可控的编辑（例如微笑、性别、年龄），而无需进行架构更改，其中简单的正交化可以减轻虚假纠缠。总而言之，我们的结果为 UNE 假设提供了实证支持，并揭示了一个共享的类高斯潜在几何结构，该几何结构具体链接了编码和生���。代码和数据可获取 https://rbetser.github.io/UNE/",
-      "authors": "Chen Tasker, Roy Betser, Eyal Gofer, Meir Yossef Levi, Guy Gilboa",
-      "url": "https://huggingface.co/papers/2603.21786",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2603.21786"
       }
     }
   ]
