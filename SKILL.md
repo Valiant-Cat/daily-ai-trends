@@ -9,18 +9,16 @@ Use this repository as a **published feed source**.
 
 ## Default behavior
 
-Read the already-generated feed files directly.
+Read the already-published feeds directly from the canonical raw GitHub URLs.
 
 Primary entry point:
-- `data/feed-all.json`
+- `https://raw.githubusercontent.com/Valiant-Cat/daily-ai-trends/main/data/feed-all.json`
 
 Source-specific feeds:
-- `data/feed-github.json`
-- `data/feed-huggingface.json`
-- `data/feed-x.json`
-- `data/feed-reddit.json`
-
-If the repository is being consumed remotely, read the corresponding raw GitHub file URLs instead of rebuilding anything locally.
+- `https://raw.githubusercontent.com/Valiant-Cat/daily-ai-trends/main/data/feed-github.json`
+- `https://raw.githubusercontent.com/Valiant-Cat/daily-ai-trends/main/data/feed-huggingface.json`
+- `https://raw.githubusercontent.com/Valiant-Cat/daily-ai-trends/main/data/feed-x.json`
+- `https://raw.githubusercontent.com/Valiant-Cat/daily-ai-trends/main/data/feed-reddit.json`
 
 ## Use this skill for
 
