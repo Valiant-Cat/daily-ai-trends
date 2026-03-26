@@ -322,14 +322,15 @@ function extractSubsection(section, headingRegex) {
 }
 
 function parseHighlightEntries(section) {
-  const entryRegex = /-\s+\*\*\[(.*?)\]\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n###\s+\*\*|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
+  const entryRegex = /-\s+\*\*\[(.*?)\]\((https?:\/\/[^)]+)\)\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n###\s+\*\*|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
   const entries = [];
   let match;
   while ((match = entryRegex.exec(section)) !== null) {
     const block = match[0];
     const title = normalizeText(match[1]);
+    const headingUrl = match[2]?.trim() || '';
     const urlMatch = block.match(/(?:Post link:|帖子链接：)\s*\[(.*?)\]\((https?:\/\/[^)]+)\)/i);
-    const url = urlMatch?.[2]?.trim() || '';
+    const url = (urlMatch?.[2]?.trim() || headingUrl || '').trim();
     const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
     const summaryParts = [];
     for (const line of lines) {
