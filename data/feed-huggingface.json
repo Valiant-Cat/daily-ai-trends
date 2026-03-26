@@ -1,8 +1,128 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-26T02:04:36.794Z",
+  "updatedAt": "2026-03-26T03:39:17.421Z",
   "count": 15,
   "items": [
+    {
+      "id": "2603.24472",
+      "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+      "title_zh": "为什么自蒸馏（有时）会降低法学硕士的推理能力？",
+      "description": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces. However, in mathematical reasoning, we find that it can reduce response length while degrading performance. We trace this degradation to the suppression of epistemic verbalization - the model's expression of uncertainty during reasoning. Through controlled experiments varying conditioning context richness and task coverage, we show that conditioning the teacher on rich information suppresses uncertainty expression, enabling rapid in-domain optimization with limited task coverage but harming OOD performance, where unseen problems benefit from expressing uncertainty and adjusting accordingly. Across Qwen3-8B, DeepSeek-Distill-Qwen-7B, and Olmo3-7B-Instruct, we observe performance drops of up to 40%. Our findings highlight that exposing appropriate levels of uncertainty is crucial for robust reasoning and underscore the importance of optimizing reasoning behavior beyond merely reinforcing correct answer traces.",
+      "description_zh": "自蒸馏已成为法学硕士的一种有效的培训后范例，通常可以提高表现，同时缩短推理轨迹。然而，在数学推理中，我们发现它可以减少响应长度，同时降低性能。我们将这种退化追溯到认知语言表达的抑制——模型在推理过程中表达不确定性。通过改变调节上下文丰富度和任务覆盖范围的对照实验，我们表明，使教师适应丰富的信息会抑制不确定性表达，从而在有限的任务覆盖范围内实现快速域内优化，但会损害 OOD 性能，其中看不见的问题受益于表达不确定性和相应调整。在 Qwen3-8B、DeepSeek-Distill-Qwen-7B 和 Olmo3-7B-Instruct 中，我们观察到性能下降高达 40%。我们的研究结果强调，暴露适当水平的不确定性对于稳健推理至关重要，并强调优化推理行为而不仅仅是强化正确答案轨迹的重要性。",
+      "authors": "Jeonghye Kim, Xufang Luo, Minbeom Kim, Sangmook Lee, Dohyung Kim, Jiwon Jeon, Dongsheng Li, Yuqing Yang",
+      "url": "https://huggingface.co/papers/2603.24472",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2603.24472"
+      }
+    },
+    {
+      "id": "2603.21618",
+      "title": "4DGS360: 360° Gaussian Reconstruction of Dynamic Objects from a Single Video",
+      "title_zh": "4DGS360：从单个视频对动态对象进行 360° 高斯重建",
+      "description": "We introduce 4DGS360, a diffusion-free framework for 360^{circ} dynamic object reconstruction from casual monocular video. Existing methods often fail to reconstruct consistent 360^{circ} geometry, as their heavy reliance on 2D-native priors causes initial points to overfit to visible surface in each training view. 4DGS360 addresses this challenge through a advanced 3D-native initialization that mitigates the geometric ambiguity of occluded regions. Our proposed 3D tracker, AnchorTAP3D, produces reinforced 3D point trajectories by leveraging confident 2D track points as anchors, suppressing drift and providing reliable initialization that preserves geometry in occluded regions. This initialization, combined with optimization, yields coherent 360^{circ} 4D reconstructions. We further present iPhone360, a new benchmark where test cameras are placed up to 135^{circ} apart from training views, enabling 360^{circ} evaluation that existing datasets cannot provide. Experiments show that 4DGS360 achieves state-of-the-art performance on the iPhone360, iPhone, and DAVIS datasets, both qualitatively and quantitatively.",
+      "description_zh": "我们引入了 4DGS360，这是一种用于从休闲单目视频重建 360^{circ} 动态对象的无扩散框架。现有方法通常无法重建一致的 360^{circ} 几何形状，因为它们严重依赖 2D 原生先验，导致初始点过度拟合每个训练视图中的可见表面。 4DGS360 通过先进的 3D 原生初始化来解决这一挑战，该初始化可减轻遮挡区域的几何模糊性。我们提出的 3D 跟踪器 AnchorTAP3D 通过利用可靠的 2D 跟踪点作为锚点来生成增强的 3D 点轨迹，抑制漂移并提供可靠的初始化来保留遮挡区域中的几何形状。这种初始化与优化相结合，产生相干的 360^{circ} 4D 重建。我们进一步提出了 iPhone360，这是一个新的基准测试，其中测试相机与训练视图的距离最大为 135^{circ}，从而实现现有数据集无法提供的 360^{circ} 评估。实验表明，4DGS360 在 iPhone360、iPhone 和 DAVIS 数据集上无论在定性还是定量上都实现了最先进的性能。",
+      "authors": "Jae Won Jang, Yeonjin Chang, Wonsik Shin, Juhwan Cho, Nojun Kwak",
+      "url": "https://huggingface.co/papers/2603.21618",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2603.21618"
+      }
+    },
+    {
+      "id": "2603.24533",
+      "title": "UI-Voyager: A Self-Evolving GUI Agent Learning via Failed Experience",
+      "title_zh": "UI-Voyager：通过失败经验学习的自我进化 GUI 代理",
+      "description": "Autonomous mobile GUI agents have attracted increasing attention along with the advancement of Multimodal Large Language Models (MLLMs). However, existing methods still suffer from inefficient learning from failed trajectories and ambiguous credit assignment under sparse rewards for long-horizon GUI tasks. To that end, we propose UI-Voyager, a novel two-stage self-evolving mobile GUI agent. In the first stage, we employ Rejection Fine-Tuning (RFT), which enables the continuous co-evolution of data and models in a fully autonomous loop. The second stage introduces Group Relative Self-Distillation (GRSD), which identifies critical fork points in group rollouts and constructs dense step-level supervision from successful trajectories to correct failed ones. Extensive experiments on AndroidWorld show that our 4B model achieves an 81.0% Pass@1 success rate, outperforming numerous recent baselines and exceeding human-level performance. Ablation and case studies further verify the effectiveness of GRSD. Our method represents a significant leap toward efficient, self-evolving, and high-performance mobile GUI automation without expensive manual data annotation.",
+      "description_zh": "随着多模式大语言模型（MLLM）的进步，自主移动 GUI 代理越来越受到关注。然而，现有的方法仍然存在从失败的轨迹中学习效率低下的问题，以及在长期 GUI 任务奖励稀疏的情况下信用分配不明确的问题。为此，我们提出了 UI-Voyager，一种新颖的两阶段自我进化移动 GUI 代理。在第一阶段，我们采用拒绝微调（RFT），它使得数据和模型能够在完全自主的循环中持续共同进化。第二阶段引入了群体相对自蒸馏（GRSD），它识别群体推出中的关���分叉点，并从成功的轨迹构建密集的步骤级监督以纠正失败的轨迹。 AndroidWorld 上的大量实验表明，我们的 4B 模型实现了 81.0% Pass@1 成功率，超越了许多最近的基线，并超过了人类水平的表现。消融和案例研究进一步验证了GRSD的有效性。我们的方法代表了向高效、自我进化和高性能移动 GUI 自动化的重大飞跃，无需昂贵的手动数据注释。",
+      "authors": "Zichuan Lin, Feiyu Liu, Yijun Yang, Jiafei Lyu, Yiming Gao, Yicheng Liu, Zhicong Lu, Yangbin Yu, Mingyu Yang, Junyou Li, Deheng Ye, Jie Jiang",
+      "url": "https://huggingface.co/papers/2603.24533",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2603.24533"
+      }
+    },
+    {
+      "id": "2603.24440",
+      "title": "CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents",
+      "title_zh": "CUA-Suite：针对计算机使用代理的大量人工注释视频演示",
+      "description": "Computer-use agents (CUAs) hold great promise for automating complex desktop workflows, yet progress toward general-purpose agents is bottlenecked by the scarcity of continuous, high-quality human demonstration videos. Recent work emphasizes that continuous video, not sparse screenshots, is the critical missing ingredient for scaling these agents. However, the largest existing open dataset, ScaleCUA, contains only 2 million screenshots, equating to less than 20 hours of video. To address this bottleneck, we introduce CUA-Suite, a large-scale ecosystem of expert video demonstrations and dense annotations for professional desktop computer-use agents. At its core is VideoCUA, which provides approximately 10,000 human-demonstrated tasks across 87 diverse applications with continuous 30 fps screen recordings, kinematic cursor traces, and multi-layerfed reasoning annotations, totaling approximately 55 hours and 6 million frames of expert video. Unlike sparse datasets that capture only final click coordinates, these continuous video streams preserve the full temporal dynamics of human interaction, forming a superset of information that can be losslessly transformed into the formats required by existing agent frameworks. CUA-Suite further provides two complementary resources: UI-Vision, a rigorous benchmark for evaluating grounding and planning capabilities in CUAs, and GroundCUA, a large-scale grounding dataset with 56K annotated screenshots and over 3.6 million UI element annotations. Preliminary evaluation reveals that current foundation action models struggle substantially with professional desktop applications (~60% task failure rate). Beyond evaluation, CUA-Suite's rich multimodal corpus supports emerging research directions including generalist screen parsing, continuous spatial control, video-based reward modeling, and visual world models. All data and models are publicly released.",
+      "description_zh": "计算机使用代理 (CUA) 在自动化复杂桌面工作流程方面前景广阔，但通用代理的进展却因缺乏连续、高质量的人类演示视频而受到瓶颈。最近的工作强调，连续视频，而不是稀疏的屏幕截图，是扩展这些代理的关键缺失要素。然而，现有最大的开放数据集 ScaleCUA 仅包含 200 万张屏幕截图，相当于不到 20 小时的视频。为了解决这一瓶颈，我们推出了 CUA-Suite，这是一个为专业桌面计算机使用代理提供专家视频演示和密集注释的大型生态系统。其核心是VideoCUA，它在87个不同的应用程序中提供了大约10,000个人工演示的任务，具有连续的30 fps屏幕记录、运动学光标轨迹和多层推理注释，总计约55小时和600万帧的专家视频。与仅捕获最终点击坐标的稀疏数据集不同，这些连续视频流保留了人类交互的完整时间动态，形成了可以无损转换为现有代理框架所需的格式的信息超集。 CUA-Suite 还提供了两个互补资源：UI-Vision（用于评估 CUA 中的接地和规划能力的严格基准）和 GroundCUA（一个包含 56K 带注释的屏幕截图和超过 360 万个 UI 元素注释的大规模接地数据集）。初步评估表明，当前的基础行动模型与专业桌面应用程序存在很大差距（约 60% 的任务失败率）。除了评估之外，CUA-Suite 丰富的多模态语料库还支持新兴的研究方向，包括通用屏幕解析、连续空间控制、基于视频的奖励建模和视觉世界模型。所有数据和模型均公开发布。",
+      "authors": "Xiangru Jian, Shravan Nayak, Kevin Qinghong Lin, Aarash Feizi, Kaixin Li, Patrice Bechard, Spandana Gella, Sai Rajeswar",
+      "url": "https://huggingface.co/papers/2603.24440",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2603.24440"
+      }
+    },
+    {
+      "id": "2603.24506",
+      "title": "Toward Physically Consistent Driving Video World Models under Challenging Trajectories",
+      "title_zh": "在具有挑战性的轨迹下建立物理一致的驾驶视频世界模型",
+      "description": "Video generation models have shown strong potential as world models for autonomous driving simulation. However, existing approaches are primarily trained on real-world driving datasets, which mostly contain natural and safe driving scenarios. As a result, current models often fail when conditioned on challenging or counterfactual trajectories-such as imperfect trajectories generated by simulators or planning systems-producing videos with severe physical inconsistencies and artifacts. To address this limitation, we propose PhyGenesis, a world model designed to generate driving videos with high visual fidelity and strong physical consistency. Our framework consists of two key components: (1) a physical condition generator that transforms potentially invalid trajectory inputs into physically plausible conditions, and (2) a physics-enhanced video generator that produces high-fidelity multi-view driving videos under these conditions. To effectively train these components, we construct a large-scale, physics-rich heterogeneous dataset. Specifically, in addition to real-world driving videos, we generate diverse challenging driving scenarios using the CARLA simulator, from which we derive supervision signals that guide the model to learn physically grounded dynamics under extreme conditions. This challenging-trajectory learning strategy enables trajectory correction and promotes physically consistent video generation. Extensive experiments demonstrate that PhyGenesis consistently outperforms state-of-the-art methods, especially on challenging trajectories. Our project page is available at: https://wm-research.github.io/PhyGenesis/.",
+      "description_zh": "视频生成模型作为自动驾驶模拟的世界模型已显示出强大的潜力。然而，现有的方法主要是在现实世界的驾驶数据集上进行训练，这些数据集大多包含自然和安全的驾驶场景。因此，当前的模型在遇到具有挑战性或反事实的轨迹（例如模拟器或规划系统生成的不完美轨迹）时经常会失败，从而生成具有严重物理不一致和伪影的视频。为了解决这一限制，我们提出了 PhyGenesis，这是一种世界模型，旨在生成具有高视觉保真度和强物理一致性的驾驶视频。我们的框架由两个关键组件组成：(1) 物理条件生成器，将潜在无效的轨迹输入转换为物理上合理的条件；(2) 物理增强视频生成器，在这些条件下生成高保真多视图驾驶视频。为了有效地训练这些组件，我们构建了一个大规模的、物理丰富的异构数据集。具体来说，除了真实世界的驾驶视频外，我们还使用 CARLA 模拟器生成各种具有挑战性的驾驶场景，从中导出监督信号，指导模型学习极端条件下的物理接地动力学。这种具有挑战性的轨迹学习策略可以实现轨迹校正并促进物理一致的视频生成。大量实验表明，PhyGenesis 始终优于最先进的方法，尤其是在具有挑战性的轨迹上。我们的项目页面位于：https://wm-research.github.io/PhyGenesis/。",
+      "authors": "Jiawei Zhou, Zhenxin Zhu, Lingyi Du, Linye Lyu, Lijun Zhou, Zhanqian Wu, Hongcheng Luo, Zhuotao Tian, Bing Wang, Guang Chen, Hangjun Ye, Haiyang Sun, Yu Li",
+      "url": "https://huggingface.co/papers/2603.24506",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.24506"
+      }
+    },
+    {
+      "id": "2603.24458",
+      "title": "OmniWeaving: Towards Unified Video Generation with Free-form Composition and Reasoning",
+      "title_zh": "OmniWeaving：通过自由形式的构图和推理实现统一视频生成",
+      "description": "While proprietary systems such as Seedance-2.0 have achieved remarkable success in omni-capable video generation, open-source alternatives significantly lag behind. Most academic models remain heavily fragmented, and the few existing efforts toward unified video generation still struggle to seamlessly integrate diverse tasks within a single framework. To bridge this gap, we propose OmniWeaving, an omni-level video generation model featuring powerful multimodal composition and reasoning-informed capabilities. By leveraging a massive-scale pretraining dataset that encompasses diverse compositional and reasoning-augmented scenarios, OmniWeaving learns to temporally bind interleaved text, multi-image, and video inputs while acting as an intelligent agent to infer complex user intentions for sophisticated video creation. Furthermore, we introduce IntelligentVBench, the first comprehensive benchmark designed to rigorously assess next-level intelligent unified video generation. Extensive experiments demonstrate that OmniWeaving achieves SoTA performance among open-source unified models. The codes and model will be made publicly available soon. Project Page: https://omniweaving.github.io.",
+      "description_zh": "虽然 Seedance-2.0 等专有系统在全功能视频生成方面取得了显着的成功，但开源替代方案却明显落后。大多数学术模型仍然严重分散，并且现有的少数统一视频生成的努力仍然难以将不同的任务无缝集成到一个框架内。为了弥补这一差距，我们提出了 OmniWeaving，这是一种全方位视频生成模型，具有强大的多模态合成和推理能力。通过利用包含不同组合和推理增强场景的大规模预训练数据集，OmniWeaving 学会暂时绑定交错文本、多图像和视频输入，同时充当智能代理来推断复杂的用户意图以进行复杂的视频创建。此外，我们还推出了IntelligentVBench，这是第一个旨在严格评估下一代智能统一视频生成的综合基准测试。大量实验表明，OmniWeaving 在开源统一模型中实现了 SoTA 性能。代码和模型将很快公开。项目页面：https://omniweaving.github.io。",
+      "authors": "Kaihang Pan, Qi Tian, Jianwei Zhang, Weijie Kong, Jiangfeng Xiong, Yanxin Long, Shixue Zhang, Haiyi Qiu, Tan Wang, Zheqi Lv, Yue Wu, Liefeng Bo, Siliang Tang, Zhao Zhong",
+      "url": "https://huggingface.co/papers/2603.24458",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2603.24458"
+      }
+    },
+    {
+      "id": "2603.24329",
+      "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+      "title_zh": "GameplayQA：3D 虚拟代理的决策密集 POV 同步多视频理解的基准框架",
+      "description": "Multimodal LLMs are increasingly deployed as perceptual backbones for autonomous agents in 3D environments, from robotics to virtual worlds. These applications require agents to perceive rapid state changes, attribute actions to the correct entities, and reason about concurrent multi-agent behaviors from a first-person perspective, capabilities that existing benchmarks do not adequately evaluate. We introduce GameplayQA, a framework for evaluating agentic-centric perception and reasoning through video understanding. Specifically, we densely annotate multiplayer 3D gameplay videos at 1.22 labels/second, with time-synced, concurrent captions of states, actions, and events structured around a triadic system of Self, Other Agents, and the World, a natural decomposition for multi-agent environments. From these annotations, we refined 2.4K diagnostic QA pairs organized into three levels of cognitive complexity, accompanied by a structured distractor taxonomy that enables fine-grained analysis of where models hallucinate. Evaluation of frontier MLLMs reveals a substantial gap from human performance, with common failures in temporal and cross-video grounding, agent-role attribution, and handling the decision density of the game. We hope GameplayQA stimulates future research at the intersection of embodied AI, agentic perception, and world modeling.",
+      "description_zh": "从机器人到虚拟世界，多模态法学硕士越来越多地被部署为 3D 环境中自主代理的感知支柱。这些应用程序要求代理感知快速的状态变化，将操作归因于正确的实体，并从第一人称视角推理并发的多代理行为，现有基准无法充分评估这些功能。我们介绍 GameplayQA，一个通过视频理解评估以主体为中心的感知和推理的框架。具体来说，我们以 1.22 个标签/秒的速度对多人 3D 游戏视频进行密集注释，并使用围绕自我、其他代理和世界的三元系统构建的状态、动作和事件的时间同步、并发字幕，这是多代理环境的自然分解。根据这些注释，我们精炼了 2.4K 诊断 QA 对，将其组织为三个认知复杂度级别，并附有结构化干扰分类法，可以对模型产生幻觉的位置进行细粒度分析。对前沿 MLLM 的评估揭示了与人类表现的巨大差距，在时间和跨视频基础、代理角色归因以及处理游戏决策密度方面存在常见故障。我们希望 GameplayQA 能够促进未来在具体人工智能、代理感知和世界建模交叉领域的研究。",
+      "authors": "Yunzhe Wang, Runhui Xu, Kexin Zheng, Tianyi Zhang, Jayavibhav Niranjan Kogundi, Soham Hans, Volkan Ustun",
+      "url": "https://huggingface.co/papers/2603.24329",
+      "score": 10,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "10",
+        "paperId": "2603.24329"
+      }
+    },
+    {
+      "id": "2603.21289",
+      "title": "When Models Judge Themselves: Unsupervised Self-Evolution for Multimodal Reasoning",
+      "title_zh": "当模型自我判断时：多模态推理的无监督自我进化",
+      "description": "Recent progress in multimodal large language models has led to strong performance on reasoning tasks, but these improvements largely rely on high-quality annotated data or teacher-model distillation, both of which are costly and difficult to scale. To address this, we propose an unsupervised self-evolution training framework for multimodal reasoning that achieves stable performance improvements without using human-annotated answers or external reward models. For each input, we sample multiple reasoning trajectories and jointly model their within group structure. We use the Actor's self-consistency signal as a training prior, and introduce a bounded Judge based modulation to continuously reweight trajectories of different quality. We further model the modulated scores as a group level distribution and convert absolute scores into relative advantages within each group, enabling more robust policy updates. Trained with Group Relative Policy Optimization (GRPO) on unlabeled data, our method consistently improves reasoning performance and generalization on five mathematical reasoning benchmarks, offering a scalable path toward self-evolving multimodal models. The code are available at https://github.com/OPPO-Mente-Lab/LLM-Self-Judge.",
+      "description_zh": "多模态大语言模型的最新进展在推理任务上带来了强大的性能，但这些改进在很大程度上依赖于高质量的注释数据或教师模型蒸馏，这两种方法成本高昂且难以扩展。为了解决这个问题，我们提出了一种用于多模态推理的无监督自我进化训练框架，该框架无需使用人工注释的答案或外部奖励模型即可实现稳定的性能改进。对于每个输入，我们对多个推理轨迹进行采样，并对其组内结构进行联合建模。我们使用 Actor 的自一致性信号作为训练先验，并引入基于有界 Judge 的调制来不断重新加���不同质量的轨迹。我们进一步将调制分数建模为组级别分布，并将绝对分数转换为每个组内的相对优势，从而实现更稳健的策略更新。我们的方法在未标记数据上使用组相对策略优化 (GRPO) 进行训练，不断提高五个数学推理基准的推理性能和泛化能力，为自进化多模态模型提供了一条可扩展的路径。代码可在 https://github.com/OPPO-Mente-Lab/LLM-Self-Judge 获取。",
+      "authors": "Zhengxian Wu, Kai Shi, Chuanrui Zhang, Zirui Liao, Jun Yang, Ni Yang, Qiuying Peng, Luyuan Zhang, Hangrui Xu, Tianhuang Su, Zhenyu Yang, Haonan Lu, Haoqian Wang",
+      "url": "https://huggingface.co/papers/2603.21289",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2603.21289"
+      }
+    },
     {
       "id": "2603.23638",
       "title": "Can LLM Agents Be CFOs? A Benchmark for Resource Allocation in Dynamic Enterprise Environments",
@@ -68,7 +188,7 @@
       "title": "Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents",
       "title_zh": "人工智能代理可以回答您的数据问题吗？数据代理的基准",
       "description": "Users across enterprises increasingly rely on AI agents to query their data through natural language. However, building reliable data agents remains difficult because real-world data is often fragmented across multiple heterogeneous database systems, with inconsistent references and information buried in unstructured text. Existing benchmarks only tackle individual pieces of this problem -- e.g., translating natural-language questions into SQL queries, answering questions over small tables provided in context -- but do not evaluate the full pipeline of integrating, transforming, and analyzing data across multiple database systems. To fill this gap, we present the Data Agent Benchmark (DAB), grounded in a formative study of enterprise data agent workloads across six industries. DAB comprises 54 queries across 12 datasets, 9 domains, and 4 database management systems. On DAB, the best frontier model (Gemini-3-Pro) achieves only 38% pass@1 accuracy. We benchmark five frontier LLMs, analyze their failure modes, and distill takeaways for future data agent development. Our benchmark and experiment code are published at github.com/ucbepic/DataAgentBench.",
-      "description_zh": "企业中的用户越来越依赖人工智能代理通过自然语言查询数据。然而，构建可靠的数据代理仍然很困难，因为现实世界的数据通常分散在多个异构数据库系统中，不一致的引用和隐藏在非结构化文本中的信息。现有的基准测试仅解决该问题的各个部分——例如，将自然语言问题转换为 SQL 查询、回答上下文中提供的小表的问题——但没有评估跨多个数据库系统集成、转换和分析数据的完整流程。为了填补这一空白，我们提出了数据代理基准 (DAB)，该基准基于对六个行业的企业数据代理工作负载的形成性研究。 DAB 包含跨 12 个数据集、9 个域和 4 个数据库管理系统的 54 个查询。在 DAB 上，最好的前沿模型 (Gemini-3-Pro) 仅达到 38% pass@1 准确率。我们对五个前沿法学硕士进行了基准测试，分析了它们的失败模式，并为未来的数据代理开发提炼出要点。我们的基准测试和实验代码发布在 github.com/ucbepic/DataAgentBench。",
+      "description_zh": "企业中的用户越来越依赖人工智能代理通过自然语言查询数据。然而，构建可靠的数据代理仍然很困难，因为现实世界的数据通常分散在多个异构数据库系统中，不一致的引用和隐藏在非结构化文本中的信息。现有的基准测试仅解决该问题的各个部分——例如，将自然语言问题转换为 SQL 查询、回答上下文中提供的小表的问题——但没有评估跨多个数据库系统集成、转换和分析数据的完整流程。为了填补这一空白，我们提出了数据代���基准 (DAB)，该基准基于对六个行业的企业数据代理工作负载的形成性研究。 DAB 包含跨 12 个数据集、9 个域和 4 个数据库管理系统的 54 个查询。在 DAB 上，最好的前沿模型 (Gemini-3-Pro) 仅达到 38% pass@1 准确率。我们对五个前沿法学硕士进行了基准测试，分析了它们的失败模式，并为未来的数据代理开发提炼出要点。我们的基准测试和实验代码发布在 github.com/ucbepic/DataAgentBench。",
       "authors": "Ruiying Ma, Shreya Shankar, Ruiqi Chen, Yiming Lin, Sepanta Zeighami, Rajoshi Ghosh, Abhinav Gupta, Anushrut Gupta, Tanmai Gopal, Aditya G. Parameswaran",
       "url": "https://huggingface.co/papers/2603.20576",
       "score": 0,
@@ -98,7 +218,7 @@
       "title": "Fair splits flip the leaderboard: CHANRG reveals limited generalization in RNA secondary-structure prediction",
       "title_zh": "公平分裂翻转排行榜：CHANGG 揭示 RNA 二级结构预测的有限泛化",
       "description": "Accurate prediction of RNA secondary structure underpins transcriptome annotation, mechanistic analysis of non-coding RNAs, and RNA therapeutic design. Recent gains from deep learning and RNA foundation models are difficult to interpret because current benchmarks may overestimate generalization across RNA families. We present the Comprehensive Hierarchical Annotation of Non-coding RNA Groups (CHANRG), a benchmark of 170{,}083 structurally non-redundant RNAs curated from more than 10 million sequences in Rfam~15.0 using structure-aware deduplication, genome-aware split design and multiscale structural evaluation. Across 29 predictors, foundation-model methods achieved the highest held-out accuracy but lost most of that advantage out of distribution, whereas structured decoders and direct neural predictors remained markedly more robust. This gap persisted after controlling for sequence length and reflected both loss of structural coverage and incorrect higher-order wiring. Together, CHANRG and a padding-free, symmetry-aware evaluation stack provide a stricter and batch-invariant framework for developing RNA structure predictors with demonstrable out-of-distribution robustness.",
-      "description_zh": "RNA 二级结构的准确预测是转录组注释、非编码 RNA 机制分析和 RNA 治疗设计的基础。最近深度学习和 RNA 基础模型取得的成果很难解释，因为当前的基准可能高估了 RNA 家族的泛化能力。我们提出了非编码 RNA 组的综合层次注释 (CHANGR)，这是使用结构感知去重复、基因组感知分割设计和多尺度结构评估从 Rfam~15.0 中超过 1000 万个序列中筛选出的 170{,}083 个结构非冗余 RNA 的基准。在 29 个预测器中，基础模型方法实现了最高的保留精度，但由于分布而失��了大部分优势，而结构化解码器和直接神经预测器仍然明显更加稳健。在控制序列长度后，这种差距仍然存在，反映了结构覆盖范围的损失和不正确的高阶接线。 CHANGG 和无填充、对称感知评估堆栈共同提供了更严格且批次不变的框架，用于开发具有可证明的分布外稳健性的 RNA 结构预测器。",
+      "description_zh": "RNA 二级结构的准确预测是转录组注释、非编码 RNA 机制分析和 RNA 治疗设计的基础。最近深度学习和 RNA 基础模型取得的成果很难解释，因为当前的基准可能高估了 RNA 家族的泛化能力。我们提出了非编码 RNA 组的综合层次注释 (CHANGR)，这是使用结构感知去重复、基因组感知分割设计和多尺度结构评估从 Rfam~15.0 中超过 1000 万个序列中筛选出的 170{,}083 个结构非冗余 RNA 的基准。在 29 个预测器中，基础模型方法实现了最高的保留精度，但由于分布而失去了大部分优势，而结构化解码器和直接神经预测器仍然明显更加稳健。在控制序列长度后，这种差距仍然存在，反映了结构覆盖范围的损失和不正确的高阶接线。 CHANGG 和无填充、对称感知评估堆栈共同提供了更严格且批次不变的框架，用于开发具有可证明的分布外稳健性的 RNA 结构预测器。",
       "authors": "Zhiyuan Chen, Zhenfeng Deng, Pan Deng, Yue Liao, Xiu Su, Peng Ye, Xihui Liu",
       "url": "https://huggingface.co/papers/2603.22330",
       "score": 6,
@@ -106,126 +226,6 @@
         "source": "huggingface",
         "upvotes": "6",
         "paperId": "2603.22330"
-      }
-    },
-    {
-      "id": "2603.23462",
-      "title": "RealMaster: Lifting Rendered Scenes into Photorealistic Video",
-      "title_zh": "RealMaster：将渲染场景提升为逼真视频",
-      "description": "State-of-the-art video generation models produce remarkable photorealism, but they lack the precise control required to align generated content with specific scene requirements. Furthermore, without an underlying explicit geometry, these models cannot guarantee 3D consistency. Conversely, 3D engines offer granular control over every scene element and provide native 3D consistency by design, yet their output often remains trapped in the \"uncanny valley\". Bridging this sim-to-real gap requires both structural precision, where the output must exactly preserve the geometry and dynamics of the input, and global semantic transformation, where materials, lighting, and textures must be holistically transformed to achieve photorealism. We present RealMaster, a method that leverages video diffusion models to lift rendered video into photorealistic video while maintaining full alignment with the output of the 3D engine. To train this model, we generate a paired dataset via an anchor-based propagation strategy, where the first and last frames are enhanced for realism and propagated across the intermediate frames using geometric conditioning cues. We then train an IC-LoRA on these paired videos to distill the high-quality outputs of the pipeline into a model that generalizes beyond the pipeline's constraints, handling objects and characters that appear mid-sequence and enabling inference without requiring anchor frames. Evaluated on complex GTA-V sequences, RealMaster significantly outperforms existing video editing baselines, improving photorealism while preserving the geometry, dynamics, and identity specified by the original 3D control.",
-      "description_zh": "最先进的视频生成模型可产生卓越的照片级真实感，但它们缺乏使生成的内容与特定场景要求保持一致所需的精确控制。此外，如果没有底层的显式几何结构，这些模型就无法保证 3D 一致性。相反，3D 引擎提供对每个场景元素的精细控制，并通过设计提供原生 3D 一致性，但它们的输出常常陷入“恐怖谷”。弥合这种模拟与真实的差距需要结构精度（输出必须准确保留输入的几何形状和动态）和全局语义转换（其中材质、照明和纹理必须整体转换以实现照片级真实感）。我们提出了 RealMaster，这是一种利用视频扩散模型将渲染视频提升为逼真视频的方法，同时保持与 3D 引擎的输出完全对齐。为了训练该模型，我们通过基于锚点的传播策略生成配对数据集，其中第一帧和最后一帧经过增强以实现真实感，并使用几何条件提示在中间帧之间传播。然后，我们在这些配对视频上训练 IC-LoRA，将管道的高质量输出提炼成一个模型，该模型可以超越管道的限制，处理出现在序列中间的对象和角色，并无需锚帧即可进行推理。在复杂的 GTA-V 序列上进行评估后，RealMaster 显着优于现有的视频编辑基线，提高了照片真实感，同时保留了原始 3D 控件指定的几何形状、动态和特性。",
-      "authors": "Dana Cohen-Bar, Ido Sobol, Raphael Bensadoun, Shelly Sheynin, Oran Gafni, Or Patashnik, Daniel Cohen-Or, Amit Zohar",
-      "url": "https://huggingface.co/papers/2603.23462",
-      "score": 22,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "22",
-        "paperId": "2603.23462"
-      }
-    },
-    {
-      "id": "2603.23488",
-      "title": "One View Is Enough! Monocular Training for In-the-Wild Novel View Generation",
-      "title_zh": "一张图就够了！用于野外小说视图生成的单目训练",
-      "description": "Monocular novel-view synthesis has long required multi-view image pairs for supervision, limiting training data scale and diversity. We argue it is not necessary: one view is enough. We present OVIE, trained entirely on unpaired internet images. We leverage a monocular depth estimator as a geometric scaffold at training time: we lift a source image into 3D, apply a sampled camera transformation, and project to obtain a pseudo-target view. To handle disocclusions, we introduce a masked training formulation that restricts geometric, perceptual, and textural losses to valid regions, enabling training on 30 million uncurated images. At inference, OVIE is geometry-free, requiring no depth estimator or 3D representation. Trained exclusively on in-the-wild images, OVIE outperforms prior methods in a zero-shot setting, while being 600x faster than the second-best baseline. Code and models are publicly available at https://github.com/AdrienRR/ovie.",
-      "description_zh": "单目新颖视图合成长期以来需要多视图图像对进行监督，限制了训练数据的规模和多样性。我们认为这是没有必要的：一种观点就足够了。我们展示 OVIE，完全基于不配对的互联网图像进行训练。我们在训练时利用单目深度估计器作为几何支架：我们将源图像提升为 3D，应用采样相机变换，并投影以获得伪目标视图。为了处理遮挡问题，我们引入了一种掩模训练公式，将几何、感知和纹理损失限制在有效区域，从而能够对 3000 万张未经整理的图像进行训练。据推断，OVIE 是不受几何影响的，不需要深度估计器或 3D 表示。 OVIE 专门针对野外图像进行训练，在零样本设置中优于先前的方法，同时比第二最佳基线快 600 倍。代码和模型可在 https://github.com/AdrienRR/ovie 上公开获取。",
-      "authors": "Adrien Ramanana Rahary, Nicolas Dufour, Patrick Perez, David Picard",
-      "url": "https://huggingface.co/papers/2603.23488",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2603.23488"
-      }
-    },
-    {
-      "id": "2603.22758",
-      "title": "Reconstruction-Guided Slot Curriculum: Addressing Object Over-Fragmentation in Video Object-Centric Learning",
-      "title_zh": "重建引导槽课程：解决视频以对象为中心的学习中的对象过度碎片化问题",
-      "description": "Video Object-Centric Learning seeks to decompose raw videos into a small set of object slots, but existing slot-attention models often suffer from severe over-fragmentation. This is because the model is implicitly encouraged to occupy all slots to minimize the reconstruction objective, thereby representing a single object with multiple redundant slots. We tackle this limitation with a reconstruction-guided slot curriculum (SlotCurri). Training starts with only a few coarse slots and progressively allocates new slots where reconstruction error remains high, thus expanding capacity only where it is needed and preventing fragmentation from the outset. Yet, during slot expansion, meaningful sub-parts can emerge only if coarse-level semantics are already well separated; however, with a small initial slot budget and an MSE objective, semantic boundaries remain blurry. Therefore, we augment MSE with a structure-aware loss that preserves local contrast and edge information to encourage each slot to sharpen its semantic boundaries. Lastly, we propose a cyclic inference that rolls slots forward and then backward through the frame sequence, producing temporally consistent object representations even in the earliest frames. All combined, SlotCurri addresses object over-fragmentation by allocating representational capacity where reconstruction fails, further enhanced by structural cues and cyclic inference. Notable FG-ARI gains of +6.8 on YouTube-VIS and +8.3 on MOVi-C validate the effectiveness of SlotCurri. Our code is available at github.com/wjun0830/SlotCurri.",
-      "description_zh": "以视频对象为中心的学习旨在将原始视频分解为一小组对象槽，但现有的槽注意模型经常遭受严重的过度碎片化。这是因为隐含地鼓励模型占据所有槽以最小化重建目标，从而用多个冗余槽表示单个对象。我们通过重建引导老虎机课程（SlotCurri）解决了这一限制。训练仅从几个粗槽开始，并逐步分配重构误差仍然较高的新槽，从而仅在需要的地方扩展容量，并从一开始就防止碎片。然而，在时隙扩展期间，只有当粗级语义已经很好地分离时，有意义的子部分才能出现。然而，由于初始时隙预算较小和 MSE 目标，语义边界仍然模糊。因此，我们通过结构感知损失来增强 MSE，保留局部对比度和边缘信息，以鼓励每个槽锐化其语义边界。最后，我们提出了一种循环推理，可以在帧序列中向前滚动槽，然后向后滚动，即使在最早的帧中也能产生时间一致的对象表示。所有这些结合起来，SlotCurri 通过在重建失败的地方分配表征能力来解决对象过度碎片问题，并通过结构线索和循环推理进一步增强。 FG-ARI 在 YouTube-VIS 上获得 +6.8 的成绩，在 MOVi-C 上获得 +8.3 的显着成绩，验证了 SlotCurri 的有效性。我们的代码可在 github.com/wjun0830/SlotCurri 获取。",
-      "authors": "WonJun Moon, Hyun Seok Seong, Jae-Pil Heo",
-      "url": "https://huggingface.co/papers/2603.22758",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2603.22758"
-      }
-    },
-    {
-      "id": "2603.22359",
-      "title": "STEM Agent: A Self-Adapting, Tool-Enabled, Extensible Architecture for Multi-Protocol AI Agent Systems",
-      "title_zh": "STEM Agent：用于多协议 AI 代理系统的自适应、支持工具、可扩展的架构",
-      "description": "Current AI agent frameworks commit early to a single interaction protocol, a fixed tool integration strategy, and static user models, limiting their deployment across diverse interaction paradigms. To address these constraints, we introduce STEM Agent (Self-adapting, Tool-enabled, Extensible, Multi-agent), a modular architecture inspired by biological pluripotency in which an undifferentiated agent core differentiates into specialized protocol handlers, tool bindings, and memory subsystems that compose into a fully functioning AI system. The framework unifies five interoperability protocols (A2A, AG-UI, A2UI, UCP, and AP2) behind a single gateway, introduces a Caller Profiler that continuously learns user preferences across more than twenty behavioral dimensions, externalizes all domain capabilities through the Model Context Protocol (MCP), and implements a biologically inspired skills acquisition system in which recurring interaction patterns crystallize into reusable agent skills through a maturation lifecycle analogous to cell differentiation. Complementing these capabilities, the memory system incorporates consolidation mechanisms, including episodic pruning, semantic deduplication, and pattern extraction, designed for sub-linear growth under sustained interaction. A comprehensive 413-test suite validates protocol handler behavior and component integration across all five architectural layers, completing in under three seconds.",
-      "description_zh": "当前的人工智能代理框架很早就致力于单一交互协议、固定工具集成策略和静态用户模型，限制了它们在不同交互范式中的部署。为了解决这些限制，我们引入了 STEM Agent（自适应、工具支持、可扩展、多代理），这是一种受生物多能性启发的模块化架构，其中未分化的代理核心分化为专门的协议处理程序、工具绑定和内存子系统，组成一个功能齐全的人工智能系统。该框架将五个互操作性协议（A2A、AG-UI、A2UI、UCP 和 AP2）统一在单个网关后面，引入了呼叫者分析器，该分析器持续学习超过 20 个行为维度的用户偏好，通过模型上下文协议 (MCP) 外部化所有领域功能，并实现了��个受生物学启发的技能获取系统，其中重复的交互模式通过类似于细胞分化的成熟生命周期结晶为可重用的代理技能。作为对这些功能的补充，存储系统整合了整合机制，包括情景修剪、语义重复数据删除和模式提取，专为持续交互下的亚线性增长而设计。全面的 413 测试套件可验证所有五个架构层的协议处理程序行为和组件集成，并在三秒内完成。",
-      "authors": "Alfred Shen, Aaron Shen",
-      "url": "https://huggingface.co/papers/2603.22359",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2603.22359"
-      }
-    },
-    {
-      "id": "2603.23495",
-      "title": "VISion On Request: Enhanced VLLM efficiency with sparse, dynamically selected, vision-language interactions",
-      "title_zh": "VISion On Request：通过稀疏、动态选择的视觉语言交互增强 VLLM 效率",
-      "description": "Existing approaches for improving the efficiency of Large Vision-Language Models (LVLMs) are largely based on the concept of visual token reduction. This approach, however, creates an information bottleneck that impairs performance, especially on challenging tasks that require fine-grained understanding and reasoning. In this work, we challenge this paradigm by introducing VISion On Request (VISOR), a method that reduces inference cost without discarding visual information. Instead of compressing the image, VISOR improves efficiency by sparsifying the interaction between image and text tokens. Specifically, the language model attends to the full set of high-resolution visual tokens through a small, strategically placed set of attention layers: general visual context is provided by efficient cross-attention between text-image, while a few well-placed and dynamically selected self-attention layers refine the visual representations themselves, enabling complex, high-resolution reasoning when needed. Based on this principle, we first train a single universal network on a range of computational budgets by varying the number of self-attention layers, and then introduce a lightweight policy mechanism that dynamically allocates visual computation based on per-sample complexity. Extensive experiments show that VISOR drastically reduces computational cost while matching or exceeding state-of-the-art results across a diverse suite of benchmarks, and excels in challenging tasks that require detailed visual understanding.",
-      "description_zh": "提高大型视觉语言模型（LVLM）效率的现有方法很大程度上基于视觉标记缩减的概念。然而，这种方法会造成信息瓶颈，从而损害性能，尤其是在需要细粒度理解和推理的挑战性任务上。在这项工作中，我们通过引入 VISion On Request (VISOR) 来挑战这种范式，这是一种在不丢弃视觉信息的情况下降低推理成本的方法。 VISOR 不是压缩图像，而是通过稀疏图像和文本标记之间的交互来提高效率。具体来���，语言模型通过一组策略性放置的小型注意力层来处理全套高分辨率视觉标记：一般视觉上下文由文本-图像之间的有效交叉注意力提供，而一些放置良好且动态选择的自注意力层则细化视觉表示本身，从而在需要时实现复杂的高分辨率推理。基于这一原则，我们首先通过改变自注意力层的数量在一系列计算预算上训练单个通用网络，然后引​​入一种轻量级策略机制，根据每个样本的复杂性动态分配视觉计算。大量实验表明，VISOR 极大地降低了计算成本，同时在各种基准测试中达到或超过了最先进的结果，并且在需要详细视觉理解的挑战性任务中表现出色。",
-      "authors": "Adrian Bulat, Alberto Baldrati, Ioannis Maniadis Metaxas, Yassine Ouali, Georgios Tzimiropoulos",
-      "url": "https://huggingface.co/papers/2603.23495",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2603.23495"
-      }
-    },
-    {
-      "id": "2603.23471",
-      "title": "Regulating AI Agents",
-      "title_zh": "监管人工智能代理",
-      "description": "AI agents -- systems that can independently take actions to pursue complex goals with only limited human oversight -- have entered the mainstream. These systems are now being widely used to produce software, conduct business activities, and automate everyday personal tasks. While AI agents implicate many areas of law, ranging from agency law and contracts to tort liability and labor law, they present particularly pressing questions for the most globally consequential AI regulation: the European Union's AI Act. Promulgated prior to the development and widespread use of AI agents, the EU AI Act faces significant obstacles in confronting the governance challenges arising from this transformative technology, such as performance failures in autonomous task execution, the risk of misuse of agents by malicious actors, and unequal access to the economic opportunities afforded by AI agents. We systematically analyze the EU AI Act's response to these challenges, focusing on both the substantive provisions of the regulation and, crucially, the institutional frameworks that aim to support its implementation. Our analysis of the Act's allocation of monitoring and enforcement responsibilities, reliance on industry self-regulation, and level of government resourcing illustrates how a regulatory framework designed for conventional AI systems can be ill-suited to AI agents. Taken together, our findings suggest that policymakers in the EU and beyond will need to change course, and soon, if they are to effectively govern the next generation of AI technology.",
-      "description_zh": "人工智能代理——可以在有限的人类监督下独立采取行动来实现复杂目标的系统——已经进入主流。这些系统现在被广泛用于生产软件、开展业务活动以及自动化日常个人任务。虽然人工智能代理涉及许多法律领域，从代理法和合同到侵权责任和劳动法，但它们对最具全球影响力的人工智能监管：欧盟的人工智能法案提出了特别紧迫的问题。在人工智能代理开发和广泛使用之前颁布的欧盟人工智能法案在应对这种变革性技术带来的治理挑战方面面临着重大障碍，例如自主任务执行中的性能故障、恶意行为者滥用代理的风险以��人工智能代理提供的经济机会的不平等。我们系统地分析了欧盟人工智能法案对这些挑战的回应，重点关注该法规的实质性条款，以及最重要的旨在支持其实施的制度框架。我们对该法案的监控和执行责任分配、对行业自律的依赖以及政府资源水平的分析表明，为传统人工智能系统设计的监管框架可能不适合人工智能代理。总而言之，我们的研究结果表明，欧盟及其他地区的政策制定者如果想有效管理下一代人工智能技术，就需要尽快改变方针。",
-      "authors": "Kathrin Gardhouse, Amin Oueslati, Noam Kolt",
-      "url": "https://huggingface.co/papers/2603.23471",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2603.23471"
-      }
-    },
-    {
-      "id": "2603.22003",
-      "title": "VP-VLA: Visual Prompting as an Interface for Vision-Language-Action Models",
-      "title_zh": "VP-VLA：视觉提示作为视觉-语言-动作模型的界面",
-      "description": "Vision-Language-Action (VLA) models typically map visual observations and linguistic instructions directly to robotic control signals. This \"black-box\" mapping forces a single forward pass to simultaneously handle instruction interpretation, spatial grounding, and low-level control, often leading to poor spatial precision and limited robustness in out-of-distribution scenarios. To address these limitations, we propose VP-VLA, a dual-system framework that decouples high-level reasoning and low-level execution via a structured visual prompting interface. Specifically, a \"System 2 Planner\" decomposes complex instructions into sub-tasks and identifies relevant target objects and goal locations. These spatial anchors are then overlaid directly onto visual observations as structured visual prompts, such as crosshairs and bounding boxes. Guided by these prompts and enhanced by a novel auxiliary visual grounding objective during training, a \"System 1 Controller\" reliably generates precise low-level execution motions. Experiments on the Robocasa-GR1-Tabletop benchmark and SimplerEnv simulation demonstrate that VP-VLA improves success rates by 5% and 8.3%, surpassing competitive baselines including QwenOFT and GR00T-N1.6.",
-      "description_zh": "视觉-语言-动作 (VLA) 模型通常将视觉观察和语言指令直接映射到机器人控制信号。这种“黑盒”映射迫使单个前向传递同时处理指令解释、空间接地和低级控制，通常会导致空间精度差和分布外场景中的鲁棒性有限。为了解决这些限制，我们提出了 VP-VLA，这是一种双系统框架，通过结构化的视觉提示界面将高级推理和低级执行解耦。具体来说，“System 2 Planner”将复杂的指令分解为子任务，并识别相关的目标对象和目标位置。然后，这些空间锚点直接叠加到视觉观察上，作为结构化视觉提示，例如十字准线和边界框。在这些提示的引导下，并在训练期间通过新颖的辅助视觉基础目标进行增强，“系统 1 控制器”可靠地生成精确的低级执行动作。 Robocasa-GR1-Tabletop 基准测试和 SimplerEnv 模拟的实验表明，VP-VLA 将成功率提高了 5% 和 8.3%，超过了包括 QwenOFT 和 GR00T-N1.6 在内的竞争基准。",
-      "authors": "Zixuan Wang, Yuxin Chen, Yuqi Liu, Jinhui Ye, Pengguang Chen, Changsheng Lu, Shu Liu, Jiaya Jia",
-      "url": "https://huggingface.co/papers/2603.22003",
-      "score": 9,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2603.22003"
-      }
-    },
-    {
-      "id": "2603.23499",
-      "title": "DA-Flow: Degradation-Aware Optical Flow Estimation with Diffusion Models",
-      "title_zh": "DA-Flow：使用扩散模型进行退化感知光流估计",
-      "description": "Optical flow models trained on high-quality data often degrade severely when confronted with real-world corruptions such as blur, noise, and compression artifacts. To overcome this limitation, we formulate Degradation-Aware Optical Flow, a new task targeting accurate dense correspondence estimation from real-world corrupted videos. Our key insight is that the intermediate representations of image restoration diffusion models are inherently corruption-aware but lack temporal awareness. To address this limitation, we lift the model to attend across adjacent frames via full spatio-temporal attention, and empirically demonstrate that the resulting features exhibit zero-shot correspondence capabilities. Based on this finding, we present DA-Flow, a hybrid architecture that fuses these diffusion features with convolutional features within an iterative refinement framework. DA-Flow substantially outperforms existing optical flow methods under severe degradation across multiple benchmarks.",
-      "description_zh": "当面对现实世界的损坏（例如模糊、噪声和压缩伪影）时，基于高质量数据训练的光流模型通常会严重退化。为了克服这一限制，我们制定了退化感知光流，这是一项新任务，旨在从现实世界的损坏视频中进行准确的密集对应估计。我们的主要见解是，图像恢复扩散模型的中间表示本质上是腐败感知的，但缺乏时间感知。为了解决这个限制，我们提升模型通过完整的时空注意力来参与相邻帧，并凭经验证明所得特征表现出零样本对应能力。基于这一发现，我们提出了 DA-Flow，这是一种混合架构，它将这些扩散特征与迭代细化框架内的卷积特征融合在一起。在多个基准测试严重退化的情况下，DA-Flow 的性能大大优于现有的光流方法。",
-      "authors": "Jaewon Min, Jaeeun Lee, Yeji Choi, Paul Hyunbin Cho, Jin Hyeon Kim, Tae-Young Lee, Jongsik Ahn, Hwayeong Lee, Seonghyun Park, Seungryong Kim",
-      "url": "https://huggingface.co/papers/2603.23499",
-      "score": 36,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "36",
-        "paperId": "2603.23499"
       }
     }
   ]
