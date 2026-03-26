@@ -322,7 +322,7 @@ function extractSubsection(section, headingRegex) {
 }
 
 function parseHighlightEntries(section) {
-  const entryRegex = /-\s+\*\*\[(.*?)\]\((https?:\/\/[^)]+)\)\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n###\s+\*\*|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
+  const entryRegex = /-\s+\*\*\[(.*?)\](?:\((https?:\/\/[^)]+)\))?\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n###\s+\d+\.|\n###\s+\*\*|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
   const entries = [];
   let match;
   while ((match = entryRegex.exec(section)) !== null) {
@@ -334,7 +334,11 @@ function parseHighlightEntries(section) {
     const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
     const summaryParts = [];
     for (const line of lines) {
-      if (line.startsWith('- **[')) continue;
+      if (line.startsWith('- **[')) {
+        const headlineRemainder = line.replace(/^-\s+\*\*\[(.*?)\](?:\((https?:\/\/[^)]+)\))?\*\*\s*-?\s*/,'').trim();
+        if (headlineRemainder) summaryParts.push(headlineRemainder);
+        continue;
+      }
       if (/^[-*]\s*\*?为何重要|^\*Why it matters:/i.test(line)) continue;
       if (/^[-*]\s*帖子链接：|^Post link:/i.test(line)) continue;
       let cleaned = line.replace(/^[-*]\s*/, '').replace(/^详细内容：/, '').replace(/^What happened:/i, '').trim();
