@@ -103,15 +103,21 @@ function scoreTweet(tweet) {
   return engagement + freshnessBoost + lengthScore + uniquenessScore + structureScore - mentionPenalty;
 }
 
+function restoreProtectedTerms(text) {
+  return String(text || '')
+    .replace(/法学硕士/g, 'LLM')
+    .replace(/法学硕士s/g, 'LLMs');
+}
+
 async function translateText(text) {
   if (!text || text.trim() === '') return text;
   try {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(text)}`;
     const data = JSON.parse(await httpsGetText(url));
-    if (data && data[0]) return data[0].map(item => item[0]).join('');
-    return text;
+    if (data && data[0]) return restoreProtectedTerms(data[0].map(item => item[0]).join(''));
+    return restoreProtectedTerms(text);
   } catch {
-    return text;
+    return restoreProtectedTerms(text);
   }
 }
 
