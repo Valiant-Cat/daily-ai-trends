@@ -1,20 +1,20 @@
 {
   "source": "github",
-  "updatedAt": "2026-03-26T03:39:13.600Z",
-  "count": 12,
+  "updatedAt": "2026-03-27T01:24:56.538Z",
+  "count": 9,
   "items": [
     {
       "id": "mvanhorn-last30days-skill",
       "title": "last30days-skill",
       "title_zh": "last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "description_zh": "AI 代理技能可研究 Reddit、X、YouTube、HN、Polymarket 和网络上的任何主题，然后综合得出有根据的摘要",
+      "description_zh": "AI 代理技能可研究 Reddit、X、YouTube、HN、Polymarket 和网络上的任何主题，然后综合得出有依据的摘要",
       "authors": "mvanhorn",
       "url": "https://github.com/mvanhorn/last30days-skill",
-      "score": 7998,
+      "score": 10315,
       "meta": {
         "source": "github",
-        "stars": "7,998",
+        "stars": "10,315",
         "language": "Python",
         "repo": "mvanhorn/last30days-skill",
         "owner": "mvanhorn",
@@ -22,111 +22,39 @@
       }
     },
     {
-      "id": "bytedance-deer-flow",
-      "title": "deer-flow",
-      "title_zh": "deer-flow",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-      "description_zh": "一个开源的长期 SuperAgent 工具，用于研究、编码和创建。借助沙箱、内存、工具、技能、子代理和消息网关，它可以处理可能需要几分钟到几小时的不同级别的任务。",
-      "authors": "bytedance",
-      "url": "https://github.com/bytedance/deer-flow",
-      "score": 46659,
+      "id": "Yeachan-Heo-oh-my-claudecode",
+      "title": "oh-my-claudecode",
+      "title_zh": "oh-my-claudecode",
+      "description": "Teams-first Multi-agent orchestration for Claude Code",
+      "description_zh": "Claude Code 的团队优先多代理编排",
+      "authors": "Yeachan-Heo",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "score": 12670,
       "meta": {
         "source": "github",
-        "stars": "46,659",
-        "language": "Python",
-        "repo": "bytedance/deer-flow",
-        "owner": "bytedance",
-        "repoName": "deer-flow"
-      }
-    },
-    {
-      "id": "BerriAI-litellm",
-      "title": "litellm",
-      "title_zh": "litellm",
-      "description": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
-      "description_zh": "Python SDK、代理服务器（AI 网关）以 OpenAI（或本机）格式调用 100 多个 LLM API，具有成本跟踪、护栏、负载平衡和日志记录。 [Bedrock、Azure、OpenAI、VertexAI、Cohere、Anthropic、Sagemaker、HuggingFace、VLLM、NVIDIA NIM]",
-      "authors": "BerriAI",
-      "url": "https://github.com/BerriAI/litellm",
-      "score": 40732,
-      "meta": {
-        "source": "github",
-        "stars": "40,732",
-        "language": "Python",
-        "repo": "BerriAI/litellm",
-        "owner": "BerriAI",
-        "repoName": "litellm"
-      }
-    },
-    {
-      "id": "pascalorg-editor",
-      "title": "editor",
-      "title_zh": "editor",
-      "description": "Create and share 3D architectural projects.",
-      "description_zh": "创建和共享 3D 建筑项目。",
-      "authors": "pascalorg",
-      "url": "https://github.com/pascalorg/editor",
-      "score": 6926,
-      "meta": {
-        "source": "github",
-        "stars": "6,926",
+        "stars": "12,670",
         "language": "TypeScript",
-        "repo": "pascalorg/editor",
-        "owner": "pascalorg",
-        "repoName": "editor"
+        "repo": "Yeachan-Heo/oh-my-claudecode",
+        "owner": "Yeachan-Heo",
+        "repoName": "oh-my-claudecode"
       }
     },
     {
-      "id": "letta-ai-claude-subconscious",
-      "title": "claude-subconscious",
-      "title_zh": "claude-subconscious",
-      "description": "Give Claude Code a subconscious",
-      "description_zh": "给克劳德·科德一个潜意识",
-      "authors": "letta-ai",
-      "url": "https://github.com/letta-ai/claude-subconscious",
-      "score": 1529,
+      "id": "virattt-dexter",
+      "title": "dexter",
+      "title_zh": "dexter",
+      "description": "An autonomous agent for deep financial research",
+      "description_zh": "深度金融研究的自主代理",
+      "authors": "virattt",
+      "url": "https://github.com/virattt/dexter",
+      "score": 19001,
       "meta": {
         "source": "github",
-        "stars": "1,529",
+        "stars": "19,001",
         "language": "TypeScript",
-        "repo": "letta-ai/claude-subconscious",
-        "owner": "letta-ai",
-        "repoName": "claude-subconscious"
-      }
-    },
-    {
-      "id": "ruvnet-ruflo",
-      "title": "ruflo",
-      "title_zh": "ruflo",
-      "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
-      "description_zh": "🌊 Claude 领先的代理编排平台。部署智能多代理群、协调自主工作流程并构建对话式 AI 系统。具有企业级架构、分布式集群智能、RAG 集成和本机 Claude Code/Codex 集成",
-      "authors": "ruvnet",
-      "url": "https://github.com/ruvnet/ruflo",
-      "score": 26322,
-      "meta": {
-        "source": "github",
-        "stars": "26,322",
-        "language": "TypeScript",
-        "repo": "ruvnet/ruflo",
-        "owner": "ruvnet",
-        "repoName": "ruflo"
-      }
-    },
-    {
-      "id": "Crosstalk-Solutions-project-nomad",
-      "title": "project-nomad",
-      "title_zh": "project-nomad",
-      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "description_zh": "N.O.M.A.D 项目是一款独立的离线生存计算机，配备了关键工具、知识和人工智能，可让您随时随地了解情况并获得授权。",
-      "authors": "Crosstalk-Solutions",
-      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-      "score": 16751,
-      "meta": {
-        "source": "github",
-        "stars": "16,751",
-        "language": "TypeScript",
-        "repo": "Crosstalk-Solutions/project-nomad",
-        "owner": "Crosstalk-Solutions",
-        "repoName": "project-nomad"
+        "repo": "virattt/dexter",
+        "owner": "virattt",
+        "repoName": "dexter"
       }
     },
     {
@@ -137,10 +65,10 @@
       "description_zh": "π RuView：WiFi DensePose 将商用 WiFi 信号转化为实时人体姿势估计、生命体征监测和存在检测 - 所有这些都无需视频像素。",
       "authors": "ruvnet",
       "url": "https://github.com/ruvnet/RuView",
-      "score": 42408,
+      "score": 43188,
       "meta": {
         "source": "github",
-        "stars": "42,408",
+        "stars": "43,188",
         "language": "Rust",
         "repo": "ruvnet/RuView",
         "owner": "ruvnet",
@@ -148,75 +76,93 @@
       }
     },
     {
-      "id": "supermemoryai-supermemory",
-      "title": "supermemory",
-      "title_zh": "supermemory",
-      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
-      "description_zh": "内存引擎和应用程序速度极快，可扩展。 AI时代的内存API。",
-      "authors": "supermemoryai",
-      "url": "https://github.com/supermemoryai/supermemory",
-      "score": 19286,
+      "id": "bytedance-deer-flow",
+      "title": "deer-flow",
+      "title_zh": "deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "description_zh": "一个开源的长期 SuperAgent 工具，用于研究、编码和创建。借助沙箱、内存、工具、技能、子代理和消息网关，它可以处理可能需要几分钟到几小时的不同级别的任务。",
+      "authors": "bytedance",
+      "url": "https://github.com/bytedance/deer-flow",
+      "score": 48419,
       "meta": {
         "source": "github",
-        "stars": "19,286",
+        "stars": "48,419",
+        "language": "Python",
+        "repo": "bytedance/deer-flow",
+        "owner": "bytedance",
+        "repoName": "deer-flow"
+      }
+    },
+    {
+      "id": "Vaibhavs10-insanely-fast-whisper",
+      "title": "insanely-fast-whisper",
+      "title_zh": "insanely-fast-whisper",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "Vaibhavs10",
+      "url": "https://github.com/Vaibhavs10/insanely-fast-whisper",
+      "score": 11235,
+      "meta": {
+        "source": "github",
+        "stars": "11,235",
+        "language": "Jupyter Notebook",
+        "repo": "Vaibhavs10/insanely-fast-whisper",
+        "owner": "Vaibhavs10",
+        "repoName": "insanely-fast-whisper"
+      }
+    },
+    {
+      "id": "agentscope-ai-agentscope",
+      "title": "agentscope",
+      "title_zh": "agentscope",
+      "description": "Build and run agents you can see, understand and trust.",
+      "description_zh": "构建并运行您可以看到、理解和信任的代理。",
+      "authors": "agentscope-ai",
+      "url": "https://github.com/agentscope-ai/agentscope",
+      "score": 20437,
+      "meta": {
+        "source": "github",
+        "stars": "20,437",
+        "language": "Python",
+        "repo": "agentscope-ai/agentscope",
+        "owner": "agentscope-ai",
+        "repoName": "agentscope"
+      }
+    },
+    {
+      "id": "twentyhq-twenty",
+      "title": "twenty",
+      "title_zh": "twenty",
+      "description": "Building a modern alternative to Salesforce, powered by the community.",
+      "description_zh": "构建由社区支持的 Salesforce 的现代替代方案。",
+      "authors": "twentyhq",
+      "url": "https://github.com/twentyhq/twenty",
+      "score": 41280,
+      "meta": {
+        "source": "github",
+        "stars": "41,280",
         "language": "TypeScript",
-        "repo": "supermemoryai/supermemory",
-        "owner": "supermemoryai",
-        "repoName": "supermemory"
+        "repo": "twentyhq/twenty",
+        "owner": "twentyhq",
+        "repoName": "twenty"
       }
     },
     {
-      "id": "FujiwaraChoki-MoneyPrinterV2",
-      "title": "MoneyPrinterV2",
-      "title_zh": "MoneyPrinterV2",
-      "description": "Automate the process of making money online.",
-      "description_zh": "自动化在线赚钱的过程。",
-      "authors": "FujiwaraChoki",
-      "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
-      "score": 25676,
+      "id": "datalab-to-chandra",
+      "title": "chandra",
+      "title_zh": "chandra",
+      "description": "OCR model that handles complex tables, forms, handwriting with full layout.",
+      "description_zh": "OCR 模型可处理复杂的表格、表格、具有完整布局的手写内容。",
+      "authors": "datalab-to",
+      "url": "https://github.com/datalab-to/chandra",
+      "score": 6172,
       "meta": {
         "source": "github",
-        "stars": "25,676",
+        "stars": "6,172",
         "language": "Python",
-        "repo": "FujiwaraChoki/MoneyPrinterV2",
-        "owner": "FujiwaraChoki",
-        "repoName": "MoneyPrinterV2"
-      }
-    },
-    {
-      "id": "usestrix-strix",
-      "title": "strix",
-      "title_zh": "strix",
-      "description": "Open-source AI hackers to find and fix your app’s vulnerabilities.",
-      "description_zh": "开源人工智能黑客可以查找并修复您的应用程序的漏洞。",
-      "authors": "usestrix",
-      "url": "https://github.com/usestrix/strix",
-      "score": 21804,
-      "meta": {
-        "source": "github",
-        "stars": "21,804",
-        "language": "Python",
-        "repo": "usestrix/strix",
-        "owner": "usestrix",
-        "repoName": "strix"
-      }
-    },
-    {
-      "id": "hsliuping-TradingAgents-CN",
-      "title": "TradingAgents-CN",
-      "title_zh": "TradingAgents-CN",
-      "description": "基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版",
-      "description_zh": "基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版",
-      "authors": "hsliuping",
-      "url": "https://github.com/hsliuping/TradingAgents-CN",
-      "score": 21397,
-      "meta": {
-        "source": "github",
-        "stars": "21,397",
-        "language": "Python",
-        "repo": "hsliuping/TradingAgents-CN",
-        "owner": "hsliuping",
-        "repoName": "TradingAgents-CN"
+        "repo": "datalab-to/chandra",
+        "owner": "datalab-to",
+        "repoName": "chandra"
       }
     }
   ]
