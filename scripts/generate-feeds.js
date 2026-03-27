@@ -373,7 +373,28 @@ async function buildRedditFeed() {
   const zhHighlights = zhTrend ? parseHighlightEntries(zhTrend) : [];
   const zhMap = new Map(zhHighlights.map(entry => [entry.url, entry]));
 
-  const rawItems = enHighlights.slice(0, 10).map((entry, index) => {
+  const fallbackRows = Array.from(metricsMap.entries()).slice(0, 10).map(([url, metrics], index) => ({
+    id: url.split('/').pop() || `reddit-fallback-${index}`,
+    title: metrics.title || `Reddit Highlight ${index + 1}`,
+    title_zh: '',
+    description: `${metrics.subreddit || 'Reddit'} 社区今日高热讨论，分类 ${metrics.category || 'Discussion'}，评论 ${metrics.comments || '0'} 条。`,
+    description_zh: '',
+    authors: metrics.subreddit || 'Reddit',
+    url,
+    score: Number(metrics.score || 0),
+    meta: {
+      source: 'reddit',
+      subreddit: metrics.subreddit || '',
+      subredditUrl: metrics.subredditUrl || '',
+      comments: metrics.comments || '0',
+      category: metrics.category || '',
+      posted: metrics.posted || '',
+      redditSource: 'liyedanpdx/reddit-ai-trends',
+      section: 'today-table-fallback'
+    }
+  }));
+
+  const rawItems = (enHighlights.length > 0 ? enHighlights.slice(0, 10).map((entry, index) => {
     const zhEntry = zhMap.get(entry.url);
     const metrics = metricsMap.get(entry.url) || {};
     return baseItem({
@@ -396,7 +417,7 @@ async function buildRedditFeed() {
         section: 'today-highlights'
       }
     });
-  });
+  }) : fallbackRows).map(item => baseItem(item));
 
   const items = [];
   for (const item of rawItems) {
