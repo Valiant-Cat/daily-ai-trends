@@ -1,8 +1,23 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-27T20:03:57.973Z",
+  "updatedAt": "2026-03-28T19:55:42.067Z",
   "count": 15,
   "items": [
+    {
+      "id": "2603.24836",
+      "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
+      "title_zh": "WAFT-Stereo：用于立体匹配的单独变形场变换",
+      "description": "We introduce WAFT-Stereo, a simple and effective warping-based method for stereo matching. WAFT-Stereo demonstrates that cost volumes, a common design used in many leading methods, are not necessary for strong performance and can be replaced by warping with improved efficiency. WAFT-Stereo ranks first on ETH3D, KITTI and Middlebury public benchmarks, reducing the zero-shot error by 81% on ETH3D benchmark, while being 1.8-6.7x faster than competitive methods. Code and model weights are available at https://github.com/princeton-vl/WAFT-Stereo.",
+      "description_zh": "我们介绍 WAFT-Stereo，一种简单有效的基于变形的立体匹配方法。 WAFT-Stereo 表明，成本体积是许多领先方法中使用的常见设计，对于强大的性能来说并不是必需的，并且可以通过提高效率的扭曲来代替。 WAFT-Stereo 在 ETH3D、KITTI 和 Middlebury 公共基准测试中排名第一，在 ETH3D 基准测试中将零样本错误降低了 81%，同时比竞争方法快 1.8-6.7 倍。代码和模型权重可在 https://github.com/princeton-vl/WAFT-Stereo 获取。",
+      "authors": "Yihan Wang, Jia Deng",
+      "url": "https://huggingface.co/papers/2603.24836",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.24836"
+      }
+    },
     {
       "id": "2603.24517",
       "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
@@ -11,10 +26,10 @@
       "description_zh": "代理变异算子（AVO）是一个新的进化变异算子家族，它用自主编码代理取代了经典进化搜索的固定突变、交叉和手工设计的启发式方法。 AVO 没有将语言模型限制在规定管道内的候选生成，而是将变体实例化为自我导向的代理循环，可以参考当前的谱系、特定领域的知识库和执行反馈来提出、修复、批评和验证实现编辑。我们在 NVIDIA Blackwell (B200) GPU 上评估了 AVO 的注意力，这是人工智能中最积极优化的内核目标之一。经过 7 天的多头注意力持续自主进化，AVO 发现在评估的配置中，内核的性能优于 cuDNN 高达 3.5%，优于 FlashAttention-4 高达 10.5%。所发现的优化很容易转移到分组查询注意力，只需要 30 分钟的额外自主适应，并且比 cuDNN 获得高达 7.0% 的收益，比 FlashAttention-4 获得高达 9.3% 的收益。总之，这些结果表明，代理变异算子通过将代理从候选生成器提升为变异算子，超越了之前的 LLM 在循环进化管道，并且可以发现性能关键的微架构优化，从而产生超越当今最先进的 GPU 硬件上最先进的专家设计的注意力实现的内核。",
       "authors": "Terry Chen, Zhifan Ye, Bing Xu, Zihao Ye, Timmy Liu, Ali Hassani, Tianqi Chen, Andrew Kerr, Haicheng Wu, Yang Xu, Yu-Jung Chen, Hanfeng Chen, Aditya Kane, Ronny Krashinsky, Ming-Yu Liu, Vinod Grover, Luis Ceze, Roger Bringmann, John Tran, Wei Liu, Fung Xie, Michael Lightstone, Humphrey Shi",
       "url": "https://huggingface.co/papers/2603.24517",
-      "score": 0,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "5",
         "paperId": "2603.24517"
       }
     },
@@ -23,13 +38,13 @@
       "title": "Reaching Beyond the Mode: RL for Distributional Reasoning in Language Models",
       "title_zh": "超越模式：语言模型中分布式推理的强化学习",
       "description": "Given a question, a language model (LM) implicitly encodes a distribution over possible answers. In practice, post-training procedures for LMs often collapse this distribution onto a single dominant mode. While this is generally not a problem for benchmark-style evaluations that assume one correct answer, many real-world tasks inherently involve multiple valid answers or irreducible uncertainty. Examples include medical diagnosis, ambiguous question answering, and settings with incomplete information. In these cases, we would like LMs to generate multiple plausible hypotheses, ideally with confidence estimates for each one, and without computationally intensive repeated sampling to generate non-modal answers. This paper describes a multi-answer reinforcement learning approach for training LMs to perform distributional reasoning over multiple answers during inference. We modify the RL objective to enable models to explicitly generate multiple candidate answers in a single forward pass, internalizing aspects of inference-time search into the model's generative process. Across question-answering, medical diagnostic, and coding benchmarks, we observe improved diversity, coverage, and set-level calibration scores compared to single answer trained baselines. Models trained with our approach require fewer tokens to generate multiple answers than competing approaches. On coding tasks, they are also substantially more accurate. These results position multi-answer RL as a principled and compute-efficient alternative to inference-time scaling procedures such as best-of-k. Code and more information can be found at https://multi-answer-rl.github.io/.",
-      "description_zh": "给定一个问题，语言模型 (LM) 隐式编码可能答案的分布。在实践中，LM 的后训练程序通常会将这种分布压缩为单一主导模式。虽然对于假设一个正确答案的基准式评估来说，这通常不是问题，但许多现实世界的任务本质上涉及多个有效答案或不可减少的不确定性。例如，医疗诊断、模糊的问答以及信息不完整的设置。在这些情况下，我们希望 LM 生成多个似是而非的假设，理想情况下对每个假设都有置信度估计，并且不需要计算密集型重复采样来生成非模态答案��本文描述了一种多答案强化学习方法，用于训练 LM 在推理过程中对多个答案执行分布式推理。我们修改了 RL 目标，使模型能够在一次前向传递中显式生成多个候选答案，将推理时间搜索的各个方面内化到模型的生成过程中。在问答、医疗诊断和编码基准方面，我们观察到与单一答案训练的基线相比，多样性、覆盖范围和集合级别校准分数有所提高。与竞争方法相比，使用我们的方法训练的模型需要更少的令牌来生成多个答案。在编码任务上，它们也更加准确。这些结果将多答案强化学习定位为推理时间缩放程序（例如 best-of-k）的一种有原则且计算效率高的替代方案。代码和更多信息可以在 https://multi-answer-rl.github.io/ 找到。",
+      "description_zh": "给定一个问题，语言模型 (LM) 隐式编码可能答案的分布。在实践中，LM 的后训练程序通常会将这种分布压缩为单一主导模式。虽然对于假设一个正确答案的基准式评估来说，这通常不是问题，但许多现实世界的任务本质上涉及多个有效答案或不可减少的不确定性。例如，医疗诊断、模糊的问答以及信息不完整的设置。在这些情况下，我们希望 LM 生成多个似是而非的假设，理想情况下对每个假设都有置信度估计，并且不需要计算密集型重复采样来生成非模态答案���本文描述了一种多答案强化学习方法，用于训练 LM 在推理过程中对多个答案执行分布式推理。我们修改了 RL 目标，使模型能够在一次前向传递中显式生成多个候选答案，将推理时间搜索的各个方面内化到模型的生成过程中。在问答、医疗诊断和编码基准方面，我们观察到与单一答案训练的基线相比，多样性、覆盖范围和集合级别校准分数有所提高。与竞争方法相比，使用我们的方法训练的模型需要更少的令牌来生成多个答案。在编码任务上，它们也更加准确。这些结果将多答案强化学习定位为推理时间缩放程序（例如 best-of-k）的一种有原则且计算效率高的替代方案。代码和更多信息可以在 https://multi-answer-rl.github.io/ 找到。",
       "authors": "Isha Puri, Mehul Damani, Idan Shenfeld, Marzyeh Ghassemi, Jacob Andreas, Yoon Kim",
       "url": "https://huggingface.co/papers/2603.24844",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2603.24844"
       }
     },
@@ -56,10 +71,10 @@
       "description_zh": "可扩展矢量图形 (SVG) 是技术插图和数字设计的基本格式，提供精确的分辨率独立性和灵活的语义可编辑性。然而，在实践中，原始矢量源文件经常丢失或无法访问，只留下难以修改或缩放的“平面”光栅化版本（例如 PNG 或 JPEG）。手动重建这些图形是一个极其耗费人力的过程，需要专门的专业知识来恢复原始的几何意图。为了弥补这一差距，我们提出了 VFIG，这是一个经过训练的视觉语言模型系列，用于复杂和高保真图形到 SVG 转换。虽然此任务本质上是数据驱动的，但现有数据集通常规模较小，并且缺乏专业图表的复杂性。我们通过引入 VFIG-DATA 来解决这个问题，VFIG-DATA 是一个包含 66K 个高质量图形-SVG 对的大型数据集，由现实世界的纸质图形和程序生成的图表的多种组合组成。认识到 SVG 由重复出现的基元和分层局部结构组成，我们引入了从粗到精的培训课程，从监督微调 (SFT) 开始学习原子基元，然后过渡到强化学习 (RL) 细化，以优化全局图保真度、布局一致性和拓扑边缘情况。最后，我们介绍 VFIG-BENCH，这是一个综合评估套件，具有新颖的指标，旨在测量复杂图形的结构完整性。 VFIG 在开源模型中实现了最先进的性能，与 GPT-5.2 相当，在 VFIG-BENCH 上获得了 0.829 的 VLM-Judge 分数。",
       "authors": "Qijia He, Xunmei Liu, Hammaad Memon, Ziang Li, Zixian Ma, Jaemin Cho, Jason Ren, Daniel S Weld, Ranjay Krishna",
       "url": "https://huggingface.co/papers/2603.24575",
-      "score": 0,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "10",
         "paperId": "2603.24575"
       }
     },
@@ -71,10 +86,10 @@
       "description_zh": "对于在动态环境中运行的机器人代理来说，从流视频观察中学习视觉状态表示对于顺序决策至关重要。最近的自我监督学习方法在视觉任务中表现出了很强的可迁移性，但它们没有明确解决良好的视觉状态应该编码的内容。我们认为，有效的视觉状态必须通过联合编码场景元素的语义标识及其空间位置来捕获“什么在哪里”，从而能够可靠地检测观察中的微妙动态。为此，我们提出了 CroBo，一种基于全局到局部重建目标的视觉状态表示学习框架。给定压缩为紧凑瓶颈标记的参考观察结果，CroBo 学习使用全局瓶颈标记作为上下文，从稀疏的可见线索中重建局部目标作物中严重屏蔽的补丁。这一学习目标鼓励瓶颈令牌对场景范围语义实体的细粒度表示进行编码，包括它们的身份、空间位置和配置。因此，学习到的视觉状态揭示了场景元素如何随着时间的推移移动和交互，支持顺序决策。我们在各种基于视觉的机器人策略学习基���上评估了 CroBo，它实现了最先进的性能。重建分析和感知直线度实验进一步表明，学习到的表示保留了像素级场景组成，并对观察中的移动内容进行编码。项目页面位于：https://seokminlee-chris.github.io/CroBo-ProjectPage。",
       "authors": "Seokmin Lee, Yunghee Lee, Byeonghyun Pak, Byeongju Woo",
       "url": "https://huggingface.co/papers/2603.13904",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2603.13904"
       }
     },
@@ -101,10 +116,10 @@
       "description_zh": "思想链 (CoT) 提示已扩展到大型音频语言模型 (LALM) 中以引发推理，但在不进行训练的情况下提高其有效性仍然具有挑战性。我们研究推理时间模型引导作为一种无需训练的方法来改进 LALM 推理。我们使用不同的信息源引入了三种策略，并通过四个 LALM 和四个基准对其进行评估。结果显示，与 CoT 提示相比，总体准确率提高了 4.4%。值得注意的是，我们确定了一种跨模式传输，其中从少量文本样本派生的引导向量有效地指导基于语音的推理，展示了高数据效率。我们还检查超参数敏感性以了解这些方法的稳健性。我们的研究结果将模型引导定位为加强 LALM 推理的实用方向。",
       "authors": "Lok-Lam Ieong, Chia-Chien Chen, Chih-Kai Yang, Yu-Han Huang, An-Yu Cheng, Hung-yi Lee",
       "url": "https://huggingface.co/papers/2603.14636",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2603.14636"
       }
     },
@@ -131,10 +146,10 @@
       "description_zh": "控制视频和音频生成需要多种模式，从深度和姿势到相机轨迹和音频转换，但现有方法要么为一组固定的控制训练单个整体模型，要么为每种新模式引入昂贵的架构更改。我们引入了 AVControl，这是一个基于 LTX-2 的轻量级可扩展框架，LTX-2 是一个联合视听基础模型，其中每个控制模态都在并行画布上作为单独的 LoRA 进行训练，提供参考信号作为注意层中的附加标记，除了 LoRA 适配器本身之外，不需要进行任何架构更改。我们证明，简单地将基于图像的上下文方法扩展到视频无法实现结构控制，而我们的��行画布方法解决了这个问题。在 VACE 基准测试中，我们在深度和姿势引导生成、修复和修复方面优于所有评估的基准，并在相机控制和视听基准方面显示出有竞争力的结果。我们的框架支持多种独立训练的模式：空间对齐的控制，例如深度、姿态和边缘、具有内在函数的相机轨迹、稀疏运动控制、视频编辑，以及据我们所知，用于联合生成模型的第一个模块化视听控制。我们的方法具有计算效率和数据效率：每种模式仅需要一��小数据集，并在几百到几千个训练步骤内收敛，这只是整体替代方案预算的一小部分。我们公开发布我们的代码和经过训练的 LoRA 检查点。",
       "authors": "Matan Ben-Yosef, Tavi Halperin, Naomi Ken Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen, Urska Jelercic, Ofir Bibi",
       "url": "https://huggingface.co/papers/2603.24793",
-      "score": 9,
+      "score": 15,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
+        "upvotes": "15",
         "paperId": "2603.24793"
       }
     },
@@ -143,13 +158,13 @@
       "title": "Calibri: Enhancing Diffusion Transformers via Parameter-Efficient Calibration",
       "title_zh": "Calibri：通过参数高效校准增强扩散变压器",
       "description": "In this paper, we uncover the hidden potential of Diffusion Transformers (DiTs) to significantly enhance generative tasks. Through an in-depth analysis of the denoising process, we demonstrate that introducing a single learned scaling parameter can significantly improve the performance of DiT blocks. Building on this insight, we propose Calibri, a parameter-efficient approach that optimally calibrates DiT components to elevate generative quality. Calibri frames DiT calibration as a black-box reward optimization problem, which is efficiently solved using an evolutionary algorithm and modifies just ~100 parameters. Experimental results reveal that despite its lightweight design, Calibri consistently improves performance across various text-to-image models. Notably, Calibri also reduces the inference steps required for image generation, all while maintaining high-quality outputs.",
-      "description_zh": "在本文中，我们揭示了扩散变压器（DiT）显着增强生成任务的隐藏潜力。通过对去噪过程的深入分析，我们证明引入单个学习缩放参数可以显着提高 DiT 块的性能。基于这一见解，我们提出了 Calibri，这是一种参数高效的方法，可以优化校准 DiT 组件以提高生成质量。 Calibri 将 DiT 校准视为一个黑盒奖励优化问题，可以使用进化算法有效解决该问题，并且仅修改约 100 个参数。实��结果表明，尽管采用轻量级设计，Calibri 仍能持续提高各种文本到图像模型的性能。值得注意的是，Calibri 还减少了图像生成所需的推理步骤，同时保持高质量的输出。",
+      "description_zh": "在本文中，我们揭示了扩散变压器（DiT）显着增强生成任务的隐藏潜力。通过对去噪过程的深入分析，我们证明引入单个学习缩放参数可以显着提高 DiT 块的性能。基于这一见解，我们提出了 Calibri，这是一种参数高效的方法，可以优化校准 DiT 组件以提高生成质量。 Calibri 将 DiT 校准视为一个黑盒奖励优化问题，可以使用进化算法有效解决该问题，并且仅修改约 100 个参数。实验结果表明，尽管采用轻量级设计，Calibri 仍能持续提高各种文本到图像模型的性能。值得注意的是，Calibri 还减少了图像生成所需的推理步骤，同时保持高质量的输出。",
       "authors": "Danil Tokhchukov, Aysel Mirzoeva, Andrey Kuznetsov, Konstantin Sobolev",
       "url": "https://huggingface.co/papers/2603.24800",
-      "score": 35,
+      "score": 47,
       "meta": {
         "source": "huggingface",
-        "upvotes": "35",
+        "upvotes": "47",
         "paperId": "2603.24800"
       }
     },
@@ -161,10 +176,10 @@
       "description_zh": "记忆增强的 LLM 代理维护外部记忆库以支持长期交互，但大多数现有系统将构建、检索和利用视为独立的子例程。这带来了两个相互关联的挑战：记忆周期前向路径上的战略盲目性，其中构建和检索是由局部启发式驱动的，而不是明确的战略推理；以及后向路径上的稀疏、延迟的监督，其中下游故障很少转化为记忆库的直接修复。为了应对这些挑战，我们提出了 MemMA，这是一种即插即用的多代理框架，可以协调前向和后向路径上的内存周期。在前进的道路上，元思考者会生成结构化指导，在构建期间引导内存管理器，并在迭代检索期间指导查询推理器。在后向路径上，MemMA引入了原位自进化内存构造，它综合探针QA对，验证当前内存，并在内存最终确定之前将故障转换为修复动作。 LoCoMo 上的大量实验表明，MemMA 在多个 LLM 主干上始终优于现有基线，并以即插即用的方式改进了三种不同的存储后端。我们的代码可在 https://github.com/ventr1c/memma 上公开获取。",
       "authors": "Minhua Lin, Zhiwei Zhang, Hanqing Lu, Hui Liu, Xianfeng Tang, Qi He, Xiang Zhang, Suhang Wang",
       "url": "https://huggingface.co/papers/2603.18718",
-      "score": 1,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "6",
         "paperId": "2603.18718"
       }
     },
@@ -176,10 +191,10 @@
       "description_zh": "在政策蒸馏 (OPD) 对于大型语言模型 (LLM) 训练后很有吸引力，因为它评估教师对学生生成的部署的反馈，而不是固定的教师跟踪。然而，在长期设置中，常见的采样令牌变体是脆弱的：它减少了与单令牌信号的分布匹配，并且随着推出远离教师经常访问的前缀而变得越来越不可靠。我们从估算器和实施方面重新审视 OPD。理论上，令牌级 OPD 相对于序列级反向 KL 有偏差，但它具有更严格的最坏情况方差界限；我们的玩具研究在经验上显示了相同的权衡，更强的未来奖励耦合会产生更高的梯度方差和更不稳定的学习。根据经验，我们确定了采样令牌 OPD 的三种故障模式：不平衡的单令牌信号、教师对学生生成的前缀的指导不可靠以及由令牌生成器或特殊令牌不匹配引起的失真。我们通过教师 top-K 本地支持匹配来解决这些问题，实现为带有 top-p 推出采样和特殊令牌屏蔽的截断反向 KL。在单任务数学推理和多任务代理加数学训练中，该目标比采样令牌 OPD 产生更稳定的优化和更好的下游性能。",
       "authors": "Yuqian Fu, Haohuan Huang, Kaiwen Jiang, Yuanheng Zhu, Dongbin Zhao",
       "url": "https://huggingface.co/papers/2603.25562",
-      "score": 1,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "3",
         "paperId": "2603.25562"
       }
     },
@@ -191,10 +206,10 @@
       "description_zh": "我们展示了一种基于外延单晶金属卤化物钙钛矿的全固态半导体器件，能够通过栅极电压对钙钛矿光致发光进行可逆控制。与电致发光二极管本质上不同，这种光致发光场效应晶体管利用栅极电场静电调制移动电荷的界面密度，从而影响光载流子的辐射和非辐射复合通道。改变此类晶体管中的栅极电压可有效改变非辐射界面复合速率，并将光致发光强度调制 65% 至 98%（取决于温度）。在有利的选通下，可以实现几乎完全消除非辐射损耗。这种功能，加上外延钙钛矿薄膜的高吸收系数、可控厚度和宏观均匀形态而可能产生的强可见光范围吸收和发射，导致在大面积薄膜器件中实现高外部光致发光量子效率。这种高效、可扩展、静电可调的光电开关拓宽了金属卤化物钙钛矿在光子学和光电子学中的潜在应用。",
       "authors": "Vladimir Bruevich, Dmitry Maslennikov, Beier Hu, Artem A. Bakulin, Vitaly Podzorov",
       "url": "https://huggingface.co/papers/2603.25718",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2603.25718"
       }
     },
@@ -211,21 +226,6 @@
         "source": "huggingface",
         "upvotes": "4",
         "paperId": "2603.25702"
-      }
-    },
-    {
-      "id": "2603.14366",
-      "title": "Representation Alignment for Just Image Transformers is not Easier than You Think",
-      "title_zh": "仅图像转换器的表示对齐并不比您想象的容易",
-      "description": "Representation Alignment (REPA) has emerged as a simple way to accelerate Diffusion Transformers training in latent space. At the same time, pixel-space diffusion transformers such as Just image Transformers (JiT) have attracted growing attention because they remove a dependency on a pretrained tokenizer, and then avoid the reconstruction bottleneck of latent diffusion. This paper shows that the REPA can fail for JiT. REPA yields worse FID for JiT as training proceeds and collapses diversity on image subsets that are tightly clustered in the representation space of pretrained semantic encoder on ImageNet. We trace the failure to an information asymmetry: denoising occurs in the high dimensional image space, while the semantic target is strongly compressed, making direct regression a shortcut objective. We propose PixelREPA, which transforms the alignment target and constrains alignment with a Masked Transformer Adapter that combines a shallow transformer adapter with partial token masking. PixelREPA improves both training convergence and final quality. PixelREPA reduces FID from 3.66 to 3.17 for JiT-B/16 and improves Inception Score (IS) from 275.1 to 284.6 on ImageNet 256 times 256, while achieving > 2times faster convergence. Finally, PixelREPA-H/16 achieves FID=1.81 and IS=317.2. Our code is available at https://github.com/kaist-cvml/PixelREPA.",
-      "description_zh": "表示对齐 (REPA) 已成为加速潜在空间中的扩散变压器训练的一种简单方法。与此同时，像素空间扩散变压器（例如 Just image Transformers (JiT)）引起了越来越多的关注，因为它们消除了对预训练分词器的依赖，从而避免了潜在扩散的重建瓶颈。本文表明，REPA 对于 JiT 可能会失败。随着训练的进行，REPA 会为 JiT 产生更差的 FID，并破坏紧密聚集在 ImageNet 上预训练语义编码器的表示空间中的图像子集的多样性。我们将失败归咎于信息不对称：去噪发生在高维图像空间，而语义目标被强烈压缩，使得直接回归成为捷径目标。我们提出 PixelREPA，它转换对齐目标并使用 Masked Transformer Adapter 约束对齐，该 Masked Transformer Adapter 将浅层 Transformer 适配器与部分标记掩码相结合。 PixelREPA 提高了训练收敛性和最终质量。 PixelREPA 将 JiT-B/16 的 FID 从 3.66 降低到 3.17，并将 ImageNet 上的 Inception Score (IS) 从 275.1 提高到 284.6，提高了 256 倍 256，同时实现了超过 2 倍的更快收敛速度​​。最终，PixelREPA-H/16 实现了 FID=1.81 和 IS=317.2。我们的代码可在 https://github.com/kaist-cvml/PixelREPA 获取。",
-      "authors": "Jaeyo Shin, Jiwook Kim, Hyunjung Shim",
-      "url": "https://huggingface.co/papers/2603.14366",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2603.14366"
       }
     }
   ]
