@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-28T19:55:42.067Z",
+  "updatedAt": "2026-03-29T15:52:44.881Z",
   "count": 15,
   "items": [
     {
@@ -38,13 +38,13 @@
       "title": "Reaching Beyond the Mode: RL for Distributional Reasoning in Language Models",
       "title_zh": "超越模式：语言模型中分布式推理的强化学习",
       "description": "Given a question, a language model (LM) implicitly encodes a distribution over possible answers. In practice, post-training procedures for LMs often collapse this distribution onto a single dominant mode. While this is generally not a problem for benchmark-style evaluations that assume one correct answer, many real-world tasks inherently involve multiple valid answers or irreducible uncertainty. Examples include medical diagnosis, ambiguous question answering, and settings with incomplete information. In these cases, we would like LMs to generate multiple plausible hypotheses, ideally with confidence estimates for each one, and without computationally intensive repeated sampling to generate non-modal answers. This paper describes a multi-answer reinforcement learning approach for training LMs to perform distributional reasoning over multiple answers during inference. We modify the RL objective to enable models to explicitly generate multiple candidate answers in a single forward pass, internalizing aspects of inference-time search into the model's generative process. Across question-answering, medical diagnostic, and coding benchmarks, we observe improved diversity, coverage, and set-level calibration scores compared to single answer trained baselines. Models trained with our approach require fewer tokens to generate multiple answers than competing approaches. On coding tasks, they are also substantially more accurate. These results position multi-answer RL as a principled and compute-efficient alternative to inference-time scaling procedures such as best-of-k. Code and more information can be found at https://multi-answer-rl.github.io/.",
-      "description_zh": "给定一个问题，语言模型 (LM) 隐式编码可能答案的分布。在实践中，LM 的后训练程序通常会将这种分布压缩为单一主导模式。虽然对于假设一个正确答案的基准式评估来说，这通常不是问题，但许多现实世界的任务本质上涉及多个有效答案或不可减少的不确定性。例如，医疗诊断、模糊的问答以及信息不完整的设置。在这些情况下，我们希望 LM 生成多个似是而非的假设，理想情况下对每个假设都有置信度估计，并且不需要计算密集型重复采样来生成非模态答案���本文描述了一种多答案强化学习方法，用于训练 LM 在推理过程中对多个答案执行分布式推理。我们修改了 RL 目标，使模型能够在一次前向传递中显式生成多个候选答案，将推理时间搜索的各个方面内化到模型的生成过程中。在问答、医疗诊断和编码基准方面，我们观察到与单一答案训练的基线相比，多样性、覆盖范围和集合级别校准分数有所提高。与竞争方法相比，使用我们的方法训练的模型需要更少的令牌来生成多个答案。在编码任务上，它们也更加准确。这些结果将多答案强化学习定位为推理时间缩放程序（例如 best-of-k）的一种有原则且计算效率高的替代方案。代码和更多信息可以在 https://multi-answer-rl.github.io/ 找到。",
+      "description_zh": "给定一个问题，语言模型 (LM) 隐式编码可能答案的分布。在实践中，LM 的后训练程序通常会将这种分布压缩为单一主导模式。虽然对于假设一个正确答案的基准式评估来说，这通常不是问题，但许多现实世界的任务本质上涉及多个有效答案或不可减少的不确定性。例如，医疗诊断、模糊的问答以及信息不完整的设置。在这些情况下，我们希望 LM 生成多个似是而非的假设，理想情况下对每个假设都有置信度估计，并且不需要计算密集型重复采样来生成非模态答案。本文描述了一种多答案强化学习方法，用于训练 LM 在推理过程中对多个答案执行分布式推理。我们修改了 RL 目标，使模型能够在一次前向传递中显式生成多个候选答案，将推理时间搜索的各个方面内化到模型的生成过程中。在问答、医疗诊断和编码基准方面，我们观察到与单一答案训练的基线相比，多样性、覆盖范围和集合级别校准分数有所提高。与竞争方法相比，使用我们的方法训练的模型需要更少的令牌来生成多个答案。在编码任务上，它们也更加准确。这些结果将多答案强化学习定位为推理时间缩放程序（例如 best-of-k）的一种有原则且计算效率高的替代方案。代码和更多信息可以在 https://multi-answer-rl.github.io/ 找到。",
       "authors": "Isha Puri, Mehul Damani, Idan Shenfeld, Marzyeh Ghassemi, Jacob Andreas, Yoon Kim",
       "url": "https://huggingface.co/papers/2603.24844",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2603.24844"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "评估学生手写草稿对于个性化教育反馈至关重要，但由于笔迹多样、布局复杂和解决问题的方法各异，因此带来了独特的挑战。现有的教育 NLP 主要关注文本响应，忽视了真实手写草稿固有的复杂性和多模态性。当前的多模态大语言模型（MLLM）擅长视觉推理，但通常采用“考生视角”，优先考虑生成正确答案而不是诊断学生错误。为了弥补这些差距，我们引入了 ScratchMath，这是一种新颖的基准，专门用于解释和分类真实手写数学草稿中的错误。我们的数据集包含来自中国中小学生的 1,720 个数学样本，支持两个关键任务：错误原因解释（ECE）和错误原因分类（ECC），并定义了七种错误类型。该数据集通过严格的人机协作方法进行了精心注释，涉及专家标记、审查和验证的多个阶段。我们在 ScratchMath 上系统地评估了 16 个领先的 MLLM，揭示了与人类专家相比的显着性能差距，特别是在视觉识别和逻辑推理方面。专有模型的性能明显优于开源模型，大型推理模型显示出强大的错误解释潜力。所有评估数据和框架都是公开的，以促进进一步的研究。",
       "authors": "Dingjie Song, Tianlong Xu, Yi-Fan Zhang, Hang Li, Zhiling Yan, Xing Fan, Haoyang Li, Lichao Sun, Qingsong Wen",
       "url": "https://huggingface.co/papers/2603.24961",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2603.24961"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "可扩展矢量图形 (SVG) 是技术插图和数字设计的基本格式，提供精确的分辨率独立性和灵活的语义可编辑性。然而，在实践中，原始矢量源文件经常丢失或无法访问，只留下难以修改或缩放的“平面”光栅化版本（例如 PNG 或 JPEG）。手动重建这些图形是一个极其耗费人力的过程，需要专门的专业知识来恢复原始的几何意图。为了弥补这一差距，我们提出了 VFIG，这是一个经过训练的视觉语言模型系列，用于复杂和高保真图形到 SVG 转换。虽然此任务本质上是数据驱动的，但现有数据集通常规模较小，并且缺乏专业图表的复杂性。我们通过引入 VFIG-DATA 来解决这个问题，VFIG-DATA 是一个包含 66K 个高质量图形-SVG 对的大型数据集，由现实世界的纸质图形和程序生成的图表的多种组合组成。认识到 SVG 由重复出现的基元和分层局部结构组成，我们引入了从粗到精的培训课程，从监督微调 (SFT) 开始学习原子基元，然后过渡到强化学习 (RL) 细化，以优化全局图保真度、布局一致性和拓扑边缘情况。最后，我们介绍 VFIG-BENCH，这是一个综合评估套件，具有新颖的指标，旨在测量复杂图形的结构完整性。 VFIG 在开源模型中实现了最先进的性能，与 GPT-5.2 相当，在 VFIG-BENCH 上获得了 0.829 的 VLM-Judge 分数。",
       "authors": "Qijia He, Xunmei Liu, Hammaad Memon, Ziang Li, Zixian Ma, Jaemin Cho, Jason Ren, Daniel S Weld, Ranjay Krishna",
       "url": "https://huggingface.co/papers/2603.24575",
-      "score": 10,
+      "score": 12,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "12",
         "paperId": "2603.24575"
       }
     },
@@ -83,7 +83,7 @@
       "title": "Pixel-level Scene Understanding in One Token: Visual States Need What-is-Where Composition",
       "title_zh": "单一令牌中的像素级场景理解：视觉状态需要“What-is-Where”组合",
       "description": "For robotic agents operating in dynamic environments, learning visual state representations from streaming video observations is essential for sequential decision making. Recent self-supervised learning methods have shown strong transferability across vision tasks, but they do not explicitly address what a good visual state should encode. We argue that effective visual states must capture what-is-where by jointly encoding the semantic identities of scene elements and their spatial locations, enabling reliable detection of subtle dynamics across observations. To this end, we propose CroBo, a visual state representation learning framework based on a global-to-local reconstruction objective. Given a reference observation compressed into a compact bottleneck token, CroBo learns to reconstruct heavily masked patches in a local target crop from sparse visible cues, using the global bottleneck token as context. This learning objective encourages the bottleneck token to encode a fine-grained representation of scene-wide semantic entities, including their identities, spatial locations, and configurations. As a result, the learned visual states reveal how scene elements move and interact over time, supporting sequential decision making. We evaluate CroBo on diverse vision-based robot policy learning benchmarks, where it achieves state-of-the-art performance. Reconstruction analyses and perceptual straightness experiments further show that the learned representations preserve pixel-level scene composition and encode what-moves-where across observations. Project page available at: https://seokminlee-chris.github.io/CroBo-ProjectPage.",
-      "description_zh": "对于在动态环境中运行的机器人代理来说，从流视频观察中学习视觉状态表示对于顺序决策至关重要。最近的自我监督学习方法在视觉任务中表现出了很强的可迁移性，但它们没有明确解决良好的视觉状态应该编码的内容。我们认为，有效的视觉状态必须通过联合编码场景元素的语义标识及其空间位置来捕获“什么在哪里”，从而能够可靠地检测观察中的微妙动态。为此，我们提出了 CroBo，一种基于全局到局部重建目标的视觉状态表示学习框架。给定压缩为紧凑瓶颈标记的参考观察结果，CroBo 学习使用全局瓶颈标记作为上下文，从稀疏的可见线索中重建局部目标作物中严重屏蔽的补丁。这一学习目标鼓励瓶颈令牌对场景范围语义实体的细粒度表示进行编码，包括它们的身份、空间位置和配置。因此，学习到的视觉状态揭示了场景元素如何随着时间的推移移动和交互，支持顺序决策。我们在各种基于视觉的机器人策略学习基���上评估了 CroBo，它实现了最先进的性能。重建分析和感知直线度实验进一步表明，学习到的表示保留了像素级场景组成，并对观察中的移动内容进行编码。项目页面位于：https://seokminlee-chris.github.io/CroBo-ProjectPage。",
+      "description_zh": "对于在动态环境中运行的机器人代理来说，从流视频观察中学习视觉状态表示对于顺序决策至关重要。最近的自我监督学习方法在视觉任务中表现出了很强的可迁移性，但它们没有明确解决良好的视觉状态应该编码的内容。我们认为，有效的视觉状态必须通过联合编码场景元素的语义标识及其空间位置来捕获“什么在哪里”，从而能够可靠地检测观察中的微妙动态。为此，我们提出了 CroBo，一种基于全局到局部重建目标的视觉状态表示学习框架。给定压缩为紧凑瓶颈标记的参考观察结果，CroBo 学习使用全局瓶颈标记作为上下文，从稀疏的可见线索中重建局部目标作物中严重屏蔽的补丁。这一学习目标鼓励瓶颈令牌对场景范围语义实体的细粒度表示进行编码，包括它们的身份、空间位置和配置。因此，学习到的视觉状态揭示了场景元素如何随着时间的推移移动和交互，支持顺序决策。我们在各种基于视觉的机器人策略学习��准上评估了 CroBo，它实现了最先进的性能。重建分析和感知直线度实验进一步表明，学习到的表示保留了像素级场景组成，并对观察中的移动内容进行编码。项目页面位于：https://seokminlee-chris.github.io/CroBo-ProjectPage。",
       "authors": "Seokmin Lee, Yunghee Lee, Byeonghyun Pak, Byeongju Woo",
       "url": "https://huggingface.co/papers/2603.13904",
       "score": 2,
@@ -116,10 +116,10 @@
       "description_zh": "思想链 (CoT) 提示已扩展到大型音频语言模型 (LALM) 中以引发推理，但在不进行训练的情况下提高其有效性仍然具有挑战性。我们研究推理时间模型引导作为一种无需训练的方法来改进 LALM 推理。我们使用不同的信息源引入了三种策略，并通过四个 LALM 和四个基准对其进行评估。结果显示，与 CoT 提示相比，总体准确率提高了 4.4%。值得注意的是，我们确定了一种跨模式传输，其中从少量文本样本派生的引导向量有效地指导基于语音的推理，展示了高数据效率。我们还检查超参数敏感性以了解这些方法的稳健性。我们的研究结果将模型引导定位为加强 LALM 推理的实用方向。",
       "authors": "Lok-Lam Ieong, Chia-Chien Chen, Chih-Kai Yang, Yu-Han Huang, An-Yu Cheng, Hung-yi Lee",
       "url": "https://huggingface.co/papers/2603.14636",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2603.14636"
       }
     },
@@ -131,10 +131,10 @@
       "description_zh": "在本报告中，我们介绍了 IQuest-Coder-V1 系列-(7B/14B/40B/40B-Loop)，这是一个新的代码大语言模型 (LLM) 系列。超越静态代码表示，我们提出了代码流多阶段训练范例，它通过管道的不同阶段捕获软件逻辑的动态演变。我们的模型是通过进化管道开发的，从由代码事实、存储库和完成数据组成的初始预训练开始。接下来，我们实施一个专门的中期训练阶段，将 32k 上下文中的推理和代理轨迹与 128k 上下文中的存储库规模相结合，以打造深厚的逻辑基础。然后，通过专门编码能力的后期训练来最终确定模型，该能力分为两条专门路径：思维路径（利用推理驱动的 RL）和指导路径（针对一般帮助进行优化）。 IQuest-Coder-V1 在代码智能的关键维度（代理软件工程、竞争性编程和复杂工具使用）的竞争模型中实现了最先进的性能。为了解决部署限制，IQuest-Coder-V1-Loop 变体引入了一种循环机制，旨在优化模型容量和部署占用空间之间的权衡，为功效与效率权衡提供架构增强的路径。我们相信IQuest-Coder-V1系列的发布，包括从预训练基础到最终思维和指令模型的完整白盒检查点链，将推进自主代码智能和现实世界代理系统的研究。",
       "authors": "Jian Yang, Wei Zhang, Shawn Guo, Zhengmao Ye, Lin Jing, Shark Liu, Yizhi Li, Jiajun Wu, Cening Liu, X. Ma, Yuyang Song, Siwei Wu, Yuwen Li, L. Liao, T. Zheng, Ziling Huang, Zelong Huang, Che Liu, Yan Xing, Renyuan Li, Qingsong Cai, Hanxu Yan, Siyue Wang, Shikai Li, Jason Klein Liu, An Huang, Yongsheng Kang, Jinxing Zhang, Chuan Hao, Haowen Wang, Weicheng Gu, Ran Tao, Mingjie Tang, Peihao Wu, Jianzhou Wang, Xianglong Liu, Weifeng Lv, Bryan Dai",
       "url": "https://huggingface.co/papers/2603.16733",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2603.16733"
       }
     },
@@ -143,13 +143,13 @@
       "title": "AVControl: Efficient Framework for Training Audio-Visual Controls",
       "title_zh": "AVControl：用于培训视听控制的有效框架",
       "description": "Controlling video and audio generation requires diverse modalities, from depth and pose to camera trajectories and audio transformations, yet existing approaches either train a single monolithic model for a fixed set of controls or introduce costly architectural changes for each new modality. We introduce AVControl, a lightweight, extendable framework built on LTX-2, a joint audio-visual foundation model, where each control modality is trained as a separate LoRA on a parallel canvas that provides the reference signal as additional tokens in the attention layers, requiring no architectural changes beyond the LoRA adapters themselves. We show that simply extending image-based in-context methods to video fails for structural control, and that our parallel canvas approach resolves this. On the VACE Benchmark, we outperform all evaluated baselines on depth- and pose-guided generation, inpainting, and outpainting, and show competitive results on camera control and audio-visual benchmarks. Our framework supports a diverse set of independently trained modalities: spatially-aligned controls such as depth, pose, and edges, camera trajectory with intrinsics, sparse motion control, video editing, and, to our knowledge, the first modular audio-visual controls for a joint generation model. Our method is both compute- and data-efficient: each modality requires only a small dataset and converges within a few hundred to a few thousand training steps, a fraction of the budget of monolithic alternatives. We publicly release our code and trained LoRA checkpoints.",
-      "description_zh": "控制视频和音频生成需要多种模式，从深度和姿势到相机轨迹和音频转换，但现有方法要么为一组固定的控制训练单个整体模型，要么为每种新模式引入昂贵的架构更改。我们引入了 AVControl，这是一个基于 LTX-2 的轻量级可扩展框架，LTX-2 是一个联合视听基础模型，其中每个控制模态都在并行画布上作为单独的 LoRA 进行训练，提供参考信号作为注意层中的附加标记，除了 LoRA 适配器本身之外，不需要进行任何架构更改。我们证明，简单地将基于图像的上下文方法扩展到视频无法实现结构控制，而我们的��行画布方法解决了这个问题。在 VACE 基准测试中，我们在深度和姿势引导生成、修复和修复方面优于所有评估的基准，并在相机控制和视听基准方面显示出有竞争力的结果。我们的框架支持多种独立训练的模式：空间对齐的控制，例如深度、姿态和边缘、具有内在函数的相机轨迹、稀疏运动控制、视频编辑，以及据我们所知，用于联合生成模型的第一个模块化视听控制。我们的方法具有计算效率和数据效率：每种模式仅需要一��小数据集，并在几百到几千个训练步骤内收敛，这只是整体替代方案预算的一小部分。我们公开发布我们的代码和经过训练的 LoRA 检查点。",
+      "description_zh": "控制视频和音频生成需要多种模式，从深度和姿势到相机轨迹和音频转换，但现有方法要么为一组固定的控制训练单个整体模型，要么为每种新模式引入昂贵的架构更改。我们引入了 AVControl，这是一个基于 LTX-2 的轻量级可扩展框架，LTX-2 是一个联合视听基础模型，其中每个控制模态都在并行画布上作为单独的 LoRA 进行训练，提供参考信号作为注意力层中的附加标记，除了 LoRA 适配器本身之外，不需要进行任何架构更改。我们证明，简单地将基于图像的上下文方法扩展到视频无法实现结构控制，而我们��并行画布方法解决了这个问题。在 VACE 基准测试中，我们在深度和姿势引导生成、修复和修复方面优于所有评估的基准，并在相机控制和视听基准方面显示出有竞争力的结果。我们的框架支持多种独立训练的模式：空间对齐的控制，例如深度、姿态和边缘、具有内在函数的相机轨迹、稀疏运动控制、视频编辑，以及据我们所知，用于联合生成模型的第一个模块化视听控制。我们的方法具有计算效率和数据效率：每种模式仅需要��个小数据集，并在几百到几千个训练步骤内收敛，这只是整体替代方案预算的一小部分。我们公开发布我们的代码和经过训练的 LoRA 检查点。",
       "authors": "Matan Ben-Yosef, Tavi Halperin, Naomi Ken Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen, Urska Jelercic, Ofir Bibi",
       "url": "https://huggingface.co/papers/2603.24793",
-      "score": 15,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "17",
         "paperId": "2603.24793"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "在本文中，我们揭示了扩散变压器（DiT）显着增强生成任务的隐藏潜力。通过对去噪过程的深入分析，我们证明引入单个学习缩放参数可以显着提高 DiT 块的性能。基于这一见解，我们提出了 Calibri，这是一种参数高效的方法，可以优化校准 DiT 组件以提高生成质量。 Calibri 将 DiT 校准视为一个黑盒奖励优化问题，可以使用进化算法有效解决该问题，并且仅修改约 100 个参数。实验结果表明，尽管采用轻量级设计，Calibri 仍能持续提高各种文本到图像模型的性能。值得注意的是，Calibri 还减少了图像生成所需的推理步骤，同时保持高质量的输出。",
       "authors": "Danil Tokhchukov, Aysel Mirzoeva, Andrey Kuznetsov, Konstantin Sobolev",
       "url": "https://huggingface.co/papers/2603.24800",
-      "score": 47,
+      "score": 51,
       "meta": {
         "source": "huggingface",
-        "upvotes": "47",
+        "upvotes": "51",
         "paperId": "2603.24800"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "在政策蒸馏 (OPD) 对于大型语言模型 (LLM) 训练后很有吸引力，因为它评估教师对学生生成的部署的反馈，而不是固定的教师跟踪。然而，在长期设置中，常见的采样令牌变体是脆弱的：它减少了与单令牌信号的分布匹配，并且随着推出远离教师经常访问的前缀而变得越来越不可靠。我们从估算器和实施方面重新审视 OPD。理论上，令牌级 OPD 相对于序列级反向 KL 有偏差，但它具有更严格的最坏情况方差界限；我们的玩具研究在经验上显示了相同的权衡，更强的未来奖励耦合会产生更高的梯度方差和更不稳定的学习。根据经验，我们确定了采样令牌 OPD 的三种故障模式：不平衡的单令牌信号、教师对学生生成的前缀的指导不可靠以及由令牌生成器或特殊令牌不匹配引起的失真。我们通过教师 top-K 本地支持匹配来解决这些问题，实现为带有 top-p 推出采样和特殊令牌屏蔽的截断反向 KL。在单任务数学推理和多任务代理加数学训练中，该目标比采样令牌 OPD 产生更稳定的优化和更好的下游性能。",
       "authors": "Yuqian Fu, Haohuan Huang, Kaiwen Jiang, Yuanheng Zhu, Dongbin Zhao",
       "url": "https://huggingface.co/papers/2603.25562",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2603.25562"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "我们展示了一种基于外延单晶金属卤化物钙钛矿的全固态半导体器件，能够通过栅极电压对钙钛矿光致发光进行可逆控制。与电致发光二极管本质上不同，这种光致发光场效应晶体管利用栅极电场静电调制移动电荷的界面密度，从而影响光载流子的辐射和非辐射复合通道。改变此类晶体管中的栅极电压可有效改变非辐射界面复合速率，并将光致发光强度调制 65% 至 98%（取决于温度）。在有利的选通下，可以实现几乎完全消除非辐射损耗。这种功能，加上外延钙钛矿薄膜的高吸收系数、可控厚度和宏观均匀形态而可能产生的强可见光范围吸收和发射，导致在大面积薄膜器件中实现高外部光致发光量子效率。这种高效、可扩展、静电可调的光电开关拓宽了金属卤化物钙钛矿在光子学和光电子学中的潜在应用。",
       "authors": "Vladimir Bruevich, Dmitry Maslennikov, Beier Hu, Artem A. Bakulin, Vitaly Podzorov",
       "url": "https://huggingface.co/papers/2603.25718",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2603.25718"
       }
     },
