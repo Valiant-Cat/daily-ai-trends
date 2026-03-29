@@ -327,38 +327,129 @@ function extractSubsection(section, headingRegex) {
   return rest.slice(0, match[0].length + endMatch.index);
 }
 
+function splitHighlightBlocks(section) {
+  const lines = String(section || '').split('\n');
+  const blocks = [];
+  let current = [];
+
+  for (const rawLine of lines) {
+    const line = rawLine.trimEnd();
+    if (/^\s*-\s+\*\*/.test(line)) {
+      if (current.length) blocks.push(current.join('\n').trim());
+      current = [line];
+      continue;
+    }
+    if (current.length) current.push(line);
+  }
+
+  if (current.length) blocks.push(current.join('\n').trim());
+  return blocks;
+}
+
+function parseHighlightHeadline(line) {
+  const trimmed = String(line || '').trim();
+  const patterns = [
+    /^-\s+\*\*\[(.*?)\]\((https?:\/\/[^)]+)\)\*\*\s*-?\s*(.*)$/i,
+    /^-\s+\*\*\[(.*?)\]\*\*\s*-?\s*(.*)$/i,
+    /^-\s+\*\*(.*?)\*\*\s*-?\s*(.*)$/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = trimmed.match(pattern);
+    if (!match) continue;
+    if (pattern === patterns[0]) {
+      return {
+        title: normalizeText(match[1]),
+        url: match[2]?.trim() || '',
+        remainder: match[3] || ''
+      };
+    }
+    return {
+      title: normalizeText(match[1]),
+      url: '',
+      remainder: match[2] || ''
+    };
+  }
+  return null;
+}
+
+function extractHighlightUrl(block, headingUrl = '') {
+  const postLinkMatch = block.match(/(?:Post link:|帖子链接：)\s*\[[^\]]*\]\((https?:\/\/[^)]+)\)/i);
+  if (postLinkMatch) return postLinkMatch[1].trim();
+
+  const linkedPostLabel = block.match(/\[Post link\]\((https?:\/\/[^)]+)\)/i);
+  if (linkedPostLabel) return linkedPostLabel[1].trim();
+
+  const firstRedditLink = block.match(/https?:\/\/(?:www\.)?reddit\.com\/comments\/[A-Za-z0-9]+/i);
+  return (headingUrl || firstRedditLink?.[0] || '').trim();
+}
+
+function isWhyItMattersLine(line) {
+  return /^(?:[-*]\s*)?\*?Why it matters[:：]/i.test(line) || /^(?:[-*]\s*)?\*?为何重要[:：]/i.test(line);
+}
+
+function isPostLinkLine(line) {
+  return /^(?:[-*]\s*)?(?:Post link:|帖子链接：)/i.test(line) || /^\[Post link\]\(/i.test(line);
+}
+
+function cleanHighlightTitle(text) {
+  return normalizeText(String(text || '').replace(/[*_`]/g, ' ').replace(/&nbsp;/g, ' '));
+}
+
+function cleanHighlightSummarySegment(text) {
+  let cleaned = String(text || '')
+    .replace(/^详细内容：/, '')
+    .replace(/^What happened:/i, '')
+    .replace(/\[Post link\]\((https?:\/\/[^)]+)\)/gi, '')
+    .replace(/(?:Post link:|帖子链接：)\s*\[[^\]]*\]\((https?:\/\/[^)]+)\)/gi, '')
+    .replace(/\(Score:\s*[\d,]+,\s*Comments:\s*[\d,]+\)\s*$/gi, '')
+    .replace(/\*Why it matters[:：]\*.*$/i, '')
+    .replace(/为何重要[:：].*$/i, '')
+    .replace(/[*_`]/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .trim();
+
+  cleaned = cleaned.replace(/^[-*]\s*/, '').trim();
+  return normalizeText(cleaned);
+}
+
 function parseHighlightEntries(section) {
-  const entryRegex = /-\s+\*\*\[(.*?)\](?:\((https?:\/\/[^)]+)\))?\*\*[\s\S]*?(?=\n-\s+\*\*\[|\n###\s+\d+\.|\n###\s+\*\*|\n####\s+\*\*|\n#####\s+\*\*|\Z)/g;
+  const blocks = splitHighlightBlocks(section);
   const entries = [];
-  let match;
-  while ((match = entryRegex.exec(section)) !== null) {
-    const block = match[0];
-    const title = normalizeText(match[1]);
-    const headingUrl = match[2]?.trim() || '';
-    const urlMatch = block.match(/(?:Post link:|帖子链接：)\s*\[(.*?)\]\((https?:\/\/[^)]+)\)/i);
-    const url = (urlMatch?.[2]?.trim() || headingUrl || '').trim();
-    const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+  const seen = new Set();
+
+  for (const block of blocks) {
+    const lines = block.split('\n').map(line => line.trim()).filter(Boolean);
+    if (!lines.length) continue;
+
+    const headline = parseHighlightHeadline(lines[0]);
+    if (!headline) continue;
+
+    const url = extractHighlightUrl(block, headline.url);
+    if (!url || seen.has(url)) continue;
+
     const summaryParts = [];
-    for (const line of lines) {
-      if (line.startsWith('- **[')) {
-        const headlineRemainder = line.replace(/^-\s+\*\*\[(.*?)\](?:\((https?:\/\/[^)]+)\))?\*\*\s*-?\s*/,'').trim();
-        if (headlineRemainder) summaryParts.push(headlineRemainder);
-        continue;
-      }
-      if (/^[-*]\s*\*?为何重要|^\*Why it matters:/i.test(line)) continue;
-      if (/^[-*]\s*帖子链接：|^Post link:/i.test(line)) continue;
-      let cleaned = line.replace(/^[-*]\s*/, '').replace(/^详细内容：/, '').replace(/^What happened:/i, '').trim();
-      cleaned = cleaned.replace(/^\*为何重要：\*/,'').replace(/^\*Why it matters:\*/i,'').replace(/\s*--+\s*$/,'').trim();
+    const firstLineSummary = cleanHighlightSummarySegment(headline.remainder);
+    if (firstLineSummary && !isWhyItMattersLine(firstLineSummary) && !isPostLinkLine(firstLineSummary)) {
+      summaryParts.push(firstLineSummary);
+    }
+
+    for (const line of lines.slice(1)) {
+      if (/^#{3,}\s*/.test(line)) break;
+      if (/^-\s+\*\*/.test(line)) continue;
+      if (isWhyItMattersLine(line) || isPostLinkLine(line)) continue;
+      const cleaned = cleanHighlightSummarySegment(line);
       if (cleaned) summaryParts.push(cleaned);
     }
-    if (url) {
-      entries.push({
-        title,
-        url,
-        summary: truncateText(normalizeText(summaryParts.join(' ')), 260)
-      });
-    }
+
+    seen.add(url);
+    entries.push({
+      title: cleanHighlightTitle(headline.title),
+      url,
+      summary: truncateText(normalizeText(summaryParts.join(' ')), 260)
+    });
   }
+
   return entries;
 }
 
@@ -373,38 +464,23 @@ async function buildRedditFeed() {
   const zhHighlights = zhTrend ? parseHighlightEntries(zhTrend) : [];
   const zhMap = new Map(zhHighlights.map(entry => [entry.url, entry]));
 
-  const fallbackRows = Array.from(metricsMap.entries()).slice(0, 10).map(([url, metrics], index) => ({
-    id: url.split('/').pop() || `reddit-fallback-${index}`,
-    title: metrics.title || `Reddit Highlight ${index + 1}`,
-    title_zh: '',
-    description: `${metrics.subreddit || 'Reddit'} 社区今日高热讨论，分类 ${metrics.category || 'Discussion'}，评论 ${metrics.comments || '0'} 条。`,
-    description_zh: '',
-    authors: metrics.subreddit || 'Reddit',
-    url,
-    score: Number(metrics.score || 0),
-    meta: {
-      source: 'reddit',
-      subreddit: metrics.subreddit || '',
-      subredditUrl: metrics.subredditUrl || '',
-      comments: metrics.comments || '0',
-      category: metrics.category || '',
-      posted: metrics.posted || '',
-      redditSource: 'liyedanpdx/reddit-ai-trends',
-      section: 'today-table-fallback'
-    }
-  }));
+  const highlightMap = new Map(enHighlights.map(entry => [entry.url, entry]));
+  const topRows = Array.from(metricsMap.entries()).slice(0, 10);
 
-  const rawItems = (enHighlights.length > 0 ? enHighlights.slice(0, 10).map((entry, index) => {
-    const zhEntry = zhMap.get(entry.url);
-    const metrics = metricsMap.get(entry.url) || {};
+  const rawItems = topRows.map(([url, metrics], index) => {
+    const highlight = highlightMap.get(url);
+    const zhEntry = zhMap.get(url);
+    const hasHighlight = Boolean(highlight?.summary);
+    const fallbackDescription = `${metrics.title || 'This Reddit thread'} is a high-engagement post in ${metrics.subreddit || 'Reddit'} (category: ${metrics.category || 'Discussion'}, comments: ${metrics.comments || '0'}).`;
+
     return baseItem({
-      id: entry.url.split('/').pop() || `reddit-highlight-${index}`,
-      title: entry.title,
+      id: url.split('/').pop() || `reddit-highlight-${index}`,
+      title: highlight?.title || metrics.title || `Reddit Highlight ${index + 1}`,
       title_zh: zhEntry?.title || '',
-      description: entry.summary,
-      description_zh: zhEntry?.summary || '',
+      description: hasHighlight ? highlight.summary : fallbackDescription,
+      description_zh: hasHighlight ? (zhEntry?.summary || '') : '',
       authors: metrics.subreddit || 'Reddit',
-      url: entry.url,
+      url,
       score: Number(metrics.score || 0),
       meta: {
         source: 'reddit',
@@ -414,10 +490,10 @@ async function buildRedditFeed() {
         category: metrics.category || '',
         posted: metrics.posted || '',
         redditSource: 'liyedanpdx/reddit-ai-trends',
-        section: 'today-highlights'
+        section: hasHighlight ? 'today-highlights' : 'today-table-fallback'
       }
     });
-  }) : fallbackRows).map(item => baseItem(item));
+  }).map(item => baseItem(item));
 
   const items = [];
   for (const item of rawItems) {
