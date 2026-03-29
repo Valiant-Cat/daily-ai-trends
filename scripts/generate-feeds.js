@@ -453,6 +453,143 @@ function parseHighlightEntries(section) {
   return entries;
 }
 
+function decodeBasicHtmlEntities(text) {
+  return String(text || '')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>');
+}
+
+function cleanRedditTableTitle(text) {
+  return normalizeText(
+    decodeBasicHtmlEntities(String(text || ''))
+      .replace(/\\'/g, "'")
+      .replace(/\s*\.\.\.\s*$/, ' ...')
+      .replace(/[“”]/g, '"')
+      .replace(/[‘’]/g, "'")
+  );
+}
+
+function inferRedditTopic(title, metrics = {}) {
+  const text = cleanRedditTableTitle(title).toLowerCase();
+  const category = String(metrics.category || '').toLowerCase();
+  const subreddit = String(metrics.subreddit || '').toLowerCase();
+
+  if (/(meme|funny)/.test(category)) return 'meme';
+  if (/(q&a|help|question)/.test(category) || /^(any|how|what|why|help)\b/.test(text)) return 'help';
+  if (/(openclaw|zenmux|claude code|cursor|skill|workflow|tooling|agent)/.test(text)) return 'tooling';
+  if (/(robot|robotics|household robot|humanoid)/.test(text)) return 'robotics';
+  if (/(turboquant|rotorquant|quant|gguf|llama\.cpp|vram|gpu|rtx|mi50|macair|locally|local|silicon|asic|pcie|benchmark|faster|decode|tokens per second)/.test(text)) return 'local-performance';
+  if (/(release|released|is out|launch|launched|announce|announced|open weights|new model|new model release|gguf release|voxtral|gemma|glm|qwen|mythos)/.test(text)) return 'release';
+  if (/(rumou?r|may have|teases|testing|exclusive|leak|breakthrough)/.test(text)) return 'rumor';
+  if (/(judge|court|ceo|economics|society|jobs|salary|sanders|supply chain|policy|anthropic designation)/.test(text)) return 'governance';
+  if (subreddit.includes('localllama')) return 'local-performance';
+  if (subreddit.includes('ai_agents')) return 'tooling';
+  if (subreddit.includes('singularity')) return 'frontier-discussion';
+  return 'generic';
+}
+
+function capitalizeSentenceStart(text) {
+  const value = String(text || '').trim();
+  if (!value) return value;
+  return value[0].toUpperCase() + value.slice(1);
+}
+
+function inferRedditSubject(title, topic) {
+  const text = cleanRedditTableTitle(title)
+    .replace(/\s*\.\.\.\s*$/, '')
+    .replace(/^['"“”]+|['"“”]+$/g, '')
+    .trim();
+  const lower = text.toLowerCase();
+
+  const patterns = [
+    { regex: /openclaw|zenmux/i, label: 'Claude computer control with OpenClaw and zenmux' },
+    { regex: /turboquant/i, label: 'TurboQuant' },
+    { regex: /rotorquant/i, label: 'RotorQuant' },
+    { regex: /gemma\s*4/i, label: 'Gemma 4' },
+    { regex: /glm[-\s]*5\.1/i, label: 'GLM-5.1' },
+    { regex: /qwen\s*3\.5\s*27b/i, label: 'Qwen 3.5 27B' },
+    { regex: /qwen\s*3\.5\s*122b/i, label: 'Qwen 3.5 122B' },
+    { regex: /qwen/i, label: 'Qwen' },
+    { regex: /claude code/i, label: 'Claude Code' },
+    { regex: /anthropic/i, label: 'Anthropic' },
+    { regex: /claude/i, label: 'Claude' },
+    { regex: /openai/i, label: 'OpenAI' },
+    { regex: /unipath/i, label: 'Unipath' },
+    { regex: /rtx\s*4080/i, label: 'an RTX 4080 32GB setup' },
+    { regex: /mi50/i, label: 'a multi-GPU MI50 setup' },
+    { regex: /macair/i, label: 'a MacBook Air local run' },
+    { regex: /asic/i, label: 'an ASIC-based local inference card' },
+  ];
+
+  for (const pattern of patterns) {
+    if (pattern.regex.test(lower)) return pattern.label;
+  }
+
+  if (topic === 'meme' && /waiting for\s+(.+?)\s+be like/i.test(text)) {
+    return text.match(/waiting for\s+(.+?)\s+be like/i)?.[1] || text;
+  }
+
+  return truncateText(text || 'this thread', 88);
+}
+
+function inferRedditSummaryConfidence(title, topic) {
+  const text = cleanRedditTableTitle(title);
+  const lower = text.toLowerCase();
+  const truncated = /\.\.\.$/.test(text) || /\s\.\.\.$/.test(text);
+  const strongSignal = /(turboquant|rotorquant|gemma|glm|qwen|claude|anthropic|openclaw|zenmux|robot|rtx|gpu|vram|asic|judge|release|launch|benchmark)/.test(lower);
+
+  if (strongSignal && !truncated) return 'high';
+  if (strongSignal || text.length >= 28 || topic === 'meme' || topic === 'help') return 'medium';
+  return 'low';
+}
+
+function buildRedditFallbackDescription(title, metrics = {}) {
+  const topic = inferRedditTopic(title, metrics);
+  const subject = inferRedditSubject(title, topic);
+  const confidence = inferRedditSummaryConfidence(title, topic);
+  const subreddit = metrics.subreddit || 'Reddit';
+  const comments = Number(metrics.comments || 0);
+  const discussionTail = comments >= 150
+    ? ' It is drawing especially heavy discussion.'
+    : comments >= 80
+      ? ' It is generating sustained community debate.'
+      : '';
+
+  const templates = {
+    'local-performance': `${subject} is being discussed as a local-AI performance or deployment topic in ${subreddit}, with attention on quantization, hardware limits, or setup trade-offs.${discussionTail}`,
+    'release': `${subject} is being discussed as a new-model or release signal in ${subreddit}, with attention on capability, accessibility, and where it fits in the current model landscape.${discussionTail}`,
+    'tooling': `${subject} is being discussed as an AI tooling or workflow topic in ${subreddit}, focusing on whether it makes agents or developer workflows more practical.${discussionTail}`,
+    'robotics': `${subject} is being discussed as a real-world robotics or product signal in ${subreddit}, with attention on how close the demo feels to practical deployment.${discussionTail}`,
+    'rumor': `${subject} is being discussed as a frontier-model or industry signal in ${subreddit}, with speculation centered on whether the claim points to a real capability shift.${discussionTail}`,
+    'governance': `${subject} is being discussed as a policy, labor, or industry-impact topic in ${subreddit}, reflecting broader concern about AI's real-world consequences.${discussionTail}`,
+    'meme': `${subject} is circulating as a sentiment-driven community post in ${subreddit}, showing that the underlying topic has spilled beyond purely technical discussion.${discussionTail}`,
+    'help': `${subject} is being discussed as a community help or interpretation topic in ${subreddit}, with attention on practical implications and unanswered questions.${discussionTail}`,
+    'frontier-discussion': `${subject} is being discussed as a frontier-AI community signal in ${subreddit}, capturing current reactions to capability shifts, rumors, or broader AI adoption themes.${discussionTail}`,
+    'generic': `${subject} is a high-engagement discussion in ${subreddit}, drawing attention around current AI capabilities, tools, or adoption trends.${discussionTail}`,
+  };
+
+  const description = capitalizeSentenceStart(templates[topic] || templates.generic);
+  if (confidence === 'low') {
+    return {
+      description: `${cleanRedditTableTitle(title) || 'This Reddit thread'} is a high-engagement post in ${subreddit} (category: ${metrics.category || 'Discussion'}, comments: ${metrics.comments || '0'}).`,
+      strategy: 'table-fallback',
+      confidence,
+      topic,
+    };
+  }
+
+  return {
+    description,
+    strategy: 'title-synthesis',
+    confidence,
+    topic,
+  };
+}
+
 async function buildRedditFeed() {
   const [en, zh] = await Promise.all([fetchText(REDDIT_REPORT_EN_URL), fetchText(REDDIT_REPORT_ZH_URL)]);
   if (!en) throw new Error('Could not fetch reddit-ai-trends latest_report_en.md');
@@ -471,13 +608,13 @@ async function buildRedditFeed() {
     const highlight = highlightMap.get(url);
     const zhEntry = zhMap.get(url);
     const hasHighlight = Boolean(highlight?.summary);
-    const fallbackDescription = `${metrics.title || 'This Reddit thread'} is a high-engagement post in ${metrics.subreddit || 'Reddit'} (category: ${metrics.category || 'Discussion'}, comments: ${metrics.comments || '0'}).`;
+    const fallbackSummary = buildRedditFallbackDescription(metrics.title, metrics);
 
     return baseItem({
       id: url.split('/').pop() || `reddit-highlight-${index}`,
-      title: highlight?.title || metrics.title || `Reddit Highlight ${index + 1}`,
+      title: highlight?.title || cleanRedditTableTitle(metrics.title) || `Reddit Highlight ${index + 1}`,
       title_zh: zhEntry?.title || '',
-      description: hasHighlight ? highlight.summary : fallbackDescription,
+      description: hasHighlight ? highlight.summary : fallbackSummary.description,
       description_zh: hasHighlight ? (zhEntry?.summary || '') : '',
       authors: metrics.subreddit || 'Reddit',
       url,
@@ -490,7 +627,10 @@ async function buildRedditFeed() {
         category: metrics.category || '',
         posted: metrics.posted || '',
         redditSource: 'liyedanpdx/reddit-ai-trends',
-        section: hasHighlight ? 'today-highlights' : 'today-table-fallback'
+        section: hasHighlight ? 'today-highlights' : 'today-table-fallback',
+        summaryStrategy: hasHighlight ? 'trend-highlights' : fallbackSummary.strategy,
+        summaryConfidence: hasHighlight ? 'high' : fallbackSummary.confidence,
+        topic: hasHighlight ? 'trend-highlight' : fallbackSummary.topic,
       }
     });
   }).map(item => baseItem(item));

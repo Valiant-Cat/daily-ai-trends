@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-29T16:20:12.362Z",
+  "updatedAt": "2026-03-29T16:29:05.965Z",
   "count": 15,
   "items": [
     {
@@ -98,7 +98,7 @@
       "title": "PMT: Plain Mask Transformer for Image and Video Segmentation with Frozen Vision Encoders",
       "title_zh": "PMT：使用 Frozen Vision 编码器进行图像和视频分割的普通掩模变压器",
       "description": "Vision Foundation Models (VFMs) pre-trained at scale enable a single frozen encoder to serve multiple downstream tasks simultaneously. Recent VFM-based encoder-only models for image and video segmentation, such as EoMT and VidEoMT, achieve competitive accuracy with remarkably low latency, yet they require finetuning the encoder, sacrificing the multi-task encoder sharing that makes VFMs practically attractive for large-scale deployment. To reconcile encoder-only simplicity and speed with frozen VFM features, we propose the Plain Mask Decoder (PMD), a fast Transformer-based segmentation decoder that operates on top of frozen VFM features. The resulting model, the Plain Mask Transformer (PMT), preserves the architectural simplicity and low latency of encoder-only designs while keeping the encoder representation unchanged and shareable. The design seamlessly applies to both image and video segmentation, inheriting the generality of the encoder-only framework. On standard image segmentation benchmarks, PMT matches the frozen-encoder state of the art while running up to ~3x faster. For video segmentation, it even performs on par with fully finetuned methods, while being up to 8x faster than state-of-the-art frozen-encoder models. Code: https://github.com/tue-mps/pmt.",
-      "description_zh": "大规模预训练的视觉基础模型 (VFM) 使单个冻结编码器能够同时服务多个下游任务。最近用于图像和视频分割的基于 VFM 的仅编码器模型（例如 EoMT 和 VidEoMT）以极低的延迟实现了有竞争力的精度，但它们需要对编码器进行微调，从而牺牲了多任务编码器共享，而这使得 VFM 对大规模部署具有实际吸引力。为了协调仅编码器的简单性和速度与冻结 VFM 功能，我们提出了 Plain Mask Decoder (PMD)，这是一种基于 Transformer 的快速分段解码器，可在冻结 VFM 功能之上运行。由此产生的模型，Plain Mask Transformer (PMT)，保留了仅编码器设计的架构简单性和低延迟，同时保持编码器表示不变和可共享。该设计无缝适用于图像和视频分割，继承了仅编码器框架的通用性。在标准图像分割基准上，PMT 与最先进的冻结编码器相匹配，同时运行速度提高约 3 倍。对于视频分割，它的性能甚至与完全微调的方法相当，同时比最先进的冻结编码器模型快 8 倍。���码：https://github.com/tue-mps/pmt。",
+      "description_zh": "大规模预训练的视觉基础模型 (VFM) 使单个冻结编码器能够同时服务多个下游任务。最近用于图像和视频分割的基于 VFM 的仅编码器模型（例如 EoMT 和 VidEoMT）以极低的延迟实现了有竞争力的精度，但它们需要对编码器进行微调，从而牺牲了多任务编码器共享，而这使得 VFM 对大规模部署具有实际吸引力。为了协调仅编码器的简单性和速度与冻结 VFM 功能，我们提出了 Plain Mask Decoder (PMD)，这是一种基于 Transformer 的快速分段解码器，可在冻结 VFM 功能之上运行。由此产生的模型，Plain Mask Transformer (PMT)，保留了仅编码器设计的架构简单性和低延迟，同时保持编码器表示不变和可共享。该设计无缝适用于图像和视频分割，继承了仅编码器框架的通用性。在标准图像分割基准上，PMT 与最先进的冻结编码器相匹配，同时运行速度提高约 3 倍。对于视频分割，它的性能甚至与完全微调的方法相当，同时比最先进的冻结编码器模型快 8 倍。代码：https://github.com/tue-mps/pmt。",
       "authors": "Niccolò Cavagnero, Narges Norouzi, Gijs Dubbelman, Daan de Geus",
       "url": "https://huggingface.co/papers/2603.25398",
       "score": 1,
@@ -146,10 +146,10 @@
       "description_zh": "控制视频和音频生成需要多种模式，从深度和姿势到相机轨迹和音频转换，但现有方法要么为一组固定的控制训练单个整体模型，要么为每种新模式引入昂贵的架构更改。我们引入了 AVControl，这是一个基于 LTX-2 的轻量级可扩展框架，LTX-2 是一个联合视听基础模型，其中每个控制模态都在并行画布上作为单独的 LoRA 进行训练，提供参考信号作为注意力层中的附加标记，除了 LoRA 适配器本身之外，不需要进行任何架构更改。我们证明，简单地将基于图像的上下文方法扩展到视频无法实现结构控制，而我们��并行画布方法解决了这个问题。在 VACE 基准测试中，我们在深度和姿势引导生成、修复和修复方面优于所有评估的基准，并在相机控制和视听基准方面显示出有竞争力的结果。我们的框架支持多种独立训练的模式：空间对齐的控制，例如深度、姿态和边缘、具有内在函数的相机轨迹、稀疏运动控制、视频编辑，以及据我们所知，用于联合生成模型的第一个模块化视听控制。我们的方法具有计算效率和数据效率：每种模式仅需要��个小数据集，并在几百到几千个训练步骤内收敛，这只是整体替代方案预算的一小部分。我们公开发布我们的代码和经过训练的 LoRA 检查点。",
       "authors": "Matan Ben-Yosef, Tavi Halperin, Naomi Ken Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen, Urska Jelercic, Ofir Bibi",
       "url": "https://huggingface.co/papers/2603.24793",
-      "score": 17,
+      "score": 18,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "18",
         "paperId": "2603.24793"
       }
     },
@@ -158,7 +158,7 @@
       "title": "Calibri: Enhancing Diffusion Transformers via Parameter-Efficient Calibration",
       "title_zh": "Calibri：通过参数高效校准增强扩散变压器",
       "description": "In this paper, we uncover the hidden potential of Diffusion Transformers (DiTs) to significantly enhance generative tasks. Through an in-depth analysis of the denoising process, we demonstrate that introducing a single learned scaling parameter can significantly improve the performance of DiT blocks. Building on this insight, we propose Calibri, a parameter-efficient approach that optimally calibrates DiT components to elevate generative quality. Calibri frames DiT calibration as a black-box reward optimization problem, which is efficiently solved using an evolutionary algorithm and modifies just ~100 parameters. Experimental results reveal that despite its lightweight design, Calibri consistently improves performance across various text-to-image models. Notably, Calibri also reduces the inference steps required for image generation, all while maintaining high-quality outputs.",
-      "description_zh": "在本文中，我们揭示了扩散变压器（DiT）显着增强生成任务的隐藏潜力。通过对去噪过程的深入分析，我们证明引入单个学习缩放参数可以显着提高 DiT 块的性能。基于这一见解，我们提出了 Calibri，这是一种参数高效的方法，可以优化校准 DiT 组件以提高生成质量。 Calibri 将 DiT 校准视为一个黑盒奖励优化问题，可以使用进化算法有效解决该问题，并且仅修改约 100 个参数。实验结果表明，尽管采用轻量级设计，Calibri 仍能持续提高各种文本到图像模型的性能。值得注意的是，Calibri 还减少了图像生成所需的推理步骤，同时保持高质量的输出。",
+      "description_zh": "在本文中，我们揭示了扩散变压器（DiT）显着增强生成任务的隐藏潜力。通过对去噪过程的深入分析，我们证明引入单个学习缩放参数可以显着提高 DiT 块的性能。基于这一见解，我们提出了 Calibri，这是一种参数高效的方法，可以优化校准 DiT 组件以提高生成质量。 Calibri 将 DiT 校准视为一个黑盒奖励优化问题，可以使用进化算法有效解决该问题，并且仅修改约 100 个参数。实���结果表明，尽管采用轻量级设计，Calibri 仍能持续提高各种文本到图像模型的性能。值得注意的是，Calibri 还减少了图像生成所需的推理步骤，同时保持高质量的输出。",
       "authors": "Danil Tokhchukov, Aysel Mirzoeva, Andrey Kuznetsov, Konstantin Sobolev",
       "url": "https://huggingface.co/papers/2603.24800",
       "score": 51,
