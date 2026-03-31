@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-03-30T20:09:05.009Z",
+  "updatedAt": "2026-03-31T16:09:34.218Z",
   "count": 15,
   "items": [
     {
-      "id": "2603.22582",
-      "title": "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?",
-      "title_zh": "对我撒谎：推理模型中的思维链推理有多可信？",
-      "description": "Chain-of-thought (CoT) reasoning has been proposed as a transparency mechanism for large language models in safety-critical deployments, yet its effectiveness depends on faithfulness (whether models accurately verbalize the factors that actually influence their outputs), a property that prior evaluations have examined in only two proprietary models, finding acknowledgment rates as low as 25% for Claude 3.7 Sonnet and 39% for DeepSeek-R1. To extend this evaluation across the open-weight ecosystem, this study tests 12 open-weight reasoning models spanning 9 architectural families (7B-685B parameters) on 498 multiple-choice questions from MMLU and GPQA Diamond, injecting six categories of reasoning hints (sycophancy, consistency, visual pattern, metadata, grader hacking, and unethical information) and measuring the rate at which models acknowledge hint influence in their CoT when hints successfully alter answers. Across 41,832 inference runs, overall faithfulness rates range from 39.7% (Seed-1.6-Flash) to 89.9% (DeepSeek-V3.2-Speciale) across model families, with consistency hints (35.5%) and sycophancy hints (53.9%) exhibiting the lowest acknowledgment rates. Training methodology and model family predict faithfulness more strongly than parameter count, and keyword-based analysis reveals a striking gap between thinking-token acknowledgment (approximately 87.5%) and answer-text acknowledgment (approximately 28.6%), suggesting that models internally recognize hint influence but systematically suppress this acknowledgment in their outputs. These findings carry direct implications for the viability of CoT monitoring as a safety mechanism and suggest that faithfulness is not a fixed property of reasoning models but varies systematically with architecture, training method, and the nature of the influencing cue.",
-      "description_zh": "思想链 (CoT) 推理已被提议作为安全关键型部署中大型语言模型的透明机制，但其有效性取决于忠实度（模型是否准确地表达了实际影响其输出的因素），之前的评估仅在两个专有模型中检查了这一属性，发现 Claude 3.7 Sonnet 的确认率低至 25%，DeepSeek-R1 的确认率低至 39%。为了将这种评估扩展到整个开放权重生态系统，本研究针对来自 MMLU 和 GPQA Diamond 的 498 个多项选择题测试了跨越 9 个架构系列（7B-685B 参数）的 12 个开放权重推理模型，注入了六类推理提示（阿谀奉承、一致性、视觉模式、元数据、评分者黑客攻击和不道德信息），并测量了当提示成功改变答案时模型在其 CoT 中承认提示影响的速率。在 41,832 次推理运行中，各模型系列的总体忠实率范围为 39.7% (Seed-1.6-Flash) 到 89.9% (DeepSeek-V3.2-Speciale)，其中一致性提示 (35.5%) 和阿谀奉承提示 (53.9%) 的确认率最低。训练方法和模型族比参数计数更能预测忠实度，基于关键词的分析揭示了思维标记确认（约 87.5%）和答案文本确认（约 28.6%）之间存在显着差距，这表明模型在内部识别提示影响，但在输出中系统性地抑制了这种确认。这些发现对 CoT 监控作为安全机制的可行性具有直接影响，并表明忠实度不是推理模型的固定属性，而是随着架构、训练方法和影响线索的性质而系统地变化。",
-      "authors": "Richard J. Young",
-      "url": "https://huggingface.co/papers/2603.22582",
+      "id": "2603.28696",
+      "title": "AdaptToken: Entropy-based Adaptive Token Selection for MLLM Long Video Understanding",
+      "title_zh": "AdaptToken：用于 MLLM 长视频理解的基于熵的自适应令牌选择",
+      "description": "Long video understanding remains challenging for Multi-modal Large Language Models (MLLMs) due to high memory costs and context-length limits. Prior approaches mitigate this by scoring and selecting frames/tokens within short clips, but they lack a principled mechanism to (i) compare relevance across distant video clips and (ii) stop processing once sufficient evidence has been gathered. We propose AdaptToken, a training-free framework that turns an MLLM's self-uncertainty into a global control signal for long-video token selection. AdaptToken splits a video into groups, extracts cross-modal attention to rank tokens within each group, and uses the model's response entropy to estimate each group's prompt relevance. This entropy signal enables a global token budget allocation across groups and further supports early stopping (AdaptToken-Lite), skipping the remaining groups when the model becomes sufficiently certain. Across four long-video benchmarks (VideoMME, LongVideoBench, LVBench, and MLVU) and multiple base MLLMs (7B-72B), AdaptToken consistently improves accuracy (e.g., +6.7 on average over Qwen2.5-VL 7B) and continues to benefit from extremely long inputs (up to 10K frames), while AdaptToken-Lite reduces inference time by about half with comparable performance. Project page: https://haozheqi.github.io/adapt-token",
+      "description_zh": "由于高内存成本和上下文长度限制，长视频理解对于多模态大语言模型（MLLM）来说仍然具有挑战性。先前的方法通过评分和选择短剪辑中的帧/标记来缓解这一问题，但它们缺乏原则机制来（i）比较远处视频剪辑的相关性以及（ii）一旦收集到足够的证据就停止处理。我们提出了 AdaptToken，这是一种免训练框架，可将 MLLM 的自我不确定性转化为长视频 token 选择的全局控制信号。 AdaptToken 将视频分成组，提取跨模式注意力来对每个组内的标记进行排名，并使用模型的响应熵来估计每个组的提示相关性。该熵信号支持跨组的全局代币预算分配，并进一步支持提前停止（AdaptToken-Lite），当模型变得足够确定时跳过剩余组。在四个长视频基准测试（VideoMME、LongVideoBench、LVBench 和 MLVU）和多个基础 MLLM (7B-72B) 中，AdaptToken 持续提高准确性（例如，比 Qwen2.5-VL 7B 平均提高 6.7），并继续受益于超长输入（高达 10K 帧），而 AdaptToken-Lite 将推理时间减少了大约一半，性能相当。项目���面：https://haozheqi.github.io/adapt-token",
+      "authors": "Haozhe Qi, Kevin Qu, Mahdi Rad, Rui Wang, Alexander Mathis, Marc Pollefeys",
+      "url": "https://huggingface.co/papers/2603.28696",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2603.28696"
+      }
+    },
+    {
+      "id": "2603.28766",
+      "title": "HandX: Scaling Bimanual Motion and Interaction Generation",
+      "title_zh": "HandX：缩放双手运动和交互生成",
+      "description": "Synthesizing human motion has advanced rapidly, yet realistic hand motion and bimanual interaction remain underexplored. Whole-body models often miss the fine-grained cues that drive dexterous behavior, finger articulation, contact timing, and inter-hand coordination, and existing resources lack high-fidelity bimanual sequences that capture nuanced finger dynamics and collaboration. To fill this gap, we present HandX, a unified foundation spanning data, annotation, and evaluation. We consolidate and filter existing datasets for quality, and collect a new motion-capture dataset targeting underrepresented bimanual interactions with detailed finger dynamics. For scalable annotation, we introduce a decoupled strategy that extracts representative motion features, e.g., contact events and finger flexion, and then leverages reasoning from large language models to produce fine-grained, semantically rich descriptions aligned with these features. Building on the resulting data and annotations, we benchmark diffusion and autoregressive models with versatile conditioning modes. Experiments demonstrate high-quality dexterous motion generation, supported by our newly proposed hand-focused metrics. We further observe clear scaling trends: larger models trained on larger, higher-quality datasets produce more semantically coherent bimanual motion. Our dataset is released to support future research.",
+      "description_zh": "合成人体动作已经迅速发展，但真实的手部动作和双手交互仍未得到充分探索。全身模型经常错过驱动灵巧行为、手指关节、接触时间和手间协调的细粒度线索，并且现有资源缺乏捕捉微妙的手指动态和协作的高保真双手序列。为了填补这一空白，我们推出了 HandX，这是一个涵盖数据、注释和评估的统一基础。我们整合和过滤现有数据集的质量，并收集一个新的动作捕捉数据集，针对代表性不足的双手交互和详细的手指动态。对于可扩展注释，我们引入了一种解耦策略，该策略提取代表性运动特征，例如接触事件和手指弯曲，然后利用大型语言模型的推理来生成与这些特征一致的细粒度、语义丰富的描述。基于所得数据和注释，我们使用多功能条件模式对扩散和自回归模型进行基准测试。实验证明了高质量的灵巧运动生成，并得到了我们新提出的以手部为中心的指标的支持。我们进一步观察到明显的缩放趋势：在更大、更高质量的数据集上训练的更大的模型会产生语义上更连贯的双手运动。我们的数据集发布是为了支持未来的研究。",
+      "authors": "Zimu Zhang, Yucheng Zhang, Xiyan Xu, Ziyin Wang, Sirui Xu, Kai Zhou, Bing Zhou, Chuan Guo, Jian Wang, Yu-Xiong Wang, Liang-Yan Gui",
+      "url": "https://huggingface.co/papers/2603.28766",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2603.28766"
+      }
+    },
+    {
+      "id": "2603.27055",
+      "title": "Text Data Integration",
+      "title_zh": "文本数据集成",
+      "description": "Data comes in many forms. From a shallow perspective, they can be viewed as being either in structured (e.g., as a relation, as key-value pairs) or unstructured (e.g., text, image) formats. So far, machines have been fairly good at processing and reasoning over structured data that follows a precise schema. However, the heterogeneity of data poses a significant challenge on how well diverse categories of data can be meaningfully stored and processed. Data Integration, a crucial part of the data engineering pipeline, addresses this by combining disparate data sources and providing unified data access to end-users. Until now, most data integration systems have leaned on only combining structured data sources. Nevertheless, unstructured data (a.k.a. free text) also contains a plethora of knowledge waiting to be utilized. Thus, in this chapter, we firstly make the case for the integration of textual data, to later present its challenges, state of the art and open problems.",
+      "description_zh": "数据有多种形式。从浅层次的角度来看，它们可以被视为结构化（例如，作为关系、键值对）或非结构化（例如，文本、图像）格式。到目前为止，机器已经相当擅长对遵循精确模式的结构化数据进行处理和推理。然而，数据的异构性对如何有效地存储和处理不同类别的数据提出了重大挑战。数据集成是数据工程管道的关键部分，它通过组合不同的数据源并向最终用户提供统一的数据访问来解决这个问题。到目前为止，大多数数据集成系统仅依赖于组合结构化数据源。然而，非结构化数据（又称自由文本）也包含大量等待利用的知识。因此，在本章中，我们首先阐述文本数据集成的案例，然后介绍其挑战、最新技术和开放问题。",
+      "authors": "Md Ataur Rahman, Dimitris Sacharidis, Oscar Romero, Sergi Nadal",
+      "url": "https://huggingface.co/papers/2603.27055",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.27055"
+      }
+    },
+    {
+      "id": "2603.27341",
+      "title": "A Comparative Study in Surgical AI: Datasets, Foundation Models, and Barriers to Med-AGI",
+      "title_zh": "外科人工智能的比较研究：数据集、基础模型和 Med-AGI 的障碍",
+      "description": "Recent Artificial Intelligence (AI) models have matched or exceeded human experts in several benchmarks of biomedical task performance, but have lagged behind on surgical image-analysis benchmarks. Since surgery requires integrating disparate tasks -- including multimodal data integration, human interaction, and physical effects -- generally-capable AI models could be particularly attractive as a collaborative tool if performance could be improved. On the one hand, the canonical approach of scaling architecture size and training data is attractive, especially since there are millions of hours of surgical video data generated per year. On the other hand, preparing surgical data for AI training requires significantly higher levels of professional expertise, and training on that data requires expensive computational resources. These trade-offs paint an uncertain picture of whether and to-what-extent modern AI could aid surgical practice. In this paper, we explore this question through a case study of surgical tool detection using state-of-the-art AI methods available in 2026. We demonstrate that even with multi-billion parameter models and extensive training, current Vision Language Models fall short in the seemingly simple task of tool detection in neurosurgery. Additionally, we show scaling experiments indicating that increasing model size and training time only leads to diminishing improvements in relevant performance metrics. Thus, our experiments suggest that current models could still face significant obstacles in surgical use cases. Moreover, some obstacles cannot be simply ``scaled away'' with additional compute and persist across diverse model architectures, raising the question of whether data and label availability are the only limiting factors. We discuss the main contributors to these constraints and advance potential solutions.",
+      "description_zh": "最近的人工智能（AI）模型在生物医学任务性能的几个基准方面已经达到或超过了人类专家，但在手术图像分析基准方面却落后了。由于手术需要整合不同的任务——包括多模式数据集成、人机交互和物理效应——如果性能能够得到改善，通用人工智能模型作为协作工具可能会特别有吸引力。一方面，扩展架构大小和训练数据的规范方法很有吸引力，特别是因为每年生成数百万小时的手术视频数据。另一方面，为人工智能训练准备���术数据需要更高水平的专业知识，并且对该数据的训练需要昂贵的计算资源。这些权衡描绘了一幅关于现代人工智能是否以及在多大程度上可以帮助外科手术的不确定图景。在本文中，我们通过使用 2026 年最先进的人工智能方法进行手术工具检测的案例研究来探讨这个问题。我们证明，即使有数十亿个参数模型和广泛的训练，当前的视觉语言模型仍然无法完成神经外科手术中看似简单的工具检测任务。此外，我们展示的扩展实验表明，增加���型大小和训练时间只会导致相关性能指标的改进逐渐减少。因此，我们的实验表明，当前的模型在外科手术用例中仍然可能面临重大障碍。此外，一些障碍不能通过额外的计算简单地“缩小”，并在不同的模型架构中持续存在，这就提出了数据和标签可用性是否是唯一限制因素的问题。我们讨论了这些限制的主要因素并提出了潜在的解决方案。",
+      "authors": "Kirill Skobelev, Eric Fithian, Yegor Baranovski, Jack Cook, Sandeep Angara, Shauna Otto, Zhuang-Fang Yi, John Zhu, Daniel A. Donoho, X. Y. Han, Neeraj Mainkar, Margaux Masson-Forsythe",
+      "url": "https://huggingface.co/papers/2603.27341",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2603.27341"
+      }
+    },
+    {
+      "id": "2603.27040",
+      "title": "Unified Number-Free Text-to-Motion Generation Via Flow Matching",
+      "title_zh": "通过流匹配生成统一的无数字文本到动作",
+      "description": "Generative models excel at motion synthesis for a fixed number of agents but struggle to generalize with variable agents. Based on limited, domain-specific data, existing methods employ autoregressive models to generate motion recursively, which suffer from inefficiency and error accumulation. We propose Unified Motion Flow (UMF), which consists of Pyramid Motion Flow (P-Flow) and Semi-Noise Motion Flow (S-Flow). UMF decomposes the number-free motion generation into a single-pass motion prior generation stage and multi-pass reaction generation stages. Specifically, UMF utilizes a unified latent space to bridge the distribution gap between heterogeneous motion datasets, enabling effective unified training. For motion prior generation, P-Flow operates on hierarchical resolutions conditioned on different noise levels, thereby mitigating computational overheads. For reaction generation, S-Flow learns a joint probabilistic path that adaptively performs reaction transformation and context reconstruction, alleviating error accumulation. Extensive results and user studies demonstrate UMF' s effectiveness as a generalist model for multi-person motion generation from text. Project page: https://githubhgh.github.io/umf/.",
+      "description_zh": "生成模型擅长对固定数量的智能体进行运动合成，但很难对可变智能体进行泛化。现有方法基于有限的特定领域数据，采用自回归模型递归地生成运动，效率低且误差累积。我们提出统一运动流（UMF），它由金字塔运动流（P-Flow）和半噪声运动流（S-Flow）组成。 UMF将无数运动生成分解为单遍运动先验生成阶段和多遍反应生成阶段。具体来说，UMF利用统一的潜在空间来弥合异构运动数据集之间的分布差距，从而实现有效的统一训练。对于上一代运动，P-Flow 在不同噪声水平条件下的分层分辨率上运行，从而减少计算开销。对于反应生成，S-Flow 学习联合概率路径，自适应地执行反应转换和上下文重建，从而减轻错误累积。广泛的结果和用户研究证明了 UMF 作为从文本生成多人运动的通用模型的有效性。项目页面：https://githubhgh.github.io/umf/。",
+      "authors": "Guanhe Huang, Oya Celiktutan",
+      "url": "https://huggingface.co/papers/2603.27040",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2603.27040"
+      }
+    },
+    {
+      "id": "2603.27703",
+      "title": "KAT-Coder-V2 Technical Report",
+      "title_zh": "KAT-Coder-V2 技术报告",
+      "description": "We present KAT-Coder-V2, an agentic coding model developed by the KwaiKAT team at Kuaishou. KAT-Coder-V2 adopts a \"Specialize-then-Unify\" paradigm that decomposes agentic coding into five expert domains - SWE, WebCoding, Terminal, WebSearch, and General - each undergoing independent supervised fine-tuning and reinforcement learning, before being consolidated into a single model via on-policy distillation. We develop KwaiEnv, a modular infrastructure sustaining tens of thousands of concurrent sandbox instances, and scale RL training along task complexity, intent alignment, and scaffold generalization. We further propose MCLA for stabilizing MoE RL training and Tree Training for eliminating redundant computation over tree-structured trajectories with up to 6.2x speedup. KAT-Coder-V2 achieves 79.6% on SWE-bench Verified (vs. Claude Opus 4.6 at 80.8%), 88.7 on PinchBench (surpassing GLM-5 and MiniMax M2.7), ranks first across all three frontend aesthetics scenarios, and maintains strong generalist scores on Terminal-Bench Hard (46.8) and tau^2-Bench (93.9). Our model is publicly available at https://streamlake.com/product/kat-coder.",
+      "description_zh": "我们推出 KAT-Coder-V2，这是快手 KwaiKAT 团队开发的代理编码模型。 KAT-Coder-V2 采用“专业化然后统一”的范例，将代理编码分解为五个专家领域 - SWE、WebCoding、Terminal、WebSearch 和 General - 每个领域都经过独立的监督微调和强化学习，然后通过策略蒸馏合并为单个模型。我们开发了 KwaiEnv，这是一个模块化基础设施，可维持数以万计的并发沙箱实例，并根据任务复杂性、意图对齐和脚手架泛化来扩展 RL 训练。我们进一步提出 MCLA 来稳定 MoE RL 训练，并提出树训练来消除树结构轨迹上的冗余计算，加速高达 6.2 倍。 KAT-Coder-V2 在 SWE-bench Verified 上达到 79.6%（相对于 Claude Opus 4.6 的 80.8%），在 PinchBench 上达到 88.7（超越 GLM-5 和 MiniMax M2.7），在所有三个前端美学场景中排名第一，并在 Terminal-Bench Hard (46.8) 和 tau^2-Bench 上保持强大的通才分数（93.9）。我们的模型可在 https://streamlake.com/product/kat-coder 上公开获取。",
+      "authors": "Fengxiang Li, Han Zhang, Haoyang Huang, Jinghui Wang, Jinhua Hao, Kun Yuan, Mengtong Li, Minglei Zhang, Pengcheng Xu, Wenhao Zhuang, Yizhen Shao, Zongxian Feng, Can Tang, Chao Wang, Chengxiao Tong, Fan Yang, Gang Xiong, Haixuan Gao, Han Gao, Hao Wang, Haochen Liu, Hongliang Sun, Jiabao Li, Jingwen Chang, Jun Du, Junyi Peng, Leizhen Cui, Meimei Jing, Mingqi Wu, Shangpeng Yan, Shaotong Qi, Suzhe Xu, Wenxuan Zhao, Xianda Sun, Xuan Xie, Yanbo Wang, Yao Xia, Yinghan Cui, Yingpeng Chen, Yong Wang, Yuze Shi, Zhiwei Shen, Ziyu Wang, Ming Sun, Lin Ye, Bin Chen",
+      "url": "https://huggingface.co/papers/2603.27703",
       "score": 0,
       "meta": {
         "source": "huggingface",
         "upvotes": "0",
-        "paperId": "2603.22582"
+        "paperId": "2603.27703"
       }
     },
     {
-      "id": "2603.26664",
-      "title": "Learning to Commit: Generating Organic Pull Requests via Online Repository Memory",
-      "title_zh": "学习提交：通过在线存储库内存生成有机拉取请求",
-      "description": "Large language model (LLM)-based coding agents achieve impressive results on controlled benchmarks yet routinely produce pull requests that real maintainers reject. The root cause is not functional incorrectness but a lack of organicity: generated code ignores project-specific conventions, duplicates functionality already provided by internal APIs, and violates implicit architectural constraints accumulated over years of development. Simply exposing an agent to the latest repository snapshot is not enough: the snapshot reveals the final state of the codebase, but not the repository-specific change patterns by which that state was reached. We introduce Learning to Commit, a framework that closes this gap through Online Repository Memory. Given a repository with a strict chronological split, the agent performs supervised contrastive reflection on earlier commits: it blindly attempts to resolve each historical issue, compares its prediction against the oracle diff, and distils the gap into a continuously growing set of skills-reusable patterns capturing coding style, internal API usage, and architectural invariants. When a new PR description arrives, the agent conditions its generation on these accumulated skills, producing changes grounded in the project's own evolution rather than generic pretraining priors. Evaluation is conducted on genuinely future, merged pull requests that could not have been seen during the skill-building phase, and spans multiple dimensions including functional correctness, code-style consistency, internal API reuse rate, and modified-region plausibility. Experiments on an expert-maintained repository with rich commit history show that Online Repository Memory effectively improves organicity scores on held-out future tasks.",
-      "description_zh": "基于大型语言模型 (LLM) 的编码代理在受控基准上取得了令人印象深刻的结果，但经常产生实际维护人员拒绝的拉取请求。根本原因不是功能不正确，而是缺乏有机性：生成的代码忽略了特定于项目的约定，重复了内部 API 已经提供的功能，并且违反了多年开发中积累的隐式架构约束。仅仅将代理暴露给最新的存储库快照是不够的：快照揭示了代码库的最终状态，但没有揭示达到该状态的特定于存储库的更改模式。我们引入了 Learning to Commit，这是一个通过在线存储库内存弥补这一差距的框架。给定一个严格按时间顺序划分的存储库，代理对早期提交执行有监督的对比反射：它盲目地尝试解决每个历史问题，将其预测与预言机差异进行比较，并将差距提炼成一组不断增长的技能-可重用模式，捕获编码风格、内部 API 使用和架构不变量。当新的 PR 描述到达时，代理会根据这些积累的技能来调节其生成，从而根据项目自身的演变而不是通用的预训练先验来产生变化。评估是针对真正未来的、合并的拉取请求进行的，这些请求在技能构建阶段是不可能看到的，并且跨越多个维度，包括功能正确性、代码风格一致性、内部 API 重用率和修改区域的合理性。在专家维护的具有丰富提交历史的存储库上进行的实验表明，在线存储库内存有效地提高了未来任务的有机性分数。",
-      "authors": "Mo Li, L. H. Xu, Qitai Tan, Ting Cao, Yunxin Liu",
-      "url": "https://huggingface.co/papers/2603.26664",
-      "score": 2,
+      "id": "2603.26728",
+      "title": "SEAR: Schema-Based Evaluation and Routing for LLM Gateways",
+      "title_zh": "SEAR：LLM 网关的基于模式的评估和路由",
+      "description": "Evaluating production LLM responses and routing requests across providers in LLM gateways requires fine-grained quality signals and operationally grounded decisions. To address this gap, we present SEAR, a schema-based evaluation and routing system for multi-model, multi-provider LLM gateways. SEAR defines an extensible relational schema covering both LLM evaluation signals (context, intent, response characteristics, issue attribution, and quality scores) and gateway operational metrics (latency, cost, throughput), with cross-table consistency links across around one hundred typed, SQL-queryable columns. To populate the evaluation signals reliably, SEAR proposes self-contained signal instructions, in-schema reasoning, and multi-stage generation that produces database-ready structured outputs. Because signals are derived through LLM reasoning rather than shallow classifiers, SEAR captures complex request semantics, enables human-interpretable routing explanations, and unifies evaluation and routing in a single query layer. Across thousands of production sessions, SEAR achieves strong signal accuracy on human-labeled data and supports practical routing decisions, including large cost reductions with comparable quality.",
+      "description_zh": "评估生产 LLM 响应并在 LLM 网关中跨提供商路由请求需要细粒度的质量信号和基于操作的决策。为了弥补这一差距，我们推出了 SEAR，这是一种基于模式的评估和路由系统，适用于多模型、多提供商 LLM 网关。 SEAR 定义了一个可扩展的关系模式，涵盖 LLM 评估信号（上下文、意图、响应特征、问题归因和质量得分）和网关操作指标（延迟、成本、吞吐量），并具有跨大约一百个类型化、可 SQL 查询的列的跨表一致性链接。为了可靠地填充评估信号，SEAR 提出了独立的信号指令、模式内推理和多阶段生成，可生成数据库就绪的结构化输出。由于信号是通过 LLM 推理而不是浅层分类器导出的，因此 SEAR 捕获复杂的请求语义，实现人类可解释的路由解释，并将评估和路由统一在单个查询层中。在数千次生产过程中，SEAR 在人工标记数据上实现了强大的信号准确性，并支持实际的路由决策，包括在质量相当的情况下大幅降低成本。",
+      "authors": "Zecheng Zhang, Han Zheng, Yue Xu",
+      "url": "https://huggingface.co/papers/2603.26728",
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2603.26664"
+        "upvotes": "4",
+        "paperId": "2603.26728"
       }
     },
     {
-      "id": "2603.24477",
-      "title": "Composer 2 Technical Report",
-      "title_zh": "Composer 2 技术报告",
-      "description": "Composer 2 is a specialized model designed for agentic software engineering. The model demonstrates strong long-term planning and coding intelligence while maintaining the ability to efficiently solve problems for interactive use. The model is trained in two phases: first, continued pretraining to improve the model's knowledge and latent coding ability, followed by large-scale reinforcement learning to improve end-to-end coding performance through stronger reasoning, accurate multi-step execution, and coherence on long-horizon realistic coding problems. We develop infrastructure to support training in the same Cursor harness that is used by the deployed model, with equivalent tools and structure, and use environments that match real problems closely. To measure the ability of the model on increasingly difficult tasks, we introduce a benchmark derived from real software engineering problems in large codebases including our own. Composer 2 is a frontier-level coding model and demonstrates a process for training strong domain-specialized models. On our CursorBench evaluations the model achieves a major improvement in accuracy compared to previous Composer models (61.3). On public benchmarks the model scores 61.7 on Terminal-Bench and 73.7 on SWE-bench Multilingual in our harness, comparable to state-of-the-art systems.",
-      "description_zh": "Composer 2 是专为代理软件工程设计的专用模型。该模型展示了强大的长期规划和编码智能，同时保持了有效解决交互式使用问题的能力。该模型分两个阶段进行训练：首先，持续预训练以提高模型的知识和潜在编码能力，然后进行大规模强化学习，通过更强的推理、准确的多步执行和长期现实编码问题的一致性来提高端到端编码性能。我们开发基础设施来支持在已部署模型使用的同一 Cursor 工具中进行训练，具有等效的工具和结构，并使用与实际问题密切匹配的环境。为了衡量模型在日益困难的任务上的能力，我们引入了一个基准，该基准源自大型代码库（包括我们自己的代码库）中的真实软件工程问题。 Composer 2 是一个前沿级编码模型，演示了训练强大的领域专业模型的过程。在我们的 CursorBench 评估中，与之前的 Composer 模型 (61.3) 相比，该模型在准确性方面取得了重大改进。在公共基准测试中，该模型在 Terminal-Bench 上的得分为 61.7，在 SWE-bench Multilingual 上的得分为 73.7，与最先进的系统相当。",
-      "authors": "Cursor Research, Aaron Chan, Ahmed Shalaby, Alexander Wettig, Aman Sanger, Andrew Zhai, Anurag Ajay, Ashvin Nair, Charlie Snell, Chen Lu, Chen Shen, Emily Jia, Federico Cassano, Hanpeng Liu, Haoyu Chen, Henry Wildermuth, Jacob Jackson, Janet Li, Jediah Katz, Jiajun Yao, Joey Hejna, Josh Warner, Julius Vering, Kevin Frans, Lee Danilek, Less Wright, Lujing Cen, Luke Melas-Kyriazi, Michael Truell, Michiel de Jong, Naman Jain, Nate Schmidt, Nathan Wang, Niklas Muennighoff, Oleg Rybkin, Paul Loh, Phillip Kravtsov, Rishabh Yadav, Sahil Shah, Sam Kottler, Alexander M Rush, Shengtong Zhang, Shomil Jain, Sriram Sankar, Stefan Heule, Stuart H. Sul, Sualeh Asif, Victor Rong, Wanqi Zhu, William Lin, Yuchen Wu, Yuri Volkov, Yury Zemlyanskiy, Zack Holbrook, Zhiyuan Zhang",
-      "url": "https://huggingface.co/papers/2603.24477",
-      "score": 2,
+      "id": "2603.27027",
+      "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
+      "title_zh": "TAPS：用于推测抽样的任务感知提案分布",
+      "description": "Speculative decoding accelerates autoregressive generation by letting a lightweight draft model propose future tokens that a larger target model then verifies in parallel. In practice, however, draft models are usually trained on broad generic corpora, which leaves it unclear how much speculative decoding quality depends on the draft training distribution. We study this question with lightweight HASS and EAGLE-2 drafters trained on MathInstruct, ShareGPT, and mixed-data variants, evaluated on MT-Bench, GSM8K, MATH-500, and SVAMP. Measured by acceptance length, task-specific training yields clear specialization: MathInstruct-trained drafts are strongest on reasoning benchmarks, while ShareGPT-trained drafts are strongest on MT-Bench. Mixed-data training improves robustness, but larger mixtures do not dominate across decoding temperatures. We also study how to combine specialized drafters at inference time. Naive checkpoint averaging performs poorly, whereas confidence-based routing improves over single-domain drafts and merged-tree verification yields the highest acceptance length overall for both backbones. Finally, confidence is a more useful routing signal than entropy: rejected tokens tend to have higher entropy, but confidence produces much clearer benchmark-level routing decisions. These results show that speculative decoding quality depends not only on draft architecture, but also on the match between draft training data and downstream workload, and that specialized drafters are better combined at inference time than in weight space.",
+      "description_zh": "推测性解码通过让轻量级草稿模型提出未来标记，然后由更大的目标模型并行验证，从而加速自回归生成。然而，在实践中，草稿模型通常是在广泛的通用语料库上进行训练的，这使得我们不清楚推测解码质量在多大程度上取决于草稿训练分布。我们与受过 MathInstruct、ShareGPT 和混合数据变体培训的轻量级 HASS 和 EAGLE-2 绘图员一起研究这个问题，并在 MT-Bench、GSM8K、MATH-500 和 SVAMP 上进行评估。以接受长度来衡量，特定任务的训练产生了明显的专业化：MathInstruct 训练的草稿在推理基准上最强，而 ShareGPT 训练的草稿在 MT-Bench 上最强。混合数据训练提高了鲁棒性，但较大的混合数据在解码温度上并不占主导地位。我们还研究了如何在推理时结合专门的起草者。朴素的检查点平均性能较差，而基于置信度的路由比单域草稿有所改进，并且合并树验证为两个骨干网提供了最高的总体接受长度。最后，置信度是比熵更有用的路由信号：被拒绝的令牌往往具有更高的熵，但置信度会产生更清晰的基准级路由决策。这些结果表明，推测解码质量不仅取决于草案架构，还取决于草案训练数据和下游工作负载之间的匹配，并且专业起草者在推理时间比在权重空间中更好地组合。",
+      "authors": "Mohamad Zbib, Mohamad Bazzi, Ammar Mohanna, Hasan Abed Al Kader Hammoud, Bernard Ghanem",
+      "url": "https://huggingface.co/papers/2603.27027",
+      "score": 106,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2603.24477"
+        "upvotes": "106",
+        "paperId": "2603.27027"
       }
     },
     {
-      "id": "2603.23906",
-      "title": "GenMask: Adapting DiT for Segmentation via Direct Mask",
-      "title_zh": "GenMask：通过直接掩模调整 DiT 进行分割",
-      "description": "Recent approaches for segmentation have leveraged pretrained generative models as feature extractors, treating segmentation as a downstream adaptation task via indirect feature retrieval. This implicit use suffers from a fundamental misalignment in representation. It also depends heavily on indirect feature extraction pipelines, which complicate the workflow and limit adaptation. In this paper, we argue that instead of indirect adaptation, segmentation tasks should be trained directly in a generative manner. We identify a key obstacle to this unified formulation: VAE latents of binary masks are sharply distributed, noise robust, and linearly separable, distinct from natural image latents. To bridge this gap, we introduce timesteps sampling strategy for binary masks that emphasizes extreme noise levels for segmentation and moderate noise for image generation, enabling harmonious joint training. We present GenMask, a DiT trains to generate black-and-white segmentation masks as well as colorful images in RGB space under the original generative objective. GenMask preserves the original DiT architecture while removing the need of feature extraction pipelines tailored for segmentation tasks. Empirically, GenMask attains state-of-the-art performance on referring and reasoning segmentation benchmarks and ablations quantify the contribution of each component.",
-      "description_zh": "最近的分割方法利用预训练的生成模型作为特征提取器，通过间接特征检索将分割视为下游适应任务。这种隐式使用在表示上存在根本性的偏差。它还严重依赖于间接特征提取管道，这使工作流程变得复杂并限制了适应性。在本文中，我们认为分割任务应该以生成方式直接训练，而不是间接适应。我们确定了这种统一公式的一个关键障碍：二元掩模的 VAE 潜伏分布尖锐、噪声鲁棒且线性可分离，与自然图像潜伏不同。为了弥补这一差距，我们引入了二进制掩模的时间步采样策略，强调分割的极端噪声水平和图像生成的中等噪声，从而实现和谐的联合训练。我们提出了 GenMask，一种 DiT 训练，可以在原始生成目标下生成黑白分割掩模以及 RGB 空间中的彩色图像。 GenMask 保留了原始的 DiT 架构，同时消除了为分割任务定制的特征提取管道的需要。根据经验，GenMask 在引用和推理分割基准方面���得了最先进的性能，并且消融量化了每个组件的贡献。",
-      "authors": "Yuhuan Yang, Xianwei Zhuang, Yuxuan Cai, Chaofan Ma, Shuai Bai, Jiangchao Yao, Ya Zhang, Junyang Lin, Yanfeng Wang",
-      "url": "https://huggingface.co/papers/2603.23906",
-      "score": 3,
+      "id": "2603.28762",
+      "title": "On-the-fly Repulsion in the Contextual Space for Rich Diversity in Diffusion Transformers",
+      "title_zh": "扩散变压器丰富多样性的上下文空间中的动态排斥",
+      "description": "Modern Text-to-Image (T2I) diffusion models have achieved remarkable semantic alignment, yet they often suffer from a significant lack of variety, converging on a narrow set of visual solutions for any given prompt. This typicality bias presents a challenge for creative applications that require a wide range of generative outcomes. We identify a fundamental trade-off in current approaches to diversity: modifying model inputs requires costly optimization to incorporate feedback from the generative path. In contrast, acting on spatially-committed intermediate latents tends to disrupt the forming visual structure, leading to artifacts. In this work, we propose to apply repulsion in the Contextual Space as a novel framework for achieving rich diversity in Diffusion Transformers. By intervening in the multimodal attention channels, we apply on-the-fly repulsion during the transformer's forward pass, injecting the intervention between blocks where text conditioning is enriched with emergent image structure. This allows for redirecting the guidance trajectory after it is structurally informed but before the composition is fixed. Our results demonstrate that repulsion in the Contextual Space produces significantly richer diversity without sacrificing visual fidelity or semantic adherence. Furthermore, our method is uniquely efficient, imposing a small computational overhead while remaining effective even in modern \"Turbo\" and distilled models where traditional trajectory-based interventions typically fail.",
+      "description_zh": "现代文本到图像（T2I）扩散模型已经实现了显着的语义对齐，但它们常常严重缺乏多样性，对于任何给定的提示都集中在一组狭窄的视觉解决方案上。这种典型性偏差给需要广泛生成结果的创意应用带来了挑战。我们确定了当前多样性方法的一个基本权衡：修改模型输入需要昂贵的优化才能纳入来自生成路径的反馈。相反，作用于空间上承诺的中间潜伏往往会破坏正在形成的视觉结构，导致伪影。在这项工作中，我们建议将上下文空间中的排斥力应用为一种新颖的框架，以实现扩散变压器的丰富多样性。通过干预多模态注意通道，我们在变压器的前向传递过程中应用即时排斥，在块之间注入干预，其中文本调节通过新兴图像结构得到丰富。这允许在结构上通知之后但在构图固定之前重定向引导轨迹。我们的结果表明，上下文空间中的排斥会产生更丰富的多样性，而不会牺牲视觉保真度或语义依从性。此外，我们的方法具有独特的高效性，即使在传统的基于轨迹的干预措施通常会失败的现代“涡轮”和蒸馏模型中，其计算开销也很小，同时仍然有效。",
+      "authors": "Omer Dahary, Benaya Koren, Daniel Garibi, Daniel Cohen-Or",
+      "url": "https://huggingface.co/papers/2603.28762",
+      "score": 16,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2603.23906"
+        "upvotes": "16",
+        "paperId": "2603.28762"
       }
     },
     {
-      "id": "2603.25804",
-      "title": "RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation",
-      "title_zh": "RealChart2Code：利用真实数据和多任务评估推进图表到代码的生成",
-      "description": "Vision-Language Models (VLMs) have demonstrated impressive capabilities in code generation across various domains. However, their ability to replicate complex, multi-panel visualizations from real-world data remains largely unassessed. To address this gap, we introduce \\texttt{RealChart2Code}, a new large-scale benchmark with over 2,800 instances grounded in authentic datasets and featuring tasks with clear analytical intent. Crucially, it is the first benchmark to systematically evaluate chart generation from large-scale raw data and assess iterative code refinement in a multi-turn conversational setting. Our comprehensive evaluation of 14 leading VLMs on RealChart2Code reveals significant performance degradation compared to simpler benchmarks, highlighting their struggles with complex plot structures and authentic data. Our analysis uncovers a substantial performance gap between proprietary and open-weight models and confirms that even state-of-the-art VLMs often fail to accurately replicate intricate, multi-panel charts. These findings provide valuable insights into the current limitations of VLMs and guide future research directions. We release the benchmark and code at https://github.com/Speakn0w/RealChart2Code.",
-      "description_zh": "视觉语言模型 (VLM) 在跨各个领域的代码生成方面展示了令人印象深刻的功能。然而，他们从现实世界数据复制复杂的多面板可视化的能力在很大程度上仍未得到评估。为了解决这一差距，我们引入了 \\texttt{RealChart2Code}，这是一个新的大规模基准测试，拥有超过 2,800 个基于真实数据集的实例，并具有具有明确分析意图的任务。至关重要的是，它是第一个系统评估大规模原始数据图表生成并评估多轮对话环境中迭代代码细化的基准。我们对 RealChart2Code 上 14 个领先的 VLM 进行的综合评估显示，与更简单的基准相比，性能显着下降，凸显了它们在处理复杂的绘图结构和真实数据方面的困难。我们的分析揭示了专有模型和开放权重模型之间存在巨大的性能差距，并证实即使是最先进的 VLM 也常常无法准确复制复杂的多面板图表。这些发现为了解 VLM 当前的局限性提供了宝贵的见解，并指导未来的研究方向。我们在 https://github.com/Speakn0w/RealChart2Code 发布了基准测试和代码。",
-      "authors": "Jiajun Zhang, Yuying Li, Zhixun Li, Xingyu Guo, Jingzhuo Wu, Leqi Zheng, Yiran Yang, Jianke Zhang, Qingbin Li, Shannan Yan, Zhetong Li, Changguo Jia, Junfei Wu, Zilei Wang, Qiang Liu, Liang Wang",
-      "url": "https://huggingface.co/papers/2603.25804",
-      "score": 14,
+      "id": "2603.27304",
+      "title": "EpochX: Building the Infrastructure for an Emergent Agent Civilization",
+      "title_zh": "EpochX：为新兴特工文明构建基础设施",
+      "description": "General-purpose technologies reshape economies less by improving individual tools than by enabling new ways to organize production and coordination. We believe AI agents are approaching a similar inflection point: as foundation models make broad task execution and tool use increasingly accessible, the binding constraint shifts from raw capability to how work is delegated, verified, and rewarded at scale. We introduce EpochX, a credits-native marketplace infrastructure for human-agent production networks. EpochX treats humans and agents as peer participants who can post tasks or claim them. Claimed tasks can be decomposed into subtasks and executed through an explicit delivery workflow with verification and acceptance. Crucially, EpochX is designed so that each completed transaction can produce reusable ecosystem assets, including skills, workflows, execution traces, and distilled experience. These assets are stored with explicit dependency structure, enabling retrieval, composition, and cumulative improvement over time. EpochX also introduces a native credit mechanism to make participation economically viable under real compute costs. Credits lock task bounties, budget delegation, settle rewards upon acceptance, and compensate creators when verified assets are reused. By formalizing the end-to-end transaction model together with its asset and incentive layers, EpochX reframes agentic AI as an organizational design problem: building infrastructures where verifiable work leaves persistent, reusable artifacts, and where value flows support durable human-agent collaboration.",
+      "description_zh": "通用技术重塑经济的方式与其说是通过改进单个工具，不如说是通过提供新的方式来组织生产和协调。我们认为人工智能代理正在接近一个类似的拐点：随着基础模型使广泛的任务执行和工具使用变得越来越容易，约束约束从原始能力转变为如何大规模委托、验证和奖励工作。我们推出了 EpochX，一个用于人工代理生产网络的信用原生市场基础设施。 EpochX 将人类和代理视为可以发布任务或领取任务的同伴参与者。所声明的任务可以分解为子任务，并通过明确的交付工作流程进行验证和接受来执行。至关重要的是，EpochX 的设计使每笔完成的交易都可以产生可重用的生态系统资产，包括技能、工作流程、执行轨迹和提炼的经验。这些资产以明确的依赖结构存储，从而能够随着时间的推移进行检索、组合和累积改进。 EpochX 还引入了原生信用机制，使参与在实际计算成本下经济可行。信用锁定任务赏金、预算授权、接受后结算��励，并在经过验证的资产被重用时补偿创建者。通过将端到端交易模型及其资产和激励层形式化，EpochX 将代理人工智能重新定义为一个组织设计问题：构建基础设施，使可验证的工作留下持久的、可重用的工件，并且价值流支持持久的人类代理协作。",
+      "authors": "Huacan Wang, Chaofa Yuan, Xialie Zhuang, Tu Hu, Shuo Zhang, Jun Han, Shi Wei, Daiqiang Li, Jingping Liu, Kunyi Wang, Zihan Yin, Zhenheng Tang, Andy Wang, Henry Peng Zou, Philip S. Yu, Sen Hu, Qizhen Lan, Ronghao Chen",
+      "url": "https://huggingface.co/papers/2603.27304",
+      "score": 37,
       "meta": {
         "source": "huggingface",
-        "upvotes": "14",
-        "paperId": "2603.25804"
+        "upvotes": "37",
+        "paperId": "2603.27304"
       }
     },
     {
-      "id": "2603.25723",
-      "title": "Natural-Language Agent Harnesses",
-      "title_zh": "自然语言代理线束",
-      "description": "Agent performance increasingly depends on harness engineering, yet harness design is usually buried in controller code and runtime-specific conventions, making it hard to transfer, compare, and study as a scientific object. We ask whether the high-level control logic of an agent harness can instead be externalized as a portable executable artifact. We introduce Natural-Language Agent Harnesses (NLAHs), which express harness behavior in editable natural language, and Intelligent Harness Runtime (IHR), a shared runtime that executes these harnesses through explicit contracts, durable artifacts, and lightweight adapters. Across coding and computer-use benchmarks, we conduct controlled evaluations of operational viability, module ablation, and code-to-text harness migration.",
-      "description_zh": "代理性能越来越依赖于线束工程，但线束设计通常隐藏在控制器代码和特定于运行时的约定中，这使得它很难作为科学对象进行传输、比较和研究。我们询问代理工具的高级控制逻辑是否可以外部化为可移植的可执行工件。我们引入了自然语言代理线束 (NLAH)，它以可编辑的自然语言表达线束行为，以及智能线束运行时 (IHR)，这是一个共享运行时，通过显式契约、持久工件和轻量级适配器执行这些线束。在编码和计算机使用基准方面，我们对操���可行性、模块消融和代码到文本工具迁移进行受控评估。",
-      "authors": "Linyue Pan, Lexiao Zou, Shuo Guo, Jingchen Ni, Hai-Tao Zheng",
-      "url": "https://huggingface.co/papers/2603.25723",
-      "score": 10,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "10",
-        "paperId": "2603.25723"
-      }
-    },
-    {
-      "id": "2603.23607",
-      "title": "LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset",
-      "title_zh": "具有推理轨迹的长尾驾驶场景：KITScens LongTail 数据集",
-      "description": "In real-world domains such as self-driving, generalization to rare scenarios remains a fundamental challenge. To address this, we introduce a new dataset designed for end-to-end driving that focuses on long-tail driving events. We provide multi-view video data, trajectories, high-level instructions, and detailed reasoning traces, facilitating in-context learning and few-shot generalization. The resulting benchmark for multimodal models, such as VLMs and VLAs, goes beyond safety and comfort metrics by evaluating instruction following and semantic coherence between model outputs. The multilingual reasoning traces in English, Spanish, and Chinese are from domain experts with diverse cultural backgrounds. Thus, our dataset is a unique resource for studying how different forms of reasoning affect driving competence. Our dataset is available at: https://hf.co/datasets/kit-mrt/kitscenes-longtail",
-      "description_zh": "在自动驾驶等现实世界领域，对罕见场景的泛化仍然是一个基本挑战。为了解决这个问题，我们引入了一个专为端到端驾驶而设计的新数据集，重点关注长尾驾驶事件。我们提供多视图视频数据、轨迹、高级指令和详细的推理轨迹，促进上下文学习和小样本泛化。由此产生的多模态模型（例如 VLM 和 VLA）基准通过评估模型输出之间的指令遵循和语义一致性，超越了安全性和舒适性指标。英语、西班牙语、中文的多语言推理痕迹来自不同文化背景的领域专家。因此，我们的数据集是研究不同形式的推理如何影响驾驶能力的独特资源。我们的数据集位于：https://hf.co/datasets/kit-mrt/kitscenes-longtail",
-      "authors": "Royden Wagner, Omer Sahin Tas, Jaime Villa, Felix Hauser, Yinzhe Shen, Marlon Steiner, Dominik Strutz, Carlos Fernandez, Christian Kinzig, Guillermo S. Guitierrez-Cabello, Hendrik Königshof, Fabian Immel, Richard Schwarzkopf, Nils Alexander Rack, Kevin Rösch, Kaiwen Wang, Jan-Hendrik Pauls, Martin Lauer, Igor Gilitschenski, Holger Caesar, Christoph Stiller",
-      "url": "https://huggingface.co/papers/2603.23607",
-      "score": 12,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "12",
-        "paperId": "2603.23607"
-      }
-    },
-    {
-      "id": "2603.24649",
-      "title": "MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies",
-      "title_zh": "MedOpenClaw：可审计的医学成像剂对未经策划的全面研究的推理",
-      "description": "Currently, evaluating vision-language models (VLMs) in medical imaging tasks oversimplifies clinical reality by relying on pre-selected 2D images that demand significant manual labor to curate. This setup misses the core challenge of realworld diagnostics: a true clinical agent must actively navigate full 3D volumes across multiple sequences or modalities to gather evidence and ultimately support a final decision. To address this, we propose MEDOPENCLAW, an auditable runtime designed to let VLMs operate dynamically within standard medical tools or viewers (e.g., 3D Slicer). On top of this runtime, we introduce MEDFLOWBENCH, a full-study medical imaging benchmark covering multi-sequence brain MRI and lung CT/PET. It systematically evaluates medical agentic capabilities across viewer-only, tool-use, and open-method tracks. Initial results reveal a critical insight: while state-of-the-art LLMs/VLMs (e.g., Gemini 3.1 Pro and GPT-5.4) can successfully navigate the viewer to solve basic study-level tasks, their performance paradoxically degrades when given access to professional support tools due to a lack of precise spatial grounding. By bridging the gap between static-image perception and interactive clinical workflows, MEDOPENCLAW and MEDFLOWBENCH establish a reproducible foundation for developing auditable, full-study medical imaging agents.",
-      "description_zh": "目前，在医学成像任务中评估视觉语言模型 (VLM) 过度简化了临床现实，因为它依赖于预先选择的 2D 图像，而这些图像需要大量的体力劳动来进行管理。这种设置忽略了现实世界诊断的核心挑战：真正的临床代理必须跨多个序列或模式主动导航完整的 3D 体积，以收集证据并最终支持最终决策。为了解决这个问题，我们提出了 MEDOPENCLAW，这是一种可审核的运行时，旨在让 VLM 在标准医疗工具或查看器（例如 3D Slicer）中动态运行。除此之外，我们还引入了 MEDFLOWBENCH，这是一个涵盖���序列脑部 MRI 和肺部 CT/PET 的全面研究医学成像基准。它系统地评估仅限查看者、工具使用和开放方法轨道的医疗代理能力。初步结果揭示了一个重要的见解：虽然最先进的 LLM/VLM（例如 Gemini 3.1 Pro 和 GPT-5.4）可以成功引导观看者解决基本的研究级任务，但由于缺乏精确的空间基础，当使用专业支持工具时，它们的性能反而会下降。通过弥合静态图像感知和交互式临床工作流程之间的差距，MEDOPENCLAW 和 MEDFLOWBENCH 为开发可审核、全面研究的医学成像剂奠定了可重复的基础。",
-      "authors": "Weixiang Shen, Yanzhu Hu, Che Liu, Junde Wu, Jiayuan Zhu, Chengzhi Shen, Min Xu, Yueming Jin, Benedikt Wiestler, Daniel Rueckert, Jiazhen Pan",
-      "url": "https://huggingface.co/papers/2603.24649",
-      "score": 20,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "20",
-        "paperId": "2603.24649"
-      }
-    },
-    {
-      "id": "2603.20466",
-      "title": "Diffutron: A Masked Diffusion Language Model for Turkish Language",
-      "title_zh": "Diffutron：土耳其语的掩蔽扩散语言模型",
-      "description": "Masked Diffusion Language Models (MDLMs) have emerged as a compelling non-autoregressive alternative to standard large language models; however, their application to morphologically rich languages remains limited. In this paper, we introduce Diffutron, a masked diffusion language model specifically designed for Turkish. Our approach leverages a resource-efficient training pipeline, starting with LoRA-based continual pre-training of a multilingual encoder on a large-scale corpus. To enable generative capabilities, we employ a progressive instruction-tuning strategy, sequentially adapting the model on general and task-specific instruction sets. Experimental results across comprehensive benchmarks demonstrate that, despite its compact size, our model achieves competitive performance compared to existing multi-billion-parameter baselines. These findings validate the effectiveness of masked diffusion modeling combined with multi-stage tuning for non-autoregressive text generation in Turkish.",
-      "description_zh": "掩蔽扩散语言模型 (MDLM) 已成为标准大型语言模型的一种引人注目的非自回归替代方案；然而，它们在形态丰富的语言中的应用仍然有限。在本文中，我们介绍了 Diffutron，一种专为土耳其语设计的掩码扩散语言模型。我们的方法利用资源高效的训练管道，首先在大规模语料库上对多语言编码器进行基于 LoRA 的持续预训练。为了实现生成能力，我们采用渐进式指令调整策略，在通用指令集和特定任务指令集上依次调整模型。综合基准​​的实验结果表明，尽管我们的模型尺寸紧凑，但与现有的数十亿参数基准相比，它仍实现了具有竞争力的性能。这些发现验证了掩蔽扩散建模与多阶段调整相结合对于土耳其语非自回归文本生成的有效性。",
-      "authors": "Şuayp Talha Kocabay, Talha Rüzgar Akkuş",
-      "url": "https://huggingface.co/papers/2603.20466",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2603.20466"
-      }
-    },
-    {
-      "id": "2603.25730",
-      "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
-      "title_zh": "PackForcing：短视频训练足以进行长视频采样和长上下文推理",
-      "description": "Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlenecked by intractable linear KV-cache growth, temporal repetition, and compounding errors during long-video generation. To address these challenges, we present PackForcing, a unified framework that efficiently manages the generation history through a novel three-partition KV-cache strategy. Specifically, we categorize the historical context into three distinct types: (1) Sink tokens, which preserve early anchor frames at full resolution to maintain global semantics; (2) Mid tokens, which achieve a massive spatiotemporal compression (32x token reduction) via a dual-branch network fusing progressive 3D convolutions with low-resolution VAE re-encoding; and (3) Recent tokens, kept at full resolution to ensure local temporal coherence. To strictly bound the memory footprint without sacrificing quality, we introduce a dynamic top-k context selection mechanism for the mid tokens, coupled with a continuous Temporal RoPE Adjustment that seamlessly re-aligns position gaps caused by dropped tokens with negligible overhead. Empowered by this principled hierarchical context compression, PackForcing can generate coherent 2-minute, 832x480 videos at 16 FPS on a single H200 GPU. It achieves a bounded KV cache of just 4 GB and enables a remarkable 24x temporal extrapolation (5s to 120s), operating effectively either zero-shot or trained on merely 5-second clips. Extensive results on VBench demonstrate state-of-the-art temporal consistency (26.07) and dynamic degree (56.25), proving that short-video supervision is sufficient for high-quality, long-video synthesis. https://github.com/ShandaAI/PackForcing",
-      "description_zh": "自回归视频扩散模型已经取得了显着的进步，但它们仍然受到棘手的线性 KV 缓存增长、时间重复和长视频生成过程中的复合错误的瓶颈。为了应对这些挑战，我们提出了 PackForcing，这是一个统一的框架，通过新颖的三分区 KV 缓存策略有效管理生成历史。具体来说，我们将历史上下文分为三种不同的类型：（1）Sink tokens，它以全分辨率保留早期锚帧以维护全局语义； (2) Mid tokens，通过融合渐进 3D 卷积和低分辨率 VAE 重新编码的双分支网络实现大规模时空压缩（32 倍 token 减少）； (3) 最近的标记，保持全分辨率以确保局部时间一致性。为了在不牺牲质量的情况下严格限制内存占用，我们为中间令牌引入了动态 top-k 上下文选择机制，再加上连续的时间 RoPE 调整，可以无缝地重新对齐由丢弃令牌引起的位置间隙，而开销可以忽略不计。借助这种原则性的分层上下文压缩，PackForcing 可以在单个 H200 GPU 上以 16 FPS 生成连贯的 2 分钟、832x480 视频。它实现了仅 4 GB 的有界 KV 缓存，并实现了出色的 24 倍时间外推（5 秒到 120 秒），可以有效地进行零样本操作或仅在 5 秒剪辑上进行训练。 VBench 上的大量结果展示了最先进的时间一致性（26.07）和动态程度（56.25），证明短视频监督足以进行高质量的长视频合成。 https://github.com/ShandaAI/PackForcing",
-      "authors": "Xiaofeng Mao, Shaohao Rui, Kaining Ying, Bo Zheng, Chuanhao Li, Mingmin Chi, Kaipeng Zhang",
-      "url": "https://huggingface.co/papers/2603.25730",
-      "score": 38,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "38",
-        "paperId": "2603.25730"
-      }
-    },
-    {
-      "id": "2603.25158",
-      "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
-      "title_zh": "Trace2Skill：将轨迹局部经验提炼为可转移的代理技能",
-      "description": "Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling complex tasks. Yet, manual authoring creates a severe scalability bottleneck. Conversely, automated skill generation often yields fragile or fragmented results because it either relies on shallow parametric knowledge or sequentially overfits to non-generalizable trajectory-local lessons. To overcome this, we introduce Trace2Skill, a framework that mirrors how human experts author skills: by holistically analyzing broad execution experience before distilling it into a single, comprehensive guide. Instead of reacting sequentially to individual trajectories, Trace2Skill dispatches a parallel fleet of sub-agents to analyze a diverse pool of executions. It extracts trajectory-specific lessons and hierarchically consolidates them into a unified, conflict-free skill directory via inductive reasoning. Trace2Skill supports both deepening existing human-written skills and creating new ones from scratch. Experiments in challenging domains, such as spreadsheet, VisionQA and math reasoning, show that Trace2Skill significantly improves upon strong baselines, including Anthropic's official xlsx skills. Crucially, this trajectory-grounded evolution does not merely memorize task instances or model-specific quirks: evolved skills transfer across LLM scales and generalize to OOD settings. For example, skills evolved by Qwen3.5-35B on its own trajectories improved a Qwen3.5-122B agent by up to 57.65 absolute percentage points on WikiTableQuestions. Ultimately, our results demonstrate that complex agent experience can be packaged into highly transferable, declarative skills -- requiring no parameter updates, no external retrieval modules, and utilizing open-source models as small as 35B parameters.",
-      "description_zh": "为大型语言模型 (LLM) 代理配备特定领域的技能对于处理复杂任务至关重要。然而，手动创作造成了严重的可扩展性瓶颈。相反，自动化技能生成通常会产生脆弱或支离破碎的结果，因为它要么依赖于浅薄的参数知识，要么依次过度适应不可概括的轨迹局部课程。为了克服这个问题，我们引入了 Trace2Skill，这是一个反映人类专家如何创作技能的框架：通过全面分析广泛的执行经验，然后将其提炼成单一的综合指南。 Trace2Skill 不是按顺序对各个轨迹做出反应，而是调度一组并行的子代理来分析不同的执行池。它提取特定于轨迹的课程，并通过归纳推理将它们分层整合到一个统一的、无冲突的技能目录中。 Trace2Skill 支持深化现有的人工编写技能和从头开始创建新技能。在具有挑战性的领域（例如电子表格、VisionQA 和数学推理）中进行的实验表明，Trace2Skill 在强大的基线（包括 Anthropic 的官方 xlsx 技能）的基础上显着提高。至关重要的是，这种基于轨迹的进化不仅仅是记住任务实例或特定于模型的怪癖：进化的技能可以跨 LLM 规模转移并推广到 OOD 设置。例如，Qwen3.5-35B 在其自身轨迹上进化的技能在 WikiTableQuestions 上将 Qwen3.5-122B 代理提高了高达 57.65 个绝对百分点。最终，我们的结果表明，复杂的代理经验可以打包成高度可转移的声明性技能——不需要参数更新，不需要外部检索模块，并利用小至 35B 参数的开源模型。",
-      "authors": "Jingwei Ni, Yihao Liu, Xinpeng Liu, Yutao Sun, Mengyu Zhou, Pengyu Cheng, Dexin Wang, Xiaoxi Jiang, Guanjun Jiang",
-      "url": "https://huggingface.co/papers/2603.25158",
-      "score": 33,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "33",
-        "paperId": "2603.25158"
-      }
-    },
-    {
-      "id": "2603.25750",
-      "title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
-      "title_zh": "Sommelier：用于全双工语音语言模型的可扩展开放式多轮音频预处理",
-      "description": "As the paradigm of AI shifts from text-based LLMs to Speech Language Models (SLMs), there is a growing demand for full-duplex systems capable of real-time, natural human-computer interaction. However, the development of such models is constrained by the scarcity of high-quality, multi-speaker conversational data, as existing large-scale resources are predominantly single-speaker or limited in volume. Addressing the complex dynamics of natural dialogue, such as overlapping and back-channeling remains a challenge, with standard processing pipelines suffering from diarization errors and ASR hallucinations. To bridge this gap, we present a robust and scalable open-source data processing pipeline designed for full-duplex model.",
-      "description_zh": "随着人工智能范式从基于文本的LLM转向语音语言模型（SLM），对能够实时、自然人机交互的全双工系统的需求不断增长。然而，此类模型的发展受到高质量、多说话人对话数据稀缺的限制，因为现有的大规模资源主要是单说话人或数量有限。解决自然对话的复杂动态（例如重叠和反向通道）仍然是一个挑战，标准处理管道遭受二值化错误和 ASR 幻觉的困扰。为了弥补这一差距，我们提出了一个专为全双工模型设计的强大且可扩展的开源数据处理管道���",
-      "authors": "Kyudan Jung, Jihwan Kim, Soyoon Kim, Jeongoon Kim, Jaegul Choo, Cheonbok Park",
-      "url": "https://huggingface.co/papers/2603.25750",
+      "id": "2603.27065",
+      "title": "Story2Proposal: A Scaffold for Structured Scientific Paper Writing",
+      "title_zh": "Story2Proposal：结构化科学论文写作的支架",
+      "description": "Generating scientific manuscripts requires maintaining alignment between narrative reasoning, experimental evidence, and visual artifacts across the document lifecycle. Existing language-model generation pipelines rely on unconstrained text synthesis with validation applied only after generation, often producing structural drift, missing figures or tables, and cross-section inconsistencies. We introduce Story2Proposal, a contract-governed multi-agent framework that converts a research story into a structured manuscript through coordinated agents operating under a persistent shared visual contract. The system organizes architect, writer, refiner, and renderer agents around a contract state that tracks section structure and registered visual elements, while evaluation agents supply feedback in a generate evaluate adapt loop that updates the contract during generation. Experiments on tasks derived from the Jericho research corpus show that Story2Proposal achieved an expert evaluation score of 6.145 versus 3.963 for DirectChat (+2.182) across GPT, Claude, Gemini, and Qwen backbones. Compared with the structured generation baseline Fars, Story2Proposal obtained an average score of 5.705 versus 5.197, indicating improved structural consistency and visual alignment.",
+      "description_zh": "生成科学手稿需要在整个文档生命周期中保持叙述推理、实验证据和视觉工件之间的一致性。现有的语言模型生成管道依赖于无约束的文本合成，并且仅在生成后应用验证，通常会产生结构漂移、缺少图形或表格以及横截面不一致。我们引入了 Story2Proposal，这是一个合同管理的多代理框架，它通过在持久共享视觉合同下运行的协调代理将研究故事转换为结构化手稿。该系统围绕跟踪部分结构和注册视觉元素的合同状态组织架构师、编写者、精炼者和渲染器代理，而评估代理在生成评估适应循环中提供反馈，该循环在生成期间更新合同。对来自 Jericho 研究语料库的任务进行的实验表明，Story2Proposal 在 GPT、Claude、Gemini 和 Qwen 主干网络上获得了 6.145 分的专家评估分数，而 DirectChat (+2.182) 的专家评估分数为 3.963 分。与结构化生成基线 Fars 相比，Story2Proposal 的平均得分为 5.705 比 5.197，表明结构一致性和视觉对齐得到了改善。",
+      "authors": "Zhuoyang Qian, Wei Shi, Xu Lin, Li Ling, Meng Luo, Ziming Wang, Zhiwei Zhang, Tengyue Xu, Gaoge Liu, Zhentao Zhang, Shuo Zhang, Ziqi Wang, Zheng Feng, Yan Luo, Shu Xu, Yongjin Chen, Zhibo Feng, Zhuo Chen, Bruce Yuan, Biao Wu, Harry Wang, Kris Chen",
+      "url": "https://huggingface.co/papers/2603.27065",
       "score": 8,
       "meta": {
         "source": "huggingface",
         "upvotes": "8",
-        "paperId": "2603.25750"
+        "paperId": "2603.27065"
       }
     },
     {
-      "id": "2603.22782",
-      "title": "Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models",
-      "title_zh": "Know3D：利用视觉语言模型中的知识促进 3D 生成",
-      "description": "Recent advances in 3D generation have improved the fidelity and geometric details of synthesized 3D assets. However, due to the inherent ambiguity of single-view observations and the lack of robust global structural priors caused by limited 3D training data, the unseen regions generated by existing models are often stochastic and difficult to control, which may sometimes fail to align with user intentions or produce implausible geometries. In this paper, we propose Know3D, a novel framework that incorporates rich knowledge from multimodal large language models into 3D generative processes via latent hidden-state injection, enabling language-controllable generation of the back-view for 3D assets. We utilize a VLM-diffusion-based model, where the VLM is responsible for semantic understanding and guidance. The diffusion model acts as a bridge that transfers semantic knowledge from the VLM to the 3D generation model. In this way, we successfully bridge the gap between abstract textual instructions and the geometric reconstruction of unobserved regions, transforming the traditionally stochastic back-view hallucination into a semantically controllable process, demonstrating a promising direction for future 3D generation models.",
-      "description_zh": "3D 生成领域的最新进展提高了合成 3D 资产的保真度和几何细节。然而，由于单视图观测固有的模糊性以及有限的 3D 训练数据导致缺乏稳健的全局结构先验，现有模型生成的看不见的区域通常是随机的且难以控制，有时可能无法与用户意图保持一致或产生不可信的几何形状。在本文中，我们提出了 Know3D，这是一种新颖的框架，它通过潜在隐藏状态注入将来自多模态大型语言模型的丰富知识融入到 3D 生成过程中，从而实现语言可控的 3D 资产后视图生成。我们利用基于 VLM 扩散的模型，其中 VLM 负责语义理解和指导。扩散模型充当将语义知识从 VLM 传输到 3D 生成模型的桥梁。通过这种方式，我们成功地弥合了抽象文本指令和未观察区域的几何重建之间的差距，将传统的随机后视幻觉转变为语义可控的过程，为未来的3D生成模型展示了一个有前途的方向。",
-      "authors": "Wenyue Chen, Wenjue Chen, Peng Li, Qinghe Wang, Xu Jia, Heliang Zheng, Rongfei Jia, Yuan Liu, Ronggang Wang",
-      "url": "https://huggingface.co/papers/2603.22782",
-      "score": 8,
+      "id": "2603.25926",
+      "title": "Density-aware Soft Context Compression with Semi-Dynamic Compression Ratio",
+      "title_zh": "具有半动态压缩比的密度感知软上下文压缩",
+      "description": "Soft context compression reduces the computational workload of processing long contexts in LLMs by encoding long context into a smaller number of latent tokens. However, existing frameworks apply uniform compression ratios, failing to account for the extreme variance in natural language information density. While adopting a density-aware dynamic compression ratio seems intuitive, empirical investigations reveal that models struggle intrinsically with operations parameterized by input dependent, continuous structural hyperparameters. To resolve this pitfall, we introduce Semi-Dynamic Context Compression framework. Our approach features a Discrete Ratio Selector, which predicts a compression target based on intrinsic information density and quantizes it to a predefined set of discrete compression ratios. It is efficiently jointly trained with the compressor on synthetic data, with the summary lengths as a proxy to create labels for compression ratio prediction. Extensive evaluations confirm that our density-aware framework, utilizing mean pooling as the backbone, consistently outperforms static baselines, establishing a robust Pareto frontier for context compression techniques. Our code, data and model weights are available at https://github.com/yuyijiong/semi-dynamic-context-compress",
+      "description_zh": "软上下文压缩通过将长上下文编码为更少数量的潜在标记，减少了 LLM 中处理长上下文的计算工作量。然而，现有框架应用统一的压缩比，未能考虑自然语言信息密度的极端变化。虽然采用密度感知的动态压缩比似乎很直观，但实证研究表明，模型本质上与由输入相关的连续结构超参数参数化的操作相矛盾。为了解决这个缺陷，我们引入了半动态上下文压缩框架。我们的方法具��离散比率选择器，它根据内在信息密度预测压缩目标，并将其量化为一组预定义的离散压缩比率。它与压缩器在合成数据上进行有效的联合训练，以摘要长度作为代理来创建用于压缩比预测的标签。广泛的评估证实，我们的密度感知框架利用均值池作为骨干，始终优于静态基线，为上下文压缩技术建立了强大的帕累托前沿。我们的代码、数据和模型权重可在 https://github.com/yuyijiong/semi-dynamic-context-compress 获取",
+      "authors": "Yijiong Yu, Shuai Yuan, Jie Zheng, Huazheng Wang, Ji Pei",
+      "url": "https://huggingface.co/papers/2603.25926",
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2603.22782"
+        "upvotes": "4",
+        "paperId": "2603.25926"
       }
     },
     {
-      "id": "2603.25746",
-      "title": "ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling",
-      "title_zh": "ShotStream：用于交互式讲故事的流式多镜头视频生成",
-      "description": "Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional architectures suffer from limited interactivity and high latency. We propose ShotStream, a novel causal multi-shot architecture that enables interactive storytelling and efficient on-the-fly frame generation. By reformulating the task as next-shot generation conditioned on historical context, ShotStream allows users to dynamically instruct ongoing narratives via streaming prompts. We achieve this by first fine-tuning a text-to-video model into a bidirectional next-shot generator, which is then distilled into a causal student via Distribution Matching Distillation. To overcome the challenges of inter-shot consistency and error accumulation inherent in autoregressive generation, we introduce two key innovations. First, a dual-cache memory mechanism preserves visual coherence: a global context cache retains conditional frames for inter-shot consistency, while a local context cache holds generated frames within the current shot for intra-shot consistency. And a RoPE discontinuity indicator is employed to explicitly distinguish the two caches to eliminate ambiguity. Second, to mitigate error accumulation, we propose a two-stage distillation strategy. This begins with intra-shot self-forcing conditioned on ground-truth historical shots and progressively extends to inter-shot self-forcing using self-generated histories, effectively bridging the train-test gap. Extensive experiments demonstrate that ShotStream generates coherent multi-shot videos with sub-second latency, achieving 16 FPS on a single GPU. It matches or exceeds the quality of slower bidirectional models, paving the way for real-time interactive storytelling. Training and inference code, as well as the models, are available on our",
-      "description_zh": "多镜头视频生成对于长篇叙事故事至关重要，但当前的双向架构存在交互性有限和延迟高的问题。我们提出了 ShotStream，一种新颖的因果多镜头架构，可以实现交互式故事讲述和高效的动态帧生成。通过将任务重新表述为以历史背景为条件的下一个镜头生成，ShotStream 允许用户通过流提示动态指导正在进行的叙述。我们通过首先将文本到视频模型微调为双向下一个镜头生成器来实现这一目标，然后通过分布匹配蒸馏将其蒸馏为因果学生。为了克服自回归生成中固有的镜头间一致性和误差积累的挑战，我们引入了两项关键创新。首先，双缓存机制保持视觉连贯性：全局上下文缓存保留条件帧以实现镜头间一致性，而本地上下文缓存则保留当前镜头内生成的帧以实现镜头内一致性。并且采用 RoPE 不连续性指示器来明确区分两个缓存以消除歧义。其次，为了减少误差积累，我们提出了两阶段蒸馏策略。这首先是基于真实历史镜头的镜头内自我强迫，并逐渐扩展到使用自我生成的历史记录的镜头间自我强迫，有效地弥合了训练测试差距。大量实验表明，ShotStream 可以生成亚秒级延迟的连贯多镜头视频，在单个 GPU 上实现 16 FPS。它的质量与较慢的双向模型相当或超过，为实时交互式讲故事铺平了道路。训练和推理代码以及模型可在我们的网站上找到",
-      "authors": "Yawen Luo, Xiaoyu Shi, Junhao Zhuang, Yutian Chen, Quande Liu, Xintao Wang, Pengfei Wan, Tianfan Xue",
-      "url": "https://huggingface.co/papers/2603.25746",
-      "score": 110,
+      "id": "2603.26639",
+      "title": "Make Geometry Matter for Spatial Reasoning",
+      "title_zh": "让几何对于空间推理很重要",
+      "description": "Empowered by large-scale training, vision-language models (VLMs) achieve strong image and video understanding, yet their ability to perform spatial reasoning in both static scenes and dynamic videos remains limited. Recent advances try to handle this limitation by injecting geometry tokens from pretrained 3D foundation models into VLMs. Nevertheless, we observe that naive token fusion followed by standard fine-tuning in this line of work often leaves such geometric cues underutilized for spatial reasoning, as VLMs tend to rely heavily on 2D visual cues. In this paper, we propose GeoSR, a framework designed to make geometry matter by encouraging VLMs to actively reason with geometry tokens. GeoSR introduces two key components: (1) Geometry-Unleashing Masking, which strategically masks portions of 2D vision tokens during training to weaken non-geometric shortcuts and force the model to consult geometry tokens for spatial reasoning; and (2) Geometry-Guided Fusion, a gated routing mechanism that adaptively amplifies geometry token contributions in regions where geometric evidence is critical. Together, these designs unleash the potential of geometry tokens for spatial reasoning tasks. Extensive experiments on both static and dynamic spatial reasoning benchmarks demonstrate that GeoSR consistently outperforms prior methods and establishes new state-of-the-art performance by effectively leveraging geometric information. The project page is available at https://suhzhang.github.io/GeoSR/.",
+      "description_zh": "在大规模训练的支持下，视觉语言模型（VLM）实现了强大的图像和视频理解，但它们在静态场景和动态视频中执行空间推理的能力仍然有限。最近的进展尝试通过将预训练的 3D 基础模型中的几何标记注入 VLM 来解决此限制。尽管如此，我们观察到，在这一工作中进行标准微调后进行的朴素标记融合常常会导致此类几何线索在空间推理中得不到充分利用，因为 VLM 往往严重依赖 2D 视觉线索。在本文中，我们提出了 GeoSR，这是一个旨在通过鼓励 VLM 积极使用几何标记进行推理来使几何变得重要的框���。 GeoSR 引入了两个关键组件：（1）几何释放掩蔽，它在训练期间策略性地掩蔽部分 2D 视觉标记，以削弱非几何捷径并迫使模型参考几何标记进行空间推理； (2) 几何引导融合，一种门控路由机制，可自适应地放大几何证据至关重要的区域中的几何令牌贡献。这些设计共同释放了几何标记在空间推理任务中的潜力。对静态和动态空间推理基准的大量实验表明，GeoSR 始终��于先前的方法，并通过有效利用几何信息建立了新的最先进的性能。该项目页面位于 https://suhzhang.github.io/GeoSR/。",
+      "authors": "Shihua Zhang, Qiuhong Shen, Shizun Wang, Tianbo Pan, Xinchao Wang",
+      "url": "https://huggingface.co/papers/2603.26639",
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "110",
-        "paperId": "2603.25746"
+        "upvotes": "19",
+        "paperId": "2603.26639"
       }
     },
     {
-      "id": "2603.25716",
-      "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
-      "title_zh": "眼不见心不烦：动态视频世界模型的混合内存",
-      "description": "Video world models have shown immense potential in simulating the physical world, yet existing memory mechanisms primarily treat environments as static canvases. When dynamic subjects hide out of sight and later re-emerge, current methods often struggle, leading to frozen, distorted, or vanishing subjects. To address this, we introduce Hybrid Memory, a novel paradigm requiring models to simultaneously act as precise archivists for static backgrounds and vigilant trackers for dynamic subjects, ensuring motion continuity during out-of-view intervals. To facilitate research in this direction, we construct HM-World, the first large-scale video dataset dedicated to hybrid memory. It features 59K high-fidelity clips with decoupled camera and subject trajectories, encompassing 17 diverse scenes, 49 distinct subjects, and meticulously designed exit-entry events to rigorously evaluate hybrid coherence. Furthermore, we propose HyDRA, a specialized memory architecture that compresses memory into tokens and utilizes a spatiotemporal relevance-driven retrieval mechanism. By selectively attending to relevant motion cues, HyDRA effectively preserves the identity and motion of hidden subjects. Extensive experiments on HM-World demonstrate that our method significantly outperforms state-of-the-art approaches in both dynamic subject consistency and overall generation quality.",
-      "description_zh": "视频世界模型在模拟物理世界方面显示出巨大的潜力，但现有的记忆机制主要将环境视为静态画布。当动态主体隐藏在视线之外并随后重新出现时，当前的方法常常会遇到困难，导致主体冻结、扭曲或消失。为了解决这个问题，我们引入了混合记忆，这是一种新颖的范式，要求模型同时充当静态背景的精确档案管理员和动态主体的警惕跟踪器，确保在视野外间隔期间的运动连续性。为了促进这个方向的研究，我们构建了 HM-World，这是第一个专用于混合内存的大规模视频数据集。它具有 59K 个高保真剪辑，具有解耦的摄像机和主题轨迹，涵盖 17 个不同的场景、49 个不同的主题，以及精心设计的退出进入事件，以严格评估混合一致性。此外，我们提出了 HyDRA，一种专门的内存架构，它将内存压缩为令牌并利用时空相关性驱动的检索机制。通过选择性地关注相关运动线索，Hydra 有效地保留了隐藏对象的身份和运动。 HM-World 上的大量实验表明，我们的方法在动态主题一致性和整体生成质量方面都显着优于最先进的方法。",
-      "authors": "Kaijin Chen, Dingkang Liang, Xin Zhou, Yikang Ding, Xiaoqiang Liu, Pengfei Wan, Xiang Bai",
-      "url": "https://huggingface.co/papers/2603.25716",
-      "score": 133,
+      "id": "2603.28669",
+      "title": "Superintelligence and Law",
+      "title_zh": "超级智能与法律",
+      "description": "The prospect of artificial superintelligence -- AI agents that can generally outperform humans in cognitive tasks and economically valuable activities -- will transform the legal order as we know it. Operating autonomously or under only limited human oversight, AI agents will assume a growing range of roles in the legal system. First, in making consequential decisions and taking real-world actions, AI agents will become de facto subjects of law. Second, to cooperate and compete with other actors (human or non-human), AI agents will harness conventional legal instruments and institutions such as contracts and courts, becoming consumers of law. Third, to the extent AI agents perform the functions of writing, interpreting, and administering law, they will become producers and enforcers of law. These developments, whenever they ultimately occur, will call into question fundamental assumptions in legal theory and doctrine, especially to the extent they ground the legitimacy of legal institutions in their human origins. Attempts to align AI agents with extant human law will also face new challenges as AI agents will not only be a primary target of law, but a core user of law and contributor to law. To contend with the advent of superintelligence, lawmakers -- new and old -- will need to be clear-eyed, recognizing both the opportunity to shape legal institutions as society braces for superintelligence and the reality that, in the longer run, this may be a joint human-AI endeavor.",
+      "description_zh": "超级人工智能的前景——在认知任务和具有经济价值的活动中普遍优于人类的人工智能代理——将改变我们所知的法律秩序。人工智能代理自主运行或仅在有限的人类监督下运行，将在法律体系中发挥越来越多的作用。首先，在做出相应的决策和采取现实世界的行动时，人工智能代理将成为事实上的法律主体。其次，为了与其他参与者（人类或非人类）合作和竞争，人工智能代理将利用合同和法院等传统法律工具和机构，成为法律的消费者。第三，当人工智能代理履行撰写、解释和执行法律的职能时，他们将成为法律的生产者和执行者。这些发展，无论何时最终发生，都会对法律理论和学说的基本假设提出质疑，特别是在它们将法律制度的合法性扎根于人类起源的范围内。让人工智能主体与现有人类法律保持一致的尝试也将面临新的挑战，因为人工智能主体不仅是法律的主要目标，而且是法律的核心使用者和法律的贡献者。为了应对超级人工智能的出现，新老立法者都需要保持清醒的头脑，认识到在社会迎接超级人工智能时塑造法律制度的机会，以及从长远来看，这可能是人类与人工智能共同努力的现实。",
+      "authors": "Noam Kolt",
+      "url": "https://huggingface.co/papers/2603.28669",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "133",
-        "paperId": "2603.25716"
+        "upvotes": "2",
+        "paperId": "2603.28669"
+      }
+    },
+    {
+      "id": "2603.26610",
+      "title": "Think over Trajectories: Leveraging Video Generation to Reconstruct GPS Trajectories from Cellular Signaling",
+      "title_zh": "思考轨迹：利用视频生成从蜂窝信号重建 GPS 轨迹",
+      "description": "Mobile devices continuously interact with cellular base stations, generating massive volumes of signaling records that provide broad coverage for understanding human mobility. However, such records offer only coarse location cues (e.g., serving-cell identifiers) and therefore limit their direct use in applications that require high-precision GPS trajectories. This paper studies the Sig2GPS problem: reconstructing GPS trajectories from cellular signaling. Inspired by domain experts often lay the signaling trace on the map and sketch the corresponding GPS route, unlike conventional solutions that rely on complex multi-stage engineering pipelines or regress coordinates, Sig2GPS is reframed as an image-to-video generation task that directly operates in the map-visual domain: signaling traces are rendered on a map, and a video generation model is trained to draw a continuous GPS path. To support this paradigm, a paired signaling-to-trajectory video dataset is constructed to fine-tune an open-source video model, and a trajectory-aware reinforcement learning-based optimization method is introduced to improve generation fidelity via rewards. Experiments on large-scale real-world datasets show substantial improvements over strong engineered and learning-based baselines, while additional results on next GPS prediction indicate scalability and cross-city transferability. Overall, these results suggest that map-visual video generation provides a practical interface for trajectory data mining by enabling direct generation and refinement of continuous paths under map constraints.",
+      "description_zh": "移动设备不断与蜂窝基站交互，生成大量信令记录，为了解人类移动性提供广泛的覆盖范围。然而，此类记录仅提供粗略的位置线索（例如，服务小区标识符），因此限制了它们在需要高精度 GPS 轨迹的应用中的直接使用。本文研究 Sig2GPS 问题：从蜂窝信号重建 GPS 轨迹。受领域专家经常在地图上铺设信令轨迹并绘制相应的 GPS 路线的启发，与依赖复杂的多阶段工程管道或回归坐标的传统解决方案不同，Sig2GPS 被重新构建为直接在地图视觉域中运行的图像到视频生成任务：在地图上渲染信令轨迹，并训练视频生成模型来绘制连续的 GPS 路径。为了支持这种范式，构建了配对的信号到轨迹视频数据集来微调开源视频模型，并引入了基于轨迹感知强化学习的优化方法，以通过奖励提高生成保真度。对大规模现实世界数据集的实验表明，与强大的工程和基于学习的基线相比，有了显着的改进，而下一个 GPS 预测的其他结果表明了可扩展性和跨城市可转移性。总的来说，这些结果表明，地图视觉视频生成通过在地图约束下直接生成和细化连续路径，为轨迹数据挖掘提供了实用的接口。",
+      "authors": "Ruixing Zhang, Hanzhang Jiang, Leilei Sun, Liangzhe Han, Jibin Wang, Weifeng Lv",
+      "url": "https://huggingface.co/papers/2603.26610",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2603.26610"
       }
     }
   ]
