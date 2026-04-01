@@ -1,24 +1,24 @@
 {
   "source": "github",
-  "updatedAt": "2026-03-31T20:08:46.060Z",
-  "count": 14,
+  "updatedAt": "2026-04-01T20:23:12.758Z",
+  "count": 7,
   "items": [
     {
-      "id": "luongnv89-claude-howto",
-      "title": "claude-howto",
-      "title_zh": "claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "description_zh": "克劳德代码的可视化、示例驱动指南——从基本概念到高级代理，以及可带来即时价值的复制粘贴模板。",
-      "authors": "luongnv89",
-      "url": "https://github.com/luongnv89/claude-howto",
-      "score": 12564,
+      "id": "anthropics-claude-code",
+      "title": "claude-code",
+      "title_zh": "claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "description_zh": "Claude Code 是一种代理编码工具，它位于您的终端中，了解您的代码库，并通过执行例行任务、解释复杂代码和处理 git 工作流程来帮助您更快地编码 - 所有这些都通过自然语言命令进行。",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/claude-code",
+      "score": 99742,
       "meta": {
         "source": "github",
-        "stars": "12,564",
-        "language": "Python",
-        "repo": "luongnv89/claude-howto",
-        "owner": "luongnv89",
-        "repoName": "claude-howto"
+        "stars": "99,742",
+        "language": "Shell",
+        "repo": "anthropics/claude-code",
+        "owner": "anthropics",
+        "repoName": "claude-code"
       }
     },
     {
@@ -29,10 +29,10 @@
       "description_zh": "开源前沿语音人工智能",
       "authors": "microsoft",
       "url": "https://github.com/microsoft/VibeVoice",
-      "score": 32900,
+      "score": 34289,
       "meta": {
         "source": "github",
-        "stars": "32,900",
+        "stars": "34,289",
         "language": "Python",
         "repo": "microsoft/VibeVoice",
         "owner": "microsoft",
@@ -40,219 +40,93 @@
       }
     },
     {
-      "id": "Yeachan-Heo-oh-my-claudecode",
-      "title": "oh-my-claudecode",
-      "title_zh": "oh-my-claudecode",
-      "description": "Teams-first Multi-agent orchestration for Claude Code",
-      "description_zh": "Claude Code 的团队优先多代理编排",
-      "authors": "Yeachan-Heo",
-      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-      "score": 18712,
+      "id": "google-research-timesfm",
+      "title": "timesfm",
+      "title_zh": "timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "description_zh": "TimesFM（时间序列基础模型）是 Google Research 开发的用于时间序列预测的预训练时间序列基础模型。",
+      "authors": "google-research",
+      "url": "https://github.com/google-research/timesfm",
+      "score": 11880,
       "meta": {
         "source": "github",
-        "stars": "18,712",
-        "language": "TypeScript",
-        "repo": "Yeachan-Heo/oh-my-claudecode",
-        "owner": "Yeachan-Heo",
-        "repoName": "oh-my-claudecode"
+        "stars": "11,880",
+        "language": "Python",
+        "repo": "google-research/timesfm",
+        "owner": "google-research",
+        "repoName": "timesfm"
       }
     },
     {
-      "id": "shanraisshan-claude-code-best-practice",
-      "title": "claude-code-best-practice",
-      "title_zh": "claude-code-best-practice",
-      "description": "practice made claude perfect",
-      "description_zh": "练习使克劳德变得完美",
-      "authors": "shanraisshan",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "score": 28287,
+      "id": "luongnv89-claude-howto",
+      "title": "claude-howto",
+      "title_zh": "claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "description_zh": "克劳德代码的可视化、示例驱动指南——从基本概念到高级代理，以及可带来即时价值的复制粘贴模板。",
+      "authors": "luongnv89",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "score": 15345,
       "meta": {
         "source": "github",
-        "stars": "28,287",
+        "stars": "15,345",
+        "language": "Python",
+        "repo": "luongnv89/claude-howto",
+        "owner": "luongnv89",
+        "repoName": "claude-howto"
+      }
+    },
+    {
+      "id": "axios-axios",
+      "title": "axios",
+      "title_zh": "axios",
+      "description": "Promise based HTTP client for the browser and node.js",
+      "description_zh": "适用于浏览器和 Node.js 的基于 Promise 的 HTTP 客户端",
+      "authors": "axios",
+      "url": "https://github.com/axios/axios",
+      "score": 108846,
+      "meta": {
+        "source": "github",
+        "stars": "108,846",
+        "language": "JavaScript",
+        "repo": "axios/axios",
+        "owner": "axios",
+        "repoName": "axios"
+      }
+    },
+    {
+      "id": "openai-codex",
+      "title": "codex",
+      "title_zh": "codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "description_zh": "在您的终端中运行的轻量级编码代理",
+      "authors": "openai",
+      "url": "https://github.com/openai/codex",
+      "score": 71556,
+      "meta": {
+        "source": "github",
+        "stars": "71,556",
+        "language": "Rust",
+        "repo": "openai/codex",
+        "owner": "openai",
+        "repoName": "codex"
+      }
+    },
+    {
+      "id": "f-prompts.chat",
+      "title": "prompts.chat",
+      "title_zh": "prompts.chat",
+      "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "description_zh": "F.K.A.很棒的 ChatGPT 提示。分享、发现并收集社区中的提示。免费和开源——为您的组织自行托管，并具有完全的隐私。",
+      "authors": "f",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 155884,
+      "meta": {
+        "source": "github",
+        "stars": "155,884",
         "language": "HTML",
-        "repo": "shanraisshan/claude-code-best-practice",
-        "owner": "shanraisshan",
-        "repoName": "claude-code-best-practice"
-      }
-    },
-    {
-      "id": "NousResearch-hermes-agent",
-      "title": "hermes-agent",
-      "title_zh": "hermes-agent",
-      "description": "The agent that grows with you",
-      "description_zh": "与您共同成长的代理商",
-      "authors": "NousResearch",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "score": 20097,
-      "meta": {
-        "source": "github",
-        "stars": "20,097",
-        "language": "Python",
-        "repo": "NousResearch/hermes-agent",
-        "owner": "NousResearch",
-        "repoName": "hermes-agent"
-      }
-    },
-    {
-      "id": "obra-superpowers",
-      "title": "superpowers",
-      "title_zh": "superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "description_zh": "有效的代理技能框架和软件开发方法。",
-      "authors": "obra",
-      "url": "https://github.com/obra/superpowers",
-      "score": 127885,
-      "meta": {
-        "source": "github",
-        "stars": "127,885",
-        "language": "Shell",
-        "repo": "obra/superpowers",
-        "owner": "obra",
-        "repoName": "superpowers"
-      }
-    },
-    {
-      "id": "microsoft-agent-lightning",
-      "title": "agent-lightning",
-      "title_zh": "agent-lightning",
-      "description": "The absolute trainer to light up AI agents.",
-      "description_zh": "点亮AI特工的绝对训练师。",
-      "authors": "microsoft",
-      "url": "https://github.com/microsoft/agent-lightning",
-      "score": 16174,
-      "meta": {
-        "source": "github",
-        "stars": "16,174",
-        "language": "Python",
-        "repo": "microsoft/agent-lightning",
-        "owner": "microsoft",
-        "repoName": "agent-lightning"
-      }
-    },
-    {
-      "id": "PaddlePaddle-PaddleOCR",
-      "title": "PaddleOCR",
-      "title_zh": "PaddleOCR",
-      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
-      "description_zh": "将任何 PDF 或图像文档转换为 AI 的结构化数据。一款功能强大、轻量级的 OCR 工具包，可弥合图像/PDF 和LLM之间的差距。支持 100 多种语言。",
-      "authors": "PaddlePaddle",
-      "url": "https://github.com/PaddlePaddle/PaddleOCR",
-      "score": 74068,
-      "meta": {
-        "source": "github",
-        "stars": "74,068",
-        "language": "Python",
-        "repo": "PaddlePaddle/PaddleOCR",
-        "owner": "PaddlePaddle",
-        "repoName": "PaddleOCR"
-      }
-    },
-    {
-      "id": "Dimillian-Skills",
-      "title": "Skills",
-      "title_zh": "Skills",
-      "description": "My Codex Skills",
-      "description_zh": "我的法典技能",
-      "authors": "Dimillian",
-      "url": "https://github.com/Dimillian/Skills",
-      "score": 2791,
-      "meta": {
-        "source": "github",
-        "stars": "2,791",
-        "language": "Shell",
-        "repo": "Dimillian/Skills",
-        "owner": "Dimillian",
-        "repoName": "Skills"
-      }
-    },
-    {
-      "id": "sherlock-project-sherlock",
-      "title": "sherlock",
-      "title_zh": "sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "description_zh": "通过社交网络上的用户名查找社交媒体帐户",
-      "authors": "sherlock-project",
-      "url": "https://github.com/sherlock-project/sherlock",
-      "score": 75389,
-      "meta": {
-        "source": "github",
-        "stars": "75,389",
-        "language": "Python",
-        "repo": "sherlock-project/sherlock",
-        "owner": "sherlock-project",
-        "repoName": "sherlock"
-      }
-    },
-    {
-      "id": "neovim-neovim",
-      "title": "neovim",
-      "title_zh": "neovim",
-      "description": "Vim-fork focused on extensibility and usability",
-      "description_zh": "Vim-fork 专注于可扩展性和可用性",
-      "authors": "neovim",
-      "url": "https://github.com/neovim/neovim",
-      "score": 97887,
-      "meta": {
-        "source": "github",
-        "stars": "97,887",
-        "language": "Vim Script",
-        "repo": "neovim/neovim",
-        "owner": "neovim",
-        "repoName": "neovim"
-      }
-    },
-    {
-      "id": "vas3k-TaxHacker",
-      "title": "TaxHacker",
-      "title_zh": "TaxHacker",
-      "description": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
-      "description_zh": "自托管人工智能会计应用程序。 LLM 分析器，用于带有自定义提示和类别的收据、发票、交易",
-      "authors": "vas3k",
-      "url": "https://github.com/vas3k/TaxHacker",
-      "score": 3649,
-      "meta": {
-        "source": "github",
-        "stars": "3,649",
-        "language": "TypeScript",
-        "repo": "vas3k/TaxHacker",
-        "owner": "vas3k",
-        "repoName": "TaxHacker"
-      }
-    },
-    {
-      "id": "OpenBMB-ChatDev",
-      "title": "ChatDev",
-      "title_zh": "ChatDev",
-      "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration",
-      "description_zh": "ChatDev 2.0：通过 LLM 支持的多代理协作进行开发",
-      "authors": "OpenBMB",
-      "url": "https://github.com/OpenBMB/ChatDev",
-      "score": 32378,
-      "meta": {
-        "source": "github",
-        "stars": "32,378",
-        "language": "Python",
-        "repo": "OpenBMB/ChatDev",
-        "owner": "OpenBMB",
-        "repoName": "ChatDev"
-      }
-    },
-    {
-      "id": "jwasham-coding-interview-university",
-      "title": "coding-interview-university",
-      "title_zh": "coding-interview-university",
-      "description": "A complete computer science study plan to become a software engineer.",
-      "description_zh": "成为软件工程师的完整计算机科学研究计划。",
-      "authors": "jwasham",
-      "url": "https://github.com/jwasham/coding-interview-university",
-      "score": 339510,
-      "meta": {
-        "source": "github",
-        "stars": "339,510",
-        "language": "Mixed",
-        "repo": "jwasham/coding-interview-university",
-        "owner": "jwasham",
-        "repoName": "coding-interview-university"
+        "repo": "f/prompts.chat",
+        "owner": "f",
+        "repoName": "prompts.chat"
       }
     }
   ]
