@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-01T20:23:31.874Z",
+  "updatedAt": "2026-04-02T20:05:51.515Z",
   "count": 15,
   "items": [
     {
-      "id": "2603.26357",
-      "title": "MPDiT: Multi-Patch Global-to-Local Transformer Architecture For Efficient Flow Matching and Diffusion Model",
-      "title_zh": "MPDiT：用于高效流量匹配和扩散模型的多补丁全局到局部变压器架构",
-      "description": "Transformer architectures, particularly Diffusion Transformers (DiTs), have become widely used in diffusion and flow-matching models due to their strong performance compared to convolutional UNets. However, the isotropic design of DiTs processes the same number of patchified tokens in every block, leading to relatively heavy computation during training process. In this work, we introduce a multi-patch transformer design in which early blocks operate on larger patches to capture coarse global context, while later blocks use smaller patches to refine local details. This hierarchical design could reduces computational cost by up to 50\\% in GFLOPs while achieving good generative performance. In addition, we also propose improved designs for time and class embeddings that accelerate training convergence. Extensive experiments on the ImageNet dataset demonstrate the effectiveness of our architectural choices. Code is released at https://github.com/quandao10/MPDiT",
-      "description_zh": "变压器架构，特别是扩散变压器 (DiT)，由于其比卷积 UNet 更强的性能，已广泛应用于扩散和流匹配模型。然而，DiT 的各向同性设计在每个块中处理相同数量的补丁标记，导致训练过程中的计算量相对较大。在这项工作中，我们引入了一种多补丁变压器设计，其中早期的块在较大的补丁上运行以捕获粗略的全局上下文，而后期的块使用较小的补丁来细化局部细节。这种分层设计可以将 GFLOP 的计算成本降低高达 50%，同时实现良好的生成性能。此外，我们还提出了时间和类别嵌入的改进设计，以加速训练收敛。对 ImageNet 数据集的大量实验证明了我们架构选择的有效性。代码发布于 https://github.com/quandao10/MPDiT",
-      "authors": "Quan Dao, Dimitris Metaxas",
-      "url": "https://huggingface.co/papers/2603.26357",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2603.26357"
-      }
-    },
-    {
-      "id": "2603.27520",
-      "title": "TokenDial: Continuous Attribute Control in Text-to-Video via Spatiotemporal Token Offsets",
-      "title_zh": "TokenDial：通过时空令牌偏移进行文本到视频的连续属性控制",
-      "description": "We present TokenDial, a framework for continuous, slider-style attribute control in pretrained text-to-video generation models. While modern generators produce strong holistic videos, they offer limited control over how much an attribute changes (e.g., effect intensity or motion magnitude) without drifting identity, background, or temporal coherence. TokenDial is built on the observation: additive offsets in the intermediate spatiotemporal visual patch-token space form a semantic control direction, where adjusting the offset magnitude yields coherent, predictable edits for both appearance and motion dynamics. We learn attribute-specific token offsets without retraining the backbone, using pretrained understanding signals: semantic direction matching for appearance and motion-magnitude scaling for motion. We demonstrate TokenDial's effectiveness on diverse attributes and prompts, achieving stronger controllability and higher-quality edits than state-of-the-art baselines, supported by extensive quantitative evaluation and human studies.",
-      "description_zh": "我们提出了 TokenDial，这是一个在预训练的文本到视频生成模型中进行连续滑块式属性控制的框架。虽然现代生成器可以生成强大的整体视频，但它们对属性变化的程度（例如效果强度或运动幅度）提供有限的控制，而不会漂移身份、背景或时间连贯性。 TokenDial 建立在观察的基础上：中间时空视觉补丁令牌空间中的附加偏移形成语义控制方向，其中调整偏移幅度可为外观和运动动力学产生连贯的、可预测的编辑。我们使用预先训练的理解信号来学习��定于属性的标记偏移，而无需重新训练主干网络：外观的语义方向匹配和运动的运动幅度缩放。我们展示了 TokenDial 在不同属性和提示上的有效性，在广泛的定量评估和人体研究的支持下，实现了比最先进的基线更强的可控性和更高质量的编辑。",
-      "authors": "Zhixuan Liu, Peter Schaldenbrand, Yijun Li, Long Mai, Aniruddha Mahapatra, Cusuh Ham, Jean Oh, Jui-Hsien Wang",
-      "url": "https://huggingface.co/papers/2603.27520",
+      "id": "2604.01194",
+      "title": "AgentWatcher: A Rule-based Prompt Injection Monitor",
+      "title_zh": "AgentWatcher：基于规则的提示注入监视器",
+      "description": "Large language models (LLMs) and their applications, such as agents, are highly vulnerable to prompt injection attacks. State-of-the-art prompt injection detection methods have the following limitations: (1) their effectiveness degrades significantly as context length increases, and (2) they lack explicit rules that define what constitutes prompt injection, causing detection decisions to be implicit, opaque, and difficult to reason about. In this work, we propose AgentWatcher to address the above two limitations. To address the first limitation, AgentWatcher attributes the LLM's output (e.g., the action of an agent) to a small set of causally influential context segments. By focusing detection on a relatively short text, AgentWatcher can be scalable to long contexts. To address the second limitation, we define a set of rules specifying what does and does not constitute a prompt injection, and use a monitor LLM to reason over these rules based on the attributed text, making the detection decisions more explainable. We conduct a comprehensive evaluation on tool-use agent benchmarks and long-context understanding datasets. The experimental results demonstrate that AgentWatcher can effectively detect prompt injection and maintain utility without attacks. The code is available at https://github.com/wang-yanting/AgentWatcher.",
+      "description_zh": "大型语言模型 (LLM) 及其应用程序（例如代理）非常容易受到即时注入攻击。最先进的提示注入检测方法具有以下局限性：（1）它们的有效性随着上下文长度的增加而显着降低，（2）它们缺乏定义提示注入的明确规则，导致检测决策是隐式的、不透明的且难以推理。在这项工作中，我们提出 AgentWatcher 来解决上述两个限制。为了解决第一个限制，AgentWatcher 将 LLM 的输出（例如代理的操作）归因于一小组具有因果影响的上下文片段。通过将检测重点放在相对较短的文本上，AgentWatcher 可以扩展到较长的上下文。为了解决第二个限制，我们定义了一组规则，指定什么构成和不构成提示注入，并使用监视器 LLM 根据属性文本推理这些规则，使检测决策更易于解释。我们对工具使用代理基准和长上下文理解数据集进行了全面评估。实验结果表明AgentWatcher能够有效检测即时注入并保持实用性而不受攻击。代码可在 https://github.com/wang-yanting/AgentWatcher 获取。",
+      "authors": "Yanting Wang, Wei Zou, Runpeng Geng, Jinyuan Jia",
+      "url": "https://huggingface.co/papers/2604.01194",
       "score": 0,
       "meta": {
         "source": "huggingface",
         "upvotes": "0",
-        "paperId": "2603.27520"
+        "paperId": "2604.01194"
       }
     },
     {
-      "id": "2603.21460",
-      "title": "When Documents Disagree: Measuring Institutional Variation in Transplant Guidance with Retrieval-Augmented Language Models",
-      "title_zh": "当文件不一致时：使用检索增强语言模型衡量移植指导中的制度差异",
-      "description": "Patient education materials for solid-organ transplantation vary substantially across U.S. centers, yet no systematic method exists to quantify this heterogeneity at scale. We introduce a framework that grounds the same patient questions in different centers' handbooks using retrieval-augmented language models and compares the resulting answers using a five-label consistency taxonomy. Applied to 102 handbooks from 23 centers and 1,115 benchmark questions, the framework quantifies heterogeneity across four dimensions: question, topic, organ, and center. We find that 20.8% of non-absent pairwise comparisons exhibit clinically meaningful divergence, concentrated in condition monitoring and lifestyle topics. Coverage gaps are even more prominent: 96.2% of question-handbook pairs miss relevant content, with reproductive health at 95.1% absence. Center-level divergence profiles are stable and interpretable, where heterogeneity reflects systematic institutional differences, likely due to patient diversity. These findings expose an information gap in transplant patient education materials, with document-grounded medical question answering highlighting opportunities for content improvement.",
-      "description_zh": "美国各个中心的实体器官移植患者教育材料差异很大，但不存在大规模量化这种异质性的系统方法。我们引入了一个框架，该框架使用检索增强语言模型在不同中心的手册中建立相同的患者问题，并使用五标签一致性分类法比较结果答案。该框架适用于 23 个中心的 102 本手册和 1,115 个基准问题，量化了四个维度的异质性：问题、主题、器官和中心。我们发现 20.8% 的非缺失配对比较表现出具有临床意义的差异，主要集中在状况监测和生活方式主题上。覆盖率差距更加突出：96.2% 的问题手册对缺少相关内容，其中生殖健康方面的缺失率为 95.1%。中心层面的差异概况是稳定且可解释的，其中异质性反映了系统性机构差异，可能是由于患者多样性造成的。这些发现暴露了移植患者教育材料中的信息差距，以文档为基础的医学问答突出了内容改进的机会。",
-      "authors": "Yubo Li, Ramayya Krishnan, Rema Padman",
-      "url": "https://huggingface.co/papers/2603.21460",
+      "id": "2603.25764",
+      "title": "Consistency Amplifies: How Behavioral Variance Shapes Agent Accuracy",
+      "title_zh": "一致性放大：行为差异如何影响代理的准确性",
+      "description": "As LLM-based agents are deployed in production systems, understanding their behavioral consistency (whether they produce similar action sequences when given identical tasks) becomes critical for reliability. We study consistency in the context of SWE-bench, a challenging software engineering benchmark requiring complex, multi-step reasoning. Comparing Claude~4.5~Sonnet, GPT-5, and Llama-3.1-70B across 50 runs each (10 tasks times 5 runs), we find that across models, higher consistency aligns with higher accuracy: Claude achieves the lowest variance (CV: 15.2\\%) and highest accuracy (58\\%), GPT-5 is intermediate (CV: 32.2\\%, accuracy: 32\\%), and Llama shows the highest variance (CV: 47.0\\%) with lowest accuracy (4\\%). However, within a model, consistency can amplify both correct and incorrect interpretations. Our analysis reveals a critical nuance: consistency amplifies outcomes rather than guaranteeing correctness. 71\\% of Claude's failures stem from \"consistent wrong interpretation\": making the same incorrect assumption across all runs. Interestingly, GPT-5 achieves similar early strategic agreement as Claude (diverging at step 3.4 vs.\\ 3.2) but exhibits 2.1times higher variance, suggesting that divergence timing alone does not determine consistency. These findings suggest that for production deployment, interpretation accuracy matters more than execution consistency, with implications for agent evaluation and training.",
+      "description_zh": "当基于 LLM 的代理部署在生产系统中时，了解它们的行为一致性（在给定相同任务时它们是否产生相似的动作序列）对于可靠性变得至关重要。我们在 SWE-bench 的背景下研究一致性，SWE-bench 是一个具有挑战性的软件工程基准，需要复杂的多步骤推理。比较 Claude~4.5~Sonnet、GPT-5 和 Llama-3.1-70B 各 50 次运行（10 个任务乘以 5 次运行），我们发现在模型之间，较高的一致性与较高的准确度相一致：Claude 实现了最低方差（CV：15.2\\%）和最高准确度（58\\%），GPT-5 处于中等水平（CV：32.2\\%，准确度：32\\%）， Llama 的方差最高（CV：47.0%），准确度最低（4%）。然而，在模型中，一致性可以放大正确和错误的解释。我们的分析揭示了一个关键的细微差别：一致性会放大结果而不是保证正确性。克劳德 71% 的失败源于“一致的错误解释”：在所有运行中做出相同的错误假设。有趣的是，GPT-5 实现了与 Claude 类似的早期战略协议（在步骤 3.4 与 3.2 处分歧），但表现出 2.1 倍高的方差，表明分歧时间本身并不能决定一致性。这些发现表明，对于生产部署，解释准确性比执行一致性更重要，这对代理评估和培训都有影响。",
+      "authors": "Aman Mehta",
+      "url": "https://huggingface.co/papers/2603.25764",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2603.21460"
+        "paperId": "2603.25764"
       }
     },
     {
-      "id": "2603.29025",
-      "title": "The Model Says Walk: How Surface Heuristics Override Implicit Constraints in LLM Reasoning",
-      "title_zh": "模型说走：表面启发法如何超越 LLM 推理中的隐式约束",
-      "description": "Large language models systematically fail when a salient surface cue conflicts with an unstated feasibility constraint. We study this through a diagnose-measure-bridge-treat framework. Causal-behavioral analysis of the ``car wash problem'' across six models reveals approximately context-independent sigmoid heuristics: the distance cue exerts 8.7 to 38 times more influence than the goal, and token-level attribution shows patterns more consistent with keyword associations than compositional inference. The Heuristic Override Benchmark (HOB) -- 500 instances spanning 4 heuristic by 5 constraint families with minimal pairs and explicitness gradients -- demonstrates generality across 14 models: under strict evaluation (10/10 correct), no model exceeds 75%, and presence constraints are hardest (44%). A minimal hint (e.g., emphasizing the key object) recovers +15 pp on average, suggesting the failure lies in constraint inference rather than missing knowledge; 12/14 models perform worse when the constraint is removed (up to -39 pp), revealing conservative bias. Parametric probes confirm that the sigmoid pattern generalizes to cost, efficiency, and semantic-similarity heuristics; goal-decomposition prompting recovers +6 to 9 pp by forcing models to enumerate preconditions before answering. Together, these results characterize heuristic override as a systematic reasoning vulnerability and provide a benchmark for measuring progress toward resolving it.",
-      "description_zh": "当显着的表面线索与未声明的可行性约束发生冲突时，大型语言模型会系统性地失败。我们通过诊断-测量-桥梁-治疗框架来研究这一点。对六个模型中“洗车问题”的因果行为分析揭示了大约与上下文无关的 sigmoid 启发式：距离提示的影响力是目标的 8.7 到 38 倍，并且标记级归因显示的模式与关键词关联比组合推理更一致。启发式覆盖基准 (HOB)——跨越 4 个启发式和 5 个约束族的 500 个实例，具有最小对和显式梯度——展示了 14 个模型的通用性：在严格评估下（10/10 正确），没有模型超过 75%，并且存在约束是最难的（44%）。一个最小的提示（例如，强调关键对象）平均恢复+15 pp，这表明失败在于约束推理而不是知识缺失；当约束被移除时，12/14 模型的表现更差（高达 -39 pp），揭示了保守偏差。参数化探索证实 sigmoid 模式可以推广到成本、效率和语义相似性启发法；目标分解提示通过强制模型在回答之前枚举先决条件来恢复 +6 到 9 个百分点。总之，这些结果将启发式覆盖描述为系统推理漏洞，并为衡量解决该漏洞的进度提供了基准。",
-      "authors": "Yubo Li, Lu Zhang, Tianchong Jiang, Ramayya Krishnan, Rema Padman",
-      "url": "https://huggingface.co/papers/2603.29025",
-      "score": 5,
+      "id": "2604.00892",
+      "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
+      "title_zh": "当用户改变主意时：评估长期网络导航中的可中断代理",
+      "description": "As LLM agents transition from short, static problem solving to executing complex, long-horizon tasks in dynamic environments, the ability to handle user interruptions, such as adding requirement or revising goals, during mid-task execution is becoming a core requirement for realistic deployment. However, existing benchmarks largely assume uninterrupted agent behavior or study interruptions only in short, unconstrained language tasks. In this paper, we present the first systematic study of interruptible agents in long-horizon, environmentally grounded web navigation tasks, where actions induce persistent state changes. We formalize three realistic interruption types, including addition, revision, and retraction, and introduce InterruptBench, a benchmark derived from WebArena-Lite that synthesizes high-quality interruption scenarios under strict semantic constraints. Using a unified interruption simulation framework, we evaluate six strong LLM backbones across single- and multi-turn interruption settings, analyzing both their effectiveness in adapting to updated intents and their efficiency in recovering from mid-task changes. Our results show that handling user interruptions effectively and efficiently during long-horizon agentic tasks remains challenging for powerful large-scale LLMs. Code and dataset are available at https://github.com/HenryPengZou/InterruptBench.",
+      "description_zh": "随着 LLM 代理从短期、静态问题解决过渡到在动态环境中执行复杂、长期任务，在任务执行过程中处理用户中断（例如添加需求或修改目标）的能力正在成为实际部署的核心要求。然而，现有的基准在很大程度上假设代理行为不会中断，或者仅在简短的、不受约束的语言任务中出现学习中断。在本文中，我们首次对长期、基于环境的网络导航任务中的可中断代理进行系统研究，其中动作会引起持久的状态变化。我们形式化了三种现实的中断类型，包括添加、修订和撤回，并引入了 InterruptBench，这是一个源自 WebArena-Lite 的基准，它在严格的语义约束下综合了高质量的中断场景。使用统一的中断模拟框架，我们评估了单轮和多轮中断设置中的六个强大的 LLM 主干，分析了它们适应更新意图的有效性以及从任务中期变化中恢复的效率。我们的结果表明，对于强大的大规模LLM来说，在长期代理任务期间有效且高效地处理用户中断仍然具有挑战性。代码和数据集可在 https://github.com/HenryPengZou/InterruptBench 获取。",
+      "authors": "Henry Peng Zou, Chunyu Miao, Wei-Chieh Huang, Yankai Chen, Yue Zhou, Hanrong Zhang, Yaozu Wu, Liancheng Fang, Zhengyao Gu, Zhen Zhang, Kening Zheng, Fangxin Wang, Yi Nian, Shanghao Li, Wenzhe Fan, Langzhou He, Weizhi Zhang, Xue Liu, Philip S. Yu",
+      "url": "https://huggingface.co/papers/2604.00892",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2603.29025"
+        "upvotes": "1",
+        "paperId": "2604.00892"
       }
     },
     {
-      "id": "2603.29089",
-      "title": "WorldFlow3D: Flowing Through 3D Distributions for Unbounded World Generation",
-      "title_zh": "WorldFlow3D：流经 3D 分布以生成无界世界",
-      "description": "Unbounded 3D world generation is emerging as a foundational task for scene modeling in computer vision, graphics, and robotics. In this work, we present WorldFlow3D, a novel method capable of generating unbounded 3D worlds. Building upon a foundational property of flow matching - namely, defining a path of transport between two data distributions - we model 3D generation more generally as a problem of flowing through 3D data distributions, not limited to conditional denoising. We find that our latent-free flow approach generates causal and accurate 3D structure, and can use this as an intermediate distribution to guide the generation of more complex structure and high-quality texture - all while converging more rapidly than existing methods. We enable controllability over generated scenes with vectorized scene layout conditions for geometric structure control and visual texture control through scene attributes. We confirm the effectiveness of WorldFlow3D on both real outdoor driving scenes and synthetic indoor scenes, validating cross-domain generalizability and high-quality generation on real data distributions. We confirm favorable scene generation fidelity over approaches in all tested settings for unbounded scene generation. For more, see https://light.princeton.edu/worldflow3d.",
-      "description_zh": "无界 3D 世界生成正在成为计算机视觉、图形和机器人领域场景建模的基础任务。在这项工作中，我们提出了 WorldFlow3D，一种能够生成无界 3D 世界的新颖方法。基于流匹配的基本属性（即定义两个数据分布之间的传输路径），我们将 3D 生成更普遍地建模为流经 3D 数据分布的问题，而不限于条件去噪。我们发现，我们的潜在自由流方法可以生成因果且准确的 3D 结构，并且可以将其用作中间分布来指导生成更复杂的结构和高质量纹理 - 同时比现有方法收敛得更快。我们通过场景属性实现几何结构控制和视觉纹理控制的矢量化场景布局条件对生成场景的可控性。我们确认了 WorldFlow3D 在真实户外驾驶场景和合成室内场景上的有效性，验证了跨域通用性和真实数据分布的高质量生成。我们确认，在所有测试设置中，无界场景生成的方法都具有良好的场景生成保真度。有关更多信息，请参阅 https://light.princeton.edu/worldflow3d。",
-      "authors": "Amogh Joshi, Julian Ost, Felix Heide",
-      "url": "https://huggingface.co/papers/2603.29089",
-      "score": 3,
+      "id": "2604.01168",
+      "title": "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models",
+      "title_zh": "S0 调优：混合循环注意力模型的零开销适应",
+      "description": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library: https://github.com/jackyoung27/s0-tuning.",
+      "description_zh": "使用大约 48 个经过执行验证的 HumanEval 训练解决方案，调整每个循环层的单个初始状态矩阵，推理开销为零，在 HumanEval 上的性能优于 LoRA +10.8 pp (p < 0.001)。该方法称为 S0 调整，它优化每个循环层的一个状态矩阵，同时冻结所有模型权重。在 Qwen3.5-4B（GatedDeltaNet 混合）上，S0 调整将贪婪 pass@1 提高了 +23.6 +/- 1.7 pp（10 个种子）。在 FalconH1-7B（Mamba-2 杂交）上，S0 达到 71.8% +/- 1.3，LoRA 达到 71.4% +/- 2.4（3 个种子），在这种样本大小下在统计上无法区分，同时不需要重量合并。跨域传输在 MATH-500（+4.8 pp，p = 0.00002，8 个种子）和 GSM8K（+2.8 pp，p = 0.0003，10 个种子）上很重要；文本到 SQL 基准测试 (Spider) 显示没有传输，与轨迹引导机制一致。在测试的所有九种配置下，纯 Transformer (Qwen2.5-3B) 上的前缀调整控制会使性能降低 -13.9 pp。在 Qwen3.5 上，每步状态偏移变体达到 +27.1 pp，高于 S0 和 LoRA，但每步推理成本较高。总而言之，结果表明，当验证监督稀缺时，��环状态初始化对于混合语言模型来说是一个强大的零推理开销 PEFT 表面。调整后的状态是一个约 48 MB 的文件；任务切换不需要权重合并或模型重新加载。代码和库：https://github.com/jackyoung27/s0-tuning。",
+      "authors": "Jack Young",
+      "url": "https://huggingface.co/papers/2604.01168",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2603.29089"
+        "upvotes": "1",
+        "paperId": "2604.01168"
       }
     },
     {
-      "id": "2603.17191",
-      "title": "Tabular LLMs for Interpretable Few-Shot Alzheimer's Disease Prediction with Multimodal Biomedical Data",
-      "title_zh": "利用多模态生物医学数据进行可解释的小样本阿尔茨海默病预测的表格LLM",
-      "description": "Accurate diagnosis of Alzheimer's disease (AD) requires handling tabular biomarker data, yet such data are often small and incomplete, where deep learning models frequently fail to outperform classical methods. Pretrained large language models (LLMs) offer few-shot generalization, structured reasoning, and interpretable outputs, providing a powerful paradigm shift for clinical prediction. We propose TAP-GPT Tabular Alzheimer's Prediction GPT, a domain-adapted tabular LLM framework built on TableGPT2 and fine-tuned for few-shot AD classification using tabular prompts rather than plain texts. We evaluate TAP-GPT across four ADNI-derived datasets, including QT-PAD biomarkers and region-level structural MRI, amyloid PET, and tau PET for binary AD classification. Across multimodal and unimodal settings, TAP-GPT improves upon its backbone models and outperforms traditional machine learning baselines in the few-shot setting while remaining competitive with state-of-the-art general-purpose LLMs. We show that feature selection mitigates degradation in high-dimensional inputs and that TAP-GPT maintains stable performance under simulated and real-world missingness without imputation. Additionally, TAP-GPT produces structured, modality-aware reasoning aligned with established AD biology and shows greater stability under self-reflection, supporting its use in iterative multi-agent systems. To our knowledge, this is the first systematic application of a tabular-specialized LLM to multimodal biomarker-based AD prediction, demonstrating that such pretrained models can effectively address structured clinical prediction tasks and laying the foundation for tabular LLM-driven multi-agent clinical decision-support systems. The source code is publicly available on GitHub: https://github.com/sophie-kearney/TAP-GPT.",
-      "description_zh": "阿尔茨海默病 (AD) 的准确诊断需要处理表格生物标志物数据，但此类数据通常很小且不完整，深度学习模型常常无法超越经典方法。预训练的大语言模型 (LLM) 提供少样本泛化、结构化推理和可解释的输出，为临床预测提供强大的范式转变。我们提出了 TAP-GPT 表格式阿尔茨海默病预测 GPT，这是一个基于 TableGPT2 构建的领域适应表格式 LLM 框架，并使用表格提示而不是纯文本进行了少量 AD 分类的微调。我们在四个 ADNI 衍生数据集上评估 TAP-GPT，包括 QT-PAD 生物标志物和���域级结构 MRI、淀粉样蛋白 PET 和用于二元 AD 分类的 tau PET。在多模态和单模态设置中，TAP-GPT 改进了其主干模型，并在少数样本设置中超越了传统的机器学习基线，同时保持了与最先进的通用LLM的竞争力。我们表明，特征选择可以减轻高维输入的退化，并且 TAP-GPT 在模拟和现实世界缺失情况下保持稳定的性能而无需插补。此外，TAP-GPT 产生与已建立的 AD 生物学一致的结构化、模态感知推理，并在自我反思下表现出更大的稳定性，支持其在迭代多智能体系统中的使用。据我们所知，这是表格专业LLM在基于多模态生物标志物的AD预测中的首次系统应用，证明这种预训练模型可以有效地解决结构化临床预测任务，并为表格LLM驱动的多智能体临床决策支持系统奠定基础。源代码可在 GitHub 上公开获取：https://github.com/sophie-kearney/TAP-GPT。",
-      "authors": "Sophie Kearney, Shu Yang, Zixuan Wen, Weimin Lyu, Bojian Hou, Duy Duong-Tran, Tianlong Chen, Jason H. Moore, Marylyn D. Ritchie, Chao Chen, Li Shen",
-      "url": "https://huggingface.co/papers/2603.17191",
+      "id": "2604.00986",
+      "title": "Do Phone-Use Agents Respect Your Privacy?",
+      "title_zh": "电话使用代理尊重您的隐私吗？",
+      "description": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-use agents, and ordinary apps do not reveal exactly what data agents type into which form entries during execution. To make this question measurable, we introduce MyPhoneBench, a verifiable evaluation framework for privacy behavior in mobile agents. We operationalize privacy-respecting phone use as permissioned access, minimal disclosure, and user-controlled memory through a minimal privacy contract, iMy, and pair it with instrumented mock apps plus rule-based auditing that make unnecessary permission requests, deceptive re-disclosure, and unnecessary form filling observable and reproducible. Across five frontier models on 10 mobile apps and 300 tasks, we find that task success, privacy-compliant task completion, and later-session use of saved preferences are distinct capabilities, and no single model dominates all three. Evaluating success and privacy jointly reshuffles the model ordering relative to either metric alone. The most persistent failure mode across models is simple data minimization: agents still fill optional personal entries that the task does not require. These results show that privacy failures arise from over-helpful execution of benign tasks, and that success-only evaluation overestimates the deployment readiness of current phone-use agents. All code, mock apps, and agent trajectories are publicly available at~ https://github.com/tangzhy/MyPhoneBench.",
+      "description_zh": "我们研究电话使用代理在完成良性移动任务时是否尊重隐私。这个问题仍然很难回答，因为电话使用代理无法操作符合隐私要求的行为，并且普通应用程序无法准确显示代理在执行过程中在哪些表单条目中输入了哪些数据。为了使这个问题变得可衡量，我们引入了 MyPhoneBench，这是一个针对移动代理隐私行为的可验证评估框架。我们通过最小隐私合约 iMy 将尊重隐私的手机使用作为许可访问、最小化披露和用户控制的内存进行操作，并将其与经过检测的模拟应用程序以及基于规则的审核配对，使不必要的权限请求、欺骗性重新披露和不必要的表格填写变得可观察和可复制。在 10 个移动应用程序和 300 个任务的五个前沿模型中，我们发现任务成功、符合隐私要求的任务完成以及稍后会话使用已保存的首选项是不同的功能，并且没有一个模型能够主导这三个功能。联合评估成功和隐私会重新调整相对于单独任一指标的模型排序。跨模型最持久的故障模式是简单的数据最小化：代理仍然填充任务不需要的可选个人条目。这些结果表明，隐私失败是由于过度执行良性任务而导致的，而仅成功评估则高估了当前电话使用代理的部署准备情况。所有代码、模拟应用程序和代理轨迹均可在 ~ https://github.com/tangzhy/MyPhoneBench 上公开获取。",
+      "authors": "Zhengyang Tang, Ke Ji, Xidong Wang, Zihan Ye, Xinyuan Wang, Yiduo Guo, Ziniu Li, Chenxin Li, Jingyuan Hu, Shunian Chen, Tongxu Luo, Jiaxi Bi, Zeyu Qin, Shaobo Wang, Xin Lai, Pengyuan Lyu, Junyi Li, Can Xu, Chengquan Zhang, Han Hu, Ming Yan, Benyou Wang",
+      "url": "https://huggingface.co/papers/2604.00986",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2604.00986"
+      }
+    },
+    {
+      "id": "2604.00025",
+      "title": "Brevity Constraints Reverse Performance Hierarchies in Language Models",
+      "title_zh": "简洁性约束反转语言模型中的性能层次结构",
+      "description": "Standard evaluation protocols reveal a counterintuitive phenomenon: on 7.7% of benchmark problems spanning five datasets, larger language models underperform smaller ones by 28.4 percentage points despite 10-100x more parameters. Through systematic evaluation of 31 models (0.5B-405B parameters) across 1,485 problems, we identify the mechanism as spontaneous scale-dependent verbosity that introduces errors through overelaboration. Causal intervention experiments demonstrate this reflects correctable prompt design rather than fundamental capability limitations. Constraining large models to produce brief responses improves accuracy by 26 percentage points and reduces performance gaps by up to two-thirds. Most critically, brevity constraints completely reverse performance hierarchies on mathematical reasoning and scientific knowledge benchmarks, with large models achieving 7.7-15.9 percentage point advantages over small models -- direct inversions of the original gaps. These reversals prove large models possess superior latent capabilities that universal prompting masks. We validate findings through three independent contamination tests and demonstrate inverse scaling operates continuously across the full parameter spectrum, with dataset-specific optimal scales ranging from 0.5B to 3.0B parameters. Our results establish that maximizing large model performance requires scale-aware prompt engineering rather than universal evaluation protocols, with immediate implications for deployment: prompt adaptation simultaneously improves accuracy and reduces computational costs.",
+      "description_zh": "标准评估协议揭示了一个违反直觉的现象：在跨越五个数据集的 7.7% 基准问题中，尽管参数多了 10-100 倍，但较大的语言模型的表现比较小的语言模型低 28.4 个百分点。通过对 1,485 个问题的 31 个模型（0.5B-405B 参数）进行系统评估，我们将该机制确定为自发的尺度相关冗长，通过过度阐述引入错误。因果干预实验表明，这反映了可纠正的提示设计，而不是基本的能力限制。限制大型模型产生简短的响应可将准确性提高 26 个百分点，并将性能差距缩小多达三分之二。最关键的是，简洁性约束完全颠倒了数学推理和科学知识基准的性能等级，大型模型比小型模型实现了 7.7-15.9 个百分点的优势——直接反转了原始差距。这些逆转证明大型模型拥有比通用提示面具更优越的潜在能力。我们通过三个独立的污染测试验证了结果，并证明逆标度在整个参数范围内连续运行，数据集特定的最佳标度范围从 0.5B 到 3.0B 参数。我们的结果表明，最大化大型模型性能需要规模感知的即时工程，而不是通用评估协议，这对部署具有直接影响：即时适应同时提高准确性并降低计算成本。",
+      "authors": "MD Azizul Hakim",
+      "url": "https://huggingface.co/papers/2604.00025",
+      "score": 16,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "16",
+        "paperId": "2604.00025"
+      }
+    },
+    {
+      "id": "2603.23582",
+      "title": "AI Generalisation Gap In Comorbid Sleep Disorder Staging",
+      "title_zh": "共病睡眠障碍分期中的人工智能泛化差距",
+      "description": "Accurate sleep staging is essential for diagnosing OSA and hypopnea in stroke patients. Although PSG is reliable, it is costly, labor-intensive, and manually scored. While deep learning enables automated EEG-based sleep staging in healthy subjects, our analysis shows poor generalization to clinical populations with disrupted sleep. Using Grad-CAM interpretations, we systematically demonstrate this limitation. We introduce iSLEEPS, a newly clinically annotated ischemic stroke dataset (to be publicly released), and evaluate a SE-ResNet plus bidirectional LSTM model for single-channel EEG sleep staging. As expected, cross-domain performance between healthy and diseased subjects is poor. Attention visualizations, supported by clinical expert feedback, show the model focuses on physiologically uninformative EEG regions in patient data. Statistical and computational analyses further confirm significant sleep architecture differences between healthy and ischemic stroke cohorts, highlighting the need for subject-aware or disease-specific models with clinical validation before deployment. A summary of the paper and the code is available at https://himalayansaswatabose.github.io/iSLEEPS_Explainability.github.io/",
+      "description_zh": "准确的睡眠分期对于诊断中风患者的 OSA 和呼吸不足至关重要。尽管 PSG 可靠，但成本高昂、劳动密集型且需要人工评分。虽然深度学习能够对健康受试者进行基于脑电图的自动睡眠分期，但我们的分析表明，对睡眠中断的临床人群的概括性较差。使用 Grad-CAM 解释，我们系统地证明了这一局限性。我们引入了 iSLEEPS，一个新的临床注释的缺血性中风数据集（即将公开发布），并评估用于单通道脑电图睡眠分期的 SE-ResNet 加上双向 LSTM 模型。正如预期的那样，健康受试者和患病受试者之间的跨领域表现很差。在临床专家反馈的支持下，注意力可视化显示该模型重点关注患者数据中无生理信息的脑电图区域。统计和计算分析进一步证实了健康和缺血性中风队列之间显着的睡眠结构差异，强调了在部署之前需要经过临床验证的受试者感知或疾病特异性模型。论文摘要和代码可在 https://himalayansaswatabose.github.io/iSLEEPS_Explainability.github.io/ 获取。",
+      "authors": "Saswata Bose, Suvadeep Maiti, Shivam Kumar Sharma, Mythirayee S, Tapabrata Chakraborti, Srijitesh Rajendran, Raju S. Bapi",
+      "url": "https://huggingface.co/papers/2603.23582",
       "score": 0,
       "meta": {
         "source": "huggingface",
         "upvotes": "0",
-        "paperId": "2603.17191"
+        "paperId": "2603.23582"
       }
     },
     {
-      "id": "2603.25645",
-      "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
-      "title_zh": "Colon-Bench：全过程结肠镜检查视频中可扩展致密病变注释的代理工作流程",
-      "description": "Early screening via colonoscopy is critical for colon cancer prevention, yet developing robust AI systems for this domain is hindered by the lack of densely annotated, long-sequence video datasets. Existing datasets predominantly focus on single-class polyp detection and lack the rich spatial, temporal, and linguistic annotations required to evaluate modern Multimodal Large Language Models (MLLMs). To address this critical gap, we introduce Colon-Bench, generated via a novel multi-stage agentic workflow. Our pipeline seamlessly integrates temporal proposals, bounding-box tracking, AI-driven visual confirmation, and human-in-the-loop review to scalably annotate full-procedure videos. The resulting verified benchmark is unprecedented in scope, encompassing 528 videos, 14 distinct lesion categories (including polyps, ulcers, and bleeding), over 300,000 bounding boxes, 213,000 segmentation masks, and 133,000 words of clinical descriptions. We utilize Colon-Bench to rigorously evaluate state-of-the-art MLLMs across lesion classification, Open-Vocabulary Video Object Segmentation (OV-VOS), and video Visual Question Answering (VQA). The MLLM results demonstrate surprisingly high localization performance in medical domains compared to SAM-3. Finally, we analyze common VQA errors from MLLMs to introduce a novel \"colon-skill\" prompting strategy, improving zero-shot MLLM performance by up to 9.7% across most MLLMs. The dataset and the code are available at https://abdullahamdi.com/colon-bench .",
-      "description_zh": "通过结肠镜检查进行早期筛查对于预防结肠癌至关重要，但由于缺乏密集注释的长序列视频数据集，为此领域开发强大的人工智能系统受到阻碍。现有数据集主要关注单类息肉检测，缺乏评估现代多模态大语言模型（MLLM）所需的丰富空间、时间和语言注释。为了解决这一关键差距，我们引入了 Colon-Bench，它是通过新颖的多阶段代理工作流程生成的。我们的管道无缝集成了时间建议、边界框跟踪、人工智能驱动的视觉确认和人机交互审查，以可扩展地注释全过程视频。由此产生的验证基准在范围上是前所未有的，包括 528 个视频、14 个不同的病变类别（包括息肉、溃疡和出血）、超过 300,000 个边界框、213,000 个分割掩模和 133,000 个临床描述单词。我们利用 Colon-Bench 严格评估病变分类、开放词汇视频对象分割 (OV-VOS) 和视频视觉问答 (VQA) 方面最先进的 MLLM。与 SAM-3 相比，MLLM 结果显示在医疗领域具有令人惊讶的高定位性能。最后，我们分析了 MLLM 中常见的 VQA 错误，引入了一种新颖的“冒号技能”提示策略，将大多数 MLLM 的零样本 MLLM 性能提高了高达 9.7%。数据集和代码可在 https://abdullahamdi.com/colon-bench 获取。",
-      "authors": "Abdullah Hamdi, Changchun Yang, Xin Gao",
-      "url": "https://huggingface.co/papers/2603.25645",
+      "id": "2604.00626",
+      "title": "A Survey of On-Policy Distillation for Large Language Models",
+      "title_zh": "大型语言模型的在策略蒸馏综述",
+      "description": "Knowledge distillation has become a primary mechanism for transferring reasoning and domain expertise from frontier Large Language Models (LLMs) to smaller, deployable students. However, the dominant paradigm remains off-policy: students train on static teacher-generated data and never encounter their own errors during learning. This train--test mismatch, an instance of exposure bias, causes prediction errors to compound autoregressively at inference time. On-Policy Distillation (OPD) addresses this by letting the student generate its own trajectories and receive teacher feedback on these self-generated outputs, grounding distillation in the theory of interactive imitation learning. Despite rapid growth spanning divergence minimization, reward-guided learning, and self-play, the OPD literature remains fragmented with no unified treatment. This survey provides the first comprehensive overview of OPD for LLMs. We introduce a unified f-divergence framework over on-policy samples and organize the landscape along three orthogonal dimensions: feedback signal (logit-based, outcome-based, or self-play), teacher access (white-box, black-box, or teacher-free), and loss granularity (token-level, sequence-level, or hybrid). We systematically analyze representative methods, examine industrial deployments, and identify open problems including distillation scaling laws, uncertainty-aware feedback, and agent-level distillation.",
+      "description_zh": "知识蒸馏已成为将推理和领域专业知识从前沿大型语言模型 (LLM) 转移到规模较小、可部署的学生的主要机制。然而，主导范式仍然偏离策略：学生使用教师生成的静态数据进行训练，并且在学习过程中永远不会遇到自己的错误。这种训练-测试不匹配是暴露偏差的一个实例，会导致预测误差在推理时以自回归方式复合。按策略蒸馏 (OPD) 通过让学生生成自己的轨迹并接收教师对这些自行生成的输出的反馈来解决这个问题，从而将蒸馏奠定在交互式模仿学习理论的基础上。尽管分歧最小化、奖励引导学习和自我游戏等领域发展迅速，但 OPD 文献仍然支离破碎，没有统一的处理方法。这项调查首次全面概述了LLM OPD。我们在策略样本上引入统一的 f 散度框架，并沿着三个正交维度组织景观：反馈信号（基于逻辑、基于结果或自我博弈）、教师访问（白盒、黑盒或无教师）和损失粒度（令牌级、序列级或混合）。我们系统地分析代表性方���，检查工业部署，并识别开放问题，包括蒸馏缩放定律、不确定性感知反馈和代理级蒸馏。",
+      "authors": "Mingyang Song, Mao Zheng",
+      "url": "https://huggingface.co/papers/2604.00626",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2604.00626"
+      }
+    },
+    {
+      "id": "2604.01161",
+      "title": "Reasoning Shift: How Context Silently Shortens LLM Reasoning",
+      "title_zh": "推理转变：上下文如何悄悄缩短 LLM 推理",
+      "description": "Large language models (LLMs) exhibiting test-time scaling behavior, such as extended reasoning traces and self-verification, have demonstrated remarkable performance on complex, long-term reasoning tasks. However, the robustness of these reasoning behaviors remains underexplored. To investigate this, we conduct a systematic evaluation of multiple reasoning models across three scenarios: (1) problems augmented with lengthy, irrelevant context; (2) multi-turn conversational settings with independent tasks; and (3) problems presented as a subtask within a complex task. We observe an interesting phenomenon: reasoning models tend to produce much shorter reasoning traces (up to 50%) for the same problem under different context conditions compared to the traces produced when the problem is presented in isolation. A finer-grained analysis reveals that this compression is associated with a decrease in self-verification and uncertainty management behaviors, such as double-checking. While this behavioral shift does not compromise performance on straightforward problems, it might affect performance on more challenging tasks. We hope our findings draw additional attention to both the robustness of reasoning models and the problem of context management for LLMs and LLM-based agents.",
+      "description_zh": "表现出测试时间扩展行为（例如扩展推理轨迹和自我验证）的大型语言模型（LLM）在复杂的长期推理任务上表现出了卓越的性能。然而，这些推理行为的稳健性仍未得到充分探索。为了研究这一点，我们对三种场景的多种推理模型进行了系统评估：（1）问题被冗长、不相关的上下文所增强； (2)具有独立任务的多轮对话设置； (3) 作为复杂任务中的子任务提出的问题。我们观察到一个有趣的现象：与单独提出问题时产生的轨迹相比，推理模型在不同上下文条件下针对同一问题往往会产生更短的推理轨迹（最多 50%）。更细粒度的分析表明，这种压缩与自我验证和不确定性管理行为（例如双重检查）的减少有关。虽然这种行为转变不会影响简单问题的表现，但可能会影响更具挑战性的任务的表现。我们希望我们的研究结果能够引起人们对推理模型的稳健性以及LLM和基于LLM的代理的上下文管理问题的更多关注。",
+      "authors": "Gleb Rodionov",
+      "url": "https://huggingface.co/papers/2604.01161",
+      "score": 22,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "22",
+        "paperId": "2604.01161"
+      }
+    },
+    {
+      "id": "2603.29247",
+      "title": "MemRerank: Preference Memory for Personalized Product Reranking",
+      "title_zh": "MemRerank：个性化产品重新排名的偏好记忆",
+      "description": "LLM-based shopping agents increasingly rely on long purchase histories and multi-turn interactions for personalization, yet naively appending raw history to prompts is often ineffective due to noise, length, and relevance mismatch. We propose MemRerank, a preference memory framework that distills user purchase history into concise, query-independent signals for personalized product reranking. To study this problem, we build an end-to-end benchmark and evaluation framework centered on an LLM-based 1-in-5 selection task, which measures both memory quality and downstream reranking utility. We further train the memory extractor with reinforcement learning (RL), using downstream reranking performance as supervision. Experiments with two LLM-based rerankers show that MemRerank consistently outperforms no-memory, raw-history, and off-the-shelf memory baselines, yielding up to +10.61 absolute points in 1-in-5 accuracy. These results suggest that explicit preference memory is a practical and effective building block for personalization in agentic e-commerce systems.",
+      "description_zh": "基于LLM的购物代理越来越依赖于较长的购买历史记录和多轮交互来实现个性化，但由于噪音、长度和相关性不匹配，天真地将原始历史记录附加到提示中通常是无效的。我们提出了 MemRerank，这是一种偏好记忆框架，可将用户购买历史记录提炼为简洁的、独立于查询的信号，以进行个性化产品重新排名。为了研究这个问题，我们构建了一个以基于 LLM 的 1-in-5 选择任务为中心的端到端基准测试和评估框架，该框架可衡量内存质量和下游重新排序效用。我们使用下��重排序性能作为监督，通过强化学习（RL）进一步训练记忆提取器。使用两个基于 LLM 的重新排序器进行的实验表明，MemRerank 始终优于无内存、原始历史和现成内存基线，在 5 分之一的准确度中产生高达 +10.61 的绝对点。这些结果表明，显式偏好记忆是代理电子商务系统中个性化的实用且有效的构建模块。",
+      "authors": "Zhiyuan Peng, Xuyang Wu, Huaixiao Tou, Yi Fang, Yi Gong",
+      "url": "https://huggingface.co/papers/2603.29247",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2603.25645"
+        "paperId": "2603.29247"
       }
     },
     {
-      "id": "2603.26174",
-      "title": "CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions",
-      "title_zh": "CREval：复杂指令下创意图像操作的自动可解释评估",
-      "description": "Instruction-based multimodal image manipulation has recently made rapid progress. However, existing evaluation methods lack a systematic and human-aligned framework for assessing model performance on complex and creative editing tasks. To address this gap, we propose CREval, a fully automated question-answer (QA)-based evaluation pipeline that overcomes the incompleteness and poor interpretability of opaque Multimodal Large Language Models (MLLMs) scoring. Simultaneously, we introduce CREval-Bench, a comprehensive benchmark specifically designed for creative image manipulation under complex instructions. CREval-Bench covers three categories and nine creative dimensions, comprising over 800 editing samples and 13K evaluation queries. Leveraging this pipeline and benchmark, we systematically evaluate a diverse set of state-of-the-art open and closed-source models. The results reveal that while closed-source models generally outperform open-source ones on complex and creative tasks, all models still struggle to complete such edits effectively. In addition, user studies demonstrate strong consistency between CREval's automated metrics and human judgments. Therefore, CREval provides a reliable foundation for evaluating image editing models on complex and creative image manipulation tasks, and highlights key challenges and opportunities for future research.",
-      "description_zh": "基于指令的多模态图像处理最近取得了快速进展。然而，现有的评估方法缺乏系统且人性化的框架来评估模型在复杂和创造性编辑任务上的性能。为了解决这一差距，我们提出了 CREval，这是一种基于问答 (QA) 的全自动评估管道，克服了不透明的多模态大语言模型 (MLLM) 评分的不完整性和可解释性差的问题。同时，我们推出了 CREval-Bench，这是一个专门为复杂指令下的创意图像处理而设计的综合基准测试。 CREval-Bench涵盖三个类别和九个创意维度，包括超过800个编辑样本和13K评估查询。利用这个管道和基准，我们系统地评估了一组不同的最先进的开源和闭源模型。结果表明，虽然闭源模型在复杂和创造性任务上通常优于开源模型，但所有模型仍然难以有效地完成此类编辑。此外，用户研究表明 CREval 的自动化指标与人类判断之间具有很强的一致性。因此，CREval 为评估复杂且创造性的图像处理任务的图像编辑模型提供了可靠的基础，并强调了未来研究的关键挑战和机遇。",
-      "authors": "Chonghuinan Wang, Zihan Chen, Yuxiang Wei, Tianyi Jiang, Xiaohe Wu, Fan Li, Wangmeng Zuo, Hongxun Yao",
-      "url": "https://huggingface.co/papers/2603.26174",
+      "id": "2603.24414",
+      "title": "ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers",
+      "title_zh": "ClawKeeper：通过技能、插件和观察者为 OpenClaw 代理提供全面的安全保护",
+      "description": "OpenClaw has rapidly established itself as a leading open-source autonomous agent runtime, offering powerful capabilities including tool integration, local file access, and shell command execution. However, these broad operational privileges introduce critical security vulnerabilities, transforming model errors into tangible system-level threats such as sensitive data leakage, privilege escalation, and malicious third-party skill execution. Existing security measures for the OpenClaw ecosystem remain highly fragmented, addressing only isolated stages of the agent lifecycle rather than providing holistic protection. To bridge this gap, we present ClawKeeper, a real-time security framework that integrates multi-dimensional protection mechanisms across three complementary architectural layers. (1) Skill-based protection operates at the instruction level, injecting structured security policies directly into the agent context to enforce environment-specific constraints and cross-platform boundaries. (2) Plugin-based protection serves as an internal runtime enforcer, providing configuration hardening, proactive threat detection, and continuous behavioral monitoring throughout the execution pipeline. (3) Watcher-based protection introduces a novel, decoupled system-level security middleware that continuously verifies agent state evolution. It enables real-time execution intervention without coupling to the agent's internal logic, supporting operations such as halting high-risk actions or enforcing human confirmation. We argue that this Watcher paradigm holds strong potential to serve as a foundational building block for securing next-generation autonomous agent systems. Extensive qualitative and quantitative evaluations demonstrate the effectiveness and robustness of ClawKeeper across diverse threat scenarios. We release our code.",
+      "description_zh": "OpenClaw 已迅速成为领先的开源自主代理运行时，提供强大的功能，包括工具集成、本地文件访问和 shell 命令执行。然而，这些广泛的操作权限引入了严重的安全漏洞，将模型错误转化为有形的系统级威胁，例如敏感数据泄露、权限升级和恶意第三方技能执行。 OpenClaw 生态系统的现有安全措施仍然高度分散，仅解决代理生命周期的孤立阶段，而不是提供整体保护。为了弥补这一差距，我们推出了 ClawKeeper，这是一个实时安全框架，它集成了跨三个���补架构层的多维保护机制。 (1) 基于技能的保护在指令级别运行，将结构化安全策略直接注入代理上下文中，以实施特定于环境的约束和跨平台边界。 (2) 基于插件的保护充当内部运行时执行器，在整个执行管道中提供配置强化、主动威胁检测和持续行为监控。 (3) 基于观察者的保护引入了一种新颖的、解耦的系统级安全中间件，可以持续验证代理状态的演变。它可以在不耦合代理内部逻辑的情况下实现实时执行干预，支持停止高风险操作或强制人工确认等操作。我们认为，这种观察者范式具有作为保护下一代自主代理系统的基础构建块的强大潜力。广泛的定性和定量评估证明了 ClawKeeper 在不同威胁场景中的有效性和稳健性。我们发布我们的代码。",
+      "authors": "Songyang Liu, Chaozhuo Li, Chenxu Wang, Jinyu Hou, Zejian Chen, Litian Zhang, Zheng Liu, Qiwei Ye, Yiming Hei, Xi Zhang, Zhongyuan Wang",
+      "url": "https://huggingface.co/papers/2603.24414",
+      "score": 165,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "165",
+        "paperId": "2603.24414"
+      }
+    },
+    {
+      "id": "2604.00590",
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "title_zh": "UniMixer：推荐系统中扩展法则的统一架构",
+      "description": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention-based, TokenMixer-based, and factorization-machine-based methods, which exhibit fundamental differences in both design philosophy and architectural structure. In this paper, we propose a unified scaling architecture for recommendation systems, namely UniMixer, to improve scaling efficiency and establish a unified theoretical framework that unifies the mainstream scaling blocks. By transforming the rule-based TokenMixer to an equivalent parameterized structure, we construct a generalized parameterized feature mixing module that allows the token mixing patterns to be optimized and learned during model training. Meanwhile, the generalized parameterized token mixing removes the constraint in TokenMixer that requires the number of heads to be equal to the number of tokens. Furthermore, we establish a unified scaling module design framework for recommender systems, which bridges the connections among attention-based, TokenMixer-based, and factorization-machine-based methods. To further boost scaling ROI, a lightweight UniMixing module is designed, UniMixing-Lite, which further compresses the model parameters and computational cost while significantly improve the model performance. The scaling curves are shown in the following figure. Extensive offline and online experiments are conducted to verify the superior scaling abilities of UniMixer.",
+      "description_zh": "近年来，推荐模型的缩放定律引起了越来越多的关注，它控制着推荐器的性能和参数/FLOPs之间的关系。目前，实现推荐模型可扩展性的主流架构有基于注意力的方法、基于TokenMixer的方法和基于因子分解机的方法，这三种架构在设计理念和架构结构上都表现出根本的区别。在本文中，我们提出了一种推荐系统的统一缩放架构，即UniMixer，以提高缩放效率并建立统一主流缩放模块的统一理论框架。通过将基���规则的 TokenMixer 转换为等效的参数化结构，我们构建了一个广义参数化特征混合模块，该模块允许在模型训练期间优化和学习令牌混合模式。同时，广义参数化令牌混合消除了TokenMixer中要求头数等于令牌数的约束。此外，我们为推荐系统建立了统一的扩展模块设计框架，它弥合了基于注意力、基于 TokenMixer 和基于分解机的方法之间的联系。为了进一步提高缩放投资回报率，设计了一个轻量级的 UniMixin 模块 UniMixin-Lite，它进一步压缩了模型参数和计算成本，同时显着��高了模型性能。缩放曲线如下图所示。进行了大量的离线和在线实验来验证 UniMixer 卓越的扩展能力。",
+      "authors": "Mingming Ha, Guanchen Wang, Linxun Chen, Xuan Rao, Yuexin Shi, Tianbao Ma, Zhaojie Liu, Yunqian Fan, Zilong Lu, Yanan Niu, Han Li, Kun Gai",
+      "url": "https://huggingface.co/papers/2604.00590",
       "score": 3,
       "meta": {
         "source": "huggingface",
         "upvotes": "3",
-        "paperId": "2603.26174"
+        "paperId": "2604.00590"
       }
     },
     {
-      "id": "2603.27365",
-      "title": "Falcon Perception",
-      "title_zh": "猎鹰感知",
-      "description": "Perception-centric systems are typically implemented with a modular encoder-decoder pipeline: a vision backbone for feature extraction and a separate decoder (or late-fusion module) for task prediction. This raises a central question: is this architectural separation essential or can a single early-fusion stack do both perception and task modeling at scale? We introduce Falcon Perception, a unified dense Transformer that processes image patches and text tokens in a shared parameter space from the first layer, using a hybrid attention pattern (bidirectional among image tokens, causal for prediction tokens) to combine global visual context with autoregressive, variable-length instance generation. To keep dense outputs practical, Falcon Perception retains a lightweight token interface and decodes continuous spatial outputs with specialized heads, enabling parallel high-resolution mask prediction.\n  Our design promotes simplicity: we keep a single scalable backbone and shift complexity toward data and training signals, adding only small heads where outputs are continuous and dense. On SA-Co, Falcon Perception improves mask quality to 68.0 Macro-F_1 compared to 62.3 of SAM3. We also introduce PBench, a benchmark targeting compositional prompts (OCR, spatial constraints, relations) and dense long-context regimes, where the model shows better gains. Finally, we extend the same early-fusion recipe to Falcon OCR: a compact 300M-parameter model which attains 80.3% on olmOCR and 88.64 on OmniDocBench.",
-      "description_zh": "以感知为中心的系统通常使用模块化编码器-解码器管道来实现：用于特征提取的视觉主干和用于任务预测的单独解码器（或后期融合模块）。这就提出了一个核心问题：这种架构分离是否必要，或者单个早期融合堆栈可以大规模地进行感知和任务建模吗？我们引入了 Falcon Perception，这是一个统一的密集 Transformer，它在第一层的共享参数空间中处理图像块和文本标记，使用混合注意模式（图像标记之间的双向，预测标记的因果关系）将全局视觉上下文与自回归、可变长度实例生成相结合。为了保持密集输出的实用性，Falcon Perception 保留了轻量级令牌接口，并使用专用头对连续空间输出进行解码，从而实现并行高分辨率掩模预测。\n  我们的设计提倡简单性：我们保留一个可扩展的主干，并将复杂性转向数据和训练信号，仅在输出连续且密集的地方添加小头。在 SA-Co 上，Falcon Perception 将掩模质量提高至 68.0 Macro-F_1，而 SAM3 为 62.3。我们还引入了 PBench，这是一个针对组合提示（OCR、空间约束、关系）和密集长上下文机制的基准，其中模���显示出更好的收益。最后，我们将相同的早期融合方法扩展到 Falcon OCR：一个紧凑的 300M 参数模型，在 olmOCR 上达到 80.3%，在 OmniDocBench 上达到 88.64。",
-      "authors": "Aviraj Bevli, Sofian Chaybouti, Yasser Dahou, Hakim Hacid, Ngoc Dung Huynh, Phuc H. Le Khac, Sanath Narayan, Wamiq Reyaz Para, Ankit Singh",
-      "url": "https://huggingface.co/papers/2603.27365",
-      "score": 7,
+      "id": "2603.29002",
+      "title": "Understand and Accelerate Memory Processing Pipeline for Disaggregated LLM Inference",
+      "title_zh": "了解并加速分解 LLM 推理的内存处理管道",
+      "description": "Modern large language models (LLMs) increasingly depends on efficient long-context processing and generation mechanisms, including sparse attention, retrieval-augmented generation (RAG), and compressed contextual memory, to support complex reasoning. We show that these optimizations can be unified into a four-step memory processing pipeline: Prepare Memory, Compute Relevancy, Retrieval, and Apply to Inference. Through systematic profiling, we identify a 22%-97% memory processing overhead in LLM inference and strong heterogeneity in its computational characteristics. Motivated by this insight, we argue that heterogeneous systems are well-suited to accelerate memory processing and thus end-to-end inference. We demonstrate this approach on a GPU-FPGA system by offloading sparse, irregular, and memory-bounded operations to FPGAs while retaining compute-intensive operations on GPUs. Evaluated on an AMD MI210 GPU and an Alveo U55C FPGA, our system is 1.04sim2.2times faster and requires 1.11sim4.7times less energy across multiple LLM inference optimizations than the GPU baseline (similar results hold on NVIDIA A100). These results establish heterogeneous systems as a practical direction for efficient LLM memory processing and inform future heterogeneous hardware design.",
+      "description_zh": "现代大语言模型（LLM）越来越依赖于高效的长上下文处理和生成机制，包括稀疏注意力、检索增强生成（RAG）和压缩上下文记忆，以支持复杂的推理。我们证明这些优化可以统一为四步内存处理管道：准备内存、计算相关性、检索和应用于推理。通过系统分析，我们发现 LLM 推理的内存处理开销为 22%-97%，并且其计算特性具有很强的异质性。受这种见解的启发，我们认为异构系统非常适合加速内存处理，从而加速端到端推理。我们在 GPU-FPGA 系统上演示了这种方法，将稀疏、不规则和内存有限的操作卸载到 FPGA，同时保留 GPU 上的计算密集型操作。在 AMD MI210 GPU 和 Alveo U55C FPGA 上进行评估后，我们的系统在多个 LLM 推理优化中速度比 GPU 基准快 1.04sim2.2 倍，所需能源减少 1.11sim4.7 倍（在 NVIDIA A100 上也有类似结果）。这些结果将异构系统确立为高效 LLM 内存处理的实用方向，并为未来的异构硬件设计提供信息。",
+      "authors": "Zifan He, Rui Ma, Yizhou Sun, Jason Cong",
+      "url": "https://huggingface.co/papers/2603.29002",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2603.27365"
+        "upvotes": "2",
+        "paperId": "2603.29002"
       }
     },
     {
-      "id": "2603.25732",
-      "title": "BizGenEval: A Systematic Benchmark for Commercial Visual Content Generation",
-      "title_zh": "BizGenEval：商业视觉内容生成的系统基准",
-      "description": "Recent advances in image generation models have expanded their applications beyond aesthetic imagery toward practical visual content creation. However, existing benchmarks mainly focus on natural image synthesis and fail to systematically evaluate models under the structured and multi-constraint requirements of real-world commercial design tasks. In this work, we introduce BizGenEval, a systematic benchmark for commercial visual content generation. The benchmark spans five representative document types: slides, charts, webpages, posters, and scientific figures, and evaluates four key capability dimensions: text rendering, layout control, attribute binding, and knowledge-based reasoning, forming 20 diverse evaluation tasks. BizGenEval contains 400 carefully curated prompts and 8000 human-verified checklist questions to rigorously assess whether generated images satisfy complex visual and semantic constraints. We conduct large-scale benchmarking on 26 popular image generation systems, including state-of-the-art commercial APIs and leading open-source models. The results reveal substantial capability gaps between current generative models and the requirements of professional visual content creation. We hope BizGenEval serves as a standardized benchmark for real-world commercial visual content generation.",
-      "description_zh": "图像生成模型的最新进展已将其应用范围从审美图像扩展到实际的视觉内容创建。然而，现有的基准主要关注自然图像合成，未能在现实商业设计任务的结构化和多约束要求下系统地评估模型。在这项工作中，我们介绍了 BizGenEval，这是商业视觉内容生成的系统基准。该基准涵盖幻灯片、图表、网页、海报、科学图表五种代表性文档类型，评估文本渲染、布局控制、属性绑定、基于知识的推理四个关键能力维度，形成20个多样化的评估任务。 BizGenEval 包含 400 个精心策划的提示和 8000 个经过人工验证的清单问题，以严格评估生成的图像是否满足复杂的视觉和语义约束。我们对 26 个流行的图像生成系统进行大规模基准测试，包括最先进的商业 API 和领先的开源模型。结果揭示了当前生成模型与专业视觉内容创作的要求之间存在巨大的能力差距。我们希望 BizGenEval 成为现实世界商业视觉内容生成的标准化基准。",
-      "authors": "Yan Li, Zezi Zeng, Ziwei Zhou, Xin Gao, Muzhao Tian, Yifan Yang, Mingxi Cheng, Qi Dai, Yuqing Yang, Lili Qiu, Zhendong Wang, Zhengyuan Yang, Xue Yang, Lijuan Wang, Ji Li, Chong Luo",
-      "url": "https://huggingface.co/papers/2603.25732",
-      "score": 9,
+      "id": "2604.00913",
+      "title": "Benchmarking and Mechanistic Analysis of Vision-Language Models for Cross-Depiction Assembly Instruction Alignment",
+      "title_zh": "交叉描述汇编指令对齐的视觉语言模型的基准测试和机制分析",
+      "description": "2D assembly diagrams are often abstract and hard to follow, creating a need for intelligent assistants that can monitor progress, detect errors, and provide step-by-step guidance. In mixed reality settings, such systems must recognize completed and ongoing steps from the camera feed and align them with the diagram instructions. Vision Language Models (VLMs) show promise for this task, but face a depiction gap because assembly diagrams and video frames share few visual features. To systematically assess this gap, we construct IKEA-Bench, a benchmark of 1,623 questions across 6 task types on 29 IKEA furniture products, and evaluate 19 VLMs (2B-38B) under three alignment strategies. Our key findings: (1) assembly instruction understanding is recoverable via text, but text simultaneously degrades diagram-to-video alignment; (2) architecture family predicts alignment accuracy more strongly than parameter count; (3) video understanding remains a hard bottleneck unaffected by strategy. A three-level mechanistic analysis further reveals that diagrams and video occupy disjoint ViT subspaces, and that adding text shifts models from visual to text-driven reasoning. These results identify visual encoding as the primary target for improving cross-depiction robustness. Project page: https://ryenhails.github.io/IKEA-Bench/",
+      "description_zh": "2D 装配图通常比较抽象且难以理解，因此需要能够监控进度、检测错误并提供分步指导的智能助手。在混合现实设置中，此类系统必须识别相机输入中已完成和正在进行的步骤，并将它们与图表指令对齐。视觉语言模型 (VLM) 有望完成这项任务，但由于装配图和视频帧共享的视觉特征很少，因此面临着描述差距。为了系统地评估这一差距，我们构建了 IKEA-Bench，这是一个包含 29 种宜家家具产品的 6 个任务类型的 1,623 个问题的基准，并在三种调整策略下评估 19 个 VLM (2B-38B)。我们的主要发现：（1）汇编指令的理解可以通过文本恢复，但文本同时会降低图表到视频的对齐； (2) 架构族比参数计数更能预测对齐精度； (3)不受策略影响，视频理解仍然是一个硬瓶颈。三级机制分析进一步揭示，图表和视频占据不相交的 ViT 子空间，并且添加文本会将模型从视觉推理转变为文本驱动推理。这些结果将视觉编码确定为提��交叉描述鲁棒性的主要目标。项目页面：https://ryenhails.github.io/IKEA-Bench/",
+      "authors": "Zhuchenyang Liu, Yao Zhang, Yu Xiao",
+      "url": "https://huggingface.co/papers/2604.00913",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2603.25732"
+        "upvotes": "2",
+        "paperId": "2604.00913"
       }
     },
     {
-      "id": "2603.29092",
-      "title": "TrajectoryMover: Generative Movement of Object Trajectories in Videos",
-      "title_zh": "TrajectoryMover：视频中对象轨迹的生成运动",
-      "description": "Generative video editing has enabled several intuitive editing operations for short video clips that would previously have been difficult to achieve, especially for non-expert editors. Existing methods focus on prescribing an object's 3D or 2D motion trajectory in a video, or on altering the appearance of an object or a scene, while preserving both the video's plausibility and identity. Yet a method to move an object's 3D motion trajectory in a video, i.e., moving an object while preserving its relative 3D motion, is currently still missing. The main challenge lies in obtaining paired video data for this scenario. Previous methods typically rely on clever data generation approaches to construct plausible paired data from unpaired videos, but this approach fails if one of the videos in a pair can not easily be constructed from the other. Instead, we introduce TrajectoryAtlas, a new data generation pipeline for large-scale synthetic paired video data and a video generator TrajectoryMover fine-tuned with this data. We show that this successfully enables generative movement of object trajectories. Project page: https://chhatrekiran.github.io/trajectorymover",
-      "description_zh": "生成视频编辑为短视频剪辑提供了多种直观的编辑操作，这在以前很难实现，特别是对于非专业编辑来说。现有方法侧重于规定视频中对象的 3D 或 2D 运动轨迹，或者改变对象或场景的外观，同时保留视频的合理性和身份。然而，目前仍然缺少一种在视频中移动对象的 3D 运动轨迹的方法，即在移动对象的同时保留其相对 3D 运动。主要挑战在于获取该场景的配对视频数据。以前的方法通常依赖于巧妙的数据生成方法来从未配对的视频构建合理的配对数据，但如果一对视频中的一个视频无法轻松地从另一个视频构建，则这种方法就会失败。相反，我们引入了 TrajectoryAtlas，这是一种用于大规模合成配对视频数据的新数据生成管道，以及使用该数据进行微调的视频生成器 TrajectoryMover。我们证明这成功地实现了物体轨迹的生成运动。项目页面：https://chhatrekiran.github.io/trajectorymover",
-      "authors": "Kiran Chhatre, Hyeonho Jeong, Yulia Gryaditskaya, Christopher E. Peters, Chun-Hao Paul Huang, Paul Guerrero",
-      "url": "https://huggingface.co/papers/2603.29092",
-      "score": 0,
+      "id": "2603.26648",
+      "title": "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
+      "title_zh": "Vision2Web：带有代理验证的视觉网站开发的分层基准",
+      "description": "Recent advances in large language models have improved the capabilities of coding agents, yet systematic evaluation of complex, end-to-end website development remains limited. To address this gap, we introduce Vision2Web, a hierarchical benchmark for visual website development, spanning from static UI-to-code generation, interactive multi-page frontend reproduction, to long-horizon full-stack website development. The benchmark is constructed from real-world websites and comprises a total of 193 tasks across 16 categories, with 918 prototype images and 1,255 test cases. To support flexible, thorough and reliable evaluation, we propose workflow-based agent verification paradigm based on two complementary components: a GUI agent verifier and a VLM-based judge. We evaluate multiple visual language models instantiated under different coding-agent frameworks, revealing substantial performance gaps at all task levels, with state-of-the-art models still struggling on full-stack development.",
+      "description_zh": "大型语言模型的最新进展提高了编码代理的能力，但对复杂的端到端网站开发的系统评估仍然有限。为了解决这一差距，我们引入了 Vision2Web，这是一个视觉网站开发的分层基准，涵盖从静态 UI 到代码生成、交互式多页面前端再现，到长期全栈网站开发。该基准测试是根据真实网站构建的，包括 16 个类别的 193 个任务、918 个原型图像和 1,255 个测试用例。为了支持灵活、彻底和可靠的评估，我们提出了基于工作流的代理验证范例，该范例基于两个互补的组件：GUI代理验证器和基于VLM的判断器。我们评估了在不同编码代理框架下实例化的多个视觉语言模型，揭示了所有任务级别上的巨大性能差距，而最先进的模型仍在全栈开发上苦苦挣扎。",
+      "authors": "Zehai He, Wenyi Hong, Zhen Yang, Ziyang Pan, Mingdao Liu, Xiaotao Gu, Jie Tang",
+      "url": "https://huggingface.co/papers/2603.26648",
+      "score": 32,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2603.29092"
-      }
-    },
-    {
-      "id": "2603.27460",
-      "title": "Project Imaging-X: A Survey of 1000+ Open-Access Medical Imaging Datasets for Foundation Model Development",
-      "title_zh": "Project Imaging-X：针对基础模型开发的 1000 多个开放获取医学成像数据集的调查",
-      "description": "Foundation models have demonstrated remarkable success across diverse domains and tasks, primarily due to the thrive of large-scale, diverse, and high-quality datasets. However, in the field of medical imaging, the curation and assembling of such medical datasets are highly challenging due to the reliance on clinical expertise and strict ethical and privacy constraints, resulting in a scarcity of large-scale unified medical datasets and hindering the development of powerful medical foundation models. In this work, we present the largest survey to date of medical image datasets, covering over 1,000 open-access datasets with a systematic catalog of their modalities, tasks, anatomies, annotations, limitations, and potential for integration. Our analysis exposes a landscape that is modest in scale, fragmented across narrowly scoped tasks, and unevenly distributed across organs and modalities, which in turn limits the utility of existing medical image datasets for developing versatile and robust medical foundation models. To turn fragmentation into scale, we propose a metadata-driven fusion paradigm (MDFP) that integrates public datasets with shared modalities or tasks, thereby transforming multiple small data silos into larger, more coherent resources. Building on MDFP, we release an interactive discovery portal that enables end-to-end, automated medical image dataset integration, and compile all surveyed datasets into a unified, structured table that clearly summarizes their key characteristics and provides reference links, offering the community an accessible and comprehensive repository. By charting the current terrain and offering a principled path to dataset consolidation, our survey provides a practical roadmap for scaling medical imaging corpora, supporting faster data discovery, more principled dataset creation, and more capable medical foundation models.",
-      "description_zh": "基础模型在不同领域和任务中取得了显着的成功，这主要归功于大规模、多样化和高质量数据集的蓬勃发展。然而，在医学影像领域，由于对临床专业知识的依赖以及严格的伦理和隐私约束，此类医学数据集的管理和组装极具挑战性，导致大规模统一医学数据集的稀缺，并阻碍了强大的医学基础模型的发展。在这项工作中，我们提出了迄今为止最大规模的医学图像数据集调查，涵盖 1,000 多个开放访问数据集，并对其模式、任务、解剖结构、注释、限制和集成潜力进行了系统化目录。我们的分析揭示了一个规模适中、在狭窄范围的任务中分散、在器官和模式之间分布不均匀的情况，这反过来又限制了现有医学图像数据集用于开发多功能和强大的医学基础模型的效用。为了将碎片化为规模化，我们提出了一种元数据驱动的融合范式（MDFP），它将公共数据集与共享模式或任务集成在一起，从而将多个小型数据孤岛转变为更大、更一致的资源。在 MDFP 的基础上，我们发布了一个交互式发现门户，该门户支持端到端、自动化的医学图像数据集集成，并将��有调查的数据集编译成统一的结构化表格，该表格清楚地总结了其关键特征并提供了参考链接，为社区提供了一个可访问且全面的存储库。通过绘制当前地形图并提供数据集整合的原则性路径，我们的调查为扩展医学成像语料库提供了实用的路线图，支持更快的数据发现、更有原则的数据集创建和更强大的医学基础模型。",
-      "authors": "Zhongying Deng, Cheng Tang, Ziyan Huang, Jiashi Lin, Ying Chen, Junzhi Ning, Chenglong Ma, Jiyao Liu, Wei Li, Yinghao Zhu, Shujian Gao, Yanyan Huang, Sibo Ju, Yanzhou Su, Pengcheng Chen, Wenhao Tang, Tianbin Li, Haoyu Wang, Yuanfeng Ji, Hui Sun, Shaobo Min, Liang Peng, Feilong Tang, Haochen Xue, Rulin Zhou, Chaoyang Zhang, Wenjie Li, Shaohao Rui, Weijie Ma, Xingyue Zhao, Yibin Wang, Kun Yuan, Zhaohui Lu, Shujun Wang, Jinjie Wei, Lihao Liu, Dingkang Yang, Lin Wang, Yulong Li, Haolin Yang, Yiqing Shen, Lequan Yu, Xiaowei Hu, Yun Gu, Yicheng Wu, Benyou Wang, Minghui Zhang, Angelica I. Aviles-Rivero, Qi Gao, Hongming Shan, Xiaoyu Ren, Fang Yan, Hongyu Zhou, Haodong Duan, Maosong Cao, Shanshan Wang, Bin Fu, Xiaomeng Li, Zhi Hou, Chunfeng Song, Lei Bai, Yuan Cheng, Yuandong Pu, Xiang Li, Wenhai Wang, Hao Chen, Jiaxin Zhuang, Songyang Zhang, Huiguang He, Mengzhang Li, Bohan Zhuang, Zhian Bai, Rongshan Yu, Liansheng Wang, Yukun Zhou, Xiaosong Wang, Xin Guo, Guanbin Li, Xiangru Lin, Dakai Jin, Mianxin Liu, Wenlong Zhang, Qi Qin, Conghui He, Yuqiang Li, Ye Luo, Nanqing Dong, Jie Xu, Wenqi Shao, Bo Zhang, Qiujuan Yan, Yihao Liu, Jun Ma, Zhi Lu, Yuewen Cao, Zongwei Zhou, Jianming Liang, Shixiang Tang, Qi Duan, Dongzhan Zhou, Chen Jiang, Yuyin Zhou, Yanwu Xu, Jiancheng Yang, Shaoting Zhang, Xiaohong Liu, Siqi Luo, Yi Xin, Chaoyu Liu, Haochen Wen, Xin Chen, Alejandro Lozano, Min Woo Sun, Yuhui Zhang, Yue Yao, Xiaoxiao Sun, Serena Yeung-Levy, Xia Li, Jing Ke, Chunhui Zhang, Zongyuan Ge, Ming Hu, Jin Ye, Zhifeng Li, Yirong Chen, Yu Qiao, Junjun He",
-      "url": "https://huggingface.co/papers/2603.27460",
-      "score": 45,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "45",
-        "paperId": "2603.27460"
-      }
-    },
-    {
-      "id": "2603.22794",
-      "title": "It Takes Two: A Duet of Periodicity and Directionality for Burst Flicker Removal",
-      "title_zh": "需要两个：消除突发闪烁的周期性和方向性的二重奏",
-      "description": "Flicker artifacts, arising from unstable illumination and row-wise exposure inconsistencies, pose a significant challenge in short-exposure photography, severely degrading image quality. Unlike typical artifacts, e.g., noise and low-light, flicker is a structured degradation with specific spatial-temporal patterns, which are not accounted for in current generic restoration frameworks, leading to suboptimal flicker suppression and ghosting artifacts. In this work, we reveal that flicker artifacts exhibit two intrinsic characteristics, periodicity and directionality, and propose Flickerformer, a transformer-based architecture that effectively removes flicker without introducing ghosting. Specifically, Flickerformer comprises three key components: a phase-based fusion module (PFM), an autocorrelation feed-forward network (AFFN), and a wavelet-based directional attention module (WDAM). Based on the periodicity, PFM performs inter-frame phase correlation to adaptively aggregate burst features, while AFFN exploits intra-frame structural regularities through autocorrelation, jointly enhancing the network's ability to perceive spatially recurring patterns. Moreover, motivated by the directionality of flicker artifacts, WDAM leverages high-frequency variations in the wavelet domain to guide the restoration of low-frequency dark regions, yielding precise localization of flicker artifacts. Extensive experiments demonstrate that Flickerformer outperforms state-of-the-art approaches in both quantitative metrics and visual quality. The source code is available at https://github.com/qulishen/Flickerformer.",
-      "description_zh": "由不稳定的照明和行方向曝光不一致引起的闪烁伪影对短曝光摄影构成了重大挑战，严重降低了图像质量。与典型的伪像（例如噪声和低光）不同，闪烁是具有特定时空模式的结构化退化，当前的通用恢复框架没有考虑到这些因素，从而导致闪烁抑制和重影伪像不理想。在这项工作中，我们揭示了闪烁伪像表现出两个内在特征：周期性和方向性，并提出了 Flickerformer，一种基于变压器的架构，可以有效消除闪烁而不引入重影。具体来说，Flickerformer 包括三个关键组件：基于相位的融合模块（PFM）、自相关前馈网络（AFFN）和基于小波的方向注意模块（WDAM）。基于周期性，PFM 执行帧间相位相关以自适应聚合突发特征，而 AFFN 通过自相关利用帧内结构规律，共同增强网络感知空间重复模式的能力。此外，受闪烁伪影方向性的启发，WDAM 利用小波域中的高频变化来指导低频暗区的恢复，从而实现闪烁伪影的精确定位。大量实验表明，Flickerformer 在定量指标和视觉质量方面均优于最先进的方法。源代码可在 https://github.com/qulishen/Flickerformer 获取。",
-      "authors": "Lishen Qu, Shihao Zhou, Jie Liang, Hui Zeng, Lei Zhang, Jufeng Yang",
-      "url": "https://huggingface.co/papers/2603.22794",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2603.22794"
-      }
-    },
-    {
-      "id": "2603.26246",
-      "title": "Distilling Conversations: Abstract Compression of Conversational Audio Context for LLM-based ASR",
-      "title_zh": "蒸馏对话：基于 LLM 的 ASR 对话音频上下文的抽象压缩",
-      "description": "Standard LLM-based speech recognition systems typically process utterances in isolation, limiting their ability to leverage conversational context. In this work, we study whether multimodal context from prior turns improves LLM-based ASR and how to represent that context efficiently. We find that, after supervised multi-turn training, conversational context mainly helps with the recognition of contextual entities. However, conditioning on raw context is expensive because the prior-turn audio token sequence grows rapidly with conversation length. To address this, we propose Abstract Compression, which replaces the audio portion of prior turns with a fixed number of learned latent tokens while retaining corresponding transcripts explicitly. On both in-domain and out-of-domain test sets, the compressed model recovers part of the gains of raw-context conditioning with a smaller prior-turn audio footprint. We also provide targeted analyses of the compression setup and its trade-offs.",
-      "description_zh": "基于LLM的标准语音识别系统通常单独处理话语，限制了它们利用对话上下文的能力。在这项工作中，我们研究了先前轮次的多模态上下文是否可以改善基于 LLM 的 ASR 以及如何有效地表示该上下文。我们发现，经过监督多轮训练后，会话上下文主要有助于上下文实体的识别。然而，对原始上下文的调节是昂贵的，因为前轮音频令牌序列随着对话长度而快速增长。为了解决这个问题，我们提出了抽象压缩，它用固定数量的学习潜在标记替换先前回合的音频部分，同时显式保留相应的转录本。在域内和域外测试集上，压缩模型以更小的前轮音频足迹恢复了原始上下文调节的部分增益。我们还提供压缩设置及其权衡的有针对性的分析。",
-      "authors": "Shashi Kumar, Esaú Villatoro-Tello, Sergio Burdisso, Kadri Hacioglu, Thibault Bañeras-Roux, Hasindri Watawana, Dairazalia Sanchez-Cortes, Srikanth Madikeri, Petr Motlicek, Andreas Stolcke",
-      "url": "https://huggingface.co/papers/2603.26246",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2603.26246"
-      }
-    },
-    {
-      "id": "2603.29497",
-      "title": "Distilling Human-Aligned Privacy Sensitivity Assessment from Large Language Models",
-      "title_zh": "从大型语言模型中提取符合人类的隐私敏感性评估",
-      "description": "Accurate privacy evaluation of textual data remains a critical challenge in privacy-preserving natural language processing. Recent work has shown that large language models (LLMs) can serve as reliable privacy evaluators, achieving strong agreement with human judgments; however, their computational cost and impracticality for processing sensitive data at scale limit real-world deployment. We address this gap by distilling the privacy assessment capabilities of Mistral Large 3 (675B) into lightweight encoder models with as few as 150M parameters. Leveraging a large-scale dataset of privacy-annotated texts spanning 10 diverse domains, we train efficient classifiers that preserve strong agreement with human annotations while dramatically reducing computational requirements. We validate our approach on human-annotated test data and demonstrate its practical utility as an evaluation metric for de-identification systems.",
-      "description_zh": "文本数据的准确隐私评估仍然是保护隐私的自然语言处理中的关键挑战。最近的工作表明，大型语言模型（LLM）可以作为可靠的隐私评估器，与人类的判断达成强烈一致；然而，它们的计算成本和大规模处理敏感数据的不切实际限制了实际部署。我们通过将 Mistral Large 3 (675B) 的隐私评估功能提炼成参数少至 150M 的轻量级编码器模型来解决这一差距。利用跨越 10 个不同领域的隐私注释文本的大规模数据集，我们训练高效的分类器，这些分类器与人类注释保持强烈的一致性，同时大大降低计算要求。我们在人工注释的测试数据上验证了我们的方法，并证明了其作为去识别系统评估指标的实用性。",
-      "authors": "Gabriel Loiseau, Damien Sileo, Damien Riquet, Maxime Meyer, Marc Tommasi",
-      "url": "https://huggingface.co/papers/2603.29497",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2603.29497"
+        "upvotes": "32",
+        "paperId": "2603.26648"
       }
     }
   ]
