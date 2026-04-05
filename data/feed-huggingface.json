@@ -1,20 +1,20 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-04T19:57:30.026Z",
+  "updatedAt": "2026-04-05T19:59:08.413Z",
   "count": 15,
   "items": [
     {
       "id": "2603.27449",
       "title": "LOME: Learning Human-Object Manipulation with Action-Conditioned Egocentric World Model",
-      "title_zh": "LOME：通过动作条件的自我中心世界模型学习人机操作",
+      "title_zh": "LOME：使用以动作为条件的自我中心世界模型学习人机操作",
       "description": "Learning human-object manipulation presents significant challenges due to its fine-grained and contact-rich nature of the motions involved. Traditional physics-based animation requires extensive modeling and manual setup, and more importantly, it neither generalizes well across diverse object morphologies nor scales effectively to real-world environment. To address these limitations, we introduce LOME, an egocentric world model that can generate realistic human-object interactions as videos conditioned on an input image, a text prompt, and per-frame human actions, including both body poses and hand gestures. LOME injects strong and precise action guidance into object manipulation by jointly estimating spatial human actions and the environment contexts during training. After finetuning a pretrained video generative model on videos of diverse egocentric human-object interactions, LOME demonstrates not only high action-following accuracy and strong generalization to unseen scenarios, but also realistic physical consequences of hand-object interactions, e.g., liquid flowing from a bottle into a mug after executing a ``pouring'' action. Extensive experiments demonstrate that our video-based framework significantly outperforms state-of-the-art image based and video-based action-conditioned methods and Image/Text-to-Video (I/T2V) generative model in terms of both temporal consistency and motion control. LOME paves the way for photorealistic AR/VR experiences and scalable robotic training, without being limited to simulated environments or relying on explicit 3D/4D modeling.",
-      "description_zh": "由于所涉及的运动的细粒度和接触丰富的性质，学习人体操纵面临着巨大的挑战。传统的基于物理的动画需要大量的建模和手动设置，更重要的是，它既不能很好地概括不同的对象形态，也不能有效地扩展到现实世界环境。为了解决这些限制，我们引入了 LOME，这是一种以自我为中心的世界模型，可以根据输入图像、文本提示和每帧人类动作（包括身体姿势和手势）生成逼真的人机交互。 LOME 通过在训练期间联合估计空间人类行为和环境背景，为物体��纵注入强大而精确的动作指导。在对各种以自我为中心的人与物体交互的视频上对预训练的视频生成模型进行微调后，LOME 不仅展示了较高的动作跟随准确性和对未见过的场景的强泛化性，而且还展示了手与物体交互的真实物理后果，例如，在执行“倒”动作后，液体从瓶子流到杯子中。大量的实验表明，我们的基于视频的框架在时间一致性和运动控制方面显着优于最先进的基于图像和基于视频的动作条件方法以及图像/文本到视频（I/T2V）生成模型。 LOME 为逼真的 AR/VR 体验和可扩展的机器人训练铺平了道路，而不受模拟环境或依赖显式 3D/4D 建模的影响。",
+      "description_zh": "由于所涉及的运动的细粒度和接触丰富的性质，学习人体操纵提出了重大挑战。传统的基于物理的动画需要大量的建模和手动设置，更重要的是，它既不能很好地概括不同的对象形态，也不能有效地扩展到现实世界环境。为了解决这些限制，我们引入了 LOME，这是一种以自我为中心的世界模型，可以根据输入图像、文本提示和每帧人类动作（包括身体姿势和手势）生成逼真的人机交互。 LOME 通过在训练期间联合估计空间人类行为和环境背景，为物体操纵注入强大而精确的动作指导。在对各种以自我为中心的人与物体交互的视频上对预训练的视频生成模型进行微调后，LOME 不仅展示了较高的动作跟随准确性和对未见过的场景的强泛化性，而且还展示了手与物体交互的真实物理后果，例如，在执行“倒”动作后，液体从瓶子流到杯子中。大量的实验表明，我们的基于视频的框架在时间一致性和运动控制方面显着优于最先进的基于图像和基于视频的动作条件方法以及图像/文本到视频（I/T2V）生成模型。 LOME 为逼真的 AR/VR 体验和可扩展的机器人训练铺平了道路，而不受模拟环境或依赖显式 3D/4D 建模的影响。",
       "authors": "Quankai Gao, Jiawei Yang, Qiangeng Xu, Le Chen, Yue Wang",
       "url": "https://huggingface.co/papers/2603.27449",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2603.27449"
       }
     },
@@ -23,13 +23,13 @@
       "title": "Signals: Trajectory Sampling and Triage for Agentic Interactions",
       "title_zh": "信号：用于代理交互的轨迹采样和分类",
       "description": "Agentic applications based on large language models increasingly rely on multi-step interaction loops involving planning, action execution, and environment feedback. While such systems are now deployed at scale, improving them post-deployment remains challenging. Agent trajectories are voluminous and non-deterministic, and reviewing each one, whether through human review or auxiliary LLMs, is slow and cost-prohibitive. We propose a lightweight, signal-based framework for triaging agentic interaction trajectories. Our approach computes cheap, broadly applicable signals from live interactions and attaches them as structured attributes for trajectory triage, identifying interactions likely to be informative without affecting online agent behavior. We organize signals into a coarse-grained taxonomy spanning interaction (misalignment, stagnation, disengagement, satisfaction), execution (failure, loop), and environment (exhaustion), designed for computation without model calls. In a controlled annotation study on τ-bench, a widely used benchmark for tool-augmented agent evaluation, we show that signal-based sampling achieves an 82\\% informativeness rate compared to 74\\% for heuristic filtering and 54\\% for random sampling, with a 1.52x efficiency gain per informative trajectory. The advantage is robust across reward strata and task domains, confirming that signals provide genuine per-trajectory informativeness gains rather than merely oversampling obvious failures. These results show that lightweight signals can serve as practical sampling infrastructure for agentic systems, and suggest a path toward preference data construction and post-deployment optimization.",
-      "description_zh": "基于大型语言模型的代理应用程序越来越依赖于涉及规划、动作执行和环境反馈的多步骤交互循环。虽然此类系统现已大规模部署，但部署后对其进行改进仍然具有挑战性。代理轨迹数量庞大且具有不确定性，并且无论是通过人工审核还是辅助LLM来审核每一个代理轨迹都是缓慢且成本高昂的。我们提出了一种轻量级的、基于信号的框架，用于对代理交互轨迹进行分类。我们的方法从实时交互中计算廉价、广泛适用的信号，并将它们附加为轨迹分类���结构化属性，识别可能提供信息的交互，而不影响在线代理的行为。我们将信号组织成涵盖交互（错位、停滞、脱离、满意度）、执行（失败、循环）和环境（耗尽）的粗粒度分类法，专为无需模型调用的计算而设计。在 τ-bench（一种广泛使用的工具增强代理评估基准）上的受控注释研究中，我们表明基于信号的采样实现了 82% 的信息率，而启发式过滤为 74%，随机采样为 54%，每个信息轨迹的效率增益为 1.52 倍。该优势在奖励层和任务领域都很强大，确认信号提供了真正的每轨迹信息增益，而不仅仅是对明显的失败进行过采样。这些结果表明，轻量级信号可以作为代理系统的实用采样基础设施，并提出了偏好数据构建和部署后优化的路径。",
+      "description_zh": "基于大型语言模型的代理应用程序越来越依赖于涉及规划、动作执行和环境反馈的多步骤交互循环。虽然此类系统现已大规模部署，但部署后对其进行改进仍然具有挑战性。代理轨迹数量庞大且具有不确定性，并且无论是通过人工审核还是辅助LLM来审核每一条轨迹都是缓慢且成本高昂的。我们提出了一种轻量级的、基于信号的框架，用于对代理交互轨迹进行分类。我们的方法从实时交互中计算廉价、广泛适用的信号，并将它们附加为轨迹分类的结���化属性，识别可能提供信息的交互，而不影响在线代理的行为。我们将信号组织成涵盖交互（错位、停滞、脱离、满意度）、执行（失败、循环）和环境（耗尽）的粗粒度分类法，专为无需模型调用的计算而设计。在 τ-bench（一种广泛使用的工具增强代理评估基准）上的受控注释研究中，我们表明基于信号的采样实现了 82% 的信息率，而启发式过滤为 74%，随机采样为 54%，每个信息轨迹的效率增益为 1.52 倍。该优势在奖励层和任务领域都很强大，确认信号提供了真正的每轨迹信息增益，而不仅仅是对明显的失败进行过采样。这些结果表明，轻量级信号可以作为代理系统的实用采样基础设施，并提出了偏好数据构建和部署后优化的路径。",
       "authors": "Shuguang Chen, Adil Hafeez, Salman Paracha",
       "url": "https://huggingface.co/papers/2604.00356",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2604.00356"
       }
     },
@@ -38,7 +38,7 @@
       "title": "An Empirical Recipe for Universal Phone Recognition",
       "title_zh": "通用电话识别的经验方法",
       "description": "Phone recognition (PR) is a key enabler of multilingual and low-resource speech processing tasks, yet robust performance remains elusive. Highly performant English-focused models do not generalize across languages, while multilingual models underutilize pretrained representations. It also remains unclear how data scale, architecture, and training objective contribute to multilingual PR. We present PhoneticXEUS -- trained on large-scale multilingual data and achieving state-of-the-art performance on both multilingual (17.7% PFER) and accented English speech (10.6% PFER). Through controlled ablations with evaluations across 100+ languages under a unified scheme, we empirically establish our training recipe and quantify the impact of SSL representations, data scale, and loss objectives. In addition, we analyze error patterns across language families, accented speech, and articulatory features. All data and code are released openly.",
-      "description_zh": "电话识别 (PR) 是多语言和低资源语音处理任务的关键推动者，但稳健的性能仍然难以实现。高性能的以英语为中心的模型不能跨语言泛化，而多语言模型则未充分利用预训练的表示。目前还不清楚数据规模、架构和培训目标如何促进多语言公关。我们展示了 PhoneticXEUS——经过大规模多语言数据的训练，并在多语言 (17.7% PFER) 和带口音的英语语音 (10.6% PFER) 上实现了最先进的性能。通过在统一方案下对 100 多种语���进行受控消融评估，我们凭经验建立训练配方并量化 SSL 表示、数据规模和损失目标的影响。此外，我们还分析跨语系、口音语音和发音特征的错误模式。所有数据和代码均公开发布。",
+      "description_zh": "电话识别 (PR) 是多语言和低资源语音处理任务的关键推动者，但稳健的性能仍然难以实现。高性能的以英语为中心的模型不能跨语言泛化，而多语言模型则未充分利用预训练的表示。目前还不清楚数据规模、架构和培训目标如何促进多语言公关。我们展示了 PhoneticXEUS——经过大规模多语言数据的训练，并在多语言 (17.7% PFER) 和带口音的英语语音 (10.6% PFER) 上实现了最先进的性能。通过在统一方案下对 100 多种语��进行受控消融评估，我们凭经验建立训练配方并量化 SSL 表示、数据规模和损失目标的影响。此外，我们还分析跨语系、口音语音和发音特征的错误模式。所有数据和代码均公开发布。",
       "authors": "Shikhar Bharadwaj, Chin-Jou Li, Kwanghee Choi, Eunjung Yeo, William Chen, Shinji Watanabe, David R. Mortensen",
       "url": "https://huggingface.co/papers/2603.29042",
       "score": 1,
@@ -71,10 +71,10 @@
       "description_zh": "基于大语言模型（LLM）的进化是开放式发现的一种有前途的方法，其中的进展需要持续的搜索和知识积累。现有方法仍然严重依赖固定启发式和硬编码探索规则，这限制了 LLM 代理的自主性。我们提出了 CORAL，这是第一个针对开放式问题进行自主多智能体进化的框架。 CORAL 用长时间运行的代理取代了严格的控制，这些代理通过共享持久内存、异步多代理执行和基于心跳的干预来探索、反映和协作。它还提供实用的保障措施，包括隔离的工作空间、评估者分离、资源管理以及代理会话和健康管理。通过对不同的数学、算法和系统优化任务进行评估，CORAL 在 10 项任务上设置了新的最先进结果，与跨任务的固定进化搜索基线相比，评估次数少得多，实现了 3-10 倍的改进率。在 Anthropic 的核心工程任务中，四个共同进化的智能体将已知的得分从 1363 个周期提高到 1103 个周期。机制分析进一步表明这些收益是如何从知识重用和多智能体探索和通信中产生的。总之，这些结果表明，更大的智能体自主权和多智能体进化可以显着改善开放式发现。代码可在 https://github.com/Human-Agent-Society/CORAL 获取。",
       "authors": "Ao Qu, Han Zheng, Zijian Zhou, Yihao Yan, Yihong Tang, Shao Yong Ong, Fenglu Hong, Kaichen Zhou, Chonghe Jiang, Minwei Kong, Jiacheng Zhu, Xuan Jiang, Sirui Li, Cathy Wu, Bryan Kian Hsiang Low, Jinhua Zhao, Paul Pu Liang",
       "url": "https://huggingface.co/papers/2604.01658",
-      "score": 36,
+      "score": 41,
       "meta": {
         "source": "huggingface",
-        "upvotes": "36",
+        "upvotes": "41",
         "paperId": "2604.01658"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "我们思考这样一个问题：大型语言推理模型在做出选择时，是先思考后决定，还是先决定后思考？在本文中，我们提供了证据，证明可检测的早期编码决策在推理模型中形成了思维链。具体来说，我们表明，一个简单的线性探针可以以非常高的置信度成功解码来自预生成激活的工具调用决策，在某些情况下，甚至在生成单个推理标记之前。激活导向支持这一因果关系：扰乱决策方向会导致深思熟虑，并在许多示例中翻转行为（在 7 - 79% 之间，具体取决于模型和基准）。我们还通过行为分析表明，当转向改变决策时，思维链过程通常会合理化这一转变，而不是抵制它。总之，这些结果表明推理模型可以在开始在文本中进行审议之前对动作选择进行编码。",
       "authors": "Esakkivel Esakkiraja, Sai Rajeswar, Denis Akhiyarov, Rajagopal Venkatesaramani",
       "url": "https://huggingface.co/papers/2604.01202",
-      "score": 19,
+      "score": 21,
       "meta": {
         "source": "huggingface",
-        "upvotes": "19",
+        "upvotes": "21",
         "paperId": "2604.01202"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "视频传播的最新进展使得能够模拟交互环境的“世界模型”得以发展。然而，这些模型很大程度上仅限于单代理设置，无法在场景中同时控制多个代理。在这项工作中，我们解决了现有视频传播模型中动作绑定的基本问题，该模型很难将特定动作与其相应的主题相关联。为此，我们提出了 ActionParty，一种用于生成视频游戏的动作可控多主体世界模型。它引入了主体状态标记，即持续捕获场景中每个主体状态的潜在变量。通过使用空间偏置机制对状态标记和视频潜伏进行联合建模，我们将全局视频帧渲染与单个动作控制的主题更新分开。我们根据 Melting Pot 基准评估 ActionParty，展示了第一个能够在 46 个不同环境中同时控制最多 7 名玩家的视频世界模型。我们的结果表明，行动跟踪准确性和身份一致性有了显着提高，同时通过复杂的交互实现了对受试者的稳健自回归跟踪。",
       "authors": "Alexander Pondaven, Ziyi Wu, Igor Gilitschenski, Philip Torr, Sergey Tulyakov, Fabio Pizzati, Aliaksandr Siarohin",
       "url": "https://huggingface.co/papers/2604.02330",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2604.02330"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "随着大型语言模型 (LLM) 代理越来越多地部署在软件工程等开放领域中，它们经常遇到缺乏关键上下文的未指定指令。虽然人类开发人员自然会通过提出澄清问题来解决规格不足的问题，但当前的代理在很大程度上针对自主执行进行了优化。在这项工作中，我们系统地评估了 LLM 代理人在 SWE-bench Verified 的未指定变体上寻求澄清的能力。我们提出了一种不确定性感知的多代理支架，可以显式地将规范不足检测与代码执行分离。我们的结果表明，使用 OpenHands + Claude Sonnet 4.5 的多智能体系统实现了 69.40% 的任务解决率，显着优于标准单智能体设置 (61.20%)，并缩小了与按照完全指定的指令操作的智能体的性能差距。此外，我们发现多智能体系统表现出经过良好校准的不确定性，保留对简单任务的查询，同时主动寻找有关更复杂问题的信息。这些发现表明，当前的模型可以转变为主动协作者，智能体可以独立识别何时提出问题，以引出现实世界中未指定任务中缺失的信息。",
       "authors": "Nicholas Edwards, Sebastian Schuster",
       "url": "https://huggingface.co/papers/2603.26233",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2603.26233"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "AI能否加速AI本身的发展？虽然最近的代理系统在具有快速反馈的范围广泛的任务上表现出了强大的性能，但仍不清楚它们是否能够解决推动真正的人工智能进步的昂贵、长期和弱监督的研究循环。我们提出了 ASI-Evolve，这是一个用于 AI-for-AI 研究的代理框架，它通过学习-设计-实验-分析循环来闭合这个循环。 ASI-Evolve 通过两个关键组件增强了标准进化代理：一个认知基础，将积累的人类先验注入到每轮探索中；以及一个专用分析器，将复杂的实验结果提炼成可重复使用的见解，以供未来迭代。据我们所知，ASI-Evolve 是第一个跨人工智能开发的三个核心组件（数据、架构和学习算法）展示人工智能驱动发现的统一框架。在神经架构设计方面，它发现了 105 个 SOTA 线性注意力架构，其中发现的最佳模型超越 DeltaNet +0.97 个点，几乎是最近人类设计改进的 3 倍。在预训练数据管理中，改进的管道将平均基准性能提高了 +3.96 点，在 MMLU 上的增益超过 18 点。在强化学习算法设计中，发现的算法在 AMC32 上比 GRPO 多出 12.5 分，在 AIME24 上多出 11.67 分，在 OlympiadBench 上多出多出 5.04 分。我们进一步提供了初步证据，证明这种 AI-for-AI 范式可以通过数学和生物医学实验转移到 AI 堆栈之外。总之，这些结果表明，ASI-Evolve 代表着朝着使 AI 能够加速 AI 跨越发展的基础阶段迈出了有希望的一步，为闭环 AI 研究的可行性提供了早期证据。",
       "authors": "Weixian Xu, Tiantian Mi, Yixiu Liu, Yang Nan, Zhimeng Zhou, Lyumanshan Ye, Lin Zhang, Yu Qiao, Pengfei Liu",
       "url": "https://huggingface.co/papers/2603.29640",
-      "score": 15,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "19",
         "paperId": "2603.29640"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "传统的科学发现依赖于一个迭代的假设-实验-完善循环，这个循环推动了几个世纪的进步，但其直观、临时的实施往往会浪费资源，产生低效的设计，并错过关键的见解。本教程介绍贝叶斯优化 (BO)，这是一个原则性的概率驱动框架，可形式化并自动化这一核心科学周期。 BO 使用代理模型（例如高斯过程）将经验观察建模为不断发展的假设，并使用获取函数来指导实验选择，平衡已知知识的利用和未知领域的探索，以消除猜测和手动试错。我们首先将科学发现视为优化问题，然后通过催化、材料科学、有机合成和分子发现领域的案例研究来解开 BO 的核心组件、端到端工作流程和现实世界的功效。我们还涵盖科学应用的关键技术扩展，包括批量实验、异方差、上下文优化和人机交互集成。本教程专为广大受众量身定制，将 BO 中的人工智能进步与实际的自然科学应用联系起来，提供分层内容，使跨学科研究人员能够设计更高效的实验并加速有原则的科学发现。",
       "authors": "Zhongwei Yu, Rasul Tutunov, Alexandre Max Maraval, Zikai Xie, Zhenzhi Tan, Jiankang Wang, Zijing Li, Liangliang Xu, Qi Yang, Jun Jiang, Sanzhong Luo, Zhenxiao Guo, Haitham Bou-Ammar, Jun Wang",
       "url": "https://huggingface.co/papers/2604.01328",
-      "score": 5,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "6",
         "paperId": "2604.01328"
       }
     }
