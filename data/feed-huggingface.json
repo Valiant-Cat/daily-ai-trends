@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-08T20:08:57.359Z",
+  "updatedAt": "2026-04-09T20:29:03.484Z",
   "count": 15,
   "items": [
     {
-      "id": "2604.05172",
-      "title": "ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces",
-      "title_zh": "ClawsBench：评估模拟工作空间中LLM生产力代理的能力和安全性",
-      "description": "Large language model (LLM) agents are increasingly deployed to automate productivity tasks (e.g., email, scheduling, document management), but evaluating them on live services is risky due to potentially irreversible changes. Existing benchmarks rely on simplified environments and fail to capture realistic, stateful, multi-service workflows. We introduce ClawsBench, a benchmark for evaluating and improving LLM agents in realistic productivity settings. It includes five high-fidelity mock services (Gmail, Slack, Google Calendar, Google Docs, Google Drive) with full state management and deterministic snapshot/restore, along with 44 structured tasks covering single-service, cross-service, and safety-critical scenarios. We decompose agent scaffolding into two independent levers (domain skills that inject API knowledge via progressive disclosure, and a meta prompt that coordinates behavior across services) and vary both to measure their separate and combined effects. Experiments across 6 models, 4 agent harnesses, and 33 conditions show that with full scaffolding, agents achieve task success rates of 39-64% but exhibit unsafe action rates of 7-33%. On OpenClaw, the top five models fall within a 10 percentage-point band on task success (53-63%), with unsafe action rates from 7% to 23% and no consistent ordering between the two metrics. We identify eight recurring patterns of unsafe behavior, including multi-step sandbox escalation and silent contract modification.",
-      "description_zh": "大型语言模型 (LLM) 代理越来越多地被部署来自动化生产力任务（例如电子邮件、日程安排、文档管理），但由于潜在的不可逆转的变化，在实时服务上评估它们是有风险的。现有的基准测试依赖于简化的环境，无法捕获真实的、有状态的多服务工作流程。我们推出了 ClawsBench，这是一个在现实生产力环境中评估和改进 LLM 代理的基准。它包括五个高保真模拟服务（Gmail、Slack、Google Calendar、Google Docs、Google Drive），具有完整的状态管理和确定性快照/恢复，以及涵盖单服务、跨服务和安全关键场景的 44 个结构化任务。我们将代理脚手架分解为两个独立的杠杆（通过渐进式披露注入 API 知识的领域技能，以及协调跨服务行为的元提示），并改变两者以衡量其单独和组合的效果。跨 6 个模型、4 个智能体框架和 33 种条件的实验表明，在完整的脚手架下，智能体的任务成功率为 39-64%，但表现出的不安全行动率为 7-33%。在 OpenClaw 上，排名前五的模型在任务成功率上落在 10 个百分点的范围内 (53-63%)，不安全操作率从 7% 到 23%，并且两个指标之间的排序不一致。我们确定了八种反复出现的不安全行为模式，包括多步骤沙箱升级和静默合约修改。",
-      "authors": "Xiangyi Li, Kyoung Whan Choe, Yimin Liu, Xiaokun Chen, Chujun Tao, Bingran You, Wenbo Chen, Zonglin Di, Jiankai Sun, Shenghan Zheng, Jiajun Bao, Yuanli Wang, Weixiang Yan, Yiyuan Li, Han-chung Lee",
-      "url": "https://huggingface.co/papers/2604.05172",
-      "score": 13,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "13",
-        "paperId": "2604.05172"
-      }
-    },
-    {
-      "id": "2604.05467",
-      "title": "CUE-R: Beyond the Final Answer in Retrieval-Augmented Generation",
-      "title_zh": "CUE-R：超越检索增强生成的最终答案",
-      "description": "As language models shift from single-shot answer generation toward multi-step reasoning that retrieves and consumes evidence mid-inference, evaluating the role of individual retrieved items becomes more important. Existing RAG evaluation typically targets final-answer quality, citation faithfulness, or answer-level attribution, but none of these directly targets the intervention-based, per-evidence-item utility view we study here. We introduce CUE-R, a lightweight intervention-based framework for measuring per-evidence-item operational utility in single-shot RAG using shallow observable retrieval-use traces. CUE-R perturbs individual evidence items via REMOVE, REPLACE, and DUPLICATE operators, then measures changes along three utility axes (correctness, proxy-based grounding faithfulness, and confidence error) plus a trace-divergence signal. We also outline an operational evidence-role taxonomy for interpreting intervention outcomes. Experiments on HotpotQA and 2WikiMultihopQA with Qwen-3 8B and GPT-5.2 reveal a consistent pattern: REMOVE and REPLACE substantially harm correctness and grounding while producing large trace shifts, whereas DUPLICATE is often answer-redundant yet not fully behaviorally neutral. A zero-retrieval control confirms that these effects arise from degradation of meaningful retrieval. A two-support ablation further shows that multi-hop evidence items can interact non-additively: removing both supports harms performance far more than either single removal. Our results suggest that answer-only evaluation misses important evidence effects and that intervention-based utility analysis is a practical complement for RAG evaluation.",
-      "description_zh": "随着语言模型从单次答案生成转向在推理过程中检索和消耗证据的多步骤推理，评估单个检索项目的作用变得更加重要。现有的 RAG 评估通常以最终答案质量、引文忠实度或答案级别归因为目标，但这些都没有直接针对我们在此研究的基于干预的、每个证据项目的效用观点。我们引入了 CUE-R，这是一种基于干预的轻量级框架，用于使用浅层可观察检索使用痕迹来测量单次 RAG 中每个证据项的操作效用。 CUE-R 通过 REMOVE、REPLACE 和 DUPLICATE 运算符扰乱各个证据项，然后测量沿三个效用轴（正确性、基于代理的接地忠实度和置信度误差）以及迹线发散信号的变化。我们还概述了用于解释干预结果的操作证据角色分类法。使用 Qwen-3 8B 和 GPT-5.2 在 HotpotQA 和 2WikiMultihopQA 上进行的实验揭示了一致的模式：REMOVE 和 REPLACE 会严重损害正确性和基础性，同时产生较大的跟踪偏移，而 DUPLICATE 通常是答案冗余但不完全行为中立。零检索控制证实这些影响是由有意义检索的退化引起的。双支撑消融进一步表明，多跳证据项可以非相加地交互：删除两个支撑对性能的损害远远大于单个删除。我们的结果表明，仅回答评估会错过重要的证据效应，而基于干预的效用分析是 RAG 评估的实际补充。",
-      "authors": "Siddharth Jain, Venkat Narayan Vedam",
-      "url": "https://huggingface.co/papers/2604.05467",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2604.05467"
-      }
-    },
-    {
-      "id": "2604.01622",
-      "title": "Expert-Choice Routing Enables Adaptive Computation in Diffusion Language Models",
-      "title_zh": "专家选择路由支持扩散语言模型中的自适应计算",
-      "description": "Diffusion language models (DLMs) enable parallel, non-autoregressive text generation, yet existing DLM mixture-of-experts (MoE) models inherit token-choice (TC) routing from autoregressive systems, leading to load imbalance and rigid computation allocation. We show that expert-choice (EC) routing is a better fit for DLMs: it provides deterministic load balancing by design, yielding higher throughput and faster convergence than TC. Building on the property that EC capacity is externally controllable, we introduce timestep-dependent expert capacity, which varies expert allocation according to the denoising step. We find that allocating more capacity to low-mask-ratio steps consistently achieves the best performance under matched FLOPs, and provide a mechanistic explanation: tokens in low-mask-ratio contexts exhibit an order-of-magnitude higher learning efficiency, so concentrating compute on these steps yields the largest marginal return. Finally, we show that existing pretrained TC DLMs can be retrofitted to EC by replacing only the router, achieving faster convergence and improved accuracy across diverse downstream tasks. Together, these results establish EC routing as a superior paradigm for DLM MoE models and demonstrate that computation in DLMs can be treated as an adaptive policy rather than a fixed architectural constant. Code is available at https://github.com/zhangshuibai/EC-DLM.",
-      "description_zh": "扩散语言模型 (DLM) 支持并行、非自回归文本生成，但现有的 DLM 专家混合 (MoE) 模型继承了自回归系统的标记选择 (TC) 路由，导致负载不平衡和严格的计算分配。我们表明，专家选择 (EC) 路由更适合 DLM：它通过设计提供确定性负载平衡，比 TC 产生更高的吞吐量和更快的收敛。基于 EC 能力是外部可控的特性，我们引入了时间步长相关的专家能力，它根据去噪步骤改变专家分配。我们发现，为低掩码比步骤分配更多容量可以在匹配的 FLOP 下始终实现最��性能，并提供机械解释：低掩码比上下文中的令牌表现出更高数量级的学习效率，因此将计算集中在这些步骤上会产生最大的边际回报。最后，我们表明，可以通过仅替换路由器来将现有的预训练 TC DLM 改造为 EC，从而实现更快的收敛并提高不同下游任务的准确性。总之，这些结果将 EC 路由确立为 DLM MoE 模型的高级范例，并证明 DLM 中的计算可以被视为自适应策略而不是固定的架构常量。代码可在 https://github.com/zhangshuibai/EC-DLM 获取。",
-      "authors": "Shuibai Zhang, Caspian Zhuang, Chihan Cui, Zhihan Yang, Fred Zhangzhi Peng, Yanxin Zhang, Haoyue Bai, Zack Jia, Yang Zhou, Guanhua Chen, Ming Liu",
-      "url": "https://huggingface.co/papers/2604.01622",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2604.01622"
-      }
-    },
-    {
-      "id": "2604.05181",
-      "title": "General Multimodal Protein Design Enables DNA-Encoding of Chemistry",
-      "title_zh": "通用多模式蛋白质设计使化学 DNA 编码成为可能",
-      "description": "Evolution is an extraordinary engine for enzymatic diversity, yet the chemistry it has explored remains a narrow slice of what DNA can encode. Deep generative models can design new proteins that bind ligands, but none have created enzymes without pre-specifying catalytic residues. We introduce DISCO (DIffusion for Sequence-structure CO-design), a multimodal model that co-designs protein sequence and 3D structure around arbitrary biomolecules, as well as inference-time scaling methods that optimize objectives across both modalities. Conditioned solely on reactive intermediates, DISCO designs diverse heme enzymes with novel active-site geometries. These enzymes catalyze new-to-nature carbene-transfer reactions, including alkene cyclopropanation, spirocyclopropanation, B-H, and C(sp^3)-H insertions, with high activities exceeding those of engineered enzymes. Random mutagenesis of a selected design further confirmed that enzyme activity can be improved through directed evolution. By providing a scalable route to evolvable enzymes, DISCO broadens the potential scope of genetically encodable transformations. Code is available at https://github.com/DISCO-design/DISCO.",
-      "description_zh": "进化是酶多样性的非凡引擎，但它所探索的化学仍然是 DNA 编码的一小部分。深度生成模型可以设计结合配体的新蛋白质，但没有一个模型可以在没有预先指定催化残基的情况下创建酶。我们引入了 DISCO（序列结构协同设计的扩散），这是一种多模态模型，可围绕任意生物分子共同设计蛋白质序列和 3D 结构，以及跨两种模态优化目标的推理时间缩放方法。仅以反应中间体为条件，DISCO 设计了具有新颖活性位点几何结构的多种血红素酶。这些酶可催化全新的卡宾转移反应，包括烯烃环丙烷化、螺环丙烷化、B-H 和 C(sp^3)-H 插入，其活性超过工程酶。选定设计的随机诱变进一步证实酶活性可以通过定向进化得到提高。通过提供可进化酶的可扩展途径，DISCO 拓宽了遗传编码转化的潜在范围。代码可在 https://github.com/DISCO-design/DISCO 获取。",
-      "authors": "Jarrid Rector-Brooks, Théophile Lambert, Marta Skreta, Daniel Roth, Yueming Long, Zi-Qi Li, Xi Zhang, Miruna Cretu, Francesca-Zhoufan Li, Tanvi Ganapathy, Emily Jin, Avishek Joey Bose, Jason Yang, Kirill Neklyudov, Yoshua Bengio, Alexander Tong, Frances H. Arnold, Cheng-Hao Liu",
-      "url": "https://huggingface.co/papers/2604.05181",
-      "score": 18,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "18",
-        "paperId": "2604.05181"
-      }
-    },
-    {
-      "id": "2604.04979",
-      "title": "Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents",
-      "title_zh": "Squeez：编码代理的任务条件工具输出修剪",
-      "description": "Coding agents repeatedly consume long tool observations even though only a small fraction of each observation matters for the next step. We study task-conditioned tool-output pruning: given a focused query and one tool output, return the smallest verbatim evidence block the agent should inspect next. We introduce a benchmark of 11,477 examples built from SWE-bench repository interactions and synthetic multi-ecosystem tool outputs, with a manually curated 618-example test set. We fine-tune Qwen 3.5 2B with LoRA and compare it against larger zero-shot models and heuristic pruning baselines. Our model reaches 0.86 recall and 0.80 F1 while removing 92% of input tokens, outperforming zero-shot Qwen 3.5 35B A3B by 11 recall points and all heuristic baselines by a wide margin.",
-      "description_zh": "编码代理重复消耗长工具观察，即使每个观察中只有一小部分对下一步重要。我们研究任务条件工具输出修剪：给定一个集中查询和一个工具输出，返回代理接下来应该检查的最小逐字证据块。我们引入了一个由 11,477 个示例组成的基准测试，这些示例是根据 SWE 基准存储库交互和综合多生态系统工具输出构建的，以及手动策划的 618 个示例测试集。我们使用 LoRA 对 Qwen 3.5 2B 进行微调，并将其与更大的零样本模型和启发式修剪基线进行比较。我们的模型达到了 0.86 的召回率和 0.80 F1，同时删除了 92% 的输入标记，比零样本 Qwen 3.5 35B A3B 提高了 11 个召回点，并且大大优于所有启发式基线。",
-      "authors": "Ádám Kovács",
-      "url": "https://huggingface.co/papers/2604.04979",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2604.04979"
-      }
-    },
-    {
-      "id": "2604.05939",
-      "title": "Context-Value-Action Architecture for Value-Driven Large Language Model Agents",
-      "title_zh": "价值驱动的大型语言模型代理的上下文-价值-动作架构",
-      "description": "Large Language Models (LLMs) have shown promise in simulating human behavior, yet existing agents often exhibit behavioral rigidity, a flaw frequently masked by the self-referential bias of current \"LLM-as-a-judge\" evaluations. By evaluating against empirical ground truth, we reveal a counter-intuitive phenomenon: increasing the intensity of prompt-driven reasoning does not enhance fidelity but rather exacerbates value polarization, collapsing population diversity. To address this, we propose the Context-Value-Action (CVA) architecture, grounded in the Stimulus-Organism-Response (S-O-R) model and Schwartz's Theory of Basic Human Values. Unlike methods relying on self-verification, CVA decouples action generation from cognitive reasoning via a novel Value Verifier trained on authentic human data to explicitly model dynamic value activation. Experiments on CVABench, which comprises over 1.1 million real-world interaction traces, demonstrate that CVA significantly outperforms baselines. Our approach effectively mitigates polarization while offering superior behavioral fidelity and interpretability.",
-      "description_zh": "大型语言模型（LLM）在模拟人类行为方面显示出了希望，但现有的智能体经常表现出行为僵化，这一缺陷经常被当前“LLM 作为法官”评估的自我参照偏见所掩盖。通过对经验基础事实进行评估，我们揭示了一个反直觉的现象：增加提示驱动推理的强度并不能提高保真度，反而会加剧价值两极分化，破坏人口多样性。为了解决这个问题，我们提出了情境-价值-行动（CVA）架构，该架构以刺激-有机体-反应（S-O-R）模型和施瓦茨的人类基本价值观理论为基础。与依赖自我验证的方法不同，CVA 通过受真实人类数据训练的新型价值验证器将动作生成与认知推理分离，以显式地模拟动态价值激活。 CVABench 上的实验包含超过 110 万条真实世界的交互痕迹，表明 CVA 的性能显着优于基线。我们的方法有效地减轻了两极分化，同时提供了卓越的行为保真度和可解释性。",
-      "authors": "TianZe Zhang, Sirui Sun, Yuhang Xie, Xin Zhang, Zhiqiang Wu, Guojie Song",
-      "url": "https://huggingface.co/papers/2604.05939",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2604.05939"
-      }
-    },
-    {
-      "id": "2604.03619",
-      "title": "Can Natural Image Autoencoders Compactly Tokenize fMRI Volumes for Long-Range Dynamics Modeling?",
-      "title_zh": "自然图像自动编码器能否紧凑地标记 fMRI 体积以进行远程动态建模？",
-      "description": "Modeling long-range spatiotemporal dynamics in functional Magnetic Resonance Imaging (fMRI) remains a key challenge due to the high dimensionality of the four-dimensional signals. Prior voxel-based models, although demonstrating excellent performance and interpretation capabilities, are constrained by prohibitive memory demands and thus can only capture limited temporal windows. To address this, we propose TABLeT (Two-dimensionally Autoencoded Brain Latent Transformer), a novel approach that tokenizes fMRI volumes using a pre-trained 2D natural image autoencoder. Each 3D fMRI volume is compressed into a compact set of continuous tokens, enabling long-sequence modeling with a simple Transformer encoder with limited VRAM. Across large-scale benchmarks including the UK-Biobank (UKB), Human Connectome Project (HCP), and ADHD-200 datasets, TABLeT outperforms existing models in multiple tasks, while demonstrating substantial gains in computational and memory efficiency over the state-of-the-art voxel-based method given the same input. Furthermore, we develop a self-supervised masked token modeling approach to pre-train TABLeT, which improves the model's performance for various downstream tasks. Our findings suggest a promising approach for scalable and interpretable spatiotemporal modeling of brain activity. Our code is available at https://github.com/beotborry/TABLeT.",
-      "description_zh": "由于四维信号的高维性，功能磁共振成像 (fMRI) 中的远程时空动力学建模仍然是一个关键挑战。先前基于体素的模型虽然表现出出色的性能和解释能力，但受到过高的内存需求的限制，因此只能捕获有限的时间窗口。为了解决这个问题，我们提出了 TABLeT（二维自动编码大脑潜在变压器），这是一种使用预先训练的 2D 自然图像自动编码器对 fMRI 体积进行标记的新颖方法。每个 3D fMRI 体积都被压缩为一组紧凑的连续令牌，从而可以使用具有有限 VRAM 的简单 Transformer 编码器进行长序列建模。在包括 UK-Biobank (UKB)、人类连接组计划 (HCP) 和 ADHD-200 数据集在内的大规模基准测试中，TABLeT 在多个任务中都优于现有模型，同时在相同输入的情况下，与最先进的基于体素的方法相比，在计算和内存效率方面取得了显着提升。此外，我们开发了一种自监督屏蔽令牌建模方法来预训练 TABLeT，这提高了模型针对各种下游任务的性能。我们的研究结果提出了一种有前途的可扩展且可解释的大脑活动时空建模方法。我们的代码可在 https://github.com/beotborry/TABLeT 获取。",
-      "authors": "Peter Yongho Kim, Juhyeon Park, Jungwoo Park, Jubin Choi, Jungwoo Seo, Jiook Cha, Taesup Moon",
-      "url": "https://huggingface.co/papers/2604.03619",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2604.03619"
-      }
-    },
-    {
-      "id": "2604.04215",
-      "title": "DARE: Diffusion Large Language Models Alignment and Reinforcement Executor",
-      "title_zh": "DARE：扩散大型语言模型对齐和强化执行器",
-      "description": "Diffusion large language models (dLLMs) are emerging as a compelling alternative to dominant autoregressive models, replacing strictly sequential token generation with iterative denoising and parallel generation dynamics. However, their open-source ecosystem remains fragmented across model families and, in particular, across post-training pipelines, where reinforcement learning objectives, rollout implementations and evaluation scripts are often released as paper-specific codebases. This fragmentation slows research iteration, raises the engineering burden of reproduction, and makes fair comparison across algorithms difficult. We present DARE (dLLMs Alignment and Reinforcement Executor), an open framework for post-training and evaluating dLLMs. Built on top of verl~sheng2024hybridflow and OpenCompass~2023opencompass, DARE unifies supervised fine-tuning, parameter-efficient fine-tuning, preference optimization, and dLLM-specific reinforcement learning under a shared execution stack for both masked and block diffusion language models. Across representative model families including LLaDA, Dream, SDAR, and LLaDA2.x, DARE provides broad algorithmic coverage, reproducible benchmark evaluation, and practical acceleration. Extensive empirical results position that DARE serves as a reusable research substrate for developing, comparing, and deploying post-training methods for current and emerging dLLMs.",
-      "description_zh": "扩散大语言模型 (dLLM) 正在成为主流自回归模型的一种引人注目的替代方案，用迭代去噪和并行生成动态取代严格顺序的标记生成。然而，他们的开源生态系统在模型系列中仍然支离破碎，特别是在训练后管道中，强化学习目标、部署实施和评估脚本通常作为特定于论文的代码库发布。这种碎片化减慢了研究迭代速度，增加了再现的工程负担，并使算法之间的公平比较变得困难。我们推出 DARE（dLLM 调整和强化执行器），这是一个用于培��后和评估 dLLM 的开放框架。 DARE 建立在 verl~sheng2024hybridflow 和 OpenCompass~2023opencompass 之上，在共享执行堆栈下针对屏蔽和块扩散语言模型统一了监督微调、参数高效微调、偏好优化和 dLLM 特定强化学习。在包括 LLaDA、Dream、SDAR 和 LLaDA2.x 在内的代表性模型系列中，DARE 提供了广泛的算法覆盖范围、可重复的基准评估和实际加速。广泛的实证结果表明，DARE 可作为可重复使用的研究基础，用于为当前和新兴的 dLLM 开发、比较和部署培训后方法。",
-      "authors": "Jingyi Yang, Yuxian Jiang, Xuhao Hu, Shuang Cheng, Biqing Qi, Jing Shao",
-      "url": "https://huggingface.co/papers/2604.04215",
-      "score": 16,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "16",
-        "paperId": "2604.04215"
-      }
-    },
-    {
-      "id": "2604.05117",
-      "title": "Watch Before You Answer: Learning from Visually Grounded Post-Training",
-      "title_zh": "回答之前先看一下：从训练后的视觉基础中学习",
-      "description": "It is critical for vision-language models (VLMs) to comprehensively understand visual, temporal, and textual cues. However, despite rapid progress in multimodal modeling, video understanding performance still lags behind text-based reasoning. In this work, we find that progress is even worse than previously assumed: commonly reported long video understanding benchmarks contain 40-60% of questions that can be answered using text cues alone. Furthermore, we find that these issues are also pervasive in widely used post-training datasets, potentially undercutting the ability of post-training to improve VLM video understanding performance. Guided by this observation, we introduce VidGround as a simple yet effective solution: using only the actual visually grounded questions without any linguistic biases for post-training. When used in tandem with RL-based post-training algorithms, this simple technique improves performance by up to 6.2 points relative to using the full dataset, while using only 69.1% of the original post-training data. Moreover, we show that data curation with a simple post-training algorithm outperforms several more complex post-training techniques, highlighting that data quality is a major bottleneck for improving video understanding in VLMs. These results underscore the importance of curating post-training data and evaluation benchmarks that truly require visual grounding to advance the development of more capable VLMs. Project page: http://vidground.etuagi.com.",
-      "description_zh": "对于视觉语言模型 (VLM) 来说，全面理解视觉、时间和文本线索至关重要。然而，尽管多模态建模取得了快速进展，视频理解性能仍然落后于基于文本的推理。在这项工作中，我们发现进展比之前假设的还要糟糕：通常报告的长视频理解基准包含 40-60% 的问题，可以仅使用文本提示来回答。此外，我们发现这些问题在广泛使用的后训练数据集中也普遍存在，可能会削弱后训练提高 VLM 视频理解性能的能力。在这一观察的指导下，我们引入了 VidGround 作为一种简单而有效的解决方案：仅使用实际的视觉基础问题，没有任何语言偏见进行后期训练。当与基于 RL 的后训练算法结合使用时，相对于使用完整数据集，这种简单的技术可将性能提高多达 6.2 个点，同时仅使用原始后训练数据的 69.1%。此外，我们还表明，使用简单的训练后算法进行的数据管理优于几种更复杂的训练后技术，这凸显了数据质量是提高 VLM 中视频理解的主要瓶颈。这些结果强调了整理训练后数据和评估基准的重要性，这些数据和评估基准确实需要视觉基础来推动功能更强大的 VLM 的开发。项目页面：http://vidground.etuagi.com。",
-      "authors": "Yuxuan Zhang, EunJeong Hwang, Huaisong Zhang, Penghui Du, Yiming Jia, Dongfu Jiang, Xuan He, Shenhui Zhang, Ping Nie, Peter West, Kelsey R. Allen",
-      "url": "https://huggingface.co/papers/2604.05117",
-      "score": 23,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "23",
-        "paperId": "2604.05117"
-      }
-    },
-    {
-      "id": "2604.05963",
-      "title": "QiMeng-PRepair: Precise Code Repair via Edit-Aware Reward Optimization",
-      "title_zh": "QiMeng-PRepair：通过编辑感知奖励优化进行精确代码修复",
-      "description": "Large Language Models (LLMs) achieve strong program repair performance but often suffer from over-editing, where excessive modifications overwrite correct code and hinder bug localization. We systematically quantify its impact and introduce precise repair task, which maximizes reuse of correct code while fixing only buggy parts. Building on this insight, we propose PRepair, a framework that mitigates over-editing and improves repair accuracy. PRepair has two components: Self-Breaking, which generates diverse buggy programs via controlled bug injection and min-max sampling, and Self-Repairing, which trains models with Edit-Aware Group Relative Policy Optimization (EA-GRPO) using an edit-aware reward to encourage minimal yet correct edits. Experiments show that PRepair improves repair precision by up to 31.4% under fix_1@1, a metric that jointly considers repair correctness and extent, and significantly increases decoding throughput when combined with speculative editing, demonstrating its potential for precise and practical code repair.",
-      "description_zh": "大型语言模型 (LLM) 实现了强大的程序修复性能，但经常遭受过度编辑的困扰，其中过度修改会覆盖正确的代码并阻碍错误定位。我们系统地量化其影响并引入精确的修复任务，从而最大限度地重用正确的代码，同时仅修复有问题的部分。基于这一见解，我们提出了 PRepair，这是一个可以减少过度编辑并提高修复准确性的框架。 PRepair 有两个组成部分：自我破坏（Self-Breaking），它通过受控错误注入和最小-最大采样生成各种错误程序；自我修复（Self-Repairing），它使用编辑感知奖励来训练具有编辑感知组相对策略优化（EA-GRPO）的模型，以鼓励最少但正确的编辑。实验表明，在结合考虑修复正确性和修复程度的fix_1@1指标下，PRepair将修复精度提高了31.4%，并在与推测性编辑相结合时显着提高了解码吞吐量，展示了其精确实用的代码修复潜力。",
-      "authors": "Changxin Ke, Rui Zhang, Jiaming Guo, Yuanbo Wen, Li Ding, Shuo Wang, Xuyuan Zhu, Xiong Peng, Di Huang, Zidong Du, Xing Hu, Qi Guo, Yunji Chen",
-      "url": "https://huggingface.co/papers/2604.05963",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2604.05963"
-      }
-    },
-    {
-      "id": "2604.05091",
-      "title": "MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU",
-      "title_zh": "MegaTrain：单GPU上100B+参数大语言模型的全精度训练",
-      "description": "We present MegaTrain, a memory-centric system that efficiently trains 100B+ parameter large language models at full precision on a single GPU. Unlike traditional GPU-centric systems, MegaTrain stores parameters and optimizer states in host memory (CPU memory) and treats GPUs as transient compute engines. For each layer, we stream parameters in and compute gradients out, minimizing persistent device state. To battle the CPU-GPU bandwidth bottleneck, we adopt two key optimizations. 1) We introduce a pipelined double-buffered execution engine that overlaps parameter prefetching, computation, and gradient offloading across multiple CUDA streams, enabling continuous GPU execution. 2) We replace persistent autograd graphs with stateless layer templates, binding weights dynamically as they stream in, eliminating persistent graph metadata while providing flexibility in scheduling. On a single H200 GPU with 1.5TB host memory, MegaTrain reliably trains models up to 120B parameters. It also achieves 1.84times the training throughput of DeepSpeed ZeRO-3 with CPU offloading when training 14B models. MegaTrain also enables 7B model training with 512k token context on a single GH200.",
-      "description_zh": "我们推出了 MegaTrain，这是一个以内存为中心的系统，可以在单个 GPU 上以全精度高效训练 100B+ 参数大型语言模型。与传统的以 GPU 为中心的系统不同，MegaTrain 将参数和优化器状态存储在主机内存（CPU 内存）中，并将 GPU 视为瞬态计算引擎。对于每一层，我们流入参数并计算梯度，从而最大限度地减少持久设备状态。为了解决 CPU-GPU 带宽瓶颈，我们采用了两项关键优化。 1) 我们引入了一个管道式双缓冲执行引擎，它跨多个 CUDA 流重叠参数预取、计算和梯度卸载，从而实现连续的 GPU 执行。 2）我们用无状态层模板替换持久自动分级图，在权重流入时动态绑定权重，消除持久图元数据，同时提供调度灵活性。在具有 1.5TB 主机内存的单个 H200 GPU 上，MegaTrain 可以可靠地训练高达 120B 参数的模型。在训练 14B 模型时，它还实现了具有 CPU 卸载功能的 DeepSpeed ZeRO-3 训练吞吐量的 1.84 倍。 MegaTrain 还可以在单​​个 GH200 上使用 512k 令牌上下文进行 7B 模型训练。",
-      "authors": "Zhengqing Yuan, Hanchi Sun, Lichao Sun, Yanfang Ye",
-      "url": "https://huggingface.co/papers/2604.05091",
+      "id": "2604.04247",
+      "title": "Combee: Scaling Prompt Learning for Self-Improving Language Model Agents",
+      "title_zh": "Combee：扩展即时学习以实现自我改进的语言模型代理",
+      "description": "Recent advances in prompt learning allow large language model agents to acquire task-relevant knowledge from inference-time context without parameter changes. For example, existing methods (like ACE or GEPA) can learn system prompts to improve accuracy based on previous agent runs. However, these methods primarily focus on single-agent or low-parallelism settings. This fundamentally limits their ability to efficiently learn from a large set of collected agentic traces. It would be efficient and beneficial to run prompt learning in parallel to accommodate the growing trend of learning from many agentic traces or parallel agent executions. Yet without a principled strategy for scaling, current methods suffer from quality degradation with high parallelism. To improve both the efficiency and quality of prompt learning, we propose Combee, a novel framework to scale parallel prompt learning for self-improving agents. Combee speeds up learning and enables running many agents in parallel while learning from their aggregate traces without quality degradation. To achieve this, Combee leverages parallel scans and employs an augmented shuffle mechanism; Combee also introduces a dynamic batch size controller to balance quality and delay. Evaluations on AppWorld, Terminal-Bench, Formula, and FiNER demonstrate that Combee achieves up to 17x speedup over previous methods with comparable or better accuracy and equivalent cost.",
+      "description_zh": "即时学习的最新进展允许大型语言模型代理从推理时间上下文中获取与任务相关的知识，而无需更改参数。例如，现有方法（如 ACE 或 GEPA）可以根据之前的代理运行来学习系统提示以提高准确性。然而，这些方法主要关注单代理或低并行度设置。这从根本上限制了他们从大量收集的代理痕迹中有效学习的能力。并行运行即时学习将是高效且有益的，以适应从许多代理跟踪或并行代理执行中学习的不断增长的趋势。然而，如果没有原则性的扩展策略，当前的方法就会因高并行性而遭受质量下降的困扰。为了提高即时学习的效率和质量，我们提出了 Combee，这是一种为自我改进代理扩展并行即时学习的新颖框架。 Combee 可以加快学习速度，并允许并行运行多个代理，同时从其聚合跟踪中学习，而不会降低质量。为了实现这一目标，Combee 利用并行扫描并采用增强的洗牌机制； Combee 还引入了动态批量大小控制器来平衡质量和延迟。对 AppWorld、Terminal-Bench、Formula 和 FiNER 的评估表明，Combee 比以前的方法实现了高达 17 倍的加速，并且具有相当或更好的精度和同等的成本。",
+      "authors": "Hanchen Li, Runyuan He, Qizheng Zhang, Changxiu Ji, Qiuyang Mang, Xiaokun Chen, Lakshya A Agrawal, Wei-Liang Liao, Eric Yang, Alvin Cheung, James Zou, Kunle Olukotun, Ion Stoica, Joseph E. Gonzalez",
+      "url": "https://huggingface.co/papers/2604.04247",
       "score": 20,
       "meta": {
         "source": "huggingface",
         "upvotes": "20",
-        "paperId": "2604.05091"
+        "paperId": "2604.04247"
       }
     },
     {
-      "id": "2604.02648",
-      "title": "GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers",
-      "title_zh": "GBQA：评估LLM作为质量保证工程师的游戏基准",
-      "description": "The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the complexity of dynamic runtime environments makes bug discovery considerably harder for large language models (LLMs). In this paper, we take game development as a representative domain and introduce the Game Benchmark for Quality Assurance (GBQA), a benchmark containing 30 games and 124 human-verified bugs across three difficulty levels, to evaluate whether LLMs can autonomously detect software bugs. The benchmark is constructed using a multi-agent system that develops games and injects bugs in a scalable manner, with human experts in the loop to ensure correctness. Moreover, we provide a baseline interactive agent equipped with a multi-round ReAct loop and a memory mechanism, enabling long-horizon exploration of game environments for bug detection across different LLMs. Extensive experiments on frontier LLMs demonstrate that autonomous bug discovery remains highly challenging: the best-performing model, Claude-4.6-Opus in thinking mode, identifies only 48.39% of the verified bugs. We believe GBQA provides an adequate testbed and evaluation criterion, and that further progress on it will help close the gap in autonomous software engineering.",
-      "description_zh": "自主发现错误仍然是现代软件开发中的重大挑战。与代码生成相比，动态运行时环境的复杂性使得大型语言模型 (LLM) 的错误发现变得相当困难。在本文中，我们以游戏开发为代表领域，引入了游戏质量保证基准（GBQA），该基准包含 30 个游戏和三个难度级别的 124 个经过人工验证的错误，以评估LLM是否能够自主检测软件错误。该基准测试是使用多代理系统构建的，该系统以可扩展的方式开发游戏并注入错误，并由人类专家参与循环以确保正确性。此外，我们提供了一个配备多轮 ReAct 循环和内存机制的基线交互代理，可以对游戏环境进行长期探索，以跨不同的 LLM 进行错误检测。对前沿LLM的大量实验表明，自主错误发现仍然极具挑战性：表现最好的模型 Claude-4.6-Opus 在思维模式下仅识别出 48.39% 的已验证错误。我们相信 GBQA 提供了足够的测试平台和评估标准，并且其进一步进展将有助于缩小自主软件工程方面的差距。",
-      "authors": "Shufan Jiang, Chios Chen, Zhiyang Chen",
-      "url": "https://huggingface.co/papers/2604.02648",
-      "score": 36,
+      "id": "2604.07273",
+      "title": "GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos",
+      "title_zh": "GenLCA：野外视频全身头像的 3D 扩散",
+      "description": "We present GenLCA, a diffusion-based generative model for generating and editing photorealistic full-body avatars from text and image inputs. The generated avatars are faithful to the inputs, while supporting high-fidelity facial and full-body animations. The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale to millions of real-world videos. This scalability contributes to the superior photorealism and generalizability of GenLCA. Specifically, we scale up the dataset by repurposing a pretrained feed-forward avatar reconstruction model as an animatable 3D tokenizer, which encodes unstructured video frames into structured 3D tokens. However, most real-world videos only provide partial observations of body parts, resulting in excessive blurring or transparency artifacts in the 3D tokens. To address this, we propose a novel visibility-aware diffusion training strategy that replaces invalid regions with learnable tokens and computes losses only over valid regions. We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar reconstruction model. Our approach effectively enables the use of large-scale real-world video data to train a diffusion model natively in 3D. We demonstrate the efficacy of our method through diverse and high-fidelity generation and editing results, outperforming existing solutions by a large margin. The project page is available at https://onethousandwu.com/GenLCA-Page.",
+      "description_zh": "我们提出了 GenLCA，这是一种基于扩散的生成模型，用于从文本和图像输入生成和编辑逼真的全身头像。生成的头像忠实于输入，同时支持高保真面部和全身动画。其核心思想是一种新颖的范式，能够从部分可观察的 2D 数据训练全身 3D 扩散模型，从而使训练数据集能够扩展到数百万个真实世界的视频。这种可扩展性有助于 GenLCA 卓越的真实感和通用性。具体来说，我们通过将预训练的前馈头像重建模型重新用作可动画的 3D 标记器来扩展���据集，该模型将非结构化视频帧编码为结构化 3D 标记。然而，大多数现实世界的视频仅提供对身体部位的部分观察，导致 3D 令牌中出现过度模糊或透明伪影。为了解决这个问题，我们提出了一种新颖的可见性感知扩散训练策略，用可学习的标记替换无效区域，并仅计算有效区域的损失。然后，我们在令牌数据集上训练基于流的扩散模型，本质上保持了预训练的头像重建模型提供的照片真实性和可动画性。我们的方法有效地支持使用大规模现实世界视频数据来训练本地 3D 扩散模型。我们通过多样化和高保真度的生成和编辑结果证明了我们方法的有效性，大大优于现有的解决方案。该项目页面位于 https://onethousandwu.com/GenLCA-Page。",
+      "authors": "Yiqian Wu, Rawal Khirodkar, Egor Zakharov, Timur Bagautdinov, Lei Xiao, Zhaoen Su, Shunsuke Saito, Xiaogang Jin, Junxuan Li",
+      "url": "https://huggingface.co/papers/2604.07273",
+      "score": 0,
       "meta": {
         "source": "huggingface",
-        "upvotes": "36",
-        "paperId": "2604.02648"
+        "upvotes": "0",
+        "paperId": "2604.07273"
       }
     },
     {
-      "id": "2604.04323",
-      "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
-      "title_zh": "代理技能在野外的表现如何：在现实环境中对LLM技能的使用进行基准测试",
-      "description": "Agent skills, which are reusable, domain-specific knowledge artifacts, have become a popular mechanism for extending LLM-based agents, yet formally benchmarking skill usage performance remains scarce. Existing skill benchmarking efforts focus on overly idealized conditions, where LLMs are directly provided with hand-crafted, narrowly-tailored task-specific skills for each task, whereas in many realistic settings, the LLM agent may have to search for and select relevant skills on its own, and even the closest matching skills may not be well-tailored for the task. In this paper, we conduct the first comprehensive study of skill utility under progressively challenging realistic settings, where agents must retrieve skills from a large collection of 34k real-world skills and may not have access to any hand-curated skills. Our findings reveal that the benefits of skills are fragile: performance gains degrade consistently as settings become more realistic, with pass rates approaching no-skill baselines in the most challenging scenarios. To narrow this gap, we study skill refinement strategies, including query-specific and query-agnostic approaches, and we show that query-specific refinement substantially recovers lost performance when the initial skills are of reasonable relevance and quality. We further demonstrate the generality of retrieval and refinement on Terminal-Bench 2.0, where they improve the pass rate of Claude Opus 4.6 from 57.7% to 65.5%. Our results, consistent across multiple models, highlight both the promise and the current limitations of skills for LLM-based agents. Our code is available at https://github.com/UCSB-NLP-Chang/Skill-Usage.",
-      "description_zh": "代理技能是可重用的、特定领域的知识工件，已成为扩展基于 LLM 的代理的流行机制，但正式的技能使用性能基准测试仍然很少。现有的技能基准测试工作侧重于过于理想化的条件，其中LLM直接为每个任务提供手工制作的、狭隘定制的特定任务技能，而在许多现实环境中，LLM代理人可能必须自己搜索和选择相关技能，甚至最接近的匹配技能也可能无法很好地适合该任务。在本文中，我们在逐渐具有挑战性的现实环境中对技能效用进行了首次全面研究，其中智能体必须从大量 34k 现实世界技能中检索技能，并且可能无法访问任何手工策划的技能���我们的研究结果表明，技能的好处是脆弱的：随着设置变得更加现实，绩效收益不断下降，在最具挑战性的场景中，通过率接近无技能基线。为了缩小这一差距，我们研究了技能细化策略，包括特定于查询和与查询无关的方法，并且我们表明，当初始技能具有合理的相关性和质量时，特定于查询的细化可以基本上恢复损失的性能。我们进一步证明了 Terminal-Bench 2.0 ���检索和细化的通用性，将 Claude Opus 4.6 的通过率从 57.7% 提高到 65.5%。我们的结果在多个模型中保持一致，突显了基于LLM的代理人的技能前景和当前局限性。我们的代码可在 https://github.com/UCSB-NLP-Chang/Skill-Usage 获取。",
-      "authors": "Yujian Liu, Jiabao Ji, Li An, Tommi Jaakkola, Yang Zhang, Shiyu Chang",
-      "url": "https://huggingface.co/papers/2604.04323",
-      "score": 22,
+      "id": "2604.05643",
+      "title": "Graph-Based Chain-of-Thought Pruning for Reducing Redundant Reflections in Reasoning LLMs",
+      "title_zh": "基于图的思想链修剪，用于减少推理LLM中的冗余反射",
+      "description": "Extending CoT through RL has been widely used to enhance the reasoning capabilities of LLMs. However, due to the sparsity of reward signals, it can also induce undesirable thinking patterns such as overthinking, i.e., generating redundant intermediate reasoning content. In this work, we argue that a major source of such redundancy is inefficient reflection, which often manifests in two problematic patterns: Indiscriminate Reflection, where the model performs broad, low-impact checks throughout reasoning, and Repetitive Reflection, where it repeatedly re-verifies an already established conclusion. To address this, we introduce a graph-based CoT optimization framework. Specifically, we convert each linear CoT into a directed acyclic graph (DAG) with explicit dependency edges, and design a dual pruning strategy: branch-level pruning removes weakly contributing reflection branches, while depth-level pruning eliminates late-stage re-verification. We distill this behavior via a three-stage pipeline: (1) SFT to initialize the policy on pruned concise traces, (2) DPO to prefer correct but less redundant trajectories, and (3) GRPO with length penalty to jointly optimize answer correctness and efficiency. Experiments show that our approach reduces the average reasoning tokens by 42\\% while maintaining or improving accuracy.",
+      "description_zh": "通过强化学习扩展 CoT 已被广泛用于增强LLM的推理能力。然而，由于奖励信号的稀疏性，它也会引发不良的思维模式，例如过度思考，即产生冗余的中间推理内容。在这项工作中，我们认为这种冗余的一个主要来源是低效的反思，它通常表现为两种有问题的模式：不加区别的反思，模型在整个推理过程中执行广泛的、低影响的检查，以及重复反思，它反复重新验证已经建立的结论。为了解决这个问题，我们引入了基于图的 CoT 优化框架。具体来说，我们将每个线性 CoT 转换为具有显式依赖边的有向无环图（DAG），并设计双重剪枝策略：分支级剪枝删除贡献较弱的反射分支，而深度剪枝消除后期重新验证。我们通过三阶段管道提炼出这种行为：(1) SFT 初始化修剪简洁轨迹的策略，(2) DPO 更喜欢正确但冗余较少的轨迹，(3) 带有长度惩罚的 GRPO 共同优化答案的正确性和效率。实验表明，我们的方法在保持或提高准确性的同时，将平均推理标记减少了 42%。",
+      "authors": "Hongyuan Yuan, Xinran He, Run Shao, Bolei He, Xianwei Xue, Mengke Chen, Qiutong Pan, Haiwei Wang, Haifeng Li",
+      "url": "https://huggingface.co/papers/2604.05643",
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "22",
-        "paperId": "2604.04323"
+        "upvotes": "6",
+        "paperId": "2604.05643"
       }
     },
     {
-      "id": "2604.01591",
-      "title": "ThinkTwice: Jointly Optimizing Large Language Models for Reasoning and Self-Refinement",
-      "title_zh": "ThinkTwice：联合优化大型语言模型以进行推理和自我完善",
-      "description": "We introduce ThinkTwice, a simple two-phase framework that jointly optimizes LLMs to solve reasoning problems and refine the answers, based on Group Relative Policy Optimization (GRPO). In each pair of training steps, ThinkTwice first optimizes the model on solving reasoning problems, then optimizes it on refining its own solutions to the same problems, using the same binary correctness reward in both phases without correctness signals or critique annotations. Across five mathematical reasoning benchmarks and two model families including Qwen3-4B and Olmo3-7B, ThinkTwice substantially improves both reasoning and refinement performance over competitive online policy optimization baselines. Specifically, on Qwen3-4B, ThinkTwice outperforms GRPO on AIME by 5 percentage points before refinement and by 11.5 points after one self-refinement step, measured by pass@4. Analysis of the training dynamics of ThinkTwice reveals an implicit rectify-then-fortify curriculum: refinement predominantly corrects errors early in training and naturally shifts toward preserving already-correct solutions as the model improves, yielding a more rectified reward signal. Our work establishes joint training of reasoning and self-refinement as a principled and effective methodology for RLVR.",
-      "description_zh": "我们引入了 ThinkTwice，这是一个简单的两阶段框架，基于组相对策略优化 (GRPO)，联合优化 LLM 来解决推理问题并细化答案。在每对训练步骤中，ThinkTwice 首先优化模型解决推理问题，然后优化模型以改进自己对相同问题的解决方案，在两个阶段使用相同的二元正确性奖励，而无需正确性信号或批评注释。在五个数学推理基准和两个模型系列（包括 Qwen3-4B 和 Olmo3-7B）中，ThinkTwice 比竞争性在线策略优化基准大幅提高了推理和细化性能。具体来说，在 Qwen3-4B 上，ThinkTwice 在 AIME 上的表现比 GRPO 在精炼前高出 5 个百分点，在一个自我精炼步骤后高出 11.5 个百分点（通过 pass@4 进行测量）。对 ThinkTwice 训练动态的分析揭示了隐含的先纠正后强化的课程：细化主要纠正训练早期的错误，并随着模型的改进自然转向保留已经正确的解决方案，从而产生更纠正的奖励信号。我们的工作将推理和自我完善的联合训练作为 RLVR 的原则性且有效的方法论。",
-      "authors": "Difan Jiao, Qianfeng Wen, Blair Yang, Zhenwei Tang, Ashton Anderson",
-      "url": "https://huggingface.co/papers/2604.01591",
-      "score": 30,
+      "id": "2604.03995",
+      "title": "A Systematic Study of Cross-Modal Typographic Attacks on Audio-Visual Reasoning",
+      "title_zh": "对视听推理的跨模式印刷攻击的系统研究",
+      "description": "As audio-visual multi-modal large language models (MLLMs) are increasingly deployed in safety-critical applications, understanding their vulnerabilities is crucial. To this end, we introduce Multi-Modal Typography, a systematic study examining how typographic attacks across multiple modalities adversely influence MLLMs. While prior work focuses narrowly on unimodal attacks, we expose the cross-modal fragility of MLLMs. We analyze the interactions between audio, visual, and text perturbations and reveal that coordinated multi-modal attack creates a significantly more potent threat than single-modality attacks (attack success rate = 83.43% vs 34.93%).Our findings across multiple frontier MLLMs, tasks, and common-sense reasoning and content moderation benchmarks establishes multi-modal typography as a critical and underexplored attack strategy in multi-modal reasoning. Code and data will be publicly available.",
+      "description_zh": "随着视听多模态大语言模型 (MLLM) 越来越多地部署在安全关键型应用中，了解其漏洞至关重要。为此，我们引入了多模式印刷术，这是一项系统研究，研究跨多种模式的印刷攻击如何对 MLLM 产生不利影响。虽然之前的工作主要集中在单模态攻击上，但我们暴露了 MLLM 的跨模态脆弱性。我们分析了音频、视觉和文本扰动之间的相互作用，并揭示了协调的多模态攻击比单模态攻击产生了更强大的威胁（攻击成功率 = 83.43% vs 34.93%）。我们在多个前沿 MLLM、任务以及常识推理和内容审核基准中的研究结果表明，多模态排版是多模态推理中关键且尚未充分开发的攻击策略。代码和数据将公开。",
+      "authors": "Tianle Chen, Deepti Ghadiyaram",
+      "url": "https://huggingface.co/papers/2604.03995",
+      "score": 0,
       "meta": {
         "source": "huggingface",
-        "upvotes": "30",
-        "paperId": "2604.01591"
+        "upvotes": "0",
+        "paperId": "2604.03995"
       }
     },
     {
-      "id": "2604.06170",
-      "title": "Paper Circle: An Open-source Multi-agent Research Discovery and Analysis Framework",
-      "title_zh": "Paper Circle：开源多主体研究发现和分析框架",
-      "description": "The rapid growth of scientific literature has made it increasingly difficult for researchers to efficiently discover, evaluate, and synthesize relevant work. Recent advances in multi-agent large language models (LLMs) have demonstrated strong potential for understanding user intent and are being trained to utilize various tools. In this paper, we introduce Paper Circle, a multi-agent research discovery and analysis system designed to reduce the effort required to find, assess, organize, and understand academic literature. The system comprises two complementary pipelines: (1) a Discovery Pipeline that integrates offline and online retrieval from multiple sources, multi-criteria scoring, diversity-aware ranking, and structured outputs; and (2) an Analysis Pipeline that transforms individual papers into structured knowledge graphs with typed nodes such as concepts, methods, experiments, and figures, enabling graph-aware question answering and coverage verification. Both pipelines are implemented within a coder LLM-based multi-agent orchestration framework and produce fully reproducible, synchronized outputs including JSON, CSV, BibTeX, Markdown, and HTML at each agent step. This paper describes the system architecture, agent roles, retrieval and scoring methods, knowledge graph schema, and evaluation interfaces that together form the Paper Circle research workflow. We benchmark Paper Circle on both paper retrieval and paper review generation, reporting hit rate, MRR, and Recall at K. Results show consistent improvements with stronger agent models. We have publicly released the website at https://papercircle.vercel.app/ and the code at https://github.com/MAXNORM8650/papercircle.",
-      "description_zh": "科学文献的快速增长使得研究人员越来越难以有效地发现、评估和综合相关工作。多智能体大语言模型 (LLM) 的最新进展已经证明了理解用户意图的强大潜力，并且正在接受培训以利用各种工具。在本文中，我们介绍了 Paper Circle，这是一个多主体研究发现和分析系统，旨在减少查找、评估、组织和理解学术文献所需的工作量。该系统包括两个互补的管道：（1）发现管道，集成了来自多个来源的离线和在线检索、多标准评分、多样性感知排名和结构化输出； （2）分析管道，将单篇论文转换为具有概念、方法、实验和图形等类型化节点的结构化知识图，从而实现图感知问答和覆盖率验证。这两个管道都是在基于编码器 LLM 的多代理编排框架内实现的，并在每个代理步骤中生成完全可重现的同步输出，包括 JSON、CSV、BibTeX、Markdown 和 HTML。本文描述了共同构成 Paper Circle 研究工作流程的系统架构、代理角色、检索和评分方法、知识图谱和评估接口。我们在论文检索和论文评论生成、报告命中率、MRR 和 K 召回方面对 Paper Circle 进行了基准测试。结果显示，更强大的代理模型带来了一致的改进。我们已公开发布网站 https://papercircle.vercel.app/ 和代码 https://github.com/MAXNORM8650/papercircle。",
-      "authors": "Komal Kumar, Aman Chadha, Salman Khan, Fahad Shahbaz Khan, Hisham Cholakkal",
-      "url": "https://huggingface.co/papers/2604.06170",
-      "score": 19,
+      "id": "2604.06392",
+      "title": "Qualixar OS: A Universal Operating System for AI Agent Orchestration",
+      "title_zh": "Qualixar OS：用于 AI 代理编排的通用操作系统",
+      "description": "We present Qualixar OS, the first application-layer operating system for universal AI agent orchestration. Unlike kernel-level approaches (AIOS) or single-framework tools (AutoGen, CrewAI), Qualixar OS provides a complete runtime for heterogeneous multi-agent systems spanning 10 LLM providers, 8+ agent frameworks, and 7 transports. We contribute: (1) execution semantics for 12 multi-agent topologies including grid, forest, mesh, and maker patterns; (2) Forge, an LLM-driven team design engine with historical strategy memory; (3) three-layer model routing combining Q-learning, five strategies, and Bayesian POMDP with dynamic multi-provider discovery; (4) a consensus-based judge pipeline with Goodhart detection, JSD drift monitoring, and alignment trilemma navigation; (5) four-layer content attribution with HMAC signing and steganographic watermarks; (6) universal compatibility via the Claw Bridge supporting MCP and A2A protocols with a 25-command Universal Command Protocol; (7) a 24-tab production dashboard with visual workflow builder and skill marketplace. Qualixar OS is validated by 2,821 test cases across 217 event types and 8 quality modules. On a custom 20-task evaluation suite, the system achieves 100% accuracy at a mean cost of $0.000039 per task. Source-available under the Elastic License 2.0.",
+      "description_zh": "我们推出了 Qualixar OS，这是第一个用于通用 AI 代理编排的应用层操作系统。与内核级方法 (AIOS) 或单框架工具（AutoGen、CrewAI）不同，Qualixar OS 为跨 10 个 LLM 提供程序、8 个以上代理框架和 7 个传输的异构多代理系统提供完整的运行时。我们贡献：(1) 12 种多智能体拓扑的执行语义，包括网格、森林、网格和创客模式； （2）Forge，一个LLM驱动的具有历史策略记忆的团队设计引擎； （3）结合Q学习、五种策略和贝叶斯POMDP与动态多提供商发现的三层模���路由； (4) 基于共识的判断流程，包括 Goodhart 检测、JSD 漂移监控和对齐三难导航； (5)具有HMAC签名和隐写水印的四层内容归属； (6) 通过 Claw Bridge 支持 MCP 和 A2A 协议以及 25 个命令的通用命令协议实现通用兼容性； (7) 带有可视化工作流程构建器和技能市场的 24 个选项卡生产仪表板。 Qualixar OS 经过 217 个事件类型和 8 个质量模块的 2,821 个测试用例的验证。在定制的 20 项任务评估套件中，系统以每项任务的平均成本 0.000039 美元实现了 100% 的准确率。源代码在 Elastic License 2.0 下可用。",
+      "authors": "Varun Pratap Bhardwaj",
+      "url": "https://huggingface.co/papers/2604.06392",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "19",
-        "paperId": "2604.06170"
+        "upvotes": "1",
+        "paperId": "2604.06392"
+      }
+    },
+    {
+      "id": "2604.05846",
+      "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning",
+      "title_zh": "AgentGL：通过强化学习与LLM一起迈向代理图学习",
+      "description": "Large Language Models (LLMs) increasingly rely on agentic capabilities-iterative retrieval, tool use, and decision-making-to overcome the limits of static, parametric knowledge. Yet existing agentic frameworks treat external information as unstructured text and fail to leverage the topological dependencies inherent in real-world data. To bridge this gap, we introduce Agentic Graph Learning (AGL), a paradigm that reframes graph learning as an interleaved process of topology-aware navigation and LLM-based inference. Specifically, we propose AgentGL, the first reinforcement learning (RL)-driven framework for AGL. AgentGL equips an LLM agent with graph-native tools for multi-scale exploration, regulates tool usage via search-constrained thinking to balance accuracy and efficiency, and employs a graph-conditioned curriculum RL strategy to stabilize long-horizon policy learning without step-wise supervision. Across diverse Text-Attributed Graph (TAG) benchmarks and multiple LLM backbones, AgentGL substantially outperforms strong GraphLLMs and GraphRAG baselines, achieving absolute improvements of up to 17.5% in node classification and 28.4% in link prediction. These results demonstrate that AGL is a promising frontier for enabling LLMs to autonomously navigate and reason over complex relational environments. The code is publicly available at https://github.com/sunyuanfu/AgentGL.",
+      "description_zh": "大型语言模型 (LLM) 越来越依赖代理功能（迭代检索、工具使用和决策）来克服静态参数化知识的限制。然而，现有的代理框架将外部信息视为非结构化文本，并且无法利用现实世界数据固有的拓扑依赖性。为了弥补这一差距，我们引入了代理图学习（AGL），这种范式将图学习重新构建为拓扑感知导航和基于 LLM 的推理的交错过程。具体来说，我们提出了 AgentGL，这是第一个强化学习 (RL) 驱动的 AGL 框架。 AgentGL 为 LLM 代理配备了用于多尺度探索的图本机工具，通过搜索约束思维来调节工具的使用以平衡准确性和效率，并采用图条件课程 RL 策略来稳定长期政策学习，而无需逐步监督。在不同的文本属性图 (TAG) 基准和多个 LLM 主干中，AgentGL 的性能明显优于强大的 GraphLLM 和 GraphRAG 基准，在节点分类方面实现了高达 17.5% 的绝对改进，在链接预测方面实现了 28.4% 的绝对改进。这些结果表明，AGL 是一个很有前途的前沿领域，可以让LLM在复杂的关系环境中自主导航和推理。该代码可在 https://github.com/sunyuanfu/AgentGL 上公开获取。",
+      "authors": "Yuanfu Sun, Kang Li, Dongzhe Fan, Jiajin Liu, Qiaoyu Tan",
+      "url": "https://huggingface.co/papers/2604.05846",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2604.05846"
+      }
+    },
+    {
+      "id": "2604.04913",
+      "title": "A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens",
+      "title_zh": "一框值一代币：使用 Delta 代币进行高效的生成世界建模",
+      "description": "Anticipating diverse future states is a central challenge in video world modeling. Discriminative world models produce a deterministic prediction that implicitly averages over possible futures, while existing generative world models remain computationally expensive. Recent work demonstrates that predicting the future in the feature space of a vision foundation model (VFM), rather than a latent space optimized for pixel reconstruction, requires significantly fewer world model parameters. However, most such approaches remain discriminative. In this work, we introduce DeltaTok, a tokenizer that encodes the VFM feature difference between consecutive frames into a single continuous \"delta\" token, and DeltaWorld, a generative world model operating on these tokens to efficiently generate diverse plausible futures. Delta tokens reduce video from a three-dimensional spatio-temporal representation to a one-dimensional temporal sequence, for example yielding a 1,024x token reduction with 512x512 frames. This compact representation enables tractable multi-hypothesis training, where many futures are generated in parallel and only the best is supervised. At inference, this leads to diverse predictions in a single forward pass. Experiments on dense forecasting tasks demonstrate that DeltaWorld forecasts futures that more closely align with real-world outcomes, while having over 35x fewer parameters and using 2,000x fewer FLOPs than existing generative world models. Code and weights: https://deltatok.github.io.",
+      "description_zh": "预测不同的未来状态是视频世界建模的核心挑战。判别式世界模型产生确定性预测，隐式地对可能的未来进行平均，而现有的生成式世界模型的计算成本仍然很高。最近的工作表明，在视觉基础模型（VFM）的特征空间（而不是针对像素重建优化的潜在空间）中预测未来所需的世界模型参数要少得多。然而，大多数此类方法仍然具有歧视性。在这项工作中，我们介绍了 DeltaTok，一种将连续帧之间的 VFM 特征差异编码为单个连续“delta”标记的标记器，以及 DeltaWorld，一种对这些标记进行操作的生成世界模型，以有效地生成各种可能的未来。 Delta 令牌将视频从三维时空表示减少为一维时间序列，例如使用 512x512 帧产生 1,024 倍的令牌减少。这种紧凑的表示可以实现易于处理的多假设训练，其中许多未来是并行生成的，并且只有最好的受到监督。在推理时，这会导致在一次前向传递中产生不同的预测。密集预测任务的实验表明，DeltaWorld 预测的未来与现实世界的结果更加一致，同时与现有的生成世界模型相比，参数减少了 35 倍以上，使用的 FLOP 次数减少了 2,000 倍。代码和权重：https://deltatok.github.io。",
+      "authors": "Tommie Kerssies, Gabriele Berton, Ju He, Qihang Yu, Wufei Ma, Daan de Geus, Gijs Dubbelman, Liang-Chieh Chen",
+      "url": "https://huggingface.co/papers/2604.04913",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2604.04913"
+      }
+    },
+    {
+      "id": "2604.05060",
+      "title": "R3PM-Net: Real-time, Robust, Real-world Point Matching Network",
+      "title_zh": "R3PM-Net：实时、鲁棒、真实世界的点匹配网络",
+      "description": "Accurate Point Cloud Registration (PCR) is an important task in 3D data processing, involving the estimation of a rigid transformation between two point clouds. While deep-learning methods have addressed key limitations of traditional non-learning approaches, such as sensitivity to noise, outliers, occlusion, and initialization, they are developed and evaluated on clean, dense, synthetic datasets (limiting their generalizability to real-world industrial scenarios). This paper introduces R3PM-Net, a lightweight, global-aware, object-level point matching network designed to bridge this gap by prioritizing both generalizability and real-time efficiency. To support this transition, two datasets, Sioux-Cranfield and Sioux-Scans, are proposed. They provide an evaluation ground for registering imperfect photogrammetric and event-camera scans to digital CAD models, and have been made publicly available. Extensive experiments demonstrate that R3PM-Net achieves competitive accuracy with unmatched speed. On ModelNet40, it reaches a perfect fitness score of 1 and inlier RMSE of 0.029 cm in only 0.007s, approximately 7 times faster than the state-of-the-art method RegTR. This performance carries over to the Sioux-Cranfield dataset, maintaining a fitness of 1 and inlier RMSE of 0.030 cm with similarly low latency. Furthermore, on the highly challenging Sioux-Scans dataset, R3PM-Net successfully resolves edge cases in under 50 ms. These results confirm that R3PM-Net offers a robust, high-speed solution for critical industrial applications, where precision and real-time performance are indispensable. The code and datasets are available at https://github.com/YasiiKB/R3PM-Net.",
+      "description_zh": "准确的点云配准 (PCR) 是 3D 数据处理中的一项重要任务，涉及两个点云之间的刚性变换的估计。虽然深度学习方法已经解决了传统非学习方法的关键局限性，例如对噪声、异常值、遮挡和初始化的敏感性，但它们是在干净、密集的合成数据集上开发和评估的（限制了它们对现实世界工业场景的推广）。本文介绍了 R3PM-Net，这是一种轻量级、全局感知、对象级点匹配网络，旨在通过优先考虑通用性和实时效率来弥补这一差距。为了支持这种转变，提出了两个数据集：Sioux-Cranfield 和 Sioux-Scans。它们为将不完美的摄影测量和事件相机扫描注册到数字 CAD 模型提供了评估基础，并且已公开发布。大量实验表明，R3PM-Net 以无与伦比的速度实现了有竞争力的准确性。在 ModelNet40 上，它仅用了 0.007 秒就达到了 1 的完美适应度分数和 0.029 cm 的内点 RMSE，比最先进的方法 RegTR 快了大约 7 倍。这种性能延续到了 Sioux-Cranfield 数据集，保持了 1 的适应度和 0.030 cm 的内值 RMSE，同时具有类似的低延��。此外，在极具挑战性的 Sioux-Scans 数据集上，R3PM-Net 在 50 毫秒内成功解决了边缘情况。这些结果证实，R3PM-Net 为关键工业应用提供了强大的高速解决方案，其中精度和实时性能是不可或缺的。代码和数据集可在 https://github.com/YasiiKB/R3PM-Net 上获取。",
+      "authors": "Yasaman Kashefbahrami, Erkut Akdag, Panagiotis Meletis, Evgeniya Balmashnova, Dip Goswami, Egor Bondarau",
+      "url": "https://huggingface.co/papers/2604.05060",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2604.05060"
+      }
+    },
+    {
+      "id": "2604.04734",
+      "title": "Beyond Hard Negatives: The Importance of Score Distribution in Knowledge Distillation for Dense Retrieval",
+      "title_zh": "超越硬否定：密集检索知识蒸馏中分数分布的重要性",
+      "description": "Transferring knowledge from a cross-encoder teacher via Knowledge Distillation (KD) has become a standard paradigm for training retrieval models. While existing studies have largely focused on mining hard negatives to improve discrimination, the systematic composition of training data and the resulting teacher score distribution have received relatively less attention. In this work, we highlight that focusing solely on hard negatives prevents the student from learning the comprehensive preference structure of the teacher, potentially hampering generalization. To effectively emulate the teacher score distribution, we propose a Stratified Sampling strategy that uniformly covers the entire score spectrum. Experiments on in-domain and out-of-domain benchmarks confirm that Stratified Sampling, which preserves the variance and entropy of teacher scores, serves as a robust baseline, significantly outperforming top-K and random sampling in diverse settings. These findings suggest that the essence of distillation lies in preserving the diverse range of relative scores perceived by the teacher.",
+      "description_zh": "通过知识蒸馏（KD）从跨编码器教师转移知识已成为训练检索模型的标准范例。虽然现有的研究主要集中在挖掘硬否定以改善歧视，但训练数据的系统组成和由此产生的教师分数分布受到的关注相对较少。在这项工作中，我们强调，仅关注硬否定会阻止学生学习教师的综合偏好结构，从而可能妨碍泛化。为了有效地模拟教师分数分布，我们提出了一种均匀覆盖整个分数范围的分层抽样策略。域内和域外基准的实验证实，分层抽样保留了教师分数的方差和熵，可以作为稳健的基线，在不同的设置中显着优于 top-K 和随机抽样。这些发现表明，蒸馏的本质在于保留教师感知到的不同范围的相对分数。",
+      "authors": "Youngjoon Jang, Seongtae Hong, Hyeonseok Moon, Heuiseok Lim",
+      "url": "https://huggingface.co/papers/2604.04734",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2604.04734"
+      }
+    },
+    {
+      "id": "2603.26657",
+      "title": "Tunable Soft Equivariance with Guarantees",
+      "title_zh": "带保证的可调软等方差",
+      "description": "Equivariance is a fundamental property in computer vision models, yet strict equivariance is rarely satisfied in real-world data, which can limit a model's performance. Controlling the degree of equivariance is therefore desirable. We propose a general framework for constructing soft equivariant models by projecting the model weights into a designed subspace. The method applies to any pre-trained architecture and provides theoretical bounds on the induced equivariance error. Empirically, we demonstrate the effectiveness of our method on multiple pre-trained backbones, including ViT and ResNet, across image classification, semantic segmentation, and human-trajectory prediction tasks. Notably, our approach improves the performance while simultaneously reducing equivariance error on the competitive ImageNet benchmark.",
+      "description_zh": "等方差是计算机视觉模型的基本属性，但现实世界的数据很少满足严格的等方差，这会限制模型的性能。因此控制等方差的程度是可取的。我们提出了一个通过将模型权重投影到设计的子空间来构建软等变模型的通用框架。该方法适用于任何预训练的架构，并提供引起的等方差误差的理论界限。根据经验，我们证明了我们的方法在多个预训练主干网络（包括 ViT 和 ResNet）上跨图像分类、语义分割和人体轨迹预测任务的有效性。值得注意的是，我们的方法提高了性能，同时减少了 ImageNet 竞争基准上的等方差误差。",
+      "authors": "Md Ashiqur Rahman, Lim Jun Hao, Jeremiah Jiang, Teck-Yian Lim, Raymond A. Yeh",
+      "url": "https://huggingface.co/papers/2603.26657",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2603.26657"
+      }
+    },
+    {
+      "id": "2603.25111",
+      "title": "SEVerA: Verified Synthesis of Self-Evolving Agents",
+      "title_zh": "SEVerA：自我进化药物的验证合成",
+      "description": "Recent advances have shown the effectiveness of self-evolving LLM agents on tasks such as program repair and scientific discovery. In this paradigm, a planner LLM synthesizes an agent program that invokes parametric models, including LLMs, which are then tuned per task to improve performance. However, existing self-evolving agent frameworks provide no formal guarantees of safety or correctness. Because such programs are often executed autonomously on unseen inputs, this lack of guarantees raises reliability and security concerns. We formulate agentic code generation as a constrained learning problem, combining hard formal specifications with soft objectives capturing task utility. We introduce Formally Guarded Generative Models (FGGM), which allow the planner LLM to specify a formal output contract for each generative model call using first-order logic. Each FGGM call wraps the underlying model in a rejection sampler with a verified fallback, ensuring every returned output satisfies the contract for any input and parameter setting. Building on FGGM, we present SEVerA (Self-Evolving Verified Agents), a three-stage framework: Search synthesizes candidate parametric programs containing FGGM calls; Verification proves correctness with respect to hard constraints for all parameter values, reducing the problem to unconstrained learning; and Learning applies scalable gradient-based optimization, including GRPO-style fine-tuning, to improve the soft objective while preserving correctness. We evaluate SEVerA on Dafny program verification, symbolic math synthesis, and policy-compliant agentic tool use (τ^2-bench). Across tasks, SEVerA achieves zero constraint violations while improving performance over unconstrained and SOTA baselines, showing that formal behavioral constraints not only guarantee correctness but also steer synthesis toward higher-quality agents.",
+      "description_zh": "最近的进展表明，自我进化的 LLM 代理在程序修复和科学发现等任务上的有效性。在此范例中，规划器 LLM 综合了一个代理程序，该程序调用参数模型（包括 LLM），然后根据任务进行调整以提高性能。然而，现有的自我进化代理框架没有提供安全性或正确性的正式保证。由于此类程序通常是根据看不见的输入自动执行的，因此缺乏保证会引发可靠性和安全性问题。我们将代理代码生成制定为受限学习问题，将硬形式规范与捕获任务效用的软���标相结合。我们引入了形式保护生成模型（FGGM），它允许规划器 LLM 使用一阶逻辑为每个生成模型调用指定正式的输出契约。每个 FGGM 调用都将底层模型包装在带有经过验证的回退的拒绝采样器中，确保每个返回的输出都满足任何输入和参数设置的约定。在 FGGM 的基础上，我们提出了 SEVerA（自我进化验证代理），这是一个三阶段框架： 搜索综合包含 FGGM 调用的候选参数程序；验证证明所有参数值的硬约束的正确性，将问题简化为无约束学习；学习应用可扩展的基于梯度的优化，包括 GRPO 式的微调，以改进软目标，同时保持正确性。我们在 Dafny 程序验证、符号数学综合和符合策略的代理工具使用（τ^2-bench）方面评估 SEVerA。在各个任务中，SEVerA 实现了零约束违规，同时提高了无约束和 SOTA 基线的性能，这表明正式的行为约束不仅保证了正确性，而且还引导综合向更高质量的智能体方向发展。",
+      "authors": "Debangshu Banerjee, Changming Xu, Gagandeep Singh",
+      "url": "https://huggingface.co/papers/2603.25111",
+      "score": 18,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "18",
+        "paperId": "2603.25111"
+      }
+    },
+    {
+      "id": "2604.00698",
+      "title": "Learning to Hint for Reinforcement Learning",
+      "title_zh": "学习提示强化学习",
+      "description": "Group Relative Policy Optimization (GRPO) is widely used for reinforcement learning with verifiable rewards, but it often suffers from advantage collapse: when all rollouts in a group receive the same reward, the group yields zero relative advantage and thus no learning signal. For example, if a question is too hard for the reasoner, all sampled rollouts can be incorrect and receive zero reward. Recent work addresses this issue by adding hints or auxiliary scaffolds to such hard questions so that the reasoner produces mixed outcomes and recovers a non-zero update. However, existing hints are usually fixed rather than adapted to the current reasoner, and a hint that creates learning signal under the hinted input does not necessarily improve the no-hint policy used at test time. To this end, we propose Hint Learning for Reinforcement Learning (HiLL), a framework that jointly trains a hinter policy and a reasoner policy during RL. For each hard question, the hinter generates hints online conditioned on the current reasoner's incorrect rollout, allowing hint generation to adapt to the reasoner's evolving errors. We further introduce hint reliance, which measures how strongly correct hinted trajectories depend on the hint. We derive a transferability result showing that lower hint reliance implies stronger transfer from hinted success to no-hint success, and we use this result to define a transfer-weighted reward for training the hinter. Therefore, HiLL favors hints that not only recover informative GRPO groups, but also produce signals that are more likely to improve the original no-hint policy. Experiments across multiple benchmarks show that HiLL consistently outperforms GRPO and prior hint-based baselines, demonstrating the value of adaptive and transfer-aware hint learning for RL. The code is available at https://github.com/Andree-9/HiLL.",
+      "description_zh": "组相对策略优化（GRPO）广泛用于具有可验证奖励的强化学习，但它经常遭受优势崩溃：当组中的所有推出都获得相同的奖励时，该组产生零相对优势，因此没有学习信号。例如，如果一个问题对于推理者来说太难，则所有采样的推出都可能不正确并获得零奖励。最近的工作通过向此类难题添加提示或辅助支架来解决这个问题，以便推理器产生混合结果并恢复非零更新。然而，现有的提示通常是固定的，而不是适应当前的推理器，并且在提示输入下创建学习信号的提示不一定会改进测试时使用的无提示策略。为此，我们提出了强化学习的提示学习（HiLL），这是一个在强化学习期间联合训练提示策略和推理策略的框架。对于每个难题，提示器会根据当前推理器的错误部署在线生成提示，从而允许提示生成适应推理器不断变化的错误。我们进一步引入提示依赖，它衡量正确的提示轨迹对提示的依赖程度。我们得出的可转移性结果表明，较低的提示依赖意味着从暗示成功到无提示成功的更强转移，并且我们使用此结果来定义用于训练暗示者的转移加权奖励。因此，HiLL 倾向于提示，不仅可以恢复信息丰富的 GRPO 组，而且还可以产生更有可能改进原始无提示策略的信号。跨多个基准的实验表明，HiLL 始终优于 GRPO 和先前基于提示的基线，证明了 RL 的自适应和转移感知提示学习的价值。代码可在 https://github.com/Andree-9/HiLL 获取。",
+      "authors": "Yu Xia, Canwen Xu, Zhewei Yao, Julian McAuley, Yuxiong He",
+      "url": "https://huggingface.co/papers/2604.00698",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2604.00698"
+      }
+    },
+    {
+      "id": "2604.06757",
+      "title": "FlowInOne:Unifying Multimodal Generation as Image-in, Image-out Flow Matching",
+      "title_zh": "FlowInOne：将多模态生成统一为图像输入、图像输出流匹配",
+      "description": "Multimodal generation has long been dominated by text-driven pipelines where language dictates vision but cannot reason or create within it. We challenge this paradigm by asking whether all modalities, including textual descriptions, spatial layouts, and editing instructions, can be unified into a single visual representation. We present FlowInOne, a framework that reformulates multimodal generation as a purely visual flow, converting all inputs into visual prompts and enabling a clean image-in, image-out pipeline governed by a single flow matching model. This vision-centric formulation naturally eliminates cross-modal alignment bottlenecks, noise scheduling, and task-specific architectural branches, unifying text-to-image generation, layout-guided editing, and visual instruction following under one coherent paradigm. To support this, we introduce VisPrompt-5M, a large-scale dataset of 5 million visual prompt pairs spanning diverse tasks including physics-aware force dynamics and trajectory prediction, alongside VP-Bench, a rigorously curated benchmark assessing instruction faithfulness, spatial precision, visual realism, and content consistency. Extensive experiments demonstrate that FlowInOne achieves state-of-the-art performance across all unified generation tasks, surpassing both open-source models and competitive commercial systems, establishing a new foundation for fully vision-centric generative modeling where perception and creation coexist within a single continuous visual space.",
+      "description_zh": "多模态生成长期以来一直由文本驱动的管道主导，其中语言决定视觉，但无法在其中进行推理或创建。我们通过询问是否所有模式（包括文本描述、空间布局和编辑指令）是否可以统一为单个视觉表示来挑战这一范式。我们提出了 FlowInOne，一个框架，它将多模态生成重新表述为纯粹的视觉流，将所有输入转换为视觉提示，并实现由单个流匹配模型控制的干净的图像输入、图像输出管道。这种以视觉为中心的公式自然地消除了跨模式对齐瓶颈、噪声调度和特定于任务的架构分支，在一个连贯的范式下统一了文本到图像的生成、布局引导的编辑和视觉指令。为了支持这一点，我们引入了 VisPrompt-5M，这是一个包含 500 万个视觉提示对的大型数据集，涵盖物理感知力动力学和轨迹预测等各种任务，同时引入了 VP-Bench，这是一个经过严格策划的基准测试，用于评估指令忠实度、空间精度、视觉真实感和内容一致性。大量实验表明，FlowInOne 在所有统一生成任务中实现了最先进的性能，超越了开源模型和竞争性商业系统，为完全以视觉为中心的生成建模奠定了新的基础，其中感知和创造在单个连续视觉空间中共存。",
+      "authors": "Junchao Yi, Rui Zhao, Jiahao Tang, Weixian Lei, Linjie Li, Qisheng Su, Zhengyuan Yang, Lijuan Wang, Xiaofeng Zhu, Alex Jinpeng Wang",
+      "url": "https://huggingface.co/papers/2604.06757",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2604.06757"
+      }
+    },
+    {
+      "id": "2604.07350",
+      "title": "Fast Spatial Memory with Elastic Test-Time Training",
+      "title_zh": "具有弹性测试时间训练的快速空间记忆",
+      "description": "Large Chunk Test-Time Training (LaCT) has shown strong performance on long-context 3D reconstruction, but its fully plastic inference-time updates remain vulnerable to catastrophic forgetting and overfitting. As a result, LaCT is typically instantiated with a single large chunk spanning the full input sequence, falling short of the broader goal of handling arbitrarily long sequences in a single pass. We propose Elastic Test-Time Training inspired by elastic weight consolidation, that stabilizes LaCT fast-weight updates with a Fisher-weighted elastic prior around a maintained anchor state. The anchor evolves as an exponential moving average of past fast weights to balance stability and plasticity. Based on this updated architecture, we introduce Fast Spatial Memory (FSM), an efficient and scalable model for 4D reconstruction that learns spatiotemporal representations from long observation sequences and renders novel view-time combinations. We pre-trained FSM on large-scale curated 3D/4D data to capture the dynamics and semantics of complex spatial environments. Extensive experiments show that FSM supports fast adaptation over long sequences and delivers high-quality 3D/4D reconstruction with smaller chunks and mitigating the camera-interpolation shortcut. Overall, we hope to advance LaCT beyond the bounded single-chunk setting toward robust multi-chunk adaptation, a necessary step for generalization to genuinely longer sequences, while substantially alleviating the activation-memory bottleneck.",
+      "description_zh": "大块测试时间训练 (LaCT) 在长上下文 3D 重建方面表现出了强大的性能，但其完全可塑的推理时间更新仍然容易受到灾难性遗忘和过度拟合的影响。因此，LaCT 通常使用跨越整个输入序列的单个大块进行实例化，达不到单次处理任意长序列的更广泛目标。我们提出了受弹性权重合并启发的弹性测试时训练，该训练通过费舍尔加权弹性先验围绕维持的锚定状态稳定 LaCT 快速权重更新。锚点演变为过去快速权重的指数移动平均值，以平衡稳定性和可塑性。基于此更新的架构，我们引入了快速空间内存（FSM），这是一种高效且可扩展的 4D 重建模型，可以从长观察序列中学习时空表示并呈现新颖的观看时间组合。我们在大规模精选 3D/4D 数据上对 FSM 进行了预训练，以捕获复杂空间环境的动态和语义。大量实验表明，FSM 支持长序列的快速适应，并使用较小的块提供高质量的 3D/4D 重建，并减少相机插值捷径。总的��说，我们希望将 LaCT 推进到超越有界单块设置，转向稳健的多块适应，这是泛化到真正更长序列的必要步骤，同时大大缓解激活内存瓶颈。",
+      "authors": "Ziqiao Ma, Xueyang Yu, Haoyu Zhen, Yuncong Yang, Joyce Chai, Chuang Gan",
+      "url": "https://huggingface.co/papers/2604.07350",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2604.07350"
+      }
+    },
+    {
+      "id": "2604.06912",
+      "title": "Q-Zoom: Query-Aware Adaptive Perception for Efficient Multimodal Large Language Models",
+      "title_zh": "Q-Zoom：高效多模态大型语言模型的查询感知自适应感知",
+      "description": "MLLMs require high-resolution visual inputs for fine-grained tasks like document understanding and dense scene perception. However, current global resolution scaling paradigms indiscriminately flood the quadratic self-attention mechanism with visually redundant tokens, severely bottlenecking inference throughput while ignoring spatial sparsity and query intent. To overcome this, we propose Q-Zoom, a query-aware adaptive high-resolution perception framework that operates in an efficient coarse-to-fine manner. First, a lightweight Dynamic Gating Network safely bypasses high-resolution processing when coarse global features suffice. Second, for queries demanding fine-grained perception, a Self-Distilled Region Proposal Network (SD-RPN) precisely localizes the task-relevant Region-of-Interest (RoI) directly from intermediate feature spaces. To optimize these modules efficiently, the gating network uses a consistency-aware generation strategy to derive deterministic routing labels, while the SD-RPN employs a fully self-supervised distillation paradigm. A continuous spatio-temporal alignment scheme and targeted fine-tuning then seamlessly fuse the dense local RoI with the coarse global layout. Extensive experiments demonstrate that Q-Zoom establishes a dominant Pareto frontier. Using Qwen2.5-VL-7B as a primary testbed, Q-Zoom accelerates inference by 2.52 times on Document & OCR benchmarks and 4.39 times in High-Resolution scenarios while matching the baseline's peak accuracy. Furthermore, when configured for maximum perceptual fidelity, Q-Zoom surpasses the baseline's peak performance by 1.1% and 8.1% on these respective benchmarks. These robust improvements transfer seamlessly to Qwen3-VL, LLaVA, and emerging RL-based thinking-with-image models. Project page is available at https://yuhengsss.github.io/Q-Zoom/.",
+      "description_zh": "MLLM 需要高分辨率视觉输入来执行文档理解和密集场景感知等细粒度任务。然而，当前的全局分辨率缩放范例不加区别地用视觉冗余的标记淹没二次自注意力机制，严重阻碍推理吞吐量，同时忽略空间稀疏性和查询意图。为了克服这个问题，我们提出了 Q-Zoom，一种查询感知的自适应高分辨率感知框架，以高效的从粗到细的方式运行。首先，当粗略的全局特征足够时，轻量级动态门网络可以安全地绕过高分辨率处理。其次，对于需要细粒度感知的查询，自蒸馏区域提议网络（SD-RPN）直接从中间特征空间精确定位与任务相关的感兴趣区域（RoI）。为了有效地优化这些模块，门控网络使用一致性感知生成策略来派生确定性路由标签，而 SD-RPN 采用完全自监督的蒸馏范例。然后，连续时空对齐方案和有针对性的微调将密集的局部 RoI 与粗略的全局布局无缝融合。大量实验表明 Q-Zoom 建立了主导帕累托前沿。使用 Qwen2.5-VL-7B 作为主要测试平台，Q-Zoom 在文档和 OCR 基准测试中将推理速度提高了 2.52 倍，在高分辨率场景中将推理速度提高了 4.39 倍，同时匹配了基线的峰值准确度。此外，当配置为最大感知保真度时，Q-Zoom 在这些各自的基准测试中比基准的峰值性能高出 1.1% 和 8.1%。这些强大的改进可以无缝转移到 Qwen3-VL、LLaVA 和新兴的基于强化学习的图像思维模型。项目页面位于 https://yuhengsss.github.io/Q-Zoom/。",
+      "authors": "Yuheng Shi, Xiaohuan Pei, Linfeng Wen, Minjing Dong, Chang Xu",
+      "url": "https://huggingface.co/papers/2604.06912",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2604.06912"
       }
     }
   ]
