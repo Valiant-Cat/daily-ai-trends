@@ -1,42 +1,24 @@
 {
   "source": "github",
-  "updatedAt": "2026-04-16T20:25:41.763Z",
-  "count": 14,
+  "updatedAt": "2026-04-17T20:23:46.001Z",
+  "count": 15,
   "items": [
     {
-      "id": "forrestchang-andrej-karpathy-skills",
-      "title": "andrej-karpathy-skills",
-      "title_zh": "andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "description_zh": "用于改进 Claude 代码行为的单个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码陷阱的观察。",
-      "authors": "forrestchang",
-      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-      "score": 49121,
+      "id": "EvoMap-evolver",
+      "title": "evolver",
+      "title_zh": "evolver",
+      "description": "The GEP-Powered Self-Evolution Engine for AI Agents. Genome Evolution Protocol. | evomap.ai",
+      "description_zh": "用于 AI 代理的 GEP 支持的自我进化引擎。基因组进化协议。 |进化地图.ai",
+      "authors": "EvoMap",
+      "url": "https://github.com/EvoMap/evolver",
+      "score": 4076,
       "meta": {
         "source": "github",
-        "stars": "49,121",
-        "language": "Mixed",
-        "repo": "forrestchang/andrej-karpathy-skills",
-        "owner": "forrestchang",
-        "repoName": "andrej-karpathy-skills"
-      }
-    },
-    {
-      "id": "thedotmack-claude-mem",
-      "title": "claude-mem",
-      "title_zh": "claude-mem",
-      "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
-      "description_zh": "一个 Claude 代码插件，可自动捕获 Claude 在编码会话期间所做的一切，使用 AI 对其进行压缩（使用 Claude 的代理 SDK），并将相关上下文注入到未来的会话中。",
-      "authors": "thedotmack",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "score": 59430,
-      "meta": {
-        "source": "github",
-        "stars": "59,430",
-        "language": "TypeScript",
-        "repo": "thedotmack/claude-mem",
-        "owner": "thedotmack",
-        "repoName": "claude-mem"
+        "stars": "4,076",
+        "language": "JavaScript",
+        "repo": "EvoMap/evolver",
+        "owner": "EvoMap",
+        "repoName": "evolver"
       }
     },
     {
@@ -47,176 +29,14 @@
       "description_zh": "自进化代理：从 3.3K 行种子中生长技能树，以减少 6 倍的代币消耗实现完整的系统控制",
       "authors": "lsdefine",
       "url": "https://github.com/lsdefine/GenericAgent",
-      "score": 2682,
+      "score": 3510,
       "meta": {
         "source": "github",
-        "stars": "2,682",
+        "stars": "3,510",
         "language": "Python",
         "repo": "lsdefine/GenericAgent",
         "owner": "lsdefine",
         "repoName": "GenericAgent"
-      }
-    },
-    {
-      "id": "jamiepine-voicebox",
-      "title": "voicebox",
-      "title_zh": "voicebox",
-      "description": "The open-source voice synthesis studio",
-      "description_zh": "开源语音合成工作室",
-      "authors": "jamiepine",
-      "url": "https://github.com/jamiepine/voicebox",
-      "score": 18974,
-      "meta": {
-        "source": "github",
-        "stars": "18,974",
-        "language": "TypeScript",
-        "repo": "jamiepine/voicebox",
-        "owner": "jamiepine",
-        "repoName": "voicebox"
-      }
-    },
-    {
-      "id": "vercel-labs-open-agents",
-      "title": "open-agents",
-      "title_zh": "open-agents",
-      "description": "An open source template for building cloud agents.",
-      "description_zh": "用于构建云代理的开源模板。",
-      "authors": "vercel-labs",
-      "url": "https://github.com/vercel-labs/open-agents",
-      "score": 3120,
-      "meta": {
-        "source": "github",
-        "stars": "3,120",
-        "language": "TypeScript",
-        "repo": "vercel-labs/open-agents",
-        "owner": "vercel-labs",
-        "repoName": "open-agents"
-      }
-    },
-    {
-      "id": "google-magika",
-      "title": "magika",
-      "title_zh": "magika",
-      "description": "Fast and accurate AI powered file content types detection",
-      "description_zh": "快速准确的 AI 支持的文件内容类型检测",
-      "authors": "google",
-      "url": "https://github.com/google/magika",
-      "score": 14626,
-      "meta": {
-        "source": "github",
-        "stars": "14,626",
-        "language": "Python",
-        "repo": "google/magika",
-        "owner": "google",
-        "repoName": "magika"
-      }
-    },
-    {
-      "id": "steipete-wacli",
-      "title": "wacli",
-      "title_zh": "wacli",
-      "description": "WhatsApp CLI",
-      "description_zh": "WhatsApp 命令行界面",
-      "authors": "steipete",
-      "url": "https://github.com/steipete/wacli",
-      "score": 1636,
-      "meta": {
-        "source": "github",
-        "stars": "1,636",
-        "language": "Go",
-        "repo": "steipete/wacli",
-        "owner": "steipete",
-        "repoName": "wacli"
-      }
-    },
-    {
-      "id": "topoteretes-cognee",
-      "title": "cognee",
-      "title_zh": "cognee",
-      "description": "Knowledge Engine for AI Agent Memory in 6 lines of code",
-      "description_zh": "6 行代码实现 AI 代理内存知识引擎",
-      "authors": "topoteretes",
-      "url": "https://github.com/topoteretes/cognee",
-      "score": 15744,
-      "meta": {
-        "source": "github",
-        "stars": "15,744",
-        "language": "Python",
-        "repo": "topoteretes/cognee",
-        "owner": "topoteretes",
-        "repoName": "cognee"
-      }
-    },
-    {
-      "id": "z-lab-dflash",
-      "title": "dflash",
-      "title_zh": "dflash",
-      "description": "DFlash: Block Diffusion for Flash Speculative Decoding",
-      "description_zh": "DFlash：用于闪存推测解码的块扩散",
-      "authors": "z-lab",
-      "url": "https://github.com/z-lab/dflash",
-      "score": 1562,
-      "meta": {
-        "source": "github",
-        "stars": "1,562",
-        "language": "Python",
-        "repo": "z-lab/dflash",
-        "owner": "z-lab",
-        "repoName": "dflash"
-      }
-    },
-    {
-      "id": "Lordog-dive-into-llms",
-      "title": "dive-into-llms",
-      "title_zh": "dive-into-llms",
-      "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
-      "description_zh": "《动手学大模型深入LLM》系列编程实践教程",
-      "authors": "Lordog",
-      "url": "https://github.com/Lordog/dive-into-llms",
-      "score": 30604,
-      "meta": {
-        "source": "github",
-        "stars": "30,604",
-        "language": "Jupyter Notebook",
-        "repo": "Lordog/dive-into-llms",
-        "owner": "Lordog",
-        "repoName": "dive-into-llms"
-      }
-    },
-    {
-      "id": "openai-openai-agents-python",
-      "title": "openai-agents-python",
-      "title_zh": "openai-agents-python",
-      "description": "A lightweight, powerful framework for multi-agent workflows",
-      "description_zh": "用于多代理工作流程的轻量级、强大的框架",
-      "authors": "openai",
-      "url": "https://github.com/openai/openai-agents-python",
-      "score": 21153,
-      "meta": {
-        "source": "github",
-        "stars": "21,153",
-        "language": "Python",
-        "repo": "openai/openai-agents-python",
-        "owner": "openai",
-        "repoName": "openai-agents-python"
-      }
-    },
-    {
-      "id": "EvoMap-evolver",
-      "title": "evolver",
-      "title_zh": "evolver",
-      "description": "The GEP-Powered Self-Evolution Engine for AI Agents. Genome Evolution Protocol. | evomap.ai",
-      "description_zh": "用于 AI 代理的 GEP 支持的自我进化引擎。基因组进化协议。 |进化地图.ai",
-      "authors": "EvoMap",
-      "url": "https://github.com/EvoMap/evolver",
-      "score": 3085,
-      "meta": {
-        "source": "github",
-        "stars": "3,085",
-        "language": "JavaScript",
-        "repo": "EvoMap/evolver",
-        "owner": "EvoMap",
-        "repoName": "evolver"
       }
     },
     {
@@ -227,10 +47,10 @@
       "description_zh": "Claude Code技能支持Android应用程序的逆向工程",
       "authors": "SimoneAvogadro",
       "url": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill",
-      "score": 2147,
+      "score": 2692,
       "meta": {
         "source": "github",
-        "stars": "2,147",
+        "stars": "2,692",
         "language": "Shell",
         "repo": "SimoneAvogadro/android-reverse-engineering-skill",
         "owner": "SimoneAvogadro",
@@ -245,14 +65,212 @@
       "description_zh": "人工智能可以看到您的屏幕、聆听您的对话并告诉您该怎么做",
       "authors": "BasedHardware",
       "url": "https://github.com/BasedHardware/omi",
-      "score": 8970,
+      "score": 9733,
       "meta": {
         "source": "github",
-        "stars": "8,970",
+        "stars": "9,733",
         "language": "Dart",
         "repo": "BasedHardware/omi",
         "owner": "BasedHardware",
         "repoName": "omi"
+      }
+    },
+    {
+      "id": "Lordog-dive-into-llms",
+      "title": "dive-into-llms",
+      "title_zh": "dive-into-llms",
+      "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
+      "description_zh": "《动手学大模型深入LLM》系列编程实践教程",
+      "authors": "Lordog",
+      "url": "https://github.com/Lordog/dive-into-llms",
+      "score": 31481,
+      "meta": {
+        "source": "github",
+        "stars": "31,481",
+        "language": "Jupyter Notebook",
+        "repo": "Lordog/dive-into-llms",
+        "owner": "Lordog",
+        "repoName": "dive-into-llms"
+      }
+    },
+    {
+      "id": "Donchitos-Claude-Code-Game-Studios",
+      "title": "Claude-Code-Game-Studios",
+      "title_zh": "Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "description_zh": "将 Claude Code 转变为完整的游戏开发工作室 — 49 个 AI 代理、72 种工作流程技能以及反映真实工作室层次结构的完整协调系统。",
+      "authors": "Donchitos",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "score": 11688,
+      "meta": {
+        "source": "github",
+        "stars": "11,688",
+        "language": "Shell",
+        "repo": "Donchitos/Claude-Code-Game-Studios",
+        "owner": "Donchitos",
+        "repoName": "Claude-Code-Game-Studios"
+      }
+    },
+    {
+      "id": "jamiepine-voicebox",
+      "title": "voicebox",
+      "title_zh": "voicebox",
+      "description": "The open-source voice synthesis studio",
+      "description_zh": "开源语音合成工作室",
+      "authors": "jamiepine",
+      "url": "https://github.com/jamiepine/voicebox",
+      "score": 19727,
+      "meta": {
+        "source": "github",
+        "stars": "19,727",
+        "language": "TypeScript",
+        "repo": "jamiepine/voicebox",
+        "owner": "jamiepine",
+        "repoName": "voicebox"
+      }
+    },
+    {
+      "id": "lukilabs-craft-agents-oss",
+      "title": "craft-agents-oss",
+      "title_zh": "craft-agents-oss",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "lukilabs",
+      "url": "https://github.com/lukilabs/craft-agents-oss",
+      "score": 4261,
+      "meta": {
+        "source": "github",
+        "stars": "4,261",
+        "language": "TypeScript",
+        "repo": "lukilabs/craft-agents-oss",
+        "owner": "lukilabs",
+        "repoName": "craft-agents-oss"
+      }
+    },
+    {
+      "id": "Tracer-Cloud-opensre",
+      "title": "opensre",
+      "title_zh": "opensre",
+      "description": "Build your own AI SRE agents. The open source toolkit for the AI era ✨",
+      "description_zh": "构建您自己的 AI SRE 代理。 AI时代的开源工具包✨",
+      "authors": "Tracer-Cloud",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "score": 1353,
+      "meta": {
+        "source": "github",
+        "stars": "1,353",
+        "language": "Python",
+        "repo": "Tracer-Cloud/opensre",
+        "owner": "Tracer-Cloud",
+        "repoName": "opensre"
+      }
+    },
+    {
+      "id": "obra-superpowers",
+      "title": "superpowers",
+      "title_zh": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_zh": "有效的代理技能框架和软件开发方法。",
+      "authors": "obra",
+      "url": "https://github.com/obra/superpowers",
+      "score": 157621,
+      "meta": {
+        "source": "github",
+        "stars": "157,621",
+        "language": "Shell",
+        "repo": "obra/superpowers",
+        "owner": "obra",
+        "repoName": "superpowers"
+      }
+    },
+    {
+      "id": "z-lab-dflash",
+      "title": "dflash",
+      "title_zh": "dflash",
+      "description": "DFlash: Block Diffusion for Flash Speculative Decoding",
+      "description_zh": "DFlash：用于闪存推测解码的块扩散",
+      "authors": "z-lab",
+      "url": "https://github.com/z-lab/dflash",
+      "score": 1780,
+      "meta": {
+        "source": "github",
+        "stars": "1,780",
+        "language": "Python",
+        "repo": "z-lab/dflash",
+        "owner": "z-lab",
+        "repoName": "dflash"
+      }
+    },
+    {
+      "id": "openai-openai-agents-python",
+      "title": "openai-agents-python",
+      "title_zh": "openai-agents-python",
+      "description": "A lightweight, powerful framework for multi-agent workflows",
+      "description_zh": "用于多代理工作流程的轻量级、强大的框架",
+      "authors": "openai",
+      "url": "https://github.com/openai/openai-agents-python",
+      "score": 21737,
+      "meta": {
+        "source": "github",
+        "stars": "21,737",
+        "language": "Python",
+        "repo": "openai/openai-agents-python",
+        "owner": "openai",
+        "repoName": "openai-agents-python"
+      }
+    },
+    {
+      "id": "google-magika",
+      "title": "magika",
+      "title_zh": "magika",
+      "description": "Fast and accurate AI powered file content types detection",
+      "description_zh": "快速准确的 AI 支持的文件内容类型检测",
+      "authors": "google",
+      "url": "https://github.com/google/magika",
+      "score": 15363,
+      "meta": {
+        "source": "github",
+        "stars": "15,363",
+        "language": "Python",
+        "repo": "google/magika",
+        "owner": "google",
+        "repoName": "magika"
+      }
+    },
+    {
+      "id": "pingdotgg-t3code",
+      "title": "t3code",
+      "title_zh": "t3code",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "pingdotgg",
+      "url": "https://github.com/pingdotgg/t3code",
+      "score": 9386,
+      "meta": {
+        "source": "github",
+        "stars": "9,386",
+        "language": "TypeScript",
+        "repo": "pingdotgg/t3code",
+        "owner": "pingdotgg",
+        "repoName": "t3code"
+      }
+    },
+    {
+      "id": "ChromeDevTools-chrome-devtools-mcp",
+      "title": "chrome-devtools-mcp",
+      "title_zh": "chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "description_zh": "用于编码代理的 Chrome DevTools",
+      "authors": "ChromeDevTools",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "score": 35776,
+      "meta": {
+        "source": "github",
+        "stars": "35,776",
+        "language": "TypeScript",
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "owner": "ChromeDevTools",
+        "repoName": "chrome-devtools-mcp"
       }
     }
   ]
