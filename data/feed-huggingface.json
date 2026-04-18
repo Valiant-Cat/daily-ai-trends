@@ -1,8 +1,23 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-17T20:23:54.208Z",
+  "updatedAt": "2026-04-18T20:04:14.741Z",
   "count": 15,
   "items": [
+    {
+      "id": "2604.14265",
+      "title": "Reinforcement Learning via Value Gradient Flow",
+      "title_zh": "通过价值梯度流强化学习",
+      "description": "We study behavior-regularized reinforcement learning (RL), where regularization toward a reference distribution (the dataset in offline RL or the base model in LLM RL finetuning) is essential to prevent value over-optimization caused by erroneous out-of-distribution extrapolation. Existing methods either rely on reparameterized policy gradient, which are difficult to scale to large generative models, or on reject sampling, which can be overly conservative when attempting to move beyond the behavior support. In this paper, we propose Value Gradient Flow (VGF), a scalable new paradigm for behavior-regularized RL. VGF casts behavior-regularized RL as an optimal transport problem that maps the reference distribution to the value-induced optimal policy distribution. We solve this transport problem via discrete gradient flow, where value gradients guide particles initialized from the reference distribution. Our analysis shows that VGF imposes regularization implicitly by controlling the transport budget. VGF eliminates explicit policy parameterization while remaining expressive and flexible, this enables adaptive test-time scaling by adjusting the transport budget. Extensive experiments demonstrate that VGF significantly outperforms prior methods, achieving state-of-the-art results on offline RL benchmarks (D4RL, OGBench) and LLM RL tasks. Code and runs can be found at https://ryanxhr.github.io/vgf.",
+      "description_zh": "我们研究行为正则化强化学习（RL），其中针对参考分布（离线 RL 中的数据集或 LLM RL 微调中的基本模型）的正则化对于防止错误的分布外外推导致的值过度优化至关重要。现有的方法要么依赖于重新参数化的策略梯度，这很难扩展到大型生成模型，要么依赖于拒绝采样，当试图超越行为支持时，这可能过于保守。在本文中，我们提出了价值梯度流（VGF），这是一种可扩展的行为正则化强化学习的新范式。 VGF 将行为正则化强化学习视为最优传输问题，将参考分布映射到价值诱导的最优策略分布。我们通过离散梯度流解决这个传输问题，其中值梯度引导从参考分布初始化的粒子。我们的分析表明，VGF 通过控制运输预算隐含地实施了正规化。 VGF 消除了显式策略参数化，同时保持了表现力和灵活性，这可以通过调整传输预算来实现自适应测试时间扩展。大量实验表明，VGF 显着优于之前的方法，在离线 RL 基准（D4RL、OGBench）和 LLM RL 任务上取得了最先进的结果。代码和运行可以在 https://ryanxhr.github.io/vgf 找到。",
+      "authors": "Haoran Xu, Kaiwen Hu, Somayeh Sojoudi, Amy Zhang",
+      "url": "https://huggingface.co/papers/2604.14265",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2604.14265"
+      }
+    },
     {
       "id": "2604.14914",
       "title": "Beyond Prompts: Unconditional 3D Inversion for Out-of-Distribution Shapes",
@@ -23,13 +38,13 @@
       "title": "Three-Phase Transformer",
       "title_zh": "三相变压器",
       "description": "We present Three-Phase Transformer (3PT), a residual-stream structural prior for decoder-only Transformers on a standard SwiGLU + RMSNorm + RoPE + GQA backbone. The hidden vector is partitioned into N equally-sized cyclic channels, each maintained by phase-respecting ops: a per-channel RMSNorm, a 2D Givens rotation between attention and FFN that rotates each channel by theta + i*(2*pi/N), and a head-count constraint aligning GQA heads with the partition. The architecture is a self-stabilizing equilibrium between scrambling and re-imposition, not a bolted-on module. The partition carves out a one-dimensional DC subspace orthogonal to the channels, into which we inject a fixed Gabriel's horn profile r(p) = 1/(p+1) as an absolute-position side-channel composing orthogonally with RoPE's relative-position rotation. The canonical N=3 borrows its metaphor from balanced three-phase AC, where three sinusoids 120 degrees apart sum to zero with no anti-correlated pair. At 123M parameters on WikiText-103, 3PT achieves -7.20% perplexity (-2.62% bits-per-byte) over a matched RoPE-Only baseline at +1,536 parameters (0.00124% of total), with 1.93x step-count convergence speedup (1.64x wall-clock). N behaves as a parameter-sharing knob rather than a unique optimum: at 5.5M an N-sweep over {1,2,3,4,6,8,12} is near-monotone with N=1 winning; at 123M a three-seed sweep finds N=3 and N=1 statistically indistinguishable. The load-bearing mechanism is the channel-partitioned residual stream, per-block rotation, per-phase normalization, and horn DC injection. We characterize (a) self-stabilization of the geometry without explicit enforcement, a novel instance of the conservation-law framework for neural networks; (b) a U-shaped depth profile of rotation-angle drift at 12 layers; (c) orthogonal composition with RoPE, attention, and FFN.",
-      "description_zh": "我们提出了三相变压器 (3PT)，这是标准 SwiGLU + RMSNorm + RoPE + GQA 主干上仅解码器变压器的残余流结构先验。隐藏向量被划分为 N 个大小相等的循环通道，每个通道都由尊重相位的操作维护：每通道 RMSNorm、注意力和 FFN 之间的 2D Gives 旋转（按 theta + i*(2*pi/N) 旋转每个通道）以及将 GQA 头与分区对齐的头数约束。该架构是加扰和重新施加之间的自稳定平衡，而不是螺栓固定的模块。该分区划分出一个与通道正交的一维 DC 子空间，我们将固定的 Gabriel 喇叭轮廓 r(p) = 1/(p+1) 作为绝对位置���通道注入其中，与 RoPE 的相对位置旋转正交。规范的 N=3 借用了平衡三相交流电的比喻，其中三个相距 120 度的正弦波总和为零，没有反相关对。在 WikiText-103 上的 123M 参数下，3PT 在 +1,536 个参数（总数的 0.00124%）的匹配 RoPE-Only 基线上实现了 -7.20% 的困惑度（-2.62% 位/字节），并具有 1.93 倍步数收敛加速（1.64 倍挂钟）。 N 表现为参数共享旋钮，而不是唯一的最佳值：在 5.5M 时，{1,2,3,4,6,8,12} 上的 N 扫描接近单调，N=1 获胜；在 123M 处，三种子扫描发现 N=3 和 N=1 在统计上无法区分。承载机制是通道分区的残余流、每块旋转、每相位归一化和喇叭直流注入。我们描述了（a）在没有明确执行的情况下几何的自稳定，这是神经网络守恒定律框架的一个新实例； (b) 12层旋转角漂移的U形深度剖面； (c) 与 RoPE、注意力和 FFN 的正交组合。",
+      "description_zh": "我们提出了三相变压器 (3PT)，这是标准 SwiGLU + RMSNorm + RoPE + GQA 主干上仅解码器变压器的残余流结构先验。隐藏向量被划分为 N 个大小相等的循环通道，每个通道都由尊重相位的操作维护：每通道 RMSNorm、注意力和 FFN 之间的 2D Gives 旋转（按 theta + i*(2*pi/N) 旋转每个通道）以及将 GQA 头与分区对齐的头数约束。该架构是加扰和重新施加之间的自稳定平衡，而不是螺栓固定的模块。该分区划分出一个与通道正交的一维 DC 子空间，我们将固定的 Gabriel 喇叭轮廓 r(p) = 1/(p+1) 作为绝对位置侧通道注入其中，与 RoPE 的相对位置旋转正交。规范的 N=3 借用了平衡三相交流电的比喻，其中三个相距 120 度的正弦波总和为零，没有反相关对。在 WikiText-103 上的 123M 参数下，3PT 在 +1,536 个参数（总数的 0.00124%）的匹配 RoPE-Only 基线上实现了 -7.20% 的困惑度（-2.62% 位/字节），并具有 1.93 倍步数收敛加速（1.64 倍挂钟）。 N 表现为参数共享旋钮，而不是唯一的最佳值：在 5.5M 时，{1,2,3,4,6,8,12} 上的 N 扫描接近单调，N=1 获胜；在 123M 处，三种子扫描发现 N=3 和 N=1 在统计上无法区分。承载机制是通道分区的残余流、每块旋转、每相位归一化和喇叭直流注入。我们描述了（a）在没有明确执行的情况下几何的自稳定，这是神经网络守恒定律框架的一个新实例； (b) 12层旋转角漂移的U形深度剖面； (c) 与 RoPE、注意力和 FFN 的正交组合。",
       "authors": "Mohammad R. Abu Ayyash",
       "url": "https://huggingface.co/papers/2604.14430",
-      "score": 0,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "3",
         "paperId": "2604.14430"
       }
     },
@@ -41,10 +56,10 @@
       "description_zh": "在在线增量学习中，数据不断到达并伴随着巨大的分布变化，这带来了重大挑战，因为在学习新任务时以前的样本的重播价值有限。先前的研究通常依赖于单个自适应质心或多个固定质心来表示潜在空间中的每个类别。然而，当类数据流本质上是多模式的并且需要持续的质心更新时，这种方法就会遇到困难。为了克服这个问题，我们引入了一种基于最佳传输理论（MMOT）的在线混合模型学习框架，其中质心随着新数据而逐渐演变。这种方法有两个主要优点：(i) 它提供了复杂数据流的更精确的表征，(ii) 它可以在通过 MMOT 派生的质心进行推理期间改进未见过的样本的类相似性估计。此外，为了加强表示学习并减轻灾难性遗忘，我们设计了一种动态保存策略，可以调节潜在空间并随着时间的推移保持类可分离性。对基准数据集的实验评估证实了我们提出的方法的卓越有效性。",
       "authors": "Quyen Tran, Hai Nguyen, Hoang Phan, Quan Dao, Linh Ngo, Khoat Than, Dinh Phung, Dimitris Metaxas, Trung Le",
       "url": "https://huggingface.co/papers/2211.16780",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2211.16780"
       }
     },
@@ -53,13 +68,13 @@
       "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
       "title_zh": "通过自我监督指导促进视觉指令调整",
       "description": "Multimodal large language models (MLLMs) perform well on many vision-language tasks but often struggle with vision-centric problems that require fine-grained visual reasoning. Recent evidence suggests that this limitation arises not from weak visual representations, but from under-utilization of visual information during instruction tuning, where many tasks can be partially solved using language priors alone. We propose a simple and lightweight approach that augments visual instruction tuning with a small number of visually grounded self-supervised tasks expressed as natural language instructions. By reformulating classical self-supervised pretext tasks, such as rotation prediction, color matching, and cross-view correspondence, as image-instruction-response triplets, we introduce supervision that cannot be solved without relying on visual evidence. Our approach requires no human annotations, no architectural modifications, and no additional training stages. Across multiple models, training regimes, and benchmarks, injecting only a small fraction (3-10%) of such visually grounded instructions consistently improves performance on vision-centric evaluations. Our findings highlight instruction tuning with visually grounded SSL tasks as a powerful lever for improving visual reasoning in MLLMs through simple adjustments to the training data distribution. Code available at: https://github.com/sirkosophia/V-GIFT",
-      "description_zh": "多模态大语言模型 (MLLM) 在许多视觉语言任务上表现良好，但常常难以解决需要细粒度视觉推理的以视觉为中心的问题。最近的证据表明，这种限制不是由弱视觉表示引起的，而是由指令调整过程中视觉信息的利用不足引起的，其中许多任务可以仅使用语言先验来部分解决。我们提出了一种简单而轻量级的方法，通过少量以自然语言指令表示的基于视觉的自我监督任务来增强视觉指令调整。通过将旋转预测、颜色匹配和跨视图对应等经典的自监督借口任务重新���述为图像-指令-响应三元组，我们引入了不依赖视觉证据就无法解决的监督。我们的方法不需要人工注释，不需要架构修改，也不需要额外的训练阶段。在多个模型、训练制度和基准中，仅注入一小部分（3-10%）此类基于视觉的指令即可持续提高以视觉为中心的评估的性能。我们的研究结果强调，使用基于视觉的 SSL 任务进行指令调整是通过对训练数据分布进行简单调整来改进 MLLM 视觉推理的强大杠杆。代码位于：https://github.com/sirkosophia/V-GIFT",
+      "description_zh": "多模态大语言模型 (MLLM) 在许多视觉语言任务上表现良好，但常常难以解决需要细粒度视觉推理的以视觉为中心的问题。最近的证据表明，这种限制不是由弱视觉表示引起的，而是由指令调整过程中视觉信息的利用不足引起的，其中许多任务可以仅使用语言先验来部分解决。我们提出了一种简单而轻量级的方法，通过少量以自然语言指令表示的基于视觉的自我监督任务来增强视觉指令调整。通过将旋转预测、颜色匹配和跨视图对应等经典的自监督借口任务重��表述为图像-指令-响应三元组，我们引入了不依赖视觉证据就无法解决的监督。我们的方法不需要人工注释，不需要架构修改，也不需要额外的训练阶段。在多个模型、训练制度和基准中，仅注入一小部分（3-10%）此类基于视觉的指令即可持续提高以视觉为中心的评估的性能。我们的研究结果强调，使用基于视觉的 SSL 任务进行指令调整是通过对训练数据分布进行简单调整来改进 MLLM 视觉推理的强大杠杆。代码位于：https://github.com/sirkosophia/V-GIFT",
       "authors": "Sophia Sirko-Galouchenko, Monika Wysoczanska, Andrei Bursuc, Nicolas Thome, Spyros Gidaris",
       "url": "https://huggingface.co/papers/2604.12966",
-      "score": 4,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "5",
         "paperId": "2604.12966"
       }
     },
@@ -71,10 +86,10 @@
       "description_zh": "视觉语言模型 (VLM) 具有显着先进的人工智能驱动的复杂医学成像解释和报告，例如计算机断层扫描 (CT)。然而，现有的方法在很大程度上使临床医生成为最终输出的被动观察者，没有为他们提供可解释的推理痕迹来检查、验证或完善。为了解决这个问题，我们引入了 RadAgent，这是一种使用工具的 AI 代理，可通过逐步且可解释的过程生成 CT 报告。每份生成的报告都附有中间决策和工具交互的完全可检查的痕迹，使临床医生能够检查报告的结果是如何得出的。在我们的实验中，我们观察到 RadAgent 在三个维度上比其 3D VLM 对应项 CT-Chat 改进了胸部 CT 报告生成。宏观 F1 中的临床准确性提高了 6.0 点（相对 36.4%），微观 F1 中的临床准确性提高了 5.4 点（相对 19.6%）。对抗条件下的稳健性提高了 24.7 个百分点（相对 41.9%）。此外，RadAgent 的忠实度达到 37.0%，这是 3D VLM 同类产品中完全不具备的新功能。通过将胸部 CT 的解释构建为明确的、工具增强的迭代推理轨迹，RadAgent 让我们更接近透明且可靠的放射学人工智能。",
       "authors": "Mélanie Roschewitz, Kenneth Styppa, Yitian Tao, Jiwoong Sohn, Jean-Benoit Delbrouck, Benjamin Gundersen, Nicolas Deperrois, Christian Bluethgen, Julia Vogt, Bjoern Menze, Farhad Nooralahzadeh, Michael Krauthammer, Michael Moor",
       "url": "https://huggingface.co/papers/2604.15231",
-      "score": 4,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "5",
         "paperId": "2604.15231"
       }
     },
@@ -83,13 +98,13 @@
       "title": "Don't Retrieve, Navigate: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG",
       "title_zh": "不要检索，而是导航：将企业知识提炼为 QA 和 RAG 的可导航代理技能",
       "description": "Retrieval-Augmented Generation (RAG) grounds LLM responses in external evidence but treats the model as a passive consumer of search results: it never sees how the corpus is organized or what it has not yet retrieved, limiting its ability to backtrack or combine scattered evidence. We present Corpus2Skill, which distills a document corpus into a hierarchical skill directory offline and lets an LLM agent navigate it at serve time. The compilation pipeline iteratively clusters documents, generates LLM-written summaries at each level, and materializes the result as a tree of navigable skill files. At serve time, the agent receives a bird's-eye view of the corpus, drills into topic branches via progressively finer summaries, and retrieves full documents by ID. Because the hierarchy is explicitly visible, the agent can reason about where to look, backtrack from unproductive paths, and combine evidence across branches. On WixQA, an enterprise customer-support benchmark for RAG, Corpus2Skill outperforms dense retrieval, RAPTOR, and agentic RAG baselines across all quality metrics.",
-      "description_zh": "检索增强生成 (RAG) 将 LLM 响应基于外部证据，但将模型视为搜索结果的被动消费者：它永远看不到语料库的组织方式或尚未检索到的内容，从而限制了其回溯或组合分散证据的能力。我们推出了 Corpus2Skill，它将文档语料库离线提取到分层技能目录中，并让 LLM 代理在服务时对其进行导航。编译管道迭代地对文档进行聚类，在每个级别生成LLM编写的摘要，并将结果具体化为可导航技能文件的树。在服务时，代理接收语料库的鸟瞰图，通过逐渐精细的摘要深入到主题分支，并通过 ID 检索完整文档。由于层次结构是明确可见的，代理可以推断出要查看的位置、从非生产性路径回溯以及跨分支合并证据。在 WixQA（RAG 的企业客户支持基准）上，Corpus2Skill 在所有质量指标上都优于密集检索、RAPTOR 和代理 RAG 基线。",
+      "description_zh": "检索增强生成 (RAG) 将 LLM 响应基于外部证据，但将模型视为搜索结果的被动消费者：它永远看不到语料库的组织方式或尚未检索到的内容，从而限制了其回溯或组合分散证据的能力。我们推出了 Corpus2Skill，它将文档语料库离线提取到分层技能目录中，并让 LLM 代理在服务时对其进行导航。编译管道迭代地对文档进行聚类，在每个级别生成LLM编写的摘要，并将结果具体化为可导航技能文件的树。在服务时，代理接收语料库的鸟瞰图，通过逐渐精细的摘要深���到主题分支，并通过 ID 检索完整文档。由于层次结构是明确可见的，代理可以推断出要查看的位置、从非生产性路径回溯以及跨分支合并证据。在 WixQA（RAG 的企业客户支持基准）上，Corpus2Skill 在所有质量指标上都优于密集检索、RAPTOR 和代理 RAG 基线。",
       "authors": "Yiqun Sun, Pengfei Wei, Lawrence B. Hsieh",
       "url": "https://huggingface.co/papers/2604.14572",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2604.14572"
       }
     },
@@ -98,13 +113,13 @@
       "title": "Representations Before Pixels: Semantics-Guided Hierarchical Video Prediction",
       "title_zh": "像素之前的表示：语义引导的分层视频预测",
       "description": "Accurate future video prediction requires both high visual fidelity and consistent scene semantics, particularly in complex dynamic environments such as autonomous driving. We present Re2Pix, a hierarchical video prediction framework that decomposes forecasting into two stages: semantic representation prediction and representation-guided visual synthesis. Instead of directly predicting future RGB frames, our approach first forecasts future scene structure in the feature space of a frozen vision foundation model, and then conditions a latent diffusion model on these predicted representations to render photorealistic frames. This decomposition enables the model to focus first on scene dynamics and then on appearance generation. A key challenge arises from the train-test mismatch between ground-truth representations available during training and predicted ones used at inference. To address this, we introduce two conditioning strategies, nested dropout and mixed supervision, that improve robustness to imperfect autoregressive predictions. Experiments on challenging driving benchmarks demonstrate that the proposed semantics-first design significantly improves temporal semantic consistency, perceptual quality, and training efficiency compared to strong diffusion baselines. We provide the implementation code at https://github.com/Sta8is/Re2Pix",
-      "description_zh": "准确的未来视频预测需要高视觉保真度和一致的场景语义，特别是在自动驾驶等复杂的动态环境中。我们提出了 Re2Pix，一种分层视频预测框架，它将预测分解为两个阶段：语义表示预测和表示引导的视觉合成。我们的方法不是直接预测未来的 RGB 帧，而是首先预测冻结视觉基础模型的特征空间中的未来场景结构，然后在这些预测的表示上设置潜在扩散模型以渲染照片级真实感帧。这种分解使模型能够首先关注场景动态，然后关注外观生成��一个关键的挑战来自于训练期间可用的地面实况表示与推理中使用的预测表示之间的训练与测试不匹配。为了解决这个问题，我们引入了两种条件策略，即嵌套丢弃和混合监督，以提高对不完美自回归预测的鲁棒性。在具有挑战性的驾驶基准上进行的实验表明，与强扩散基线相比，所提出的语义优先设计显着提高了时间语义一致性、感知质量和训练效率。���们在 https://github.com/Sta8is/Re2Pix 提供实现代码",
+      "description_zh": "准确的未来视频预测需要高视觉保真度和一致的场景语义，特别是在自动驾驶等复杂的动态环境中。我们提出了 Re2Pix，一种分层视频预测框架，它将预测分解为两个阶段：语义表示预测和表示引导的视觉合成。我们的方法不是直接预测未来的 RGB 帧，而是首先预测冻结视觉基础模型的特征空间中的未来场景结构，然后在这些预测的表示上设置潜在扩散模型以渲染照片级真实感帧。这种分解使模型能够首先关注场景动态，然后关注外观生成。一个关键的挑战来自于训练期间可用的地面实况表示与推理中使用的预测表示之间的训练与测试不匹配。为了解决这个问题，我们引入了两种条件策略，即嵌套丢弃和混合监督，以提高对不完美自回归预测的鲁棒性。在具有挑战性的驾驶基准上进行的实验表明，与强扩散基线相比，所提出的语义优先设计显着提高了时间语义一致性、感知质量和训练效率。我��在 https://github.com/Sta8is/Re2Pix 提供实现代码",
       "authors": "Efstathios Karypidis, Spyros Gidaris, Nikos Komodakis",
       "url": "https://huggingface.co/papers/2604.11707",
-      "score": 5,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "7",
         "paperId": "2604.11707"
       }
     },
@@ -116,10 +131,10 @@
       "description_zh": "视觉语言模型（VLM）在视觉语言联合理解方面表现出了卓越的能力，但其规模庞大，给资源受限场景中的部署带来了重大挑战。知识蒸馏 (KD) 提供了一种在不增加模型大小或数据要求的情况下改进模型功能的可行方法，从而使部署更加高效。然而，将 KD 应用于 VLM 面临着特定模态监督的挑战：尽管 VLM 中的多模态知识融合在语言空间内，但当前的方法单独监督每种模态，没有明确解决多模态对齐问题，导致多模态知识迁移不一致。为了解决这个问题，我们提出了 Switch-KD，这是一种视觉切换蒸馏框架，它将视觉语言知识转移统一在共享文本概率空间内。 Switch-KD包含两个关键组成部分：（1）Visual-Switch Distillation，将学生的视觉输出切换到教师的语言路径中，为隐式视觉知识迁移构建跨模态概率参考； （2）动态双向逻辑差异（DBiLD）损失，它自适应地对齐信息概率区域，同时通过双向监督保留教师和学生的分布结构。在 Switch-KD 的指导下，0.5B TinyLLaVA 有效地从 3B 教师那里提取了丰富的多模态知识，在 10 个多模态基准测试中平均提高了 3.6 个点，而无需任何架构修改。",
       "authors": "Haoyi Sun, Xiaoxiao Wang, Ning Mao, Qian Wang, Lifu Mu, Wen Zheng, Tao Wei, Wei Chen",
       "url": "https://huggingface.co/papers/2604.14629",
-      "score": 6,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "8",
         "paperId": "2604.14629"
       }
     },
@@ -131,10 +146,10 @@
       "description_zh": "对 LLM 分类端点的每次调用都会生成已保留在生产日志中的带标签的输入输出对。这些对构成了一个免费的、不断增长的训练集：在它们上训练的轻量级代理可以以接近零的边际推理成本吸收未来流量的很大一部分。悬而未决的问题是代理何时足够可靠可以部署，它处理什么而不是延迟，以及随着数据积累该边界如何演变。\n  我们引入了 TRACER（基于跟踪的自适应成本高效路由），这是一个开源系统，可在 LLM 自己的生产跟踪上训练 ML 代理，并通过奇偶校验门管理部署：仅当代理与 LLM 的协议超过用户指定的阈值 α 时，代理才会被激活。为了使路由边界透明，TRACER 生成可解释性工件，描述代理处理哪些输入区域、稳定的位置以及延迟的原因。\n  在 Sonnet 4.6 教师的 77 类意图基准上，TRACER 根据质量目标 α 实现了 83-100% 的替代覆盖率；在 150 级基准上，代理人完全取代了老师。在自然语言推理任务中，奇偶门正确地拒绝部署，因为嵌入表示无法支持可靠的分离。该系统可作为开源软件使用。",
       "authors": "Adam Rida",
       "url": "https://huggingface.co/papers/2604.14531",
-      "score": 5,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "6",
         "paperId": "2604.14531"
       }
     },
@@ -146,10 +161,10 @@
       "description_zh": "人与对象交互 (HOI) 建模捕获人类如何作用于对象以及如何与对象关联，通常表示为<人、动作、对象>三元组。现有的方法分为两个不相交的系列：HOI 生成从结构化三元组和布局合成场景，但无法集成 HOI 和纯对象实体等混合条件； HOI 编辑通过文本修改交互，但很难将姿势与物理接触和比例解耦到多种交互。我们引入了 OneHOI，这是一个统一的扩散转换器框架，它将 HOI 生成和编辑整合到由共享结构化交互表示驱动的单个条件去噪过程中。关系扩散变压器 (R-DiT) 的核心是通过角色和实例感知的 HOI 令牌、基于布局的空间动作基础、用于强制交互拓扑的结构化 HOI 注意力以及用于解开多 HOI 场景的 HOI RoPE 来对动词介导的关系进行建模。 OneHOI 在我们的 HOI-Edit-44K 上与模态 dropout 以及 HOI 和以对象为中心的数据集联合训练，支持布局引导、无布局、任意掩模和混合条件控制，在 HOI 生成和编辑方面实现了最先进的结果。代码可在 https://jiuntian.github.io/OneHOI/ 获取。",
       "authors": "Jiun Tian Hoe, Weipeng Hu, Xudong Jiang, Yap-Peng Tan, Chee Seng Chan",
       "url": "https://huggingface.co/papers/2604.14062",
-      "score": 2,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "6",
         "paperId": "2604.14062"
       }
     },
@@ -161,10 +176,10 @@
       "description_zh": "大型语言模型（LLM）作为加速科学发现的一种有前途的方法最近受到了极大的关注。然而，它们在生物学等开放式科学领域的应用仍然有限，这主要是由于缺乏事实依据和可操作的解释。为了解决这个问题，我们引入了一种虚拟细胞的结构化解释形式，将生物推理表示为机械动作图，从而实现系统验证和证伪。在此基础上，我们提出了 VCR-Agent，这是一个多代理框架，它将基于生物学的知识检索与基于验证者的过滤方法相结合，以自主生成和验证机械推理。使用这个框架，我们发布了 VC-TRACES 数据集，其中包含源自 Tahoe-100M 图集的经过验证的机制解释。根据经验，我们证明使用这些解释进行训练可以提高事实精度，并为下游基因表达预测提供更有效的监督信号。这些结果强调了通过多智能体和严格验证的协同作用实现的虚拟细胞可靠机械推理的重要性。",
       "authors": "Yunhui Jang, Lu Zhu, Jake Fawkes, Alisandra Kaye Denton, Dominique Beaini, Emmanuel Noutahi",
       "url": "https://huggingface.co/papers/2604.11661",
-      "score": 1,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "4",
         "paperId": "2604.11661"
       }
     },
@@ -176,10 +191,10 @@
       "description_zh": "图元的有效空间分配是 3D 高斯分布的基础，因为它直接决定了表示紧凑性、重建速度和渲染保真度之间的协同作用。以前的解决方案，无论是基于迭代优化还是前馈推理，都在这些目标之间进行了重大权衡，这主要是由于依赖于缺乏全局场景意识的本地启发式驱动分配策略。具体来说，当前的前馈方法主要是像素对齐或体素对齐。通过将像素取消投影到密集的、视图对齐的图元中，他们将冗余烘焙到 3D 资源中。随着更多输入视图的添加，表示大小增加，全局一致性变得脆弱。为此，我们引入了 GlobalSplat，一个基于先对齐、后解码原则构建的框架。我们的方法学习一种紧凑的、全局的、潜在的场景表示，该表示在解码任何显式 3D 几何之前对多视图输入进行编码并解析跨视图对应关系。至关重要的是，这种公式可以实现紧凑、全局一致的重建，而无需依赖预先训练的像素预测主干或重用密集基线中的潜在特征。 GlobalSplat 利用从粗到细的培训课程逐渐增加解码能力，本身就可以防止表示膨胀。在 RealEstate10K 和 ACID 上，我们的模型实现了具有竞争力的新颖视图合成性能，同时利用了少至 16K 高斯，显着低于密集管道所需的数量，从而获得了 4MB 的轻量级占用空间。此外，GlobalSplat 的推理速度明显快于基线，单次前向传递的运行时间不到 78 毫秒。项目页面位于 https://r-itk.github.io/globalsplat/",
       "authors": "Roni Itkin, Noam Issachar, Yehonatan Keypur, Yehonatan Keypur, Anpei Chen, Sagie Benaim",
       "url": "https://huggingface.co/papers/2604.15284",
-      "score": 14,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "14",
+        "upvotes": "17",
         "paperId": "2604.15284"
       }
     },
@@ -191,10 +206,10 @@
       "description_zh": "对多次LLM尝试的多数投票可以提高数学推理能力，但相关错误限制了有效样本量。一个自然的解决办法是为不同的选民分配不同的推理策略。该方法“Diverse Prompt Mixer”在 AIMO 3 竞赛中进行了测试：3 个模型、23 多个实验、50 个 IMO 级别问题、一个 H100 80 GB、5 小时限制。每一次即时级别的干预都会失败。高温采样已经消除了误差；较弱的策略降低准确性的程度大于降低相关性的程度。在 N=8 的情况下，跨越 8 点的能力差距，并且在每次优化测试中，模型能力都占主导地位。最佳多数票得分 (42/50) 和 pass@20 (~45.5) 之间的差距是选择损失，而不是即时损失。基于验证者的选择器可以关闭它。即时工程不能。",
       "authors": "Natapong Nitarach",
       "url": "https://huggingface.co/papers/2603.27844",
-      "score": 0,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "2",
         "paperId": "2603.27844"
       }
     },
@@ -203,29 +218,14 @@
       "title": "SuperLocalMemory V3.3: The Living Brain -- Biologically-Inspired Forgetting, Cognitive Quantization, and Multi-Channel Retrieval for Zero-LLM Agent Memory Systems",
       "title_zh": "SuperLocalMemory V3.3：活体大脑——零LLM代理记忆系统的生物启发遗忘、认知量化和多通道检索",
       "description": "AI coding agents operate in a paradox: they possess vast parametric knowledge yet cannot remember a conversation from an hour ago. Existing memory systems store text in vector databases with single-channel retrieval, require cloud LLMs for core operations, and implement none of the cognitive processes that make human memory effective.\n  We present SuperLocalMemory V3.3 (\"The Living Brain\"), a local-first agent memory system implementing the full cognitive memory taxonomy with mathematical lifecycle dynamics. Building on the information-geometric foundations of V3.2 (arXiv:2603.14588), we introduce five contributions: (1) Fisher-Rao Quantization-Aware Distance (FRQAD) -- a new metric on the Gaussian statistical manifold achieving 100% precision at preferring high-fidelity embeddings over quantized ones (vs 85.6% for cosine), with zero prior art; (2) Ebbinghaus Adaptive Forgetting with lifecycle-aware quantization -- the first mathematical forgetting curve in local agent memory coupled to progressive embedding compression, achieving 6.7x discriminative power; (3) 7-channel cognitive retrieval spanning semantic, keyword, entity graph, temporal, spreading activation, consolidation, and Hopfield associative channels, achieving 70.4% on LoCoMo in zero-LLM Mode A; (4) memory parameterization implementing Long-Term Implicit memory via soft prompts; (5) zero-friction auto-cognitive pipeline automating the complete memory lifecycle.\n  On LoCoMo, V3.3 achieves 70.4% in Mode A (zero-LLM), with +23.8pp on multi-hop and +12.7pp on adversarial. V3.2 achieved 74.8% Mode A and 87.7% Mode C; the 4.4pp gap reflects a deliberate architectural trade-off. SLM V3.3 is open source under the Elastic License 2.0, runs entirely on CPU, with over 5,000 monthly downloads.",
-      "description_zh": "人工智能编码代理的运作陷入了一个悖论：他们拥有大量的参数知识，但却无法记住一小时前的对话。现有的记忆系统将文本存储在具有单通道检索的矢量数据库中，需要云LLM来进行核心操作，并且没有实现任何使人类记忆有效的认知过程。\n  我们推出了 SuperLocalMemory V3.3（“The Living Brain”），这是一个本地优先代理记忆系统，通过数学生命周期动力学实现完整的认知记忆分类。基于 V3.2 (arXiv:2603.14588) 的信息几何基础，我们引入了五个贡献：(1) Fisher-Rao 量化感知距离 (FRQAD)——一种关于高斯统计流形的新度量，��优先使用高保真嵌入而不是量化嵌入方面实现了 100% 的精度（余弦嵌入为 85.6%），现有技术为零； （2）具有生命周期感知量化的艾宾浩斯自适应遗忘——本地代理内存中的第一条数学遗忘曲线与渐进式嵌入压缩相结合，实现了 6.7 倍的判别能力； （3）跨越语义、关键词、实体图、时间、扩散激活、巩固和Hopfield联想通道的7通道认知检索，在零LLM模式A的LoCoMo上实现了70.4%； (4) 内存参数化，通过软提示实现长期隐式内存； (5) 零摩擦自动认知管道，使整个内存生命周期自动化。\n  在 LoCoMo 上，V3.3 在模式 A（零 LLM）下达到 70.4%，在多跳上达到 +23.8pp，在对抗性上达到 +12.7pp。 V3.2实现了A模式74.8%和C模式87.7%； 4.4pp 的差距反映了一种有意的架构权衡。 SLM V3.3 在 Elastic License 2.0 下开源，完全在 CPU 上运行，每月下载量超过 5,000 次。",
+      "description_zh": "人工智能编码代理的运作陷入了一个悖论：他们拥有大量的参数知识，但却无法记住一小时前的对话。现有的记忆系统将文本存储在具有单通道检索的矢量数据库中，需要云LLM来进行核心操作，并且没有实现任何使人类记忆有效的认知过程。\n  我们推出了 SuperLocalMemory V3.3（“The Living Brain”），这是一个本地优先代理记忆系统，通过数学生命周期动力学实现完整的认知记忆分类。基于 V3.2 (arXiv:2603.14588) 的信息几何基础，我们引入了五个贡献：(1) Fisher-Rao 量化感知距离 (FRQAD)——一种关于高斯统计流形的新度量，在���先使用高保真嵌入而不是量化嵌入方面实现了 100% 的精度（余弦嵌入为 85.6%），现有技术为零； （2）具有生命周期感知量化的艾宾浩斯自适应遗忘——本地代理内存中的第一条数学遗忘曲线与渐进式嵌入压缩相结合，实现了 6.7 倍的判别能力； （3）跨越语义、关键词、实体图、时间、扩散激活、巩固和Hopfield联想通道的7通道认知检索，在零LLM模式A的LoCoMo上实现了70.4%； (4) 内存参数化，通过软提示实现长期隐式内存； (5) 零摩擦自动认知管道，使整个内存生命周期自动化。\n  在 LoCoMo 上，V3.3 在模式 A（零 LLM）下达到 70.4%，在多跳上达到 +23.8pp，在对抗性上达到 +12.7pp。 V3.2实现了A模式74.8%和C模式87.7%； 4.4pp 的差距反映了一种有意的架构权衡。 SLM V3.3 在 Elastic License 2.0 下开源，完全在 CPU 上运行，每月下载量超过 5,000 次。",
       "authors": "Varun Pratap Bhardwaj",
       "url": "https://huggingface.co/papers/2604.04514",
-      "score": 2,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "5",
         "paperId": "2604.04514"
-      }
-    },
-    {
-      "id": "2604.14125",
-      "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
-      "title_zh": "HiVLA：以视觉为中心的分层体现操纵系统",
-      "description": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs). To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control. In high-level part, a VLM planner first performs task decomposition and visual grounding to generate structured plans, comprising a subtask instruction and a precise target bounding box. Then, to translate this plan into physical actions, we introduce a flow-matching Diffusion Transformer (DiT) action expert in low-level part equipped with a novel cascaded cross-attention mechanism. This design sequentially fuses global context, high-resolution object-centric crops and skill semantics, enabling the DiT to focus purely on robust execution. Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components. Extensive experiments in simulation and the real world demonstrate that HiVLA significantly outperforms state-of-the-art end-to-end baselines, particularly excelling in long-horizon skill composition and the fine-grained manipulation of small objects in cluttered scenes.",
-      "description_zh": "虽然端到端视觉语言动作（VLA）模型为机器人操作提供了一种有前途的范例，但在狭窄的控制数据上对其进行微调通常会损害从其基础视觉语言模型（VLM）继承的深刻推理能力。为了解决这一基本权衡问题，我们提出了 HiVLA，这是一种以视觉为中心的分层框架，它明确地将高级语义规划与低级运动控制解耦。在高层部分，VLM规划器首先执行任务分解和视觉基础以生成结构化计划，包括子任务指令和精确的目标边界框。然后，为了将该计���转化为物理动作，我们在低级部分引入了一种流程匹配扩散变压器（DiT）动作专家，配备了新颖的级联交叉注意机制。这种设计依次融合了全局上下文、高分辨率的以对象为中心的裁剪和技能语义，使 DiT 能够完全专注于稳健的执行。我们的解耦架构保留了 VLM 的零样本推理，同时允许两个组件的独立改进。模拟和现实世界中的大量实验表明，HiVLA 显着优于最先进的端到端基线，特别是在长视野技能组合和杂乱场景中小物体的细粒度操作方面表现出色。",
-      "authors": "Tianshuo Yang, Guanyu Chen, Yutian Chen, Zhixuan Liang, Yitian Liu, Zanxin Chen, Chunpu Xu, Haotian Liang, Jiangmiao Pang, Yao Mu, Ping Luo",
-      "url": "https://huggingface.co/papers/2604.14125",
-      "score": 16,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "16",
-        "paperId": "2604.14125"
       }
     }
   ]
