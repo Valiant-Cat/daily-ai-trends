@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-18T20:04:14.741Z",
+  "updatedAt": "2026-04-19T20:04:37.682Z",
   "count": 15,
   "items": [
     {
@@ -56,10 +56,10 @@
       "description_zh": "在在线增量学习中，数据不断到达并伴随着巨大的分布变化，这带来了重大挑战，因为在学习新任务时以前的样本的重播价值有限。先前的研究通常依赖于单个自适应质心或多个固定质心来表示潜在空间中的每个类别。然而，当类数据流本质上是多模式的并且需要持续的质心更新时，这种方法就会遇到困难。为了克服这个问题，我们引入了一种基于最佳传输理论（MMOT）的在线混合模型学习框架，其中质心随着新数据而逐渐演变。这种方法有两个主要优点：(i) 它提供了复杂数据流的更精确的表征，(ii) 它可以在通过 MMOT 派生的质心进行推理期间改进未见过的样本的类相似性估计。此外，为了加强表示学习并减轻灾难性遗忘，我们设计了一种动态保存策略，可以调节潜在空间并随着时间的推移保持类可分离性。对基准数据集的实验评估证实了我们提出的方法的卓越有效性。",
       "authors": "Quyen Tran, Hai Nguyen, Hoang Phan, Quan Dao, Linh Ngo, Khoat Than, Dinh Phung, Dimitris Metaxas, Trung Le",
       "url": "https://huggingface.co/papers/2211.16780",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2211.16780"
       }
     },
@@ -68,13 +68,13 @@
       "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
       "title_zh": "通过自我监督指导促进视觉指令调整",
       "description": "Multimodal large language models (MLLMs) perform well on many vision-language tasks but often struggle with vision-centric problems that require fine-grained visual reasoning. Recent evidence suggests that this limitation arises not from weak visual representations, but from under-utilization of visual information during instruction tuning, where many tasks can be partially solved using language priors alone. We propose a simple and lightweight approach that augments visual instruction tuning with a small number of visually grounded self-supervised tasks expressed as natural language instructions. By reformulating classical self-supervised pretext tasks, such as rotation prediction, color matching, and cross-view correspondence, as image-instruction-response triplets, we introduce supervision that cannot be solved without relying on visual evidence. Our approach requires no human annotations, no architectural modifications, and no additional training stages. Across multiple models, training regimes, and benchmarks, injecting only a small fraction (3-10%) of such visually grounded instructions consistently improves performance on vision-centric evaluations. Our findings highlight instruction tuning with visually grounded SSL tasks as a powerful lever for improving visual reasoning in MLLMs through simple adjustments to the training data distribution. Code available at: https://github.com/sirkosophia/V-GIFT",
-      "description_zh": "多模态大语言模型 (MLLM) 在许多视觉语言任务上表现良好，但常常难以解决需要细粒度视觉推理的以视觉为中心的问题。最近的证据表明，这种限制不是由弱视觉表示引起的，而是由指令调整过程中视觉信息的利用不足引起的，其中许多任务可以仅使用语言先验来部分解决。我们提出了一种简单而轻量级的方法，通过少量以自然语言指令表示的基于视觉的自我监督任务来增强视觉指令调整。通过将旋转预测、颜色匹配和跨视图对应等经典的自监督借口任务重��表述为图像-指令-响应三元组，我们引入了不依赖视觉证据就无法解决的监督。我们的方法不需要人工注释，不需要架构修改，也不需要额外的训练阶段。在多个模型、训练制度和基准中，仅注入一小部分（3-10%）此类基于视觉的指令即可持续提高以视觉为中心的评估的性能。我们的研究结果强调，使用基于视觉的 SSL 任务进行指令调整是通过对训练数据分布进行简单调整来改进 MLLM 视觉推理的强大杠杆。代码位于：https://github.com/sirkosophia/V-GIFT",
+      "description_zh": "多模态大语言模型 (MLLM) 在许多视觉语言任务上表现良好，但常常难以解决需要细粒度视觉推理的以视觉为中心的问题。最近的证据表明，这种限制不是由弱视觉表示引起的，而是由指令调整过程中视觉信息的利用不足引起的，其中许多任务可以仅使用语言先验来部分解决。我们提出了一种简单而轻量级的方法，通过少量以自然语言指令表示的基于视觉的自我监督任务来增强视觉指令调整。通过将旋转预测、颜色匹配和跨视图对应等经典的自监督借口任务重新���述为图像-指令-响应三元组，我们引入了不依赖视觉证据就无法解决的监督。我们的方法不需要人工注释，不需要架构修改，也不需要额外的训练阶段。在多个模型、训练制度和基准中，仅注入一小部分（3-10%）此类基于视觉的指令即可持续提高以视觉为中心的评估的性能。我们的研究结果强调，使用基于视觉的 SSL 任务进行指令调整是通过对训练数据分布进行简单调整来改进 MLLM 视觉推理的强大杠杆。代码位于：https://github.com/sirkosophia/V-GIFT",
       "authors": "Sophia Sirko-Galouchenko, Monika Wysoczanska, Andrei Bursuc, Nicolas Thome, Spyros Gidaris",
       "url": "https://huggingface.co/papers/2604.12966",
-      "score": 5,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "6",
         "paperId": "2604.12966"
       }
     },
@@ -98,13 +98,13 @@
       "title": "Don't Retrieve, Navigate: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG",
       "title_zh": "不要检索，而是导航：将企业知识提炼为 QA 和 RAG 的可导航代理技能",
       "description": "Retrieval-Augmented Generation (RAG) grounds LLM responses in external evidence but treats the model as a passive consumer of search results: it never sees how the corpus is organized or what it has not yet retrieved, limiting its ability to backtrack or combine scattered evidence. We present Corpus2Skill, which distills a document corpus into a hierarchical skill directory offline and lets an LLM agent navigate it at serve time. The compilation pipeline iteratively clusters documents, generates LLM-written summaries at each level, and materializes the result as a tree of navigable skill files. At serve time, the agent receives a bird's-eye view of the corpus, drills into topic branches via progressively finer summaries, and retrieves full documents by ID. Because the hierarchy is explicitly visible, the agent can reason about where to look, backtrack from unproductive paths, and combine evidence across branches. On WixQA, an enterprise customer-support benchmark for RAG, Corpus2Skill outperforms dense retrieval, RAPTOR, and agentic RAG baselines across all quality metrics.",
-      "description_zh": "检索增强生成 (RAG) 将 LLM 响应基于外部证据，但将模型视为搜索结果的被动消费者：它永远看不到语料库的组织方式或尚未检索到的内容，从而限制了其回溯或组合分散证据的能力。我们推出了 Corpus2Skill，它将文档语料库离线提取到分层技能目录中，并让 LLM 代理在服务时对其进行导航。编译管道迭代地对文档进行聚类，在每个级别生成LLM编写的摘要，并将结果具体化为可导航技能文件的树。在服务时，代理接收语料库的鸟瞰图，通过逐渐精细的摘要深���到主题分支，并通过 ID 检索完整文档。由于层次结构是明确可见的，代理可以推断出要查看的位置、从非生产性路径回溯以及跨分支合并证据。在 WixQA（RAG 的企业客户支持基准）上，Corpus2Skill 在所有质量指标上都优于密集检索、RAPTOR 和代理 RAG 基线。",
+      "description_zh": "检索增强生成 (RAG) 将 LLM 响应基于外部证据，但将模型视为搜索结果的被动消费者：它永远看不到语料库的组织方式或尚未检索到的内容，从而限制了其回溯或组合分散证据的能力。我们推出了 Corpus2Skill，它将文档语料库离线提取到分层技能目录中，并让 LLM 代理在服务时对其进行导航。编译管道迭代地对文档进行聚类，在每个级别生成LLM编写的摘要，并将结果具体化为可导航技能文件的树。在服务时，代理接收语料库的鸟瞰图，通过逐渐精细的摘要深入到主题分支，并通过 ID 检索完整文档。由于层次结构是明确可见的，代理可以推断出要查看的位置、从非生产性路径回溯以及跨分支合并证据。在 WixQA（RAG 的企业客户支持基准）上，Corpus2Skill 在所有质量指标上都优于密集检索、RAPTOR 和代理 RAG 基线。",
       "authors": "Yiqun Sun, Pengfei Wei, Lawrence B. Hsieh",
       "url": "https://huggingface.co/papers/2604.14572",
-      "score": 4,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "5",
         "paperId": "2604.14572"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "图元的有效空间分配是 3D 高斯分布的基础，因为它直接决定了表示紧凑性、重建速度和渲染保真度之间的协同作用。以前的解决方案，无论是基于迭代优化还是前馈推理，都在这些目标之间进行了重大权衡，这主要是由于依赖于缺乏全局场景意识的本地启发式驱动分配策略。具体来说，当前的前馈方法主要是像素对齐或体素对齐。通过将像素取消投影到密集的、视图对齐的图元中，他们将冗余烘焙到 3D 资源中。随着更多输入视图的添加，表示大小增加，全局一致性变得脆弱。为此，我们引入了 GlobalSplat，一个基于先对齐、后解码原则构建的框架。我们的方法学习一种紧凑的、全局的、潜在的场景表示，该表示在解码任何显式 3D 几何之前对多视图输入进行编码并解析跨视图对应关系。至关重要的是，这种公式可以实现紧凑、全局一致的重建，而无需依赖预先训练的像素预测主干或重用密集基线中的潜在特征。 GlobalSplat 利用从粗到细的培训课程逐渐增加解码能力，本身就可以防止表示膨胀。在 RealEstate10K 和 ACID 上，我们的模型实现了具有竞争力的新颖视图合成性能，同时利用了少至 16K 高斯，显着低于密集管道所需的数量，从而获得了 4MB 的轻量级占用空间。此外，GlobalSplat 的推理速度明显快于基线，单次前向传递的运行时间不到 78 毫秒。项目页面位于 https://r-itk.github.io/globalsplat/",
       "authors": "Roni Itkin, Noam Issachar, Yehonatan Keypur, Yehonatan Keypur, Anpei Chen, Sagie Benaim",
       "url": "https://huggingface.co/papers/2604.15284",
-      "score": 17,
+      "score": 20,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "20",
         "paperId": "2604.15284"
       }
     },
@@ -218,7 +218,7 @@
       "title": "SuperLocalMemory V3.3: The Living Brain -- Biologically-Inspired Forgetting, Cognitive Quantization, and Multi-Channel Retrieval for Zero-LLM Agent Memory Systems",
       "title_zh": "SuperLocalMemory V3.3：活体大脑——零LLM代理记忆系统的生物启发遗忘、认知量化和多通道检索",
       "description": "AI coding agents operate in a paradox: they possess vast parametric knowledge yet cannot remember a conversation from an hour ago. Existing memory systems store text in vector databases with single-channel retrieval, require cloud LLMs for core operations, and implement none of the cognitive processes that make human memory effective.\n  We present SuperLocalMemory V3.3 (\"The Living Brain\"), a local-first agent memory system implementing the full cognitive memory taxonomy with mathematical lifecycle dynamics. Building on the information-geometric foundations of V3.2 (arXiv:2603.14588), we introduce five contributions: (1) Fisher-Rao Quantization-Aware Distance (FRQAD) -- a new metric on the Gaussian statistical manifold achieving 100% precision at preferring high-fidelity embeddings over quantized ones (vs 85.6% for cosine), with zero prior art; (2) Ebbinghaus Adaptive Forgetting with lifecycle-aware quantization -- the first mathematical forgetting curve in local agent memory coupled to progressive embedding compression, achieving 6.7x discriminative power; (3) 7-channel cognitive retrieval spanning semantic, keyword, entity graph, temporal, spreading activation, consolidation, and Hopfield associative channels, achieving 70.4% on LoCoMo in zero-LLM Mode A; (4) memory parameterization implementing Long-Term Implicit memory via soft prompts; (5) zero-friction auto-cognitive pipeline automating the complete memory lifecycle.\n  On LoCoMo, V3.3 achieves 70.4% in Mode A (zero-LLM), with +23.8pp on multi-hop and +12.7pp on adversarial. V3.2 achieved 74.8% Mode A and 87.7% Mode C; the 4.4pp gap reflects a deliberate architectural trade-off. SLM V3.3 is open source under the Elastic License 2.0, runs entirely on CPU, with over 5,000 monthly downloads.",
-      "description_zh": "人工智能编码代理的运作陷入了一个悖论：他们拥有大量的参数知识，但却无法记住一小时前的对话。现有的记忆系统将文本存储在具有单通道检索的矢量数据库中，需要云LLM来进行核心操作，并且没有实现任何使人类记忆有效的认知过程。\n  我们推出了 SuperLocalMemory V3.3（“The Living Brain”），这是一个本地优先代理记忆系统，通过数学生命周期动力学实现完整的认知记忆分类。基于 V3.2 (arXiv:2603.14588) 的信息几何基础，我们引入了五个贡献：(1) Fisher-Rao 量化感知距离 (FRQAD)——一种关于高斯统计流形的新度量，在���先使用高保真嵌入而不是量化嵌入方面实现了 100% 的精度（余弦嵌入为 85.6%），现有技术为零； （2）具有生命周期感知量化的艾宾浩斯自适应遗忘——本地代理内存中的第一条数学遗忘曲线与渐进式嵌入压缩相结合，实现了 6.7 倍的判别能力； （3）跨越语义、关键词、实体图、时间、扩散激活、巩固和Hopfield联想通道的7通道认知检索，在零LLM模式A的LoCoMo上实现了70.4%； (4) 内存参数化，通过软提示实现长期隐式内存； (5) 零摩擦自动认知管道，使整个内存生命周期自动化。\n  在 LoCoMo 上，V3.3 在模式 A（零 LLM）下达到 70.4%，在多跳上达到 +23.8pp，在对抗性上达到 +12.7pp。 V3.2实现了A模式74.8%和C模式87.7%； 4.4pp 的差距反映了一种有意的架构权衡。 SLM V3.3 在 Elastic License 2.0 下开源，完全在 CPU 上运行，每月下载量超过 5,000 次。",
+      "description_zh": "人工智能编码代理的运作陷入了一个悖论：他们拥有大量的参数知识，但却无法记住一小时前的对话。现有的记忆系统将文本存储在具有单通道检索的矢量数据库中，需要云LLM来进行核心操作，并且没有实现任何使人类记忆有效的认知过程。\n  我们推出了 SuperLocalMemory V3.3（“The Living Brain”），这是一种本地优先代理记忆系统，通过数学生命周期动力学实现完整的认知记忆分类。基于 V3.2 (arXiv:2603.14588) 的信息几何基础，我们引入了五个贡献：(1) Fisher-Rao 量化感知距离 (FRQAD)——一种关于高斯统计流形的新度量，在���先使用高保真嵌入而不是量化嵌入方面实现了 100% 的精度（余弦嵌入为 85.6%），现有技术为零； （2）具有生命周期感知量化的艾宾浩斯自适应遗忘——本地代理内存中的第一条数学遗忘曲线与渐进式嵌入压缩相结合，实现了 6.7 倍的判别能力； （3）跨越语义、关键词、实体图、时间、扩散激活、巩固和Hopfield联想通道的7通道认知检索，在零LLM模式A的LoCoMo上实现了70.4%； (4) 内存参数化，通过软提示实现长期隐式内存； (5) 零摩擦自动认知管道，使整个内存生命周期自动化。\n  在 LoCoMo 上，V3.3 在模式 A（零 LLM）下达到 70.4%，在多跳上达到 +23.8pp，在对抗性上达到 +12.7pp。 V3.2实现了A模式74.8%和C模式87.7%； 4.4pp 的差距反映了一种有意的架构权衡。 SLM V3.3 在 Elastic License 2.0 下开源，完全在 CPU 上运行，每月下载量超过 5,000 次。",
       "authors": "Varun Pratap Bhardwaj",
       "url": "https://huggingface.co/papers/2604.04514",
       "score": 5,
