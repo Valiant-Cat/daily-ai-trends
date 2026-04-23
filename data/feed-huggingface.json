@@ -1,20 +1,110 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-23T13:43:36.401Z",
+  "updatedAt": "2026-04-23T20:35:19.011Z",
   "count": 15,
   "items": [
+    {
+      "id": "2604.19835",
+      "title": "Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts",
+      "title_zh": "专家升级改造：改变专家混合的计算效率前沿",
+      "description": "Mixture-of-Experts (MoE) has become the dominant architecture for scaling large language models: frontier models routinely decouple total parameters from per-token computation through sparse expert routing. Scaling laws show that under fixed active computation, model quality scales predictably with total parameters, and MoEs realize this by increasing expert count. However, training large MoEs is expensive, as memory requirements and inter-device communication both scale with total parameter count. We propose expert upcycling, a method for progressively expanding MoE capacity by increasing the number of experts during continued pre-training (CPT). Given a trained E-expert model, the upcycling operator constructs an mE-expert model through expert duplication and router extension while holding top-K routing fixed, preserving per-token inference cost. Duplication provides a warm initialization: the expanded model inherits the source checkpoint's learned representations, starting from a substantially lower loss than random initialization. Subsequent CPT then breaks the symmetry among duplicated experts to drive specialization. We formalize the upcycling operator and develop a theoretical framework decomposing the quality gap into a capacity term and an initialization term. We further introduce utility-based expert selection, which uses gradient-based importance scores to guide non-uniform duplication, more than tripling gap closure when CPT is limited. In our 7B-13B total parameter experiments, the upcycled model matches the fixed-size baseline on validation loss while saving 32% of GPU hours. Comprehensive ablations across model scales, activation ratios, MoE architectures, and training budgets yield a practical recipe for deploying expert upcycling, establishing it as a principled, compute-efficient alternative to training large MoE models from scratch.",
+      "description_zh": "专家混合 (MoE) 已成为扩展大型语言模型的主要架构：前沿模型通常通过稀疏专家路由将总参数与每个令牌计算解耦。缩放定律表明，在固定的主动计算下，模型质量可预测地随总参数缩放，而 MoE 通过增加专家数量来实现这一点。然而，训练大型 MoE 的成本很高，因为内存需求和设备间通信都会随着参数总数的变化而变化。我们提出专家升级，这是一种通过在持续预培训 (CPT) 期间增加专家数量来逐步扩大 MoE 能力的方法。给定训练有素的 E-专家模型，升级操作员通过专家复制和路由器扩展构建 mE-专家模型，同时保持 top-K 路由固定，从而保留每个代币的推理成本。复制提供了热初始化：扩展模型继承了源检查点的学习表示，从比随机初始化低得多的损失开始。随后的 CPT 打破了重复专家之间的对称性，以推动专业化。我们形式化了升级回收算子，并开发了一个理论框架，将质量差距分解为容量项和初始化项。我们进一步引入了基于效用的专家选择，它使用基于梯度的重要性得分来指导非均匀重复，当 CPT 有限时，其差距闭合程度超过三倍。在我们的 7B-13B 总参数实验中，升级后的模型与验证损失的固定大小基线相匹配，同时节省了 32% 的 GPU 时间。跨模型规模、激活率、MoE 架构和训练预算的全面消融产生了部署专家升级的实用方法，将其确立为从头开始训练大型 MoE 模型的有原则的、计算高效的替代方案。",
+      "authors": "Chaitanya Dwivedi, Binxuan Huang, Himanshu Gupta, Pratik Jayarao, Neeraj Varshney, Bing Yin",
+      "url": "https://huggingface.co/papers/2604.19835",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2604.19835"
+      }
+    },
+    {
+      "id": "2604.16680",
+      "title": "C-GenReg: Training-Free 3D Point Cloud Registration by Multi-View-Consistent Geometry-to-Image Generation with Probabilistic Modalities Fusion",
+      "title_zh": "C-GenReg：通过概率模态融合的多视图一致几何到图像生成进行免训练 3D 点云配准",
+      "description": "We introduce C-GenReg, a training-free framework for 3D point cloud registration that leverages the complementary strengths of world-scale generative priors and registration-oriented Vision Foundation Models (VFMs). Current learning-based 3D point cloud registration methods struggle to generalize across sensing modalities, sampling differences, and environments. Hence, C-GenReg augments the geometric point cloud registration branch by transferring the matching problem into an auxiliary image domain, where VFMs excel, using a World Foundation Model to synthesize multi-view-consistent RGB representations from the input geometry. This generative transfer, preserves spatial coherence across source and target views without any fine-tuning. From these generated views, a VFM pretrained for finding dense correspondences extracts matches. The resulting pixel correspondences are lifted back to 3D via the original depth maps. To further enhance robustness, we introduce a \"Match-then-Fuse\" probabilistic cold-fusion scheme that combines two independent correspondence posteriors, that of the generated-RGB branch with that of the raw geometric branch. This principled fusion preserves each modality inductive bias and provides calibrated confidence without any additional learning. C-GenReg is zero-shot and plug-and-play: all modules are pretrained and operate without fine-tuning. Extensive experiments on indoor (3DMatch, ScanNet) and outdoor (Waymo) benchmarks demonstrate strong zero-shot performance and superior cross-domain generalization. For the first time, we demonstrate a generative registration framework that operates successfully on real outdoor LiDAR data, where no imagery data is available.",
+      "description_zh": "我们引入了 C-GenReg，这是一种用于 3D 点云配准的免训练框架，它利用了世界规模的生成先验和面向配准的视觉基础模型 (VFM) 的互补优势。当前基于学习的 3D 点云配准方法很难泛化到传感模式、采样差异和环境。因此，C-GenReg 通过将匹配问题转移到辅助图像域（VFM 擅长的领域）来增强几何点云配准分支，使用世界基础模型从输入几何体合成多视图一致的 RGB 表示。这种生成传输无需任何微调即可保持源视图和目标视图之间的空间连贯性。从这些生成的视图中，经过预训练以查找密集对应关系的 VFM 会提取匹配项。由此产生的像素对应关系通过原始深度图恢复为 3D。为了进一步增强鲁棒性，我们引入了一种“匹配然后融合”概率冷融合方案，该方案结合了两个独立的对应后验，即生成的 RGB 分支和原始几何分支的后验。这种原则性的融合保留了每种模态的归纳偏差，并提供校准的置信度，而无需任何额外的学习。 C-GenReg 是零射击和即插即用的：所有模块都经过预训练，无需微调即可运行。对室内（3DMatch、ScanNet）和室外（Waymo）基准的大量实验证明了强大的零样本性能和卓越的跨域泛化能力。我们首次演示了一个生成配准框架，该框架可以在没有可用图像数据的真实户外激光雷达数据上成功运行。",
+      "authors": "Yuval Haitman, Amit Efraim, Joseph M. Francos",
+      "url": "https://huggingface.co/papers/2604.16680",
+      "score": 9,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "9",
+        "paperId": "2604.16680"
+      }
+    },
+    {
+      "id": "2604.20720",
+      "title": "COMPASS: COntinual Multilingual PEFT with Adaptive Semantic Sampling",
+      "title_zh": "COMPASS：具有自适应语义采样的持续多语言 PEFT",
+      "description": "Large language models (LLMs) often exhibit performance disparities across languages, with naive multilingual fine-tuning frequently degrading performance due to negative cross-lingual interference. To address this, we introduce COMPASS (COntinual Multilingual PEFT with Adaptive Semantic Sampling), a novel data-centric framework for adapting LLMs to target languages. COMPASS leverages parameter-efficient fine-tuning (PEFT) by training lightweight, language-specific adapters on a judiciously selected subset of auxiliary multilingual data. The core of our method is a distribution-aware sampling strategy that uses multilingual embeddings and clustering to identify semantic gaps between existing training data and a target usage distribution. By prioritizing auxiliary data from under-represented semantic clusters, COMPASS maximizes positive cross-lingual transfer while minimizing interference. We extend this into a continual learning framework, COMPASS-ECDA, which monitors for data distribution shifts in production and dynamically updates adapters to prevent model staleness, balancing adaptation to new data with the preservation of existing knowledge. Across three different model architectures (Phi-4-Mini, Llama-3.1-8B, and Qwen2.5-7B) and multiple challenging multilingual benchmarks (Global-MMLU, MMLU-ProX), including unseen long-context tasks (OneRuler), we demonstrate that COMPASS consistently outperforms baseline methods guided by linguistic similarity, providing an effective, efficient, and sustainable solution for developing and maintaining high-performing multilingual models in dynamic environments.",
+      "description_zh": "大型语言模型 (LLM) 通常会表现出跨语言的性能差异，由于负面的跨语言干扰，简单的多语言微调经常会降低性能。为了解决这个问题，我们引入了 COMPASS（具有自适应语义采样的持续多语言 PEFT），这是一种新颖的以数据为中心的框架，用于使LLM适应目标语言。 COMPASS 通过在明智选择的辅助多语言数据子集上训练轻量级、特定于语言的适配器来利用参数高效微调 (PEFT)。我们方法的核心是分布感知采样策略，该策略使用多语言嵌入和聚类来识别现有训练数据和目标使用分布之间的语义差距。通过优先考虑来自代表性不足的语义簇的辅助数据，COMPASS 最大限度地提高了积极的跨语言迁移，同时最大限度地减少了干扰。我们将其扩展为持续学习框架 COMPASS-ECDA，该框架监视生产中的数据分布变化并动态更新适配器以防止模型过时，平衡对新数据的适应与现有知识的保存。在三种不同的模型架构（Phi-4-Mini、Llama-3.1-8B 和 Qwen2.5-7B）和多个具有挑战性的多语言基准（Global-MMLU、MMLU-ProX）中，包括未见过的长上下文任务（OneRuler），我们证明 COMPASS 始终优于以语言相似性为指导的基线方法，为在动态环境中开发和维护高性能多语言模型提供了有效、高效和可持续的解决方案。",
+      "authors": "Noah Flynn",
+      "url": "https://huggingface.co/papers/2604.20720",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2604.20720"
+      }
+    },
+    {
+      "id": "2604.18780",
+      "title": "Streaming Structured Inference with Flash-SemiCRF",
+      "title_zh": "使用 Flash-SemiCRF 进行流式结构化推理",
+      "description": "Semi-Markov Conditional Random Fields (semi-CRFs) assign labels to segments of a sequence rather than to individual positions, enabling exact inference over segment-level features and principled uncertainty estimates at their boundaries. However, existing implementations must materialize a large edge potential tensor whose size grows with sequence length, maximum segment length, and label count, becoming prohibitive for speech-scale state spaces and intractable at genomic scales where sequences can exceed 100,000 positions. This memory bottleneck has limited the adoption of exact segment-level inference for long sequences and large label sets. We identify that the core inefficiency is materializing edge potentials that can instead be evaluated on-the-fly from a compact prefix-sum array, and make several improvements. First, replacing the stored edge tensor with prefix-sum lookup reduces the memory footprint by a factor proportional to the product of segment length and label count. Second, a streaming forward-backward pass with checkpoint-boundary normalization keeps working memory sublinear in sequence length while preserving exact gradients. Third, zero-centered cumulative scores control numerical drift and induce an adaptive duration prior under label imbalance. We integrate these ideas into Flash-SemiCRF, a fused Triton kernel that enables exact semi-CRF inference on previously intractable problem sizes. Available at https://github.com/biobenkj/flash-semicrf.",
+      "description_zh": "半马尔可夫条件随机场 (semi-CRF) 将标签分配给序列的片段而不是单个位置，从而能够对片段级特征进行精确推断并在其边界处进行原则上的不确定性估计。然而，现有的实现必须实现一个大的边缘势张量，其大小随着序列长度、最大段长度和标签计数而增长，这对于语音规模的状态空间来说变得令人望而却步，并且在序列可能超过 100,000 个位置的基因组规模上变得棘手。这种内存瓶颈限制了长序列和大型标签集的精确段级推理的采用。我们发现核心低效率在于实现边缘潜力，而边缘潜力可以从紧凑的前缀和数组中即时评估，并做出了一些改进。首先，用前缀和查找替换存储的边缘张量可以减少内存占用，其减少量与段长度和标签计数的乘积成正比。其次，具有检查点边界归一化的流式前向-后向传递使工作记忆在序列长度上保持亚线性，同时保留精确的梯度。第三，以零为中心的累积分数控制数值漂移并在标签不平衡的情况下诱导自适应持续时间先验。我们将这些想法集成到 Flash-SemiCRF 中，这是一个融合的 Triton 内核，可以对以前棘手的问题规模进行精确的半 CRF 推理。可在 https://github.com/biobenkj/flash-semicrf 获取。",
+      "authors": "Benjamin K. Johnson, Thomas Goralski, Ayush Semwal, Hui Shen, H. Josh Jang",
+      "url": "https://huggingface.co/papers/2604.18780",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2604.18780"
+      }
+    },
+    {
+      "id": "2604.16659",
+      "title": "Benign Fine-Tuning Breaks Safety Alignment in Audio LLMs",
+      "title_zh": "良性微调打破了音频LLM的安全一致性",
+      "description": "Prior work shows that fine-tuning aligned models on benign data degrades safety in text and vision modalities, and that proximity to harmful content in representation space predicts which samples cause the most damage. However, existing analyses operate within a single, undifferentiated embedding space -- leaving open whether distinct input properties drive the vulnerability differently. Audio introduces a structurally richer problem: a benign sample can neighbor harmful content not only through what is said but through how it sounds, even when its words are entirely innocuous. We present the first systematic study of benign fine-tuning safety in Audio LLMs, evaluating three state-of-the-art models with a proximity-based filtering framework that selects benign audio by embedding-space distance to harmful content. By decomposing proximity into semantic, acoustic, and mixed axes using external reference encoders alongside each model's own internal encoder, we show that benign fine-tuning elevates Jailbreak Success Rate (JSR) from single digits to as high as 87.12%. Crucially, the dominant vulnerability axis and the relative risk of audio versus text fine-tuning are both architecture-conditioned -- determined by how each model's encoder and projector transform audio into the LLM's input space. We propose two defenses: filtering training data to maximize distance from harmful embeddings, and a textual system prompt at inference, both reducing JSR to near-zero without architectural modification. Our mechanistic analysis on two architectures reveals that fine-tuning selectively suppresses the late-layer refusal circuit while the frozen encoder preserves representations, and that even the suppression pattern is architecture-conditioned, mirroring the behavioral asymmetries across modalities. Safety degradation from benign fine-tuning is a qualitatively distinct risk in Audio LLMs.",
+      "description_zh": "先前的工作表明，对良性数据进行微调对齐模型会降低文本和视觉模式的安全性，并且表示空间中接近有害内容可以预测哪些样本造成最大损害。然而，现有的分析是在一个单一的、无差别的嵌入空间内进行的——不同的输入属性是否以不同的方式驱动漏洞尚不明确。音频引入了一个结构上更丰富的问题​​：良性样本不仅可以通过所说的内容，还可以通过其听起来的方式来识别有害内容，即使它的单词完全无害。我们提出了音频LLM中良性微调安全性的第一个系统研究，使用基于邻近度的过滤框架评估了三种最先进的模型，该框架通过嵌入有害内容的空间距离来选择良性音频。通过使用外部参考编码器以及每个模型自己的内部编码器将邻近度分解为语义轴、声学轴和混合轴，我们表明良性微调可将越狱成功率 (JSR) 从个位数提高到高达 87.12%。至关重要的是，主要的漏洞轴以及音频与文本微调的相对风险都受架构限制——取决于每个模型的编码器和投影仪如何将音频转换到LLM的输入空间。我们提出了两种防御措施：过滤训练数据以最大程度地远离有害嵌入，以及推理时的文本系统提示，两者都将 JSR 降低到接近于零，而无需进行架构修改。我们对两种架构的机制分析表明，微调选择性地抑制了后期层拒绝电路，而冻结编码器保留了表示，甚至抑制模式也是架构条件的，反映了跨模态的行为不对称性。良性微调导致的安全性下降是音频LLM中一个本质上不同的风险。",
+      "authors": "Jaechul Roh, Amir Houmansadr",
+      "url": "https://huggingface.co/papers/2604.16659",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2604.16659"
+      }
+    },
+    {
+      "id": "2604.15093",
+      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
+      "title_zh": "OpenMobile：通过任务和轨迹综合构建开放移动代理",
+      "description": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at https://njucckevin.github.io/openmobile/ to bridge the data gap and facilitate broader mobile agent research.",
+      "description_zh": "由视觉语言模型支持的移动代理在自动化移动任务方面展示了令人印象深刻的能力，最近的领先模型实现了显着的性能飞跃，例如在 AndroidWorld 上取得了近 70% 的成功。然而，这些系统的训练数据是封闭的，并且其任务和轨迹合成方法仍然不透明。我们提出了 OpenMobile，这是一个合成高质量任务指令和智能体轨迹的开源框架，具有两个关键组件：（1）第一个是可扩展的任务合成管道，它通过探索构建全局环境内存，然后利用它生成多样化且基础的指令。 (2) 轨迹推出的政策转换策略。通过在学习者模型和专家模型之间交替，它捕获了标准模仿学习中经常丢失的基本错误恢复数据。使用我们的数据训练的代理在三个动态移动代理基准测试中取得了有竞争力的结果：值得注意的是，我们经过微调的 Qwen2.5-VL 和 Qwen3-VL 在 AndroidWorld 上达到了 51.7% 和 64.7%，远远超过了现有的开放数据方法。此外，我们对合成指令和基准测试集之间的重叠进行透明分析，并验证性能增益源于广泛的功能覆盖而不是基准过度拟合。我们在 https://njucckevin.github.io/openmobile/ 发布数据和代码，以弥合数据差距并促进更广泛的移动代理研究。",
+      "authors": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao, Qiushi Sun, Zichen Ding, Fangzhi Xu, Hang Yan, Jiajun Chen, Anh Tuan Luu, Jianbing Zhang, Lewei Lu, Dahua Lin",
+      "url": "https://huggingface.co/papers/2604.15093",
+      "score": 22,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "22",
+        "paperId": "2604.15093"
+      }
+    },
     {
       "id": "2604.17073",
       "title": "Abstain-R1: Calibrated Abstention and Post-Refusal Clarification via Verifiable RL",
       "title_zh": "Abstain-R1：通过可验证的 RL 校准弃权和拒绝后澄清",
       "description": "Reinforcement fine-tuning improves the reasoning ability of large language models, but it can also encourage them to answer unanswerable queries by guessing or hallucinating missing information. Existing abstention methods either train models to produce generic refusals or encourage follow-up clarifications without verifying whether those clarifications identify the key missing information. We study queries that are clear in meaning but cannot be reliably resolved from the given information, and argue that a reliable model should not only abstain, but also explain what is missing. We propose a clarification-aware RLVR reward that, while rewarding correct answers on answerable queries, jointly optimizes explicit abstention and semantically aligned post-refusal clarification on unanswerable queries. Using this reward, we train Abstain-R1, a 3B model that improves abstention and clarification on unanswerable queries while preserving strong performance on answerable ones. Experiments on Abstain-Test, Abstain-QA, and SelfAware show that Abstain-R1 substantially improves over its base model and achieves unanswerable-query behavior competitive with larger systems including DeepSeek-R1, suggesting that calibrated abstention and clarification can be learned through verifiable rewards rather than emerging from scale alone.",
-      "description_zh": "强化微调提高了大型语言模型的推理能力，但它也可以鼓励它们通过猜测或幻觉缺失的信息来回答无法回答的查询。现有的弃权方法要么训练模型产生一般拒绝，要么鼓励后续澄清，而不验证这些澄清是否识别了关键的缺失信息。我们研究含义明确但无法从给定信息中可靠解决的查询，并认为可靠的模型不仅应该放弃，还应该解释缺失的内容。我们提出了一种澄清感知 RLVR 奖励，在奖励可回答查询的正确答案的同时，联合优化对不可回答查询的明确弃权和语义上一致的拒��后澄清。使用这个奖励，我们训练 Abstain-R1，这是一个 3B 模型，可以提高对无法回答的查询的放弃和澄清，同时在可回答的查询上保持强大的性能。 Abstain-Test、Abstain-QA 和 SelfAware 的实验表明，Abstain-R1 对其基本模型进行了大幅改进，并实现了与包括 DeepSeek-R1 在内的更大系统竞争的不可回答查询行为，这表明可以通过可验证的奖励来学习校准的弃权和澄清，而不是仅从规模中出现。",
+      "description_zh": "强化微调提高了大型语言模型的推理能力，但它也可以鼓励它们通过猜测或幻觉缺失的信息来回答无法回答的查询。现有的弃权方法要么训练模型产生一般拒绝，要么鼓励后续澄清，而不验证这些澄清是否识别了关键的缺失信息。我们研究含义明确但无法从给定信息中可靠解决的查询，并认为可靠的模型不仅应该放弃，还应该解释缺失的内容。我们提出了一种澄清感知 RLVR 奖励，在奖励可回答查询的正确答案的同时，联合优化对不可回答查询的明确弃权和语义上一致的拒���后澄清。使用这个奖励，我们训练 Abstain-R1，这是一个 3B 模型，可以提高对无法回答的查询的放弃和澄清，同时在可回答的查询上保持强大的性能。 Abstain-Test、Abstain-QA 和 SelfAware 的实验表明，Abstain-R1 对其基本模型进行了大幅改进，并实现了与包括 DeepSeek-R1 在内的更大系统竞争的不可回答查询行为，这表明可以通过可验证的奖励来学习校准的弃权和澄清，而不是仅从规模中出现。",
       "authors": "Skylar Zhai, Jingcheng Liang, Dongyeop Kang",
       "url": "https://huggingface.co/papers/2604.17073",
-      "score": 1,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "5",
         "paperId": "2604.17073"
       }
     },
@@ -23,13 +113,13 @@
       "title": "Image Generators are Generalist Vision Learners",
       "title_zh": "图像生成器是多面手视觉学习者",
       "description": "Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reasoning from generative pretraining. While it has long been conjectured that the ability to create visual content implies an ability to understand it, there has been limited evidence that generative vision models have developed strong understanding capabilities. In this work, we demonstrate that image generation training serves a role similar to LLM pretraining, and lets models learn powerful and general visual representations that enable SOTA performance on various vision tasks. We introduce Vision Banana, a generalist model built by instruction-tuning Nano Banana Pro (NBP) on a mixture of its original training data alongside a small amount of vision task data. By parameterizing the output space of vision tasks as RGB images, we seamlessly reframe perception as image generation. Our generalist model, Vision Banana, achieves SOTA results on a variety of vision tasks involving both 2D and 3D understanding, beating or rivaling zero-shot domain-specialists, including Segment Anything Model 3 on segmentation tasks, and the Depth Anything series on metric depth estimation. We show that these results can be achieved with lightweight instruction-tuning without sacrificing the base model's image generation capabilities. The superior results suggest that image generation pretraining is a generalist vision learner. It also shows that image generation serves as a unified and universal interface for vision tasks, similar to text generation's role in language understanding and reasoning. We could be witnessing a major paradigm shift for computer vision, where generative vision pretraining takes a central role in building Foundational Vision Models for both generation and understanding.",
-      "description_zh": "最近的研究表明，图像和视频生成器表现出零样本视觉理解行为，这让人想起LLM如何通过生成预训练开发语言理解和推理的新兴能力。虽然长期以来人们一直猜测创建视觉内容的能力意味着理解它的能力，但有限的证据表明生成视觉模型已经发展了强大的理解能力。在这项工作中，我们证明图像生成训练的作用类似于 LLM 预训练，并让模型学习强大且通用的视觉表示，从而在各种视觉任务上实现 SOTA 性能。我们介绍 Vision Banana，这是一种通才模型，通过混合原始训练数据和少量视觉任务数据对 Nano Banana Pro (NBP) 进行指令调整而构建。通过将视觉任务的输出空间参数化为 RGB 图像，我们将感知无缝地重新构建为图像生成。我们的通才模型 Vision Banana 在涉及 2D 和 3D 理解的各种视觉任务上取得了 SOTA 结果，击败或匹敌零样本领域专家，包括分割任务上的 Segment Anything Model 3 和度量深度估计上的 Depth Anything 系列。我们证明，这些结果可以通过轻量级指令调整来实现，而无需牺牲基本模型的图像生成功能。优异的结果表明图像生成预训练是一种通用的视觉学习器。它还表明图像生成可以作为视觉任务的统一和通用接口，类似于文本生成在语言理解和推理中的作用。我们可能会见证计算机视觉的重大范式转变，其中生成视觉预训练在构建生成和理解的基础视觉模型中发挥着核心作用。",
+      "description_zh": "最近的研究表明，图像和视频生成器表现出零样本视觉理解行为，这让人想起LLM如何通过生成预训练开发语言理解和推理的新兴能力。虽然长期以来人们一直猜测创建视觉内容的能力意味着理解它的能力，但有限的证据表明生成视觉模型已经发展了强大的理解能力。在这项工作中，我们证明图像生成训练的作用类似于 LLM 预训练，并让模型学习强大且通用的视觉表示，从而在各种视觉任务上实现 SOTA 性能。我们介绍 Vision Banana，这是一种通才模型，通过混合原始训练数据和少量视觉任务数据对 Nano Banana Pro (NBP) 进行指令调整而构建。通过将视觉任务的输出空间参数化为 RGB 图像，我们将感知无缝地重新构建为图像生成。我们的通才模型 Vision Banana 在涉及 2D 和 3D 理解的各种视觉任务上取得了 SOTA 结果，击败或匹敌零样本领域专家，包括分割任务上的 Segment Anything Model 3 和度量深度估计上的 Depth Anything 系列。我们证明，这些结果可以通过轻量级指令调整来实现，而���需牺牲基本模型的图像生成功能。优异的结果表明图像生成预训练是一种通用的视觉学习器。它还表明图像生成可以作为视觉任务的统一和通用接口，类似于文本生成在语言理解和推理中的作用。我们可能会见证计算机视觉的重大范式转变，其中生成视觉预训练在构建生成和理解的基础视觉模型中发挥着核心作用。",
       "authors": "Valentin Gabeur, Shangbang Long, Songyou Peng, Paul Voigtlaender, Shuyang Sun, Yanan Bao, Karen Truong, Zhicheng Wang, Wenlei Zhou, Jonathan T. Barron, Kyle Genova, Nithish Kannen, Sherry Ben, Yandong Li, Mandy Guo, Suhas Yogin, Yiming Gu, Huizhong Chen, Oliver Wang, Saining Xie, Howard Zhou, Kaiming He, Thomas Funkhouser, Jean-Baptiste Alayrac, Radu Soricut",
       "url": "https://huggingface.co/papers/2604.20329",
-      "score": 0,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "4",
         "paperId": "2604.20329"
       }
     },
@@ -41,10 +131,10 @@
       "description_zh": "视频生成模型的最新进展使得能够在各种场景和对象类别中合成真实的人与对象交互视频，包括运动捕捉系统难以捕捉的复杂灵巧操作。虽然这些合成视频中嵌入的丰富的交互知识在灵巧的机器人操作中具有强大的运动规划潜力，但它们有限的物理保真度和纯 2D 性质使得它们很难直接用作基于物理的角色控制中的模仿目标。我们提出了 DeVI（灵巧视频模仿），这是一种新颖的框架，它利用文本调节的合成视频来实现物理上合理的灵巧代理控制，以便与看不见的目标对象进行交互。为了克服生成 2D 线索的不精确性，我们引入了一种混合跟踪奖励，它将 3D 人体跟踪与强大的 2D 对象跟踪集成在一起。与依赖高质量 3D 运动学演示的方法不同，DeVI 仅需要生成的视频，从而实现跨不同对象和交互类型的零镜头泛化。大量实验表明，DeVI 的性能优于模仿 3D 人与物体交互演示的现有方法，特别是在建模灵巧的手与物体交互方面。我们进一步验证了 DeVI 在多对象场景和文本驱动动作多样性中的有效性，展示了使用视频作为 HOI 感知运动规划器的优势。",
       "authors": "Hyeonwoo Kim, Jeonghwan Kim, Kyungwon Cho, Hanbyul Joo",
       "url": "https://huggingface.co/papers/2604.20841",
-      "score": 18,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "18",
+        "upvotes": "19",
         "paperId": "2604.20841"
       }
     },
@@ -53,13 +143,13 @@
       "title": "A Self-Evolving Framework for Efficient Terminal Agents via Observational Context Compression",
       "title_zh": "通过观察上下文压缩实现高效终端代理的自我进化框架",
       "description": "As model capabilities advance, research has increasingly shifted toward long-horizon, multi-turn terminal-centric agentic tasks, where raw environment feedback is often preserved in the interaction history to support future decisions. However, repeatedly retaining such feedback introduces substantial redundancy and causes cumulative token cost to grow quadratically with the number of steps, hindering long-horizon reasoning. Although observation compression can mitigate this issue, the heterogeneity of terminal environments makes heuristic-based or fixed-prompt methods difficult to generalize. We propose TACO, a plug-and-play, self-evolving Terminal Agent Compression framework that automatically discovers and refines compression rules from interaction trajectories for existing terminal agents. Experiments on TerminalBench (TB 1.0 and TB 2.0) and four additional terminal-related benchmarks (i.e., SWE-Bench Lite, CompileBench, DevEval, and CRUST-Bench) show that TACO consistently improves performance across mainstream agent frameworks and strong backbone models. With MiniMax-2.5, it improves performance on most benchmarks while reducing token overhead by around 10%. On TerminalBench, it brings consistent gains of 1%-4% across strong agentic models, and further improves accuracy by around 2%-3% under the same token budget. These results demonstrate the effectiveness and generalization of self-evolving, task-aware compression for terminal agents.",
-      "description_zh": "随着模型能力的进步，研究逐渐转向长期、多轮以终端为中心的代理任务，其中原始环境反馈通常保留在交互历史中以支持未来的决策。然而，重复保留此类反馈会引入大量冗余，并导致累积代币成本随着步骤数量呈二次方增长，从而阻碍长期推理。尽管观测压缩可以缓解这个问题，但终端环境的异构性使得基于启发式或固定提示的方法难以推广。我们提出了 TACO，这是一种即插即用、自我进化的终端代理压缩框架，可以从现有终端代理的交互轨迹中自动发现和���善压缩规则。 TerminalBench（TB 1.0 和 TB 2.0）以及另外四个终端相关基准测试（即 SWE-Bench Lite、CompileBench、DevEval 和 CRUST-Bench）上的实验表明，TACO 持续提高了主流代理框架和强骨干模型的性能。借助 MiniMax-2.5，它可以提高大多数基准测试的性能，同时将令牌开销减少约 10%。在 TerminalBench 上，它在强代理模型上带来了 1%-4% 的持续收益，并在相同代币预算下进一步提高了约 2%-3% 的准确性。这些结果证明了终端代理的自我进化、任务感知压缩的有效性和泛化性。",
+      "description_zh": "随着模型能力的进步，研究逐渐转向长期、多轮以终端为中心的代理任务，其中原始环境反馈通常保留在交互历史中以支持未来的决策。然而，重复保留此类反馈会引入大量冗余，并导致累积代币成本随着步骤数量呈二次方增长，从而阻碍长期推理。尽管观测压缩可以缓解这个问题，但终端环境的异构性使得基于启发式或固定提示的方法难以推广。我们提出了 TACO，这是一种即插即用、自我进化的终端代理压缩框架，可以从现有终端代理的交互轨迹中自动发现和��善压缩规则。 TerminalBench（TB 1.0 和 TB 2.0）以及另外四个终端相关基准测试（即 SWE-Bench Lite、CompileBench、DevEval 和 CRUST-Bench）上的实验表明，TACO 持续提高了主流代理框架和强骨干模型的性能。借助 MiniMax-2.5，它可以提高大多数基准测试的性能，同时将令牌开销减少约 10%。在 TerminalBench 上，它在强代理模型上带来了 1%-4% 的持续收益，并在相同代币预算下进一步提高了约 2%-3% 的准确性。这些结果证明了终端代理的自我进化、任务感知压缩的有效性和通用性。",
       "authors": "Jincheng Ren, Siwei Wu, Yizhi Li, Kang Zhu, Shu Xu, Boyu Feng, Ruibin Yuan, Wei Zhang, Riza Batista-Navarro, Jian Yang, Chenghua Lin",
       "url": "https://huggingface.co/papers/2604.19572",
-      "score": 13,
+      "score": 15,
       "meta": {
         "source": "huggingface",
-        "upvotes": "13",
+        "upvotes": "15",
         "paperId": "2604.19572"
       }
     },
@@ -68,13 +158,13 @@
       "title": "Tadabur: A Large-Scale Quran Audio Dataset",
       "title_zh": "Tadabur：大规模古兰经音频数据集",
       "description": "Despite growing interest in Quranic data research, existing Quran datasets remain limited in both scale and diversity. To address this gap, we present Tadabur, a large-scale Quran audio dataset. Tadabur comprises more than 1400+ hours of recitation audio from over 600 distinct reciters, providing substantial variation in recitation styles, vocal characteristics, and recording conditions. This diversity makes Tadabur a comprehensive and representative resource for Quranic speech research and analysis. By significantly expanding both the total duration and variability of available Quran data, Tadabur aims to support future research and facilitate the development of standardized Quranic speech benchmarks.",
-      "description_zh": "尽管人们对古兰经数据研究的兴趣日益浓厚，但现有的古兰经数据集在规模和多样性方面仍然有限。为了解决这一差距，我们推出了 Tadabur，一个大型古兰经音频数据集。 Tadabur 包含来自 600 多名不同朗诵者的 1400 多个小时的朗诵音频，提供了朗诵风格、声音特征和录音条件的巨大变化。这种多样性使 Tadabur 成为古兰经语音研究和分析的综合性和代表性资源。通过显着扩展可用古兰经数据的总持续时间和可变性，Tadabur 旨在支持未来的研究并促进标准化古兰经语音��准的开发。",
+      "description_zh": "尽管人们对古兰经数据研究的兴趣日益浓厚，但现有的古兰经数据集在规模和多样性方面仍然有限。为了解决这一差距，我们推出了 Tadabur，一个大型古兰经音频数据集。 Tadabur 包含来自 600 多名不同朗诵者的 1400 多个小时的朗诵音频，提供了朗诵风格、声音特征和录音条件的巨大变化。这种多样性使 Tadabur 成为古兰经语音研究和分析的综合性和代表性资源。通过显着扩展可用古兰经数据的总持续时间和可变性，Tadabur 旨在支持未来的研究并促进标准化古兰经语音���准的开发。",
       "authors": "Faisal Alherran",
       "url": "https://huggingface.co/papers/2604.18932",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2604.18932"
       }
     },
@@ -83,7 +173,7 @@
       "title": "AI scientists produce results without reasoning scientifically",
       "title_zh": "人工智能科学家在没有科学推理的情况下得出结果",
       "description": "Large language model (LLM)-based systems are increasingly deployed to conduct scientific research autonomously, yet whether their reasoning adheres to the epistemic norms that make scientific inquiry self-correcting is poorly understood. Here, we evaluate LLM-based scientific agents across eight domains, spanning workflow execution to hypothesis-driven inquiry, through more than 25,000 agent runs and two complementary lenses: (i) a systematic performance analysis that decomposes the contributions of the base model and the agent scaffold, and (ii) a behavioral analysis of the epistemological structure of agent reasoning. We observe that the base model is the primary determinant of both performance and behavior, accounting for 41.4% of explained variance versus 1.5% for the scaffold. Across all configurations, evidence is ignored in 68% of traces, refutation-driven belief revision occurs in 26%, and convergent multi-test evidence is rare. The same reasoning pattern appears whether the agent executes a computational workflow or conducts hypothesis-driven inquiry. They persist even when agents receive near-complete successful reasoning trajectories as context, and the resulting unreliability compounds across repeated trials in epistemically demanding domains. Thus, current LLM-based agents execute scientific workflows but do not exhibit the epistemic patterns that characterize scientific reasoning. Outcome-based evaluation cannot detect these failures, and scaffold engineering alone cannot repair them. Until reasoning itself becomes a training target, the scientific knowledge produced by such agents cannot be justified by the process that generated it.",
-      "description_zh": "基于大语言模型（LLM）的系统越来越多地被部署来自主进行科学研究，但它们的推理是否符合使科学探究自我纠正的认知规范却知之甚少。在这里，我们通过超过 25,000 次代理运行和两个互补的镜头，跨八个领域评估基于 LLM 的科学代理，从工作流程执行到假设驱动的查询：(i) 分解基本模型和代理支架的贡献的系统性能分析，以及 (ii) 对代理推理的认识论结构的行为分析。我们观察到，基础模型是性能和行为的主要决定因素，占解释方差的 41.4%，而支架模型占 1.5%。在所有配置中，68% 的痕迹中的证据被忽略，26% 的痕迹中出现反驳驱动的信念修正，并且收敛的多重测试证据很少见。无论代理执行计算工作流程还是进行假设驱动的查询，都会出现相同的推理模式。即使当智能体接收到近乎完整的成功推理轨迹作为上下文时，它们仍然存在，并且在认知要求较高的领域中进行重复试验时会产生不可靠性。因此，当前基于LLM的代理执行科学工作流程，但没有表现出科学��理的认知模式。基于结果的评估无法发现这些故障，仅靠脚手架工程无法修复它们。在推理本身成为训练目标之前，此类智能体产生的科学知识无法通过生成它的过程来证明其合理性。",
+      "description_zh": "基于大语言模型（LLM）的系统越来越多地被部署来自主进行科学研究，但它们的推理是否符合使科学探究自我纠正的认知规范却知之甚少。在这里，我们通过超过 25,000 次代理运行和两个互补的镜头，跨八个领域评估基于 LLM 的科学代理，从工作流程执行到假设驱动的查询：(i) 分解基本模型和代理支架的贡献的系统性能分析，以及 (ii) 对代理推理的认识论结构的行为分析。我们观察到，基础模型是性能和行为的主要决定因素，占解释方差的 41.4%，而支架模型占 1.5%。在所有配置中，68% 的痕迹中的证据被忽略，26% 的痕迹中出现反驳驱动的信念修正，并且收敛的多重测试证据很少见。无论代理执行计算工作流程还是进行假设驱动的查询，都会出现相同的推理模式。即使当智能体接收到近乎完整的成功推理轨迹作为上下文时，它们仍然存在，并且在认知要求较高的领域中进行重复试验时会产生不可靠性。因此，当前基于LLM的代理执行科学工作流程，但没有表现出科学推���的认知模式。基于结果的评估无法发现这些故障，仅靠脚手架工程无法修复它们。在推理本身成为训练目标之前，此类智能体产生的科学知识无法通过生成它的过程来证明其合理性。",
       "authors": "Martiño Ríos-García, Nawaf Alampara, Chandan Gupta, Indrajeet Mandal, Sajid Mannan, Ali Asghar Aghajani, N. M. Anoop Krishnan, Kevin Maik Jablonka",
       "url": "https://huggingface.co/papers/2604.18805",
       "score": 2,
@@ -98,7 +188,7 @@
       "title": "Diverse Dictionary Learning",
       "title_zh": "多样化的词典学习",
       "description": "Given only observational data X = g(Z), where both the latent variables Z and the generating process g are unknown, recovering Z is ill-posed without additional assumptions. Existing methods often assume linearity or rely on auxiliary supervision and functional constraints. However, such assumptions are rarely verifiable in practice, and most theoretical guarantees break down under even mild violations, leaving uncertainty about how to reliably understand the hidden world. To make identifiability actionable in the real-world scenarios, we take a complementary view: in the general settings where full identifiability is unattainable, what can still be recovered with guarantees, and what biases could be universally adopted? We introduce the problem of diverse dictionary learning to formalize this view. Specifically, we show that intersections, complements, and symmetric differences of latent variables linked to arbitrary observations, along with the latent-to-observed dependency structure, are still identifiable up to appropriate indeterminacies even without strong assumptions. These set-theoretic results can be composed using set algebra to construct structured and essential views of the hidden world, such as genus-differentia definitions. When sufficient structural diversity is present, they further imply full identifiability of all latent variables. Notably, all identifiability benefits follow from a simple inductive bias during estimation that can be readily integrated into most models. We validate the theory and demonstrate the benefits of the bias on both synthetic and real-world data.",
-      "description_zh": "仅给定观测数据 X = g(Z)，其中潜在变量 Z 和生成过程 g 都是未知的，在没有额外假设的情况下恢复 Z 是不适定的。现有方法通常假设线性或依赖辅助监督和功能约束。然而，这样的假设在实践中很少能得到验证，而且即使是轻微的违规，大多数理论保证也会崩溃，从而给如何可靠地理解隐藏的世界留下了不确定性。为了使可识别性在现实世界中可行，我们采取了一个补充的观点：在无法实现完全可识别性的一般环境中，什么仍然可以通过保证来恢复，以及哪些偏见可以被普遍采用？我们引入多样化词典学习的问题来形式化这一观点。具体来说，我们表明，即使没有强有力的假设，与任意观察相关的潜在变量的交集、补集和对称差异以及潜在观察到的依赖结构仍然可以识别到适当的不确定性。这些集合论结果可以使用集合代数来构建隐藏世界的结构化和基本视图，例如属差定义。当存在足够的结构多样性时，它们进一步意味着所有潜在变量的完全可识别性。值得注意的是，所有可识别性的好处都来自于估计过程中的简单归纳偏差，可以很容易地集成到大多数模型中。我们验证了该理论，并证明了偏差对合成数据和现实数据的好处。",
+      "description_zh": "仅给定观测数据 X = g(Z)，其中潜在变量 Z 和生成过程 g 都是未知的，在没有额外假设的情况下恢复 Z 是不适定的。现有方法通常假设线性或依赖辅助监督和功能约束。然而，这样的假设在实践中很少能得到验证，而且即使是轻微的违规，大多数理论保证也会崩溃，从而给如何可靠地理解隐藏的世界留下了不确定性。为了使可识别性在现实世界中可行，我们采取了一个补充的观点：在无法实现完全可识别性的一般环境中，什么仍然可以通过保证来恢复，以及哪些偏见可以被普遍采用？我们引入多样化词典学习的问题来形式化这一观点。具体来说，我们表明，即使没有强有力的假设，与任意观察相关的潜在变量的交集、补集和对称差异以及潜在观察到的依赖结构仍然可以识别到适当的不确定性。这些集合论结果可以使用集合代数来构建隐藏世界的结构化和基本视图，例如属差定义。当存在足够的结构多样性时��它们进一步意味着所有潜在变量的完全可识别性。值得注意的是，所有可识别性的好处都来自于估计过程中的简单归纳偏差，可以很容易地集成到大多数模型中。我们验证了该理论，并证明了偏差对合成数据和现实数据的好处。",
       "authors": "Yujia Zheng, Zijian Li, Shunxing Fan, Andrew Gordon Wilson, Kun Zhang",
       "url": "https://huggingface.co/papers/2604.17568",
       "score": 1,
@@ -136,96 +226,6 @@
         "source": "huggingface",
         "upvotes": "2",
         "paperId": "2604.19720"
-      }
-    },
-    {
-      "id": "2604.19945",
-      "title": "Visual Reasoning through Tool-supervised Reinforcement Learning",
-      "title_zh": "通过工具监督的强化学习进行视觉推理",
-      "description": "In this paper, we investigate the problem of how to effectively master tool-use to solve complex visual reasoning tasks for Multimodal Large Language Models. To achieve that, we propose a novel Tool-supervised Reinforcement Learning (ToolsRL) framework, with direct tool supervision for more effective tool-use learning. We focus on a series of simple, native, and interpretable visual tools, including zoom-in, rotate, flip, and draw point/line, whose tool supervision is easy to collect. A reinforcement learning curriculum is developed, where the first stage is solely optimized by a set of well motivated tool-specific rewards, and the second stage is trained with the accuracy targeted rewards while allowing calling tools. In this way, tool calling capability is mastered before using tools to complete visual reasoning tasks, avoiding the potential optimization conflict among those heterogeneous tasks. Our experiments have shown that the tool-supervised curriculum training is efficient and ToolsRL can achieve strong tool-use capabilities for complex visual reasoning tasks.",
-      "description_zh": "在本文中，我们研究了如何有效掌握工具使用来解决多模态大型语言模型的复杂视觉推理任务的问题。为了实现这一目标，我们提出了一种新颖的工具监督强化学习（ToolsRL）框架，通过直接工具监督来实现更有效的工具使用学习。我们专注于一系列简单、原生、可解释的视觉工具，包括放大、旋转、翻转、画点/线，其工具监督易于收集。开发了强化学习课程，其中第一阶段仅通过一组动机良好的特定工具奖励进行优化，第二阶段使用精确度目标奖励进行训练，同时允许调用工具。这样，在使用工具完成视觉推理任务之前就掌握了工具调用能力，避免了异构任务之间潜在的优化冲突。我们的实验表明，工具监督的课程训练是高效的，ToolsRL 可以为复杂的视觉推理任务实现强大的工具使用能力。",
-      "authors": "Qihua Dong, Gozde Sahin, Pei Wang, Zhaowei Cai, Robik Shrestha, Hao Yang, Davide Modolo",
-      "url": "https://huggingface.co/papers/2604.19945",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2604.19945"
-      }
-    },
-    {
-      "id": "2604.16529",
-      "title": "Scaling Test-Time Compute for Agentic Coding",
-      "title_zh": "扩展代理编码的测试时间计算",
-      "description": "Test-time scaling has become a powerful way to improve large language models. However, existing methods are best suited to short, bounded outputs that can be directly compared, ranked or refined. Long-horizon coding agents violate this premise: each attempt produces an extended trajectory of actions, observations, errors, and partial progress taken by the agent. In this setting, the main challenge is no longer generating more attempts, but representing prior experience in a form that can be effectively selected from and reused. We propose a test-time scaling framework for agentic coding based on compact representations of rollout trajectories. Our framework converts each rollout into a structured summary that preserves its salient hypotheses, progress, and failure modes while discarding low-signal trace details. This representation enables two complementary forms of inference-time scaling. For parallel scaling, we introduce Recursive Tournament Voting (RTV), which recursively narrows a population of rollout summaries through small-group comparisons. For sequential scaling, we adapt Parallel-Distill-Refine (PDR) to the agentic setting by conditioning new rollouts on summaries distilled from prior attempts. Our method consistently improves the performance of frontier coding agents across SWE-Bench Verified and Terminal-Bench v2.0. For example, by using our method Claude-4.5-Opus improves from 70.9% to 77.6% on SWE-Bench Verified (mini-SWE-agent) and 46.9% to 59.1% on Terminal-Bench v2.0 (Terminus 1). Our results suggest that test-time scaling for long-horizon agents is fundamentally a problem of representation, selection, and reuse.",
-      "description_zh": "测试时间扩展已成为改进大型语言模型的有效方法。然而，现有方法最适合可以直接比较、排名或细化的简短、有界的输出。长视野编码代理违反了这个前提：每次尝试都会产生代理所采取的行动、观察、错误和部分进展的扩展轨迹。在这种情况下，主要的挑战不再是产生更多的尝试，而是以一种可以有效选择和重用的形式呈现先前的经验。我们提出了一种基于推出轨迹的紧凑表示的代理编码的测试时间扩展框架。我们的框架将每次部署转换为结构化摘要，保留其显着假设、进展和故障模式，同时丢弃低信号跟踪细节。这种表示形式支持两种互补形式的推​​理时间缩放。对于并行扩展，我们引入了递归锦标赛投票（RTV），它通过小组比较递归地缩小推出摘要的范围。对于顺序扩展，我们通过根据从先前尝试中提取的摘要来调整新的推出，从而使 Parallel-Distill-Refine (PDR) 适应代理设置。我们的方法持续改进了 SWE-Bench Verified 和 Terminal-Bench v2.0 中前沿编码代理的性能。例如，通过使用我们的方法 Claude-4.5-Opus，SWE-Bench Verified（迷你 SWE 代理）上的性能从 70.9% 提高到 77.6%，而 Terminal-Bench v2.0（Terminus 1）上的性能从 46.9% 提高到 59.1%。我们的结果表明，长视野代理的测试时间扩展从根本上来说是一个表示、选择和重用的问题。",
-      "authors": "Joongwon Kim, Wannan Yang, Kelvin Niu, Hongming Zhang, Yun Zhu, Eryk Helenowski, Ruan Silva, Zhengxing Chen, Srinivasan Iyer, Manzil Zaheer, Daniel Fried, Hannaneh Hajishirzi, Sanjeev Arora, Gabriel Synnaeve, Ruslan Salakhutdinov, Anirudh Goyal",
-      "url": "https://huggingface.co/papers/2604.16529",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2604.16529"
-      }
-    },
-    {
-      "id": "2604.20733",
-      "title": "Near-Future Policy Optimization",
-      "title_zh": "近期政策优化",
-      "description": "Reinforcement learning with verifiable rewards (RLVR) has become a core post-training recipe. Introducing suitable off-policy trajectories into on-policy exploration accelerates RLVR convergence and raises the performance ceiling, yet finding a source of such trajectories remains the key challenge. Existing mixed-policy methods either import trajectories from external teachers (high-quality but distributionally far) or replay past training trajectories (close but capped in quality), and neither simultaneously satisfies the strong enough (higher Q , more new knowledge to learn) and close enough (lower V , more readily absorbed) conditions required to maximize the effective learning signal S = Q/V. We propose Near-Future Policy Optimization (NPO), a simple mixed-policy scheme that learns from a policy's own near-future self: a later checkpoint from the same training run is a natural source of auxiliary trajectories that is both stronger than the current policy and closer than any external source, directly balancing trajectory quality against variance cost. We validate NPO through two manual interventions, early-stage bootstrapping and late-stage plateau breakthrough, and further propose AutoNPO,an adaptive variant that automatically triggers interventions from online training signals and selects the guide checkpoint that maximizes S. On Qwen3-VL-8B-Instruct with GRPO, NPO improves average performance from 57.88 to 62.84, and AutoNPO pushes it to 63.15, raising the final performance ceiling while accelerating convergence.",
-      "description_zh": "具有可验证奖励的强化学习（RLVR）已成为核心的训练后秘诀。将合适的离策略轨迹引入在策略探索中可以加速 RLVR 收敛并提高性能上限，但找到此类轨迹的来源仍然是关键挑战。现有的混合策略方法要么从外部教师导入轨迹（高质量但分布较远），要么重放过去的训练轨迹（接近但质量有限），并且都不能同时满足最大化有效学习信号 S = Q/V 所需的足够强（更高的 Q ，更多新知识）和足够接近（更低的 V ，更容易吸收）的条件。我们提出了近期策略优化（NPO），这是一种简单的混合策略方案，它从策略自身的近期自我中学习：来自同一训练运行的后续检查点是辅助轨迹的自然来源，它比当前策略更强，并且比任何外部源更接近，直接平衡轨迹质量与方差成本。我们通过早期引导和后期平台期突破两种手动干预来验证NPO，并进一步提出AutoNPO，一种自适应变体，自动触发在线训练信号的干预，并选择最大化S的指导检查点。在带有GRPO的Qwen3-VL-8B-Instruct上，NPO将平均性能从57.88提高到62.84，AutoNPO将其推至63.15，在加速的同时提高了最终性能上限收敛。",
-      "authors": "Chuanyu Qin, Chenxu Yang, Qingyi Si, Naibin Gu, Dingyu Yao, Zheng Lin, Peng Fu, Nan Duan, Jiaqi Wang",
-      "url": "https://huggingface.co/papers/2604.20733",
-      "score": 41,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "41",
-        "paperId": "2604.20733"
-      }
-    },
-    {
-      "id": "2604.13602",
-      "title": "Reward Hacking in the Era of Large Models: Mechanisms, Emergent Misalignment, Challenges",
-      "title_zh": "大型模型时代的奖励黑客：机制、紧急错位、挑战",
-      "description": "Reinforcement Learning from Human Feedback (RLHF) and related alignment paradigms have become central to steering large language models (LLMs) and multimodal large language models (MLLMs) toward human-preferred behaviors. However, these approaches introduce a systemic vulnerability: reward hacking, where models exploit imperfections in learned reward signals to maximize proxy objectives without fulfilling true task intent. As models scale and optimization intensifies, such exploitation manifests as verbosity bias, sycophancy, hallucinated justification, benchmark overfitting, and, in multimodal settings, perception--reasoning decoupling and evaluator manipulation. Recent evidence further suggests that seemingly benign shortcut behaviors can generalize into broader forms of misalignment, including deception and strategic gaming of oversight mechanisms. In this survey, we propose the Proxy Compression Hypothesis (PCH) as a unifying framework for understanding reward hacking. We formalize reward hacking as an emergent consequence of optimizing expressive policies against compressed reward representations of high-dimensional human objectives. Under this view, reward hacking arises from the interaction of objective compression, optimization amplification, and evaluator--policy co-adaptation. This perspective unifies empirical phenomena across RLHF, RLAIF, and RLVR regimes, and explains how local shortcut learning can generalize into broader forms of misalignment, including deception and strategic manipulation of oversight mechanisms. We further organize detection and mitigation strategies according to how they intervene on compression, amplification, or co-adaptation dynamics. By framing reward hacking as a structural instability of proxy-based alignment under scale, we highlight open challenges in scalable oversight, multimodal grounding, and agentic autonomy.",
-      "description_zh": "来自人类反馈的强化学习 (RLHF) 和相关的对齐范式已成为引导大语言模型 (LLM) 和多模态大语言模型 (MLLM) 转向人类偏好行为的核心。然而，这些方法引入了一个系统性漏洞：奖励黑客，其中模型利用学习到的奖励信号中的缺陷来最大化代理目标，而不实现真正的任务意图。随着模型规模和优化的加剧，这种利用表现为冗长偏见、阿谀奉承、幻觉辩护、基准过度拟合，以及在多模态环境中感知推理解耦和评估器操纵。最近的证据进一步表明，看似良性的捷径行为可能会导致更广泛形式的失调，包括欺骗和监督机制的战略博弈。在本次调查中，我们提出代理压缩假设（PCH）作为理解奖励黑客的统一框架。我们将奖励黑客形式化为针对高维人类目标的压缩奖励表示优化表达策略的紧急结果。根据这种观点，奖励黑客源于目标压缩、优化放大和评估者-政策协同适应的相互作用。这种观��统一了 RLHF、RLAIF 和 RLVR 制度的经验现象，并解释了局部捷径学习如何推广到更广泛形式的错位，包括欺骗和对监督机制的战略操纵。我们根据检测和缓解策略如何干预压缩、放大或共同适应动态来进一步组织检测和缓解策略。通过将奖励黑客视为规模下基于代理的联盟的结构性不稳定性，我们强调了可扩展监督、多模式基础和代理自治方面的开放挑战。",
-      "authors": "Xiaohua Wang, Muzhao Tian, Yuqi Zeng, Zisu Huang, Jiakang Yuan, Bowen Chen, Jingwen Xu, Mingbo Zhou, Wenhao Liu, Muling Wu, Zhengkang Guo, Qi Qian, Yifei Wang, Feiran Zhang, Ruicheng Yin, Shihan Dou, Changze Lv, Tao Chen, Kaitao Song, Xu Tan, Tao Gui, Xiaoqing Zheng, Xuanjing Huang",
-      "url": "https://huggingface.co/papers/2604.13602",
-      "score": 19,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "19",
-        "paperId": "2604.13602"
-      }
-    },
-    {
-      "id": "2604.20570",
-      "title": "Exploring Spatial Intelligence from a Generative Perspective",
-      "title_zh": "从生成的角度探索空间智能",
-      "description": "Spatial intelligence is essential for multimodal large language models, yet current benchmarks largely assess it only from an understanding perspective. We ask whether modern generative or unified multimodal models also possess generative spatial intelligence (GSI), the ability to respect and manipulate 3D spatial constraints during image generation, and whether such capability can be measured or improved. We introduce GSI-Bench, the first benchmark designed to quantify GSI through spatially grounded image editing. It consists of two complementary components: GSI-Real, a high-quality real-world dataset built via a 3D-prior-guided generation and filtering pipeline, and GSI-Syn, a large-scale synthetic benchmark with controllable spatial operations and fully automated labeling. Together with a unified evaluation protocol, GSI-Bench enables scalable, model-agnostic assessment of spatial compliance and editing fidelity. Experiments show that fine-tuning unified multimodal models on GSI-Syn yields substantial gains on both synthetic and real tasks and, strikingly, also improves downstream spatial understanding. This provides the first clear evidence that generative training can tangibly strengthen spatial reasoning, establishing a new pathway for advancing spatial intelligence in multimodal models.",
-      "description_zh": "空间智能对于多模态大型语言模型至关重要，但当前的基准测试很大程度上仅从理解的角度对其进行评估。我们询问现代生成或统一多模态模型是否也具有生成空间智能（GSI），在图像生成过程中尊重和操纵 3D 空间约束的能力，以及是否可以测量或改进这种能力。我们推出 GSI-Bench，这是第一个旨在通过基于空间的图像编辑来量化 GSI 的基准。它由两个互补的组件组成：GSI-Real（通过 3D 优先引导生成和过滤管道构建的高质量现实世界数据集）和 GSI-Syn（具有可控空间操作和全自动标记的大规模合成基准）。与统一的评估协议一起，GSI-Bench 可以对空间合规性和编辑保真度进行可扩展的、与模型无关的评估。实验表明，在 GSI-Syn 上微调统一多模态模型可以在合成任务和实际任务上产生巨大的收益，而且令人惊讶的是，还可以提高下游空间理解。这提供了第一个明确的证据，证明生成训练可以切实加强空间推理，为在多模态模型中推进空间智能建立新途径。",
-      "authors": "Muzhi Zhu, Shunyao Jiang, Huanyi Zheng, Zekai Luo, Hao Zhong, Anzhou Li, Kaijun Wang, Jintao Rong, Yang Liu, Hao Chen, Tao Lin, Chunhua Shen",
-      "url": "https://huggingface.co/papers/2604.20570",
-      "score": 14,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "14",
-        "paperId": "2604.20570"
-      }
-    },
-    {
-      "id": "2604.20817",
-      "title": "Convergent Evolution: How Different Language Models Learn Similar Number Representations",
-      "title_zh": "收敛进化：不同的语言模型如何学习相似的数字表示",
-      "description": "Language models trained on natural text learn to represent numbers using periodic features with dominant periods at T=2, 5, 10. In this paper, we identify a two-tiered hierarchy of these features: while Transformers, Linear RNNs, LSTMs, and classical word embeddings trained in different ways all learn features that have period-T spikes in the Fourier domain, only some learn geometrically separable features that can be used to linearly classify a number mod-T. To explain this incongruity, we prove that Fourier domain sparsity is necessary but not sufficient for mod-T geometric separability. Empirically, we investigate when model training yields geometrically separable features, finding that the data, architecture, optimizer, and tokenizer all play key roles. In particular, we identify two different routes through which models can acquire geometrically separable features: they can learn them from complementary co-occurrence signals in general language data, including text-number co-occurrence and cross-number interaction, or from multi-token (but not single-token) addition problems. Overall, our results highlight the phenomenon of convergent evolution in feature learning: A diverse range of models learn similar features from different training signals.",
-      "description_zh": "在自然文本上训练的语言模型学习使用 T=2、5、10 时占主导地位的周期特征来表示数字。在本文中，我们确定了这些特征的两层层次结构：虽然以不同方式训练的 Transformer、线性 RNN、LSTM 和经典词嵌入都学习在傅立叶域中具有周期 T 尖峰的特征，但只有一些学习可用于对数字 mod-T 进行线性分类的几何可分离特征。为了解释这种不协调性，我们证明傅立叶域稀疏性对于 mod-T 几何可分离性是必要的，但还不够。根据经验，我们研究了模型训练何时产生几何可分离的特征，发现数据、架构、优化器和分词器都发挥着关键作用。特别是，我们确定了模型获取几何可分离特征的两种不同途径：它们可以从通用语言数据中的互补共现信号（包括文本数字共现和跨数字交互）或从多标记（但不是单标记）加法问题中学习这些特征。总的来说，我们的结果强调了特征学习中的收敛进化现象：各种模型从不同的训练信号中学习相似的特征。",
-      "authors": "Deqing Fu, Tianyi Zhou, Mikhail Belkin, Vatsal Sharan, Robin Jia",
-      "url": "https://huggingface.co/papers/2604.20817",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2604.20817"
       }
     }
   ]
