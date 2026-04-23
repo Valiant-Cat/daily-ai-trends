@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-04-22T20:32:45.878Z",
-  "count": 12,
+  "updatedAt": "2026-04-23T13:43:25.326Z",
+  "count": 15,
   "items": [
+    {
+      "id": "huggingface-ml-intern",
+      "title": "ml-intern",
+      "title_zh": "ml-intern",
+      "description": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models",
+      "description_zh": "🤗 ml-intern：开源 ML 工程师，负责阅读论文、训练模型和发布 ML 模型",
+      "authors": "huggingface",
+      "url": "https://github.com/huggingface/ml-intern",
+      "score": 1948,
+      "meta": {
+        "source": "github",
+        "stars": "1,948",
+        "language": "Python",
+        "repo": "huggingface/ml-intern",
+        "owner": "huggingface",
+        "repoName": "ml-intern"
+      }
+    },
     {
       "id": "zilliztech-claude-context",
       "title": "claude-context",
@@ -11,122 +29,14 @@
       "description_zh": "代码搜索 MCP 以获得克劳德代码。使整个代码库成为任何编码代理的上下文。",
       "authors": "zilliztech",
       "url": "https://github.com/zilliztech/claude-context",
-      "score": 7392,
+      "score": 8119,
       "meta": {
         "source": "github",
-        "stars": "7,392",
+        "stars": "8,119",
         "language": "TypeScript",
         "repo": "zilliztech/claude-context",
         "owner": "zilliztech",
         "repoName": "claude-context"
-      }
-    },
-    {
-      "id": "Fincept-Corporation-FinceptTerminal",
-      "title": "FinceptTerminal",
-      "title_zh": "FinceptTerminal",
-      "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
-      "description_zh": "FinceptTerminal 是一款现代金融应用程序，提供先进的市场分析、投资研究和经济数据工具，专为在用户友好的环境中进行交互式探索和数据驱动的决策而设计。",
-      "authors": "Fincept-Corporation",
-      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
-      "score": 12948,
-      "meta": {
-        "source": "github",
-        "stars": "12,948",
-        "language": "Python",
-        "repo": "Fincept-Corporation/FinceptTerminal",
-        "owner": "Fincept-Corporation",
-        "repoName": "FinceptTerminal"
-      }
-    },
-    {
-      "id": "koala73-worldmonitor",
-      "title": "worldmonitor",
-      "title_zh": "worldmonitor",
-      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-      "description_zh": "实时全球情报仪表板。在统一的态势感知界面中进行人工智能驱动的新闻聚合、地缘政治监控和基础设施跟踪",
-      "authors": "koala73",
-      "url": "https://github.com/koala73/worldmonitor",
-      "score": 51435,
-      "meta": {
-        "source": "github",
-        "stars": "51,435",
-        "language": "TypeScript",
-        "repo": "koala73/worldmonitor",
-        "owner": "koala73",
-        "repoName": "worldmonitor"
-      }
-    },
-    {
-      "id": "langfuse-langfuse",
-      "title": "langfuse",
-      "title_zh": "langfuse",
-      "description": "🪢 Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets. Integrates with OpenTelemetry, Langchain, OpenAI SDK, LiteLLM, and more. 🍊YC W23",
-      "description_zh": "🪢 开源LLM工程平台：LLM可观察性、指标、评估、提示管理、游乐场、数据集。与 OpenTelemetry、Langchain、OpenAI SDK、LiteLLM 等集成。 🍊YC W23",
-      "authors": "langfuse",
-      "url": "https://github.com/langfuse/langfuse",
-      "score": 25541,
-      "meta": {
-        "source": "github",
-        "stars": "25,541",
-        "language": "TypeScript",
-        "repo": "langfuse/langfuse",
-        "owner": "langfuse",
-        "repoName": "langfuse"
-      }
-    },
-    {
-      "id": "KeygraphHQ-shannon",
-      "title": "shannon",
-      "title_zh": "shannon",
-      "description": "Shannon Lite is an autonomous, white-box AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.",
-      "description_zh": "Shannon Lite 是一个用于 Web 应用程序和 API 的自主白盒 AI 渗透测试程序。它会分析您的源代码，识别攻击向量，并执行真正的漏洞利用，以在漏洞到达生产环境之前证明它们。",
-      "authors": "KeygraphHQ",
-      "url": "https://github.com/KeygraphHQ/shannon",
-      "score": 39447,
-      "meta": {
-        "source": "github",
-        "stars": "39,447",
-        "language": "TypeScript",
-        "repo": "KeygraphHQ/shannon",
-        "owner": "KeygraphHQ",
-        "repoName": "shannon"
-      }
-    },
-    {
-      "id": "open-metadata-OpenMetadata",
-      "title": "OpenMetadata",
-      "title_zh": "OpenMetadata",
-      "description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
-      "description_zh": "OpenMetadata 是一个统一的元数据平台，用于数据发现、数据可观察性和数据治理，由中央元数据存储库、深入的列级沿袭和无缝团队协作提供支持。",
-      "authors": "open-metadata",
-      "url": "https://github.com/open-metadata/OpenMetadata",
-      "score": 12084,
-      "meta": {
-        "source": "github",
-        "stars": "12,084",
-        "language": "TypeScript",
-        "repo": "open-metadata/OpenMetadata",
-        "owner": "open-metadata",
-        "repoName": "OpenMetadata"
-      }
-    },
-    {
-      "id": "ruvnet-RuView",
-      "title": "RuView",
-      "title_zh": "RuView",
-      "description": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "description_zh": "π RuView：WiFi DensePose 将商用 WiFi 信号转化为实时人体姿势估计、生命体征监测和存在检测 - 所有这些都无需视频像素。",
-      "authors": "ruvnet",
-      "url": "https://github.com/ruvnet/RuView",
-      "score": 49323,
-      "meta": {
-        "source": "github",
-        "stars": "49,323",
-        "language": "Rust",
-        "repo": "ruvnet/RuView",
-        "owner": "ruvnet",
-        "repoName": "RuView"
       }
     },
     {
@@ -137,50 +47,14 @@
       "description_zh": "“RAG-Anything：一体化 RAG 框架”",
       "authors": "HKUDS",
       "url": "https://github.com/HKUDS/RAG-Anything",
-      "score": 17467,
+      "score": 17916,
       "meta": {
         "source": "github",
-        "stars": "17,467",
+        "stars": "17,916",
         "language": "Python",
         "repo": "HKUDS/RAG-Anything",
         "owner": "HKUDS",
         "repoName": "RAG-Anything"
-      }
-    },
-    {
-      "id": "sansan0-TrendRadar",
-      "title": "TrendRadar",
-      "title_zh": "TrendRadar",
-      "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 + AI 分析简报直推手机，也支持接入 MCP 架构，���能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
-      "description_zh": "⭐AI驱动的舆情趋势监测，多平台聚合、RSS、智能提醒。🎯告别信息过载，你的AI舆情监测助手与热点筛选工具！聚合多平台热点+RSS订阅，支持关键词精准筛选。AI智能筛选新闻+AI翻译+AI分析简报直推手机，也支持接入MCP架构，���能AI自然语言对话分析、情感洞察与趋势预测等。支持Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/mail/ntfy/bark/slack等渠道智能自适应。",
-      "authors": "sansan0",
-      "url": "https://github.com/sansan0/TrendRadar",
-      "score": 54367,
-      "meta": {
-        "source": "github",
-        "stars": "54,367",
-        "language": "Python",
-        "repo": "sansan0/TrendRadar",
-        "owner": "sansan0",
-        "repoName": "TrendRadar"
-      }
-    },
-    {
-      "id": "AIDC-AI-Pixelle-Video",
-      "title": "Pixelle-Video",
-      "title_zh": "Pixelle-Video",
-      "description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
-      "description_zh": "🚀 AI 短视频引擎 | AI全自动短视频引擎",
-      "authors": "AIDC-AI",
-      "url": "https://github.com/AIDC-AI/Pixelle-Video",
-      "score": 5463,
-      "meta": {
-        "source": "github",
-        "stars": "5,463",
-        "language": "Python",
-        "repo": "AIDC-AI/Pixelle-Video",
-        "owner": "AIDC-AI",
-        "repoName": "Pixelle-Video"
       }
     },
     {
@@ -191,10 +65,10 @@
       "description_zh": "黑客的多合一黑客工具",
       "authors": "Z4nzu",
       "url": "https://github.com/Z4nzu/hackingtool",
-      "score": 59494,
+      "score": 60467,
       "meta": {
         "source": "github",
-        "stars": "59,494",
+        "stars": "60,467",
         "language": "Python",
         "repo": "Z4nzu/hackingtool",
         "owner": "Z4nzu",
@@ -202,21 +76,201 @@
       }
     },
     {
-      "id": "vercel-labs-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "The open agent skills tool - npx skills",
-      "description_zh": "开放代理技能工具——npx技能",
-      "authors": "vercel-labs",
-      "url": "https://github.com/vercel-labs/skills",
-      "score": 15390,
+      "id": "ruvnet-RuView",
+      "title": "RuView",
+      "title_zh": "RuView",
+      "description": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "description_zh": "π RuView：WiFi DensePose 将商用 WiFi 信号转化为实时人体姿势估计、生命体征监测和存在检测 - 所有这些都无需视频像素。",
+      "authors": "ruvnet",
+      "url": "https://github.com/ruvnet/RuView",
+      "score": 49624,
       "meta": {
         "source": "github",
-        "stars": "15,390",
+        "stars": "49,624",
+        "language": "Rust",
+        "repo": "ruvnet/RuView",
+        "owner": "ruvnet",
+        "repoName": "RuView"
+      }
+    },
+    {
+      "id": "Alishahryar1-free-claude-code",
+      "title": "free-claude-code",
+      "title_zh": "free-claude-code",
+      "description": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw",
+      "description_zh": "在终端、VSCode 扩展中或通过 openclaw 等 Discord 免费使用 claude-code",
+      "authors": "Alishahryar1",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "score": 4334,
+      "meta": {
+        "source": "github",
+        "stars": "4,334",
+        "language": "Python",
+        "repo": "Alishahryar1/free-claude-code",
+        "owner": "Alishahryar1",
+        "repoName": "free-claude-code"
+      }
+    },
+    {
+      "id": "open-metadata-OpenMetadata",
+      "title": "OpenMetadata",
+      "title_zh": "OpenMetadata",
+      "description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+      "description_zh": "OpenMetadata 是一个统一的元数据平台，用于数据发现、数据可观察性和数据治理，由中央元数据存储库、深入的列级沿袭和无缝团队协作提供支持。",
+      "authors": "open-metadata",
+      "url": "https://github.com/open-metadata/OpenMetadata",
+      "score": 12696,
+      "meta": {
+        "source": "github",
+        "stars": "12,696",
         "language": "TypeScript",
-        "repo": "vercel-labs/skills",
-        "owner": "vercel-labs",
-        "repoName": "skills"
+        "repo": "open-metadata/OpenMetadata",
+        "owner": "open-metadata",
+        "repoName": "OpenMetadata"
+      }
+    },
+    {
+      "id": "microsoft-ai-agents-for-beginners",
+      "title": "ai-agents-for-beginners",
+      "title_zh": "ai-agents-for-beginners",
+      "description": "12 Lessons to Get Started Building AI Agents",
+      "description_zh": "开始构建 AI 代理的 12 课",
+      "authors": "microsoft",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "score": 58530,
+      "meta": {
+        "source": "github",
+        "stars": "58,530",
+        "language": "Jupyter Notebook",
+        "repo": "microsoft/ai-agents-for-beginners",
+        "owner": "microsoft",
+        "repoName": "ai-agents-for-beginners"
+      }
+    },
+    {
+      "id": "PowerShell-PowerShell",
+      "title": "PowerShell",
+      "title_zh": "PowerShell",
+      "description": "PowerShell for every system!",
+      "description_zh": "适用于每个系统的 PowerShell！",
+      "authors": "PowerShell",
+      "url": "https://github.com/PowerShell/PowerShell",
+      "score": 52670,
+      "meta": {
+        "source": "github",
+        "stars": "52,670",
+        "language": "C#",
+        "repo": "PowerShell/PowerShell",
+        "owner": "PowerShell",
+        "repoName": "PowerShell"
+      }
+    },
+    {
+      "id": "cline-cline",
+      "title": "cline",
+      "title_zh": "cline",
+      "description": "Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.",
+      "description_zh": "IDE 中的自主编码代理，能够在每一步都经过您的许可的情况下创建/编辑文件、执行命令、使用浏览器等。",
+      "authors": "cline",
+      "url": "https://github.com/cline/cline",
+      "score": 60686,
+      "meta": {
+        "source": "github",
+        "stars": "60,686",
+        "language": "TypeScript",
+        "repo": "cline/cline",
+        "owner": "cline",
+        "repoName": "cline"
+      }
+    },
+    {
+      "id": "microsoft-onnxruntime",
+      "title": "onnxruntime",
+      "title_zh": "onnxruntime",
+      "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator",
+      "description_zh": "ONNX Runtime：跨平台、高性能机器学习推理和训练加速器",
+      "authors": "microsoft",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "score": 20011,
+      "meta": {
+        "source": "github",
+        "stars": "20,011",
+        "language": "C++",
+        "repo": "microsoft/onnxruntime",
+        "owner": "microsoft",
+        "repoName": "onnxruntime"
+      }
+    },
+    {
+      "id": "mksglu-context-mode",
+      "title": "context-mode",
+      "title_zh": "context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 12 platforms",
+      "description_zh": "AI 编码代理的上下文窗口优化。沙盒工具输出，减少 98%。 12个平台",
+      "authors": "mksglu",
+      "url": "https://github.com/mksglu/context-mode",
+      "score": 9129,
+      "meta": {
+        "source": "github",
+        "stars": "9,129",
+        "language": "TypeScript",
+        "repo": "mksglu/context-mode",
+        "owner": "mksglu",
+        "repoName": "context-mode"
+      }
+    },
+    {
+      "id": "coreyhaines31-marketingskills",
+      "title": "marketingskills",
+      "title_zh": "marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "description_zh": "Claude Code 和 AI 代理的营销技巧。 CRO、文案、SEO、分析和增长工程。",
+      "authors": "coreyhaines31",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "score": 23321,
+      "meta": {
+        "source": "github",
+        "stars": "23,321",
+        "language": "JavaScript",
+        "repo": "coreyhaines31/marketingskills",
+        "owner": "coreyhaines31",
+        "repoName": "marketingskills"
+      }
+    },
+    {
+      "id": "chiphuyen-aie-book",
+      "title": "aie-book",
+      "title_zh": "aie-book",
+      "description": "[WIP] Resources for AI engineers. Also contains supporting materials for the book AI Engineering (Chip Huyen, 2025)",
+      "description_zh": "[WIP] 面向 AI 工程师的资源。还包含《AI Engineering》一书的支持材料（Chip Huyen，2025 年）",
+      "authors": "chiphuyen",
+      "url": "https://github.com/chiphuyen/aie-book",
+      "score": 15052,
+      "meta": {
+        "source": "github",
+        "stars": "15,052",
+        "language": "Jupyter Notebook",
+        "repo": "chiphuyen/aie-book",
+        "owner": "chiphuyen",
+        "repoName": "aie-book"
+      }
+    },
+    {
+      "id": "VoltAgent-awesome-agent-skills",
+      "title": "awesome-agent-skills",
+      "title_zh": "awesome-agent-skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "description_zh": "来自官方开发团队和社区的 1000 多种代理技能精选集合，与 Claude Code、Codex、Gemini CLI、Cursor 等兼容。",
+      "authors": "VoltAgent",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "score": 17671,
+      "meta": {
+        "source": "github",
+        "stars": "17,671",
+        "language": "Mixed",
+        "repo": "VoltAgent/awesome-agent-skills",
+        "owner": "VoltAgent",
+        "repoName": "awesome-agent-skills"
       }
     }
   ]
