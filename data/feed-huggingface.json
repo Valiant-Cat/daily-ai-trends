@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-04-24T20:26:23.406Z",
+  "updatedAt": "2026-04-25T20:07:27.254Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "专家混合模型现在流行用于以固定推理速度扩展容量，几乎可以在每个令牌上切换专家。一旦模型超出了可用的 GPU 内存，这种流失就会导致卸载和预取等优化变得无效。我们证明强化学习中的选项框架非常适合解决这个问题，并主张临时扩展专家混合层。基于具有审议成本的选项批评框架，我们向每一层添加一个控制器，用于学习何时切换专家集以及加载哪些专家集。通过将其应用于具有低秩适配器和自蒸馏奖励的 gpt-oss-20b，我们的方法将切换率从超过 50% 降低到 5% 以下，同时在 MATH、MMLU 和 MMMLU 上保留高达 90% 的基本模型精度。这表明，即使现有的预训练模型也可以通过轻量级训练转换为临时扩展的 MoE，而深思熟虑的成本允许模型训练者在转换率与能力之间进行权衡。我们希望这为不断增长的 MoE 模型中的内存高效服务和持续学习开辟了一条以选项框架为基础的原则性道路。",
       "authors": "Zeyu Shen, Peter Henderson",
       "url": "https://huggingface.co/papers/2604.20156",
-      "score": 1,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "3",
         "paperId": "2604.20156"
       }
     },
@@ -23,7 +23,7 @@
       "title": "3D-VCD: Hallucination Mitigation in 3D-LLM Embodied Agents through Visual Contrastive Decoding",
       "title_zh": "3D-VCD：通过视觉对比解码减轻 3D-LLM 实体代理中的幻觉",
       "description": "Large multimodal models are increasingly used as the reasoning core of embodied agents operating in 3D environments, yet they remain prone to hallucinations that can produce unsafe and ungrounded decisions. Existing inference-time hallucination mitigation methods largely target 2D vision-language settings and do not transfer to embodied 3D reasoning, where failures arise from object presence, spatial layout, and geometric grounding rather than pixel-level inconsistencies. We introduce 3D-VCD, the first inference-time visual contrastive decoding framework for hallucination mitigation in 3D embodied agents. 3D-VCD constructs a distorted 3D scene graph by applying semantic and geometric perturbations to object-centric representations, such as category substitutions and coordinate or extent corruption. By contrasting predictions under the original and distorted 3D contexts, our method suppresses tokens that are insensitive to grounded scene evidence and are therefore likely driven by language priors. We evaluate 3D-VCD on the 3D-POPE and HEAL benchmarks and show that it consistently improves grounded reasoning without any retraining, establishing inference-time contrastive decoding over structured 3D representations as an effective and practical route to more reliable embodied intelligence.",
-      "description_zh": "大型多模态模型越来越多地用作在 3D 环境中运行的实体代理的推理核心，但它们仍然容易产生幻觉，从而产生不安全和无根据的决策。现有的推理时间幻觉缓解方法主要针对 2D 视觉语言设置，并且不会转移到具体 3D 推理，其中失败源于对象存在、空间布局和几何基础，而不是像素级不一致。我们引入了 3D-VCD，这是第一个用于减轻 3D 实体代理幻觉的推理时间视觉对比解码框架。 3D-VCD 通过将语义和几何扰动应用于以对象为中心的表示（例如类别替换和��标或范围损坏）来构建扭曲的 3D 场景图。通过对比原始和扭曲的 3D 上下文下的预测，我们的方法抑制了对接地场景证据不敏感的标记，因此可能由语言先验驱动。我们在 3D-POPE 和 HEAL 基准上评估 3D-VCD，结果表明它无需任何再训练即可持续改进基础推理，在结构化 3D 表示上建立推理时间对比解码，作为实现更可靠的体现智能的有效且实用的途径。",
+      "description_zh": "大型多模态模型越来越多地用作在 3D 环境中运行的实体代理的推理核心，但它们仍然容易产生幻觉，从而产生不安全和无根据的决策。现有的推理时间幻觉缓解方法主要针对 2D 视觉语言设置，并且不会转移到具体 3D 推理，其中失败源于对象存在、空间布局和几何基础，而不是像素级不一致。我们引入了 3D-VCD，这是第一个用于减轻 3D 实体代理幻觉的推理时间视觉对比解码框架。 3D-VCD 通过将语义和几何扰动应用于以对象为中心的表示（例如类别替换和坐标或范围损坏）来构建扭曲的 3D 场景图。通过对比原始和扭曲的 3D 上下文下的预测，我们的方法抑制了对接地场景证据不敏感的标记，因此可能由语言先验驱动。我们在 3D-POPE 和 HEAL 基准上评估 3D-VCD，结果表明它无需任何再训练即可持续改进基础推理，在结构化 3D 表示上建立推理时间对比解码，作为实现更可靠的体现智能的有效且实用的途径。",
       "authors": "Makanjuola Ogunleye, Eman Abdelrahman, Ismini Lourentzou",
       "url": "https://huggingface.co/papers/2604.08645",
       "score": 0,
@@ -41,10 +41,10 @@
       "description_zh": "联合图像特征生成建模最近已成为一种通过将低级 VAE 潜伏与从预训练视觉编码器中提取的高级语义特征相结合来改进扩散训练的有效策略。然而，现有的方法依赖于固定的表示空间，该表示空间独立于生成目标而构建，并且在训练期间保持不变。我们认为引导扩散的表征空间本身应该适应生成任务。为此，我们提出了协同演化表示扩散（CoReDi），这是一个框架，其中语义表示空间在训练过程中通过与扩散模型联合学习轻量级线性投影来演化。虽然天真地优化这个投影会导致退化的解决方案，但我们表明，可以通过停止梯度目标、归一化和防止特征崩溃的目标正则化的组合来实现稳定的协同进化。这种表述使语义空间能够逐步专门化满足图像合成的需求，从而提高其与图像潜在特征的互补性。我们将 CoReDi 应用于 VAE 潜在扩散和像素空间扩散，证明自适应语义表示可以改善这两种设置的生成建模。实验表明，与在固定表示空间中运行的联合扩散模型相比，CoReDi 实现了更快的收敛和更高的样本质量。",
       "authors": "Theodoros Kouzelis, Spyros Gidaris, Nikos Komodakis",
       "url": "https://huggingface.co/papers/2604.17492",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2604.17492"
       }
     },
@@ -53,13 +53,13 @@
       "title": "Vista4D: Video Reshooting with 4D Point Clouds",
       "title_zh": "Vista4D：使用 4D 点云重新拍摄视频",
       "description": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segmentation and 4D reconstruction to explicitly preserve seen content and provide rich camera signals, and we train with reconstructed multiview dynamic data for robustness against point cloud artifacts during real-world inference. Our results demonstrate improved 4D consistency, camera control, and visual quality compared to state-of-the-art baselines under a variety of videos and camera paths. Moreover, our method generalizes to real-world applications such as dynamic scene expansion and 4D scene recomposition. See our project page for results, code, and models: https://eyeline-labs.github.io/Vista4D",
-      "description_zh": "我们推出了 Vista4D，这是一个强大而灵活的视频重新拍摄框架，它将输入视频和目标摄像机置于 4D 点云中。具体来说，给定输入视频，我们的方法从不同的摄像机轨迹和视点重新合成具有相同动态的场景。现有的视频重拍方法经常与现实世界动态视频的深度估计伪影作斗争，同时也无法保留内容外观，也无法保持精确的相机控制来挑战新的轨迹。我们使用静态像素分割和 4D 重建构建基于 4D 的点云表示，以显式保留所看到的内容并提供丰富的相机信号，并使用重建的多视图动态数据进行训练，以在现实世界推理过程中针对点云伪影进行鲁棒性训练。我们的结果表明，与各种视频和摄像机路径下的最先进基线相比，4D 一致性、摄像机控制和视觉质量得到了改善。此外，我们的方法还可以推广到现实世界的应用，例如动态场景扩展和 4D 场景重组。有关结果、代码和模型，请参阅我们的项目页面：https://eyeline-labs.github.io/Vista4D",
+      "description_zh": "我们推出了 Vista4D，这是一个强大而灵活的视频重新拍摄框架，它将输入视频和目标摄像机置于 4D 点云中。具体来说，给定输入视频，我们的方法从不同的摄像机轨迹和视点重新合成具有相同动态的场景。现有的视频重拍方法经常与现实世界动态视频的深度估计伪影作斗争，同时也无法保留内容外观，也无法保持精确的相机控制来挑战新的轨迹。我们使用静态像素分割和 4D 重建构建基于 4D 的点云表示，以显式保留所看到的内容并提供丰富的相机信号，并使用重建的多视图动态数据进行训练，以在现实世界推理过程中���对点云伪影进行鲁棒性训练。我们的结果表明，与各种视频和摄像机路径下的最先进基线相比，4D 一致性、摄像机控制和视觉质量得到了改善。此外，我们的方法还可以推广到现实世界的应用，例如动态场景扩展和 4D 场景重组。有关结果、代码和模型，请参阅我们的项目页面：https://eyeline-labs.github.io/Vista4D",
       "authors": "Kuan Heng Lin, Zhizheng Liu, Pablo Salamanca, Yash Kant, Ryan Burgert, Yuancheng Xu, Koichi Namekata, Yiwei Zhao, Bolei Zhou, Micah Goldblum, Paul Debevec, Ning Yu",
       "url": "https://huggingface.co/papers/2604.21915",
-      "score": 3,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "7",
         "paperId": "2604.21915"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "对时间序列的全面理解仍然是大型语言模型 (LLM) 的一项重大挑战。当前的研究受到碎片化的任务定义和固有模糊性的基准的阻碍，阻碍了严格的评估和统一的时间序列推理模型（TSRM）的开发。为了弥补这一差距，我们通过增加认知复杂性的四级分类法将时间序列推理（TSR）形式化。我们引入了 HiTSR，一个分层时间序列推理数据集，包含 83k 个样本，具有不同的任务组合和经过验证的思想链 (CoT) 轨迹。利用 HiTSR，我们提出了 LLaTiSA，这是一种强大的 TSRM，它将可视化模式与精确校准的数值表集成在一起，以增强视觉语言模型 (VLM) 的时间感知。通过多阶段的课程微调策略，LLaTiSA 实现了卓越的性能，并在不同的 TSR 任务和现实场景中展现了强大的分布外泛化能力。我们的代码可在 https://github.com/RainingNovember/LLaTiSA 获取。",
       "authors": "Yueyang Ding, HaoPeng Zhang, Rui Dai, Yi Wang, Tianyu Zong, Kaikui Liu, Xiangxiang Chu",
       "url": "https://huggingface.co/papers/2604.17295",
-      "score": 75,
+      "score": 80,
       "meta": {
         "source": "huggingface",
-        "upvotes": "75",
+        "upvotes": "80",
         "paperId": "2604.17295"
       }
     },
@@ -83,7 +83,7 @@
       "title": "Encoder-Free Human Motion Understanding via Structured Motion Descriptions",
       "title_zh": "通过结构化运动描述实现无编码器人体运动理解",
       "description": "The world knowledge and reasoning capabilities of text-based large language models (LLMs) are advancing rapidly, yet current approaches to human motion understanding, including motion question answering and captioning, have not fully exploited these capabilities. Existing LLM-based methods typically learn motion-language alignment through dedicated encoders that project motion features into the LLM's embedding space, remaining constrained by cross-modal representation and alignment. Inspired by biomechanical analysis, where joint angles and body-part kinematics have long served as a precise descriptive language for human movement, we propose Structured Motion Description (SMD), a rule-based, deterministic approach that converts joint position sequences into structured natural language descriptions of joint angles, body part movements, and global trajectory. By representing motion as text, SMD enables LLMs to apply their pretrained knowledge of body parts, spatial directions, and movement semantics directly to motion reasoning, without requiring learned encoders or alignment modules. We show that this approach goes beyond state-of-the-art results on both motion question answering (66.7\\% on BABEL-QA, 90.1\\% on HuMMan-QA) and motion captioning (R@1 of 0.584, CIDEr of 53.16 on HumanML3D), surpassing all prior methods. SMD additionally offers practical benefits: the same text input works across different LLMs with only lightweight LoRA adaptation (validated on 8 LLMs from 6 model families), and its human-readable representation enables interpretable attention analysis over motion descriptions. Code, data, and pretrained LoRA adapters are available at https://yaozhang182.github.io/motion-smd/.",
-      "description_zh": "基于文本的大语言模型（LLM）的世界知识和推理能力正在迅速发展，但当前的人类运动理解方法，包括运动问答和字幕，尚未充分利用这些能力。现有的基于 LLM 的方法通常通过专用编码器学习运动语言对齐，该编码器将运动特征投影到 LLM 的嵌入空间中，但仍然受到跨模式表示和对齐的约束。受生物力学分析的启发，关节角度和身体部位运动学长期以来一直作为人类运动的精确描述语言，我们提出了结构化运动描述（SMD），这是一种基于规则的确定性方法，可将关节位置序列转换为关节角度、身体部位运动和全局轨迹的结构化自然语言描述。通过将运动表示为文本，SMD 使LLM能够将其预先训练的身体部位、空间方向和运动语义知识直接应用于运动推理，而不需要学习的编码器或对齐模块。我们表明，这种方法在运动问答（BABEL-QA 上为 66.7%，HuMMan-QA 上为 90.1%）和运动字幕（HumanML3D 上的 R@1 为 0.584，CIDEr 为 53.16）方面都超越了最先进的结果，超越了所有先前的方法。 SMD 还提供了实际的好处��相同的文本输入可以在不同的 LLM 之间工作，只需轻量级 LoRA 适配（在 6 个模型系列的 8 个 LLM 上进行了验证），并且其人类可读的表示可以对运动描述进行可解释的注意力分析。代码、数据和预训练的 LoRA 适配器可在 https://yaozhang182.github.io/motion-smd/ 获取。",
+      "description_zh": "基于文本的大语言模型（LLM）的世界知识和推理能力正在迅速发展，但当前的人类运动理解方法，包括运动问答和字幕，尚未充分利用这些能力。现有的基于 LLM 的方法通常通过专用编码器学习运动语言对齐，该编码器将运动特征投影到 LLM 的嵌入空间中，但仍然受到跨模式表示和对齐的约束。受生物力学分析的启发，关节角度和身体部位运动学长期以来一直作为人类运动的精确描述语言，我们提出了结构化运动描述（SMD），这是一种基于规则的确定性方法，可将关节位置序列转换为关节角度、身体部位运动和全局轨迹的结构化自然语言描述。通过将运动表示为文本，SMD 使LLM能够将其预先训练的身体部位、空间方向和运动语义知识直接应用于运动推理，而不需要学习的编码器或对齐模块。我们表明，这种方法在运动问答（BABEL-QA 上为 66.7%，HuMMan-QA 上为 90.1%）和运动字幕（HumanML3D 上的 R@1 为 0.584，CIDEr 为 53.16）方面都超越了最先进的结果，超越了所有先前的方法。 SMD 还提供了实际的好处：相同的文本输入可以在不同的 LLM 之间工作，只需轻量级 LoRA 适配（在 6 个模型系列的 8 个 LLM 上进行了验证），并且其人类可读的表示可以对运动描述进行可解释的注意力分析。代码、数据和预训练的 LoRA 适配器可在 https://yaozhang182.github.io/motion-smd/ 获取。",
       "authors": "Yao Zhang, Zhuchenyang Liu, Thomas Ploetz, Yu Xiao",
       "url": "https://huggingface.co/papers/2604.21668",
       "score": 1,
@@ -116,10 +116,10 @@
       "description_zh": "我们提出了 EditCrafter，这是一种无需调整即可运行的高分辨率图像编辑方法，利用预训练的文本到图像 (T2I) 扩散模型来处理图像，其分辨率明显超过训练期间使用的分辨率。利用大规模 T2I 扩散模型的生成先验，可以开发各种新颖的生成和编辑应用程序。尽管基于扩散模型提出了许多图像编辑方法并呈现出高质量的编辑结果，但它们很难应用于具有任意长宽比或更高分辨率的图像，因为它们只能在训练分辨率（512x512或1024x1024）下工作。天真的应用补丁式编辑会因不切实际的对象结构和重复而失败。为了应对这些挑战，我们推出了 EditCrafter，一个简单而有效的编辑管道。 EditCrafter 的操作方式是首先执行平铺反转，这保留了输入高分辨率图像的原始身份。我们进一步提出了一种噪声阻尼流形约束无分类器指导（NDCFG++），专为从反向潜在图像编辑高分辨率图像而定制。我们的实验表明，我们的 EditCrafter 可以在各种分辨率下实现令人印象深刻的编辑结果，无需微调和优化。",
       "authors": "Kunho Kim, Sumin Seo, Yongjun Cho, Hyungjin Chung",
       "url": "https://huggingface.co/papers/2604.10268",
-      "score": 5,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "9",
         "paperId": "2604.10268"
       }
     },
@@ -143,13 +143,13 @@
       "title": "Hybrid Policy Distillation for LLMs",
       "title_zh": "LLM的混合政策蒸馏",
       "description": "Knowledge distillation (KD) is a powerful paradigm for compressing large language models (LLMs), whose effectiveness depends on intertwined choices of divergence direction, optimization strategy, and data regime. We break down the design of existing KD methods and present a unified view that establishes connections between them, reformulating KD as a reweighted log-likelihood objective at the token level. We further propose Hybrid Policy Distillation (HPD), which integrates the complementary advantages of forward and reverse KL to balance mode coverage and mode-seeking, and combines off-policy data with lightweight, approximate on-policy sampling. We validate HPD on long-generation math reasoning as well as short-generation dialogue and code tasks, demonstrating improved optimization stability, computational efficiency, and final performance across diverse model families and scales. The code related to this work is available at https://github.com/zwhong714/Hybrid-Policy-Distillation.",
-      "description_zh": "知识蒸馏（KD）是压缩大型语言模型（LLM）的强大范例，其有效性取决于分歧方向、优化策略和数据机制的相互交织的选择。我们分解了现有 KD 方法的设计，并提出了在它们之间建立联系的统一视图，将 KD 重新表述为令牌级别的重新加权对数似然目标。我们进一步提出混合策略蒸馏（HPD），它集成了前向和反向 KL 的互补优势，以平衡模式覆盖和模式搜索，并将离策略数据与轻量级、近似的在策略采样相结合。我们在长代���学推理以及短代对话和代码任务上验证 HPD，展示了跨不同模型系列和规模的改进的优化稳定性、计算效率和最终性能。与这项工作相关的代码可在 https://github.com/zwhong714/Hybrid-Policy-Distillation 获取。",
+      "description_zh": "知识蒸馏（KD）是压缩大型语言模型（LLM）的强大范例，其有效性取决于分歧方向、优化策略和数据机制的相互交织的选择。我们分解了现有 KD 方法的设计，并提出了在它们之间建立联系的统一视图，将 KD 重新表述为令牌级别的重新加权对数似然目标。我们进一步提出混合策略蒸馏（HPD），它集成了前向和反向 KL 的互补优势，以平衡模式覆盖和模式搜索，并将离策略数据与轻量级、近似的在策略采样相结合。我们在长代数学推理以及短代对话和代码任务上验证 HPD，展示了跨不同模型系列和规模的改进的优化稳定性、计算效率和最终性能。与这项工作相关的代码可在 https://github.com/zwhong714/Hybrid-Policy-Distillation 获取。",
       "authors": "Wenhong Zhu, Ruobing Xie, Rui Wang, Pengfei Liu",
       "url": "https://huggingface.co/papers/2604.20244",
-      "score": 9,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
+        "upvotes": "10",
         "paperId": "2604.20244"
       }
     },
@@ -158,13 +158,13 @@
       "title": "Co-Evolving LLM Decision and Skill Bank Agents for Long-Horizon Tasks",
       "title_zh": "针对长期任务的共同进化LLM决策和技能库代理",
       "description": "Long horizon interactive environments are a testbed for evaluating agents skill usage abilities. These environments demand multi step reasoning, the chaining of multiple skills over many timesteps, and robust decision making under delayed rewards and partial observability. Games are a good testbed for evaluating agent skill usage in environments. Large Language Models (LLMs) offer a promising alternative as game playing agents, but they often struggle with consistent long horizon decision making because they lack a mechanism to discover, retain, and reuse structured skills across episodes. We present COSPLAY, a co evolution framework in which an LLM decision agent retrieves skills from a learnable skill bank to guide action taking, while an agent managed skill pipeline discovers reusable skills from the agents unlabeled rollouts to form a skill bank. Our framework improves both the decision agent to learn better skill retrieval and action generation, while the skill bank agent continually extracts, refines, and updates skills together with their contracts. Experiments across six game environments show that COSPLAY with an 8B base model achieves over 25.1 percent average reward improvement against four frontier LLM baselines on single player game benchmarks while remaining competitive on multi player social reasoning games.",
-      "description_zh": "长视野交互环境是评估代理技能使用能力的测试平台。这些环境需要多步骤推理、多个时间步长的多种技能的链接，以及在延迟奖励和部分可观察性下的稳健决策。游戏是评估代理技能在环境中的使用情况的良好测试平台。大型语言模型（LLM）作为游戏代理提供了一种有前途的替代方案，但它们经常难以做出一致的长期决策，因为它们缺乏一种机制来发现、保留和重用跨情节的结构化技能。我们���出了 COSPLAY，这是一个协同进化框架，其中LLM决策代理从可学习的技能库中检索技能以指导采取行动，而代理管理的技能管道则从代理未标记的部署中发现可重用的技能以形成技能库。我们的框架改进了决策代理以学习更好的技能检索和动作生成，而技能库代理则不断提取、细化和更新技能及其合同。在六个游戏环境中进行的实验表明，在单人游戏基准上，使用 8B 基本模型的 COSPLAY 与四个前沿 LLM 基准相比，平均奖励提高了 25.1% 以上，同时在多人社交推理游戏上保持竞争力。",
+      "description_zh": "长视野交互环境是评估代理技能使用能力的测试平台。这些环境需要多步骤推理、多个时间步长的多种技能的链接，以及在延迟奖励和部分可观察性下的稳健决策。游戏是评估代理技能在环境中的使用情况的良好测试平台。大型语言模型（LLM）作为游戏代理提供了一种有前途的替代方案，但它们经常难以做出一致的长期决策，因为它们缺乏一种机制来发现、保留和重用跨情节的结构化技能。我们提出了 COSPLAY，这是一个协同进化框架，其中LLM决策代理从可学习的技能库中检索技能以指导采取行动，而代理管理的技能管道则从代理未标记的部署中发现可重用的技能以形成技能库。我们的框架改进了决策代理以学习更好的技能检索和动作生成，而技能库代理则不断提取、细化和更新技能及其合同。在六个游戏环境中进行的实验表明，在单人游戏基准上，使用 8B 基本模型的 COSPLAY 与四个前沿 LLM 基准相比，平均奖励提高了 25.1% 以上，同时在多人社交推理游戏上保持竞争力。",
       "authors": "Xiyang Wu, Zongxia Li, Guangyao Shi, Alexander Duffy, Tyler Marques, Matthew Lyle Olson, Tianyi Zhou, Dinesh Manocha",
       "url": "https://huggingface.co/papers/2604.20987",
-      "score": 10,
+      "score": 16,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "16",
         "paperId": "2604.20987"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "学习作者风格的稳健表示对于作者归属和人工智能生成的文本检测至关重要。然而，现有的方法经常与内容风格的纠缠作斗争，其中模型学习作者的写作风格和主题之间的虚假相关性，导致跨领域的泛化能力较差。为了应对这一挑战，我们提出了可解释的作者变分自动编码器（EAVAE），这是一种新颖的框架，通过设计架构分离来明确地将风格与内容分离。 EAVAE 首先使用不同作者数据的监督对比学习来预训练风格编码器，然后通过使用单独的编码器进行风格和内容表示的变分自动编码器 (VEA) 架构进行微调。通过一种新颖的判别器来强制解开，该判别器不仅区分风格/内容表示对是否属于相同或不同的作者/内容源，而且还为其决策生成自然语言解释，同时减少混淆信息并增强可解释性。大量实验证明了 EAVAE 的有效性。在作者归属方面，我们在各种数据集上实现了最先进的性能，包括 Amazon Reviews、PAN21 和 HRS。对于 AI 生成的文本检测，EAVAE 在 M4 数据集上的少样本学习方面表现出色。代码和数据存储库可在线获取 https://github.com/hieum98/avae https://huggingface.co/collections/Hieuman/document-level-authorship-datasets。",
       "authors": "Hieu Man, Van-Cuong Pham, Nghia Trung Ngo, Franck Dernoncourt, Thien Huu Nguyen",
       "url": "https://huggingface.co/papers/2604.21300",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2604.21300"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "实时检测和缓解技术异常对于大规模云原生服务至关重要，即使是几分钟的停机也可能导致巨大的财务损失和用户信任度下降。虽然客户事件是发现监控遗漏的风险的重要信号，但由于不同业务线的极端噪音、高吞吐量和语义复杂性，从这些数据中提取可操作的情报仍然具有挑战性。在本文中，我们介绍了 TingIS，这是一个专为企业级事件发现而设计的端到端系统。 TingIS 的核心是一个多阶段事件链接引擎，它将高效的索引技术与大型语言模型 (LLM) 相结合，在事件合并方面做出明智的决策��从而能够从少数不同的用户描述中稳定地提取可操作的事件。该引擎辅以用于精确业务归因的级联路由机制和集成领域知识、统计模式和行为过滤的多维降噪管道。 TingIS 部署在生产环境中，峰值吞吐量超过每分钟 2,000 条消息，每天处理 300,000 条消息，实现了 3.5 分钟的 P90 警报延迟和 95% 的高优先级事件发现率。根据真实世界数据构建的基准表明，TingIS 在路由精度、聚类质量和信噪比方面显着优于基线方法。",
       "authors": "Jun Wang, Ziyin Zhang, Rui Wang, Hang Yu, Peng Di, Rui Wang",
       "url": "https://huggingface.co/papers/2604.21889",
-      "score": 9,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
+        "upvotes": "10",
         "paperId": "2604.21889"
       }
     },
@@ -218,7 +218,7 @@
       "title": "UniGenDet: A Unified Generative-Discriminative Framework for Co-Evolutionary Image Generation and Generated Image Detection",
       "title_zh": "UniGenDet：用于协同进化图像生成和生成图像检测的统一生成判别框架",
       "description": "In recent years, significant progress has been made in both image generation and generated image detection. Despite their rapid, yet largely independent, development, these two fields have evolved distinct architectural paradigms: the former predominantly relies on generative networks, while the latter favors discriminative frameworks. A recent trend in both domains is the use of adversarial information to enhance performance, revealing potential for synergy. However, the significant architectural divergence between them presents considerable challenges. Departing from previous approaches, we propose UniGenDet: a Unified generative-discriminative framework for co-evolutionary image Generation and generated image Detection. To bridge the task gap, we design a symbiotic multimodal self-attention mechanism and a unified fine-tuning algorithm. This synergy allows the generation task to improve the interpretability of authenticity identification, while authenticity criteria guide the creation of higher-fidelity images. Furthermore, we introduce a detector-informed generative alignment mechanism to facilitate seamless information exchange. Extensive experiments on multiple datasets demonstrate that our method achieves state-of-the-art performance. Code: https://github.com/Zhangyr2022/UniGenDet{https://github.com/Zhangyr2022/UniGenDet}.",
-      "description_zh": "近年来，在图像生成和生成图像检测方面都取得了重大进展。尽管发展迅速，但在很大程度上是独立的，这两个领域已经发展出了不同的架构范式：前者主要依赖于生成网络，而后者则倾向于判别性框架。这两个领域的最新趋势是使用对抗性信息来提高性能，揭示协同作用的潜力。然而，它们之间的显着架构差异带来了相当大的挑战。与之前的方法不同，我们提出了 UniGenDet：一个用于共同进化图像生成和生成图像检测的统一生成判别框架。为了弥合任务差距，我们设计了共生多模态自注意力机制和统一的微调算法。这种协同作用使生成任务能够提高真伪识别的可解释性，同时真伪标准指导更高保真度图像的创建。此外，我们引入了一种检测器通知的生成对齐机制，以促进无缝信息交换。对多个数据集的广泛实验证明我们的方法实现了最先进的性能。代码：https://github.com/Zhangyr2022/UniGenDet{https://github.com/Zhangyr2022/UniGenDet}。",
+      "description_zh": "近年来，在图像生成和生成图像检测方面都取得了重大进展。尽管发展迅速，但在很大程度上是独立的，这两个领域已经发展出了不同的架构范式：前者主要依赖于生成网络，而后者则倾向于判别性框架。这两个领域的最新趋势是使用对抗性信息来提高性能，揭示协同作用的潜力。然而，它们之间的显着架构差异带来了相当大的挑战。与之前的方法不同，我们提出了 UniGenDet：一个用于共同进化图像生成和生成图像检测的��一生成判别框架。为了弥合任务差距，我们设计了共生多模态自注意力机制和统一的微调算法。这种协同作用使生成任务能够提高真伪识别的可解释性，同时真伪标准指导更高保真度图像的创建。此外，我们引入了一种检测器通知的生成对齐机制，以促进无缝信息交换。对多个数据集的广泛实验证明我们的方法实现了最先进的性能。代码：https://github.com/Zhangyr2022/UniGenDet{https://github.com/Zhangyr2022/UniGenDet}。",
       "authors": "Yanran Zhang, Wenzhao Zheng, Yifei Li, Bingyao Yu, Yu Zheng, Lei Chen, Jiwen Lu, Jie Zhou",
       "url": "https://huggingface.co/papers/2604.21904",
       "score": 3,
