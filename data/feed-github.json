@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-04-25T20:07:15.270Z",
+  "updatedAt": "2026-04-26T20:07:46.287Z",
   "count": 13,
   "items": [
+    {
+      "id": "mattpocock-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "Agent Skills for real engineers. Straight from my .claude directory.",
+      "description_zh": "真正工程师的代理技能。直接来自我的 .claude 目录。",
+      "authors": "mattpocock",
+      "url": "https://github.com/mattpocock/skills",
+      "score": 22871,
+      "meta": {
+        "source": "github",
+        "stars": "22,871",
+        "language": "Shell",
+        "repo": "mattpocock/skills",
+        "owner": "mattpocock",
+        "repoName": "skills"
+      }
+    },
     {
       "id": "Alishahryar1-free-claude-code",
       "title": "free-claude-code",
@@ -11,32 +29,14 @@
       "description_zh": "在终端、VSCode 扩展中或通过 openclaw 等 Discord 免费使用 claude-code",
       "authors": "Alishahryar1",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "score": 11269,
+      "score": 13225,
       "meta": {
         "source": "github",
-        "stars": "11,269",
+        "stars": "13,225",
         "language": "Python",
         "repo": "Alishahryar1/free-claude-code",
         "owner": "Alishahryar1",
         "repoName": "free-claude-code"
-      }
-    },
-    {
-      "id": "mattpocock-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "My personal directory of skills, straight from my .claude directory.",
-      "description_zh": "我的个人技能目录，直接来自我的 .claude 目录。",
-      "authors": "mattpocock",
-      "url": "https://github.com/mattpocock/skills",
-      "score": 19609,
-      "meta": {
-        "source": "github",
-        "stars": "19,609",
-        "language": "Shell",
-        "repo": "mattpocock/skills",
-        "owner": "mattpocock",
-        "repoName": "skills"
       }
     },
     {
@@ -47,14 +47,32 @@
       "description_zh": "黑客的多合一黑客工具",
       "authors": "Z4nzu",
       "url": "https://github.com/Z4nzu/hackingtool",
-      "score": 63605,
+      "score": 65213,
       "meta": {
         "source": "github",
-        "stars": "63,605",
+        "stars": "65,213",
         "language": "Python",
         "repo": "Z4nzu/hackingtool",
         "owner": "Z4nzu",
         "repoName": "hackingtool"
+      }
+    },
+    {
+      "id": "abhigyanpatwari-GitNexus",
+      "title": "GitNexus",
+      "title_zh": "GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration",
+      "description_zh": "GitNexus：零服务器代码智能引擎 - GitNexus 是一个完全在浏览器中运行的客户端知识图创建器。放入 GitHub 存储库或 ZIP 文件，即可获得带有内置 Graph RAG 代理的交互式知识图。非常适合代码探索",
+      "authors": "abhigyanpatwari",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "score": 30043,
+      "meta": {
+        "source": "github",
+        "stars": "30,043",
+        "language": "TypeScript",
+        "repo": "abhigyanpatwari/GitNexus",
+        "owner": "abhigyanpatwari",
+        "repoName": "GitNexus"
       }
     },
     {
@@ -65,10 +83,10 @@
       "description_zh": "🦔 PostHog 是一个用于构建成功产品的一体化开发者平台。我们提供产品分析、网络分析、会话重播、错误跟踪、功能标记、实验、调查、数据仓库、CDP 和 AI 产品助手，以帮助调试您的代码、更快地发布功能，并将您的所有使用情况和客户数据保存在一个堆栈中。",
       "authors": "PostHog",
       "url": "https://github.com/PostHog/posthog",
-      "score": 33424,
+      "score": 33767,
       "meta": {
         "source": "github",
-        "stars": "33,424",
+        "stars": "33,767",
         "language": "Python",
         "repo": "PostHog/posthog",
         "owner": "PostHog",
@@ -76,93 +94,93 @@
       }
     },
     {
-      "id": "davila7-claude-code-templates",
-      "title": "claude-code-templates",
-      "title_zh": "claude-code-templates",
-      "description": "CLI tool for configuring and monitoring Claude Code",
-      "description_zh": "用于配置和监控 Claude Code 的 CLI 工具",
-      "authors": "davila7",
-      "url": "https://github.com/davila7/claude-code-templates",
-      "score": 25294,
+      "id": "microsoft-typescript-go",
+      "title": "typescript-go",
+      "title_zh": "typescript-go",
+      "description": "Staging repo for development of native port of TypeScript",
+      "description_zh": "用于开发 TypeScript 本机端口的临时存储库",
+      "authors": "microsoft",
+      "url": "https://github.com/microsoft/typescript-go",
+      "score": 25142,
       "meta": {
         "source": "github",
-        "stars": "25,294",
+        "stars": "25,142",
+        "language": "Go",
+        "repo": "microsoft/typescript-go",
+        "owner": "microsoft",
+        "repoName": "typescript-go"
+      }
+    },
+    {
+      "id": "trycua-cua",
+      "title": "cua",
+      "title_zh": "cua",
+      "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
+      "description_zh": "计算机使用代理的开源基础设施。用于训练和评估可控制完整桌面（macOS、Linux、Windows）的 AI 代理的沙箱、SDK 和基准测试。",
+      "authors": "trycua",
+      "url": "https://github.com/trycua/cua",
+      "score": 14318,
+      "meta": {
+        "source": "github",
+        "stars": "14,318",
+        "language": "HTML",
+        "repo": "trycua/cua",
+        "owner": "trycua",
+        "repoName": "cua"
+      }
+    },
+    {
+      "id": "gastownhall-beads",
+      "title": "beads",
+      "title_zh": "beads",
+      "description": "Beads - A memory upgrade for your coding agent",
+      "description_zh": "Beads - 编码代理的内存升级",
+      "authors": "gastownhall",
+      "url": "https://github.com/gastownhall/beads",
+      "score": 21606,
+      "meta": {
+        "source": "github",
+        "stars": "21,606",
+        "language": "Go",
+        "repo": "gastownhall/beads",
+        "owner": "gastownhall",
+        "repoName": "beads"
+      }
+    },
+    {
+      "id": "curl-curl",
+      "title": "curl",
+      "title_zh": "curl",
+      "description": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, MQTTS, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features",
+      "description_zh": "用于使用 URL 语法传输数据的命令行工具和库，支持 DICT、FILE、FTP、FTPS、GOPHER、GOPHERS、HTTP、HTTPS、IMAP、IMAPS、LDAP、LDAPS、MQTT、MQTTS、POP3、POP3S、RTMP、RTMPS、RTSP、SCP、SFTP、SMB、SMBS、SMTP、SMTPS、TELNET、TFTP、WS 和 WSS。 libcurl 提供了无数强大的功能",
+      "authors": "curl",
+      "url": "https://github.com/curl/curl",
+      "score": 41497,
+      "meta": {
+        "source": "github",
+        "stars": "41,497",
+        "language": "C",
+        "repo": "curl/curl",
+        "owner": "curl",
+        "repoName": "curl"
+      }
+    },
+    {
+      "id": "home-assistant-core",
+      "title": "core",
+      "title_zh": "core",
+      "description": "🏡 Open source home automation that puts local control and privacy first.",
+      "description_zh": "🏡 开源家庭自动化，将本地控制和隐私放在首位。",
+      "authors": "home-assistant",
+      "url": "https://github.com/home-assistant/core",
+      "score": 86432,
+      "meta": {
+        "source": "github",
+        "stars": "86,432",
         "language": "Python",
-        "repo": "davila7/claude-code-templates",
-        "owner": "davila7",
-        "repoName": "claude-code-templates"
-      }
-    },
-    {
-      "id": "deepseek-ai-DeepEP",
-      "title": "DeepEP",
-      "title_zh": "DeepEP",
-      "description": "DeepEP: an efficient expert-parallel communication library",
-      "description_zh": "DeepEP：高效的专家并行通信库",
-      "authors": "deepseek-ai",
-      "url": "https://github.com/deepseek-ai/DeepEP",
-      "score": 9470,
-      "meta": {
-        "source": "github",
-        "stars": "9,470",
-        "language": "Cuda",
-        "repo": "deepseek-ai/DeepEP",
-        "owner": "deepseek-ai",
-        "repoName": "DeepEP"
-      }
-    },
-    {
-      "id": "PowerShell-PowerShell",
-      "title": "PowerShell",
-      "title_zh": "PowerShell",
-      "description": "PowerShell for every system!",
-      "description_zh": "适用于每个系统的 PowerShell！",
-      "authors": "PowerShell",
-      "url": "https://github.com/PowerShell/PowerShell",
-      "score": 53017,
-      "meta": {
-        "source": "github",
-        "stars": "53,017",
-        "language": "C#",
-        "repo": "PowerShell/PowerShell",
-        "owner": "PowerShell",
-        "repoName": "PowerShell"
-      }
-    },
-    {
-      "id": "RooCodeInc-Roo-Code",
-      "title": "Roo-Code",
-      "title_zh": "Roo-Code",
-      "description": "Roo Code gives you a whole dev team of AI agents in your code editor.",
-      "description_zh": "Roo Code 在代码编辑器中为您提供了整个 AI 代理开发团队。",
-      "authors": "RooCodeInc",
-      "url": "https://github.com/RooCodeInc/Roo-Code",
-      "score": 23474,
-      "meta": {
-        "source": "github",
-        "stars": "23,474",
-        "language": "TypeScript",
-        "repo": "RooCodeInc/Roo-Code",
-        "owner": "RooCodeInc",
-        "repoName": "Roo-Code"
-      }
-    },
-    {
-      "id": "huggingface-ml-intern",
-      "title": "ml-intern",
-      "title_zh": "ml-intern",
-      "description": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models",
-      "description_zh": "🤗 ml-intern：开源 ML 工程师，负责阅读论文、训练模型和发布 ML 模型",
-      "authors": "huggingface",
-      "url": "https://github.com/huggingface/ml-intern",
-      "score": 6136,
-      "meta": {
-        "source": "github",
-        "stars": "6,136",
-        "language": "Python",
-        "repo": "huggingface/ml-intern",
-        "owner": "huggingface",
-        "repoName": "ml-intern"
+        "repo": "home-assistant/core",
+        "owner": "home-assistant",
+        "repoName": "core"
       }
     },
     {
@@ -173,10 +191,10 @@
       "description_zh": "通过从头开始重新创建您最喜欢的技术来掌握编程。",
       "authors": "codecrafters-io",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "score": 495831,
+      "score": 496689,
       "meta": {
         "source": "github",
-        "stars": "495,831",
+        "stars": "496,689",
         "language": "Markdown",
         "repo": "codecrafters-io/build-your-own-x",
         "owner": "codecrafters-io",
@@ -184,39 +202,21 @@
       }
     },
     {
-      "id": "CJackHwang-ds2api",
-      "title": "ds2api",
-      "title_zh": "ds2api",
-      "description": "Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and OpenAI API formats.",
-      "description_zh": "Deepseek to API：一种轻量级、高性能的全栈中间件，可将客户端协议转换为通用 API。支持多账户轮换、编译二进制文件、Vercel Serverless 和 Docker。兼容 Google、Claude 和 OpenAI API 格式。",
-      "authors": "CJackHwang",
-      "url": "https://github.com/CJackHwang/ds2api",
-      "score": 1377,
+      "id": "openclaw-openclaw",
+      "title": "openclaw",
+      "title_zh": "openclaw",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "description_zh": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "authors": "openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 364502,
       "meta": {
         "source": "github",
-        "stars": "1,377",
-        "language": "Go",
-        "repo": "CJackHwang/ds2api",
-        "owner": "CJackHwang",
-        "repoName": "ds2api"
-      }
-    },
-    {
-      "id": "Universal-Commerce-Protocol-ucp",
-      "title": "ucp",
-      "title_zh": "ucp",
-      "description": "Specification and documentation for the Universal Commerce Protocol (UCP)",
-      "description_zh": "通用商业协议 (UCP) 的规范和文档",
-      "authors": "Universal-Commerce-Protocol",
-      "url": "https://github.com/Universal-Commerce-Protocol/ucp",
-      "score": 2756,
-      "meta": {
-        "source": "github",
-        "stars": "2,756",
-        "language": "Python",
-        "repo": "Universal-Commerce-Protocol/ucp",
-        "owner": "Universal-Commerce-Protocol",
-        "repoName": "ucp"
+        "stars": "364,502",
+        "language": "TypeScript",
+        "repo": "openclaw/openclaw",
+        "owner": "openclaw",
+        "repoName": "openclaw"
       }
     },
     {
@@ -227,10 +227,10 @@
       "description_zh": "用于跨 Codex CLI 和 API 实现工作流程自动化的实用 Codex 技能精选列表。",
       "authors": "ComposioHQ",
       "url": "https://github.com/ComposioHQ/awesome-codex-skills",
-      "score": 1403,
+      "score": 1896,
       "meta": {
         "source": "github",
-        "stars": "1,403",
+        "stars": "1,896",
         "language": "Python",
         "repo": "ComposioHQ/awesome-codex-skills",
         "owner": "ComposioHQ",
