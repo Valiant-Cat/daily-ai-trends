@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-05-06T20:55:28.520Z",
-  "count": 15,
+  "updatedAt": "2026-05-07T20:49:03.223Z",
+  "count": 13,
   "items": [
+    {
+      "id": "anthropics-financial-services",
+      "title": "financial-services",
+      "title_zh": "financial-services",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/financial-services",
+      "score": 11283,
+      "meta": {
+        "source": "github",
+        "stars": "11,283",
+        "language": "Python",
+        "repo": "anthropics/financial-services",
+        "owner": "anthropics",
+        "repoName": "financial-services"
+      }
+    },
     {
       "id": "Hmbown-DeepSeek-TUI",
       "title": "DeepSeek-TUI",
@@ -11,10 +29,10 @@
       "description_zh": "在终端中运行的 DeepSeek 模型的编码代理",
       "authors": "Hmbown",
       "url": "https://github.com/Hmbown/DeepSeek-TUI",
-      "score": 13458,
+      "score": 18476,
       "meta": {
         "source": "github",
-        "stars": "13,458",
+        "stars": "18,476",
         "language": "Rust",
         "repo": "Hmbown/DeepSeek-TUI",
         "owner": "Hmbown",
@@ -22,93 +40,21 @@
       }
     },
     {
-      "id": "addyosmani-agent-skills",
-      "title": "agent-skills",
-      "title_zh": "agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "description_zh": "AI 编码代理的生产级工程技能。",
-      "authors": "addyosmani",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "score": 30188,
+      "id": "z-lab-dflash",
+      "title": "dflash",
+      "title_zh": "dflash",
+      "description": "DFlash: Block Diffusion for Flash Speculative Decoding",
+      "description_zh": "DFlash：用于闪存推测解码的块扩散",
+      "authors": "z-lab",
+      "url": "https://github.com/z-lab/dflash",
+      "score": 3435,
       "meta": {
         "source": "github",
-        "stars": "30,188",
-        "language": "Shell",
-        "repo": "addyosmani/agent-skills",
-        "owner": "addyosmani",
-        "repoName": "agent-skills"
-      }
-    },
-    {
-      "id": "PriorLabs-TabPFN",
-      "title": "TabPFN",
-      "title_zh": "TabPFN",
-      "description": "⚡ TabPFN: Foundation Model for Tabular Data ⚡",
-      "description_zh": "⚡ TabPFN：表格数据的基础模型 ⚡",
-      "authors": "PriorLabs",
-      "url": "https://github.com/PriorLabs/TabPFN",
-      "score": 6550,
-      "meta": {
-        "source": "github",
-        "stars": "6,550",
+        "stars": "3,435",
         "language": "Python",
-        "repo": "PriorLabs/TabPFN",
-        "owner": "PriorLabs",
-        "repoName": "TabPFN"
-      }
-    },
-    {
-      "id": "docusealco-docuseal",
-      "title": "docuseal",
-      "title_zh": "docuseal",
-      "description": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
-      "description_zh": "开源 DocuSign 替代方案。创建、填写和签署数字文档 ✍️",
-      "authors": "docusealco",
-      "url": "https://github.com/docusealco/docuseal",
-      "score": 14758,
-      "meta": {
-        "source": "github",
-        "stars": "14,758",
-        "language": "Ruby",
-        "repo": "docusealco/docuseal",
-        "owner": "docusealco",
-        "repoName": "docuseal"
-      }
-    },
-    {
-      "id": "LearningCircuit-local-deep-research",
-      "title": "local-deep-research",
-      "title_zh": "local-deep-research",
-      "description": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
-      "description_zh": "SimpleQA 上约为 95%（例如 3090 上的 Qwen3.6-27B）。支持所有本地和云 LLM（llama.cpp、Ollama、Google...）。 10 多个搜索引擎 - arXiv、PubMed、您的私人文档。一切都是本地和加密的。",
-      "authors": "LearningCircuit",
-      "url": "https://github.com/LearningCircuit/local-deep-research",
-      "score": 5566,
-      "meta": {
-        "source": "github",
-        "stars": "5,566",
-        "language": "Python",
-        "repo": "LearningCircuit/local-deep-research",
-        "owner": "LearningCircuit",
-        "repoName": "local-deep-research"
-      }
-    },
-    {
-      "id": "LadybirdBrowser-ladybird",
-      "title": "ladybird",
-      "title_zh": "ladybird",
-      "description": "Truly independent web browser",
-      "description_zh": "真正独立的网络浏览器",
-      "authors": "LadybirdBrowser",
-      "url": "https://github.com/LadybirdBrowser/ladybird",
-      "score": 62935,
-      "meta": {
-        "source": "github",
-        "stars": "62,935",
-        "language": "C++",
-        "repo": "LadybirdBrowser/ladybird",
-        "owner": "LadybirdBrowser",
-        "repoName": "ladybird"
+        "repo": "z-lab/dflash",
+        "owner": "z-lab",
+        "repoName": "dflash"
       }
     },
     {
@@ -119,10 +65,10 @@
       "description_zh": "InsForge 是一个基于 Postgres 的后端，具有身份验证、存储、计算、托管和 AI 网关。专为编码代理而设计。",
       "authors": "InsForge",
       "url": "https://github.com/InsForge/InsForge",
-      "score": 8369,
+      "score": 8801,
       "meta": {
         "source": "github",
-        "stars": "8,369",
+        "stars": "8,801",
         "language": "TypeScript",
         "repo": "InsForge/InsForge",
         "owner": "InsForge",
@@ -130,147 +76,165 @@
       }
     },
     {
-      "id": "virattt-dexter",
-      "title": "dexter",
-      "title_zh": "dexter",
-      "description": "An autonomous agent for deep financial research",
-      "description_zh": "深度金融研究的自主代理",
-      "authors": "virattt",
-      "url": "https://github.com/virattt/dexter",
-      "score": 24286,
+      "id": "LearningCircuit-local-deep-research",
+      "title": "local-deep-research",
+      "title_zh": "local-deep-research",
+      "description": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
+      "description_zh": "SimpleQA 上约为 95%（例如 3090 上的 Qwen3.6-27B）。支持所有本地和云 LLM（llama.cpp、Ollama、Google...）。 10 多个搜索引擎 - arXiv、PubMed、您的私人文档。一切都是本地和加密的。",
+      "authors": "LearningCircuit",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "score": 6167,
       "meta": {
         "source": "github",
-        "stars": "24,286",
+        "stars": "6,167",
+        "language": "Python",
+        "repo": "LearningCircuit/local-deep-research",
+        "owner": "LearningCircuit",
+        "repoName": "local-deep-research"
+      }
+    },
+    {
+      "id": "addyosmani-agent-skills",
+      "title": "agent-skills",
+      "title_zh": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "description_zh": "AI 编码代理的生产级工程技能。",
+      "authors": "addyosmani",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "score": 32753,
+      "meta": {
+        "source": "github",
+        "stars": "32,753",
+        "language": "Shell",
+        "repo": "addyosmani/agent-skills",
+        "owner": "addyosmani",
+        "repoName": "agent-skills"
+      }
+    },
+    {
+      "id": "VectifyAI-PageIndex",
+      "title": "PageIndex",
+      "title_zh": "PageIndex",
+      "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "description_zh": "📑 PageIndex：无向量、基于推理的 RAG 的文档索引",
+      "authors": "VectifyAI",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "score": 29461,
+      "meta": {
+        "source": "github",
+        "stars": "29,461",
+        "language": "Python",
+        "repo": "VectifyAI/PageIndex",
+        "owner": "VectifyAI",
+        "repoName": "PageIndex"
+      }
+    },
+    {
+      "id": "vercel-labs-open-agents",
+      "title": "open-agents",
+      "title_zh": "open-agents",
+      "description": "An open source template for building cloud agents.",
+      "description_zh": "用于构建云代理的开源模板。",
+      "authors": "vercel-labs",
+      "url": "https://github.com/vercel-labs/open-agents",
+      "score": 5000,
+      "meta": {
+        "source": "github",
+        "stars": "5,000",
         "language": "TypeScript",
-        "repo": "virattt/dexter",
-        "owner": "virattt",
-        "repoName": "dexter"
+        "repo": "vercel-labs/open-agents",
+        "owner": "vercel-labs",
+        "repoName": "open-agents"
       }
     },
     {
-      "id": "anthropics-financial-services",
-      "title": "financial-services",
-      "title_zh": "financial-services",
-      "description": "No description available",
-      "description_zh": "无可用描述",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/financial-services",
-      "score": 8976,
+      "id": "docusealco-docuseal",
+      "title": "docuseal",
+      "title_zh": "docuseal",
+      "description": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
+      "description_zh": "开源 DocuSign 替代方案。创建、填写和签署数字文档 ✍️",
+      "authors": "docusealco",
+      "url": "https://github.com/docusealco/docuseal",
+      "score": 15525,
       "meta": {
         "source": "github",
-        "stars": "8,976",
+        "stars": "15,525",
+        "language": "Ruby",
+        "repo": "docusealco/docuseal",
+        "owner": "docusealco",
+        "repoName": "docuseal"
+      }
+    },
+    {
+      "id": "decolua-9router",
+      "title": "9router",
+      "title_zh": "9router",
+      "description": "🆓 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+      "description_zh": "🆓 无限免费人工智能编码。通过 40 多个提供商将 Claude Code、Codex、Cursor、Cline、Copilot、Antigravity 连接到免费的 Claude/GPT/Gemini。自动回退，RTK -40% 代币，永远不会达到极限。",
+      "authors": "decolua",
+      "url": "https://github.com/decolua/9router",
+      "score": 4428,
+      "meta": {
+        "source": "github",
+        "stars": "4,428",
+        "language": "JavaScript",
+        "repo": "decolua/9router",
+        "owner": "decolua",
+        "repoName": "9router"
+      }
+    },
+    {
+      "id": "PriorLabs-TabPFN",
+      "title": "TabPFN",
+      "title_zh": "TabPFN",
+      "description": "⚡ TabPFN: Foundation Model for Tabular Data ⚡",
+      "description_zh": "⚡ TabPFN：表格数据的基础模型 ⚡",
+      "authors": "PriorLabs",
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "score": 6760,
+      "meta": {
+        "source": "github",
+        "stars": "6,760",
         "language": "Python",
-        "repo": "anthropics/financial-services",
-        "owner": "anthropics",
-        "repoName": "financial-services"
+        "repo": "PriorLabs/TabPFN",
+        "owner": "PriorLabs",
+        "repoName": "TabPFN"
       }
     },
     {
-      "id": "ruvnet-ruflo",
-      "title": "ruflo",
-      "title_zh": "ruflo",
-      "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
-      "description_zh": "🌊 Claude 领先的代理编排平台。部署智能多代理群、协调自主工作流程并构建对话式 AI 系统。具有企业级架构、自学习群体智能、RAG 集成和原生 Claude Code/Codex 集成",
-      "authors": "ruvnet",
-      "url": "https://github.com/ruvnet/ruflo",
-      "score": 45090,
+      "id": "aaif-goose-goose",
+      "title": "goose",
+      "title_zh": "goose",
+      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+      "description_zh": "开源、可扩展的 AI 代理，超越代码建议 - 使用任何 LLM 安装、执行、编辑和测试",
+      "authors": "aaif-goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "score": 44437,
       "meta": {
         "source": "github",
-        "stars": "45,090",
+        "stars": "44,437",
+        "language": "Rust",
+        "repo": "aaif-goose/goose",
+        "owner": "aaif-goose",
+        "repoName": "goose"
+      }
+    },
+    {
+      "id": "Augani-openreel-video",
+      "title": "openreel-video",
+      "title_zh": "openreel-video",
+      "description": "OpenReel Video - Professional browser-based video editor. Open source CapCut alternative. 100% browser-based, no installation, no cloud uploads, no watermarks.",
+      "description_zh": "OpenReel Video - 基于浏览器的专业视频编辑器。开源 CapCut 替代方案。 100%基于浏览器，无需安装，无云端上传，无水印。",
+      "authors": "Augani",
+      "url": "https://github.com/Augani/openreel-video",
+      "score": 1579,
+      "meta": {
+        "source": "github",
+        "stars": "1,579",
         "language": "TypeScript",
-        "repo": "ruvnet/ruflo",
-        "owner": "ruvnet",
-        "repoName": "ruflo"
-      }
-    },
-    {
-      "id": "cheahjs-free-llm-api-resources",
-      "title": "free-llm-api-resources",
-      "title_zh": "free-llm-api-resources",
-      "description": "A list of free LLM inference resources accessible via API.",
-      "description_zh": "可通过 API 访问的免费 LLM 推理资源列表。",
-      "authors": "cheahjs",
-      "url": "https://github.com/cheahjs/free-llm-api-resources",
-      "score": 20401,
-      "meta": {
-        "source": "github",
-        "stars": "20,401",
-        "language": "Python",
-        "repo": "cheahjs/free-llm-api-resources",
-        "owner": "cheahjs",
-        "repoName": "free-llm-api-resources"
-      }
-    },
-    {
-      "id": "shiyu-coder-Kronos",
-      "title": "Kronos",
-      "title_zh": "Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "description_zh": "Kronos：金融市场语言的基础模型",
-      "authors": "shiyu-coder",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "score": 23168,
-      "meta": {
-        "source": "github",
-        "stars": "23,168",
-        "language": "Python",
-        "repo": "shiyu-coder/Kronos",
-        "owner": "shiyu-coder",
-        "repoName": "Kronos"
-      }
-    },
-    {
-      "id": "bwya77-vscode-dark-islands",
-      "title": "vscode-dark-islands",
-      "title_zh": "vscode-dark-islands",
-      "description": "VSCode theme based off the easemate IDE and Jetbrains islands theme",
-      "description_zh": "VSCode 主题基于 easemate IDE 和 Jetbrains 群岛主题",
-      "authors": "bwya77",
-      "url": "https://github.com/bwya77/vscode-dark-islands",
-      "score": 8175,
-      "meta": {
-        "source": "github",
-        "stars": "8,175",
-        "language": "PowerShell",
-        "repo": "bwya77/vscode-dark-islands",
-        "owner": "bwya77",
-        "repoName": "vscode-dark-islands"
-      }
-    },
-    {
-      "id": "bytedance-deer-flow",
-      "title": "deer-flow",
-      "title_zh": "deer-flow",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-      "description_zh": "一个开源的长期 SuperAgent 工具，用于研究、编码和创建。借助沙箱、内存、工具、技能、子代理和消息网关，它可以处理可能需要几分钟到几小时的不同级别的任务。",
-      "authors": "bytedance",
-      "url": "https://github.com/bytedance/deer-flow",
-      "score": 65481,
-      "meta": {
-        "source": "github",
-        "stars": "65,481",
-        "language": "Python",
-        "repo": "bytedance/deer-flow",
-        "owner": "bytedance",
-        "repoName": "deer-flow"
-      }
-    },
-    {
-      "id": "D4Vinci-Scrapling",
-      "title": "Scrapling",
-      "title_zh": "Scrapling",
-      "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-      "description_zh": "🕷️ 一个自适应网页抓取框架，可以处理从单个请求到全面抓取的所有内容！",
-      "authors": "D4Vinci",
-      "url": "https://github.com/D4Vinci/Scrapling",
-      "score": 46133,
-      "meta": {
-        "source": "github",
-        "stars": "46,133",
-        "language": "Python",
-        "repo": "D4Vinci/Scrapling",
-        "owner": "D4Vinci",
-        "repoName": "Scrapling"
+        "repo": "Augani/openreel-video",
+        "owner": "Augani",
+        "repoName": "openreel-video"
       }
     }
   ]
