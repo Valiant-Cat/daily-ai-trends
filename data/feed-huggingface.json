@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-07T20:49:07.067Z",
+  "updatedAt": "2026-05-08T20:37:25.347Z",
   "count": 15,
   "items": [
     {
-      "id": "2604.25788",
-      "title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
-      "title_zh": "KindER：机器人学习和规划的物理推理基准",
-      "description": "Robotic systems that interact with the physical world must reason about kinematic and dynamic constraints imposed by their own embodiment, their environment, and the task at hand. We introduce KinDER, a benchmark for Kinematic and Dynamic Embodied Reasoning that targets physical reasoning challenges arising in robot learning and planning. KinDER comprises 25 procedurally generated environments, a Gymnasium-compatible Python library with parameterized skills and demonstrations, and a standardized evaluation suite with 13 implemented baselines spanning task and motion planning, imitation learning, reinforcement learning, and foundation-model-based approaches. The environments are designed to isolate five core physical reasoning challenges: basic spatial relations, nonprehensile multi-object manipulation, tool use, combinatorial geometric constraints, and dynamic constraints, disentangled from perception, language understanding, and application-specific complexity. Empirical evaluation shows that existing methods struggle to solve many of the environments, indicating substantial gaps in current approaches to physical reasoning. We additionally include real-to-sim-to-real experiments on a mobile manipulator to assess the correspondence between simulation and real-world physical interaction. KinDER is fully open-sourced and intended to enable systematic comparison across diverse paradigms for advancing physical reasoning in robotics. Website and code: https://prpl-group.com/kinder-site/",
-      "description_zh": "与物理世界交互的机器人系统必须推理其自身的体现、环境和手头任务所施加的运动学和动态约束。我们推出 KinDER，这是运动学和动态体现推理的基准，针对机器人学习和规划中出现的物理推理挑战。 KinDER 包含 25 个程序生成的环境、一个具有参数化技能和演示的与 Gymnasium 兼容的 Python 库，以及一个标准化评估套件，其中包含 13 个实施的基线，涵盖任务和运动规划、模仿学习、强化学习和基于基础模型的方法。��些环境旨在隔离五个核心物理推理挑战：基本空间关系、不可理解的多对象操纵、工具使用、组合几何约束和动态约束，与感知、语言理解和特定于应用程序的复杂性分离。实证评估表明，现有方法难以解决许多环境问题，这表明当前的物理推理方法存在巨大差距。我们还在移动操纵器上进行了真实到模拟到真实的实验，以评估模拟与现实世界物理交互之间的对应关系。 KindER 是完全开源的，旨在实现跨不同范式的系统比较，以推进机器��技术的物理推理。网站和代码：https://prpl-group.com/kinder-site/",
-      "authors": "Yixuan Huang, Bowen Li, Vaibhav Saxena, Yichao Liang, Utkarsh Aashu Mishra, Liang Ji, Lihan Zha, Jimmy Wu, Nishanth Kumar, Sebastian Scherer, Danfei Xu, Tom Silver",
-      "url": "https://huggingface.co/papers/2604.25788",
+      "id": "2605.06627",
+      "title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
+      "title_zh": "PianoCoRe：组合和精炼的钢琴 MIDI 数据集",
+      "description": "Symbolic music datasets with matched scores and performances are essential for many music information retrieval (MIR) tasks. Yet, existing resources often cover a narrow range of composers, lack performance variety, omit note-level alignments, or use inconsistent naming formats. This work presents PianoCoRe, a large-scale piano MIDI dataset that unifies and refines major open-source piano corpora. The dataset contains 250,046 performances of 5,625 pieces written by 483 composers, totaling 21,763 h of performed music. PianoCoRe is released in tiered subsets to support different applications: from large-scale analysis and pre-training (PianoCoRe-C and deduplicated PianoCoRe-B) to expressive performance modeling with note-level score alignment (PianoCoRe-A/A*). The note-aligned subset, PianoCoRe-A, provides the largest open-source collection of 157,207 performances aligned to 1,591 scores to date. In addition to the dataset, the contributions are: (1) a MIDI quality classifier for detecting corrupted and score-like transcriptions and (2) RAScoP, an alignment refinement pipeline that cleans temporal alignment errors and interpolates missing notes. The analysis shows that the refinement reduces temporal noise and eliminates tempo outliers. Moreover, an expressive performance rendering model trained on PianoCoRe demonstrates improved robustness to unseen pieces compared to models trained on raw or smaller datasets. PianoCoRe provides a ready-to-use foundation for the next generation of expressive piano performance research.",
+      "description_zh": "具有匹配乐谱和表演的符号音乐数据集对于许多音乐信息检索 (MIR) 任务至关重要。然而，现有资源通常涵盖作曲家范围狭窄、缺乏演奏多样性、忽略音符级别对齐或使用不一致的命名格式。这项工作提出了 PianoCoRe，这是一个大型钢琴 MIDI 数据集，它统一并完善了主要的开源钢琴语料库。该数据集包含 483 名作曲家创作的 5,625 首作品的 250,046 场表演，总计 21,763 小时的表演音乐。 PianoCoRe 以分层子集形式发布，以支持不同的应用：从大规模分析和预训练（PianoCoRe-C 和去重 PianoCoRe-B）到具有音符级分数对齐的表现力建模（PianoCoRe-A/A*）。音符对齐子集 PianoCoRe-A 提供迄今为止最大的开源集合，其中包含 157,207 个演奏，与 1,591 个乐谱对齐。除了数据集之外，贡献还包括：(1) 一个 MIDI 质量分类器，用于检测损坏的和类似乐谱的转录；(2) RAScoP，一个对齐细化管道，可以清除时间对齐错误并插入丢失的音符。分析表明，细化减少了时间噪声并消除了节奏异常值。此外，与在原始数据集或较小数据集上训练的模型相比，在 PianoCoRe 上训练的富有表现力的性能渲染模型表现出对看不见的片段的鲁棒性有所提高。 PianoCoRe 为下一代富有表现力的钢琴演奏研究提供了即用型基础。",
+      "authors": "Ilya Borovik",
+      "url": "https://huggingface.co/papers/2605.06627",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2604.25788"
+        "paperId": "2605.06627"
       }
     },
     {
-      "id": "2605.02910",
-      "title": "CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing",
-      "title_zh": "CreativityBench：通过基于可供性的工具重新利用来评估智能体的创造性推理",
-      "description": "Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored. We study this capability through the lens of creative tool use, where a model repurposes available objects by reasoning about their affordances and attributes rather than relying on canonical usage. As a first step, we introduce CreativityBench, a benchmark for evaluating affordance-based creativity in LLMs. To this end, we build a large-scale affordance knowledge base (KB) with 4K entities and 150K+ affordance annotations, explicitly linking objects, parts, attributes, and actionable uses. Building on this KB, we generate 14K grounded tasks that require identifying non-obvious yet physically plausible solutions under constraints. Evaluations across 10 state-of-the-art LLMs, including closed and open-source models, show that models can often select a plausible object, but fail to identify the correct parts, their affordances, and the underlying physical mechanism needed to solve the task, leading to a significant drop in performance. Furthermore, improvements from model scaling quickly saturate, strong general reasoning does not reliably translate to creative affordance discovery, and common inference-time strategies such as Chain-of-Thought yield limited gains. These results suggest that creative tool use remains a major challenge for current models, and that CreativityBench provides a useful testbed for studying this missing dimension of intelligence, with potential implications for planning and reasoning modules in future agents.",
-      "description_zh": "大型语言模型的最新进展在推理和环境交互任务方面取得了强劲的表现，但其创造性解决问题的能力仍未得到充分开发。我们通过创造性工具使用的视角来研究这种能力，其中模型通过推理可用对象的可供性和属性来重新利用可用对象，而不是依赖于规范用法。作为第一步，我们引入 CreativityBench，这是一个评估LLM基于可供性的创造力的基准。为此，我们构建了一个包含 4K 实体和 150K+ 可供性注释的大规模可供性知识库 (KB)，明确链接对象、部件、属性和可操作用途。在此知识库的基础上，我们生成了 14K 项基础任务，这些任务需要在约束条件下识别非显而易见但物理上合理的解决方案。对 10 个最先进的LLM（包括封闭和开源模型）的评估表明，模型通常可以选择一个看似合理的对象，但无法识别正确的部分、它们的可供性以及解决任务所需的底层物理机制，从而导致性能显着下降。此外，模型扩展带来的改进很快就饱和了，强大的一般推理并不能可靠地转化为创造性可供性发现，而常见的推理时间策略（例如思想链）的收益有限。这些结果表明，创造性工具的使用仍然是当前模型的主要挑战，而 CreativityBench 为研究这一缺失的智力维度提供了一个有用的测试平台，对未来智能体的规划和推理模块具有潜在影响。",
-      "authors": "Cheng Qian, Hyeonjeong Ha, Jiayu Liu, Jeonghwan Kim, Jiateng Liu, Bingxuan Li, Aditi Tiwari, Dwip Dalal, Zhenhailong Wang, Xiusi Chen, Mahdi Namazifar, Yunzhu Li, Heng Ji",
-      "url": "https://huggingface.co/papers/2605.02910",
+      "id": "2605.06642",
+      "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
+      "title_zh": "StraTA：通过战略轨迹抽象激励代理强化学习",
+      "description": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, which weakens both exploration and credit assignment over extended trajectories. In this work, we present Strategic Trajectory Abstraction (StraTA), a simple framework that introduces an explicit trajectory-level strategy into agentic reinforcement learning (RL). StraTA samples a compact strategy from the initial task state, conditions subsequent actions on that strategy, and trains strategy generation and action execution jointly with a hierarchical GRPO-style rollout design, further enhanced by diverse strategy rollout and critical self-judgment. Experiments on ALFWorld, WebShop, and SciWorld show that StraTA consistently improves both sample efficiency and final performance over strong baselines. StraTA reaches success rates of 93.1% on ALFWorld and 84.2% on WebShop. On SciWorld, StraTA attains a 63.5% overall score, outperforming frontier closed-source models.",
+      "description_zh": "大型语言模型（LLM）越来越多地用作交互式代理，但优化它们以进行长期决策仍然很困难，因为当前的方法很大程度上纯粹是反应性的，这削弱了扩展轨迹上的探索和信用分配。在这项工作中，我们提出了策略轨迹抽象（StraTA），这是一个简单的框架，它将显式轨迹级策略引入代理强化学习（RL）中。 StraTA 从初始任务状态中采样紧凑策略，根据该策略调整后续操作，并与分层 GRPO 式推出设计联合训练策略生成和操作执行，并通过多样化策略推出和关键自我判断进一步增强。 ALFWorld、WebShop 和 SciWorld 上的实验表明，与强大的基线相比，StraTA 持续提高了样本效率和最终性能。 StraTA 在 ALFWorld 上的成功率达到 93.1%，在 WebShop 上的成功率达到 84.2%。在 SciWorld 上，StraTA 获得了 63.5% 的总分，优于前沿闭源模型。",
+      "authors": "Xiangyuan Xue, Yifan Zhou, Zidong Wang, Shengji Tang, Philip Torr, Wanli Ouyang, Lei Bai, Zhenfei Yin",
+      "url": "https://huggingface.co/papers/2605.06642",
+      "score": 10,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "10",
+        "paperId": "2605.06642"
+      }
+    },
+    {
+      "id": "2605.06477",
+      "title": "GeoStack: A Framework for Quasi-Abelian Knowledge Composition in VLMs",
+      "title_zh": "GeoStack：VLM 中的拟阿贝尔知识组合框架",
+      "description": "We address the challenge of knowledge composition in Vision-Language Models (VLMs), where accumulating expertise across multiple domains or tasks typically leads to catastrophic forgetting. We introduce GeoStack (Geometric Stacking), a modular framework that allows independently trained domain experts to be composed into a unified model. By imposing geometric and structural constraints on the adapter manifold, GeoStack ensures the foundational knowledge of the base model is preserved. Furthermore, we mathematically demonstrate a weight-folding property that achieves constant-time inference complexity (O(1)), regardless of the number of integrated experts. Experimental results across multi-domain adaptation and class-incremental learning show that GeoStack provides an efficient mechanism for long-term knowledge composition while significantly mitigating catastrophic forgetting. Code is available at https://github.com/QuantitativeImagingLaboratory/GeoStack.",
+      "description_zh": "我们解决了视觉语言模型（VLM）中知识组合的挑战，在多个领域或任务中积累专业知识通常会导致灾难性的遗忘。我们引入了 GeoStack（几何堆叠），这是一个模块化框架，允许独立训练的领域专家组成统一的模型。通过对适配器流形施加几何和结构约束，GeoStack 确保保留基础模型的基础知识。此外，我们以数学方式证明了权重折叠属性，无论集成专家的数量有多少，都可以实现恒定时间推理复杂度 (O(1))。多领域适应和类增量学习的实验结果表明，GeoStack 为长期知识组合提供了一种有效的机制，同时显着减轻了灾难性遗忘。代码可在 https://github.com/QuantitativeImagingLaboratory/GeoStack 获取。",
+      "authors": "Pranav Mantini, Shishir K. Shah",
+      "url": "https://huggingface.co/papers/2605.06477",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2605.02910"
+        "paperId": "2605.06477"
       }
     },
     {
-      "id": "2605.04637",
-      "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-      "title_zh": "SWE-WebDevBench：将编码代理应用程序平台作为虚拟软件代理进行评估",
-      "description": "The emergence of \"vibe coding\" platforms, where users describe applications in natural language and AI agents autonomously generate full-stack software, has created a need for rigorous evaluation beyond code-level benchmarks. In order to assess them as virtual software development agencies on understanding business requirements, making architectural decisions, writing production code, handling iterative modifications, and maintaining business readiness, we introduce SWE-WebDev Bench, a 68-metric evaluation framework spanning 25 primary and 43 diagnostic metrics across seven groups, organized along three dimensions: Interaction Mode (App Creation Request (ACR) vs. App Modification Request (AMR)), Agency Angle (Product Manager (PM), Engineering, Ops), and Complexity Tier (T4 multi-role SaaS, T5 AI-native).\n  Our evaluation (six platforms, three domains, 18 evaluation cells) reveals four recurring shortcomings in the current generation of AI app builders: (1) A specification bottleneck, where platforms compress rich business requirements into oversimplified technical plans, (2) A pervasive frontend-backend decoupling, where visually polished UIs mask absent or broken backend infrastructure, (3) A steep production-readiness cliff, where no platform scores above 60% on engineering quality and post-generation human effort varies substantially across platforms and (4) Widespread security and infrastructure failures, with no platform exceeding 65% Security Score against a 90% target and concurrency handling as low as 6%. These observations are descriptive of our sample and require larger-scale replication to establish generality. We release SWE-WebDev Bench as a community benchmark to enable such replication and help platform builders identify and address these gaps.\n  Code and benchmark resources are available at: https://github.com/snowmountainAi/webdevbench and https://webdevbench.com/.",
-      "description_zh": "“vibe 编码”平台的出现，用户用自然语言描述应用程序，人工智能代理自主生成全栈软件，这就产生了对代码级基准之外的严格评估的需求。为了评估他们作为虚拟软件开发机构在理解业务需求、制定架构决策、编写生产代码、处理迭代修改和保持业务准备状态方面的能力，我们引入了 SWE-WebDev Bench，这是一个 68 指标评估框架，涵盖七个组中的 25 个主要指标和 43 个诊断指标，按照三个维度进行组织：交互模式（应用程序创建请求 (ACR) 与应用程序修改请求 (AMR)）、代理角度（产品经理 (PM)、工程、运营）和复杂性层（T4 多角色 SaaS、T5 原生 AI）。\n  我们的评估（六个平台、三个领域、18 个评估单元）揭示了当前一代人工智能应用程序构建器中的四个反复出现的缺点：(1) 规范瓶颈，平台将丰富的业务需求压缩为过于简单的技术计划；(2) 普遍的前端后端解耦，视觉上精美的 UI 掩盖了后端基础设施的缺失或损坏；(3) 陡峭的生产就绪悬崖，没有一个平台在工程质量上得分超过 60%，而且不同平台的后期人力差异很大(4) 广泛的安全和基础���施故障，没有一个平台的安全得分超过 65%，而目标是 90%，并发处理低至 6%。这些观察结果描述了我们的样本，需要更大规模的复制才能建立普遍性。我们发布 SWE-WebDev Bench 作为社区基准，以实现此类复制并帮助平台构建者识别和解决这些差距。\n  代码和基准测试资源位于：https://github.com/snowmountainAi/webdevbench 和 https://webdevbench.com/。",
-      "authors": "Siddhant Saxena, Nilesh Trivedi, Vinayaka Jyothi",
-      "url": "https://huggingface.co/papers/2605.04637",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2605.04637"
-      }
-    },
-    {
-      "id": "2605.05166",
-      "title": "The First Token Knows: Single-Decode Confidence for Hallucination Detection",
-      "title_zh": "第一个令牌知道：幻觉检测的单解码置信度",
-      "description": "Self-consistency detects hallucinations by generating multiple sampled answers to a question and measuring agreement, but this requires repeated decoding and can be sensitive to lexical variation. Semantic self-consistency improves this by clustering sampled answers by meaning using natural language inference, but it adds both sampling cost and external inference overhead. We show that first-token confidence, phi_first, computed from the normalized entropy of the top-K logits at the first content-bearing answer token of a single greedy decode, matches or modestly exceeds semantic self-consistency on closed-book short-answer factual question answering. Across three 7-8B instruction-tuned models and two benchmarks, phi_first achieves a mean AUROC of 0.820, compared with 0.793 for semantic agreement and 0.791 for standard surface-form self-consistency. A subsumption test shows that phi_first is moderately to strongly correlated with semantic agreement, and combining the two signals yields only a small AUROC improvement over phi_first alone. These results suggest that much of the uncertainty information captured by multi-sample agreement is already available in the model's initial token distribution. We argue that phi_first should be reported as a default low-cost baseline before invoking sampling-based uncertainty estimation.",
-      "description_zh": "自我一致性通过生成问题的多个采样答案并测量一致性来检测幻觉，但这需要重复解码，并且可能对词汇变化敏感。语义自一致性通过使用自然语言推理对采样答案进行聚类来改善这一点，但它增加了采样成本和外部推理开销。我们表明，第一个令牌置信度 phi_first 是根据单个贪婪解码的第一个内容承载答案令牌处的前 K 个逻辑的归一化熵计算得出的，匹配或适度超过了闭卷简答事实问答的语义自洽性。在三个 7-8B 指令调整模型和两个基准测试中，phi_first 的平均 AUROC 为 0.820，而语义一致性为 0.793，标准表面形式自一致性为 0.791。包含测试表明 phi_first 与语义一致性具有中度至强相关性，并且结合两个信号仅比单独使用 phi_first 产生较小的 AUROC 改进。这些结果表明，多样本一致性捕获的大部分不确定性信息已经在模型的初始令牌分布中可用。我们认为，在调用基于采样的不确定性估计之前，应将 phi_first 报告为默认的低成本基线。",
-      "authors": "Mina Gabriel",
-      "url": "https://huggingface.co/papers/2605.05166",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.05166"
-      }
-    },
-    {
-      "id": "2604.27393",
-      "title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
-      "title_zh": "MiniCPM-o 4.5：迈向实时全双工全模态交互",
-      "description": "Recent progress in multimodal large language models (MLLMs) has brought AI capabilities from static offline data processing to real-time streaming interaction, yet they still remain far from human-level multimodal interaction. The key bottlenecks are no longer modality coverage or latency alone, but the interaction paradigm itself. First, perception and response are still separated into alternating phases, preventing models from incorporating new inputs for timely adjustment during generation. Second, most current models remain reactive, responding only to explicit user requests instead of acting proactively in the evolving multimodal environment. We present MiniCPM-o 4.5, our latest effort towards human-like multimodal interaction, which mitigates these gaps by real-time full-duplex omni-modal interaction. It can see, listen, and speak simultaneously in real-time, while also exhibiting proactive behaviors such as issuing reminders or comments based on its continuous understanding of the live scene. The key technique behind MiniCPM-o 4.5 is Omni-Flow, a unified streaming framework that aligns omni-modal inputs and outputs along a shared temporal axis. This formulation converts conventional turn-based interaction into a full-duplex, time-aligned process, enabling simultaneous perception and response and allowing proactive behavior to arise within the same framework. With a total of 9B parameters, MiniCPM-o 4.5 approaches Gemini 2.5 Flash in vision-language capabilities, delivering state-of-the-art open-source performance at its scale. It also surpasses Qwen3-Omni-30B-A3B in omni-modal understanding and delivers better speech generation, with significantly higher computation efficiency. Driven by its efficient architecture design and inference optimization, the model can perform real-time full-duplex omni-modal interaction on edge devices with less than 12GB RAM cost.",
-      "description_zh": "多模态大语言模型（MLLM）的最新进展将人工智能能力从静态离线数据处理提升到实时流交互，但距离人类水平的多模态交互仍然存在很大差距。关键瓶颈不再仅仅是模态覆盖或延迟，而是交互范式本身。首先，感知和响应仍然分为交替阶段，导致模型无法在生成过程中纳入新的输入以便及时调整。其次，大多数当前模型仍然是被动的，仅响应明确的用户请求，而不是在不断发展的多模式环境中主动采取行动。我们推出了 MiniCPM-o 4.5，这是我们在类人多模态交互方面的最新成果，它通过实时全双工全模态交互来缩小这些差距。它可以实时地看、听、说，同时还可以根据对现场场景的持续了解，表现出主动行为，例如发出提醒或评论。 MiniCPM-o 4.5 背后的关键技术是 Omni-Flow，这是一种统一的流媒体框架，可沿共享时间轴对齐全模式输入和输出。该公式将传统的回合制交互转换为全双工、时间一致的流程，从而实现同时感知和响应，并允许在同一框架内出现主动行为。 MiniCPM-o 4.5 共有 9B 个参数，在视觉语言功能方面接近 Gemini 2.5 Flash，在其规模上提供最先进的开源性能。它还在全模态理解方面超越了 Qwen3-Omni-30B-A3B，并提供更好的语音生成，并且计算效率显着提高。在高效的架构设计和推理优化的驱动下，该模型可以在边缘设备上以低于 12GB RAM 的成本执行实时全双工全模态交互。",
-      "authors": "Junbo Cui, Bokai Xu, Chongyi Wang, Tianyu Yu, Weiyue Sun, Yingjing Xu, Tianran Wang, Zhihui He, Wenshuo Ma, Tianchi Cai, Jiancheng Gui, Luoyuan Zhang, Xian Sun, Fuwei Huang, Moye Chen, Zhuo Lin, Hanyu Liu, Qingxin Gui, Qingzhe Han, Yuyang Wen, Huiping Liu, Rongkang Wang, Yaqi Zhang, Hongliang Wei, Chi Chen, You Li, Kechen Fang, Jie Zhou, Yuxuan Li, Guoyang Zeng, Chaojun Xiao, Yankai Lin, Xu Han, Maosong Sun, Zhiyuan Liu, Yuan Yao",
-      "url": "https://huggingface.co/papers/2604.27393",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2604.27393"
-      }
-    },
-    {
-      "id": "2605.01234",
-      "title": "TT4D: A Pipeline and Dataset for Table Tennis 4D Reconstruction From Monocular Videos",
-      "title_zh": "TT4D：从单目视频重建乒乓球 4D 的管道和数据集",
-      "description": "We present TT4D, a large-scale, high-fidelity table tennis dataset. It provides 140+ hours of reconstructed singles and doubles gameplay from monocular broadcast videos, featuring multimodal annotations like high-quality camera calibrations, precise 3D ball positions, ball spin, time segmentation, and 3D human meshes over time. This rich data provides a new foundation for virtual replay, in-depth player analysis, and robot learning. The dataset's combination of scale and precision is achieved through a novel reconstruction pipeline. Prior methods first partition a game sequence into individual shot segments based on the 2D ball track, and only then attempt reconstruction. However, 2D-based time segmentation collapses under occlusion and varied camera viewpoints, preventing reliable reconstruction. We invert this paradigm by first lifting the entire unsegmented 2D ball track to 3D through a learned lifting network. This 3D trajectory then allows us to reliably perform time segmentation. The learned lifting network also infers the ball's spin, handles unreliable ball detections, and successfully reconstructs the ball trajectory in cases of high occlusion. This lift-first design is necessary, as our pipeline is the only method capable of reconstructing table tennis gameplay from general-view broadcast monocular videos. We demonstrate the dataset's fidelity through two downstream tasks: estimating the racket's pose \\& velocity at impact, and training a generative model of competitive rallies.",
-      "description_zh": "我们提出了 TT4D，一个大规模、高保真乒乓球数据集。它通过单目广播视频提供 140 多个小时的重建单打和双打比赛，具有多模式注释，如高质量摄像机校准、精确的 3D 球位置、球旋转、时间分段和随时间变化的 3D 人体网格。这些丰富的数据为虚拟回放、深入的玩家分析和机器人学习提供了新的基础。该数据集的规模和精度的组合是通过新颖的重建管道实现的。现有方法首先根据 2D 球轨迹将比赛序列划分为各个击球片段，然后才尝试重建���然而，基于 2D 的时间分割在遮挡和不同的摄像机视角下会崩溃，从而妨碍可靠的重建。我们通过首先通过学习的提升网络将整个未分段的 2D 球轨道提升到 3D 来反转这种范例。然后，这个 3D 轨迹使我们能够可靠地执行时间分段。学习的提升网络还可以推断球的旋转，处理不可靠的球检测，并在高遮挡的情况下成功重建球轨迹。这种提升优先的设计是必要的，因为我们的管道是能够从普通广播单目视频重建乒乓球比赛的唯一方法。我们通过两个下游任务展示了数据集的保真度：估计球拍的姿势和击球时的速度，以及训练竞争性集会的生成模型。",
-      "authors": "Nima Rahmanian, Daniel Kienzle, Thomas Gossard, Dvij Kalaria, Rainer Lienhart, Shankar Sastry",
-      "url": "https://huggingface.co/papers/2605.01234",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.01234"
-      }
-    },
-    {
-      "id": "2605.03314",
-      "title": "When to Think, When to Speak: Learning Disclosure Policies for LLM Reasoning",
-      "title_zh": "何时思考，何时发言：LLM推理的学习披露政策",
-      "description": "In single-stream autoregressive interfaces, the same tokens both update the model state and constitute an irreversible public commitment. This coupling creates a silence tax: additional deliberation postpones the first task-relevant content, while naive early streaming risks premature commitments that bias subsequent generations. We introduce Side-by-Side (SxS) Interleaved Reasoning, which makes disclosure timing a controllable decision within standard autoregressive generation. SxS interleaves partial disclosures with continued private reasoning in the same context, but releases content only when it is supported by the reasoning so far. To learn such pacing without incentivizing filler, we construct entailment-aligned interleaved trajectories by matching answer prefixes to supporting reasoning prefixes, then train with SFT to acquire the dual-action semantics and RL to recover reasoning performance under the new format. Across two Qwen3 architectures/scales (MoE Qwen3-30B-A3B, dense Qwen3-4B) and both in-domain (AIME25) and out-of-domain (GPQA-Diamond) benchmarks, SxS improves accuracy--content-latency Pareto trade-offs under token-level proxies such as inter-update waiting.",
-      "description_zh": "在单流自回归接口中，相同的令牌既更新模型状态又构成不可逆转的公共承诺。这种耦合产生了沉默税：额外的审议推迟了第一个与任务相关的内容，而幼稚的早期流媒体可能会导致过早的承诺，从而使后代产生偏见。我们引入并排（SxS）交错推理，这使得披露时间成为标准自回归生成中的可控决策。 SxS 在同一上下文中将部分披露与持续的私人推理交织在一起，但仅在迄今为止的推理支持时才发布内容。为了在不激励填充的情况下学习这种节奏，我们通过将答案前缀与支持推理前缀相匹配来构建蕴含对齐的交错轨迹，然后使用 SFT 进行训练以获取双动作语义，并使用 RL 进行训练以恢复新格式下的推理性能。在两个 Qwen3 架构/规模（MoE Qwen3-30B-A3B、密集 Qwen3-4B）以及域内（AIME25）和域外（GPQA-Diamond）基准测试中，SxS 提高了令牌级代理（例如更新间等待）下的准确性 - 内容延迟 Pareto 权衡。",
-      "authors": "Jiaqi Wei, Xuehang Guo, Pengfei Yu, Xiang Zhang, Wanli Ouyang, Siqi Sun, Qingyun Wang, Chenyu You",
-      "url": "https://huggingface.co/papers/2605.03314",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.03314"
-      }
-    },
-    {
-      "id": "2604.24575",
-      "title": "Diffusion Model as a Generalist Segmentation Learner",
-      "title_zh": "扩散模型作为通才分割学习者",
-      "description": "Diffusion models are primarily trained for image synthesis, yet their denoising trajectories encode rich, spatially aligned visual priors. In this paper, we demonstrate that these priors can be utilized for text-conditioned semantic and open-vocabulary segmentation, and this approach can be generalized to various downstream tasks to make a general-purpose diffusion segmentation framework. Concretely, we introduce DiGSeg (Diffusion Models as a Generalist Segmentation Learner), which repurposes a pretrained diffusion model into a unified segmentation framework. Our approach encodes the input image and ground-truth mask into the latent space and concatenates them as conditioning signals for the diffusion U-Net. A parallel CLIP-aligned text pathway injects language features across multiple scales, enabling the model to align textual queries with evolving visual representations. This design transforms an off-the-shelf diffusion backbone into a universal interface that produces structured segmentation masks conditioned on both appearance and arbitrary text prompts. Extensive experiments demonstrate state-of-the-art performance on standard semantic segmentation benchmarks, as well as strong open-vocabulary generalization and cross-domain transfer to medical, remote sensing, and agricultural scenarios-without domain-specific architectural customization. These results indicate that modern diffusion backbones can serve as generalist segmentation learners rather than pure generators, narrowing the gap between visual generation and visual understanding.",
-      "description_zh": "扩散模型主要针对图像合成进行训练，但它们的去噪轨迹编码了丰富的、空间对齐的视觉先验。在本文中，我们证明这些先验可以用于文本条件语义和开放词汇分割，并且这种方法可以推广到各种下游任务，以形成通用的扩散分割框架。具体来说，我们引入了 DiGSeg（作为通用分割学习器的扩散模型），它将预训练的扩散模型重新调整为统一的分割框架。我们的方法将输入图像和真实掩模编码到潜在空间中，并将它们连接起来作为扩散 U-Net 的条件信号。并行 CLIP 对齐文本路径注入多个尺度的语言特征，使模型能够将文本查询与不断发展的视觉表示对齐。该设计将现成的扩散主干转换为通用界面，该界面可生成根据外观和任意文本提示条件的结构化分割蒙版。大量的实验证明了标准语义分割基准上最先进的性能，以及强大的开放词汇泛化和医疗、遥感和农业场景的跨域传输，而无需特定领域的架构定制。这些结果表明，现代扩散主干可以充当通用分割学习器，而不是纯粹的生成器，从而缩小视觉生成和视觉理解之间的差距。",
-      "authors": "Haoxiao Wang, Antao Xiang, Haiyang Sun, Peilin Sun, Changhao Pan, Yifu Chen, Minjie Hong, Weijie Wang, Shuang Chen, Yue Chen, Zhou Zhao",
-      "url": "https://huggingface.co/papers/2604.24575",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2604.24575"
-      }
-    },
-    {
-      "id": "2605.00380",
-      "title": "ResRL: Boosting LLM Reasoning via Negative Sample Projection Residual Reinforcement Learning",
-      "title_zh": "ResRL：通过负样本投影残差强化学习促进 LLM 推理",
-      "description": "Reinforcement Learning with Verifiable Rewards (RLVR) enhances reasoning of Large Language Models (LLMs) but usually exhibits limited generation diversity due to the over-incentivization of positive rewards. Although methods like Negative Sample Reinforcement (NSR) mitigate this issue by upweighting penalty from negative samples, they may suppress the semantic distributions shared between positive and negative responses. To boost reasoning ability without losing diversity, this paper proposes negative sample projection Residual Reinforcement Learning (ResRL) that decouples similar semantic distributions among positive and negative responses. We theoretically link Lazy Likelihood Displacement (LLD) to negative-positive head-gradient interference and derive a single-forward proxy that upper-bounds representation alignment to guide conservative advantage reweighting. ResRL then projects negative-token hidden representations onto an SVD-based low-rank positive subspace and uses projection residuals to modulate negative gradients, improving reasoning while preserving diversity and outperforming strong baselines on average across twelve benchmarks spanning Mathematics, Code, Agent Tasks, and Function Calling. Notably, ResRL surpasses NSR on mathematical reasoning by 9.4\\% in Avg@16 and 7.0\\% in Pass@128. Code is available at https://github.com/1229095296/ResRL.git.",
-      "description_zh": "具有可验证奖励的强化学习（RLVR）增强了大型语言模型（LLM）的推理，但由于积极奖励的过度激励，通常表现出有限的生成多样性。尽管负样本强化（NSR）等方法通过增加负样本的惩罚来缓解这个问题，但它们可能会抑制正面和负面响应之间共享的语义分布。为了在不失去多样性的情况下提高推理能力，本文提出了负样本投影残差强化学习（ResRL），它可以解耦正面和负面响应之间的相似语义分布。我们从理论上将惰性似然位移（LLD）与负正头梯度干扰联系起来，并推导出一个单前向代理，该代理通过上限表示对齐来指导保守的优势重新加权。然后，ResRL 将负标记隐藏表示投影到基于 SVD 的低秩正子空间上，并使用投影残差来调制负梯度，在保留多样性的同时改进推理，并在涵盖数学、代码、代理任务和函数调用的 12 个基准中平均优于强基线。值得注意的是，ResRL 在数学推理方面超过了 NSR，在 Avg@16 中超过了 9.4%，在 Pass@128 中超过了 7.0%。代码可在 https://github.com/1229095296/ResRL.git 获取。",
-      "authors": "Zihan Lin, Xiaohan Wang, Jie Cao, Jiajun Chai, Li Wang, Xiaodong Lu, Wei Lin, Ran He, Guojun Yin",
-      "url": "https://huggingface.co/papers/2605.00380",
+      "id": "2605.01640",
+      "title": "Prescriptive Scaling Laws for Data Constrained Training",
+      "title_zh": "数据受限训练的规定缩放定律",
+      "description": "Training compute is increasingly outpacing the availability of high-quality data. This shifts the central challenge from optimal compute allocation to extracting maximum value from limited data. The widely adopted Chinchilla scaling law assumes every training token is unique. This limits its ability to guide pretraining decisions in data-constrained regimes. We model the excess loss under repetition with a simple additive overfitting penalty and find that it accurately describes model behavior. Our scaling law yields qualitatively new compute-optimal allocation advice. Beyond a point, further repetition is counterproductive and compute is better spent on model capacity. We show that following our law's recommended configuration improves performance in data-constrained regimes. Finally, because our one-parameter form isolates overfitting in a single coefficient, it enables direct comparison across training configurations. As a case study, we show that strong weight decay (λ=1.0) reduces this coefficient by approximately 70%, providing a scaling-law explanation for recent findings that optimal weight decay in data-constrained regimes is an order of magnitude larger than standard practice.",
+      "description_zh": "训练计算的速度日益超过高质量数据的可用性。这将核心挑战从最佳计算分配转移到从有限数据中提取最大价值。广泛采用的 Chinchilla 缩放法则假设每个训练令牌都是唯一的。这限制了它在数据受限的情况下指导预训练决策的能力。我们使用简单的加性过拟合惩罚对重复下的超额损失进行建模，并发现它准确地描述了模型行为。我们的缩放定律产生了全新的计算最优分配建议。超过某一点，进一步的重复会适得其反，计算最好花在模型容量上。我们表明，遵循法律推荐的配置可以提高数据受限情况下的性能。最后，由于我们的单参数形式隔离了单个系数的过度拟合，因此它可以跨训练配置进行直接比较。作为一个案例研究，我们表明，强烈的权重衰减 (λ=1.0) 使该系数降低了大约 70%，为最近的发现提供了比例律解释，即数据受限状态下的最佳权重衰减比标准实践大一个数量级。",
+      "authors": "Justin Lovelace, Christian Belardi, Srivatsa Kundurthy, Shriya Sudhakar, Kilian Q. Weinberger",
+      "url": "https://huggingface.co/papers/2605.01640",
       "score": 3,
       "meta": {
         "source": "huggingface",
         "upvotes": "3",
-        "paperId": "2605.00380"
+        "paperId": "2605.01640"
       }
     },
     {
-      "id": "2605.03848",
-      "title": "Parameter-Efficient Multi-View Proficiency Estimation: From Discriminative Classification to Generative Feedback",
-      "title_zh": "参数高效的多视图熟练度估计：从判别性分类到生成反馈",
-      "description": "Estimating how well a person performs an action, rather than which action is performed, is central to coaching, rehabilitation, and talent identification. This task is challenging because proficiency is encoded in subtle differences in timing, balance, body mechanics, and execution, often distributed across multiple views and short temporal events. We discuss three recent contributions to multi-view proficiency estimation on Ego-Exo4D. SkillFormer introduces a parameter-efficient discriminative architecture for selective multi-view fusion; PATS improves temporal sampling by preserving locally dense excerpts of fundamental movements; and ProfVLM reformulates proficiency estimation as conditional language generation, producing both a proficiency label and expert-style feedback through a gated cross-view projector and a compact language backbone. Together, these methods achieve state-of-the-art accuracy on Ego-Exo4D with up to 20x fewer trainable parameters and up to 3x fewer training epochs than video-transformer baselines, while moving from closed-set classification toward interpretable feedback generation. These results highlight a shift toward efficient, multi-view systems that combine selective fusion, proficiency-aware sampling, and actionable generative feedback.",
-      "description_zh": "评估一个人执行某个动作的效果，而不是执行哪个动作，对于指导、康复和人才识别至关重要。这项任务具有挑战性，因为熟练程度体现在时间、平衡、身体力学和执行方面的细微差异，通常分布在多个视图和短时间事件中。我们讨论了 Ego-Exo4D 多视图熟练度估计的三个最新贡献。 SkillFormer 引入了一种用于选择性多视图融合的参数高效判别架构； PATS 通过保留基本运动的局部密集摘录来改进时间采样； ProfVLM 将熟练程度评估重新表述为条件语言生成，通过门控交叉视图投影仪和紧凑的语言主干生成熟练程度标签和专家风格的反馈。总之，这些方法在 Ego-Exo4D 上实现了最先进的精度，与视频转换器基线相比，可训练参数减少了 20 倍，训练周期减少了 3 倍，同时从封闭集分类转向可解释的反馈生成。这些结果凸显了向高效、多视图系统的转变，该系统结合了选择性融合、熟练程度感知采样和可操作的生成反馈。",
-      "authors": "Edoardo Bianchi, Antonio Liotta",
-      "url": "https://huggingface.co/papers/2605.03848",
-      "score": 3,
+      "id": "2605.04604",
+      "title": "Generative Quantum-inspired Kolmogorov-Arnold Eigensolver",
+      "title_zh": "受量子启发的生成式柯尔莫哥洛夫-阿诺德特征求解器",
+      "description": "High-performance computing (HPC) is increasingly important for scalable quantum chemistry workflows that couple classical generative models, quantum circuit simulation, and selected configuration interaction postprocessing. We present the generative quantum-inspired Kolmogorov-Arnold eigensolver (GQKAE), a parameter-efficient extension of the generative quantum eigensolver (GQE) for quantum chemistry. GQKAE replaces the parameter-heavy feed-forward network components in GPT-style generative eigensolvers with hybrid quantum-inspired Kolmogorov-Arnold network modules, forming a compact HQKANsformer backbone. The method preserves autoregressive operator selection and the quantum-selected configuration interaction evaluation pipeline, while using single-qubit DatA Re-Uploading ActivatioN modules to provide expressive nonlinear mappings. Numerical benchmarks on H4, N2, LiH, C2H6, H2O, and the H2O dimer show that GQKAE achieves chemical accuracy comparable to the GPT-based GQE architecture, while reducing trainable parameters and memory by approximately 66% and improving wall-time performance. For strongly correlated systems such as N2 and LiH, GQKAE also improves convergence behavior and final energy errors. These results indicate that quantum-inspired Kolmogorov-Arnold networks can reduce classical-side overhead while preserving circuit-generation quality, offering a scalable route for HPC-quantum co-design on near-term quantum platforms.",
+      "description_zh": "高性能计算 (HPC) 对于可扩展的量子化学工作流程越来越重要，该工作流程将经典生成模型、量子电路模拟和选定的配置交互后处理结合起来。我们提出了生成量子启发的柯尔莫哥洛夫-阿诺德本征求解器 (GQKAE)，这是量子化学生成量子本征求解器 (GQE) 的参数有效扩展。 GQKAE 用混合量子启发的 Kolmogorov-Arnold 网络模块取代了 GPT 式生成本征解算器中参数较多的前馈网络组件，形成了紧凑的 HQKANsformer 主干。该方法保留了自回归算子选择和量子选择配置交互��估管道，同时使用单量子位数据重新上传激活模块来提供富有表现力的非线性映射。 H4、N2、LiH、C2H6、H2O 和 H2O 二聚体的数值基准表明，GQKAE 实现了与基于 GPT 的 GQE 架构相当的化学精度，同时将可训练参数和内存减少了约 66%，并提高了实际运行时间性能。对于 N2 和 LiH 等强相关系统，GQKAE 还可以改善收敛行为和最终能量误差。这些结果表明，受量子启发的 Kolmogorov-Arnold 网络可以减少经典侧开销，同时保持电路生成质量，为近期量子平台上的 HPC-量子协同设计提供可扩展的途径。",
+      "authors": "Yu-Cheng Lin, Yu-Chao Hsu, I-Shan Tsai, Chun-Hua Lin, Kuo-Chung Peng, Jiun-Cheng Jiang, Yun-Yuan Wang, Tzung-Chi Huang, Tai-Yue Li, Kuan-Cheng Chen, Samuel Yen-Chi Chen, Nan-Yow Chen",
+      "url": "https://huggingface.co/papers/2605.04604",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2605.03848"
+        "upvotes": "1",
+        "paperId": "2605.04604"
       }
     },
     {
-      "id": "2605.03395",
-      "title": "APEX: Large-scale Multi-task Aesthetic-Informed Popularity Prediction for AI-Generated Music",
-      "title_zh": "APEX：人工智能生成音乐的大规模多任务美学流行度预测",
-      "description": "Music popularity prediction has attracted growing research interest, with relevance to artists, platforms, and recommendation systems. However, the explosive rise of AI-generated music platforms has created an entirely new and largely unexplored landscape, where a surge of songs is produced and consumed daily without the traditional markers of artist reputation or label backing. Key, yet unexplored in this pursuit is aesthetic quality. We propose APEX, the first large-scale multi-task learning framework for AI-generated music, trained on over 211k songs (10k hours of audio) from Suno and Udio, that jointly predicts engagement-based popularity signals - streams and likes scores - alongside five perceptual aesthetic quality dimensions from frozen audio embeddings extracted from MERT, a self-supervised music understanding model. Aesthetic quality and popularity capture complementary aspects of music that together prove valuable: in an out-of-distribution evaluation on the Music Arena dataset, comprising pairwise human preference battles across eleven generative music systems unseen during training, including aesthetic features consistently improves preference prediction, demonstrating strong generalisation of the learned representations across generative architectures.",
-      "description_zh": "音乐流行度预测吸引了越来越多的研究兴趣，与艺术家、平台和推荐系统相关。然而，人工智能生成的音乐平台的爆炸性崛起创造了一个全新的、很大程度上未经探索的领域，每天都会产生和消费大量歌曲，而没有艺术家声誉或唱片公司支持的传统标记。这一追求中尚未探索的关键是审美品质。我们提出了 APEX，这是第一个用于人工智能生成音乐的大规模多任务学习框架，它对来自 Suno 和 Udio 的超过 211,000 首歌曲（10,000 小时的音频）进行了训练，联合预测基于参与度的流行信号（流和喜欢分数）以及从 MERT（一种自我监督的音乐理解模型）中提取的冻结音频嵌入的五个感知审美质量���度。审美质量和流行度捕获了音乐的互补方面，这些方面共同证明了有价值：在 Music Arena 数据集的分布外评估中，包括训练过程中未见的跨 11 个生成音乐系统的成对人类偏好斗争，包括审美特征持续改善偏好预测，展示了跨生成架构的学习表示的强大泛化。",
-      "authors": "Jaavid Aktar Husain, Dorien Herremans",
-      "url": "https://huggingface.co/papers/2605.03395",
+      "id": "2605.05242",
+      "title": "Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction",
+      "title_zh": "超越语义相似性：重新思考通过直接语料库交互进行代理搜索的检索",
+      "description": "Modern retrieval systems, whether lexical or semantic, expose a corpus through a fixed similarity interface that compresses access into a single top-k retrieval step before reasoning. This abstraction is efficient, but for agentic search, it becomes a bottleneck: exact lexical constraints, sparse clue conjunctions, local context checks, and multi-step hypothesis refinement are difficult to implement by calling a conventional off-the-shelf retriever, and evidence filtered out early cannot be recovered by stronger downstream reasoning. Agentic tasks further exacerbate this limitation because they require agents to orchestrate multiple steps, including discovering intermediate entities, combining weak clues, and revising the plan after observing partial evidence. To tackle the limitation, we study direct corpus interaction (DCI), where an agent searches the raw corpus directly with general-purpose terminal tools (e.g., grep, file reads, shell commands, lightweight scripts), without any embedding model, vector index, or retrieval API. This approach requires no offline indexing and adapts naturally to evolving local corpora. Across IR benchmarks and end-to-end agentic search tasks, this simple setup substantially outperforms strong sparse, dense, and reranking baselines on several BRIGHT and BEIR datasets, and attains strong accuracy on BrowseComp-Plus and multi-hop QA without relying on any conventional semantic retriever. Our results indicate that as language agents become stronger, retrieval quality depends not only on reasoning ability but also on the resolution of the interface through which the model interacts with the corpus, with which DCI opens a broader interface-design space for agentic search.",
+      "description_zh": "现代检索系统，无论是词汇检索还是语义检索，都通过固定的相似性接口公开语料库，该接口在推理之前将访问压缩为单个 top-k 检索步骤。这种抽象是有效的，但对于代理搜索来说，它成为一个瓶颈：精确的词汇约束、稀疏线索连词、局部上下文检查和多步假设细化很难通过调用传统的现成检索器来实现，并且早期过滤掉的证据无法通过更强的下游推理来恢复。代理任务进一步加剧了这种限制，因为它们需要代理协调多个步骤，包括发现中间实体、组合薄弱线索以及在观察部分证据后修改计划。为了解决这个限制，我们研究了直接语料库交互（DCI），其中代理使用通用终端工具（例如 grep、文件读取、shell 命令、轻量级脚本）直接搜索原始语料库，而不需要任何嵌入模型、向量索引或检索 API。这种方法不需要离线索引，并且自然地适应不断发展的本地语料库。在 IR 基准测试和端到端代理搜索任务中，这种简单的设置大大优于几个 BRIGHT 和 BEIR 数据集上的强稀疏、密集和重排序基线，并且在 BrowseComp-Plus 和多跳 QA 上获得了很高的准确性，而无需依赖任何传统的语义检索器。我们的结果表明，随着语言代理变得更强，检索质量不仅取决于推理能力，还取决于模型与语料库交互的界面的分辨率，DCI 为代理搜索开辟了更广阔的界面设计空间。",
+      "authors": "Zhuofeng Li, Haoxiang Zhang, Cong Wei, Pan Lu, Ping Nie, Yi Lu, Yuyang Bai, Shangbin Feng, Hangxiao Zhu, Ming Zhong, Yuyu Zhang, Jianwen Xie, Yejin Choi, James Zou, Jiawei Han, Wenhu Chen, Jimmy Lin, Dongfu Jiang, Yu Zhang",
+      "url": "https://huggingface.co/papers/2605.05242",
+      "score": 44,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "44",
+        "paperId": "2605.05242"
+      }
+    },
+    {
+      "id": "2605.04045",
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "title_zh": "大型基础模型中的视听智能",
+      "description": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable generation and reasoning across dynamic, temporally grounded signals. Recent advances, such as Meta MovieGen and Google Veo-3, highlight the growing industrial and academic focus on unified audio-vision architectures that learn from massive multimodal data. However, despite rapid progress, the literature remains fragmented, spanning diverse tasks, inconsistent taxonomies, and heterogeneous evaluation practices that impede systematic comparison and knowledge integration. This survey provides the first comprehensive review of AVI through the lens of large foundation models. We establish a unified taxonomy covering the broad landscape of AVI tasks, ranging from understanding (e.g., speech recognition, sound localization) to generation (e.g., audio-driven video synthesis, video-to-audio) and interaction (e.g., dialogue, embodied, or agentic interfaces). We synthesize methodological foundations, including modality tokenization, cross-modal fusion, autoregressive and diffusion-based generation, large-scale pretraining, instruction alignment, and preference optimization. Furthermore, we curate representative datasets, benchmarks, and evaluation metrics, offering a structured comparison across task families and identifying open challenges in synchronization, spatial reasoning, controllability, and safety. By consolidating this rapidly expanding field into a coherent framework, this survey aims to serve as a foundational reference for future research on large-scale AVI.",
+      "description_zh": "视听智能 (AVI) 已成为人工智能的核心前沿，它连接听觉和视觉模式，使机器能够在多模式现实世界中感知、生成和交互。在大型基础模型时代，音频和视觉的联合建模变得越来越重要，即不仅为了理解，而且为了跨动态、时间接地信号的可控生成和推理。 Meta MovieGen 和 Google Veo-3 等最新进展凸显了工业界和学术界对从海量多模态数据中学习的统一视听架构的日益关注。然而，尽管进展迅速，文献仍然支离破碎，涉及不同的任务、不一致的分类法和异构的评估实践，阻碍了系统比较和知识整合。这项调查首次从大型基础模型的角度对 AVI 进行了全面审查。我们建立了一个统一的分类法，涵盖 AVI 任务的广泛领域，从理解（例如，语音识别、声音定位）到生成（例如，音频驱动的视频合成、视频到音频）和交互（例如，对话、体现或代理界面）。我们综合了方法论基础，包括模态标记化、跨模态融合、自回归和基于扩散的生成、大规模预训练、指令对齐和偏好优化。此外，我们还策划代表性数据集、基准和评估指标，提供跨任务系列的结构化比较，并识别同步、空间推理、可控性和安全性方面的开放挑战。通过将这个快速扩展的领域整合为一个连贯的框架，本次调查旨在为未来大规模 AVI 研究提供基础参考。",
+      "authors": "You Qin, Kai Liu, Shengqiong Wu, Kai Wang, Shijian Deng, Yapeng Tian, Junbin Xiao, Yazhou Xing, Yinghao Ma, Bobo Li, Roger Zimmermann, Lei Cui, Furu Wei, Jiebo Luo, Hao Fei",
+      "url": "https://huggingface.co/papers/2605.04045",
+      "score": 17,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "17",
+        "paperId": "2605.04045"
+      }
+    },
+    {
+      "id": "2605.05758",
+      "title": "BioTool: A Comprehensive Tool-Calling Dataset for Enhancing Biomedical Capabilities of Large Language Models",
+      "title_zh": "BioTool：用于增强大型语言模型生物医学能力的综合工具调用数据集",
+      "description": "Despite the success of large language models (LLMs) on general-purpose tasks, their performance in highly specialized domains such as biomedicine remains unsatisfactory. A key limitation is the inability of LLMs to effectively leverage biomedical tools, which clinical experts and biomedical researchers rely on extensively in daily workflows. While recent general-domain tool-calling datasets have substantially improved the capabilities of LLM agents, existing efforts in the biomedical domain largely rely on in-context learning and restrict models to a small set of tools. To address this gap, we introduce BioTool, a comprehensive biomedical tool-calling dataset designed for fine-tuning LLMs. BioTool comprises 34 frequently used tools collected from the NCBI, Ensembl, and UniProt databases, along with 7,040 high-quality, human-verified query-API call pairs spanning variation, genomics, proteomics, evolution, and general biology. Fine-tuning a 4-billion-parameter LLM on BioTool yields substantial improvements in biomedical tool-calling performance, outperforming cutting-edge commercial LLMs such as GPT-5.1. Furthermore, human expert evaluations demonstrate that integrating a BioTool-fine-tuned tool caller significantly improves downstream answer quality compared to the same LLM without tool usage, highlighting the effectiveness of BioTool in enhancing the biomedical capabilities of LLMs. The full dataset and evaluation code are available at https://github.com/gxx27/BioTool",
+      "description_zh": "尽管大型语言模型（LLM）在通用任务上取得了成功，但它们在生物医学等高度专业化领域的表现仍然不能令人满意。一个关键的限制是LLM无法有效利用生物医学工具，而临床专家和生物医学研究人员在日常工作流程中广泛依赖这些工具。虽然最近的通用领域工具调用数据集大大提高了 LLM 代理的能力，但生物医学领域的现有工作很大程度上依赖于上下文学习并将模型限制为一小部分工具。为了解决这一差距，我们引入了 BioTool，这是一个专为微调LLM而设计的综合生物��学工具调用数据集。 BioTool 包含从 NCBI、Ensembl 和 UniProt 数据库收集的 34 个常用工具，以及涵盖变异、基因组学、蛋白质组学、进化和普通生物学的 7,040 个高质量、经过人类验证的查询 API 调用对。在 BioTool 上微调 40 亿参数 LLM 可以显着提高生物医学工具调用性能，优于 GPT-5.1 等尖端商业 LLM。此外，人类专家评估表明，与不使用工具的相同LLM相比，集成经过 BioTool 微调的工具调用程序可显着提高下游答案质量，凸显了 BioTool 在增强LLM生物医学能力方面的有效性。完整的数据集和评估代码可在 https://github.com/gxx27/BioTool 获取",
+      "authors": "Xin Gao, Ruiyi Zhang, Meixi Du, Peijia Qin, Pengtao Xie",
+      "url": "https://huggingface.co/papers/2605.05758",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.05758"
+      }
+    },
+    {
+      "id": "2605.04330",
+      "title": "The Scaling Properties of Implicit Deductive Reasoning in Transformers",
+      "title_zh": "Transformer 中隐式演绎推理的标度特性",
+      "description": "We investigate the scaling properties of implicit deductive reasoning over Horn clauses in depth-bounded Transformers. By systematically decorrelating provability from spurious features and enforcing algorithmic alignment, we find that in sufficiently deep models with a bidirectional prefix mask, implicit reasoning approaches explicit CoT performance across graph topologies and problem widths, though CoT remains necessary for depth extrapolation.",
+      "description_zh": "我们研究了深度有限 Transformer 中 Horn 子句的隐式演绎推理的缩放特性。通过系统地从虚假特征中去相关可证明性并强制算法对齐，我们发现在具有双向前缀掩码的足够深的模型中，隐式推理在图拓扑和问题宽度上接近显式 CoT 性能，尽管 CoT 对于深度外推仍然是必要的。",
+      "authors": "Enrico Vompa, Tanel Tammet",
+      "url": "https://huggingface.co/papers/2605.04330",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2605.03395"
+        "paperId": "2605.04330"
       }
     },
     {
-      "id": "2605.05185",
-      "title": "OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents",
-      "title_zh": "OpenSearch-VL：前沿多模式搜索代理的开放配方",
-      "description": "Deep search has become a crucial capability for frontier multimodal agents, enabling models to solve complex questions through active search, evidence verification, and multi-step reasoning. Despite rapid progress, top-tier multimodal search agents remain difficult to reproduce, largely due to the absence of open high-quality training data, transparent trajectory synthesis pipelines, or detailed training recipes. To this end, we introduce OpenSearch-VL, a fully open-source recipe for training frontier multimodal deep search agents with agentic reinforcement learning. First, we curated a dedicated pipeline to construct high-quality training data through Wikipedia path sampling, fuzzy entity rewriting, and source-anchor visual grounding, which jointly reduce shortcuts and one-step retrieval collapse. Based on this pipeline, we curate two training datasets, SearchVL-SFT-36k for SFT and SearchVL-RL-8k for RL. Besides, we design a diverse tool environment that unifies text search, image search, OCR, cropping, sharpening, super-resolution, and perspective correction, enabling agents to combine active perception with external knowledge acquisition. Finally, we propose a multi-turn fatal-aware GRPO training algorithm that handles cascading tool failures by masking post-failure tokens while preserving useful pre-failure reasoning through one-sided advantage clamping. Built on this recipe, OpenSearch-VL delivers substantial performance gains, with over 10-point average improvements across seven benchmarks, and achieves results comparable to proprietary commercial models on several tasks. We will release all data, code, and models to support open research on multimodal deep search agents.",
-      "description_zh": "深度搜索已成为前沿多模态智能体的关键能力，使模型能够通过主动搜索、证据验证和多步推理来解决复杂问题。尽管取得了快速进展，但顶级多模态搜索代理仍然难以复制，这很大程度上是由于缺乏开放的高质量训练数据、透明的轨迹合成管道或详细的训练方法。为此，我们引入了 OpenSearch-VL，这是一种完全开源的方法，用于通过代理强化学习来训练前沿多模态深度搜索代理。首先，我们策划了一个专用管道，通过维基百科路径采样、模糊实体重写和源锚点视觉基础来构建高质量���训练数据，这共同减少了捷径和一步检索崩溃。基于这个流程，我们策划了两个训练数据集：用于 SFT 的 SearchVL-SFT-36k 和用于 RL 的 SearchVL-RL-8k。此外，我们设计了一个多样化的工具环境，统一了文本搜索、图像搜索、OCR、裁剪、锐化、超分辨率和透视校正，使智能体能够将主动感知与外部知识获取结合起来。最后，我们提出了一种多轮致命感知 GRPO 训练算法，该算法通过屏蔽故障后标记来处理级联工具故障，同时通过单方面优势钳位保留有用的故障前推理。基于此配方，OpenSearch-VL 提供了显着的性能提升，在七个基准测试中平均提高了 10 点以上，并且在多项任务上取得了与专有商业模型相当的结果。我们将发布所有数据、代码和模型，以支持多模式深度搜索代理的开放研究。",
-      "authors": "Shuang Chen, Kaituo Feng, Hangting Chen, Wenxuan Huang, Dasen Dai, Quanxin Shou, Yunlong Lin, Xiangyu Yue, Shenghua Gao, Tianyu Pang",
-      "url": "https://huggingface.co/papers/2605.05185",
-      "score": 80,
+      "id": "2605.04956",
+      "title": "KernelBench-X: A Comprehensive Benchmark for Evaluating LLM-Generated GPU Kernels",
+      "title_zh": "KernelBench-X：评估 LLM 生成的 GPU 内核的综合基准",
+      "description": "LLM-based Triton kernel generation has attracted significant interest, yet a fundamental empirical question remains unanswered: where does this capability break down, and why? We present KernelBench-X, a benchmark designed to answer this question through category-aware evaluation of correctness and hardware efficiency across 176 tasks in 15 categories. Our systematic comparison of five representative methods yields three main findings. First, task structure determines correctness more than method design. Category explains nearly three times more variance in semantic correctness than method (9.4% vs 3.3% explained deviance), and 72% of Fusion tasks fail across all five methods while Math tasks are solved consistently. Second, iterative refinement improves correctness, but not performance. Across GEAK iterations, compile rate rises from 52.3% to 68.8% while average speedup declines from 1.58times to 1.44times; newly rescued kernels consistently underperform persistently correct ones (1.16times vs 1.58times speedup in round~0to1). Third, correctness does not imply efficiency. 46.6% of correct kernels are slower than the PyTorch eager baseline, and cross-hardware speedup variance reaches 21.4times. Besides, quantization remains completely unsolved (0/30 successes) despite non-trivial compilation rates, revealing systematic misunderstanding of numerical computation contracts rather than surface-level syntax errors. These findings suggest that future progress depends on handling global coordination, explicitly modeling numerical precision, and incorporating hardware efficiency into generation. The code is available at https://github.com/BonnieW05/KernelBenchX",
+      "description_zh": "基于 LLM 的 Triton 内核生成引起了人们的极大兴趣，但一个基本的实证问题仍未得到解答：这种能力在哪里失效，为什么？我们推出了 KernelBench-X，这是一个基准测试，旨在通过对 15 个类别的 176 个任务的正确性和硬件效率进行类别感知评估来回答这个问题。我们对五种代表性方法的系统比较得出了三个主要发现。首先，任务结构比方法设计更决定正确性。类别解释的语义正确性差异几乎是方法的三倍（解释偏差为 9.4% vs 3.3%），72% 的 Fusion 任务在所有五种方法��都失败，而数学任务得到一致解决。其次，迭代细化提高了正确性，但没有提高性能。在GEAK迭代中，编译率从52.3%上升到68.8%，而平均加速比从1.58倍下降到1.44倍；新拯救的内核始终表现不佳，持续正确的内核（0 到 1 轮加速比为 1.16 倍与 1.58 倍）。第三，正确并不意味着高效。 46.6% 的正确内核比 PyTorch eager 基线慢，跨硬件加速方差达到 21.4 倍。此外，尽管编译率不低，但量化仍然完全未解决（0/30 成功），这揭示了对数值计算契约的系统性误解，而不是表面级语法错误。这些发现表明，未来的进展取决于处理全球协调、明确模拟数值精度以及将硬件效率纳入发电中。代码可在 https://github.com/BonnieW05/KernelBenchX 获取",
+      "authors": "Han Wang, Jintao Zhang, Kai Jiang, Haoxu Wang, Jianfei Chen, Jun Zhu",
+      "url": "https://huggingface.co/papers/2605.04956",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "80",
-        "paperId": "2605.05185"
+        "upvotes": "2",
+        "paperId": "2605.04956"
       }
     },
     {
-      "id": "2605.04461",
-      "title": "Stream-T1: Test-Time Scaling for Streaming Video Generation",
-      "title_zh": "Stream-T1：流视频生成的测试时间缩放",
-      "description": "While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the surging costs of training, current test-time video generation methods based on diffusion models suffer from exorbitant candidate exploration costs and lack temporal guidance. To address these structural bottlenecks, we propose shifting the focus to streaming video generation. We identify that its chunk-level synthesis and few denoising steps are intrinsically suited for TTS, significantly lowering computational overhead while enabling fine-grained temporal control. Driven by this insight, we introduced Stream-T1, a pioneering comprehensive TTS framework exclusively tailored for streaming video generation. Specifically, Stream-T1 is composed of three units: (1) Stream -Scaled Noise Propagation, which actively refines the initial latent noise of the generating chunk using historically proven, high-quality previous chunk noise, effectively establishes temporal dependency and utilizing the historical Gaussian prior to guide the current generation; (2) Stream -Scaled Reward Pruning, which comprehensively evaluates generated candidates to strike an optimal balance between local spatial aesthetics and global temporal coherence by integrating immediate short-term assessments with sliding-window-based long-term evaluations; (3) Stream-Scaled Memory Sinking, which dynamically routes the context evicted from KV-cache into distinct updating pathways guided by the reward feedback, ensuring that previously generated visual information effectively anchors and guides the subsequent video stream. Evaluated on both 5s and 30s comprehensive video benchmarks, Stream-T1 demonstrates profound superiority, significantly improving temporal consistency, motion smoothness, and frame-level visual quality.",
-      "description_zh": "虽然测试时间缩放（TTS）提供了一个有希望的方向来增强视频生成，而无需高昂的训练成本，但当前基于扩散模型的测试时间视频生成方法面临过高的候选探索成本并且缺乏时间指导。为了解决这些结构性瓶颈，我们建议将重点转移到流视频生成上。我们发现它的块级合成和很少的去噪步骤本质上适合 TTS，显着降低了计算开销，同时实现了细粒度的时间控制。在这一见解的推动下，我们推出了 Stream-T1，这是一款专为流媒体视频生成量身定制的开创性综合 TTS 框架。具体来说，Stream-T1由三个单元组成：（1）Stream-Scaled Noise Propagation，它使用历史证明的高质量先前块噪声主动细化生成块的初始潜在噪声，有效建立时间依赖性并利用历史高斯先验来指导当前生成； (2) Stream-Scaled Reward Pruning，通过将即时短期评估与基于滑动窗口的长期评估相结合，综合评估生成的候选者，以在局部空间美观性和全局时间一致性之间取得最佳平衡； (3) 流级内存下沉，它将从 KV 缓存中逐出的上下文动态路由到由奖励反馈引导的不同更新路径中，确保先前生成的视觉信息有效地锚定和引导后续视频流。在 5 秒和 30 秒综合视频基准测试中进行评估，Stream-T1 表现出巨大的优越性，显着提高了时间一致性、运动平滑度和帧级视觉质量。",
-      "authors": "Yijing Tu, Shaojin Wu, Mengqi Huang, Wenchuan Wang, Yuxin Wang, Chunxiao Liu, Zhendong Mao",
-      "url": "https://huggingface.co/papers/2605.04461",
-      "score": 93,
+      "id": "2605.06535",
+      "title": "Sparkle: Realizing Lively Instruction-Guided Video Background Replacement via Decoupled Guidance",
+      "title_zh": "Sparkle：通过解耦引导实现生动的指令引导视频背景替换",
+      "description": "In recent years, open-source efforts like Senorita-2M have propelled video editing toward natural language instruction. However, current publicly available datasets predominantly focus on local editing or style transfer, which largely preserve the original scene structure and are easier to scale. In contrast, Background Replacement, a task central to creative applications such as film production and advertising, requires synthesizing entirely new, temporally consistent scenes while maintaining accurate foreground-background interactions, making large-scale data generation significantly more challenging. Consequently, this complex task remains largely underexplored due to a scarcity of high-quality training data. This gap is evident in poorly performing state-of-the-art models, e.g., Kiwi-Edit, because the primary open-source dataset that contains this task, i.e., OpenVE-3M, frequently produces static, unnatural backgrounds. In this paper, we trace this quality degradation to a lack of precise background guidance during data synthesis. Accordingly, we design a scalable pipeline that generates foreground and background guidance in a decoupled manner with strict quality filtering. Building on this pipeline, we introduce Sparkle, a dataset of ~140K video pairs spanning five common background-change themes, alongside Sparkle-Bench, the largest evaluation benchmark tailored for background replacement to date. Experiments demonstrate that our dataset and the model trained on it achieve substantially better performance than all existing baselines on both OpenVE-Bench and Sparkle-Bench. Our proposed dataset, benchmark, and model are fully open-sourced at https://showlab.github.io/Sparkle/.",
+      "description_zh": "近年来，Senorita-2M 等开源项目推动了视频编辑向自然语言教学方向发展。然而，当前公开的数据集主要侧重于本地编辑或风格转移，这在很大程度上保留了原始场景结构并且更容易扩展。相比之下，背景替换是电影制作和广告等创意应用的核心任务，需要合成全新的、时间一致的场景，同时保持准确的前景-背景交互，这使得大规模数据生成更具挑战性。因此，由于缺乏高质量的训练数据，这项复杂的任务在很大程度上仍未得到充分探索。这种差距在性能不佳的最先进模型（例如 Kiwi-Edit）中很明显，因为包含此任务的主要开源数据集（即 OpenVE-3M）经常产生静态、不自然的背景。在本文中，我们将这种质量下降归因于数据合成过程中缺乏精确的背景指导。因此，我们设计了一个可扩展的管道，通过严格的质量过滤以解耦的方式生成前景和背景指导。在此管道的基础上，我们引入了 Sparkle（一个包含约 14 万视频对的数据集，涵盖五个常见的背景更改主题）以及 Sparkle-Bench（迄今为止为背景替换量身定制的最大评估基准）。实验表明，我们的数据集和在其上训练的模型在 OpenVE-Bench 和 Sparkle-Bench 上实现了比所有现有基线更好的性能。我们提出的数据集、基准测试和模型在 https://showlab.github.io/Sparkle/ 上完全开源。",
+      "authors": "Ziyun Zeng, Yiqi Lin, Guoqiang Liang, Mike Zheng Shou",
+      "url": "https://huggingface.co/papers/2605.06535",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "93",
-        "paperId": "2605.04461"
+        "upvotes": "1",
+        "paperId": "2605.06535"
       }
     },
     {
-      "id": "2605.04569",
-      "title": "Lightning Unified Video Editing via In-Context Sparse Attention",
-      "title_zh": "通过上下文稀疏注意力进行闪电统一视频编辑",
-      "description": "Video editing has evolved toward In-Context Learning (ICL) paradigms, yet the resulting quadratic attention costs create a critical computational bottleneck. In this work, we propose In-context Sparse Attention (ISA), the first near-lossless empirical sparse framework tailored for ICL video editing. Our design is grounded in two key insights: first, context tokens exhibit significantly lower saliency than source tokens; second, we theoretically prove and empirically validate that Query sharpness correlates with approximation error. Motivated by these findings, ISA implements an efficient pre-selection strategy to prune redundant context, followed by a dynamic query grouping mechanism that routes high-error queries to full attention and low-error ones to a computationally efficient 0-th order Taylor sparse attention. Furthermore, we build \\texttt{LIVEditor} , a novel lightning video editing model via ISA and a proposed video-editing data pipeline that curated a 1.7M high-quality dataset. Extensive experiments demonstrate that LIVEditor achieves a sim60% reduction in attention-module latency while surpassing state-of-the-art methods across EditVerseBench, IVE-Bench, and VIE-Bench, delivering near-lossless acceleration without compromising visual fidelity.",
-      "description_zh": "视频编辑已经朝着上下文学习（ICL）范式发展，但由此产生的二次注意力成本造成了关键的计算瓶颈。在这项工作中，我们提出了上下文稀疏注意力（ISA），这是第一个为 ICL 视频编辑量身定制的近无损经验稀疏框架。我们的设计基于两个关键见解：首先，上下文标记的显着性明显低于源标记；其次，我们从理论上证明并实证验证查询清晰度与近似误差相关。受这些发现的启发，ISA 实施了一种有效的预选择策略来修剪冗余上下文，然后采用动态查询分组机制，将高错误查询路由到完全注意力，将低错误查询路由到计算高效的 0 阶泰勒稀疏注意力。此外，我们还构建了 \\texttt{LIVEditor} ，这是一种通过 ISA 的新型闪电视频编辑模型，以及一个提议的视频编辑数据管道，该管道生成了 170 万个高质量数据集。大量实验表明，LIVEeditor 的注意力模块延迟降低了 sim60%，同时超越了 EditVerseBench、IVE-Bench 和 VIE-Bench 的最先进方法，在不影响视觉保真度的情况下提供近乎无损的加速。",
-      "authors": "Shitong Shao, Zikai Zhou, Haopeng Li, Yingwei Song, Wenliang Zhong, Lichen Bai, Zeke Xie",
-      "url": "https://huggingface.co/papers/2605.04569",
-      "score": 11,
+      "id": "2605.06216",
+      "title": "TIDE: Every Layer Knows the Token Beneath the Context",
+      "title_zh": "TIDE：每一层都知道上下文下的令牌",
+      "description": "We revisit a universally accepted but under-examined design choice in every modern LLM: a token index is looked up once at the input embedding layer and then permanently discarded. This single-injection assumption induces two structural failures: (i) the Rare Token Problem, where a Zipf-type distribution of vocabulary causes rare-token embeddings are chronically under-trained due to receiving a fraction of the cumulative gradient signal compared to common tokens; and (ii) the Contextual Collapse Problem, where limited parameters models map distributionally similar tokens to indistinguishable hidden states. As an attempt to address both, we propose TIDE, which augments the standard transformer with EmbeddingMemory: an ensemble of K independent MemoryBlocks that map token indices to context-free semantic vectors, computed once and injected into every layer through a depth-conditioned softmax router with a learnable null bank. We theoretically and empirically establish the benefits of TIDE in addressing the issues associated with single-token identity injection as well as improve performance across multiple language modeling and downstream tasks.",
+      "description_zh": "我们重新审视每个现代LLM中普遍接受但未经充分审查的设计选择：在输入嵌入层查找令牌索引一次，然后永久丢弃。这种单注入假设会导致两个结构性失败：（i）稀有令牌问题，其中词汇的 Zipf 型分布导致稀有令牌嵌入长期训练不足，因为与普通令牌相比，接收到的累积梯度信号只占一小部分； (ii) 上下文崩溃问题，其中有限参数模型将分布上相似的标记映射到无法区分的隐藏状态。为了解决这两个问题，我们提出了 TIDE，它通过 EmbeddingMemory 增强了标准转换器：K 个独立 MemoryBlock 的集合，将标记索引映射到上下文无关的语义向量，计算一次并通过具有可学习空库的深度条件 Softmax 路由器注入到每一层。我们从理论上和经验上证明了 TIDE 在解决与单令牌身份注入相关的问题以及提高跨多语言建模和下游任务的性能方面的优势。",
+      "authors": "Ajay Jaiswal, Lauren Hannah, Han-Byul Kim, Duc Hoang, Mehrdad Farajtabar, Minsik Cho",
+      "url": "https://huggingface.co/papers/2605.06216",
+      "score": 0,
       "meta": {
         "source": "huggingface",
-        "upvotes": "11",
-        "paperId": "2605.04569"
+        "upvotes": "0",
+        "paperId": "2605.06216"
       }
     },
     {
-      "id": "2605.04128",
-      "title": "Awaking Spatial Intelligence in Unified Multimodal Understanding and Generation",
-      "title_zh": "在统一多模态理解和生成中唤醒空间智能",
-      "description": "We present JoyAI-Image, a unified multimodal foundation model for visual understanding, text-to-image generation, and instruction-guided image editing. JoyAI-Image couples a spatially enhanced Multimodal Large Language Model (MLLM) with a Multimodal Diffusion Transformer (MMDiT), allowing perception and generation to interact through a shared multimodal interface. Around this architecture, we build a scalable training recipe that combines unified instruction tuning, long-text rendering supervision, spatially grounded data, and both general and spatial editing signals. This design gives the model broad multimodal capability while strengthening geometry-aware reasoning and controllable visual synthesis. Experiments across understanding, generation, long-text rendering, and editing benchmarks show that JoyAI-Image achieves state-of-the-art or highly competitive performance. More importantly, the bidirectional loop between enhanced understanding, controllable spatial editing, and novel-view-assisted reasoning enables the model to move beyond general visual competence toward stronger spatial intelligence. These results suggest a promising path for unified visual models in downstream applications such as vision-language-action systems and world models.",
-      "description_zh": "我们推出了 JoyAI-Image，这是一个用于视觉理解、文本到图像生成和指令引导图像编辑的统一多模态基础模型。 JoyAI-Image 将空间增强的多模态大语言模型 (MLLM) 与多模态扩散变压器 (MMDiT) 结合起来，允许感知和生成通过共享的多模态界面进行交互。围绕这个架构，我们构建了一个可扩展的训练配方，它结合了统一指令调整、长文本渲染监督、空间接地数据以及通用和空间编辑信号。这种设计赋予模型广泛的多模态能力，同时加强几何感知推理和可控视觉合成。跨理解、生成、长文本渲染和编辑基准的实验表明，JoyAI-Image 实现了最先进或极具竞争力的性能。更重要的是，增强理解、可控空间编辑和新颖视图辅助推理之间的双向循环使模型能够超越一般视觉能力，迈向更强的空间智能。这些结果为视觉-语言-动作系统和世界模型等下游应用中的统一视觉模型提供了一条有前途的道路。",
-      "authors": "Lin Song, Wenbo Li, Guoqing Ma, Wei Tang, Bo Wang, Yuan Zhang, Yijun Yang, Yicheng Xiao, Jianhui Liu, Yanbing Zhang, Guohui Zhang, Wenhu Zhang, Hang Xu, Nan Jiang, Xin Han, Haoze Sun, Maoquan Zhang, Haoyang Huang, Nan Duan",
-      "url": "https://huggingface.co/papers/2605.04128",
-      "score": 8,
+      "id": "2605.06652",
+      "title": "When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels",
+      "title_zh": "当不存在基准时：在没有真实标签的情况下验证比较LLM安全评分",
+      "description": "Many deployments must compare candidate language models for safety before a labeled benchmark exists for the relevant language, sector, or regulatory regime. We formalize this setting as benchmarkless comparative safety scoring and specify the contract under which a scenario-based audit can be interpreted as deployment evidence. Scores are valid only under a fixed scenario pack, rubric, auditor, judge, sampling configuration, and rerun budget. Because no labels are available, we replace ground-truth agreement with an instrumental-validity chain: responsiveness to a controlled safe-versus-abliterated contrast, dominance of target-driven variance over auditor and judge artifacts, and stability across reruns.\n  We instantiate the chain in SimpleAudit, a local-first scoring instrument, and validate it on a Norwegian safety pack. Safe and abliterated targets separate with AUROC values between 0.89 and 1.00, target identity is the dominant variance component (η^2 approx 0.52), and severity profiles stabilize by ten reruns. Applying the same chain to Petri shows that it admits both tools. The substantial differences arise upstream of the chain, in claim-contract enforcement and deployment fit. A Norwegian public-sector procurement case comparing Borealis and Gemma 3 demonstrates the resulting evidence in practice: the safer model depends on scenario category and risk measure. Consequently, scores, matched deltas, critical rates, uncertainty, and the auditor and judge used must be reported together rather than collapsed into a single ranking.",
+      "description_zh": "在相关语言、部门或监管制度存在标记基准之前，许多部署必须比较候选语言模型的安全性。我们将这种设置正式化为无基准比较安全评分，并指定基于场景的审计可以解释为部署证据的合同。分数仅在固定场景包、评分标准、审核员、法官、抽样配置和重新运行预算下有效。由于没有可用的标签，我们用工具有效性链取代了基本事实协议：对受控安全与消除对比的响应、目标驱动方差对审计和判断工件的主导地位以及重新运行的稳定性。\n  我们在 SimpleAudit（本地优先的评分工具）中实例化该链，并在挪威安全包上对其进行验证。安全目标和消除目标分开，AUROC 值在 0.89 到 1.00 之间，目标身份是主要方差分量（η^2 约为 0.52），并且严重性概况在十次重新运行后稳定下来。将相同的链应用于 Petri 表明它承认这两种工具。巨大的差异出现在链条的上游，即索赔合同的执行和部署的配合方面。比较 Borealis 和 Gemma 3 的挪威公共部门采购案例在实践中证明了所得证据：更安全的模型取决于情景类别和风险衡量标准。因此，分数、匹配增量、临界率、不确定性以及所使用的审核员和法官必须一起报告，而不是合并为一个排名。",
+      "authors": "Sushant Gautam, Finn Schwall, Annika Willoch Olstad, Fernando Vallecillos Ruiz, Birk Torpmann-Hagen, Sunniva Maria Stordal Bjørklund, Leon Moonen, Klas Pettersen, Michael A. Riegler",
+      "url": "https://huggingface.co/papers/2605.06652",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2605.04128"
+        "upvotes": "1",
+        "paperId": "2605.06652"
+      }
+    },
+    {
+      "id": "2605.04523",
+      "title": "RaguTeam at SemEval-2026 Task 8: Meno and Friends in a Judge-Orchestrated LLM Ensemble for Faithful Multi-Turn Response Generation",
+      "title_zh": "RaguTeam 在 SemEval-2026 任务 8 上的表现：Meno 和朋友们在法官精心策划的 LLM 整体中实现忠实的多轮响应生成",
+      "description": "We present our winning system for Task~B (generation with reference passages) in SemEval-2026 Task~8: MTRAGEval. Our method is a heterogeneous ensemble of seven LLMs with two prompting variants, where a GPT-4o-mini judge selects the best candidate per instance. We ranked 1st out of 26 teams, achieving a conditioned harmonic mean of 0.7827 and outperforming the strongest baseline (gpt-oss-120b, 0.6390). Ablations show that diversity in model families, scales, and prompting strategies is essential, with the ensemble consistently beating any single model. We also introduce Meno-Lite-0.1, a 7B domain-adapted model with a strong cost--performance trade-off, and analyse MTRAGEval, highlighting annotation limitations and directions for improvement. Our code is publicly available: https://github.com/RaguTeam/ragu_mtrag_semeval",
+      "description_zh": "我们在 SemEval-2026 Task~8：MTRAGEval 中展示了我们的 Task~B（带有参考段落的生成）获胜系统。我们的方法是由七个 LLM 组成的异构集合，具有两个提示变体，其中 GPT-4o-mini 法官为每个实例选择最佳候选人。我们在 26 支团队中排名第一，达到 0.7827 的条件调和平均值，并且优于最强的基线（gpt-oss-120b，0.6390）。消融表明，模型家族、规模和提示策略的多样性至关重要，整体始终击败任何单一模型。我们还介绍了 Meno-Lite-0.1，这是一种具有很强的性价比权衡的 7B 领域适应模型，并分析了 MTRAGEval，强调了注释的局限性和改进方向。我们的代码是公开的：https://github.com/RaguTeam/ragu_mtrag_semeval",
+      "authors": "Ivan Bondarenko, Roman Derunets, Oleg Sedukhin, Mikhail Komarov, Ivan Chernov, Mikhail Kulakov",
+      "url": "https://huggingface.co/papers/2605.04523",
+      "score": 35,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "35",
+        "paperId": "2605.04523"
+      }
+    },
+    {
+      "id": "2605.04077",
+      "title": "Balanced Aggregation: Understanding and Fixing Aggregation Bias in GRPO",
+      "title_zh": "平衡聚合：理解并修复 GRPO 中的聚合偏差",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) has become a central paradigm for improving reasoning and code generation in large language models, and GRPO-style training is widely adopted for its simplicity and effectiveness. However, an important design choice remains underexplored: how token-level policy gradient terms are aggregated within each sampled group. Standard GRPO uses sequence aggregation, while recent work has advocated token aggregation as a better alternative. We show that these two rules induce different optimization biases: token aggregation introduces sign-length coupling, while sequence aggregation implicitly downweights longer responses through sequence-level equal weighting. To address this tension, we propose Balanced Aggregation (BA), a simple drop-in replacement that computes token-level means separately within the positive and negative subsets and then combines them with sequence-count-based weights. Experiments with Qwen2.5-Math-7B and Qwen3-1.7B on DAPO-17k and Polaris, evaluated on six reasoning and coding benchmarks, show that BA consistently improves training stability and final performance over standard token and sequence aggregation. Our analysis further shows that the relative effectiveness of token and sequence aggregation is largely governed by response-length variation and the positive-negative length gap, highlighting aggregation as a critical design dimension in GRPO-style RLVR.",
+      "description_zh": "具有可验证奖励的强化学习（RLVR）已成为改善大型语言模型中的推理和代码生成的核心范式，GRPO 式训练因其简单性和有效性而被广泛采用。然而，一个重要的设计选择仍未得到充分探索：令牌级策略梯度项如何在每个采样组内聚合。标准 GRPO 使用序列聚合，而最近的工作主张将令牌聚合作为更好的替代方案。我们证明这两个规则会引起不同的优化偏差：令牌聚合引入了符号长度耦合，而序列聚合通过序列级相等加权隐式地降低了较长响应的权重。为了解决这种矛盾，我们提出了平衡聚合（BA），这是一种简单的直接替换，可以在正子集和负子集中分别计算标记级均值，然后将它们与基于序列计数的权重相结合。在 DAPO-17k 和 Polaris 上使用 Qwen2.5-Math-7B 和 Qwen3-1.7B 进行的实验，在六个推理和编码基准上进行评估，表明 BA 相对于标准令牌和序列聚合持续提高了训练稳定性和最终性能。我们的分析进一步表明，标记和序列聚合的相对有效性很大程度上取决于响应长度变化和正负长度差距，这凸显了聚合作为 GRPO 式 RLVR 中的关键设计维度。",
+      "authors": "Zhiyuan Zeng, Jiameng Huang, Zhangyue Yin, Jiashuo Liu, Ziniu Li, Bingrui Li, Yuhao Wu, Yining Zheng, Ge Zhang, Wenhao Huang, Xipeng Qiu",
+      "url": "https://huggingface.co/papers/2605.04077",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2605.04077"
       }
     }
   ]

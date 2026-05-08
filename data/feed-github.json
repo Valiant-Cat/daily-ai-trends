@@ -1,7 +1,7 @@
 {
   "source": "github",
-  "updatedAt": "2026-05-07T20:49:03.223Z",
-  "count": 13,
+  "updatedAt": "2026-05-08T20:37:18.339Z",
+  "count": 12,
   "items": [
     {
       "id": "anthropics-financial-services",
@@ -11,14 +11,32 @@
       "description_zh": "无可用描述",
       "authors": "anthropics",
       "url": "https://github.com/anthropics/financial-services",
-      "score": 11283,
+      "score": 14690,
       "meta": {
         "source": "github",
-        "stars": "11,283",
+        "stars": "14,690",
         "language": "Python",
         "repo": "anthropics/financial-services",
         "owner": "anthropics",
         "repoName": "financial-services"
+      }
+    },
+    {
+      "id": "addyosmani-agent-skills",
+      "title": "agent-skills",
+      "title_zh": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "description_zh": "AI 编码代理的生产级工程技能。",
+      "authors": "addyosmani",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "score": 35055,
+      "meta": {
+        "source": "github",
+        "stars": "35,055",
+        "language": "Shell",
+        "repo": "addyosmani/agent-skills",
+        "owner": "addyosmani",
+        "repoName": "agent-skills"
       }
     },
     {
@@ -29,10 +47,10 @@
       "description_zh": "在终端中运行的 DeepSeek 模型的编码代理",
       "authors": "Hmbown",
       "url": "https://github.com/Hmbown/DeepSeek-TUI",
-      "score": 18476,
+      "score": 21624,
       "meta": {
         "source": "github",
-        "stars": "18,476",
+        "stars": "21,624",
         "language": "Rust",
         "repo": "Hmbown/DeepSeek-TUI",
         "owner": "Hmbown",
@@ -47,10 +65,10 @@
       "description_zh": "DFlash：用于闪存推测解码的块扩散",
       "authors": "z-lab",
       "url": "https://github.com/z-lab/dflash",
-      "score": 3435,
+      "score": 3799,
       "meta": {
         "source": "github",
-        "stars": "3,435",
+        "stars": "3,799",
         "language": "Python",
         "repo": "z-lab/dflash",
         "owner": "z-lab",
@@ -58,21 +76,75 @@
       }
     },
     {
-      "id": "InsForge-InsForge",
-      "title": "InsForge",
-      "title_zh": "InsForge",
-      "description": "InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents.",
-      "description_zh": "InsForge 是一个基于 Postgres 的后端，具有身份验证、存储、计算、托管和 AI 网关。专为编码代理而设计。",
-      "authors": "InsForge",
-      "url": "https://github.com/InsForge/InsForge",
-      "score": 8801,
+      "id": "decolua-9router",
+      "title": "9router",
+      "title_zh": "9router",
+      "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+      "description_zh": "无限免费人工智能编码。通过 40 多个提供商将 Claude Code、Codex、Cursor、Cline、Copilot、Antigravity 连接到免费的 Claude/GPT/Gemini。自动回退，RTK -40% 代币，永远不会达到极限。",
+      "authors": "decolua",
+      "url": "https://github.com/decolua/9router",
+      "score": 5466,
       "meta": {
         "source": "github",
-        "stars": "8,801",
-        "language": "TypeScript",
-        "repo": "InsForge/InsForge",
-        "owner": "InsForge",
-        "repoName": "InsForge"
+        "stars": "5,466",
+        "language": "JavaScript",
+        "repo": "decolua/9router",
+        "owner": "decolua",
+        "repoName": "9router"
+      }
+    },
+    {
+      "id": "CloakHQ-CloakBrowser",
+      "title": "CloakBrowser",
+      "title_zh": "CloakBrowser",
+      "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+      "description_zh": "Stealth Chromium 通过了所有机器人检测测试。使用源级指纹补丁替换 Playwright。 30/30 测试通过。",
+      "authors": "CloakHQ",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "score": 2829,
+      "meta": {
+        "source": "github",
+        "stars": "2,829",
+        "language": "Python",
+        "repo": "CloakHQ/CloakBrowser",
+        "owner": "CloakHQ",
+        "repoName": "CloakBrowser"
+      }
+    },
+    {
+      "id": "awslabs-aidlc-workflows",
+      "title": "aidlc-workflows",
+      "title_zh": "aidlc-workflows",
+      "description": "AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents",
+      "description_zh": "适用于 AI 编码代理的 AI 驱动生命周期 (AI-DLC) 自适应工作流引导规则",
+      "authors": "awslabs",
+      "url": "https://github.com/awslabs/aidlc-workflows",
+      "score": 1716,
+      "meta": {
+        "source": "github",
+        "stars": "1,716",
+        "language": "Python",
+        "repo": "awslabs/aidlc-workflows",
+        "owner": "awslabs",
+        "repoName": "aidlc-workflows"
+      }
+    },
+    {
+      "id": "HKUDS-AI-Trader",
+      "title": "AI-Trader",
+      "title_zh": "AI-Trader",
+      "description": "\"AI-Trader: 100% Fully-Automated Agent-Native Trading\"",
+      "description_zh": "“AI-Trader：100%全自动代理原生交易”",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/AI-Trader",
+      "score": 14536,
+      "meta": {
+        "source": "github",
+        "stars": "14,536",
+        "language": "Python",
+        "repo": "HKUDS/AI-Trader",
+        "owner": "HKUDS",
+        "repoName": "AI-Trader"
       }
     },
     {
@@ -83,10 +155,10 @@
       "description_zh": "SimpleQA 上约为 95%（例如 3090 上的 Qwen3.6-27B）。支持所有本地和云 LLM（llama.cpp、Ollama、Google...）。 10 多个搜索引擎 - arXiv、PubMed、您的私人文档。一切都是本地和加密的。",
       "authors": "LearningCircuit",
       "url": "https://github.com/LearningCircuit/local-deep-research",
-      "score": 6167,
+      "score": 6680,
       "meta": {
         "source": "github",
-        "stars": "6,167",
+        "stars": "6,680",
         "language": "Python",
         "repo": "LearningCircuit/local-deep-research",
         "owner": "LearningCircuit",
@@ -94,147 +166,57 @@
       }
     },
     {
-      "id": "addyosmani-agent-skills",
-      "title": "agent-skills",
-      "title_zh": "agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "description_zh": "AI 编码代理的生产级工程技能。",
-      "authors": "addyosmani",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "score": 32753,
+      "id": "lobehub-lobehub",
+      "title": "lobehub",
+      "title_zh": "lobehub",
+      "description": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+      "description_zh": "工作和生活的终极空间 - 寻找、建立并与与您一起成长的代理团队成员进行协作。我们正在将代理利用提升到一个新的水平——实现多代理协作、轻松的代理团队设计，以及引入代理作为工作交互单元。",
+      "authors": "lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "score": 76425,
       "meta": {
         "source": "github",
-        "stars": "32,753",
-        "language": "Shell",
-        "repo": "addyosmani/agent-skills",
-        "owner": "addyosmani",
-        "repoName": "agent-skills"
-      }
-    },
-    {
-      "id": "VectifyAI-PageIndex",
-      "title": "PageIndex",
-      "title_zh": "PageIndex",
-      "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
-      "description_zh": "📑 PageIndex：无向量、基于推理的 RAG 的文档索引",
-      "authors": "VectifyAI",
-      "url": "https://github.com/VectifyAI/PageIndex",
-      "score": 29461,
-      "meta": {
-        "source": "github",
-        "stars": "29,461",
-        "language": "Python",
-        "repo": "VectifyAI/PageIndex",
-        "owner": "VectifyAI",
-        "repoName": "PageIndex"
-      }
-    },
-    {
-      "id": "vercel-labs-open-agents",
-      "title": "open-agents",
-      "title_zh": "open-agents",
-      "description": "An open source template for building cloud agents.",
-      "description_zh": "用于构建云代理的开源模板。",
-      "authors": "vercel-labs",
-      "url": "https://github.com/vercel-labs/open-agents",
-      "score": 5000,
-      "meta": {
-        "source": "github",
-        "stars": "5,000",
+        "stars": "76,425",
         "language": "TypeScript",
-        "repo": "vercel-labs/open-agents",
-        "owner": "vercel-labs",
-        "repoName": "open-agents"
+        "repo": "lobehub/lobehub",
+        "owner": "lobehub",
+        "repoName": "lobehub"
       }
     },
     {
-      "id": "docusealco-docuseal",
-      "title": "docuseal",
-      "title_zh": "docuseal",
-      "description": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
-      "description_zh": "开源 DocuSign 替代方案。创建、填写和签署数字文档 ✍️",
-      "authors": "docusealco",
-      "url": "https://github.com/docusealco/docuseal",
-      "score": 15525,
+      "id": "datawhalechina-hello-agents",
+      "title": "hello-agents",
+      "title_zh": "hello-agents",
+      "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+      "description_zh": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+      "authors": "datawhalechina",
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "score": 44499,
       "meta": {
         "source": "github",
-        "stars": "15,525",
-        "language": "Ruby",
-        "repo": "docusealco/docuseal",
-        "owner": "docusealco",
-        "repoName": "docuseal"
-      }
-    },
-    {
-      "id": "decolua-9router",
-      "title": "9router",
-      "title_zh": "9router",
-      "description": "🆓 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
-      "description_zh": "🆓 无限免费人工智能编码。通过 40 多个提供商将 Claude Code、Codex、Cursor、Cline、Copilot、Antigravity 连接到免费的 Claude/GPT/Gemini。自动回退，RTK -40% 代币，永远不会达到极限。",
-      "authors": "decolua",
-      "url": "https://github.com/decolua/9router",
-      "score": 4428,
-      "meta": {
-        "source": "github",
-        "stars": "4,428",
-        "language": "JavaScript",
-        "repo": "decolua/9router",
-        "owner": "decolua",
-        "repoName": "9router"
-      }
-    },
-    {
-      "id": "PriorLabs-TabPFN",
-      "title": "TabPFN",
-      "title_zh": "TabPFN",
-      "description": "⚡ TabPFN: Foundation Model for Tabular Data ⚡",
-      "description_zh": "⚡ TabPFN：表格数据的基础模型 ⚡",
-      "authors": "PriorLabs",
-      "url": "https://github.com/PriorLabs/TabPFN",
-      "score": 6760,
-      "meta": {
-        "source": "github",
-        "stars": "6,760",
+        "stars": "44,499",
         "language": "Python",
-        "repo": "PriorLabs/TabPFN",
-        "owner": "PriorLabs",
-        "repoName": "TabPFN"
+        "repo": "datawhalechina/hello-agents",
+        "owner": "datawhalechina",
+        "repoName": "hello-agents"
       }
     },
     {
-      "id": "aaif-goose-goose",
-      "title": "goose",
-      "title_zh": "goose",
-      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-      "description_zh": "开源、可扩展的 AI 代理，超越代码建议 - 使用任何 LLM 安装、执行、编辑和测试",
-      "authors": "aaif-goose",
-      "url": "https://github.com/aaif-goose/goose",
-      "score": 44437,
+      "id": "flutter-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "flutter",
+      "url": "https://github.com/flutter/skills",
+      "score": 1616,
       "meta": {
         "source": "github",
-        "stars": "44,437",
-        "language": "Rust",
-        "repo": "aaif-goose/goose",
-        "owner": "aaif-goose",
-        "repoName": "goose"
-      }
-    },
-    {
-      "id": "Augani-openreel-video",
-      "title": "openreel-video",
-      "title_zh": "openreel-video",
-      "description": "OpenReel Video - Professional browser-based video editor. Open source CapCut alternative. 100% browser-based, no installation, no cloud uploads, no watermarks.",
-      "description_zh": "OpenReel Video - 基于浏览器的专业视频编辑器。开源 CapCut 替代方案。 100%基于浏览器，无需安装，无云端上传，无水印。",
-      "authors": "Augani",
-      "url": "https://github.com/Augani/openreel-video",
-      "score": 1579,
-      "meta": {
-        "source": "github",
-        "stars": "1,579",
-        "language": "TypeScript",
-        "repo": "Augani/openreel-video",
-        "owner": "Augani",
-        "repoName": "openreel-video"
+        "stars": "1,616",
+        "language": "Dart",
+        "repo": "flutter/skills",
+        "owner": "flutter",
+        "repoName": "skills"
       }
     }
   ]
