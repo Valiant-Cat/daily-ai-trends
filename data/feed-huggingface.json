@@ -1,20 +1,35 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-08T20:37:25.347Z",
+  "updatedAt": "2026-05-09T20:23:59.719Z",
   "count": 15,
   "items": [
+    {
+      "id": "2605.06663",
+      "title": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "title_zh": "EMO：针对紧急模块化的专家预训练组合",
+      "description": "Large language models are typically deployed as monolithic systems, requiring the full model even when applications need only a narrow subset of capabilities, e.g., code, math, or domain-specific knowledge. Mixture-of-Experts (MoEs) seemingly offer a potential alternative by activating only a subset of experts per input, but in practice, restricting inference to a subset of experts for a given domain leads to severe performance degradation. This limits their practicality in memory-constrained settings, especially as models grow larger and sparser. We introduce EMO, an MoE designed for modularity-the independent use and composition of expert subsets-without requiring human-defined priors. Our key idea is to encourage tokens from similar domains to rely on similar experts. Since tokens within a document often share a domain, EMO restricts them to select experts from a shared pool, while allowing different documents to use different pools. This simple constraint enables coherent expert groupings to emerge during pretraining using document boundaries alone. We pretrain a 1B-active, 14B-total EMO on 1T tokens. As a full model, it matches standard MoE performance. Crucially, it enables selective expert use: retaining only 25% (12.5%) of experts incurs just a 1% (3%) absolute drop, whereas standard MoEs break under the same setting. We further find that expert subsets in EMO specialize at semantic levels (e.g., domains such as math or code), in contrast to the low-level syntactic specialization observed in standard MoEs. Altogether, our results demonstrate a path toward modular, memory-efficient deployment of large, sparse models and open new opportunities for composable architectures.",
+      "description_zh": "大型语言模型通常部署为整体系统，即使应用程序只需要一小部分功能（例如代码、数学或特定领域的知识），也需要完整的模型。专家混合 (MoE) 似乎提供了一种潜在的替代方案，即每个输入仅激活一部分专家，但实际上，将推理限制为给定领域的一部分专家会导致性能严重下降。这限制了它们在内存受限环境中的实用性，尤其是当模型变得更大、更稀疏时。我们引入了 EMO，这是一种为模块化而设计的 MoE，即专家子集的独立使用和组合，而不需要人类定义的先验。我们的主要想法是鼓励来自相似领域的代币依赖相似的专家。由于文档中的代币通常共享一个域，因此 EMO 限制它们从共享池中选择专家，同时允许不同的文档使用不同的池。这个简单的约束使得在预训练期间仅使用文档边界就可以出现一致的专家分组。我们在 1T 代币上预训练 1B 活跃、总 14B 的 EMO。作为完整型号，它符合标准的 MoE 性能。至关重要的是，它可以选择性地使用专家：仅保留 25% (12.5%) 的专家只会导致 1% (3%) 的绝对下降，而标准 MoE 在相同设置下就会崩溃。我们进一步发现，EMO 中的专家子集专注于语义级别（例如，数学或代码等领域），这与标准 MoE 中观察到的低级句法专业化形成鲜明对比。总而言之，我们的结果展示了一条通往大型稀疏模型的模块化、内存高效部署的道路，并为可组合架构开辟了新的机会。",
+      "authors": "Ryan Wang, Akshita Bhagia, Sewon Min",
+      "url": "https://huggingface.co/papers/2605.06663",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2605.06663"
+      }
+    },
     {
       "id": "2605.06627",
       "title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
       "title_zh": "PianoCoRe：组合和精炼的钢琴 MIDI 数据集",
       "description": "Symbolic music datasets with matched scores and performances are essential for many music information retrieval (MIR) tasks. Yet, existing resources often cover a narrow range of composers, lack performance variety, omit note-level alignments, or use inconsistent naming formats. This work presents PianoCoRe, a large-scale piano MIDI dataset that unifies and refines major open-source piano corpora. The dataset contains 250,046 performances of 5,625 pieces written by 483 composers, totaling 21,763 h of performed music. PianoCoRe is released in tiered subsets to support different applications: from large-scale analysis and pre-training (PianoCoRe-C and deduplicated PianoCoRe-B) to expressive performance modeling with note-level score alignment (PianoCoRe-A/A*). The note-aligned subset, PianoCoRe-A, provides the largest open-source collection of 157,207 performances aligned to 1,591 scores to date. In addition to the dataset, the contributions are: (1) a MIDI quality classifier for detecting corrupted and score-like transcriptions and (2) RAScoP, an alignment refinement pipeline that cleans temporal alignment errors and interpolates missing notes. The analysis shows that the refinement reduces temporal noise and eliminates tempo outliers. Moreover, an expressive performance rendering model trained on PianoCoRe demonstrates improved robustness to unseen pieces compared to models trained on raw or smaller datasets. PianoCoRe provides a ready-to-use foundation for the next generation of expressive piano performance research.",
-      "description_zh": "具有匹配乐谱和表演的符号音乐数据集对于许多音乐信息检索 (MIR) 任务至关重要。然而，现有资源通常涵盖作曲家范围狭窄、缺乏演奏多样性、忽略音符级别对齐或使用不一致的命名格式。这项工作提出了 PianoCoRe，这是一个大型钢琴 MIDI 数据集，它统一并完善了主要的开源钢琴语料库。该数据集包含 483 名作曲家创作的 5,625 首作品的 250,046 场表演，总计 21,763 小时的表演音乐。 PianoCoRe 以分层子集形式发布，以支持不同的应用：从大规模分析和预训练（PianoCoRe-C 和去重 PianoCoRe-B）到具有音符级分数对齐的表现力建模（PianoCoRe-A/A*）。音符对齐子集 PianoCoRe-A 提供迄今为止最大的开源集合，其中包含 157,207 个演奏，与 1,591 个乐谱对齐。除了数据集之外，贡献还包括：(1) 一个 MIDI 质量分类器，用于检测损坏的和类似乐谱的转录；(2) RAScoP，一个对齐细化管道，可以清除时间对齐错误并插入丢失的音符。分析表明，细化减少了时间噪声并消除了节奏异常值。此外，与在原始数据集或较小数据集上训练的模型相比，在 PianoCoRe 上训练的富有表现力的性能渲染模型表现出对看不见的片段的鲁棒性有所提高。 PianoCoRe 为下一代富有表现力的钢琴演奏研究提供了即用型基础。",
+      "description_zh": "具有匹配乐谱和表演的符号音乐数据集对于许多音乐信息检索 (MIR) 任务至关重要。然而，现有资源通常涵盖作曲家范围狭窄、缺乏演奏多样性、忽略音符级别对齐或使用不一致的命名格式。这项工作提出了 PianoCoRe，这是一个大型钢琴 MIDI 数据集，它统一并完善了主要的开源钢琴语料库。该数据集包含 483 名作曲家创作的 5,625 首作品的 250,046 场表演，总计 21,763 小时的表演音乐。 PianoCoRe 以分层子集形式发布，以支持不同的应用：从大规模分析和预训���（PianoCoRe-C 和去重 PianoCoRe-B）到具有音符级分数对齐的表现力建模（PianoCoRe-A/A*）。音符对齐子集 PianoCoRe-A 提供迄今为止最大的开源集合，其中包含 157,207 个演奏，与 1,591 个乐谱对齐。除了数据集之外，贡献还包括：(1) 一个 MIDI 质量分类器，用于检测损坏的和类似乐谱的转录；(2) RAScoP，一个对齐细化管道，可以清除时间对齐错误并插入丢失的音符。分析表明，细化减少了时间噪声并消除了节奏异常值。此外，与在原始数据集或较小数据集上训练的模型相比，在 PianoCoRe 上训练的富有表现力的性能渲染模型表现出对看不见的片段的鲁棒性有所提高。 PianoCoRe 为下一代富有表现力的钢琴演奏研究提供了即用型基础。",
       "authors": "Ilya Borovik",
       "url": "https://huggingface.co/papers/2605.06627",
-      "score": 1,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "4",
         "paperId": "2605.06627"
       }
     },
@@ -26,10 +41,10 @@
       "description_zh": "大型语言模型（LLM）越来越多地用作交互式代理，但优化它们以进行长期决策仍然很困难，因为当前的方法很大程度上纯粹是反应性的，这削弱了扩展轨迹上的探索和信用分配。在这项工作中，我们提出了策略轨迹抽象（StraTA），这是一个简单的框架，它将显式轨迹级策略引入代理强化学习（RL）中。 StraTA 从初始任务状态中采样紧凑策略，根据该策略调整后续操作，并与分层 GRPO 式推出设计联合训练策略生成和操作执行，并通过多样化策略推出和关键自我判断进一步增强。 ALFWorld、WebShop 和 SciWorld 上的实验表明，与强大的基线相比，StraTA 持续提高了样本效率和最终性能。 StraTA 在 ALFWorld 上的成功率达到 93.1%，在 WebShop 上的成功率达到 84.2%。在 SciWorld 上，StraTA 获得了 63.5% 的总分，优于前沿闭源模型。",
       "authors": "Xiangyuan Xue, Yifan Zhou, Zidong Wang, Shengji Tang, Philip Torr, Wanli Ouyang, Lei Bai, Zhenfei Yin",
       "url": "https://huggingface.co/papers/2605.06642",
-      "score": 10,
+      "score": 16,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "16",
         "paperId": "2605.06642"
       }
     },
@@ -41,10 +56,10 @@
       "description_zh": "我们解决了视觉语言模型（VLM）中知识组合的挑战，在多个领域或任务中积累专业知识通常会导致灾难性的遗忘。我们引入了 GeoStack（几何堆叠），这是一个模块化框架，允许独立训练的领域专家组成统一的模型。通过对适配器流形施加几何和结构约束，GeoStack 确保保留基础模型的基础知识。此外，我们以数学方式证明了权重折叠属性，无论集成专家的数量有多少，都可以实现恒定时间推理复杂度 (O(1))。多领域适应和类增量学习的实验结果表明，GeoStack 为长期知识组合提供了一种有效的机制，同时显着减轻了灾难性遗忘。代码可在 https://github.com/QuantitativeImagingLaboratory/GeoStack 获取。",
       "authors": "Pranav Mantini, Shishir K. Shah",
       "url": "https://huggingface.co/papers/2605.06477",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2605.06477"
       }
     },
@@ -56,10 +71,10 @@
       "description_zh": "训练计算的速度日益超过高质量数据的可用性。这将核心挑战从最佳计算分配转移到从有限数据中提取最大价值。广泛采用的 Chinchilla 缩放法则假设每个训练令牌都是唯一的。这限制了它在数据受限的情况下指导预训练决策的能力。我们使用简单的加性过拟合惩罚对重复下的超额损失进行建模，并发现它准确地描述了模型行为。我们的缩放定律产生了全新的计算最优分配建议。超过某一点，进一步的重复会适得其反，计算最好花在模型容量上。我们表明，遵循法律推荐的配置可以提高数据受限情况下的性能。最后，由于我们的单参数形式隔离了单个系数的过度拟合，因此它可以跨训练配置进行直接比较。作为一个案例研究，我们表明，强烈的权重衰减 (λ=1.0) 使该系数降低了大约 70%，为最近的发现提供了比例律解释，即数据受限状态下的最佳权重衰减比标准实践大一个数量级。",
       "authors": "Justin Lovelace, Christian Belardi, Srivatsa Kundurthy, Shriya Sudhakar, Kilian Q. Weinberger",
       "url": "https://huggingface.co/papers/2605.01640",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2605.01640"
       }
     },
@@ -68,13 +83,13 @@
       "title": "Generative Quantum-inspired Kolmogorov-Arnold Eigensolver",
       "title_zh": "受量子启发的生成式柯尔莫哥洛夫-阿诺德特征求解器",
       "description": "High-performance computing (HPC) is increasingly important for scalable quantum chemistry workflows that couple classical generative models, quantum circuit simulation, and selected configuration interaction postprocessing. We present the generative quantum-inspired Kolmogorov-Arnold eigensolver (GQKAE), a parameter-efficient extension of the generative quantum eigensolver (GQE) for quantum chemistry. GQKAE replaces the parameter-heavy feed-forward network components in GPT-style generative eigensolvers with hybrid quantum-inspired Kolmogorov-Arnold network modules, forming a compact HQKANsformer backbone. The method preserves autoregressive operator selection and the quantum-selected configuration interaction evaluation pipeline, while using single-qubit DatA Re-Uploading ActivatioN modules to provide expressive nonlinear mappings. Numerical benchmarks on H4, N2, LiH, C2H6, H2O, and the H2O dimer show that GQKAE achieves chemical accuracy comparable to the GPT-based GQE architecture, while reducing trainable parameters and memory by approximately 66% and improving wall-time performance. For strongly correlated systems such as N2 and LiH, GQKAE also improves convergence behavior and final energy errors. These results indicate that quantum-inspired Kolmogorov-Arnold networks can reduce classical-side overhead while preserving circuit-generation quality, offering a scalable route for HPC-quantum co-design on near-term quantum platforms.",
-      "description_zh": "高性能计算 (HPC) 对于可扩展的量子化学工作流程越来越重要，该工作流程将经典生成模型、量子电路模拟和选定的配置交互后处理结合起来。我们提出了生成量子启发的柯尔莫哥洛夫-阿诺德本征求解器 (GQKAE)，这是量子化学生成量子本征求解器 (GQE) 的参数有效扩展。 GQKAE 用混合量子启发的 Kolmogorov-Arnold 网络模块取代了 GPT 式生成本征解算器中参数较多的前馈网络组件，形成了紧凑的 HQKANsformer 主干。该方法保留了自回归算子选择和量子选择配置交互��估管道，同时使用单量子位数据重新上传激活模块来提供富有表现力的非线性映射。 H4、N2、LiH、C2H6、H2O 和 H2O 二聚体的数值基准表明，GQKAE 实现了与基于 GPT 的 GQE 架构相当的化学精度，同时将可训练参数和内存减少了约 66%，并提高了实际运行时间性能。对于 N2 和 LiH 等强相关系统，GQKAE 还可以改善收敛行为和最终能量误差。这些结果表明，受量子启发的 Kolmogorov-Arnold 网络可以减少经典侧开销，同时保持电路生成质量，为近期量子平台上的 HPC-量子协同设计提供可扩展的途径。",
+      "description_zh": "高性能计算 (HPC) 对于可扩展的量子化学工作流程越来越重要，该工作流程将经典生成模型、量子电路模拟和选定的配置交互后处理结合起来。我们提出了生成量子启发的柯尔莫哥洛夫-阿诺德本征求解器 (GQKAE)，这是量子化学生成量子本征求解器 (GQE) 的参数有效扩展。 GQKAE 用混合量子启发的 Kolmogorov-Arnold 网络模块取代了 GPT 式生成本征解算器中参数较多的前馈网络组件，形成了紧凑的 HQKANsformer 主干。该方法保留了自回归算子选择和量子选择配置交互评���管道，同时使用单量子位数据重新上传激活模块来提供富有表现力的非线性映射。 H4、N2、LiH、C2H6、H2O 和 H2O 二聚体的数值基准表明，GQKAE 实现了与基于 GPT 的 GQE 架构相当的化学精度，同时将可训练参数和内存减少了约 66%，并提高了实际运行时间性能。对于 N2 和 LiH 等强相关系统，GQKAE 还可以改善收敛行为和最终能量误差。这些结果表明，受量子启发的 Kolmogorov-Arnold 网络可以减少经典侧开销，同时保持电路生成质量，为近期量子平台上的 HPC-量子协同设计提供���扩展的途径。",
       "authors": "Yu-Cheng Lin, Yu-Chao Hsu, I-Shan Tsai, Chun-Hua Lin, Kuo-Chung Peng, Jiun-Cheng Jiang, Yun-Yuan Wang, Tzung-Chi Huang, Tai-Yue Li, Kuan-Cheng Chen, Samuel Yen-Chi Chen, Nan-Yow Chen",
       "url": "https://huggingface.co/papers/2605.04604",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2605.04604"
       }
     },
@@ -86,10 +101,10 @@
       "description_zh": "现代检索系统，无论是词汇检索还是语义检索，都通过固定的相似性接口公开语料库，该接口在推理之前将访问压缩为单个 top-k 检索步骤。这种抽象是有效的，但对于代理搜索来说，它成为一个瓶颈：精确的词汇约束、稀疏线索连词、局部上下文检查和多步假设细化很难通过调用传统的现成检索器来实现，并且早期过滤掉的证据无法通过更强的下游推理来恢复。代理任务进一步加剧了这种限制，因为它们需要代理协调多个步骤，包括发现中间实体、组合薄弱线索以及在观察部分证据后修改计划。为了解决这个限制，我们研究了直接语料库交互（DCI），其中代理使用通用终端工具（例如 grep、文件读取、shell 命令、轻量级脚本）直接搜索原始语料库，而不需要任何嵌入模型、向量索引或检索 API。这种方法不需要离线索引，并且自然地适应不断发展的本地语料库。在 IR 基准测试和端到端代理搜索任务中，这种简单的设置大大优于几个 BRIGHT 和 BEIR 数据集上的强稀疏、密集和重排序基线，并且在 BrowseComp-Plus 和多跳 QA 上获得了很高的准确性，而无需依赖任何传统的语义检索器。我们的结果表明，随着语言代理变得更强，检索质量不仅取决于推理能力，还取决于模型与语料库交互的界面的分辨率，DCI 为代理搜索开辟了更广阔的界面设计空间。",
       "authors": "Zhuofeng Li, Haoxiang Zhang, Cong Wei, Pan Lu, Ping Nie, Yi Lu, Yuyang Bai, Shangbin Feng, Hangxiao Zhu, Ming Zhong, Yuyu Zhang, Jianwen Xie, Yejin Choi, James Zou, Jiawei Han, Wenhu Chen, Jimmy Lin, Dongfu Jiang, Yu Zhang",
       "url": "https://huggingface.co/papers/2605.05242",
-      "score": 44,
+      "score": 66,
       "meta": {
         "source": "huggingface",
-        "upvotes": "44",
+        "upvotes": "66",
         "paperId": "2605.05242"
       }
     },
@@ -98,13 +113,13 @@
       "title": "Audio-Visual Intelligence in Large Foundation Models",
       "title_zh": "大型基础模型中的视听智能",
       "description": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable generation and reasoning across dynamic, temporally grounded signals. Recent advances, such as Meta MovieGen and Google Veo-3, highlight the growing industrial and academic focus on unified audio-vision architectures that learn from massive multimodal data. However, despite rapid progress, the literature remains fragmented, spanning diverse tasks, inconsistent taxonomies, and heterogeneous evaluation practices that impede systematic comparison and knowledge integration. This survey provides the first comprehensive review of AVI through the lens of large foundation models. We establish a unified taxonomy covering the broad landscape of AVI tasks, ranging from understanding (e.g., speech recognition, sound localization) to generation (e.g., audio-driven video synthesis, video-to-audio) and interaction (e.g., dialogue, embodied, or agentic interfaces). We synthesize methodological foundations, including modality tokenization, cross-modal fusion, autoregressive and diffusion-based generation, large-scale pretraining, instruction alignment, and preference optimization. Furthermore, we curate representative datasets, benchmarks, and evaluation metrics, offering a structured comparison across task families and identifying open challenges in synchronization, spatial reasoning, controllability, and safety. By consolidating this rapidly expanding field into a coherent framework, this survey aims to serve as a foundational reference for future research on large-scale AVI.",
-      "description_zh": "视听智能 (AVI) 已成为人工智能的核心前沿，它连接听觉和视觉模式，使机器能够在多模式现实世界中感知、生成和交互。在大型基础模型时代，音频和视觉的联合建模变得越来越重要，即不仅为了理解，而且为了跨动态、时间接地信号的可控生成和推理。 Meta MovieGen 和 Google Veo-3 等最新进展凸显了工业界和学术界对从海量多模态数据中学习的统一视听架构的日益关注。然而，尽管进展迅速，文献仍然支离破碎，涉及不同的任务、不一致的分类法和异构的评估实践，阻碍了系统比较和知识整合。这项调查首次从大型基础模型的角度对 AVI 进行了全面审查。我们建立了一个统一的分类法，涵盖 AVI 任务的广泛领域，从理解（例如，语音识别、声音定位）到生成（例如，音频驱动的视频合成、视频到音频）和交互（例如，对话、体现或代理界面）。我们综合了方法论基础，包括模态标记化、跨模态融合、自回归和基于扩散的生成、大规模预训练、指令对齐和偏好优化。此外，我们还策划代表性数据集、基准和评估指标，提供跨任务系列的结构化比较，并识别同步、空间推理、可控性和安全性方面的开放挑战。通过将这个快速扩展的领域整合为一个连贯的框架，本次调查旨在为未来大规模 AVI 研究提供基础参考。",
+      "description_zh": "视听智能 (AVI) 已成为人工智能的核心前沿，它连接听觉和视觉模式，使机器能够在多模式现实世界中感知、生成和交互。在大型基础模型时代，音频和视觉的联合建模变得越来越重要，即不仅为了理解，而且为了跨动态、时间接地信号的可控生成和推理。 Meta MovieGen 和 Google Veo-3 等最新进展凸显了工业界和学术界对从海量多模态数据中学习的统一视听架构的日益关注。然而，尽管进展迅速，文献仍然支离破碎，涉及不同的任��、不一致的分类法和异构的评估实践，阻碍了系统比较和知识整合。这项调查首次从大型基础模型的角度对 AVI 进行了全面审查。我们建立了一个统一的分类法，涵盖 AVI 任务的广泛领域，从理解（例如，语音识别、声音定位）到生成（例如，音频驱动的视频合成、视频到音频）和交互（例如，对话、体现或代理界面）。我们综合了方法论基础，包括模态标记化、跨模态融合、自回归和基于扩散的生成、大规模预训练、指令对齐和偏好优化。此外，我们还策划代表性数据集、基准和评估指标，提供跨任务系列的结构化比较，并识别同步、空间推理、可控性和安全性方面的开放挑战。通过将这个快速扩展的领域整合为一个连贯的框架，本次调查旨在为未来大规模 AVI 研究提供基础参考。",
       "authors": "You Qin, Kai Liu, Shengqiong Wu, Kai Wang, Shijian Deng, Yapeng Tian, Junbin Xiao, Yazhou Xing, Yinghao Ma, Bobo Li, Roger Zimmermann, Lei Cui, Furu Wei, Jiebo Luo, Hao Fei",
       "url": "https://huggingface.co/papers/2605.04045",
-      "score": 17,
+      "score": 25,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "25",
         "paperId": "2605.04045"
       }
     },
@@ -113,13 +128,13 @@
       "title": "BioTool: A Comprehensive Tool-Calling Dataset for Enhancing Biomedical Capabilities of Large Language Models",
       "title_zh": "BioTool：用于增强大型语言模型生物医学能力的综合工具调用数据集",
       "description": "Despite the success of large language models (LLMs) on general-purpose tasks, their performance in highly specialized domains such as biomedicine remains unsatisfactory. A key limitation is the inability of LLMs to effectively leverage biomedical tools, which clinical experts and biomedical researchers rely on extensively in daily workflows. While recent general-domain tool-calling datasets have substantially improved the capabilities of LLM agents, existing efforts in the biomedical domain largely rely on in-context learning and restrict models to a small set of tools. To address this gap, we introduce BioTool, a comprehensive biomedical tool-calling dataset designed for fine-tuning LLMs. BioTool comprises 34 frequently used tools collected from the NCBI, Ensembl, and UniProt databases, along with 7,040 high-quality, human-verified query-API call pairs spanning variation, genomics, proteomics, evolution, and general biology. Fine-tuning a 4-billion-parameter LLM on BioTool yields substantial improvements in biomedical tool-calling performance, outperforming cutting-edge commercial LLMs such as GPT-5.1. Furthermore, human expert evaluations demonstrate that integrating a BioTool-fine-tuned tool caller significantly improves downstream answer quality compared to the same LLM without tool usage, highlighting the effectiveness of BioTool in enhancing the biomedical capabilities of LLMs. The full dataset and evaluation code are available at https://github.com/gxx27/BioTool",
-      "description_zh": "尽管大型语言模型（LLM）在通用任务上取得了成功，但它们在生物医学等高度专业化领域的表现仍然不能令人满意。一个关键的限制是LLM无法有效利用生物医学工具，而临床专家和生物医学研究人员在日常工作流程中广泛依赖这些工具。虽然最近的通用领域工具调用数据集大大提高了 LLM 代理的能力，但生物医学领域的现有工作很大程度上依赖于上下文学习并将模型限制为一小部分工具。为了解决这一差距，我们引入了 BioTool，这是一个专为微调LLM而设计的综合生物��学工具调用数据集。 BioTool 包含从 NCBI、Ensembl 和 UniProt 数据库收集的 34 个常用工具，以及涵盖变异、基因组学、蛋白质组学、进化和普通生物学的 7,040 个高质量、经过人类验证的查询 API 调用对。在 BioTool 上微调 40 亿参数 LLM 可以显着提高生物医学工具调用性能，优于 GPT-5.1 等尖端商业 LLM。此外，人类专家评估表明，与不使用工具的相同LLM相比，集成经过 BioTool 微调的工具调用程序可显着提高下游答案质量，凸显了 BioTool 在增强LLM生物医学能力方面的有效性。完整的数据集和评估代码可在 https://github.com/gxx27/BioTool 获取",
+      "description_zh": "尽管大型语言模型（LLM）在通用任务上取得了成功，但它们在生物医学等高度专业化领域的表现仍然不能令人满意。一个关键的限制是LLM无法有效利用生物医学工具，而临床专家和生物医学研究人员在日常工作流程中广泛依赖这些工具。虽然最近的通用领域工具调用数据集大大提高了 LLM 代理的能力，但生物医学领域的现有工作很大程度上依赖于上下文学习并将模型限制为一小部分工具。为了解决这一差距，我们引入了 BioTool，这是一个专为微调LLM而设计的综合生物���学工具调用数据集。 BioTool 包含从 NCBI、Ensembl 和 UniProt 数据库收集的 34 个常用工具，以及涵盖变异、基因组学、蛋白质组学、进化和普通生物学的 7,040 个高质量、经过人类验证的查询 API 调用对。在 BioTool 上微调 40 亿参数 LLM 可以显着提高生物医学工具调用性能，优于 GPT-5.1 等尖端商业 LLM。此外，人类专家评估表明，与不使用工具的相同LLM相比，集成经过 BioTool 微调的工具调用程序可显着提高下游答案质量，凸显了 BioTool 在增强LLM生物医学能力方面的有效性。完整的数据集和评估代码可在 https://github.com/gxx27/BioTool 获取",
       "authors": "Xin Gao, Ruiyi Zhang, Meixi Du, Peijia Qin, Pengtao Xie",
       "url": "https://huggingface.co/papers/2605.05758",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2605.05758"
       }
     },
@@ -131,10 +146,10 @@
       "description_zh": "我们研究了深度有限 Transformer 中 Horn 子句的隐式演绎推理的缩放特性。通过系统地从虚假特征中去相关可证明性并强制算法对齐，我们发现在具有双向前缀掩码的足够深的模型中，隐式推理在图拓扑和问题宽度上接近显式 CoT 性能，尽管 CoT 对于深度外推仍然是必要的。",
       "authors": "Enrico Vompa, Tanel Tammet",
       "url": "https://huggingface.co/papers/2605.04330",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2605.04330"
       }
     },
@@ -143,13 +158,13 @@
       "title": "KernelBench-X: A Comprehensive Benchmark for Evaluating LLM-Generated GPU Kernels",
       "title_zh": "KernelBench-X：评估 LLM 生成的 GPU 内核的综合基准",
       "description": "LLM-based Triton kernel generation has attracted significant interest, yet a fundamental empirical question remains unanswered: where does this capability break down, and why? We present KernelBench-X, a benchmark designed to answer this question through category-aware evaluation of correctness and hardware efficiency across 176 tasks in 15 categories. Our systematic comparison of five representative methods yields three main findings. First, task structure determines correctness more than method design. Category explains nearly three times more variance in semantic correctness than method (9.4% vs 3.3% explained deviance), and 72% of Fusion tasks fail across all five methods while Math tasks are solved consistently. Second, iterative refinement improves correctness, but not performance. Across GEAK iterations, compile rate rises from 52.3% to 68.8% while average speedup declines from 1.58times to 1.44times; newly rescued kernels consistently underperform persistently correct ones (1.16times vs 1.58times speedup in round~0to1). Third, correctness does not imply efficiency. 46.6% of correct kernels are slower than the PyTorch eager baseline, and cross-hardware speedup variance reaches 21.4times. Besides, quantization remains completely unsolved (0/30 successes) despite non-trivial compilation rates, revealing systematic misunderstanding of numerical computation contracts rather than surface-level syntax errors. These findings suggest that future progress depends on handling global coordination, explicitly modeling numerical precision, and incorporating hardware efficiency into generation. The code is available at https://github.com/BonnieW05/KernelBenchX",
-      "description_zh": "基于 LLM 的 Triton 内核生成引起了人们的极大兴趣，但一个基本的实证问题仍未得到解答：这种能力在哪里失效，为什么？我们推出了 KernelBench-X，这是一个基准测试，旨在通过对 15 个类别的 176 个任务的正确性和硬件效率进行类别感知评估来回答这个问题。我们对五种代表性方法的系统比较得出了三个主要发现。首先，任务结构比方法设计更决定正确性。类别解释的语义正确性差异几乎是方法的三倍（解释偏差为 9.4% vs 3.3%），72% 的 Fusion 任务在所有五种方法��都失败，而数学任务得到一致解决。其次，迭代细化提高了正确性，但没有提高性能。在GEAK迭代中，编译率从52.3%上升到68.8%，而平均加速比从1.58倍下降到1.44倍；新拯救的内核始终表现不佳，持续正确的内核（0 到 1 轮加速比为 1.16 倍与 1.58 倍）。第三，正确并不意味着高效。 46.6% 的正确内核比 PyTorch eager 基线慢，跨硬件加速方差达到 21.4 倍。此外，尽管编译率不低，但量化仍然完全未解决（0/30 成功），这揭示了对数值计算契约的系统性误解，而不是表面级语法错误。这些发现表明，未来的进展取决于处理全球协调、明确模拟数值精度以及将硬件效率纳入发电中。代码可在 https://github.com/BonnieW05/KernelBenchX 获取",
+      "description_zh": "基于 LLM 的 Triton 内核生成引起了人们的极大兴趣，但一个基本的实证问题仍未得到解答：这种能力在哪里失效，为什么？我们推出了 KernelBench-X，这是一个基准测试，旨在通过对 15 个类别的 176 个任务的正确性和硬件效率进行类别感知评估来回答这个问题。我们对五种代表性方法的系统比较得出了三个主要发现。首先，任务结构比方法设计更决定正确性。类别解释的语义正确性差异几乎是方法的三倍（解释偏差为 9.4% vs 3.3%），72% 的 Fusion 任务在所有五种方法中都失败，而数学任务得到一致解决。其次，迭代细化提高了正确性，但没有提高性能。在GEAK迭代中，编译率从52.3%上升到68.8%，而平均加速比从1.58倍下降到1.44倍；新拯救的内核始终表现不佳，持续正确的内核（0 到 1 轮加速比为 1.16 倍与 1.58 倍）。第三，正确并不意味着高效。 46.6% 的正确内核比 PyTorch eager 基线慢，跨硬件加速方差达到 21.4 ��。此外，尽管编译率不低，但量化仍然完全未解决（0/30 成功），这揭示了对数值计算契约的系统性误解，而不是表面级语法错误。这些发现表明，未来的进展取决于处理全球协调、明确模拟数值精度以及将硬件效率纳入发电中。代码可在 https://github.com/BonnieW05/KernelBenchX 获取",
       "authors": "Han Wang, Jintao Zhang, Kai Jiang, Haoxu Wang, Jianfei Chen, Jun Zhu",
       "url": "https://huggingface.co/papers/2605.04956",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2605.04956"
       }
     },
@@ -176,10 +191,10 @@
       "description_zh": "我们重新审视每个现代LLM中普遍接受但未经充分审查的设计选择：在输入嵌入层查找令牌索引一次，然后永久丢弃。这种单注入假设会导致两个结构性失败：（i）稀有令牌问题，其中词汇的 Zipf 型分布导致稀有令牌嵌入长期训练不足，因为与普通令牌相比，接收到的累积梯度信号只占一小部分； (ii) 上下文崩溃问题，其中有限参数模型将分布上相似的标记映射到无法区分的隐藏状态。为了解决这两个问题，我们提出了 TIDE，它通过 EmbeddingMemory 增强了标准转换器：K 个独立 MemoryBlock 的集合，将标记索引映射到上下文无关的语义向量，计算一次并通过具有可学习空库的深度条件 Softmax 路由器注入到每一层。我们从理论上和经验上证明了 TIDE 在解决与单令牌身份注入相关的问题以及提高跨多语言建模和下游任务的性能方面的优势。",
       "authors": "Ajay Jaiswal, Lauren Hannah, Han-Byul Kim, Duc Hoang, Mehrdad Farajtabar, Minsik Cho",
       "url": "https://huggingface.co/papers/2605.06216",
-      "score": 0,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "3",
         "paperId": "2605.06216"
       }
     },
@@ -191,10 +206,10 @@
       "description_zh": "在相关语言、部门或监管制度存在标记基准之前，许多部署必须比较候选语言模型的安全性。我们将这种设置正式化为无基准比较安全评分，并指定基于场景的审计可以解释为部署证据的合同。分数仅在固定场景包、评分标准、审核员、法官、抽样配置和重新运行预算下有效。由于没有可用的标签，我们用工具有效性链取代了基本事实协议：对受控安全与消除对比的响应、目标驱动方差对审计和判断工件的主导地位以及重新运行的稳定性。\n  我们在 SimpleAudit（本地优先的评分工具）中实例化该链，并在挪威安全包上对其进行验证。安全目标和消除目标分开，AUROC 值在 0.89 到 1.00 之间，目标身份是主要方差分量（η^2 约为 0.52），并且严重性概况在十次重新运行后稳定下来。将相同的链应用于 Petri 表明它承认这两种工具。巨大的差异出现在链条的上游，即索赔合同的执行和部署的配合方面。比较 Borealis 和 Gemma 3 的挪威公共部门采购案例在实践中证明了所得证据：更安全的模型取决于情景类别和风险衡量标准。因此，分数、匹配增量、临界率、不确定性以及所使用的审核员和法官必须一起报告，而不是合并为一个排名。",
       "authors": "Sushant Gautam, Finn Schwall, Annika Willoch Olstad, Fernando Vallecillos Ruiz, Birk Torpmann-Hagen, Sunniva Maria Stordal Bjørklund, Leon Moonen, Klas Pettersen, Michael A. Riegler",
       "url": "https://huggingface.co/papers/2605.06652",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2605.06652"
       }
     },
@@ -206,26 +221,11 @@
       "description_zh": "我们在 SemEval-2026 Task~8：MTRAGEval 中展示了我们的 Task~B（带有参考段落的生成）获胜系统。我们的方法是由七个 LLM 组成的异构集合，具有两个提示变体，其中 GPT-4o-mini 法官为每个实例选择最佳候选人。我们在 26 支团队中排名第一，达到 0.7827 的条件调和平均值，并且优于最强的基线（gpt-oss-120b，0.6390）。消融表明，模型家族、规模和提示策略的多样性至关重要，整体始终击败任何单一模型。我们还介绍了 Meno-Lite-0.1，这是一种具有很强的性价比权衡的 7B 领域适应模型，并分析了 MTRAGEval，强调了注释的局限性和改进方向。我们的代码是公开的：https://github.com/RaguTeam/ragu_mtrag_semeval",
       "authors": "Ivan Bondarenko, Roman Derunets, Oleg Sedukhin, Mikhail Komarov, Ivan Chernov, Mikhail Kulakov",
       "url": "https://huggingface.co/papers/2605.04523",
-      "score": 35,
+      "score": 37,
       "meta": {
         "source": "huggingface",
-        "upvotes": "35",
+        "upvotes": "37",
         "paperId": "2605.04523"
-      }
-    },
-    {
-      "id": "2605.04077",
-      "title": "Balanced Aggregation: Understanding and Fixing Aggregation Bias in GRPO",
-      "title_zh": "平衡聚合：理解并修复 GRPO 中的聚合偏差",
-      "description": "Reinforcement learning with verifiable rewards (RLVR) has become a central paradigm for improving reasoning and code generation in large language models, and GRPO-style training is widely adopted for its simplicity and effectiveness. However, an important design choice remains underexplored: how token-level policy gradient terms are aggregated within each sampled group. Standard GRPO uses sequence aggregation, while recent work has advocated token aggregation as a better alternative. We show that these two rules induce different optimization biases: token aggregation introduces sign-length coupling, while sequence aggregation implicitly downweights longer responses through sequence-level equal weighting. To address this tension, we propose Balanced Aggregation (BA), a simple drop-in replacement that computes token-level means separately within the positive and negative subsets and then combines them with sequence-count-based weights. Experiments with Qwen2.5-Math-7B and Qwen3-1.7B on DAPO-17k and Polaris, evaluated on six reasoning and coding benchmarks, show that BA consistently improves training stability and final performance over standard token and sequence aggregation. Our analysis further shows that the relative effectiveness of token and sequence aggregation is largely governed by response-length variation and the positive-negative length gap, highlighting aggregation as a critical design dimension in GRPO-style RLVR.",
-      "description_zh": "具有可验证奖励的强化学习（RLVR）已成为改善大型语言模型中的推理和代码生成的核心范式，GRPO 式训练因其简单性和有效性而被广泛采用。然而，一个重要的设计选择仍未得到充分探索：令牌级策略梯度项如何在每个采样组内聚合。标准 GRPO 使用序列聚合，而最近的工作主张将令牌聚合作为更好的替代方案。我们证明这两个规则会引起不同的优化偏差：令牌聚合引入了符号长度耦合，而序列聚合通过序列级相等加权隐式地降低了较长响应的权重。为了解决这种矛盾，我们提出了平衡聚合（BA），这是一种简单的直接替换，可以在正子集和负子集中分别计算标记级均值，然后将它们与基于序列计数的权重相结合。在 DAPO-17k 和 Polaris 上使用 Qwen2.5-Math-7B 和 Qwen3-1.7B 进行的实验，在六个推理和编码基准上进行评估，表明 BA 相对于标准令牌和序列聚合持续提高了训练稳定性和最终性能。我们的分析进一步表明，标记和序列聚合的相对有效性很大程度上取决于响应长度变化和正负长度差距，这凸显了聚合作为 GRPO 式 RLVR 中的关键设计维度。",
-      "authors": "Zhiyuan Zeng, Jiameng Huang, Zhangyue Yin, Jiashuo Liu, Ziniu Li, Bingrui Li, Yuhao Wu, Yining Zheng, Ge Zhang, Wenhao Huang, Xipeng Qiu",
-      "url": "https://huggingface.co/papers/2605.04077",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2605.04077"
       }
     }
   ]
