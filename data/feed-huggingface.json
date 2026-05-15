@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-14T20:55:55.125Z",
+  "updatedAt": "2026-05-15T20:42:59.973Z",
   "count": 15,
   "items": [
     {
-      "id": "2605.11378",
-      "title": "An Empirical Study of Automating Agent Evaluation",
-      "title_zh": "自动化代理评估的实证研究",
-      "description": "Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and expertise-intensive. A natural question arises: can frontier coding assistants reliably automate this evaluation process? Our study shows that simply prompting coding assistants is insufficient for this task. Without domain-specific evaluation knowledge, frontier coding assistants achieve only a 30% execution success rate and produce over-engineered evaluations averaging 12+ metrics per agent, indicating that strong coding ability does not automatically translate to reliable agent evaluation. We introduce EvalAgent, an AI assistant that automates the end-to-end agent evaluation pipeline. EvalAgent encodes evaluation domain expertise as evaluation skills (procedural instructions, reusable code and templates, and dynamically retrieved API documentation) that compose into a trace-based pipeline producing complete evaluation artifacts including metrics, executable code, and reports. To systematically assess generated evaluations, we introduce a meta-evaluation framework alongside AgentEvalBench, a benchmark comprising 20 agents, each paired with evaluation requirements and test scenarios. We further propose the Eval@1 metric to measure whether generated evaluation code both executes and yields meaningful results on the first run. Our experiments show that EvalAgent produces focused evaluations, improving Eval@1 from 17.5% to 65%, and achieving 79.5% human expert preference over baseline approaches. Further ablation studies show that evaluation skills are critical for handling complex evaluation: removing them causes Eval@1 to drop significantly from 65% to 30%.",
-      "description_zh": "代理评估需要评估复杂的多步骤行为，涉及工具使用和中间推理，这使得其成本高昂且需要大量专业知识。一个自然的问题出现了：前沿编码助手能否可靠地自动化此评估过程？我们的研究表明，仅仅提示编码助手不足以完成这项任务。如果没有特定领域的评估知识，前沿编码助手只能实现 30% 的执行成功率，并且会产生过度设计的评估，每个智能体平均有 12 个以上的指标，这表明强大的编码能力不会自动转化为可靠的智能体评估。我们推出了 EvalAgent，这是一种人工智能助手，可以自动化端到端代理评估管道。 EvalAgent 将评估领域专业知识编码为评估技能（程序指令、可重用代码和模板以及动态检索的 API 文档），这些技能组成基于跟踪的管道，生成完整的评估工件，包括指标、可执行代码和报告。为了系统地评估生成的评估，我们引入了元评估框架以及 AgentEvalBench，这是一个由 20 个代理组成的基准，每个代理都配有评估要求和测试场景。我们进一步提出 Eval@1 指标来衡量生成的评估代码是否在第一次运行时执行并产生有意义的结果。我们的实验表明，EvalAgent 可以进行有针对性的评估，将 Eval@1 从 17.5% 提高到 65%，并且比基线方法实现了 79.5% 的人类专家偏好。进一步的消融研究表明，评估技能对于处理复杂的评估至关重要：删除它们会导致 Eval@1 从 65% 显着下降到 30%。",
-      "authors": "Kang Zhou, Sangmin Woo, Haibo Ding, Kiran Ramnath, Subramanian Chidambaram, Aosong Feng, Vinayak Arannil, Muhyun Kim, Ishan Singh, Darren Wang, Zhichao Xu, Megha Gandhi, Nirmal Prabhu, Soumya Smruti Mishra, Vivek Singh, Gouri Pandeshwar, Lin Lee Cheong",
-      "url": "https://huggingface.co/papers/2605.11378",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.11378"
-      }
-    },
-    {
-      "id": "2605.10867",
-      "title": "BEACON: A Multimodal Dataset for Learning Behavioral Fingerprints from Gameplay Data",
-      "title_zh": "BEACON：用于从游戏数据中学习行为指纹的多模态数据集",
-      "description": "Continuous authentication in high-stakes digital environments requires datasets with fine-grained behavioral signals under realistic cognitive and motor demands. But current benchmarks are often limited by small scale, unimodal sensing or lack of synchronised environmental context. To address this gap, this paper introduces BEACON ( Behavioral Engine for Authentication \\& Continuous Monitoring), a large-scale multimodal dataset that captures diverse skill tiers in competitive Valorant gameplay. BEACON contains approximately 430 GB of synchronised modality data (461 GB total on-disk including auxiliary Valorant configuration captures) from 79 sessions across 28 distinct players, estimated at 102.51 hours of active gameplay, including high-frequency mouse dynamics, keystroke events, network packet captures, screen recordings, hardware metadata, and in-game configuration context. BEACON leverages the high precision motor skills and high cognitive load that are inherent to tactical shooters, making it a rigorous stress test for the robustness of behavioral biometrics. The dataset allows for the study of continuous authentication, behavioral profiling, user drift and multimodal representation learning in a high-fidelity esports setting. The authors release the dataset and code on Hugging Face and GitHub to create a reproducible benchmark for evaluating next-generation behavioral fingerprinting and security models",
-      "description_zh": "高风险数字环境中的持续身份验证需要在现实的认知和运动需求下提供具有细粒度行为信号的数据集。但当前的基准通常受到小规模、单峰传感或缺乏同步环境背景的限制。为了解决这一差距，本文引入了 BEACON（身份验证和连续监控行为引擎），这是一个大规模多模式数据集，可捕获竞争性《Valorant》游戏玩法中的不同技能层。 BEACON 包含来自 28 个不同玩家的 79 个会话的约 430 GB 同步模态数据（磁盘上总计 461 GB，包括辅助 Valorant 配置捕获），估计活跃游戏时间为 102.51 小时，包括高频鼠标动态、击键事件、网络数据包捕获、屏幕记录、硬件元数据和游戏内配置上下文。 BEACON 利用战术射击游戏固有的高精度运动技能和高认知负荷，使其成为对行为生物识别稳健性的严格压力测试。该数据集允许在高保真电子竞技环境中研究连续身份验证、行为分析、用户漂移和多模式表示学习。作者在 Hugging Face 和 GitHub 上发布了数据集和代码，以创建可重复的基准来评估下一代行为指纹识别和���全模型",
-      "authors": "Ishpuneet Singh, Gursmeep Kaur, Uday Pratap Singh Atwal, Guramrit Singh, Gurjot Singh, Maninder Singh",
-      "url": "https://huggingface.co/papers/2605.10867",
+      "id": "2605.15193",
+      "title": "Aligning Latent Geometry for Spherical Flow Matching in Image Generation",
+      "title_zh": "对齐潜在几何图形以实现图像生成中的球流匹配",
+      "description": "Latent flow matching for image generation usually transports Gaussian noise to variational autoencoder latents along linear paths. Both endpoints, however, concentrate in thin spherical shells, and a Euclidean chord leaves those shells even when preprocessing aligns their radii. By decomposing each latent token into radial and angular components, we show through component-swap probes that decoded perceptual and semantic content is carried predominantly by direction, with radius contributing much less. We therefore project data latents onto a fixed token radius, use the radial projection of Gaussian noise as the spherical prior, finetune the decoder with the encoder frozen, and replace linear interpolation with spherical linear interpolation. The resulting geodesic paths stay on the sphere at every timestep, and their velocity targets are purely angular by construction. Under matched training, the method consistently improves class-conditional ImageNet-256 FID across different image tokenizers, leaves the diffusion architecture unchanged, and requires no auxiliary encoder or representation-alignment objective.",
+      "description_zh": "用于图像生成的潜在流匹配通常将高斯噪声沿着线性路径传输到变分自动编码器潜在。然而，两个端点都集中在薄球壳中，即使预处理对齐了它们的半径，欧几里得弦也会留下这些球壳。通过将每个潜在标记分解为径向和角度分量，我们通过分量交换探针表明，解码的感知和语义内容主要由方向承载，而半径的贡献要小得多。因此，我们将数据潜伏投影到固定的令牌半径上，使用高斯噪声的径向投影作为球面先验，在编码器冻结的情况下微调解码器，并用球面线性插值替换线性插值。由此产生的测地线路径在每个时间步都停留在球体上，并且它们的速度目标纯粹是通过构造角度的。在匹配训练下，该方法持续改进不同图像标记器中的类条件 ImageNet-256 FID，保持扩散架构不变，并且不需要辅助编码器或表示对齐目标。",
+      "authors": "Tuna Han Salih Meral, Kaan Oktay, Hidir Yesiltepe, Adil Kaan Akan, Pinar Yanardag",
+      "url": "https://huggingface.co/papers/2605.15193",
       "score": 3,
       "meta": {
         "source": "huggingface",
         "upvotes": "3",
-        "paperId": "2605.10867"
+        "paperId": "2605.15193"
       }
     },
     {
-      "id": "2605.10315",
-      "title": "Active Tabular Augmentation via Policy-Guided Diffusion Inpainting",
-      "title_zh": "通过策略引导扩散修复进行主动表格增强",
-      "description": "Generative tabular augmentation is appealing in data-scarce domains, yet the prevailing focus on distributional fidelity does not reliably translate into better downstream models. We formalize a fidelity-utility gap: common generative objectives prioritize distributional plausibility, whereas augmentation succeeds only when injected samples reduce the current learner's held-out evaluation loss. This gap motivates learning not just how to generate, but what to generate and when to inject as training evolves. We propose TAP (Tabular Augmentation Policy), which couples diffusion inpainting with a lightweight, learner-conditioned policy to steer generation toward high-utility regions and controls safe injection via explicit gating and conservative windowed commitment. Under severe data scarcity, TAP consistently outperforms strong generative baselines on seven real-world datasets, improving classification accuracy by up to 15.6 percentage points and reducing regression RMSE by up to 32%.",
-      "description_zh": "生成表格增强在数据稀缺领域很有吸引力，但对分布保真度的普遍关注并不能可靠地转化为更好的下游模型。我们形式化了保真度-效用差距：共同的生成目标优先考虑分布合理性，而只有当注入的样本减少当前学习者的保留评估损失时，增强才会成功。这种差距不仅促使我们学习如何生成，而且随着训练的发展，生成什么以及何时注入。我们提出了 TAP（表格增强策略），它将扩散修复与轻量级的、以学习者为条件的策略结合起来，以引导生成流向高效用区域，并通过显式门控和保守的窗口承诺来控制安全注入。在数据严重匮乏的情况下，TAP 在 7 个真实世界数据集上始终优于强大的生成基线，将分类精度提高了 15.6 个百分点，并将回归 RMSE 降低了 32%。",
-      "authors": "Zheyu Zhang, Shuo Yang, Bardh Prenkaj, Gjergji Kasneci",
-      "url": "https://huggingface.co/papers/2605.10315",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2605.10315"
-      }
-    },
-    {
-      "id": "2605.12733",
-      "title": "From Generalist to Specialist Representation",
-      "title_zh": "从通才到专家代表",
-      "description": "Given a generalist model, learning a task-relevant specialist representation is fundamental for downstream applications. Identifiability, the asymptotic guarantee of recovering the ground-truth representation, is critical because it sets the ultimate limit of any model, even with infinite data and computation. We study this problem in a completely nonparametric setting, without relying on interventions, parametric forms, or structural constraints. We first prove that the structure between time steps and tasks is identifiable in a fully unsupervised manner, even when sequences lack strict temporal dependence and may exhibit disconnections, and task assignments can follow arbitrarily complex and interleaving structures. We then prove that, within each time step, the task-relevant latent representation can be disentangled from the irrelevant part under a simple sparsity regularization, without any additional information or parametric constraints. Together, these results establish a hierarchical foundation: task structure is identifiable across time steps, and task-relevant latent representations are identifiable within each step. To our knowledge, each result provides a first general nonparametric identifiability guarantee, and together they mark a step toward provably moving from generalist to specialist models.",
-      "description_zh": "给定通才模型，学习与任务相关的专家表示是下游应用程序的基础。可识别性是恢复地面真值表示的渐近保证，它至关重要，因为它设定了任何模型的最终极限，即使有无限的数据和计算。我们在完全非参数的环境中研究这个问题，不依赖干预、参数形式或结构约束。我们首先证明时间步骤和任务之间的结构可以以完全无监督的方式识别，即使序列缺乏严格的时间依赖性并且可能表现出断开连接，并且任务分配可以遵循任意复杂和交错的结构。然后，我们证明，在每个时间步内，可以在简单的稀疏正则化下将与任务相关的潜在表示与不相关的部分分开，而无需任何附加信息或参数约束。这些结果共同建立了一个分层基础：任务结构可以跨时间步骤识别，并且与任务相关的潜在表示在每个步骤内都可以识别。据我们所知，每个结果都提供了第一个一般非参数可识别性保证，它们共同标志着从通才模型向专业模型的可证明转变迈出了一步。",
-      "authors": "Yujia Zheng, Fan Feng, Yuke Li, Shaoan Xie, Kevin Murphy, Kun Zhang",
-      "url": "https://huggingface.co/papers/2605.12733",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.12733"
-      }
-    },
-    {
-      "id": "2605.08583",
-      "title": "Source or It Didn't Happen: A Multi-Agent Framework for Citation Hallucination Detection",
-      "title_zh": "来源或它没有发生：引文幻觉检测的多代理框架",
-      "description": "Large language models are increasingly used in scientific writing, yet they can fabricate citation-shaped references that appear plausible but fail bibliographic verification. Existing detectors often reduce verification to binary found/not-found decisions and rely on brittle parsing or incomplete retrieval, offering little field-level signal to auditors. We reframe citation hallucination detection as taxonomy-aligned field-level adjudication and introduce a 12-code taxonomy spanning Real, Potential, and Hallucinated citations. Based on this taxonomy, we build CiteTracer, a cascading multi-agent detector that extracts structured citations from PDF and BibTeX, retrieves evidence through cache lookup, URL fetch, scholar connectors, and web search, applies deterministic field matching, and routes ambiguous cases to class-specialist judgers. We release a benchmark of 2,450 synthetic citations built from real seeds with controlled LLM mutations, paired with 957 real-world fabricated citations drawn from ICLR 2026 and an anonymous conference desk-rejected submissions. CiteTracer reaches 97.1% accuracy on the synthetic benchmark, with class-level F1 scores of 97.0, 95.8, and 98.5 for Real, Potential, and Hallucinated, respectively, and detects 97.1% of fabrications on the real-world set without abstaining. Code: https://github.com/aaFrostnova/CiteTracer.",
-      "description_zh": "大型语言模型越来越多地用于科学写作，但它们可以制造看似合理但无法通过书目验证的引文形式的参考文献。现有的检测器通常会减少对二进制发现/未发现决策的验证，并依赖于脆弱的解析或不完整的检索，为审计人员提供很少的现场级信号。我们将引文幻觉检测重新构建为与分类法一致的字段级裁决，并引入了涵盖真实引文、潜在引文和幻觉引文的 12 代码分类法。基于此分类法，我们构建了 CiteTracer，这是一个级联多代理检测器，可以从 PDF 和 BibTeX 中提取结构化引文，通过缓存查找、URL 获取、学者连接器和网络搜索检索证据，应用确定性字段匹配，并将模糊案例路由给类别专家法官。我们发布了由具有受控 LLM 突变的真实种子构建的 2,450 条合成引文的基准，与来自 ICLR 2026 的 957 条真实世界捏造引文以及匿名会议桌拒绝的提交材料配对。 CiteTracer 在合成基准上达到了 97.1% 的准确率，真实、潜在和幻觉的类级 F1 分数分别为 97.0、95.8 和 98.5，并且在现实世界中检测出 97.1% 的捏造行为，且没有放弃。代码：https://github.com/aaFrostnova/CiteTracer。",
-      "authors": "Mingzhe Li, Zhiqiang Lin, Shiqing Ma",
-      "url": "https://huggingface.co/papers/2605.08583",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.08583"
-      }
-    },
-    {
-      "id": "2605.13841",
-      "title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
-      "title_zh": "EVA-Bench：用于评估语音代理的新端到端框架",
-      "description": "Voice agents, artificial intelligence systems that conduct spoken conversations to complete tasks, are increasingly deployed across enterprise applications. However, no existing benchmark jointly addresses two core evaluation challenges: generating realistic simulated conversations, and measuring quality across the full scope of voice-specific failure modes. We present EVA-Bench, an end-to-end evaluation framework that addresses both. On the simulation side, EVA-Bench orchestrates bot-to-bot audio conversations over dynamic multi-turn dialogues, with automatic simulation validation that detects user simulator error and appropriately regenerates conversations before scoring. On the measurement side, EVA-Bench introduces two composite metrics: EVA-A (Accuracy), capturing task completion, faithfulness, and audio-level speech fidelity; and EVA-X (Experience), capturing conversation progression, spoken conciseness, and turn-taking timing. Both metrics apply to different agent architectures, enabling direct cross-architecture comparison. EVA-Bench includes 213 scenarios across three enterprise domains, a controlled perturbation suite for accent and noise robustness, and pass@1, pass@k, pass^k measurements that distinguish peak from reliable capability. Across 12 systems spanning all three architectures, we find: (1) no system simultaneously exceeds 0.5 on both EVA-A pass@1 and EVA-X pass@1; (2) peak and reliable performance diverge substantially (median pass@k - pass^k gap of 0.44 on EVA-A); and (3) accent and noise perturbations expose substantial robustness gaps, with effects varying across architectures, systems, and metrics (mean up to 0.314). We release the full framework, evaluation suite, and benchmark data under an open-source license.",
-      "description_zh": "语音代理是进行语音对话以完成任务的人工智能系统，越来越多地部署在企业应用程序中。然而，现有的基准还没有共同解决两个核心评估挑战：生成真实的模拟对话，以及测量整个语音特定故障模式的质量。我们推出了 EVA-Bench，这是一个解决这两个问题的端到端评估框架。在模拟方面，EVA-Bench 通过动态多轮对话协调机器人之间的音频对话，并通过自动模拟验证来检测用户模拟器错误并在评分之前适当地重新生成对话。在测量方面，EVA-Bench引入了两个复合指标：EVA-A（准确度），捕获任务完成度、忠实度和音频级语音保真度； EVA-X（体​​验），捕捉对话进展、言语简洁性和轮流计时。这两个指标都适用于不同的代理架构，可以直接进行跨架构比较。 EVA-Bench 包括跨三个企业领域的 213 个场景、用于口音和噪声鲁棒性的受控扰动套件，以及区分峰值与可靠能力的 pass@1、pass@k、pass^k 测量。在跨越所有三种架构的 12 个系统中，我们发现：(1) 没有系统在 EVA-A pass@1 和 EVA-X pass@1 上同时超过 0.5； (2) 峰值性能和可靠性性能相差很大（EVA-A 上的中值 pass@k - pass^k 差距为 0.44）； (3) 口音和噪声扰动暴露了巨大的鲁棒性差距，其影响因架构、系统和指标而异（平均值高达 0.314）。我们在开源许可下发布了完整的框架、评估套件和基准数据。",
-      "authors": "Tara Bogavelli, Gabrielle Gauthier Melançon, Katrina Stankiewicz, Oluwanifemi Bamgbose, Fanny Riols, Hoang H. Nguyen, Raghav Mehndiratta, Lindsay Devon Brin, Joseph Marinier, Hari Subramani, Anil Madamala, Sridhar Krishna Nemala, Srinivas Sunkara",
-      "url": "https://huggingface.co/papers/2605.13841",
-      "score": 54,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "54",
-        "paperId": "2605.13841"
-      }
-    },
-    {
-      "id": "2605.13292",
-      "title": "IndicMedDialog: A Parallel Multi-Turn Medical Dialogue Dataset for Accessible Healthcare in Indic Languages",
-      "title_zh": "IndicMedDialog：用于印度语言无障碍医疗保健的并行多轮医疗对话数据集",
-      "description": "Most existing medical dialogue systems operate in a single-turn question--answering paradigm or rely on template-based datasets, limiting conversational realism and multilingual applicability. We introduce IndicMedDialog, a parallel multi-turn medical dialogue dataset spanning English and nine Indic languages: Assamese, Bengali, Gujarati, Hindi, Marathi, Punjabi, Tamil, Telugu, and Urdu. The dataset extends MDDial with LLM-generated synthetic consultations, translated using TranslateGemma, verified by native speakers, and refined through a script-aware post-processing pipeline to correct phonetic, lexical, and character-spacing errors. Building on this dataset, we fine-tune IndicMedLM via parameter-efficient adaptation of a quantized small language model, incorporating optional patient pre-context to personalise multi-turn symptom elicitation. We evaluate against zero-shot multilingual baselines, conduct systematic error analysis across ten languages, and validate clinical plausibility through medical expert evaluation.",
-      "description_zh": "大多数现有的医学对话系统都以单轮问答模式运行，或者依赖基于模板的数据集，限制了对话的真实性和多语言适用性。我们引入了 IndicMedDialog，这是一个并行多轮医疗对话数据集，涵盖英语和九种印度语言：阿萨姆语、孟加拉语、古吉拉特语、印地语、马拉地语、旁遮普语、泰米尔语、泰卢固语和乌尔都语。该数据集通过 LLM 生成的综合咨询扩展了 MDDial，使用 TranslateGemma 进行翻译，由母语人士验证，并通过脚本感知后处理管道进行细化，以纠正语音、词汇和字符间距错误。在此数据集的基础上，我们通过量化小语言模型的参数高效适应来微调 IndicMedLM，结合可选的患者前上下文来个性化多轮症状引发。我们根据零样本多语言基线进行评估，跨十种语言进行系统错误分析，并通过医学专家评估验证临床合理性。",
-      "authors": "Shubham Kumar Nigam, Suparnojit Sarkar, Piyush Patel",
-      "url": "https://huggingface.co/papers/2605.13292",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.13292"
-      }
-    },
-    {
-      "id": "2605.08978",
-      "title": "Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization",
-      "title_zh": "学习探索：通过探索感知策略优化扩展代理推理",
-      "description": "Recent advancements in agentic test-time scaling allow models to gather environmental feedback before committing to final actions. A key limitation of existing methods is that they typically employ undifferentiated exploration strategies, lacking the ability to adaptively distinguish when exploration is truly required. In this paper, we propose an exploration-aware reinforcement learning framework that enables LLM agents to adaptively explore only when uncertainty is high. Our method introduces a fine-grained reward function via variational inference that explicitly evaluates exploratory actions by estimating their potential to improve future decision-making, together with an exploration-aware grouping mechanism that separates exploratory actions from task-completion actions during optimization. By targeting informational gaps, this design allows agents to explore selectively and transition to execution as soon as the task context is clear. Empirically, we demonstrate that our approach achieves consistent improvements across a range of challenging text-based and GUI-based agent benchmarks. Code is available at https://github.com/HansenHua/EAPO-ICML26 and models are available at https://huggingface.co/hansenhua/EAPO-ICML26.",
-      "description_zh": "代理测试时间扩展的最新进展允许模型在采取最终行动之前收集环境反馈。现有方法的一个关键限制是它们通常采用无差别的探索策略，缺乏自适应区分何时真正需要探索的能力。在本文中，我们提出了一种探索感知强化学习框架，使 LLM 智能体仅在不确定性较高时才进行自适应探索。我们的方法通过变分推理引入了细粒度奖励函数，通过估计探索性行为改善未来决策的潜力来明确评估探索性行为，以及探索感知分组机制，在优化过程中将探索性行为与任务完成行为分开。通过瞄准信息差距，这种设计允许代理有选择地探索，并在任务上下文明确后立即过渡到执行。根据经验，我们证明我们的方法在一系列具有挑战性的基于文本和基于 GUI 的代理基准测试中实现了一致的改进。代码可在 https://github.com/HansenHua/EAPO-ICML26 获取，模型可在 https://huggingface.co/hansenhua/EAPO-ICML26 获取。",
-      "authors": "Xingyuan Hua, Sheng Yue, Ju Ren",
-      "url": "https://huggingface.co/papers/2605.08978",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2605.08978"
-      }
-    },
-    {
-      "id": "2605.05806",
-      "title": "Retrieval from Within: An Intrinsic Capability of Attention-Based Models",
-      "title_zh": "从内部检索：基于注意力的模型的内在能力",
-      "description": "Retrieval-augmented generation (RAG) typically treats retrieval and generation as separate systems. We ask whether an attention-based encoder-decoder can instead retrieve directly from its own internal representations. We introduce INTRA (INTrinsic Retrieval via Attention), a framework where decoder attention queries score pre-encoded evidence chunks that are then directly reused as context for generation. By construction, INTRA unifies retrieval and generation, eliminating the retriever-generator mismatch typical of RAG pipelines. This design also amortizes context encoding by reusing precomputed encoder states across queries. On question-answering benchmarks, INTRA outperforms strong engineered retrieval pipelines on both evidence recall and end-to-end answer quality. Our results demonstrate that attention-based models already possess a retrieval mechanism that can be elicited, rather than added as an external module.",
-      "description_zh": "检索增强生成（RAG）通常将检索和生成视为独立的系统。我们询问基于注意力的编码器-解码器是否可以直接从其自己的内部表示中检索。我们引入了 INTRA（INTrinsic Retrieval via Attention），这是一个框架，解码器注意查询对预编码的证据块进行评分，然后直接将其重新用作生成的上下文。通过构建，INTRA 统一了检索和生成，消除了 RAG 管道中典型的检索器与生成器不匹配的情况。该设计还通过跨查询重用预先计算的编码器状态来分摊上下文���码。在问答基准上，INTRA 在证据回忆和端到端答案质量方面均优于强大的工程检索管道。我们的结果表明，基于注意力的模型已经拥有可以引发的检索机制，而不是作为外部模块添加。",
-      "authors": "Elad Hoffer, Yochai Blau, Edan Kinderman, Ron Banner, Daniel Soudry, Boris Ginsburg",
-      "url": "https://huggingface.co/papers/2605.05806",
+      "id": "2605.01018",
+      "title": "WildTableBench: Benchmarking Multimodal Foundation Models on Table Understanding In the Wild",
+      "title_zh": "WildTableBench：在野外对表理解的多模态基础模型进行基准测试",
+      "description": "Using multimodal foundation models to analyze table images is a high-value yet challenging application in consumer and enterprise scenarios. Despite its importance, current evaluations rely largely on structured-text tables or clean rendered images, leaving the visual complexity of in-the-wild table images underexplored. Such images feature varied layouts and diverse domains that demand sophisticated structural perception and numerical reasoning. To bridge this gap, we introduce WildTableBench, the first question-answering benchmark for naturally occurring table images from real-world settings. WildTableBench comprises 402 high-information-density table images collected from online forums and websites across diverse domains, together with 928 manually annotated and verified questions spanning 17 subtypes across five categories. We evaluate 21 frontier proprietary and open-source multimodal foundation models on this benchmark. Only one model exceeds 50% accuracy, while all remaining models range from 4.1% to 49.9%. We further conduct diagnostic analyses to characterize model failures and reveal persistent weaknesses in structural perception and reasoning. These results and analyses provide useful insights into current model capabilities and establish WildTableBench as a valuable diagnostic benchmark for table image understanding.",
+      "description_zh": "在消费者和企业场景中，使用多模态基础模型来分析表格图像是一种高价值但具有挑战性的应用。尽管它很重要，但当前的评估很大程度上依赖于结构化文本表格或干净的渲染图像，而未充分探索自然表格图像的视觉复杂性。此类图像具有不同的布局和不同的领域，需要复杂的结构感知和数字推理。为了弥补这一差距，我们引入了 WildTableBench，这是第一个针对现实世界中自然出现的表格图像的问答基准。 WildTableBench 包含从不同领域的在线论坛和网站收集的 402 个高信息密度表格图像，以及涵盖 5 个类别 17 个子类型的 928 个手动注释和验证的问题。我们在此基准测试上评估了 21 个前沿专有和开源多模式基础模型。只有一个模型的准确率超过 50%，其余所有模型的准确率在 4.1% 到 49.9% 之间。我们进一步进行诊断分析来表征模型失败并揭示结构感知和推理中持续存在的弱点。这些结果和分析为当前模型功能提供���有用的见解，并将 WildTableBench 确立为表格图像理解的有价值的诊断基准。",
+      "authors": "Junzhe Huang, Xiaoxiao Sun, Yan Yang, Yuxuan Hou, Ruotian Zhang, Sirui Li, Hehe Fan, Serena Yeung-Levy, Xin Yu",
+      "url": "https://huggingface.co/papers/2605.01018",
       "score": 3,
       "meta": {
         "source": "huggingface",
         "upvotes": "3",
-        "paperId": "2605.05806"
+        "paperId": "2605.01018"
       }
     },
     {
-      "id": "2605.04651",
-      "title": "FAAST: Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation",
-      "title_zh": "FAAST：通过封闭式快速权重进行仅前向关联学习，用于测试时监督适应",
-      "description": "Adapting pretrained models typically involves a trade-off between the high training costs of backpropagation and the heavy inference overhead of memory-based or in-context learning. We propose FAAST, a forward-only associative adaptation method that analytically compiles labeled examples into fast weights in a single pass. By eliminating memory or context dependence, FAAST achieves constant-time inference and decouples task adaptation from pretrained representation. Across image classification and language modeling benchmarks, FAAST matches or exceeds backprop-based adaptation while reducing adaptation time by over 90% and is competitive to memory/context-based adaptation while saving memory usage by up to 95%. These results demonstrate FAAST as a highly efficient, scalable solution for supervised task adaptation, particularly for resource-constrained models. We release the code and models at https://github.com/baoguangsheng/faast.",
-      "description_zh": "调整预训练模型通常需要在反向传播的高训练成本和基于内存或上下文学习的沉重推理开销之间进行权衡。我们提出了 FAAST，一种仅前向关联适应方法，可在单次传递中将标记示例分析性地编译为快速权重。通过消除内存或上下文依赖性，FAAST 实现了恒定时间推理，并将任务适应与预训练表示解耦。在图像分类和语言建模基准测试中，FAAST 匹配或超过基于反向传播的自适应，同时将自适应时间减少了 90% 以上，并且与基于内存/上下文的自适应具有竞争力，同时节省了高达 95% 的内存使用量。这些结果表明 FAAST 是一种高效、可扩展的监督任务适应解决方案，特别是对于资源受限的模型。我们在 https://github.com/baoguangsheng/faast 发布了代码和模型。",
-      "authors": "Guangsheng Bao, Hongbo Zhang, Han Cui, Ke Sun, Yanbin Zhao, Juncai He, Yue Zhang",
-      "url": "https://huggingface.co/papers/2605.04651",
+      "id": "2605.06554",
+      "title": "Long Context Pre-Training with Lighthouse Attention",
+      "title_zh": "使用 Lighthouse Attention 进行长上下文预训练",
+      "description": "Training causal transformers at extreme sequence lengths is bottlenecked by the quadratic time and memory of scaled dot-product attention (SDPA). In this work, we propose Lighthouse Attention, a training-only symmetrical selection-based hierarchical attention algorithm that wraps around ordinary SDPA and can be easily removed towards the end of the training. Our hierarchical selection is also gradient-free, which exempts us from dealing with a complicated and potentially inefficient backward pass kernel. Our contribution is three-fold: (i) A subquadratic hierarchical pre- and post-processing step that does adaptive compression and decompression of the sequence. (ii) A symmetrical compression strategy that pools queries, keys and values at the same time, while preserving left-to-right causality, which greatly improves parallelism. (iii) A two stage training approach which we pre-train for the majority of the time with Lighthouse Attention and recover a full attention model at the end with a short training. We run preliminary small scale LLM pre-training experiments that show the effectiveness of our method compared to full attention training with all other settings matched, where we achieve a faster total training time and lower final loss after the recovery phase. Full code is available at: https://github.com/ighoshsubho/lighthouse-attention",
+      "description_zh": "以极端序列长度训练因果变换器受到缩放点积注意力（SDPA）的二次时间和内存的瓶颈。在这项工作中，我们提出了 Lighthouse Attention，这是一种仅训练的基于对称选择的分层注意力算法，它包裹着普通的 SDPA，并且可以在训练结束时轻松删除。我们的分层选择也是无梯度的，这使我们免于处理复杂且可能低效的后向传递内核。我们的贡献有三个方面：（i）次二次分层预处理和后处理步骤，对序列进行自适应压缩和解压缩。 (ii) 对称压缩策略，同时池化查询、键和值，同时保留从左到右的因果关系，这大大提高了并行性。 (iii) 两阶段训练方法，我们大部分时间都使用 Lighthouse Attention 进行预训练，并在最后通过短期训练恢复完整的注意力模型。我们进行了初步的小规模 LLM 预训练实验，显示了我们的方法与所有其他设置匹配的全注意力训练相比的有效性，其中我们在恢复阶段后实现了更快的总训练时间和更低的最终损失。完整代码位于：https://github.com/ighoshsubho/lighthouse-attention",
+      "authors": "Bowen Peng, Subho Ghosh, Jeffrey Quesnelle",
+      "url": "https://huggingface.co/papers/2605.06554",
+      "score": 15,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "15",
+        "paperId": "2605.06554"
+      }
+    },
+    {
+      "id": "2605.15012",
+      "title": "Boosting Reinforcement Learning with Verifiable Rewards via Randomly Selected Few-Shot Guidance",
+      "title_zh": "通过随机选择的少样本指导，通过可验证的奖励促进强化学习",
+      "description": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved great success in developing Large Language Models (LLMs) with chain-of-thought rollouts for many tasks such as math and coding. Nevertheless, RLVR struggles with sample efficiency on difficult problems where correct rollouts are hard to generate. Prior works propose to address this issue via demonstration-guided RLVR, i.e., to conduct Supervised FineTuning (SFT) when RL fails; however, SFT often requires a lot of data, which can be expensive to acquire. In this paper, we propose FEST, a FEw-ShoT demonstration-guided RLVR algorithm. It attains compelling results with only 128 demonstrations randomly selected from an SFT dataset. We find that three components are vital for the success: supervised signal, on-policy signal, and decaying weights on the few-shot SFT dataset to prevent overfitting from multiple-epoch training. On several benchmarks, FEST outperforms baselines with magnitudes less SFT data, even matching their performance with full dataset.",
+      "description_zh": "具有可验证奖励的强化学习 (RLVR) 在开发大型语言模型 (LLM) 方面取得了巨大成功，并针对数学和编码等许多任务推出了思维链。然而，RLVR 在解决难以生成正确的 rollout 的难题时，在样本效率方面遇到了困难。之前的工作建议通过演示引导的 RLVR 来解决这个问题，即当 RL 失败时进行监督微调（SFT）；然而，SFT 通常需要大量数据，而获取这些数据的成本可能很高。在本文中，我们提出了 FEST，一种 FEw-ShoT 演示引导的 RLVR 算法。仅从 SFT 数据集中随机选择 128 个演示，它就获得了令人信服的结果。我们发现三个组成部分对于成功至关重要：监督信号、同策略信号以及少样本 SFT 数据集上的衰减权重，以防止多轮训练中的过度拟合。在多个基准测试中，FEST 的性能优于 SFT 数据量级较少的基线，甚至可以将其性能与完整数据集相匹配。",
+      "authors": "Kai Yan, Alexander G. Schwing, Yu-Xiong Wang",
+      "url": "https://huggingface.co/papers/2605.15012",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2605.04651"
+        "paperId": "2605.15012"
       }
     },
     {
-      "id": "2605.12556",
-      "title": "M2Retinexformer: Multi-Modal Retinexformer for Low-Light Image Enhancement",
-      "title_zh": "M2Retinexformer：用于低光图像增强的多模态 Retinexformer",
-      "description": "Low-light image enhancement is challenging due to complex degradations, including amplified noise, artifacts, and color distortion. While Retinex-based deep learning methods have achieved promising results, they primarily rely on single-modality RGB information. We propose M2Retinexformer (Multi-Modal Retinexformer), a novel framework that extends Retinexformer by incorporating depth cues, luminance priors, and semantic features within a progressive refinement pipeline. Depth provides geometric context that is invariant to lighting variations, while luminance and semantic features offer explicit guidance on brightness distribution and scene understanding. Modalities are extracted at multiple scales and fused through cross-attention, with adaptive gating dynamically balancing illumination-guided self-attention and cross-attention based on the reliability of auxiliary cues. Evaluations on the LOL, SID, SMID, and SDSD benchmarks demonstrate overall improvements over Retinexformer and recent state-of-the-art methods. Code and pretrained weights are available at https://github.com/YoussefAboelwafa/M2Retinexformer",
-      "description_zh": "由于复杂的退化，包括放大的噪声、伪影和颜色失真，低光图像增强具有挑战性。虽然基于 Retinex 的深度学习方法取得了可喜的结果，但它们主要依赖于单模态 RGB 信息。我们提出了 M2Retinexformer（多模态 Retinexformer），这是一种新颖的框架，通过在渐进式细化管道中合并深度线索、亮度先验和语义特征来扩展 Retinexformer。深度提供了不受光照变化影响的几何背景，而亮度和语义特征则为亮度分布和场景理解提供了明确的指导。模态是在多个尺度上提取的，并通过交叉注意力融合，自适应门控根据辅助线索的可靠性动态平衡照明引导的自注意力和交叉注意力。对 LOL、SID、SMID 和 SDSD 基准的评估表明，相对于 Retinexformer 和最新最先进的方法，整体有所改进。代码和预训练权重可在 https://github.com/YoussefAboelwafa/M2Retinexformer 获取",
-      "authors": "Youssef Aboelwafa, Hicham G. Elmongui, Marwan Torki",
-      "url": "https://huggingface.co/papers/2605.12556",
+      "id": "2605.12243",
+      "title": "PreScam: A Benchmark for Predicting Scam Progression from Early Conversations",
+      "title_zh": "PreScam：从早期对话预测诈骗进展的基准",
+      "description": "Conversational scams, such as romance and investment scams, are emerging as a major form of online fraud. Unlike one-shot scam lures such as fake lottery or unpaid toll messages, they unfold through multi-turn conversations in which scammers gradually manipulate victims using evolving psychological techniques. However, existing research mainly focuses on static scam detection or synthetic scams, leaving open whether language models can understand how real-world scams progress over time. We introduce PreScam, a benchmark for modeling scam progression from early conversations. Built from user-submitted scam reports, PreScam filters and structures 177,989 raw reports into 11,573 conversational scam instances spanning 20 scam categories. Each instance is hierarchically structured according to the scam lifecycle defined by the proposed scam kill chain, and further annotated at the turn level with scammer psychological actions and victim responses. We benchmark models on two tasks: real-time termination prediction, which estimates whether a conversation is approaching the termination stage, and scammer action prediction, which forecasts the scammer's subsequent actions. Results show a clear gap between surface-level fluency and progression modeling: supervised encoders substantially outperform zero-shot LLMs on real-time termination prediction, while next-action prediction remains only moderately successful even for strong LLMs. Taken together, these results show that current models can capture some scam-related cues, yet still struggle to track how risk escalates and how manipulation unfolds across turns.",
+      "description_zh": "会话诈骗，例如爱情诈骗和投资诈骗，正在成为网络诈骗的主要形式。与虚假彩票或未付通行费消息等一次性诈骗诱惑不同，它们是通过多轮对话展开的，其中诈骗者利用不断发展的心理技术逐渐操纵受害者。然而，现有的研究主要集中在静态骗局检测或合成骗局上，语言模型是否能够理解现实世界中的骗局如何随着时间的推移而发展仍是一个悬而未决的问题。我们推出 PreScam，这是一个从早期对话中对诈骗进展进行建模的基准。 PreScam 根据用户提交的诈骗报告构建，将 177,989 份原始报告过滤并构建为涵盖 20 个诈骗类别的 11,573 个会话诈骗实例。每个实例都根据拟定的诈骗杀伤链定义的诈骗生命周期进行分层结构，并在回合级别进一步注释诈骗者的心理行为和受害者的反应。我们对两项任务的模型进行基准测试：实时终止预测（估计对话是否接近终止阶段）和诈骗者行动预测（预测诈骗者的后续行动）。结果显示，表面流畅性和进展建模之间存在明显差距：监督编码器���实时终止预测方面远远优于零样本 LLM，而即使对于强 LLM，下一步动作预测也只能取得一定的成功。总而言之，这些结果表明，当前的模型可以捕获一些与诈骗相关的线索，但仍然难以跟踪风险如何升级以及操纵如何跨轮展开。",
+      "authors": "Weixiang Sun, Shang Ma, Yiyang Li, Tianyi Ma, Zehong Wang, Colby Nelson, Xusheng Xiao, Yanfang Ye",
+      "url": "https://huggingface.co/papers/2605.12243",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2605.12556"
+        "paperId": "2605.12243"
       }
     },
     {
-      "id": "2605.13030",
-      "title": "FeatCal: Feature Calibration for Post-Merging Models",
-      "title_zh": "FeatCal：合并后模型的特征校准",
-      "description": "Model merging combines task experts into one model and avoids joint training, retraining, or deploying many expert models, but the merged model often still underperforms task experts. We study this performance gap through feature drift, the difference between features produced by the merged model and by the expert on the same input. Our theory decomposes this drift into upstream propagation and local mismatch, tracks how it propagates and combines through later layers in forward order, and links final feature drift to output drift. This view motivates FeatCal, which uses a small calibration set to calibrate the merged model weights layer by layer in forward order, reducing feature drift while staying close to merged weights and preserving the benefits of model merging. FeatCal uses an efficient closed-form solution to update model weights, with no gradient descent, iterative optimization, or extra modules. On the main CLIP and GLUE benchmarks, FeatCal beats Surgery and ProbSurgery, the closest post-merging calibration baselines: 85.5% vs. 77.0%/78.8% on CLIP-ViT-B/32 Task Arithmetic (TA) and 85.2% vs. 83.7%/82.2% on FLAN-T5-base GLUE. On CLIP-ViT-B/32, 8 examples per task reach 82.9%, and 256 examples per task take 53 seconds, about 4x faster than both baselines, showing better sample efficiency and lower calibration cost.",
-      "description_zh": "模型合并将任务专家合并为一个模型，避免了联合训练、再训练或部署许多专家模型，但合并后的模型通常仍然不如任务专家。我们通过特征漂移来研究这种性能差距，特征漂移是合并模型和专家在相同输入上产生的特征之间的差异。我们的理论将这种漂移分解为上游传播和局部失配，跟踪它如何传播并按前向顺序组合到后面的层，并将最终特征漂移与输出漂移联系起来。这种观点激发了 FeatCal，它使用一个小的校准集按前向顺序逐层校准合并的模型权重，减少特征漂移，同时保持接近合并的权重并保留模型合并的好处。 FeatCal 使用高效的封闭式解决方案来更新模型权重，无需梯度下降、迭代优化或额外模块。在主要的 CLIP 和 GLUE 基准测试中，FeatCal 击败了最接近的合并后校准基线——Surgery 和 ProbSurgery：在 CLIP-ViT-B/32 任务算术 (TA) 上分别为 85.5% 与 77.0%/78.8%，在基于 FLAN-T5 的 GLUE 上分别为 85.2% 与 83.7%/82.2%。在 CLIP-ViT-B/32 上，每个任务 8 个样本达到 82.9%，每个任务 256 个样本耗时 53 秒，比两个基线快约 4 倍，显示出更好的样本效率和更低的校准成本。",
-      "authors": "Yanggan Gu, Shuo Cai, Zihao Wang, Wenjun Wang, Yuanyi Wang, Pengkai Wang, Sirui Huang, Su Lu, Jianmin Wu, Hongxia Yang",
-      "url": "https://huggingface.co/papers/2605.13030",
+      "id": "2605.14984",
+      "title": "Sat3DGen: Comprehensive Street-Level 3D Scene Generation from Single Satellite Image",
+      "title_zh": "Sat3DGen：从单卫星图像生成全面的街道级 3D 场景",
+      "description": "Generating a street-level 3D scene from a single satellite image is a crucial yet challenging task. Current methods present a stark trade-off: geometry-colorization models achieve high geometric fidelity but are typically building-focused and lack semantic diversity. In contrast, proxy-based models use feed-forward image-to-3D frameworks to generate holistic scenes by jointly learning geometry and texture, a process that yields rich content but coarse and unstable geometry. We attribute these geometric failures to the extreme viewpoint gap and sparse, inconsistent supervision inherent in satellite-to-street data. We introduce Sat3DGen to address these fundamental challenges, which embodies a geometry-first methodology. This methodology enhances the feed-forward paradigm by integrating novel geometric constraints with a perspective-view training strategy, explicitly countering the primary sources of geometric error. This geometry-centric strategy yields a dramatic leap in both 3D accuracy and photorealism. For validation, we first constructed a new benchmark by pairing the VIGOR-OOD test set with high-resolution DSM data. On this benchmark, our method improves geometric RMSE from 6.76m to 5.20m. Crucially, this geometric leap also boosts photorealism, reducing the Fréchet Inception Distance (FID) from sim40 to 19 against the leading method, Sat2Density++, despite using no extra tailored image-quality modules. We demonstrate the versatility of our high-quality 3D assets through diverse downstream applications, including semantic-map-to-3D synthesis, multi-camera video generation, large-scale meshing, and unsupervised single-image Digital Surface Model (DSM) estimation. The code has been released on https://github.com/qianmingduowan/Sat3DGen.",
+      "description_zh": "从单个卫星图像生成街道级 3D 场景是一项至关重要但具有挑战性的任务。当前的方法存在明显的权衡：几何着色模型实现了高几何保真度，但通常以建筑物为中心，缺乏语义多样性。相比之下，基于代理的模型使用前馈图像到 3D 框架，通过联合学习几何和纹理来生成整体场景，这一过程会产生丰富的内容，但几何结构粗糙且不稳定。我们将这些几何故障归因于卫星到街道数据固有的极端视点差距和稀疏、不一致的监督。我们引入 Sat3DGen 来解决这些基本挑战，它体现了几何优先的方法。该方法通过将新颖的几何约束与透视训练策略相结合来增强前馈范式，明确地对抗几何误差的主要来源。这种以几何为中心的策略在 3D 精度和真实感方面实现了巨大飞跃。为了进行验证，我们首先将 VIGOR-OOD 测试集与高分辨率 DSM 数据配对，构建了一个新的基准。在此基准测试中，我们的方法将几何 RMSE 从 6.76m 提高到 5.20m。至关重要的是，这种几何飞跃还提高了照片真实感，尽管没有使用额外定制的图像质量模块，但与领先的方法 Sat2Density++ 相比，Fréchet 起始距离 (FID) 从 sim40 减少到 19。我们通过各种下游应用展示了高质量 3D 资产的多功能性，包括语义图到 3D 合成、多摄像头视频生成、大规模网格划分和无监督单图像数字表面模型 (DSM) 估计。代码已发布于https://github.com/qianmingduowan/Sat3DGen。",
+      "authors": "Ming Qian, Zimin Xia, Changkun Liu, Shuailei Ma, Wen Wang, Zeran Ke, Bin Tan, Hang Zhang, Gui-Song Xia",
+      "url": "https://huggingface.co/papers/2605.14984",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2605.14984"
+      }
+    },
+    {
+      "id": "2605.07637",
+      "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding",
+      "title_zh": "学习本地通信以进行大规模多智能体寻路",
+      "description": "Multi-agent pathfinding (MAPF) is a widely used abstraction for multi-robot trajectory planning problems, where multiple homogeneous agents move simultaneously within a shared environment. Although solving MAPF optimally is NP-hard, scalable and efficient solvers are critical for real-world applications such as logistics and search-and-rescue. To this end, the research community has proposed various decentralized suboptimal MAPF solvers that leverage machine learning. Such methods frame MAPF (from a single agent perspective) as a Dec-POMDP where at each time step an agent has to decide an action based on the local observation and typically solve the problem via reinforcement learning or imitation learning. We follow the same approach but additionally introduce a learnable communication module tailored to enhance cooperation between agents via efficient feature sharing. We present the Local Communication for Multi-agent Pathfinding (LC-MAPF), a generalizable pre-trained model that applies multi-round communication between neighboring agents to exchange information and improve their coordination. Our experiments show that the introduced method outperforms the existing learning-based MAPF solvers, including IL and RL-based approaches, across diverse metrics in a diverse range of (unseen) test scenarios. Remarkably, the introduced communication mechanism does not compromise LC-MAPF's scalability, a common bottleneck for communication-based MAPF solvers.",
+      "description_zh": "多智能体寻路（MAPF）是一种广泛用于多机器人轨迹规划问题的抽象，其中多个同类智能体在共享环境中同时移动。尽管最优求解 MAPF 是 NP 难题，但可扩展且高效的求解器对于物流和搜索救援等实际应用至关重要。为此，研究社区提出了各种利用机器学习的分散式次优 MAPF 求解器。此类方法将 MAPF（从单代理角度）构建为 Dec-POMDP，其中在每个时间步骤，代理必须根据局部观察来决定行动，并且通常通过强化学习或模仿学习来解决问题。我们遵循相同的方法，但另外引入了一个可学习的通信模块，旨在通过有效的功能共享来增强代理之间的合作。我们提出了多智能体寻路本地通信（LC-MAPF），这是一种可推广的预训练模型，它应用相邻智能体之间的多轮通信来交换信息并改善它们的协调。我们的实验表明，所引入的方法在各种（未见过的）测试场景中的各种指标上优于现有的基于学习的 MAPF 求解器，包括基于 IL 和 RL 的方法。值得注意的是，引入的通信机制并没有损害 LC-MAPF 的可扩展性，这是基于通信的 MAPF 求解器的常见瓶颈。",
+      "authors": "Valeriy Vyaltsev, Alsu Sagirova, Anton Andreychuk, Oleg Bulichev, Yuri Kuratov, Konstantin Yakovlev, Aleksandr Panov, Alexey Skrynnik",
+      "url": "https://huggingface.co/papers/2605.07637",
+      "score": 16,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "16",
+        "paperId": "2605.07637"
+      }
+    },
+    {
+      "id": "2605.14607",
+      "title": "ViMU: Benchmarking Video Metaphorical Understanding",
+      "title_zh": "ViMU：视频隐喻理解基准测试",
+      "description": "Any new medium, once it emerges, is used for more than the transmission of overt content alone. The information it carries typically operates on two levels: one is the content directly presented, while the other is the subtext beneath it-the implicit ideas and intentions the creator seeks to convey through the medium. Likewise, since video technologies became widely adopted, video has served not only as a powerful tool for recording and communicating visual information, but also as a vehicle for emotions, attitudes, and social meanings that are often difficult to articulate explicitly. Thus, the true meaning of many videos does not reside solely in what is shown on screen; it is often embedded in context, style of expression, and the viewer's social experience. Some forms of such video subtext are humorous, while others carry irony, mockery, or criticism. These implicit meanings can also be interpreted very differently across cultural backgrounds and social groups. However, most existing video understanding models still focus primarily on literal visual comprehension, such as recognizing objects, actions, or temporal relations, and lack a systematic ability to understand the metaphorical, ironic, and social meanings embedded in videos. To bridge this gap, we introduce ViMU, the first benchmark designed to systematically evaluate the subtext understanding capabilities of frontier models in videos. ViMU assesses whether video understanding models can go beyond literal perception to infer implicit meaning while grounding their interpretations in multimodal evidence and answering both open-ended and multiple-choice questions. Importantly, all questions are designed to be hint-free, ensuring that no key evidence is disclosed to models before answering.",
+      "description_zh": "任何新媒体一旦出现，其用途就不仅仅是传输公开内容。它所承载的信息通常在两个层面上运作：一是直接呈现的内容，二是其背后的潜台词——创作者试图通过媒介传达的隐含的想法和意图。同样，自从视频技术被广泛采用以来，视频不仅成为记录和交流视觉信息的强大工具，而且成为表达情感、态度和社会意义的载体，而这些情感、态度和社会意义往往难以明确表达。因此，许多视频的真正含义不仅仅在于屏幕上显示的内容；它通常嵌入上下文、表达风格和观看者的社交体验中。此类视频潜台词的某些形式是幽默的，而另一些则带有讽刺、嘲笑或批评。这些隐含的含义在不同的文化背景和社会群体中也可以有非常不同的解释。然而，大多数现有的视频理解模型仍然主要关注字面视觉理解，例如识别物体、动作或时间关系，缺乏系统地理解视频中隐喻、讽刺和社会意义的能力。为了弥补这一差距，我们引入了 ViMU，这是第一个旨在系统评估视频中前沿模型的潜台词理解能力的基准测试。 ViMU 评估视频理解模型是否可以超越字面感知来推断隐含含义，同时将其解释建立在多模态证据的基础上，并回答开放式问题和多项选择问题。重要的是，所有问题都设计为无提示，确保在回答之前不会向模型透露任何关键证据。",
+      "authors": "Qi Li, Xinchao Wang",
+      "url": "https://huggingface.co/papers/2605.14607",
+      "score": 10,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "10",
+        "paperId": "2605.14607"
+      }
+    },
+    {
+      "id": "2605.12034",
+      "title": "Boosting Omni-Modal Language Models: Staged Post-Training with Visually Debiased Evaluation",
+      "title_zh": "提升全模态语言模型：通过视觉偏差评估进行分阶段训练后",
+      "description": "Omni-modal language models are intended to jointly understand audio, visual inputs, and language, but benchmark gains can be inflated when visual evidence alone is enough to answer a query. We study whether current omni-modal benchmarks separate visual shortcuts from genuine audio-visual-language evidence integration, and how post-training behaves under a visually debiased evaluation setting. We audit nine omni-modal benchmarks with visual-only probing, remove visually solvable queries, and retain full subsets when filtering is undefined or would make comparisons unstable. This yields OmniClean, a cleaned evaluation view with 8,551 retained queries from 16,968 audited queries. On OmniClean, we evaluate OmniBoost, a three-stage post-training recipe based on Qwen2.5-Omni-3B: mixed bi-modal SFT, mixed-modality RLVR, and SFT on self-distilled data. Balanced bi-modal SFT gives limited and uneven gains, RLVR provides the first broad improvement, and self-distillation reshapes the benchmark profile. After SFT on self-distilled data, the 3B model reaches performance comparable to, and in aggregate slightly above, Qwen3-Omni-30B-A3B-Instruct without using a stronger omni-modal teacher. These results show that omni-modal progress is easier to interpret when evaluation controls visual leakage, and that small omni-modal models can benefit from staged post-training with self-distilled omni-query supervision. Project page: https://cheliu-computation.github.io/omni/",
+      "description_zh": "全模态语言模型旨在共同理解音频、视觉输入和语言，但当仅视觉证据足以回答查询时，基准收益可能会被夸大。我们研究当前的全模态基准是否将视觉捷径与真正的视听语言证据整合分开，以及训练后在视觉去偏见评估环境下的表现如何。我们通过仅视觉探测来审核九个全模式基准，删除视觉上可解决的查询，并在过滤未定义或导致比较不稳定时保留完整的子集。这会产生 OmniClean，这是一个经过清理的评估视图，其中包含 16,968 个已审核查询中的 8,551 个保留查询。在 OmniClean 上，我们评估了 OmniBoost，这是一种基于 Qwen2.5-Omni-3B 的三阶段后训练方案：混合双模态 SFT、混合模态 RLVR 和自蒸馏数据上的 SFT。平衡双峰 SFT 提供有限且不均匀的增益，RLVR 提供第一个广泛的改进，自蒸馏重塑基准配置文件。对自蒸馏数据进行 SFT 后，3B 模型的性能与 Qwen3-Omni-30B-A3B-Instruct 相当，并且总体略高于 Qwen3-Omni-30B-A3B-Instruct，而无需使用更强的全模态教师。这些结果表明，当评估��制视觉泄漏时，全模态进展更容易解释，并且小型全模态模型可以从具有自蒸馏全查询监督的分阶段后训练中受益。项目页面：https://cheliu-computation.github.io/omni/",
+      "authors": "Che Liu, Lichao Ma, Xiangyu Tony Zhang, Yuxin Zhang, Haoyang Zhang, Xuerui Yang, Fei Tian",
+      "url": "https://huggingface.co/papers/2605.12034",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2605.12034"
+      }
+    },
+    {
+      "id": "2605.14438",
+      "title": "BEAM: Binary Expert Activation Masking for Dynamic Routing in MoE",
+      "title_zh": "BEAM：MoE 中动态路由的二进制专家激活掩码",
+      "description": "Mixture-of-Experts (MoE) architectures enhance the efficiency of large language models by activating only a subset of experts per token. However, standard MoE employs a fixed Top-K routing strategy, leading to redundant computation and suboptimal inference latency. Existing acceleration methods either require costly retraining with architectural changes or suffer from severe performance drop at high sparsity due to train-inference mismatch. To address these limitations, we propose BEAM (Binary Expert Activation Masking), a novel method that learns token-adaptive expert selection via trainable binary masks. With a straight-through estimator and an auxiliary regularization loss, BEAM induces dynamic expert sparsity through end-to-end training while maintaining model capability. We further implement an efficient custom CUDA kernel for BEAM, ensuring seamless integration with the vLLM inference framework. Experiments show that BEAM retains over 98\\% of the original model's performance while reducing MoE layer FLOPs by up to 85\\%, achieving up to 2.5times faster decoding and 1.4times higher throughput, demonstrating its effectiveness as a practical, plug-and-play solution for efficient MoE inference.",
+      "description_zh": "专家混合 (MoE) 架构通过每个令牌仅激活一部分专家来提高大型语言模型的效率。然而，标准 MoE 采用固定的 Top-K 路由策略，导致冗余计算和次优推理延迟。现有的加速方法要么需要通过架构更改进行成本高昂的重新训练，要么由于训练推理不匹配而在高稀疏性下遭受严重的性能下降。为了解决这些限制，我们提出了 BEAM（二进制专家激活掩码），这是一种通过可训练的二进制掩码学习令牌自适应专家选择的新颖方法。借助直通估计器和辅助正则化损失，BEAM 通过端到端训练引入动态专家稀疏性，同时保持模型能力。我们进一步为 BEAM 实现了高效的定制 CUDA 内核，确保与 vLLM 推理框架的无缝集成。实验表明，BEAM 保留了超过 98% 的原始模型性能，同时将 MoE 层 FLOP 降低了高达 85%，实现了高达 2.5 倍的解码速度和 1.4 倍的吞吐量，证明了其作为高效 MoE 推理的实用、即插即用解决方案的有效性。",
+      "authors": "Juntong Wu, Jialiang Cheng, Qishen Yin, Yue Dai, Yuliang Yan, Fuyu Lv, Ou Dan, Li Yuan",
+      "url": "https://huggingface.co/papers/2605.14438",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.14438"
+      }
+    },
+    {
+      "id": "2605.14454",
+      "title": "LiSA: Lifelong Safety Adaptation via Conservative Policy Induction",
+      "title_zh": "LiSA：通过保守政策归纳进行终身安全适应",
+      "description": "As AI agents move from chat interfaces to systems that read private data, call tools, and execute multi-step workflows, guardrails become a last line of defense against concrete deployment harms. In these settings, guardrail failures are no longer merely answer-quality errors: they can leak secrets, authorize unsafe actions, or block legitimate work. The hardest failures are often contextual: whether an action is acceptable depends on local privacy norms, organizational policies, and user expectations that resist pre-deployment specification. This creates a practical gap: guardrails must adapt to their own operating environments, yet deployment feedback is typically limited to sparse, noisy user-reported failures, and repeated fine-tuning is often impractical. To address this gap, we propose LiSA (Lifelong Safety Adaptation), a conservative policy induction framework that improves a fixed base guardrail through structured memory. LiSA converts occasional failures into reusable policy abstractions so that sparse reports can generalize beyond individual cases, adds conflict-aware local rules to prevent overgeneralization in mixed-label contexts, and applies evidence-aware confidence gating via a posterior lower bound, so that memory reuse scales with accumulated evidence rather than empirical accuracy alone. Across PrivacyLens+, ConFaide+, and AgentHarm, LiSA consistently outperforms strong memory-based baselines under sparse feedback, remains robust under noisy user feedback even at 20% label-flip rates, and pushes the latency--performance frontier beyond backbone model scaling. Ultimately, LiSA offers a practical path to secure AI agents against the unpredictable long tail of real-world edge risks.",
+      "description_zh": "随着人工智能代理从聊天界面转向读取私有数据、调用工具和执行多步骤工作流程的系统，护栏成为抵御具体部署危害的最后一道防线。在这些设置中，护栏故障不再仅仅是答案质量错误：它们可能会泄露秘密、授权不安全的操作或阻止合法的工作。最困难的失败通常是与上下文相关的：某个操作是否可接受取决于本地隐私规范、组织策略以及违反预部署规范的用户期望。这就造成了一个实际的差距：护栏必须适应自己的操作环境，但部署反馈通常仅限于稀疏的、嘈杂的用户报告的故障，并且重复��微调通常是不切实际的。为了解决这一差距，我们提出了 LiSA（终身安全适应），这是一种保守的策略归纳框架，通过结构化内存改进固定基础护栏。 LiSA 将偶尔的失败转换为可重用的策略抽象，以便稀疏报告可以泛化到个体案例之外，添加冲突感知局部规则以防止混合标签上下文中的过度泛化，并通过后验下限应用证据感知置信门控，以便内存重用随着积累的证据而不仅仅是经验准确性而扩展。在 PrivacyLens+、ConFaide+ 和 AgentHarm 中，LiSA 在稀疏反馈下始终优于基于内存的强大基线，即使在 20% 的标签翻转率下，在嘈杂的用户反馈下也能保持稳健，并将延迟性能前沿推向骨干模型扩展之外。最终，LiSA 提供了一条实用的途径来保护人工智能代理免受现实世界边缘风险不可预测的长尾风险的影响。",
+      "authors": "Minbeom Kim, Lesly Miculicich, Bhavana Dalvi Mishra, Mihir Parmar, Phillip Wallis, Bharath Chandrasekhar, Kyomin Jung, Tomas Pfister, Long T. Le",
+      "url": "https://huggingface.co/papers/2605.14454",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.14454"
+      }
+    },
+    {
+      "id": "2605.13852",
+      "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
+      "title_zh": "Realiz3D：通过领域感知学习实现逼真的 3D 生成",
+      "description": "We often aim to generate images that are both photorealistic and 3D-consistent, adhering to precise geometry, material, and viewpoint controls. Typically, this is achieved by fine-tuning an image generator, pre-trained on billions of real images, using renders of synthetic 3D assets, where annotations for control signals are available. While this approach can learn the desired controls, it often compromises the realism of the images due to domain gap between photographs and renders. We observe that this issue largely arises from the model learning an unintended association between the presence of control signals and the synthetic appearance of the images. To address this, we introduce Realiz3D, a lightweight framework for training diffusion models, that decouples controls and visual domain. The key idea is to explicitly learn visual domain, real or synthetic, separately from other control signals by introducing a co-variate that, fed into small residual adapters, shifts the domain. Then, the generator can be trained to gain controllability, without fitting to specific visual domain. In this way, the model can be guided to produce realistic images even when controls are applied. We enhance control transferability to the real domain by leveraging insights about roles of different layers and denoising steps in diffusion-based generators, informing new training and inference strategies that further mitigate the gap. We demonstrate the advantages of Realiz3D in tasks as text-to-multiview generation and texturing from 3D inputs, producing outputs that are 3D-consistent and photorealistic.",
+      "description_zh": "我们通常的目标是生成逼真且 3D 一致的图像，并遵循精确的几何形状、材质和视点控制。通常，这是通过使用合成 3D 资产的渲染（其中提供控制信号注释）对图像生成器进行微调来实现的，该图像生成器在数十亿张真实图像上进行了预训练。虽然这种方法可以学习所需的控制，但由于照片和渲染之间的域差距，它常常会损害图像的真实感。我们观察到，这个问题很大程度上是由于模型学习了控制信号的存在与图像的合成外观之间的意外关联而引起的。为了解决这个问题，我们引入了 Realiz3D，这是一个用于训练扩散模型的轻量级框架，可以将控件和视觉域解耦。关键思想是通过引入一个协变量，将其输入到小型残差适配器中，从而改变视觉域，从而与其他控制信号分开，明确地学习真实或合成的视觉域。然后，可以训练生成器以获得可控性，而无需适应特定的视觉域。通过这种方式，即使在应用控制的情况下，也可以引导模型生成逼真的图像。我们通过利用对基于扩散的生成器中不同层的作用和去噪步骤的见解，增强控制到真实域的可转移性，为进一步缩小差距的新训练和推理策略提供信息。我们展示了 Realiz3D 在文本到多视图生成和 3D 输入纹理化等任务中的优势，从而生成 3D 一致且逼真的输出。",
+      "authors": "Ido Sobol, Kihyuk Sohn, Yoav Blum, Egor Zakharov, Max Bluvstein, Andrea Vedaldi, Or Litany",
+      "url": "https://huggingface.co/papers/2605.13852",
+      "score": 18,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "18",
+        "paperId": "2605.13852"
+      }
+    },
+    {
+      "id": "2605.14445",
+      "title": "FrontierSmith: Synthesizing Open-Ended Coding Problems at Scale",
+      "title_zh": "FrontierSmith：大规模综合开放式编码问题",
+      "description": "Many real-world coding challenges are open-ended and admit no known optimal solution. Yet, recent progress in LLM coding has focused on well-defined tasks such as feature implementation, bug fixing, and competitive programming. Open-ended coding remains a weak spot for LLMs, largely because open-ended training problems are scarce and expensive to construct. Our goal is to synthesize open-ended coding problems at scale to train stronger LLM coders. We introduce FrontierSmith, an automated system for iteratively evolving open-ended problems from existing closed-ended coding tasks. Starting from competitive programming problems, FrontierSmith generates candidate open-ended variants by changing the problems'goals, restricting outputs, and generalizing inputs. It then uses a quantitative idea divergence metric to select problems that elicit genuinely diverse approaches from different solvers. Agents then generate test cases and verifiers for the surviving candidates. On two open-ended coding benchmarks, training on our synthesized data yields substantial gains over the base models: Qwen3.5-9B improves by +8.82 score on FrontierCS and +306.36 (Elo-rating-based performance) on ALE-bench; Qwen3.5-27B improves by +12.12 and +309.12, respectively. The synthesized problems also make agents take more turns and use more tokens, similar to human-curated ones, suggesting that closed-ended seeds can be a practical starting point for long-horizon coding data.",
+      "description_zh": "许多现实世界的编码挑战都是开放式的，并且不存在已知的最佳解决方案。然而，LLM 编码的最新进展主要集中在明确定义的任务上，例如功能实现、错误修复和竞争性编程。开放式编码仍然是LLM的一个弱点，很大程度上是因为开放式训练问题稀缺且构建成本昂贵。我们的目标是大规模综合开放式编码问题，以训练更强大的LLM编码员。我们引入了 FrontierSmith，这是一个自动化系统，用于从现有的封闭式编码任务中迭代地演化出开放式问题。 FrontierSmith 从竞争性编程问题出发，通过改变问题的目标、限制输出和概括输入来生成候选的开放式变体。然后，它使用定量的想法分歧度量来选择问题，从而从不同的求解器中引出真正不同的方法。然后，代理为幸存的候选人生成测试用例和验证程序。在两个开放式编码基准上，对我们的合成数据进行训练比基本模型产生了显着的收益：Qwen3.5-9B 在 FrontierCS 上提高了 +8.82 分，在 ALE-bench 上提高了 +306.36（基于 Elo 评级的性能）； Qwen3.5-27B 分别提高了 +12.12 和 +309.12。综合问题还使代理采取更多轮次并使用更多令牌，类似于人工策划的令牌，这表明封闭式种子可以成为长期编码数据的实用起点。",
+      "authors": "Runyuan He, Qiuyang Mang, Shang Zhou, Kaiyuan Liu, Hanchen Li, Huanzhi Mao, Qizheng Zhang, Zerui Li, Bo Peng, Lufeng Cheng, Tianfu Fu, Yichuan Wang, Wenhao Chai, Jingbo Shang, Alex Dimakis, Joseph E. Gonzalez, Alvin Cheung",
+      "url": "https://huggingface.co/papers/2605.14445",
+      "score": 14,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "14",
+        "paperId": "2605.14445"
+      }
+    },
+    {
+      "id": "2605.14068",
+      "title": "CurveBench: A Benchmark for Exact Topological Reasoning over Nested Jordan Curves",
+      "title_zh": "CurveBench：嵌套乔丹曲线精确拓扑推理的基准",
+      "description": "We introduce CurveBench, a benchmark for hierarchical topological reasoning from visual input. CurveBench consists of 756 images of pairwise non-intersecting Jordan curves across easy, polygonal, topographic-inspired, maze-like, and dense counting configurations. Each image is annotated with a rooted tree encoding the containment relations between planar regions. We formulate the task as structured prediction: given an image, a model must recover the full rooted containment tree induced by the curves. Despite the visual simplicity of the task, the strongest evaluated model, Gemini 3.1 Pro, achieves only 71.1\\% tree-generation accuracy on CurveBench-Easy and 19.1\\% on CurveBench-Hard. We further demonstrate benchmark utility through RLVR-style fine-tuning of open-weight vision-language models. Our trained Qwen3-VL-8B model improves over Qwen-3-VL-8B-Thinking from 2.8\\% to 33.3\\% tree-generation accuracy on CurveBench-Easy, exceeding GPT-5.4 and Claude Opus 4.5 under our evaluation protocol. The remaining gap, especially on CurveBench-Hard, shows that exact topology-aware visual reasoning remains far from solved.",
+      "description_zh": "我们引入 CurveBench，这是根据视觉输入进行分层拓扑推理的基准。 CurveBench 由 756 个成对不相交 Jordan 曲线图像组成，跨越简单、多边形、地形启发、迷宫式和密集计数配置。每个图像都用编码平面区域之间的包含关系的有根树进行注释。我们将任务表述为结构化预测：给定图像，模型必须恢复由曲线引起的全根包含树。尽管该任务在视觉上很简单，但评估最强的模型 Gemini 3.1 Pro 在 CurveBench-Easy 上仅实现了 71.1% 的树生成精度，在 CurveBench-Hard 上仅实现了 19.1% 的树生成精度。我们通过开放权重视觉语言模型的 RLVR 式微调进一步展示了基准测试的实用性。我们经过训练的 Qwen3-VL-8B 模型在 CurveBench-Easy 上比 Qwen-3-VL-8B-Thinking 的树生成精度从 2.8% 提高到 33.3%，在我们的评估协议下超过了 GPT-5.4 和 Claude Opus 4.5。剩下的差距，特别是在 CurveBench-Hard 上，表明精确的拓扑感知视觉推理仍然远未解决。",
+      "authors": "Amirreza Mohseni, Mona Mohammadi, Morteza Saghafian, Naser Talebizadeh Saradari",
+      "url": "https://huggingface.co/papers/2605.14068",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.14068"
+      }
+    },
+    {
+      "id": "2605.11458",
+      "title": "Adaptive Teacher Exposure for Self-Distillation in LLM Reasoning",
+      "title_zh": "LLM推理中自我蒸馏的自适应教师暴露",
+      "description": "On-policy self-distillation has become a strong recipe for LLM reasoning, where a privileged teacher supervises the student's own rollouts while conditioning on the reference solution. A design choice shared by nearly all such methods, however, has gone unquestioned: the teacher always sees the full reference reasoning. We argue that this default itself is part of the problem and identify a teacher-side exposure mismatch: when the teacher conditions on reasoning far beyond the student's current competence, the resulting token targets become too strong to absorb. A controlled fixed-exposure sweep makes this concrete on two fronts: 1) full exposure is not reliably the best choice, and 2) student-teacher mismatch grows monotonically as the teacher sees more privileged reasoning. This motivates treating teacher exposure not as a fixed hyperparameter but as a learnable training-time control variable. We therefore propose Adaptive Teacher Exposure for Self-Distillation (ATESD). ATESD models the reveal ratio with a lightweight Beta-policy controller conditioned on compact training-state statistics, and uses one sampled exposure for a short hold window of student updates. To make this exposure controller learnable, we optimize it with a discounted learning-progress reward that scores each held decision by its effect on the student's future improvement rather than its immediate loss change, addressing the delayed credit assignment induced by on-policy distillation. Experiments on AIME 24, AIME 25, and HMMT 25 across Qwen3-{1.7B, 4B, 8B} show that ATESD consistently outperforms competitive self-distillation and RL baselines, improving over OPSD by +0.95, +2.05, and +2.33 Average@12 points respectively, and establishing adaptive teacher exposure as an effective new axis for reasoning self-distillation.",
+      "description_zh": "政策上的自我蒸馏已经成为LLM推理的有力秘诀，在这种情况下，有特权的老师会监督学生自己的展示，同时以参考解决方案为条件。然而，几乎所有此类方法所共有的一个设计选择是毫无疑问的：教师总是看到完整的参考推理。我们认为，这种默认本身就是问题的一部分，并确定了教师方面的暴露不匹配：当教师的推理条件远远超出学生当前的能力时，由此产生的象征性目标变得太强而难以吸收。受控的固定曝光扫描使这一点在两个方面变得具体：1）完全曝光并不是可靠的最佳���择，2）随着教师看到更多特权推理，学生与教师的不匹配会单调增长。这促使我们不要将教师暴露视为固定的超参数，而是将其视为可学习的训练时间控制变量。因此，我们建议自适应教师暴露自蒸馏（ATESD）。 ATESD 使用以紧凑训练状态统计数据为条件的轻量级 Beta 策略控制器对揭示率进行建模，并使用一个采样曝光来实现学生更新的短暂保持窗口。为了使这个暴露控制器具有可学习性��我们通过折扣学习进度奖励对其进行优化，该奖励根据每个决策对学生未来进步的影响而不是其直接损失变化来对其进行评分，从而解决由策略蒸馏引起的延迟学分分配问题。在 Qwen3-{1.7B, 4B, 8B} 上的 AIME 24、AIME 25 和 HMMT 25 上进行的实验表明，ATESD 始终优于竞争性自蒸馏和 RL 基线，比 OPSD 分别提高了 +0.95、+2.05 和 +2.33 Average@12 点，并将自适应教师暴露建立为推理自蒸馏的有效新轴。",
+      "authors": "Zihao Han, Tiangang Zhang, Huaibin Wang, Yilun Sun",
+      "url": "https://huggingface.co/papers/2605.11458",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2605.13030"
-      }
-    },
-    {
-      "id": "2605.13542",
-      "title": "RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation",
-      "title_zh": "RealICU：LLM 代理了解长上下文 ICU 数据吗？超越行为模仿的基准",
-      "description": "Intensive care units (ICU) generate long, dense and evolving streams of clinical information, where physicians must repeatedly reassess patient states under time pressure, underscoring a clear need for reliable AI decision support. Existing ICU benchmarks typically treat historical clinician actions as ground truth. However, these actions are made under incomplete information and limited temporal context of the underlying patient state, and may therefore be suboptimal, making it difficult to assess the true reasoning capabilities of AI systems. We introduce RealICU, a hindsight-annotated benchmark for evaluating large language models (LLMs) under realistic ICU conditions, where labels are created after senior physicians review the full patient trajectory. We formulate four physician-motivated tasks: assess Patient Status, Acute Problems, Recommended Actions, and Red Flag actions that risk unsafe outcomes. We partition each trajectory with 30-min windows and release two datasets: RealICU-Gold with 930-window annotations from 94 MIMIC-IV patients, and RealICU-Scale with 11,862 windows extended by Oracle, a physician-validated LLM hindsight labeler. Existing LLMs including memory-augmented ones performed poorly on RealICU, exposing two failure modes: a recall-safety tradeoff for clinical recommendations, and an anchoring bias to early interpretations of the patient. We further introduce ICU-Evo to study structured-memory agents that improves long-horizon reasoning but does not fully eliminate safety failures. Together, RealICU provides a clinically grounded testbed for measuring and improving AI sequential decision-support in high-stakes care. Project page: https://chengzhi-leo.github.io/RealICU-Bench/",
-      "description_zh": "重症监护病房 (ICU) 会生成长、密集且不断变化的临床信息流，医生必须在时间压力下反复重新评估患者状态，这凸显了对可靠的人工智能决策支持的明确需求。现有的 ICU 基准通常将临床医生的历史行为视为基本事实。然而，这些动作是在不完整的信息和潜在患者状态的有限时间背景下做出的，因此可能不是最理想的，使得评估人工智能系统的真实推理能力变得困难。我们引入了 RealICU，这是一个事后注释的基准，用于在真实 ICU 条件下评估大型语言模型 (LLM)，其中标签是在高级医生审查完整患��轨迹后创建的。我们制定了四项由医生推动的任务：评估患者状态、急性问题、建议措施和可能导致不安全结果的危险信号措施。我们用 30 分钟的窗口对每个轨迹进行划分，并发布两个数据集：RealICU-Gold 包含来自 94 名 MIMIC-IV 患者的 930 个窗口注释，RealICU-Scale 包含由 Oracle（经过医生验证的 LLM 后见标记器）扩展的 11,862 个窗口。现有的LLM（包括记忆增强LLM）在 RealICU 上表现不佳，暴露出两种失败模式：临床建议的召回与安全权衡，以及对患��早期解释的锚定偏差。我们进一步引入 ICU-Evo 来研究结构化记忆代理，该代理可以改善长视野推理，但不能完全消除安全故障。 RealICU 共同提供了一个基于临床的测试平台，用于测量和改进高风险护理中的 AI 顺序决策支持。项目页面：https://hengzhi-leo.github.io/RealICU-Bench/",
-      "authors": "Chengzhi Shen, Weixiang Shen, Tobias Susetzky, Chen, Chen, Jun Li, Yuyuan Liu, Xuepeng Zhang, Zhenyu Gong, Daniel Rueckert, Jiazhen Pan",
-      "url": "https://huggingface.co/papers/2605.13542",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2605.13542"
-      }
-    },
-    {
-      "id": "2605.13481",
-      "title": "PersonalAI 2.0: Enhancing knowledge graph traversal/retrieval with planning mechanism for Personalized LLM Agents",
-      "title_zh": "PersonalAI 2.0：通过个性化LLM代理的规划机制增强知识图谱遍历/检索",
-      "description": "We introduce PersonalAI 2.0 (PAI-2), a novel framework, designed to enhance large language model (LLM) based systems through integration of external knowledge graphs (KG). The proposed approach addresses key limitations of existing Graph Retrieval-Augmented Generation (GraphRAG) methods by incorporating a dynamic, multistage query processing pipeline. The central point of PAI-2 design is its ability to perform adaptive, iterative information search, guided by extracted entities, matched graph vertices and generated clue-queries. Conducted evaluation over six benchmarks (Natural Questions, TriviaQA, HotpotQA, 2WikiMultihopQA, MuSiQue and DiaASQ) demonstrates improvement in factual correctness of generating answers compared to analogues methods (LightRAG, RAPTOR, and HippoRAG 2). PAI-2 achieves 4% average gain by LLM-as-a-Judge across four benchmarks, reflecting its effectiveness in reducing hallucination rates and increasing precision. We show that use of graph traversal algorithms (e.g. BeamSearch, WaterCircles) gain superior results compared to standard flatten retriever on average 6%, while enabled search plan enhancement mechanism gain 18% boost compared to disabled one by LLM-as-a-Judge across six datasets. In addition, ablation study reveals that PAI-2 achieves the SOTA result on MINE-1 benchmark, achieving 89% information-retention score, using LLMs from 7-14B tiers. Collectively, these findings underscore the potential of PAI-2 to serve as a foundational model for next-generation personalized AI applications, requiring scalable, context-aware knowledge representation and reasoning capabilities.",
-      "description_zh": "我们推出了 PersonalAI 2.0 (PAI-2)，这是一种新颖的框架，旨在通过集成外部知识图 (KG) 来增强基于大型语言模型 (LLM) 的系统。所提出的方法通过结合动态、多级查询处理管道来解决现有图检索增强生成（GraphRAG）方法的关键限制。 PAI-2 设计的中心点是其执行自适应、迭代信息搜索的能力，由提取的实体、匹配的图顶点和生成的线索查询引导。对六个基准（Natural Questions、TriviaQA、HotpotQA、2WikiMultihopQA、MuSiQue 和 DiaASQ）进行的评估表明，与类似方法（LightRAG、RAPTOR 和 HippoRAG 2）相比，生成答案的事实正确性有所提高。 PAI-2 在四个基准中获得了LLM法官的平均增益 4%，反映了其在降低幻觉率和提高精确度方面的有效性。我们表明，与标准扁平检索器相比，使用图遍历算法（例如 BeamSearch、WaterCircles）获得的结果平均提高了 6%，而 LLM-as-a-Judge 在六个数据集上启用的搜索计划增强机制比禁用的搜索计划增强机制获得了 18% 的提升。此外，消融研究表明，PAI-2 在 MINE-1 基准上达到了 SOTA 结果，使用 7-14B 级别的LLM获得了 89% 的信息保留分数。总的来说，这些发现强调了 PAI-2 作为下一代个性化人工智能应用的基础模型的潜力，需要可扩展的、上下文感知的知识表示和推理能力。",
-      "authors": "Mikhail Menschikov, Matvey Iskornev, Alexander Kharitonov, Alina Bogdanova, Mikhail Belkin, Ekaterina Lisitsyna, Artyom Sosedka, Victoria Dochkina, Ruslan Kostoev, Ilia Perepechkin, Evgeny Burnaev",
-      "url": "https://huggingface.co/papers/2605.13481",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.13481"
-      }
-    },
-    {
-      "id": "2605.09591",
-      "title": "From Pixels to Concepts: Do Segmentation Models Understand What They Segment?",
-      "title_zh": "从像素到概念：分割模型理解它们分割的内容吗？",
-      "description": "Segmentation is a fundamental vision task underlying numerous downstream applications. Recent promptable segmentation models, such as Segment Anything Model 3 (SAM3), extend segmentation from category-agnostic mask prediction to concept-guided localization conditioned on high-level textual prompts. However, existing benchmarks primarily evaluate mask accuracy or object presence, leaving unclear whether these models faithfully ground the queried concept or instead rely on visually salient but semantically misleading cues. We introduce CAFE: Counterfactual Attribute Factuality Evaluation, a novel benchmark for evaluating concept-faithful segmentation in promptable segmentation models. Our CAFE is built on attribute-level counterfactual manipulation: the target region and ground-truth mask are preserved, while attributes such as surface appearance, context, or material composition are modified to introduce misleading semantic cues. The benchmark contains 2,146 paired test samples, each consisting of a target image, a ground-truth mask, a positive prompt, and a misleading negative prompt. These samples cover three counterfactual categories: Superficial Mimicry (SM), Context Conflict (CC), and Ontological Conflict (OC). We evaluate various model types and sizes on our CAFE. Experiments reveal a systematic gap between localization quality and concept discrimination: models often generate accurate masks even for misleading prompts, suggesting that strong mask prediction does not necessarily imply faithful semantic grounding. Our CAFE provides a controlled benchmark for diagnosing whether promptable segmentation models perform concept-faithful grounding rather than shortcut-driven mask retrieval.",
-      "description_zh": "分割是众多下游应用程序背后的一项基本视觉任务。最近的提示分割模型，例如 Segment Anything Model 3 (SAM3)，将分割从与类别无关的掩模预测扩展到以高级文本提示为条件的概念引导定位。然而，现有的基准主要评估掩模准确性或物体存在，不清楚这些模型是否忠实地基于查询的概念，还是依赖于视觉上显着但语义上误导的线索。我们介绍 CAFE：反事实属性事实评估，这是一种用于评估提示分割模型中概念忠实分割的新基准。我们的 CAFE 建立在属性级反事实操作的基础上：保留目标区域和真实掩模，同时修改表面外观、上下文或材料成分等属性，以引入误导性的语义线索。该基准测试包含 2,146 个配对测试样本，每个样本由目标图像、真实掩模、正面提示和误导性的负面提示组成。这些样本涵盖三个反事实类别：表面拟态（SM）、语境冲突（CC）和本体冲突（OC）。我们在 CAFE 上评估各种模型类型和尺寸。实验揭示了定位质量和概念辨别之间的系统性差距：模型通常会生成准确的掩模，即使是误导性的提示，这表明强大的掩模预测并不一定意味着忠实的语义基础。我们的 CAFE 提供了一个受控基准，用于诊断即时分割模型是否执行概念忠实基础而不是快捷方式驱动的掩模检索。",
-      "authors": "Shuang Liang, Zeqing Wang, Yuxian Li, Xihui Liu, Han Wang",
-      "url": "https://huggingface.co/papers/2605.09591",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.09591"
+        "paperId": "2605.11458"
       }
     }
   ]
