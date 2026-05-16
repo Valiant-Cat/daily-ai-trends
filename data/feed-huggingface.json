@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-15T20:42:59.973Z",
+  "updatedAt": "2026-05-16T20:24:20.348Z",
   "count": 15,
   "items": [
     {
@@ -23,13 +23,13 @@
       "title": "WildTableBench: Benchmarking Multimodal Foundation Models on Table Understanding In the Wild",
       "title_zh": "WildTableBench：在野外对表理解的多模态基础模型进行基准测试",
       "description": "Using multimodal foundation models to analyze table images is a high-value yet challenging application in consumer and enterprise scenarios. Despite its importance, current evaluations rely largely on structured-text tables or clean rendered images, leaving the visual complexity of in-the-wild table images underexplored. Such images feature varied layouts and diverse domains that demand sophisticated structural perception and numerical reasoning. To bridge this gap, we introduce WildTableBench, the first question-answering benchmark for naturally occurring table images from real-world settings. WildTableBench comprises 402 high-information-density table images collected from online forums and websites across diverse domains, together with 928 manually annotated and verified questions spanning 17 subtypes across five categories. We evaluate 21 frontier proprietary and open-source multimodal foundation models on this benchmark. Only one model exceeds 50% accuracy, while all remaining models range from 4.1% to 49.9%. We further conduct diagnostic analyses to characterize model failures and reveal persistent weaknesses in structural perception and reasoning. These results and analyses provide useful insights into current model capabilities and establish WildTableBench as a valuable diagnostic benchmark for table image understanding.",
-      "description_zh": "在消费者和企业场景中，使用多模态基础模型来分析表格图像是一种高价值但具有挑战性的应用。尽管它很重要，但当前的评估很大程度上依赖于结构化文本表格或干净的渲染图像，而未充分探索自然表格图像的视觉复杂性。此类图像具有不同的布局和不同的领域，需要复杂的结构感知和数字推理。为了弥补这一差距，我们引入了 WildTableBench，这是第一个针对现实世界中自然出现的表格图像的问答基准。 WildTableBench 包含从不同领域的在线论坛和网站收集的 402 个高信息密度表格图像，以及涵盖 5 个类别 17 个子类型的 928 个手动注释和验证的问题。我们在此基准测试上评估了 21 个前沿专有和开源多模式基础模型。只有一个模型的准确率超过 50%，其余所有模型的准确率在 4.1% 到 49.9% 之间。我们进一步进行诊断分析来表征模型失败并揭示结构感知和推理中持续存在的弱点。这些结果和分析为当前模型功能提供���有用的见解，并将 WildTableBench 确立为表格图像理解的有价值的诊断基准。",
+      "description_zh": "在消费者和企业场景中，使用多模态基础模型来分析表格图像是一种高价值但具有挑战性的应用。尽管它很重要，但当前的评估很大程度上依赖于结构化文本表格或干净的渲染图像，而未充分探索自然表格图像的视觉复杂性。此类图像具有不同的布局和不同的领域，需要复杂的结构感知和数字推理。为了弥补这一差距，我们引入了 WildTableBench，这是第一个针对现实世界中自然出现的表格图像的问答基准。 WildTableBench 包含从不同领域的在线论坛和网站收集的 402 个高信息密度表格图像，以及涵盖 5 个类别 17 个子类型的 928 个手动注释和验证的问题。我们在此基准测试上评估了 21 个前沿专有和开源多模式基础模型。只有一个模型的准确率超过 50%，其余所有模型的准确率在 4.1% 到 49.9% 之间。我们进一步进行诊断分析来表征模型失败并揭示结构感知和推理中持续存在的弱点。这些结果和分析为当前模型功能提供了有用的见解，并将 WildTableBench 确立为表格图像理解的有价值的诊断基准。",
       "authors": "Junzhe Huang, Xiaoxiao Sun, Yan Yang, Yuxuan Hou, Ruotian Zhang, Sirui Li, Hehe Fan, Serena Yeung-Levy, Xin Yu",
       "url": "https://huggingface.co/papers/2605.01018",
-      "score": 3,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "6",
         "paperId": "2605.01018"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "以极端序列长度训练因果变换器受到缩放点积注意力（SDPA）的二次时间和内存的瓶颈。在这项工作中，我们提出了 Lighthouse Attention，这是一种仅训练的基于对称选择的分层注意力算法，它包裹着普通的 SDPA，并且可以在训练结束时轻松删除。我们的分层选择也是无梯度的，这使我们免于处理复杂且可能低效的后向传递内核。我们的贡献有三个方面：（i）次二次分层预处理和后处理步骤，对序列进行自适应压缩和解压缩。 (ii) 对称压缩策略，同时池化查询、键和值，同时保留从左到右的因果关系，这大大提高了并行性。 (iii) 两阶段训练方法，我们大部分时间都使用 Lighthouse Attention 进行预训练，并在最后通过短期训练恢复完整的注意力模型。我们进行了初步的小规模 LLM 预训练实验，显示了我们的方法与所有其他设置匹配的全注意力训练相比的有效性，其中我们在恢复阶段后实现了更快的总训练时间和更低的最终损失。完整代码位于：https://github.com/ighoshsubho/lighthouse-attention",
       "authors": "Bowen Peng, Subho Ghosh, Jeffrey Quesnelle",
       "url": "https://huggingface.co/papers/2605.06554",
-      "score": 15,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "19",
         "paperId": "2605.06554"
       }
     },
@@ -68,7 +68,7 @@
       "title": "PreScam: A Benchmark for Predicting Scam Progression from Early Conversations",
       "title_zh": "PreScam：从早期对话预测诈骗进展的基准",
       "description": "Conversational scams, such as romance and investment scams, are emerging as a major form of online fraud. Unlike one-shot scam lures such as fake lottery or unpaid toll messages, they unfold through multi-turn conversations in which scammers gradually manipulate victims using evolving psychological techniques. However, existing research mainly focuses on static scam detection or synthetic scams, leaving open whether language models can understand how real-world scams progress over time. We introduce PreScam, a benchmark for modeling scam progression from early conversations. Built from user-submitted scam reports, PreScam filters and structures 177,989 raw reports into 11,573 conversational scam instances spanning 20 scam categories. Each instance is hierarchically structured according to the scam lifecycle defined by the proposed scam kill chain, and further annotated at the turn level with scammer psychological actions and victim responses. We benchmark models on two tasks: real-time termination prediction, which estimates whether a conversation is approaching the termination stage, and scammer action prediction, which forecasts the scammer's subsequent actions. Results show a clear gap between surface-level fluency and progression modeling: supervised encoders substantially outperform zero-shot LLMs on real-time termination prediction, while next-action prediction remains only moderately successful even for strong LLMs. Taken together, these results show that current models can capture some scam-related cues, yet still struggle to track how risk escalates and how manipulation unfolds across turns.",
-      "description_zh": "会话诈骗，例如爱情诈骗和投资诈骗，正在成为网络诈骗的主要形式。与虚假彩票或未付通行费消息等一次性诈骗诱惑不同，它们是通过多轮对话展开的，其中诈骗者利用不断发展的心理技术逐渐操纵受害者。然而，现有的研究主要集中在静态骗局检测或合成骗局上，语言模型是否能够理解现实世界中的骗局如何随着时间的推移而发展仍是一个悬而未决的问题。我们推出 PreScam，这是一个从早期对话中对诈骗进展进行建模的基准。 PreScam 根据用户提交的诈骗报告构建，将 177,989 份原始报告过滤并构建为涵盖 20 个诈骗类别的 11,573 个会话诈骗实例。每个实例都根据拟定的诈骗杀伤链定义的诈骗生命周期进行分层结构，并在回合级别进一步注释诈骗者的心理行为和受害者的反应。我们对两项任务的模型进行基准测试：实时终止预测（估计对话是否接近终止阶段）和诈骗者行动预测（预测诈骗者的后续行动）。结果显示，表面流畅性和进展建模之间存在明显差距：监督编码器���实时终止预测方面远远优于零样本 LLM，而即使对于强 LLM，下一步动作预测也只能取得一定的成功。总而言之，这些结果表明，当前的模型可以捕获一些与诈骗相关的线索，但仍然难以跟踪风险如何升级以及操纵如何跨轮展开。",
+      "description_zh": "会话诈骗，例如爱情诈骗和投资诈骗，正在成为网络诈骗的主要形式。与虚假彩票或未付通行费消息等一次性诈骗诱惑不同，它们是通过多轮对话展开的，其中诈骗者利用不断发展的心理技术逐渐操纵受害者。然而，现有的研究主要集中在静态骗局检测或合成骗局上，语言模型是否能够理解现实世界中的骗局如何随着时间的推移而发展仍是一个悬而未决的问题。我们推出 PreScam，这是一个从早期对话中对诈骗进展进行建模的基准。 PreScam 根据用户提交的诈骗报告构建，将 177,989 份原始报告过滤并构建为涵盖 20 个诈骗类别的 11,573 个会话诈骗实例。每个实例都根据拟定的诈骗杀伤链定义的诈骗生命周期进行分层结构，并在回合级别进一步注释诈骗者的心理行为和受害者的反应。我们对两项任务的模型进行基准测试：实时终止预测（估计对话是否接近终止阶段）和诈骗者行动预测（预测诈骗者的后续行动）。结果显示，表面流畅性和进展建模之间存在明显差距：监督编码器在实时终止预测方面远远优于零样本 LLM，而即使对于强 LLM，下一步动作预测也只能取得一定的成功。总而言之，这些结果表明，当前的模型可以捕获一些与诈骗相关的线索，但仍然难以跟踪风险如何升级以及操纵如何跨轮展开。",
       "authors": "Weixiang Sun, Shang Ma, Yiyang Li, Tianyi Ma, Zehong Wang, Colby Nelson, Xusheng Xiao, Yanfang Ye",
       "url": "https://huggingface.co/papers/2605.12243",
       "score": 1,
@@ -86,10 +86,10 @@
       "description_zh": "从单个卫星图像生成街道级 3D 场景是一项至关重要但具有挑战性的任务。当前的方法存在明显的权衡：几何着色模型实现了高几何保真度，但通常以建筑物为中心，缺乏语义多样性。相比之下，基于代理的模型使用前馈图像到 3D 框架，通过联合学习几何和纹理来生成整体场景，这一过程会产生丰富的内容，但几何结构粗糙且不稳定。我们将这些几何故障归因于卫星到街道数据固有的极端视点差距和稀疏、不一致的监督。我们引入 Sat3DGen 来解决这些基本挑战，它体现了几何优先的方法。该方法通过将新颖的几何约束与透视训练策略相结合来增强前馈范式，明确地对抗几何误差的主要来源。这种以几何为中心的策略在 3D 精度和真实感方面实现了巨大飞跃。为了进行验证，我们首先将 VIGOR-OOD 测试集与高分辨率 DSM 数据配对，构建了一个新的基准。在此基准测试中，我们的方法将几何 RMSE 从 6.76m 提高到 5.20m。至关重要的是，这种几何飞跃还提高了照片真实感，尽管没有使用额外定制的图像质量模块，但与领先的方法 Sat2Density++ 相比，Fréchet 起始距离 (FID) 从 sim40 减少到 19。我们通过各种下游应用展示了高质量 3D 资产的多功能性，包括语义图到 3D 合成、多摄像头视频生成、大规模网格划分和无监督单图像数字表面模型 (DSM) 估计。代码已发布于https://github.com/qianmingduowan/Sat3DGen。",
       "authors": "Ming Qian, Zimin Xia, Changkun Liu, Shuailei Ma, Wen Wang, Zeran Ke, Bin Tan, Hang Zhang, Gui-Song Xia",
       "url": "https://huggingface.co/papers/2605.14984",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2605.14984"
       }
     },
@@ -158,7 +158,7 @@
       "title": "LiSA: Lifelong Safety Adaptation via Conservative Policy Induction",
       "title_zh": "LiSA：通过保守政策归纳进行终身安全适应",
       "description": "As AI agents move from chat interfaces to systems that read private data, call tools, and execute multi-step workflows, guardrails become a last line of defense against concrete deployment harms. In these settings, guardrail failures are no longer merely answer-quality errors: they can leak secrets, authorize unsafe actions, or block legitimate work. The hardest failures are often contextual: whether an action is acceptable depends on local privacy norms, organizational policies, and user expectations that resist pre-deployment specification. This creates a practical gap: guardrails must adapt to their own operating environments, yet deployment feedback is typically limited to sparse, noisy user-reported failures, and repeated fine-tuning is often impractical. To address this gap, we propose LiSA (Lifelong Safety Adaptation), a conservative policy induction framework that improves a fixed base guardrail through structured memory. LiSA converts occasional failures into reusable policy abstractions so that sparse reports can generalize beyond individual cases, adds conflict-aware local rules to prevent overgeneralization in mixed-label contexts, and applies evidence-aware confidence gating via a posterior lower bound, so that memory reuse scales with accumulated evidence rather than empirical accuracy alone. Across PrivacyLens+, ConFaide+, and AgentHarm, LiSA consistently outperforms strong memory-based baselines under sparse feedback, remains robust under noisy user feedback even at 20% label-flip rates, and pushes the latency--performance frontier beyond backbone model scaling. Ultimately, LiSA offers a practical path to secure AI agents against the unpredictable long tail of real-world edge risks.",
-      "description_zh": "随着人工智能代理从聊天界面转向读取私有数据、调用工具和执行多步骤工作流程的系统，护栏成为抵御具体部署危害的最后一道防线。在这些设置中，护栏故障不再仅仅是答案质量错误：它们可能会泄露秘密、授权不安全的操作或阻止合法的工作。最困难的失败通常是与上下文相关的：某个操作是否可接受取决于本地隐私规范、组织策略以及违反预部署规范的用户期望。这就造成了一个实际的差距：护栏必须适应自己的操作环境，但部署反馈通常仅限于稀疏的、嘈杂的用户报告的故障，并且重复��微调通常是不切实际的。为了解决这一差距，我们提出了 LiSA（终身安全适应），这是一种保守的策略归纳框架，通过结构化内存改进固定基础护栏。 LiSA 将偶尔的失败转换为可重用的策略抽象，以便稀疏报告可以泛化到个体案例之外，添加冲突感知局部规则以防止混合标签上下文中的过度泛化，并通过后验下限应用证据感知置信门控，以便内存重用随着积累的证据而不仅仅是经验准确性而扩展。在 PrivacyLens+、ConFaide+ 和 AgentHarm 中，LiSA 在稀疏反馈下始终优于基于内存的强大基线，即使在 20% 的标签翻转率下，在嘈杂的用户反馈下也能保持稳健，并将延迟性能前沿推向骨干模型扩展之外。最终，LiSA 提供了一条实用的途径来保护人工智能代理免受现实世界边缘风险不可预测的长尾风险的影响。",
+      "description_zh": "随着人工智能代理从聊天界面转向读取私有数据、调用工具和执行多步骤工作流程的系统，护栏成为抵御具体部署危害的最后一道防线。在这些设置中，护栏故障不再仅仅是答案质量错误：它们可能会泄露秘密、授权不安全的操作或阻止合法的工作。最困难的失败通常是与上下文相关的：某个操作是否可接受取决于本地隐私规范、组织策略以及违反预部署规范的用户期望。这就造成了一个实际的差距：护栏必须适应自己的操作环境，但部署反馈通常仅限于稀疏的、嘈杂的用户报告的故障，并且重复的���调通常是不切实际的。为了解决这一差距，我们提出了 LiSA（终身安全适应），这是一种保守的策略归纳框架，通过结构化内存改进固定基础护栏。 LiSA 将偶尔的失败转换为可重用的策略抽象，以便稀疏报告可以泛化到个体案例之外，添加冲突感知局部规则以防止混合标签上下文中的过度泛化，并通过后验下限应用证据感知置信门控，以便内存重用随着积累的证据而不仅仅是经验准确性而扩展。在 PrivacyLens+、ConFaide+ 和 AgentHarm 中，LiSA 在稀疏反馈下始终优于基于内存的强大基线，即使在 20% 的标签翻转率下，在嘈杂的用户反馈下也能保持稳健，并将延迟性能前沿推向骨干模型扩展之外。最终，LiSA 提供了一条实用的途径来保护人工智能代理免受现实世界边缘风险不可预测的长尾风险的影响。",
       "authors": "Minbeom Kim, Lesly Miculicich, Bhavana Dalvi Mishra, Mihir Parmar, Phillip Wallis, Bharath Chandrasekhar, Kyomin Jung, Tomas Pfister, Long T. Le",
       "url": "https://huggingface.co/papers/2605.14454",
       "score": 1,
@@ -176,10 +176,10 @@
       "description_zh": "我们通常的目标是生成逼真且 3D 一致的图像，并遵循精确的几何形状、材质和视点控制。通常，这是通过使用合成 3D 资产的渲染（其中提供控制信号注释）对图像生成器进行微调来实现的，该图像生成器在数十亿张真实图像上进行了预训练。虽然这种方法可以学习所需的控制，但由于照片和渲染之间的域差距，它常常会损害图像的真实感。我们观察到，这个问题很大程度上是由于模型学习了控制信号的存在与图像的合成外观之间的意外关联而引起的。为了解决这个问题，我们引入了 Realiz3D，这是一个用于训练扩散模型的轻量级框架，可以将控件和视觉域解耦。关键思想是通过引入一个协变量，将其输入到小型残差适配器中，从而改变视觉域，从而与其他控制信号分开，明确地学习真实或合成的视觉域。然后，可以训练生成器以获得可控性，而无需适应特定的视觉域。通过这种方式，即使在应用控制的情况下，也可以引导模型生成逼真的图像。我们通过利用对基于扩散的生成器中不同层的作用和去噪步骤的见解，增强控制到真实域的可转移性，为进一步缩小差距的新训练和推理策略提供信息。我们展示了 Realiz3D 在文本到多视图生成和 3D 输入纹理化等任务中的优势，从而生成 3D 一致且逼真的输出。",
       "authors": "Ido Sobol, Kihyuk Sohn, Yoav Blum, Egor Zakharov, Max Bluvstein, Andrea Vedaldi, Or Litany",
       "url": "https://huggingface.co/papers/2605.13852",
-      "score": 18,
+      "score": 20,
       "meta": {
         "source": "huggingface",
-        "upvotes": "18",
+        "upvotes": "20",
         "paperId": "2605.13852"
       }
     },
@@ -191,25 +191,25 @@
       "description_zh": "许多现实世界的编码挑战都是开放式的，并且不存在已知的最佳解决方案。然而，LLM 编码的最新进展主要集中在明确定义的任务上，例如功能实现、错误修复和竞争性编程。开放式编码仍然是LLM的一个弱点，很大程度上是因为开放式训练问题稀缺且构建成本昂贵。我们的目标是大规模综合开放式编码问题，以训练更强大的LLM编码员。我们引入了 FrontierSmith，这是一个自动化系统，用于从现有的封闭式编码任务中迭代地演化出开放式问题。 FrontierSmith 从竞争性编程问题出发，通过改变问题的目标、限制输出和概括输入来生成候选的开放式变体。然后，它使用定量的想法分歧度量来选择问题，从而从不同的求解器中引出真正不同的方法。然后，代理为幸存的候选人生成测试用例和验证程序。在两个开放式编码基准上，对我们的合成数据进行训练比基本模型产生了显着的收益：Qwen3.5-9B 在 FrontierCS 上提高了 +8.82 分，在 ALE-bench 上提高了 +306.36（基于 Elo 评级的性能）； Qwen3.5-27B 分别提高了 +12.12 和 +309.12。综合问题还使代理采取更多轮次并使用更多令牌，类似于人工策划的令牌，这表明封闭式种子可以成为长期编码数据的实用起点。",
       "authors": "Runyuan He, Qiuyang Mang, Shang Zhou, Kaiyuan Liu, Hanchen Li, Huanzhi Mao, Qizheng Zhang, Zerui Li, Bo Peng, Lufeng Cheng, Tianfu Fu, Yichuan Wang, Wenhao Chai, Jingbo Shang, Alex Dimakis, Joseph E. Gonzalez, Alvin Cheung",
       "url": "https://huggingface.co/papers/2605.14445",
-      "score": 14,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "14",
+        "upvotes": "17",
         "paperId": "2605.14445"
       }
     },
     {
       "id": "2605.14068",
       "title": "CurveBench: A Benchmark for Exact Topological Reasoning over Nested Jordan Curves",
-      "title_zh": "CurveBench：嵌套乔丹曲线精确拓扑推理的基准",
+      "title_zh": "CurveBench：嵌套 Jordan 曲线精确拓扑推理的基准",
       "description": "We introduce CurveBench, a benchmark for hierarchical topological reasoning from visual input. CurveBench consists of 756 images of pairwise non-intersecting Jordan curves across easy, polygonal, topographic-inspired, maze-like, and dense counting configurations. Each image is annotated with a rooted tree encoding the containment relations between planar regions. We formulate the task as structured prediction: given an image, a model must recover the full rooted containment tree induced by the curves. Despite the visual simplicity of the task, the strongest evaluated model, Gemini 3.1 Pro, achieves only 71.1\\% tree-generation accuracy on CurveBench-Easy and 19.1\\% on CurveBench-Hard. We further demonstrate benchmark utility through RLVR-style fine-tuning of open-weight vision-language models. Our trained Qwen3-VL-8B model improves over Qwen-3-VL-8B-Thinking from 2.8\\% to 33.3\\% tree-generation accuracy on CurveBench-Easy, exceeding GPT-5.4 and Claude Opus 4.5 under our evaluation protocol. The remaining gap, especially on CurveBench-Hard, shows that exact topology-aware visual reasoning remains far from solved.",
-      "description_zh": "我们引入 CurveBench，这是根据视觉输入进行分层拓扑推理的基准。 CurveBench 由 756 个成对不相交 Jordan 曲线图像组成，跨越简单、多边形、地形启发、迷宫式和密集计数配置。每个图像都用编码平面区域之间的包含关系的有根树进行注释。我们将任务表述为结构化预测：给定图像，模型必须恢复由曲线引起的全根包含树。尽管该任务在视觉上很简单，但评估最强的模型 Gemini 3.1 Pro 在 CurveBench-Easy 上仅实现了 71.1% 的树生成精度，在 CurveBench-Hard 上仅实现了 19.1% 的树生成精度。我们通过开放权重视觉语言模型的 RLVR 式微调进一步展示了基准测试的实用性。我们经过训练的 Qwen3-VL-8B 模型在 CurveBench-Easy 上比 Qwen-3-VL-8B-Thinking 的树生成精度从 2.8% 提高到 33.3%，在我们的评估协议下超过了 GPT-5.4 和 Claude Opus 4.5。剩下的差距，特别是在 CurveBench-Hard 上，表明精确的拓扑感知视觉推理仍然远未解决。",
+      "description_zh": "我们引入 CurveBench，这是根据视觉输入进行分层拓扑推理的基准。 CurveBench 由 756 个成对不相交 Jordan 曲线图像组成，跨越简单、多边形、地形启发、迷宫式和密集计数配置。每个图像都用编码平面区域之间的包含关系的有根树进行注释。我们将任务表述为结构化预测：给定图像，模型必须恢复由曲线引起的全根包含树。尽管该任务在视觉上很简单，但评估最强的模型 Gemini 3.1 Pro 在 CurveBench-Easy 上仅实现了 71.1% 的树生成精度，在 CurveBench-Hard 上仅实现了 19.1% 的树��成精度。我们通过开放权重视觉语言模型的 RLVR 式微调进一步展示了基准测试的实用性。我们经过训练的 Qwen3-VL-8B 模型在 CurveBench-Easy 上比 Qwen-3-VL-8B-Thinking 的树生成精度从 2.8% 提高到 33.3%，在我们的评估协议下超过了 GPT-5.4 和 Claude Opus 4.5。剩下的差距，特别是在 CurveBench-Hard 上，表明精确的拓扑感知视觉推理仍然远未解决。",
       "authors": "Amirreza Mohseni, Mona Mohammadi, Morteza Saghafian, Naser Talebizadeh Saradari",
       "url": "https://huggingface.co/papers/2605.14068",
-      "score": 0,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "6",
         "paperId": "2605.14068"
       }
     },
