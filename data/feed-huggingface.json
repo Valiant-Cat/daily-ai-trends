@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-16T20:24:20.348Z",
+  "updatedAt": "2026-05-17T20:28:24.010Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "用于图像生成的潜在流匹配通常将高斯噪声沿着线性路径传输到变分自动编码器潜在。然而，两个端点都集中在薄球壳中，即使预处理对齐了它们的半径，欧几里得弦也会留下这些球壳。通过将每个潜在标记分解为径向和角度分量，我们通过分量交换探针表明，解码的感知和语义内容主要由方向承载，而半径的贡献要小得多。因此，我们将数据潜伏投影到固定的令牌半径上，使用高斯噪声的径向投影作为球面先验，在编码器冻结的情况下微调解码器，并用球面线性插值替换线性插值。由此产生的测地线路径在每个时间步都停留在球体上，并且它们的速度目标纯粹是通过构造角度的。在匹配训练下，该方法持续改进不同图像标记器中的类条件 ImageNet-256 FID，保持扩散架构不变，并且不需要辅助编码器或表示对齐目标。",
       "authors": "Tuna Han Salih Meral, Kaan Oktay, Hidir Yesiltepe, Adil Kaan Akan, Pinar Yanardag",
       "url": "https://huggingface.co/papers/2605.15193",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2605.15193"
       }
     },
@@ -23,7 +23,7 @@
       "title": "WildTableBench: Benchmarking Multimodal Foundation Models on Table Understanding In the Wild",
       "title_zh": "WildTableBench：在野外对表理解的多模态基础模型进行基准测试",
       "description": "Using multimodal foundation models to analyze table images is a high-value yet challenging application in consumer and enterprise scenarios. Despite its importance, current evaluations rely largely on structured-text tables or clean rendered images, leaving the visual complexity of in-the-wild table images underexplored. Such images feature varied layouts and diverse domains that demand sophisticated structural perception and numerical reasoning. To bridge this gap, we introduce WildTableBench, the first question-answering benchmark for naturally occurring table images from real-world settings. WildTableBench comprises 402 high-information-density table images collected from online forums and websites across diverse domains, together with 928 manually annotated and verified questions spanning 17 subtypes across five categories. We evaluate 21 frontier proprietary and open-source multimodal foundation models on this benchmark. Only one model exceeds 50% accuracy, while all remaining models range from 4.1% to 49.9%. We further conduct diagnostic analyses to characterize model failures and reveal persistent weaknesses in structural perception and reasoning. These results and analyses provide useful insights into current model capabilities and establish WildTableBench as a valuable diagnostic benchmark for table image understanding.",
-      "description_zh": "在消费者和企业场景中，使用多模态基础模型来分析表格图像是一种高价值但具有挑战性的应用。尽管它很重要，但当前的评估很大程度上依赖于结构化文本表格或干净的渲染图像，而未充分探索自然表格图像的视觉复杂性。此类图像具有不同的布局和不同的领域，需要复杂的结构感知和数字推理。为了弥补这一差距，我们引入了 WildTableBench，这是第一个针对现实世界中自然出现的表格图像的问答基准。 WildTableBench 包含从不同领域的在线论坛和网站收集的 402 个高信息密度表格图像，以及涵盖 5 个类别 17 个子类型的 928 个手动注释和验证的问题。我们在此基准测试上评估了 21 个前沿专有和开源多模式基础模型。只有一个模型的准确率超过 50%，其余所有模型的准确率在 4.1% 到 49.9% 之间。我们进一步进行诊断分析来表征模型失败并揭示结构感知和推理中持续存在的弱点。这些结果和分析为当前模型功能提供了有用的见解，并将 WildTableBench 确立为表格图像理解的有价值的诊断基准。",
+      "description_zh": "在消费者和企业场景中，使用多模态基础模型来分析表格图像是一种高价值但具有挑战性的应用。尽管它很重要，但当前的评估很大程度上依赖于结构化文本表格或干净的渲染图像，而未充分探索自然表格图像的视觉复杂性。此类图像具有不同的布局和不同的领域，需要复杂的结构感知和数字推理。为了弥补这一差距，我们引入了 WildTableBench，这是第一个针对现实世界中自然出现的表格图像的问答基准。 WildTableBench 包含从不同领域的在线论坛和网站收集的 402 个高信息密度表格图像，以及涵盖 5 个类别 17 个子类型的 928 个手动注释和验证的问题。我们在此基准测试上评估了 21 个前沿专有和开源多模式基础模型。只有一个模型的准确率超过 50%，其余所有模型的准确率在 4.1% 到 49.9% 之间。我们进一步进行诊断分析来表征模型失败并揭示结构感知和推理中持续存在的弱点。这些结果和分析为当前模型功能提供了��用的见解，并将 WildTableBench 确立为表格图像理解的有价值的诊断基准。",
       "authors": "Junzhe Huang, Xiaoxiao Sun, Yan Yang, Yuxuan Hou, Ruotian Zhang, Sirui Li, Hehe Fan, Serena Yeung-Levy, Xin Yu",
       "url": "https://huggingface.co/papers/2605.01018",
       "score": 6,
@@ -41,10 +41,10 @@
       "description_zh": "以极端序列长度训练因果变换器受到缩放点积注意力（SDPA）的二次时间和内存的瓶颈。在这项工作中，我们提出了 Lighthouse Attention，这是一种仅训练的基于对称选择的分层注意力算法，它包裹着普通的 SDPA，并且可以在训练结束时轻松删除。我们的分层选择也是无梯度的，这使我们免于处理复杂且可能低效的后向传递内核。我们的贡献有三个方面：（i）次二次分层预处理和后处理步骤，对序列进行自适应压缩和解压缩。 (ii) 对称压缩策略，同时池化查询、键和值，同时保留从左到右的因果关系，这大大提高了并行性。 (iii) 两阶段训练方法，我们大部分时间都使用 Lighthouse Attention 进行预训练，并在最后通过短期训练恢复完整的注意力模型。我们进行了初步的小规模 LLM 预训练实验，显示了我们的方法与所有其他设置匹配的全注意力训练相比的有效性，其中我们在恢复阶段后实现了更快的总训练时间和更低的最终损失。完整代码位于：https://github.com/ighoshsubho/lighthouse-attention",
       "authors": "Bowen Peng, Subho Ghosh, Jeffrey Quesnelle",
       "url": "https://huggingface.co/papers/2605.06554",
-      "score": 19,
+      "score": 21,
       "meta": {
         "source": "huggingface",
-        "upvotes": "19",
+        "upvotes": "21",
         "paperId": "2605.06554"
       }
     },
@@ -86,10 +86,10 @@
       "description_zh": "从单个卫星图像生成街道级 3D 场景是一项至关重要但具有挑战性的任务。当前的方法存在明显的权衡：几何着色模型实现了高几何保真度，但通常以建筑物为中心，缺乏语义多样性。相比之下，基于代理的模型使用前馈图像到 3D 框架，通过联合学习几何和纹理来生成整体场景，这一过程会产生丰富的内容，但几何结构粗糙且不稳定。我们将这些几何故障归因于卫星到街道数据固有的极端视点差距和稀疏、不一致的监督。我们引入 Sat3DGen 来解决这些基本挑战，它体现了几何优先的方法。该方法通过将新颖的几何约束与透视训练策略相结合来增强前馈范式，明确地对抗几何误差的主要来源。这种以几何为中心的策略在 3D 精度和真实感方面实现了巨大飞跃。为了进行验证，我们首先将 VIGOR-OOD 测试集与高分辨率 DSM 数据配对，构建了一个新的基准。在此基准测试中，我们的方法将几何 RMSE 从 6.76m 提高到 5.20m。至关重要的是，这种几何飞跃还提高了照片真实感，尽管没有使用额外定制的图像质量模块，但与领先的方法 Sat2Density++ 相比，Fréchet 起始距离 (FID) 从 sim40 减少到 19。我们通过各种下游应用展示了高质量 3D 资产的多功能性，包括语义图到 3D 合成、多摄像头视频生成、大规模网格划分和无监督单图像数字表面模型 (DSM) 估计。代码已发布于https://github.com/qianmingduowan/Sat3DGen。",
       "authors": "Ming Qian, Zimin Xia, Changkun Liu, Shuailei Ma, Wen Wang, Zeran Ke, Bin Tan, Hang Zhang, Gui-Song Xia",
       "url": "https://huggingface.co/papers/2605.14984",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2605.14984"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "多智能体寻路（MAPF）是一种广泛用于多机器人轨迹规划问题的抽象，其中多个同类智能体在共享环境中同时移动。尽管最优求解 MAPF 是 NP 难题，但可扩展且高效的求解器对于物流和搜索救援等实际应用至关重要。为此，研究社区提出了各种利用机器学习的分散式次优 MAPF 求解器。此类方法将 MAPF（从单代理角度）构建为 Dec-POMDP，其中在每个时间步骤，代理必须根据局部观察来决定行动，并且通常通过强化学习或模仿学习来解决问题。我们遵循相同的方法，但另外引入了一个可学习的通信模块，旨在通过有效的功能共享来增强代理之间的合作。我们提出了多智能体寻路本地通信（LC-MAPF），这是一种可推广的预训练模型，它应用相邻智能体之间的多轮通信来交换信息并改善它们的协调。我们的实验表明，所引入的方法在各种（未见过的）测试场景中的各种指标上优于现有的基于学习的 MAPF 求解器，包括基于 IL 和 RL 的方法。值得注意的是，引入的通信机制并没有损害 LC-MAPF 的可扩展性，这是基于通信的 MAPF 求解器的常见瓶颈。",
       "authors": "Valeriy Vyaltsev, Alsu Sagirova, Anton Andreychuk, Oleg Bulichev, Yuri Kuratov, Konstantin Yakovlev, Aleksandr Panov, Alexey Skrynnik",
       "url": "https://huggingface.co/papers/2605.07637",
-      "score": 16,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "16",
+        "upvotes": "17",
         "paperId": "2605.07637"
       }
     },
@@ -116,10 +116,10 @@
       "description_zh": "任何新媒体一旦出现，其用途就不仅仅是传输公开内容。它所承载的信息通常在两个层面上运作：一是直接呈现的内容，二是其背后的潜台词——创作者试图通过媒介传达的隐含的想法和意图。同样，自从视频技术被广泛采用以来，视频不仅成为记录和交流视觉信息的强大工具，而且成为表达情感、态度和社会意义的载体，而这些情感、态度和社会意义往往难以明确表达。因此，许多视频的真正含义不仅仅在于屏幕上显示的内容；它通常嵌入上下文、表达风格和观看者的社交体验中。此类视频潜台词的某些形式是幽默的，而另一些则带有讽刺、嘲笑或批评。这些隐含的含义在不同的文化背景和社会群体中也可以有非常不同的解释。然而，大多数现有的视频理解模型仍然主要关注字面视觉理解，例如识别物体、动作或时间关系，缺乏系统地理解视频中隐喻、讽刺和社会意义的能力。为了弥补这一差距，我们引入了 ViMU，这是第一个旨在系统评估视频中前沿模型的潜台词理解能力的基准测试。 ViMU 评估视频理解模型是否可以超越字面感知来推断隐含含义，同时将其解释建立在多模态证据的基础上，并回答开放式问题和多项选择问题。重要的是，所有问题都设计为无提示，确保在回答之前不会向模型透露任何关键证据。",
       "authors": "Qi Li, Xinchao Wang",
       "url": "https://huggingface.co/papers/2605.14607",
-      "score": 10,
+      "score": 11,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "11",
         "paperId": "2605.14607"
       }
     },
@@ -128,13 +128,13 @@
       "title": "Boosting Omni-Modal Language Models: Staged Post-Training with Visually Debiased Evaluation",
       "title_zh": "提升全模态语言模型：通过视觉偏差评估进行分阶段训练后",
       "description": "Omni-modal language models are intended to jointly understand audio, visual inputs, and language, but benchmark gains can be inflated when visual evidence alone is enough to answer a query. We study whether current omni-modal benchmarks separate visual shortcuts from genuine audio-visual-language evidence integration, and how post-training behaves under a visually debiased evaluation setting. We audit nine omni-modal benchmarks with visual-only probing, remove visually solvable queries, and retain full subsets when filtering is undefined or would make comparisons unstable. This yields OmniClean, a cleaned evaluation view with 8,551 retained queries from 16,968 audited queries. On OmniClean, we evaluate OmniBoost, a three-stage post-training recipe based on Qwen2.5-Omni-3B: mixed bi-modal SFT, mixed-modality RLVR, and SFT on self-distilled data. Balanced bi-modal SFT gives limited and uneven gains, RLVR provides the first broad improvement, and self-distillation reshapes the benchmark profile. After SFT on self-distilled data, the 3B model reaches performance comparable to, and in aggregate slightly above, Qwen3-Omni-30B-A3B-Instruct without using a stronger omni-modal teacher. These results show that omni-modal progress is easier to interpret when evaluation controls visual leakage, and that small omni-modal models can benefit from staged post-training with self-distilled omni-query supervision. Project page: https://cheliu-computation.github.io/omni/",
-      "description_zh": "全模态语言模型旨在共同理解音频、视觉输入和语言，但当仅视觉证据足以回答查询时，基准收益可能会被夸大。我们研究当前的全模态基准是否将视觉捷径与真正的视听语言证据整合分开，以及训练后在视觉去偏见评估环境下的表现如何。我们通过仅视觉探测来审核九个全模式基准，删除视觉上可解决的查询，并在过滤未定义或导致比较不稳定时保留完整的子集。这会产生 OmniClean，这是一个经过清理的评估视图，其中包含 16,968 个已审核查询中的 8,551 个保留查询。在 OmniClean 上，我们评估了 OmniBoost，这是一种基于 Qwen2.5-Omni-3B 的三阶段后训练方案：混合双模态 SFT、混合模态 RLVR 和自蒸馏数据上的 SFT。平衡双峰 SFT 提供有限且不均匀的增益，RLVR 提供第一个广泛的改进，自蒸馏重塑基准配置文件。对自蒸馏数据进行 SFT 后，3B 模型的性能与 Qwen3-Omni-30B-A3B-Instruct 相当，并且总体略高于 Qwen3-Omni-30B-A3B-Instruct，而无需使用更强的全模态教师。这些结果表明，当评估��制视觉泄漏时，全模态进展更容易解释，并且小型全模态模型可以从具有自蒸馏全查询监督的分阶段后训练中受益。项目页面：https://cheliu-computation.github.io/omni/",
+      "description_zh": "全模态语言模型旨在共同理解音频、视觉输入和语言，但当仅视觉证据足以回答查询时，基准收益可能会被夸大。我们研究当前的全模态基准是否将视觉捷径与真正的视听语言证据整合分开，以及训练后在视觉去偏见评估环境下的表现如何。我们通过仅视觉探测来审核九个全模式基准，删除视觉上可解决的查询，并在过滤未定义或导致比较不稳定时保留完整的子集。这会产生 OmniClean，这是一个经过清理的评估视图，其中包含 16,968 个已审核查询中的 8,551 个保留查询。在 OmniClean 上，我们评估了 OmniBoost，这是一种基于 Qwen2.5-Omni-3B 的三阶段后训练方案：混合双模态 SFT、混合模态 RLVR 和自蒸馏数据上的 SFT。平衡双峰 SFT 提供有限且不均匀的增益，RLVR 提供第一个广泛的改进，自蒸馏重塑基准配置文件。对自蒸馏数据进行 SFT 后，3B 模型的性能与 Qwen3-Omni-30B-A3B-Instruct 相当，并且总体略高于 Qwen3-Omni-30B-A3B-Instruct，而无需使用更强的全模态教师。这些结果表明，当评估控制视觉泄漏时，全模态进展更容易解释，并且小型全模态模型可以从具有自蒸馏全查询监督的分阶段后训练中受益。项目页面：https://cheliu-computation.github.io/omni/",
       "authors": "Che Liu, Lichao Ma, Xiangyu Tony Zhang, Yuxin Zhang, Haoyang Zhang, Xuerui Yang, Fei Tian",
       "url": "https://huggingface.co/papers/2605.12034",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2605.12034"
       }
     },
@@ -158,7 +158,7 @@
       "title": "LiSA: Lifelong Safety Adaptation via Conservative Policy Induction",
       "title_zh": "LiSA：通过保守政策归纳进行终身安全适应",
       "description": "As AI agents move from chat interfaces to systems that read private data, call tools, and execute multi-step workflows, guardrails become a last line of defense against concrete deployment harms. In these settings, guardrail failures are no longer merely answer-quality errors: they can leak secrets, authorize unsafe actions, or block legitimate work. The hardest failures are often contextual: whether an action is acceptable depends on local privacy norms, organizational policies, and user expectations that resist pre-deployment specification. This creates a practical gap: guardrails must adapt to their own operating environments, yet deployment feedback is typically limited to sparse, noisy user-reported failures, and repeated fine-tuning is often impractical. To address this gap, we propose LiSA (Lifelong Safety Adaptation), a conservative policy induction framework that improves a fixed base guardrail through structured memory. LiSA converts occasional failures into reusable policy abstractions so that sparse reports can generalize beyond individual cases, adds conflict-aware local rules to prevent overgeneralization in mixed-label contexts, and applies evidence-aware confidence gating via a posterior lower bound, so that memory reuse scales with accumulated evidence rather than empirical accuracy alone. Across PrivacyLens+, ConFaide+, and AgentHarm, LiSA consistently outperforms strong memory-based baselines under sparse feedback, remains robust under noisy user feedback even at 20% label-flip rates, and pushes the latency--performance frontier beyond backbone model scaling. Ultimately, LiSA offers a practical path to secure AI agents against the unpredictable long tail of real-world edge risks.",
-      "description_zh": "随着人工智能代理从聊天界面转向读取私有数据、调用工具和执行多步骤工作流程的系统，护栏成为抵御具体部署危害的最后一道防线。在这些设置中，护栏故障不再仅仅是答案质量错误：它们可能会泄露秘密、授权不安全的操作或阻止合法的工作。最困难的失败通常是与上下文相关的：某个操作是否可接受取决于本地隐私规范、组织策略以及违反预部署规范的用户期望。这就造成了一个实际的差距：护栏必须适应自己的操作环境，但部署反馈通常仅限于稀疏的、嘈杂的用户报告的故障，并且重复的���调通常是不切实际的。为了解决这一差距，我们提出了 LiSA（终身安全适应），这是一种保守的策略归纳框架，通过结构化内存改进固定基础护栏。 LiSA 将偶尔的失败转换为可重用的策略抽象，以便稀疏报告可以泛化到个体案例之外，添加冲突感知局部规则以防止混合标签上下文中的过度泛化，并通过后验下限应用证据感知置信门控，以便内存重用随着积累的证据而不仅仅是经验准确性而扩展。在 PrivacyLens+、ConFaide+ 和 AgentHarm 中，LiSA 在稀疏反馈下始终优于基于内存的强大基线，即使在 20% 的标签翻转率下，在嘈杂的用户反馈下也能保持稳健，并将延迟性能前沿推向骨干模型扩展之外。最终，LiSA 提供了一条实用的途径来保护人工智能代理免受现实世界边缘风险不可预测的长尾风险的影响。",
+      "description_zh": "随着人工智能代理从聊天界面转向读取私有数据、调用工具和执行多步骤工作流程的系统，护栏成为抵御具体部署危害的最后一道防线。在这些设置中，护栏故障不再仅仅是答案质量错误：它们可能会泄露秘密、授权不安全的操作或阻止合法的工作。最困难的失败通常是与上下文相关的：某个操作是否可接受取决于本地隐私规范、组织策略以及违反预部署规范的用户期望。这就造成了一个实际的差距：护栏必须适应自己的操作环境，但部署反馈通常仅限于稀疏的、嘈杂的用户报告的故障，并且重复的微调通常是不切实际的。为了解决这一差距，我们提出了 LiSA（终身安全适应），这是一种保守的策略归纳框架，通过结构化内存改进固定基础护栏。 LiSA 将偶尔的失败转换为可重用的策略抽象，以便稀疏报告可以泛化到个体案例之外，添加冲突感知局部规则以防止混合标签上下文中的过度泛化，并通过后验下限应用证据感知置信门控，以便内存重用随着积累的证据而不仅仅是经验准确性而扩展。在 PrivacyLens+、ConFaide+ 和 AgentHarm 中，LiSA 在稀疏反馈下始终优于基于内存的强大基线，即使在 20% 的标签翻转率下，在嘈杂的用户反馈下也能保持稳健，并将延迟性能前沿推向骨干模型扩展之外。最终，LiSA 提供了一条实用的途径来保护人工智能代理免受现实世界边缘风险不可预测的长尾风险的影响。",
       "authors": "Minbeom Kim, Lesly Miculicich, Bhavana Dalvi Mishra, Mihir Parmar, Phillip Wallis, Bharath Chandrasekhar, Kyomin Jung, Tomas Pfister, Long T. Le",
       "url": "https://huggingface.co/papers/2605.14454",
       "score": 1,
@@ -176,10 +176,10 @@
       "description_zh": "我们通常的目标是生成逼真且 3D 一致的图像，并遵循精确的几何形状、材质和视点控制。通常，这是通过使用合成 3D 资产的渲染（其中提供控制信号注释）对图像生成器进行微调来实现的，该图像生成器在数十亿张真实图像上进行了预训练。虽然这种方法可以学习所需的控制，但由于照片和渲染之间的域差距，它常常会损害图像的真实感。我们观察到，这个问题很大程度上是由于模型学习了控制信号的存在与图像的合成外观之间的意外关联而引起的。为了解决这个问题，我们引入了 Realiz3D，这是一个用于训练扩散模型的轻量级框架，可以将控件和视觉域解耦。关键思想是通过引入一个协变量，将其输入到小型残差适配器中，从而改变视觉域，从而与其他控制信号分开，明确地学习真实或合成的视觉域。然后，可以训练生成器以获得可控性，而无需适应特定的视觉域。通过这种方式，即使在应用控制的情况下，也可以引导模型生成逼真的图像。我们通过利用对基于扩散的生成器中不同层的作用和去噪步骤的见解，增强控制到真实域的可转移性，为进一步缩小差距的新训练和推理策略提供信息。我们展示了 Realiz3D 在文本到多视图生成和 3D 输入纹理化等任务中的优势，从而生成 3D 一致且逼真的输出。",
       "authors": "Ido Sobol, Kihyuk Sohn, Yoav Blum, Egor Zakharov, Max Bluvstein, Andrea Vedaldi, Or Litany",
       "url": "https://huggingface.co/papers/2605.13852",
-      "score": 20,
+      "score": 22,
       "meta": {
         "source": "huggingface",
-        "upvotes": "20",
+        "upvotes": "22",
         "paperId": "2605.13852"
       }
     },
@@ -203,7 +203,7 @@
       "title": "CurveBench: A Benchmark for Exact Topological Reasoning over Nested Jordan Curves",
       "title_zh": "CurveBench：嵌套 Jordan 曲线精确拓扑推理的基准",
       "description": "We introduce CurveBench, a benchmark for hierarchical topological reasoning from visual input. CurveBench consists of 756 images of pairwise non-intersecting Jordan curves across easy, polygonal, topographic-inspired, maze-like, and dense counting configurations. Each image is annotated with a rooted tree encoding the containment relations between planar regions. We formulate the task as structured prediction: given an image, a model must recover the full rooted containment tree induced by the curves. Despite the visual simplicity of the task, the strongest evaluated model, Gemini 3.1 Pro, achieves only 71.1\\% tree-generation accuracy on CurveBench-Easy and 19.1\\% on CurveBench-Hard. We further demonstrate benchmark utility through RLVR-style fine-tuning of open-weight vision-language models. Our trained Qwen3-VL-8B model improves over Qwen-3-VL-8B-Thinking from 2.8\\% to 33.3\\% tree-generation accuracy on CurveBench-Easy, exceeding GPT-5.4 and Claude Opus 4.5 under our evaluation protocol. The remaining gap, especially on CurveBench-Hard, shows that exact topology-aware visual reasoning remains far from solved.",
-      "description_zh": "我们引入 CurveBench，这是根据视觉输入进行分层拓扑推理的基准。 CurveBench 由 756 个成对不相交 Jordan 曲线图像组成，跨越简单、多边形、地形启发、迷宫式和密集计数配置。每个图像都用编码平面区域之间的包含关系的有根树进行注释。我们将任务表述为结构化预测：给定图像，模型必须恢复由曲线引起的全根包含树。尽管该任务在视觉上很简单，但评估最强的模型 Gemini 3.1 Pro 在 CurveBench-Easy 上仅实现了 71.1% 的树生成精度，在 CurveBench-Hard 上仅实现了 19.1% 的树��成精度。我们通过开放权重视觉语言模型的 RLVR 式微调进一步展示了基准测试的实用性。我们经过训练的 Qwen3-VL-8B 模型在 CurveBench-Easy 上比 Qwen-3-VL-8B-Thinking 的树生成精度从 2.8% 提高到 33.3%，在我们的评估协议下超过了 GPT-5.4 和 Claude Opus 4.5。剩下的差距，特别是在 CurveBench-Hard 上，表明精确的拓扑感知视觉推理仍然远未解决。",
+      "description_zh": "我们引入 CurveBench，这是根据视觉输入进行分层拓扑推理的基准。 CurveBench 由 756 个成对不相交 Jordan 曲线图像组成，跨越简单、多边形、地形启发、迷宫式和密集计数配置。每个图像都用编码平面区域之间的包含关系的有根树进行注释。我们将任务表述为结构化预测：给定图像，模型必须恢复由曲线引起的全根包含树。尽管该任务在视觉上很简单，但评估最强的模型 Gemini 3.1 Pro 在 CurveBench-Easy 上仅实现了 71.1% 的树生成精度，在 CurveBench-Hard 上仅实现了 19.1% 的树生成精度。我们通过开放权重视觉语言模型的 RLVR 式微调进一步展示了基准测试的实用性。我们经过训练的 Qwen3-VL-8B 模型在 CurveBench-Easy 上比 Qwen-3-VL-8B-Thinking 的树生成精度从 2.8% 提高到 33.3%，在我们的评估协议下超过了 GPT-5.4 和 Claude Opus 4.5。剩下的差距，特别是在 CurveBench-Hard 上，表明精确的拓扑感知视觉推理仍然远未解决。",
       "authors": "Amirreza Mohseni, Mona Mohammadi, Morteza Saghafian, Naser Talebizadeh Saradari",
       "url": "https://huggingface.co/papers/2605.14068",
       "score": 6,
@@ -218,7 +218,7 @@
       "title": "Adaptive Teacher Exposure for Self-Distillation in LLM Reasoning",
       "title_zh": "LLM推理中自我蒸馏的自适应教师暴露",
       "description": "On-policy self-distillation has become a strong recipe for LLM reasoning, where a privileged teacher supervises the student's own rollouts while conditioning on the reference solution. A design choice shared by nearly all such methods, however, has gone unquestioned: the teacher always sees the full reference reasoning. We argue that this default itself is part of the problem and identify a teacher-side exposure mismatch: when the teacher conditions on reasoning far beyond the student's current competence, the resulting token targets become too strong to absorb. A controlled fixed-exposure sweep makes this concrete on two fronts: 1) full exposure is not reliably the best choice, and 2) student-teacher mismatch grows monotonically as the teacher sees more privileged reasoning. This motivates treating teacher exposure not as a fixed hyperparameter but as a learnable training-time control variable. We therefore propose Adaptive Teacher Exposure for Self-Distillation (ATESD). ATESD models the reveal ratio with a lightweight Beta-policy controller conditioned on compact training-state statistics, and uses one sampled exposure for a short hold window of student updates. To make this exposure controller learnable, we optimize it with a discounted learning-progress reward that scores each held decision by its effect on the student's future improvement rather than its immediate loss change, addressing the delayed credit assignment induced by on-policy distillation. Experiments on AIME 24, AIME 25, and HMMT 25 across Qwen3-{1.7B, 4B, 8B} show that ATESD consistently outperforms competitive self-distillation and RL baselines, improving over OPSD by +0.95, +2.05, and +2.33 Average@12 points respectively, and establishing adaptive teacher exposure as an effective new axis for reasoning self-distillation.",
-      "description_zh": "政策上的自我蒸馏已经成为LLM推理的有力秘诀，在这种情况下，有特权的老师会监督学生自己的展示，同时以参考解决方案为条件。然而，几乎所有此类方法所共有的一个设计选择是毫无疑问的：教师总是看到完整的参考推理。我们认为，这种默认本身就是问题的一部分，并确定了教师方面的暴露不匹配：当教师的推理条件远远超出学生当前的能力时，由此产生的象征性目标变得太强而难以吸收。受控的固定曝光扫描使这一点在两个方面变得具体：1）完全曝光并不是可靠的最佳���择，2）随着教师看到更多特权推理，学生与教师的不匹配会单调增长。这促使我们不要将教师暴露视为固定的超参数，而是将其视为可学习的训练时间控制变量。因此，我们建议自适应教师暴露自蒸馏（ATESD）。 ATESD 使用以紧凑训练状态统计数据为条件的轻量级 Beta 策略控制器对揭示率进行建模，并使用一个采样曝光来实现学生更新的短暂保持窗口。为了使这个暴露控制器具有可学习性��我们通过折扣学习进度奖励对其进行优化，该奖励根据每个决策对学生未来进步的影响而不是其直接损失变化来对其进行评分，从而解决由策略蒸馏引起的延迟学分分配问题。在 Qwen3-{1.7B, 4B, 8B} 上的 AIME 24、AIME 25 和 HMMT 25 上进行的实验表明，ATESD 始终优于竞争性自蒸馏和 RL 基线，比 OPSD 分别提高了 +0.95、+2.05 和 +2.33 Average@12 点，并将自适应教师暴露建立为推理自蒸馏的有效新轴。",
+      "description_zh": "政策上的自我蒸馏已经成为LLM推理的有力秘诀，在这种情况下，有特权的老师会监督学生自己的展示，同时以参考解决方案为条件。然而，几乎所有此类方法所共有的一个设计选择是毫无疑问的：教师总是看到完整的参考推理。我们认为，这种默认本身就是问题的一部分，并确定了教师方面的暴露不匹配：当教师的推理条件远远超出学生当前的能力时，由此产生的象征性目标变得太强而难以吸收。受控的固定曝光扫描使这一点在两个方面变得具体：1）完全曝光并不是可靠的最佳选择，2）随着教师看到更多特权推理，学生与教师的不匹配会单调增长。这促使我们不要将教师暴露视为固定的超参数，而是将其视为可学习的训练时间控制变量。因此，我们建议自适应教师暴露自蒸馏（ATESD）。 ATESD 使用以紧凑训练状态统计数据为条件的轻量级 Beta 策略控制器对揭示率进行建模，并使用一个采样曝光来实现学生更新的短暂保持窗口。为了使这个暴露控制器具有可学习性，我们通过折扣学习进度奖励对其进行优化，该奖励根据每个决策对学生未来进步的影响而不是其直接损失变化来对其进行评分，从而解决由策略蒸馏引起的延迟学分分配问题。在 Qwen3-{1.7B, 4B, 8B} 上的 AIME 24、AIME 25 和 HMMT 25 上进行的实验表明，ATESD 始终优于竞争性自蒸馏和 RL 基线，比 OPSD 分别提高了 +0.95、+2.05 和 +2.33 Average@12 点，并将自适应教师暴露建立为推理自蒸馏的有效新轴。",
       "authors": "Zihao Han, Tiangang Zhang, Huaibin Wang, Yilun Sun",
       "url": "https://huggingface.co/papers/2605.11458",
       "score": 4,
