@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-19T21:06:24.915Z",
+  "updatedAt": "2026-05-20T21:22:22.950Z",
   "count": 15,
   "items": [
     {
-      "id": "2605.17757",
-      "title": "OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization",
-      "title_zh": "OSCAR：用于 2 位 KV 缓存量化的离线频谱协方差感知旋转",
-      "description": "INT2 KV-cache quantization is attractive for long-context LLM serving, but it remains difficult to make both accurate and deployable. Simple rotations such as Hadamard transforms reduce outliers, but still degrade at INT2 because they are not aligned with downstream attention. We propose OSCAR, an Ultra-low-bit KV Cache quantization method that estimates attention-aware covariance structures offline and uses them to derive fixed rotations and clipping thresholds for quantization. In this way, it aligns KV quantization with the covariance structures that attention actually consumes. More importantly, we not only provide theoretical justification but also develop a fully deployable OSCAR system with a custom INT2 attention kernel that remains compatible with paged KV-cache serving and fused kernel pipelines, enabling seamless integration into modern LLM serving frameworks such as SGLang and vLLM.\n  We evaluate our methods on recent reasoning models with reasoning traces of up to 32k tokens across 5 tasks. On Qwen3-4B-Thinking-2507 and Qwen3-8B, OSCAR reduces the BF16 accuracy gap to 3.78 and 1.42 points, respectively, while naive rotation INT2 collapses to nearly zero. We further scale OSCAR to Qwen3-32B and GLM-4.7 (358B params), where it remains effectively on par with BF16. On long context - RULER-NIAH up to 128K, OSCAR remains robust on both Qwen3 models, while naive rotation INT2 collapses. System-wise, OSCAR reduces KV-cache memory by approximately 8x, improves throughput by up to 7x at large batch sizes under the same memory budget, and accelerates batch-size-1 decoding by up to 3x over BF16 due to reduced memory bandwidth overhead.",
-      "description_zh": "INT2 KV 缓存量化对于长上下文 LLM 服务很有吸引力，但要同时实现准确和可部署仍然很困难。简单的旋转（例如 Hadamard 变换）可以减少异常值，但在 INT2 时仍然会降级，因为它们与下游注意力不一致。我们提出了 OSCAR，一种超低位 KV 缓存量化方法，可以离线估计注意力感知协方差结构，并使用它们来导出用于量化的固定旋转和裁剪阈值。通过这种方式，它将 KV 量化与注意力实际消耗的协方差结构对齐。更重要的是，我们不仅提供理论依据，还开发了一个完全可部署的 OSCAR 系统，该系统具有自定义 INT2 注意力内核，该系统与分页 KV 缓存服务和融合内核管道保持兼容，从而能够无缝集成到现代 LLM 服务框架（例如 SGLang 和 vLLM）中。\n  我们在最近的推理模型上评估了我们的方法，其中推理跟踪涉及 5 个任务中多达 32k 个标记。在 Qwen3-4B-Thinking-2507 和 Qwen3-8B 上，OSCAR 将 BF16 精度差距分别减小到 3.78 和 1.42 点，而朴素旋转 INT2 则崩溃到几乎为零。我们进一步将 OSCAR 扩展�� Qwen3-32B 和 GLM-4.7（358B 参数），它仍然有效地与 BF16 保持同等水平。在长期背景下 - RULER-NIAH 高达 128K，OSCAR 在两个 Qwen3 模型上保持稳健，而朴素旋转 INT2 崩溃。在系统方面，OSCAR 将 KV 缓存内存减少了大约 8 倍，在相同内存预算下，大批量的吞吐量提高了多达 7 倍，并且由于内存带宽开销减少，与 BF16 相比，将批量大小 1 的解码速度提高了多达 3 倍。",
-      "authors": "Zhongzhu Zhou, Donglin Zhuang, Jisen Li, Ziyan Chen, Shuaiwen Leon Song, Ben Athiwaratkun, Xiaoxia Wu",
-      "url": "https://huggingface.co/papers/2605.17757",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.17757"
-      }
-    },
-    {
-      "id": "2605.18749",
-      "title": "WavFlow: Audio Generation in Waveform Space",
-      "title_zh": "WavFlow：波形空间中的音频生成",
-      "description": "Modern audio generation predominantly relies on latent-space compression, introducing additional complexity and potential information loss. In this work, we challenge this paradigm with WavFlow, a framework that generates high-fidelity audio directly in raw waveform space without intermediate representations. To overcome the inherent difficulties of modeling high-dimensional and low-energy signals, we reshape audio into 2D token grids through waveform patchify and introduce amplitude lifting to align signal scales, enabling stable optimization via direct x-prediction in flow matching. To capture complex semantic alignment and temporal synchronization, we leverage an automated data pipeline to curate 5 million high-quality video-text-audio triplets, allowing the model to learn fine-grained acoustic patterns from scratch. Experimental results show that WavFlow achieves competitive performance on the video-to-audio benchmark VGGSound (FD_PaSST: 59.98, IS_PANNs: 17.40, DeSync: 0.44) and the text-to-audio benchmark AudioCaps (FD_PANNs: 10.63, IS_PANNs: 12.62), matching or exceeding the performance of established latent-based methods. Our work demonstrates that intermediate compression is not a prerequisite for high-quality synthesis, offering a simpler and more scalable alternative for multimodal audio generation.",
-      "description_zh": "现代音频生成主要依赖于潜在空间压缩，这会带来额外的复杂性和潜在的信息丢失。在这项工作中，我们用 WavFlow 挑战这种范例，WavFlow 是一个直接在原始波形空间中生成高保真音频而无需中间表示的框架。为了克服高维和低能量信号建模的固有困难，我们通过波形修补将音频重塑为 2D 令牌网格，并引入幅度提升来对齐信号尺度，从而通过流匹配中的直接 x 预测实现稳定优化。为了捕获复杂的语义对齐和时间同步，我们利用自动化数据管道来管理 500 万个高质量的视频-���本-音频三元组，使模型能够从头开始学习细粒度的声学模式。实验结果表明，WavFlow 在视频转音频基准 VGGSound（FD_PaSST：59.98，IS_PANNs：17.40，DeSync：0.44）和文本转音频基准 AudioCaps（FD_PANNs：10.63，IS_PANNs：12.62）上实现了具有竞争力的性能，匹配或超过了已建立的基于潜在的方法的性能。我们的工作表明，中间压缩并不是高质量合成的先决条件，为多模态音频生成提供了更简单、更可扩展的替代方案。",
-      "authors": "Feiyan Zhou, Luyuan Wang, Shoufa Chen, Zhe Wang, Zhiheng Liu, Yuren Cong, Xiaohui Zhang, Fanny Yang, Belinda Zeng",
-      "url": "https://huggingface.co/papers/2605.18749",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2605.18749"
-      }
-    },
-    {
-      "id": "2605.18630",
-      "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
-      "title_zh": "SCICONVBENCH：计算科学中任务制定的多轮澄清LLM的基准测试",
-      "description": "Large Language Models (LLMs) are increasingly deployed as scientific AI as- sistants, and a growing body of benchmarks evaluates their capabilities across knowledge retrieval, reasoning, code generation, and tool use. These evaluations, however, typically assume the scientific problem is already well-posed, whereas practical scientific assistance often begins with an ill-posed user request that must be refined through dialogue before any computation, analysis, or experiment can be carried out reliably. We introduce SCICONVBENCH, a benchmark for multi- turn clarification in scientific task formulation across four computational science problem domains: fluid mechanics, solid mechanics, materials science, and par- tial differential equations (PDEs). SCICONVBENCH targets two complementary capabilities: eliciting missing information (disambiguation) and detecting and correcting erroneous requests containing internally contradictory information (in- consistency resolution). Our benchmark pairs a structured task ontology with a rubric-based evaluation framework, enabling systematic measurement of LLM per- formance across three dimensions: clarification behavior, conversational grounding, and final-specification fidelity. Current frontier models perform relatively well on inconsistency resolution, but even the best model resolves only 52.7% of the disambiguation cases in fluid mechanics. We further find that frontier LLMs fre- quently make silent assumptions and perform implicit specification repairs that are not grounded in the conversation with users. SCICONVBENCH establishes a foundation for evaluating the upstream conversational reasoning that a reliable computational science assistant requires. The code and data can be found at https://github.com/csml-rpi/SciConvBench.",
-      "description_zh": "大型语言模型（LLM）越来越多地被部署为科学人工智能助手，越来越多的基准测试评估它们在知识检索、推理、代码生成和工具使用方面的能力。然而，这些评估通常假设科学问题已经适定，而实际的科学援助通常始于不适定的用户请求，必须通过对话进行完善，然后才能可靠地进行任何计算、分析或实验。我们引入了 SCICONVBENCH，它是跨四个计算科学问题领域的科学任务制定的多轮澄清的基准：流体力学、固体力学、材料科学和偏微分方程（PDE）。 SCICONVBENCH 的目标是两个互补的功能：引出缺失的信息（消除歧义）以及检测和纠正包含内部矛盾信息的错误请求（不一致解决）。我们的基准将结构化任务本体与基于标题的评估框架配对，从而能够在三个维度上系统地衡量LLM的表现：澄清行为、对话基础和最终规范保真度。目前的前沿模型在解决不一致问题方面表现相对较好，但即使是最好的模型也只能解决流体力学中 52.7% 的消歧情况。我们进一步发现，前沿LLM经常做出沉默的假设，并执行隐式的规范修复，而这些修复并不是基于与用户的对话。 SCICONVBENCH 为评估可靠的计算科学助手所需的上游会话推理奠定了基础。代码和数据可以在https://github.com/csml-rpi/SciConvBench找到。",
-      "authors": "Nithin Somasekharan, Youssef Hassan, Shiyao Lin, Gihan Panapitiya, Patrick Emami, Anurag Acharya, Sameera Horawalavithana, Shaowu Pan",
-      "url": "https://huggingface.co/papers/2605.18630",
+      "id": "2605.19147",
+      "title": "Be Kind, Rewrite: Benign Projections via Rewriting Defend Against LLM Data Poisoning Attacks",
+      "title_zh": "善良，重写：通过重写的良性预测防御 LLM 数据中毒攻击",
+      "description": "Large language models (LLMs) are highly susceptible to backdoor attacks (BAs), wherein training samples are poisoned using trigger-based harmful content. Furthermore, existing defenses have proven ineffective when extensively tested across BA patterns. To better combat BAs, we explore the use of LLM rewriting as a proactive defense against data poisoning. First, we theoretically show that when LLM rewriting utilizes open-book benign samples--termed open-book benign rewriting (OBBR)--the probability of a rewritten output being benign is strictly greater than that of closed-book rewriting. Thus, OBBR neutralizes harmful content by projecting training samples to the space of benign prompts. We then show that, in contrast to previous defenses, OBBR effectively mitigates a large number of existing BAs: across five known BAs and four widely used LLMs, OBBR increases safety performance by an average 51% compared to state-of-the-art BA defenses and 25.7% compared to closed-book rewriting methods. Finally, we show that OBBR is computationally efficient relative to other BA defenses, does not degrade model performance on natural language tasks after fine-tuning, and is capable of defending against non-trigger based data poisoning attacks.",
+      "description_zh": "大型语言模型 (LLM) 非常容易受到后门攻击 (BA)，其中使用基于触发器的有害内容来毒害训练样本。此外，在跨 BA 模式进行广泛测试时，现有防御已被证明是无效的。为了更好地对抗 BA，我们探索使用 LLM 重写来主动防御数据中毒。首先，我们从理论上证明，当 LLM 重写使用开卷良性样本（称为开卷良性重写 (OBBR)）时，重写输出良性的概率严格大于闭卷重写的概率。因此，OBBR 通过将训练样本投影到良性提示的空间来中和有害内容。然后我们表明，与之前的防御措施相比，OBBR 有效地缓解了大量现有的 BA：在五个已知的 BA 和四个广泛使用的 LLM 中，与最先进的 BA 防御相比，OBBR 的安全性能平均提高了 51%，与闭卷重写方法相比，安全性能平均提高了 25.7%。最后，我们表明 OBBR 相对于其他 BA 防御而言计算效率较高，微调后不会降低自然语言任务上的模型性能，并且能够防御基于非触发的数据中毒攻击。",
+      "authors": "John T. Halloran, Noopur S. Bhatt",
+      "url": "https://huggingface.co/papers/2605.19147",
       "score": 0,
       "meta": {
         "source": "huggingface",
         "upvotes": "0",
-        "paperId": "2605.18630"
+        "paperId": "2605.19147"
       }
     },
     {
-      "id": "2605.18106",
-      "title": "Symmetry-Compatible Principle for Optimizer Design: Embeddings, LM Heads, SwiGLU MLPs, and MoE Routers",
-      "title_zh": "优化器设计的对称兼容原则：嵌入、LM 头、SwiGLU MLP 和 MoE 路由器",
-      "description": "A striking geometric disparity has long persisted in the practice of deep learning. While modern neural network architectures naturally exhibit rich symmetry and equivariance properties, popular optimizers such as Adam and its variants operate inherently coordinate-wise, rendering them unable to respect the equivariance structures of the parameter space. We address this disparity by introducing a symmetry-compatible principle for optimizer design: the gradient update rule should be equivariant under the symmetry group acting on the corresponding weight block. Following this principle, we first provide a unified perspective on bi-orthogonally equivariant updates for general matrix layers, as employed by stochastic spectral descent, Muon, Scion, and polar gradient methods. More importantly, by moving from orthogonal groups to permutation and shared-shift symmetries, we derive symmetry-compatible optimizers for parameter blocks whose symmetries differ from those of general matrix layers: embedding and LM head matrices, SwiGLU MLP projections, and MoE router matrices. These constructions include one-sided spectral, row-norm, hybrid row-norm/spectral, row-aware, column-aware, centered row-norm, and left-spectral updates. They yield an end-to-end layerwise optimizer stack in which each major matrix-valued parameter class is assigned an update whose equivariance matches its symmetry group. We corroborate this principle through pre-training experiments on dense and sparse MoE language models, including Qwen3-0.6B-style, Gemma 3 1B-style, OLMoE-1B-7B-style, and downsized gpt-oss architectures. Across these experiments, symmetry-compatible updates consistently improve final validation loss, and in several cases training stability, over corresponding AdamW updates.",
-      "description_zh": "深度学习实践中长期以来一直存在着惊人的几何差异。虽然现代神经网络架构自然地表现出丰富的对称性和等方差特性，但流行的优化器（例如 Adam 及其变体）本质上是按坐标操作的，这使得它们无法尊重参数空间的等方差结构。我们通过引入优化器设计的对称兼容原则来解决这一差异：梯度更新规则在作用于相应权重块的对称群下应该是等变的。遵循这一原则，我们首先为一般矩阵层的双正交等变更新提供统一的视角，如随机谱下降、Muon、Scion 和极梯度方法所采用的那样。更重要的是，通过从正交组转向排列和共享移位对称性，我们为对称性不同于一般矩阵层的参数块导出对称兼容的优化器：嵌入和 LM 头矩阵、SwiGLU MLP 投影和 MoE 路由器矩阵。这些结构包括单侧谱、行范数、混合行范数/谱、行感知、列感知、居中行范数和左谱更新。它们产生一个端到端的分层优化器堆栈，其中每个主要矩阵值参数类都被分配一个更新，其等方差与其对称组匹配。我们通过对密集和稀疏 MoE 语言模型（包括 Qwen3-0.6B 风格、Gemma 3 1B 风格、OLMoE-1B-7B 风格和小型 gpt-oss 架构）的预训练实验证实了这一原理。在这些实验中，与相应的 AdamW 更新相比，对称兼容更新持续改善了最终验证损失，并且在某些情况下提高了训练稳定性。",
-      "authors": "Tim Tsz-Kit Lau, Weijie Su",
-      "url": "https://huggingface.co/papers/2605.18106",
+      "id": "2605.17659",
+      "title": "Bug or Feature^2: Weight Drift, Activation Sparsity, and Spikes",
+      "title_zh": "Bug 或功能^2：权重漂移、激活稀疏性和尖峰",
+      "description": "The design of modern neural architectures has converged through incremental empirical choices, yet the mechanisms governing their training dynamics remain only partially understood. We identify and analyze a negative weight drift induced by the interaction between standard losses and positively biased activation functions. We prove that under MSE or cross-entropy loss, the gradient with respect to positive pre-activations is non-negative in expectation at initialization, driving downstream weights toward negative values during early training. The drift is intrinsic to optimization rather than data, and persists across architectures (MLP, ResNet, ViT, GPT-nano, MP-SENe) and asymmetric activation functions (ReLU, GELU, SiLU). Coupled with ReLU, weight drift produces activation sparsity reaching up to 90\\% in GPT-nano. We characterize the sparsity-accuracy tradeoff across 79 configurations and identify a sharp accuracy cliff above sim70\\% activation sparsity. While ReLU^2 achieves a good sparsity--accuracy ratio in GPT-nano, it pathologically amplifies identified activation spikes in intermediate transformer layers. Clipping resolves this while preserving the representational benefits of squaring: clipped ReLU^2 outperforms its unclipped version, and GELU^2 achieves the lowest validation loss on GPT-nano. Code is available at https://github.com/On-Point-RND/BugOrFeature.",
+      "description_zh": "现代神经架构的设计已经通过增量经验选择趋同，但控制其训练动态的机制仍然只有部分被理解。我们识别并分析由标准损失和正偏置激活函数之间的相互作用引起的负权重漂移。我们证明，在 MSE 或交叉熵损失下，初始化时期望的正预激活梯度是非负的，从而在早期训练期间将下游权重推向负值。这种漂移是优化而不是数据所固有的，并且在架构（MLP、ResNet、ViT、GPT-nano、MP-SENe）和非对称激活函数（ReLU、GELU、SiLU）中持续存在。与 ReLU 相结合，权重漂移产生的激活稀疏度在 GPT-nano 中高达 90%。我们描述了 79 种配置的稀疏性与准确度权衡，并确定了高于 sim70\\% 激活稀疏度的陡峭准确度悬崖。虽然 ReLU^2 在 GPT-nano 中实现了良好的稀疏性准确率，但它病态地放大了中间变压器层中已识别的激活尖峰。裁剪解决了这个问题，同时保留了平方的代表性优势：裁剪的 ReLU^2 优于其未裁剪的版本，而 GELU^2 在 GPT-nano 上实现了最低的验证损失。代码可在 https://github.com/On-Point-RND/BugOrFeature 获取。",
+      "authors": "Egor Shvetsov, Aleksandr Serkov, Shokorov Viacheslav, Redko Dmitry, Vladislav Goloshchapov, Evgeny Burnaev",
+      "url": "https://huggingface.co/papers/2605.17659",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2605.18106"
+        "paperId": "2605.17659"
       }
     },
     {
-      "id": "2605.18727",
-      "title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
-      "title_zh": "DexHoldem：用灵巧的体现系统玩德州扑克",
-      "description": "Evaluating embodied systems on real dexterous hardware requires more than isolated primitive skills: an agent must perceive a changing tabletop scene, choose a context-appropriate action, execute it with a dexterous hand, and leave the scene usable for later decisions. We introduce DexHoldem, a real-world system-level benchmark built around Texas Hold'em dexterous manipulation with a ShadowHand. DexHoldem provides 1,470 teleoperated demonstrations across 14 Texas Hold'em manipulation primitives, a standardized physical policy benchmark, and an agentic perception benchmark that tests whether agents can recover the structured game state needed for embodied decision making. On primitive execution, π_{0.5} obtains the highest task completion rate (61.2%), while π_{0.5} and π_0 tie on scene-preserving success rate (47.5%). On agentic perception, Opus 4.7 obtains the best strict problem-level accuracy (34.3%), while GPT 5.5 obtains the best average field-wise accuracy (66.8%), exposing a gap between isolated visual sub-capabilities and complete routing-relevant state recovery. Finally, we instantiate the full embodied-agent loop in three case studies, where waiting, recovery dispatches, human-help requests, and repeated primitive execution reveal how perception and policy errors accumulate during closed-loop deployment. DexHoldem therefore evaluates dexterous tabletop execution, agentic perception, and embodied decision routing in a shared physical setting. Project page: https://dexholdem.github.io/Dexholdem/.",
-      "description_zh": "在真正灵巧的硬件上评估体现的系统需要的不仅仅是孤立的原始技能：代理必须感知不断变化的桌面场景，选择适合上下文的动作，用灵巧的手执行它，并使场景可用于以后的决策。我们介绍 DexHoldem，这是一个现实世界的系统级基准测试，围绕使用 ShadowHand 进行德州扑克灵巧操作而构建。 DexHoldem 提供了 1,470 个远程操作演示，涉及 14 种德州扑克操纵原语、标准化的物理​​策略基准和代理感知基准，用于测试代理是否可以恢复具体决策所需的结构化游戏状态。在原始执行中，π_{0.5} 获得最高的任务完成率 (61.2%)，而 π_{0.5} 和 π_0 的场景保留成功率并列 (47.5%)。在代理感知上，Opus 4.7 获得了最佳的严格问题级准确率（34.3%），而 GPT 5.5 获得了最佳的平均字段准确率（66.8%），暴露了孤立的视觉子功能和完整的路由相关状态恢复之间的差距。最后，我们在三个案例研究中实例化了完整的体现代理循环，其中等待、恢复调度、人工帮助请求和重复的原始执行揭示了闭环部署期间感知和策略错误如何累积。因此，DexHoldem 评估共享物理环境中灵巧的桌面执行、代理感知和具体决策路由。项目页面：https://dexholdem.github.io/Dexholdem/。",
-      "authors": "Feng Chen, Tianzhe Chu, Li Sun, Pei Zhou, Zhuxiu Xu, Shenghua Gao, Yuexiang Zhai, Yanchao Yang, Yi Ma",
-      "url": "https://huggingface.co/papers/2605.18727",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.18727"
-      }
-    },
-    {
-      "id": "2605.16386",
-      "title": "Auditing Multimodal LLM Raters: Central Tendency Bias in Clinical Ordinal Scoring",
-      "title_zh": "审核多模式 LLM 评分者：临床序数评分中的中心倾向偏差",
-      "description": "Multimodal large language models (LLMs) are increasingly explored as automated evaluators in clinical settings, yet their scoring behavior on ordinal clinical scales remains poorly understood. We benchmark three frontier LLM families against supervised deep learning models for scoring Clock Drawing Test (CDT) images on two public datasets using the Shulman rubric. While fully fine-tuned Vision Transformers achieve the best calibration (MAE 0.52, within-1 accuracy 91%), zero-shot LLMs remain competitive on tolerance-based agreement (GPT-5 MAE 0.67, within-1 accuracy 92%) despite higher absolute error. However, per-score analysis reveals that all three LLM families exhibit a pronounced central tendency effect (systematic endpoint compression): predictions are systematically compressed toward the middle of the scale, with over-prediction at the low end (score 0 to 1) and under-prediction at the high end (score 5 to 4). This effect disproportionately affects the clinically critical extremes where accurate scoring most impacts screening decisions for cognitive impairment. Targeted ablations show that neither few-shot exemplars spanning the full score range nor removing clinical terminology from the prompt eliminates the effect. Our findings extend the LLM-as-a-judge bias literature from NLP evaluation to clinical assessment, and highlight the need for calibration-aware evaluation and post-hoc calibration before deploying LLM-based raters in high-stakes screening workflows.",
-      "description_zh": "多模态大语言模型（LLM）作为临床环境中的自动评估器越来越多地被探索，但它们在有序临床量表上的评分行为仍然知之甚少。我们将三个前沿LLM系列与监督深度学习模型进行基准测试，以使用 Shulman 评分标准对两个公共数据集上的时钟绘图测试 (CDT) 图像进行评分。虽然完全微调的 Vision Transformer 实现了最佳校准（MAE 0.52，1 以内精度 91%），但零样本 LLM 在基于公差的协议（GPT-5 MAE 0.67，1 以内精度 92%）方面仍然具有竞争力，尽管绝对误差较高。然而，按分数分析显示，所有三个 LLM 系列都表现出明显的集中趋势效应（系统端点压缩）：预测被系统地压缩到量表的中间，在低端（得分 0 到 1）过度预测，在高端（得分 5 到 4）预测不足。这种效应不成比例地影响临床关键极端情况，其中准确评分对认知障碍的筛查决策影响最大。有针对性的消融表明，无论是跨越整个分数范围的几次样本，还是从提示中删除临床术语，都不会消除这种影响。我们的研究结果将LLM作为法官的偏见文献从 NLP ���估扩展到临床评估，并强调在高风险筛选工作流程中部署基于LLM的评估者之前需要进行校准感知评估和事后校准。",
-      "authors": "Jiaqing Zhang, Sandeep Elluri, Bhanu Cherukuvada, Yonah Joffe, Jessica Sena, Miguel Contreras, Scott Siegel, Subhash Nerella, Catherine Price, Parisa Rashidi",
-      "url": "https://huggingface.co/papers/2605.16386",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.16386"
-      }
-    },
-    {
-      "id": "2605.15035",
-      "title": "TopoPrimer: The Missing Topological Context in Forecasting Models",
-      "title_zh": "TopoPrimer：预测模型中缺失的拓扑背景",
-      "description": "We introduce TopoPrimer, a framework that makes the global topological structure of the series population an explicit input\n  to any forecasting model. TopoPrimer improves accuracy across diverse domains, stabilizes forecasts under seasonal demand\n  spikes, and closes the cold-start gap. Precomputed once per domain via persistent homology and spectral sheaf coordinates,\n  TopoPrimer deploys per token for fully-trained models and as a lightweight adapter for pre-trained backbones. Of these two\n  components, sheaf coordinates are the primary accuracy driver. Across four public benchmarks on Chronos and TimesFM,\n  TopoPrimer consistently improves forecasting accuracy, with gains of up to 7.3% MSE on ECL. The topology advantage persists\n  with near-identical magnitude across zero-shot and fine-tuned backbones, suggesting topology and per-series training\n  capture complementary signals. The gains are most pronounced in difficult regimes. Under peak seasonal demand, classical\n  and zero-shot models degrade by up to 50%, while TopoPrimer stays within 10%. At cold start with no item history,\n  TopoPrimer reduces MAE by 27% over a topology-free baseline.",
-      "description_zh": "我们引入了 TopoPrimer，一个框架，使系列总体的全局拓扑结构成为显式输入\n  任何预测模型。 TopoPrimer 提高了不同领域的准确性，稳定了季节性需求下的预测\n  峰值，并缩小冷启动间隙。通过持久同源性和谱束坐标对每个域预先计算一次，\n  TopoPrimer 为经过全面训练的模型部署每个令牌，并作为预训练主干网的轻量级适配器。这两个中\n  组件、轴坐标是主要的精度驱动因素。在 Chronos 和 TimesFM 的四个公共基准中，\n  TopoPrimer 不断提高预测准确性，ECL 的 MSE 提高高达 7.3%。拓扑优势依然存在\n  在零样本和微调主干上具有几乎相同的幅度，表明拓扑和每系列训练\n  捕获互补信号。在困难的政权中，收益最为明显。旺季需求下，经典\n  零样本模型的性能下降高达 50%，而 TopoPrimer 的性能下降则保持在 10% 以内。在没有项目历史记录的冷启动时，\n  与无拓扑基线相比，TopoPrimer 将 MAE 降低了 27%。",
-      "authors": "Zara Zetlin, Kayhan Moharreri, Maria Safi",
-      "url": "https://huggingface.co/papers/2605.15035",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2605.15035"
-      }
-    },
-    {
-      "id": "2603.10126",
-      "title": "AR-VLA: True Autoregressive Action Expert for Vision-Language-Action Models",
-      "title_zh": "AR-VLA：视觉-语言-动作模型的真正自回归动作专家",
-      "description": "We propose a standalone autoregressive (AR) Action Expert that generates actions as a continuous causal sequence while conditioning on refreshable vision-language prefixes. In contrast to existing Vision-Language-Action (VLA) models and diffusion policies that reset temporal context with each new observation and predict actions reactively, our Action Expert maintains its own history through a long-lived memory and is inherently context-aware. This structure addresses the frequency mismatch between fast control and slow reasoning, enabling efficient independent pretraining of kinematic syntax and modular integration with heavy perception backbones, naturally ensuring spatio-temporally consistent action generation across frames. To synchronize these asynchronous hybrid V-L-A modalities, we utilize a re-anchoring mechanism that mathematically accounts for perception staleness during both training and inference. Experiments on simulated and real-robot manipulation tasks demonstrate that the proposed method can effectively replace traditional chunk-based action heads for both specialist and generalist policies. AR-VLA exhibits superior history awareness and substantially smoother action trajectories while maintaining or exceeding the task success rates of state-of-the-art reactive VLAs. Overall, our work introduces a scalable, context-aware action generation schema that provides a robust structural foundation for training effective robotic policies. Code and Videos available at https://arvla.insait.ai",
-      "description_zh": "我们提出了一个独立的自回归（AR）动作专家，它生成动作作为连续的因果序列，同时以可刷新的视觉语言前缀为条件。现有的视觉-语言-动作（VLA）模型和扩散策略会根据每个新的观察结果重置时间上下文并反应性地预测动作，与此相反，我们的动作专家通过长期记忆维护自己的历史，并且本质上具有上下文感知能力。这种结构解决了快速控制和慢速推理之间的频率不匹配问题，实现了运动学语法的高效独立预训练以及与重型感知骨干的模块化集成，自然地确保了跨帧的时空一致的动作生成。为了同步这些异步混合 V-L-A 模态，我们利用了一种重新锚定机制，该机制在数学上解释了训练和推理过程中的感知陈旧情况。模拟和真实机器人操作任务的实验表明，所提出的方法可以有效地替代传统的基于块的动作头，用于专业和通才策略。 AR-VLA 表现出卓越的历史意识和更加平滑的动作轨迹，同时保持或超过最先进的反应性 VLA 的任务成功率。总的来说，我们的工作引入了一种可扩展的、上下文感知的动作生成模式，为训练有效的机器人策略提供了坚实的结构基础。代码和视频可在 https://arvla.insait.ai 获取",
-      "authors": "Yutong Hu, Jan-Nico Zaech, Nikolay Nikolov, Yuanqi Yao, Sombit Dey, Giuliano Albanese, Renaud Detry, Luc Van Gool, Danda Paudel",
-      "url": "https://huggingface.co/papers/2603.10126",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2603.10126"
-      }
-    },
-    {
-      "id": "2605.15565",
-      "title": "AstraFlow: Dataflow-Oriented Reinforcement Learning for Agentic LLMs",
-      "title_zh": "AstraFlow：面向代理LLM的数据流强化学习",
-      "description": "Reinforcement learning (RL) is increasingly used to improve the reasoning, coding, and tool-use capabilities of large language models, but agentic RL remains prohibitively expensive. Scaling RL to agentic LLMs requires supporting complex workloads, including multi-policy collaborative training, while efficiently using elastic, heterogeneous, and cross-region compute resources. Existing LLM RL systems support some of these capabilities, but each new extension often requires dedicated system engineering. This burden arises from trainer-centered control architectures and the lack of principled abstractions for RL system components. To address these limitations, we propose AstraFlow, a dataflow-oriented RL system that replaces conventional trainer-centered control with principled component abstractions. In AstraFlow, rollout services, dataflow management, and training are decoupled into autonomous components, enabling the system to natively support complex multi-policy agentic RL workloads and efficiently exploit diverse compute resources. We evaluate AstraFlow across math, code, search, and AgentBench workloads, showing that the same system supports multi-policy training, elastic scaling, heterogeneous cross-region execution, and composable data algorithms without system-level code changes. In multi-policy collaborative training, AstraFlow achieves comparable or better accuracy than existing RL systems while speeding up training time by 2.7x.",
-      "description_zh": "强化学习 (RL) 越来越多地用于提高大型语言模型的推理、编码和工具使用能力，但代理 RL 的成本仍然过高。将强化学习扩展到代理LLM需要支持复杂的工作负载，包括多策略协作训练，同时有效地使用弹性、异构和跨区域的计算资源。现有的 LLM RL 系统支持其中一些功能，但每个新的扩展通常需要专门的系统工程。这种负担源于以训练者为中心的控制架构以及强化学习系统组件缺乏原则抽象。为了解决这些限制，我们提出了 AstraFlow，这是一种面向数据流的 RL 系统，它用原则性的组件抽象取代了传统的以训练者为中心的控制。在 AstraFlow 中，推出服务、数据流管理和训练被解耦为自治组件，使系统能够原生支持复杂的多策略代理 RL 工作负载并有效利用不同的计算资源。我们跨数学、代码、搜索和 AgentBench 工作负载评估 AstraFlow，结果表明同一系统支持多策略训练、弹性扩展、异构跨区域执行和可组合数据算法，而无需更改系统级代码。在多策略协作训练中，AstraFlow 实现了与现有 RL 系统相当或更好的精度，同时将训练时间缩短了 2.7 倍。",
-      "authors": "Haizhong Zheng, Yizhuo Di, Jiahui Wang, Shuowei Jin, Xueshen Liu, Yongji Wu, Z. Morley Mao, Ion Stoica, Jiawei Zhao, Beidi Chen",
-      "url": "https://huggingface.co/papers/2605.15565",
-      "score": 8,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2605.15565"
-      }
-    },
-    {
-      "id": "2605.17894",
-      "title": "Evaluating Cognitive Age Alignment in Interactive AI Agents",
-      "title_zh": "评估交互式 AI 代理中的认知年龄一致性",
-      "description": "While agentic AI and its core multimodal large language models (MLLMs) have demonstrated remarkable promise in language and visual reasoning across domains ranging from daily life to advanced scientific research, a profound gap remains between artificial and human intelligence. Despite the integration of powerful tools and advanced MLLMs, state-of-the-art AI agents frequently fail at foundational, seemingly simple tasks that a child can resolve with ease. Inspired by the Wechsler Intelligence Scale for Children (WISC), we introduce ChildAgentEval, the first psychometrically grounded interactive benchmark for evaluating cognitive age alignment in MLLM-based agents. ChildAgentEval systematically compares the reasoning performance of various MLLM-based interactive agents against age-specific human developmental stages, exposing where current agentic AI systems can and cannot simulate age-specific cognitive behavior.",
-      "description_zh": "虽然代理人工智能及其核心多模态大语言模型（MLLM）在从日常生活到高级科学研究等领域的语言和视觉推理方面表现出了非凡的前景，但人工智能和人类智能之间仍然存在巨大差距。尽管集成了强大的工具和先进的 MLLM，但最先进的人工智能代理经常无法完成孩子可以轻松解决的基础、看似简单的任务。受韦克斯勒儿童智力量表 (WISC) 的启发，我们推出了 ChildAgentEval，这是第一个基于心理测量的交互式基准，用于评估基于 MLLM 的代理的认知年龄一致性。 ChildAgentEval 系统地将各种基于 MLLM 的交互代理与特定年龄的人类发展阶段的推理性能进行比较，揭示当前的代理 AI 系统可以和不能模拟特定年龄的认知行为。",
-      "authors": "Yifan Shen, Jiawen Zhang, Jian Xu, Junho Kim, Ismini Lourentzou, Xu Cao, Meihuan Huang",
-      "url": "https://huggingface.co/papers/2605.17894",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.17894"
-      }
-    },
-    {
-      "id": "2605.18652",
-      "title": "MementoGUI: Learning Agentic Multimodal Memory Control for Long-Horizon GUI Agents",
-      "title_zh": "MementoGUI：学习长视野 GUI 代理的代理多模式内存控制",
-      "description": "Recent GUI agents have made substantial progress in visual grounding and action prediction, yet they remain brittle in long-horizon tasks that require maintaining task state across many interface transitions. Existing agents typically rely on raw history replay or text-only memory, which either overwhelms the model with redundant screenshots or discards localized visual evidence needed for future decisions. To address these limitations, we introduce MementoGUI, a plug-in agentic memory framework that equips MLLM-based GUI agents with MementoCore, a learned controller for online memory selection, compression, and retrieval. Rather than treating interaction history as a fixed context, MementoGUI formulates long-horizon GUI control as an online memory-control problem: working memory selectively preserves task-relevant interface events with textual summaries and ROI-level visual evidence, while episodic memory retrieves reusable past trajectories through learned relevance selection. MementoCore modularizes memory control into specialized operators for step processing, memory compression, episodic writing, and episodic selection, enabling plug-in memory augmentation without finetuning the GUI agent backbone. We further develop a scalable data curation pipeline that converts computer-use trajectories into memory-controller training data, introduce MementoGUI-Bench for evaluating long-horizon decision-making in GUI agents, and design MLLM-based metrics for semantic action matching, task progress, and memory consistency. Experiments on GUI-Odyssey, MM-Mind2Web, and MementoGUI-Bench show that MementoGUI consistently improves GUI agents over no-history, history-replay, and text-only memory baselines, with larger MementoCore backbones further strengthening memory-augmented GUI control.",
-      "description_zh": "最近的 GUI 代理在视觉基础和动作预测方面取得了实质性进展，但它们在需要跨许多界面转换维持任务状态的长期任务中仍然很脆弱。现有的代理通常依赖于原始历史重播或纯文本记忆，这要么用冗余的屏幕截图淹没模型，要么丢弃未来决策所需的局部视觉证据。为了解决这些限制，我们引入了 MementoGUI，一个插件代理内存框架，为基于 MLLM 的 GUI 代理配备了 MementoCore，一个用于在线内存选择、压缩和检索的学习控制器。 MementoGUI 没有将交互���史视为固定上下文，而是将长视野 GUI 控制制定为在线记忆控制问题：工作记忆通过文本摘要和 ROI 级视觉证据选择性地保留与任务相关的界面事件，而情景记忆则通过学习的相关性选择来检索可重用的过去轨迹。 MementoCore 将内存控制模块化为专门的运算符，用于步骤处理、内存压缩、情景写入和情景选择，从而无需微调 GUI 代理主干即可实现插件内存增强。我们进一步开发了一个可扩展的数据管理管道，将计算机使用轨迹转换为内存控制器训练数据，引入 MementoGUI-Bench 来评估 GUI 代理中的长期决策，并设计基于 MLLM 的语义动作匹配、任务进度和内存一致性指标。 GUI-Odyssey、MM-Mind2Web 和 MementoGUI-Bench 上的实验表明，MementoGUI 持续改进了无历史、历史重放和纯文本内存基线的 GUI 代理，更大的 MementoCore 主干进一步增强了内存增强 GUI 控制。",
-      "authors": "Ziyun Zeng, Hang Hua, Bocheng Zou, Mu Cai, Rogerio Feris, Jiebo Luo",
-      "url": "https://huggingface.co/papers/2605.18652",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2605.18652"
-      }
-    },
-    {
-      "id": "2605.16679",
-      "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
-      "title_zh": "CHI-Bench：人工智能代理能否自动化端到端、长期、政策丰富的医疗保健工作流程？",
-      "description": "End-to-end automation of realistic healthcare operations stresses three capabilities underrepresented in current benchmarks: policy density, decisions must be grounded in a large library of medical, insurance, and operational rules; Multi-role composition: a single task requires the agent to play multiple roles with handoffs; and multilateral interaction: intermediate workflow steps are multi-turn dialogs, such as peer-to-peer review and patient outreach. We introduce χ-Bench, a benchmark of long-horizon healthcare workflows across three domains: provider prior authorization, payer utilization management, and care management. Each task hands the agent a clinical case in a high-fidelity simulator of 20 healthcare apps exposed via 87 MCP tools, which it must drive to a terminal status through tool calls and writing the role's artifacts, guided by a 1,290+ document managed-care operations handbook skill. Across 30 agent harness/models configurations, the best agent resolves only 28.0% of tasks, no agent clears 20% on strict pass^3, and executing all tasks in a single session slumps the performance to 3.8%. These results raise the hypothesis that similar gaps are likely to surface in other policy-dense, role-composed, irreversible enterprise domains.",
-      "description_zh": "现实医疗保健运营的端到端自动化强调了当前基准中未充分体现的三种能力：政策密度、决策必须以医疗、保险和运营规则的大型库为基础；多角色组合：单个任务需要Agent扮演多个角色并进行切换；和多边互动：中间工作流程步骤是多轮对话，例如同行评审和患者外展。我们推出 χ-Bench，这是跨三个领域的长期医疗保健工作流程的基准：提供商事先授权、付款人使用管理和护理管理。每项任务都会向代理提供一个高保真模拟器中的临床案例，该模拟器包含通过 87 个 MCP 工具公开的 20 个医疗保健应用程序，必须通过工具调用和编写角色工件将其驱动到终端状态，并以 1,290 多个文档管理护理操作手册技能为指导。在 30 个代理线束/模型配置中，最好的代理仅解决 28.0% 的任务，没有代理在严格通过^3 上清除 20%，并且在单个会话中执行所有任务会使性能下降至 3.8%。这些结果提出了这样的假设：类似的差距可能会出现在其他政策密集、角色组成、不可逆转的企业领域中。",
-      "authors": "Haolin Chen, Deon Metelski, Leon Qi, Tao Xia, Joonyul Lee, Steve Brown, Kevin Riley, Frank Wang, T. Y. Alvin Liu, Hank Capps MD, Zeyu Tang, Xiangchen Song, Lingjing Kong, Fan Feng, Tianyi Zeng, Zhiwei Liu, Zixian Ma, Hang Jiang, Fangli Geng, Yuan Yuan, Chenyu You, Qingsong Wen, Hua Wei, Yanjie Fu, Yue Zhao, Carl Yang, Biwei Huang, Kun Zhang, Caiming Xiong, Sanmi Koyejo, Eric P. Xing, Philip S. Yu, Weiran Yao",
-      "url": "https://huggingface.co/papers/2605.16679",
-      "score": 39,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "39",
-        "paperId": "2605.16679"
-      }
-    },
-    {
-      "id": "2605.16079",
-      "title": "VideoSeeker: Incentivizing Instance-level Video Understanding via Native Agentic Tool Invocation",
-      "title_zh": "VideoSeeker：通过本机代理工具调用激励实例级视频理解",
-      "description": "Large Vision-Language Models (LVLMs) have shown significant progress in video understanding, yet they face substantial challenges in tasks requiring precise spatiotemporal localization at the instance level. Existing methods primarily rely on text prompts for human-model interaction, but these prompts struggle to provide precise spatial and temporal references, resulting in poor user experience. Furthermore, current approaches typically decouple visual perception from language reasoning, centering reasoning around language rather than visual content, which limits the model's ability to proactively perceive fine-grained visual evidence. To address these challenges, we propose VideoSeeker, a novel paradigm for instance-level video understanding through visual prompts. VideoSeeker seamlessly integrates agentic reasoning with instance-level video understanding tasks, enabling the model to proactively perceive and retrieve relevant video segments on demand. We construct a four-stage fully automated data synthesis pipeline to efficiently generate large-scale, high-quality instance-level video data. We internalize tool-calling and proactive perception capabilities into the model via cold-start supervision and RL training, building a powerful video understanding model. Experiments demonstrate that our model achieves an average improvement of +13.7% over baselines on instance-level video understanding tasks, surpassing powerful closed-source models such as GPT-4o and Gemini-2.5-Pro, while also showing effective transferability on general video understanding benchmarks. The relevant datasets and code will be released publicly.",
-      "description_zh": "大型视觉语言模型（LVLM）在视频理解方面取得了显着进展，但在需要实例级别精确时空定位的任务中面临着巨大的挑战。现有方法主要依靠文本提示进行人机交互，但这些提示难以提供精确的空间和时间参考，导致用户体验较差。此外，当前的方法通常将视觉感知与语言推理分离，将推理集中在语言而不是视觉内容上，这限制了模型主动感知细粒度视觉证据的能力。为了应对这些挑战，我们提出了 VideoSeeker，这是一种通过视觉提��进行实例级视频理解的新颖范例。 VideoSeeker 将代理推理与实例级视频理解任务无缝集成，使模型能够根据需要主动感知和检索相关视频片段。我们构建了一个四阶段的全自动数据合成管道，以高效生成大规模、高质量的实例级视频数据。我们通过冷启动监督和强化学习训练将工具调用和主动感知能力内化到模型中，构建强大的视频理解模型。实验表明，我们的模型在实例级视频理解任务上比基线平均提高了 13.7%，超越了 GPT-4o 和 Gemini-2.5-Pro 等强大的闭源模型，同时在通用视频理解基准上也表现出了有效的可迁移性。相关数据集和代码将公开发布。",
-      "authors": "Yiming Zhao, Yu Zeng, Wenxuan Huang, Zhen Fang, Qing Miao, Qisheng Su, Jiawei Zhao, Jiayin Cai, Lin Chen, Zehui Chen, Yukun Qi, Yao Hu, Xiaolong Jiang, Feng Zhao",
-      "url": "https://huggingface.co/papers/2605.16079",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.16079"
-      }
-    },
-    {
-      "id": "2605.16882",
-      "title": "E-PMQ: Expert-Guided Post-Merge Quantization with Merged-Weight Anchoring",
-      "title_zh": "E-PMQ：具有合并权重锚定的专家引导合并后量化",
-      "description": "Low-resource deployment constraints have made model quantization essential for deploying neural networks while preserving performance. Meanwhile, model merging has become an increasingly practical low-resource strategy for integrating multiple task- or domain-specialized experts into a single model without joint training or multi-model serving. Together, quantization and model merging enable an efficient low-resource deployment pipeline by integrating multiple experts into one low-bit model. We formulate this setting as Post-Merge Quantization (PMQ). We show that directly applying post-training quantization (PTQ) to a merged model is unreliable because two distinct deviations are coupled: the quantization deviation introduced by low-bit reconstruction and the expert-relative merging deviation inherited from model merging. To mitigate these deviations, we propose E-PMQ, an expert-guided PMQ framework that uses source expert weights to provide expert- guided output targets during layer-wise calibration, together with merged-weight anchoring to stabilize the calibration and preserve the integrated behavior of the merged model. On CLIP-ViT-B/32 eight-task merging, E-PMQ improves 4-bit GPTQ from 65.0% to 73.6% under Task Arithmetic and from 69.1% to 74.8% under TIES-Merging. On harder settings, E-PMQ improves GPTQ from 34.8% to 76.7% on 20-task CLIP-ViT-L/14 and from 78.26% to 83.34% on FLAN-T5- base GLUE. These results demonstrate that E-PMQ enables effective post-merge quantization and low-bit deployment.",
-      "description_zh": "低资源部署限制使得模型量化对于在保持性能的同时部署神经网络至关重要。同时，模型合并已成为一种日益实用的低资源策略，用于将多个任务或领域专业专家集成到单个模型中，而无需联合训练或多模型服务。量化和模型合并将多个专家集成到一个低位模型中，从而实现高效的低资源部署管道。我们将此设置表述为合并后量化 (PMQ)。我们表明，直接将训练后量化（PTQ）应用于合并模型是不可靠的，因为两个不同的偏差是���合的：低位重建引入的量化偏差和从模型合并继承的专家相对合并偏差。为了减轻这些偏差，我们提出了 E-PMQ，这是一种专家引导的 PMQ 框架，它使用源专家权重在分层校准期间提供专家引导的输出目标，并结合合并权重锚定来稳定校准并保留合并模型的集成行为。在 CLIP-ViT-B/32 八任务合并上，E-PMQ 将 4 位 GPTQ 在任务算术下从 65.0% 提高到 73.6%，在 TIES-Merging 下从 69.1% 提高到 74.8%。在较难的设置上，E-PMQ 将 20 任务 CLIP-ViT-L/14 上的 GPTQ 从 34.8% 提高到 76.7%，将 FLAN-T5-base GLUE 上的 GPTQ 从 78.26% 提高到 83.34%。这些结果表明 E-PMQ 可实现有效的合并后量化和低位部署。",
-      "authors": "Wenjun Wang, Yanggan Gu, Shuo Cai, Yuanyi Wang, Pengkai Wang, Jianmin Wu, Hongxia Yang",
-      "url": "https://huggingface.co/papers/2605.16882",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.16882"
-      }
-    },
-    {
-      "id": "2605.16909",
-      "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
-      "title_zh": "TOBench：针对现实世界工具使用代理的面向任务的全模式基准",
-      "description": "Tool-using agents are increasingly expected to operate across realistic professional workflows, where they must interpret multimodal inputs, coordinate external tools, inspect intermediate artifacts, and revise their actions before producing a final result. Existing benchmarks, however, often evaluate tool use, computer use, and multimodal reasoning in isolation, leaving a gap between benchmark settings and end-to-end omni-modal tool use in the real world. To address this gap, we introduce MM-ToolBench, a benchmark and evaluation harness for task-oriented omni-modal tool use. MM-ToolBench contains 100 executable tasks from two macro task families, Customer Service and Intelligent Creation, covering 20 subcategory slices and supported by 27 MCP servers with 324 tools. The central design of MM-ToolBench is closed-loop multimodal verification: agents must execute tools, inspect rendered or transformed artifacts, and self-correct when outputs fail task-specific requirements. To make such evaluation scalable and verifiable, MM-ToolBench couples MCP-based execution with task-specific grounded evaluators and a semi-automated construction pipeline for scenario discovery, task instantiation, evaluator synthesis, and human audit. Experiments on 15 contemporary agentic models show that MM-ToolBench remains highly challenging: Claude Opus 4.6, commonly regarded as one of the strongest coding-agent models, achieves only 32.0% task success, far below the 94.0% human benchmark. We envision MM-ToolBench as a practical foundation for evaluating and advancing next-generation omni-modal tool-using agents through closed-loop multimodal verification.",
-      "description_zh": "人们越来越期望使用工具的代理能够在现实的专业工作流程中进行操作，他们必须解释多模式输入、协调外部工具、检查中间工件并在产生最终结果之前修改其操作。然而，现有的基准测试通常单独评估工具使用、计算机使用和多模态推理，从而在基准设置和现实世界中端到端全模态工具使用之间留下了差距。为了解决这一差距，我们引入了 MM-ToolBench，这是面向任务的全模式工具使用的基准和评估工具。 MM-ToolBench包含来自客户服务和智能创建两个宏任务系列的100个可执行任��，涵盖20个子类别切片，并由27个MCP服务器和324个工具支持。 MM-ToolBench 的核心设计是闭环多模式验证：代理必须执行工具、检查渲染或转换的工件，并在输出未满足任务特定要求时进行自我纠正。为了使此类评估具有可扩展性和可验证性，MM-ToolBench 将基于 MCP 的执行与特定于任务的接地评估器以及用于场景发现、任务实例化、评估器综合和人工审核的半自动化构建管道相结合。对 15 个当代代理模型的实验表明，MM-ToolBench 仍然��有很高的挑战性：通常被认为是最强的编码代理模型之一的 Claude Opus 4.6 仅实现了 32.0% 的任务成功率，远低于人类基准的 94.0%。我们设想 MM-ToolBench 作为通过闭环多模态验证评估和推进下一代全模态工具使用代理的实用基础。",
-      "authors": "Zhiqiang Liu, Wenhui Dong, Yilang Tan, Yuwen Qu, Haochen Yin, Chenyang Si",
-      "url": "https://huggingface.co/papers/2605.16909",
+      "id": "2605.08472",
+      "title": "Mid-Training with Self-Generated Data Improves Reinforcement Learning in Language Models",
+      "title_zh": "使用自生成数据进行中期训练可改善语言模型中的强化学习",
+      "description": "The effectiveness of Reinforcement Learning (RL) in Large Language Models (LLMs) depends on the nature and diversity of the data used before and during RL. In particular, reasoning problems can often be approached in multiple ways that rely on different forms of reasoning, and exposure to only a limited range of such approaches in the training data may limit the effectiveness of RL. Motivated by this, we investigate using diverse self-generated data during mid-training as an intermediate step before RL training. Specifically, we adopt a bootstrapped data-generation framework guided by George Polya's problem-solving approaches for generating multiple variants of correct answers for each question in the training data, and then perform fine-tuning. We first provide a theoretical perspective on how mid-training on such data improves RL and explain how policy-gradient updates can incentivize combining multiple approaches. We then empirically demonstrate that RL-trained models initialized with our mid-training data achieve consistent improvements across various mathematical reasoning benchmarks and other OOD tasks like code generation and narrative reasoning. Overall, our investigative study shows that a language model learning multiple problem-solving approaches, through self-generated data helps subsequent RL.",
+      "description_zh": "大型语言模型 (LLM) 中强化学习 (RL) 的有效性取决于 RL 之前和期间使用的数据的性质和多样性。特别是，推理问题通常可以通过依赖于不同形式推理的多种方式来解决，并且仅接触训练数据中有限范围的此类方法可能会限制强化学习的有效性。受此启发，我们研究了在训练中期使用各种自行生成的数据作为 RL 训练之前的中间步骤。具体来说，我们采用了以 George Polya 的问题解决方法为指导的引导数据生成框架，为训练数据中的每个问题生成正确答案的多个变体，然后进行微调。我们首先提供关于此类数据的中期训练如何改进强化学习的理论视角，并解释策略梯度更新如何激励组合多种方法。然后，我们凭经验证明，使用训练中期数据初始化的强化学习模型在各种数学推理基准和其他 OOD 任务（如代码生成和叙述推理）中实现了一致的改进。总的来说，我们的调查研究表明，通过自我生成的数据学习多种解决问题的方法的语言模型有助于后续的强化学习。",
+      "authors": "Aswin RRV, Jacob Dineen, Divij Handa, Mihir Parmar, Ben Zhou, Swaroop Mishra, Chitta Baral",
+      "url": "https://huggingface.co/papers/2605.08472",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2605.16909"
+        "paperId": "2605.08472"
+      }
+    },
+    {
+      "id": "2605.08586",
+      "title": "Computer Science Conferences Should Require Nonrepudiable Experimental Results",
+      "title_zh": "计算机科学会议应该需要不可否认的实验结果",
+      "description": "This position paper argues that computer science conferences should require tamper-evident, nonrepudiable attestations of experimental results. We name the underlying problem experiment nonrepudiation: a compliant protocol must bind the numbers in a paper to an actual executed computation in a way the author cannot later alter or deny. The current system relies on self-reported checklists, optional code sharing, and author-controlled logging. None of these mechanisms answer the question a reviewer cannot check: did the code the paper describes produce the numbers the paper reports? We define the problem formally, state the security properties any compliant protocol must satisfy, and describe a threat model that includes attacks current approaches do not prevent. To show that the problem is solvable, we built K-Veritas, a reference implementation in Go that produces signed reports without accessing training data. K-Veritas is a testbed, not a finished answer. We call on conferences and the community to treat nonrepudiation as a first-class requirement and to help build an open, independent standard for it.",
+      "description_zh": "这篇立场文件认为，计算机科学会议应该要求对实验结果进行防篡改、不可否认的证明。我们将底层问题实验命名为不可否认性：合规协议必须以作者以后无法更改或否认的方式将论文中的数字与实际执行的计算绑定起来。当前的系统依赖于自我报告的清单、可选的代码共享和作者控制的日志记录。这些机制都没有回答审稿人无法检查的问题：论文描述的代码是否产生了论文报告的数字？我们正式定���问题，声明任何兼容协议必须满足的安全属性，并描述一个威胁模型，其中包括当前方法无法阻止的攻击。为了证明问题是可以解决的，我们构建了 K-Veritas，这是 Go 中的一个参考实现，可以在不访问训练数据的情况下生成签名报告。 K-Veritas 是一个测试平台，而不是最终的答案。我们呼吁会议和社区将不可否认性视为首要要求，并帮助为其建立开放、独立的标准。",
+      "authors": "Mamadou K. Keita, Christopher Homan",
+      "url": "https://huggingface.co/papers/2605.08586",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.08586"
+      }
+    },
+    {
+      "id": "2605.18263",
+      "title": "RT-Splatting: Joint Reflection-Transmission Modeling with Gaussian Splatting",
+      "title_zh": "RT-Splatting：使用高斯 Splatting 进行联合反射-传输建模",
+      "description": "3D Gaussian Splatting (3DGS) enables real-time novel view synthesis with high visual quality. However, existing methods struggle with semi-transparent specular surfaces that exhibit both complex reflections and clear transmission, often producing blurry reflections or overly occluded transmission. To address this, we present RT-Splatting, a framework that disentangles each Gaussian's geometric occupancy from its optical opacity. This factorization yields a unified surface-volume scene representation with a single set of Gaussian primitives. Our hybrid renderer interprets this representation both as a surface to capture high-frequency reflections and as a volume to preserve clear transmission. To mitigate the ambiguity in jointly optimizing reflection and transmission, we introduce Specular-Aware Gradient Gating, which suppresses misleading gradients from highly specular regions into the transmission branch, effectively reducing distracting floaters. Experiments on challenging semi-transparent scenes show that RT-Splatting achieves state-of-the-art performance, delivering high-fidelity reflections and clear transmission with real-time rendering. Moreover, our factorization naturally enables flexible scene editing. The project page is available at https://sjj118.github.io/RT-Splatting.",
+      "description_zh": "3D 高斯溅射 (3DGS) 可实现具有高视觉质量的实时新颖视图合成。然而，现有的方法很难处理同时表现出复杂反射和清晰透射的半透明镜面表面，通常会产生模糊的反射或过度遮挡的透射。为了解决这个问题，我们提出了 RT-Splatting，这是一个框架，可以将每个高斯的几何占用与其光学不透明度分开。这种因式分解产生了具有单组高斯基元的统一表面体积场景表示。我们的混合渲染器将这种表示解释为捕获高频反射的表面和保持清晰传���的体积。为了减轻联合优化反射和透射的模糊性，我们引入了镜面感知梯度门控，它可以抑制从高镜面反射区域到透射分支的误导性梯度，从而有效地减少分散注意力的漂浮物。在具有挑战性的半透明场景上进行的实验表明，RT-Splatting 实现了最先进的性能，通过实时渲染提供高保真反射和清晰传输。此外，我们的因式分解自然可以实现灵活的场景编辑。该项目页面位于 https://sjj118.github.io/RT-Splatting。",
+      "authors": "Ji Shi, Xianghua Ying, Bowei Xing, Ruohao Guo, Wenzhen Yue",
+      "url": "https://huggingface.co/papers/2605.18263",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.18263"
+      }
+    },
+    {
+      "id": "2605.09789",
+      "title": "Zero-Shot Sim-to-Real Robot Learning: A Dexterous Manipulation Study on Reactive Catching",
+      "title_zh": "零射击模拟到真实的机器人学习：反应性捕捉的灵巧操纵研究",
+      "description": "Dexterous manipulation is physics-intensive and highly sensitive to modeling errors and perception noise, making sim-to-real transfer prohibitively challenging. Domain randomization (DR) is commonly used to improve the robustness of learned policies for such tasks, but conventional DR randomizes one instance per episode, offering very limited exposure to the variability of real-world dynamics. To this end, we propose Domain-Randomized Instance Set (DRIS), which represents and propagates a set of randomized instances simultaneously, providing richer approximation of uncertain dynamics and enabling policies to learn actions that account for multiple possible outcomes. Supported by theoretical analysis, we show that DRIS yields more robust policies and alleviates the need for real-world fine-tuning, even with a modest number of instances (e.g., 10). We demonstrate this on a challenging reactive catching task. Unlike traditional catching setups that use end-effectors designed to mechanically stabilize the object (e.g., curved or enclosing surfaces), our system uses a flat plate that offers no passive stabilization, making the task highly sensitive to noise and requiring rapid reactive motions. The learned policies exhibit strong robustness to uncertainties and achieve reliable zero-shot sim-to-real transfer.",
+      "description_zh": "灵巧的操作是物理密集型的，并且对建模错误和感知噪声高度敏感，这使得模拟到真实的转换极具挑战性。域随机化 (DR) 通常用于提高此类任务的学习策略的鲁棒性，但传统的 DR 会随机化每个情节的一个实例，从而对现实世界动态的可变性提供非常有限的暴露。为此，我们提出了域随机实例集（DRIS），它同时表示和传播一组随机实例，提供更丰富的不确定动态近似，并使策略能够学习解释多种可能结果的行动。在理论分析的支持下，我们表明，即使实例数量适中（例如 10 个），DRIS 也能产生更稳健的策略并减轻现实世界微调的需要。我们在一项具有挑战性的反应性捕捉任务中演示了这一点。与使用旨在机械稳定物体（例如弯曲或封闭表面）的末端执行器的传统捕捉装置不同，我们的系统使用不提供被动稳定性的平板，使得任务对噪音高度敏感并且需要快速反应运动。学习到的策略对不确定性表现出很强的鲁棒性，并实现可靠的零样本模拟到真实的迁移。",
+      "authors": "Kejia Ren, Gaotian Wang, Andrew S. Morgan, Kaiyu Hang",
+      "url": "https://huggingface.co/papers/2605.09789",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.09789"
+      }
+    },
+    {
+      "id": "2605.15514",
+      "title": "RoPE Distinguishes Neither Positions Nor Tokens in Long Contexts, Provably",
+      "title_zh": "事实证明，RoPE 既不能区分长上下文中的头寸，也不能区分代币",
+      "description": "We identify intrinsic limitations of Rotary Positional Embeddings (RoPE) in Transformer-based long-context language models. Our theoretical analysis abstracts away from the specific content of the context and depends only on its length. We prove that as context length increases, RoPE-based attention becomes unpredictable and loses two properties that are central to its effectiveness. First, it loses its locality bias: RoPE is no more likely to favor nearer positions than substantially farther ones. Second, it loses consistency in token relevance: a key vector that receives a higher attention score than an alternative at one position may receive a lower score at another. In both cases, the probability of failure approaches 0.5, no better than random guessing. We further prove that the attention score can remain unchanged when a key token is moved to a different position, or even replaced by a different token, indicating a failure to distinguish positions or tokens. Adjusting the RoPE base trades off distinguishing positions against distinguishing tokens but cannot preserve both at the same time. Increasing the RoPE base hyperparameter, a common practice in today's long-context models, helps distinguish different tokens, but inevitably sacrifices the ability to distinguish positions. Our empirical analysis shows that multi-head, multi-layer architectures are insufficient to overcome these limitations. Our findings suggest that fundamentally new mechanisms for encoding position and token order may be needed in future Transformer long-context language models.",
+      "description_zh": "我们确定了基于 Transformer 的长上下文语言模型中旋转位置嵌入 (RoPE) 的内在局限性。我们的理论分析脱离了上下文的具体内容，仅取决于其长度。我们证明，随着上下文长度的增加，基于 RoPE 的注意力变得不可预测，并失去了对其有效性至关重要的两个属性。首先，它失去了局部性偏见：RoPE 不太可能比更远的位置更青睐较近的位置。其次，它失去了标记相关性的一致性：在一个位置获得比替代选项更高的关注分数的关键向量可能在另一位置获得较低的分数。在这两种情况下，失败的概率都接近 0.5，并不比随机猜测好。我们进一步证明，当关键令牌移动到不同的位置，甚至被不同的令牌替换时，注意力分数可以保持不变，这表明无法区分位置或令牌。调整 RoPE 基础会权衡区分头寸和区分代币，但不能同时保留两者。增加 RoPE 基础超参数是当今长上下文模型中的常见做法，有助于区分不同的 token，但不可避免地牺牲了区分位置的能力。我们的实证分析表明，多头、多层架构不足以克服这些限制。我们的研究结果表明，未来的 Transformer 长上下文语言模型可能需要编码位置和标记顺序的全新机制。",
+      "authors": "Yufeng Du, Phillip Harris, Minyang Tian, Eliu A Huerta, Srikanth Ronanki, Subendhu Rongali, Aram Galstyan, Hao Peng",
+      "url": "https://huggingface.co/papers/2605.15514",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.15514"
+      }
+    },
+    {
+      "id": "2605.19305",
+      "title": "Matérn Noise for Triangulation-Agnostic Flow Matching on Meshes",
+      "title_zh": "用于网格上与三角测量无关的流匹配的 Matérn 噪声",
+      "description": "This paper tackles the task of learning to generate signals over triangle meshes in a triangulation-agnostic manner, meaning the trained model can be applied to different meshes and triangulations effectively. Practically, the paper adapts the flow matching (FM) paradigm to a mesh-based, triangulation-agnostic setting. Theoretically, it proposes a specific noise distribution which is triangulation agnostic, to be used inside the FM model's denoising process. While noise distributions are usually trivial to devise for, e.g., images, devising a triangulation-agnostic distribution proves to be a much more difficult task. We formulate a mathematical definition of triangulation agnosticism of distributions, via their spectrum. We then show that a discretization of a specific Gaussian random field called a Matérn process holds these desired properties, and provides a simple and efficient sampling algorithm. We use it as our noise model, and adapt FM to the triangulation-agnostic setting by using a state-of-the-art approach for learning signals on meshes in the gradient domain -- PoissonNet -- as the denoiser. We conduct experiments on elaborate tasks such as sampling elastic rest states, and generating poses of humanoids. Our method is shown to be capable of producing highly realistic results for meshes of over one million triangles, significantly exceeding the state-of-the-art in quality and diversity.",
+      "description_zh": "本文解决了学习以与三角测量无关的方式在三角形网格上生成信号的任务，这意味着训练后的模型可以有效地应用于不同的网格和三角测量。实际上，本文将流匹配（FM）范式应用于基于网格、三角测量无关的设置。理论上，它提出了一种与三角测量无关的特定噪声分布，用于 FM 模型的去噪过程。虽然噪声分布的设计通常很简单，例如图像，但设计与三角测量无关的分布被证明是一项困难得多的任务。我们通过分布的谱制定了分布三角测量不可知论的数学定义。然后我们证明，称为 Matérn 过程的特定高斯随机场的离散化具有这些所需的属性，并提供了一种简单而有效的采样算法。我们使用它作为我们的噪声模型，并通过使用最先进的方法来学习梯度域中网格上的信号 - PoissonNet - 作为降噪器，使 FM 适应三角测量不可知的设置。我们对复杂的任务进行实验，例如采样弹性静止状态和生成人形机器人的姿势。我们的方法被证明能够为超过一百万个三角形的网格生成高度真实的结果，在质量和多样性方面显着超过最先进的水平。",
+      "authors": "Tianshu Kuai, Arman Maesumi, Daniel Ritchie, Noam Aigerman",
+      "url": "https://huggingface.co/papers/2605.19305",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.19305"
+      }
+    },
+    {
+      "id": "2605.17026",
+      "title": "Why Do Reasoning Models Lose Coverage? The Role of Data and Forks in the Road",
+      "title_zh": "为什么推理模型会失去覆盖范围？数据和岔路口的作用",
+      "description": "Recent progress in large language models has led to the emergence of reasoning models, which have shown strong performance on complex tasks through specialized fine-tuning procedures. While these methods reliably improve pass@1 accuracy, prior works have observed that they show a coverage shrinkage behavior, where pass@k degrades relative to the base model. In this paper, we investigate the reasoning shrinkage arise under SFT-based post-training. We hypothesize that this behavior is driven by properties of the fine-tuning data, specifically related to decision points or \"forks in the road\" scenarios where model faces indecipherable patterns with multiple valid reasoning paths. To test this hypothesis, we design controlled case studies that simulate such decision-point settings, spanning indecipherable nodes in graph branching, and reasoning modes. By tracking post-training dynamics in these settings, we find that the shrinkage phenomenon is tightly correlated with the prevalence of decision-point scenarios in the training data. We also demonstrate that this shrinkage behavior can be partially mitigated through targeted data synthesis design of decision-points, and a more systematic diversity-encouraging decoding mechanism. Our findings identify data-centric factors as a key driver of shrinkage in reasoning models and highlight diversity-aware designs as an effective lever for controlling it.",
+      "description_zh": "大型语言模型的最新进展导致了推理模型的出现，这些模型通过专门的微调程序在复杂任务上表现出了强大的性能。虽然这些方法可靠地提高了 pass@1 的准确度，但之前的研究已经观察到它们表现出覆盖范围缩小的行为，其中 pass@k 相对于基本模型而言性能下降。在本文中，我们研究了基于 SFT 的后训练下出现的推理收缩。我们假设这种行为是由微调数据的属性驱动的，特别是与决策点或“岔路口”场景相关，其中模型面临具有多个有效推理路径的难以理解的模式。为了检验这一假设，我们设计了模拟此类决策点设置的受控案例研究，跨越图分支和推理模式中难以理解的节点。通过跟踪这些设置中的训练后动态，我们发现收缩现象与训练数据中决策点场景的普遍性密切相关。我们还证明，通过决策点的有针对性的数据合成设计和更系统的鼓励多样性的解码机制可以部分缓解这种收缩行为。我们的研究结果表明，以数据为中心���因素是推理模型收缩的关键驱动因素，并强调多样性意识设计是控制模型收缩的有效杠杆。",
+      "authors": "Ngoc-Hieu Nguyen, Parshin Shojaee, Phuc Minh Nguyen, Nan Zhang, Chandan K Reddy, Khoa D Doan, Rui Zhang",
+      "url": "https://huggingface.co/papers/2605.17026",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.17026"
+      }
+    },
+    {
+      "id": "2605.17734",
+      "title": "Harnessing LLM Agents with Skill Programs",
+      "title_zh": "通过技能计划利用 LLM 代理人",
+      "description": "Equipping LLM agents with reusable skills derived from past experience has become a popular and successful approach for tackling complex and long-horizon tasks. However, such lessons are often encoded as textual guidance that remains largely advisory, lacking explicit mechanisms for when and how to intervene in the agent loop. To bridge the gap, we introduce HASP(Harnessing LLM Agents with Skill Programs), a new framework that upgrades skills into executable Program Functions (PFs). Rather than offering passive advice, PFs act as executable guardrails that activate on failure-prone states and modify the next action or inject corrective context. HASP is highly modular: it can be applied at inference time for direct agent-loop intervention, during post-training to provide structured supervision, or for self-improvement by evolving validated, teacher-reviewed PFs. Empirically, HASP drives substantial gains compared to both training-free and training-based methods on web-search, math reasoning, and coding tasks. For example, on web-search reasoning, inference-time PFs alone improve the average performance by 25% compared to (multi-loop) ReAct Agent, while post-training and controlled evolution achieve a 30.4% gain over Search-R1. To provide deeper insights into HASP, our mechanism analysis reveals how PFs trigger and intervene, how skills are internalized, and the requirement for stable skill library evolution.",
+      "description_zh": "为LLM代理人配备源自过去经验的可重用技能，已成为解决复杂且长期任务的流行且成功的方法。然而，此类经验教训通常被编码为文本指导，大部分仍为建议性的，缺乏何时以及如何干预代理循环的明确机制。为了弥补这一差距，我们引入了HASP（Harnessing LLM Agents with Skill Programs），这是一个将技能升级为可执行程序功能（PF）的新框架。 PF 不是提供被动建议，而是充当可执行的护栏，在容易失败的状态下激活并修改下一步操作或注入纠正上下文。 HASP 是高度模块化的：它可以在推理时应用于直接代理循环干预，在训练后提供结构化监督，或通过发展经过验证、教师审查的 PF 来进行自我改进。根据经验，与免培训和基于培训的方法相比，HASP 在网络搜索、数学推理和编码任务方面带来了显着的收益。例如，在网络搜索推理中，与（多循环）ReAct Agent 相比，仅推理时间 PF 的平均性能就提高了 25%，而训练后和受控进化则比 Search-R1 提高了 30.4%。为了更深入地了解HASP，我们的机制分析揭示了PF如何触发和干预、技能如何内化以及稳定技能库演化的要求。",
+      "authors": "Hongjun Liu, Yifei Ming, Shafiq Joty, Chen Zhao",
+      "url": "https://huggingface.co/papers/2605.17734",
+      "score": 21,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "21",
+        "paperId": "2605.17734"
+      }
+    },
+    {
+      "id": "2605.14842",
+      "title": "Editor's Choice: Evaluating Abstract Intent in Image Editing through Atomic Entity Analysis",
+      "title_zh": "编辑推荐：通过原子实体分析评估图像编辑中的抽象意图",
+      "description": "Humans naturally communicate through abstract concepts like \"mood\". However, current image editing benchmarks focus primarily on explicit, literal commands, leaving abstract instructions largely underexplored. In this work, we first formalize the definition and taxonomy of abstract image editing. To measure instruction-following in this challenging domain, we introduce Entity-Rubrics, a framework that breaks down abstract edits into individual, entity-level assessments and achieves strong correlation with human judgment. Alongside this framework, we contribute AbstractEdit, the first benchmark dedicated to abstract image editing across diverse real-world scenes. Evaluating 11 leading models on this dataset reveals a fundamental challenge: standard architectures struggle to balance intent and preservation, commonly defaulting to under-editing or over-editing. Our analysis demonstrates that driving meaningful improvements relies heavily on integrating advanced LLM text encoders and iterative thinking. Looking forward, our entity-based paradigm can generalize beyond assessment to serve as a reward model, enable models to correctly interpret abstract communication, or highlight specific failures in test-time critique loops. Ultimately, we hope this work serves as a stepping stone toward seamless multimodal interaction, closing the gap between rigid machine execution and the natural, open-ended way humans communicate.",
+      "description_zh": "人类自然地通过“情绪”等抽象概念进行交流。然而，当前的图像编辑基准主要关注明确的文字命令，而抽象指令在很大程度上尚未得到充分探索。在这项工作中，我们首先正式确定了抽象图像编辑的定义和分类。为了衡量这个具有挑战性的领域中的指令遵循情况，我们引入了 Entity-Rubrics，这是一个框架，可将抽象编辑分解为单独的实体级评估，并实现与人类判断的强相关性。除了这个框架之外，我们还贡献了 AbstractEdit，这是第一个致力于跨不��现实世界场景进行抽象图像编辑的基准测试。在此数据集上评估 11 个领先模型揭示了一个根本性的挑战：标准架构难以平衡意图和保存，通常会默认编辑不足或过度编辑。我们的分析表明，推动有意义的改进在很大程度上依赖于集成先进的 LLM 文本编码器和迭代思维。展望未来，我们基于实体的范式可以推广到评估之外，作为奖励模型，使模型能够正确解释抽象通信，或突出测试时批评循环中的特定失败。最终，我们希望这项工作成为无缝多模式交互的基石，缩小严格的机器执行与自然、开放的人类交流方式之间的差距。",
+      "authors": "Mor Ventura, Roy Hirsch, Yonatan Bitton, Regev Cohen, Roi Reichart",
+      "url": "https://huggingface.co/papers/2605.14842",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.14842"
+      }
+    },
+    {
+      "id": "2605.19786",
+      "title": "Fast 4D Mesh Generation by Spatio-Temporal Attention Chains",
+      "title_zh": "通过时空注意力链快速生成 4D 网格",
+      "description": "4D mesh generation has recently emerged as a powerful paradigm for recovering dynamic 3D structure from videos, but existing methods remain slow, computationally expensive, and difficult to scale to longer sequences. We introduce a training-free approach that accelerates 4D mesh generation while improving temporal correspondence quality. Our key observation is that temporal correspondences emerge inside a 4D backbone long before its generated meshes become visually accurate. We exploit this with a general framework we call Spatio-Temporal Attention Chain which propagates information across space and time. Starting from vertices on an anchor mesh, the chain maps vertices to latent tokens. It then follows temporal correspondences in latent space, and recovers frame-specific vertices through latent-to-vertex attention. This design avoids expensive explicit matching while preserving anchor mesh details and thereby improving dynamic mesh geometry and temporal consistency.\n  Compared to state-of-the-art, our method generates a 4D mesh in 9 seconds, achieving a 13times speedup while producing higher-quality results. Moreover, our approach scales to videos up to 16times longer without degrading mesh quality. Beyond generation, the improved correspondences enable competitive zero-shot performance on two downstream tasks: 2D object tracking and 4D tracking. We further show that our framework enables reliable camera estimation, a capability not supported by prior 4D mesh generation methods.",
+      "description_zh": "4D 网格生成最近已成为从视频中恢复动态 3D 结构的强大范例，但现有方法仍然缓慢、计算成本昂贵，并且难以扩展到更长的序列。我们引入了一种免训练方法，可加速 4D 网格生成，同时提高时间对应质量。我们的主要观察结果是，早在生成的网格在视觉上变得准确之前，时间对应关系就出现在 4D 主干内部。我们通过一个称为时空注意力链的通用框架来利用这一点，该框架跨空间和时间传播信息。从锚网格上的顶点开始，链将顶点映射到潜在标记。然后，它遵循潜在空间中的时间对应关系，并通过潜在到顶点的注意力恢复特定于帧的顶点。这种设计避免了昂贵的显式匹配，同时保留了锚定网格细节，从而提高了动态网格几何形状和时间一致性。\n  与最先进的方法相比，我们的方法可在 9 秒内生成 4D 网格，实现了 13 倍的加速，同时产生了更高质量的结果。此外，我们的方法可将视频扩展至长达 16 倍，而不会降低网格质量。除了生成之外，改进的对应关系还可以在两个下游任务上实现具有竞争力的零样本性能：2D 对象跟踪和 4D 跟踪。我们进一步表明，我们的框架能够实现可靠的相机估计，这是先前 4D 网格生成方法不支持的功能。",
+      "authors": "Dvir Samuel, Yuval Atzmon, Gal Chechik, Yoni Kasten",
+      "url": "https://huggingface.co/papers/2605.19786",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2605.19786"
+      }
+    },
+    {
+      "id": "2605.20035",
+      "title": "Stage-adaptive Token Selection for Efficient Omni-modal LLMs",
+      "title_zh": "高效全模式LLM的阶段自适应令牌选择",
+      "description": "Omni-modal large language models (om-LLMs) achieve unified audio-visual understanding by encoding video and audio into temporally aligned token sequences interleaved at the window level. However, processing these dense non-textual tokens throughout the LLM incurs substantial computational overhead. Although training-free token selection can reduce this cost, existing methods either focus on visual-only inputs or prune om-LLM tokens only before the LLM with fixed per-modality ratios, failing to capture how cross-modal token importance evolves across layers. To address this limitation, we first analyze the layer-wise token dependency of om-LLMs. We find that visual and audio dependencies follow a block-wise pattern and gradually weaken with depth, indicating that many late-layer non-textual tokens become redundant after cross-modal fusion. Motivated by this observation, we propose SEATS, a training-free, stage-adaptive token selection method for efficient om-LLM inference. Before the LLM, SEATS removes spatiotemporal redundancy via attention-weighted diversity selection. Inside the LLM, it progressively prunes tokens across blocks and dynamically allocates the retention budget from temporal windows to modalities using query relevance scores. In late layers, it removes all remaining non-textual tokens once cross-modal fusion is complete. Experiments on Qwen2.5-Omni and Qwen3-Omni demonstrate that SEATS effectively improves inference efficiency. Retaining only 10% of visual and audio tokens, it achieves a 9.3x FLOPs reduction and a 4.8x prefill speedup while preserving 96.3% of the original performance.",
+      "description_zh": "全模态大语言模型（om-LLM）通过将视频和音频编码为在窗口级别交错的时间对齐的标记序列来实现统一的视听理解。然而，在整个 LLM 中处理这些密集的非文本标记会产生大量的计算开销。尽管免训练的令牌选择可以降低这种成本，但现有方法要么专注于仅视觉输入，要么仅在具有固定的每种模态比率的 LLM 之前修剪 om-LLM 令牌，无法捕获跨模式令牌重要性如何跨层演变。为了解决这个限制，我们首先分析 om-LLM 的分层令牌依赖性。我们发现视觉和音频依赖性遵循块方式模式并随着深度逐渐减弱，这表明许多后期层非文本标记在跨模态融合后变得冗余。受这一观察的启发，我们提出了 SEATS，这是一种无需训练、阶段自适应的标记选择方法，可实现高效的 om-LLM 推理。在 LLM 之前，SEATS 通过注意力加权多样性选择消除时空冗余。在 LLM 内部，它逐步跨块修剪令牌，并使用查询相关性分数动态地将保留预算从时间窗口分配到模式。在后面的层中，一旦跨模式融合完成，它就会删除所有剩余的非文本标记。在Qwen2.5-Omni和Qwen3-Omni上的实验表明，SEATS有效提高了推理效率。仅保留 10% 的视觉和音频令牌，它实现了 9.3 倍的 FLOP 减少和 4.8 倍的预填充加速，同时保留了 96.3% 的原始性能。",
+      "authors": "Zijie Xin, Jie Yang, Ruixiang Zhao, Tianyi Wang, Fengyun Rao, Jing Lyu, Xirong Li",
+      "url": "https://huggingface.co/papers/2605.20035",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2605.20035"
+      }
+    },
+    {
+      "id": "2605.19633",
+      "title": "optimize_anything: A Universal API for Optimizing any Text Parameter",
+      "title_zh": "Optimize_anything：用于优化任何文本参数的通用 API",
+      "description": "Can a single LLM-based optimization system match specialized tools across fundamentally different domains? We show that when optimization problems are formulated as improving a text artifact evaluated by a scoring function, a single AI-based optimization system-supporting single-task search, multi-task search with cross-problem transfer, and generalization to unseen inputs-achieves state-of-the-art results across six diverse tasks. Our system discovers agent architectures that nearly triple Gemini Flash's ARC-AGI accuracy (32.5% to 89.5%), finds scheduling algorithms that cut cloud costs by 40%, generates CUDA kernels where 87% match or beat PyTorch, and outperforms AlphaEvolve's reported circle packing solution (n=26). Ablations across three domains reveal that actionable side information yields faster convergence and substantially higher final scores than score-only feedback, and that multi-task search outperforms independent optimization given equivalent per-problem budget through cross-task transfer, with benefits scaling with the number of related tasks. Together, we show for the first time that text optimization with LLM-based search is a general-purpose problem-solving paradigm, unifying tasks traditionally requiring domain-specific algorithms under a single framework. We open-source optimize\\_anything with support for multiple backends as part of the GEPA project at https://github.com/gepa-ai/gepa .",
+      "description_zh": "单一基于LLM的优化系统可以匹配跨根本不同领域的专用工具吗？我们表明，当优化问题被表述为改进由评分函数评估的文本工件时，单个基于人工智能的优化系统（支持单任务搜索、跨问题转移的多任务搜索以及对未见过的输入的泛化）在六个不同的任务中实现了最先进的结果。我们的系统发现代理架构将 Gemini Flash 的 ARC-AGI 准确度提高了近三倍（32.5% 到 89.5%），找到了将云成本降低 40% 的调度算法，生成了 87% 匹配或击败 PyTorch 的 CUDA 内核，并且优于 AlphaEvolve 报告的循环封装解决方案（n=26）。跨三个领域的消融表明，与仅评分反馈相比，可操作的辅助信息可以产生更快的收敛速度和更高的最终分数，并且通过跨任务转移给定相同的每个问题预算，多任务搜索优于独立优化，其好处随着相关任务的数量而扩展。我们共同首次证明，基于 LLM 的搜索的文本优化是一种通用的问题解决范例，将传统上需要特定领域算法的任务统一到单一框架下。作为 GEPA 项目的一部分，我们开源了优化任何支持多个后端的东西，网址�� https://github.com/gepa-ai/gepa。",
+      "authors": "Lakshya A Agrawal, Donghyun Lee, Shangyin Tan, Wenjie Ma, Karim Elmaaroufi, Rohit Sandadi, Sanjit A. Seshia, Koushik Sen, Dan Klein, Ion Stoica, Joseph E. Gonzalez, Omar Khattab, Alexandros G. Dimakis, Matei Zaharia",
+      "url": "https://huggingface.co/papers/2605.19633",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.19633"
+      }
+    },
+    {
+      "id": "2605.14236",
+      "title": "Active Learners as Efficient PRP Rerankers",
+      "title_zh": "主动学习者作为高效的 PRP 重新排名者",
+      "description": "Pairwise Ranking Prompting (PRP) elicits pairwise preference judgments from an LLM, which are then aggregated into a ranking, usually via classical sorting algorithms. However, judgments are noisy, order-sensitive, and sometimes intransitive, so sorting assumptions do not match the setting. Because sorting aims to recover a full permutation, truncating it to meet a call budget does not produce a dependable top-K. We thus reframe PRP reranking as active learning from noisy pairwise comparisons and show that active rankers are drop-in replacements that improve NDCG@10 per call in the call-constrained regime. Our noise-robust framework also introduces a randomized-direction oracle that uses a single LLM call per pair. This approach converts systematic position bias into zero-mean noise, enabling unbiased aggregate ranking without the cost of bidirectional calls.",
+      "description_zh": "成对排名提示（PRP）从LLM中引出成对偏好判断，然后通常通过经典排序算法将其汇总成排名。然而，判断是有噪声的、顺序敏感的，有时是不及物的，因此排序假设与设置不匹配。因为排序的目的是恢复完整的排列，所以截断它以满足调用预算不会产生可靠的 top-K。因此，我们将 PRP 重新排序重新定义为从嘈杂的成对比较中进行主动学习，并表明主动排序器是直接替代品，可以在调用约束机制中提高每次调用的 NDCG@10。我们的抗噪声框架还引入了随机方向预言机，每对使用单个 LLM 调用。这种方法将系统位置偏差转换为零均值噪声，从而实现无偏差的聚合排名，而无需双向调用的成本。",
+      "authors": "Jeremías Figueiredo Paschmann, Juan Kaplan, Francisco Nattero, Santiago Barron, Juan Wisznia, Luciano del Corro",
+      "url": "https://huggingface.co/papers/2605.14236",
+      "score": 64,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "64",
+        "paperId": "2605.14236"
       }
     }
   ]
