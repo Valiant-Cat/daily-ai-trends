@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-05-20T21:22:07.364Z",
+  "updatedAt": "2026-05-21T21:15:51.753Z",
   "count": 15,
   "items": [
+    {
+      "id": "anthropics-claude-plugins-official",
+      "title": "claude-plugins-official",
+      "title_zh": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "description_zh": "由 Anthropic 管理的官方高品质 Claude 代码插件目录。",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "score": 22183,
+      "meta": {
+        "source": "github",
+        "stars": "22,183",
+        "language": "Python",
+        "repo": "anthropics/claude-plugins-official",
+        "owner": "anthropics",
+        "repoName": "claude-plugins-official"
+      }
+    },
     {
       "id": "colbymchenry-codegraph",
       "title": "codegraph",
@@ -11,50 +29,14 @@
       "description_zh": "Claude Code、Codex、Cursor 和 OpenCode 的预索引代码知识图 — 更少的标记、更少的工具调用、100% 本地化",
       "authors": "colbymchenry",
       "url": "https://github.com/colbymchenry/codegraph",
-      "score": 9169,
+      "score": 13121,
       "meta": {
         "source": "github",
-        "stars": "9,169",
+        "stars": "13,121",
         "language": "TypeScript",
         "repo": "colbymchenry/codegraph",
         "owner": "colbymchenry",
         "repoName": "codegraph"
-      }
-    },
-    {
-      "id": "Imbad0202-academic-research-skills",
-      "title": "academic-research-skills",
-      "title_zh": "academic-research-skills",
-      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-      "description_zh": "克劳德·代码的学术研究技巧：研究→写作→审阅→修改→定稿",
-      "authors": "Imbad0202",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
-      "score": 15983,
-      "meta": {
-        "source": "github",
-        "stars": "15,983",
-        "language": "Python",
-        "repo": "Imbad0202/academic-research-skills",
-        "owner": "Imbad0202",
-        "repoName": "academic-research-skills"
-      }
-    },
-    {
-      "id": "tinyhumansai-openhuman",
-      "title": "openhuman",
-      "title_zh": "openhuman",
-      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
-      "description_zh": "您的个人人工智能超级智能。私密、简单且极其强大。",
-      "authors": "tinyhumansai",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "score": 23496,
-      "meta": {
-        "source": "github",
-        "stars": "23,496",
-        "language": "Rust",
-        "repo": "tinyhumansai/openhuman",
-        "owner": "tinyhumansai",
-        "repoName": "openhuman"
       }
     },
     {
@@ -65,10 +47,10 @@
       "description_zh": "用于改进 Claude 代码行为的单个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码陷阱的观察。",
       "authors": "multica-ai",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "score": 140580,
+      "score": 142955,
       "meta": {
         "source": "github",
-        "stars": "140,580",
+        "stars": "142,955",
         "language": "Mixed",
         "repo": "multica-ai/andrej-karpathy-skills",
         "owner": "multica-ai",
@@ -76,57 +58,21 @@
       }
     },
     {
-      "id": "rohitg00-ai-engineering-from-scratch",
-      "title": "ai-engineering-from-scratch",
-      "title_zh": "ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "description_zh": "学习它。建造它。寄给别人。",
-      "authors": "rohitg00",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "score": 9416,
+      "id": "dotnet-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "Repository for skills to assist AI coding agents with .NET and C#",
+      "description_zh": "Repository for skills to assist AI coding agents with .NET and C#",
+      "authors": "dotnet",
+      "url": "https://github.com/dotnet/skills",
+      "score": 2153,
       "meta": {
         "source": "github",
-        "stars": "9,416",
-        "language": "Python",
-        "repo": "rohitg00/ai-engineering-from-scratch",
-        "owner": "rohitg00",
-        "repoName": "ai-engineering-from-scratch"
-      }
-    },
-    {
-      "id": "HKUDS-CLI-Anything",
-      "title": "CLI-Anything",
-      "title_zh": "CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
-      "authors": "HKUDS",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "score": 38465,
-      "meta": {
-        "source": "github",
-        "stars": "38,465",
-        "language": "Python",
-        "repo": "HKUDS/CLI-Anything",
-        "owner": "HKUDS",
-        "repoName": "CLI-Anything"
-      }
-    },
-    {
-      "id": "can1357-oh-my-pi",
-      "title": "oh-my-pi",
-      "title_zh": "oh-my-pi",
-      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-      "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具工具、LSP、Python、浏览器、子代理等",
-      "authors": "can1357",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "score": 5351,
-      "meta": {
-        "source": "github",
-        "stars": "5,351",
-        "language": "TypeScript",
-        "repo": "can1357/oh-my-pi",
-        "owner": "can1357",
-        "repoName": "oh-my-pi"
+        "stars": "2,153",
+        "language": "C#",
+        "repo": "dotnet/skills",
+        "owner": "dotnet",
+        "repoName": "skills"
       }
     },
     {
@@ -137,10 +83,10 @@
       "description_zh": "有效的代理技能框架和软件开发方法。",
       "authors": "obra",
       "url": "https://github.com/obra/superpowers",
-      "score": 199910,
+      "score": 201405,
       "meta": {
         "source": "github",
-        "stars": "199,910",
+        "stars": "201,405",
         "language": "Shell",
         "repo": "obra/superpowers",
         "owner": "obra",
@@ -148,39 +94,21 @@
       }
     },
     {
-      "id": "anthropics-claude-plugins-official",
-      "title": "claude-plugins-official",
-      "title_zh": "claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "description_zh": "由 Anthropic 管理的官方高品质 Claude 代码插件目录。",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "score": 20712,
+      "id": "HKUDS-CLI-Anything",
+      "title": "CLI-Anything",
+      "title_zh": "CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "score": 39050,
       "meta": {
         "source": "github",
-        "stars": "20,712",
+        "stars": "39,050",
         "language": "Python",
-        "repo": "anthropics/claude-plugins-official",
-        "owner": "anthropics",
-        "repoName": "claude-plugins-official"
-      }
-    },
-    {
-      "id": "msitarzewski-agency-agents",
-      "title": "agency-agents",
-      "title_zh": "agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "description_zh": "触手可及的完整人工智能机构 - 从前端向导到 Reddit 社区忍者，从奇思妙想的注入者到现实检查者。每个代理都是一位具有个性、流程和经过验证的可交付成果的专业专家。",
-      "authors": "msitarzewski",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "score": 102747,
-      "meta": {
-        "source": "github",
-        "stars": "102,747",
-        "language": "Shell",
-        "repo": "msitarzewski/agency-agents",
-        "owner": "msitarzewski",
-        "repoName": "agency-agents"
+        "repo": "HKUDS/CLI-Anything",
+        "owner": "HKUDS",
+        "repoName": "CLI-Anything"
       }
     },
     {
@@ -191,10 +119,10 @@
       "description_zh": "免费、开源、自托管 WhatsApp API 网关",
       "authors": "rmyndharis",
       "url": "https://github.com/rmyndharis/OpenWA",
-      "score": 4755,
+      "score": 5359,
       "meta": {
         "source": "github",
-        "stars": "4,755",
+        "stars": "5,359",
         "language": "TypeScript",
         "repo": "rmyndharis/OpenWA",
         "owner": "rmyndharis",
@@ -202,75 +130,147 @@
       }
     },
     {
-      "id": "truelockmc-streambert",
-      "title": "streambert",
-      "title_zh": "streambert",
-      "description": "A cross-platform Electron Desktop App to stream and download any Movie, TV Series or Anime in the World. Zero Ads and Tracking",
-      "description_zh": "跨平台 Electron 桌面应用程序，用于流式传输和下载世界上的任何电影、电视剧或动漫。零广告和跟踪",
-      "authors": "truelockmc",
-      "url": "https://github.com/truelockmc/streambert",
-      "score": 2882,
+      "id": "ChromeDevTools-chrome-devtools-mcp",
+      "title": "chrome-devtools-mcp",
+      "title_zh": "chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "description_zh": "用于编码代理的 Chrome DevTools",
+      "authors": "ChromeDevTools",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "score": 40437,
       "meta": {
         "source": "github",
-        "stars": "2,882",
-        "language": "JavaScript",
-        "repo": "truelockmc/streambert",
-        "owner": "truelockmc",
-        "repoName": "streambert"
-      }
-    },
-    {
-      "id": "opentoonz-opentoonz",
-      "title": "opentoonz",
-      "title_zh": "opentoonz",
-      "description": "OpenToonz - An open-source full-featured 2D animation creation software",
-      "description_zh": "OpenToonz - 一款开源的全功能2D动画创作软件",
-      "authors": "opentoonz",
-      "url": "https://github.com/opentoonz/opentoonz",
-      "score": 6279,
-      "meta": {
-        "source": "github",
-        "stars": "6,279",
-        "language": "C++",
-        "repo": "opentoonz/opentoonz",
-        "owner": "opentoonz",
-        "repoName": "opentoonz"
-      }
-    },
-    {
-      "id": "zakirullin-files.md",
-      "title": "files.md",
-      "title_zh": "files.md",
-      "description": "🌱 Private, quiet space for thinking. A simple app for your .md files.",
-      "description_zh": "🌱私密、安静的思考空间。一个用于 .md 文件的简单应用程序。",
-      "authors": "zakirullin",
-      "url": "https://github.com/zakirullin/files.md",
-      "score": 2167,
-      "meta": {
-        "source": "github",
-        "stars": "2,167",
-        "language": "Go",
-        "repo": "zakirullin/files.md",
-        "owner": "zakirullin",
-        "repoName": "files.md"
-      }
-    },
-    {
-      "id": "rohitg00-agentmemory",
-      "title": "agentmemory",
-      "title_zh": "agentmemory",
-      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "description_zh": "#1 基于真实世界基准的人工智能编码代理的持久内存",
-      "authors": "rohitg00",
-      "url": "https://github.com/rohitg00/agentmemory",
-      "score": 15027,
-      "meta": {
-        "source": "github",
-        "stars": "15,027",
+        "stars": "40,437",
         "language": "TypeScript",
-        "repo": "rohitg00/agentmemory",
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "owner": "ChromeDevTools",
+        "repoName": "chrome-devtools-mcp"
+      }
+    },
+    {
+      "id": "rohitg00-ai-engineering-from-scratch",
+      "title": "ai-engineering-from-scratch",
+      "title_zh": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "description_zh": "学习它。建造它。寄给别人。",
+      "authors": "rohitg00",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "score": 10634,
+      "meta": {
+        "source": "github",
+        "stars": "10,634",
+        "language": "Python",
+        "repo": "rohitg00/ai-engineering-from-scratch",
         "owner": "rohitg00",
-        "repoName": "agentmemory"
+        "repoName": "ai-engineering-from-scratch"
+      }
+    },
+    {
+      "id": "teng-lin-notebooklm-py",
+      "title": "notebooklm-py",
+      "title_zh": "notebooklm-py",
+      "description": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+      "description_zh": "Google NotebookLM 的非官方 Python API 和代理技能。通过 Python、CLI 和 AI 代理（如 Claude Code、Codex 和 OpenClaw）以完全编程方式访问 NotebookLM 的功能（包括 Web UI 未公开的功能）。",
+      "authors": "teng-lin",
+      "url": "https://github.com/teng-lin/notebooklm-py",
+      "score": 14332,
+      "meta": {
+        "source": "github",
+        "stars": "14,332",
+        "language": "Python",
+        "repo": "teng-lin/notebooklm-py",
+        "owner": "teng-lin",
+        "repoName": "notebooklm-py"
+      }
+    },
+    {
+      "id": "can1357-oh-my-pi",
+      "title": "oh-my-pi",
+      "title_zh": "oh-my-pi",
+      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具工具、LSP、Python、浏览器、子代理等",
+      "authors": "can1357",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "score": 5809,
+      "meta": {
+        "source": "github",
+        "stars": "5,809",
+        "language": "TypeScript",
+        "repo": "can1357/oh-my-pi",
+        "owner": "can1357",
+        "repoName": "oh-my-pi"
+      }
+    },
+    {
+      "id": "antoinezambelli-forge",
+      "title": "forge",
+      "title_zh": "forge",
+      "description": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
+      "description_zh": "用于自托管 LLM 工具调用和多步骤代理工作流程的 Python 框架",
+      "authors": "antoinezambelli",
+      "url": "https://github.com/antoinezambelli/forge",
+      "score": 1445,
+      "meta": {
+        "source": "github",
+        "stars": "1,445",
+        "language": "Python",
+        "repo": "antoinezambelli/forge",
+        "owner": "antoinezambelli",
+        "repoName": "forge"
+      }
+    },
+    {
+      "id": "multica-ai-multica",
+      "title": "multica",
+      "title_zh": "multica",
+      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+      "description_zh": "开源托管代理平台。将编码代理变成真正的队友 - 分配任务、跟踪进度、复合技能。",
+      "authors": "multica-ai",
+      "url": "https://github.com/multica-ai/multica",
+      "score": 30646,
+      "meta": {
+        "source": "github",
+        "stars": "30,646",
+        "language": "Go",
+        "repo": "multica-ai/multica",
+        "owner": "multica-ai",
+        "repoName": "multica"
+      }
+    },
+    {
+      "id": "Imbad0202-academic-research-skills",
+      "title": "academic-research-skills",
+      "title_zh": "academic-research-skills",
+      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "description_zh": "克劳德·代码的学术研究技巧：研究→写作→审阅→修改→定稿",
+      "authors": "Imbad0202",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "score": 18071,
+      "meta": {
+        "source": "github",
+        "stars": "18,071",
+        "language": "Python",
+        "repo": "Imbad0202/academic-research-skills",
+        "owner": "Imbad0202",
+        "repoName": "academic-research-skills"
+      }
+    },
+    {
+      "id": "trimstray-the-book-of-secret-knowledge",
+      "title": "the-book-of-secret-knowledge",
+      "title_zh": "the-book-of-secret-knowledge",
+      "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+      "description_zh": "一系列鼓舞人心的列表、手册、备忘单、博客、黑客、单行话、cli/web 工具等。",
+      "authors": "trimstray",
+      "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+      "score": 222323,
+      "meta": {
+        "source": "github",
+        "stars": "222,323",
+        "language": "Mixed",
+        "repo": "trimstray/the-book-of-secret-knowledge",
+        "owner": "trimstray",
+        "repoName": "the-book-of-secret-knowledge"
       }
     }
   ]

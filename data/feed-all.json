@@ -1,10 +1,28 @@
 {
-  "generatedAt": "2026-05-20T21:22:05.333Z",
+  "generatedAt": "2026-05-21T21:15:46.634Z",
   "github": {
     "source": "github",
-    "updatedAt": "2026-05-20T21:22:07.364Z",
+    "updatedAt": "2026-05-21T21:15:51.753Z",
     "count": 15,
     "items": [
+      {
+        "id": "anthropics-claude-plugins-official",
+        "title": "claude-plugins-official",
+        "title_zh": "claude-plugins-official",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+        "description_zh": "由 Anthropic 管理的官方高品质 Claude 代码插件目录。",
+        "authors": "anthropics",
+        "url": "https://github.com/anthropics/claude-plugins-official",
+        "score": 22183,
+        "meta": {
+          "source": "github",
+          "stars": "22,183",
+          "language": "Python",
+          "repo": "anthropics/claude-plugins-official",
+          "owner": "anthropics",
+          "repoName": "claude-plugins-official"
+        }
+      },
       {
         "id": "colbymchenry-codegraph",
         "title": "codegraph",
@@ -13,50 +31,14 @@
         "description_zh": "Claude Code、Codex、Cursor 和 OpenCode 的预索引代码知识图 — 更少的标记、更少的工具调用、100% 本地化",
         "authors": "colbymchenry",
         "url": "https://github.com/colbymchenry/codegraph",
-        "score": 9169,
+        "score": 13121,
         "meta": {
           "source": "github",
-          "stars": "9,169",
+          "stars": "13,121",
           "language": "TypeScript",
           "repo": "colbymchenry/codegraph",
           "owner": "colbymchenry",
           "repoName": "codegraph"
-        }
-      },
-      {
-        "id": "Imbad0202-academic-research-skills",
-        "title": "academic-research-skills",
-        "title_zh": "academic-research-skills",
-        "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-        "description_zh": "克劳德·代码的学术研究技巧：研究→写作→审阅→修改→定稿",
-        "authors": "Imbad0202",
-        "url": "https://github.com/Imbad0202/academic-research-skills",
-        "score": 15983,
-        "meta": {
-          "source": "github",
-          "stars": "15,983",
-          "language": "Python",
-          "repo": "Imbad0202/academic-research-skills",
-          "owner": "Imbad0202",
-          "repoName": "academic-research-skills"
-        }
-      },
-      {
-        "id": "tinyhumansai-openhuman",
-        "title": "openhuman",
-        "title_zh": "openhuman",
-        "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
-        "description_zh": "您的个人人工智能超级智能。私密、简单且极其强大。",
-        "authors": "tinyhumansai",
-        "url": "https://github.com/tinyhumansai/openhuman",
-        "score": 23496,
-        "meta": {
-          "source": "github",
-          "stars": "23,496",
-          "language": "Rust",
-          "repo": "tinyhumansai/openhuman",
-          "owner": "tinyhumansai",
-          "repoName": "openhuman"
         }
       },
       {
@@ -67,10 +49,10 @@
         "description_zh": "用于改进 Claude 代码行为的单个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码陷阱的观察。",
         "authors": "multica-ai",
         "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-        "score": 140580,
+        "score": 142955,
         "meta": {
           "source": "github",
-          "stars": "140,580",
+          "stars": "142,955",
           "language": "Mixed",
           "repo": "multica-ai/andrej-karpathy-skills",
           "owner": "multica-ai",
@@ -78,57 +60,21 @@
         }
       },
       {
-        "id": "rohitg00-ai-engineering-from-scratch",
-        "title": "ai-engineering-from-scratch",
-        "title_zh": "ai-engineering-from-scratch",
-        "description": "Learn it. Build it. Ship it for others.",
-        "description_zh": "学习它。建造它。寄给别人。",
-        "authors": "rohitg00",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-        "score": 9416,
+        "id": "dotnet-skills",
+        "title": "skills",
+        "title_zh": "skills",
+        "description": "Repository for skills to assist AI coding agents with .NET and C#",
+        "description_zh": "Repository for skills to assist AI coding agents with .NET and C#",
+        "authors": "dotnet",
+        "url": "https://github.com/dotnet/skills",
+        "score": 2153,
         "meta": {
           "source": "github",
-          "stars": "9,416",
-          "language": "Python",
-          "repo": "rohitg00/ai-engineering-from-scratch",
-          "owner": "rohitg00",
-          "repoName": "ai-engineering-from-scratch"
-        }
-      },
-      {
-        "id": "HKUDS-CLI-Anything",
-        "title": "CLI-Anything",
-        "title_zh": "CLI-Anything",
-        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-        "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
-        "authors": "HKUDS",
-        "url": "https://github.com/HKUDS/CLI-Anything",
-        "score": 38465,
-        "meta": {
-          "source": "github",
-          "stars": "38,465",
-          "language": "Python",
-          "repo": "HKUDS/CLI-Anything",
-          "owner": "HKUDS",
-          "repoName": "CLI-Anything"
-        }
-      },
-      {
-        "id": "can1357-oh-my-pi",
-        "title": "oh-my-pi",
-        "title_zh": "oh-my-pi",
-        "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-        "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具工具、LSP、Python、浏览器、子代理等",
-        "authors": "can1357",
-        "url": "https://github.com/can1357/oh-my-pi",
-        "score": 5351,
-        "meta": {
-          "source": "github",
-          "stars": "5,351",
-          "language": "TypeScript",
-          "repo": "can1357/oh-my-pi",
-          "owner": "can1357",
-          "repoName": "oh-my-pi"
+          "stars": "2,153",
+          "language": "C#",
+          "repo": "dotnet/skills",
+          "owner": "dotnet",
+          "repoName": "skills"
         }
       },
       {
@@ -139,10 +85,10 @@
         "description_zh": "有效的代理技能框架和软件开发方法。",
         "authors": "obra",
         "url": "https://github.com/obra/superpowers",
-        "score": 199910,
+        "score": 201405,
         "meta": {
           "source": "github",
-          "stars": "199,910",
+          "stars": "201,405",
           "language": "Shell",
           "repo": "obra/superpowers",
           "owner": "obra",
@@ -150,39 +96,21 @@
         }
       },
       {
-        "id": "anthropics-claude-plugins-official",
-        "title": "claude-plugins-official",
-        "title_zh": "claude-plugins-official",
-        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-        "description_zh": "由 Anthropic 管理的官方高品质 Claude 代码插件目录。",
-        "authors": "anthropics",
-        "url": "https://github.com/anthropics/claude-plugins-official",
-        "score": 20712,
+        "id": "HKUDS-CLI-Anything",
+        "title": "CLI-Anything",
+        "title_zh": "CLI-Anything",
+        "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+        "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
+        "authors": "HKUDS",
+        "url": "https://github.com/HKUDS/CLI-Anything",
+        "score": 39050,
         "meta": {
           "source": "github",
-          "stars": "20,712",
+          "stars": "39,050",
           "language": "Python",
-          "repo": "anthropics/claude-plugins-official",
-          "owner": "anthropics",
-          "repoName": "claude-plugins-official"
-        }
-      },
-      {
-        "id": "msitarzewski-agency-agents",
-        "title": "agency-agents",
-        "title_zh": "agency-agents",
-        "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-        "description_zh": "触手可及的完整人工智能机构 - 从前端向导到 Reddit 社区忍者，从奇思妙想的注入者到现实检查者。每个代理都是一位具有个性、流程和经过验证的可交付成果的专业专家。",
-        "authors": "msitarzewski",
-        "url": "https://github.com/msitarzewski/agency-agents",
-        "score": 102747,
-        "meta": {
-          "source": "github",
-          "stars": "102,747",
-          "language": "Shell",
-          "repo": "msitarzewski/agency-agents",
-          "owner": "msitarzewski",
-          "repoName": "agency-agents"
+          "repo": "HKUDS/CLI-Anything",
+          "owner": "HKUDS",
+          "repoName": "CLI-Anything"
         }
       },
       {
@@ -193,10 +121,10 @@
         "description_zh": "免费、开源、自托管 WhatsApp API 网关",
         "authors": "rmyndharis",
         "url": "https://github.com/rmyndharis/OpenWA",
-        "score": 4755,
+        "score": 5359,
         "meta": {
           "source": "github",
-          "stars": "4,755",
+          "stars": "5,359",
           "language": "TypeScript",
           "repo": "rmyndharis/OpenWA",
           "owner": "rmyndharis",
@@ -204,629 +132,701 @@
         }
       },
       {
-        "id": "truelockmc-streambert",
-        "title": "streambert",
-        "title_zh": "streambert",
-        "description": "A cross-platform Electron Desktop App to stream and download any Movie, TV Series or Anime in the World. Zero Ads and Tracking",
-        "description_zh": "跨平台 Electron 桌面应用程序，用于流式传输和下载世界上的任何电影、电视剧或动漫。零广告和跟踪",
-        "authors": "truelockmc",
-        "url": "https://github.com/truelockmc/streambert",
-        "score": 2882,
+        "id": "ChromeDevTools-chrome-devtools-mcp",
+        "title": "chrome-devtools-mcp",
+        "title_zh": "chrome-devtools-mcp",
+        "description": "Chrome DevTools for coding agents",
+        "description_zh": "用于编码代理的 Chrome DevTools",
+        "authors": "ChromeDevTools",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "score": 40437,
         "meta": {
           "source": "github",
-          "stars": "2,882",
-          "language": "JavaScript",
-          "repo": "truelockmc/streambert",
-          "owner": "truelockmc",
-          "repoName": "streambert"
-        }
-      },
-      {
-        "id": "opentoonz-opentoonz",
-        "title": "opentoonz",
-        "title_zh": "opentoonz",
-        "description": "OpenToonz - An open-source full-featured 2D animation creation software",
-        "description_zh": "OpenToonz - 一款开源的全功能2D动画创作软件",
-        "authors": "opentoonz",
-        "url": "https://github.com/opentoonz/opentoonz",
-        "score": 6279,
-        "meta": {
-          "source": "github",
-          "stars": "6,279",
-          "language": "C++",
-          "repo": "opentoonz/opentoonz",
-          "owner": "opentoonz",
-          "repoName": "opentoonz"
-        }
-      },
-      {
-        "id": "zakirullin-files.md",
-        "title": "files.md",
-        "title_zh": "files.md",
-        "description": "🌱 Private, quiet space for thinking. A simple app for your .md files.",
-        "description_zh": "🌱私密、安静的思考空间。一个用于 .md 文件的简单应用程序。",
-        "authors": "zakirullin",
-        "url": "https://github.com/zakirullin/files.md",
-        "score": 2167,
-        "meta": {
-          "source": "github",
-          "stars": "2,167",
-          "language": "Go",
-          "repo": "zakirullin/files.md",
-          "owner": "zakirullin",
-          "repoName": "files.md"
-        }
-      },
-      {
-        "id": "rohitg00-agentmemory",
-        "title": "agentmemory",
-        "title_zh": "agentmemory",
-        "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-        "description_zh": "#1 基于真实世界基准的人工智能编码代理的持久内存",
-        "authors": "rohitg00",
-        "url": "https://github.com/rohitg00/agentmemory",
-        "score": 15027,
-        "meta": {
-          "source": "github",
-          "stars": "15,027",
+          "stars": "40,437",
           "language": "TypeScript",
-          "repo": "rohitg00/agentmemory",
+          "repo": "ChromeDevTools/chrome-devtools-mcp",
+          "owner": "ChromeDevTools",
+          "repoName": "chrome-devtools-mcp"
+        }
+      },
+      {
+        "id": "rohitg00-ai-engineering-from-scratch",
+        "title": "ai-engineering-from-scratch",
+        "title_zh": "ai-engineering-from-scratch",
+        "description": "Learn it. Build it. Ship it for others.",
+        "description_zh": "学习它。建造它。寄给别人。",
+        "authors": "rohitg00",
+        "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+        "score": 10634,
+        "meta": {
+          "source": "github",
+          "stars": "10,634",
+          "language": "Python",
+          "repo": "rohitg00/ai-engineering-from-scratch",
           "owner": "rohitg00",
-          "repoName": "agentmemory"
+          "repoName": "ai-engineering-from-scratch"
+        }
+      },
+      {
+        "id": "teng-lin-notebooklm-py",
+        "title": "notebooklm-py",
+        "title_zh": "notebooklm-py",
+        "description": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+        "description_zh": "Google NotebookLM 的非官方 Python API 和代理技能。通过 Python、CLI 和 AI 代理（如 Claude Code、Codex 和 OpenClaw）以完全编程方式访问 NotebookLM 的功能（包括 Web UI 未公开的功能）。",
+        "authors": "teng-lin",
+        "url": "https://github.com/teng-lin/notebooklm-py",
+        "score": 14332,
+        "meta": {
+          "source": "github",
+          "stars": "14,332",
+          "language": "Python",
+          "repo": "teng-lin/notebooklm-py",
+          "owner": "teng-lin",
+          "repoName": "notebooklm-py"
+        }
+      },
+      {
+        "id": "can1357-oh-my-pi",
+        "title": "oh-my-pi",
+        "title_zh": "oh-my-pi",
+        "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+        "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具工具、LSP、Python、浏览器、子代理等",
+        "authors": "can1357",
+        "url": "https://github.com/can1357/oh-my-pi",
+        "score": 5809,
+        "meta": {
+          "source": "github",
+          "stars": "5,809",
+          "language": "TypeScript",
+          "repo": "can1357/oh-my-pi",
+          "owner": "can1357",
+          "repoName": "oh-my-pi"
+        }
+      },
+      {
+        "id": "antoinezambelli-forge",
+        "title": "forge",
+        "title_zh": "forge",
+        "description": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
+        "description_zh": "用于自托管 LLM 工具调用和多步骤代理工作流程的 Python 框架",
+        "authors": "antoinezambelli",
+        "url": "https://github.com/antoinezambelli/forge",
+        "score": 1445,
+        "meta": {
+          "source": "github",
+          "stars": "1,445",
+          "language": "Python",
+          "repo": "antoinezambelli/forge",
+          "owner": "antoinezambelli",
+          "repoName": "forge"
+        }
+      },
+      {
+        "id": "multica-ai-multica",
+        "title": "multica",
+        "title_zh": "multica",
+        "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+        "description_zh": "开源托管代理平台。将编码代理变成真正的队友 - 分配任务、跟踪进度、复合技能。",
+        "authors": "multica-ai",
+        "url": "https://github.com/multica-ai/multica",
+        "score": 30646,
+        "meta": {
+          "source": "github",
+          "stars": "30,646",
+          "language": "Go",
+          "repo": "multica-ai/multica",
+          "owner": "multica-ai",
+          "repoName": "multica"
+        }
+      },
+      {
+        "id": "Imbad0202-academic-research-skills",
+        "title": "academic-research-skills",
+        "title_zh": "academic-research-skills",
+        "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+        "description_zh": "克劳德·代码的学术研究技巧：研究→写作→审阅→修改→定稿",
+        "authors": "Imbad0202",
+        "url": "https://github.com/Imbad0202/academic-research-skills",
+        "score": 18071,
+        "meta": {
+          "source": "github",
+          "stars": "18,071",
+          "language": "Python",
+          "repo": "Imbad0202/academic-research-skills",
+          "owner": "Imbad0202",
+          "repoName": "academic-research-skills"
+        }
+      },
+      {
+        "id": "trimstray-the-book-of-secret-knowledge",
+        "title": "the-book-of-secret-knowledge",
+        "title_zh": "the-book-of-secret-knowledge",
+        "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+        "description_zh": "一系列鼓舞人心的列表、手册、备忘单、博客、黑客、单行话、cli/web 工具等。",
+        "authors": "trimstray",
+        "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+        "score": 222323,
+        "meta": {
+          "source": "github",
+          "stars": "222,323",
+          "language": "Mixed",
+          "repo": "trimstray/the-book-of-secret-knowledge",
+          "owner": "trimstray",
+          "repoName": "the-book-of-secret-knowledge"
         }
       }
     ]
   },
   "huggingface": {
     "source": "huggingface",
-    "updatedAt": "2026-05-20T21:22:22.950Z",
+    "updatedAt": "2026-05-21T21:16:03.326Z",
     "count": 15,
     "items": [
       {
-        "id": "2605.19147",
-        "title": "Be Kind, Rewrite: Benign Projections via Rewriting Defend Against LLM Data Poisoning Attacks",
-        "title_zh": "善良，重写：通过重写的良性预测防御 LLM 数据中毒攻击",
-        "description": "Large language models (LLMs) are highly susceptible to backdoor attacks (BAs), wherein training samples are poisoned using trigger-based harmful content. Furthermore, existing defenses have proven ineffective when extensively tested across BA patterns. To better combat BAs, we explore the use of LLM rewriting as a proactive defense against data poisoning. First, we theoretically show that when LLM rewriting utilizes open-book benign samples--termed open-book benign rewriting (OBBR)--the probability of a rewritten output being benign is strictly greater than that of closed-book rewriting. Thus, OBBR neutralizes harmful content by projecting training samples to the space of benign prompts. We then show that, in contrast to previous defenses, OBBR effectively mitigates a large number of existing BAs: across five known BAs and four widely used LLMs, OBBR increases safety performance by an average 51% compared to state-of-the-art BA defenses and 25.7% compared to closed-book rewriting methods. Finally, we show that OBBR is computationally efficient relative to other BA defenses, does not degrade model performance on natural language tasks after fine-tuning, and is capable of defending against non-trigger based data poisoning attacks.",
-        "description_zh": "大型语言模型 (LLM) 非常容易受到后门攻击 (BA)，其中使用基于触发器的有害内容来毒害训练样本。此外，在跨 BA 模式进行广泛测试时，现有防御已被证明是无效的。为了更好地对抗 BA，我们探索使用 LLM 重写来主动防御数据中毒。首先，我们从理论上证明，当 LLM 重写使用开卷良性样本（称为开卷良性重写 (OBBR)）时，重写输出良性的概率严格大于闭卷重写的概率。因此，OBBR 通过将训练样本投影到良性提示的空间来中和有害内容。然后我们表明，与之前的防御措施相比，OBBR 有效地缓解了大量现有的 BA：在五个已知的 BA 和四个广泛使用的 LLM 中，与最先进的 BA 防御相比，OBBR 的安全性能平均提高了 51%，与闭卷重写方法相比，安全性能平均提高了 25.7%。最后，我们表明 OBBR 相对于其他 BA 防御而言计算效率较高，微调后不会降低自然语言任务上的模型性能，并且能够防御基于非触发的数据中毒攻击。",
-        "authors": "John T. Halloran, Noopur S. Bhatt",
-        "url": "https://huggingface.co/papers/2605.19147",
-        "score": 0,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "0",
-          "paperId": "2605.19147"
-        }
-      },
-      {
-        "id": "2605.17659",
-        "title": "Bug or Feature^2: Weight Drift, Activation Sparsity, and Spikes",
-        "title_zh": "Bug 或功能^2：权重漂移、激活稀疏性和尖峰",
-        "description": "The design of modern neural architectures has converged through incremental empirical choices, yet the mechanisms governing their training dynamics remain only partially understood. We identify and analyze a negative weight drift induced by the interaction between standard losses and positively biased activation functions. We prove that under MSE or cross-entropy loss, the gradient with respect to positive pre-activations is non-negative in expectation at initialization, driving downstream weights toward negative values during early training. The drift is intrinsic to optimization rather than data, and persists across architectures (MLP, ResNet, ViT, GPT-nano, MP-SENe) and asymmetric activation functions (ReLU, GELU, SiLU). Coupled with ReLU, weight drift produces activation sparsity reaching up to 90\\% in GPT-nano. We characterize the sparsity-accuracy tradeoff across 79 configurations and identify a sharp accuracy cliff above sim70\\% activation sparsity. While ReLU^2 achieves a good sparsity--accuracy ratio in GPT-nano, it pathologically amplifies identified activation spikes in intermediate transformer layers. Clipping resolves this while preserving the representational benefits of squaring: clipped ReLU^2 outperforms its unclipped version, and GELU^2 achieves the lowest validation loss on GPT-nano. Code is available at https://github.com/On-Point-RND/BugOrFeature.",
-        "description_zh": "现代神经架构的设计已经通过增量经验选择趋同，但控制其训练动态的机制仍然只有部分被理解。我们识别并分析由标准损失和正偏置激活函数之间的相互作用引起的负权重漂移。我们证明，在 MSE 或交叉熵损失下，初始化时期望的正预激活梯度是非负的，从而在早期训练期间将下游权重推向负值。这种漂移是优化而不是数据所固有的，并且在架构（MLP、ResNet、ViT、GPT-nano、MP-SENe）和非对称激活函数（ReLU、GELU、SiLU）中持续存在。与 ReLU 相结合，权重漂移产生的激活稀疏度在 GPT-nano 中高达 90%。我们描述了 79 种配置的稀疏性与准确度权衡，并确定了高于 sim70\\% 激活稀疏度的陡峭准确度悬崖。虽然 ReLU^2 在 GPT-nano 中实现了良好的稀疏性准确率，但它病态地放大了中间变压器层中已识别的激活尖峰。裁剪解决了这个问题，同时保留了平方的代表性优势：裁剪的 ReLU^2 优于其未裁剪的版本，而 GELU^2 在 GPT-nano 上实现了最低的验证损失。代码可在 https://github.com/On-Point-RND/BugOrFeature 获取。",
-        "authors": "Egor Shvetsov, Aleksandr Serkov, Shokorov Viacheslav, Redko Dmitry, Vladislav Goloshchapov, Evgeny Burnaev",
-        "url": "https://huggingface.co/papers/2605.17659",
+        "id": "2604.27263",
+        "title": "Decoupling the Benefits of Subword Tokenization for Language Model Training via Byte-level Simulation",
+        "title_zh": "Decoupling the Benefits of Subword Tokenization for Language Model Training via Byte-level Simulation",
+        "description": "Subword tokenization is an essential part of modern large language models (LLMs), yet its specific contributions to training efficiency and model performance remain poorly understood. In this work, we decouple the effects of subword tokenization by isolating them within a controlled byte-level pretraining pipeline. We formulate and test hypotheses across various dimensions, including sample throughput, vocabulary scaling, and the linguistic prior of subword boundaries. By simulating these effects in a byte-level setting, we refine our understanding of why subword models outperform raw byte models and offer insights to improve the pretraining of future byte-level and subword models. Specifically, our experiments highlight the critical role of increased training throughput and the integration of subword boundaries as either explicit priors or inductive biases.",
+        "description_zh": "子词标记化是现代大型语言模型 (LLM) 的重要组成部分，但其对训练效率和模型性能的具体贡献仍然知之甚少。在这项工作中，我们通过将子字标记化的影响隔离在受控的字节级预训练管道中来解耦它们。我们在各个维度上制定和测试假设，包括样本吞吐量、词汇量缩放和子词边界的语言先验。通过在字节级设置中模拟这些效果，我们加深了对为什么子字模型优于原始字节模型的理解，并提供了改进未来字节级和子字模型预训练的见解。具体来说，我们的实验强调了增加训练吞吐量以及将子词边界整合为显式先验或归纳偏差的关键作用。",
+        "authors": "Théo Gigant, Bowen Peng, Jeffrey Quesnelle",
+        "url": "https://huggingface.co/papers/2604.27263",
         "score": 1,
         "meta": {
           "source": "huggingface",
           "upvotes": "1",
-          "paperId": "2605.17659"
+          "paperId": "2604.27263"
         }
       },
       {
-        "id": "2605.08472",
-        "title": "Mid-Training with Self-Generated Data Improves Reinforcement Learning in Language Models",
-        "title_zh": "使用自生成数据进行中期训练可改善语言模型中的强化学习",
-        "description": "The effectiveness of Reinforcement Learning (RL) in Large Language Models (LLMs) depends on the nature and diversity of the data used before and during RL. In particular, reasoning problems can often be approached in multiple ways that rely on different forms of reasoning, and exposure to only a limited range of such approaches in the training data may limit the effectiveness of RL. Motivated by this, we investigate using diverse self-generated data during mid-training as an intermediate step before RL training. Specifically, we adopt a bootstrapped data-generation framework guided by George Polya's problem-solving approaches for generating multiple variants of correct answers for each question in the training data, and then perform fine-tuning. We first provide a theoretical perspective on how mid-training on such data improves RL and explain how policy-gradient updates can incentivize combining multiple approaches. We then empirically demonstrate that RL-trained models initialized with our mid-training data achieve consistent improvements across various mathematical reasoning benchmarks and other OOD tasks like code generation and narrative reasoning. Overall, our investigative study shows that a language model learning multiple problem-solving approaches, through self-generated data helps subsequent RL.",
-        "description_zh": "大型语言模型 (LLM) 中强化学习 (RL) 的有效性取决于 RL 之前和期间使用的数据的性质和多样性。特别是，推理问题通常可以通过依赖于不同形式推理的多种方式来解决，并且仅接触训练数据中有限范围的此类方法可能会限制强化学习的有效性。受此启发，我们研究了在训练中期使用各种自行生成的数据作为 RL 训练之前的中间步骤。具体来说，我们采用了以 George Polya 的问题解决方法为指导的引导数据生成框架，为训练数据中的每个问题生成正确答案的多个变体，然后进行微调。我们首先提供关于此类数据的中期训练如何改进强化学习的理论视角，并解释策略梯度更新如何激励组合多种方法。然后，我们凭经验证明，使用训练中期数据初始化的强化学习模型在各种数学推理基准和其他 OOD 任务（如代码生成和叙述推理）中实现了一致的改进。总的来说，我们的调查研究表明，通过自我生成的数据学习多种解决问题的方法的语言模型有助于后续的强化学习。",
-        "authors": "Aswin RRV, Jacob Dineen, Divij Handa, Mihir Parmar, Ben Zhou, Swaroop Mishra, Chitta Baral",
-        "url": "https://huggingface.co/papers/2605.08472",
-        "score": 2,
+        "id": "2605.15113",
+        "title": "Learning from Language Feedback via Variational Policy Distillation",
+        "title_zh": "通过变分策略蒸馏从语言反馈中学习",
+        "description": "Reinforcement learning from verifiable rewards (RLVR) suffers from sparse outcome signals, creating severe exploration bottlenecks on complex reasoning tasks. Recent on-policy self-distillation methods attempt to address this by utilizing language feedback to generate dense, token-level supervision. However, these approaches rely on a fixed, passive teacher to interpret the feedback. As the student policy improves, the teacher's zero-shot assessment capabilities plateau, ultimately halting further learning. To overcome this, we propose Variational Policy Distillation (VPD), a framework that formalizes learning from language feedback as a Variational Expectation-Maximization (EM) problem. VPD co-evolves both policies: in the E-step, the teacher is actively refined on trajectory outcomes via an adaptive trust-region update, translating textual feedback into a dynamically improved target token distribution. In the M-step, the student internalizes this dense distributional guidance on its own on-policy rollouts. By continuously improving the teacher's ability to extract actionable signals from textual critique, VPD overcomes the limitations of passive distillation. Evaluated across diverse sources of diagnostic feedback on scientific reasoning and code generation tasks, VPD consistently outperforms both standard RLVR and existing self-distillation baselines. Finally, by stress-testing our framework on rigid mathematical reasoning and cold-start regimes, we illuminate the fundamental bounds of feedback-driven self-distillation compared to pure environment-driven RL.",
+        "description_zh": "可验证奖励的强化学习（RLVR）受到结果信号稀疏的影响，在复杂的推理任务上造成严重的探索瓶颈。最近的策略自蒸馏方法试图通过利用语言反馈来生成密集的、代币级的监督来解决这个问题。然而，这些方法依赖于固定的、被动的教师来解释反馈。随着学生政策的改善，教师的零样本评估能力趋于稳定，最终停止了进一步的学习。为了克服这个问题，我们提出了变分策略蒸馏（VPD），一个将语言反馈学习形式化为变分期望最大化（EM）问题的框架。 VPD 共同演化这两种策略：在 E 步中，教师通过自适应信任区域更新积极完善轨迹结果，将文本反馈转化为动态改进的目标令牌分布。在 M 步骤中，学生将这种密集的分布式指导内化到自己的策略部署中。通过不断提高教师从文本批评中提取可操作信号的能力，VPD 克服了被动蒸馏的局限性。通过对科学推理和代码生成任务的不同诊断反馈来源进行评估，VPD 始终优于标准 RLVR 和现有的自蒸馏基线。最后，通过在严格的数学推理和冷启动机制上对我们的框架进行压力测试，我们阐明了与纯环境驱动的强化学习相比，反馈驱动的自蒸馏的基本界限。",
+        "authors": "Yang Li, Erik Nijkamp, Semih Yavuz, Shafiq Joty",
+        "url": "https://huggingface.co/papers/2605.15113",
+        "score": 5,
         "meta": {
           "source": "huggingface",
-          "upvotes": "2",
-          "paperId": "2605.08472"
+          "upvotes": "5",
+          "paperId": "2605.15113"
         }
       },
       {
-        "id": "2605.08586",
-        "title": "Computer Science Conferences Should Require Nonrepudiable Experimental Results",
-        "title_zh": "计算机科学会议应该需要不可否认的实验结果",
-        "description": "This position paper argues that computer science conferences should require tamper-evident, nonrepudiable attestations of experimental results. We name the underlying problem experiment nonrepudiation: a compliant protocol must bind the numbers in a paper to an actual executed computation in a way the author cannot later alter or deny. The current system relies on self-reported checklists, optional code sharing, and author-controlled logging. None of these mechanisms answer the question a reviewer cannot check: did the code the paper describes produce the numbers the paper reports? We define the problem formally, state the security properties any compliant protocol must satisfy, and describe a threat model that includes attacks current approaches do not prevent. To show that the problem is solvable, we built K-Veritas, a reference implementation in Go that produces signed reports without accessing training data. K-Veritas is a testbed, not a finished answer. We call on conferences and the community to treat nonrepudiation as a first-class requirement and to help build an open, independent standard for it.",
-        "description_zh": "这篇立场文件认为，计算机科学会议应该要求对实验结果进行防篡改、不可否认的证明。我们将底层问题实验命名为不可否认性：合规协议必须以作者以后无法更改或否认的方式将论文中的数字与实际执行的计算绑定起来。当前的系统依赖于自我报告的清单、可选的代码共享和作者控制的日志记录。这些机制都没有回答审稿人无法检查的问题：论文描述的代码是否产生了论文报告的数字？我们正式定���问题，声明任何兼容协议必须满足的安全属性，并描述一个威胁模型，其中包括当前方法无法阻止的攻击。为了证明问题是可以解决的，我们构建了 K-Veritas，这是 Go 中的一个参考实现，可以在不访问训练数据的情况下生成签名报告。 K-Veritas 是一个测试平台，而不是最终的答案。我们呼吁会议和社区将不可否认性视为首要要求，并帮助为其建立开放、独立的标准。",
-        "authors": "Mamadou K. Keita, Christopher Homan",
-        "url": "https://huggingface.co/papers/2605.08586",
+        "id": "2605.17526",
+        "title": "SaaSBench: Exploring the Boundaries of Coding Agents in Long-Horizon Enterprise SaaS Engineering",
+        "title_zh": "SaaSBench：探索远景企业 SaaS 工程中编码代理的边界",
+        "description": "As autonomous coding agents become capable of handling increasingly long-horizon tasks, they have gradually demonstrated the potential to complete end-to-end software development. Although existing benchmarks have recently evolved from localized code editing to from-scratch project generation, they remain confined to structurally simplified, single-stack applications. Consequently, they fail to capture the heterogeneous environments, full-stack orchestration, and system-level complexity of real enterprise Software as a Service (SaaS) systems, leaving a critical gap in assessing agents under realistic engineering constraints. To fill this gap, we introduce SaaSBench, the first benchmark designed to explore the boundaries of AI agents in enterprise SaaS engineering. Spanning 30 complex tasks across 6 SaaS domains with 5,370 validation nodes, it incorporates 8 programming languages, 6 databases, and 13 frameworks to meticulously mirror real-world software heterogeneity. Furthermore, we design a dependency-aware hybrid evaluation paradigm tailored for complex systems with long horizons and multi-component coupling, enabling fine-grained, reproducible assessment. Crucially, our extensive experiments reveal a striking insight: the primary bottleneck for state-of-the-art agents is not generating isolated code logic, but successfully configuring and integrating a multi-component system. Over 95\\% of task failures occur before agents even reach deep business logic, with models often falling victim to overconfidence and prematurely halting during foundational system setup, or getting trapped in ineffective debugging loops. We hope SaaSBench serves as a practical and challenging testbed to drive the evolution of reliable, system-level coding agents. The code is available at https://github.com/ShadeCloak/SaaSbench.",
+        "description_zh": "随着自主编码代理变得能够处理越来越长的任务，它们逐渐展示了完成端到端软件开发的潜力。尽管现有的基准最近已经从本地化代码编辑发展到从头开始生成项目，但它们仍然局限于结构简化的单堆栈应用程序。因此，他们无法捕获真实企业软件即服务 (SaaS) 系统的异构环境、全栈编排和系统级复杂性，从而在实际工程约束下评估代理方面留下了关键差距。为了填补这一空白，我们推出了 SaaSBench，这是第一个旨在探索企业 SaaS 工程中��工智能代理边界的基准测试。它跨越 6 个 SaaS 领域的 30 项复杂任务和 5,370 个验证节点，融合了 8 种编程语言、6 个数据库和 13 个框架，以细致地反映现实世界的软件异构性。此外，我们设计了一种依赖感知混合评估范式，专为具有长视野和多组件耦合的复杂系统量身定制，从而实现细粒度、可重复的评估。至关重要的是，我们广泛的实验揭示了一个惊人的见解：最先进代理的主要瓶颈不是生成孤立的代码逻辑，而是成功配置和集成多组件系统。超过 95% 的任务失败发生在代理甚至到达深层业务逻辑之前，模型经常成为过度自信的受害者，并在基础系统设置过程中过早停止，或者陷入无效的调试循环中。我们希望 SaaSBench 成为一个实用且具有挑战性的测试平台，以推动可靠的系统级编码代理的发展。该代码可从 https://github.com/ShadeCloak/SaaSbench 获取。",
+        "authors": "Qingnan Ren, Shun Zou, Shiting Huang, Ziao Zhang, Kou Shi, Zhen Fang, Yiming Zhao, Yu Zeng, Qisheng Su, Lin Chen, Yong Wang, Zehui Chen, Xiangxiang Chu, Feng Zhao",
+        "url": "https://huggingface.co/papers/2605.17526",
+        "score": 3,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "3",
+          "paperId": "2605.17526"
+        }
+      },
+      {
+        "id": "2605.18329",
+        "title": "Lost in the Folds: When Cross-Validation Is Not a Deep Ensemble for Uncertainty Estimation",
+        "title_zh": "迷失在折叠中：当交叉验证不是不确定性估计的深度集成时",
+        "description": "Ensemble disagreement is widely used as a proxy for epistemic uncertainty in medical image segmentation. In practice, many studies form ensembles via K-fold cross-validation (CV), yet refer to them as ``deep ensembles'' (DE). Because CV members are trained on different data subsets, their disagreement mixes seed-driven variability with data-exposure effects, which can change how uncertainty should be interpreted. We audit recent segmentation uncertainty studies and find that terminology--implementation mismatches are common. We then compare a standard 5-fold CV ensemble to a 5-member DE (fixed training set, different random seeds) under otherwise identical configurations on three multi-rater segmentation datasets spanning three modalities. We evaluate uncertainty for calibration, failure detection, ambiguity modeling, and robustness under distribution shift. DE match segmentation accuracy while improving calibration and failure detection, whereas CV ensembles sometimes correlate more strongly with inter-rater variability on the studied datasets. Thus, ensemble construction should be chosen to match the research question: DE for reliability-oriented use (e.g., selective referral/failure detection) and CV ensembles as a proxy for ambiguity. We provide a lightweight nnU-Net modification enabling DE training within the default pipeline.",
+        "description_zh": "集成分歧被广泛用作医学图像分割中认知不确定性的代表。在实践中，许多研究通过 K 折交叉验证（CV）形成集成，但将它们称为“深度集成”（DE）。由于 CV 成员接受过不同数据子集的培训，因此他们的分歧将种子驱动的变异性与数据暴露效应混合在一起，这可能会改变不确定性的解释方式。我们审核了最近的细分不确定性研究，发现术语与实施不匹配的情况很常见。然后，我们在跨越三种模式的三个多评估者分割数据集上，在其他相同的配置下，将标准 5 倍 CV 集成与 5 成员 DE（固定训练集，不同的随机种子）进行比较。我们评估校准、故障检测、模糊性建模和分布变化下的鲁棒性的不确定性。 DE 匹配分割精度，同时改进校准和故障检测，而 CV 集成有时与研究数据集上的评估者间变异性相关性更强。因此，应选择与研究问题相匹配的集成构建：DE 用于面向可靠性的使用（例如，选择性参考/故障检测），而 CV 集成作为模糊性的代理。我们提供了轻量级的 nnU-Net 修改，可以在默认管道内进行 DE 训练。",
+        "authors": "Kirscher Tristan, Bujotzek Markus, Kirchhoff Yannick, Rokuss Maximilian, Isensee Fabian, Kahl Kim-Celine, Kovacs Balint, Maier-Hein Klaus",
+        "url": "https://huggingface.co/papers/2605.18329",
         "score": 1,
         "meta": {
           "source": "huggingface",
           "upvotes": "1",
-          "paperId": "2605.08586"
+          "paperId": "2605.18329"
         }
       },
       {
-        "id": "2605.18263",
-        "title": "RT-Splatting: Joint Reflection-Transmission Modeling with Gaussian Splatting",
-        "title_zh": "RT-Splatting：使用高斯 Splatting 进行联合反射-传输建模",
-        "description": "3D Gaussian Splatting (3DGS) enables real-time novel view synthesis with high visual quality. However, existing methods struggle with semi-transparent specular surfaces that exhibit both complex reflections and clear transmission, often producing blurry reflections or overly occluded transmission. To address this, we present RT-Splatting, a framework that disentangles each Gaussian's geometric occupancy from its optical opacity. This factorization yields a unified surface-volume scene representation with a single set of Gaussian primitives. Our hybrid renderer interprets this representation both as a surface to capture high-frequency reflections and as a volume to preserve clear transmission. To mitigate the ambiguity in jointly optimizing reflection and transmission, we introduce Specular-Aware Gradient Gating, which suppresses misleading gradients from highly specular regions into the transmission branch, effectively reducing distracting floaters. Experiments on challenging semi-transparent scenes show that RT-Splatting achieves state-of-the-art performance, delivering high-fidelity reflections and clear transmission with real-time rendering. Moreover, our factorization naturally enables flexible scene editing. The project page is available at https://sjj118.github.io/RT-Splatting.",
-        "description_zh": "3D 高斯溅射 (3DGS) 可实现具有高视觉质量的实时新颖视图合成。然而，现有的方法很难处理同时表现出复杂反射和清晰透射的半透明镜面表面，通常会产生模糊的反射或过度遮挡的透射。为了解决这个问题，我们提出了 RT-Splatting，这是一个框架，可以将每个高斯的几何占用与其光学不透明度分开。这种因式分解产生了具有单组高斯基元的统一表面体积场景表示。我们的混合渲染器将这种表示解释为捕获高频反射的表面和保持清晰传���的体积。为了减轻联合优化反射和透射的模糊性，我们引入了镜面感知梯度门控，它可以抑制从高镜面反射区域到透射分支的误导性梯度，从而有效地减少分散注意力的漂浮物。在具有挑战性的半透明场景上进行的实验表明，RT-Splatting 实现了最先进的性能，通过实时渲染提供高保真反射和清晰传输。此外，我们的因式分解自然可以实现灵活的场景编辑。该项目页面位于 https://sjj118.github.io/RT-Splatting。",
-        "authors": "Ji Shi, Xianghua Ying, Bowei Xing, Ruohao Guo, Wenzhen Yue",
-        "url": "https://huggingface.co/papers/2605.18263",
-        "score": 1,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2605.18263"
-        }
-      },
-      {
-        "id": "2605.09789",
-        "title": "Zero-Shot Sim-to-Real Robot Learning: A Dexterous Manipulation Study on Reactive Catching",
-        "title_zh": "零射击模拟到真实的机器人学习：反应性捕捉的灵巧操纵研究",
-        "description": "Dexterous manipulation is physics-intensive and highly sensitive to modeling errors and perception noise, making sim-to-real transfer prohibitively challenging. Domain randomization (DR) is commonly used to improve the robustness of learned policies for such tasks, but conventional DR randomizes one instance per episode, offering very limited exposure to the variability of real-world dynamics. To this end, we propose Domain-Randomized Instance Set (DRIS), which represents and propagates a set of randomized instances simultaneously, providing richer approximation of uncertain dynamics and enabling policies to learn actions that account for multiple possible outcomes. Supported by theoretical analysis, we show that DRIS yields more robust policies and alleviates the need for real-world fine-tuning, even with a modest number of instances (e.g., 10). We demonstrate this on a challenging reactive catching task. Unlike traditional catching setups that use end-effectors designed to mechanically stabilize the object (e.g., curved or enclosing surfaces), our system uses a flat plate that offers no passive stabilization, making the task highly sensitive to noise and requiring rapid reactive motions. The learned policies exhibit strong robustness to uncertainties and achieve reliable zero-shot sim-to-real transfer.",
-        "description_zh": "灵巧的操作是物理密集型的，并且对建模错误和感知噪声高度敏感，这使得模拟到真实的转换极具挑战性。域随机化 (DR) 通常用于提高此类任务的学习策略的鲁棒性，但传统的 DR 会随机化每个情节的一个实例，从而对现实世界动态的可变性提供非常有限的暴露。为此，我们提出了域随机实例集（DRIS），它同时表示和传播一组随机实例，提供更丰富的不确定动态近似，并使策略能够学习解释多种可能结果的行动。在理论分析的支持下，我们表明，即使实例数量适中（例如 10 个），DRIS 也能产生更稳健的策略并减轻现实世界微调的需要。我们在一项具有挑战性的反应性捕捉任务中演示了这一点。与使用旨在机械稳定物体（例如弯曲或封闭表面）的末端执行器的传统捕捉装置不同，我们的系统使用不提供被动稳定性的平板，使得任务对噪音高度敏感并且需要快速反应运动。学习到的策略对不确定性表现出很强的鲁棒性，并实现可靠的零样本模拟到真实的迁移。",
-        "authors": "Kejia Ren, Gaotian Wang, Andrew S. Morgan, Kaiyu Hang",
-        "url": "https://huggingface.co/papers/2605.09789",
-        "score": 1,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2605.09789"
-        }
-      },
-      {
-        "id": "2605.15514",
-        "title": "RoPE Distinguishes Neither Positions Nor Tokens in Long Contexts, Provably",
-        "title_zh": "事实证明，RoPE 既不能区分长上下文中的头寸，也不能区分代币",
-        "description": "We identify intrinsic limitations of Rotary Positional Embeddings (RoPE) in Transformer-based long-context language models. Our theoretical analysis abstracts away from the specific content of the context and depends only on its length. We prove that as context length increases, RoPE-based attention becomes unpredictable and loses two properties that are central to its effectiveness. First, it loses its locality bias: RoPE is no more likely to favor nearer positions than substantially farther ones. Second, it loses consistency in token relevance: a key vector that receives a higher attention score than an alternative at one position may receive a lower score at another. In both cases, the probability of failure approaches 0.5, no better than random guessing. We further prove that the attention score can remain unchanged when a key token is moved to a different position, or even replaced by a different token, indicating a failure to distinguish positions or tokens. Adjusting the RoPE base trades off distinguishing positions against distinguishing tokens but cannot preserve both at the same time. Increasing the RoPE base hyperparameter, a common practice in today's long-context models, helps distinguish different tokens, but inevitably sacrifices the ability to distinguish positions. Our empirical analysis shows that multi-head, multi-layer architectures are insufficient to overcome these limitations. Our findings suggest that fundamentally new mechanisms for encoding position and token order may be needed in future Transformer long-context language models.",
-        "description_zh": "我们确定了基于 Transformer 的长上下文语言模型中旋转位置嵌入 (RoPE) 的内在局限性。我们的理论分析脱离了上下文的具体内容，仅取决于其长度。我们证明，随着上下文长度的增加，基于 RoPE 的注意力变得不可预测，并失去了对其有效性至关重要的两个属性。首先，它失去了局部性偏见：RoPE 不太可能比更远的位置更青睐较近的位置。其次，它失去了标记相关性的一致性：在一个位置获得比替代选项更高的关注分数的关键向量可能在另一位置获得较低的分数。在这两种情况下，失败的概率都接近 0.5，并不比随机猜测好。我们进一步证明，当关键令牌移动到不同的位置，甚至被不同的令牌替换时，注意力分数可以保持不变，这表明无法区分位置或令牌。调整 RoPE 基础会权衡区分头寸和区分代币，但不能同时保留两者。增加 RoPE 基础超参数是当今长上下文模型中的常见做法，有助于区分不同的 token，但不可避免地牺牲了区分位置的能力。我们的实证分析表明，多头、多层架构不足以克服这些限制。我们的研究结果表明，未来的 Transformer 长上下文语言模型可能需要编码位置和标记顺序的全新机制。",
-        "authors": "Yufeng Du, Phillip Harris, Minyang Tian, Eliu A Huerta, Srikanth Ronanki, Subendhu Rongali, Aram Galstyan, Hao Peng",
-        "url": "https://huggingface.co/papers/2605.15514",
-        "score": 0,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "0",
-          "paperId": "2605.15514"
-        }
-      },
-      {
-        "id": "2605.19305",
-        "title": "Matérn Noise for Triangulation-Agnostic Flow Matching on Meshes",
-        "title_zh": "用于网格上与三角测量无关的流匹配的 Matérn 噪声",
-        "description": "This paper tackles the task of learning to generate signals over triangle meshes in a triangulation-agnostic manner, meaning the trained model can be applied to different meshes and triangulations effectively. Practically, the paper adapts the flow matching (FM) paradigm to a mesh-based, triangulation-agnostic setting. Theoretically, it proposes a specific noise distribution which is triangulation agnostic, to be used inside the FM model's denoising process. While noise distributions are usually trivial to devise for, e.g., images, devising a triangulation-agnostic distribution proves to be a much more difficult task. We formulate a mathematical definition of triangulation agnosticism of distributions, via their spectrum. We then show that a discretization of a specific Gaussian random field called a Matérn process holds these desired properties, and provides a simple and efficient sampling algorithm. We use it as our noise model, and adapt FM to the triangulation-agnostic setting by using a state-of-the-art approach for learning signals on meshes in the gradient domain -- PoissonNet -- as the denoiser. We conduct experiments on elaborate tasks such as sampling elastic rest states, and generating poses of humanoids. Our method is shown to be capable of producing highly realistic results for meshes of over one million triangles, significantly exceeding the state-of-the-art in quality and diversity.",
-        "description_zh": "本文解决了学习以与三角测量无关的方式在三角形网格上生成信号的任务，这意味着训练后的模型可以有效地应用于不同的网格和三角测量。实际上，本文将流匹配（FM）范式应用于基于网格、三角测量无关的设置。理论上，它提出了一种与三角测量无关的特定噪声分布，用于 FM 模型的去噪过程。虽然噪声分布的设计通常很简单，例如图像，但设计与三角测量无关的分布被证明是一项困难得多的任务。我们通过分布的谱制定了分布三角测量不可知论的数学定义。然后我们证明，称为 Matérn 过程的特定高斯随机场的离散化具有这些所需的属性，并提供了一种简单而有效的采样算法。我们使用它作为我们的噪声模型，并通过使用最先进的方法来学习梯度域中网格上的信号 - PoissonNet - 作为降噪器，使 FM 适应三角测量不可知的设置。我们对复杂的任务进行实验，例如采样弹性静止状态和生成人形机器人的姿势。我们的方法被证明能够为超过一百万个三角形的网格生成高度真实的结果，在质量和多样性方面显着超过最先进的水平。",
-        "authors": "Tianshu Kuai, Arman Maesumi, Daniel Ritchie, Noam Aigerman",
-        "url": "https://huggingface.co/papers/2605.19305",
-        "score": 1,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2605.19305"
-        }
-      },
-      {
-        "id": "2605.17026",
-        "title": "Why Do Reasoning Models Lose Coverage? The Role of Data and Forks in the Road",
-        "title_zh": "为什么推理模型会失去覆盖范围？数据和岔路口的作用",
-        "description": "Recent progress in large language models has led to the emergence of reasoning models, which have shown strong performance on complex tasks through specialized fine-tuning procedures. While these methods reliably improve pass@1 accuracy, prior works have observed that they show a coverage shrinkage behavior, where pass@k degrades relative to the base model. In this paper, we investigate the reasoning shrinkage arise under SFT-based post-training. We hypothesize that this behavior is driven by properties of the fine-tuning data, specifically related to decision points or \"forks in the road\" scenarios where model faces indecipherable patterns with multiple valid reasoning paths. To test this hypothesis, we design controlled case studies that simulate such decision-point settings, spanning indecipherable nodes in graph branching, and reasoning modes. By tracking post-training dynamics in these settings, we find that the shrinkage phenomenon is tightly correlated with the prevalence of decision-point scenarios in the training data. We also demonstrate that this shrinkage behavior can be partially mitigated through targeted data synthesis design of decision-points, and a more systematic diversity-encouraging decoding mechanism. Our findings identify data-centric factors as a key driver of shrinkage in reasoning models and highlight diversity-aware designs as an effective lever for controlling it.",
-        "description_zh": "大型语言模型的最新进展导致了推理模型的出现，这些模型通过专门的微调程序在复杂任务上表现出了强大的性能。虽然这些方法可靠地提高了 pass@1 的准确度，但之前的研究已经观察到它们表现出覆盖范围缩小的行为，其中 pass@k 相对于基本模型而言性能下降。在本文中，我们研究了基于 SFT 的后训练下出现的推理收缩。我们假设这种行为是由微调数据的属性驱动的，特别是与决策点或“岔路口”场景相关，其中模型面临具有多个有效推理路径的难以理解的模式。为了检验这一假设，我们设计了模拟此类决策点设置的受控案例研究，跨越图分支和推理模式中难以理解的节点。通过跟踪这些设置中的训练后动态，我们发现收缩现象与训练数据中决策点场景的普遍性密切相关。我们还证明，通过决策点的有针对性的数据合成设计和更系统的鼓励多样性的解码机制可以部分缓解这种收缩行为。我们的研究结果表明，以数据为中心���因素是推理模型收缩的关键驱动因素，并强调多样性意识设计是控制模型收缩的有效杠杆。",
-        "authors": "Ngoc-Hieu Nguyen, Parshin Shojaee, Phuc Minh Nguyen, Nan Zhang, Chandan K Reddy, Khoa D Doan, Rui Zhang",
-        "url": "https://huggingface.co/papers/2605.17026",
-        "score": 0,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "0",
-          "paperId": "2605.17026"
-        }
-      },
-      {
-        "id": "2605.17734",
-        "title": "Harnessing LLM Agents with Skill Programs",
-        "title_zh": "通过技能计划利用 LLM 代理人",
-        "description": "Equipping LLM agents with reusable skills derived from past experience has become a popular and successful approach for tackling complex and long-horizon tasks. However, such lessons are often encoded as textual guidance that remains largely advisory, lacking explicit mechanisms for when and how to intervene in the agent loop. To bridge the gap, we introduce HASP(Harnessing LLM Agents with Skill Programs), a new framework that upgrades skills into executable Program Functions (PFs). Rather than offering passive advice, PFs act as executable guardrails that activate on failure-prone states and modify the next action or inject corrective context. HASP is highly modular: it can be applied at inference time for direct agent-loop intervention, during post-training to provide structured supervision, or for self-improvement by evolving validated, teacher-reviewed PFs. Empirically, HASP drives substantial gains compared to both training-free and training-based methods on web-search, math reasoning, and coding tasks. For example, on web-search reasoning, inference-time PFs alone improve the average performance by 25% compared to (multi-loop) ReAct Agent, while post-training and controlled evolution achieve a 30.4% gain over Search-R1. To provide deeper insights into HASP, our mechanism analysis reveals how PFs trigger and intervene, how skills are internalized, and the requirement for stable skill library evolution.",
-        "description_zh": "为LLM代理人配备源自过去经验的可重用技能，已成为解决复杂且长期任务的流行且成功的方法。然而，此类经验教训通常被编码为文本指导，大部分仍为建议性的，缺乏何时以及如何干预代理循环的明确机制。为了弥补这一差距，我们引入了HASP（Harnessing LLM Agents with Skill Programs），这是一个将技能升级为可执行程序功能（PF）的新框架。 PF 不是提供被动建议，而是充当可执行的护栏，在容易失败的状态下激活并修改下一步操作或注入纠正上下文。 HASP 是高度模块化的：它可以在推理时应用于直接代理循环干预，在训练后提供结构化监督，或通过发展经过验证、教师审查的 PF 来进行自我改进。根据经验，与免培训和基于培训的方法相比，HASP 在网络搜索、数学推理和编码任务方面带来了显着的收益。例如，在网络搜索推理中，与（多循环）ReAct Agent 相比，仅推理时间 PF 的平均性能就提高了 25%，而训练后和受控进化则比 Search-R1 提高了 30.4%。为了更深入地了解HASP，我们的机制分析揭示了PF如何触发和干预、技能如何内化以及稳定技能库演化的要求。",
-        "authors": "Hongjun Liu, Yifei Ming, Shafiq Joty, Chen Zhao",
-        "url": "https://huggingface.co/papers/2605.17734",
-        "score": 21,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "21",
-          "paperId": "2605.17734"
-        }
-      },
-      {
-        "id": "2605.14842",
-        "title": "Editor's Choice: Evaluating Abstract Intent in Image Editing through Atomic Entity Analysis",
-        "title_zh": "编辑推荐：通过原子实体分析评估图像编辑中的抽象意图",
-        "description": "Humans naturally communicate through abstract concepts like \"mood\". However, current image editing benchmarks focus primarily on explicit, literal commands, leaving abstract instructions largely underexplored. In this work, we first formalize the definition and taxonomy of abstract image editing. To measure instruction-following in this challenging domain, we introduce Entity-Rubrics, a framework that breaks down abstract edits into individual, entity-level assessments and achieves strong correlation with human judgment. Alongside this framework, we contribute AbstractEdit, the first benchmark dedicated to abstract image editing across diverse real-world scenes. Evaluating 11 leading models on this dataset reveals a fundamental challenge: standard architectures struggle to balance intent and preservation, commonly defaulting to under-editing or over-editing. Our analysis demonstrates that driving meaningful improvements relies heavily on integrating advanced LLM text encoders and iterative thinking. Looking forward, our entity-based paradigm can generalize beyond assessment to serve as a reward model, enable models to correctly interpret abstract communication, or highlight specific failures in test-time critique loops. Ultimately, we hope this work serves as a stepping stone toward seamless multimodal interaction, closing the gap between rigid machine execution and the natural, open-ended way humans communicate.",
-        "description_zh": "人类自然地通过“情绪”等抽象概念进行交流。然而，当前的图像编辑基准主要关注明确的文字命令，而抽象指令在很大程度上尚未得到充分探索。在这项工作中，我们首先正式确定了抽象图像编辑的定义和分类。为了衡量这个具有挑战性的领域中的指令遵循情况，我们引入了 Entity-Rubrics，这是一个框架，可将抽象编辑分解为单独的实体级评估，并实现与人类判断的强相关性。除了这个框架之外，我们还贡献了 AbstractEdit，这是第一个致力于跨不��现实世界场景进行抽象图像编辑的基准测试。在此数据集上评估 11 个领先模型揭示了一个根本性的挑战：标准架构难以平衡意图和保存，通常会默认编辑不足或过度编辑。我们的分析表明，推动有意义的改进在很大程度上依赖于集成先进的 LLM 文本编码器和迭代思维。展望未来，我们基于实体的范式可以推广到评估之外，作为奖励模型，使模型能够正确解释抽象通信，或突出测试时批评循环中的特定失败。最终，我们希望这项工作成为无缝多模式交互的基石，缩小严格的机器执行与自然、开放的人类交流方式之间的差距。",
-        "authors": "Mor Ventura, Roy Hirsch, Yonatan Bitton, Regev Cohen, Roi Reichart",
-        "url": "https://huggingface.co/papers/2605.14842",
-        "score": 1,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2605.14842"
-        }
-      },
-      {
-        "id": "2605.19786",
-        "title": "Fast 4D Mesh Generation by Spatio-Temporal Attention Chains",
-        "title_zh": "通过时空注意力链快速生成 4D 网格",
-        "description": "4D mesh generation has recently emerged as a powerful paradigm for recovering dynamic 3D structure from videos, but existing methods remain slow, computationally expensive, and difficult to scale to longer sequences. We introduce a training-free approach that accelerates 4D mesh generation while improving temporal correspondence quality. Our key observation is that temporal correspondences emerge inside a 4D backbone long before its generated meshes become visually accurate. We exploit this with a general framework we call Spatio-Temporal Attention Chain which propagates information across space and time. Starting from vertices on an anchor mesh, the chain maps vertices to latent tokens. It then follows temporal correspondences in latent space, and recovers frame-specific vertices through latent-to-vertex attention. This design avoids expensive explicit matching while preserving anchor mesh details and thereby improving dynamic mesh geometry and temporal consistency.\n  Compared to state-of-the-art, our method generates a 4D mesh in 9 seconds, achieving a 13times speedup while producing higher-quality results. Moreover, our approach scales to videos up to 16times longer without degrading mesh quality. Beyond generation, the improved correspondences enable competitive zero-shot performance on two downstream tasks: 2D object tracking and 4D tracking. We further show that our framework enables reliable camera estimation, a capability not supported by prior 4D mesh generation methods.",
-        "description_zh": "4D 网格生成最近已成为从视频中恢复动态 3D 结构的强大范例，但现有方法仍然缓慢、计算成本昂贵，并且难以扩展到更长的序列。我们引入了一种免训练方法，可加速 4D 网格生成，同时提高时间对应质量。我们的主要观察结果是，早在生成的网格在视觉上变得准确之前，时间对应关系就出现在 4D 主干内部。我们通过一个称为时空注意力链的通用框架来利用这一点，该框架跨空间和时间传播信息。从锚网格上的顶点开始，链将顶点映射到潜在标记。然后，它遵循潜在空间中的时间对应关系，并通过潜在到顶点的注意力恢复特定于帧的顶点。这种设计避免了昂贵的显式匹配，同时保留了锚定网格细节，从而提高了动态网格几何形状和时间一致性。\n  与最先进的方法相比，我们的方法可在 9 秒内生成 4D 网格，实现了 13 倍的加速，同时产生了更高质量的结果。此外，我们的方法可将视频扩展至长达 16 倍，而不会降低网格质量。除了生成之外，改进的对应关系还可以在两个下游任务上实现具有竞争力的零样本性能：2D 对象跟踪和 4D 跟踪。我们进一步表明，我们的框架能够实现可靠的相机估计，这是先前 4D 网格生成方法不支持的功能。",
-        "authors": "Dvir Samuel, Yuval Atzmon, Gal Chechik, Yoni Kasten",
-        "url": "https://huggingface.co/papers/2605.19786",
+        "id": "2605.17991",
+        "title": "Stable Audio 3",
+        "title_zh": "稳定音频3",
+        "description": "Stable Audio 3 is a family of fast latent diffusion models (small, medium, large) for variable-length audio generation and editing. Since our models can generate several minutes of audio, variable-length generations are key to avoid the cost of producing full-length generations for short sounds. We also support inpainting, enabling targeted audio editing and the continuation of short recordings. Our latent diffusion models operate on top of a novel semantic-acoustic autoencoder that projects audio into a compact latent space, enabling efficient diffusion-based generation while preserving audio fidelity and encouraging semantic structure in the latent. Finally, we run adversarial post-training to both accelerate inference and improve generation quality, reducing the number of inference steps while improving fidelity and prompt adherence. Stable Audio 3 models are trained on licensed and Creative Commons data to generate music and sounds in less than a 2s on an H200 GPU and less than a few seconds on a MacBook Pro M4. We release the weights of small and medium, that can run on consumer-grade hardware, together with their training and inference pipeline.",
+        "description_zh": "Stable Audio 3 是一系列快速潜在扩散模型（小、中、大），用于可变长度音频生成和编辑。由于我们的模型可以生成几分钟的音频，因此可变长度生成是避免生成短声音的全长生成成本的关键。我们还支持修复，实现有针对性的音频编辑和短录音的延续。我们的潜在扩散模型在新颖的语义声学自动编码器之上运行，该编码器将音频投影到紧凑的潜在空间中，从而实现基于扩散的高效生成，同时保留音频保真度并鼓励潜在的语义结构。最后，我们进行对抗性后训练，以加速推理并提高生成质量，减少推理步骤的数量，同时提高保真度和及时的依从性。 Stable Audio 3 模型经过许可和 Creative Commons 数据的训练，可在 H200 GPU 上不到 2 秒、在 MacBook Pro M4 上不到几秒内生成音乐和声音。我们发布了可以在消费级硬件上运行的小型和中型权重，以及它们的训练和推理管道。",
+        "authors": "Zach Evans, Julian D. Parker, Matthew Rice, CJ Carr, Zack Zukowski, Josiah Taylor, Jordi Pons",
+        "url": "https://huggingface.co/papers/2605.17991",
         "score": 7,
         "meta": {
           "source": "huggingface",
           "upvotes": "7",
-          "paperId": "2605.19786"
+          "paperId": "2605.17991"
         }
       },
       {
-        "id": "2605.20035",
-        "title": "Stage-adaptive Token Selection for Efficient Omni-modal LLMs",
-        "title_zh": "高效全模式LLM的阶段自适应令牌选择",
-        "description": "Omni-modal large language models (om-LLMs) achieve unified audio-visual understanding by encoding video and audio into temporally aligned token sequences interleaved at the window level. However, processing these dense non-textual tokens throughout the LLM incurs substantial computational overhead. Although training-free token selection can reduce this cost, existing methods either focus on visual-only inputs or prune om-LLM tokens only before the LLM with fixed per-modality ratios, failing to capture how cross-modal token importance evolves across layers. To address this limitation, we first analyze the layer-wise token dependency of om-LLMs. We find that visual and audio dependencies follow a block-wise pattern and gradually weaken with depth, indicating that many late-layer non-textual tokens become redundant after cross-modal fusion. Motivated by this observation, we propose SEATS, a training-free, stage-adaptive token selection method for efficient om-LLM inference. Before the LLM, SEATS removes spatiotemporal redundancy via attention-weighted diversity selection. Inside the LLM, it progressively prunes tokens across blocks and dynamically allocates the retention budget from temporal windows to modalities using query relevance scores. In late layers, it removes all remaining non-textual tokens once cross-modal fusion is complete. Experiments on Qwen2.5-Omni and Qwen3-Omni demonstrate that SEATS effectively improves inference efficiency. Retaining only 10% of visual and audio tokens, it achieves a 9.3x FLOPs reduction and a 4.8x prefill speedup while preserving 96.3% of the original performance.",
-        "description_zh": "全模态大语言模型（om-LLM）通过将视频和音频编码为在窗口级别交错的时间对齐的标记序列来实现统一的视听理解。然而，在整个 LLM 中处理这些密集的非文本标记会产生大量的计算开销。尽管免训练的令牌选择可以降低这种成本，但现有方法要么专注于仅视觉输入，要么仅在具有固定的每种模态比率的 LLM 之前修剪 om-LLM 令牌，无法捕获跨模式令牌重要性如何跨层演变。为了解决这个限制，我们首先分析 om-LLM 的分层令牌依赖性。我们发现视觉和音频依赖性遵循块方式模式并随着深度逐渐减弱，这表明许多后期层非文本标记在跨模态融合后变得冗余。受这一观察的启发，我们提出了 SEATS，这是一种无需训练、阶段自适应的标记选择方法，可实现高效的 om-LLM 推理。在 LLM 之前，SEATS 通过注意力加权多样性选择消除时空冗余。在 LLM 内部，它逐步跨块修剪令牌，并使用查询相关性分数动态地将保留预算从时间窗口分配到模式。在后面的层中，一旦跨模式融合完成，它就会删除所有剩余的非文本标记。在Qwen2.5-Omni和Qwen3-Omni上的实验表明，SEATS有效提高了推理效率。仅保留 10% 的视觉和音频令牌，它实现了 9.3 倍的 FLOP 减少和 4.8 倍的预填充加速，同时保留了 96.3% 的原始性能。",
-        "authors": "Zijie Xin, Jie Yang, Ruixiang Zhao, Tianyi Wang, Fengyun Rao, Jing Lyu, Xirong Li",
-        "url": "https://huggingface.co/papers/2605.20035",
-        "score": 2,
+        "id": "2605.20119",
+        "title": "Toto 2.0: Time Series Forecasting Enters the Scaling Era",
+        "title_zh": "Toto 2.0：时间序列预测进入缩放时代",
+        "description": "We show that time series foundation models scale: a single training recipe produces reliable forecast-quality improvements from 4M to 2.5B parameters. We release Toto 2.0, a family of five open-weights forecasting models trained under this recipe. The Toto 2.0 family sets a new state of the art on three forecasting benchmarks: BOOM, our observability benchmark; GIFT-Eval, the standard general-purpose benchmark; and the recent contamination-resistant TIME benchmark. This report describes our experimental results and details the design decisions behind Toto 2.0: its architecture and training recipe, training data, and the u-muP hyperparameter transfer pipeline. All five base checkpoints are released under Apache 2.0.",
+        "description_zh": "我们展示了时间序列基础模型的规模：单个训练配方可以将预测质量从 4M 参数提高到 2.5B 参数。我们发布了 Toto 2.0，这是一个由五个开放权重预测模型组成的家族，在此方案下进行了训练。 Toto 2.0 系列在三个预测基准上树立了新的最先进水平：BOOM，我们的可观察性基准； GIFT-Eval，标准通用基准；以及最近的抗污染 TIME 基准。本报告描述了我们的实验结果，并详细介绍了 Toto 2.0 背后的设计决策：其架构和训练配方、训练数据以及 u-muP 超参数传输管道。所有五个基本检查点均在 Apache 2.0 下发布。",
+        "authors": "Emaad Khwaja, Chris Lettieri, Gerald Woo, Eden Belouadah, Marc Cenac, Guillaume Jarry, Enguerrand Paquin, Xunyi Zhao, Viktoriya Zhukov, Othmane Abou-Amal, Chenghao Liu, Ameet Talwalkar, David Asker",
+        "url": "https://huggingface.co/papers/2605.20119",
+        "score": 25,
         "meta": {
           "source": "huggingface",
-          "upvotes": "2",
-          "paperId": "2605.20035"
+          "upvotes": "25",
+          "paperId": "2605.20119"
         }
       },
       {
-        "id": "2605.19633",
-        "title": "optimize_anything: A Universal API for Optimizing any Text Parameter",
-        "title_zh": "Optimize_anything：用于优化任何文本参数的通用 API",
-        "description": "Can a single LLM-based optimization system match specialized tools across fundamentally different domains? We show that when optimization problems are formulated as improving a text artifact evaluated by a scoring function, a single AI-based optimization system-supporting single-task search, multi-task search with cross-problem transfer, and generalization to unseen inputs-achieves state-of-the-art results across six diverse tasks. Our system discovers agent architectures that nearly triple Gemini Flash's ARC-AGI accuracy (32.5% to 89.5%), finds scheduling algorithms that cut cloud costs by 40%, generates CUDA kernels where 87% match or beat PyTorch, and outperforms AlphaEvolve's reported circle packing solution (n=26). Ablations across three domains reveal that actionable side information yields faster convergence and substantially higher final scores than score-only feedback, and that multi-task search outperforms independent optimization given equivalent per-problem budget through cross-task transfer, with benefits scaling with the number of related tasks. Together, we show for the first time that text optimization with LLM-based search is a general-purpose problem-solving paradigm, unifying tasks traditionally requiring domain-specific algorithms under a single framework. We open-source optimize\\_anything with support for multiple backends as part of the GEPA project at https://github.com/gepa-ai/gepa .",
-        "description_zh": "单一基于LLM的优化系统可以匹配跨根本不同领域的专用工具吗？我们表明，当优化问题被表述为改进由评分函数评估的文本工件时，单个基于人工智能的优化系统（支持单任务搜索、跨问题转移的多任务搜索以及对未见过的输入的泛化）在六个不同的任务中实现了最先进的结果。我们的系统发现代理架构将 Gemini Flash 的 ARC-AGI 准确度提高了近三倍（32.5% 到 89.5%），找到了将云成本降低 40% 的调度算法，生成了 87% 匹配或击败 PyTorch 的 CUDA 内核，并且优于 AlphaEvolve 报告的循环封装解决方案（n=26）。跨三个领域的消融表明，与仅评分反馈相比，可操作的辅助信息可以产生更快的收敛速度和更高的最终分数，并且通过跨任务转移给定相同的每个问题预算，多任务搜索优于独立优化，其好处随着相关任务的数量而扩展。我们共同首次证明，基于 LLM 的搜索的文本优化是一种通用的问题解决范例，将传统上需要特定领域算法的任务统一到单一框架下。作为 GEPA 项目的一部分，我们开源了优化任何支持多个后端的东西，网址�� https://github.com/gepa-ai/gepa。",
-        "authors": "Lakshya A Agrawal, Donghyun Lee, Shangyin Tan, Wenjie Ma, Karim Elmaaroufi, Rohit Sandadi, Sanjit A. Seshia, Koushik Sen, Dan Klein, Ion Stoica, Joseph E. Gonzalez, Omar Khattab, Alexandros G. Dimakis, Matei Zaharia",
-        "url": "https://huggingface.co/papers/2605.19633",
-        "score": 0,
+        "id": "2605.19597",
+        "title": "LLMEval-Logic: A Solver-Verified Chinese Benchmark for Logical Reasoning of LLMs with Adversarial Hardening",
+        "title_zh": "LLMEval-Logic：经过求解器验证的中国LLM逻辑推理基准，具有对抗性强化",
+        "description": "Evaluating large language models (LLMs) on natural-language logical reasoning is essential because rule-governed tasks require conclusions to follow strictly from stated premises. Many existing logical-reasoning benchmarks are generated by templating natural-language items from sampled formulas, provide only coarse or unaudited formal annotations, and are now quickly saturated by frontier reasoning models. We present LLMEval-Logic, a Chinese logical reasoning benchmark built from realistic situational scenarios. Its pipeline forward-authors and expert-audits natural-language items together with their reference formalizations, verifies annotated answers with Z3, constructs expert rubrics for natural-to-formal grading, and hardens selected items through a closed-loop adversarial workflow. The benchmark is released in two paired subsets: a 246-item Base subset shipped with 1,400 expert-developed rubric atoms, and a 190-item Hard subset with 938 multi-step sub-questions over closed model spaces. Evaluating 14 frontier LLMs on LLMEval-Logic reveals substantial gaps in current models: the best model reaches only 37.5% Hard Item Accuracy, and even with reference symbols the highest joint Z3+Rubric formalization score among evaluated models reaches only 60.16%. Our benchmark is publicly available at https://github.com/llmeval/LLMEval-Logic.",
+        "description_zh": "评估自然语言逻辑推理的大型语言模型 (LLM) 至关重要，因为规则管理的任务要求结论严格遵循既定前提。许多现有的逻辑推理基准是通过从采样公式中模板化自然语言项目来生成的，仅提供粗略或未经审计的形式注释，并且现在很快就被前沿推理模型所饱和。我们推出了 LLMEval-Logic，这是一个根据现实情境场景构建的中文逻辑推理基准。其管道转发作者和专家审核自然语言项目及其参考形式化，使用 Z3 验证带注释的答案，构建用于自然到正式评分的专家评分标准，并通过闭环对抗性工作流程强化所选项目。该基准测试以两个配对子集发布：一个包含 246 项的基本子集，包含 1,400 个专家开发的标题原子；一个包含 190 项的硬子集，包含封闭模型空间上的 938 个多步骤子问题。在 LLMEval-Logic 上评估 14 个前沿LLM揭示了当前模型的巨大差距：最好的模型仅达到 37.5% 的硬项准确率，即使使用参考符号，评估模型中最高的联合 Z3+Rubric 形式化分数也仅达到 60.16%。我们的基准测试可在 https://github.com/llmeval/LLMEval-Logic 上公开获取。",
+        "authors": "Ming Zhang, Qiyuan Peng, Yinxi Wei, Yujiong Shen, Kexin Tan, Yuhui Wang, Zhenghao Xiang, Junjie Ye, Zhangyue Yin, Zhiheng Xi, Shihan Dou, Tao Gui, Maxm Pan, Ruizhi Yang, Qi Zhang, Xuanjing Huang",
+        "url": "https://huggingface.co/papers/2605.19597",
+        "score": 16,
         "meta": {
           "source": "huggingface",
-          "upvotes": "0",
-          "paperId": "2605.19633"
+          "upvotes": "16",
+          "paperId": "2605.19597"
         }
       },
       {
-        "id": "2605.14236",
-        "title": "Active Learners as Efficient PRP Rerankers",
-        "title_zh": "主动学习者作为高效的 PRP 重新排名者",
-        "description": "Pairwise Ranking Prompting (PRP) elicits pairwise preference judgments from an LLM, which are then aggregated into a ranking, usually via classical sorting algorithms. However, judgments are noisy, order-sensitive, and sometimes intransitive, so sorting assumptions do not match the setting. Because sorting aims to recover a full permutation, truncating it to meet a call budget does not produce a dependable top-K. We thus reframe PRP reranking as active learning from noisy pairwise comparisons and show that active rankers are drop-in replacements that improve NDCG@10 per call in the call-constrained regime. Our noise-robust framework also introduces a randomized-direction oracle that uses a single LLM call per pair. This approach converts systematic position bias into zero-mean noise, enabling unbiased aggregate ranking without the cost of bidirectional calls.",
-        "description_zh": "成对排名提示（PRP）从LLM中引出成对偏好判断，然后通常通过经典排序算法将其汇总成排名。然而，判断是有噪声的、顺序敏感的，有时是不及物的，因此排序假设与设置不匹配。因为排序的目的是恢复完整的排列，所以截断它以满足调用预算不会产生可靠的 top-K。因此，我们将 PRP 重新排序重新定义为从嘈杂的成对比较中进行主动学习，并表明主动排序器是直接替代品，可以在调用约束机制中提高每次调用的 NDCG@10。我们的抗噪声框架还引入了随机方向预言机，每对使用单个 LLM 调用。这种方法将系统位置偏差转换为零均值噪声，从而实现无偏差的聚合排名，而无需双向调用的成本。",
-        "authors": "Jeremías Figueiredo Paschmann, Juan Kaplan, Francisco Nattero, Santiago Barron, Juan Wisznia, Luciano del Corro",
-        "url": "https://huggingface.co/papers/2605.14236",
-        "score": 64,
+        "id": "2605.18233",
+        "title": "Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos",
+        "title_zh": "增强无训练无限帧生成，实现一致的长视频",
+        "description": "Without incurring significant computational overhead, train-free long video generation aims to enable foundation video generation models to produce longer videos. Frame-level autoregressive frameworks, e.g., FIFO-diffusion, offer the advantage of generating infinitely long videos with constant memory consumption. However, the mismatch between training and inference, coupled with the challenge of maintaining long-term consistency, limits the effective utilization of foundation models. To mitigate these concerns, we propose MIGA, a novel infinite-frame long video generation method. Firstly, we propose an effective two-stage alignment mechanism that mitigates the training-inference gap by reducing the excessive noise span fed to the model. We then introduce an innovative dual consistency enhancement mechanism, where the self-reflection approach corrects early high-noise frames and the long-range frame guidance approach leverages later low-noise frames with broad coverage to steer generation, jointly improving temporal consistency. Extensive experiments on VBench and NarrLV demonstrate the state-of-the-art performance of MIGA. Our project page is available at https://xiaokunfeng.github.io/miga_homepage/.",
+        "description_zh": "在不产生大量计算开销的情况下，免训练长视频生成旨在使基础视频生成模型能够生成更长的视频。帧级自回归框架（例如 FIFO 扩散）具有以恒定内存消耗生成无限长视频的优势。然而，训练和推理之间的不匹配，加上保持长期一致性的挑战，限制了基础模型的有效利用。为了缓解这些问题，我们提出了 MIGA，一种新颖的无限帧长视频生成方法。首先，我们提出了一种有效的两阶段对齐机制，通过减少输入模型的过多噪声跨度来缩小训练推理差距。然后，我们引入了一种创新的双重一致性增强机制，其中自反射方法纠正早期的高噪声帧，而远程帧引导方法利用后来具有广泛覆盖范围的低噪声帧来引导生成，共同提高时间一致性。 VBench 和 NarrLV 上的大量实验证明了 MIGA 的最先进性能。我们的项目页面位于 https://xiaokunfeng.github.io/miga_homepage/。",
+        "authors": "X. Feng, J. Zhu, M. Wu, C. Chen, F. Mao, H. Guo, J. Wu, X. Chu, K. Huang",
+        "url": "https://huggingface.co/papers/2605.18233",
+        "score": 80,
         "meta": {
           "source": "huggingface",
-          "upvotes": "64",
-          "paperId": "2605.14236"
+          "upvotes": "80",
+          "paperId": "2605.18233"
+        }
+      },
+      {
+        "id": "2605.20266",
+        "title": "A Survey of Large Audio Language Models: Generalization, Trustworthiness, and Outlook",
+        "title_zh": "大型音频语言模型综述：泛化、可信度和展望",
+        "description": "The foundational capabilities established by Large Language Models (LLMs) have paved the way for Multimodal Large Language Models (MLLMs), within which Large Audio Language Models (LALMs) are essential for realizing universal auditory intelligence. Despite their remarkable performance, the escalation of LALMs' capabilities has significantly outpaced the development of systemic frameworks to ensure their trustworthiness. This survey provides a comprehensive investigation into the endogenous mechanisms of LALMs, detailing the architectural innovations and alignment algorithms that facilitate emergent reasoning. Specifically, we analyze how the transition to unified end-to-end frameworks and the integration of continuous acoustic signals inherently expand the attack surface. To rigorously evaluate the risks within these paradigms, we establish a comprehensive taxonomy of trustworthiness, categorizing critical vulnerabilities such as cross-modal jailbreaking, latent acoustic backdoors, and biometric privacy leakage. We review the state-of-the-art through six analytical pillars: hallucination, robustness, safety, privacy, fairness, and authentication. The profound imbalance between a mature offensive landscape and underdeveloped defenses further validates the critical trustworthiness gaps and multidimensional risks facing audio-centric intelligence. Finally, we propose a strategic roadmap advocating for \"Defense-in-Depth\" architectures, causal auditory world modeling, and intrinsic representation engineering to bridge the gap between empirical performance and intrinsically trustworthy audio intelligence. Our project has been uploaded to GitHub https://github.com/Kwwwww74/Awesome-Trustworthy-AudioLLMs.",
+        "description_zh": "大语言模型 (LLM) 建立的基础功能为多模态大语言模型 (MLLM) 铺平了道路，其中大音频语言模型 (LALM) 对于实现通用听觉智能至关重要。尽管表现出色，但 LALM 能力的提升远远超过了确保其可信度的系统框架的发展速度。这项调查对 LALM 的内生机制进行了全面的研究，详细介绍了促进紧急推理的架构创新和对齐算法。具体来说，我们分析了向统一端到端框架的过渡以及连续声信号的集成如何从本质上扩大攻击面。为了严格评估这些范式中的风险，我们建立了全面的可信度分类法，对跨模式越狱、潜在声学后门和生物特征隐私泄露等关键漏洞进行分类。我们通过六个分析支柱来回顾最先进的技术：幻觉、稳健性、安全性、隐私、公平性和身份验证。成熟的进攻格局与不发达的防御之间的严重不平衡进一步证实了以音频为中心的情报所面临的关键可信度差距和多维风险。最后，我们提出了一个战略路线图，提倡“深度防御”架构、因果听觉世界建模和内在表示工程，以弥合经验性能和本质上值得信赖的音频智能之间的差距。我们的项目已上传到GitHub https://github.com/Kwwwww74/Awesome-Trustworthy-AudioLLMs。",
+        "authors": "Kaiwen Luo, Zhenhong Zhou, Leo Wang, Liang Lin, Yang Xiao, Tianyu Shao, Yuanhe Zhang, Yuxuan Li, Miao Yu, Kailin Lyu, Jiaming Zhang, Dongrui Liu, Li Sun, Yueming Wu, Kai Li, Ting Dang, Xiaojun Jia, Rohan Kumar Das, Xinfeng Li, Siyuan Liang, Qiufeng Wang, Xingjun Ma, Jing Chen, Kun Wang, Junhao Dong, Deqing Zou, Yu Cheng, Xia Hu, Zhigang Zeng, Sen Su, Yang Liu, Yu-Gang Jiang, Philip S. Yu, Yew-Soon Ong",
+        "url": "https://huggingface.co/papers/2605.20266",
+        "score": 27,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "27",
+          "paperId": "2605.20266"
+        }
+      },
+      {
+        "id": "2605.19833",
+        "title": "Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation",
+        "title_zh": "Mega-ASR：通过扩大现实世界声学模拟实现野外^2语音识别",
+        "description": "Despite rapid advances in automatic speech recognition (ASR) and large audio-language models, robust recognition in real-world environments remains limited by an \"acoustic robustness bottleneck\": models often lose acoustic grounding and produce omissions or hallucinations under severe, compositional distortions. We propose Mega-ASR, a unified ASR-in-the-wild framework that combines scalable compound-data construction with progressive acoustic-to-semantic optimization. We introduce Voices-in-the-Wild-2M, covering 7 classic acoustic phenomena and 54 physically plausible compound scenarios, and train Mega-ASR with Acoustic-to-Semantic Progressive Supervised Fine-Tuning and Dual-Granularity WER-Gated Policy Optimization. Extensive experiments demonstrate that Mega-ASR achieves significant advantages over prior state-of-the-art systems on adverse-condition ASR benchmarks (45.69% vs. 54.01% on VOiCES R4-B-F, and 21.49% vs. 29.34% on NOIZEUS Sta-0). On complex compositional acoustic scenarios, Mega-ASR further delivers over 30% relative WER reduction against strong open- and closed-source baselines, establishing a scalable paradigm for robust ASR in-the-wild.",
+        "description_zh": "尽管自动语音识别（ASR）和大型音频语言模型取得了快速进步，但现实环境中的鲁棒识别仍然受到“声学鲁棒性瓶颈”的限制：模型经常失去声学基础，并在严重的成分失真下产生遗漏或幻觉。我们提出了 Mega-ASR，这是一种统一的野外 ASR 框架，它将可扩展的复合数据构造与渐进式声学到语义优化相结合。我们引入了 Voices-in-the-Wild-2M，涵盖 7 种经典声学现象和 54 种物理上合理的复合场景，并通过声学到语义渐进式监督微调和双粒度 WER 门控策略优化来训练 Mega-ASR。大量实验表明，Mega-ASR 在不利条件 ASR 基准测试中比之前最先进的系统具有显着优势（VOiCES R4-B-F 上为 45.69% vs. 54.01%，NOIZEUS Sta-0 上为 21.49% vs. 29.34%）。在复杂的合成声学场景中，与强大的开源和闭源基线相比，Mega-ASR 进一步实现了超过 30% 的相对 WER 降低，为野外稳健的 ASR 建立了可扩展的范例。",
+        "authors": "Zhifei Xie, Kaiyu Pang, Haobin Zhang, Deheng Ye, Xiaobin Hu, Shuicheng Yan, Chunyan Miao",
+        "url": "https://huggingface.co/papers/2605.19833",
+        "score": 109,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "109",
+          "paperId": "2605.19833"
+        }
+      },
+      {
+        "id": "2605.14747",
+        "title": "Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining",
+        "title_zh": "Video2GUI：为通用 GUI 代理预训练合成大规模交互轨迹",
+        "description": "Recent advances in multimodal large language models have driven growing interest in graphical user interface (GUI) agents, yet their generalization remains constrained by the scarcity of large-scale training data spanning diverse real-world applications. Existing datasets rely heavily on costly manual annotations and are typically confined to narrow domains. To address this challenge, we propose Video2GUI, a fully automated framework that extracts grounded GUI interaction trajectories directly from unlabeled Internet videos. Video2GUI employs a coarse-to-fine filtering strategy to identify high-quality GUI tutorial videos and convert them into structured agent trajectories. Applying this pipeline to 500 million video metadata entries, we construct WildGUI, a large-scale dataset containing 12 million interaction trajectories spanning over 1,500 applications and websites. Pre-training Qwen2.5-VL and Mimo-VL on WildGUI yields consistent improvements of 5-20% across multiple GUI grounding and action benchmarks, matching or surpassing state-of-the-art performance. We will release both the WildGUI dataset and the Video2GUI pipeline to support future research of GUI agents.",
+        "description_zh": "多模态大语言模型的最新进展引起了人们对图形用户界面（GUI）代理的日益浓厚的兴趣，但它们的泛化仍然受到跨越不同现实世界应用的大规模训练数据的稀缺性的限制。现有数据集严重依赖昂贵的手动注释，并且通常仅限于狭窄的领域。为了应对这一挑战，我们提出了 Video2GUI，这是一个完全自动化的框架，可以直接从未标记的互联网视频中提取接地的 GUI 交互轨迹。 Video2GUI 采用从粗到细的过滤策略来识别高质量的 GUI 教程视频并将其转换为结构化代理轨迹。将此管道应用于 5 亿个视频元数据条目，我们构建了 WildGUI，这是一个大型数据集，包含跨越 1,500 个应用程序和网站的 1200 万条交互轨迹。在 WildGUI 上预训练 Qwen2.5-VL 和 Mimo-VL 在多个 GUI 基础和操作基准测试中取得了 5-20% 的持续改进，匹配或超越了最先进的性能。我们将发布 WildGUI 数据集和 Video2GUI 管道，以支持 GUI 代理的未来研究。",
+        "authors": "Weimin Xiong, Shuhao Gu, Bowen Ye, Zihao Yue, Lei Li, Feifan Song, Sujian Li, Hao Tian",
+        "url": "https://huggingface.co/papers/2605.14747",
+        "score": 86,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "86",
+          "paperId": "2605.14747"
+        }
+      },
+      {
+        "id": "2605.19330",
+        "title": "MOCHA: Multi-Objective Chebyshev Annealing for Agent Skill Optimization",
+        "title_zh": "MOCHA：用于智能体技能优化的多目标切比雪夫退火",
+        "description": "LLM agents organize behavior through skills - structured natural-language specifications governing how an agent reasons, retrieves, and responds. Unlike monolithic prompts, skills are multi-field artifacts subject to hard platform constraints: description fields are truncated for routing, instruction bodies are compacted via progressive disclosure, and co-resident skills compete for limited context windows. These constraints make skill optimization inherently multi-objective: a skill must simultaneously maximize task performance and satisfy platform limits. Yet existing prompt optimizers either ignore these trade-offs or collapse them into a weighted sum, missing Pareto-optimal variants in non-convex objective regions. We introduce MOCHA (Multi-Objective Chebyshev Annealing), which replaces single-objective selection with Chebyshev scalarization - covering the full Pareto front, including non-convex regions - combined with exponential annealing that transitions from exploration to exploitation. In our experiments across six diverse agent skills - where all methods share the same multi-objective mutation operator and baselines receive identical per-objective textual feedback - existing optimizers fail to improve the seed skill on 4 of 6 tasks: 1000 rollouts yield zero progress. MOCHA breaks through on every task, achieving 7.5% relative improvement in mean correctness over the strongest baseline (up to 14.9% on FEVER and 10.4% on TheoremQA) while discovering twice as many more Pareto-optimal skill variants.",
+        "description_zh": "LLM 代理通过技能组织行为——结构化自然语言规范控制代理如何推理、检索和响应。与整体提示不同，技能是受硬平台约束的多领域工件：描述字段被截断以进行路由，指令主体通过渐进式披露进行压缩，共存技能争夺有限的上下文窗口。这些限制使得技能优化本质上是多目标的：技能必须同时最大化任务性能并满足平台限制。然而，现有的提示优化器要么忽略这些权衡，要么将它们折叠成加权和，从而缺少非凸目标区域中的帕累托最优变体。我们引入了 MOCHA（多目标切比雪夫退火），它用切比雪夫标量化取代了单目标选择 - 覆盖整个帕累托前沿，包括非凸区域 - 结合从探索过渡到利用的指数退火。在我们针对六种不同代理技能的实验中，所有方法共享相同的多目标突变算子，并且基线接收相同的每个目标文本反馈，现有优化器无法提高 6 项任务中 4 项的种子技能：1000 次部署产生零进度。 MOCHA 在每项任务上都取得了突破，与最强基线相比，平均正确��相对提高了 7.5%（FEVER 提高了 14.9%，TheoremQA 提高了 10.4%），同时发现了两倍多的帕累托最优技能变体。",
+        "authors": "Md Mehrab Tanjim, Jayakumar Subramanian, Xiang Chen, Branislav Kveton, Subhojyoti Mukherjee, Anlan Zhang, Sungchul Kim, Somdeb Sarkhel, Sunav Choudhury",
+        "url": "https://huggingface.co/papers/2605.19330",
+        "score": 5,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "5",
+          "paperId": "2605.19330"
+        }
+      },
+      {
+        "id": "2605.19484",
+        "title": "CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing",
+        "title_zh": "CutVerse：媒体后期制作编辑的组合 GUI 代理基准",
+        "description": "While GUI agents have made significant progress in web navigation and basic operating system tasks, their capabilities in professional creative workflows remain largely underexplored. To bridge this gap, we introduce Cutverse, a benchmark designed to systematically evaluate autonomous GUI agents in realistic media post-production environments. We curate expert demonstrations across 7 professional applications (e.g., Premiere Pro, Photoshop), covering 186 complex, long-horizon tasks grounded in authentic editing workflows, involving dense multimodal interfaces and tightly coupled interaction sequences. To support scalable evaluation, we develop a lightweight parser that transforms raw screen recordings and low-level interaction logs into structured, compositional GUI action trajectories with precise grounding. Extensive evaluations reveal that existing agents achieve only 36.0\\% task success on realistic media editing tasks, underscoring the challenges posed by complex, long-horizon media post-production workflows in our benchmark.While current models demonstrate promising spatial grounding, multimodal alignment, and coordinated action execution, they remain limited in long-horizon reliability and domain-specific planning.",
+        "description_zh": "虽然 GUI 代理在网络导航和基本操作系统任务方面取得了重大进展，但它们在专业创意工作流程中的能力在很大程度上仍未得到充分开发。为了弥补这一差距，我们引入了 Cutverse，这是一个旨在系统地评估现实媒体后期制作环境中的自主 GUI 代理的基准。我们策划了 7 个专业应用程序（例如 Premiere Pro、Photoshop）的专家演示，涵盖基于真实编辑工作流程的 186 个复杂的长期任务，涉及密集的多模式界面和紧密耦合的交互序列。为了支持可扩展的评估，我们开发���一个轻量级解析器，将原始屏幕记录和低级交互日志转换为具有精确基础的结构化、组合式 GUI 动作轨迹。广泛的评估表明，现有代理在现实媒体编辑任务中仅取得了 36.0% 的任务成功率，这凸显了我们的基准中复杂的、长期的媒体后期制作工作流程所带来的挑战。虽然当前的模型展示了有希望的空间基础、多模式对齐和协调的行动执行，但它们在长期可靠性和特定领域规划方面仍然受到限制。",
+        "authors": "Haobo Hu, Xiangwu Guo, Zhiheng Chen, Difei Gao, Haotian Liu, Libiao Jin, Qi Mao",
+        "url": "https://huggingface.co/papers/2605.19484",
+        "score": 19,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "19",
+          "paperId": "2605.19484"
+        }
+      },
+      {
+        "id": "2605.20315",
+        "title": "Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs",
+        "title_zh": "Mix-Quant：代理LLM的量化预填充、精确解码",
+        "description": "LLM agents have recently emerged as a powerful paradigm for solving complex tasks through planning, tool use, memory retrieval, and multi-step interaction. However, these agentic workflows often introduce substantial input-side overhead, making the compute-intensive prefilling stage a key bottleneck in long-context, multi-turn inference. In this work, we propose Mix-Quant, a simple and effective phase-aware quantization framework for fast agentic inference. We first investigate FP4 quantization in agentic LLM workflows and observe that quantizing the entire inference process can incur significant performance degradation. In contrast, the prefilling stage exhibits substantial quantization redundancy and can therefore be quantized with minimal accuracy loss, despite being the dominant source of computation. Based on this insight, we apply high-throughput NVFP4 quantization to the prefilling phase while preserving BF16 precision for decoding. By decoupling prefilling acceleration from decoding quality, Mix-Quant combines phase-aware algorithmic quantization with hardware-efficient NVFP4 execution to alleviate the inference bottleneck in LLM agents. Extensive experiments across long-context and agentic benchmarks demonstrate that Mix-Quant largely preserves task performance while delivering significant efficiency improvements, achieving up to a 3x speedup during prefilling.",
+        "description_zh": "LLM 代理最近已成为通过规划、工具使用、记忆检索和多步骤交互来解决复杂任务的强大范例。然而，这些代理工作流程通常会引入大量的输入端开销，使得计算密集型预填充阶段成为长上下文、多轮推理的关键瓶颈。在这项工作中，我们提出了 Mix-Quant，一种简单有效的相位感知量化框架，用于快速代理推理。我们首先研究了代理 LLM 工作流程中的 FP4 量化，并观察到量化整个推理过程可能会导致性能显着下降。相比之下，预填充阶段表现出大量的量化冗余，因此可以以最小的精度损失进行量化，尽管它是计算的主要来源。基于这一见解，我们将高吞吐量 NVFP4 量化应用于预填充阶段，同时保留 BF16 解码精度。通过将预填充加速与解码质量解耦，Mix-Quant 将相位感知算法量化与硬件高效的 NVFP4 执行相结合，以缓解 LLM 代理中的推理瓶颈。跨长上下文和代理基准的大量实验表明，Mix-Quant 在很大程度上保留了任务性能，同时显着提高了效率，在预填充过程中实现了高达 3 倍的加速。",
+        "authors": "Haiquan Lu, Zigeng Chen, Gongfan Fang, Xinyin Ma, Xinchao Wang",
+        "url": "https://huggingface.co/papers/2605.20315",
+        "score": 22,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "22",
+          "paperId": "2605.20315"
+        }
+      },
+      {
+        "id": "2605.21468",
+        "title": "You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories",
+        "title_zh": "您只需要最少的 RLVR 培训：通过 Rank-1 轨迹推断 LLM",
+        "description": "Reinforcement learning with verifiable rewards (RLVR) has become a dominant paradigm for improving reasoning in large language models (LLMs), yet the underlying geometry of the resulting parameter trajectories remains underexplored. In this work, we demonstrate that RLVR weight trajectories are extremely low-rank and highly predictable. Specifically, we find that the majority of downstream performance gains are captured by a rank-1 approximation of the parameter deltas, where the magnitude of this projection evolves near-linearly with training steps. Motivated by this, we propose a simple and compute-efficient method RELEX (REinforcement Learning EXtrapolation), which estimates the rank-1 subspace from a short observation window and extrapolates future checkpoints via linear regression, with no learned model required. Across three models (i.e., Qwen2.5-Math-1.5B, Qwen3-4B-Base, and Qwen3-8B-Base), RELEX produces checkpoints that match or exceed RLVR performance on both in-domain and out-of-domain benchmarks, requiring as few as 15% steps of full RLVR training. Remarkably, RELEX is able to extrapolate far beyond the observation window at no training cost, predicting checkpoints up to 10-20times beyond the observed prefix with continued improvement (e.g., observe only the first 50 steps and extrapolate to 1000 steps). Our ablation analysis confirms the minimalist sufficiency of RELEX: neither increasing the subspace rank nor employing non-linear modeling yields further gains in extrapolation. Finally, we show that RELEX's success stems from a \"denoising\" effect: by projecting updates onto the rank-1 subspace, the model discards stochastic optimization noise that would otherwise degrade performance during extrapolation. Our code is available at https://github.com/weizhepei/RELEX.",
+        "description_zh": "具有可验证奖励的强化学习 (RLVR) 已成为改善大型语言模型 (LLM) 推理的主导范例，但结果参数轨迹的基础几何结构仍未得到充分探索。在这项工作中，我们证明了 RLVR 权重轨迹的等级极低且高度可预测。具体来说，我们发现大部分下游性能增益是通过参数增量的 1 阶近似捕获的，其中该投影的大小随着训练步骤近乎线性地变化。受此启发，我们提出了一种简单且计算高效的方法 RELEX（强化学习外推），它从短观察窗口估计 1 级子空间，并通过线性回归推断未来的检查点，无需学习模型。在三个模型（即 Qwen2.5-Math-1.5B、Qwen3-4B-Base 和 Qwen3-8B-Base）中，RELEX 生成的检查点在域内和域外基准测试上均匹配或超过 RLVR 性能，仅需 15% 的完整 RLVR 训练步骤。值得注意的是，RELEX 能够在没有训练成本的情况下推断远远超出观察窗口的范围，预测检查点最多可超出观察到的前缀 10-20 倍，并持续改进（例如，仅观察前 50 个步骤并推断到 1000 个步骤）。我们的消融分析证实了 RELEX 的极简充分性：增加子空间等级或采用非线性建模都不会产生外推的进一步收益。最后，我们表明 RELEX 的成功源于“去噪”效应：通过将更新投影到 1 级子空间上，模型丢弃了随机优化噪声，否则这些噪声会在外推过程中降低性能。我们的代码可在 https://github.com/weizhepei/RELEX 获取。",
+        "authors": "Zhepei Wei, Xinyu Zhu, Wei-Lin Chen, Chengsong Huang, Jiaxin Huang, Yu Meng",
+        "url": "https://huggingface.co/papers/2605.21468",
+        "score": 40,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "40",
+          "paperId": "2605.21468"
         }
       }
     ]
   },
   "x": {
     "source": "x",
-    "updatedAt": "2026-05-20T21:22:37.151Z",
+    "updatedAt": "2026-05-21T21:16:13.316Z",
     "count": 15,
     "mode": "follow-builders",
     "items": [
       {
-        "id": "2056753169888334312",
-        "title": "Personal update: I've joined Anthropic.",
-        "title_zh": "个人更新：我已加入 Anthropic。",
-        "description": "Personal update: I've joined Anthropic. I think the next few years at the frontier of LLMs will be especially formative. I am very excited to join the team here and get back to R&amp;D. I remain deeply passionate about education and plan t…",
-        "description_zh": "个人更新：我已加入 Anthropic。我认为LLM前沿的未来几年将尤其具有影响力。我很高兴能加入这里的团队并回到研发部门。我仍然对教育充满热情并计划……",
-        "authors": "Andrej Karpathy",
-        "url": "https://x.com/karpathy/status/2056753169888334312",
-        "score": 162806,
-        "meta": {
-          "source": "x",
-          "handle": "@karpathy",
-          "bio": "I like to train large deep neural nets. Previously Director of AI @ Tesla, founding team @ Open…",
-          "likes": "131874",
-          "retweets": "10041",
-          "replies": "7220",
-          "age": "1d ago",
-          "createdAt": "2026-05-19T15:05:42.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056999228405346812",
-        "title": "oh no contextual got windsurfed",
-        "title_zh": "哦，没有上下文得到风帆冲浪",
-        "description": "oh no contextual got windsurfed https://t.co/Q4dM8h71bE",
-        "description_zh": "哦，没有上下文得到风帆冲浪 https://t.co/Q4dM8h71bE",
+        "id": "2057180464524456201",
+        "title": "pod link and more ctx",
+        "title_zh": "pod 链接和更多 ctx",
+        "description": "pod link and more ctx https://t.co/SLrKEkYwgU",
+        "description_zh": "pod 链接和更多 ctx https://t.co/SLrKEkywgU",
         "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2056999228405346812",
-        "score": 28.25,
+        "url": "https://x.com/swyx/status/2057180464524456201",
+        "score": 24.35,
         "meta": {
           "source": "x",
           "handle": "@swyx",
           "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipsh…",
-          "likes": "11",
-          "retweets": "0",
-          "replies": "4",
-          "age": "14h ago",
-          "createdAt": "2026-05-20T07:23:27.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056877529991205072",
-        "title": "there's 4 parts to this AI SDLC 1.",
-        "title_zh": "此 AI SDLC 1 有 4 个部分。",
-        "description": "there's 4 parts to this AI SDLC 1. have ~50 tests in place, with instructions to add more, including \"make a memory that whenever you do browser e2e tests, use computer vision to visually spot check design and ux issues as well on mobile/d…",
-        "description_zh": "此 AI SDLC 分为 4 个部分 1. 进行了约 50 项测试，并附有添加更多测试的说明，包括“记住，每当您进行浏览器 e2e 测试时，都使用计算机视觉来直观地检查设计和用户体验问题，以及移动/d 上的问题……",
-        "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2056877529991205072",
-        "score": 43.04,
-        "meta": {
-          "source": "x",
-          "handle": "@swyx",
-          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipsh…",
-          "likes": "8",
-          "retweets": "0",
-          "replies": "6",
-          "age": "22h ago",
-          "createdAt": "2026-05-19T23:19:52.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056790544731484358",
-        "title": "rsi is here.",
-        "title_zh": "rsi 在这里。",
-        "description": "rsi is here. jesus https://t.co/XYlFDZLFWL",
-        "description_zh": "rsi 在这里。耶稣 https://t.co/XYlFDZLFWL",
-        "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2056790544731484358",
-        "score": 39,
-        "meta": {
-          "source": "x",
-          "handle": "@swyx",
-          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipsh…",
-          "likes": "25",
+          "likes": "10",
           "retweets": "0",
           "replies": "2",
           "age": "1d ago",
-          "createdAt": "2026-05-19T17:34:13.000Z",
+          "createdAt": "2026-05-20T19:23:37.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2056873495116845485",
-        "title": "Introducing Gemini Spark!",
-        "title_zh": "介绍双子座火花！",
-        "description": "Introducing Gemini Spark! Our 24/7 personal AI agent designed to proactively manage tasks and help you navigate your digital life, all under your direction. Coming to trusted testers this week, and as a Beta for US Google AI Ultra subscrib…",
-        "description_zh": "介绍双子座火花！我们的 24/7 个人人工智能代理旨在主动管理任务并帮助您驾驭数字生活，一切都在您的指导下。本周将向值得信赖的测试人员开放，并作为美国 Google AI Ultra 的 Beta 订阅……",
-        "authors": "Josh Woodward",
-        "url": "https://x.com/joshwoodward/status/2056873495116845485",
-        "score": 1146.25,
+        "id": "2057180080078791036",
+        "title": "btw we did a bake off of Exa vs competitors and it took all of 1.5 hrs for the team to un…",
+        "title_zh": "顺便说一句，我们对 Exa 与竞争对手进行了比较，团队花了 1.5 小时才解散……",
+        "description": "btw we did a bake off of Exa vs competitors and it took all of 1.5 hrs for the team to unanimously converge on exa lol. so proud to see my former landlords crush it - time travel back to last year and listen to a pre pmf @WilliamBryk to un…",
+        "description_zh": "顺便说一句，我们对 Exa 与竞争对手进行了比较，团队花了 1.5 小时才一致同意 exa lol。很自豪地看到我的前房东粉碎了它 - 时间旅行回到去年并听一个 pre pmf @WilliamBryk to un…",
+        "authors": "Swyx",
+        "url": "https://x.com/swyx/status/2057180080078791036",
+        "score": 302.87,
         "meta": {
           "source": "x",
-          "handle": "@joshwoodward",
-          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-          "likes": "865",
-          "retweets": "85",
-          "replies": "58",
-          "age": "22h ago",
-          "createdAt": "2026-05-19T23:03:50.000Z",
+          "handle": "@swyx",
+          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipsh…",
+          "likes": "222",
+          "retweets": "9",
+          "replies": "27",
+          "age": "1d ago",
+          "createdAt": "2026-05-20T19:22:06.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2056838729667649571",
-        "title": "Glad you like it!",
-        "title_zh": "很高兴你喜欢它！",
-        "description": "Glad you like it! https://t.co/pg2WVWj44I",
-        "description_zh": "很高兴你喜欢它！ https://t.co/pg2WVWj44I",
-        "authors": "Josh Woodward",
-        "url": "https://x.com/joshwoodward/status/2056838729667649571",
-        "score": 225.4,
+        "id": "2057119153337545096",
+        "title": "very belated but in retrospect i think @sama's mythical \"build a business that gets bette…",
+        "title_zh": "很晚了，但回想起来，我认为 @sama 的神话“建立一个变得更好的企业......",
+        "description": "very belated but in retrospect i think @sama's mythical \"build a business that gets better when models get better\" is basically what I called Agent Labs here. seeing a very direct correlation with model performance and agent lab revenue, d…",
+        "description_zh": "很晚了，但回想起来，我认为 @sama 神话般的“当模型变得更好时，建立一个变得更好的企业”基本上就是我在这里所说的代理实验室。看到模型性能和代理实验室收入之间存在非常直接的相关性，d……",
+        "authors": "Swyx",
+        "url": "https://x.com/swyx/status/2057119153337545096",
+        "score": 114,
         "meta": {
           "source": "x",
-          "handle": "@joshwoodward",
-          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-          "likes": "193",
+          "handle": "@swyx",
+          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipsh…",
+          "likes": "46",
           "retweets": "4",
-          "replies": "10",
+          "replies": "24",
           "age": "1d ago",
-          "createdAt": "2026-05-19T20:45:42.000Z",
+          "createdAt": "2026-05-20T15:20:00.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2056830338110996909",
-        "title": "Glad you like it!",
-        "title_zh": "很高兴你喜欢它！",
-        "description": "Glad you like it! We have more accents coming! :) https://t.co/6s7rZEezZO",
-        "description_zh": "很高兴你喜欢它！我们还会有更多口音！ :) https://t.co/6s7rZEezZO",
+        "id": "2057297559643922609",
+        "title": "You found it!",
+        "title_zh": "你找到了！",
+        "description": "You found it! :) https://t.co/PuszTtkEHs",
+        "description_zh": "你找到了！ :) https://t.co/PuszTtkEHs",
         "authors": "Josh Woodward",
-        "url": "https://x.com/joshwoodward/status/2056830338110996909",
-        "score": 107,
+        "url": "https://x.com/joshwoodward/status/2057297559643922609",
+        "score": 181.78,
         "meta": {
           "source": "x",
           "handle": "@joshwoodward",
           "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-          "likes": "81",
-          "retweets": "2",
-          "replies": "7",
-          "age": "1d ago",
-          "createdAt": "2026-05-19T20:12:21.000Z",
+          "likes": "146",
+          "retweets": "3",
+          "replies": "13",
+          "age": "18h ago",
+          "createdAt": "2026-05-21T03:08:55.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2056953057066598805",
-        "title": "Met a lot of great folks at Google IO @gregisenberg @alliekmiller @AlexFinn One thing I t…",
-        "title_zh": "在 Google IO 遇到了很多很棒的人 @gregisenberg @alliekmiller @AlexFinn 我知道的一件事......",
-        "description": "Met a lot of great folks at Google IO @gregisenberg @alliekmiller @AlexFinn One thing I think about often living both the PM and creator life is I don’t want to be just an “influencer” wielding a selfie cam. I want to be a builder and shar…",
-        "description_zh": "在 Google IO 遇到了很多很棒的人 @gregisenberg @alliekmiller @AlexFinn 我经常想到的一件事是，我经常过着产品经理和创作者的生活，我不想只是一个挥舞着自拍相机的“影响者”。我想成为一名建设者和分享者……",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2056953057066598805",
-        "score": 76.84,
+        "id": "2057280348158063071",
+        "title": "Glad you're liking it!",
+        "title_zh": "很高兴你喜欢它！",
+        "description": "Glad you're liking it! https://t.co/frWPevQkQa",
+        "description_zh": "很高兴你喜欢它！ https://t.co/frWPevQkQa",
+        "authors": "Josh Woodward",
+        "url": "https://x.com/joshwoodward/status/2057280348158063071",
+        "score": 194.11,
         "meta": {
           "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKT…",
+          "handle": "@joshwoodward",
+          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "likes": "158",
+          "retweets": "4",
+          "replies": "12",
+          "age": "19h ago",
+          "createdAt": "2026-05-21T02:00:32.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057206749552066805",
+        "title": "The next in a series of firsts for AI and mathematics!",
+        "title_zh": "人工智能和数学的一系列第一中的下一个！",
+        "description": "The next in a series of firsts for AI and mathematics! https://t.co/rnI21thKxa",
+        "description_zh": "人工智能和数学的一系列第一中的下一个！ https://t.co/rnI21thKxa",
+        "authors": "Kevin Weil",
+        "url": "https://x.com/kevinweil/status/2057206749552066805",
+        "score": 52.85,
+        "meta": {
+          "source": "x",
+          "handle": "@kevinweil",
+          "bio": "BoD @Cisco @nature_org LTC @USArmyReserve Ex CPO+Science @OpenAI, Pres @Planet, Head of Product…",
           "likes": "38",
           "retweets": "0",
-          "replies": "10",
-          "age": "17h ago",
-          "createdAt": "2026-05-20T04:19:59.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056927645657641378",
-        "title": "The man just speaks to me with everything he says: “Just try a lot and build to learn” “Y…",
-        "title_zh": "那个人只是用他所说的一切来对我说话：“只要多尝试并建立学习”“你......",
-        "description": "The man just speaks to me with everything he says: “Just try a lot and build to learn” “You need to do 3-4 iterations to find what takes off and what doesn’t.” “We only have a 90 day roadmap and maybe if we are lucky it’s 120 days.” “I don…",
-        "description_zh": "这个人只是用他所说的一切来跟我说话：“只要多尝试并构建学习”“你需要进行 3-4 次迭代才能找到什么成功，什么失败。” “我们只有 90 天的路线图，如果幸运的话可能是 120 天。” “我不……",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2056927645657641378",
-        "score": 100.79,
-        "meta": {
-          "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKT…",
-          "likes": "56",
-          "retweets": "3",
-          "replies": "8",
-          "age": "19h ago",
-          "createdAt": "2026-05-20T02:39:01.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056910185650856446",
-        "title": "Talking to the Head of Gemini app in 5 min at Google, what should I ask him?",
-        "title_zh": "与 Google 的 Gemini 应用程序负责人进行 5 分钟交谈，我应该问他什么？",
-        "description": "Talking to the Head of Gemini app in 5 min at Google, what should I ask him?",
-        "description_zh": "与 Google 的 Gemini 应用程序负责人进行 5 分钟交谈，我应该问他什么？",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2056910185650856446",
-        "score": 295.47,
-        "meta": {
-          "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKT…",
-          "likes": "190",
-          "retweets": "0",
-          "replies": "60",
-          "age": "20h ago",
-          "createdAt": "2026-05-20T01:29:38.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056790880120713432",
-        "title": "Alternate take",
-        "title_zh": "替代拍摄",
-        "description": "Alternate take https://t.co/zqIZn1oZ4j",
-        "description_zh": "替代方案 https://t.co/zqIZn1oZ4j",
-        "authors": "Nan Yu",
-        "url": "https://x.com/thenanyu/status/2056790880120713432",
-        "score": 11.3,
-        "meta": {
-          "source": "x",
-          "handle": "@thenanyu",
-          "bio": "head of product @linear",
-          "likes": "1",
-          "retweets": "0",
-          "replies": "0",
-          "age": "1d ago",
-          "createdAt": "2026-05-19T17:35:33.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056843158965858380",
-        "title": "Now also on the Claude Blog:",
-        "title_zh": "现在也在克劳德博客上：",
-        "description": "Now also on the Claude Blog: https://t.co/EHu7smfCqX",
-        "description_zh": "现在也在克劳德博客上：https://t.co/EHu7smfCqX",
-        "authors": "Thariq",
-        "url": "https://x.com/trq212/status/2056843158965858380",
-        "score": 41.1,
-        "meta": {
-          "source": "x",
-          "handle": "@trq212",
-          "bio": "Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab",
-          "likes": "28",
-          "retweets": "0",
           "replies": "2",
           "age": "1d ago",
-          "createdAt": "2026-05-19T21:03:18.000Z",
+          "createdAt": "2026-05-20T21:08:04.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2056777186062032964",
-        "title": "the future is bright, lets get to work",
-        "title_zh": "未来是光明的，让我们开始工作吧",
-        "description": "the future is bright, lets get to work https://t.co/5FAEtCQnKr",
-        "description_zh": "未来是光明的，让我们开始工作吧 https://t.co/5FAEtCQnKr",
-        "authors": "Thariq",
-        "url": "https://x.com/trq212/status/2056777186062032964",
-        "score": 1913.3,
+        "id": "2057281238722072912",
+        "title": "Maybe not working at a company that’s doing layoffs and PSC every few months is better fo…",
+        "title_zh": "也许不在一家每隔几个月就会进行裁员和 PSC 的公司工作对......",
+        "description": "Maybe not working at a company that’s doing layoffs and PSC every few months is better for mental health. https://t.co/VI36q5DjzB",
+        "description_zh": "也许不在一家每隔几个月就会进行裁员和 PSC 的公司工作更有利于心理健康。 https://t.co/VI36q5DjzB",
+        "authors": "Peter Yang",
+        "url": "https://x.com/petergyang/status/2057281238722072912",
+        "score": 133.37,
         "meta": {
           "source": "x",
-          "handle": "@trq212",
-          "bio": "Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab",
-          "likes": "1763",
-          "retweets": "21",
-          "replies": "65",
-          "age": "1d ago",
-          "createdAt": "2026-05-19T16:41:08.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056872996988756228",
-        "title": "Have you explored Project Genie yet?",
-        "title_zh": "您探索过 Project Genie 了吗？",
-        "description": "Have you explored Project Genie yet? 🌎 We just launched a huge set of updates! You can now simulate worlds grounded in @GoogleMaps Street View, manage your creations in a new library, and share them externally. Let's dive in: 1️⃣ Street V…",
-        "description_zh": "您探索过 Project Genie 了吗？ 🌎 我们刚刚推出了大量更新！您现在可以模拟基于 @GoogleMaps Street View 的世界，在新库中管理您的创作，并在外部共享它们。让我们深入探讨：1️⃣ Street V…",
-        "authors": "Google Labs",
-        "url": "https://x.com/GoogleLabs/status/2056872996988756228",
-        "score": 464.32,
-        "meta": {
-          "source": "x",
-          "handle": "@GoogleLabs",
-          "bio": "Google’s home for our latest AI tools and experiments.",
-          "likes": "331",
-          "retweets": "44",
-          "replies": "14",
-          "age": "22h ago",
-          "createdAt": "2026-05-19T23:01:51.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2056813720257663354",
-        "title": "Happy anniversary, @FlowbyGoogle!",
-        "title_zh": "周年纪念快乐，@FlowbyGoogle！",
-        "description": "Happy anniversary, @FlowbyGoogle! From text-to-video to Omni, agent, and Tools - what a ride it has been. 🚀 Keep pushing the boundaries! On to year two. ⚡ https://t.co/3Hh0kRdLP6",
-        "description_zh": "周年纪念快乐，@FlowbyGoogle！从文本到视频到 Omni、代理和工具 - 这是一次多么美妙的旅程。 🚀 不断突破界限！到了第二年。 ⚡ https://t.co/3Hh0kRdLP6",
-        "authors": "Google Labs",
-        "url": "https://x.com/GoogleLabs/status/2056813720257663354",
-        "score": 127.05,
-        "meta": {
-          "source": "x",
-          "handle": "@GoogleLabs",
-          "bio": "Google’s home for our latest AI tools and experiments.",
+          "handle": "@petergyang",
+          "bio": "Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKT…",
           "likes": "98",
-          "retweets": "5",
-          "replies": "0",
+          "retweets": "1",
+          "replies": "12",
+          "age": "19h ago",
+          "createdAt": "2026-05-21T02:04:04.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057218835074437573",
+        "title": "From playing the games to designing the games in minutes.",
+        "title_zh": "从玩游戏到设计游戏只需几分钟。",
+        "description": "From playing the games to designing the games in minutes. Just choose your characters, set the scene, and let Project Genie do the rest. The transformation is wild 🦒 See Genie in action at this year's Google I/O sandbox: https://t.co/wUPR…",
+        "description_zh": "从玩游戏到设计游戏只需几分钟。只需选择您的角色，设置场景，然后让 Project Genie 完成剩下的工作。这种转变是疯狂的 🦒 在今年的 Google I/O 沙盒中观看 Genie 的实际操作：https://t.co/wUPR...",
+        "authors": "Google Labs",
+        "url": "https://x.com/GoogleLabs/status/2057218835074437573",
+        "score": 258.2,
+        "meta": {
+          "source": "x",
+          "handle": "@GoogleLabs",
+          "bio": "Google’s home for our latest AI tools and experiments.",
+          "likes": "177",
+          "retweets": "23",
+          "replies": "9",
+          "age": "23h ago",
+          "createdAt": "2026-05-20T21:56:06.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057179491693470166",
+        "title": "We love seeing all of the worlds you’ve been creating with Genie.",
+        "title_zh": "我们很高兴看到您与 Genie 一起创造的所有世界。",
+        "description": "We love seeing all of the worlds you’ve been creating with Genie. SO much so, that we’re excited to announce Project Genie is now fully available to all Google AI Ultra subscribers globally (18+). https://t.co/C4ThmmmRNg",
+        "description_zh": "我们很高兴看到您与 Genie 一起创造的所有世界。正因如此，我们很高兴地宣布 Project Genie 现已全面向全球所有 Google AI Ultra 订阅者（18 岁以上）开放。 https://t.co/C4ThmmmRNg",
+        "authors": "Google Labs",
+        "url": "https://x.com/GoogleLabs/status/2057179491693470166",
+        "score": 207.9,
+        "meta": {
+          "source": "x",
+          "handle": "@GoogleLabs",
+          "bio": "Google’s home for our latest AI tools and experiments.",
+          "likes": "148",
+          "retweets": "16",
+          "replies": "4",
           "age": "1d ago",
-          "createdAt": "2026-05-19T19:06:19.000Z",
+          "createdAt": "2026-05-20T19:19:46.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057212335811620987",
+        "title": "This will bring AI to 42% of the web.",
+        "title_zh": "这将使人工智能占据网络的 42%。",
+        "description": "This will bring AI to 42% of the web. Every model, every provider, every modality (text, image, video, audio). https://t.co/0w3UOLwAQO",
+        "description_zh": "这将使人工智能占据网络的 42%。每个模型、每个提供者、每个模式（文本、图像、视频、音频）。 https://t.co/0w3UOLwAQO",
+        "authors": "Guillermo Rauch",
+        "url": "https://x.com/rauchg/status/2057212335811620987",
+        "score": 287.09,
+        "meta": {
+          "source": "x",
+          "handle": "@rauchg",
+          "bio": "@vercel CEO",
+          "likes": "229",
+          "retweets": "5",
+          "replies": "22",
+          "age": "1d ago",
+          "createdAt": "2026-05-20T21:30:16.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057315272156135501",
+        "title": "Great post on FDEs.",
+        "title_zh": "关于 FDE 的精彩帖子。",
+        "description": "Great post on FDEs. Everyone should read it if you’re interested in this job category. This is a job that is going to be around as long as AI keeps changing rapidly, which it inevitably will. People often wonder why isn’t this like just de…",
+        "description_zh": "关于 FDE 的精彩帖子。如果您对此工作类别感兴趣，每个人都应该阅读它。只要人工智能不断快速变化，这项工作就会存在，而且这是不可避免的。人们常常想知道为什么这不像……",
+        "authors": "Aaron Levie",
+        "url": "https://x.com/levie/status/2057315272156135501",
+        "score": 758.66,
+        "meta": {
+          "source": "x",
+          "handle": "@levie",
+          "bio": "ceo @box - your business lives in content. unleash it with AI",
+          "likes": "556",
+          "retweets": "62",
+          "replies": "37",
+          "age": "17h ago",
+          "createdAt": "2026-05-21T04:19:18.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057238298805129383",
+        "title": "Idea fusion is fun, and idea fusion with LSD (lateral synaptic drift) is even more fun",
+        "title_zh": "想法融合很有趣，加上LSD（横向突触漂移）的想法融合更有趣",
+        "description": "Idea fusion is fun, and idea fusion with LSD (lateral synaptic drift) is even more fun https://t.co/QHw0OXD7WB",
+        "description_zh": "想法融合很有趣，与 LSD（横向突触漂移）的想法融合更有趣 https://t.co/QHw0OXD7WB",
+        "authors": "Garry Tan",
+        "url": "https://x.com/garrytan/status/2057238298805129383",
+        "score": 113.39,
+        "meta": {
+          "source": "x",
+          "handle": "@garrytan",
+          "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer…",
+          "likes": "74",
+          "retweets": "7",
+          "replies": "8",
+          "age": "22h ago",
+          "createdAt": "2026-05-20T23:13:26.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057202833251000503",
+        "title": "Exa is what I trust for all my agents.",
+        "title_zh": "Exa 是我对所有代理商的信任。",
+        "description": "Exa is what I trust for all my agents. We use it at YC. We use it in all my OpenClaw and Hermes Agents. There is no other option that is as fast, as reliable, and as complete. When your agents need to search the web, accept no substitutes.…",
+        "description_zh": "Exa 是我对所有代理商的信任。我们在 YC 使用它。我们在所有 OpenClaw 和 Hermes Agent 中都使用它。没有其他选项可以如此快速、如此可靠和如此完整。当您的代理需要搜索网络时，不要接受替代品。...",
+        "authors": "Garry Tan",
+        "url": "https://x.com/garrytan/status/2057202833251000503",
+        "score": 1300.95,
+        "meta": {
+          "source": "x",
+          "handle": "@garrytan",
+          "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer…",
+          "likes": "1102",
+          "retweets": "56",
+          "replies": "44",
+          "age": "1d ago",
+          "createdAt": "2026-05-20T20:52:31.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057168328226230520",
+        "title": "The benefits of AI are real now, but we will never get there in the United States (and Am…",
+        "title_zh": "人工智能的好处现在是真实的，但我们永远无法在美国实现这一点（而且我......",
+        "description": "The benefits of AI are real now, but we will never get there in the United States (and America will cede its leadership) if we can't solve the bigger media issue of a mass smokescreen by forces that want to destroy America https://t.co/NUo…",
+        "description_zh": "人工智能的好处现在是真实存在的，但如果我们不能解决想要摧毁美国的势力大规模烟幕弹的更大媒体问题，我们将永远无法在美国实现这一目标（美国将放弃其领导地位）https://t.co/NUo…",
+        "authors": "Garry Tan",
+        "url": "https://x.com/garrytan/status/2057168328226230520",
+        "score": 449.5,
+        "meta": {
+          "source": "x",
+          "handle": "@garrytan",
+          "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer…",
+          "likes": "280",
+          "retweets": "38",
+          "replies": "49",
+          "age": "1d ago",
+          "createdAt": "2026-05-20T18:35:24.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2057090887268643187",
+        "title": "When Kendall buys Vaulter",
+        "title_zh": "当肯德尔购买 Vaulter 时",
+        "description": "When Kendall buys Vaulter https://t.co/94oGqm6uQD",
+        "description_zh": "当肯德尔购买 Vaulter 时 https://t.co/94oGqm6uQD",
+        "authors": "Matt Turck",
+        "url": "https://x.com/mattturck/status/2057090887268643187",
+        "score": 99.4,
+        "meta": {
+          "source": "x",
+          "handle": "@mattturck",
+          "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+          "likes": "79",
+          "retweets": "4",
+          "replies": "2",
+          "age": "1d ago",
+          "createdAt": "2026-05-20T13:27:41.000Z",
           "xSource": "follow-builders"
         }
       }
@@ -834,27 +834,27 @@
   },
   "reddit": {
     "source": "reddit",
-    "updatedAt": "2026-05-20T21:22:46.321Z",
+    "updatedAt": "2026-05-21T21:16:30.944Z",
     "count": 10,
     "mode": "report-highlights",
     "upstream": "liyedanpdx/reddit-ai-trends",
     "items": [
       {
-        "id": "1thug7n",
-        "title": "Google's Antigravity 2.0 Operating System",
-        "title_zh": "Google's Antigravity 2.0 创建了一个操作系统，从头开��在 12 小时内以 96 个代理人完成，成本低于 1,000 美元，并且可以运行 Doom",
-        "description": "Google's Antigravity 2.0 has created an operating system from scratch using 96 agents in 12 hours for under $1,000 in token costs. It even runs Doom, showcasing its versatility and efficiency.",
-        "description_zh": "发布/宣布了什么： Google 的 Antigravity 2.0 模型展示了多代理人协作的能力，成功地从头开始创建了一个操作系统。该系统在 12 小时内完成，使用了 96 个代理人，成本低于 1,000 美元。 关键技术规格/性能指标： 操作系统能够运行经典游戏 Doom，展示了其泛化能力和复杂任务处理的潜力。",
+        "id": "1tiosgg",
+        "title": "Meta's 8,000 Layoffs and AI Shift",
+        "title_zh": "Meta 的 8000 名裁员和 AI 转变",
+        "description": "Meta announced 8,000 layoffs, approximately 10% of its workforce, as part of a strategic shift toward AI. This move reflects the company's focus on AI-driven initiatives, potentially at the expense of traditional roles.",
+        "description_zh": "作为向人工智能战略转型的一部分，Meta 宣布裁员 8,000 人，约占员工总数的 10%。此举反映了该公司对人工智能驱动计划的关注，可能会牺牲传统角色。",
         "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1thug7n",
-        "score": 1546,
+        "url": "https://www.reddit.com/comments/1tiosgg",
+        "score": 1019,
         "meta": {
           "source": "reddit",
           "subreddit": "r/singularity",
           "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "300",
+          "comments": "200",
           "category": "AI",
-          "posted": "2026-05-19 17:46 UTC",
+          "posted": "2026-05-20 15:17 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-highlights",
           "summaryStrategy": "trend-highlights",
@@ -863,182 +863,136 @@
         }
       },
       {
-        "id": "1thtxs8",
-        "title": "Gemini 3.5 Flash",
-        "title_zh": "双子座3.5闪存",
-        "description": "Gemini 3.5 Flash was announced, touting >275 tokens per second, making it nearly 3x faster than competitors. It also claims to beat GPT-5.5 in tool use.",
-        "description_zh": "发布/宣布了什么： Google DeepMind 公布了 Gemini 3.5 Flash 模型，宣称其性能和速度有显著提升。 关键技术规格/性能指标： Gemini 3.5 Flash 的速度达到 275 tokens per second（tps），是该领域的近 3 倍。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1thtxs8",
-        "score": 1008,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "234",
-          "category": "AI",
-          "posted": "2026-05-19 17:29 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-highlights",
-          "summaryStrategy": "trend-highlights",
-          "summaryConfidence": "high",
-          "topic": "trend-highlight"
-        }
-      },
-      {
-        "id": "1thkwgk",
-        "title": "ByteDance's Open-Source Model (Lance)",
-        "title_zh": "ByteDance 发布了一个开源模型，尝试仅使用 3B 参数完成广泛的任务",
-        "description": "ByteDance released an open-source model with 3B parameters, capable of text-to-video generation and editing. It requires a GPU with at least 40GB VRAM for inference.",
-        "description_zh": "发布/宣布了什么： ByteDance 发布了一个开源模型，仅使用 3B 参数，能够完成从文本到视频生成等多种任务。 关键技术规格/性能指标： 模型基于 BAGEL 架构，支持多种任务，包括图像生成和编辑。",
+        "id": "1tiwnpc",
+        "title": "Qwen's Upcoming 27B Model Release",
+        "title_zh": "Qwen 即将发布的 27B 车型",
+        "description": "Qwen is likely to release another 27B model, following the success of its 3.6 series. The model is expected to maintain its high performance and parameter efficiency, with discussions hinting at potential improvements in quantization and hybrid CPU-GPU infere…",
+        "description_zh": "继3.6系列取得成功之后，Qwen很可能会发布另一款27B车型。该模型预计将保持其高性能和参数效率，讨论暗示量化和混合 CPU-GPU 推理方面的潜在改进……",
         "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1thkwgk",
-        "score": 609,
+        "url": "https://www.reddit.com/comments/1tiwnpc",
+        "score": 993,
         "meta": {
           "source": "reddit",
           "subreddit": "r/LocalLLaMA",
           "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "84",
+          "comments": "200",
+          "category": "News",
+          "posted": "2026-05-20 19:44 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-highlights",
+          "summaryStrategy": "trend-highlights",
+          "summaryConfidence": "high",
+          "topic": "trend-highlight"
+        }
+      },
+      {
+        "id": "1tilvit",
+        "title": "HuggingFace Benchmark Dataset Filtering",
+        "title_zh": "HuggingFace 基准数据集过滤",
+        "description": "HuggingFace has introduced a feature to filter benchmark datasets by model size, allowing users to compare performance across different parameter scales. The leaderboard highlights Qwen models dominating the rankings, with the 27B model at the top.",
+        "description_zh": "HuggingFace 引入了一项按模型大小过滤基准数据集的功能，允许用户比较不同参数范围的性能。排行榜上，Qwen 车型占据主导地位，其中 27B 车型位居榜首。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1tilvit",
+        "score": 620,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "50",
+          "category": "Resources",
+          "posted": "2026-05-20 13:33 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-highlights",
+          "summaryStrategy": "trend-highlights",
+          "summaryConfidence": "high",
+          "topic": "trend-highlight"
+        }
+      },
+      {
+        "id": "1tiut2d",
+        "title": "Midjourney's Research Delay",
+        "title_zh": "Midjourney's Research Delay",
+        "description": "Midjourney reported a one-year setback in its research due to compute limitations, highlighting the challenges of scaling AI development.",
+        "description_zh": "Midjourney 报告称，由于计算限制，其研究遭遇了一年的挫折，凸显了扩展人工智能开发的挑战。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1tiut2d",
+        "score": 530,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "58",
+          "category": "Compute",
+          "posted": "2026-05-20 18:41 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-highlights",
+          "summaryStrategy": "trend-highlights",
+          "summaryConfidence": "high",
+          "topic": "trend-highlight"
+        }
+      },
+      {
+        "id": "1tj072c",
+        "title": "Anthropic is officially set to be profitable as of Q2 2026",
+        "title_zh": "Anthropic 将于 2026 年第二季度正式实现盈利",
+        "description": "Anthropic is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is generating sustained community debate.",
+        "description_zh": "人类正在被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它正在引发持续的社区辩论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1tj072c",
+        "score": 518,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "145",
+          "category": "AI",
+          "posted": "2026-05-20 21:47 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "high",
+          "topic": "frontier-discussion"
+        }
+      },
+      {
+        "id": "1tiwa59",
+        "title": "OpenAI general purpose model had a breakthrough on famous ...",
+        "title_zh": "OpenAI 通用模型在著名的...",
+        "description": "OpenAI is being discussed as a frontier-model or industry signal in r/singularity, with speculation centered on whether the claim points to a real capability shift. It is generating sustained community debate.",
+        "description_zh": "OpenAI 正在作为 r/singularity 的前沿模型或行业信号进行讨论，猜测集中在该声明是否指向真正的能力转变。它正在引发持续的社区辩论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1tiwa59",
+        "score": 488,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "114",
+          "category": "AI",
+          "posted": "2026-05-20 19:31 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "rumor"
+        }
+      },
+      {
+        "id": "1tizmar",
+        "title": "Re. what ever happened to Cohere's Command-A series ...",
+        "title_zh": "关于。 Cohere 的 Command-A 系列发生了什么......",
+        "description": "Re. what ever happened to Cohere's Command-A series is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs.",
+        "description_zh": "关于。 Cohere 的 Command-A 系列发生的情况正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1tizmar",
+        "score": 389,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "68",
           "category": "New Model",
-          "posted": "2026-05-19 12:05 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-highlights",
-          "summaryStrategy": "trend-highlights",
-          "summaryConfidence": "high",
-          "topic": "trend-highlight"
-        }
-      },
-      {
-        "id": "1thohgl",
-        "title": "Gemini Omni model is still unable to make someone do a ba ...",
-        "title_zh": "Gemini Omni 模型仍然无法让某人做...",
-        "description": "Gemini Omni model is still unable to make someone do a ba is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is generating sustained community debate.",
-        "description_zh": "Gemini Omni 模型仍然无法让某人做 ba 正在被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它正在引发持续的社区辩论。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1thohgl",
-        "score": 595,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "103",
-          "category": "AI",
-          "posted": "2026-05-19 14:22 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "frontier-discussion"
-        }
-      },
-      {
-        "id": "1thuct8",
-        "title": "Gemini 3.5 Flash Cost Increase",
-        "title_zh": "Gemini 3.5闪存成本增加",
-        "description": "Gemini 3.5 Flash costs 3 times more than the previous version, raising concerns about accessibility for individual users and smaller businesses.",
-        "description_zh": "Gemini 3.5 Flash 的成本比之前版本高出 3 倍，引发了对个人用户和小型企业可访问性的担忧。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1thuct8",
-        "score": 593,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "95",
-          "category": "AI",
-          "posted": "2026-05-19 17:43 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-highlights",
-          "summaryStrategy": "trend-highlights",
-          "summaryConfidence": "high",
-          "topic": "trend-highlight"
-        }
-      },
-      {
-        "id": "1thxmx8",
-        "title": "Demis Hassabis at Google I/O: \\\"Artificial General Intell ...",
-        "title_zh": "杰米斯·哈萨比斯 (Demis Hassabis) 在 Google I/O 大会上：“人工智能通用智能……",
-        "description": "Demis Hassabis at Google I/O: \\\"Artificial General Intell is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is generating sustained community debate.",
-        "description_zh": "Google I/O 大会上的 Demis Hassabis：“人工智能通用智能正在被讨论为 r/singularity 领域的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它正在引发持续的社区辩论。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1thxmx8",
-        "score": 475,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "133",
-          "category": "AI",
-          "posted": "2026-05-19 19:30 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "frontier-discussion"
-        }
-      },
-      {
-        "id": "1tidqkv",
-        "title": "It's 2026, and we are yet to see an anti-almond farm pro ...",
-        "title_zh": "现在是 2026 年，我们还没有看到抗杏仁农场专业人士......",
-        "description": "It's 2026, and we are yet to see an anti-almond farm pro is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is generating sustained community debate.",
-        "description_zh": "现在是 2026 年，我们还没有看到反杏仁农场专业人士被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它正在引发持续的社区辩论。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1tidqkv",
-        "score": 319,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "124",
-          "category": "Energy",
-          "posted": "2026-05-20 06:55 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "frontier-discussion"
-        }
-      },
-      {
-        "id": "1tht4s0",
-        "title": "Andrej Karpathy Joins Anthropic",
-        "title_zh": "Andrej Karpathy 加入 Anthropic",
-        "description": "The renowned AI researcher, Andrej Karpathy, has joined Anthropic, signaling a potential boost in their AI development efforts.",
-        "description_zh": "发布/宣布了什么： Andrej Karpathy，知名 AI 研究员，加入 Anthropic 公司。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1tht4s0",
-        "score": 309,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "62",
-          "category": "AI",
-          "posted": "2026-05-19 17:02 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-highlights",
-          "summaryStrategy": "trend-highlights",
-          "summaryConfidence": "high",
-          "topic": "trend-highlight"
-        }
-      },
-      {
-        "id": "1thosnt",
-        "title": "got my first \\\"rm -rf /\\\" today",
-        "title_zh": "今天得到了我的第一个“rm -rf /”",
-        "description": "Got my first \\\"rm -rf /\\\" today is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is generating sustained community debate.",
-        "description_zh": "今天得到的第一个“rm -rf /”正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它正在引发持续的社区辩论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1thosnt",
-        "score": 286,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "125",
-          "category": "Discussion",
-          "posted": "2026-05-19 14:33 UTC",
+          "posted": "2026-05-20 21:25 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "title-synthesis",
@@ -1047,21 +1001,67 @@
         }
       },
       {
-        "id": "1tib9so",
-        "title": "Claude is telling users to go to sleep mid-session and no ...",
-        "title_zh": "克劳德告诉用户在会议中去睡觉，不要......",
-        "description": "Claude is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes.",
-        "description_zh": "Claude 被视为 r/singularity 领域的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。",
+        "id": "1tj6tua",
+        "title": "OpenAI's Breakthrough on Erdos Problem",
+        "title_zh": "OpenAI在鄂尔多斯问题上取得突破",
+        "description": "An OpenAI researcher claimed a significant breakthrough on a famous unsolved Erdos problem, showcasing AI's growing capabilities in mathematical reasoning.",
+        "description_zh": "一位 OpenAI 研究人员声称在著名的未解决的鄂尔多斯问题上取得了重大突破，展示了人工智能在数学推理方面不断增强的能力。",
         "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1tib9so",
-        "score": 286,
+        "url": "https://www.reddit.com/comments/1tj6tua",
+        "score": 355,
         "meta": {
           "source": "reddit",
           "subreddit": "r/singularity",
           "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "43",
+          "comments": "91",
           "category": "AI",
-          "posted": "2026-05-20 04:45 UTC",
+          "posted": "2026-05-21 02:20 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-highlights",
+          "summaryStrategy": "trend-highlights",
+          "summaryConfidence": "high",
+          "topic": "trend-highlight"
+        }
+      },
+      {
+        "id": "1tinl98",
+        "title": "AMD Ryzen AI Halo PC will cost 3999$ with 128GB memory on ...",
+        "title_zh": "AMD Ryzen AI Halo PC 售价 3999 美元，配备 128GB 内存...",
+        "description": "AMD Ryzen AI Halo PC will cost 3999$ with 128GB memory on is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
+        "description_zh": "AMD Ryzen AI Halo PC 售价 3999 美元，配备 128GB 内存，正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它引起了特别激烈的讨论。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1tinl98",
+        "score": 261,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "230",
+          "category": "News",
+          "posted": "2026-05-20 14:35 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1tj87da",
+        "title": "Protests by the end of the year?",
+        "title_zh": "年底抗议？",
+        "description": "Protests by the end of the year? is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is drawing especially heavy discussion.",
+        "description_zh": "年底抗议？正在被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它引起了特别激烈的讨论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1tj87da",
+        "score": 247,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "165",
+          "category": "AI",
+          "posted": "2026-05-21 03:21 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "title-synthesis",
