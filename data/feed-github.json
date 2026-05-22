@@ -1,7 +1,7 @@
 {
   "source": "github",
-  "updatedAt": "2026-05-21T21:15:51.753Z",
-  "count": 15,
+  "updatedAt": "2026-05-22T20:57:16.785Z",
+  "count": 14,
   "items": [
     {
       "id": "anthropics-claude-plugins-official",
@@ -11,10 +11,10 @@
       "description_zh": "由 Anthropic 管理的官方高品质 Claude 代码插件目录。",
       "authors": "anthropics",
       "url": "https://github.com/anthropics/claude-plugins-official",
-      "score": 22183,
+      "score": 24654,
       "meta": {
         "source": "github",
-        "stars": "22,183",
+        "stars": "24,654",
         "language": "Python",
         "repo": "anthropics/claude-plugins-official",
         "owner": "anthropics",
@@ -25,14 +25,14 @@
       "id": "colbymchenry-codegraph",
       "title": "codegraph",
       "title_zh": "codegraph",
-      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
-      "description_zh": "Claude Code、Codex、Cursor 和 OpenCode 的预索引代码知识图 — 更少的标记、更少的工具调用、100% 本地化",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "description_zh": "Claude Code、Codex、Cursor、OpenCode 和 Hermes Agent 的预索引代码知识图 — 更少的标记、更少的工具调用、100% 本地化",
       "authors": "colbymchenry",
       "url": "https://github.com/colbymchenry/codegraph",
-      "score": 13121,
+      "score": 16315,
       "meta": {
         "source": "github",
-        "stars": "13,121",
+        "stars": "16,315",
         "language": "TypeScript",
         "repo": "colbymchenry/codegraph",
         "owner": "colbymchenry",
@@ -40,111 +40,21 @@
       }
     },
     {
-      "id": "multica-ai-andrej-karpathy-skills",
-      "title": "andrej-karpathy-skills",
-      "title_zh": "andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "description_zh": "用于改进 Claude 代码行为的单个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码陷阱的观察。",
-      "authors": "multica-ai",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "score": 142955,
+      "id": "ruvnet-RuView",
+      "title": "RuView",
+      "title_zh": "RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "description_zh": "π RuView 将商用 WiFi 信号转化为实时空间智能、生命体征监测和存在检测 - 所有这些都无需视频像素。",
+      "authors": "ruvnet",
+      "url": "https://github.com/ruvnet/RuView",
+      "score": 63903,
       "meta": {
         "source": "github",
-        "stars": "142,955",
-        "language": "Mixed",
-        "repo": "multica-ai/andrej-karpathy-skills",
-        "owner": "multica-ai",
-        "repoName": "andrej-karpathy-skills"
-      }
-    },
-    {
-      "id": "dotnet-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "description_zh": "Repository for skills to assist AI coding agents with .NET and C#",
-      "authors": "dotnet",
-      "url": "https://github.com/dotnet/skills",
-      "score": 2153,
-      "meta": {
-        "source": "github",
-        "stars": "2,153",
-        "language": "C#",
-        "repo": "dotnet/skills",
-        "owner": "dotnet",
-        "repoName": "skills"
-      }
-    },
-    {
-      "id": "obra-superpowers",
-      "title": "superpowers",
-      "title_zh": "superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "description_zh": "有效的代理技能框架和软件开发方法。",
-      "authors": "obra",
-      "url": "https://github.com/obra/superpowers",
-      "score": 201405,
-      "meta": {
-        "source": "github",
-        "stars": "201,405",
-        "language": "Shell",
-        "repo": "obra/superpowers",
-        "owner": "obra",
-        "repoName": "superpowers"
-      }
-    },
-    {
-      "id": "HKUDS-CLI-Anything",
-      "title": "CLI-Anything",
-      "title_zh": "CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
-      "authors": "HKUDS",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "score": 39050,
-      "meta": {
-        "source": "github",
-        "stars": "39,050",
-        "language": "Python",
-        "repo": "HKUDS/CLI-Anything",
-        "owner": "HKUDS",
-        "repoName": "CLI-Anything"
-      }
-    },
-    {
-      "id": "rmyndharis-OpenWA",
-      "title": "OpenWA",
-      "title_zh": "OpenWA",
-      "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
-      "description_zh": "免费、开源、自托管 WhatsApp API 网关",
-      "authors": "rmyndharis",
-      "url": "https://github.com/rmyndharis/OpenWA",
-      "score": 5359,
-      "meta": {
-        "source": "github",
-        "stars": "5,359",
-        "language": "TypeScript",
-        "repo": "rmyndharis/OpenWA",
-        "owner": "rmyndharis",
-        "repoName": "OpenWA"
-      }
-    },
-    {
-      "id": "ChromeDevTools-chrome-devtools-mcp",
-      "title": "chrome-devtools-mcp",
-      "title_zh": "chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "description_zh": "用于编码代理的 Chrome DevTools",
-      "authors": "ChromeDevTools",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "score": 40437,
-      "meta": {
-        "source": "github",
-        "stars": "40,437",
-        "language": "TypeScript",
-        "repo": "ChromeDevTools/chrome-devtools-mcp",
-        "owner": "ChromeDevTools",
-        "repoName": "chrome-devtools-mcp"
+        "stars": "63,903",
+        "language": "Rust",
+        "repo": "ruvnet/RuView",
+        "owner": "ruvnet",
+        "repoName": "RuView"
       }
     },
     {
@@ -155,10 +65,10 @@
       "description_zh": "学习它。建造它。寄给别人。",
       "authors": "rohitg00",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "score": 10634,
+      "score": 11727,
       "meta": {
         "source": "github",
-        "stars": "10,634",
+        "stars": "11,727",
         "language": "Python",
         "repo": "rohitg00/ai-engineering-from-scratch",
         "owner": "rohitg00",
@@ -166,93 +76,93 @@
       }
     },
     {
-      "id": "teng-lin-notebooklm-py",
-      "title": "notebooklm-py",
-      "title_zh": "notebooklm-py",
-      "description": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
-      "description_zh": "Google NotebookLM 的非官方 Python API 和代理技能。通过 Python、CLI 和 AI 代理（如 Claude Code、Codex 和 OpenClaw）以完全编程方式访问 NotebookLM 的功能（包括 Web UI 未公开的功能）。",
-      "authors": "teng-lin",
-      "url": "https://github.com/teng-lin/notebooklm-py",
-      "score": 14332,
+      "id": "ChromeDevTools-chrome-devtools-mcp",
+      "title": "chrome-devtools-mcp",
+      "title_zh": "chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "description_zh": "用于编码代理的 Chrome DevTools",
+      "authors": "ChromeDevTools",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "score": 40925,
       "meta": {
         "source": "github",
-        "stars": "14,332",
-        "language": "Python",
-        "repo": "teng-lin/notebooklm-py",
-        "owner": "teng-lin",
-        "repoName": "notebooklm-py"
-      }
-    },
-    {
-      "id": "can1357-oh-my-pi",
-      "title": "oh-my-pi",
-      "title_zh": "oh-my-pi",
-      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-      "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具工具、LSP、Python、浏览器、子代理等",
-      "authors": "can1357",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "score": 5809,
-      "meta": {
-        "source": "github",
-        "stars": "5,809",
+        "stars": "40,925",
         "language": "TypeScript",
-        "repo": "can1357/oh-my-pi",
-        "owner": "can1357",
-        "repoName": "oh-my-pi"
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "owner": "ChromeDevTools",
+        "repoName": "chrome-devtools-mcp"
       }
     },
     {
-      "id": "antoinezambelli-forge",
-      "title": "forge",
-      "title_zh": "forge",
-      "description": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
-      "description_zh": "用于自托管 LLM 工具调用和多步骤代理工作流程的 Python 框架",
-      "authors": "antoinezambelli",
-      "url": "https://github.com/antoinezambelli/forge",
-      "score": 1445,
+      "id": "dotnet-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "Repository for skills to assist AI coding agents with .NET and C#",
+      "description_zh": "使用 .NET 和 C# 协助 AI 编码代理的技能存储库",
+      "authors": "dotnet",
+      "url": "https://github.com/dotnet/skills",
+      "score": 2491,
       "meta": {
         "source": "github",
-        "stars": "1,445",
+        "stars": "2,491",
+        "language": "C#",
+        "repo": "dotnet/skills",
+        "owner": "dotnet",
+        "repoName": "skills"
+      }
+    },
+    {
+      "id": "Lum1104-Understand-Anything",
+      "title": "Understand-Anything",
+      "title_zh": "Understand-Anything",
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "description_zh": "具有教学意义的图表 > 令人印象深刻的图表。将任何代码变成您可以探索、搜索和提问的交互式知识图。适用于 Claude Code、Codex、Cursor、Copilot、Gemini CLI 等。",
+      "authors": "Lum1104",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "score": 18324,
+      "meta": {
+        "source": "github",
+        "stars": "18,324",
+        "language": "TypeScript",
+        "repo": "Lum1104/Understand-Anything",
+        "owner": "Lum1104",
+        "repoName": "Understand-Anything"
+      }
+    },
+    {
+      "id": "odoo-odoo",
+      "title": "odoo",
+      "title_zh": "odoo",
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "description_zh": "奥杜。开源应用程序来发展您的业务。",
+      "authors": "odoo",
+      "url": "https://github.com/odoo/odoo",
+      "score": 51081,
+      "meta": {
+        "source": "github",
+        "stars": "51,081",
         "language": "Python",
-        "repo": "antoinezambelli/forge",
-        "owner": "antoinezambelli",
-        "repoName": "forge"
+        "repo": "odoo/odoo",
+        "owner": "odoo",
+        "repoName": "odoo"
       }
     },
     {
-      "id": "multica-ai-multica",
-      "title": "multica",
-      "title_zh": "multica",
-      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
-      "description_zh": "开源托管代理平台。将编码代理变成真正的队友 - 分配任务、跟踪进度、复合技能。",
-      "authors": "multica-ai",
-      "url": "https://github.com/multica-ai/multica",
-      "score": 30646,
+      "id": "byJoey-cfnew",
+      "title": "cfnew",
+      "title_zh": "cfnew",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "byJoey",
+      "url": "https://github.com/byJoey/cfnew",
+      "score": 13284,
       "meta": {
         "source": "github",
-        "stars": "30,646",
-        "language": "Go",
-        "repo": "multica-ai/multica",
-        "owner": "multica-ai",
-        "repoName": "multica"
-      }
-    },
-    {
-      "id": "Imbad0202-academic-research-skills",
-      "title": "academic-research-skills",
-      "title_zh": "academic-research-skills",
-      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-      "description_zh": "克劳德·代码的学术研究技巧：研究→写作→审阅→修改→定稿",
-      "authors": "Imbad0202",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
-      "score": 18071,
-      "meta": {
-        "source": "github",
-        "stars": "18,071",
-        "language": "Python",
-        "repo": "Imbad0202/academic-research-skills",
-        "owner": "Imbad0202",
-        "repoName": "academic-research-skills"
+        "stars": "13,284",
+        "language": "Mixed",
+        "repo": "byJoey/cfnew",
+        "owner": "byJoey",
+        "repoName": "cfnew"
       }
     },
     {
@@ -263,14 +173,86 @@
       "description_zh": "一系列鼓舞人心的列表、手册、备忘单、博客、黑客、单行话、cli/web 工具等。",
       "authors": "trimstray",
       "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
-      "score": 222323,
+      "score": 223134,
       "meta": {
         "source": "github",
-        "stars": "222,323",
+        "stars": "223,134",
         "language": "Mixed",
         "repo": "trimstray/the-book-of-secret-knowledge",
         "owner": "trimstray",
         "repoName": "the-book-of-secret-knowledge"
+      }
+    },
+    {
+      "id": "Fincept-Corporation-FinceptTerminal",
+      "title": "FinceptTerminal",
+      "title_zh": "FinceptTerminal",
+      "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+      "description_zh": "FinceptTerminal 是一款现代金融应用程序，提供先进的市场分析、投资研究和经济数据工具，专为在用户友好的环境中进行交互式探索和数据驱动的决策而设计。",
+      "authors": "Fincept-Corporation",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "score": 22565,
+      "meta": {
+        "source": "github",
+        "stars": "22,565",
+        "language": "Python",
+        "repo": "Fincept-Corporation/FinceptTerminal",
+        "owner": "Fincept-Corporation",
+        "repoName": "FinceptTerminal"
+      }
+    },
+    {
+      "id": "can1357-oh-my-pi",
+      "title": "oh-my-pi",
+      "title_zh": "oh-my-pi",
+      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具工具、LSP、Python、浏览器、子代理等",
+      "authors": "can1357",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "score": 6302,
+      "meta": {
+        "source": "github",
+        "stars": "6,302",
+        "language": "TypeScript",
+        "repo": "can1357/oh-my-pi",
+        "owner": "can1357",
+        "repoName": "oh-my-pi"
+      }
+    },
+    {
+      "id": "yt-dlp-yt-dlp",
+      "title": "yt-dlp",
+      "title_zh": "yt-dlp",
+      "description": "A feature-rich command-line audio/video downloader",
+      "description_zh": "功能丰富的命令行音频/视频下载器",
+      "authors": "yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "score": 164250,
+      "meta": {
+        "source": "github",
+        "stars": "164,250",
+        "language": "Python",
+        "repo": "yt-dlp/yt-dlp",
+        "owner": "yt-dlp",
+        "repoName": "yt-dlp"
+      }
+    },
+    {
+      "id": "karpathy-nn-zero-to-hero",
+      "title": "nn-zero-to-hero",
+      "title_zh": "nn-zero-to-hero",
+      "description": "Neural Networks: Zero to Hero",
+      "description_zh": "神经网络：从零到英雄",
+      "authors": "karpathy",
+      "url": "https://github.com/karpathy/nn-zero-to-hero",
+      "score": 22281,
+      "meta": {
+        "source": "github",
+        "stars": "22,281",
+        "language": "Jupyter Notebook",
+        "repo": "karpathy/nn-zero-to-hero",
+        "owner": "karpathy",
+        "repoName": "nn-zero-to-hero"
       }
     }
   ]
