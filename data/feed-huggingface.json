@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-25T20:51:01.951Z",
+  "updatedAt": "2026-05-26T21:17:03.854Z",
   "count": 15,
   "items": [
     {
-      "id": "2605.21488",
-      "title": "Equilibrium Reasoners: Learning Attractors Enables Scalable Reasoning",
-      "title_zh": "平衡推理机：学习吸引子实现可扩展推理",
-      "description": "Scaling test-time compute by iteratively updating a latent state has emerged as a powerful paradigm for reasoning. Yet the internal mechanisms that enable these iterative models to generalize beyond memorized patterns remain unclear. We hypothesize that generalizable reasoning arises from learning task-conditioned attractors: latent dynamical systems whose stable fixed points correspond to valid solutions.\n  We formalize this process through Equilibrium Reasoners (EqR), which enable test-time scaling without external verifiers or task-specific priors. EqR scales internal dynamics along two axes: depth, by running more iterations, and breadth, by aggregating stochastic trajectories from multiple initializations. Empirically, gains from test-time scaling are tightly coupled with stronger convergence toward solution-aligned attractors.\n  This attractor perspective allows neural networks to adaptively allocate test-time compute based on task difficulty. While simple cases converge within 1 to 5 iteration steps, harder cases benefit from massive test-time scaling. By unrolling up to the equivalent of 40,000 layers, scalable latent reasoning boosts accuracy from 2.6% for feedforward models to over 99% on Sudoku-Extreme. These results suggest that learned attractor landscapes provide a useful mechanistic lens for understanding scalable reasoning in iterative latent models.",
-      "description_zh": "通过迭代更新潜在状态来扩展测试时计算已成为强大的推理范例。然而，使这些迭代模型能够超越记忆模式的内部机制仍不清楚。我们假设可推广推理源于学习任务条件吸引子：其稳定不动点对应于有效解决方案的潜在动力系统。\n  我们通过平衡推理器（EqR）形式化这个过程，它可以在没有外部验证器或特定于任务的先验的情况下实现测试时间扩展。 EqR 沿着两个轴缩放内部动态：深度（通过运行更多迭代）和广度（通���聚合来自多个初始化的随机轨迹）。根据经验，测试时间扩展带来的收益与对解决方案一致吸引子的更强收敛紧密结合。\n  这种吸引子视角允许神经网络根据任务难度自适应地分配测试时间计算。虽然简单的情况会在 1 到 5 个迭代步骤内收敛，但更困难的情况会受益于大规模的测试时间扩展。通过展开相当于 40,000 个层，可扩展的潜在推理将前馈模型的准确性从 2.6% 提高到 Sudoku-Extreme 上的 99% 以上。这些结果表明，学习到的吸引子景观为理解迭代潜在模型中的可扩展推理提供了有用的机制镜头。",
-      "authors": "Benhao Huang, Zhengyang Geng, Zico Kolter",
-      "url": "https://huggingface.co/papers/2605.21488",
+      "id": "2605.24213",
+      "title": "Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild",
+      "title_zh": "迈向评估工程：机器学习评估工具的实证研究",
+      "description": "Evaluation harnesses are software systems that orchestrate model evaluation by managing model invocation, data loading, metric computation, and result reporting. Despite their critical role in machine learning infrastructure, their operational challenges and engineering concerns have received limited attention so far. We present an empirical study of 57 evaluation harnesses, deriving a five-stage harness model and classifying 16,560 issues by workflow stage and root cause. Most harness operational challenges concentrate in the Specification stage (41.4% of issues), where harnesses integrate external models, datasets, and scoring judges. The three most frequent root causes of operational challenges are unimplemented features (24.3%), documentation gaps (20.3%), and missing input validation (17.2%), which together account for 61.7% of classified issues, spanning both defects in existing functionality and capability gaps that block intended workflows. Root causes also vary by workflow stage: environment incompatibility and external dependency breakage account for 36.2% of provisioning issues, whereas algorithmic error (25.9%) and validation gap (22.5%) dominate assessment issues. Together, these contributions establish an empirical foundation for treating evaluation engineering as a distinct software engineering concern.",
+      "description_zh": "评估工具是通过管理模型调用、数据加载、指标计算和结果报告来协调模型评估的软件系统。尽管它们在机器学习基础设施中发挥着关键作用，但迄今为止，它们的操作挑战和工程问题受到的关注还很有限。我们对 57 个评估工具进行了实证研究，得出了五阶段工具模型，并按工作流程阶段和根本原因对 16,560 个问题进行了分类。大多数线束操作挑战集中在规范阶段（占问题的 41.4%），其中线束集成了外部模型、数据集和评分法官。运营挑战的三个最常见的根本原因是未实现的功能 (24.3%)、文档差距 (20.3%) 和缺少输入验证 (17.2%)，它们合计占分类问题的 61.7%，涵盖现有功能中的缺陷和阻碍预期工作流程的能力差距。根本原因也因工作流程阶段而异：环境不兼容和外部依赖关系破坏占配置问题的 36.2%，而算法错误 (25.9%) 和验证差距 (22.5%) 主导评估问题。这些贡献共同为将评估工程视为一个独特的软件工程问题奠定了经验基础。",
+      "authors": "Zhimin Zhao, Zehao Wang, Abdul Ali Bangash, Bram Adams, Ahmed E. Hassan",
+      "url": "https://huggingface.co/papers/2605.24213",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2605.21488"
+        "paperId": "2605.24213"
       }
     },
     {
-      "id": "2605.21856",
-      "title": "The Illusion of Reasoning: Exposing Evasive Data Contamination in LLMs via Zero-CoT Truncation",
-      "title_zh": "推理的错觉：通过零 CoT 截断揭露LLM中的逃避数据污染",
-      "description": "Large language models (LLMs) have demonstrated impressive reasoning abilities across a wide range of tasks, but data contamination undermines the objective evaluation of these capabilities. This problem is further exacerbated by malicious model publishers who use evasive, or indirect, contamination strategies, such as paraphrasing benchmark data to evade existing detection methods and artificially boost leaderboard performance. Current approaches struggle to reliably detect such stealthy contamination. In this work, we uncover a critical phenomenon: a model's generated reasoning steps actively mask its underlying memorization. Inspired by this, we propose the Zero-CoT Probe (ZCP), a novel black-box detection method that deliberately truncates the entire Chain-of-Thought (CoT) process to expose latent shortcut mappings. To further isolate memorization from the model's intrinsic problem-solving capabilities, ZCP compares the model's zero-CoT performance on the original benchmark against an isomorphically perturbed reference dataset. Furthermore, we introduce Contamination Confidence, a metric that quantifies both the likelihood and severity of contamination, moving beyond simple binary classifications. Extensive experiments on both previously identified contaminated models and specially fine-tuned contaminated models demonstrate that ZCP robustly detects both direct and evasive data contamination. The code for ZCP is accessible at https://github.com/Yifan-Lan/zero-cot-probe.",
-      "description_zh": "大型语言模型（LLM）在广泛的任务中表现出了令人印象深刻的推理能力，但数据污染破坏了对这些能力的客观评估。恶意模型发布者使用规避或间接污染策略（例如解释基准数据以逃避现有检测方法并人为提高排行榜性能）进一步加剧了这一问题。目前的方法很难可靠地检测这种隐形污染。在这项工作中，我们发现了一个关键现象：模型生成的推理步骤主动掩盖了其潜在的记忆。受此启发，我们提出了零 CoT 探针（ZCP），这是一种新颖的黑盒检测方法，它故意截断整个思想链（CoT）过程以暴露潜在的快捷映射。为了进一步将记忆与模型内在的解决问题的能力分开，ZCP 将模型在原始基准上的零 CoT 性能与同构扰动的参考数据集进行了比较。此外，我们引入了污染置信度，这是一种量化污染可能性和严重程度的指标，超越了简单的二元分类。对先前识别的污染模型和经过专门微调的污染模型进行的广泛实验表明，ZCP 可以稳健地检测直接数据污染和���避数据污染。 ZCP 的代码可在 https://github.com/Yifan-Lan/zero-cot-probe 访问。",
-      "authors": "Yifan Lan, Yuanpu Cao, Hanyu Wang, Lu Lin, Jinghui Chen",
-      "url": "https://huggingface.co/papers/2605.21856",
+      "id": "2605.22880",
+      "title": "How Far Will They Go? Red-Teaming Online Influence with Large Language Models",
+      "title_zh": "他们会走多远？大型语言模型的红队在线影响力",
+      "description": "As large language model (LLM)-based agents increasingly participate in online discourse, red-teaming their capacity to support political influence campaigns is critical for information integrity. In pursuit of this goal, we focus on locally deployed open-source LLMs, as opposed to frontier API-only models, given their superior alignment with the operational constraints of privacy-conscious malicious actors deployed in social media environments. We introduce an empirical red-teaming framework for measuring LLM Overton Windows (OWs), defined as the range of political opinions a model can reliably express on controversial topics, and for quantifying how simple natural-language jailbreaks expand that range. We evaluate more than 30 LLMs spanning 10 model families and five countries of origin. We find systematic asymmetries in political expressivity: open-source LLMs are typically more willing to generate left-leaning social media content, OWs tend to contract inversely to model size, and regional differences are substantial despite uneven representation in the open-source ecosystem. Jailbreak potency also varies sharply across model families, motivating a workflow for identifying effective combinations of jailbreak techniques. Taken together, our results establish a practical framework for auditing the political steerability of open-source LLMs and for helping future researchers design stronger countermeasures against LLM-enabled influence campaigns.",
+      "description_zh": "随着基于大型语言模型 (LLM) 的代理越来越多地参与在线话语，红队支持政治影响力活动的能力对于信息完整性至关重要。为了实现这一目标，我们专注于本地部署的开源 LLM，而不是仅使用前沿 API 的模型，因为它们与社交媒体环境中部署的具有隐私意识的恶意行为者的操作限制具有出色的一致性。我们引入了一个经验性的红队框架，用于衡量 LLM Overton Windows (OW)，定义为模型可以在有争议的主题上可靠表达的政治观点的范围，并量化简单的自然语言越狱如何扩展该范围。我们评估了 10 个模范家庭和 5 个原籍国的 30 多名LLM。我们发现政治表达力存在系统性不对称：开源LLM通常更愿意生成左倾社交媒体内容，开放式硕士倾向于与模型规模成反比收缩，尽管开源生态系统中的代表性不均衡，但地区差异仍然很大。不同型号系列的越狱效力也存在很大差异，这激发了识别越狱技术的有效组合的工作流程。总而言之，我们的结果建立了一个实用的框架，用于审核开源LLM的政治可操纵���，并帮助未来的研究人员设计针对LLM影响力活动的更强有力的对策。",
+      "authors": "Daniel C. Ruiz, Anna Serbina, Ashwin Rao, Emilio Ferrara, Luca Luceri",
+      "url": "https://huggingface.co/papers/2605.22880",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2605.21856"
+        "paperId": "2605.22880"
       }
     },
     {
-      "id": "2605.17766",
-      "title": "LatentUMM: Dual Latent Alignment for Unified Multimodal Models",
-      "title_zh": "LatentUMM：统一多模态模型的双潜在对齐",
-      "description": "Unified multimodal models (UMMs) achieve strong performance in both understanding and generation by learning a shared latent space, yet they often exhibit functional inconsistency between these two capabilities. We observe that this issue does not stem from a lack of shared representations, but from the absence of explicit alignment between the transformations that map into and out of the latent space. As a result, generation and re-encoding can follow inconsistent trajectories, leading to semantic drift under modality transitions. In this work, we propose LatentUMM, a framework that constructs an enhanced shared latent space to explicitly align these transformations and improve cross-modal consistency. LatentUMM consists of two stages. First, dual latent alignment enforces consistency at both the modality and capacity levels: cross-modal alignment uses a stronger embedding model to impose structured cross-modal semantics, while dual capacity alignment enforces bidirectional consistency under generation and re-encoding. Second, latent dynamics stabilization improves robustness via stochastic latent rollouts and preference optimization, favoring trajectories that better preserve semantic consistency. Experiments show that LatentUMM consistently improves multimodal consistency across diverse architectures. Code is available at: https://github.com/AIFrontierLab/TorchUMM/tree/main/src/umm/post_training/LatentUMM.",
-      "description_zh": "统一多模态模型（UMM）通过学习共享的潜在空间在理解和生成方面实现了强大的性能，但它们经常表现出这两种能力之间的功能不一致。我们观察到，这个问题并不是源于缺乏共享表示，而是源于映射到和映射出潜在空间的转换之间缺乏明确的对齐。因此，生成和重新编码可能遵循不一致的轨迹，导致模态转换下的语义漂移。在这项工作中，我们提出了 LatentUMM，这是一个构建增强的共享潜在空间的框架，以明确地对齐这些转换并提高跨模式一致性。 LatentUMM 由两个阶段组成。首先，双潜在对齐在模态和容量级别上强制执行一致性：跨模态对齐使用更强的嵌入模型来强加结构化的跨模态语义，而双容量对齐在生成和重新编码下强制执行双向一致性。其次，潜在动态稳定性通过随机潜在推出和偏好优化来提高鲁棒性，有利于更好地保持语义一致性的轨迹。实验表明 LatentUMM 持续提高了不同架构之间的多模式一致性。代码位于：https://github.com/AIFrontierLab/TorchUMM/tree/main/src/umm/post_training/LatentUMM。",
-      "authors": "Yinyi Luo, Wenwen Wang, Hayes Bai, Marios Savvides, Jindong Wang",
-      "url": "https://huggingface.co/papers/2605.17766",
-      "score": 4,
+      "id": "2605.24517",
+      "title": "ECHO: Terminal Agents Learn World Models for Free",
+      "title_zh": "ECHO：终端代理免费学习世界模型",
+      "description": "CLI agents are the closest thing language models have to an embodied setting: the model emits commands, the terminal executes them, and the returned stream -- stdout, errors, files, logs, and traces -- records the consequences. We argue that this stream is a supervision signal, but standard agent RL discards it: GRPO-style training updates action tokens with sparse outcome-level rewards while ignoring environment responses already in the rollout. Failed rollouts provide little policy-gradient signal despite containing rich evidence about how the environment responds. We introduce ECHO (Environment Cross-entropy Hybrid Objective), a hybrid objective that combines the standard policy-gradient loss on action tokens with an auxiliary loss that trains the policy to predict environment observation tokens resulting from its own actions. ECHO reuses the same forward pass as GRPO, requires no additional rollouts, and turns terminal feedback into dense supervision for all rollouts. ECHO doubles GRPO pass@1 on TerminalBench-2.0: Qwen3-8B improves from 2.70% to 5.17%, and Qwen3-14B from 5.17% to 10.79%. ECHO also produces policies that better predict terminal dynamics, even on trajectories they did not generate: across held-out rollouts, it sharply reduces environment-token cross-entropy while GRPO alone barely changes it. From base Qwen3-8B, ECHO matches expert-SFT-then-GRPO performance on held-out terminal tasks without expert demonstrations, and recovers roughly half of the expert-SFT initialization benefit on TerminalBench-2.0. In some settings, the environment prediction loss alone enables verifier-free self-improvement, allowing policies to improve on unseen OOD tasks by learning only from environment interactions. Together, these results suggest that environment observations are not merely context for future actions, but a dense, on-policy supervision signal already present in every rollout.",
+      "description_zh": "CLI 代理是语言模型最接近具体设置的东西：模型发出命令，终端执行命令，返回的流（stdout、错误、文件、日志和跟踪）记录结果。我们认为这个流是一个监督信号，但标准代理 RL 丢弃了它：GRPO 风格的训练用稀疏的结果级别奖励更新动作令牌，同时忽略已经在推出中的环境响应。尽管包含有关环境如何响应的丰富证据，但失败的推出几乎没有提供政策梯度信号。我们引入了 ECHO（环境交叉熵混合目标），这是一种混合目标，它将动作标记上的标准策略梯度损失与辅助损失相结合���辅助损失训练策略来预测其自身动作产生的环境观察标记。 ECHO 重复使用与 GRPO 相同的前向传递，不需要额外的 rollout，并将终端反馈转化为对所有 rollout 的密集监督。 ECHO 在 TerminalBench-2.0 上将 GRPO pass@1 提高了一倍：Qwen3-8B 从 2.70% 提高到 5.17%，Qwen3-14B 从 5.17% 提高到 10.79%。 ECHO 还制定了更好地预测终端动态的策略，即使是在它们没有生成的轨迹上：在持续推出的过程中，它急剧降低了环境代币交叉熵，而 GRPO 本身几乎无法改变它。从基础 Qwen3-8B 开始，ECHO 在没有专家演示的情况下在保留终端任务上匹配专家 SFT 和 GRPO 性能，并在 TerminalBench-2.0 上恢复大约一半的专家 SFT 初始化优势。在某些设置中，仅环境预测损失就可以实现无需验证者的自我改进，从而允许策略仅通过从环境交互中学习来改进未见的 OOD 任务。总之，这些结果表明，环境观察不仅是未来行动的背景，而且是每次推出时都已经存在的密集的、符合政策的监督信号。",
+      "authors": "Vaishnavi Shrivastava, Piero Kauffmann, Ahmed Awadallah, Dimitris Papailiopoulos",
+      "url": "https://huggingface.co/papers/2605.24517",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2605.17766"
+        "upvotes": "1",
+        "paperId": "2605.24517"
       }
     },
     {
-      "id": "2605.22878",
-      "title": "SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research",
-      "title_zh": "SciAtlas：用于自动化科学研究的大规模知识图谱",
-      "description": "The exponential growth of global academic output has confronted researchers and AI agents with an unprecedented ``information explosion,'' where fragmented and unstructured knowledge organization impedes deep interdisciplinary integration. Current academic retrieval tools predominantly rely on superficial keyword matching or vector-space semantic retrieval, which lack the topological reasoning capabilities required to navigate complex logical connections. Agentic deep-research-based frameworks are often prone to logical hallucinations and consuming high inference costs. To bridge this gap, in this report, we introduce SciAtlas, a large-scale, multi-disciplinary, heterogeneous academic resource knowledge graph designed as a panoramic scientific evolution network. By integrating over 43M papers from 26 disciplines, and a total of 157M entities and 3B triplets, SciAtlas provides a structured topological cognitive substrate that dismantles disciplinary barriers and furnishes AI agents with a global perspective. Furthermore, we develop a neuro-symbolic retrieval algorithm featuring tri-path collaborative recall and graph reranking, achieving a seamless transition from simple semantic matching to deterministic association discovery. We also present key application directions of SciAtlas, including literature review, automated research trend synthesis, idea positioning, and academic trajectory exploration, to demonstrate that SciAtlas can serve as an effective ``cognitive map'' to empower the full loop of automated scientific research while significantly reducing reasoning costs. We have released the interfaces for KG retrieval and various downstream tasks in our GitHub repo.",
-      "description_zh": "全球学术成果的指数级增长使研究人员和人工智能代理面临前所未有的“信息爆炸”，碎片化和非结构化的知识组织阻碍了深度的跨学科融合。当前的学术检索工具主要依赖于肤浅的关键词匹配或向量空间语义检索，缺乏导航复杂逻辑连接所需的拓扑推理能力。基于代理深度研究的框架往往容易产生逻辑幻觉并消耗较高的推理成本。为了弥补这一差距，在本报告中，我们引入了 SciAtlas，这是一个大规模、多学科、异构学术资源知识图谱，设计为全景科学演化网络。通过整合来自 26 个学科的超过 4300 万篇论文以及总共 1.57 亿个实体和 3B 三元组，SciAtlas 提供了一个结构化的拓扑认知基础，消除了学科障碍，并为 AI 代理提供了全球视角。此外，我们开发了一种神经符号检索算法，具有三路径协作召回和图重排序的特点，实现了从简单语义匹配到确定性关联发现的无缝过渡。我们还提出了SciAtlas的关键应用方向，包括文献综述、自动化研究趋势综合、思想定位和学术轨迹探索等，以证明SciAtlas可以作���有效的“认知地图”，赋能自动化科学研究的全循环，同时显着降低推理成本。我们已经在 GitHub 存储库中发布了 KG 检索和各种下游任务的接口。",
-      "authors": "Shuofei Qiao, Yunxiang Wei, Jiazheng Fan, Bin Wu, Busheng Zhang, Mengru Wang, Yuqi Zhu, Ningyu Zhang, Keyan Ding, Qiang Zhang, Huajun Chen",
-      "url": "https://huggingface.co/papers/2605.22878",
-      "score": 45,
+      "id": "2605.25189",
+      "title": "Directional Alignment Mitigates Reward Hacking in Reinforcement Learning for Language Models",
+      "title_zh": "定向对齐减轻了语言模型强化学习中的奖励黑客攻击",
+      "description": "Reward hacking arises when a model improves a proxy reward by exploiting shortcuts rather than solving the intended task. We study this failure mode through the geometry of reinforcement learning updates in language models and argue that hacking emerges when optimization drifts away from a stable low-dimensional learning trajectory. We analyze this drift through dominant singular directions of parameter updates and show that reward-hacking runs exhibit substantially larger directional change than clean runs. Motivated by this observation, we introduce trusted-direction projection, which constrains gradients to remain within a clean reference subspace. Across reward-hacking experiments on mathematical reasoning, the proposed approach delays shortcut exploitation and better preserves task performance.",
+      "description_zh": "当模型通过利用捷径而不是解决预期任务来提高代理奖励时，就会出现奖励黑客行为。我们通过语言模型中强化学习更新的几何结构来研究这种故障模式，并认为当优化偏离稳定的低维学习轨迹时，就会出现黑客行为。我们通过参数更新的主要单一方向来分析这种漂移，并表明奖励黑客运行表现出比干净运行大得多的方向变化。受此观察的启发，我们引入了可信方向投影，它将梯度限制在干净的参考子空间内。在数学推理的奖励黑客实验中，所提出的方法延迟了捷径利用并更好地保持了任务性能。",
+      "authors": "Wenlong Deng, Jiaji Huang, Kaan Ozkara, Yushu Li, Christos Thrampoulidis, Xiaoxiao Li, Youngsuk Park",
+      "url": "https://huggingface.co/papers/2605.25189",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "45",
-        "paperId": "2605.22878"
+        "upvotes": "1",
+        "paperId": "2605.25189"
       }
     },
     {
-      "id": "2605.20177",
-      "title": "From Seeing to Thinking: Decoupling Perception and Reasoning Improves Post-Training of Vision-Language Models",
-      "title_zh": "从看到到思考：感知和推理的解耦改善了视觉语言模型的后期训练",
-      "description": "Recent advances in vision-language models (VLMs) emphasize long chain-of-thought reasoning; yet, we find that their performance on visual tasks is primarily limited by a lack of visual perception as opposed to reasoning itself. In this work, we systematically study the interplay between perception and reasoning in VLM post-training by decomposing their capabilities into three separate training stages: visual perception, visual reasoning, and textual reasoning, incorporating specialized training data. We demonstrate that visual perception (a) requires targeted optimization with specialized data; (b) serves as a fundamental scaffold that should be solidified through staged training before refining visual reasoning; and (c) is more effectively learned via RL than caption-based SFT. Our experiments across multiple VLMs demonstrate that staged training consistently improves both visual perception and reasoning performance over merged training. Notably, models trained with our approach achieve 1.5% higher reasoning accuracy with 20.8% shorter reasoning traces, suggesting that superior perception reduces the need for excessive reasoning. Furthermore, we show that this capability-based staging represents a new curriculum dimension orthogonal to traditional difficulty-based curricula, and combining both yields further additive gains. Our staged-training models achieve superior performance among open-weight VLMs, establishing advanced results on several visual math and perception (e.g., +5.2% on WeMath and +3.7% on RealWorldQA) tasks compared with the base counterpart.",
-      "description_zh": "视觉语言模型（VLM）的最新进展强调长链思维推理；然而，我们发现他们在视觉任务上的表现主要受到缺乏视觉感知而不是推理本身的限制。在这项工作中，我们系统地研究了 VLM 训练后感知和推理之间的相互作用，将其能力分解为三个独立的训练阶段：视觉感知、视觉推理和文本推理，并结合专门的训练数据。我们证明视觉感知 (a) 需要使用专门数据进行有针对性的优化； (b) 作为一个基本���架，在完善视觉推理之前应通过分阶段训练来巩固； (c) 通过 RL 学习比基于字幕的 SFT 更有效。我们在多个 VLM 上进行的实验表明，与合并训练相比，分阶段训练能够持续提高视觉感知和推理性能。值得注意的是，使用我们的方法训练的模型的推理精度提高了 1.5%，推理轨迹缩短了 20.8%，这表明卓越的感知减少了过度推理的需要。此外，我们表明，这种基于能力的分期代表了与传统的基于难度的课程正交的新课程维度，并且将两者结合起来会产生进一步的附加收益。我们的分阶段训练模型在开放权重 VLM 中实现了卓越的性能，与基础对应模型相比，在多项视觉数学和感知任务上取得了先进的结果（例如，WeMath 上 +5.2%，RealWorldQA 上 +3.7%）任务。",
-      "authors": "Juncheng Wu, Hardy Chen, Haoqin Tu, Xianfeng Tang, Freda Shi, Hui Liu, Hanqing Lu, Cihang Xie, Yuyin Zhou",
-      "url": "https://huggingface.co/papers/2605.20177",
-      "score": 6,
+      "id": "2605.21748",
+      "title": "RankJudge: A Multi-Turn LLM-as-a-Judge Synthetic Benchmark Generator",
+      "title_zh": "RankJudge：多轮LLM作为法官综合基准生成器",
+      "description": "As interactive LLM-based applications are created and refined, model developers need to evaluate the quality of generated text along many possible axes. For simpler systems, human evaluation may be practical, but in complicated systems like conversational chatbots, the amount of generated text can overwhelm human annotation resources. Model developers have begun to rely heavily on auto-evaluation, where LLMs are also used to judge generation quality. However, existing LLM-as-a-judge benchmarks largely focus on simple Q\\&A tasks that do not match the complexity of multi-turn conversations. We introduce RankJudge, a benchmark generator for evaluating LLM-as-a-judge on multi-turn conversations grounded in reference documents. RankJudge creates pairs of conversations where one conversation has a single flaw injected into one turn. This construction allows paired conversations to be labeled unambiguously as better or worse, and precisely isolates failure categories to individual turns, enabling a strict joint correctness criterion for judging. We implement RankJudge across the domains of machine learning, biomedicine, and finance, evaluate 21 frontier LLM judges, and rank those judges via the Bradley-Terry model. Our formulation also allows ranking each conversation pair with difficulty ratings, which we use to dynamically curate the evaluation slice to reduce label noise, as confirmed via human annotation. We find that judge rankings are stable under partial observability, coarser correctness criteria, and an alternative random-walk rating algorithm.",
+      "description_zh": "随着基于 LLM 的交互式应用程序的创建和完善，模型开发人员需要沿着许多可能的轴评估生成的文本的质量。对于更简单的系统，人工评估可能是实用的，但在对话聊天机器人等复杂系统中，生成的文本量可能会淹没人工注释资源。模型开发人员已经开始严重依赖自动评估，其中LLM也用于判断生成质量。然而，现有的LLM法官基准主要集中于简单的问答任务，与多轮对话的复杂性不匹配。我们引入了 RankJudge，这是一个基准生成器，用于评估基于参考文档的多轮对话的LLM法官。 RankJudge 创建一对对话，其中一个对话在一个回合中注入了一个缺陷。这种结构允许将配对对话明确地标记为更好或更差，并精确地将失败类别与各个回合隔离开来，从而实现严格的联合正确性判断标准。我们在机器学习、生物医学和金融领域实施 RankJudge，评估 21 位前沿 LLM 法官，并通过 Bradley-Terry 模型对这些法官进行排名。我们的公式还允许对每个对话对进行难度评级排名，我们用它来动态管理评估切片以减少标签噪音，正如通过人工注释所确认的那样。我们发现，在部分可观察性、较粗略的正确性标准和替代的随机游走评级算法下，法官排名是稳定的。",
+      "authors": "Zhenwei Tang, Zhaoyan Liu, Rasa Hosseinzadeh, Tongzi Wu, Keyvan Golestan, Jesse C. Cresswell",
+      "url": "https://huggingface.co/papers/2605.21748",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2605.20177"
+        "upvotes": "1",
+        "paperId": "2605.21748"
       }
     },
     {
-      "id": "2605.23892",
-      "title": "Good Token Hunting: A Hitchhiker's Guide to Token Selection for Visual Geometry Transformers",
-      "title_zh": "良好的令牌狩猎：视觉几何变换器令牌选择搭便车指南",
-      "description": "Visual geometry transformers have become powerful architectures for multi-view 3D reconstruction, enabling joint prediction of multiple 3D attributes in a feed-forward manner. However, their computational cost grows quadratically with the input sequence length due to the global attention layers inside these models. This limits both their scalability and efficiency. In this work, we address this challenge with a simple yet general strategy: restricting the number of key/value tokens that each query interacts with during global attention. To achieve effective token selection, we introduce a two-stage framework. First, an inter-frame selection step operates at the frame level to identify frames that should be preserved. Second, an intra-frame selection step further discards more redundant tokens within the selected frames. Our analysis highlights the advantage of a diversity-based strategy for inter-frame selection, which ensures broad coverage of the scene. For intra-frame selection, we show that layer-aware sparsification is necessary, with the selection process guided by the entropy of the global attention pattern. Our approach offers a superior speed-accuracy trade-off compared to existing solutions. Extensive experiments show that it accelerates visual geometry transformers by over 85% for scenes with 500 images while maintaining, or even improving, baseline performance, which hints that how our token selection strategy can play a crucial role in future applications of visual geometry transformers. Our project website is available at https://zsh2000.github.io/good-token-hunting.github.io.",
-      "description_zh": "视觉几何变换器已成为多视图 3D 重建的强大架构，能够以前馈方式联合预测多个 3D 属性。然而，由于这些模型内部的全局注意力层，它们的计算成本随着输入序列长度呈二次方增长。这限制了它们的可扩展性和效率。在这项工作中，我们通过一个简单而通用的策略来应对这一挑战：限制每个查询在全局注意力期间交互的键/值标记的数量。为了实现有效的代币选择，我们引入了一个两阶段框架。首先，帧间选择步骤在帧级别进行操作，以识别应保留的帧。其次，帧内选择步骤进一步丢弃所选帧内的更多冗余令牌。我们的分析强调了基于多样性的帧间选择策略的优势，这确保了场景的广泛覆盖。对于帧内选择，我们表明分层感知稀疏化是必要的，选择过程由全局注意力模式的熵引导。与现有解决方案相比，我们的方法提供了卓越的速度与精度权衡。大量实验表明，对于具有 500 个图像的场景，它可以将视觉几何变换器加速超过 85%，同时保持甚至提高基线性能，这暗示我们的标记选择策略如何在视觉几何变换器的未来应用中发挥至关重要的作用。我们的项目网站位于 https://zsh2000.github.io/good-token-hunting.github.io。",
-      "authors": "Shuhong Zheng, Michael Oechsle, Erik Sandström, Marie-Julie Rakotosaona, Federico Tombari, Igor Gilitschenski",
-      "url": "https://huggingface.co/papers/2605.23892",
+      "id": "2605.23491",
+      "title": "CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test",
+      "title_zh": "CoSPlay：使用自行生成的代码和单元测试在测试时进行协作自我游戏",
+      "description": "Recently, Reinforcement Learning with Verifiable Rewards (RLVR) and Test-Time Scaling (TTS) have advanced LLM code generation through executable verification. Yet Ground-Truth Unit Tests (GT UTs) remain a bottleneck: SOTA RLVR methods require them for costly training, while existing TTS methods lose competitiveness without them. This motivates GT-free TTS, where existing methods directly use self-generated UTs to refine and select code candidates. Yet such UTs are often noisy or spuriously coupled with wrong code, and UT quality in turn cannot be validated without reliable code. The key challenge is therefore to jointly improve both. To this end, we present CoSPlay, a GT-free, training-free framework that jointly improves codes and UTs through cooperative self-play. It first explores diverse solution ideas and identifies their potential failure modes to produce discriminative UT ideas. It then uses bidirectional pass-count signals from the Code-UT execution matrix to iteratively prune or fix weak codes and refresh or replace unreliable UTs, letting the two pools co-evolve. Finally, when multiple codes remain tied at the highest pass count, it picks the final code from the largest output-consensus cluster, since correct codes agree on the same inputs while wrong codes diverge. Experiments on four challenging benchmarks show that CoSPlay on Qwen2.5-7B-Instruct improves average BoN from 22.1% to 33.2% and UT accuracy from 14.6% to 78.3%, matching or surpassing the RLVR model CURE-7B. When applied to CURE-7B, it further improves BoN by 5.7%. CoSPlay also generalizes across diverse backbones and outperforms GT-free TTS baselines under comparable token budgets, with continued gains as the budget scales up. These results suggest a scalable inference strategy for competitive code generation without any GT data.",
+      "description_zh": "最近，具有可验证奖励的强化学习 (RLVR) 和测试时间扩展 (TTS) 通过可执行验证推进了 LLM 代码生成。然而，地面实况单元测试 (GT UT) 仍然是一个瓶颈：SOTA RLVR 方法需要它们进行昂贵的训练，而如果没有它们，现有的 TTS 方法就会失去竞争力。这激发了无 GT TTS，其中现有方法直接使用自行生成的 UT 来细化和选择候选代码。然而，此类 UT 常常存在噪声或与错误代码虚假耦合，而如果没有可靠的代码，则无法验证 UT 质量。因此，关键的挑战是共同改进两者。为此，我们提出了 CoSPlay，一个无需 GT、无需训练的框架，通过合作自对弈来共同改进代码和 UT。它首先探索不同的解决方案想法并确定其潜在的失败模式，以产生有区别的 UT 想法。然后，它使用来自 Code-UT 执行矩阵的双向传递计数信号来迭代地修剪或修复弱代码并刷新或替换不可靠的 UT，从而让两个池共同发展。最后，当多个代码在最高通过计数上保持联系时，它会从最大的输出共识簇中挑选最终代码，因为正确的��码在相同的输入上达成一致，而错误的代码则发散。对四个具有挑战性的基准测试的实验表明，Qwen2.5-7B-Instruct 上的 CoSPlay 将平均 BoN 从 22.1% 提高到 33.2%，UT 准确率从 14.6% 提高到 78.3%，匹配或超越 RLVR 模型 CURE-7B。当应用于CURE-7B时，其BoN进一步提高了5.7%。 CoSPlay 还可以推广到不同的骨干网络，并在可比较的代币预算下优于无 GT TTS 基线，并随着预算规模的扩大而持续收益。这些结果提出了一种可扩展的推理策略，用于在没有任何 GT 数据的情况下生成竞争性代码。",
+      "authors": "Zhangyi Hu, Chenhui Liu, Tian Huang, Jindong Li, Yang Yang, Jiemin Wu, Zining Zhong, Menglin Yang, Yutao Yue",
+      "url": "https://huggingface.co/papers/2605.23491",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2605.23491"
+      }
+    },
+    {
+      "id": "2605.25191",
+      "title": "Injecting Image Guidance into Text-Conditioned Diffusion Models at Inference",
+      "title_zh": "在推理时将图像引导注入文本条件扩散模型",
+      "description": "Text-to-image diffusion models like Stable Diffusion generate high-quality images from text, but lack a way to inject visual guidance (e.g. sketches, styles) at inference without retraining. Existing methods either require computationally expensive fine-tuning or rely on style transfer techniques that risk semantic misalignment with textual prompts. We introduce Visual Concept Fusion (VCF), the first method offering dual conditioning on both an image and text prompt at inference time without any concept-specific training. VCF enables visual concept injection into Stable Diffusion by aligning CLIP image features with the text embedding space. VCF consists of three components: (1) a lightweight aligner that maps image tokens to the text embedding manifold using InfoNCE and cross-attention reconstruction losses, (2) a fusion strategy that preserves both textual and visual semantics, and (3) an optional Prompt-Noise Optimization (PNO) module for test-time refinement. Our experiments demonstrate that VCF successfully transfers visual attributes including style, composition, and color palette from reference images while maintaining prompt adherence. Quantitative results show a trade-off between text alignment (CLIP score) and visual correspondence (LPIPS), with VCF outperforming baselines in reference fidelity.",
+      "description_zh": "像稳定扩散这样的文本到图像扩散模型可以从文本生成高质量图像，但缺乏一种在推理时注入视觉指导（例如草图、样式）而无需重新训练的方法。现有方法要么需要计算量大的微调，要么依赖风格转换技术，这些技术可能会导致语义与文本提示不一致。我们引入了视觉概念融合（VCF），这是第一种在推理时对图像和文本提示提供双重调节的方法，无需任何特定于概念的训练。 VCF 通过将 CLIP 图像特征与文本嵌入空间对齐，实现将视觉概念注入到稳定扩散中。 VCF 由三个组件组成：(1) 一个轻量级对齐器，使用 InfoNCE 和交叉注意重建损失将图像标记映射到文本嵌入流形；(2) 保留文本和视觉语义的融合策略；(3) 用于测试时细化的可选提示噪声优化 (PNO) 模块。我们的实验表明，VCF 成功地从参考图像中转移了视觉属性，包括风格、构图和调色板，同时保持了及时的依从性。定量结果显示文本对齐（CLIP 分数）和视觉对应（LPIPS）之间存在权衡，VCF 在参考保真度方面优于基线。",
+      "authors": "Agata Żywot, Iason Skylitsis, Thijmen Nijdam, Zoe Tzifa-Kratira, Derck Prinzhorn, Konrad Szewczyk, Aritra Bhowmik",
+      "url": "https://huggingface.co/papers/2605.25191",
       "score": 3,
       "meta": {
         "source": "huggingface",
         "upvotes": "3",
-        "paperId": "2605.23892"
+        "paperId": "2605.25191"
       }
     },
     {
-      "id": "2605.23771",
-      "title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
-      "title_zh": "PhotoFlow：代理 3D 虚拟摄影任务",
-      "description": "Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search. The Director builds a soft photographic blueprint and proposes diverse candidate cameras; the Reviewer combines rule checks, visual critique, and pairwise incumbent selection; and the Reflector converts failures into region memory, dead-zone suppression, and high-explore relocation. We also introduce VPhotoBench, a benchmark of 47 open-license Blender scenes and 141 language-conditioned photography missions spanning subject placement, relational composition, and atmosphere/style. On held-out experiments, PhotoFlow achieves the strongest external quality-alignment composite and success rate among one-shot prediction, single-chain reflection, anchor-bank selection, and random search under a six-round rendering budget. To our knowledge, this is the first work to make language-conditioned virtual photography in arbitrary Blender scenes an executable agent task, and our results show that an LLM-centered spatial agent can already produce strong photographs in a setting designed to challenge both 3D reasoning and aesthetic choice.",
-      "description_zh": "虚拟摄影要求代理进入准备好的 3D 场景，无需预先选择相机姿势或参考图像，从场景信息和语言意图推断合适的镜头，选择可执行的相机参数，并渲染最终照片。视觉语言模型的最新进展使这种空间代理变得越来越可信，但该任务强调了两种仍然难以一起评估的能力：复杂的 3D 空间理解和抽象的审美判断。我们引入了 PhotoFlow，一个用于闭环摄像机搜索的导演-审阅者-反射器代理。导演构建软摄影蓝图并提出多样化的候选相机；评审员结合了规则检查、视觉批评和成对现任选择； Reflector将故障转化为区域记忆、死区抑制和高探索重定位。我们还推出了 VPhotoBench，它是 47 个开放许可 Blender 场景和 141 个语言条件摄影任务的基准，涵盖主题放置、关系构图和氛围/风格。在进行的实验中，PhotoFlow 在六轮渲染预算下的单次预测、单链反射、锚库选择和随机搜索中实现了最强的外部质量对齐组合和成功率。据我们所知，这是第一个将任意 Blender 场景中的语言条件虚拟摄影作为可执行代理任务的工作，我们的结果表明，以 LLM 为中心的空间代理已经可以在旨在挑战 3D 推理和审美选择的环境中生成强大的照片。",
-      "authors": "Jiarui Guo, Haojia Wei, Yiming Zhang, Yifei Liu, Yuning Gong, Hongjie Zhang, Xue Yang, Zhihang Zhong",
-      "url": "https://huggingface.co/papers/2605.23771",
-      "score": 20,
+      "id": "2605.21712",
+      "title": "Broadening Access to Transportation Safety Data with Generative AI: A Schema-Grounded Framework for Spatial Natural Language Queries",
+      "title_zh": "利用生成式人工智能扩大对运输安全数据的访问：基于模式的空间自然语言查询框架",
+      "description": "Transportation safety analysis requires integrating crash records, roadway attributes, and geospatial data through GIS-based workflows, but access remains uneven across agencies and community stakeholders. Technical prerequisites create a gap between analytical tools central to safety planning and the practitioners able to use them. Local agencies, school committees, and residents may have safety concerns but limited capacity to retrieve, filter, map, and analyze relevant data. Generative AI offers a way to narrow this divide, but its public-sector use raises questions about reliability, reproducibility, and governance. This paper presents a schema-grounded natural language interface for transportation safety analysis, using a large language model (LLM) to interpret user intent while preserving deterministic, reviewable execution against an authoritative database. User queries are translated into structured semantic frames, validated by a rule-based layer, compiled into a typed directed acyclic graph of spatial operations, and executed against a PostGIS database. This bounded design separates language interpretation from deterministic execution, keeping results reproducible and schema-grounded while removing access barriers. The framework is evaluated using a statewide Massachusetts transportation safety database integrating crash records, roadway attributes, and geospatial layers including schools, bus stops, crosswalks, and municipal boundaries. All queries executed successfully; the validation layer corrects errors in 29% of evaluation queries, reflecting the gap between flexible natural language and strict schema-grounded requirements. The results suggest that combining natural language accessibility with deterministic execution is a practical direction for broadening access to transportation safety data, with implications for trustworthy AI in public-sector planning.",
+      "description_zh": "运输安全分析需要通过基于 GIS 的工作流程集成事故记录、道路属性和地理空间数据，但各机构和社区利益相关者的访问仍然不平衡。技术先决条件在安全规划的核心分析工具和能够使用它们的从业者之间造成了差距。当地机构、学校委员会和居民可能存在安全问题，但检索、过滤、绘制地图和分析相关数据的能力有限。生成式人工智能提供了一种缩小这一鸿沟的方法，但其在公共部门的使用引发了有关可靠性、可重复性和治理的问题。本文提出了一种用于运输安全分析的基于模式的自然语言界面，使用大型语言模型（LLM）来解释用户意图，同时根据权威数据库保留确定性、可审查的执行。用户查询被转换为结构化语义框架，由基于规则的层进行验证，编译为空间操作的类型化有向无环图，并针对 PostGIS 数据库执行。这种有界设计将语言解释与确定性执行分开，保持结果的可重复性和基于模式的同时消除访问障碍。该框架使用马萨诸塞州全州交通安全数据库进行评估，该数据库集成了碰撞记录、道路属性和地理空间图层（包括学校、公交车站、人行横道和市政边界）。所有查询均成功执行；验证层纠正了 29% 的评估查询中的错误，反映了灵活的自然语言和严格的基于模式的要求之间的差距。结果表明，将自然语言可访问性与确定性执行相结合是扩大交通安全数据访问的实用方向，对公共部门规划中值得信赖的人工智能具有影响。",
+      "authors": "Mahdi Azhdari, Eric J. Gonzales",
+      "url": "https://huggingface.co/papers/2605.21712",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "20",
-        "paperId": "2605.23771"
+        "upvotes": "1",
+        "paperId": "2605.21712"
       }
     },
     {
-      "id": "2604.20665",
-      "title": "The Expense of Seeing: Attaining Trustworthy Multimodal Reasoning Within the Monolithic Paradigm",
-      "title_zh": "观看的代价：在单一范式中实现值得信赖的多模态推理",
-      "description": "The rapid proliferation of Vision-Language Models (VLMs) is often framed as enabling unified multimodal knowledge discovery but rests on an under-examined assumption: that current VLMs faithfully synthesise multimodal data. We argue they often do not, and this gap reflects a trustworthiness problem in the dominant Vision Encoder-Projector-LLM paradigm. Rather than extracting grounded knowledge from visual inputs, state-of-the-art models frequently exhibit functional blindness, i.e., exploiting strong language priors to bypass severe visual representation bottlenecks. In this work, we challenge the conventional methodology of multimodal evaluation, which relies on data ablation or new dataset creation and therefore conflates dataset biases with architectural incapacity. We propose an information-theoretic departure: the Modality Translation Protocol, designed to quantify what we call the Expense of Seeing. By translating semantic payloads rather than ablating them, we formulate three novel metrics -- the Toll (ToS), Curse (CoS), and Fallacy (FoS) of Seeing -- culminating in the Semantic Sufficiency Criterion (SSC). Furthermore, we hypothesise a Divergence Law of Multimodal Scaling: as the underlying language engines scale to unprecedented reasoning capabilities, the penalty of the visual knowledge bottleneck may increase rather than diminish. We argue the community should move beyond \"multimodal gain\" as a primary evaluation target. By elevating the SSC from a passive diagnostic constraint to an active architectural blueprint, we provide a foundation for guiding the next generation of AI systems toward genuine multimodal reasoning.",
-      "description_zh": "视觉语言模型 (VLM) 的快速增长通常被认为能够实现统一的多模态知识发现，但其基础是一个未经充分检验的假设：当前的 VLM 忠实地综合了多模态数据。我们认为他们通常不这样做，这种差距反映了占主导地位的视觉编码器-投影仪-LLM 范式中的可信度问题。最先进的模型不是从视觉输入中提取基础知识，而是经常表现出功能性盲目性，即利用强大的语言先验来绕过严重的视觉表示瓶颈。在这项工作中，我们挑战了多模式评估的传统方法，该方法依赖于数据消融或新数据集创建，因此���数据集偏差与架构无能力混为一谈。我们提出了一种信息论的出发点：模态翻译协议，旨在量化我们所说的“观看费用”。通过翻译语义负载而不是消融它们，我们制定了三个新颖的指标——ToS (ToS)、Curse (CoS) 和 Seeing Fallacy (FoS)——最终形成语义充足标准 (SSC)。此外，我们假设多模态缩放的发散定律：随着底层语言引擎扩展到前所未有的推理能力，视觉知识瓶颈的惩罚可能会增加而不是减少。我们认为社区应该超越“多模式增益”作为主要评估目标。通过将 SSC 从被动诊断约束提升为主动架构蓝图，我们为引导下一代人工智能系统实现真正的多模态推理奠定了基础。",
-      "authors": "Karan Goyal",
-      "url": "https://huggingface.co/papers/2604.20665",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2604.20665"
-      }
-    },
-    {
-      "id": "2605.18018",
-      "title": "See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding",
-      "title_zh": "明白我的意思：调整视觉和语言表示以实现视频细粒度对象理解",
-      "description": "We present SWIM (See What I Mean), a novel training strategy that aligns vision and language representations to enable fine-grained object understanding solely from textual prompts. Unlike existing approaches that require explicit visual prompts, such as masks or points, SWIM leverages mask supervision only during training to guide cross-modal attention, allowing the model to automatically attend to the user-specified object at inference. Our cross-attention analysis of pretrained multimodal large languagemodels (MLLMs) reveals a systematic discrepancy: Attribute words produce sharp, localized activations in the visual modality, whereas object nouns yield diffuse and scattered patterns due to semantic reference bias and distributed high-level representations. To address this misalignment, we construct NL-Refer, an enriched dataset, in which each object mask is paired with a precise natural language referring expression. SWIM extracts multi-layer cross-attention maps from object nouns and enforces spatial consistency with ground-truth masks. Experimental results demonstrate that SWIM substantially improves text-visual alignment and achieves superior performance over visual-prompt-based methods on fine-grained object understanding benchmarks. The code and data are available at https://github.com/HumanMLLM/SWIM{https://github.com/HumanMLLM/SWIM}.",
-      "description_zh": "我们提出了 SWIM（明白我的意思），这是一种新颖的训练策略，可以将视觉和语言表征结合起来，从而仅根据文本提示即可实现细粒度的对象理解。与需要明确视觉提示（例如掩模或点）的现有方法不同，SWIM 仅在训练期间利用掩模监督来引导跨模式注意力，从而允许模型在推理时自动关注用户指定的对象。我们对预训练的多模态大语言模型（MLLM）的交叉注意力分析揭示了一个系统性差异：属性词在视觉模态中产生尖锐的局部激活，而宾语名词由于语义参考偏差和分布式高级表示而产生分散和分散的模式。为了解决这种不一致问题，我们构建了 NL-Refer，这是一个丰富的数据集，其中每个对象掩码都与精确的自然语言引用表达式配对。 SWIM 从对象名词中提取多层交叉注意力图，并增强与真实掩模的空间一致性。实验结果表明，SWIM 显着改善了文本视觉对齐，并在细粒度对象理解基准上实现了优于基于视觉提示的方法的性能。代码和数据可在 https://github.com/HumanMLLM/SWIM{https://github.com/HumanMLLM/SWIM} 获取。",
-      "authors": "Boyuan Sun, Bowen Yin, Yuanming Li, Xihan Wei, Qibin Hou",
-      "url": "https://huggingface.co/papers/2605.18018",
-      "score": 28,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "28",
-        "paperId": "2605.18018"
-      }
-    },
-    {
-      "id": "2605.23903",
-      "title": "Geo-Align: Video Generation Alignment via Metric Geometry Reward",
-      "title_zh": "Geo-Align：通过公制几何奖励进行视频生成对齐",
-      "description": "Camera-controlled video generation has achieved remarkable progress in recent years. However, existing video-to-video re-rendering methods primarily rely on Supervised Fine-Tuning using synthetic datasets. At present, there is an extreme scarcity of synchronized, multi-view real-world video data. Consequently, the prevailing paradigm often exhibits limited generalization when processing out-of-distribution real-world videos, with models struggling to accurately adhere to physical scales and camera trajectories. To bridge this gap, we propose Geo-Align, the first Reinforcement Learning framework specifically designed for camera-controlled video re-rendering. Built upon a pretrained model, we optimize the model through a scale-aware perceptual reward mechanism. Specifically, we introduce a metric 3D estimator to extract precise camera trajectories from generated videos, explicitly penalizing deviations in rotation and translation. Furthermore, we meticulously designed a data pipeline strategy based on real-world conditioning videos and target camera trajectories derived from synthetic data, eliminating the reliance on paired data. Extensive experiments demonstrate that Geo-Align consistently outperforms existing supervised learning baselines in both precise camera controllability and visual fidelity, indicating the effectiveness of our method.",
-      "description_zh": "近年来，摄像机控制的视频生成取得了显着的进步。然而，现有的视频到视频重新渲染方法主要依赖于使用合成数据集的监督微调。目前，同步、多视图的真实世界视频数据极其缺乏。因此，在处理分布外的现实世界视频时，流行的范式通常表现出有限的泛化能力，模型很难准确地遵循物理尺度和摄像机轨迹。为了弥补这一差距，我们提出了 Geo-Align，这是第一个专门为摄像机控制的视频重新渲染而设计的强化学习框架。基于预训练模型，我们通过规模感知感知奖励机制优化模型。具体来说，我们引入了一个度量 3D 估计器，从生成的视频中提取精确的摄像机轨迹，明确惩罚旋转和平移的偏差。此外，我们根据现实世界的调节视频和从合成数据得出的目标相机轨迹精心设计了数据管道策略，消除了对配对数据的依赖。大量实验表明，Geo-Align 在精确的相机可控性和视觉保真度方面始终优于现有的监督学习基线，这表明了我们方法的���效性。",
-      "authors": "Zizun Li, Haoyu Guo, Runzhe Teng, Chunhua Shen, Tong He",
-      "url": "https://huggingface.co/papers/2605.23903",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2605.23903"
-      }
-    },
-    {
-      "id": "2605.20708",
-      "title": "Rethinking Cross-Layer Information Routing in Diffusion Transformers",
-      "title_zh": "重新思考扩散变压器中的跨层信息路由",
-      "description": "Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearly every major axis of their design -- tokenization, attention, conditioning, objectives, and latent autoencoders -- has been extensively revisited. The residual stream that governs how information accumulates across layers, however, has been directly inherited from the original Transformer. In this paper, we present a systematic empirical analysis of cross-layer information flow in DiTs, jointly along depth and denoising timestep, and identify three concrete symptoms of traditional residual addition, namely monotonic forward magnitude inflation, sharp backward gradient decay, and pronounced block-wise redundancy. Motivated by this diagnosis, we propose Diffusion-Adaptive Routing (DAR), a drop-in residual replacement that performs learnable, timestep-adaptive, and non-incremental aggregation over the history of sublayer outputs. Moreover, the proposed DAR is compatible with many modern Transformer enhancement methods, such as REPA. On ImageNet 256times256, DAR improves SiT-XL/2 by 2.11 FID (7.56 vs.\\ 9.67) and matches the baseline's converged quality with 8.75times fewer training iterations. Stacked on top of REPA, it yields a 2times training acceleration in the early stage, suggesting cross-layer information routing as an underexplored design axis in diffusion modeling, one that operates orthogonally to existing representation-alignment objectives. Beyond pretraining, DAR can also be applied during the fine-tuning stage of large-scale T2I models and preserves high-frequency details during Distribution Matching Distillation.",
-      "description_zh": "扩散变压器（DiT）实际上已经成为现代视觉生成的支柱，其设计的几乎每个主要轴——标记化、注意力、调节、目标和潜在自动编码器——都被广泛地重新审视。然而，控制信息如何跨层累积的残余流是直接从原始 Transformer 继承的。在本文中，我们对 DiT 中的跨层信息流沿着深度和去噪时间步进行了系统的实证分析，并确定了传统残差加法的三个具体症状，即单调前向幅度膨胀、急剧后向梯度衰减和明显的块级冗余。受此诊断的启发，我们提出了扩散自适应路由（DAR），这是一种直接的残差替换，可对子层输出的历史执行可学习的、时间步自适应的和非增量聚合。此外，所提出的 DAR 与许多现代 Transformer 增强方法兼容，例如 REPA。在 ImageNet 256×256 上，DAR 将 SiT-XL/2 提高了 2.11 FID（7.56 比 9.67），并与基线的收敛质量相匹配，训练迭代次数减少了 8.75 倍。叠加在 REPA 之上，它在早期阶段产生了 2 倍的训练加速，这表明跨层信息路由是扩散建模中尚未充分探索的设计轴，它与现有的表示对齐目标正交运行。除了预训练之外，DAR 还可以应用于大规模 T2I 模型的微调阶段，并在分布匹配蒸馏过程中保留高频细节。",
-      "authors": "Chao Xu, Maohua Li, Qirui Li, Yixuan Xu, Yanke Zhou, Yunhe Li, Cuifeng Shen, Hanlin Tang, Kan Liu, Tao Lan, Lin Qu, Shao-Qun Zhang",
-      "url": "https://huggingface.co/papers/2605.20708",
-      "score": 90,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "90",
-        "paperId": "2605.20708"
-      }
-    },
-    {
-      "id": "2605.21195",
-      "title": "RankE: End-to-End Post-Training for Discrete Text-to-Image Generation with Decoder Co-Evolution",
-      "title_zh": "RankE：通过解码器协同进化进行离散文本到图像生成的端到端后训练",
-      "description": "Discrete autoregressive (AR) text-to-image (T2I) models pair a VQ tokenizer with an AR policy, and current post-training pipelines optimize only the policy while keeping the VQ decoder frozen. Recent diffusion T2I work, exemplified by REPA-E, has shown that the VAE itself constitutes a key alignment bottleneck, yet no analogous investigation exists for discrete AR models. We show that policy-only optimization induces Latent Covariate Shift: as the policy evolves, the resulting token distribution diverges from the ground-truth distribution on which the decoder was trained, such that reward scores improve while decoded image quality degrades. To address this mismatch, we propose RankE, the first end-to-end post-training framework for discrete T2I generation. Rather than optimizing the policy against a fixed decoder, RankE co-evolves both components through alternating optimization: each module maximizes a ranking-based alignment objective while being regularized by a stability-preserving anchor suited to its parameter space. This co-evolution breaks the fidelity--alignment trade-off that plagues frozen-decoder approaches: on LlamaGen-XL (775M), standard RL improves CLIP but degrades FID, whereas RankE improves both simultaneously (FID 15.21, CLIP 33.76 on MS-COCO 30K). Consistent gains on Janus-Pro (1B) confirm that decoder co-evolution reliably converts reward optimization into pixel-space quality improvements.",
-      "description_zh": "离散自回归 (AR) 文本到图像 (T2I) 模型将 VQ 分词器与 AR 策略配对，当前的训练后管道仅优化策略，同时保持 VQ 解码器冻结。最近的扩散 T2I 工作（以 REPA-E 为代表）表明，VAE 本身构成了关键的对齐瓶颈，但对于离散 AR 模型还没有类似的研究。我们表明，仅策略优化会引起潜在协变量转变：随着策略的发展，生成的令牌分布与解码器训练所依据的真实分布不同，从而奖励分数提高，而解码图像质量下降。为了解决这种不匹配问题，我们提出了 RankE，这是第一个用于离散 T2I 生成的端到端后训练框架。 RankE 不是针对固定解码器优化策略，而是通过交替优化来共同进化两个组件：每个模块最大化基于排名的对齐目标，同时通过适合其参数空间的稳定性保持锚进行正则化。这种共同进化打破了困扰冻结解码器方法的保真度与对齐权衡：在 LlamaGen-XL (775M) 上，标准 RL 改进了 CLIP，但降低了 FID，而 RankE 同时改进了两者（MS-COCO 30K 上的 FID 15.21，CLIP 33.76）。 Janus-Pro (1B) 上的一���增益证实解码器共同进化可靠地将奖励优化转化为像素空间质量改进。",
-      "authors": "Siyong Jian, Siyuan Li, Luyuan Zhang, Zedong Wang, Xin Jin, Ying Li, Cheng Tan, Huan Wang",
-      "url": "https://huggingface.co/papers/2605.21195",
+      "id": "2605.25624",
+      "title": "CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents",
+      "title_zh": "CUA-Gym：为计算机使用代理扩展可验证的训练环境和任务",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) has driven breakthroughs in domains such as math, tool-use, and software engineering, yet its extension to computer-use agents (CUAs) has been bottlenecked by the scarcity of scalable training data with deterministic rewards. Constructing such data for CUAs requires consistent task instruction, executable environment, and verifiable reward. However, hand-curated benchmarks achieve high reward fidelity but cover few applications and LLM-as-judge-based datasets scale broadly but lack reliable verification. We present CUA-Gym, a scalable pipeline that co-generates task instructions, environment states, and reward functions. Concretely, a Generator agent constructs the initial and golden environment states, and a separate Discriminator agent writes the reward function from the task specification. An orchestrator agent drives the two through iterative rounds upon execution. Generated tuples then pass a final filter combining LLM majority voting and agent rollouts, ensuring quality beyond the per-task adversarial loop. To address the scarcity of training environments, we further synthesize CUA-Gym-Hub, a broad suite of high-fidelity mock web applications grounded in real-world software-use distributions, expanding the scale of CUA RLVR data by magnitude. Using this pipeline, we construct CUA-Gym, a dataset of 32,112 verified RLVR training tuples grounded in 110 environments. Trained with GSPO on CUA-Gym, our CUA-Gym-A3B and CUA-Gym-A17B achieve 62.1% and 72.6% on OSWorld-Verified, outperforming prior open-source CUAs at comparable scales, with performance scaling smoothly in both data volume and environment diversity. The same checkpoints also improve on the held-out WebArena benchmark, indicating transfer beyond the training environments. We will open-source the full synthesis pipeline, dataset, CUA-Gym-Hub environments, and models.",
+      "description_zh": "具有可验证奖励的强化学习 (RLVR) 推动了数学、工具使用和软件工程等领域的突破，但其向计算机使用代理 (CUA) 的扩展却因缺乏具有确定性奖励的可扩展训练数据而受到瓶颈。为 CUA 构建此类数据需要一致的任务指令、可执行环境和可验证的奖励。然而，手工策划的基准实现了高奖励保真度，但涵盖的应用程序很少，并且基于LLM作为法官的数据集规模广泛，但缺乏可靠的验证。我们提出了 CUA-Gym，这是一个可扩展的管道，可以共同生成任务指令、环境状态和奖励函数。具体来说，生成器代理构造初始和黄金环境状态，并且单独的判别器代理根据任务规范编写奖励函数。协调器代理在执行时通过迭代轮次驱动两者。然后，生成的元组通过结合 LLM 多数投票和代理推出的最终过滤器，确保质量超出每个任务的对抗循环。为了解决训练环境的稀缺问题，我们进一步综合了 CUA-Gym-Hub，这是一套基于现实世界软件使用分布的广泛的高保真模拟 Web 应用程序，大幅扩展了 CUA RLVR 数据的规模。使用此管道，我们构建了 CUA-Gym，这是一个基于 110 个环境的 32,112 个经过验证的 RLVR 训练元组的数据集。经过 GSPO 在 CUA-Gym 上的训练，我们的 CUA-Gym-A3B 和 CUA-Gym-A17B 在 OSWorld-Verified 上实现了 62.1% 和 72.6%，在可比规模上优于之前的开源 CUA，并且在数据量和环境多样性方面的性能平稳扩展。相同的检查点还改进了保留的 WebArena 基准，表明迁移超出了训练环境。我们将开源完整的综合流程、数据集、CUA-Gym-Hub 环境和模型。",
+      "authors": "Bowen Wang, Dunjie Lu, Junli Wang, Tianyi Bai, Shixuan Liu, Zhipeng Zhang, Haiquan Wang, Hao Hu, Tianbao Xie, Shuai Bai, Dayiheng Liu, Que Shen, Junyang Lin, Tao Yu",
+      "url": "https://huggingface.co/papers/2605.25624",
       "score": 14,
       "meta": {
         "source": "huggingface",
         "upvotes": "14",
-        "paperId": "2605.21195"
+        "paperId": "2605.25624"
       }
     },
     {
-      "id": "2605.23345",
-      "title": "SCOPE: Simulating Cross-game Operations in Playable Environments for FPS World Models",
-      "title_zh": "范围：在 FPS 世界模型的可玩环境中模拟跨游戏操作",
-      "description": "Interactive world models for first-person shooter (FPS) games must resolve high-frequency overlapping control signals at every frame without disrupting unaffected regions. Existing methods inject actions globally and train on single titles, failing under dense FPS inputs. We observe that FPS actions are spatially selective: discrete events such as firing or reloading affect only a localized region around the weapon (the scope), while continuous camera and movement signals govern stable surroundings. We propose SCOPE, which inserts a conditioning module into each transformer block of a pretrained video diffusion model. It reshapes features into per-pixel temporal sequences so that each position computes its action response from local visual content. This separates in-scope effects from out-of-scope generation without segmentation labels. We also introduce CrossFPS, the first multi-game FPS dataset with frame-aligned action telemetry. It comprises 69K clips from 7 titles with 10-DoF controller signals, curated to remove gameplay bias. The model learns general visual-to-action mappings rather than game-specific patterns, enabling zero-shot transfer to unseen scenes. Experiments confirm strong action responsiveness, precise scope separation, and effective cross-game generalization.",
-      "description_zh": "第一人称射击 (FPS) 游戏的交互式世界模型必须解决每一帧的高频重叠控制信号，而不破坏未受影响的区域。现有的方法会在全局范围内注入动作并在单个标题上进行训练，但在密集的 FPS 输入下会失败。我们观察到 FPS 动作具有空间选择性：开火或重新装填等离散事件仅影响武器周围的局部区域（瞄准镜），而连续的摄像机和运动信号则控制稳定的周围环境。我们提出了 SCOPE，它将调节模块插入到预训练视频扩散模型的每个变压器块中。它将特征重塑为每像素时间序列，以便每个位置根据本地视觉内容计算其动作响应。这将范围内的效果与范围外的生成分开，而无需分段标签。我们还推出了 CrossFPS，这是第一个具有帧对齐动作遥测功能的多游戏 FPS 数据集。它包含来自 7 个游戏的 69K 个剪辑，带有 10-DoF 控制器信号，经过精心设计，旨在消除游戏玩法偏差。该模型学习一般的视觉到动作的映射，而不是特定于游戏的模式，从而实现零镜头传输到未见过的场景。实验证实了强大的动作响应能力、精确的范围分离和有效的跨游戏泛化。",
-      "authors": "Zizhao Tong, Hongfeng Lai, Zeqing Wang, Zhaohu Xing, Kexu Cheng, Haoran Xu, Zhao Pu, Shangwen Zhu, Ruili Feng, Jian Zhao, Yan Zhang, Hao Tang, Yeying Jin, Ling Shao",
-      "url": "https://huggingface.co/papers/2605.23345",
-      "score": 8,
+      "id": "2605.26099",
+      "title": "Language Models Need Sleep",
+      "title_zh": "语言模型需要睡眠",
+      "description": "Transformer-based large language models are increasingly used for long-horizon tasks; however, their attention mechanism scales poorly with context length. To handle this, we study a sleep-like consolidation mechanism in which a model periodically converts recent context into persistent fast weights before clearing its key-value cache. During sleep, the model performs N offline recurrent passes over the accumulated context and updates the fast weights in its state-space model (SSM) blocks through a learned local rule. During inference, this shifts extra computation to sleep while preserving the latency of wake-time prediction. We test our method on controlled synthetic tasks, including cellular automata and multi-hop graph retrieval, as well as a realistic math reasoning task, on which a regular transformer as well as SSM-attention hybrid models fail. We then show that increasing sleep duration N for our models improves performance, with the largest gains on examples that require deeper reasoning.",
+      "description_zh": "基于 Transformer 的大型语言模型越来越多地用于长期任务；然而，他们的注意力机制与上下文长度的关系很差。为了解决这个问题，我们研究了一种类似睡眠的整合机制，其中模型在清除其键值缓存之前定期将最近的上下文转换为持久的快速权重。在睡眠期间，模型对累积的上下文执行 N 次离线循环遍历，并通过学习的本地规则更新其状态空间模型 (SSM) 块中的快速权重。在推理过程中，这会将额外的计算转移到睡眠状态，同时保留唤醒时间预测的延迟。我们在受控合成任务上测试我们的方法，包括细胞自动机和多跳图检索，以及现实的数学推理任务，在这些任务上常规变压器和 SSM-注意力混合模型都失败了。然后我们证明，增加模型的睡眠持续时间 N 可以提高性能，在需要更深入推理的示例中收益最大。",
+      "authors": "Sangyun Lee, Sean McLeish, Tom Goldstein, Giulia Fanti",
+      "url": "https://huggingface.co/papers/2605.26099",
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2605.23345"
+        "upvotes": "6",
+        "paperId": "2605.26099"
       }
     },
     {
-      "id": "2605.22570",
-      "title": "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis",
-      "title_zh": "VGenST-Bench：通过主动视频合成进行时空推理的基准",
-      "description": "Spatio-temporal reasoning is a core capability for Multimodal Large Language Models (MLLMs) operating in the real world. As such, evaluating it precisely has become an essential challenge. However, existing spatio-temporal reasoning benchmark datasets primarily rely on static image sets or passively curated video data, which limits the evaluation of fine-grained reasoning capabilities. In this paper, we introduce VGenST-Bench, a video benchmark that employs generative models to actively synthesize highly controlled and diverse evaluation scenarios. To construct VGenST-Bench, we propose a multi-agent pipeline incorporating a human quality control stage, ensuring the quality of all generated videos and QA pairs. We establish a comprehensive 3x2x2 video taxonomy, encompassing Spatial Scale, Perspective, and Scene Dynamics to span diverse scenarios. Furthermore, we design a hierarchical task suite that decouples low-level visual perception from high-level spatio-temporal reasoning. By shifting the paradigm from passive curation to active synthesis, VGenST-Bench enables fine-grained diagnosis of spatio-temporal understanding in MLLMs.",
-      "description_zh": "时空推理是现实世界中运行的多模态大型语言模型 (MLLM) 的核心功能。因此，对其进行精确评估已成为一项重要挑战。然而，现有的时空推理基准数据集主要依赖于静态图像集或被动策划的视频数据，这限制了细粒度推理能力的评估。在本文中，我们介绍了 VGenST-Bench，这是一种视频基准测试，它采用生成模型来主动合成高度受控和多样化的评估场景。为了构建 VGenST-Bench，我们提出了一个包含人工质量控制阶段的多智能体管道，确保所有生成的视频和 QA 对的质量。我们建立了全面的 3x2x2 视频分类法，包括空间尺度、视角和场景动态，以跨越不同的场景。此外，我们设计了一个分层任务套件，将低级视觉感知与高级时空推理分离。通过将范式从被动管理转变为主动合成，VGenST-Bench 能够对 MLLM 中的时空理解进行细粒度诊断。",
-      "authors": "Jinho Park, Youbin Kim, Hogun Park, Eunbyung Park",
-      "url": "https://huggingface.co/papers/2605.22570",
-      "score": 20,
+      "id": "2604.13517",
+      "title": "Representation over Routing: Overcoming Surrogate Hacking in Multi-Timescale PPO",
+      "title_zh": "路由表示：克服多时间尺度 PPO 中的代理黑客攻击",
+      "description": "Temporal credit assignment in reinforcement learning has long been a central challenge. Inspired by the multi-timescale encoding of the dopamine system in neurobiology, recent research has sought to introduce multiple discount factors into Actor-Critic architectures, such as Proximal Policy Optimization (PPO), to balance short-term responses with long-term planning. However, this paper reveals that blindly fusing multi-timescale signals in complex delayed-reward tasks can lead to severe algorithmic pathologies. We systematically demonstrate that exposing a temporal attention routing mechanism to policy gradients results in surrogate objective hacking, while adopting gradient-free uncertainty weighting triggers irreversible myopic degeneration, a phenomenon we term the Paradox of Temporal Uncertainty. To address these issues, we propose a Target Decoupling architecture: on the Critic side, we retain multi-timescale predictions to enforce auxiliary representation learning, while on the Actor side, we strictly isolate short-term signals and update the policy based solely on long-term advantages. Rigorous empirical evaluations across multiple independent random seeds in the LunarLander-v2 environment demonstrate that our proposed architecture achieves statistically significant performance improvements. Without relying on hyperparameter hacking, it consistently surpasses the ''Environment Solved'' threshold with minimal variance, completely eliminates policy collapse, and escapes the hovering local optima that trap single-timescale baselines. The source code to reproduce our experiments is publicly available at https://github.com/ben-dlwlrma/Representation-Over-Routing.",
+      "description_zh": "强化学习中的时间学分分配长期以来一直是一个核心挑战。受神经生物学中多巴胺系统的多时间尺度编码的启发，最近的研究试图将多个折扣因子引入到 Actor-Critic 架构中，例如近端策略优化（PPO），以平衡短期响应与长期规划。然而，本文揭示了在复杂的延迟奖励任务中盲目融合多时间尺度信号可能会导致严重的算法病态。我们系统地证明，将时间注意力路由机制暴露于策略梯度会导致替代目标黑客攻击，而采用无梯度不确定性加权会引发不可逆的近视退化，我们将这种现象称为时间不确定性悖论。为了解决这些问题，我们提出了一种目标解耦架构：在 Critic 方面，我们保留多时间尺度预测来强制执行辅助表示学习，而在 Actor 方面，我们严格隔离短期信号并仅根据长期优势更新策略。在 LunarLander-v2 环境中对多个独立随机种子进行的严格实证评估表明，我们提出的架构实现了统计上显着的性能改进。在不依赖超参数黑客的情况下，它始终���最小的方差超越“环境已解决”阈值，完全消除策略崩溃，并避免陷入单时间尺度基线的悬停局部最优。重现我们实验的源代码可在 https://github.com/ben-dlwlrma/Representation-Over-Routing 上公开获取。",
+      "authors": "Jing Sun",
+      "url": "https://huggingface.co/papers/2604.13517",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "20",
-        "paperId": "2605.22570"
+        "upvotes": "1",
+        "paperId": "2604.13517"
       }
     },
     {
-      "id": "2605.23463",
-      "title": "StepAudio 2.5 Technical Report",
-      "title_zh": "StepAudio 2.5 技术报告",
-      "description": "Unified audio-language modeling has emerged as a prominent trend in modern speech systems, promising to bring the reasoning capabilities of large language models to auditory tasks. However, existing unified foundations often struggle to match the depth of specialized systems across automatic speech recognition (ASR), text-to-speech synthesis (TTS), and realtime spoken interaction. Bridging this gap remains an open challenge. This report presents StepAudio 2.5, a unified audio-language foundation model that matches or exceeds specialized systems across all three capabilities. Rather than treating these tasks as architecturally distinct, we operate on the premise that once text and audio share a multimodal representational space, task specialization becomes a matter of operational regimes: data construction, optimization targets, and decoding constraints. Guided by this insight, we advance the post-training paradigm from standard supervised learning to task-tailored Reinforcement Learning from Human Feedback (RLHF), using it as the primary mechanism to define complex optimization targets. We leverage this RLHF-centric alignment, alongside specialized decoding, to shape a shared backbone into three distinct operational modes. Concretely, the ASR branch advances transcription efficiency via verifiable multi-token decoding; the TTS branch achieves controllable, expressive synthesis through preference-based RLHF and context-rich supervision; and the Realtime branch realizes low-latency, persona-consistent dialogue via generative reward modeling within an RLHF framework. On standard benchmarks, StepAudio 2.5 achieves state-of-the-art results across ASR, TTS, and Realtime, demonstrating that a singular audio-language foundation can successfully internalize the distinct deployment objectives of speech understanding, generation, and live interaction.",
-      "description_zh": "统一音频语言建模已成为现代语音系统的一个突出趋势，有望将大型语言模型的推理能力带入听觉任务中。然而，现有的统一基础通常很难在自动语音识别 (ASR)、文本到语音合成 (TTS) 和实时语音交互方面与专业系统的深度相匹配。弥合这一差距仍然是一个开放的挑战。本报告介绍了 StepAudio 2.5，这是一个统一的音频语言基础模型，在所有三种功能上都匹配或超过了专业系统。我们没有将这些任务视为架构上不同的任务，而是在这样的前提下进行操作：一旦文本和音频共享多模式表示空间，任务专业化就变成了操作机制的问题：数据构造、优化目标和解码约束。在这一见解的指导下，我们将训练后范式从标准监督学习推进到根据任务定制的人类反馈强化学习（RLHF），并将其用作定义复杂优化目标的主要机制。我们利用这种以 RLHF 为中心的对齐方式以及专门的解码，将共享骨干形成三种不同的操作模式。具体来说，ASR 分支通过��验证的多令牌解码来提高转录效率； TTS 分支通过基于偏好的 RLHF 和上下文丰富的监督实现可控的、富有表现力的合成；实时分支通过 RLHF 框架内的生成奖励建模实现低延迟、角色一致的对话。在标准基准测试中，StepAudio 2.5 在 ASR、TTS 和实时方面取得了最先进的结果，表明单一的音频语言基础可以成功地将语音理解、生成和实时交互的不同部署目标内化。",
-      "authors": "Bin Lin, Bo Zhao, Boyong Wu, Chao Yan, Chen Wu, Cheng Yi, Chengyuan Yao, Daijiao Liu, Fei Tian, Feng Tian, Haiyang Sun, Haoyang Zhang, Jiangjie Zhen, Jinglan Gong, Jun Chen, Li Xie, Peilin Li, Peng Yang, Pengfei Tan, Qingjian Lin, Runze Li, Shenghua Hu, Siyi Zhou, Wenwen Qu, Xiangyu Li, Xiangyu Tony Zhang, Xuerui Yang, Yang Yang, Yechang Huang, Yu Fu, Yuchu Luo, Yuxin Li, Yuxin Zhang, Zhengyan Sheng, Brian Li, Chang Zeng, Changlin Zhang, Chen Geng, Chenghao Dong, Chengli Feng, Dan Zhou, Danni Wan, Di Chen, Die Zhang, Dongqing Pang, Guanglong Yang, Guoqiang Hu, Huangxi Zhu, Jianzheng Gao, Jinghua Liang, Jinmei Wan, Junjie Yuan, Kang An, Lei Lei, Limin Zhong, Lun Cai, Mengqiang Ren, Min Xu, Mingliang Li, Mingxiao Li, Na Wang, Qiang Tong, Qiaoling Huang, Qingfu Du, Rui Wang, Shengchen Zhou, Shi Qiu, Shihao Peng, Shiliang Yang, Siqi Tu, Tianjiao Deng, Ting Xu, Tong Wang, WeiMing Niu, Wuxun Xie, Xianwei Zhang, Xianyu Feng, Xiaojia Liu, Xing Chen, Xiongbin Wu, Yan Wu, Yang Li, Yi Liu, Yifan Zhang, Yile Liu, Yongshen Long, Yu Luo, Yuanhao Ding, Yuhao Wang, Yuhe Yin, Yunfang Xu, Yuxiang Yang, Zhiguo Huang, Zhiyue Wu, Zichao Li, Zichao Zhou, Daxin Jiang, Future Li, Gang Yu, Xiangyu Zhang, Yibo Zhu",
-      "url": "https://huggingface.co/papers/2605.23463",
-      "score": 36,
+      "id": "2605.21085",
+      "title": "Decoupling Communication from Policy: Robust MARL under Bandwidth Constraints",
+      "title_zh": "将通信与策略解耦：带宽约束下的鲁棒 MARL",
+      "description": "Communication enables coordination in multi-agent reinforcement learning (MARL), but many real-world applications, e.g., search-and-rescue with drone swarms, operate under severe bandwidth constraints. Many communication architectures still expose a coupled bottleneck in which a shared latent representation is used for both policy execution and inter-agent communication. Consequently, reducing message size directly limits the policy's latent space, often leading to significant performance degradation. We address this with two contributions. First, we introduce β, a normalised per-agent bandwidth budget that unifies sparsity, rounds, and message dimension into a single comparable constraint. Second, we provide SLIM, a minimal architecture that decouples the communication pathway from the policy's latent representation, allowing us to isolate the effect of bandwidth from the effect of policy capacity while benefiting from in-step communication. We evaluate our method on several partially-observable MARL benchmarks, where communication is essential. Our approach achieves state-of-the-art performance and exhibits scalability and robustness under limited communication, with only marginal degradation as bandwidth is reduced.",
+      "description_zh": "通信可以实现多智能体强化学习 (MARL) 中的协调，但许多现实世界的应用（例如无人机群的搜索和救援）在严格的带宽限制下运行。许多通信架构仍然暴露出耦合瓶颈，其中共享潜在表示用于策略执行和代理间通信。因此，减少消息大小直接限制了策略的潜在空间，通常会导致性能显着下降。我们通过两个贡献来解决这个问题。首先，我们引入 β，这是一个标准化的每个代理带宽预算，它将稀疏性、轮数和消息维度统一为单个可比较���约束。其次，我们提供 SLIM，这是一种最小的架构，它将通信路径与策略的潜在表示解耦，使我们能够将带宽的影响与策略容量的影响隔离开来，同时受益于同步通信。我们在几个部分可观察的 MARL 基准上评估我们的方法，其中沟通至关重要。我们的方法实现了最先进的性能，并在有限的通信下表现出可扩展性和鲁棒性，随着带宽的减少，仅出现边际退化。",
+      "authors": "Alexi Canesse, Benoît Goupil, Jesse Read, Sonia Vanier",
+      "url": "https://huggingface.co/papers/2605.21085",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "36",
-        "paperId": "2605.23463"
+        "upvotes": "1",
+        "paperId": "2605.21085"
+      }
+    },
+    {
+      "id": "2605.10988",
+      "title": "Seeing the Needle in the Haystack: Towards Weakly-Supervised Log Instance Anomaly Localization via Counterfactual Perturbation",
+      "title_zh": "大海捞针：通过反事实扰动实现弱监督日志实例异常定位",
+      "description": "Log anomaly detection is a critical task for system operations and security assurance. However, in networked systems at scale, log data are generated at massive scale while instance-level annotations are prohibitively expensive, posing great difficulties to fine-grained anomaly localization. To address this challenge, we propose LogMILP (Log anomaly localization based on Multi-Instance Learning enhanced by prototypes and Perturbation), a weakly supervised framework that enables both bag-level anomaly detection and instance-level anomaly localization using only bag-level labels. Our method guides the model to pinpoint the critical log entries using prototype-guided structural modeling with counterfactual perturbation consistency regularization, thereby improving localization reliability and interpretability under coarse-grained supervision. Experimental results on three public datasets demonstrate that LogMILP achieves competitive detection performance while yielding significantly more reliable instance-level localization. Our code is open-sourced at https://github.com/YUK1207/LogMILP.",
+      "description_zh": "日志异常检测是系统运行和安全保障的关键任务。然而，在大规模的网络系统中，日志数据是大规模生成的，而实例级注释的成本却非常高，这给细粒度的异常定位带来了很大的困难。为了应对这一挑战，我们提出了 LogMILP（基于通过原型和扰动增强的多实例学习的日志异常定位），这是一种弱监督框架，仅使用包级标签即可实现包级异常检测和实例级异常定位。我们的方法指导模型使用原型引导的结构建模和反事实扰动一致性正则化来精确定位关键日志条目，从而提高粗粒度监督下的定位可靠性和可解释性。三个公共数据集的实验结果表明，LogMILP 实现了有竞争力的检测性能，同时产生了显着更可靠的实例级定位。我们的代码在 https://github.com/YUK1207/LogMILP 上开源。",
+      "authors": "Yutszyuk Wong, Wentai Wu, Yuen-Ying Yeung, Weiwei Lin",
+      "url": "https://huggingface.co/papers/2605.10988",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.10988"
+      }
+    },
+    {
+      "id": "2605.23081",
+      "title": "ThriftAttention: Selective Mixed Precision for Long-Context FP4 Attention",
+      "title_zh": "ThriftAttention：长上下文 FP4 注意力的选择性混合精度",
+      "description": "Efficient attention algorithms are critical to mitigate the quadratic cost of attention in long-context workloads. Prior work utilises block-scaled quantisation techniques on Blackwell GPUs to move attention computation to 4-bit precision to accelerate inference. However, these techniques result in significant quality degradation in long-context settings. We show that the output impact of quantisation error is highly non-uniform and increases with the importance of each query-key interaction, concentrating functionally relevant error in a small number of attention blocks that contain the most important tokens. We propose ThriftAttention, a low-bit attention variant that delivers near-FP16 long-context quality at FP4 inference efficiency. This approach proceeds in two stages. First, a heuristic rapidly selects a small number of important query-key block pairs for FP16 precision. Second, the selected blocks are computed in FP16 and the remaining blocks in FP4, with both paths merged via online softmax into a single output. We demonstrate across long-context benchmarks and model families that by computing only 5% of query-key blocks in FP16, ThriftAttention recovers on average 89.1% of the FP4-to-FP16 performance gap. We show ThriftAttention's advantage grows with sequence length, mitigating the systematic FP4 quality degradation observed at longer contexts. The code is available at https://github.com/joesharratt1229/ThriftAttention.",
+      "description_zh": "高效的注意力算法对于减轻长上下文工作负载中注意力的二次成本至关重要。之前的工作利用 Blackwell GPU 上的块级量化技术将注意力计算转移到 4 位精度，以加速推理。然而，这些技术会导致长上下文环境中的质量显着下降。我们表明，量化误差的输出影响是高度不均匀的，并且随着每个查询键交互的重要性而增加，将功能相关的误差集中在包含最重要标记的少量注意块中。我们���出了 ThriftAttention，这是一种低位注意力变体，能够以 FP4 推理效率提供接近 FP16 的长上下文质量。这种方法分两个阶段进行。首先，启发式方法快速选择少量重要的查询密钥块对以实现 FP16 精度。其次，所选块在 FP16 中计算，其余块在 FP4 中计算，两条路径通过在线 softmax 合并为单个输出。我们在长上下文基准测试和模型系列中证明，通过仅计算 FP16 中 5% 的查询键块，ThriftAttention 平均可以弥补 FP4 到 FP16 性能差距的 89.1%。我们证明 ThriftAttention 的优势随着序列长度的增加而增长，减轻了在较长上下文中观察到的系统 FP4 质量下降。该代码可在 https://github.com/joesharratt1229/ThriftAttention 获取。",
+      "authors": "Joe Sharratt",
+      "url": "https://huggingface.co/papers/2605.23081",
+      "score": 28,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "28",
+        "paperId": "2605.23081"
+      }
+    },
+    {
+      "id": "2605.23699",
+      "title": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models",
+      "title_zh": "CRONOS：视频模型中反事实物理一致性的基准测试",
+      "description": "Video prediction is increasingly viewed as a path toward generalizable world models, yet it remains unclear whether these systems learn underlying causal structure or merely exploit superficial visual correlations for future prediction. We introduce CRONOS, an intervention-based benchmark designed to evaluate counterfactual physical consistency: whether a model's predictions of physical events respond appropriately to controlled changes in the visual input, such as variations of scene context, viewpoint, object appearance, and object category. Built in a photorealistic Unreal Engine environment, CRONOS enables controlled, high-fidelity generation of videos across diverse scenes and dynamics. In contrast to previous benchmarks, CRONOS systematically intervenes on four key factors - viewpoint, scene, object category, and object appearance - while keeping the underlying physical event type, such as a collision, occlusion, or fall, fixed. Our evaluation of recent open-source video generators reveals substantial failures in counterfactual physical consistency: prediction quality for the same physical event type is affected by appearance, environment, and, particularly by viewpoint changes. CRONOS provides a controlled and reproducible testbed for diagnosing how the quality of generated videos changes for different interventions, establishing a concrete target for developing models that perform consistently across changes of multiple conditions. The dataset and code are available at our project page.",
+      "description_zh": "视频预测越来越被视为通往通用世界模型的道路，但目前尚不清楚这些系统是学习潜在的因果结构还是仅仅利用表面的视觉相关性来进行未来的预测。我们引入了 CRONOS，这是一种基于干预的基准，旨在评估反事实物理一致性：模型对物理事件的预测是否对视觉输入的受控变化做出适当的响应，例如场景上下文、视点、物体外观和物体类别的变化。 CRONOS 构建在逼真的虚幻引擎环境中，能够跨不同场景和动态生成受控的高保真视频。与之前的基准相比，CRONOS 系统地干预了四个关键因素——视点、场景、对象类别和对象外观——同时保持潜在的物理事件类型（例如碰撞、遮挡或跌倒）固定。我们对最新开源视频生成器的评估揭示了反事实物理一致性的重大失败：相同物理事件类型的预测质量受到外观、环境，特别是视点变化的影响。 CRONOS 提供了一个受控且可重复的测试平台，用于诊断不同干预措施下生成的视频质量如何变化，为开发在多种条件变化下一致执行的模型建立了具体目标。数据集和代码可在我们的项目页面上找到。",
+      "authors": "León Begiristain, Olaf Dünkel, Adam Kortylewski",
+      "url": "https://huggingface.co/papers/2605.23699",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2605.23699"
       }
     }
   ]
