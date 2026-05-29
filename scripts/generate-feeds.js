@@ -7,6 +7,29 @@ const X_FALLBACK_FEED_URL = 'https://raw.githubusercontent.com/zarazhangrui/foll
 const REDDIT_REPORT_EN_URL = 'https://raw.githubusercontent.com/liyedanpdx/reddit-ai-trends/main/reports/latest_report_en.md';
 const REDDIT_REPORT_ZH_URL = 'https://raw.githubusercontent.com/liyedanpdx/reddit-ai-trends/main/reports/latest_report_zh.md';
 const DATA_DIR = path.join(__dirname, '..', 'data');
+const X_GUEST_TIMELINE_HANDLES = [
+  'OpenAI',
+  'OpenAIDevs',
+  'GoogleDeepMind',
+  'GoogleAI',
+  'AnthropicAI',
+  'xai',
+  'MetaAI',
+  'huggingface',
+  'github',
+  'cursor_ai',
+  'Replit',
+  'Cognition',
+  'perplexity_ai',
+  'vercel',
+  'sama',
+  'gdb',
+  'karpathy',
+  'amasad',
+  'demishassabis',
+  'JeffDean',
+  'ajambrosino',
+];
 
 function ensureDataDir() {
   fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -31,8 +54,50 @@ function httpsGetText(url, headers = {}) {
   });
 }
 
+function httpsPostText(url, headers = {}, body = '') {
+  return new Promise((resolve, reject) => {
+    const req = https.request(url, {
+      method: 'POST',
+      headers: {
+        'User-Agent': 'Mozilla/5.0',
+        'Content-Type': 'application/json',
+        ...headers,
+      },
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode && res.statusCode >= 400) {
+          return reject(new Error(`HTTP ${res.statusCode}: ${data.slice(0, 300)}`));
+        }
+        resolve(data);
+      });
+    });
+    req.on('error', reject);
+    if (body) req.write(body);
+    req.end();
+  });
+}
+
 async function fetchJson(url) {
   return JSON.parse(await httpsGetText(url));
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function withRetry(operation, attempts = 3) {
+  let lastError;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await operation();
+    } catch (error) {
+      lastError = error;
+      if (i < attempts - 1) await sleep(500 * (i + 1));
+    }
+  }
+  throw lastError;
 }
 
 async function fetchText(url) {
@@ -223,8 +288,7 @@ async function buildHuggingFaceFeed() {
   };
 }
 
-async function buildXFeed() {
-  const xFeed = await fetchJson(X_FALLBACK_FEED_URL);
+async function buildFollowBuildersXFeed(xFeed, translate = translateText) {
   const tweets = (xFeed?.x || [])
     .flatMap(builder => (builder.tweets || []).map(tweet => ({ builder, tweet })))
     .filter(({ tweet }) => tweet && tweet.text && tweet.url)
@@ -238,9 +302,9 @@ async function buildXFeed() {
     items.push(baseItem({
       id: tweet.id,
       title,
-      title_zh: await translateText(title),
+      title_zh: await translate(title),
       description: cleanText,
-      description_zh: await translateText(cleanText),
+      description_zh: await translate(cleanText),
       authors: builder.name,
       url: tweet.url,
       score: itemScore,
@@ -265,6 +329,231 @@ async function buildXFeed() {
     mode: 'follow-builders',
     items
   };
+}
+
+function decodeHtmlEntities(text) {
+  return String(text || '')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
+}
+
+function extractXWebBearer(mainJs) {
+  const match = mainJs.match(/AAAAAAAA[A-Za-z0-9%_-]+/);
+  if (!match) throw new Error('Could not locate X web bearer token');
+  return match[0];
+}
+
+function extractXGraphqlMeta(mainJs, operationName) {
+  const marker = `operationName:"${operationName}"`;
+  const index = mainJs.indexOf(marker);
+  if (index === -1) throw new Error(`Could not locate X GraphQL operation: ${operationName}`);
+  const chunk = mainJs.slice(Math.max(0, index - 300), index + 4000);
+  const queryId = chunk.match(/queryId:"([^"]+)"/)?.[1];
+  if (!queryId) throw new Error(`Could not locate X GraphQL query id: ${operationName}`);
+
+  const featureChunk = chunk.match(/featureSwitches:\[(.*?)\]/)?.[1] || '';
+  const toggleChunk = chunk.match(/fieldToggles:\[(.*?)\]/)?.[1] || '';
+  return {
+    queryId,
+    features: Object.fromEntries([...featureChunk.matchAll(/"([^"]+)"/g)].map(match => [match[1], true])),
+    fieldToggles: Object.fromEntries([...toggleChunk.matchAll(/"([^"]+)"/g)].map(match => [match[1], true])),
+  };
+}
+
+async function fetchXWebClientContext() {
+  const html = await withRetry(() => httpsGetText('https://x.com/OpenAI'));
+  const mainJsUrl = [...html.matchAll(/https:\/\/abs\.twimg\.com\/responsive-web\/client-web\/main\.[^"\\]+\.js/g)]
+    .map(match => match[0])[0];
+  if (!mainJsUrl) throw new Error('Could not locate X main client bundle');
+
+  const mainJs = await withRetry(() => httpsGetText(mainJsUrl));
+  const bearer = extractXWebBearer(mainJs);
+  const guestResponse = JSON.parse(await withRetry(() => httpsPostText('https://api.x.com/1.1/guest/activate.json', {
+    Authorization: `Bearer ${bearer}`,
+  })));
+  if (!guestResponse.guest_token) throw new Error('Could not activate X guest token');
+
+  return {
+    bearer,
+    guestToken: guestResponse.guest_token,
+    mainJs,
+    graphqlMeta: new Map(),
+  };
+}
+
+async function xGraphql(ctx, operationName, variables) {
+  if (!ctx.graphqlMeta.has(operationName)) {
+    ctx.graphqlMeta.set(operationName, extractXGraphqlMeta(ctx.mainJs, operationName));
+  }
+  const meta = ctx.graphqlMeta.get(operationName);
+  const params = new URLSearchParams({
+    variables: JSON.stringify(variables),
+    features: JSON.stringify(meta.features),
+    fieldToggles: JSON.stringify(meta.fieldToggles),
+  });
+  const url = `https://x.com/i/api/graphql/${meta.queryId}/${operationName}?${params.toString()}`;
+  return withRetry(() => fetchJsonWithHeaders(url, {
+    Authorization: `Bearer ${ctx.bearer}`,
+    'x-guest-token': ctx.guestToken,
+    'x-twitter-active-user': 'yes',
+    'x-twitter-client-language': 'en',
+  }));
+}
+
+async function fetchJsonWithHeaders(url, headers) {
+  return JSON.parse(await httpsGetText(url, headers));
+}
+
+function collectGraphqlTweets(value, out = []) {
+  if (Array.isArray(value)) {
+    for (const item of value) collectGraphqlTweets(item, out);
+    return out;
+  }
+  if (!value || typeof value !== 'object') return out;
+  if (value.__typename === 'Tweet' && value.legacy?.id_str && value.legacy?.full_text) {
+    out.push(value);
+  }
+  for (const nested of Object.values(value)) collectGraphqlTweets(nested, out);
+  return out;
+}
+
+async function fetchXUserId(ctx, handle) {
+  const payload = await xGraphql(ctx, 'UserByScreenName', { screen_name: handle });
+  const result = payload?.data?.user?.result;
+  if (!result || result.__typename !== 'User') throw new Error(`X user not found: ${handle}`);
+  return {
+    id: result.rest_id || result.legacy?.id_str || String(result.id || '').split(':').pop(),
+    name: result.core?.name || result.legacy?.name || handle,
+    handle: result.core?.screen_name || result.legacy?.screen_name || handle,
+  };
+}
+
+async function fetchXUserTweets(ctx, userId) {
+  const payload = await xGraphql(ctx, 'UserTweets', {
+    userId,
+    count: 20,
+    includePromotedContent: false,
+    withQuickPromoteEligibilityTweetFields: false,
+    withVoice: false,
+  });
+  return collectGraphqlTweets(payload);
+}
+
+function isRelevantXSignal(text) {
+  const value = String(text || '').toLowerCase();
+  return /\b(ai|agent|agents|model|llm|codex|claude|gemini|grok|openai|deepmind|computer|workflow|developer|developers|research|launch|introducing|available|image generation|coding)\b/.test(value);
+}
+
+function normalizeGraphqlTweet(tweet, account) {
+  const legacy = tweet.legacy || {};
+  const text = decodeHtmlEntities(legacy.full_text || '').replace(/\s+/g, ' ').trim();
+  const id = legacy.id_str;
+  const createdAt = legacy.created_at ? new Date(legacy.created_at).toISOString() : new Date().toISOString();
+  const likes = Number(legacy.favorite_count || 0);
+  const retweets = Number(legacy.retweet_count || 0);
+  const replies = Number(legacy.reply_count || 0);
+  return {
+    id,
+    text,
+    url: `https://x.com/${account.handle}/status/${id}`,
+    likes,
+    retweets,
+    replies,
+    createdAt,
+    account,
+    score: likes + retweets * 2 + replies * 1.5,
+  };
+}
+
+async function buildXGuestTimelineFallbackFeed(reason, options = {}) {
+  const translate = options.translate || translateText;
+  const handles = options.handles || X_GUEST_TIMELINE_HANDLES;
+  const cutoffMs = Date.now() - (options.lookbackHours || 72) * 60 * 60 * 1000;
+  const ctx = await fetchXWebClientContext();
+  const seen = new Set();
+  const candidates = [];
+
+  for (const handle of handles) {
+    try {
+      const account = await fetchXUserId(ctx, handle);
+      const tweets = await fetchXUserTweets(ctx, account.id);
+      for (const tweet of tweets) {
+        const normalized = normalizeGraphqlTweet(tweet, account);
+        if (!normalized.id || seen.has(normalized.id)) continue;
+        seen.add(normalized.id);
+        if (new Date(normalized.createdAt).getTime() < cutoffMs) continue;
+        if (/^RT @/.test(normalized.text)) continue;
+        if (!isRelevantXSignal(normalized.text)) continue;
+        candidates.push(normalized);
+      }
+    } catch (error) {
+      console.error(`[x-fallback] ${handle} skipped:`, error.message);
+    }
+  }
+
+  candidates.sort((a, b) => b.score - a.score);
+  const items = [];
+  for (const tweet of candidates.slice(0, 15)) {
+    const cleanText = truncateText(tweet.text, 260);
+    const title = titleCaseHeuristic(tweet.text, 90);
+    items.push(baseItem({
+      id: tweet.id,
+      title,
+      title_zh: await translate(title),
+      description: cleanText,
+      description_zh: await translate(cleanText),
+      authors: tweet.account.name,
+      url: tweet.url,
+      score: Number(scoreTweet(tweet).toFixed(2)),
+      meta: {
+        source: 'x',
+        handle: `@${tweet.account.handle}`,
+        likes: String(tweet.likes || 0),
+        retweets: String(tweet.retweets || 0),
+        replies: String(tweet.replies || 0),
+        age: formatRelativeAge(tweet.createdAt),
+        createdAt: tweet.createdAt,
+        xSource: 'manual-search-guest-timeline',
+      },
+    }));
+  }
+
+  return {
+    source: 'x',
+    updatedAt: new Date().toISOString(),
+    count: items.length,
+    mode: 'manual-search-guest-timeline',
+    meta: {
+      fallbackReason: reason,
+      fallbackHandles: handles,
+    },
+    items,
+  };
+}
+
+async function buildXFeedWithFallback(options = {}) {
+  const fetchFollowBuildersFeed = options.fetchFollowBuildersFeed || (() => fetchJson(X_FALLBACK_FEED_URL));
+  const buildGuestTimelineFallbackFeed = options.buildGuestTimelineFallbackFeed || buildXGuestTimelineFallbackFeed;
+  const translate = options.translate || translateText;
+
+  try {
+    const xFeed = await fetchFollowBuildersFeed();
+    const feed = await buildFollowBuildersXFeed(xFeed, translate);
+    if (feed.count > 0) return feed;
+    const upstreamErrors = Array.isArray(xFeed?.errors) && xFeed.errors.length
+      ? ` Upstream errors: ${xFeed.errors.join('; ')}`
+      : '';
+    return buildGuestTimelineFallbackFeed(`follow-builders returned 0 usable tweets.${upstreamErrors}`, { translate });
+  } catch (error) {
+    return buildGuestTimelineFallbackFeed(`follow-builders fetch failed: ${error.message}`, { translate });
+  }
+}
+
+async function buildXFeed() {
+  return buildXFeedWithFallback();
 }
 
 function extractSection(markdown, heading) {
@@ -715,7 +1004,16 @@ async function main() {
   console.log(`Generated feeds${only ? ` (${only})` : ''}.`);
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  buildFollowBuildersXFeed,
+  buildXFeedWithFallback,
+  buildXGuestTimelineFallbackFeed,
+  extractXGraphqlMeta,
+};

@@ -31,7 +31,7 @@ def fetch_json(url: str):
         return json.loads(resp.read().decode('utf-8'))
 
 
-def parse_iso(value: str | None):
+def parse_iso(value):
     if not value:
         return None
     return datetime.fromisoformat(value.replace('Z', '+00:00')).astimezone(TZ)
@@ -121,12 +121,25 @@ def run_local_regeneration():
     }
 
 
+def clean_surrogates(value):
+    if isinstance(value, str):
+        return ''.join('\uFFFD' if 0xD800 <= ord(ch) <= 0xDFFF else ch for ch in value)
+    if isinstance(value, list):
+        return [clean_surrogates(item) for item in value]
+    if isinstance(value, dict):
+        return {clean_surrogates(key): clean_surrogates(item) for key, item in value.items()}
+    return value
+
+
 def write_archive(payloads: dict, archive_date: str, metadata: dict):
     out_dir = ARCHIVE_ROOT / archive_date
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    payloads = clean_surrogates(payloads)
+    metadata = clean_surrogates(metadata)
+
     for name, payload in payloads.items():
-        (out_dir / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2))
+        (out_dir / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
 
     manifest = {
         'archiveDate': archive_date,
@@ -134,7 +147,7 @@ def write_archive(payloads: dict, archive_date: str, metadata: dict):
         **metadata,
         'files': sorted(payloads.keys()),
     }
-    (out_dir / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
+    (out_dir / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
     return out_dir, manifest
 
 

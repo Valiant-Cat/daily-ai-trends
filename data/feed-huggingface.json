@@ -1,14 +1,44 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-28T21:33:39.508Z",
+  "updatedAt": "2026-05-29T01:37:14.657Z",
   "count": 15,
   "items": [
+    {
+      "id": "2605.28158",
+      "title": "OR-Space: A Full-Lifecycle Workspace Benchmark for Industrial Optimization Agents",
+      "title_zh": "OR-Space：工业优化代理的全生命周期工作空间基准",
+      "description": "Large language model (LLM) agents are increasingly used to assist with operations research (OR) modeling, yet existing OR-oriented benchmarks often reduce evaluation to one-shot translation from a self-contained problem statement into a mathematical formulation or solver program. Such settings abstract away two characteristics of real industrial OR workflows: persistent multi-artifact workspaces and multi-stage task lifecycles. We introduce OR-Space, a full-lifecycle workspace benchmark for evaluating industrial optimization agents across model construction, model revision, and grounded explanation. Each instance is an executable workspace containing business documents, structured data, optional code artifacts, solver outputs, and task-specific evaluators distributed across interdependent files. OR-Space defines three task modes: Build, where agents construct solver-ready optimization models from heterogeneous artifacts; Revise, where agents modify existing models under changing requirements or solver feedback while preserving valid prior logic; and Explain, where agents answer grounded questions about solutions, constraints, and business implications using evidence spread across workspace artifacts. By combining persistent workspaces with lifecycle-oriented tasks, OR-Space evaluates whether agents can perform reliable optimization work beyond end-to-end text generation. We describe the benchmark design, evaluation protocol, and quality-control pipeline, and position OR-Space as a benchmark for studying the reliability, failure modes, and practical readiness of LLM agents in industrial OR workflows.",
+      "description_zh": "大型语言模型 (LLM) 代理越来越多地用于协助运筹学 (OR) 建模，但现有的面向 OR 的基准通常会将评估简化为从独立问题陈述到数学公式或求解器程序的一次性转换。此类设置抽象了真实工业 OR 工作流程的两个特征：持久的多工件工作空间和多阶段任务生命周期。我们推出 OR-Space，这是一个全生命周期工作空间基准，用于评估模型构建、模型修订和基础解释方面的工业优化代理。每个实例都是一个可执行工作区，其中包含分布在相互依赖的文件中的业务文档、���构化数据、可选代码工件、求解器输出和特定于任务的评估器。 OR-Space 定义了三种任务模式： 构建，代理从异构工件构建求解器就绪的优化模型；修改，代理根据不断变化的需求或求解器反馈修改现有模型，同时保留有效的先前逻辑；解释，代理使用跨工作空间工件的证据回答有关解决方案、约束和业务影响的基础问题。通过将持久工作区与面向生命周期的任务相结合，OR-Space 可以评估��理是否可以执行端到端文本生成之外的可靠优化工作。我们描述了基准设计、评估协议和质量控制流程，并将 OR-Space 定位为研究工业 OR 工作流程中 LLM 代理的可靠性、故障模式和实际准备情况的基准。",
+      "authors": "Chenyu Zhou, Xinyun Lu, Jiangyue Zhao, Jianghao Lin, Dongdong Ge, Yinyu Ye",
+      "url": "https://huggingface.co/papers/2605.28158",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2605.28158"
+      }
+    },
+    {
+      "id": "2605.26368",
+      "title": "Unified Panoramic Geometry Estimation via Multi-View Foundation Models",
+      "title_zh": "通过多视图基础模型的统一全景几何估计",
+      "description": "Geometry estimation from perspective images has greatly advanced, maturing to the point where off-the-shelf foundation models are able to reconstruct 3D scene structure not only from multi-view imagery, but even from a single view. A natural extension is 3D reconstruction from panoramas, with the exciting prospect of recovering a full 360-degree scene from a single panoramic image. In this work, we introduce PaGeR (Panoramic Geometry Reconstruction), a framework to lift powerful 3D foundation models designed for perspective imagery to the panorama domain. Our strategy is to start from a pre-trained transformer for 3D reconstruction and turn it into a unified high-performance model that predicts scale-invariant depth, metric depth, surface normals, and sky masks from both perspective and omnidirectional images, in a single forward pass. By keeping architectural changes to a minimum and mixing perspective and panoramic images during training, PaGeR retains the rich 3D prior of the underlying foundation model while learning to also estimate geometrically consistent 360-degree scenes from single panoramas. We extensively test our method in both indoor and outdoor environments and find that it delivers state-of-the-art performance and excellent zero-shot performance across a wide range of scenes.",
+      "description_zh": "基于透视图像的几何估计已经取得了很大进展，已经成熟到现成的基础模型不仅能够从多视图图像甚至从单个视图重建 3D 场景结构。一个自然的延伸是全景图的 3D 重建，具有从单个全景图像恢复完整 360 度场景的令人兴奋的前景。在这项工作中，我们介绍了 PaGeR（全景几何重建），这是一个框架，用于将专为透视图像设计的强大 3D 基础模型提升到全景领域。我们的策略是从用于 3D 重建的预训练变压器开始，并将其转变为统一的高性能模型，在单次前向传递中从透视图像和全向图像预测尺度���变深度、度量深度、表面法线和天空掩模。通过在训练期间将架构变化保持在最低限度并混合透视和全景图像，PaGeR 保留了底层基础模型的丰富 3D 先验，同时学习从单个全景图中估计几何一致的 360 度场景。我们在室内和室外环境中广泛测试了我们的方法，发现它在各种场景中提供了最先进的性能和出色的零镜头性能。",
+      "authors": "Vukasin Bozic, Isidora Slavkovic, Dominik Narnhofer, Nando Metzger, Denis Rozumny, Konrad Schindler, Nikolai Kalischek",
+      "url": "https://huggingface.co/papers/2605.26368",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2605.26368"
+      }
+    },
     {
       "id": "2605.28617",
       "title": "LACUNA: Safe Agents as Recursive Program Holes",
       "title_zh": "LACUNA：安全代理作为递归程序漏洞",
       "description": "LLM agents increasingly act by writing code, yet a split persists between the runtime that drives the agent and the code the model writes. The runtime owns the loop, context, and control flow, and the model has little say over any of them. Letting model-written code shape the runtime itself would make agents more expressive, but it would also sharpen safety problems. A model can be diverted by a prompt injection, call the wrong tool, or fail partway and leave an inconsistent state, and each such failure reaches further when the code shapes the runtime than when it expresses a single action. We present LACUNA, a programming model for agents that closes this split while preserving safety. Each agent action is a typed call agent[T](task) that the LLM fills with code when execution reaches it, and the code is type-checked against the surrounding program before it runs. Because each action is accepted or rejected as a whole, a rejected one leaves the environment untouched, and its compiler diagnostics drive a retry. The same check also bounds which tools and data an action may use and how they flow. Our primitive expresses ReAct loops, sub-agents, skills, parallel decomposition, and multi-model planning as ordinary control flow. We evaluate LACUNA on a collection of test cases, BrowseComp-Plus, and τ^2-bench. On BrowseComp-Plus, 8.6% of generations are rejected before execution, with 0.7 retries per query on average, and the agent reaches 27.1% accuracy. On τ^2-bench, LACUNA solves 76.0% of 392 tasks across four domains with a capable model, on par with the baseline agent.",
-      "description_zh": "LLM 代理越来越多地通过编写代码来执行操作，但驱动代理的运行时和模型编写的代码之间仍然存在分歧。运行时拥有循环、上下文和控制流，而模型对它们几乎没有发言权。让模型编写的代码塑造运行时本身将使代理更具表现力，但也会加剧安全问题。模型可能会因提示注入而转移，调用错误的工具，或者中途失败并留下不一致的状态，并且当代码塑造运行时时，每次此类失败都会比它表达单个操作时影响更大。我们提出了 LACUNA，一种代理编程模型，可以在保证安全的同时消除这种分裂。每个代理操作都是一个类型化的调用代理[T](任务)，LLM 在执行到达时用代码填充该调用，并且在运行之前针对周围的程序对代码进行类型检查。由于每个操作都是作为一个整体接受或拒绝的，因此被拒绝的操作不会影响环境，并且其编译器诊断会驱动重试。同样的检查还限制了操作可以使用哪些工具和数据以及它们如何流动。我们的原语将 ReAct 循环、子代理、技能���并行分解和多模型规划表达为普通控制流。我们在一系列测试用例、BrowseComp-Plus 和 τ^2-bench 上评估 LACUNA。在 BrowseComp-Plus 上，8.6% 的生成在执行前被拒绝，平均每个查询重试 0.7 次，代理达到 27.1% 的准确率。在 τ^2-bench 上，LACUNA 使用功能强大的模型解决了四个领域的 392 项任务中的 76.0%，与基线代理相当。",
+      "description_zh": "LLM 代理越来越多地通过编写代码来执行操作，但驱动代理的运行时和模型编写的代码之间仍然存在分歧。运行时拥有循环、上下文和控制流，而模型对它们几乎没有发言权。让模型编写的代码塑造运行时本身将使代理更具表现力，但也会加剧安全问题。模型可能会因提示注入而转移，调用错误的工具，或者中途失败并留下不一致的状态，并且当代码塑造运行时时，每次此类失败都会比它表达单个操作时影响更大。我们提出了 LACUNA，一种代理编程模型，可以在保证安全的同时消除这种分裂。每个代理操作都是一个类型化的调用代理[T](任务)，LLM 在执行到达时用代码填充该调用，并且在运行之前针对周围的程序对代码进行类型检查。由于每个操作都是作为一个整体接受或拒绝的，因此被拒绝的操作不会影响环境，并且其编译器诊断会驱动重试。同样的检查还限制了操作可以使用哪些工具和数据以及它们如何流动。我们的原语将 ReAct 循环、子代理、技能、并行分解和多模型规划表达为普通控制流。我们在一系列测试用例、BrowseComp-Plus 和 τ^2-bench 上评估 LACUNA。在 BrowseComp-Plus 上，8.6% 的生成在执行前被拒绝，平均每个查询重试 0.7 次，代理达到 27.1% 的准确率。在 τ^2-bench 上，LACUNA 使用功能强大的模型解决了四个领域的 392 项任务中的 76.0%，与基线代理相当。",
       "authors": "Yaoyu Zhao, Yichen Xu, Oliver Bračevac, Cao Nguyen Pham, Frank Zhengqing Wu, Martin Odersky",
       "url": "https://huggingface.co/papers/2605.28617",
       "score": 1,
@@ -83,7 +113,7 @@
       "title": "Breaking the Chains of Probability: Neutrosophic Logic as a New Framework for Epistemic Uncertainty in Large Language Models",
       "title_zh": "打破概率的链条：中智逻辑作为大语言模型中认知不确定性的新框架",
       "description": "Large Language Models (LLMs) are predominantly governed by probabilistic frameworks in which the sum of outcome probabilities is constrained to unity. This architectural limitation, often imposed by Softmax layers, leads to a collapse of uncertainty that makes it difficult to differentiate between epistemic uncertainty, paradox, and vagueness. We present an empirical investigation of the application of Neutrosophic Logic, a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as three independent dimensions, to model epistemic states in LLMs. We conducted experiments on a family of four OpenAI GPT models across five linguistic phenomena: logical paradoxes, epistemic ignorance, vagueness, ethical contradictions, and future contingencies, under three prompting strategies: neutrosophic, probabilistic, and entropy-derived. Our findings reveal that the neutrosophic approach, by allowing T+I+F > 1, a state we term hyper-truth, provides a richer representation of a model's internal state. In 35% of evaluations, hyper-truth emerged spontaneously, predominantly under ethical contradiction and logical paradox. We demonstrate that this approach preserves truth values in fuzzy contexts and offers a robust method for identifying and quantifying internal model conflict. We conclude that the integration of neutrosophic evaluation layers is a critical step toward more transparent, reliable, and ethically aware AI systems.",
-      "description_zh": "大型语言模型（LLM）主要受概率框架的控制，其中结果概率的总和被限制为统一。这种架构限制通常是由 Softmax 层施加的，会导致不确定性崩溃，从而难以区分认知不确定性、悖论和模糊性。我们对中智逻辑的应用进行了实证研究，该框架将真理（T）、不确定性（I）和虚假性（F）视为三个独立的维度，以模拟LLM的认知状态。我们对一系列四个 OpenAI GPT 模型进行了实验，涉及五种语言现象：逻辑悖论、认知无知、模糊性、道德矛盾和未来意外事件，并采用三种提示策略：中智、概率��熵衍生。我们的研究结果表明，中智方法通过允许 T+I+F > 1（我们称之为超真理的状态）提供了模型内部状态的更丰富的表示。 35%的评价中，超真实自发出现，主要是在伦理矛盾和逻辑悖论下出现的。我们证明这种方法可以在模糊环境中保留真值，并提供一种用于识别和量化内部模型冲突的可靠方法。我们的结论是，中智评估层的整合是迈向更加透明、可靠和具有道德意识的人工智能系统的关键一步。",
+      "description_zh": "大型语言模型（LLM）主要受概率框架的控制，其中结果概率的总和被限制为统一。这种架构限制通常是由 Softmax 层施加的，会导致不确定性崩溃，从而难以区分认知不确定性、悖论和模糊性。我们对中智逻辑的应用进行了实证研究，该框架将真理（T）、不确定性（I）和虚假性（F）视为三个独立的维度，以模拟LLM的认知状态。我们对一系列四个 OpenAI GPT 模型进行了实验，涉及五种语言现象：逻辑悖论、认知无知、模糊性、道德矛盾和未来意外事件，并采用三种提示策略：中智、概率���熵衍生。我们的研究结果表明，中智方法通过允许 T+I+F > 1（我们称之为超真理的状态）提供了模型内部状态的更丰富的表示。 35%的评价中，超真实自发出现，主要是在伦理矛盾和逻辑悖论下出现的。我们证明这种方法可以在模糊环境中保留真值，并提供一种用于识别和量化内部模型冲突的可靠方法。我们的结论是，中智评估层的整合是迈向更加透明、可靠和具有道德意识的人工智能系统的关键一步。",
       "authors": "Maikel Yelandi Leyva-Vázquez, Florentin Smarandache",
       "url": "https://huggingface.co/papers/2605.24053",
       "score": 0,
@@ -98,13 +128,13 @@
       "title": "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems",
       "title_zh": "您的代理也在老化：已部署系统的代理生命周期工程",
       "description": "Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly initialized models. Day-one benchmarks miss a basic systems question: how long does an agent remain reliable after deployment? Even when model weights are frozen, an agent's effective state keeps changing as it compresses interaction history, retrieves from a growing memory store, revises facts after updates, and undergoes routine maintenance. Reliability therefore becomes a lifespan property of the full agent harness, not only a snapshot property of the base model. We introduce AgingBench, a longitudinal reliability benchmark for agent lifespan engineering: measuring not only whether deployed agents degrade, but what form the degradation takes and where repair should target. AgingBench organizes agent aging into four mechanisms: compression aging, interference aging, revision aging, and maintenance aging. To diagnose these failures, AgingBench uses temporal dependency graphs and paired counterfactual probes that produce diagnostic profiles for the write, retrieval, and utilization stages of the memory pipeline. Across 7 scenarios, 14 models, multiple memory policies, and both runner-controlled and autonomous agents, over ~400 runs spanning 8 - 200 sessions show that agent aging is not one-dimensional: behavioral tests can remain clean while factual precision decays; derived-state tracking can collapse sharply within a single model; and the same wrong answer can require different repairs depending on what the diagnostic profile points to. These results suggest that reliable agent deployment requires lifespan evaluation, mechanism-level diagnosis, and stage-targeted repair, not only stronger day-one models.",
-      "description_zh": "长寿命的人工智能代理越来越多地部署为持久操作系统，但它们仍然像新初始化的模型一样进行评估。第一天的基准测试忽略了一个基本的系统问题：代理在部署后可以保持可靠多长时间？即使模型权重被冻结，代理的有效状态也会不断变化，因为它会压缩交互历史记录、从不断增长的内存存储中检索、更新后修改事实以及进行日常维护。因此，可靠性成为整个代理工具的生命周期属性，而不仅仅是基本模型的快照属性。我们引入了 AgingBench，这是一个用于代理生命周期工程的纵向可靠性基准：不仅测量部署的代理是否退化，还测量退化的形式以及修复的目标位置。 AgingBench 将代理老化分为四种机制：压缩老化、干扰老化、修订老化和维护老化。为了诊断这些故障，AgingBench 使用时间依赖图和配对的反事实探针，为内存管道的写入、检索和利用阶段生成诊断配置文件。在 7 个场景、14 个模型、多种内存策略以及运行者控制和自主代理中，跨越 8 - 200 个会话的约 400 次运行表明代理老化不是一维的：行为测试可以保持干净，而事实精度下降；派生状态跟踪可能会在单个模型中急剧崩溃；根据诊断配置文件的指向，相同的错误答案可能需要不同的修复。这些结果表明，可靠的代理部署需要寿命评估、机制级诊断和阶段性修复，而不仅仅是更强的第一天模型。",
+      "description_zh": "长寿命的人工智能代理越来越多地部署为持久操作系统，但它们仍然像新初始化的模型一样进行评估。第一天的基准测试忽略了一个基本的系统问题：代理在部署后可以保持可靠多长时间？即使模型权重被冻结，代理的有效状态也会不断变化，因为它会压缩交互历史记录、从不断增长的内存存储中检索、更新后修改事实以及进行日常维护。因此，可靠性成为整个代理工具的生命周期属性，而不仅仅是基本模型的快照属性。我们引入了 AgingBench，这是一个用于代理生命周期工程的纵向可靠性基准：不仅测量部署的代理是否退化，还测量退化的形式以及修复的目标位置。 AgingBench 将代理老化分为四种机制：压缩老化、干扰老化、修订老化和维护老化。为了诊断这些故障，AgingBench 使用时间依赖图和配对的反事实探针，为内存管道的写入、检索和利用阶段生成诊断配置文件。在 7 个场景、14 个模型、多种内存策略以及运行者控制和自主代理中，跨越 8 - 200 个会话的约 400 次运行表明代理老化不是一维��：行为测试可以保持干净，而事实精度下降；派生状态跟踪可能会在单个模型中急剧崩溃；根据诊断配置文件的指向，相同的错误答案可能需要不同的修复。这些结果表明，可靠的代理部署需要寿命评估、机制级诊断和阶段性修复，而不仅仅是更强的第一天模型。",
       "authors": "Jianing Zhu, Yeonju Ro, John Robertson, Kevin Wang, Junbo Li, Haris Vikalo, Aditya Akella, Zhangyang Wang",
       "url": "https://huggingface.co/papers/2605.26302",
-      "score": 8,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "19",
         "paperId": "2605.26302"
       }
     },
@@ -173,7 +203,7 @@
       "title": "Category-Level 3D Correspondence in Camera Space via Morphable Object Priors",
       "title_zh": "通过可变形对象先验实现相机空间中的类别级 3D 对应",
       "description": "Understanding 3D objects from images is fundamental to robotics and AR/VR applications. While recent work has made progress in category-level pose estimation, current representations fail to capture the fine-grained semantics needed for reasoning about object parts, functions, and interactions. In this work, we study category-level 3D correspondence in camera space -- predicting, from a single image, 3D locations that remain consistent across instances within a category -- and show that it can emerge without explicit correspondence supervision by learning a shared morphable object prior. To enable research in this direction, we introduce HouseCorr3D, the first large-scale benchmark for monocular category-level 3D correspondence with 178k images across 50 household object categories, 280 unique instances, and 3D keypoint annotations directly on CAD models. Crucially, HouseCorr3D provides amodal correspondence labels for occluded regions and explicit symmetry annotations, addressing key limitations of existing datasets. We further propose Morpheus, a method that learns morphable category-level shape priors by disentangling canonical shape, deformation, and object pose. Through this shared canonical grounding, semantically meaningful 3D correspondences in camera space emerge implicitly. These emerging 3D correspondences set a new state of the art on HouseCorr3D, demonstrating that semantic 3D object understanding can arise without direct correspondence supervision. Data and code are publicly available at https://github.com/GenIntel/HouseCorr3D.",
-      "description_zh": "从图像中理解 3D 对象是机器人和 AR/VR 应用的基础。虽然最近的工作在类别级姿态估计方面取得了进展，但当前的表示无法捕获推理对象部分、功能和交互所需的细粒度语义。在这项工作中，我们研究了相机空间中的类别级 3D 对应——从单个图像预测在类别内的实例之间保持一致的 3D 位置——并表明，通过先学习共享的可变形对象，它可以在没有显式对应监督的情况下出现。为了实现这一方向的研究，我们引入了 HouseCorr3D，这是第一个单目类别级 3D 对应的大型基准���包含 50 个家庭物体类别的 178k 图像、280 个唯一实例以及直接在 CAD 模型上的 3D 关键点注释。至关重要的是，HouseCorr3D 为遮挡区域和显式对称注释提供了模态对应标签，解决了现有数据集的关键限制。我们进一步提出了 Morpheus，一种通过解开规范形状、变形和物体姿势来学习可变形类别级形状先验的方法。通过这种共享的规范基础，相机空间中具有语义意义的 3D 对应关系隐式出现。这些新兴的 3D 对应关系在 HouseCorr3D 上树立了新的技术水平，证明语义 3D 对象理解可以在没有直接对应监督的情况下产生。数据和代码可在 https://github.com/GenIntel/HouseCorr3D 上公开获取。",
+      "description_zh": "从图像中理解 3D 对象是机器人和 AR/VR 应用的基础。虽然最近的工作在类别级姿态估计方面取得了进展，但当前的表示无法捕获推理对象部分、功能和交互所需的细粒度语义。在这项工作中，我们研究了相机空间中的类别级 3D 对应——从单个图像预测在类别内的实例之间保持一致的 3D 位置——并表明，通过先学习共享的可变形对象，它可以在没有显式对应监督的情况下出现。为了实现这一方向的研究，我们引入了 HouseCorr3D，这是第一个单目类别级 3D 对应的大型基准��包含 50 个家庭物体类别的 178k 图像、280 个唯一实例以及直接在 CAD 模型上的 3D 关键点注释。至关重要的是，HouseCorr3D 为遮挡区域和显式对称注释提供了模态对应标签，解决了现有数据集的关键限制。我们进一步提出了 Morpheus，一种通过解开规范形状、变形和物体姿势来学习可变形类别级形状先验的方法。通过这种共享的规范基础，相机空间中具有语义意义的 3D 对应关系隐式出现。这些新兴的 3D 对应关系在 HouseCorr3D 上树立了新的技术水平，证明语义 3D 对象理解可以在没有直接对应监督的情况下产生。数据和代码可在 https://github.com/GenIntel/HouseCorr3D 上公开获取。",
       "authors": "Leonhard Sommer, Artur Jesslen, Basavaraj Sunagad, Adam Kortylewski",
       "url": "https://huggingface.co/papers/2605.28257",
       "score": 1,
@@ -188,7 +218,7 @@
       "title": "AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions",
       "title_zh": "AgentHijack：对计算机使用代理对常见环境损坏的稳健性进行基准测试",
       "description": "Autonomous computer use agents that powered by multimodal large language models (MLLMs) are emerging as capable assistants for completing complex digital workflows. However, real-world execution environments are far from ideal: pop-ups, resolution changes, and competing applications frequently interfere with agent perception and control. We introduce AgentHijack, a benchmark designed to evaluate the robustness of computer-use agents under common corruptions, where the uncertainties in dynamic environment disrupt the execution flow without direct adversarial intent. Specifically, AgentHijack introduces 9 configurable common corruptions to replicate realistic imperfect scenarios. We evaluate a variety of desktop tasks that utilize MLLM-based agents and discover that even minor instances of corruption can result in substantial performance degradation, which emphasizes the fragility of agents and underscores the necessity of robustness evaluation. Afterward, we propose AgentHijack-Agent, a framework that integrates an action generator with enhanced grounding capabilities and an onlooker responsible for behavior summarization and environment checking. Extensive experiments validate its effectiveness. Our code, environment, baseline models and data are publicly available at: https://AgentHijack.github.io.",
-      "description_zh": "由多模式大语言模型 (MLLM) 提供支持的自主计算机使用代理正在成为完成复杂数字工作流程的得力助手。然而，现实世界的执行环境远非理想：弹出窗口、分辨率变化和竞争应用程序经常干扰代理的感知和控制。我们引入了 AgentHijack，这是一个基准测试，旨在评估计算机使用代理在常见损坏情况下的稳健性，其中动态环境中的不确定性会在没有直接对抗意图的情况下扰乱执行流程。具体来说，AgentHijack 引入了 9 个可配置的常见损坏来复制现实的不完美场景。我们评估了使用基于 MLLM 的代理的各种桌面任务，发现即使是轻微的损坏实例也可能导致性能大幅下降，这强调了代理的脆弱性并强调了鲁棒性评估的必要性。之后，我们提出了 AgentHijack-Agent，一个框架，集成了具有增强基础能力的动作生成器和负责行为总结和环境检查的旁观者。大量的实验验证了其有效性。我们的代码、环境、基线模型和数据可在以下位置公开获取：https://AgentHijack.github.io���",
+      "description_zh": "由多模式大语言模型 (MLLM) 提供支持的自主计算机使用代理正在成为完成复杂数字工作流程的得力助手。然而，现实世界的执行环境远非理想：弹出窗口、分辨率变化和竞争应用程序经常干扰代理的感知和控制。我们引入了 AgentHijack，这是一个基准测试，旨在评估计算机使用代理在常见损坏情况下的稳健性，其中动态环境中的不确定性会在没有直接对抗意图的情况下扰乱执行流程。具体来说，AgentHijack 引入了 9 个可配置的常见损坏来复制现实的不完美场景。我们评估了使用基于 MLLM 的代理的各种桌面任务，发现即使是轻微的损坏实例也可能导致性能大幅下降，这强调了代理的脆弱性并强调了鲁棒性评估的必要性。之后，我们提出了 AgentHijack-Agent，一个框架，集成了具有增强基础能力的动作生成器和负责行为总结和环境检查的旁观者。大量的实验验证了其有效性。我们的代码、环境、基线模型和数据可在以下位置公开获取：https://AgentHijack.github.io。",
       "authors": "Jingwei Sun, Jianing Zhu, Yuanyi Li, Tongliang Liu, Xia HU, Bo Han",
       "url": "https://huggingface.co/papers/2605.25707",
       "score": 2,
@@ -196,36 +226,6 @@
         "source": "huggingface",
         "upvotes": "2",
         "paperId": "2605.25707"
-      }
-    },
-    {
-      "id": "2605.19952",
-      "title": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
-      "title_zh": "重新思考如何记住：在终身 LLM 代理记忆中超越原子事实",
-      "description": "To enable reliable long-term interaction, LLM agents require a memory system that can faithfully store, efficiently retrieve, and deeply reason over accumulated dialogue history. Most existing methods adopt an extracted fact based paradigm: handcrafted static prompts compress raw dialogues into atomic facts, which are then stored, matched, and injected into downstream reasoning. Nevertheless, such fact-centric designs inevitably discard fine-grained details in original dialogues and fail to support deep reasoning over scattered isolated facts. Moreover, static prompts cannot maintain consistent extraction granularity across diverse dialogue styles. To address these limitations, we propose TriMem, which maintains three coexisting representation granularities, including raw dialogue segments anchored by source identifiers for storage fidelity, extracted atomic facts for efficient memory retrieval, synthesized profiles that aggregate dispersed facts into holistic semantic understanding for deep reasoning. We further adopt TextGrad-based prompt optimization, which iteratively refines extraction and profiling prompts via response quality feedback, achieving lifelong evolution without any parameter updating. Extensive experiments on LoCoMo and PerLTQA across multiple LLM backbones demonstrate that TriMem consistently outperforms strong memory baselines. The code is available at https://TMLR-TriMem.github.io .",
-      "description_zh": "为了实现可靠的长期交互，LLM 代理需要一个能够忠实存储、有效检索和深入推理累积的对话历史的存储系统。大多数现有方法采用基于提取事实的范例：手工制作的静态提示将原始对话压缩为原子事实，然后将其存储、匹配并注入到下游推理中。然而，这种以事实为中心的设计不可避免地会丢弃原始对话中的细粒度细节，并且无法支持对分散的孤立事实的深层推理。此外，静态提示无法在不同的对话风格中保持一致的提取粒度。为了解决这些限制，我们提出了 TriMem，它维护三种共存的表示粒度，包括由源标识符锚定的原始对话片段以实现存储保真度、提取原子事实以实现高效内存检索、合成配置文件将分散的事实聚合为整体语义理解以进行深度推理。我们进一步采用基于TextGrad的提示优化，通过响应质量反馈迭代细化提取和分析提示，实现终身进化，无需任何参数更新。在多个 LLM 主干上对 LoCoMo 和 PerLTQA 进行的广泛实验表明，TriMem 始终优于强大的记忆基线。代码可在 https://TMLR-TriMem.github.io 获取。",
-      "authors": "Jingwei Sun, Jianing Zhu, Jiangchao Yao, Tongliang Liu, Bo Han",
-      "url": "https://huggingface.co/papers/2605.19952",
-      "score": 9,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2605.19952"
-      }
-    },
-    {
-      "id": "2605.27901",
-      "title": "The Fragility of Chain-of-Thought Monitoring Across Typologically Diverse Languages",
-      "title_zh": "跨类型多样化语言的思想链监控的脆弱性",
-      "description": "Chain-of-thought (CoT) monitoring has been proposed as a promising safety mechanism for detecting misaligned behavior in large language models. However, its reliability remains largely unexplored beyond English and across diverse model families. We present the first large-scale evaluation of CoT monitorability across 13 diverse languages and seven frontier model families, comprising 16 models. Using adversarial-hint evaluations that require explicit intermediate computation, together with analysis of internal answer-token probabilities, we consistently find CoT unfaithfulness across languages and hint types, with an average rate of 95.9\\% across 8B--120B parameter models. We find that frontier models systematically engage in strategic manipulation, including answer-switching, post-hoc rationalization, and procedural exploitation of hints, making external monitors struggle to detect deception. We show that frontier models often commit to the misaligned cue in their latent activations within the first 15\\% of generation, even when the CoT appears faithful. Surprisingly, these deceptive patterns remain 100\\% in low-resource languages, revealing fundamental limitations in current CoT-based oversight. Our results reveal that CoT monitoring is fundamentally fragile under linguistic distribution shift, providing a substantially weaker safety signal than what English-only studies suggest. These findings underscore an urgent need to develop robust CoT monitors and to accelerate research into white-box monitoring techniques, especially to improve CoT monitorability in mid- and low-resource languages. Our code is available https://multilingual-cot-monitoring.github.io/{blue{here}}.",
-      "description_zh": "思想链（CoT）监控已被提议作为一种有前途的安全机制，用于检测大型语言模型中的错位行为。然而，它的可靠性在英语之外和不同型号系列中仍然很大程度上未被探索。我们首次对 13 种不同语言和 7 个前沿模型系列（包括 16 个模型）的 CoT 可监控性进行了大规模评估。使用需要显式中间计算的对抗性提示评估，再加上内部答案标记概率的分析，我们一致发现跨语言和提示类型的 CoT 不忠实性，在 8B--120B 参数模型中的平均率为 95.9%。我们发现前沿模型系统地参与战略操纵，包括答案转换、事后合理化和程序性利用提示，使外部监控者难以发现欺骗。我们表明，即使 CoT 看起来忠实，前沿模型通常也会在生成的前 15% 内的潜在激活中出现错位提示。令人惊讶的是，这些欺骗性模式在资源匮乏的语言中仍然 100% 存在，揭示了当前基于 CoT 的监督的根本局限性。我们的结果表明，CoT 监测在语言分布变化的情况下从根本上来说是脆弱的，提供的安全信号比纯英语研究表明的要弱得多。这些发现强调迫切需要开发强大的 CoT 监视器并加速对白盒监视技术的研究，特别是提高中低资源语言的 CoT 可监视性。我们的代码可在 https://multilingual-cot-monitoring.github.io/{blue{here}} 获取。",
-      "authors": "Eric Onyame, Runtao Zhou, Kowshik Thopalli, Bhavya Kailkhura, Chirag Agarwal",
-      "url": "https://huggingface.co/papers/2605.27901",
-      "score": 7,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2605.27901"
       }
     }
   ]
