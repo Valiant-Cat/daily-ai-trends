@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-05-30T20:35:51.684Z",
+  "updatedAt": "2026-05-31T20:39:47.482Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "大型语言模型 (LLM) 遵循指令和复杂推理的能力越来越强，从而催生了灵活的接口来适应模型而无需更新参数。然而，提示设计仍然是劳动密集型的，并且对格式、措辞和指令顺序高度敏感，这激发了自动提示优化方法，减少手动工作，同时保持推理时间的灵活性。然而，现有的方法经常搜索提示候选者或使用由单个示例或小批量驱动的固定批评-细化管道，限制了它们捕获系​​统错误模式并根据故障历史进行有针对性的编辑的能力。我们提出了反射提示调优（RPT），这是一个使用 LLM 函数调用来模拟人类提示工程师的迭代工作流程的框架。 LLM 优化器调用诊断函数，该函数在整个优化集上评估目标模型，总结重复出现的故障模式，并返回结构化诊断报告。优化器使用此报告以及先前报告的累积内存来修改下一次迭代的提示。 RPT 通过在诊断反馈和最终提示选择中使用校准信号，进一步支持置信感知优化。在三项推理任务中，RPT 比初始提示提高了 12.9 分，与最先进的技术保持竞争力，并提高了置信度校准。我们的分析表明，RPT 在多跳和数学推理方面特别有效，可以产生与诊断出的故障模式相一致的有针对性的即时修订，并导致任务性能和校准方面的收益。",
       "authors": "Farima Fatahi Bayat, Moin Aminnaseri, Pouya Pezeshkpour, Estevam Hruschka",
       "url": "https://huggingface.co/papers/2605.21781",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2605.21781"
       }
     },
@@ -26,10 +26,10 @@
       "description_zh": "视觉语言模型 (VLM) 在空间推理基准上取得了出色的性能，但尚不清楚这是否反映了结构化 3D 理解或对自然图像中统计快捷方式的依赖。我们引入了一个表示级分析框架，该框架构建最小对比对来测量空间轴在 VLM 嵌入中的组织和解开方式。我们对多个模型系列的分析揭示了一致的垂直距离纠缠：模型将垂直图像位置与距离混为一谈，反映了自然照片的透视偏差。这种偏差在观点一致和反启发式示例之间产生了显着的准确性差距，并且即使整体基准准确性提高��在数据扩展下也会加剧。我们进一步表明，具有相似基准分数的模型可以表现出不同的内部表示，并且这些差异可以预测不同空间推理基准的准确性和鲁棒性。为了将这种偏差与评估集偏差隔离开来，我们引入了 SpatialTunnel，这是一种综合基准，旨在通过消除自然图像中存在的常见相关性来暴露空间捷径偏差。实验证实，纠缠是模型固有的，并且具有良好分离的空间轴的模型表现出更大的鲁棒性，这表明结构良好的空间表示可以在不同的基准上实现更可靠的空间推理。代码和基准可在项目页面上找到：https://cheolhong0916.github.io/whyfarlooksup.github.io/。",
       "authors": "Cheolhong Min, Jaeyun Jung, Daeun Lee, Hyeonseong Jeon, Yu Su, Jonathan Tremblay, Chan Hee Song, Jaesik Park",
       "url": "https://huggingface.co/papers/2605.30161",
-      "score": 32,
+      "score": 38,
       "meta": {
         "source": "huggingface",
-        "upvotes": "32",
+        "upvotes": "38",
         "paperId": "2605.30161"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "长期 LLM 推理将键值 (KV) 缓存转变为主要的 GPU 内存消耗者，并使每个令牌的注意力变得越来越昂贵。许多常见的驱逐策略使用静态新近度窗口或历史注意力，从而留下未使用的在每个解码步骤上计算的信号：模型的当前不确定性。我们引入 CONF-KV，一种 KV 缓存管理器，它将下一个令牌分布转换为标量置信度分数，并使用它来选择每步缓存预算，在模型不确定时保留更多上下文，并在模型有信心时积极修剪。在每个预算中，代币根据累积的注意力质量和新近度的综合排名，而��保护的最近窗口保留了本地一致性。我们将该策略与块式在线 softmax 注意力、混合 FP16/INT8 存储和金字塔每层预算变体相结合。在四个模型系列和高达 4K 的生成长度中，CONF-KV 保持在固定 512 个令牌滑动窗口的范围附近，同时保持在完整 KV 的 1.5--2.1 困惑点之内。在大海捞针高达 32K 的 token 上，CONF-KV 的检索准确率达到 91.4%，而滑动窗口为 53.8%，H2O 为 80.6%；在 75 个 VisualWebArena 任务中，它在峰值内存降低 2.8 倍的情况下保留了 95.3% 的全 KV 成功率。",
       "authors": "Yubo Li, Yidi Miao",
       "url": "https://huggingface.co/papers/2605.24786",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2605.24786"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "多模式 Web 代理的最新进展通常依赖于增加的推理时间计算，包括推出搜索、验证者通行证、离线技能发现和专业模型堆栈。这就提出了一个核心问题：网络代理能否随着经验的积累而变得更加高效，而不是更加昂贵？我们首先分析 VisualWebArena 的轨迹，并确定三个重复出现的低效率来源：重复操作循环、隐藏的发现成本和低提示缓存重用。然后，我们介绍 PANDO，这是一个单推出的在线技能蒸馏框架，它维护结构化的技能库，并结合了进度反映、基于置信度的技能降级、分层路由、视觉压缩和缓存感知提示。在全套 910 个 VisualWebArena 任务中，PANDO 实现了 58.3% 的成功率，优于 SGV (54.0%) 和我们的 WALT 复制 (45.2%)，同时使用的令牌比 SGV 少 58%，比 WALT 少 61%，且没有任何预评估发现预算。 300 个任务的消融进一步表明，规则和例程提供了大部分成功收益，而路由、压缩和缓存感知提示将更大的技能库转化为更低的边际令牌成本。最后，我们引入了三个轨迹级效率指标——操作重复率、步骤开销比率和提示缓存利用率——以使效率在最终成功之外可见。",
       "authors": "Yubo Li, Yidi Miao, Yuntian Shen, Yuxin Liu",
       "url": "https://huggingface.co/papers/2605.24785",
-      "score": 2,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "5",
         "paperId": "2605.24785"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "全球化和多元文化主义继续产生日益多样化的言论品种。然而，当前的口语对话系统经常在代表性不足的方言和口音上失败，经常错误地识别输入语言并导致下游对话任务的级联失败。在低资源限制下解决这种方言差异仍然是一个开放的挑战，因为标准微调的计算成本很高，并且容易对高维语音数据过度拟合。我们提出了凸语言检测（CLD），这是一种新颖的框架，它将基于理论的凸优化技术集成到口语对话系统管道中。我们的方法通过 JAX 中的多 GPU 交替方向乘法器 (ADMM) 有效实现，从而提供全局最优性保证和多项式时间内的快速训练。从理论上讲，我们证明我们的凸目标可以带来经过认证的边际稳定性，并提供针对特征扰动的保证。根据经验，我们展示了样本效率和对输入辩证变化的鲁棒性，在具有挑战性的低资源状态下实现了 97-98% 的准确率。我们的开源包位于 https://pypi.org/project/jaxcld/",
       "authors": "Miria Feng, William Tan, Mert Pilanci",
       "url": "https://huggingface.co/papers/2605.23235",
-      "score": 1,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "3",
         "paperId": "2605.23235"
       }
     },
@@ -86,10 +86,10 @@
       "description_zh": "机器人操纵很大程度上取决于保留场景中与动作相关的方面的感知。然而，大多数机器人学习管道都是建立在经过预先训练的视觉编码器上，用于静态识别或视觉语言对齐，将运动理解留给下游策略。我们引入了 DynaFLIP，这是一种动态感知的多模态预训练框架，可将运动理解推向感知。我们从异构人类和机器人视频中构建图像语言 3D 流三元组，并使用这些三元组作为训练时监督来形成纯图像编码器。我们的关键想法是鼓励三种模态跨越共享超球面空间中的一个小的单纯形体积——较小的单纯形体积表明更强的对准。为了避免朴素体积最小化的几何模糊性和微不足道的崩溃，我们将单纯形体积最小化与余弦正则化器和对比目标结合起来。我们的分析表明，DynaFLIP 重点关注对操纵至关重要的控制相关区域。由此产生的动态感知表示可作为可重复使用的视觉主干，并始终优于各种下游策略（包括 VLA）的基线。我们在不同的模拟和现实世界设置中验证了这一点，在分布外场景下增益达到 +22.5%。我们的结果表明，当视觉表示经过训练不仅可以编码当前的内容，还可以编码世界在行动中如何变化时，机器人的泛化能力就会提高。",
       "authors": "Jusuk Lee, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim, Daesol Cho, H. Jin Kim, Jia-Bin Huang, Furong Huang",
       "url": "https://huggingface.co/papers/2605.30350",
-      "score": 5,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "7",
         "paperId": "2605.30350"
       }
     },
@@ -113,7 +113,7 @@
       "title": "Reducing Political Manipulation with Consistency Training",
       "title_zh": "通过一致性培训减少政治操纵",
       "description": "Large language models (LLMs) exhibit systematic political bias across a variety of sensitive contexts. We find that LLMs handle counterpart topics from opposing political sides asymmetrically. We refer to this phenomenon as covert political bias and identify 7 categories of techniques through which it operates. We propose two metrics for covert bias: Sentiment Consistency measures symmetry in rhetoric and framing across paired political prompts; Helpfulness Consistency measures symmetric depth and engagement. To reduce both types of covert bias, we introduce Political Consistency Training (PCT), an RL training method with two complementary paradigms: Sentiment Consistency Training and Helpfulness Consistency Training. We show that PCT preserves overall helpfulness, substantially reduces covert political bias, and generalizes to held-out benchmarks. We release our work at https://political-manipulation.ai",
-      "description_zh": "大型语言模型（LLM）在各种敏感环境中表现出系统性的政治偏见。我们发现LLM不对称地处理来自对立政治派别的对应主题。我们将这种现象称为隐蔽的政治偏见，并确定了其运作的 7 类技术。我们提出了两个衡量隐性偏见的指标：情绪一致性衡量配对政治提示中修辞和框架的对称性；有用性一致性衡量对称深度和参与度。为了减少这两种类型的隐性偏见，我们引入了政治一致性训练（PCT），这是一种具有两种互补范式的强化学习方法：情感一致性训练和帮助性一致性训练。我们表明 PCT 保留了整体的帮助性，大大减少了隐蔽的政治偏见，并推广到了坚持的基准。我们在 https://political-manipulation.ai 发布我们的工作",
+      "description_zh": "大型语言模型（LLM）在各种敏感环境中表现出系统性的政治偏见。我们发现LLM不对称地处理来自对立政治派别的对应主题。我们将这种现象称为隐蔽的政治偏见，并确定了其运作的 7 类技术。我们提出了两个衡量隐性偏见的指标：情绪一致性衡量配对政治提示中修辞和框架的对称性；有用性一致性衡量对称深度和参与度。为了减少这两种类型的隐性偏见，我们引入了政治一致性训���（PCT），这是一种具有两种互补范式的强化学习方法：情感一致性训练和帮助性一致性训练。我们表明 PCT 保留了整体的帮助性，大大减少了隐蔽的政治偏见，并推广到了坚持的基准。我们在 https://political-manipulation.ai 发布我们的工作",
       "authors": "Long Phan, Devin Kim, Alexander Pan, Alice Blair, Adam Khoja, Dan Hendrycks",
       "url": "https://huggingface.co/papers/2605.22771",
       "score": 0,
@@ -128,13 +128,13 @@
       "title": "Multi-view Consistent 3D Gaussian Head Avatars 'without' Multi-view Generation",
       "title_zh": "“无”多视图生成的多视图一致 3D 高斯头部头像",
       "description": "High-fidelity 3D Gaussian head avatar generation is critical for applications such as AR/VR, telepresence, and digital humans. Existing methods depend on multi-view datasets, 3D captures, or intermediate 2D view synthesis. In contrast, we learn both conditional and unconditional 3D head models from randomly sampled 2D images alone, without using multi-view data, 3D supervision, or intermediate view generation. We introduce MVCHead, a single-shot state space model that enforces multi-view consistency (MVC) directly in the 3D representation while regressing 3D Gaussians under these constraints. At its core, we propose a Hierarchical State Space (HiSS) block that progressively refines Gaussians from coarse to fine, while capturing long-range dependencies. Within each HiSS block, we modify Mamba's standard unidirectional scan with the proposed Hierarchical Bi-directional State Scan (HiBiSS) that aligns recurrence with the axes along which multi-view inconsistencies are strongest. Finally, we design an SE(3) Multi-view Critic that judges whether a set of self-renders arises from a single underlying 3D configuration, rewarding cross-view pixel alignment without observing real multi-view pairs. MVCHead achieves state-of-the-art perceptual quality, surpasses prior methods in both texture and geometric consistency, and maintains comparable shape consistency. To demonstrate scalability, we release FaceGS-10K, the first large-scale dataset of ready-to-use 3D Gaussian head assets for training and evaluation of 3D head models. Project Page and code: https://humansensinglab.github.io/MVCHead/",
-      "description_zh": "高保真 3D 高斯头像生成对于 AR/VR、远程呈现和数字人类等应用至关重要。现有方法依赖于多视图数据集、3D 捕获或中间 2D 视图合成。相比之下，我们仅从随机采样的 2D 图像中学习条件和无条件 3D 头部模型，而不使用多视图数据、3D 监督或中间视图生成。我们引入了 MVHead，这是一种单次状态空间模型，它直接在 3D 表示中强制执行多视图一致性 (MVC)，同时在这些约束下回归 3D 高斯。其核心是��我们提出了一个分层状态空间（HiSS）块，该块从粗到细逐步细化高斯，同时捕获长程依赖性。在每个 HiSS 块中，我们使用提议的分层双向状态扫描 (HiBiSS) 修改 Mamba 的标准单向扫描，该扫描将重复与多视图不一致性最强的轴对齐。最后，我们设计了一个 SE(3) 多视图 Critic，它判断一组自渲染是否来自单个底层 3D 配置，奖励跨视图像素对齐，而无需观察真正的多视图对。 MVCHead 实现了最先进的感知质量，在纹理和几何一致性方面超越了先前的方法，并保持了可比较��形状一致性。为了演示可扩展性，我们发布了 FaceGS-10K，这是第一个即用型 3D 高斯头部资产的大型数据集，用于训练和评估 3D 头部模型。项目页面和代码：https:// humansensinglab.github.io/MVCHhead/",
+      "description_zh": "高保真 3D 高斯头像生成对于 AR/VR、远程呈现和数字人类等应用至关重要。现有方法依赖于多视图数据集、3D 捕获或中间 2D 视图合成。相比之下，我们仅从随机采样的 2D 图像中学习条件和无条件 3D 头部模型，而不使用多视图数据、3D 监督或中间视图生成。我们引入了 MVHead，这是一种单次状态空间模型，它直接在 3D 表示中强制执行多视图一致性 (MVC)，同时在这些约束下回归 3D 高斯。其核心是，我们提出了一个分层状态空间（HiSS）块，该块从粗到细逐步细化高斯，同时捕获长程依赖性。在每个 HiSS 块中，我们使用提议的分层双向状态扫描 (HiBiSS) 修改 Mamba 的标准单向扫描，该扫描将重复与多视图不一致性最强的轴对齐。最后，我们设计了一个 SE(3) 多视图 Critic，它判断一组自渲染是否来自单个底层 3D 配置，奖励跨视图像素对齐，而无需观察真正的多视图对。 MVCHead 实现了最先进的感知质量，在纹理和几何一致性方面超越了先前的方法，并保持了可比较的���状一致性。为了演示可扩展性，我们发布了 FaceGS-10K，这是第一个即用型 3D 高斯头部资产的大型数据集，用于训练和评估 3D 头部模型。项目页面和代码：https:// humansensinglab.github.io/MVCHhead/",
       "authors": "Aviral Chharia, Fernando De la Torre",
       "url": "https://huggingface.co/papers/2605.25220",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2605.25220"
       }
     },
@@ -143,13 +143,13 @@
       "title": "REPOT: Recoverable Program-of-Thought via Checkpoint Repair",
       "title_zh": "REPOT：通过检查点修复可恢复的思想计划",
       "description": "One-shot Program-of-Thought (PoT) emits a Python program that prints a primitive-action plan; a single invalid action silently invalidates the trajectory. We introduce RePoT (Recoverable PoT): a deterministic verified replay that walks the plan through the environment to its first invalid transition, then one LLM call that resumes from the verified prefix. RePoT costs at most one extra LLM call on the ~14% of problems where PoT fails. RePoT beats PoT by +3 to +11pp across four closed-model configurations on PuzzleZoo-775 and peaks at 96.9% vs 86.3% on gpt-5.4-mini-medium; against the matched-budget PoT-retry baseline, RePoT wins decisively on Gemini (+3.8pp, 95% CI [+2.2,+5.4]), is within sampling noise on GPT-medium and Claude, and loses on GPT-mini -- a capability-scaling pattern we begin to address with Adaptive RePoT, a rule-based dispatcher that routes between suffix repair and a fresh PoT retry based on verified-prefix length (preliminary). We replicate on PlanBench Blocksworld (+1.1 to +11.4pp) and on four open-weights models (+3.3 to +20.0pp on three of four). On Derail-550, our controlled recovery benchmark, every condition with access to checkpoint information clears >=30% on GPT-medium and >=70% on Gemini, vs <=3.1% for error-only feedback -- showing that checkpoint information, not the specific verified-prefix tail, is the load-bearing recovery signal.",
-      "description_zh": "一次性思维计划 (PoT) 发出一个 Python 程序，打印一个原始行动计划；单个无效动作会默默地使轨迹失效。我们引入 RePoT（可恢复 PoT）：一种确定性的经过验证的重放，它将计划通过环境引导到第一个无效转换，然后是一个从经过验证的前缀恢复的 LLM 调用。对于 PoT 失败的约 14% 的问题，RePoT 最多需要额外一次 LLM 调用。在 PuzzleZoo-775 上的四种封闭模型配置中，RePoT 比 PoT 领先 +3 至 +11 个百分点，峰值为 96.9%，而在 gpt-5.4-minimedium 上则为 86.3%；与匹配预算 PoT 重试基线相比，RePoT 在 Gemini 上取得了决定性胜利（+3.8pp，95% CI [+2.2,+5.4]），在 GPT-medium 和 Claude 上处于采样噪声范围内，并在 GPT-mini 上失败——我们开始使用自适应 RePoT 来解决这种能力扩展模式，自适应 RePoT 是一种基于规则的调度程序，可根据验证的前缀长度在后缀修复和新的 PoT 重试之间进行路由（初步）。我们在 PlanBench Blocksworld（+1.1 至 +11.4pp）和四个开放权重模型（四个中的三个上+3.3 至 +20.0pp）上进行复制。在我���的受控恢复基准 Derail-550 上，每个能够访问检查点信息的条件在 GPT-medium 上清除 >=30%，在 Gemini 上清除 >=70%，而对于仅错误反馈，清除 <=3.1%——这表明检查点信息，而不是特定的已验证前缀尾部，是承载恢复信号。",
+      "description_zh": "一次性思维计划 (PoT) 发出一个 Python 程序，打印一个原始行动计划；单个无效动作会默默地使轨迹失效。我们引入 RePoT（可恢复 PoT）：一种确定性的经过验证的重放，它将计划通过环境引导到第一个无效转换，然后是一个从经过验证的前缀恢复的 LLM 调用。对于 PoT 失败的约 14% 的问题，RePoT 最多需要额外一次 LLM 调用。在 PuzzleZoo-775 上的四种封闭模型配置中，RePoT 比 PoT 领先 +3 至 +11 个百分点，峰值为 96.9%，而在 gpt-5.4-minimedium 上则为 86.3%；与匹配预算 PoT 重试基线相比，RePoT 在 Gemini 上取得了决定性胜利（+3.8pp，95% CI [+2.2,+5.4]），在 GPT-medium 和 Claude 上处于采样噪声范围内，并在 GPT-mini 上失败——我们开始使用自适应 RePoT 来解决这种能力扩展模式，自适应 RePoT 是一种基于规则的调度程序，可根据验证的前缀长度在后缀修复和新的 PoT 重试之间进行路由（初步）。我们在 PlanBench Blocksworld（+1.1 至 +11.4pp）和四个开放权重模型（四个中的三个上+3.3 至 +20.0pp）上进行复制。在我们的受控恢复基准 Derail-550 上，每个能够访问检查点信息的条件在 GPT-medium 上清除 >=30%，在 Gemini 上清除 >=70%，而对于仅错误反馈，清除 <=3.1%——这表明检查点信息，而不是特定的已验证前缀尾部，是承载恢复信号。",
       "authors": "Parsa Mazaheri",
       "url": "https://huggingface.co/papers/2605.30052",
-      "score": 4,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "6",
         "paperId": "2605.30052"
       }
     },
@@ -161,25 +161,25 @@
       "description_zh": "解释为什么密集检索器分配高相关性分数仍然具有挑战性，因为检索决策是通过不透明的高维嵌入做出的。现有的解释通常侧重于表面信号，例如词汇匹配、标记对齐或事后文本基本原理，因此对在嵌入级别形成密集检索行为的潜在因素提供的洞察有限。我们提出了 Xetrieval，一种用于解释密集检索的嵌入级机制框架。 Xetrieval 首先引入了一种轻量级推理内部化器，它通过一次前向传递直接在嵌入空间中近似思想链推理，用面向推理的信息丰富句子嵌入，同时避免昂贵的自回归生成。然后，它将这些推理增强嵌入分解为稀疏的、人类可解释的特征，每个特征都与连贯的自然语言描述相关联。通过聚合多个文档侧视图中的稀疏特征重叠，Xetrieval 提供了单个检索决策的特征级解释。对不同检索器和基准的实验表明，Xetrieval 揭示了连贯的可解释特征，产生更强的配对级干预效果，并支持任务级特征引导。项目页面和源代码可在 https://hihiczx.github.io/Xetrieval 获取。",
       "authors": "Zhixin Cai, Jun Bai, Yang Liu, Jiaqi Li, Yichi Zhang, Taichuan Li, Zhuofan Chen, Zixia Jia, Zilong Zheng, Wenge Rong",
       "url": "https://huggingface.co/papers/2605.29507",
-      "score": 15,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "17",
         "paperId": "2605.29507"
       }
     },
     {
       "id": "2605.29271",
       "title": "CoHyDE: Iterative Co-Training of LLM Rewriter & Dense Encoder for Tool Retrieval",
-      "title_zh": "CoHyDE：用于工具检索的 LLM 重写器和密集编码器的迭代协同训练",
+      "title_zh": "CoHyDE：用于工具检索的 LLM 重写器和密集编码器的迭代联合训练",
       "description": "Tool retrieval over large API catalogs is a core bottleneck for LLM agents: user queries arrive in colloquial, often underspecified language, while the catalog uses technical API vocabulary that no fixed encoder can bridge on its own. The two dominant training approaches, contrastive encoder fine-tuning and HyDE-style query expansion with a frozen LLM, address this problem from opposite ends and fail in complementary directions: the fine-tuned encoder excels when the query's surface form already matches the catalog but collapses when it does not, while zero-shot HyDE is more robust to underspecified queries yet generates catalog-unaware hypothetical descriptions that degrade retrieval when queries are well-formed. We introduce CoHyDE, an iterative procedure that trains the dense encoder and the LLM rewriter as a single co-evolving system: the encoder is retrained with InfoNCE on catalog-style hypothetical descriptions produced by the rewriter, and the rewriter is preference-aligned via DPO against the encoder's retrieval scores, with both sides warm-started on the tool catalog before the loop begins. On a ~10k tool subset of the ToolBench catalog, three rounds of CoHyDE improve over the strongest single-component baseline by +2.5 pp NDCG@5 on standard queries and +6.3 pp on held-out vague queries, with gains as large as +8 pp on the hardest vague tier. Ablations confirm that co-training is the key ingredient: using either component in isolation fails to match CoHyDE on both well-formed and vague queries, with losses of up to -8 pp on vague queries.",
-      "description_zh": "对大型 API 目录的工具检索是 LLM 代理的核心瓶颈：用户查询以口语形式、通常未指定的语言到达，而目录使用没有固定编码器可以自行桥接的技术 API 词汇。两种主要的训练方法，对比编码器微调和使用冻结 LLM 的 HyDE 式查询扩展，从相反的两端解决了这个问题，但在互补的方向上失败了：当查询的表面形式已经与目录匹配时，微调编码器表现出色，但在不匹配时崩溃，而零样本 HyDE 对于未指定的查询更稳健，但会生成目录不知道的假设描述，当查询格式良好时，这些描述会降低检索性能。我们引入了 CoHyDE，一种迭代过程，将密集编码器和 LLM 重写器训练为单个协同进化系统：编码器使用 InfoNCE 在重写器生成的目录式假设描述上进行重新训练，重写器通过 DPO 与编码器的检索分数进行偏好对齐，双方在循环开始之前在工具目录上进行热启动。在 ToolBench 目录的约 10k 工具子集上，三轮 CoHyDE 在标准查询上比最强的单组件基线提高了 +2.5 pp NDCG@5，在保留模糊查询上提高了 +6.3 pp，在最难的模糊层上的增益高达 +8 pp。 Ablations 证实协同训练是关键因素：单独使用任一组件都无法在格式良好和模糊查询上匹配 CoHyDE，在模糊查询上损失高达 -8 pp。",
+      "description_zh": "对大型 API 目录的工具检索是 LLM 代理的核心瓶颈：用户查询以口语形式、通常未指定的语言到达，而目录使用没有固定编码器可以自行桥接的技术 API 词汇。两种主要的训练方法，对比编码器微调和使用冻结 LLM 的 HyDE 式查询扩展，从相反的两端解决了这个问题，但在互补的方向上失败了：当查询的表面形式已经与目录匹配时，微调编码器表现出色，但在不匹配时崩溃，而零样本 HyDE 对于未指定的查询更稳健，但会生成目录不知道的假设描述，当查询格式良好时，这些描述会降低检索性能。我们引入了 CoHyDE，一种迭代过程，将密集编码器和 LLM 重写器训练为单个协同进化系统：编码器使用 InfoNCE 在重写器生成的目录式假设描述上进行重新训练，重写器通过 DPO 与编码器的检索分数进行偏好对齐，双方在循环开始之前在工具目录上进行热启动。在 ToolBench 目录的约 10k 工具子集上，三轮 CoHyDE 在标准查询上比最强的单组件基线提高了 +2.5 pp NDCG@5，在保留模糊查询上提高了 +6.3 pp，在最难的模糊层上的增益高达 +8 pp。 Ablations 证实协同训练是关���因素：单独使用任一组件都无法在格式良好和模糊查询上匹配 CoHyDE，在模糊查询上损失高达 -8 pp。",
       "authors": "Vaishali Senthil, Ashutosh Hathidara, Sebastian Schreiber",
       "url": "https://huggingface.co/papers/2605.29271",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2605.29271"
       }
     },
@@ -188,13 +188,13 @@
       "title": "EarlyTom: Early Token Compression Completes Fast Video Understanding",
       "title_zh": "EarlyTom：早期令牌压缩完成快速视频理解",
       "description": "Video large language models (Video-LLMs) have demonstrated strong capabilities in video understanding tasks. However, their practical deployment is still hindered by the inefficiency introduced by processing massive amounts of visual tokens. Although recent approaches achieve extremely low token retention ratios while maintaining accuracy comparable to full-token baselines, most of them perform compression only at the late stage of prefilling, leaving the efficiency of the vision encoder unoptimized. In this paper, we first show that vision encoding contributes a large portion to the time-to-first-token (TTFT). Therefore, instead of compressing visual tokens only after the vision encoder, performing compression inside the encoder still leaves substantial room for exploration. Based on this insight, we propose EarlyTom, a training-free token compression framework that performs early-stage visual token compression inside the vision encoder, enabling significantly better TTFT reduction and higher throughput. In addition, we introduce a decoupled spatial token selection strategy that improves the overall compression effectiveness. EarlyTom reduces TTFT by up to 2.65x and FLOPs by up to 61% on a single NVIDIA A100 GPU for the LLaVA-OneVision-7B model, while maintaining accuracy comparable to the full-token baseline. These improvements substantially enhance the practicality of deploying Video-LLMs in real-world production scenarios.",
-      "description_zh": "视频大语言模型（Video-LLM）在视频理解任务中表现出了强大的能力。然而，它们的实际部署仍然受到处理大量视觉标记所带来的低效率的阻碍。尽管最近的方法实现了极低的令牌保留率，同时保持了与全令牌基线相当的精度，但大多数方法仅在预填充的后期阶段执行压缩，从而使视觉编码器的效率未得到优化。在本文中，我们首先表明视觉编码对首次标记时间（TTFT）贡献很大。��此，不是仅在视觉编码器之后压缩视觉标记，而是在编码器内部执行压缩仍然留有很大的探索空间。基于这一见解，我们提出了 EarlyTom，这是一种免训练的令牌压缩框架，可在视觉编码器内执行早期视觉令牌压缩，从而显着更好地减少 TTFT 并提高吞吐量。此外，我们引入了一种解耦的空间标记选择策略，可以提高整体压缩效率。 EarlyTom 在 LLaVA-OneVision-7B 模型的单个 NVIDIA A100 GPU 上将 TTFT 降低高达 2.65 倍，将 FLOP 降低高达 61%，同时保持与全令牌基线相当的精度。这些改进大大增强了在实际生产场景中部署视频LLM的实用性。",
+      "description_zh": "视频大语言模型（Video-LLM）在视频理解任务中表现出了强大的能力。然而，它们的实际部署仍然受到处理大量视觉标记所带来的低效率的阻碍。尽管最近的方法实现了极低的令牌保留率，同时保持了与全令牌基线相当的精度，但大多数方法仅在预填充的后期阶段执行压缩，从而使视觉编码器的效率未得到优化。在本文中，我们首先表明视觉编码对首次标记时间（TTFT）贡献很大。���此，不是仅在视觉编码器之后压缩视觉标记，而是在编码器内部执行压缩仍然留有很大的探索空间。基于这一见解，我们提出了 EarlyTom，这是一种免训练的令牌压缩框架，可在视觉编码器内执行早期视觉令牌压缩，从而显着更好地减少 TTFT 并提高吞吐量。此外，我们引入了一种解耦的空间标记选择策略，可以提高整体压缩效率。 EarlyTom 在 LLaVA-OneVision-7B 模型的单个 NVIDIA A100 GPU 上将 TTFT 降低高达 2.65 倍，将 FLOP 降低高达 61%，同时保持与全令牌基线相当的精度。这些改进大大增强了在实际生产场景中部署视频LLM的实用性。",
       "authors": "Hesong Wang, Xin Jin, Lu Lu, Chenhaowen Li, Jian Chen, Qiang Liu, Huan Wang",
       "url": "https://huggingface.co/papers/2605.30010",
-      "score": 24,
+      "score": 27,
       "meta": {
         "source": "huggingface",
-        "upvotes": "24",
+        "upvotes": "27",
         "paperId": "2605.30010"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "离散扩散模型通常通过干净数据预测进行训练，但可以以不同的方式使用预测来定义反向动态。在掩模扩散模型 (MDM) 中，这些选择很大程度上一致，而在均匀扩散模型 (UDM) 中则不然。我们表明，UDM 的标准插件桥参数化不是通过去噪后验来优化的，而是通过留一后验来优化的，该留一后验可以在不使用其自己的噪声观察的情况下预测每个干净标记。这表明插件 ELBO 和通常的交叉熵去噪目标之间不匹配。我们描述留一目标的特征，并推导降噪器、留一后验和分数之间的精确转换。这些转换使我们能够区分参数化和训练目标。我们的结果还通过知情的预测校正器采样器和基于留一预测器的改进的温度采样来改进推理，而无需任何额外的训练。\n  我们进一步引入了均匀扩散的吸收态重构，它保留了 UDM 联合定律，同时将其分解为类似掩模扩散的采样操作，具有更简单的去噪后验、遗留去掩模和自然的重新掩模机制。在语言建模方面，留一法参数化持续改进 UDM 生成，而吸收结构则匹配或超越掩模扩散。这些结果表明，掩蔽扩散和均匀扩散之间的经验差距较少是由边际本身的选择驱动的，而是由参数化和抽样设计驱动的。代码和模型可以在 https://github.com/samsongourevitch/rev_udm 找到。",
       "authors": "Samson Gourevitch, Yazid Janati, Dario Shariatian, Umut Simsekli, Eric Moulines, Eric P. Xing, Alain Durmus",
       "url": "https://huggingface.co/papers/2605.22765",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2605.22765"
       }
     },
@@ -218,13 +218,13 @@
       "title": "PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers",
       "title_zh": "PRISM：评估 LLM 同行评审员的多维基准",
       "description": "The rapid growth in submissions to machine learning venues has strained the scientific peer-review system and intensified interest in LLM-based automated peer reviewers. However, how good these systems are actually, especially compared to human reviewers at catching scientific gaps, remains poorly understood. In this work, we introduce PRISM (Peer Review Intelligence via Structured Multi-dimensional assessment), a benchmarking framework that evaluates review quality across four dimensions: Depth of Analysis, Novelty Assessment,Flaw Identification & Major Issues Prioritization, and Multi-dimensional Constructiveness. Unlike most existing evaluations based on surface-level metrics like ROUGE and BLEU, or unconstrained LLM-as-a-judge prompting that conflates fluency with rigor, PRISM grounds each dimension in argument mining, retrieval-augmented verification, and consensus-based scoring. We apply PRISM to benchmark five leading automated reviewer systems and human reviewers on a stratified corpus of reviews from ICLR, ICML, and NeurIPS. The results reveal that LLMs can match or beat human reviewers on individual dimensions: comparable depth of analysis, stronger novelty verification, and highly accurate critique prioritization. However, no single system consistently matches the balanced performance of the human baseline across all dimensions at once. Each exhibits a distinct specialization profile with characteristic blind spots -- failure modes that aggregate metrics miss entirely. The implication is that LLM reviewers are best understood as targeted supplements to human review, effective within specific dimensions, but unreliable as standalone replacements. Our demo and key results can be found at https://khanhthanhdev.github.io/prism-page/.",
-      "description_zh": "机器学习场所提交的论文的快速增长给科学同行评审系统带来了压力，并增强了人们对基于LLM的自动同行评审员的兴趣。然而，这些系统实际上有多好，尤其是与人类评审员在发现科学差距方面相比，仍然知之甚少。在这项工作中，我们引入了 PRISM（通过结构化多维评估进行同行评审情报），这是一个基准框架，可从四个维度评估评审质量：分析深度、新颖性评估、缺陷识别和主要问题优先级以及多维建设性。与大多数基于 ROUGE 和 BLEU 等表面指标的现有评估，或不受约束的LLM法官提示（将流畅性与严谨性混为一谈）不同，PRISM 将每个维度都基于论点挖掘、检索增强验证和基于共识的评分。我们应用 PRISM 在 ICLR、ICML 和 NeurIPS 的分层评论语料库上对五个领先的自动审稿系统和人工审稿人员进行基准测试。结果表明，LLM可以在各个维度上匹配或击败人类审稿人：可比较的分析深度、更强的新颖性验证以及高度准确的批评优先级。然而，没有一个系统能够同时在所有维度上始���与人类基线的平衡性能相匹配。每个都表现出独特的专业化概况和特征盲点——聚合指标完全忽略的故障模式。这意味着LLM审稿人最好被理解为对人工审稿的有针对性的补充，在特定维度内有效，但作为独立的替代品并不可靠。我们的演示和关键结果可以在 https://khanhthanhdev.github.io/prism-page/ 找到。",
+      "description_zh": "机器学习场所提交的论文的快速增长给科学同行评审系统带来了压力，并增强了人们对基于LLM的自动同行评审员的兴趣。然而，这些系统实际上有多好，尤其是与人类评审员在发现科学差距方面相比，仍然知之甚少。在这项工作中，我们引入了 PRISM（通过结构化多维评估的同行评审情报），这是一个基准框架，可从四个维度评估评审质量：分析深度、新颖性评估、缺陷识别和主要问题优先级以及多维建设性。与大多数基于 ROUGE 和 BLEU ���表面指标的现有评估，或不受约束的LLM法官提示（将流畅性与严谨性混为一谈）不同，PRISM 将每个维度都基于论点挖掘、检索增强验证和基于共识的评分。我们应用 PRISM 在 ICLR、ICML 和 NeurIPS 的分层评论语料库上对五个领先的自动审稿系统和人工审稿人员进行基准测试。结果表明，LLM可以在各个维度上匹配或击败人类审稿人：可比较的分析深度、更强的新颖性验证以及高度准确的批评优先级。然而，没有一个系统能够同时在所有维度上始终���人类基线的平衡性能相匹配。每个都表现出独特的专业化概况和特征盲点——聚合指标完全忽略的故障模式。这意味着LLM审稿人最好被理解为对人工审稿的有针对性的补充，在特定维度内有效，但作为独立的替代品并不可靠。我们的演示和关键结果可以在 https://khanhthanhdev.github.io/prism-page/ 找到。",
       "authors": "Ngoc Phan Phuoc Loc, Toan Huynh La Viet, Thanh Tran Khanh, Duy A Nguyen, Tuan Anh Nguyen Pham, Thanh Nguyen, Nitesh V. Chawla, Wray Buntine, Kok-Seng Wong, Khoa D. Doan, Binh T. Nguyen",
       "url": "https://huggingface.co/papers/2605.26730",
-      "score": 8,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "10",
         "paperId": "2605.26730"
       }
     }
