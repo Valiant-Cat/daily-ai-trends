@@ -1,7 +1,7 @@
 {
   "source": "github",
-  "updatedAt": "2026-06-03T00:37:17.732Z",
-  "count": 11,
+  "updatedAt": "2026-06-03T22:14:03.774Z",
+  "count": 14,
   "items": [
     {
       "id": "chopratejas-headroom",
@@ -11,32 +11,14 @@
       "description_zh": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
       "authors": "chopratejas",
       "url": "https://github.com/chopratejas/headroom",
-      "score": 6379,
+      "score": 9456,
       "meta": {
         "source": "github",
-        "stars": "6,379",
+        "stars": "9,456",
         "language": "Python",
         "repo": "chopratejas/headroom",
         "owner": "chopratejas",
         "repoName": "headroom"
-      }
-    },
-    {
-      "id": "microsoft-markitdown",
-      "title": "markitdown",
-      "title_zh": "markitdown",
-      "description": "Python tool for converting files and office documents to Markdown.",
-      "description_zh": "用于将文件和 Office 文档转换为 Markdown 的 Python 工具。",
-      "authors": "microsoft",
-      "url": "https://github.com/microsoft/markitdown",
-      "score": 141108,
-      "meta": {
-        "source": "github",
-        "stars": "141,108",
-        "language": "Python",
-        "repo": "microsoft/markitdown",
-        "owner": "microsoft",
-        "repoName": "markitdown"
       }
     },
     {
@@ -47,10 +29,10 @@
       "description_zh": "代理利用性能优化系统。 Claude Code、Codex、Opencode、Cursor 等的技能、直觉、记忆、安全性和研究优先的开发。",
       "authors": "affaan-m",
       "url": "https://github.com/affaan-m/ECC",
-      "score": 203930,
+      "score": 205598,
       "meta": {
         "source": "github",
-        "stars": "203,930",
+        "stars": "205,598",
         "language": "JavaScript",
         "repo": "affaan-m/ECC",
         "owner": "affaan-m",
@@ -58,21 +40,57 @@
       }
     },
     {
-      "id": "D4Vinci-Scrapling",
-      "title": "Scrapling",
-      "title_zh": "Scrapling",
-      "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-      "description_zh": "🕷️ 一个自适应网页抓取框架，可以处理从单个请求到全面抓取的所有内容！",
-      "authors": "D4Vinci",
-      "url": "https://github.com/D4Vinci/Scrapling",
-      "score": 59148,
+      "id": "aquasecurity-trivy",
+      "title": "trivy",
+      "title_zh": "trivy",
+      "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+      "description_zh": "查找容器、Kubernetes、代码存储库、云等中的漏洞、错误配置、秘密、SBOM",
+      "authors": "aquasecurity",
+      "url": "https://github.com/aquasecurity/trivy",
+      "score": 35365,
       "meta": {
         "source": "github",
-        "stars": "59,148",
+        "stars": "35,365",
+        "language": "Go",
+        "repo": "aquasecurity/trivy",
+        "owner": "aquasecurity",
+        "repoName": "trivy"
+      }
+    },
+    {
+      "id": "NousResearch-hermes-agent",
+      "title": "hermes-agent",
+      "title_zh": "hermes-agent",
+      "description": "The agent that grows with you",
+      "description_zh": "与您共同成长的代理商",
+      "authors": "NousResearch",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "score": 178982,
+      "meta": {
+        "source": "github",
+        "stars": "178,982",
         "language": "Python",
-        "repo": "D4Vinci/Scrapling",
-        "owner": "D4Vinci",
-        "repoName": "Scrapling"
+        "repo": "NousResearch/hermes-agent",
+        "owner": "NousResearch",
+        "repoName": "hermes-agent"
+      }
+    },
+    {
+      "id": "microsoft-markitdown",
+      "title": "markitdown",
+      "title_zh": "markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "description_zh": "用于将文件和 Office 文档转换为 Markdown 的 Python 工具。",
+      "authors": "microsoft",
+      "url": "https://github.com/microsoft/markitdown",
+      "score": 142761,
+      "meta": {
+        "source": "github",
+        "stars": "142,761",
+        "language": "Python",
+        "repo": "microsoft/markitdown",
+        "owner": "microsoft",
+        "repoName": "markitdown"
       }
     },
     {
@@ -83,10 +101,10 @@
       "description_zh": "Hermes WebUI：从网络或手机使用 Hermes Agent 的最佳方式！",
       "authors": "nesquena",
       "url": "https://github.com/nesquena/hermes-webui",
-      "score": 12532,
+      "score": 13068,
       "meta": {
         "source": "github",
-        "stars": "12,532",
+        "stars": "13,068",
         "language": "Python",
         "repo": "nesquena/hermes-webui",
         "owner": "nesquena",
@@ -94,93 +112,57 @@
       }
     },
     {
-      "id": "reconurge-flowsint",
-      "title": "flowsint",
-      "title_zh": "flowsint",
-      "description": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
-      "description_zh": "一个用于可视化、灵活且可扩展的基于图形的调查的现代平台。适用于网络安全分析师和调查人员。",
-      "authors": "reconurge",
-      "url": "https://github.com/reconurge/flowsint",
-      "score": 4501,
+      "id": "D4Vinci-Scrapling",
+      "title": "Scrapling",
+      "title_zh": "Scrapling",
+      "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "description_zh": "🕷️ 一个自适应网页抓取框架，可以处理从单个请求到全面抓取的所有内容！",
+      "authors": "D4Vinci",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "score": 60148,
       "meta": {
         "source": "github",
-        "stars": "4,501",
-        "language": "TypeScript",
-        "repo": "reconurge/flowsint",
-        "owner": "reconurge",
-        "repoName": "flowsint"
-      }
-    },
-    {
-      "id": "OpenBMB-VoxCPM",
-      "title": "VoxCPM",
-      "title_zh": "VoxCPM",
-      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-      "description_zh": "VoxCPM2：用于多语言语音生成、创意语音设计和逼真克隆的无分词器 TTS",
-      "authors": "OpenBMB",
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "score": 25107,
-      "meta": {
-        "source": "github",
-        "stars": "25,107",
+        "stars": "60,148",
         "language": "Python",
-        "repo": "OpenBMB/VoxCPM",
-        "owner": "OpenBMB",
-        "repoName": "VoxCPM"
+        "repo": "D4Vinci/Scrapling",
+        "owner": "D4Vinci",
+        "repoName": "Scrapling"
       }
     },
     {
-      "id": "stefan-jansen-machine-learning-for-trading",
-      "title": "machine-learning-for-trading",
-      "title_zh": "machine-learning-for-trading",
-      "description": "Code for Machine Learning for Algorithmic Trading, 2nd edition.",
-      "description_zh": "算法交易机器学习代码，第二版。",
-      "authors": "stefan-jansen",
-      "url": "https://github.com/stefan-jansen/machine-learning-for-trading",
-      "score": 18454,
+      "id": "opendataloader-project-opendataloader-pdf",
+      "title": "opendataloader-pdf",
+      "title_zh": "opendataloader-pdf",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "description_zh": "用于 AI 就绪数据的 PDF 解析器。自动化 PDF 辅助功能。开源。",
+      "authors": "opendataloader-project",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "score": 23211,
       "meta": {
         "source": "github",
-        "stars": "18,454",
-        "language": "Jupyter Notebook",
-        "repo": "stefan-jansen/machine-learning-for-trading",
-        "owner": "stefan-jansen",
-        "repoName": "machine-learning-for-trading"
+        "stars": "23,211",
+        "language": "Java",
+        "repo": "opendataloader-project/opendataloader-pdf",
+        "owner": "opendataloader-project",
+        "repoName": "opendataloader-pdf"
       }
     },
     {
-      "id": "jamwithai-production-agentic-rag-course",
-      "title": "production-agentic-rag-course",
-      "title_zh": "production-agentic-rag-course",
-      "description": "No description available",
-      "description_zh": "无可用描述",
-      "authors": "jamwithai",
-      "url": "https://github.com/jamwithai/production-agentic-rag-course",
-      "score": 6370,
+      "id": "odoo-odoo",
+      "title": "odoo",
+      "title_zh": "odoo",
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "description_zh": "奥杜。开源应用程序来发展您的业务。",
+      "authors": "odoo",
+      "url": "https://github.com/odoo/odoo",
+      "score": 51898,
       "meta": {
         "source": "github",
-        "stars": "6,370",
+        "stars": "51,898",
         "language": "Python",
-        "repo": "jamwithai/production-agentic-rag-course",
-        "owner": "jamwithai",
-        "repoName": "production-agentic-rag-course"
-      }
-    },
-    {
-      "id": "supermemoryai-supermemory",
-      "title": "supermemory",
-      "title_zh": "supermemory",
-      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
-      "description_zh": "内存引擎和应用程序速度极快，可扩展。 AI时代的内存API。",
-      "authors": "supermemoryai",
-      "url": "https://github.com/supermemoryai/supermemory",
-      "score": 24618,
-      "meta": {
-        "source": "github",
-        "stars": "24,618",
-        "language": "TypeScript",
-        "repo": "supermemoryai/supermemory",
-        "owner": "supermemoryai",
-        "repoName": "supermemory"
+        "repo": "odoo/odoo",
+        "owner": "odoo",
+        "repoName": "odoo"
       }
     },
     {
@@ -191,14 +173,86 @@
       "description_zh": "通过免提语音交互、语音中断和跨平台本地运行的 Live2D 面部识别功能与任何LLM交谈",
       "authors": "Open-LLM-VTuber",
       "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
-      "score": 8350,
+      "score": 8903,
       "meta": {
         "source": "github",
-        "stars": "8,350",
+        "stars": "8,903",
         "language": "Python",
         "repo": "Open-LLM-VTuber/Open-LLM-VTuber",
         "owner": "Open-LLM-VTuber",
         "repoName": "Open-LLM-VTuber"
+      }
+    },
+    {
+      "id": "jwasham-coding-interview-university",
+      "title": "coding-interview-university",
+      "title_zh": "coding-interview-university",
+      "description": "A complete computer science study plan to become a software engineer.",
+      "description_zh": "成为软件工程师的完整计算机科学研究计划。",
+      "authors": "jwasham",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "score": 348958,
+      "meta": {
+        "source": "github",
+        "stars": "348,958",
+        "language": "Mixed",
+        "repo": "jwasham/coding-interview-university",
+        "owner": "jwasham",
+        "repoName": "coding-interview-university"
+      }
+    },
+    {
+      "id": "lyogavin-airllm",
+      "title": "airllm",
+      "title_zh": "airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "description_zh": "使用单个 4GB GPU 进行 AirLLM 70B 推理",
+      "authors": "lyogavin",
+      "url": "https://github.com/lyogavin/airllm",
+      "score": 18837,
+      "meta": {
+        "source": "github",
+        "stars": "18,837",
+        "language": "Jupyter Notebook",
+        "repo": "lyogavin/airllm",
+        "owner": "lyogavin",
+        "repoName": "airllm"
+      }
+    },
+    {
+      "id": "supermemoryai-supermemory",
+      "title": "supermemory",
+      "title_zh": "supermemory",
+      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+      "description_zh": "内存引擎和应用程序速度极快，可扩展。 AI时代的内存API。",
+      "authors": "supermemoryai",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "score": 25122,
+      "meta": {
+        "source": "github",
+        "stars": "25,122",
+        "language": "TypeScript",
+        "repo": "supermemoryai/supermemory",
+        "owner": "supermemoryai",
+        "repoName": "supermemory"
+      }
+    },
+    {
+      "id": "HKUDS-Vibe-Trading",
+      "title": "Vibe-Trading",
+      "title_zh": "Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "description_zh": "“Vibe-Trading：您的个人交易代理”",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "score": 9844,
+      "meta": {
+        "source": "github",
+        "stars": "9,844",
+        "language": "Python",
+        "repo": "HKUDS/Vibe-Trading",
+        "owner": "HKUDS",
+        "repoName": "Vibe-Trading"
       }
     }
   ]
