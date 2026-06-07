@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-06-07T14:28:40.528Z",
+  "updatedAt": "2026-06-07T20:49:56.546Z",
   "count": 15,
   "items": [
     {
@@ -8,7 +8,7 @@
       "title": "BRepCLIP: Contrastive Multimodal Pretraining on BRep Primitives for CAD Understanding",
       "title_zh": "BRepCLIP：针对 BRep 基元进行对比多模态预训练以实现 CAD 理解",
       "description": "Learning representations of CAD models is a largely open problem. While 3D representation learning has flourished around point clouds and meshes, the native format of CAD - boundary representations BReps, which encodes exact parametric surfaces, curves, and their topology, has received little attention as a representation learning substrate. We introduce BRepCLIP, the first framework to align BRep geometry with language and image embeddings through contrastive pretraining. We model each CAD object as a sequence of face and edge tokens with separate discrete vocabularies for surface and curve geometry, augmented with spatial and semantic descriptors that capture surface types (e.g., cylindrical, torus, NURBS) and curve primitives (e.g., line, arc, B-spline). A transformer encoder aggregates these tokens into a global BRep embedding, aligned with CLIP's text and image encoders via a joint contrastive objective. BRepCLIP generates more discriminative and semantically grounded embeddings than existing point-based alternatives, improving Top-1 retrieval over OpenShape by 40.4%, 22.0%, and 23.9% on ABC, CADParser, and Automate, respectively, and improving zero-shot classification on FabWave by 15% in Top-1 score. We further demonstrate its utility as a CAD-aware similarity metric for evaluating text and image-conditioned CAD generation, establishing the importance of structure-aware pretraining for multimodal CAD understanding. Project page is available at https://muhammadusama100.github.io/BrepClip2026/",
-      "description_zh": "学习 CAD 模型的表示在很大程度上是一个悬而未决的问题。虽然 3D 表示学习围绕点云和网格蓬勃发展，但 CAD 的原生格式 - 边界表示 BReps（对精确的参数化曲面、曲线及其拓扑进行编码）作为表示学习基础却很少受到关注。我们引入了 BRepCLIP，这是第一个通过对比预训练将 BRep 几何与语言和图像嵌入对齐的框架。我们将每个 CAD 对象建模为一系列面和边缘标记，具有用于表面和曲线几何的单独离散词汇，并通过捕获表面类型（例如，圆柱、环面、NURBS）和曲线图元（例如，直线、圆​​弧、B 样条）的空间和语义描述符进行增强。 Transformer 编码器将这些标记聚合到全局 BRep 嵌入中，通过联合对比目标与 CLIP 的文本和图像编码器对齐。与现有的基于点的替代方案相比，BRepCLIP 生成更具区分性和语义基础的嵌入，在 ABC、CADParser 和 Automate 上相对于 OpenShape 的 Top-1 检索分别提高了 40.4%、22.0% 和 23.9%，并将 FabWave 上的零样本分类在 Top-1 得分中提高了 15%。我们进一步证明了它作为 CAD 感知相似性度量的实用性，用���评估文本和图像条件 CAD 生成，确立了结构感知预训练对于多模式 CAD 理解的重要性。项目页面位于 https://muhammadusama100.github.io/BrepClip2026/",
+      "description_zh": "学习 CAD 模型的表示在很大程度上是一个悬而未决的问题。虽然 3D 表示学习围绕点云和网格蓬勃发展，但 CAD 的原生格式 - 边界表示 BReps（对精确的参数化曲面、曲线及其拓扑进行编码）作为表示学习基础却很少受到关注。我们引入了 BRepCLIP，这是第一个通过对比预训练将 BRep 几何与语言和图像嵌入对齐的框架。我们将每个 CAD 对象建模为一系列面和边缘标记，具有用于表面和曲线几何的单独离散词汇，并通过捕获表面类型（例如，圆柱、环面、NURBS）和曲线图元（例如，直线、圆​​弧、B 样条）的空间和语义描述符进行增强。 Transformer 编码器将这些标记聚合到全局 BRep 嵌入中，通过联合对比目标与 CLIP 的文本和图像编码器对齐。与现有的基于点的替代方案相比，BRepCLIP 生成更具区分性和语义基础的嵌入，在 ABC、CADParser 和 Automate 上相对于 OpenShape 的 Top-1 检索分别提高了 40.4%、22.0% 和 23.9%，并将 FabWave 上的零样本分类在 Top-1 得分中提高了 15%。我们进一步证明了它作为 CAD 感知相似性度量的实用性，用于评估文本和图像条件 CAD 生成，确立了结构感知预训练对于多模式 CAD 理解的重要性。项目页面位于 https://muhammadusama100.github.io/BrepClip2026/",
       "authors": "Muhammad Usama, Didier Stricker, Mohammad Sadil Khan, Muhammad Zeshan Afzal",
       "url": "https://huggingface.co/papers/2606.05515",
       "score": 1,
@@ -38,7 +38,7 @@
       "title": "The Road Ahead in Autonomous Driving: The KITScenes Multimodal Dataset",
       "title_zh": "自动驾驶的未来之路：KITScens 多模态数据集",
       "description": "Existing autonomous driving datasets have enabled major progress, but fall short in sensor fidelity, map completeness, or geographic diversity. We present KITScenes Multimodal, a European dataset built around high-fidelity sensors and maps. Our fully synchronized sensor suite combines high-resolution global-shutter cameras, long-range lidar beyond 400m, 4D imaging radar, and redundant GNSS/INS localization. Our HD maps are, to our knowledge, the most complete of any sensor dataset, validated through autonomous driving trials on open-source software. For the first time in a public dataset, all driving-relevant traffic elements, such as traffic lights, are mapped in 3D to a reprojection-accurate level with full topological connectivity. Recorded in cities with irregular street layouts and mixed traffic modes, our dataset complements existing datasets by broadening the available geographic diversity. We also introduce four benchmarks, each advancing spatial learning for embodied AI: online HD map construction, long-range depth estimation, novel view synthesis, and end-to-end driving. Project page: https://kitscenes.com/",
-      "description_zh": "现有的自动驾驶数据集已经取得了重大进展，但在传感器保真度、地图完整性或地理多样性方面存在不足。我们推出了 KITScenes Multimodal，这是一个围绕高保真传感器和地图构建的欧洲数据集。我们完全同步的传感器套件结合了高分辨率全局快门相机、超过 400m 的远程激光雷达、4D 成像雷达和冗余 GNSS/INS 定位。据我们所知，我们的高清地图是所有传感器数据集中最完整的，并通过开源软件的自动驾驶试验进行了验证。在公共数据集中，所有与驾驶相关的交通元素（例如交通信号灯）首次以 3D 方式映射到具有完整拓扑连接的重投影精确级别。我们的数据集在街道布局不规则和混合交通模式的城市中记录，通过扩大可用的地理多样性来补充现有数据集。我们还介绍了四个基准，每个基准都促进了嵌入式人工智能的空间学习：在线高清地图构建、远程深度估计、新颖的视图合成和端到端驱动。项目页面：https://kitscenes.com/",
+      "description_zh": "现有的自动驾驶数据集已经取得了重大进展，但在传感器保真度、地图完整性或地理多样性方面存在不足。我们推出了 KITScenes Multimodal，这是一个围绕高保真传感器和地图构建的欧洲数据集。我们完全同步的传感器套件结合了高分辨率全局快门相机、超过 400m 的远程激光雷达、4D 成像雷达和冗余 GNSS/INS 定位。据我们所知，我们的高清地图是所有传感器数据集中最完整的，并通过开源软件的自动驾驶试验进行了验证。在公共数���集中，所有与驾驶相关的交通元素（例如交通信号灯）首次以 3D 方式映射到具有完整拓扑连接的重投影精确级别。我们的数据集在街道布局不规则和混合交通模式的城市中记录，通过扩大可用的地理多样性来补充现有数据集。我们还介绍了四个基准，每个基准都促进了嵌入式人工智能的空间学习：在线高清地图构建、远程深度估计、新颖的视图合成和端到端驱动。项目页面：https://kitscenes.com/",
       "authors": "Richard Schwarzkopf, Fabian Immel, Alexander Blumberg, Jonas Merkert, Nils Rack, Kaiwen Wang, Fabian Konstantinidis, Julian Truetsch, Carlos Fernandez, Annika Bätz, Kevin Rösch, Marlon Steiner, Willi Poh, Yinzhe Shen, Royden Wagner, Felix Hauser, Dominik Strutz, Jaime Villa, Gleb Stepanov, Holger Caesar, Ömer Şahin Taş, Frank Bieder, Jan-Hendrik Pauls, Christoph Stiller",
       "url": "https://huggingface.co/papers/2606.02956",
       "score": 15,
@@ -53,7 +53,7 @@
       "title": "MAOAM: Unified Object and Material Selection with Vision-Language Models",
       "title_zh": "MAOAM：使用视觉语言模型统一对象和材料选择",
       "description": "Selection is a core operation in interactive image editing. To be practical, a user should be able to specify and disambiguate the desired selection region through either text or click-based interactions, and the system should support selecting not only objects but also other criteria, such as materials. Material-based selection is valuable for tasks like re-texturing surfaces or editing instances of a specific material. However, existing vision-language-model (VLM) based selection methods are object-centric and typically support a single interaction modality, limiting their applicability. In this work, we thus present Mask Any Object And Material (MAOAM), a unified selection framework that enables precise object and material-level selection across both text- and click-based interactions. MAOAM leverages a VLM with a segmentation head to produce pixel-accurate masks from user prompts: the VLM interprets the user's selection intent (object or material-level) and encodes visual entities, attributes, and spatial relations, while the segmentation head decodes the output token into a mask. A key challenge is the lack of material selection datasets with text annotations. We propose a scalable data generation pipeline: we collect real and synthetic images with material masks, and leverage VLMs to generate material descriptions with rich visual-semantics. We train MAOAM with a multi-task objective over click and text-based selection, along with an auxiliary VQA task derived from the material descriptions to facilitate deeper material understanding. Despite being trained with uni-modal prompts, our model exhibits an emergent improvement in selection when combining text and clicks at inference, enabling flexible image editing workflows. Experiments demonstrate accurate and coherent selections across diverse objects, materials, and interaction scenarios, highlighting robustness in practice.",
-      "description_zh": "选择是交互式图像编辑中的核心操作。为了实用，用户应该能够通过文本或基于点击的交互来指定和消除所需选择区域的歧义，并且系统不仅应该支持选择对象，还应该支持其他标准，例如材料。基于材质的选择对于重新纹理表面或编辑特定材质实例等任务非常有价值。然而，现有的基于视觉语言模型（VLM）的选择方法是以对象为中心的，通常支持单一交互模式，限制了它们的适用性。因此，���这项工作中，我们提出了屏蔽任何对象和材质（MAOAM），这是一个统一的选择框架，可以在基于文本和基于点击的交互中实现精确的对象和材质级别选择。 MAOAM 利用带有分割头的 VLM 根据用户提示生成像素精确的蒙版：VLM 解释用户的选择意图（对象或材质级别）并编码视觉实体、属性和空间关系，而分割头将输出标记解码为蒙版。一个关键的挑战是缺乏带有文本注释的材料选择数据集。我们提出了一个可扩展的数据生成管道：我们使用材质掩模收集真实和合成图像，并利用 VLM 生成具有丰富视觉语义的材质描述。我们通过点击和基于文本的选择来训练 MAOAM 的多任务目标，以及从材料描述中派生的辅助 VQA 任务，以促进更深入的材料理解。尽管接受了单模态提示的训练，但我们的模型在结合文本和推理点击时在选择方面表现出了突如其来的改进，从而实现了灵活的图像编辑工作流程。实验证明了对不同对象、材料和交互场景的准确和连贯的选择，突出了实践中的稳健性。",
+      "description_zh": "选择是交互式图像编辑中的核心操作。为了实用，用户应该能够通过文本或基于点击的交互来指定和消除所需选择区域的歧义，并且系统不仅应该支持选择对象，还应该支持其他标准，例如材料。基于材质的选择对于重新纹理表面或编辑特定材质实例等任务非常有价值。然而，现有的基于视觉语言模型（VLM）的选择方法是以对象为中心的，通常支持单一交互模式，限制了它们的适用性。因此，��这项工作中，我们提出了屏蔽任何对象和材质（MAOAM），这是一个统一的选择框架，可以在基于文本和基于点击的交互中实现精确的对象和材质级别选择。 MAOAM 利用带有分割头的 VLM 根据用户提示生成像素精确的蒙版：VLM 解释用户的选择意图（对象或材质级别）并编码视觉实体、属性和空间关系，而分割头将输出标记解码为蒙版。一个关键的挑战是缺乏带有文本注释的材料选择数据集。我们提出了一个可扩展的数据生成管道：我们使用材质掩模收集真实和合成图像，并利用 VLM ��成具有丰富视觉语义的材质描述。我们通过点击和基于文本的选择来训练 MAOAM 的多任务目标，以及从材料描述中派生的辅助 VQA 任务，以促进更深入的材料理解。尽管接受了单模态提示的训练，但我们的模型在结合文本和推理点击时在选择方面表现出了突如其来的改进，从而实现了灵活的图像编辑工作流程。实验证明了对不同对象、材料和交互场景的准确和连贯的选择，突出了实践中的稳健性。",
       "authors": "Jaden Park, Valentin Deschaintre, Jason Kuen, Kangning Liu, Iliyan Georgiev, Krishna Kumar Singh, Yong Jae Lee, Michael Fischer",
       "url": "https://huggingface.co/papers/2606.04880",
       "score": 9,
@@ -131,10 +131,10 @@
       "description_zh": "视觉语言动作 (VLA) 模型利用预训练视觉语言模型 (VLM) 的丰富世界知识来实现​​遵循指令的机器人操作。然而，VLM 语义空间和具体控制策略之间的结构不匹配常常阻碍精确感知-动作映射的学习。为了应对这一挑战，我们提出了 AffordanceVLA，这是一个统一的框架，引入结构化可供性预测作为面向任务的中间表示，以建立更精确和稳健的感知-动作映射。具体来说，我们通过三个互补的组件逐步对操作先验进行建模：1）Which2Act 通过视觉潜在预测来抑制干扰，实现以对象为中心的基础； 2）Where2Act 通过可供图估计进行 2D 交互定位； 3) How2Act 用于 3D 几何推理以指导操纵策略。这些可供性线索提供了空间基础、语义条件和动作耦合的中间表示，从而自然地连接视觉、语言和动作。我们与专业专家将这些模块集成到 Mixture-of-Transformer (MoT) 架构中，并使用三阶段训练策略和渐进式数据课程来训练模型。为了克服机器人数据集中密集可供性标签的稀缺性，我们还开发了强大的自动化数据增强管道。大量的模拟和现实实验表明，AffordanceVLA 在不同的操作场景中都实现了强大的性能。",
       "authors": "Qize Yu, Jiadi You, Yuran Wang, Jiaqi Liang, Bowen Ping, Yang Tian, Yue Chen, Minghong Cai, Zeying Gong, Ruihai Wu, Yinchuan Li, Junwei Liang, Yingcong Chen",
       "url": "https://huggingface.co/papers/2606.06155",
-      "score": 9,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
+        "upvotes": "10",
         "paperId": "2606.06155"
       }
     },
@@ -146,10 +146,10 @@
       "description_zh": "代码语言模型需要存储库级上下文来解析导入、API 和项目约定。现有方法将这些知识作为长输入（通过 RAG 或依赖性分析检索）或通过每个存储库微调和 LoRA 注入——在存储库规模上成本高昂，并且对于不断发展的代码库来说很脆弱。我们引入了 Code2LoRA，这是一个超网络框架，可生成特定于存储库的 LoRA 适配器，以零推理时间令牌开销有效地注入存储库知识。 Code2LoRA支持两种使用场景：Code2LoRA-Static将单个存储库快照转换为适配器，适合稳定代码库的理解；而 Code2LoRA-Evo 则维护一个由 GRU 隐藏状态支持的适配器，该状态根据代码差异进行更新，适合不断发展的代码库的主动开发。为了根据参数高效的微调基线评估 Code2LoRA，我们构建了 RepoPeftBench，这是一个包含 604 个 Python 存储库的基准测试，具有两个轨道：一个包含 40K 训练和 12K 测试断言完成任务的静态轨道，以及一个包含 215K 提交衍生训练和 87K 提交衍生测试任务的演化轨道。在静态赛道上，Code2LoRA-Static 实现了 63.8% 的跨存储库和 66.2% 的存储库内精确匹配，匹配每个存储库的 LoRA 上限；在进化轨迹上，Code2LoRA-Evo 实现了 60.3% 的跨存储库精确匹配（比单个共享 LoRA 提高了 5.2 pp）。 Code2LoRA的代码可以在https://anonymous.4open.science/r/code2lora-6857找到；模型检查点和 RepoPeftBench 数据集可以在 https://huggingface.co/code2lora 上找到。",
       "authors": "Liliana Hotsko, Yinxi Li, Yuntian Deng, Pengyu Nie",
       "url": "https://huggingface.co/papers/2606.06492",
-      "score": 67,
+      "score": 70,
       "meta": {
         "source": "huggingface",
-        "upvotes": "67",
+        "upvotes": "70",
         "paperId": "2606.06492"
       }
     },
@@ -173,13 +173,13 @@
       "title": "The Shape of Addition: Geometric Structures of Arithmetic in Large Language Models",
       "title_zh": "加法的形状：大型语言模型中算术的几何结构",
       "description": "Large Language Models exhibit paradoxical fragility in fundamental arithmetic, implying a disconnect between internal computation and discrete output. By analyzing the residual stream geometry during multi-operand addition, we identify the Iso-Raw-Sum Trajectory (IRST), a geometric structure where representations are anchored by semantic digits and modulated by continuous carry fibers. We propose the Noisy Quantization Model to explain this geometry, framing arithmetic errors as Geometric Slippages caused by internal neural noise pushing a continuous, latent Carry Potential across quantization thresholds. This geometric framework further elucidates Probe Versatility, explaining how lightweight probes can disentangle coexisting latent signals (such as ground truth versus hallucination) from a single activation vector. Finally, we validate these insights through a geometric consistency check method that effectively detects and corrects these quantization failures during inference. Our code is available at https://github.com/RL-MIND/Shape-of-Addition.",
-      "description_zh": "大型语言模型在基础算术中表现出自相矛盾的脆弱性，这意味着内部计算和离散输出之间的脱节。通过分析多操作数加法期间的残余流几何结构，我们识别了 Iso-Raw-Sum 轨迹（IRST），这是一种几何结构，其中表示由语义数字锚定并由连续进位纤维调制。我们提出噪声量化模型来解释这种几何形状，将算术错误视为由内部神经噪声推动连续的、潜在的携带势跨越量化阈值引起的几何滑移。这个几何框架进一步阐明了探针的多功能性，解释了轻量级探针如何���单个激活向量中解开共存的潜在信号（例如地面真相与幻觉）。最后，我们通过几何一致性检查方法验证这些见解，该方法可以在推理过程中有效地检测和纠正这些量化失败。我们的代码可在 https://github.com/RL-MIND/Shape-of-Addition 获取。",
+      "description_zh": "大型语言模型在基础算术中表现出自相矛盾的脆弱性，这意味着内部计算和离散输出之间的脱节。通过分析多操作数加法期间的残余流几何结构，我们识别了 Iso-Raw-Sum 轨迹（IRST），这是一种几何结构，其中表示由语义数字锚定并由连续进位纤维调制。我们提出噪声量化模型来解释这种几何形状，将算术错误视为由内部神经噪声推动连续的、潜在的携带势跨越量化阈值引起的几何滑移。这个几何框架进一步阐明了探针的多功能性，解释了轻量级探针如何从单个激活向量中解开共存的潜在信号（例如地面真相与幻觉）。最后，我们通过几何一致性检查方法验证这些见解，该方法可以在推理过程中有效地检测和纠正这些量化失败。我们的代码可在 https://github.com/RL-MIND/Shape-of-Addition 获取。",
       "authors": "Liuyuan Wen, Xun Zhu, Lihao Huang, Wenbin Li, Yang Gao",
       "url": "https://huggingface.co/papers/2606.03645",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2606.03645"
       }
     },
@@ -203,7 +203,7 @@
       "title": "Revising Context, Shifting Simulated Stance: Auditing LLM-Based Stance Simulation in Online Discussions",
       "title_zh": "修改上下文，改变模拟立场：在线讨论中审核基于 LLM 的立场模拟",
       "description": "Large language models are increasingly used to simulate social media users and infer how individuals may respond to online discussions. However, it remains unclear whether these simulations reflect precise user-specific beliefs or whether they are highly sensitive to semantically independent changes in conversational contexts. In this work, we study counterfactual context revision as a framework for auditing LLM-based stance simulation. Given an original online conversation, we first infer a target user's stance toward a specific topic. We then apply controlled revision strategies to the conversational context and simulate the user's stance again under the revised context. We compare text-only revision strategies with a multimodal one that incorporates meme-based context and evaluate two main effectiveness metrics, i.e., average directional stance shift and stance transition rate. The results reveal effective and robust stance transitions in both text-only and multimodal strategies across different polarization-preference mechanisms. Our study contributes an evaluation framework for understanding the context sensitivity of LLM-based stance simulation. More broadly, it highlights both the promise and risk of using LLMs to simulate online opinion dynamics.",
-      "description_zh": "大型语言模型越来越多地用于模拟社交媒体用户并推断个人如何响应在线讨论。然而，目前尚不清楚这些模拟是否准确地反映了用户特定的信念，或者它们是否对会话上下文中语义独立的变化高度敏感。在这项工作中，我们研究反事实背景修正作为审计基于LLM的立场模拟的框架。给定原始在线对话，我们首先推断目标用户对特定主题的立场。然后，我们将受控修改策略应用于会话上下文，并在修改后的上下文下再次模拟用户的立���。我们将纯文本修订策略与包含基于模因的上下文的多模式修订策略进行比较，并评估两个主要有效性指标，即平均方向立场转变和立场转变率。结果揭示了不同极化偏好机制中纯文本策略和多模式策略中有效且稳健的立场转变。我们的研究为理解基于LLM的立场模拟的情境敏感性提供了一个评估框架。更广泛地说，它强调了使用LLM来模拟在线舆论动态的前景和风险��",
+      "description_zh": "大型语言模型越来越多地用于模拟社交媒体用户并推断个人如何响应在线讨论。然而，目前尚不清楚这些模拟是否准确地反映了用户特定的信念，或者它们是否对会话上下文中语义独立的变化高度敏感。在这项工作中，我们研究反事实背景修正作为审计基于LLM的立场模拟的框架。给定原始在线对话，我们首先推断目标用户对特定主题的立场。然后，我们将受控修改策略应用于会话上下文，并在修改后的上下文下再次模拟用户的立场。我们将纯文本修订策略与包含基于模因的上下文的多模式修订策略进行比较，并评估两个主要有效性指标，即平均方向立场转变和立场转变率。结果揭示了不同极化偏好机制中纯文本策略和多模式策略中有效且稳健的立场转变。我们的研究为理解基于LLM的立场模拟的情境敏感性提供了一个评估框架。更广泛地说，它强调了使用LLM来模拟在线舆论动态的前景和风险。",
       "authors": "Xinnong Zhang, Wanting Shan, Hanjia Lyu, Zhongyu Wei, Jiebo Luo",
       "url": "https://huggingface.co/papers/2606.06443",
       "score": 2,
