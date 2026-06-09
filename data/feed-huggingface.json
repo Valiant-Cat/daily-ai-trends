@@ -1,8 +1,38 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-06-08T21:25:12.250Z",
+  "updatedAt": "2026-06-09T00:37:31.934Z",
   "count": 15,
   "items": [
+    {
+      "id": "2605.22737",
+      "title": "The Distillation Game: Adaptive Attacks & Efficient Defenses",
+      "title_zh": "蒸馏游戏：自适应攻击和高效防御",
+      "description": "Distillation attacks create a deployment trade-off for model providers: the same outputs that make a model more useful can also make it easier to imitate. We study this trade-off through a minimax game between a utility-constrained teacher and an adaptive student. Our framework yields tractable one-sided response rules: an adaptive evaluation rule in which the student reweights high-value examples, and a teacher-side defense template that suppresses outputs most useful for distillation. From a cheap proxy for example value, we derive Product-of-Experts (PoE), a simple forward-pass-only defense that combines the teacher with a proxy student during generation. Empirically, adaptive evaluation reveals a large passive--adaptive gap: on state-of-the-art defenses, adaptive students recover substantially more capability than passive evaluation suggests on GSM8K and MATH. Under this stronger evaluation, the apparent robustness gap between expensive defenses and PoE narrows considerably, while PoE remains substantially cheaper and preserves higher-quality reasoning traces. Overall, our results suggest that strong distillation remains difficult to stop, and that progress on antidistillation should be judged against adaptive students rather than passive ones. Our code is available at: https://github.com/ysfalh/distillation-game.",
+      "description_zh": "蒸馏攻击为模型提供者带来了部署权衡：使模型更有用的相同输出也可以使其更容易模仿。我们通过效用受限的教师和适应性强的学生之间的极小极大博弈来研究这种权衡。我们的框架产生易于处理的片面响应规则：一种自适应评估规则，其中学生重新加权高价值的示例，以及一种教师方防御模板，抑制对蒸馏最有用的输出。例如，从廉价的代理值中，我们得出专家产品（PoE），这是一种简单的仅前向传递防御，在生成过程中将教师与代理学生结合起来。根据经验，适应性评估揭示了巨大的被动-适应性差距：在最先进的防御中，适应性学生恢复的能力比被动评估在 GSM8K 和 MATH 上恢复的能力要多得多。在这种更强有力的评估下，昂贵的防御和 PoE 之间明显的鲁棒性差距大大缩小，而 PoE 仍然便宜得多，并保留了更高质量的推理痕迹。总的来说，我们的结果表明，强烈的蒸馏仍然很难停止，反蒸馏的进展应该根据适应性强的学生而不是被动的学生来判断。我们的代码位于：https://github.com/ysfalh/distillation-game。",
+      "authors": "Youssef Allouah, Mahdi Haghifam, Sanmi Koyejo, Reza Shokri",
+      "url": "https://huggingface.co/papers/2605.22737",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2605.22737"
+      }
+    },
+    {
+      "id": "2606.05531",
+      "title": "Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models",
+      "title_zh": "Almieyar-Oryx-BloomBench：视觉语言模型认知知情评估的双语多模态基准",
+      "description": "Despite the rapid progress of Vision-Language Models (VLMs), the field lacks benchmarks that rigorously diagnose their true reasoning abilities and chart meaningful progress toward human-like multimodal intelligence. Most existing evaluations focus on piecemeal or disconnected tasks, obscuring critical cognitive weaknesses and providing little insight for targeted improvement. To address this gap, we introduce BloomBench, part of the Almieyar benchmarking series, the first cognitively human-grounded, bilingual (English-Arabic) multimodal benchmark for VLMs. Grounded in Bloom's Taxonomy, BloomBench systematically evaluates six levels of cognition (Remember, Understand, Apply, Analyze, Evaluate, Create) through carefully designed image-question-answer tasks. Built with a semi-automated pipeline and validated through a stratified hybrid quality assurance protocol, it ensures scalability, cultural inclusivity, and linguistic fidelity. Leveraging this framework, we conduct a comprehensive study of state-of-the-art VLMs to diagnose their cognitive profiles. Our analysis reveals a sharp cognitive asymmetry: while state-of-the-art models achieve strong performance ceilings in semantic understanding, they struggle substantially with factual recall and creative synthesis. This demonstrates that current general multimodal proficiency masks deeper limitations in specific cognitive layers. Furthermore, our study highlights a critical performance gap between Arabic and English, exposing limitations in current cross-lingual multimodal reasoning. These findings establish a foundation for developing more cognitively aligned and inclusive VLMs. The benchmark framework and dataset is available at: https://github.com/qcri/Almieyar-Oryx-BloomBench.",
+      "description_zh": "尽管视觉语言模型（VLM）取得了快速进展，但该领域缺乏严格诊断其真实推理能力并绘制类人多模态智能有意义进展的基准。大多数现有的评估都集中在零碎或互不相关的任务上，掩盖了关键的认知弱点，并且几乎没有提供有针对性的改进的见解。为了解决这一差距，我们引入了 BloomBench，它是 Almieyar 基准测试系列的一部分，是第一个基于认知的人类双语（英语-阿拉伯语）多模态 VLM 基准测试。 BloomBench 以 Bloom 分类法为基础，通过精心设计的图像问答任务系统地评估六个认知水平（记住��理解、应用、分析、评估、创造）。它采用半自动化管道构建，并通过分层混合质量保证协议进行验证，确保可扩展性、文化包容性和语言保真度。利用这个框架，我们对最先进的 VLM 进行了全面研究，以诊断他们的认知概况。我们的分析揭示了严重的认知不对称：虽然最先进的模型在语义理解方面实现了强大的性能上限，但它们在事实回忆和创造性合成方面却遇到了很大的困难。这表明当前的一般多模式熟练程度掩盖了特定认知层更深层次的限制。此外，我们的研究强调了阿拉伯语和英语之间的关键性能差距，暴露了当前跨语言多模态推理的局限性。这些发现为开发更具认知一致性和包容性的 VLM 奠定了基础。基准框架和数据集位于：https://github.com/qcri/Almieyar-Oryx-BloomBench。",
+      "authors": "Mohammad Mahdi Abootorabi, Omid Ghahroodi, Anas Madkoor, Marzia Nouri, Doratossadat Dastgheib, Mohamed Hefeeda, Ehsaneddin Asgari",
+      "url": "https://huggingface.co/papers/2606.05531",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2606.05531"
+      }
+    },
     {
       "id": "2606.06843",
       "title": "Empirical Study on the Characteristics and Evolution of AI-usage in GitHub Repositories: Evidence from Code Comments",
@@ -23,7 +53,7 @@
       "title": "ECI_{sem}: Semantic Residual Effective Contrastive Information for Evaluating Hard Negatives",
       "title_zh": "ECI_{sem}：用于评估硬阴性的语义残留有效对比信息",
       "description": "Hard-negative source selection for dense retrieval is usually decided only after fine-tuning and downstream evaluation. We propose ECI_{sem}, a semantic residual variant of Effective Contrastive Information (ECI) that ranks candidate negative sources using frozen target-encoder embeddings. ECI_{sem} is training-free, not label-free: each scored example requires a query, a labeled positive, and an explicit candidate negative. ECI_{sem} builds a weighted residual information matrix from target consistency, semantic locality, lexical residuality, and a log-determinant diversity objective. On MS MARCO negative sources, in-family ECI_{sem} ranks LLM negatives highest among non-hybrid sources and Dense+LLM highest among hybrid sources, matching the strongest aggregate BEIR transfer results across DistilBERT, E5-base, and Contriever. Controlled ablations show that this alignment depends on using the target encoder family, while additional ablations show stability under sample-size, temperature, tokenizer, and IDF-corpus perturbations. The theory gives a local linearized link to loss reduction, while the empirical study treats downstream evaluation as the final test.",
-      "description_zh": "用于密集检索的硬负源选择通常只有在微调和下游评估之后才能决定。我们提出了 ECI_{sem}，这是有效对比信息（ECI）的语义残差变体，它使用冻结的目标编码器嵌入对候选负源进行排名。 ECI_{sem} 是免训练的，而不是免标签的：每个评分示例都需要一个查询、一个带标签的正例和一个显式候选负例。 ECI_{sem} 根据目标一致性、语义局部性、词汇残差和对数行列式多样性目标构建加权残差信息矩阵。在 MS MARCO 负源上，家族内 ECI_{sem} 将 LLM 负数在非混合源中排名最高，将 Dense+LLM 在混合源中排名最高，与 DistilBERT、E5-base 和 Contriever 中最强的聚合 BEIR 传输结果相匹配。受控消融表明这种对齐取决于目标编码器系列的使用，而额外的消融则显示了样本大小、温度、分词器和 IDF 语料库扰动下的稳定性。理论给出了减少损失的局部线性化联系，而实证研究则将下游评估作为最终检验。",
+      "description_zh": "用于密集检索的硬负源选择通常只有在微调和下游评估之后才能决定。我们提出了 ECI_{sem}，这是有效对比信息（ECI）的语义残差变体，它使用冻结的目标编码器嵌入对候选负源进行排名。 ECI_{sem} 是免训练的，而不是免标签的：每个评分示例都需要一个查询、一个带标签的正例和一个显式候选负例。 ECI_{sem} 根据目标一致性、语义局部性、词汇残差和对数行列式多样性目标构建加权残差信息矩阵。在 MS MARCO 负源上，家族内 ECI_{sem} 将 LLM 负数在非混合源中排名最高，将 Dense+LLM 在混合源中排名最高，与 DistilBERT、E5-base 和 Contriever 中最强的聚合 BEIR 传输结果相匹配。受控消融表明这种对齐取决于目标编码器系列的使用，而额外的消融则显示了样本大小、温度、分词器和 IDF 语料库扰动下的稳定性。该理论给出了减少损失的局部线性化联系，而实证研究则将下游评估视为最终检验。",
       "authors": "Aarush Sinha, Rahul Seetharaman, Aman Bansal",
       "url": "https://huggingface.co/papers/2603.20990",
       "score": 1,
@@ -41,10 +71,10 @@
       "description_zh": "视觉语言模型（VLM）在许多任务上表现出色，但当关键信息无法直接观察时，仍然难以进行空间推理。许多此类问题需要富有想象力的感知：推断从看不见的视点会看到什么，追踪穿过封闭空间的路径，或者将部分观察结果整合到连贯的空间表示中。我们引入了想象力感知令牌（IPT），这是一种中间感知表示，可以将 VLM 在替代空间配置下感知的内容具体化，同时与观察到的输入保持一致。\n  为了研究这种能力，我们制定了三项任务：视角采择 (PET)、路径追踪 (PT) 和多视图计数 (MVC)，并构建了包含大约 20K 个示例的数据集，其中包含真实的想象、答案和评估基准。使用统一的 VLM BAGEL 作为骨干，IPT 监督持续改进空间推理，并且通常优于文本思维链训练，即使在推理时不生成图像。在MVC上，IPT将准确率提高了3.4%，并在PT上实现了与强大的闭源模型竞争的性能。我们进一步发现，将 IPT 和仅标签监督相结合会产生额外的收益，而文本思想链会大大降低性能，这表明当通过语言强制进行空间计算时会出现模态不匹配。总的来说，IPT 提供了一个有原则的监督信号，用于推理未观察到的空间结构，提高泛化能力，同时产生可解释的中间表示。",
       "authors": "Mahtab Bigverdi, Linjie Li, Weikai Huang, Yiming Liu, Jaemin Cho, Jieyu Zhang, Tuhin Kundu, Chris Dangjoo Kim, Zelun Luo, Linda Shapiro, Ranjay Krishna",
       "url": "https://huggingface.co/papers/2606.03988",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2606.03988"
       }
     },
@@ -56,10 +86,10 @@
       "description_zh": "在日益多样化的数据表示、学习范式和建模策略的推动下，3D 视觉迅速发展。然而，该领域在表征和基准方面仍然分散，因此很难就效率、保真度和可扩展性形成统一的观点。这项工作提供了一种以数据为中心的 3D 视觉分类法，它将几何表示、数据集、学习框架和应用程序连接到单个概念图中。我们首先分析 3D 数据的主要结构表示（点云、网格、体素和 3D 高斯）及其采集管道。然后，我们研究数据集设计、基准构建和监督机制如何影响最新进展，涵盖 2D 监督 3D 学习、隐式神经表示和 4D 世界建模。通过这种综合视角，我们阐明了表示、学习范式以及重建、生成和视频建模中的下游任务之间的关系，提供了平衡效率和保真度以及多模态几何基础的新兴趋势的综合视图。",
       "authors": "Hongyang Du, Zongxia Li, Dawei Liu, Runhao Li, Haoyuan Song, Qingyu Zhang, Yubo Wang, Jingcheng Ni, Shihang Gui, Congchao Dong, Tao Hu",
       "url": "https://huggingface.co/papers/2606.04291",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2606.04291"
       }
     },
@@ -68,13 +98,13 @@
       "title": "UnpredictaBench: A Benchmark for Evaluating Distributional Randomness in LLMs",
       "title_zh": "UnpredictaBench：评估LLM分布随机性的基准",
       "description": "We introduce UnpredictaBench, an evaluation that tests the ability of large language models (LLMs) to capture true underlying distributions. As LLMs are increasingly used as substitutes for other entities (e.g., for humans in economic simulations), the tendency of many models to collapse towards a single plausible answer means a failure to capture the unpredictability of real systems. Recent work on improving output diversity is insufficient for this setting: simulation requires samples that are calibrated to a target distribution, not merely varied outputs. UnpredictaBench isolates a simplified but fundamental version of this problem: sampling outcomes from individual target distributions, including canonical statistical distributions, distributions induced by stochastic programs, and natural-language scenarios that describe random processes. We introduce 448 such problems together with KS@N, a general-purpose evaluation metric that quantifies how well a model outputs approximate black-box target distributions via the Kolmogorov-Smirnov statistical test. This is the rate at which we fail to reject model samples of size N against ground-truth samples, with larger N indicating greater difficulty. Tested across open and proprietary models, we find a large spread in distributional capabilities. For instance, when models generate samples of size 100 (KS@100, our standard metric), scores range from near 0 to over 20%. No model is able to achieve over 40% at KS@100, showing significant headroom in distributional sampling as a capability. Although adding reasoning can somewhat increase scores, we find no immediate solution for this issue. UnpredictaBench shows that even simple distributional simulation remains challenging, making it a necessary first step toward using LLMs as stand-ins for complex systems.",
-      "description_zh": "我们引入了 UnpredictaBench，这是一种测试大型语言模型 (LLM) 捕获真实底层分布能力的评估。随着LLM越来越多地被用作其他实体的替代品（例如，经济模拟中的人类），许多模型倾向于单一合理的答案，这意味着无法捕捉真实系统的不可预测性。最近关于提高输出多样性的工作对于这种设置来说是不够的：模拟需要校准到目标分布的样本，而不仅仅是变化的输出。 UnpredictaBench 分离出了该问题的一个简化但基本的版本：从各个目标分布中采样结果，包括规范统计分布、随机程序引起的���布以及描述随机过程的自然语言场景。我们引入了 448 个此类问题以及 KS@N，这是一种通用评估指标，可通过 Kolmogorov-Smirnov 统计检验量化模型输出近似黑盒目标分布的程度。这是我们无法拒绝大小为 N 的模型样本与真实样本的比率，N 越大表示难度越大。通过开放和专有模型的测试，我们发现分发能力存在很大差异。例如，当模型生成大小为 100 的样本（KS@100，我们的标准指标）时，分数范围从接近 0 到超过 20%。没有任何模型能够在 KS@100 上实现超过 40%，这表明分布式采样作为一种能力具有巨大的空间。虽然添加推理可以在一定程度上提高分数，但我们没有找到立即解决此问题的方法。 UnpredictaBench 表明，即使是简单的分布式模拟仍然具有挑战性，这使其成为使用LLM作为复杂系统替代品的必要的第一步。",
+      "description_zh": "我们引入了 UnpredictaBench，这是一种测试大型语言模型 (LLM) 捕获真实底层分布能力的评估。随着LLM越来越多地被用作其他实体的替代品（例如，经济模拟中的人类），许多模型倾向于单一合理的答案，这意味着无法捕捉真实系统的不可预测性。最近关于提高输出多样性的工作对于这种设置来说是不够的：模拟需要校准到目标分布的样本，而不仅仅是变化的输出。 UnpredictaBench 分离出了该问题的一个简化但基本的版本：从各个目标分布中采样结果，包括规范统计分布、随机程序引起的��布以及描述随机过程的自然语言场景。我们引入了 448 个此类问题以及 KS@N，这是一种通用评估指标，可通过 Kolmogorov-Smirnov 统计检验量化模型输出近似黑盒目标分布的程度。这是我们无法拒绝大小为 N 的模型样本与真实样本的比率，N 越大表示难度越大。通过开放和专有模型的测试，我们发现分发能力存在很大差异。例如，当模型生成大小为 100 的样本（KS@100，我们的标准指标）时，分数范围从接近 0 到超过 20%。没有任何模型能够在 KS@100 上实现超过 40%，这表明分布式采样作为一种能力具有巨大的空间。虽然添加推理可以在一定程度上提高分数，但我们没有找到立即解决此问题的方法。 UnpredictaBench 表明，即使是简单的分布式模拟仍然具有挑战性，这使其成为使用LLM作为复杂系统替代品的必要的第一步。",
       "authors": "Amirhossein Abaskohi, Amirhossein Dabiriaghdam, Liang Luo, Ellie Dingqiao Wen, Lele Wang, Giuseppe Carenini, Peter West",
       "url": "https://huggingface.co/papers/2606.06622",
-      "score": 12,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
+        "upvotes": "13",
         "paperId": "2606.06622"
       }
     },
@@ -86,10 +116,10 @@
       "description_zh": "语言模型可以使用可验证的奖励来改进各种推理任务。然而，参数化（例如 RLVR）和非参数（例如即时优化）方法通常都需要数百个训练样本和数千个模型部署，这使得它们在最好的情况下成本高昂，在最坏的情况下也很棘手。为了应对这一挑战，我们引入了对比反射（CORE），这是一种非参数学习算法，可以比较过去的推理轨迹来生成见解：推理策略和约束的简短自然语言描述，捕获成功和不成功的问题尝试之间的差异。在四个推理任务中，我们证明了 CORE 比参数（GRPO）和非参数（GEPA、情景 RAG 和 MemRL）方法能够实现更快的改进，同时使用更少的部署。在固定的部署预算和最少五个训练样本的情况下，我们表明 CORE 也实现了与每个基准相当或更大的性能增益。最后，我们强调 CORE 比非参数基线如何显着提高上下文效率，需要更少的提示标记，同时将学到的知识存储为紧凑的、可解释的自然语言见解。因此，我们的结果表明，将成功和不成功的推理轨迹之间的对比提炼为抽象和有用的见解���可以为模型自我改进提供比权重更新、提示优化或直接重用存储的推理轨迹更有效和可解释的途径。",
       "authors": "Linas Nasvytis, Simon Jerome Han, Ben Prystawski, Satchel Grant, Noah D. Goodman, Judith E. Fan",
       "url": "https://huggingface.co/papers/2605.28742",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2605.28742"
       }
     },
@@ -128,7 +158,7 @@
       "title": "Reinforcement Learning from Rich Feedback with Distributional DAgger",
       "title_zh": "使用分布式 DAgger 从丰富反馈中进行强化学习",
       "description": "Reasoning models have advanced rapidly, but the dominant reinforcement learning from verifiable rewards (RLVR) recipe remains surprisingly narrow: sample many responses and reward each with a single bit indicating whether the final answer is correct. Yet many settings provide rich feedback, including execution traces, tool outputs, expert corrections, and model self-evaluations. We study how to use such feedback through a distributional variant of the classic imitation learning algorithm DAgger, where the learner has local access to an expert distribution on states visited by the current policy. This yields a simple forward cross-entropy objective that admits a blackbox expert and whose sequence-level gradient {conduct rich credit assignment by propagating} future expert-student disagreement back to earlier decisions. We show that prior RL with self-distillation objectives based on reverse KL or Jensen-Shannon fail to guarantee monotonic policy improvement: even when the expert has higher reward, their updates may increase probability on worse actions. In contrast, we show that forward cross-entropy admits monotonic policy improvement and enjoys guarantees on regret. We further show that our objective optimizes a lower bound on teacher-weighted likelihood of success, leading to improved Pass@N. Empirically, our approach, DistIL, improves over RLVR and RL with self-distillation baselines across a variety of domains: scientific reasoning, coding, and solving hard mathematical problems.",
-      "description_zh": "推理模型发展迅速，但来自可验证奖励 (RLVR) 的主要强化学习方法仍然令人惊讶地狭窄：对许多响应进行采样，并用单个位来奖励每个响应，以指示最终答案是否正确。然而，许多设置提供了丰富的反馈，包括执行跟踪、工具输出、专家修正和模型自我评估。我们研究如何通过经典模仿学习算法 DAgger 的分布变体来使用此类反馈，其中学习者可以在本地访问当前策略访问的状态的专家分布。这产生了一个简单的前向交叉熵目标，该目标接纳黑盒专家，并且其序列���梯度{通过传播}未来专家-学生分歧回到早期决策来进行丰富的信用分配。我们表明，基于反向 KL 或 Jensen-Shannon 的具有自蒸馏目标的先前 RL 无法保证单调策略改进：即使专家具有更高的奖励，他们的更新也可能会增加更糟糕行为的概率。相比之下，我们表明前向交叉熵承认单调政策改进并享有后悔的保证。我们进一步表明，我们的目标优化了教师加权成功可能性的下限，从而提高了 Pass@N。根据经验，我们的方法 DistIL 通过跨多个领域的自蒸馏基线改进了 RLVR 和 RL：科学推理、编码和解决数学难题。",
+      "description_zh": "推理模型发展迅速，但来自可验证奖励 (RLVR) 的主要强化学习方法仍然令人惊讶地狭窄：对许多响应进行采样，并用单个位来奖励每个响应，以指示最终答案是否正确。然而，许多设置提供了丰富的反馈，包括执行跟踪、工具输出、专家修正和模型自我评估。我们研究如何通过经典模仿学习算法 DAgger 的分布变体来使用此类反馈，其中学习者可以在本地访问当前策略访问的状态的专家分布。这产生了一个简单的前向交叉熵目标，该目标接纳黑盒专家，其序列级梯���{通过传播}未来专家与学生的分歧回到早期决策来进行丰富的信用分配。我们表明，基于反向 KL 或 Jensen-Shannon 的具有自蒸馏目标的先前 RL 无法保证单调策略改进：即使专家具有更高的奖励，他们的更新也可能会增加更糟糕行为的概率。相比之下，我们表明前向交叉熵承认单调政策改进并享有后悔的保证。我们进一步表明，我们的目标优化了教师加权成功可能性的下限，从而提高了 Pass@N。根据经验，我们的方法 DistIL 通过跨多个领域的自蒸馏基线改进了 RLVR 和 RL：科学推理、编码和解决数学难题。",
       "authors": "Rishabh Agrawal, Jacob Fein-Ashley, Paria Rashidinejad",
       "url": "https://huggingface.co/papers/2606.05152",
       "score": 3,
@@ -196,36 +226,6 @@
         "source": "huggingface",
         "upvotes": "2",
         "paperId": "2606.01838"
-      }
-    },
-    {
-      "id": "2605.29430",
-      "title": "Towards Human-Like Interactive Speech Recognition With Agentic Correction and Semantic Evaluation",
-      "title_zh": "通过代理校正和语义评估实现类人交互式语音识别",
-      "description": "Automatic speech recognition (ASR) is a core component of human--computer interaction and an increasingly important front-end for LLM-based assistants and agents. However, most current ASR systems still follow a single-pass paradigm, which is poorly aligned with human communication, where misunderstandings are resolved through iterative clarification and refinement. This mismatch makes it difficult to correct meaning-critical errors once they occur. Meanwhile, token-level metrics such as WER or CER cannot adequately reflect such a problem. To address these limitations, we formulate Interactive ASR as a multi-turn refinement task and propose Agentic ASR, a closed-loop framework that combines a single-pass ASR front-end with semantic correction, intent routing, and reasoning-based editing. We further introduce the Sentence-level Semantic Error Rate (S^2ER), an LLM-based semantic evaluation metric, together with an Interactive Simulation System for scalable and reproducible benchmarking. Experiments on multilingual, named-entity-intensive, and code-switching benchmarks show that iterative interaction consistently reduces semantic errors, with much larger gains in S^2ER than in conventional token-level metrics. Human--AI alignment and ablation studies further validate the reliability of the semantic judge and the robustness of the proposed framework. The code is available at: https://interactiveasr.github.io/ and the live demo is available at https://i-asr.sjtuxlance.com/",
-      "description_zh": "自动语音识别（ASR）是人机交互的核心组成部分，也是LLM助理和代理日益重要的前端。然而，当前大多数 ASR 系统仍然遵循单遍范式，这与人类交流不太一致，通过迭代澄清和细化来解决误解。这种不匹配使得意义关键错误一旦发生就很难纠正。同时，诸如WER或CER之类的代币级指标无法充分反映这样的问题。为了解决这些限制，我们将交互式 ASR 制定为多轮细化任务，并提出 Agentic ASR，这是一种闭环框架，它将单通道 ASR 前端��语义校正、意图路由和基于推理的编辑相结合。我们进一步介绍了句子级语义错误率（S^2ER），这是一种基于 LLM 的语义评估指标，以及用于可扩展和可重复基准测试的交互式模拟系统。对多语言、命名实体密集和代码转换基准的实验表明，迭代交互持续减少语义错误，S^2ER 的收益比传统令牌级指标大得多。人类-人工智能对齐和消融研究进一步验证了语义判断的可靠性和所提出框架的鲁棒性。代码位于：https://interactiveasr.github.io/，现场演示位于 https://i-asr.sjtuxlance.com/",
-      "authors": "Zixuan Jiang, Yanqiao Zhu, Peng Wang, Qinyuan Chen, Xinjian Zhao, Xipeng Qiu, Wupeng Wang, Zhifu Gao, Xiangang Li, Kai Yu, Xie Chen",
-      "url": "https://huggingface.co/papers/2605.29430",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2605.29430"
-      }
-    },
-    {
-      "id": "2606.04525",
-      "title": "GENEB: Why Genomic Models Are Hard to Compare",
-      "title_zh": "GEEB：为什么基因组模型难以比较",
-      "description": "Progress in genomic foundation models is difficult to assess due to fragmented benchmarks, incompatible evaluation protocols, and task-specific reporting. As a result, claims of superiority or generality across models are often not directly comparable. We introduce GENEB, a large-scale diagnostic benchmark that evaluates frozen representations from 40 genomic foundation models across 100 tasks spanning 13 functional categories under a unified probing-based protocol, including few-shot regimes. GENEB enables controlled comparison across model scale, architecture, tokenization, and pretraining data while explicitly exposing task-level trade-offs. Our analysis shows that aggregate leaderboards are unstable: model rankings vary sharply across task categories, scale provides only modest and inconsistent gains, and architectural and pretraining alignment frequently outweigh parameter count. These results highlight limitations of current evaluation practices and position GENEB as a reference framework for principled comparison and category-aware model selection in genomic machine learning.",
-      "description_zh": "由于基准分散、评估协议不兼容和特定于任务的报告，基因组基础模型的进展很难评估。因此，跨模型的优越性或通用性主张通常无法直接比较。我们引入了 GEEB，这是一个大规模诊断基准，可在统一的基于探测的协议（包括少样本方案）下评估跨 13 个功能类别的 100 个任务中 40 个基因组基础模型的冻结表示。 GEEB 可以在模型规模、架构、标记化和预训练数据之间进行受控比较，同时明确暴露任务级别的权衡。我们的分析表明，总体排行榜不稳定：不同任务类别的模型排名差异很大，规模仅提供适度且不一致的收益，架构和预训练的一致性经常超过参数数量。这些结果凸显了当前评估实践的局限性，并将 GEEB 定位为基因组机器学习中原则性比较和类别感知模型选择的参考框架。",
-      "authors": "Daria Ledneva, Mikhail Nuridinov, Denis Kuznetsov",
-      "url": "https://huggingface.co/papers/2606.04525",
-      "score": 42,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "42",
-        "paperId": "2606.04525"
       }
     }
   ]
