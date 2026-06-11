@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-06-10T21:37:24.506Z",
+  "updatedAt": "2026-06-11T21:36:50.064Z",
   "count": 15,
   "items": [
+    {
+      "id": "apple-container",
+      "title": "container",
+      "title_zh": "container",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "description_zh": "一种在 Mac 上使用轻量级虚拟机创建和运行 Linux 容器的工具。它是用 Swift 编写的，并针对 Apple 芯片进行了优化。",
+      "authors": "apple",
+      "url": "https://github.com/apple/container",
+      "score": 32121,
+      "meta": {
+        "source": "github",
+        "stars": "32,121",
+        "language": "Swift",
+        "repo": "apple/container",
+        "owner": "apple",
+        "repoName": "container"
+      }
+    },
     {
       "id": "addyosmani-agent-skills",
       "title": "agent-skills",
@@ -11,14 +29,32 @@
       "description_zh": "AI 编码代理的生产级工程技能。",
       "authors": "addyosmani",
       "url": "https://github.com/addyosmani/agent-skills",
-      "score": 51540,
+      "score": 54508,
       "meta": {
         "source": "github",
-        "stars": "51,540",
+        "stars": "54,508",
         "language": "Shell",
         "repo": "addyosmani/agent-skills",
         "owner": "addyosmani",
         "repoName": "agent-skills"
+      }
+    },
+    {
+      "id": "maziyarpanahi-openmed",
+      "title": "openmed",
+      "title_zh": "openmed",
+      "description": "open-source healthcare ai",
+      "description_zh": "开源医疗保健人工智能",
+      "authors": "maziyarpanahi",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "score": 2710,
+      "meta": {
+        "source": "github",
+        "stars": "2,710",
+        "language": "Python",
+        "repo": "maziyarpanahi/openmed",
+        "owner": "maziyarpanahi",
+        "repoName": "openmed"
       }
     },
     {
@@ -29,10 +65,10 @@
       "description_zh": "PM 技能市场：100 多种代理技能、命令和插件 - 从发现到策略、执行、启动和增长。",
       "authors": "phuryn",
       "url": "https://github.com/phuryn/pm-skills",
-      "score": 14704,
+      "score": 16140,
       "meta": {
         "source": "github",
-        "stars": "14,704",
+        "stars": "16,140",
         "language": "Mixed",
         "repo": "phuryn/pm-skills",
         "owner": "phuryn",
@@ -40,39 +76,21 @@
       }
     },
     {
-      "id": "refactoringhq-tolaria",
-      "title": "tolaria",
-      "title_zh": "tolaria",
-      "description": "Desktop app to manage markdown knowledge bases",
-      "description_zh": "用于管理 Markdown 知识库的桌面应用程序",
-      "authors": "refactoringhq",
-      "url": "https://github.com/refactoringhq/tolaria",
-      "score": 14852,
+      "id": "NVIDIA-SkillSpector",
+      "title": "SkillSpector",
+      "title_zh": "SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "description_zh": "AI 代理技能的安全扫描器。检测漏洞、恶意模式和安全风险。",
+      "authors": "NVIDIA",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "score": 2569,
       "meta": {
         "source": "github",
-        "stars": "14,852",
-        "language": "TypeScript",
-        "repo": "refactoringhq/tolaria",
-        "owner": "refactoringhq",
-        "repoName": "tolaria"
-      }
-    },
-    {
-      "id": "mvanhorn-last30days-skill",
-      "title": "last30days-skill",
-      "title_zh": "last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "description_zh": "AI 代理技能可研究 Reddit、X、YouTube、HN、Polymarket 和网络上的任何主题，然后综合得出有根据的摘要",
-      "authors": "mvanhorn",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "score": 38984,
-      "meta": {
-        "source": "github",
-        "stars": "38,984",
+        "stars": "2,569",
         "language": "Python",
-        "repo": "mvanhorn/last30days-skill",
-        "owner": "mvanhorn",
-        "repoName": "last30days-skill"
+        "repo": "NVIDIA/SkillSpector",
+        "owner": "NVIDIA",
+        "repoName": "SkillSpector"
       }
     },
     {
@@ -83,10 +101,10 @@
       "description_zh": "🕵️‍♂️ 从 3000 多个网站按用户名收集某人的档案",
       "authors": "soxoj",
       "url": "https://github.com/soxoj/maigret",
-      "score": 31945,
+      "score": 32553,
       "meta": {
         "source": "github",
-        "stars": "31,945",
+        "stars": "32,553",
         "language": "Python",
         "repo": "soxoj/maigret",
         "owner": "soxoj",
@@ -101,14 +119,32 @@
       "description_zh": "完整增强代码、Claude Code、Cluely、CodeBuddy、Comet、Cursor、Devin AI、Junie、Kiro、Leap.new、Lovable、Manus、NotionAI、Orchids.app、Perplexity、Poke、Qoder、Replit、Same.dev、Trae、Traycer AI、VSCode Agent、Warp.dev、Windsurf、Xcode、Z.ai Code、Dia 和 v0。 （和其他开源）系统提示、内部工具和人工智能模型",
       "authors": "x1xhlol",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "score": 139483,
+      "score": 139837,
       "meta": {
         "source": "github",
-        "stars": "139,483",
+        "stars": "139,837",
         "language": "Mixed",
         "repo": "x1xhlol/system-prompts-and-models-of-ai-tools",
         "owner": "x1xhlol",
         "repoName": "system-prompts-and-models-of-ai-tools"
+      }
+    },
+    {
+      "id": "refactoringhq-tolaria",
+      "title": "tolaria",
+      "title_zh": "tolaria",
+      "description": "Desktop app to manage markdown knowledge bases",
+      "description_zh": "用于管理 Markdown 知识库的桌面应用程序",
+      "authors": "refactoringhq",
+      "url": "https://github.com/refactoringhq/tolaria",
+      "score": 15351,
+      "meta": {
+        "source": "github",
+        "stars": "15,351",
+        "language": "TypeScript",
+        "repo": "refactoringhq/tolaria",
+        "owner": "refactoringhq",
+        "repoName": "tolaria"
       }
     },
     {
@@ -119,14 +155,50 @@
       "description_zh": "有效的代理技能框架和软件开发方法。",
       "authors": "obra",
       "url": "https://github.com/obra/superpowers",
-      "score": 223520,
+      "score": 224731,
       "meta": {
         "source": "github",
-        "stars": "223,520",
+        "stars": "224,731",
         "language": "Shell",
         "repo": "obra/superpowers",
         "owner": "obra",
         "repoName": "superpowers"
+      }
+    },
+    {
+      "id": "restic-restic",
+      "title": "restic",
+      "title_zh": "restic",
+      "description": "Fast, secure, efficient backup program",
+      "description_zh": "快速、安全、高效的备份程序",
+      "authors": "restic",
+      "url": "https://github.com/restic/restic",
+      "score": 34127,
+      "meta": {
+        "source": "github",
+        "stars": "34,127",
+        "language": "Go",
+        "repo": "restic/restic",
+        "owner": "restic",
+        "repoName": "restic"
+      }
+    },
+    {
+      "id": "msitarzewski-agency-agents",
+      "title": "agency-agents",
+      "title_zh": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "description_zh": "触手可及的完整人工智能机构 - 从前端向导到 Reddit 社区忍者，从奇思妙想的注入者到现实检查者。每个代理都是一位具有个性、流程和经过验证的可交付成果的专业专家。",
+      "authors": "msitarzewski",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "score": 111452,
+      "meta": {
+        "source": "github",
+        "stars": "111,452",
+        "language": "Shell",
+        "repo": "msitarzewski/agency-agents",
+        "owner": "msitarzewski",
+        "repoName": "agency-agents"
       }
     },
     {
@@ -137,10 +209,10 @@
       "description_zh": "用于绕过审查的高级 DNS 隧道 VPN，经过优化，超越 DNSTT 和 SlipStream，具有低开销 ARQ、解析器负载平衡、高丢包稳定性和速度。",
       "authors": "masterking32",
       "url": "https://github.com/masterking32/MasterDnsVPN",
-      "score": 5142,
+      "score": 5645,
       "meta": {
         "source": "github",
-        "stars": "5,142",
+        "stars": "5,645",
         "language": "Go",
         "repo": "masterking32/MasterDnsVPN",
         "owner": "masterking32",
@@ -148,129 +220,57 @@
       }
     },
     {
-      "id": "harry0703-MoneyPrinterTurbo",
-      "title": "MoneyPrinterTurbo",
-      "title_zh": "MoneyPrinterTurbo",
-      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-      "description_zh": "利用AI大模型，一键生成高清短视频 利用AI LLM一键生成短视频。",
-      "authors": "harry0703",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "score": 84903,
+      "id": "chatwoot-chatwoot",
+      "title": "chatwoot",
+      "title_zh": "chatwoot",
+      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "description_zh": "开源实时聊天、电子邮件支持、全渠道服务台。 Intercom、Zendesk、Salesforce Service Cloud 等的替代品。🔥💬",
+      "authors": "chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "score": 30309,
       "meta": {
         "source": "github",
-        "stars": "84,903",
-        "language": "Python",
-        "repo": "harry0703/MoneyPrinterTurbo",
-        "owner": "harry0703",
-        "repoName": "MoneyPrinterTurbo"
+        "stars": "30,309",
+        "language": "Ruby",
+        "repo": "chatwoot/chatwoot",
+        "owner": "chatwoot",
+        "repoName": "chatwoot"
       }
     },
     {
-      "id": "maziyarpanahi-openmed",
-      "title": "openmed",
-      "title_zh": "openmed",
-      "description": "open-source healthcare ai",
-      "description_zh": "开源医疗保健人工智能",
-      "authors": "maziyarpanahi",
-      "url": "https://github.com/maziyarpanahi/openmed",
-      "score": 2252,
+      "id": "kenn-io-agentsview",
+      "title": "agentsview",
+      "title_zh": "agentsview",
+      "description": "Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!",
+      "description_zh": "针对编码代理的本地优先会话智能和分析，支持 Claude Code、Codex 和 20 多个其他代理。另外：替换 ccusage 的速度加快 100 倍！",
+      "authors": "kenn-io",
+      "url": "https://github.com/kenn-io/agentsview",
+      "score": 1586,
       "meta": {
         "source": "github",
-        "stars": "2,252",
-        "language": "Python",
-        "repo": "maziyarpanahi/openmed",
-        "owner": "maziyarpanahi",
-        "repoName": "openmed"
+        "stars": "1,586",
+        "language": "Go",
+        "repo": "kenn-io/agentsview",
+        "owner": "kenn-io",
+        "repoName": "agentsview"
       }
     },
     {
-      "id": "luongnv89-claude-howto",
-      "title": "claude-howto",
-      "title_zh": "claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "description_zh": "克劳德代码的可视化、示例驱动指南 - 从基本概念到高级代理，以及可带来即时价值的复制粘贴模板。",
-      "authors": "luongnv89",
-      "url": "https://github.com/luongnv89/claude-howto",
-      "score": 36490,
+      "id": "alchaincyf-zhangxuefeng-skill",
+      "title": "zhangxuefeng-skill",
+      "title_zh": "zhangxuefeng-skill",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "description_zh": "张雪峰.skill — 张雪峰的认知网络。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "authors": "alchaincyf",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "score": 7923,
       "meta": {
         "source": "github",
-        "stars": "36,490",
-        "language": "Python",
-        "repo": "luongnv89/claude-howto",
-        "owner": "luongnv89",
-        "repoName": "claude-howto"
-      }
-    },
-    {
-      "id": "activeloopai-hivemind",
-      "title": "hivemind",
-      "title_zh": "hivemind",
-      "description": "One brain for all your agents",
-      "description_zh": "一个大脑适合所有代理",
-      "authors": "activeloopai",
-      "url": "https://github.com/activeloopai/hivemind",
-      "score": 785,
-      "meta": {
-        "source": "github",
-        "stars": "785",
-        "language": "TypeScript",
-        "repo": "activeloopai/hivemind",
-        "owner": "activeloopai",
-        "repoName": "hivemind"
-      }
-    },
-    {
-      "id": "ruvnet-RuView",
-      "title": "RuView",
-      "title_zh": "RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "description_zh": "π RuView 将商用 WiFi 信号转化为实时空间智能、生命体征监测和存在检测 - 所有这些都无需视频像素。",
-      "authors": "ruvnet",
-      "url": "https://github.com/ruvnet/RuView",
-      "score": 72840,
-      "meta": {
-        "source": "github",
-        "stars": "72,840",
-        "language": "Rust",
-        "repo": "ruvnet/RuView",
-        "owner": "ruvnet",
-        "repoName": "RuView"
-      }
-    },
-    {
-      "id": "roboflow-supervision",
-      "title": "supervision",
-      "title_zh": "supervision",
-      "description": "We write your reusable computer vision tools. 💜",
-      "description_zh": "我们为您编写可重复使用的计算机视觉工具。 💜",
-      "authors": "roboflow",
-      "url": "https://github.com/roboflow/supervision",
-      "score": 43524,
-      "meta": {
-        "source": "github",
-        "stars": "43,524",
-        "language": "Python",
-        "repo": "roboflow/supervision",
-        "owner": "roboflow",
-        "repoName": "supervision"
-      }
-    },
-    {
-      "id": "google-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Agent Skills for Google products and technologies",
-      "description_zh": "Google 产品和技术的代理技能",
-      "authors": "google",
-      "url": "https://github.com/google/skills",
-      "score": 13231,
-      "meta": {
-        "source": "github",
-        "stars": "13,231",
-        "language": "Python",
-        "repo": "google/skills",
-        "owner": "google",
-        "repoName": "skills"
+        "stars": "7,923",
+        "language": "Mixed",
+        "repo": "alchaincyf/zhangxuefeng-skill",
+        "owner": "alchaincyf",
+        "repoName": "zhangxuefeng-skill"
       }
     }
   ]
