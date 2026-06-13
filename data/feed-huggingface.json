@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-06-12T21:18:47.603Z",
+  "updatedAt": "2026-06-13T20:51:15.405Z",
   "count": 15,
   "items": [
     {
@@ -8,7 +8,7 @@
       "title": "On the Limits of LLM Adaptability: Impact of Model-Internalized Priors on Annotation Task Performance",
       "title_zh": "关于 LLM 适应性的限制：模型内化先验对注释任务性能的影响",
       "description": "Large Language Models (LLMs) are increasingly used for zero-shot annotation and LLM-as-a-judge tasks, yet their reliability hinges on how model-internalized priors interact with user-provided instructions. We investigate three dimensions of this interaction: (1) how an LLM's familiarity with data and task definitions affects performance, (2) the extent to which additional information in prompts can correct zero-shot errors (\"decision stickiness\"), and (3) model susceptibility to misaligned task definitions. Through experiments on toxicity detection across diverse datasets (spanning social media, gaming, news, and forums) using both dense and mixture-of-experts models, we find that nearly two-thirds of zero-shot errors are resistant to correction, with an overall rescue rate (fraction of initial errors corrected by prompting) of only 34.8%. High-confidence errors prove especially resistant to correction. When given misaligned definitions, LLMs follow them while maintaining confidence levels unchanged from the aligned condition. Crucially, we introduce Definition-Specific Familiarity (DSF), which measures alignment between a model's internal concept and the task definition. After controlling for dataset-level confounds, DSF shows a positive association with model performance (partial r = +0.41), while three distinct memorization metrics (ROUGE-L, BERTScore, and embedding cosine similarity) all fail to show a positive association. These findings show the limitations of prompt-based correction in annotation tasks, highlighting the importance of definition alignment over text-level memorization.",
-      "description_zh": "大型语言模型 (LLM) 越来越多地用于零样本注释和 LLM 作为法官的任务，但其可靠性取决于模型内化先验如何与用户提供的指令交互。我们研究了这种交互的三个维度：(1) LLM对数据和任务定义的熟悉程度如何影响绩效，(2) 提示中的附加信息可以在多大程度上纠正零样本错误（“决策粘性”），以及 (3) 模型对任务定义不一致的敏感性。通过使用密集模型和混合专家模型对不同数据集（涵盖社交媒体、游戏、新闻和论坛）进行毒性检测实验，我们发现近三分之二的零样本错误难以纠正，总体救援率（通过提示纠正初始错误的比例）仅为 34.8%。事实证明，高置信度错误特别难以纠正。当给出不一致的定义时，LLM会遵循这些定义，同时保持一致条件下的置信水平不变。至关重要的是，我们引入了特定定义熟悉度（DSF），它衡量模型内部概念与任务定义之间的一致性。在控制数据集级别的混杂因素后，DSF 显示与模型性能呈正相关（部分 r = +0.41），而三个不同的记忆指标（ROUGE-L、BERTScore 和嵌入余弦相似度）均未能显示出正��关。这些发现显示了注释任务中基于提示的纠正的局限性，强调了定义对齐相对于文本级记忆的重要性。",
+      "description_zh": "大型语言模型 (LLM) 越来越多地用于零样本注释和 LLM 作为法官的任务，但其可靠性取决于模型内化先验如何与用户提供的指令交互。我们研究了这种交互的三个维度：(1) LLM对数据和任务定义的熟悉程度如何影响绩效，(2) 提示中的附加信息可以在多大程度上纠正零样本错误（“决策粘性”），以及 (3) 模型对任务定义不一致的敏感性。通过使用密集模型和混合专家模型对不同数据集（涵盖社交媒体、游戏、新闻和论坛）进行毒性检测实验，我们发现近三分之二的零样本错误难以纠正，总体救援率（通过提示纠正初始错误的比例）仅为 34.8%。事实证明，高置信度错误特别难以纠正。当给出不一致的定义时，LLM会遵循这些定义，同时保持一致条件下的置信水平不变。至关重要的是，我们引入了特定定义熟悉度（DSF），它衡量模型内部概念与任务定义之间的一致性。在控制数据集级别的混杂因素后，DSF 显示与模型性能呈正相关（部分 r = +0.41），而三个不同的记忆指标（ROUGE-L、BERTScore 和嵌入余弦相似度）均未能显示出正相关。这些发现显示了注释任务中基于提示的纠正的局限性，强调了定义对齐相对于文本级记忆的重要性。",
       "authors": "Etienne Casanova, Rafal Kocielnik, R. Michael Alvarez",
       "url": "https://huggingface.co/papers/2606.00467",
       "score": 0,
@@ -23,13 +23,13 @@
       "title": "Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior",
       "title_zh": "重新思考LLM的心理评估：自我报告何时以及为何能够预测行为",
       "description": "Anticipating LLM behavioral tendencies from low-cost psychometric probes is critical for safe deployment, but only if self-reports (SR) reliably predict behavior. Recent work documented substantial SR-behavior dissociation in LLMs, but relied on broad personality traits (Big 5) that predict specific behaviors weakly, even in humans. Furthermore, the isolation of conversational sessions combined with weak context matching left open whether LLMs truly lack coherence or whether the conditions needed to detect such coherence were not met. We contrast Big 5 with the Theory of Planned Behavior (TPB), which measures intention targeted to a specific behavior and predicts human behavior substantially better than broad traits. We run experiments across four behavioral tasks and 11 frontier LLMs, while also varying session context and identity induction. We find that SR-behavior coherence exists but is selective. 1) Within a shared conversation, the Theory of Planned Behavior reaches human-level coherence; Big 5 does not. 2) Across separate conversations, coherence survives only for behaviors anchored outside the immediate prompt, such as implicit bias shaped by training, and collapses when behavior is strongly primed by context, as with sycophancy. 3) Persona prompting makes self-reports more consistent across conversations, but does not bring behavior into alignment. These findings suggest that coarse personality frameworks, such as Big 5 may not be the best tools for testing deployment behavior. More task- and behavior-specific instruments are needed, and even these must be evaluated across tasks and contexts.",
-      "description_zh": "通过低成本心理测量探针预测 LLM 行为倾向对于安全部署至关重要，但前提是自我报告 (SR) 能够可靠地预测行为。最近的研究记录了LLM中存在大量的 SR 行为分离，但依赖于广泛的人格特征（Big 5），这些特征对特定行为的预测能力很弱，即使在人类中也是如此。此外，会话会话的隔离与弱上下文匹配相结合，导致LLM是否确实缺乏连贯性，或者是否未满足检测这种连贯性所需的条件。我们将“五巨头”与计划行为理论 (TPB) 进行对比，后者衡量针对特定行为的意图，并比广泛特征更好地预测人类行为。我们对 4 个行为任务和 11 个前沿LLM进行了实验，同时还改变了会话背景和身份诱导。我们发现 SR 行为一致性是存在的，但是是有选择性的。 1）在共享对话中，计划行为理论达到了人类水平的连贯性； 5大没有。 2）在单独的对话中，只有在直接提示之外的行为中才能保持连贯性，例如训练形成的隐性偏见，而当行为受到上下文的强烈影响时，例如阿谀奉承，连贯性就会崩溃。 3) 角色提示使自我报告在对话中更加一致，但不会使行为保持一致。这些发现表明，粗略的个性框架（例如 Big 5）可能不是测试部署行为的最佳工具。需要更多特定于任务和行为的工具，甚至这些工具也必须跨任务和上下文进行评估。",
+      "description_zh": "通过低成本心理测量探针预测 LLM 行为倾向对于安全部署至关重要，但前提是自我报告 (SR) 能够可靠地预测行为。最近的研究记录了LLM中存在大量的 SR 行为分离，但依赖于广泛的人格特征（Big 5），这些特征对特定行为的预测能力很弱，即使在人类中也是如此。此外，会话会话的隔离与弱上下文匹配相结合，导致LLM是否确实缺乏连贯性，或者是否未满足检测这种连贯性所需的条件。我们将“五巨头”与计划行为理论 (TPB) 进行对比，后者衡量针对特定行为的意图，并比广泛特征更好地预测人类��为。我们对 4 个行为任务和 11 个前沿LLM进行了实验，同时还改变了会话背景和身份诱导。我们发现 SR 行为一致性是存在的，但是是有选择性的。 1）在共享对话中，计划行为理论达到了人类水平的连贯性； 5大没有。 2）在单独的对话中，只有在直接提示之外的行为中才能保持连贯性，例如训练形成的隐性偏见，而当行为受到上下文的强烈影响时，例如阿谀奉承，连贯性就会崩溃。 3) 角色提示使自我报告在对话中更加一致，但不会使行为保持一致。这些发现表明，粗略的个性框架（例如 Big 5）可能不是测试部署行为的最佳工具。需要更多特定于任务和行为的工具，甚至这些工具也必须跨任务和上下文进行评估。",
       "authors": "Rafal Kocielnik, Pengrui Han, Peiyang Song, Myrl G. Marmarelis, Ramit Debnath, Dean Mobbs, Anima Anandkumar, R. Michael Alvarez",
       "url": "https://huggingface.co/papers/2606.12730",
-      "score": 1,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "5",
         "paperId": "2606.12730"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "多代理系统主要通过文本进行通信，从而付出有损且昂贵的解码和重新编码成本。 KV 缓存通信是一种有前途的替代方案，但大多数先前的工作都是同质的，使用同一模型的重复副本，并避免了跨模型潜在对齐的核心挑战；现有的异构方法也具有限制性，通常假设共享输入并主要使用传输的缓存进行引导。我们研究一个更基本的问题：异构智能体是否可以足够好地对齐以执行真正的“读心术”并传输一个智能体所看到的内容和它的想法？我们的信息结构分析揭示了一种二元性：上下文感知传输是由稀疏推理信号驱动的，而上下文无感知传输（接收者看不到输入）需要密集的上下文知识保存。受此启发，我们提出通过轻量级跨模型缓存转换和两阶段训练（重建和生成）对异构 KV 缓存通信进行密集对齐。在 {Qwen3-4B, 8B, 14B} 的所有六个方向以及六个域内和域外基准测试中，我们的方法优于先前的异构基线，以大约 2 到 3 倍的低计算量匹配或超过上下文感知设置中的文本通信，并且在先前方法崩溃的上下文无感知传输中保持有效。",
       "authors": "Siyi Chen, Xiaoyan Zhang, Meng Wu, Jonathan Tremblay, Valts Blukis, Stan Birchfield, Rene Vidal, Alvaro Velasquez, Sijia Liu, Qing Qu",
       "url": "https://huggingface.co/papers/2606.13594",
-      "score": 1,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "3",
         "paperId": "2606.13594"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "交互式LLM代理正在成为日常工作的一部分，但随着时间的推移，他们并不会变得更容易合作：在一个会话中记住的更正可能在下一个会话中仍然会被违反。我们研究偏好访问和偏好遵从之间的差距。在源自匿名真实用户摩擦案例的任务中，Mem0 内存仍然导致 57.5% 的适用偏好检查遭到违反。我们引入了测试时规则获取和编译执行（TRACE），这是一个用于编码代理运行时的插入式技能层管道，它挖掘用户更正，将它们重写为原子规则，并将它们编译成运行时检查，这些检查必须在代理完成未来任务之前通过。与开发人员提前编写的运行时检查不同，TRACE 技能来自用户自己的聊天更正。我们通过 ClawArena 编码代理任务和 MemoryArena 衍生的内存密集型任务的模拟用户循环实验来评估 TRACE。在 ClawArena 上，TRACE 将分布内任务的保留偏好违规从 100.0% 减少到 37.6%，将分布外任务的保留偏好违规从 100.0% 减少到 2.0%。在 MemoryArena 派生的任务上，TRACE 将分布违规从 100.0% 减少到 60.5%，同时匹配或超过任务传递时最强的内存基线。这些结果表明，将修正编译到运行时强制中可以解决仅靠内存无法可靠解决的重复摩擦故障模式，从而减少用户在未来会话中重述相同修正的需要。实验代码可在 https://github.com/YujunZhou/TRACE_exp 获取，可部署技能可在 https://github.com/YujunZhou/tellonce 获取。",
       "authors": "Yujun Zhou, Kehan Guo, Haomin Zhuang, Xiangqi Wang, Yue Huang, Zhenwen Liang, Pin-Yu Chen, Tian Gao, Nuno Moniz, Nitesh V. Chawla, Xiangliang Zhang",
       "url": "https://huggingface.co/papers/2606.13174",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2606.13174"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "自主网络导航对于 LLM 代理来说仍然具有挑战性，最强大的通才系统依赖于专有推理模型，其推理成本对于此类代理最有用的重复任务来说是令人望而却步的。我们认为，这种差距并非源于模型能力不足，而是源于代理架构未能复制人类的三个认知优势：对相关页面区域的选择性关注、网站结构的持久记忆以及常见交互模式的程序流畅性。我们引入了 WebChallenger，这是一个 Web 代理框架，它通过架构设计而不是模型规模来解决每个差距，它围绕 PageMem 构建：一种从 DOM 确定性构建的结构化页面表示，将每个页面公开为具有简短摘要的语义部分的层次结构。在这个共享的基础上，我们构建了三种机制，反映了三种认知优势：分而治之的观察管道，让智能体浏览部分摘要并仅从任务相关区域提取细节；一个轻量级的探索和记忆系统，遍历每个网站一次，构建可重用的页面和元素行为地图；以及复合操作工作流程，将常见的多​​步骤交互折叠为单个代理操作，自动处理部分状态更改。由于这三个框架都通过 PageMem 运行，因此该框架可以跨网站通用，无需特定于站点的适配器。使用现成的开放权重模型，无需进行微调，我们的系统在 WebArena 上实现了 56.3%，在 VisualWebArena 上实现了 48.7%，在 Online-Mind2Web 上实现了 51.0%，在 WorkArena 上实现了 70.9%，以极低的成本接近前沿专有系统。我们的代码发布于 https://github.com/jayoohwang1/webchallenger",
       "authors": "Jayoo Hwang, Xiaowen Zhang, Vedant Padwal",
       "url": "https://huggingface.co/papers/2606.10423",
-      "score": 0,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "2",
         "paperId": "2606.10423"
       }
     },
@@ -86,10 +86,10 @@
       "description_zh": "工具调用 LLM 代理在整个对话过程中是否同样安全？我们发现事实并非如此：代理在会话开始时最容易受到攻击，而在执行一些常规代理任务后会变得更加安全——我们将这种现象称为冷启动安全差距。为了系统地研究这个问题，我们引入了代理安全深度 (SODA)，这是一个基准，用于控制代理在遇到安全威胁之前完成多少常规代理任务，最多支持 20 个前述任务。评估 4 个系列的 7 个模型，随着前面的常规代理任务数量从 0 增加到 20，安全性提高了 9--52%。表示分析证实，随着更多先前任务的出现，模型隐藏状态逐渐转向安全对齐区域。通过系统地研究前面对话的哪一部分最重要，我们发现常规代理任务本身是安全的主要驱动因素，而代理自己的先前响应对安全的影响较小，但对于保留以后的效用至关重要。对开源安全基准（AgentHarm、Agent Safety Bench）和实用程序基准（BFCL、API-Bank）的评估进一步支持了这一结论，证实在部署之前通过常规代理任务预热代理可以使其更安全并保留全部功能。基于这些发现，我们建议采用一种简单的部署策略：让代理在可能暴露于安全关键请求之前完成一些常规代理任务，以减轻冷启动安全差距。我们的代码位于 https://github.com/Trustworthy-ML-Lab/Agent-Cold-Start-Safety-Gap",
       "authors": "Chung-En Sun, Linbo Liu, Tsui-Wei Weng",
       "url": "https://huggingface.co/papers/2606.07867",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2606.07867"
       }
     },
@@ -98,13 +98,13 @@
       "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
       "title_zh": "压力下的风险：语言模型中对抗性鲁棒性的计算感知评估",
       "description": "Adversarial robustness evaluations of large language models (LLMs) typically report attack success rate (ASR) under fixed query budgets, implicitly treating all attacks as equally costly. In practice, the computational expense of different attack strategies can vary by orders of magnitude. Consequently, ASR at a fixed budget can obscure the true effort required to jailbreak a model, thereby making it hard to determine whether an attack's cost justifies its payoff to the attacker. We propose a compute-aware evaluation framework based on computational pressure, measured in cumulative floating-point operations (FLOPs), as a proxy for adversarial effort. We introduce risk-compute curves, which map compute budgets to attack risk, and derive two metrics that summarize the average pressure required for a given attack to succeed. Across ten models spanning three families and four different stages in language model training and alignment, evaluated with three attack strategies (gradient-based, iterative refinement, and template-based) on two jailbreak robustness benchmarks, we find: (1) alignment training has non-monotonic effects on compute-space robustness; (2) scaling model size reduces gradient-based attack effectiveness but has limited impact on cheaper template-based attacks; (3) gradient-based attacks optimized on a surrogate model can transfer to a separate target model, providing a way to reduce attacker costs; (4) compute cost varies by up to {approx}5{times} across harm categories within a single model; and (5) safety-aligned RL increases aggregate cost while leaving some categories disproportionately accessible. We release our framework to enable compute-aware risk assessment and evaluation.",
-      "description_zh": "大型语言模型 (LLM) 的对抗性鲁棒性评估通常会报告固定查询预算下的攻击成功率 (ASR)，隐式地将所有攻击视为同等成本。在实践中，不同攻击策略的计算开销可能有几个数量级的差异。因此，固定预算的 ASR 可能会掩盖越狱模型所需的真正努力，从而难以确定攻击的成本是否值得攻击者获得回报。我们提出了一种基于计算压力的计算感知评估框架，以累积浮点运算（FLOP）来衡量，作为对抗性努力的代表。我们引入了风险计算曲线，将计算预算映射到攻击风险，并得出两个指标来总结给定攻击成功所需的平均压力。在跨越三个家族和语言模型训练和对齐的四个不同阶段的十个模型中，在两个越狱鲁棒性基准上使用三种攻击策略（基于梯度、迭代细化和基于模板）进行评估，我们发现：（1）对齐训练对计算空间鲁棒性具有非单调影响； (2) 缩放模型大小会降低基于梯度的攻击有效性，但对更便宜的基于模板的攻击影响有限； （3）在代理模型上优化的基于梯度的攻击可以转移到单独的目标模型，提供一种降低攻击者成本的方法； (4) 单个模型中不同危害类别的计算成本差异高达 {大约}5{倍}； (5) 与安全相关的强化学习增加了总成本，同时导致某些类别的访问不成比例。我们发布了框架来实现计算感知的风险评估和评价。",
+      "description_zh": "大型语言模型 (LLM) 的对抗性鲁棒性评估通常会报告固定查询预算下的攻击成功率 (ASR)，隐式地将所有攻击视为同等成本。在实践中，不同攻击策略的计算开销可能有几个数量级的差异。因此，固定预算的 ASR 可能会掩盖越狱模型所需的真正努力，从而难以确定攻击的成本是否值得攻击者获得回报。我们提出了一种基于计算压力的计算感知评估框架，以累积浮点运算（FLOP）来衡量，作为对抗性努力的代理。我们引入了风险计算曲线，将计算预算映射到攻击风险，并得出两个指标来总结给定攻击成功所需的平均压力。在跨越三个家族和语言模型训练和对齐的四个不同阶段的十个模型中，在两个越狱鲁棒性基准上使用三种攻击策略（基于梯度、迭代细化和基于模板）进行评估，我们发现：（1）对齐训练对计算空间鲁棒性具有非单调影响； (2) 缩放模型大小会降低基于梯度的攻击有效性，但对更便宜的基于模板的攻击影响有限； （3）在代理模型上优化的基于梯度的攻击可以转移到单独的目标模型，提供一种降低攻击者成本的方法； (4) 单个模型中不同危害类别的计算成本差异高达 {大约}5{倍}； (5) 与安全相关的强化学习增加了总成本，同时导致某些类别的访问不成比例。我们发布了框架来实现计算感知的风险评估和评价。",
       "authors": "Malikeh Ehghaghi, Boglárka Ecsedi, Marsha Chechik, Colin Raffel",
       "url": "https://huggingface.co/papers/2606.11409",
-      "score": 7,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
+        "upvotes": "8",
         "paperId": "2606.11409"
       }
     },
@@ -113,13 +113,13 @@
       "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
       "title_zh": "ToolSense：用于审核LLM参数化工具知识的诊断框架",
       "description": "Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce ToolSense, an open-source LLM-powered diagnostic framework that takes any tool catalog as input and automatically generates three benchmarks: a Realistic Retrieval Benchmark (RRB) with queries at three ambiguity tiers, an MCQ probing benchmark, and a QA probing benchmark. Applying ToolSense to ToolBench (~47k tools) and evaluating five parametric model training configurations reveals a knowledge-retrieval dissociation: on RRB queries, several configurations collapse by ~50-64 percentage points compared to fully-specified ToolBench benchmarks, falling below the embedding-model baseline. Additionally, despite strong retrieval performance, some models score near-random on factual probes, suggesting a knowledge-retrieval dissociation. We open-source the ToolSense framework and the ToolBench diagnostic benchmarks at https://github.com/SAP/toolsense.",
-      "description_zh": "作为大型工具目录上的代理部署的大型语言模型面临着关键的工具检索瓶颈。由于基于嵌入的检索方法依赖于可能无法捕获专门工具语义的紧凑编码器，因此参数化工具检索通过将每个工具编码为附加到 LLM 词汇表的虚拟标记来解决此问题，并在两个阶段（记忆然后检索 SFT）进行微调以使用 LLM 作为检索器，从而在标准 ToolBench 检索基准上实现强大的性能。然而，这些基准测试使用详细、完全指定的查询，并且它们的评估应用了约束解码，将输出限制为有效的令牌路径，两者都没有揭示模型是否真正理解其工具。我们推出了 ToolSense，这是一个由 LLM 支持的开源诊断框架，它可以将任何工具目录作为输入，并自动生成三个基准：具有三个歧义层查询的现实检索基准 (RRB)、MCQ 探测基准和 QA 探测基准。将 ToolSense 应用于 ToolBench（约 47k 工具）并评估五种参数模型训练配置揭示了知识检索分离：在 RRB 查询上，与完全指定的 ToolBench 基准相比，几种配置崩溃了约 50-64 个百分点，低于嵌入模型基线。此外，尽管检��性能很强，但一些模型在事实调查上的得分接近随机，这表明知识检索分离。我们在 https://github.com/SAP/toolsense 开源了 ToolSense 框架和 ToolBench 诊断基准。",
+      "description_zh": "作为大型工具目录上的代理部署的大型语言模型面临着关键的工具检索瓶颈。由于基于嵌入的检索方法依赖于可能无法捕获专门工具语义的紧凑编码器，因此参数化工具检索通过将每个工具编码为附加到 LLM 词汇表的虚拟标记来解决此问题，并在两个阶段（记忆然后检索 SFT）进行微调以使用 LLM 作为检索器，从而在标准 ToolBench 检索基准上实现强大的性能。然而，这些基准测试使用详细、完全指定的查询，并且它们的评估应用了约束解码，将输出限制为有效的令牌路径，两者都没有揭示模型是否真正理解其工具。我们推出了 ToolSense，这是一个由 LLM 支持的开源诊断框架，它可以将任何工具目录作为输入，并自动生成三个基准：具有三个歧义层查询的现实检索基准 (RRB)、MCQ 探测基准和 QA 探测基准。将 ToolSense 应用于 ToolBench（约 47k 工具）并评估五种参数模型训练配置揭示了知识检索分离：在 RRB 查询上，与完全指定的 ToolBench 基准相比，几种配置崩溃了约 50-64 个百分点，低于嵌入模型基线。此外，尽管检索性能很强，但一些模型在事实调查上的得分接近随机，这表明知识检索分离。我们在 https://github.com/SAP/toolsense 开源了 ToolSense 框架和 ToolBench 诊断基准。",
       "authors": "Ashutosh Hathidara, Sai Shruthi Sistla, Sebastian Schreiber, Sahil Bansal",
       "url": "https://huggingface.co/papers/2606.12451",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2606.12451"
       }
     },
@@ -128,13 +128,13 @@
       "title": "A Stationary (and Therefore Compatible) Representation is All You Need",
       "title_zh": "您只需要一个固定（因此兼容）的表示形式",
       "description": "Learning compatible representations aims to learn feature representations that can be used interchangeably over time whenever a model undergoes updates. In this paper, we demonstrate that stationary representations learned by d-Simplex fixed classifiers imply compatibility as in its formal definition. This result establishes a foundation for future works and can be directly exploited in practical learning scenarios. We address the challenge of learning compatibility using d-Simplex fixed classifiers when the model is sequentially fine-tuned. Learning according to a d-Simplex fixed classifier with the cross-entropy loss aligns feature distributions at the first-order statistics. Consequently, it may not fully capture higher-order dependencies in the representation between model updates. To address this issue, we demonstrate that training the model using a d-Simplex fixed classifier through a convex combination of the cross-entropy loss and a contrastive loss not only captures higher-order dependencies, but is also equivalent to learning with the cross-entropy under the compatibility constraints. We confirm our findings with extensive experiments also considering a new scenario where a pre-trained model is sequentially fine-tuned and occasionally replaced with an improved model. We show that stationary representations enable uninterrupted retrieval services (without reprocessing gallery images) while improving performance during model updates and replacements, achieving state-of-the-art. Code at https://github.com/miccunifi/iamcl2r.",
-      "description_zh": "学习兼容表示的目的是学习在模型进行更新时可以随着时间的推移互换使用的特征表示。在本文中，我们证明了 d-Simplex 固定分类器学习的固定表示意味着其形式定义中的兼容性。该结果为未来的工作奠定了基础，可以直接在实际学习场景中利用。当模型依次微调时，我们使用 d-Simplex 固定分类器解决了学习兼容性的挑战。根据带有交叉熵损失的 d-Simplex 固定分类器进行学习，将特征分布对齐到一阶统计量。因此，它可能无法完全捕获模型更新之间表示中的高阶依赖关系。为了解决这个问题，我们证明了通过交叉熵损失和对比损失的凸组合使用 d-Simplex 固定分类器训练模型不仅可以捕获高阶依赖关系，而且还相当于在兼容性约束下使用交叉熵进行学习。我们通过广泛的实验证实了我们的发现，还考虑了一种新的场景，其中预先训练的模型被顺序微调，并且偶尔被改进的模型替换。我们表明，固定表示可以实现不间断的检索服务（无需重新处理图库图像），同时提高模型更新和替换期间的性能，实现最先进的性能。代码位于 https://github.com/miccunifi/iamcl2r。",
+      "description_zh": "学习兼容表示的目的是学习在模型进行更新时可以随着时间的推移互换使用的特征表示。在本文中，我们证明了 d-Simplex 固定分类器学习的固定表示意味着其形式定义中的兼容性。该结果为未来的工作奠定了基础，可以直接在实际学习场景中利用。当模型依次微调时，我们使用 d-Simplex 固定分类器解决了学习兼容性的挑战。根据具有交叉熵损失的 d-Simplex 固定分类器进行学习，可以在一阶统计量上对齐特征分布。因此，它可能无法完全捕获模型更新之间表示中的高阶依赖关系。为了解决这个问题，我们证明了通过交叉熵损失和对比损失的凸组合使用 d-Simplex 固定分类器训练模型不仅可以捕获高阶依赖关系，而且还相当于在兼容性约束下使用交叉熵进行学习。我们通过广泛的实验证实了我们的发现，还考虑了一种新的场景，其中预先训练的模型被顺序微调，并且偶尔被改进的模型替换。我们表明，固定表示可以实现不间断的检索服务（无需重新处理图库图像），同时提高模型更新和替换期间的性能，实现最先进的性能。代码位于 https://github.com/miccunifi/iamcl2r。",
       "authors": "Niccolò Biondi, Federico Pernici, Simone Ricci, Alberto Del Bimbo",
       "url": "https://huggingface.co/papers/2606.12488",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2606.12488"
       }
     },
@@ -158,13 +158,13 @@
       "title": "Where, What, Why, and Importance: Structured Defect Grounding for Text-to-Image Feedback",
       "title_zh": "地点、内容、原因和重要性：文本到图像反馈的结构化缺陷接地",
       "description": "Despite generating increasingly photorealistic images, text-to-image (T2I) models still exhibit localized, subtle, and structurally complex failures. Diagnosing these failures requires instance-level feedback that answers where a defect occurs, what type it is, why it is defective, and its importance to overall image quality. While recent dense-feedback methods move beyond scalar supervision, their heatmap-centric representations still formulate diagnosis as pixel-field regression, making it difficult to localize variable-cardinality defects and bind semantic reasons to individual failures. To address this representation bottleneck, we propose Structured Defect Grounding (SDG), which casts T2I diagnosis as structured set prediction by modeling each defect as a (location, type, reason, importance) tuple. To make this formulation trainable and measurable, we introduce SDG-30K, a 30K-image dataset with box-grounded annotations across four modern T2I generators, together with a dedicated evaluation protocol, SDG-Eval. Building on this structured representation, we further present a diagnosis-to-alignment framework in which a Vision-Language Model (VLM) serves as the SDG detector, and BoxFlow-GRPO converts predicted defect sets into box-derived, importance-weighted spatial rewards for diffusion model alignment. Extensive experiments show that our SDG detector outperforms leading proprietary VLMs on structured defect grounding, while SDG-guided rewards consistently improve T2I alignment and support localized image refinement. These results establish SDG as a unified, instance-level interface for diagnosing, evaluating, and enhancing modern generative models.",
-      "description_zh": "尽管生成的图像越来越逼真，但文本到图像 (T2I) 模型仍然表现出局部、微妙且结构复杂的故障。诊断这些故障需要实例级反馈来回答缺陷发生的位置、缺陷类型、缺陷原因及其对整体图像质量的重要性。虽然最近的密集反馈方法超越了标量监督，但它们以热图为中心的表示仍然将诊断制定为像素场回归，这使得定位变量基数缺陷并将语义原因与个体故障联系起来变得困难。为了解决这个表示瓶颈，我们提出了结构化缺陷基础（SDG），它将 T2I 诊断转换为结构化集��测，通过将每个缺陷建模为（位置、类型、原因、重要性）元组。为了使这个公式可训练和可测量，我们引入了 SDG-30K，这是一个 30K 图像数据集，在四个现代 T2I 生成器中带有基于框的注释，以及专用的评估协议 SDG-Eval。在此结构化表示的基础上，我们进一步提出了一个诊断到对齐框架，其中视觉语言模型（VLM）充当 SDG 检测器，BoxFlow-GRPO 将预测的缺陷集转换为盒派生的、重要性加权的空间奖励，以进行扩散模型对齐。大量实验表明，我们的 SDG 探测器在结构化缺陷接地方面优于领先的专有 VLM，而 SDG 引导的奖励持续改进 T2I 对准并支持局部图像细化。这些结果将 SDG 确立为一个统一的实例级接口，用于诊断、评估和增强现代生成模型。",
+      "description_zh": "尽管生成的图像越来越逼真，但文本到图像 (T2I) 模型仍然表现出局部、微妙且结构复杂的故障。诊断这些故障需要实例级反馈来回答缺陷发生的位置、缺陷类型、缺陷原因及其对整体图像质量的重要性。虽然最近的密集反馈方法超越了标量监督，但它们以热图为中心的表示仍然将诊断制定为像素场回归，这使得定位变量基数缺陷并将语义原因与个体故障联系起来变得困难。为了解决这个表示瓶颈，我们提出了结构化缺陷基础（SDG），它将 T2I 诊断转换为结构化集预测，通过将每个缺陷建模为（位置、类型、原因、重要性）元组。为了使这个公式可训练和可测量，我们引入了 SDG-30K，这是一个 30K 图像数据集，在四个现代 T2I 生成器中带有基于框的注释，以及专用的评估协议 SDG-Eval。在此结构化表示的基础上，我们进一步提出了一个诊断到对齐框架，其中视觉语言模型（VLM）充当 SDG 检测器，BoxFlow-GRPO 将预测的缺陷集转换为盒派生的、重要性加权的空间奖励，以进行扩散模型对齐。大量实验表明，我们的 SDG 探测器在结构化缺陷接地方面优于领先的专有 VLM，而 SDG 引导的奖励持续改进 T2I 对准并支持局部图像细化。这些结果将 SDG 确立为一个统一的实例级接口，用于诊断、评估和增强现代生成模型。",
       "authors": "Huaisong Zhang, Hao Yu, Yuxuan Zhang, Jiahe Wang, Xinrui Chen, Haoxiang Cao, Feng Lu, Wendong Zhang, Changqian Yu, Chun Yuan",
       "url": "https://huggingface.co/papers/2606.06113",
-      "score": 12,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
+        "upvotes": "13",
         "paperId": "2606.06113"
       }
     },
@@ -176,10 +176,10 @@
       "description_zh": "我们周围都是各种带有可移动、铰接部件的物体，例如盒子、把手、门。对铰接部件的准确且可概括的感知对于增强机器人操纵能力至关重要。基于这一需求，最近在铰接部件感知方面的努力遵循了两个主要方向：一项工作使用基于姿势的表示，这需要较高的人工成本；与此同时，基于可供性的方法可以从点跟踪中提取未来的对象运动，无需额外的手动操作，但会受到低质量数据的影响。在本文中，我们提出了一种铰接零件的新表示形式，即几何主结构（GPS），它是零件几何结构的抽象，以平衡可扩展性和质量。为了实现高效且可扩展的数据收集，GPS 与便携式虚拟现实 (VR) 设备集成，只需一分钟即可注释一个对象序列。这种直接的人工注释提供了比估计的可供性更高的质量。借助这个高效的 VR-GPS 系统，我们收集了 6 个部分类别的 234 个对象的 41K 帧，并使用单个 RGB-D 对象图像作为输入来训练通用 GPS 模型。对于对象操作，我们部署了基于 GPS 预测的启发式策略。在没有任何域内微调的情况下，我们的方法实现了 73% 的成功率，覆盖了 9 个对象的 270 个初始状态。我们的代码、数据和可重用工具可在 https://enlighten0707.github.io/gps 上获取。",
       "authors": "Xiaoqian Wu, Yejie Guo, Xiaoyang Chen, Lixin Yang, Cewu Lu, Yong-Lu Li",
       "url": "https://huggingface.co/papers/2606.08103",
-      "score": 0,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "2",
         "paperId": "2606.08103"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "多模态图像融合旨在将来自不同模态的互补信息集成到融合图像中，从而保留丰富的局部细节，同时保持全局一致的外观。现有方法在 2D 特征网格上构建共享表示，该方法擅长对局部结构进行建模，但对图像级全局外观因素的影响有限。为了平衡这些目标，我们引入了一个基于冻结预训练图像标记器的紧凑一维标记接口，用于对非局部外观/基本因素进行建模。我们的设计没有使用标记器作为重建主干，而是使用一维标记空间作为全局载体，同时保留用于局部结构恢复的二维空间路径。具体来说，我们引入了选择性令牌编辑（STE），它稀疏地更新/替换一小组关键令牌，提供一种轻量级机制来引导全局外观一致性，同时保持融合主干不变并避免额外损失。对四个常用基准的实验表明，我们的方法实现了最佳的整体性能，在全局一致性和局部保真度方面具有一致的多指标改进。项目页面：https://zju-xyc.github.io/1D-Fusion-Project-Page/",
       "authors": "Yuchen Xian, Yunqiu Xu, Yang He, Yi Yang",
       "url": "https://huggingface.co/papers/2606.12303",
-      "score": 10,
+      "score": 12,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "12",
         "paperId": "2606.12303"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "整体视觉分词器是统一多模态模型 (UMM) 的基础，因为它们将不同的视觉输入映射到统一的表示空间中。在本文中，我们提出了 HYDRA-X，这是第一个在单个 Vision Transformer (ViT) 中统一图像和视频标记化的 UMM。我们的设计由两个核心挑战驱动：有效地将时空重建能力注入原生 ViT，并将图像和视频级语义感知嵌入到潜在空间中。为了解决第一个问题，综合消融揭示了两个关键发现：（1）帧级因果时间注意力足以进行视觉重建，而完全时空注意力会降低视觉重建能力； (2)分层时间压缩大大优于单步替代方案。为了解决第二个问题，我们提出了一种轻量级解压缩器，可以在图像-视频教师联合监督下对时间压缩的特征进行上采样，从而在紧凑的潜在空间内强制执行互补的语义结构。在这个整体分词器的基础上，我们进一步提出了编辑流程的原则性改进：源-目标交互应该发生在分词器内部的潜在级别，而不是LLM内部的语义级别，从而大大提高编辑一致性并加速收敛。 HYDRA-X 在 7B 密集模型上实例化，在图像和视频理解和生成任务中实现了强大的性能，为未来的统一标记器 UMM 铺平了道路。",
       "authors": "Guozhen Zhang, Xuerui Qiu, Yutao Cui, Tianhui Song, Changlin Li, Junzhe Li, Tao Huang, Xiao Zhang, Yang Li, Jianbing Wu, Miles Yang, Zhao Zhong, Liefeng Bo, Limin Wang",
       "url": "https://huggingface.co/papers/2606.13289",
-      "score": 23,
+      "score": 25,
       "meta": {
         "source": "huggingface",
-        "upvotes": "23",
+        "upvotes": "25",
         "paperId": "2606.13289"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "推测性解码（SD）通过让轻量级起草者为大型验证者生成候选者以并行验证来解决LLM的高推理成本。现有的草稿验证方法使用二元决策：接受或完全重新计算。然而，我们发现许多被拒绝的令牌可以通过通过模型内路由从完整验证器派生的细长子模型（而不是完整验证器）来正确验证。这促使我们的 slim-verifier 处理需要适度验证资源的令牌，从而减少昂贵的大型模型调用。我们提出了通过模型内路由进行推测性解码（VIA-SD）的验���，这是一种使用路由 slim 验证器的多层框架。草稿代币是分层处理的：高置信度情况下直接接受，中等置信度情况下进行瘦验证器再生，不确定情况下进行全模型验证。在四个代表性任务和多个模型系列中，VIA-SD 将拒绝率降低了 0.10-0.22，并在强大的 SD 基线上提供了 10-20% 的加速，同时实现了比非草稿解码 2.5-3 倍的加速。此外，VIA-SD与现有的SD框架兼容，无需修改其训练程序。我们的结果表明多层 SD 作为可扩展且高效的 LLM 推理的通用范例。项目页面：https://zju-xyc.github.io/VIA-SD-Project-Page/",
       "authors": "Yuchen Xian, Yang He, Yunqiu Xu, Yi Yang",
       "url": "https://huggingface.co/papers/2606.12243",
-      "score": 11,
+      "score": 14,
       "meta": {
         "source": "huggingface",
-        "upvotes": "11",
+        "upvotes": "14",
         "paperId": "2606.12243"
       }
     }
