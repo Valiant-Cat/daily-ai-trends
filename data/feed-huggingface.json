@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-06-19T20:53:47.256Z",
+  "updatedAt": "2026-06-20T20:52:24.115Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "客户服务域中遵守策略的工具调用代理必须在调用工具并遵守域策略的同时保持轮流任务状态。任务状态由通过用户交互和工具调用观察到的相关事实、标识符、约束和条件组成。在标准代理中，任务状态不会单独表示。观察、工具返回和策略指令都放在提示中，让代理在每次决定下一步做什么时根据提示重建相关状态。这种设计使状态管理变得隐式，从而创建了两种常见的故障模式。代理可能会检索到正确的事实，但随后会根据陈旧、丢失或不正确的信息做出决定；并且语法上有效的工具调用仍然可能违反取决于当前任务状态的域策略。我们引入了 LedgerAgent，这是一种用于工具调用代理的推理时间方法，它在单独的分类帐中维护观察到的任务状态并将状态呈现到提示中。该账本还用于在执行环境改变工具调用之前检查与状态相关的策略约束，从而阻止策略违规。在四个客户服务领域以及开放式和封闭式权重模型的混合面板中，LedgerAgent 比标准的基于提示的工具调用方法提高了平均通过率，在更严格的多试验一致性指标下获得了最大的收益。",
       "authors": "Md Nayem Uddin, Amir Saeidi, Eduardo Blanco, Chitta Baral",
       "url": "https://huggingface.co/papers/2606.20529",
-      "score": 3,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "5",
         "paperId": "2606.20529"
       }
     },
@@ -23,13 +23,13 @@
       "title": "Context-Aware RL for Agentic and Multimodal LLMs",
       "title_zh": "适用于代理和多模式LLM的情境感知强化学习",
       "description": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that improves long-horizon reasoning and multimodal performance through an indirect auxiliary objective. Instead of supervising only the final answer, ContextRL presents the model with a query, an answer, and two highly similar contexts, and rewards it for selecting the context that supports the query--answer pair, thereby encouraging fine-grained grounding. We construct contrastive context data in two domains: for coding agents, trajectories serve as contexts, yielding 1k pairs built via condition filtering; for multimodal reasoning, images serve as contexts, yielding 7K pairs built via generative editing and similarity search. ContextRL achieves average gains of +2.2% over standard GRPO on 5 long-horizon benchmarks, and +1.8% across 12 diverse visual question answering benchmarks. To disentangle the effect of the proposed objective from that of additional data, we compare against data-augmentation baselines that repurpose the same contrastive contexts as standard query--context--answer examples. These baselines provide little to no improvement, showing that the gains arise from the proposed context-selection objective rather than from the contrastive data alone.",
-      "description_zh": "当回答需要在较长或复杂的上下文中识别小但决定性的证据时（例如工具轨迹中的单行或图像中的微妙细节），大型语言模型 (LLM) 常常会失败。我们提出了 ContextRL，一种上下文感知强化学习（RL）方法，可通过间接辅助目标提高长视野推理和多模态性能。 ContextRL 不是只监督最终答案，而是向模型提供一个查询、一个答案和两个高度相似的上下文，并奖励它选择支持查询-答案对的上下文，从而鼓励细粒度的基础。我们在两个领域构建对比上下文数据：对于编码代理，轨迹充当上下文，通过条件过滤生成 1k 对；对于多模态推理，图像充当上下文，通过生成编辑和相似性搜索生成 7K 对。 ContextRL 在 5 个长期基准测试中比标准 GRPO 平均增益 +2.2%，在 12 个不同的视觉问答基准测试中平均增益 +1.8%。为了将所提出的目标的效果与附加数据的效果分开，我们与数据增强基线进行比较，该基线将相同的对比上下文重新用作标准查询-上下文-答案示例。这些基线几乎没有提供任何改进，表明收益来自所提出的上下文选择目标，而不是仅来自对比数据。",
+      "description_zh": "当回答需要在较长或复杂的上下文中识别小但决定性的证据时（例如工具轨迹中的单行或图像中的微妙细节），大型语言模型 (LLM) 常常会失败。我们提出了 ContextRL，一种上下文感知强化学习（RL）方法，可通过间接辅助目标提高长视野推理和多模态性能。 ContextRL 不是只监督最终答案，而是向模型提供一个查询、一个答案和两个高度相似的上下文，并奖励它选择支持查询-答案对的上下文，从而鼓励细粒度的基础。我们在两��领域构建对比上下文数据：对于编码代理，轨迹充当上下文，通过条件过滤生成 1k 对；对于多模态推理，图像充当上下文，通过生成编辑和相似性搜索生成 7K 对。 ContextRL 在 5 个长期基准测试中比标准 GRPO 平均增益 +2.2%，在 12 个不同的视觉问答基准测试中平均增益 +1.8%。为了将所提出的目标的效果与附加数据的效果分开，我们与数据增强基线进行比较，该基线将相同的对比上下文重新用作标准查询-上下文-答案示例。这些基线几乎没有提供任何改进，表明收益来自所提出的上下文选择目标，而不是仅来自对比数据。",
       "authors": "Peiyang Xu, Bangzheng Li, Sijia Liu, Karthik R. Narasimhan, Pramod Viswanath, Prateek Mittal, Xingyu Fu",
       "url": "https://huggingface.co/papers/2606.17053",
-      "score": 4,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "8",
         "paperId": "2606.17053"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "法律人工智能的进步越来越依赖于大规模获取权威法律文本。然而，美国法律最重要的层面之一在现有的机器可读语料库中仍然基本上缺失：地方法规。地方法规管辖分区、住房、商业许可、公共卫生、噪音、动物控制和许多其他日常监管领域，但它们分散在专为人类浏览而不是批量研究访问而设计的供应商平台上。我们引入 LOCUS - 美国地方条例语料库 - 美国市和县条例代码的综合语料库和县统一访问层。可供研究人员发布的原始语料库代表了几乎所有公开的市县法令。生成的原始语料库包含来自 9,239 个市县的代码。较小的县统一 LOCUS 接入层覆盖美国 3,144 个县中最大的 2,309 个县，占人口的大多数。我们使用 OCR 来处理无数阻碍法律成为公共资源的文档格式。我们发布包含覆盖元数据的语料库，以支持可重复性、下游法律人工智能研究以及机器可读访问当地法律的增量扩展。我们训练了一系列基于 ModernBERT 的分类器和评分器，以便于从多个维度（例如不透明性和家长作风）分析美国当地法律，这些维度以前从未进行过如此规模的研究。 LOCUS-v1 及其衍生模型可在以下网址获取：https://huggingface.co/datasets/LocalLaws/LOCUS-v1",
       "authors": "Denis Peskoff, Joe Barrow, Christopher Vu, Diag Davenport",
       "url": "https://huggingface.co/papers/2606.19334",
-      "score": 2,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "5",
         "paperId": "2606.19334"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "现有的示例编程 (PBE) 系统通常依赖于简化的基准，而这些基准无法捕获现实世界正则表达式的高结构复杂性，例如更深的嵌套和频繁使用联合操作。为了克服由此带来的性能下降，我们提出了 ReSyn，这是一种与合成器无关的分治框架，可将复杂的合成问题分解为可管理的子问题。我们还引入了 Set2Regex，一个参数高效的合成器，捕获示例的排列不变性。实验结果表明，ReSyn 显着提高了各种合成器的准确性，并且它与 Set2Regex 的结合在具有挑战性的现实世界基准上建立了新的最先进技术。完整的源代码、数据集和预训练的模型检查点可在 https://github.com/mrseongminkim/ReSyn 上公开获取。",
       "authors": "Seongmin Kim, Hyunjoon Cheon, Su-Hyeon Kim, Yo-Sub Han, Sang-Ki Ko",
       "url": "https://huggingface.co/papers/2603.24624",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2603.24624"
       }
     },
@@ -68,13 +68,13 @@
       "title": "LegalHalluLens: Typed Hallucination Auditing and Calibrated Multi-Agent Debate for Trustworthy Legal AI",
       "title_zh": "LegalHalluLens：类型化幻觉审计和校准多代理辩论，打造值得信赖的法律人工智能",
       "description": "AI systems deployed in legal workflows hallucinate at rates that aggregate metrics report at ~52%, but this average conceals where errors concentrate and in which direction they run, leaving compliance officers without an actionable signal for trustworthy deployment. We present LegalHalluLens, an auditing framework with three components: typed hallucination profiles across four legally-motivated claim categories (numeric, temporal, obligation/entitlement, factual) over CUAD (Hendrycks et al., 2021); a Risk Direction Index (RDI) that reduces omission-versus-invention bias to a single deployment-comparable scalar; and a typed debate pipeline calibrated to both magnitudes and directions. Across 510 contracts and 249,252 clause-level instances we measure a within-model gap of approximately 38-40 pp between obligation/numeric and temporal claims that aggregate reporting hides, and show that two systems with matched 52% rates can carry opposite RDIs. The debate pipeline reduces fabricated detections by 45% with per-category gains tracking the diagnosis, matching commercial APIs with a substantially smaller backbone (4B active parameters). Typed profiles and RDI surface failure modes that aggregate metrics hide; we further show these diagnostics serve as calibration inputs for multi-agent debate pipelines, where Skeptic challenges and asymmetric gates targeted at measured failure modes outperform generically-tuned debate. The framework supports direction-aware procurement, accountability, and agent design for legal AI deployed in the wild.",
-      "description_zh": "部署在法律工作流程中的人工智能系统的幻觉率总计为 52%，但这一平均值掩盖了错误集中的位置以及错误的运行方向，使合规官员无法获得可信赖部署的可操作信号。我们提出了 LegalHalluLens，这是一个包含三个组成部分的审计框架：跨 CUAD 的四个法律驱动的索赔类别（数字、时间、义务/权利、事实）的打字幻觉概况（Hendrycks 等人，2021）；风险方向指数（RDI），将遗漏与发明偏差减少到单个部署可比标量；以及根据幅度和方向进行校准的类型化辩��管道。在 510 份合同和 249,252 个条款级实例中，我们测量了聚合报告隐藏的义务/数字和临时索赔之间大约 38-40 pp 的模型内差距，并表明具有匹配 52% 比率的两个系统可以进行相反的 RDI。辩论管道将伪造的检测减少了 45%，每个类别的增益跟踪诊断，将商业 API 与更小的主干网（4B 活动参数）相匹配。聚合指标隐藏的类型化配置文件和 RDI 表面故障模式；我们进一步表明，这些诊断可以作为多智能体���论管道的校准输入，其中针对测量的故障模式的怀疑论挑战和不对称门优于一般调整的辩论。该框架支持在野外部署的合法人工智能的方向感知采购、问责制和代理设计。",
+      "description_zh": "部署在法律工作流程中的人工智能系统的幻觉率总计为 52%，但这一平均值掩盖了错误集中的位置以及错误的运行方向，使合规官员无法获得可信赖部署的可操作信号。我们提出了 LegalHalluLens，这是一个包含三个组成部分的审计框架：跨 CUAD 的四个法律动机索赔类别（数字、时间、义务/权利、事实）的打字幻觉概况（Hendrycks 等人，2021）；风险方向指数（RDI），将遗漏与发明偏差减少到单个部署可比标量；以及根据大小和方向进行校准的类型化辩论��道。在 510 份合同和 249,252 个条款级实例中，我们测量了聚合报告隐藏的义务/数字和临时索赔之间大约 38-40 pp 的模型内差距，并表明具有匹配 52% 比率的两个系统可以进行相反的 RDI。辩论管道将伪造的检测减少了 45%，每个类别的增益跟踪诊断，将商业 API 与更小的主干网（4B 活动参数）相匹配。聚合指标隐藏的类型化配置文件和 RDI 表面故障模式；我们进一步表明，这些诊断可以作为多智能体辩���管道的校准输入，其中针对测量的故障模式的怀疑论挑战和不对称门优于一般调整的辩论。该框架支持在野外部署的合法人工智能的方向感知采购、问责制和代理设计。",
       "authors": "Lalit Yadav, Akshaj Gurugubelli",
       "url": "https://huggingface.co/papers/2606.18021",
-      "score": 1,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "3",
         "paperId": "2606.18021"
       }
     },
@@ -83,13 +83,13 @@
       "title": "Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why",
       "title_zh": "使用 Agentic RAG 提取可配置的临床信息：什么有效、什么无效以及原因",
       "description": "Patient contexts span hundreds of heterogeneous documents and thousands of structured data points, yet the document-level metadata that AI systems need for retrieval and triage is absent or incomplete. Standard retrieval-augmented generation fails on this data, mishandling temporal reasoning, cross-document dependencies, and missing metadata. We deploy ACIE (Agentic Clinical Information Extraction) at University Medicine Essen: an on-premise agentic RAG pipeline that reasons over complete patient contexts and grounds every answer in source passages for clinician verification. We quantify the metadata gap, trace the architectural decisions it shaped, and evaluate extraction alongside an independent retrospective lymphoma registry study, in which nuclear-medicine physicians verify every extracted value against its cited sources. Across 7,326 judgments, clinicians accepted 96.5\\% of extractions, with per-type acceptance ranging from 80\\% to 99\\%.",
-      "description_zh": "患者上下文跨越数百个异构文档和数千个结构化数据点，但人工智能系统检索和分类所需的文档级元数据不存在或不完整。标准检索增强生成在此数据上失败，错误处理时间推理、跨文档依赖性和丢失元数据。我们在埃森大学医学院部署了 ACIE（代理临床信息提取）：一个本地代理 RAG 管道，可以对完整的患者背景进行推理，并根据源段落中的每个答案进行临床医生验证。我们量化元数据差距，追踪其形成的架构决策，并与独立的回顾性淋巴瘤登记研究一起评估提取，其中核医学医生对照其引用的来源验证每个提取的值。在 7,326 项判断中，临床医生接受了 96.5% 的拔牙，每种类型的接受程度从 80% 到 99% 不等。",
+      "description_zh": "患者上下文跨越数百个异构文档和数千个结构化数据点，但人工智能系统检索和分类所需的文档级元数据不存在或不完整。标准检索增强生成在此数据上失败，错误处理时间推理、跨文档依赖性和丢失元数据。我们在埃森大学医学院部署了 ACIE（代理临床信息提取）：一个本地代理 RAG 管道，可以对完整的患者背景进行推理，并根据源段落中的每个答案进行临床医生验证。我们量化元数据差距，追踪其形成的架构决策，并与独立的回顾性淋巴瘤登记研究一起评估提取，其中核���学医生对照其引用的来源验证每个提取的值。在 7,326 项判断中，临床医生接受了 96.5% 的拔牙，每种类型的接受程度从 80% 到 99% 不等。",
       "authors": "Osman Alperen Çinar-Koraş, Marie Bauer, Sameh Khattab, Merlin Engelke, Moon Kim, Stephan Settelmeier, Shigeyasu Sugawara, Fabian Freisleben, Felix Nensa, Jens Kleesiek",
       "url": "https://huggingface.co/papers/2606.19602",
-      "score": 0,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "3",
         "paperId": "2606.19602"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "深度学习的理论与实践之间存在巨大差距。泛化和近似误差界限通常是针对简化模型得出的，或者过于宽松而无法提供信息。许多依赖于流形假设和几何规律，例如内在尺寸、曲率和范围。进步需要深入了解数据流形几何和合适的基准，但现有选项是两极分化的：具有已知几何但适用性有限的分析流形，或几何只能粗略估计的现实世界数据集。我们引入了一个用于研究数据几何的基准测试框架。我们通过额外的变换维度和密集的轴对齐采样重新调整和扩展 dSprites 和 COIL-20，并将它们与有限差分估计器配对，在通用估计器不可靠或难以部署的情况下，以接近地面真实精度恢复曲率、范围和体积。该框架旨在作为受控测试台，可用作几何估计器的校准环境和用于探测理论假设的沙箱。为了说明其用途，我们提出了两项​​应用研究，即评估 Genovese 等人的边界的缩放行为。和 Fefferman 等人，并跟踪 β-VAE 的分层几何结构，强调当前边界的行为以及受控基准对于指导和验证未来理论的价值。\n  参考实现可在 https://github.com/koulakis/manifold-microscope 获取。",
       "authors": "Marios Koulakis, Constantin Seibold",
       "url": "https://huggingface.co/papers/2606.15760",
-      "score": 0,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "2",
         "paperId": "2606.15760"
       }
     },
@@ -113,13 +113,13 @@
       "title": "The FID Lottery: Quantifying Hidden Randomness in Generative-Model Evaluation",
       "title_zh": "FID 彩票：量化生成模型评估中隐藏的随机性",
       "description": "The Frechet Inception Distance (FID) is the de facto arbiter of image generation, yet most papers report just a single number from a single trained model using a single sampling seed. How reproducible is that number if we retrain the model, or merely resample from it? In this paper, we treat FID as a random variable on a two-axis panel of training and generation seeds, and measure its variance directly on several hundred SiT networks trained on class-conditional ImageNet 256x256. We report surprising findings: (a) Retraining the model using the same recipe with a different seed moves FID 3.2x more (in Inception feature space) than redrawing samples from a fixed network. (b) That gap is driven by three factors: random initialisation, data ordering, and the per-step Gaussian noise of the flow-matching loss. (c) Increasing compute or model size barely tightens the spread, holding the FID coefficient of variation (CoV) inside a 1-2% band. (d) Per-cell classifier-free-guidance tuning halves the spread but reshuffles which seeds work best, and a lucky training seed reaches the same FID with up to 2x less compute than an unlucky one. Based on these findings, we recommend a new FID evaluation protocol: evaluate under per-cell optimal guidance, treat any FID gap below the empirically measured ~1.3% CoV as inconclusive, and report an error bar over several training seeds rather than a single FID number.",
-      "description_zh": "Frechet 起始距离 (FID) 是图像生成事实上的仲裁者，但大多数论文仅报告使用单个采样种子的单个训练模型的单个数字。如果我们重新训练模型，或者仅仅从中重新采样，这个数字的可重复性如何？在本文中，我们将 FID 视为训练和生成种子两轴面板上的随机变量，并直接在数百个在类条件 ImageNet 256x256 上训练的 SiT 网络上测量其方差。我们报告了令人惊讶的发现：(a) 使用具有不同种子的相同配方重新训练模型，FID 移动量（在 Inception 特征空间中）比从固定网络重新绘制样本多 3.2 倍。 (b) 该差距由三个因素驱动：随机初始化、数据排序和流匹配损失的每步高斯噪声。 (c) 增加计算或模型大小几乎不会收紧扩散，将 FID 变异系数 (CoV) 保持在 1-2% 的范围内。 (d) 每个单元的无分类器引导调整将传播范围减半，但重新调整了哪些种子效果最好，幸运的训练种子达到相同的 FID 时，计算量比不幸的种子少 2 倍。基于这些发现，我们推荐一种新的 FID 评估方案：在每个细胞的最佳指导下进行评估，将低于经验测量的约 1.3% CoV 的任何 FID 差距视为不确定，并报告多个训练种子而不是单个 FID 数字的误差条。",
+      "description_zh": "Frechet 起始距离 (FID) 是图像生成事实上的仲裁者，但大多数论文仅报告使用单个采样种子的单个训练模型的单个数字。如果我们重新训练模型，或者仅仅从中重新采样，这个数字的可重复性如何？在本文中，我们将 FID 视为训练和生成种子两轴面板上的随机变量，并直接在数百个在类条件 ImageNet 256x256 上训练的 SiT 网络上测量其方差。我们报告了令人惊讶的发现：(a) 使用具有不同种子的相同配方重新训练模型，FID 移动量（在 Inception 特征空间中）比从固定网络重新绘制样本多 3.2 倍。 (b) 该差距由三个因素驱动：随机初始化、数据排序和流匹配损失的每步高斯噪声。 (c) 增加计算或模型大小几乎不会收紧扩散，将 FID 变异系数 (CoV) 保持在 1-2% 的范围内。 (d) 每个单元的无分类器引导调整将传播范围减半，但重新调整了哪些种子效果最好，幸运的训练种子达到相同的 FID 时，计算量比不幸的种子少 2 倍。基于这些发现，我们推荐一种新的 FID 评估方案：在每个细胞的最佳指导下进行评估，将低于经验测���的约 1.3% CoV 的任何 FID 差距视为不确定，并报告多个训练种子而不是单个 FID 数字的误差条。",
       "authors": "Nicolas Dufour, Alexei A. Efros, Patrick Pérez",
       "url": "https://huggingface.co/papers/2606.20536",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2606.20536"
       }
     },
@@ -131,10 +131,10 @@
       "description_zh": "大规模自动语音识别 (ASR) 服务管道中的调度策略在确定端到端 (E2E) 延迟方面发挥着关键作用。然而，广泛使用的服务引擎依赖于先来先服务（FCFS）调度，它忽略了请求持续时间的变化并导致工作负载漂移下的队头阻塞。我们证明，音频持续时间是 ASR 模型（例如 Whisper）中作业处理时间的准确代理，并利用这一见解来实现持续时间感知调度。我们将两种经典算法“最短作业优先”(SJF) 和“最高响应率其次”(HRRN) 集成到 vLLM 中，并在现实和漂移的工作负载下对其进行评估。在 LibriSpeech 测试清理中，与基线相比，SJF 在高负载下将中位 E2E 延迟降低了高达 73%，但由于长请求匮乏，将 90% 尾部延迟增加了高达 97%。 HRRN 解决了​​这种权衡问题：它将 E2E 延迟中值降低了 28%，同时将尾部延迟降低限制在最多 24%。这些收益在工作负载漂移的情况下仍然存在，没有吞吐量损失，每个请求的调度开销<0.1\\,ms。",
       "authors": "Darshan Makwana, Yash Jogi, Harsh Kotta, Aayush Kubba",
       "url": "https://huggingface.co/papers/2603.11273",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2603.11273"
       }
     },
@@ -143,13 +143,13 @@
       "title": "Rethinking Shrinkage Bias in LLM FP4 Pretraining: Geometric Origin, Systemic Impact, and UFP4 Recipe",
       "title_zh": "重新思考 LLM FP4 预训练中的收缩偏差：几何起源、系统影响和 UFP4 配方",
       "description": "FP4 training promises substantial reductions in memory and computation cost for LLM pretraining, yet current FP4 hardware paths and recipes, including NVIDIA Blackwell/Rubin-class systems and AMD MI350-series GPUs, remain centered on E2M1 data elements. In this study, we identify a fundamental limitation of that choice: non-uniform formats such as E2M1 inherently suffer from Shrinkage Bias, a systematic negative rounding error caused by the geometric asymmetry of their representable bins. We show that this bias accumulates multiplicatively across layers and is amplified by the Random Hadamard Transform (RHT), providing a unified explanation for the training instability observed in existing E2M1-based FP4 recipes. In contrast, uniform grids (E1M2/INT4) bypass this grid-geometry error and better convert the improved bucket utilization from RHT into higher quantization quality. Based on this finding, we propose UFP4, a uniform 4-bit training recipe that applies RHT to all three training GEMMs while restricting stochastic rounding to dY alone. On Dense 1.5B, MoE 7.9B, and MoE 124B long-run pretraining, UFP4 consistently achieves lower BF16-relative loss degradation than strong E2M1-based baselines, supported by scaling-law analysis and ablation studies. Our results suggest that future accelerators should support E1M2/INT4-style uniform 4-bit grids as first-class training primitives alongside E2M1.",
-      "description_zh": "FP4 训练有望大幅降低 LLM 预训练的内存和计算成本，但当前的 FP4 硬件路径和配方（包括 NVIDIA Blackwell/Rubin 级系统和 AMD MI350 系列 GPU）仍然以 E2M1 数据元素为中心。在这项研究中，我们发现了这种选择的一个基本限制：E2M1 等非均匀格式本质上会受到收缩偏差的影响，这是一种由其可表示箱的几何不对称性引起的系统性负舍入误差。我们表明，这种偏差在各层之间乘法累积，并通过随机 Hadamard 变换 (RHT) 放大，为现有基于 E2M1 的 FP4 配方中观察到的训练不稳定性提供了统一的解释。相比之下，均匀网格（E1M2/INT4）绕过了这种网格几何误差，并更好地将 RHT 改进的存储桶利用率转化为更高的量化质量。基于这一发现，我们提出了 UFP4，一种统一的 4 位训练方案，它将 RHT 应用于所有三个训练 GEMM，同时将随机舍入限制为仅 dY。在 Dense 1.5B、MoE 7.9B 和 MoE 124B 长期预训练中，UFP4 始终实现比基于 E2M1 的强大基线更低的 BF16 相对损失退化，并得到标度律分析和消融研究的支持。我们的结��表明，未来的加速器应该支持 E1M2/INT4 风格的统一 4 位网格，作为与 E2M1 一样的一流训练原语。",
+      "description_zh": "FP4 训练有望大幅降低 LLM 预训练的内存和计算成本，但当前的 FP4 硬件路径和配方（包括 NVIDIA Blackwell/Rubin 级系统和 AMD MI350 系列 GPU）仍然以 E2M1 数据元素为中心。在这项研究中，我们发现了这种选择的一个基本限制：E2M1 等非均匀格式本质上会受到收缩偏差的影响，这是一种由其可表示箱的几何不对称性引起的系统性负舍入误差。我们表明，这种偏差在各层之间乘法累积，并通过随机 Hadamard 变换 (RHT) 放大，为现有基于 E2M1 的 FP4 配方中观察到的训练不稳定性提供了统一的解释。相比之下，均匀网格（E1M2/INT4）绕过了这种网格几何误差，并更好地将 RHT 改进的存储桶利用率转化为更高的量化质量。基于这一发现，我们提出了 UFP4，一种统一的 4 位训练方案，它将 RHT 应用于所有三个训练 GEMM，同时将随机舍入限制为仅 dY。在 Dense 1.5B、MoE 7.9B 和 MoE 124B 长期预训练中，UFP4 始终实现比基于 E2M1 的强大基线更低的 BF16 相对损失退化，并得到标度律分析和消融研究的支持。我们的结果���明，未来的加速器应该支持 E1M2/INT4 风格的统一 4 位网格，作为与 E2M1 一样的一流训练原语。",
       "authors": "Qian Zhao, Kunlong Chen, Changxin Tian, Zhonghui Jiang, Haitao Zhang, Chaofan Yu, Peijie Jiang, Mingliang Gong, Jia Liu, Ziqi Liu, Zhiqiang Zhang, Jun Zhou",
       "url": "https://huggingface.co/papers/2606.20381",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2606.20381"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "LiveCodeBench (LCB) 最近已成为广泛采用的基准，用于评估代码生成任务的大型语言模型 (LLM)。通过策划竞争性编程问题、不断向集合中添加新问题并按发布日期过滤它们，LCB 提供了污染感知评估并提供了编码能力的整体视图。然而，LCB 仍然仅限于 Python，这使得LLM是否可以泛化现实世界软件工程所需的各种编程语言仍然是一个悬而未决的问题。\n  我们推出了 Multi-LCB，这是一个评估跨 12 种编程语言（包括 Python）的LLM的基准。 Multi-LCB 将 LCB 数据集中的 Python 任务转换为其他语言的等效任务，同时保留 LCB 的污染控制和评估协议。由于与原始 LCB 格式完全兼容，Multi-LCB 将自动跟踪未来的 LCB 更新，从而能够系统地评估跨语言代码生成能力，并要求模型维持远远超出 Python 的性能。\n  我们评估了 24 名LLM在 Multi-LCB 上的指令和推理能力，发现了 Python 过度拟合、特定语言污染以及多语言性能巨大差异的证据。我们的结果将 Multi-LCB 确立为多编程语言代码评估的严格新基准，直接解决了 LCB 的主要局限性并暴露了当前 LLM 能力的关键差距。",
       "authors": "Maria Ivanova, Pavel Zadorozhny, Rodion Levichev, Ivan Petrov, Adamenko Pavel, Ivan Lopatin, Alexey Kutalev, Dmitrii Babaev",
       "url": "https://huggingface.co/papers/2606.20517",
-      "score": 25,
+      "score": 37,
       "meta": {
         "source": "huggingface",
-        "upvotes": "25",
+        "upvotes": "37",
         "paperId": "2606.20517"
       }
     },
@@ -176,10 +176,10 @@
       "description_zh": "大型语言模型 (LLM) 显着推进了软件工程任务的自动化。一个突出的例子是代码生成，LLM根据自然语言描述以指定的编程语言生成代码。该领域的大多数研究都集中在高资源语言上，例如 Python 或 Java，它们受益于丰富的训练数据。一小部分工作探索了低资源语言，这些语言在训练语料库中代表性不足。相比之下，LLM几乎没有见过任何训练数据的无资源语言在很大程度上仍未得到研究。这些语言经常出现在行业中，组织开发不受 GitHub Copilot 等商业工具支持的专有或特定领域语言。这导致公司需要部署自己的内部代码推荐器。为了研究这种情况下可能的解决方案，我们基于最近提出的两种可用训练数据很少的编程语言，构建并发布了三个无资源语言的代码生成基准。使用这些基准，我们尝试了几种解决方案来向LLM教授无资源语言，包括基于提示的技术以及利用少量可用数据进行预训练和微调。虽然进一步的预训练可以为无资源语言带来最大的性能提升，但将其直接应用于指令调整的模型会损害它们遵循指令的能力。为了解决这个问题，我们从基本模型开始，进一步在目标语言上对其进行预训练，然后通过指令模型的权重差异传输注入指令跟踪功能。这种方法显着提高了无资源环境中的代码生成能力，使公司能够廉价地部署专门的指令模型，而无需处理指令微调的计算成本。",
       "authors": "Alessandro Giagnorio, Alberto Martin-Lopez, Gabriele Bavota",
       "url": "https://huggingface.co/papers/2606.16827",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2606.16827"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "混合线性注意力模型为更快的长上下文推理提供了一条有吸引力的途径：它们减少了完全 softmax 注意力的二次成本和 KV 缓存负担，同时保留了 Transformer 模型的大部分质量。获得此类模型的一种实用方法是转换预训练的 Transformer，而不是从头开始预训练新的架构，但这种转换仍然很脆弱。简单地将教师注意力投影复制到门控 DeltaNet (GDN) 学生中并不能指定新的循环衰减、写入和输出门控动态。因此，转换后的模型通常以较差的动态状态开始，并且必须花费许多蒸馏令牌来修复初始化，而不是学习��余的教师行为。我们提出了 Taylor-Calibrate，这是一种针对混合 GDN 学生的轻量级初始化方法。该方法使用泰勒引导的教师注意力统计来设置值投影、内存时间尺度、写入门和输出门，然后应用短的每层对齐步骤将每个转换层与教师输出进行匹配。在四种教师设置和三种保留层策略中，Taylor-Calibrate 为零样本学生提供了更强的能力，代表性消融提高了 88 倍，并达到了匹配的恢复目标，而训练令牌比朴素转换少了 4.9 倍--9.2 倍。",
       "authors": "Zhongzhu Zhou, Qingyang Wu, Junxiong Wang, Mayank Mishra, Shuaiwen Leon Song, Ben Athiwaratkun, Chenfeng Xu",
       "url": "https://huggingface.co/papers/2606.16429",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2606.16429"
       }
     },
@@ -203,13 +203,13 @@
       "title": "FlowBender: Feedback-Aware Training for Self-Correcting Conditional Flows",
       "title_zh": "FlowBender：用于自校正条件流的反馈感知训练",
       "description": "Conditional diffusion and flow models routinely fail to satisfy the very constraints that define their task. For instance, a depth-conditioned model often produces images whose re-extracted depth disagrees with the input, even though the forward operator--the depth predictor defining the constraint--is available during both training and inference. Existing approaches generally fall into two categories: supervised models that treat the conditioning signal as a static cue and ignore alignment information at inference, and guidance-based methods that consult it through hand-tuned linear updates, typically trading fidelity to the condition against the plausibility of the generated sample. We argue that the fundamental gap in both paradigms is that the model is never trained to utilize its own alignment error. We introduce FlowBender, a closed-loop framework that treats this error as a first-class input, training the network to learn a correction policy conditioned on inference-time feedback. At each step, an unguided look-ahead pass estimates the clean signal, a task-specific deviation is computed via the forward operator, and a refinement pass consumes this signal to produce a corrected velocity. We propose several variants of FlowBender, including a gradient-based formulation for differentiable operators and a zero-order variant for non-differentiable settings such as JPEG compression. For efficient sampling, we introduce a prior-step shortcut that enables closed-loop correction at a minimal additional computational cost. Across image-to-image translation, restoration, and 3D mesh texturing, FlowBender consistently outperforms standard supervised baselines, alignment-loss-augmented training, and state-of-the-art inference-time guidance, improving fidelity and plausibility simultaneously rather than trading them against each other. Project page: https://flow-bender.github.io/",
-      "description_zh": "条件扩散和流动模型通常无法满足定义其任务的约束。例如，深度条件模型通常会生成重新提取的深度与输入不一致的图像，即使前向算子（定义约束的深度预测器）在训练和推理过程中都可用。现有的方法通常分为两类：将条件信号视为静态提示并在推理时忽略对齐信息的监督模型，以及通过手动调整的线性更新进行参考的基于指导的方法，通常会根据生成样本的合理性来交换条件的保真度。我们认为，这两种范式的根本差距在于，模型从未经过训练来利用其自身的对齐误差。我们引入了 FlowBender，这是一个闭环框架，它将这种错误视为一流的输入，训练网络以学习以推理时间反馈为条件的校正策略。在每个步骤中，无引导的前瞻通道会估计干净的信号，通过前向算子计算特定于任务的偏差，而细化通道会消耗该信号以产生校正的速度。我们提出了 FlowBender 的几种变体，包括用于可微分算子的基于梯度的公式和用于不可微分设置（例如 JPEG 压缩）的零阶变体。为了高效采样，我们引入了一种先验步骤快捷方式，可以以最小的额外计算成本实现闭环校正。在图像到图像的转换、恢复和 3D 网格纹理方面，FlowBender 始终优于标准的监督基线、对齐损失增强训练和最先进的推理时间指导，同时提高了保真度和合理性，而不是相互交换。项目页面：https://flow-bender.github.io/",
+      "description_zh": "条件扩散和流动模型通常无法满足定义其任务的约束。例如，深度条件模型通常会生成重新提取的深度与输入不一致的图像，即使前向算子（定义约束的深度预测器）在训练和推理过程中都可用。现有的方法通常分为两类：将条件信号视为静态提示并在推理时忽略对齐信息的监督模型，以及通过手动调整的线性更新进行参考的基于指导的方法，通常会根据生成样本的合理性来交换条件的保真度。我们认为，这两种范式的根本差距在于，模型从未经过训练来利用其自身的对齐误差。我们引入了 FlowBender，这是一个闭环框架，它将这种错误视为一流的输入，训练网络以学习以推理时间反馈为条件的校正策略。在每个步骤中，无引导的前瞻通道会估计干净的信号，通过前向算子计算特定于任务的偏差，而细化通道会消耗该信号以产生校正的速度。我们提出了 FlowBender 的几种变体，包括用于可微分算子的基于梯度的公式和用于不可微分设置（例如 JPEG 压缩）的零阶变体。为了高效采样，我们引入了一种先验步骤快捷方式，可以以最小的额外计算成本实现闭环校正。在图像到图像的转换、恢复和 3D 网格纹理方面，FlowBender 始终优于标准监督基线、对齐损失增强训练和最先进的推理时间指导，同时提高了保真度和合理性，而不是相互交换。项目页面：https://flow-bender.github.io/",
       "authors": "Daniel Gilo, Sven Elflein, Ido Sobol, Or Litany",
       "url": "https://huggingface.co/papers/2606.20404",
-      "score": 15,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "17",
         "paperId": "2606.20404"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "与铰接物体的灵巧交互对于家庭、辅助和人形操纵来说非常重要，其中多指手可以提供超越平行下颌抓取的顺应接触模式。然而，铰接式物体操纵与静态物体操纵不同：目标部分不能直接驱动，其运动必须通过持续的物理手-手柄接触来产生。这使得从以对象为中心的铰接生成到手驱动灵巧的手-对象交互的转变变得非常重要，因为几何轨迹重放或开环执行不会对移动铰接部件所需的接触动力学进行建模。此���，仅针对固定动态下的任务完成进行训练的策略可能会过度拟合标称接触负载，尤其是在没有触觉或力反馈的情况下，并且当接触负载发生变化时可能会降级。为了应对这些挑战，我们提出了 DragMesh-2，这是一种接触驱动的框架，用于与铰接对象进行灵巧交互，它将铰接交互从以对象为中心的生成扩展到手驱动的灵巧手-对象交互，其中铰接运动必须通过物理接触产生。我们进一步提出了 PICA，一种物理通知的接触感知训练机制，将物理信号注入策略学习中，无需触觉或力反馈，从而提高在不断变化的接触负载下的鲁棒性和任务成功率。最后，我们对多种阻尼条件和铰接物体类别进行系统评估，以研究接触载荷变化下的鲁棒性，并提供纯几何灵巧交互资源以支持未来的机器人操作和人形手与物体交互研究。在七个 GAPartNet 对象中，DragMesh-2 在接触负载变化下比比较方法实现了更强的鲁棒性，同时在阻尼条件下保持了较高的任务成功率。",
       "authors": "Tianshan Zhang, Yijia Duan, Yanjun Li, Zeyu Zhang, Hao Tang",
       "url": "https://huggingface.co/papers/2606.15133",
-      "score": 60,
+      "score": 66,
       "meta": {
         "source": "huggingface",
-        "upvotes": "60",
+        "upvotes": "66",
         "paperId": "2606.15133"
       }
     }
