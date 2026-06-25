@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-06-24T21:11:34.364Z",
-  "count": 13,
+  "updatedAt": "2026-06-25T21:16:09.826Z",
+  "count": 15,
   "items": [
+    {
+      "id": "google-labs-code-design.md",
+      "title": "design.md",
+      "title_zh": "design.md",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "description_zh": "用于向编码代理描述视觉标识的格式规范。 DESIGN.md 使代理能够对设计系统有持久的、结构化的理解。",
+      "authors": "google-labs-code",
+      "url": "https://github.com/google-labs-code/design.md",
+      "score": 18961,
+      "meta": {
+        "source": "github",
+        "stars": "18,961",
+        "language": "TypeScript",
+        "repo": "google-labs-code/design.md",
+        "owner": "google-labs-code",
+        "repoName": "design.md"
+      }
+    },
     {
       "id": "calesthio-OpenMontage",
       "title": "OpenMontage",
@@ -11,10 +29,10 @@
       "description_zh": "世界上第一个开源的代理视频制作系统。 12条管道、52种工具、500+座席技能。将您的人工智能编码助手变成一个完整的视频制作工作室。",
       "authors": "calesthio",
       "url": "https://github.com/calesthio/OpenMontage",
-      "score": 19026,
+      "score": 21916,
       "meta": {
         "source": "github",
-        "stars": "19,026",
+        "stars": "21,916",
         "language": "Python",
         "repo": "calesthio/OpenMontage",
         "owner": "calesthio",
@@ -22,21 +40,39 @@
       }
     },
     {
-      "id": "ZhuLinsen-daily_stock_analysis",
-      "title": "daily_stock_analysis",
-      "title_zh": "daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "description_zh": "LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动自主，支持零定时运行。LLM驱动的多市场股票智能分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
-      "authors": "ZhuLinsen",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "score": 48373,
+      "id": "xbtlin-ai-berkshire",
+      "title": "ai-berkshire",
+      "title_zh": "ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "description_zh": "AI时代的伯克希尔：基于克劳德码的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论+多Agent毛研究。 AI时代的伯克希尔：基于克劳德代码构建的价值投资研究框架。 4种大师方法论+多智能体对抗分析。",
+      "authors": "xbtlin",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "score": 1786,
       "meta": {
         "source": "github",
-        "stars": "48,373",
+        "stars": "1,786",
         "language": "Python",
-        "repo": "ZhuLinsen/daily_stock_analysis",
-        "owner": "ZhuLinsen",
-        "repoName": "daily_stock_analysis"
+        "repo": "xbtlin/ai-berkshire",
+        "owner": "xbtlin",
+        "repoName": "ai-berkshire"
+      }
+    },
+    {
+      "id": "mauriceboe-TREK",
+      "title": "TREK",
+      "title_zh": "TREK",
+      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
+      "description_zh": "自托管旅行/行程规划器，具有实时协作、交互式地图、PWA 支持、SSO、预算、装箱单等功能。",
+      "authors": "mauriceboe",
+      "url": "https://github.com/mauriceboe/TREK",
+      "score": 6548,
+      "meta": {
+        "source": "github",
+        "stars": "6,548",
+        "language": "TypeScript",
+        "repo": "mauriceboe/TREK",
+        "owner": "mauriceboe",
+        "repoName": "TREK"
       }
     },
     {
@@ -47,32 +83,14 @@
       "description_zh": "一种在 Mac 上使用轻量级虚拟机创建和运行 Linux 容器的工具。它是用 Swift 编写的，并针对 Apple 芯片进行了优化。",
       "authors": "apple",
       "url": "https://github.com/apple/container",
-      "score": 42049,
+      "score": 43139,
       "meta": {
         "source": "github",
-        "stars": "42,049",
+        "stars": "43,139",
         "language": "Swift",
         "repo": "apple/container",
         "owner": "apple",
         "repoName": "container"
-      }
-    },
-    {
-      "id": "interviewstreet-hiring-agent",
-      "title": "hiring-agent",
-      "title_zh": "hiring-agent",
-      "description": "AI agent to evaluate and score resumes.",
-      "description_zh": "人工智能代理对简历进行评估和评分。",
-      "authors": "interviewstreet",
-      "url": "https://github.com/interviewstreet/hiring-agent",
-      "score": 2083,
-      "meta": {
-        "source": "github",
-        "stars": "2,083",
-        "language": "Python",
-        "repo": "interviewstreet/hiring-agent",
-        "owner": "interviewstreet",
-        "repoName": "hiring-agent"
       }
     },
     {
@@ -83,10 +101,10 @@
       "description_zh": "使用 AI 编码代理通过一个命令克隆任何网站",
       "authors": "JCodesMore",
       "url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "score": 19218,
+      "score": 20320,
       "meta": {
         "source": "github",
-        "stars": "19,218",
+        "stars": "20,320",
         "language": "TypeScript",
         "repo": "JCodesMore/ai-website-cloner-template",
         "owner": "JCodesMore",
@@ -94,147 +112,165 @@
       }
     },
     {
-      "id": "revfactory-harness",
-      "title": "harness",
-      "title_zh": "harness",
-      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
-      "description_zh": "一种元技能，用于设计特定领域的代理团队、定义专业代理并生成他们使用的技能。",
-      "authors": "revfactory",
-      "url": "https://github.com/revfactory/harness",
-      "score": 7690,
+      "id": "every-app-open-seo",
+      "title": "open-seo",
+      "title_zh": "open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
+      "description_zh": "Semrush 和 Ahrefs 的开源替代品",
+      "authors": "every-app",
+      "url": "https://github.com/every-app/open-seo",
+      "score": 2449,
       "meta": {
         "source": "github",
-        "stars": "7,690",
-        "language": "HTML",
-        "repo": "revfactory/harness",
-        "owner": "revfactory",
-        "repoName": "harness"
-      }
-    },
-    {
-      "id": "flutter-flutter",
-      "title": "flutter",
-      "title_zh": "flutter",
-      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
-      "description_zh": "Flutter 让您可以轻松快速地为移动设备及其他领域构建精美的应用程序",
-      "authors": "flutter",
-      "url": "https://github.com/flutter/flutter",
-      "score": 177271,
-      "meta": {
-        "source": "github",
-        "stars": "177,271",
-        "language": "Dart",
-        "repo": "flutter/flutter",
-        "owner": "flutter",
-        "repoName": "flutter"
-      }
-    },
-    {
-      "id": "andreknieriem-headunit-revived",
-      "title": "headunit-revived",
-      "title_zh": "headunit-revived",
-      "description": "Headunit App for displaying Android Auto",
-      "description_zh": "用于显示 Android Auto 的主机应用程序",
-      "authors": "andreknieriem",
-      "url": "https://github.com/andreknieriem/headunit-revived",
-      "score": 1403,
-      "meta": {
-        "source": "github",
-        "stars": "1,403",
-        "language": "Kotlin",
-        "repo": "andreknieriem/headunit-revived",
-        "owner": "andreknieriem",
-        "repoName": "headunit-revived"
-      }
-    },
-    {
-      "id": "stablyai-orca",
-      "title": "orca",
-      "title_zh": "orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-      "description_zh": "Orca 是与一组并行代理一起工作的 ADE。使用您自己的订阅运行任何编码代理。可在桌面和移动设备上使用。",
-      "authors": "stablyai",
-      "url": "https://github.com/stablyai/orca",
-      "score": 6698,
-      "meta": {
-        "source": "github",
-        "stars": "6,698",
+        "stars": "2,449",
         "language": "TypeScript",
-        "repo": "stablyai/orca",
-        "owner": "stablyai",
-        "repoName": "orca"
+        "repo": "every-app/open-seo",
+        "owner": "every-app",
+        "repoName": "open-seo"
       }
     },
     {
-      "id": "google-labs-code-design.md",
-      "title": "design.md",
-      "title_zh": "design.md",
-      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
-      "description_zh": "用于向编码代理描述视觉标识的格式规范。 DESIGN.md 使代理能够对设计系统有持久的、结构化的理解。",
-      "authors": "google-labs-code",
-      "url": "https://github.com/google-labs-code/design.md",
-      "score": 17194,
+      "id": "garrytan-gstack",
+      "title": "gstack",
+      "title_zh": "gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "description_zh": "使用 Garry Tan 的精确 Claude Code 设置：23 个固执己见的工具，可充当 CEO、设计师、工程经理、发布经理、文档工程师和 QA",
+      "authors": "garrytan",
+      "url": "https://github.com/garrytan/gstack",
+      "score": 115720,
       "meta": {
         "source": "github",
-        "stars": "17,194",
+        "stars": "115,720",
         "language": "TypeScript",
-        "repo": "google-labs-code/design.md",
-        "owner": "google-labs-code",
-        "repoName": "design.md"
+        "repo": "garrytan/gstack",
+        "owner": "garrytan",
+        "repoName": "gstack"
       }
     },
     {
-      "id": "Flowseal-zapret-discord-youtube",
-      "title": "zapret-discord-youtube",
-      "title_zh": "zapret-discord-youtube",
-      "description": "No description available",
-      "description_zh": "无可用描述",
-      "authors": "Flowseal",
-      "url": "https://github.com/Flowseal/zapret-discord-youtube",
-      "score": 30015,
+      "id": "aws-agent-toolkit-for-aws",
+      "title": "agent-toolkit-for-aws",
+      "title_zh": "agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "description_zh": "AWS 支持的官方 MCP 服务器、技能和插件可帮助 AI 代理在 AWS 上构建",
+      "authors": "aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "score": 1108,
       "meta": {
         "source": "github",
-        "stars": "30,015",
-        "language": "Batchfile",
-        "repo": "Flowseal/zapret-discord-youtube",
-        "owner": "Flowseal",
-        "repoName": "zapret-discord-youtube"
-      }
-    },
-    {
-      "id": "kunchenguid-no-mistakes",
-      "title": "no-mistakes",
-      "title_zh": "no-mistakes",
-      "description": "git push no-mistakes",
-      "description_zh": "git推送无错误",
-      "authors": "kunchenguid",
-      "url": "https://github.com/kunchenguid/no-mistakes",
-      "score": 1960,
-      "meta": {
-        "source": "github",
-        "stars": "1,960",
-        "language": "Go",
-        "repo": "kunchenguid/no-mistakes",
-        "owner": "kunchenguid",
-        "repoName": "no-mistakes"
-      }
-    },
-    {
-      "id": "NousResearch-hermes-agent",
-      "title": "hermes-agent",
-      "title_zh": "hermes-agent",
-      "description": "The agent that grows with you",
-      "description_zh": "与您共同成长的代理商",
-      "authors": "NousResearch",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "score": 201947,
-      "meta": {
-        "source": "github",
-        "stars": "201,947",
+        "stars": "1,108",
         "language": "Python",
-        "repo": "NousResearch/hermes-agent",
-        "owner": "NousResearch",
-        "repoName": "hermes-agent"
+        "repo": "aws/agent-toolkit-for-aws",
+        "owner": "aws",
+        "repoName": "agent-toolkit-for-aws"
+      }
+    },
+    {
+      "id": "mukul975-Anthropic-Cybersecurity-Skills",
+      "title": "Anthropic-Cybersecurity-Skills",
+      "title_zh": "Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "description_zh": "AI 代理的 817 项结构化网络安全技能 · 映射到 6 个框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 和 MITRE F3（打击欺诈） · Agentskills.io 标准 · 可与 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 和 20 多个平台配合使用 · 29 个安全域 · Apache 2.0",
+      "authors": "mukul975",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "score": 21141,
+      "meta": {
+        "source": "github",
+        "stars": "21,141",
+        "language": "Python",
+        "repo": "mukul975/Anthropic-Cybersecurity-Skills",
+        "owner": "mukul975",
+        "repoName": "Anthropic-Cybersecurity-Skills"
+      }
+    },
+    {
+      "id": "alibaba-page-agent",
+      "title": "page-agent",
+      "title_zh": "page-agent",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "description_zh": "JavaScript 页内 GUI 代理。使用自然语言控制 Web 界面。",
+      "authors": "alibaba",
+      "url": "https://github.com/alibaba/page-agent",
+      "score": 19755,
+      "meta": {
+        "source": "github",
+        "stars": "19,755",
+        "language": "TypeScript",
+        "repo": "alibaba/page-agent",
+        "owner": "alibaba",
+        "repoName": "page-agent"
+      }
+    },
+    {
+      "id": "IceWhaleTech-CasaOS",
+      "title": "CasaOS",
+      "title_zh": "CasaOS",
+      "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+      "description_zh": "CasaOS - 一个简单、易于使用、优雅的开源个人云系统。",
+      "authors": "IceWhaleTech",
+      "url": "https://github.com/IceWhaleTech/CasaOS",
+      "score": 34746,
+      "meta": {
+        "source": "github",
+        "stars": "34,746",
+        "language": "Go",
+        "repo": "IceWhaleTech/CasaOS",
+        "owner": "IceWhaleTech",
+        "repoName": "CasaOS"
+      }
+    },
+    {
+      "id": "opendatalab-MinerU",
+      "title": "MinerU",
+      "title_zh": "MinerU",
+      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
+      "description_zh": "将 PDF 和 Office 文档等复杂文档转换为适合您的 Agentic 工作流程的 LLM 就绪 Markdown/JSON。",
+      "authors": "opendatalab",
+      "url": "https://github.com/opendatalab/MinerU",
+      "score": 69455,
+      "meta": {
+        "source": "github",
+        "stars": "69,455",
+        "language": "Python",
+        "repo": "opendatalab/MinerU",
+        "owner": "opendatalab",
+        "repoName": "MinerU"
+      }
+    },
+    {
+      "id": "Free-TV-IPTV",
+      "title": "IPTV",
+      "title_zh": "IPTV",
+      "description": "M3U Playlist for free TV channels",
+      "description_zh": "免费电视频道的 M3U 播放列表",
+      "authors": "Free-TV",
+      "url": "https://github.com/Free-TV/IPTV",
+      "score": 18175,
+      "meta": {
+        "source": "github",
+        "stars": "18,175",
+        "language": "Python",
+        "repo": "Free-TV/IPTV",
+        "owner": "Free-TV",
+        "repoName": "IPTV"
+      }
+    },
+    {
+      "id": "shanraisshan-claude-code-best-practice",
+      "title": "claude-code-best-practice",
+      "title_zh": "claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "description_zh": "从氛围编码到代理工程 - 实践使克劳德变得完美",
+      "authors": "shanraisshan",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "score": 60439,
+      "meta": {
+        "source": "github",
+        "stars": "60,439",
+        "language": "HTML",
+        "repo": "shanraisshan/claude-code-best-practice",
+        "owner": "shanraisshan",
+        "repoName": "claude-code-best-practice"
       }
     }
   ]
