@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-06-25T21:16:09.826Z",
+  "updatedAt": "2026-06-26T21:08:21.844Z",
   "count": 15,
   "items": [
+    {
+      "id": "simplex-chat-simplex-chat",
+      "title": "simplex-chat",
+      "title_zh": "simplex-chat",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+      "description_zh": "SimpleX - 第一个无需任何类型的用户标识符即可运行的消息传递网络 - 设计为 100% 私密！ iOS、Android 和桌面应用程序📱！",
+      "authors": "simplex-chat",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "score": 12423,
+      "meta": {
+        "source": "github",
+        "stars": "12,423",
+        "language": "Haskell",
+        "repo": "simplex-chat/simplex-chat",
+        "owner": "simplex-chat",
+        "repoName": "simplex-chat"
+      }
+    },
     {
       "id": "google-labs-code-design.md",
       "title": "design.md",
@@ -11,10 +29,10 @@
       "description_zh": "用于向编码代理描述视觉标识的格式规范。 DESIGN.md 使代理能够对设计系统有持久的、结构化的理解。",
       "authors": "google-labs-code",
       "url": "https://github.com/google-labs-code/design.md",
-      "score": 18961,
+      "score": 21071,
       "meta": {
         "source": "github",
-        "stars": "18,961",
+        "stars": "21,071",
         "language": "TypeScript",
         "repo": "google-labs-code/design.md",
         "owner": "google-labs-code",
@@ -22,201 +40,75 @@
       }
     },
     {
-      "id": "calesthio-OpenMontage",
-      "title": "OpenMontage",
-      "title_zh": "OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "description_zh": "世界上第一个开源的代理视频制作系统。 12条管道、52种工具、500+座席技能。将您的人工智能编码助手变成一个完整的视频制作工作室。",
-      "authors": "calesthio",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "score": 21916,
+      "id": "commaai-openpilot",
+      "title": "openpilot",
+      "title_zh": "openpilot",
+      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+      "description_zh": "openpilot 是一个机器人操作系统。目前，它升级了 300 多辆支持的汽车的驾驶员辅助系统。",
+      "authors": "commaai",
+      "url": "https://github.com/commaai/openpilot",
+      "score": 61744,
       "meta": {
         "source": "github",
-        "stars": "21,916",
+        "stars": "61,744",
         "language": "Python",
-        "repo": "calesthio/OpenMontage",
-        "owner": "calesthio",
-        "repoName": "OpenMontage"
+        "repo": "commaai/openpilot",
+        "owner": "commaai",
+        "repoName": "openpilot"
       }
     },
     {
-      "id": "xbtlin-ai-berkshire",
-      "title": "ai-berkshire",
-      "title_zh": "ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "description_zh": "AI时代的伯克希尔：基于克劳德码的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论+多Agent毛研究。 AI时代的伯克希尔：基于克劳德代码构建的价值投资研究框架。 4种大师方法论+多智能体对抗分析。",
-      "authors": "xbtlin",
-      "url": "https://github.com/xbtlin/ai-berkshire",
-      "score": 1786,
+      "id": "kunchenguid-no-mistakes",
+      "title": "no-mistakes",
+      "title_zh": "no-mistakes",
+      "description": "git push no-mistakes",
+      "description_zh": "git推送无错误",
+      "authors": "kunchenguid",
+      "url": "https://github.com/kunchenguid/no-mistakes",
+      "score": 3359,
       "meta": {
         "source": "github",
-        "stars": "1,786",
-        "language": "Python",
-        "repo": "xbtlin/ai-berkshire",
-        "owner": "xbtlin",
-        "repoName": "ai-berkshire"
-      }
-    },
-    {
-      "id": "mauriceboe-TREK",
-      "title": "TREK",
-      "title_zh": "TREK",
-      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
-      "description_zh": "自托管旅行/行程规划器，具有实时协作、交互式地图、PWA 支持、SSO、预算、装箱单等功能。",
-      "authors": "mauriceboe",
-      "url": "https://github.com/mauriceboe/TREK",
-      "score": 6548,
-      "meta": {
-        "source": "github",
-        "stars": "6,548",
-        "language": "TypeScript",
-        "repo": "mauriceboe/TREK",
-        "owner": "mauriceboe",
-        "repoName": "TREK"
-      }
-    },
-    {
-      "id": "apple-container",
-      "title": "container",
-      "title_zh": "container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
-      "description_zh": "一种在 Mac 上使用轻量级虚拟机创建和运行 Linux 容器的工具。它是用 Swift 编写的，并针对 Apple 芯片进行了优化。",
-      "authors": "apple",
-      "url": "https://github.com/apple/container",
-      "score": 43139,
-      "meta": {
-        "source": "github",
-        "stars": "43,139",
-        "language": "Swift",
-        "repo": "apple/container",
-        "owner": "apple",
-        "repoName": "container"
-      }
-    },
-    {
-      "id": "JCodesMore-ai-website-cloner-template",
-      "title": "ai-website-cloner-template",
-      "title_zh": "ai-website-cloner-template",
-      "description": "Clone any website with one command using AI coding agents",
-      "description_zh": "使用 AI 编码代理通过一个命令克隆任何网站",
-      "authors": "JCodesMore",
-      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "score": 20320,
-      "meta": {
-        "source": "github",
-        "stars": "20,320",
-        "language": "TypeScript",
-        "repo": "JCodesMore/ai-website-cloner-template",
-        "owner": "JCodesMore",
-        "repoName": "ai-website-cloner-template"
-      }
-    },
-    {
-      "id": "every-app-open-seo",
-      "title": "open-seo",
-      "title_zh": "open-seo",
-      "description": "Open source alternative to Semrush and Ahrefs",
-      "description_zh": "Semrush 和 Ahrefs 的开源替代品",
-      "authors": "every-app",
-      "url": "https://github.com/every-app/open-seo",
-      "score": 2449,
-      "meta": {
-        "source": "github",
-        "stars": "2,449",
-        "language": "TypeScript",
-        "repo": "every-app/open-seo",
-        "owner": "every-app",
-        "repoName": "open-seo"
-      }
-    },
-    {
-      "id": "garrytan-gstack",
-      "title": "gstack",
-      "title_zh": "gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "description_zh": "使用 Garry Tan 的精确 Claude Code 设置：23 个固执己见的工具，可充当 CEO、设计师、工程经理、发布经理、文档工程师和 QA",
-      "authors": "garrytan",
-      "url": "https://github.com/garrytan/gstack",
-      "score": 115720,
-      "meta": {
-        "source": "github",
-        "stars": "115,720",
-        "language": "TypeScript",
-        "repo": "garrytan/gstack",
-        "owner": "garrytan",
-        "repoName": "gstack"
-      }
-    },
-    {
-      "id": "aws-agent-toolkit-for-aws",
-      "title": "agent-toolkit-for-aws",
-      "title_zh": "agent-toolkit-for-aws",
-      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-      "description_zh": "AWS 支持的官方 MCP 服务器、技能和插件可帮助 AI 代理在 AWS 上构建",
-      "authors": "aws",
-      "url": "https://github.com/aws/agent-toolkit-for-aws",
-      "score": 1108,
-      "meta": {
-        "source": "github",
-        "stars": "1,108",
-        "language": "Python",
-        "repo": "aws/agent-toolkit-for-aws",
-        "owner": "aws",
-        "repoName": "agent-toolkit-for-aws"
-      }
-    },
-    {
-      "id": "mukul975-Anthropic-Cybersecurity-Skills",
-      "title": "Anthropic-Cybersecurity-Skills",
-      "title_zh": "Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-      "description_zh": "AI 代理的 817 项结构化网络安全技能 · 映射到 6 个框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 和 MITRE F3（打击欺诈） · Agentskills.io 标准 · 可与 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 和 20 多个平台配合使用 · 29 个安全域 · Apache 2.0",
-      "authors": "mukul975",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "score": 21141,
-      "meta": {
-        "source": "github",
-        "stars": "21,141",
-        "language": "Python",
-        "repo": "mukul975/Anthropic-Cybersecurity-Skills",
-        "owner": "mukul975",
-        "repoName": "Anthropic-Cybersecurity-Skills"
-      }
-    },
-    {
-      "id": "alibaba-page-agent",
-      "title": "page-agent",
-      "title_zh": "page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
-      "description_zh": "JavaScript 页内 GUI 代理。使用自然语言控制 Web 界面。",
-      "authors": "alibaba",
-      "url": "https://github.com/alibaba/page-agent",
-      "score": 19755,
-      "meta": {
-        "source": "github",
-        "stars": "19,755",
-        "language": "TypeScript",
-        "repo": "alibaba/page-agent",
-        "owner": "alibaba",
-        "repoName": "page-agent"
-      }
-    },
-    {
-      "id": "IceWhaleTech-CasaOS",
-      "title": "CasaOS",
-      "title_zh": "CasaOS",
-      "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
-      "description_zh": "CasaOS - 一个简单、易于使用、优雅的开源个人云系统。",
-      "authors": "IceWhaleTech",
-      "url": "https://github.com/IceWhaleTech/CasaOS",
-      "score": 34746,
-      "meta": {
-        "source": "github",
-        "stars": "34,746",
+        "stars": "3,359",
         "language": "Go",
-        "repo": "IceWhaleTech/CasaOS",
-        "owner": "IceWhaleTech",
-        "repoName": "CasaOS"
+        "repo": "kunchenguid/no-mistakes",
+        "owner": "kunchenguid",
+        "repoName": "no-mistakes"
+      }
+    },
+    {
+      "id": "grafana-grafana",
+      "title": "grafana",
+      "title_zh": "grafana",
+      "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
+      "description_zh": "开放且可组合的可观测性和数据可视化平台。可视化来自 Prometheus、Loki、Elasticsearch、InfluxDB、Postgres 等多个来源的指标、日志和跟踪。",
+      "authors": "grafana",
+      "url": "https://github.com/grafana/grafana",
+      "score": 74849,
+      "meta": {
+        "source": "github",
+        "stars": "74,849",
+        "language": "TypeScript",
+        "repo": "grafana/grafana",
+        "owner": "grafana",
+        "repoName": "grafana"
+      }
+    },
+    {
+      "id": "ripienaar-free-for-dev",
+      "title": "free-for-dev",
+      "title_zh": "free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "description_zh": "具有 devops 和 infradev 感兴趣的免费级别的 SaaS、PaaS 和 IaaS 产品列表",
+      "authors": "ripienaar",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "score": 123682,
+      "meta": {
+        "source": "github",
+        "stars": "123,682",
+        "language": "HTML",
+        "repo": "ripienaar/free-for-dev",
+        "owner": "ripienaar",
+        "repoName": "free-for-dev"
       }
     },
     {
@@ -227,10 +119,10 @@
       "description_zh": "将 PDF 和 Office 文档等复杂文档转换为适合您的 Agentic 工作流程的 LLM 就绪 Markdown/JSON。",
       "authors": "opendatalab",
       "url": "https://github.com/opendatalab/MinerU",
-      "score": 69455,
+      "score": 70333,
       "meta": {
         "source": "github",
-        "stars": "69,455",
+        "stars": "70,333",
         "language": "Python",
         "repo": "opendatalab/MinerU",
         "owner": "opendatalab",
@@ -238,39 +130,147 @@
       }
     },
     {
-      "id": "Free-TV-IPTV",
-      "title": "IPTV",
-      "title_zh": "IPTV",
-      "description": "M3U Playlist for free TV channels",
-      "description_zh": "免费电视频道的 M3U 播放列表",
-      "authors": "Free-TV",
-      "url": "https://github.com/Free-TV/IPTV",
-      "score": 18175,
+      "id": "alchaincyf-zhangxuefeng-skill",
+      "title": "zhangxuefeng-skill",
+      "title_zh": "zhangxuefeng-skill",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "description_zh": "张雪峰.skill — 张雪峰的认知网络。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "authors": "alchaincyf",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "score": 9234,
       "meta": {
         "source": "github",
-        "stars": "18,175",
-        "language": "Python",
-        "repo": "Free-TV/IPTV",
-        "owner": "Free-TV",
-        "repoName": "IPTV"
+        "stars": "9,234",
+        "language": "Mixed",
+        "repo": "alchaincyf/zhangxuefeng-skill",
+        "owner": "alchaincyf",
+        "repoName": "zhangxuefeng-skill"
       }
     },
     {
-      "id": "shanraisshan-claude-code-best-practice",
-      "title": "claude-code-best-practice",
-      "title_zh": "claude-code-best-practice",
-      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-      "description_zh": "从氛围编码到代理工程 - 实践使克劳德变得完美",
-      "authors": "shanraisshan",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "score": 60439,
+      "id": "mauriceboe-TREK",
+      "title": "TREK",
+      "title_zh": "TREK",
+      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
+      "description_zh": "自托管旅行/行程规划器，具有实时协作、交互式地图、PWA 支持、SSO、预算、装箱单等功能。",
+      "authors": "mauriceboe",
+      "url": "https://github.com/mauriceboe/TREK",
+      "score": 7570,
       "meta": {
         "source": "github",
-        "stars": "60,439",
-        "language": "HTML",
-        "repo": "shanraisshan/claude-code-best-practice",
-        "owner": "shanraisshan",
-        "repoName": "claude-code-best-practice"
+        "stars": "7,570",
+        "language": "TypeScript",
+        "repo": "mauriceboe/TREK",
+        "owner": "mauriceboe",
+        "repoName": "TREK"
+      }
+    },
+    {
+      "id": "xbtlin-ai-berkshire",
+      "title": "ai-berkshire",
+      "title_zh": "ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "description_zh": "AI时代的伯克希尔：基于克劳德码的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论+多Agent毛研究。 AI时代的伯克希尔：基于克劳德代码构建的价值投资研究框架。 4种大师方法论+多智能体对抗分析。",
+      "authors": "xbtlin",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "score": 3055,
+      "meta": {
+        "source": "github",
+        "stars": "3,055",
+        "language": "Python",
+        "repo": "xbtlin/ai-berkshire",
+        "owner": "xbtlin",
+        "repoName": "ai-berkshire"
+      }
+    },
+    {
+      "id": "calesthio-OpenMontage",
+      "title": "OpenMontage",
+      "title_zh": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "description_zh": "世界上第一个开源的代理视频制作系统。 12条管道、52种工具、500+座席技能。将您的人工智能编码助手变成一个完整的视频制作工作室。",
+      "authors": "calesthio",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "score": 23471,
+      "meta": {
+        "source": "github",
+        "stars": "23,471",
+        "language": "Python",
+        "repo": "calesthio/OpenMontage",
+        "owner": "calesthio",
+        "repoName": "OpenMontage"
+      }
+    },
+    {
+      "id": "aws-agent-toolkit-for-aws",
+      "title": "agent-toolkit-for-aws",
+      "title_zh": "agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "description_zh": "AWS 支持的官方 MCP 服务器、技能和插件可帮助 AI 代理在 AWS 上构建",
+      "authors": "aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "score": 1327,
+      "meta": {
+        "source": "github",
+        "stars": "1,327",
+        "language": "Python",
+        "repo": "aws/agent-toolkit-for-aws",
+        "owner": "aws",
+        "repoName": "agent-toolkit-for-aws"
+      }
+    },
+    {
+      "id": "NanmiCoder-MediaCrawler",
+      "title": "MediaCrawler",
+      "title_zh": "MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+      "description_zh": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+      "authors": "NanmiCoder",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "score": 53330,
+      "meta": {
+        "source": "github",
+        "stars": "53,330",
+        "language": "Python",
+        "repo": "NanmiCoder/MediaCrawler",
+        "owner": "NanmiCoder",
+        "repoName": "MediaCrawler"
+      }
+    },
+    {
+      "id": "garrytan-gstack",
+      "title": "gstack",
+      "title_zh": "gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "description_zh": "使用 Garry Tan 的精确 Claude Code 设置：23 个固执己见的工具，可充当 CEO、设计师、工程经理、发布经理、文档工程师和 QA",
+      "authors": "garrytan",
+      "url": "https://github.com/garrytan/gstack",
+      "score": 116552,
+      "meta": {
+        "source": "github",
+        "stars": "116,552",
+        "language": "TypeScript",
+        "repo": "garrytan/gstack",
+        "owner": "garrytan",
+        "repoName": "gstack"
+      }
+    },
+    {
+      "id": "IceWhaleTech-CasaOS",
+      "title": "CasaOS",
+      "title_zh": "CasaOS",
+      "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+      "description_zh": "CasaOS - 一个简单、易于使用、优雅的开源个人云系统。",
+      "authors": "IceWhaleTech",
+      "url": "https://github.com/IceWhaleTech/CasaOS",
+      "score": 35314,
+      "meta": {
+        "source": "github",
+        "stars": "35,314",
+        "language": "Go",
+        "repo": "IceWhaleTech/CasaOS",
+        "owner": "IceWhaleTech",
+        "repoName": "CasaOS"
       }
     }
   ]
