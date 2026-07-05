@@ -1,98 +1,8 @@
 {
   "source": "github",
-  "updatedAt": "2026-07-04T20:32:57.290Z",
+  "updatedAt": "2026-07-05T20:38:33.266Z",
   "count": 15,
   "items": [
-    {
-      "id": "openai-codex-plugin-cc",
-      "title": "codex-plugin-cc",
-      "title_zh": "codex-plugin-cc",
-      "description": "Use Codex from Claude Code to review code or delegate tasks.",
-      "description_zh": "使用 Claude Code 的 Codex 来审查代码或委派任务。",
-      "authors": "openai",
-      "url": "https://github.com/openai/codex-plugin-cc",
-      "score": 24207,
-      "meta": {
-        "source": "github",
-        "stars": "24,207",
-        "language": "JavaScript",
-        "repo": "openai/codex-plugin-cc",
-        "owner": "openai",
-        "repoName": "codex-plugin-cc"
-      }
-    },
-    {
-      "id": "JuliusBrussee-caveman",
-      "title": "caveman",
-      "title_zh": "caveman",
-      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-      "description_zh": "🪨 当很少的代币可以做戏时为什么要使用大量的代币 — Claude Code 技能通过像穴居人一样说话来减少 65% 的代币",
-      "authors": "JuliusBrussee",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "score": 83819,
-      "meta": {
-        "source": "github",
-        "stars": "83,819",
-        "language": "JavaScript",
-        "repo": "JuliusBrussee/caveman",
-        "owner": "JuliusBrussee",
-        "repoName": "caveman"
-      }
-    },
-    {
-      "id": "alibaba-page-agent",
-      "title": "page-agent",
-      "title_zh": "page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
-      "description_zh": "JavaScript 页内 GUI 代理。使用自然语言控制 Web 界面。",
-      "authors": "alibaba",
-      "url": "https://github.com/alibaba/page-agent",
-      "score": 23012,
-      "meta": {
-        "source": "github",
-        "stars": "23,012",
-        "language": "TypeScript",
-        "repo": "alibaba/page-agent",
-        "owner": "alibaba",
-        "repoName": "page-agent"
-      }
-    },
-    {
-      "id": "usestrix-strix",
-      "title": "strix",
-      "title_zh": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "description_zh": "开源人工智能渗透测试工具，用于查找并修复应用程序的漏洞。",
-      "authors": "usestrix",
-      "url": "https://github.com/usestrix/strix",
-      "score": 35896,
-      "meta": {
-        "source": "github",
-        "stars": "35,896",
-        "language": "Python",
-        "repo": "usestrix/strix",
-        "owner": "usestrix",
-        "repoName": "strix"
-      }
-    },
-    {
-      "id": "ChromeDevTools-chrome-devtools-mcp",
-      "title": "chrome-devtools-mcp",
-      "title_zh": "chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "description_zh": "用于编码代理的 Chrome DevTools",
-      "authors": "ChromeDevTools",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "score": 45733,
-      "meta": {
-        "source": "github",
-        "stars": "45,733",
-        "language": "TypeScript",
-        "repo": "ChromeDevTools/chrome-devtools-mcp",
-        "owner": "ChromeDevTools",
-        "repoName": "chrome-devtools-mcp"
-      }
-    },
     {
       "id": "Zackriya-Solutions-meetily",
       "title": "meetily",
@@ -101,14 +11,32 @@
       "description_zh": "隐私第一，AI 会议助手具有 4 倍快的 Parakeet/Whisper 实时转录、发言者分类和基于 Rust 构建的 Ollama 摘要。 100%本地加工。无需云。 Meetily（Meetly Ai - https://meetily.ai）是适用于 macOS 和 Windows 的排名第一的自托管开源人工智能会议记录工具。",
       "authors": "Zackriya-Solutions",
       "url": "https://github.com/Zackriya-Solutions/meetily",
-      "score": 15045,
+      "score": 16676,
       "meta": {
         "source": "github",
-        "stars": "15,045",
+        "stars": "16,676",
         "language": "Rust",
         "repo": "Zackriya-Solutions/meetily",
         "owner": "Zackriya-Solutions",
         "repoName": "meetily"
+      }
+    },
+    {
+      "id": "openai-codex-plugin-cc",
+      "title": "codex-plugin-cc",
+      "title_zh": "codex-plugin-cc",
+      "description": "Use Codex from Claude Code to review code or delegate tasks.",
+      "description_zh": "使用 Claude Code 的 Codex 来审查代码或委派任务。",
+      "authors": "openai",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "score": 25353,
+      "meta": {
+        "source": "github",
+        "stars": "25,353",
+        "language": "JavaScript",
+        "repo": "openai/codex-plugin-cc",
+        "owner": "openai",
+        "repoName": "codex-plugin-cc"
       }
     },
     {
@@ -119,10 +47,10 @@
       "description_zh": "从 Anthropic 中提取的系统提示 - Claude Fable 5、Opus 4.8、Claude Code、Claude Design。 OpenAI - ChatGPT 5.5 思维、GPT 5.5 即时、Codex。 Google - Gemini 3.5 Flash、3.1 Pro、反重力。 xAI - Grok、Cursor、Copilot、VS Code、Perplexity 等。定期更新。",
       "authors": "asgeirtj",
       "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "score": 48763,
+      "score": 49805,
       "meta": {
         "source": "github",
-        "stars": "48,763",
+        "stars": "49,805",
         "language": "JavaScript",
         "repo": "asgeirtj/system_prompts_leaks",
         "owner": "asgeirtj",
@@ -130,21 +58,39 @@
       }
     },
     {
-      "id": "harvard-edge-cs249r_book",
-      "title": "cs249r_book",
-      "title_zh": "cs249r_book",
-      "description": "Machine Learning Systems",
-      "description_zh": "机器学习系统",
-      "authors": "harvard-edge",
-      "url": "https://github.com/harvard-edge/cs249r_book",
-      "score": 26507,
+      "id": "Leonxlnx-taste-skill",
+      "title": "taste-skill",
+      "title_zh": "taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "description_zh": "品味技能 - 给你的人工智能良好的品味。阻止人工智能产生无聊的、通用的斜坡",
+      "authors": "Leonxlnx",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "score": 57330,
       "meta": {
         "source": "github",
-        "stars": "26,507",
+        "stars": "57,330",
+        "language": "JavaScript",
+        "repo": "Leonxlnx/taste-skill",
+        "owner": "Leonxlnx",
+        "repoName": "taste-skill"
+      }
+    },
+    {
+      "id": "alirezarezvani-claude-skills",
+      "title": "claude-skills",
+      "title_zh": "claude-skills",
+      "description": "337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "description_zh": "337 个 Claude Code 技能和代理技能和插件（30 多个代理、70 多个自定义命令、330 多个技能、可自定义参考、脚本），适用于 Claude Code、Codex、Gemini CLI、Cursor 和另外 8 个编码代理 — 工程、营销、产品、合规性、C 级咨询、研究、业务运营、商业和财务以及您的日常生产力技能。",
+      "authors": "alirezarezvani",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "score": 20477,
+      "meta": {
+        "source": "github",
+        "stars": "20,477",
         "language": "Python",
-        "repo": "harvard-edge/cs249r_book",
-        "owner": "harvard-edge",
-        "repoName": "cs249r_book"
+        "repo": "alirezarezvani/claude-skills",
+        "owner": "alirezarezvani",
+        "repoName": "claude-skills"
       }
     },
     {
@@ -155,10 +101,10 @@
       "description_zh": "一个美丽、强大、自托管的 ROM 管理器和播放器。",
       "authors": "rommapp",
       "url": "https://github.com/rommapp/romm",
-      "score": 10139,
+      "score": 10480,
       "meta": {
         "source": "github",
-        "stars": "10,139",
+        "stars": "10,480",
         "language": "Python",
         "repo": "rommapp/romm",
         "owner": "rommapp",
@@ -173,10 +119,10 @@
       "description_zh": "位于您终端中的代理多路复用器。",
       "authors": "ogulcancelik",
       "url": "https://github.com/ogulcancelik/herdr",
-      "score": 11332,
+      "score": 11968,
       "meta": {
         "source": "github",
-        "stars": "11,332",
+        "stars": "11,968",
         "language": "Rust",
         "repo": "ogulcancelik/herdr",
         "owner": "ogulcancelik",
@@ -184,93 +130,147 @@
       }
     },
     {
-      "id": "dotnet-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "description_zh": "使用 .NET 和 C# 协助 AI 编码代理的技能存储库",
-      "authors": "dotnet",
-      "url": "https://github.com/dotnet/skills",
-      "score": 3776,
+      "id": "alibaba-page-agent",
+      "title": "page-agent",
+      "title_zh": "page-agent",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "description_zh": "JavaScript 页内 GUI 代理。使用自然语言控制 Web 界面。",
+      "authors": "alibaba",
+      "url": "https://github.com/alibaba/page-agent",
+      "score": 23751,
       "meta": {
         "source": "github",
-        "stars": "3,776",
-        "language": "C#",
-        "repo": "dotnet/skills",
-        "owner": "dotnet",
-        "repoName": "skills"
+        "stars": "23,751",
+        "language": "TypeScript",
+        "repo": "alibaba/page-agent",
+        "owner": "alibaba",
+        "repoName": "page-agent"
       }
     },
     {
-      "id": "agentskills-agentskills",
-      "title": "agentskills",
-      "title_zh": "agentskills",
-      "description": "Specification and documentation for Agent Skills",
-      "description_zh": "代理技能规范和文档",
-      "authors": "agentskills",
-      "url": "https://github.com/agentskills/agentskills",
-      "score": 22279,
+      "id": "harvard-edge-cs249r_book",
+      "title": "cs249r_book",
+      "title_zh": "cs249r_book",
+      "description": "Machine Learning Systems",
+      "description_zh": "机器学习系统",
+      "authors": "harvard-edge",
+      "url": "https://github.com/harvard-edge/cs249r_book",
+      "score": 26799,
       "meta": {
         "source": "github",
-        "stars": "22,279",
+        "stars": "26,799",
         "language": "Python",
-        "repo": "agentskills/agentskills",
-        "owner": "agentskills",
-        "repoName": "agentskills"
+        "repo": "harvard-edge/cs249r_book",
+        "owner": "harvard-edge",
+        "repoName": "cs249r_book"
       }
     },
     {
-      "id": "immich-app-immich",
-      "title": "immich",
-      "title_zh": "immich",
-      "description": "High performance self-hosted photo and video management solution.",
-      "description_zh": "高性能自托管照片和视频管理解决方案。",
-      "authors": "immich-app",
-      "url": "https://github.com/immich-app/immich",
-      "score": 105559,
+      "id": "usestrix-strix",
+      "title": "strix",
+      "title_zh": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "description_zh": "开源人工智能渗透测试工具，用于查找并修复应用程序的漏洞。",
+      "authors": "usestrix",
+      "url": "https://github.com/usestrix/strix",
+      "score": 36968,
       "meta": {
         "source": "github",
-        "stars": "105,559",
+        "stars": "36,968",
+        "language": "Python",
+        "repo": "usestrix/strix",
+        "owner": "usestrix",
+        "repoName": "strix"
+      }
+    },
+    {
+      "id": "hesreallyhim-awesome-claude-code",
+      "title": "awesome-claude-code",
+      "title_zh": "awesome-claude-code",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "description_zh": "为最出色的特工 Claude Code 精心挑选的最优质资源，Claude Code 是无可争议的编码伙伴冠军，来自 Anthropic PBC 势不可挡的团队。顶级技能、灵巧的代理、闪烁的状态栏、一流的开发人员工具的令人愉快的展示，而且我们还有插件",
+      "authors": "hesreallyhim",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "score": 48288,
+      "meta": {
+        "source": "github",
+        "stars": "48,288",
+        "language": "Python",
+        "repo": "hesreallyhim/awesome-claude-code",
+        "owner": "hesreallyhim",
+        "repoName": "awesome-claude-code"
+      }
+    },
+    {
+      "id": "coreyhaines31-marketingskills",
+      "title": "marketingskills",
+      "title_zh": "marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "description_zh": "Claude Code 和 AI 代理的营销技巧。 CRO、文案、SEO、分析和增长工程。",
+      "authors": "coreyhaines31",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "score": 36363,
+      "meta": {
+        "source": "github",
+        "stars": "36,363",
+        "language": "JavaScript",
+        "repo": "coreyhaines31/marketingskills",
+        "owner": "coreyhaines31",
+        "repoName": "marketingskills"
+      }
+    },
+    {
+      "id": "JuliusBrussee-caveman",
+      "title": "caveman",
+      "title_zh": "caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "description_zh": "🪨 当很少的代币可以做戏时为什么要使用大量的代币 — Claude Code 技能通过像穴居人一样说话来减少 65% 的代币",
+      "authors": "JuliusBrussee",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "score": 84755,
+      "meta": {
+        "source": "github",
+        "stars": "84,755",
+        "language": "JavaScript",
+        "repo": "JuliusBrussee/caveman",
+        "owner": "JuliusBrussee",
+        "repoName": "caveman"
+      }
+    },
+    {
+      "id": "CoplayDev-unity-mcp",
+      "title": "unity-mcp",
+      "title_zh": "unity-mcp",
+      "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+      "description_zh": "Unity MCP 充当 AI 助手和 Unity 编辑器之间的桥梁。为您提供 LLM 工具来管理资源、控制场景、编辑脚本以及在 Unity 中自动执行任务。",
+      "authors": "CoplayDev",
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "score": 11882,
+      "meta": {
+        "source": "github",
+        "stars": "11,882",
+        "language": "C#",
+        "repo": "CoplayDev/unity-mcp",
+        "owner": "CoplayDev",
+        "repoName": "unity-mcp"
+      }
+    },
+    {
+      "id": "facebook-astryx",
+      "title": "astryx",
+      "title_zh": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "description_zh": "完全可定制且可供代理使用的开源设计系统",
+      "authors": "facebook",
+      "url": "https://github.com/facebook/astryx",
+      "score": 5822,
+      "meta": {
+        "source": "github",
+        "stars": "5,822",
         "language": "TypeScript",
-        "repo": "immich-app/immich",
-        "owner": "immich-app",
-        "repoName": "immich"
-      }
-    },
-    {
-      "id": "chthollyphile-folia-major",
-      "title": "folia-major",
-      "title_zh": "folia-major",
-      "description": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方网易云播放器",
-      "description_zh": "于专注绚丽的歌词动画效果的本地音乐/navidrome/第三方网易云播放器",
-      "authors": "chthollyphile",
-      "url": "https://github.com/chthollyphile/folia-major",
-      "score": 974,
-      "meta": {
-        "source": "github",
-        "stars": "974",
-        "language": "TypeScript",
-        "repo": "chthollyphile/folia-major",
-        "owner": "chthollyphile",
-        "repoName": "folia-major"
-      }
-    },
-    {
-      "id": "mattpocock-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "description_zh": "真正工程师的技能。直接来自我的 .claude 目录。",
-      "authors": "mattpocock",
-      "url": "https://github.com/mattpocock/skills",
-      "score": 156456,
-      "meta": {
-        "source": "github",
-        "stars": "156,456",
-        "language": "Shell",
-        "repo": "mattpocock/skills",
-        "owner": "mattpocock",
-        "repoName": "skills"
+        "repo": "facebook/astryx",
+        "owner": "facebook",
+        "repoName": "astryx"
       }
     }
   ]

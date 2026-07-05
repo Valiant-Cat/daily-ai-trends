@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-07-04T20:33:01.789Z",
+  "updatedAt": "2026-07-05T20:38:37.896Z",
   "count": 15,
   "items": [
     {
@@ -8,7 +8,7 @@
       "title": "Scaling Laws for Grid-Based Approximate Nearest Neighbor Search in High Dimensions",
       "title_zh": "高维中基于网格的近似最近邻搜索的缩放定律",
       "description": "Grid-based approaches to approximate nearest neighbor (ANN) search have been absent from modern scaling analyses. We present a systematic characterization of a multiprobe grid algorithm with respect to dataset size N and dimensionality d. Our experiments reveal a previously unreported d-scaling crossover on the GloVe embedding family, in which multiprobe grid search maintains an approximately constant dimensional scaling exponent while other graph-, tree-, and partitioning-based methods exhibit degrading throughput. The advantage comes with near-linear query scaling in N, but also with lower indexing cost than competing ANN methods. Our results suggest that grid-based methods such as multiprobe grid may be competitive in rebuild-heavy or high-dimensional settings where indexing cost and dimensional robustness dictate performance. More broadly, recent work has formalized self-attention as an ANN operation. Thus, the N- and d-scaling properties of ANN algorithms may guide cost analysis of efficient transformer architectures. Code is available at: https://github.com/weiz345/MultiProbeANN.",
-      "description_zh": "现代尺度分析中缺少基于网格的近似最近邻（ANN）搜索方法。我们提出了多探针网格算法在数据集大小 N 和维度 d 方面的系统表征。我们的实验揭示了 GloVe 嵌入系列上以前未报告的 d 缩放交叉，其中多探针网格搜索保持近似恒定的维度缩放指数，而其他基于图、树和分区的方法则表现出吞吐量下降。其优势在于 N 中的近线性查询缩放，而且比竞争的 ANN 方法具有更低的索引成本。我们的结果表明，基于网格的方法（例如多探针网格）在重建繁重或高维设置中可能具有竞争力，其中索引成本和维度鲁棒性决定了性能。更广泛地说，最近的工作已经将自注意力正式化为人工神经网络操作。因此，ANN 算法的 N 和 d 缩放特性可以指导高效变压器架构的成本分析。代码位于：https://github.com/weiz345/MultiProbeANN。",
+      "description_zh": "现代尺度分析中缺少基于网格的近似最近邻（ANN）搜索方法。我们提出了多探针网格算法在数据集大小 N 和维度 d 方面的系统表征。我们的实验揭示了 GloVe 嵌入系列上以前未报告的 d 缩放交叉，其中多探针网格搜索保持近似恒定的维度缩放指数，而其他基于图、树和分区的方法则表现出吞吐量下降。其优势在于 N 中的近线性查询缩放，而且比竞争的 ANN 方法具有更低的索引成本。我们的结果表明，基于网格的方法（例如多探针网格）在重建繁重或高维设置中可能具有竞争力，其中索引成本和维度鲁棒性决定了性能。更广泛地说，最近的工作已经将自注意力形式化为人工神经网络操作。因此，ANN 算法的 N 和 d 缩放特性可以指导高效变压器架构的成本分析。代码位于：https://github.com/weiz345/MultiProbeANN。",
       "authors": "Matthew J Liu, Wei Hang Zheng, Vidhan Purohit, Siqi Xie, Chieh-En Li, Jerry Li, Noah Flynn",
       "url": "https://huggingface.co/papers/2607.01283",
       "score": 1,
@@ -26,10 +26,10 @@
       "description_zh": "流量矩阵 (TM) 捕获网络范围内的起点-目的地需求，并且是流量工程的核心，但当必须在在线网络控制的内存、更新和训练预算约束下执行预测时，准确的整体矩阵预测仍然具有挑战性。本文研究了紧凑的量子启发循环模型是否可以在不依赖专用图、变压器或扩散模块的情况下提供有效的 TM 预测。我们采用受量子启发的门控 Kolmogorov-Arnold 网络快速权重编程器 (QKAN-FWP) 来指导多步 Abilene TM 预测，其中每个模型根据两小时历史预测 144 通道起点-终点 (OD) 矩阵的接下来 20 个五分钟帧。我们在共享固定预算训练协议下，针对匹配大小的长短期记忆 (LSTM) 网络、更大的 LSTM 和经典门控快速权重程序员对三种 QKAN 放置变体进行了基准测试。在评估的循环模型中，G-QKANFWP 实现了最佳的合并均方根误差 (RMSE)，同时仅使用较大 LSTM 的 22.4%。它还优于匹配大小的 LSTM 和经典的 G-FWP 基线，这表明增益不仅仅归因于门控快速权重框架。收敛和通道分析进一步表明，与大小匹配的循环基线相比，受量子启发的变体在��习曲线下获得了更低的验证损失面积（AULC），而 G-QKANFWP 和 GQKAN-FWP 则获得了更多的 OD 通道胜利。这些结果表明，经典的慢速程序员和受量子启发的快速程序员是资源意识型网络流量矩阵预测的一种有前景的准确性-效率设计。",
       "authors": "Kuo-Chung Peng, Jiun-Cheng Jiang, Chun-Hua Lin, Tai-Yue Li, Nan-Yow Chen, Samuel Yen-Chi Chen",
       "url": "https://huggingface.co/papers/2606.27821",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2606.27821"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "基金会模型通常会向公众发布，但用于训练它们的数据配方（例如确定如何对不同源进行采样的域混合权重）却很少披露。这造成了访问不对称：研究人员研究生成的模型，但缺乏对生成模型的训练分布的可见性。先前用于推断训练数据的工作（例如成员推断）是在单个样本级别进行检测，因此无法表征训练语料库的全局组成。我们引入了 WARP，一个可以直接从发布的权重中恢复微调模型的训练混合物的框架。 WARP 使用模型合并在基础模型和微调模型之间进行插值，生成近似缺失训练轨迹的伪检查点，并暴露训练数据在权重空间中的几何足迹。从这些模拟足迹中，WARP 提取几何特征，并使用无参数的 softmax 读数或在合成混合物上训练的 MLP 投影仪将它们映射到域比例。在 BERT 和 GPT-2 的对照实验中，WARP 恢复平均 MAE 分别低至 0.046 和 0.104 的域混合，优于隶属推理和能够访问真实训练轨迹的变体。",
       "authors": "Tzu-Heng Huang, Aditya Goyal, John Cooper, Frederic Sala",
       "url": "https://huggingface.co/papers/2607.01686",
-      "score": 4,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "6",
         "paperId": "2607.01686"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "记忆专业知识是一种习得的技能：知道编码什么、何时检索以及如何组织知识——这种能力在认知科学中被称为元记忆。我们将内存管理视为一项可训练的技能，从而将这一观点引入LLM。我们将文件系统操作与任务操作一起提升为一流的内存操作，让模型本身决定如何管理其内存。这种记忆技能沿着两个轴提高：支持它的结构（提示、文件模式、动作词汇）以及执行它的模型的熟练程度。两个轴都抵制手动优化：长期任务中的事件会运行数千个步骤，并且单个内存错误可能会在出现之前就隐藏起来，从而使人工审查完整的轨迹变得不切实际。我们引入 AutoMem，一个自动化两个轴的框架。在第一个循环中，强大的 LLM 会审查完整的代理轨迹，并迭代地修改记忆结构，以决定代理如何与其内存文件交互。在第二个循环中，智能体自己的良好记忆决策从许多情节中被识别出来，并用作训练信号来直接提高模型的记忆熟练程度。在三个程序生成的长视野游戏（Crafter、MiniHack 和 NetHack）中，仅优化内存（无需修改模型的任务动作行为）即可将基础代理的性能提高约 2 倍至 4 倍，从而使 32B 开放权重模型可与 Claude Opus 4.5 和 Gemini 3.1 Pro Thinking 等前沿系统竞争。我们的结果表明，内存管理是一项可独立学习的技能，也是一项高杠杆目标，可以在长期任务中产生巨大收益。",
       "authors": "Shengguang Wu, Hao Zhu, Yuhui Zhang, Xiaohan Wang, Serena Yeung-Levy",
       "url": "https://huggingface.co/papers/2607.01224",
-      "score": 12,
+      "score": 14,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
+        "upvotes": "14",
         "paperId": "2607.01224"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "基于大型语言模型 (LLM) 的代理可以通过多轮与环境交互来解决复杂的程序任务，但这种能力通常依赖于大型模型、长上下文和重复的推理调用。这使得高级内存增强代理难以部署在资源受限的设备上。我们引入了 DuoMem，一种双空间蒸馏框架，可将程序问题解决能力从大型教师模型转移到紧凑的学生模型。 DuoMem 提炼在两个互补的空间中：(1) 上下文空间提炼，将学生生成的记忆替换为预先添加到学生输入的更高质量的教师生成的程序记忆；(2) 参数空间提炼，根据成功的教师轨迹微调轻量级 LoRA 适配器。在具有挑战性的体现决策基准 ALFWorld 上进行评估后，DuoMem 将 4B 参数模型的任务成功率从 4.3% 提升至 77.9%，缩小了与 72B 教师模型 (87.1%) 的大部分差距，同时添加了不到 10M 的可训练参数和仅几兆字节的预先计算的教师记忆。此外，DuoMem 增强型 4B 模型在挂钟时间内完成任务的速度比 72B 教师快 3 倍以上，这使得它可以进行实时边缘部署，这对教师来说是一个挑战。跨越 2B-72B 参数的八个模型的广泛消融表明，两个蒸馏轴都具有互补作用",
       "authors": "Peyman Hosseini, Ondrej Bohdal, Ahmed Alajrami, Andrea Maracani, Ignacio Castro, Matthew Purver, Mete Ozay, Savas Ozkan, Taha Ceritli",
       "url": "https://huggingface.co/papers/2606.29961",
-      "score": 4,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "6",
         "paperId": "2606.29961"
       }
     },
@@ -83,13 +83,13 @@
       "title": "Logit-Contribution Scoring Identifies Non-Literal Retrieval Heads",
       "title_zh": "Logit 贡献评分识别非文字检索头",
       "description": "In long-context use, large language models frequently synthesize answers from the meaning of a relevant context span rather than literally copy-pasting them. Identifying which attention heads perform this synthesis matters for interpreting long-context model behavior. Yet existing detectors miss these heads by construction: they reward heads whose attended token matches the generated token, a literal-copy criterion that captures where a head reads but not what it writes through its output-value (OV) circuit, the very mechanism that carries non-literal retrieval. We introduce Logit-Contribution Scoring (LOCOS), a write-aware detector that scores each head by the projection of its OV-circuit output onto the answer-token unembedding direction, contrasting needle and off-needle source positions in a single forward pass. Across three model families (Qwen3, Gemma-3, OLMo-3.1), mean-ablating the top LOCOS heads on the NoLiMa non-literal retrieval benchmark collapses ROUGE-L at lower head counts than prior attention-based detections; on Qwen3-8B, ablating 50 heads drives ROUGE-L from 0.401 to 0.000 while the strongest baseline still retains 0.292. The selected heads are retrieval-specific: parametric recall and arithmetic reasoning stay at baseline under the same ablation. On Qwen3-8B, the same ablation also drops MuSiQue from 0.55 to 0.08 and BABI-Long from 0.62 to 0.20, while a random-heads control stays within 0.05 of baseline.",
-      "description_zh": "在长上下文使用中，大型语言模型经常根据相关上下文范围的含义合成答案，而不是逐字复制粘贴它们。识别哪些注意力头执行这种合成对于解释长上下文模型行为很重要。然而，现有的检测器在结构上错过了这些头：它们奖励那些参与标记与生成的标记相匹配的头，这是一种文字复制标准，捕获头读取的位置，但不捕获它通过其输出值（OV）电路写入的内容，正是进行非文字检索的机制。我们引入了 Logit-Contribution Scoring (LOCOS)，这是一种写入感知检测器，通过将 OV 电路输出投影到答案���牌未嵌入方向上来对每个头进行评分，在单次前向传递中对比针和脱针源位置。在三个模型系列（Qwen3、Gemma-3、OLMo-3.1）中，对 NoLiMa 非文字检索基准上的顶级 LOCOS 头进行均值消除，使得 ROUGE-L 在头数低于之前基于注意力的检测时崩溃；在 Qwen3-8B 上，烧蚀 50 个磁头使 ROUGE-L 从 0.401 降至 0.000，而最强基线仍保留 0.292。所选的头是特定于检索的：参数回忆和算术推理在相同的消融下保持在基线。在 Qwen3-8B 上，相同的消融还将 MuSiQue 从 0.55 下降到 0.08，BABI-Long 从 0.62 下降到 0.20，而随机头控制保持在基线的 0.05 以内。",
+      "description_zh": "在长上下文使用中，大型语言模型经常根据相关上下文范围的含义合成答案，而不是逐字复制粘贴它们。识别哪些注意力头执行这种合成对于解释长上下文模型行为很重要。然而，现有的检测器在结构上错过了这些头：它们奖励那些参与标记与生成的标记相匹配的头，这是一种文字复制标准，捕获头读取的位置，但不捕获它通过其输出值（OV）电路写入的内容，正是进行非文字检索的机制。我们引入了 Logit-Contribution Scoring (LOCOS)，这是一种写入感知检测器，通过将 OV 电路输出投影到答��令牌未嵌入方向上来对每个头进行评分，在单次前向传递中对比针和脱针源位置。在三个模型系列（Qwen3、Gemma-3、OLMo-3.1）中，对 NoLiMa 非文字检索基准上的顶级 LOCOS 头进行均值消除，使得 ROUGE-L 在头数低于之前基于注意力的检测时崩溃；在 Qwen3-8B 上，烧蚀 50 个磁头使 ROUGE-L 从 0.401 降至 0.000，而最强基线仍保留 0.292。所选的头是特定于检索的：参数回忆和算术推理在相同的消融下保持在基线。在 Qwen3-8B 上，相同的消融还将 MuSiQue 从 0.55 下降到 0.08，BABI-Long 从 0.62 下降到 0.20，而随机头控制保持在基线的 0.05 以内。",
       "authors": "Aryo Pradipta Gema, Beatrice Alex, Pasquale Minervini",
       "url": "https://huggingface.co/papers/2607.01002",
-      "score": 14,
+      "score": 15,
       "meta": {
         "source": "huggingface",
-        "upvotes": "14",
+        "upvotes": "15",
         "paperId": "2607.01002"
       }
     },
@@ -146,10 +146,10 @@
       "description_zh": "最近的多模态大语言模型在临床图像推理中显示出了巨大的前景，但现有的训练后流程仍然主要以结果为中心，依赖于最终答案的正确性或序列级偏好。这受到信用分配稀疏的影响，使得难以优化临床应用所必需的推理过程。我们的分析表明，早期推理失败导致的级联错误是医学视觉问答 (VQA) 基准中预测错误的主要原因。受此启发，我们提出了医学推理感知策略优化（MRPO），这是一种包含逐步过程奖励的强化学习算法。当最终答案不正确时，MRPO 会对早期无效推理步骤中的令牌分配指数级更大的惩罚，从而在不影响成功路径的情况下打破失败级联。在三个多模式 LLM 主干中，MRPO 始终优于标准 GRPO 和最近的 RL 基线，并且在 Qwen3-VL-8B-Instruct 上甚至超过了规模更大的医学 MLLM，例如 HuatuoGPT-Vision-34B 2.79 个点。此外，MRPO 将早期推理失败率从 64.0% 降低到 13.0%，这表明有针对性地缓解级联失败可以提高推理质量和最终答案的准确性。我们的代码位于 https://github.com/dmis-lab/MRPO",
       "authors": "Junha Jung, Minbyul Jeong, Suhyeon Lim, Sungwook Jung, Jaehoon Yun, Taeyun Roh, Mujeen Sung, Jaewoo Kang",
       "url": "https://huggingface.co/papers/2606.31825",
-      "score": 17,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "19",
         "paperId": "2606.31825"
       }
     },
@@ -158,13 +158,13 @@
       "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
       "title_zh": "EvoPolicyGym：评估交互式环境中的自主策略演化",
       "description": "Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting in which a harness-model agent repeatedly edits an executable policy system under a fixed interaction budget. We instantiate this setting in EvoPolicyGym, a benchmark built from compact interactive RL environments that evaluates how agents iteratively improve explored policies. On the EvoPolicyGym suite, GPT-5.5 achieves the strongest aggregate rank score and top-two performance on all 16 environments. Beyond leaderboard results, EvoPolicyGym also provides trajectory-level diagnostics that distinguish how agents allocate budget, convert feedback into parametric tuning. These analyses show that strong autonomous policy evolution depends not only on isolated task wins, but on discovering task-appropriate mechanisms and refining policies under bounded feedback.",
-      "description_zh": "人们越来越期望自主代理通过反馈来改进可执行策略，但现有的评估经常将这一过程压缩为最终分数，或者将其与开放式软件工程进展相混淆。我们引入了自主策略演化，这是一种受控评估设置，其中利用模型代理在固定交互预算下重复编辑可执行策略系统。我们在 EvoPolicyGym 中实例化了此设置，EvoPolicyGym 是一个从紧凑的交互式 RL 环境构建的基准，用于评估智能体如何迭代地改进探索的策略。在 EvoPolicyGym 套件上，GPT-5.5 在所有 16 个环境中实现了最强的总排名得分和前两名性能。除了排行榜结果之外，EvoPolicyGym 还提供轨迹级诊断，区分代理如何分配预算、将反馈转换为参数调整。这些分析表明，强大的自主政策演化不仅取决于孤立的任务胜利，还取决于发现适合任务的机制并在有限反馈下完善政策。",
+      "description_zh": "人们越来越期望自主代理通过反馈来改进可执行策略，但现有的评估经常将这一过程压缩为最终分数，或者将其与开放式软件工程进展相混淆。我们引入了自主策略演化，这是一种受控评估设置，其中利用模型代理在固定交互预算下重复编辑可执行策略系统。我们在 EvoPolicyGym 中实例化了此设置，EvoPolicyGym 是一个从紧凑的交互式 RL 环境构建的基准，用于评估智能体如何迭代地改进探索的策略。在 EvoPolicyGym 套件上，GPT-5.5 在所有 16 个环境中实现了最强的总排名得分和前两名的性���。除了排行榜结果之外，EvoPolicyGym 还提供轨迹级诊断，区分代理如何分配预算、将反馈转换为参数调整。这些分析表明，强大的自主政策演化不仅取决于孤立的任务胜利，还取决于发现适合任务的机制并在有限反馈下完善政策。",
       "authors": "Zhilin Wang, Han Song, Runzhe Zhan, Jusen Du, Jiacheng Chen, Tianle Li, Qingyu Yin, Yulun Wu, Zhennan Shen, Tong Zhu, Yanshu Li, Guanjie Chen, Derek F. Wong, Yafu Li, Yu Cheng, Yang Yang",
       "url": "https://huggingface.co/papers/2607.02440",
-      "score": 41,
+      "score": 43,
       "meta": {
         "source": "huggingface",
-        "upvotes": "41",
+        "upvotes": "43",
         "paperId": "2607.02440"
       }
     },
@@ -176,10 +176,10 @@
       "description_zh": "对于长期的LLM代理人来说，记忆是一份关于未来每个决定可以看到的内容的合同。最简单的契约将过去的观察结果、工具调用和反射附加到每个提示中，这使得先前的上下文易于访问，但也将其变成了混乱的混合物，其中任何单个记忆组件的影响都很难隔离。我们引入并检测了另一种有界契约：每个决策都是根据通过类型检索组装的新用户消息做出的，不附加原始的交叉决策记录。因此，提示在任何长度的运行中都保持有界，并且任何单层都可以被单独烧蚀。我们在 Slay the Spire 2 中实例化了该合约，这是一款封闭规则随机套牌构建游戏，其运行需要数百个战术和战略决策。前沿LLM在同一游戏上的公开在线基准报告显示，在五种配置的最低难度下，零获胜，而开发人员报告的相同难度下的人类获胜率为 16%；任务艰巨，但尚未饱和。在我们的工具中，固定 A0 消融显示了启用触发战略技能时观察到的最大差异：无商店基线赢得 3/10 场比赛，添加技能层 6/10。在这个样本量下，比较是方向性的，而不是统计上决定性的（Fisher 精确 p\\approx0.37）；跨主干探测和公共累积上下文基线被报告为操作比较，而不是合约变量本身的受控测试。我们发布了一个可重复的测试平台：298 个完整的轨迹，带有条件标签、冻结记忆/技能快照、提示记录和分析脚本——一种代理设计和一种经过验证的、可重用的方法，用于研究显式记忆层如何塑造长期 LLM 代理决策。",
       "authors": "Xiangchen Cheng, Yunwei Jiang, Jianwen Sun, Zizhen Li, Chuanhao Li, Xiangcheng Cao, Yihao Liu, Fanrui Zhang, Li Jin, Kaipeng Zhang",
       "url": "https://huggingface.co/papers/2607.02255",
-      "score": 43,
+      "score": 46,
       "meta": {
         "source": "huggingface",
-        "upvotes": "43",
+        "upvotes": "46",
         "paperId": "2607.02255"
       }
     },
@@ -188,7 +188,7 @@
       "title": "From SRA to Self-Flow: Data Augmentation or Self-Supervision?",
       "title_zh": "从 SRA 到自流：数据增强还是自我监督？",
       "description": "Representation alignment has become an effective way to accelerate diffusion transformer training and improve generation quality. Recent self-alignment methods, such as SRA and Self-Flow, further remove the dependency on external pretrained encoders by constructing alignment within the diffusion model itself. However, the mechanism behind the improvement from SRA to Self-Flow, dual-time scheduling, remains under-examined: Self-Flow attributes its gain to interactions between tokens at different noise levels, where cleaner tokens help infer noisier ones. In this work, we revisit this explanation and ask whether the gain instead comes from data augmentation along the noise dimension. To disentangle these factors, we introduce Attention Separation, which preserves the same dual-timestep input as Self-Flow while blocking attention between tokens assigned to different noise levels. Surprisingly, removing such interaction does not degrade performance and can even improve it, suggesting that the improvement from SRA to Self-Flow mainly comes from data augmentation. Furthermore,We show that Attention Separation itself provides an augmentation effect by splitting a single image into multiple effective training parts to expand the training data. Based on these observations, we combine self-representation alignment with dual-timestep and attention-separation augmentation, and demonstrate the effectiveness of this design on ImageNet.",
-      "description_zh": "表示对齐已成为加速扩散变压器训练和提高生成质量的有效方法。最近的自对准方法，例如 SRA 和 Self-Flow，通过在扩散模型本身内构建对准，进一步消除了对外部预训练编码器的依赖。然而，从 SRA 到自流、双时间调度的改进背后的机制仍未得到充分研究：自流将其增益归因于不同噪声水平下令牌之间的交互，其中更干净的令牌有助于推断噪声更大的令牌。在这项工作中，我们重新审视这一解释，并询问增益是否来自沿噪声维度的数据增强。为了理清这些因素，我们引入了注意力分离，它保留了与自流相同的双时间步输入，同时阻止分配给不同噪声级别的标记之间的注意力。令人惊讶的是，消除这种交互并不会降低性能，甚至可以提高性能，这表明从 SRA 到 Self-Flow 的改进主要来自数据增强。此外，我们表明注意力分离本身通过将单个图像分割成多个有效的训练部分来扩展训练数据来提供增强效果。基于这些观察，��们将自我表示对齐与双时间步和注意力分离增强相结合，并在 ImageNet 上证明了这种设计的有效性。",
+      "description_zh": "表示对齐已成为加速扩散变压器训练和提高生成质量的有效方法。最近的自对准方法，例如 SRA 和 Self-Flow，通过在扩散模型本身内构建对准，进一步消除了对外部预训练编码器的依赖。然而，从 SRA 到自流、双时间调度的改进背后的机制仍未得到充分研究：自流将其增益归因于不同噪声水平下令牌之间的交互，其中更干净的令牌有助于推断噪声更大的令牌。在这项工作中，我们重新审视这一解释，并询问增益是否来自沿噪声维度的数据增强。为了理清这些因素，我们引入了注意力分离，它保留了与自流相同的双时间步输入，同时阻止分配给不同噪声级别的标记之间的注意力。令人惊讶的是，消除这种交互并不会降低性能，甚至可以提高性能，这表明从 SRA 到 Self-Flow 的改进主要来自数据增强。此外，我们表明注意力分离本身通过将单个图像分割成多个有效的训练部分来扩展训练数据来提供增强效果。基于这些观察，我���将自我表示对齐与双时间步和注意力分离增强相结合，并在 ImageNet 上证明了这种设计的有效性。",
       "authors": "Dengyang Jiang, Mengmeng Wang, Harry Yang, Jingdong Wang",
       "url": "https://huggingface.co/papers/2607.02508",
       "score": 10,
@@ -221,10 +221,10 @@
       "description_zh": "由大型语言模型 (LLM) 提供支持的搜索代理越来越多地用于解决复杂的信息查找任务，需要多步骤检索和推理才能实现用户目标。然而，现有的基准通常假设用户查询是完整且明确的，而忽略了现实世界的搜索请求经常是模糊的、不明确的、甚至实际上不正确的事实。在深度搜索场景中，这种歧义可能会沿着多步推理链传播，并导致智能体走向错误的搜索轨迹。为了解决这一差距，我们引入了 DiscoBench，这是一种澄清感知深度搜索的基准，旨在评估搜索代理是否能够主动识别歧义，提出有效的澄清问题，并通过���户交互恢复正确的推理路径。 DiscoBench 包含 11 个现实世界领域的 211 个样本和 463 个歧义实例，涵盖四种歧义类型。我们进一步设计了用于多轮交互的用户模拟器，并从任务效用、歧义检测、交互策略和成本效率四个角度评估模型性能。对代表性LLM的实验表明，歧义检测和有效澄清是不同的能力，并且重复搜索而不是要求澄清通常比直接猜测表现更差，这凸显了当前搜索代理的检索能力和交互式问题解决之间的关键差距。",
       "authors": "Yiling Tao, Shihan Deng, Meiling Tao, Pengzhi Wei, Zhichao Hu, Zhihao Zhu",
       "url": "https://huggingface.co/papers/2606.27669",
-      "score": 8,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "9",
         "paperId": "2606.27669"
       }
     }
