@@ -1,132 +1,24 @@
 {
   "source": "github",
-  "updatedAt": "2026-07-12T01:31:39.976Z",
+  "updatedAt": "2026-07-12T20:24:07.455Z",
   "count": 15,
   "items": [
     {
-      "id": "catchorg-Catch2",
-      "title": "Catch2",
-      "title_zh": "Catch2",
-      "description": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)",
-      "description_zh": "用于单元测试、TDD 和 BDD 的现代 C++ 原生测试框架 - 使用 C++14、C++17 及更高版本（C++11 支持位于 v2.x 分支，C++03 支持 Catch1.x 分支）",
-      "authors": "catchorg",
-      "url": "https://github.com/catchorg/Catch2",
-      "score": 21049,
+      "id": "Dicklesworthstone-destructive_command_guard",
+      "title": "destructive_command_guard",
+      "title_zh": "destructive_command_guard",
+      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+      "description_zh": "破坏性命令防护 (dcg) 用于阻止代理执行危险的 git 和 shell 命令。",
+      "authors": "Dicklesworthstone",
+      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "score": 2722,
       "meta": {
         "source": "github",
-        "stars": "21,049",
-        "language": "C++",
-        "repo": "catchorg/Catch2",
-        "owner": "catchorg",
-        "repoName": "Catch2"
-      }
-    },
-    {
-      "id": "abseil-abseil-cpp",
-      "title": "abseil-cpp",
-      "title_zh": "abseil-cpp",
-      "description": "Abseil Common Libraries (C++)",
-      "description_zh": "Abseil 通用库 (C++)",
-      "authors": "abseil",
-      "url": "https://github.com/abseil/abseil-cpp",
-      "score": 17807,
-      "meta": {
-        "source": "github",
-        "stars": "17,807",
-        "language": "C++",
-        "repo": "abseil/abseil-cpp",
-        "owner": "abseil",
-        "repoName": "abseil-cpp"
-      }
-    },
-    {
-      "id": "davila7-claude-code-templates",
-      "title": "claude-code-templates",
-      "title_zh": "claude-code-templates",
-      "description": "CLI tool for configuring and monitoring Claude Code",
-      "description_zh": "用于配置和监控 Claude Code 的 CLI 工具",
-      "authors": "davila7",
-      "url": "https://github.com/davila7/claude-code-templates",
-      "score": 29023,
-      "meta": {
-        "source": "github",
-        "stars": "29,023",
-        "language": "Python",
-        "repo": "davila7/claude-code-templates",
-        "owner": "davila7",
-        "repoName": "claude-code-templates"
-      }
-    },
-    {
-      "id": "google-labs-code-stitch-skills",
-      "title": "stitch-skills",
-      "title_zh": "stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "description_zh": "旨在与 Stitch MCP 服务器配合使用的代理技能库。每个技能都遵循 Agent Skills 开放标准，以便与 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理兼容。",
-      "authors": "google-labs-code",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "score": 7067,
-      "meta": {
-        "source": "github",
-        "stars": "7,067",
-        "language": "TypeScript",
-        "repo": "google-labs-code/stitch-skills",
-        "owner": "google-labs-code",
-        "repoName": "stitch-skills"
-      }
-    },
-    {
-      "id": "hashicorp-terraform",
-      "title": "terraform",
-      "title_zh": "terraform",
-      "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
-      "description_zh": "Terraform 使您能够安全且可预测地创建、更改和改进基础设施。它是一个源可用的工具，可将 API 编码为声明性配置文件，这些文件可以在团队成员之间共享、视为代码、进行编辑、审查和版本控制。",
-      "authors": "hashicorp",
-      "url": "https://github.com/hashicorp/terraform",
-      "score": 49374,
-      "meta": {
-        "source": "github",
-        "stars": "49,374",
-        "language": "Go",
-        "repo": "hashicorp/terraform",
-        "owner": "hashicorp",
-        "repoName": "terraform"
-      }
-    },
-    {
-      "id": "zeux-meshoptimizer",
-      "title": "meshoptimizer",
-      "title_zh": "meshoptimizer",
-      "description": "Mesh optimization library that makes meshes smaller and faster to render",
-      "description_zh": "网格优化库，使网格更小、渲染速度更快",
-      "authors": "zeux",
-      "url": "https://github.com/zeux/meshoptimizer",
-      "score": 8141,
-      "meta": {
-        "source": "github",
-        "stars": "8,141",
-        "language": "C++",
-        "repo": "zeux/meshoptimizer",
-        "owner": "zeux",
-        "repoName": "meshoptimizer"
-      }
-    },
-    {
-      "id": "openai-plugins",
-      "title": "plugins",
-      "title_zh": "plugins",
-      "description": "OpenAI Plugins",
-      "description_zh": "OpenAI 插件",
-      "authors": "openai",
-      "url": "https://github.com/openai/plugins",
-      "score": 4416,
-      "meta": {
-        "source": "github",
-        "stars": "4,416",
-        "language": "JavaScript",
-        "repo": "openai/plugins",
-        "owner": "openai",
-        "repoName": "plugins"
+        "stars": "2,722",
+        "language": "Rust",
+        "repo": "Dicklesworthstone/destructive_command_guard",
+        "owner": "Dicklesworthstone",
+        "repoName": "destructive_command_guard"
       }
     },
     {
@@ -137,10 +29,10 @@
       "description_zh": "这是 Claude 的 MCP 服务器，为其提供终端控制、文件系统搜索和 diff 文件编辑功能",
       "authors": "wonderwhy-er",
       "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "score": 7779,
+      "score": 7950,
       "meta": {
         "source": "github",
-        "stars": "7,779",
+        "stars": "7,950",
         "language": "TypeScript",
         "repo": "wonderwhy-er/DesktopCommanderMCP",
         "owner": "wonderwhy-er",
@@ -148,57 +40,75 @@
       }
     },
     {
-      "id": "chriskohlhoff-asio",
-      "title": "asio",
-      "title_zh": "asio",
-      "description": "Asio C++ Library",
-      "description_zh": "Asio C++ 库",
-      "authors": "chriskohlhoff",
-      "url": "https://github.com/chriskohlhoff/asio",
-      "score": 6139,
+      "id": "HKUDS-Vibe-Trading",
+      "title": "Vibe-Trading",
+      "title_zh": "Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "description_zh": "“Vibe-Trading：您的个人交易代理”",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "score": 20420,
       "meta": {
         "source": "github",
-        "stars": "6,139",
-        "language": "C++",
-        "repo": "chriskohlhoff/asio",
-        "owner": "chriskohlhoff",
-        "repoName": "asio"
+        "stars": "20,420",
+        "language": "Python",
+        "repo": "HKUDS/Vibe-Trading",
+        "owner": "HKUDS",
+        "repoName": "Vibe-Trading"
       }
     },
     {
-      "id": "oven-sh-bun",
-      "title": "bun",
-      "title_zh": "bun",
-      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
-      "description_zh": "令人难以置信的快速 JavaScript 运行时、捆绑器、测试运行器和包管理器 – 全部合而为一",
-      "authors": "oven-sh",
-      "url": "https://github.com/oven-sh/bun",
-      "score": 94571,
+      "id": "PrefectHQ-prefect",
+      "title": "prefect",
+      "title_zh": "prefect",
+      "description": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python.",
+      "description_zh": "Prefect 是一个工作流程编排框架，用于在 Python 中构建弹性数据管道。",
+      "authors": "PrefectHQ",
+      "url": "https://github.com/PrefectHQ/prefect",
+      "score": 23101,
       "meta": {
         "source": "github",
-        "stars": "94,571",
-        "language": "Rust",
-        "repo": "oven-sh/bun",
-        "owner": "oven-sh",
-        "repoName": "bun"
+        "stars": "23,101",
+        "language": "Python",
+        "repo": "PrefectHQ/prefect",
+        "owner": "PrefectHQ",
+        "repoName": "prefect"
       }
     },
     {
-      "id": "actions-checkout",
-      "title": "checkout",
-      "title_zh": "checkout",
-      "description": "Action for checking out a repo",
-      "description_zh": "检查存储库的操作",
-      "authors": "actions",
-      "url": "https://github.com/actions/checkout",
-      "score": 8467,
+      "id": "Shubhamsaboo-awesome-llm-apps",
+      "title": "awesome-llm-apps",
+      "title_zh": "awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "description_zh": "您可以实际运行 100 多个 AI Agent 和 RAG 应用程序 — 克隆、自定义、发布。",
+      "authors": "Shubhamsaboo",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "score": 118429,
       "meta": {
         "source": "github",
-        "stars": "8,467",
-        "language": "TypeScript",
-        "repo": "actions/checkout",
-        "owner": "actions",
-        "repoName": "checkout"
+        "stars": "118,429",
+        "language": "Python",
+        "repo": "Shubhamsaboo/awesome-llm-apps",
+        "owner": "Shubhamsaboo",
+        "repoName": "awesome-llm-apps"
+      }
+    },
+    {
+      "id": "anthropics-claude-cookbooks",
+      "title": "claude-cookbooks",
+      "title_zh": "claude-cookbooks",
+      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+      "description_zh": "一系列笔记本/食谱展示了一些有趣且有效的使用克劳德的方法。",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "score": 48304,
+      "meta": {
+        "source": "github",
+        "stars": "48,304",
+        "language": "Jupyter Notebook",
+        "repo": "anthropics/claude-cookbooks",
+        "owner": "anthropics",
+        "repoName": "claude-cookbooks"
       }
     },
     {
@@ -209,10 +119,10 @@
       "description_zh": "🏡 开源家庭自动化，将本地控制和隐私放在首位。",
       "authors": "home-assistant",
       "url": "https://github.com/home-assistant/core",
-      "score": 88704,
+      "score": 88985,
       "meta": {
         "source": "github",
-        "stars": "88,704",
+        "stars": "88,985",
         "language": "Python",
         "repo": "home-assistant/core",
         "owner": "home-assistant",
@@ -220,57 +130,147 @@
       }
     },
     {
-      "id": "microsoft-PowerToys",
-      "title": "PowerToys",
-      "title_zh": "PowerToys",
-      "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
-      "description_zh": "Microsoft PowerToys 是一系列实用程序，可提高 Windows 上的工作效率和自定义功能",
-      "authors": "microsoft",
-      "url": "https://github.com/microsoft/PowerToys",
-      "score": 136435,
+      "id": "Crosstalk-Solutions-project-nomad",
+      "title": "project-nomad",
+      "title_zh": "project-nomad",
+      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
+      "description_zh": "N.O.M.A.D 项目是一款独立的离线生存计算机，配备了关键工具、知识和人工智能，可让您随时随地了解情况并获得授权。",
+      "authors": "Crosstalk-Solutions",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "score": 33733,
       "meta": {
         "source": "github",
-        "stars": "136,435",
-        "language": "C",
-        "repo": "microsoft/PowerToys",
-        "owner": "microsoft",
-        "repoName": "PowerToys"
-      }
-    },
-    {
-      "id": "cypress-io-cypress",
-      "title": "cypress",
-      "title_zh": "cypress",
-      "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-      "description_zh": "对浏览器中运行的任何内容进行快速、简单且可靠的测试。",
-      "authors": "cypress-io",
-      "url": "https://github.com/cypress-io/cypress",
-      "score": 50627,
-      "meta": {
-        "source": "github",
-        "stars": "50,627",
+        "stars": "33,733",
         "language": "TypeScript",
-        "repo": "cypress-io/cypress",
-        "owner": "cypress-io",
-        "repoName": "cypress"
+        "repo": "Crosstalk-Solutions/project-nomad",
+        "owner": "Crosstalk-Solutions",
+        "repoName": "project-nomad"
       }
     },
     {
-      "id": "vercel-next.js",
-      "title": "next.js",
-      "title_zh": "next.js",
-      "description": "The React Framework",
-      "description_zh": "反应框架",
-      "authors": "vercel",
-      "url": "https://github.com/vercel/next.js",
-      "score": 140959,
+      "id": "ColeMurray-background-agents",
+      "title": "background-agents",
+      "title_zh": "background-agents",
+      "description": "An open-source background agents coding system",
+      "description_zh": "一个开源的后台代理编码系统",
+      "authors": "ColeMurray",
+      "url": "https://github.com/ColeMurray/background-agents",
+      "score": 2225,
       "meta": {
         "source": "github",
-        "stars": "140,959",
-        "language": "JavaScript",
-        "repo": "vercel/next.js",
-        "owner": "vercel",
-        "repoName": "next.js"
+        "stars": "2,225",
+        "language": "TypeScript",
+        "repo": "ColeMurray/background-agents",
+        "owner": "ColeMurray",
+        "repoName": "background-agents"
+      }
+    },
+    {
+      "id": "k1tbyte-Wand-Enhancer",
+      "title": "Wand-Enhancer",
+      "title_zh": "Wand-Enhancer",
+      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+      "description_zh": "Wand (WeMod) 应用程序的高级用户体验和互操作性扩展",
+      "authors": "k1tbyte",
+      "url": "https://github.com/k1tbyte/Wand-Enhancer",
+      "score": 6850,
+      "meta": {
+        "source": "github",
+        "stars": "6,850",
+        "language": "C#",
+        "repo": "k1tbyte/Wand-Enhancer",
+        "owner": "k1tbyte",
+        "repoName": "Wand-Enhancer"
+      }
+    },
+    {
+      "id": "pingdotgg-t3code",
+      "title": "t3code",
+      "title_zh": "t3code",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "pingdotgg",
+      "url": "https://github.com/pingdotgg/t3code",
+      "score": 13712,
+      "meta": {
+        "source": "github",
+        "stars": "13,712",
+        "language": "TypeScript",
+        "repo": "pingdotgg/t3code",
+        "owner": "pingdotgg",
+        "repoName": "t3code"
+      }
+    },
+    {
+      "id": "virattt-ai-hedge-fund",
+      "title": "ai-hedge-fund",
+      "title_zh": "ai-hedge-fund",
+      "description": "An AI Hedge Fund Team",
+      "description_zh": "人工智能对冲基金团队",
+      "authors": "virattt",
+      "url": "https://github.com/virattt/ai-hedge-fund",
+      "score": 61352,
+      "meta": {
+        "source": "github",
+        "stars": "61,352",
+        "language": "Python",
+        "repo": "virattt/ai-hedge-fund",
+        "owner": "virattt",
+        "repoName": "ai-hedge-fund"
+      }
+    },
+    {
+      "id": "chen08209-FlClash",
+      "title": "FlClash",
+      "title_zh": "FlClash",
+      "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
+      "description_zh": "一款基于ClashMeta的多平台代理客户端，简单易用，开源无广告。",
+      "authors": "chen08209",
+      "url": "https://github.com/chen08209/FlClash",
+      "score": 45190,
+      "meta": {
+        "source": "github",
+        "stars": "45,190",
+        "language": "Dart",
+        "repo": "chen08209/FlClash",
+        "owner": "chen08209",
+        "repoName": "FlClash"
+      }
+    },
+    {
+      "id": "davila7-claude-code-templates",
+      "title": "claude-code-templates",
+      "title_zh": "claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "description_zh": "用于配置和监控 Claude Code 的 CLI 工具",
+      "authors": "davila7",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "score": 29200,
+      "meta": {
+        "source": "github",
+        "stars": "29,200",
+        "language": "Python",
+        "repo": "davila7/claude-code-templates",
+        "owner": "davila7",
+        "repoName": "claude-code-templates"
+      }
+    },
+    {
+      "id": "par274-sharpemu",
+      "title": "sharpemu",
+      "title_zh": "sharpemu",
+      "description": "An experimental PlayStation 5 emulator project.",
+      "description_zh": "实验性 PlayStation 5 模拟器项目。",
+      "authors": "par274",
+      "url": "https://github.com/par274/sharpemu",
+      "score": 1170,
+      "meta": {
+        "source": "github",
+        "stars": "1,170",
+        "language": "C#",
+        "repo": "par274/sharpemu",
+        "owner": "par274",
+        "repoName": "sharpemu"
       }
     }
   ]
