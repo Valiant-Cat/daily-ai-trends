@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-07-13T20:41:05.756Z",
+  "updatedAt": "2026-07-14T20:40:57.023Z",
   "count": 15,
   "items": [
     {
-      "id": "2607.07673",
-      "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
-      "title_zh": "MedPMC：用于扩展基础模型高保真医学多模态数据的系统框架",
-      "description": "Medicine is inherently multimodal, requiring clinicians to synthesize information across diverse data streams. Yet the development of multimodal foundation models is constrained by limited access to large-scale, high-quality clinical data. Although PubMed Central (PMC) offers a complementary source of expert-authored image-text data, existing PMC-derived resources remain limited in fidelity, reproducibility, and clinical validation. We introduce MedPMC, an automated, continuously updatable framework that transforms permissively licensed literature into high-fidelity infrastructure for medical multimodal models. Applied to 6.1 million PMC articles, MedPMC curated 11 million medical image-text pairs. Component evaluations showed strong performance for initial screening (F1 = 93.2), multi-panel figure detection (F1 = 96.5), figure separation (mAP = 89.8), caption separation and alignment (F1 = 81.4; ROUGE-L = 85.3), and medical figure classification (F1 = 96.5). Manual review by five annotators, three with medical training, found 95.3% of MedPMC images medically relevant, versus 19.7% in a prior PMC-derived dataset. Across 26 benchmarks spanning 11 specialties, a MedPMC-trained CLIP-style model improved average zero-shot AUC by 7.1 percentage points over the strongest architecture-matched biomedical CLIP baseline despite using fewer than half as many image-text pairs. As the vision encoder in a multimodal large language model, it improved medical visual question-answering by 1.9 and 16.9 percentage points across two benchmarks. In 10,524 Yale New Haven Health System dermatology photographs, it improved morphology-to-image retrieval Recall@5 by 11.7 percentage points. These findings show that high-fidelity literature curation strengthens medical multimodal foundation models across benchmark and clinical settings. We publicly release the framework, corpus, benchmarks, and pretrained models.",
-      "description_zh": "医学本质上是多模式的，要求临床医生综合不同数据流的信息。然而，多模式基础模型的发展受到大规模、高质量临床数据的限制。尽管 PubMed Central (PMC) 提供了专家创作的图像文本数据的补充来源，但现有的 PMC 衍生资源在保真度、再现性和临床验证方面仍然有限。我们推出 MedPMC，这是一个自动化、可持续更新的框架，可将许可的文献转化为医疗多模式模型的高保真基础设施。 MedPMC 应用于 610 万篇 PMC 文章，策划了 1100 万个医学图像-文本对。组件评估显示在初始筛选（F1 = 93.2）、多面板图形检测（F1 = 96.5）、图形分离（mAP = 89.8）、标题分离和对齐（F1 = 81.4；ROUGE-L = 85.3）和医学图形分类（F1 = 96.5）方面表现出色。由五名注释员（其中三名受过医学培训）进行手动审查，发现 MedPMC 图像中有 95.3% 具有医学相关性，而之前 PMC 衍生数据集中的这一比例为 19.7%。在涵盖 11 个专业的 26 个基准中，MedPMC 训练的 CLIP 式模型将平均零样本 AUC 比最强的架构匹配的生物医学 CLIP ��线提高了 7.1 个百分点，尽管使用的图像文本对数量还不到一半。作为多模态大语言模型中的视觉编码器，它在两个基准测试中将医学视觉问答提高了 1.9 和 16.9 个百分点。在 10,524 张耶鲁纽黑文医疗系统皮肤科照片中，Recall@5 将形态到图像检索提高了 11.7 个百分点。这些发现表明，高保真文献管理增强了跨基准和临床环境的医学多模式基础模型。我们公开发布框架、语料库、基准测试和预训练模型。",
-      "authors": "Hyunjae Kim, Dain Kim, Pan Xiao, Serina S. Applebaum, Younjoon Chung, Xuguang Ai, Yu Yin, Roy Jiang, Yuexi Du, Yawen Wei, Yiming Kong, Tuo Guo, Zhiyuan Cao, Mengmeng Du, Yuelei Fu, Yan Hu, Rui Shi, Gui Yang, Kevin W. Jin, Yuntian Liu, Yuxuan Tian, Jonathan Marquez, Zhen Chen, Sheng Zhang, Hoifung Poon, Hua Xu, Jaewoo Kang, Qingyu Chen",
-      "url": "https://huggingface.co/papers/2607.07673",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2607.07673"
-      }
-    },
-    {
-      "id": "2607.06957",
-      "title": "Flow-ERD: Agent-type Aware Flow Matching with Entropy-Regularized Distillation for Diverse Traffic Simulation",
-      "title_zh": "Flow-ERD：代理类型感知流量匹配与熵正则化蒸馏，用于多样化流量模拟",
-      "description": "Realistic and diverse traffic simulation is essential to autonomous driving development. Yet prevailing benchmarks predominantly reward realism, and recent methods have optimized accordingly, leaving diversity underexplored. We introduce Flow-ERD, a multi-agent simulator that pursues realism and diversity jointly. Its backbone, Agent-Type Aware Flow Matching (AFM), couples flow matching's multi-modal expressiveness with type-specific kinematic execution. It preserves fine-grained diversity while keeping motions consistent with each agent type. A second stage, Entropy-Regularized Distillation (ERD), fine-tunes the closed-loop rollout distribution with an entropy-regularized reverse-KL objective. This mitigates covariate shift while explicitly preventing collapse onto high-density modes. We evaluate Flow-ERD with a log-free diversity metric alongside standard realism scores. Flow-ERD ranks first on the WOSAC test benchmark and dominates the realism--diversity Pareto front among reproducible baselines. Our project page is available https://seulbinhwang.github.io/flow-erd-project-page/{here}.",
-      "description_zh": "真实且多样化的交通模拟对于自动驾驶的发展至关重要。然而，流行的基准主要奖励现实主义，而最近的方法已经相应优化，而多样性尚未得到充分探索。我们推出 Flow-ERD，一个共同追求真实性和多样性的多智能体模拟器。其骨干主体类型感知流匹配 (AFM) 将流匹配的多模式表现力与特定类型的运动学执行相结合。它保留了细粒度的多样性，同时保持每个代理类型的动作一致。第二阶段是熵正则化蒸馏 (ERD)，它使用熵正则化反向 KL 目标微调闭环 rollout 分布。这减轻了协变量偏移，同时明确防止崩溃到高密度模式。我们使用无对数多样性指标和标准真实性分数来评估 Flow-ERD。 Flow-ERD 在 WOSAC 测试基准上排名第一，并在可再现基线中的现实性——多样性帕累托前沿中占据主导地位。我们的项目页面位于 https://seulbinhwang.github.io/flow-erd-project-page/{这里}。",
-      "authors": "Seulbin Hwang, Kiyoung Om, Daejung Kim, Jinhan Lee",
-      "url": "https://huggingface.co/papers/2607.06957",
+      "id": "2607.11736",
+      "title": "MET: Theory-Grounded and Culture-Aware Multilingual Moral Reasoning",
+      "title_zh": "MET：基于理论和文化意识的多语言道德推理",
+      "description": "Language models are increasingly used for moral decision-making across diverse linguistic and cultural contexts, yet existing work overlooks multilinguality on three aspects: 1) multilingual evaluation benchmarks use direct translation, failing to adapt culture-specific items; 2) inference-time methods for moral reasoning rely on static, English-centric scaffolds and lack grounding in moral theory; 3) training methods for moral decision-making typically require expensive supervision from stronger models or human annotators. We address these gaps with three contributions. First, we introduce MCLASH, a multilingual moral decision-making benchmark to capture culturally situated moral intuitions and social norms across languages. Second, we propose MET (Multilingual Ethics with Theory-grounded reasoning), a two-step prompting method built on expert-curated, theory-based grounds drawn from psychology and philosophy: the model first selects situation- and culture-specific grounds, then reasons over them in the native language of the user. Third, we introduce MET-D (MET-Distillation), which enhances the second step through a self-distillation training stage that requires no external supervision. MET-D improves macro-F1 over the base model on all three models of different sizes and families (Qwen3-4B, Qwen3-8B, Gemma3-4B), by an average of 3.71 points on MCLASH and 4.23 on MMoralExceptQA, with a peak MCLASH gain of 12.94 points for Malay on Qwen3-8B. We further reveal that MET-D increases native-language reasoning by 62.13 points on average, and that beneficial grounds differ systematically across cultures. Together, these contributions open the path for culture-aligned, theory-grounded multilingual moral reasoning.",
+      "description_zh": "语言模型越来越多地用于跨不同语言和文化背景的道德决策，但现有的工作在三个方面忽视了多语言性：1）多语言评估基准使用直接翻译，未能适应特定文化的项目； 2）道德推理的推理时间方法依赖于静态的、以英语为中心的支架，缺乏道德理论的基础； 3）道德决策的训练方法通常需要来自更强大的模型或人类注释者的昂贵监督。我们通过三项贡献来解决这些差距。首先，我们介绍 MCLASH，一个多语言道德决策基准，用于捕获跨语言的文化道德直觉和社会规范。其次，我们提出了 MET（基于理论推理的多语言伦理），这是一种两步提示方法，建立在专家策划的、基于心理学和哲学的理论基础之上：该模型首先选择特定于情境和文化的理由，然后用用户的母语对其进行推理。第三，我们引入了 MET-D（MET-Distillation），它通过不需要外部监督的自蒸馏训练阶段来增强第二步。 MET-D 在不同尺寸和系列的所有三个模型（Qwen3-4B、Qwen3-8B、Gemma3-4B）上相对于基本模型改进了宏 F1，在 MCLASH 上平均提高了 3.71 点，在 MMoralExceptQA 上平均提高了 4.23 点，在 Qwen3-8B 上马来语的峰值 MCLASH 增益为 12.94 点。我们进一步揭示，MET-D 使母语推理能力平均提高 62.13 分，并且不同文化的有益效果存在系统性差异。这些贡献共同为文化一致、以理论为基础的多语言道德推理开辟了道路。",
+      "authors": "Ayoung Lee, Ryan Kwon, Yunxiang Zhang, Yuxuan Liu, Peter Railton, Lu Wang",
+      "url": "https://huggingface.co/papers/2607.11736",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2607.06957"
+        "paperId": "2607.11736"
       }
     },
     {
-      "id": "2607.06374",
-      "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
-      "title_zh": "VaseMuseum：古希腊陶器数字智能博物馆",
-      "description": "Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second, when the available evidence is incomplete, noisy, or ambiguous, VLMs often produce confident but unsupported answers instead of calibrated uncertainty. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery. VaseMuseum combines an interactive virtual museum with VaseAgent, which supports both 2D images and 3D artifacts through multimodal perception, 3D-aware reasoning, external knowledge retrieval, and inference-time reliability control. Specifically, VaseAgent retrieves evidence from authoritative web and museum knowledge sources, and source-level control selects diverse and verifiable evidence before generation. Meanwhile, response-level control checks generated claims against the evidence pool and encourages neutral, evidence-bounded answers when support is insufficient or conflicting. Moreover, a training-free GRPO-style selection mechanism favors responses with valid references and calibrated confidence without updating the VLM backbone. Experiments in a realistic digital museum simulation show that VaseMuseum improves citation validity, reduces hallucinations on knowledge-intensive queries, and produces more neutral answers under ambiguity compared with search-enabled VLM baselines.",
-      "description_zh": "视觉语言模型 (VLM) 通过将 3D 数字化与自然语言文物探索联系起来，使交互式数字博物馆变得越来越可行。然而，在古希腊陶器等文化遗产领域，可靠的 VLM 援助受到两个挑战的限制。首先，开放式解释需要将细粒度的 2D/3D 视觉证据扎根于专门的策展知识中，但检索过程可能会引入薄弱的来源和无法验证的参考。其次，当可用证据不完整、有噪音或不明确时，VLM 通常会产生自信但不受支持的答案，而不是经过校准的不确定性。为了应对这些挑战，我们提出了 VaseMuseum，这是一个用于古希腊陶器智能数字博物馆的轻量级模块化多模式代理框架。 VaseMuseum 将交互式虚拟博物馆与 VaseAgent 相结合，通过多模态感知、3D 感知推理、外部知识检索和推理时间可靠性控制来支持 2D 图像和 3D 文物。具体来说，VaseAgent从权威网络和博物馆知识源检索证据，源级控制在生成之前选择多样化且可验证的证据。与此同时，响应级别的控制检查产生了针对证据��的主张，并在支持不足或相互冲突时鼓励中立、有证据限制的答案。此外，免训练的 GRPO 式选择机制有利于具有有效参考和校准置信度的响应，而无需更新 VLM 主干。真实数字博物馆模拟中的实验表明，与启用搜索的 VLM 基线相比，VaseMuseum 提高了引文有效性，减少了知识密集型查询的幻觉，并在模糊情况下生成更中立的答案。",
-      "authors": "Jiazi Wang, Nonghai Zhang, Qiushi Xie, Zeyu Zhang, Yufeng Chen, Yang Zhao, Ling Shao, Hao Tang",
-      "url": "https://huggingface.co/papers/2607.06374",
+      "id": "2607.07470",
+      "title": "A Theory of Contrastive Learning with Natural Images",
+      "title_zh": "自然图像对比学习理论",
+      "description": "Why does contrastive learning with simple images and augmentations yield useful representations for downstream tasks? We address this question by analytically computing the optimal representation in terms of a contrastive loss for a range of basic augmentations and any image dataset with stationary statistics. We show that for certain augmentations the optimum can be attained by a CNN whose first layer filters are sinusoids, followed by a pointwise nonlinearity, global average pooling, and a final linear layer that performs partial whitening. We also show that the optimal weights in such CNNs for more complicated augmentations are still sinusoids. The frequencies of the sinusoids and their weights can be computed using a simple waterfilling algorithm given the dataset's expected power spectrum. Experiments with different image datasets and augmentations show that such CNNs trained with SGD empirically learn sinusoids in their first layer and to perform partial whitening",
+      "description_zh": "为什么使用简单图像和增强的对比学习可以为下游任务产生有用的表示？我们通过分析计算一系列基本增强和任何具有固定统计数据的图像数据集的对比损失的最佳表示来解决这个问题。我们表明，对于某些增强，可以通过第一层滤波器为正弦曲线、随后是点非线性、全局平均池化和执行部分白化的最终线性层的 CNN 来获得最佳效果。我们还表明，此类 CNN 中对于更复杂的增强的最佳权重仍然是正弦曲线。给定数据集的预期功率谱，可以使用简单的注水算法来计算正弦曲线的频率及其权重。使用不同图像数据集和增强的实验表明，此类使用 SGD 训练的 CNN 在第一层中凭经验学习正弦曲线并执行部分白化",
+      "authors": "Antonio Torralba, Yair Weiss",
+      "url": "https://huggingface.co/papers/2607.07470",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2607.06374"
+        "paperId": "2607.07470"
       }
     },
     {
-      "id": "2607.07964",
-      "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
-      "title_zh": "KronQ：通过克罗内克因子 Hessian 进行 LLM 量化",
-      "description": "Post-training quantization (PTQ) is a widely adopted technique for compressing large language models (LLMs) without retraining. Existing second-order PTQ methods, including GPTQ, construct quantization objectives exclusively from input activation statistics, effectively assuming that all output channels contribute equally to the layer-wise reconstruction objective. We propose KronQ, a PTQ framework that challenges this assumption by introducing the gradient covariance into the quantization pipeline. Under the Kronecker-factored Hessian approximation, the quantization loss depends jointly on both the activation and gradient covariances, and KronQ exploits this at two complementary levels. (1) KronQ introduces bidirectional incoherence processing, extending the existing input-side random rotation to the output dimension using the gradient covariance, reducing weight magnitude variance across both input and output dimensions. (2) KronQ derives a new sensitivity metric for inter-layer mixed-precision allocation, driven by the gradient and activation Hessian traces. Notably, in the case of 2-bit weight-only quantization on LLaMA-3-70B, while GPTQ and GPTAQ diverge or produce degenerate quantizations (>2000 perplexity on WikiText-2), KronQ achieves 7.93 perplexity.",
-      "description_zh": "训练后量化（PTQ）是一种广泛采用的技术，用于压缩大型语言模型（LLM）而无需重新训练。现有的二阶 PTQ 方法（包括 GPTQ）仅根据输入激活统计数据构建量化目标，有效地假设所有输出通道对逐层重建目标的贡献相同。我们提出了 KronQ，这是一个 PTQ 框架，它通过将梯度协方差引入量化管道来挑战这一假设。在克罗内克分解的 Hessian 近似下，量化损失共同取决于激活和梯度协方差，并且 KronQ 在两个互补级别上利用了这一点。 (1) KronQ引入双向不相干处理，利用梯度协方差将现有的输入侧随机旋转扩展到输出维度，减少输入和输出维度上的权重幅度方差。 (2) KronQ 在梯度和激活 Hessian 迹的驱动下，导出了一种新的层间混合精度分配灵敏度度量。值得注意的是，在 LLaMA-3-70B 上仅进行 2 位权重量化的情况下，虽然 GPTQ 和 GPTAQ 出现分歧或产生简并量化（WikiText-2 上的困惑度 >2000），但 KronQ 的困惑度达到 7.93。",
-      "authors": "Donghyun Lee, Yuhang Li, Ruokai Yin, Priyadarshini Panda",
-      "url": "https://huggingface.co/papers/2607.07964",
-      "score": 15,
+      "id": "2607.11643",
+      "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
+      "title_zh": "小米-机器人-U0：与世界基础模型的统一体现综合",
+      "description": "Recent foundation image and video generation models offer strong generalization and controllability, but their direct application to embodied scenarios is limited by requirements for multi-view consistency, geometric coherence, and robot embodiment constraints. Existing methods typically adapt foundation models with limited robot data, often sacrificing visual knowledge acquired during large-scale pre-training. We present Xiaomi-Robotics-U0, a 38-billion-parameter multimodal autoregressive model for unified embodied synthesis. It treats embodied generation as an extension of foundation image and video generation and jointly optimizes text-to-image generation, image editing, embodied scene generation, embodied transfer, and embodied video generation. This unified framework preserves the generalization of the pre-trained world foundation model while adapting it to embodied settings. Xiaomi-Robotics-U0 is the first model to support high-quality multi-view scene generation across multiple robot embodiments and to introduce structured, controllable embodied transfer for fine-grained editing while preserving multi-view consistency and interaction dynamics. It achieves state-of-the-art results on single-step and sequential generation tasks, outperforming GPT-Image-2.0 in human evaluations of embodied scene generation and transfer, ranking first on World Arena for embodied video generation, and improving the out-of-distribution success rate of pi_0.5 from 36.9% to 63.2% on challenging real-world manipulation tasks. These results show that foundation world models can serve both as embodied world models and scalable data engines for embodied intelligence. Code and checkpoints are available at https://robotics.xiaomi.com/xiaomi-robotics-u0.html.",
+      "description_zh": "最近的基础图像和视频生成模型提供了很强的泛化性和可控性，但它们在具体场景中的直接应用受到多视图一致性、几何相干性和机器人具体约束的要求的限制。现有方法通常使用有限的机器人数据来调整基础模型，通常会牺牲在大规模预训练期间获得的视觉知识。我们推出了Xiaomi-Robotics-U0，这是一个用于统一具体综合的 380 亿参数多模态自回归模型。它将具体化生成视为基础图像和视频生成的扩展，并联合优化文本到图像生成、图像编辑、具体化场景生成、具体化传输和具体化视频生成。这个统一的框架保留了预先训练的世界基础模型的泛化性，同时使其适应具体的设置。小米机器人-U0是第一个支持跨多个机器人实施例的高质量多视图场景生成的模型，并引入结构化、可控的实施传输以进行细粒度编辑，同时保持多视图一致性和交互动态。它在单步和顺序生成任务上取得了最先进的结果，在具体场景生成和传输的人类评估中优于 GPT-Image-2.0，在具体视频生成的 World Arena 上排名第一，并将 pi_0.5 在具有挑战性的现实世界操作任务上的分布外成功率从 36.9% 提高到 63.2%。这些结果表明，基础世界模型既可以作为具体世界模型，也可以作为具体智能的可扩展数据引擎。代码和检查点可在 https://robotics.xiaomi.com/xiaomi-robotics-u0.html 获取。",
+      "authors": "Xinghang Li, Jun Guo, Qiwei Li, Long Qian, Hang Lai, Yueze Wang, Hongyu Yan, Jiahang Cao, Xi Chen, Jingen Qu, Jiaxi Song, Nan Sun, Hanye Zhao, Futeng Liu, Wanli Peng, Heyun Wang, Yunhong Wang, Caoyu Xia, Jack Zhao, Diyun Xiang, Hangjun Ye, Heng Qu, Huaping Liu, Jason Li",
+      "url": "https://huggingface.co/papers/2607.11643",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
-        "paperId": "2607.07964"
+        "upvotes": "3",
+        "paperId": "2607.11643"
       }
     },
     {
-      "id": "2607.08964",
-      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
-      "title_zh": "Long-Horizo​​n-Terminal-Bench：通过基于密集奖励的评分来测试智能体在长视野终端任务上的极限",
-      "description": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
-      "description_zh": "人工智能代理已经能够自主完成简短、明确的任务。然而，现有的终端基准测试主要关注在几分钟内完成的简单问题，并且仅根据最终结果进行评估。这种设置忽略了中间进度和部分解决方案，产生稀疏的奖励信号和代理能力的不完整图片。我们推出了 Long-Horizo​​n-Terminal-Bench，这是一个涵盖 9 个类别的 46 个长视野任务的终端基准，包括实验再现、软件工程、多模态分析、互动游戏和科学计算。每个任务都遵循带有参考解决方案或模拟引擎的终端工作台式设置，但进一步分解为细粒度的分级子任务。这种设计可以实现密集的中间奖励和部分信用，从而使评估不仅可以捕获代理是否达到最终目标，还可以捕获它在开放式工作流程中的进展情况。 Long-Horizo​​n-Terminal-Bench 中的任务通常需要数百个情节和几分钟到几小时的执行，强调长期规划、长期上下文管理和迭代调试，而不是一次性解决问题。我们评估了 15 个前沿模型，发现代理平均每个任��消耗 990 万个代币，每次运行大约 231 个情节和 85.3 分钟的执行时间，使得 Long-Horizo​​n-Terminal-Bench 比之前基于终端的基准测试要求更高。即使是最强大的测试模型，在部分奖励阈值为 0.95 时也能达到 15.2% 的通过率，在完美奖励阈值为 1.0 时也能达到 10.9%，而在这两个阈值下，各模型的平均通过率分别为 4.3% 和 1.7%。这些结果揭示了改进的空间。我们进一步分析故障模式和错误模式，并发布 Long-Horizo​​n-Terminal-Bench 以支持长视野终端代理的未来进展。",
-      "authors": "Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ninghao Liu, Lichao Sun, Haotao Mi, LeoweiLiang",
-      "url": "https://huggingface.co/papers/2607.08964",
-      "score": 43,
+      "id": "2607.09701",
+      "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+      "title_zh": "EgoSteer：从以自我为中心的视频实现可操纵灵巧操纵的全栈系统",
+      "description": "Steerability is a defining capability of generalist robot policies, yet remains largely absent in dexterous-hand systems for lack of large-scale, language-aligned, and action-accurate demonstration data. To address this bottleneck, we present a full-stack system that scales dexterous VLA pre-training from egocentric human videos and enables data-efficient real-robot post-training. It integrates EgoSmith, a data pipeline that curates in-the-wild egocentric videos into 9.6K hours of high-quality pre-training data with 9x higher throughput and better accuracy than prior SOTA; a unified robot stack for teleoperation and human-in-the-loop correction; and EgoSteer, a world-model-enhanced VLA trained on optimized infrastructure. Human-data pre-training equips EgoSteer with language-guided manipulation priors, which are grounded through robot post-training and improved by DAgger refinement. Empirically, EgoSteer robustly executes free-form instructions across 40+ diverse tasks, demonstrating failure recovery, dexterity, and generalization. The pre-trained model also few-shot adapts to complex long-horizon tasks, including box folding, on two embodiments with 75+% success. We open-source the system, data, and model at https://egosteer.github.io/.",
+      "description_zh": "可操纵性是通用机器人策略的一项决定性能力，但由于缺乏大规模、语言一致且动作准确的演示数据，在灵巧手系统中仍然基本上不存在。为了解决这个瓶颈，我们提出了一个全栈系统，可以扩展以自我为中心的人类视频的灵巧 VLA 预训练，并实现数据高效的真实机器人后期训练。它集成了 EgoSmith，这是一个数据管道，可将野外的以自我为中心的视频整理为 9600 小时的高质量预训练数据，吞吐量比之前的 SOTA 高出 9 倍，准确性也更高；用于远程操作和人机在环校正的统一机器人��栈； EgoSteer，一个经过优化基础设施训练的世界模型增强型 VLA。人类数据预训练为 EgoSteer 配备了语言引导的操作先验，这些先验通过机器人后训练奠定基础，并通过 DAgger 细化进行改进。根据经验，EgoSteer 在 40 多个不同任务中稳健地执行自由格式指令，展示了故障恢复、灵活性和泛化能力。预训练模型还可以通过少量样本适应复杂的长期任务，包括盒子折叠，在两个实施例中成功率达到 75% 以上。我们在 https://egosteer.github.io/ 开源系统、数据和模型。",
+      "authors": "Yifan Zhong, Zhang Chen, Tianrui Guan, Fanlian Zeng, Yuyao Ye, Tianjia He, Ka Nam Lui, Jiayi Li, Tingrui Zhang, Ruilin Yan, Xinhao Ji, Guangyu Zhao, Wenjie Lou, Jiayuan Zhang, Yuanpei Chen, Yaodong Yang",
+      "url": "https://huggingface.co/papers/2607.09701",
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "43",
-        "paperId": "2607.08964"
+        "upvotes": "8",
+        "paperId": "2607.09701"
       }
     },
     {
-      "id": "2607.09020",
-      "title": "Phone Segmentation and Recognition through Phonological Activation Mapping",
-      "title_zh": "通过语音激活映射进行电话分割和识别",
-      "description": "Phone segmentation and recognition are inherently related tasks, yet modern approaches typically model them separately. We argue that phonetic structure is already latent in the representations of self-supervised speech models (S3Ms), and one only needs to steer them to solve both tasks. We leverage S3M-based Phonological Activation Mapping (SPAM), which maps each S3M representation frame to a vector of phonological feature activations, such as voicing and nasality. On top of SPAM, we introduce two simple but effective lightweight, gradient-descent-free prediction heads: a recognition head and a segmentation head. Our method requires less than a minute of phonetic transcriptions, and generalizes to unseen phones during training. Across a diverse range of datasets, our approach attains strong segmentation and recognition performance.",
-      "description_zh": "电话分割和识别本质上是相关的任务，但现代方法通常对它们进行单独建模。我们认为，语音结构已经隐藏在自监督语音模型（S3M）的表示中，人们只需要引导它们来解决这两项任务。我们利用基于 S3M 的语音激活映射 (SPAM)，它将每个 S3M 表示帧映射到语音特征激活向量，例如发声和鼻音。在SPAM之上，我们引入了两个简单但有效的轻量级、无梯度下降的预测头：识别头和分割头。我们的方法需要不到一分钟的语音转录，并且可以推广到训练期间看不见的电话。在各种数据集上，我们的方法获得了强大的分割和识别性能。",
-      "authors": "Shikhar Bharadwaj, Kwanghee Choi, Stephen McIntosh, Chin-Jou Li, Eunjung Yeo, Daisuke Saito, Nobuaki Minematsu, Shinji Watanabe, Jian Zhu, David Harwath, David R. Mortensen",
-      "url": "https://huggingface.co/papers/2607.09020",
+      "id": "2607.11885",
+      "title": "Latent-Identity Tuning in Text-to-Image Personalization Models",
+      "title_zh": "文本到图像个性化模型中的潜在身份调整",
+      "description": "Generating and editing a person's face demands high precision, as even minor modifications can significantly alter a subject's perceived identity. Current personalization and editing methods built on general-purpose text-to-image models, however, often lack the precision required for fine-grained facial edits. We present a method for fine-grained identity tuning in text-to-image personalization models. Unlike standard image editing, which operates on a given image, identity tuning modifies the latent representation of a specific identity, enabling the generation of diverse images that consistently depict the same edited identity. To enable fine-grained latent identity tuning, we explore the latent space of a pre-trained, frozen encoder for text-to-image personalization. Our approach requires no additional training. Instead, it leverages the existing architecture of a frozen encoder to uncover latent semantic directions. This space consists of a set of latent tokens that play distinct roles in capturing different aspects of an identity and often correspond to specific spatial or semantic facial regions. We show that meaningful directions can be identified within this space and within subspaces defined by selected tokens, enabling localized, fine-grained, and semantically coherent edits. We validate our approach through qualitative and quantitative experiments that demonstrate diverse localized facial edits while preserving cross-image identity consistency. Project page at: https://garibida.github.io/IdentityTuning/",
+      "description_zh": "生成和编辑人脸需要高精度，因为即使很小的修改也会显着改变对象的感知身份。然而，当前基于通用文本到图像模型构建的个性化和编辑方法通常缺乏细粒度面部编辑所需的精度。我们提出了一种在文本到图像个性化模型中进行细粒度身份调整的方法。与对给定图像进行操作的标准图像编辑不同，身份调整修改特定身份的潜在表示，从而能够生成一致地描述相同编辑身份的不同图像。为了实现细粒度的潜在身份调整，我们探索了用于文本到图像个性化的预训练、冻结编码器的潜在空间。我们的方法不需要额外的培训。相反，它利用冻结编码器的现有架构来发现潜在的语义方向。该空间由一组潜在标记组成，这些标记在捕获身份的不同方面方面发挥着不同的作用，并且通常对应于特定的空间或语义面部区域。我们表明，可以在该空间内以及由所选标记定义的子空间内识别有意义的方向，从而实现本地化、细粒度和语义连贯的编辑。我们通过定性和定量实验验证了我们的方法，这些实验展示了多样化的局部面部编辑，同时保持了跨图像身份的一致性。项目页面：https://garibida.github.io/IdentityTuning/",
+      "authors": "Daniel Garibi, Ronen Kamenetsky, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik",
+      "url": "https://huggingface.co/papers/2607.11885",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2607.11885"
+      }
+    },
+    {
+      "id": "2607.11505",
+      "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
+      "title_zh": "代理探索和可重用指导：通过代理引导更新信号的模块化LLM培训后范式",
+      "description": "Post-training is essential for refining the domain-specific capabilities of large language models (LLMs), yet existing reward optimization and distribution matching methods tightly couple policy exploration with distribution alignment. This coupling forces expensive exploration directly on the policy model and severely hinders the asynchronous generation, reuse, and cross-model transfer of optimization signals. In this paper, we propose Proxy-guided Update Signal Transfer (PUST), a novel post-training framework that fundamentally decouples update-signal exploration from distribution alignment. Instead of utilizing the primary model for costly exploration, PUST employs a lightweight proxy model as an efficient testbed to discover high-reward behaviors. We extract the relative improvement signal between the proxy's initial and optimized states, transferring this directional update to the primary model to guide its policy alignment. This decoupled pipeline, comprising proxy exploration, update-signal extraction, and signal transfer, significantly reduces computational overhead and enables optimization signals to be asynchronously generated, cached, and reused. Crucially, by transferring relative improvements rather than absolute policy distributions, PUST naturally supports weak-to-strong improvement and seamless cross-model transfer. Systematic evaluations on Qwen3-family models across math and code domains demonstrate that update signals extracted from substantially weaker proxies can robustly and adjustably enhance stronger primary models. Ultimately, PUST transforms post-training from a monolithic online optimization process into a highly modular, reusable, and cost-efficient paradigm.",
+      "description_zh": "后训练对于完善大型语言模型 (LLM) 的特定领域功能至关重要，但现有的奖励优化和分布匹配方法将策略探索与分布对齐紧密结合在一起。这种耦合迫使直接在策略模型上进行昂贵的探索，并严重阻碍了优化信号的异步生成、重用和跨模型传输。在本文中，我们提出了代理引导更新信号传输（PUST），这是一种新颖的训练后框架，从根本上将更新信号探索与分布对齐解耦。 PUST 没有利用主要模型进行成本高昂的探索，而是采用轻量级代理模型作为有效的测试平台来��现高回报行为。我们提取代理的初始状态和优化状态之间的相对改进信号，将此定向更新转移到主要模型以指导其策略调整。这种解耦的管道包括代理探索、更新信号提取和信号传输，显着减少了计算开销，并使优化信号能够异步生成、缓存和重用。至关重要的是，通过转移相对改进而不是绝对策略分布，PUST 自然支持从弱到强的改进和无缝的跨模型转移。对跨数学和代码域的 Qwen3 系列模型的系统评估表明，从较弱的代理中提取的更新信号可以稳健且可调节地增强更强的主要模型。最终，PUST 将训练后从单一的在线优化过程转变为高度模块化、可重用且经济高效的范例。",
+      "authors": "Daocheng Fu, Rong Wu, Yu Yang, Xuemeng Yang, Jianbiao Mei, Licheng Wen, Pinlong Cai, Yong Liu, Botian Shi, Yu Qiao",
+      "url": "https://huggingface.co/papers/2607.11505",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2607.11505"
+      }
+    },
+    {
+      "id": "2607.09362",
+      "title": "CtrlVTON: Controllable Virtual Try-On via Visual-Instance-Prompt Segmentation",
+      "title_zh": "CtrlVTON：通过视觉实例提示分割进行可控虚拟试穿",
+      "description": "Virtual try-on (VTO) has made significant progress in realistically transferring garments onto a target person. Yet most systems give the user little control over how a garment should be worn -- its size (loose or fitted), style (e.g., tucked in or untucked, open or closed), and spatial placement on the body. We address this gap with two complementary contributions. First, we define and solve Visual-Instance-Prompt Segmentation via VIP-SAM: given a flatlay image of a garment, segment that specific instance in a photograph of a person wearing it. This is an instance-level task, distinct from the typically studied category-level segmentation. Second, we introduce CtrlVTON, a controllable VTO framework that recasts try-on as an image editing problem and adds segmentation masks as pixel-level control over garment layout, including style, size, and spatial placement on the body. VIP-SAM and CtrlVTON each achieve state-of-the-art results on their respective tasks. In particular, CtrlVTON generates images that follow user-provided layouts far more faithfully than the strongest proprietary editing systems while matching them on garment fidelity.",
+      "description_zh": "虚拟试穿 (VTO) 在将服装真实地转移到目标人身上方面取得了重大进展。然而，大多数系统让用户几乎无法控制衣服的穿着方式——尺寸（宽松或合身）、款式（例如，塞进或不塞进、打开或闭合）以及在身体上的空间位置。我们通过两项互补的贡献来解决这一差距。首先，我们通过 VIP-SAM 定义并解决视觉实例提示分割：给定服装的平面图像，分割穿着该服装的人的照片中的特定实例。这是一个实例级任务，与通常研究的类别级���割不同。其次，我们介绍 CtrlVTON，这是一个可控的 VTO 框架，它将试穿重新定义为图像编辑问题，并添加分割蒙版作为对服装布局的像素级控制，包括款式、尺寸和身体上的空间放置。 VIP-SAM 和 CtrlVTON 在各自的任务上均取得了最先进的结果。特别是，CtrlVTON 生成的图像比最强大的专有编辑系统更忠实地遵循用户提供的布局，同时匹配服装保真度。",
+      "authors": "Seungyong Lee, Hyun Jun Jang, Sangoh Kim, Sungjoon Park",
+      "url": "https://huggingface.co/papers/2607.09362",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2607.09362"
+      }
+    },
+    {
+      "id": "2607.11881",
+      "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+      "title_zh": "LLM中的元认知：基础、进展和机遇",
+      "description": "Metacognition is a foundational component of intelligence critical to effective learning, problem solving, decision-making, communication, and more. In recent years, it has become increasingly recognized as a cornerstone of capable, transparent AI systems. Yet while LLMs have made significant progress across diverse real-world tasks, it is not yet clear when, how, or to what extent they can exhibit or be endowed with effective metacognitive abilities, nor how such abilities can be adapted to advance the fundamental capabilities, reliability, and intelligence of AI systems. This paper bridges this gap by presenting the first comprehensive overview of the current state of knowledge on metacognition for LLMs. We analyze and taxonomize the landscape of this emerging field and summarize recent technical advancements, including methods and benchmarks to measure and evaluate LLMs' metacognitive abilities, techniques to elicit, improve, and apply metacognition in LLMs, and findings and implications of ongoing research. We also discuss applications, open questions and challenges, and promising directions for future work. Our aim is to provide a detailed and up-to-date review of this topic and stimulate meaningful research and discussion. An organized list of papers can be found at https://github.com/yale-nlp/LLM-Metacognition.",
+      "description_zh": "元认知是智力的基本组成部分，对于有效学习、解决问题、决策、沟通等至关重要。近年来，它越来越被认为是强大、透明的人工智能系统的基石。然而，尽管LLM在各种现实世界任务中取得了重大进展，但尚不清楚他们何时、如何或在多大程度上能够表现出或被赋予有效的元认知能力，也不清楚如何调整这些能力来提高人工智能系统的基本能力、可靠性和智能。本文首次全面概述了LLM元认知知识的现状，弥补了这一差距。我们对这一新兴领域的前景进行分析和分类，并总结最新的技术进展，包括衡量和评估LLM元认知能力的方法和基准，在LLM中引发、改进和应用元认知的技术，以及正在进行的研究的发现和影响。我们还讨论应用、悬而未决的问题和挑战，以及未来工作的有希望的方向。我们的目标是对该主题提供详细且最新的回顾，并激发有意义的研究和讨论。可以在 https://github.com/yale-nlp/LLM-Metacognition 找到有序的论文列表。",
+      "authors": "Gabrielle Kaili-May Liu, Areeb Gani, Jacqueline Lu, Jordan Thomas, Mark Steyvers, Arman Cohan",
+      "url": "https://huggingface.co/papers/2607.11881",
+      "score": 12,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "12",
+        "paperId": "2607.11881"
+      }
+    },
+    {
+      "id": "2607.09125",
+      "title": "4D Human-Scene Reconstruction from Low-Overlap Captures",
+      "title_zh": "从低重叠捕获中重建 4D 人类场景",
+      "description": "Existing volumetric capture of dynamic human performance achieves high fidelity with dense camera arrays. However, in real-world scenarios, only a handful of low-overlap cameras are available, which degrades the output quality and leaves large areas unobserved. Recent 4D reconstruction methods have focused on low-overlap settings, yet they still produce noticeable artifacts in under-observed regions. Video diffusion models have emerged as another option, but they show geometrically inconsistent results for humans. To address these limitations, we propose StudioRecon, a pipeline that reconstructs 4D human scenes from sparse, low-overlap cameras by decoupling background and humans. We densify background supervision by synthesizing hundreds of camera-controlled novel views with a video diffusion model. We also robustly initialize deformable Gaussian humans with cross-view identity association and triangulated multi-view keypoint fitting. Finally, our recursive enhancement module with motion-adaptive consistency injection harmonizes the composed output, thereby further avoiding remaining artifacts. We achieve state-of-the-art novel view synthesis across four real-world datasets and demonstrate applications such as novel trajectory rendering and human replacement.",
+      "description_zh": "现有的动态人体表现的体积捕捉通过密集的相机阵列实现了高保真度。然而，在现实场景中，只有少数低重叠相机可用，这会降低输出质量并导致大面积区域无法观察到。最近的 4D 重建方法侧重于低重叠设置，但它们仍然在观察不足的区域产生明显的伪影。视频扩散模型已成为另一种选择，但它们对人类显示出几何上不一致的结果。为了解决这些限制，我们提出了 StudioRecon，这是一种通过分离背景和人类，从稀疏、低重叠摄像机重建 4D 人类场景的管道���我们通过视频扩散模型合成数百个摄像机控制的新颖视图来强化背景监督。我们还通过跨视图身份关联和三角多视图关键点拟合来稳健地初始化可变形高斯人类。最后，我们的递归增强模块具有运动自适应一致性注入，可以协调组合的输出，从而进一步避免剩余的伪影。我们在四个现实世界数据集上实现了最先进的新颖视图合成，并演示了新颖的轨迹渲染和人类替换等应用。",
+      "authors": "Minhyuk Hwang, Sangmin Kim, Seunguk Do, Daneul Kim, Jaesik Park",
+      "url": "https://huggingface.co/papers/2607.09125",
+      "score": 41,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "41",
+        "paperId": "2607.09125"
+      }
+    },
+    {
+      "id": "2607.11644",
+      "title": "Motion4Motion: Motion Transfer Across Subjects at Inference",
+      "title_zh": "Motion4Motion：推理时跨主体的运动转移",
+      "description": "This work explores the motion transfer from one video to another, which is crucial in animation for diverse characters. Previously, video motion transfer has been largely explored between human and human-like characters, enabling a lot of applications in digital creation. However, these approaches encounter a main limitation. Specifically, related technical pipelines heavily rely on a predefined human skeleton structure and accordingly require skeleton-conditional model training. On the one hand, these methods are difficult to generalize to diverse characters, such as animals from different species, while preserving their unique motion styles. On the other hand, labeled data in diverse skeletons is limited, which additionally restricts the large-scale training for the task. In this paper, we jump out of the skeleton-based motion transfer framework and propose a training-free motion transfer framework, named Motion4Motion. Motion4Motionmodels the motion flow of the character in a video instead of skeletons, which makes motion transfer across species easier. Extensive experimental results and novel applications show our methods outperform baselines impressively. Project page is available at https://lhchen.top/Motion4Motion.",
+      "description_zh": "这项工作探索了从一个视频到另一个视频的动作转移，这对于不同角色的动画至关重要。此前，视频动作传输已在人类和类人角色之间进行了大量探索，在数字创作中实现了许多应用。然而，这些方法遇到了一个主要限制。具体来说，相关技术流程严重依赖于预定义的人体骨骼结构，因此需要骨骼条件模型训练。一方面，这些方法很难推广到不同的角色，例如不同物种的动物，同时保留其独特的运动风格。另一方面，不同骨架中的标记数据是有限的，这进一步限制了任务的大规模训练。在本文中，我们跳出了基于骨架的运动传输框架，提出了一种免训练的运动传输框架，名为Motion4Motion。 Motion4Motion 对视频中角色的运动流而不是骨骼进行建模，这使得跨物种的运动转移变得更容易。广泛的实验结果和新颖的应用表明我们的方法明显优于基线。项目页面位于 https://lhchen.top/Motion4Motion。",
+      "authors": "Ling-Hao Chen, Zixin Yin, Duomin Wang, Xianfang Zeng, Gang Yu",
+      "url": "https://huggingface.co/papers/2607.11644",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2607.11644"
+      }
+    },
+    {
+      "id": "2607.10623",
+      "title": "LATO.2: Factorized 3D Mesh Generation with Vertex and Topology Flow",
+      "title_zh": "LATO.2：使用顶点和拓扑流分解 3D 网格生成",
+      "description": "Flow matching over carefully designed latent representations has recently emerged as a powerful paradigm for topology-aware mesh generation. Existing approaches, however, model vertices and connectivity jointly in a joint latent space, entangling continuous vertex geometry with discrete combinatorial structure; this complicates flow learning and manifests as drifting vertices and broken surfaces. We present LATO.2, a factorized flow matching framework that decomposes mesh generation into a vertex flow followed by a connectivity flow conditioned on the realized vertices, with both stages anchored to a shared coarse voxel scaffold. Dedicated VAEs underpin the two stages, recovering vertices at sub-voxel precision and embedding discrete connectivity into a continuous latent space. We demonstrate two advantages unique to this factorization: (i) part-wise generation, in which the scaffold is partitioned and each part synthesized at full latent capacity, yielding substantially higher-resolution meshes than a monolithic latent permits; and (ii) topology-adaptive editing, in which manipulating first-stage vertices induces the corresponding connectivity without re-optimization. Experiments show that LATO.2 surpasses state-of-the-art topology-aware mesh generators in geometric fidelity and connectivity quality.",
+      "description_zh": "最近，精心设计的潜在表示上的流匹配已成为拓扑感知网格生成的强大范例。然而，现有的方法是在联合潜在空间中联合建模顶点和连接性，将连续的顶点几何形状与离散的组合结构纠缠在一起；这使流学习变得复杂，并表现为漂移的顶点和破碎的表面。我们提出了 LATO.2，一个因式分解的流匹配框架，它将网格生成分解为顶点流，然后是以已实现的顶点为条件的连接流，两个阶段都锚定到共享的粗体素支架。专用 VAE 支持这两个阶段，以亚体素精度恢复顶点并将离散连接嵌入连续的潜在空间。我们证明了这种分解的两个独特优势：（i）部分生成，其中支架被分区，每个部分以完全潜在能力合成，产生比整体潜在能力更高分辨率的网格； (ii) 拓扑自适应编辑，其中操作第一阶段顶点会产生相应的连接而无需重新优化。实验表明，LATO.2 在几何保真度和连接质量方面超越了最先进的拓扑感知网格生成器。",
+      "authors": "Hang Long, Tianhao Zhao, Junkai Lin, Youjia Zhang, Huipeng Guo, Rendong Liang, Jiale Xu, Jozef Hladký, Matthias Nießner, Wei Yang",
+      "url": "https://huggingface.co/papers/2607.10623",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2607.09020"
+        "paperId": "2607.10623"
       }
     },
     {
-      "id": "2607.06553",
-      "title": "From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models",
-      "title_zh": "从 RGB 生成到密集场读出：使用文本到图像模型的像素空间密集预测",
-      "description": "Large-scale text-to-image models are attractive backbones for dense prediction because RGB generation pretraining learns rich semantic, structural, and geometric priors. Existing generative and editing approaches reuse these priors by casting dense prediction as target generation: annotations such as depth, normals, alpha mattes, masks, and heatmaps are encoded into an RGB-trained VAE latent space and decoded back as image-like targets. We argue this inherits more of the generative output interface than dense prediction requires: unlike RGB synthesis, dense prediction asks for pixel-correct, task-native fields on the same image plane, not new RGB content to be rendered. Our key observation is that a pretrained DiT already organizes RGB inputs through a patch-to-token-to-patch lattice on the image plane, so each token indexes a fixed output patch whose channels can carry task-native quantities instead of RGB appearance. We instantiate this as ReChannel: we keep the VAE encoder for the DiT's input distribution but drop the target-side decoder, adapt the frozen DiT with task LoRA, and map each token to its p x p x K_t pixel-space patch through a shared token-local linear head--about 33K parameters, no spatial mixing. Using FLUX-Klein, we evaluate on six dense prediction tasks and over a dozen benchmarks. This minimal interface sets new state-of-the-art on trimap-free matting, KITTI depth, and referring segmentation, and stays competitive on normals, saliency, and pose. In a matched 4B setting it is more accurate and 2.48x faster than an edit-plus-latent-decode counterpart--dense perception can benefit from generative pretraining without inheriting its output interface.",
-      "description_zh": "大规模文本到图像模型对于密集预测来说是有吸引力的骨干，因为 RGB 生成预训练可以学习丰富的语义、结构和几何先验。现有的生成和编辑方法通过将密集预测作为目标生成来重用这些先验：深度、法线、alpha 遮罩、掩模和热图等注释被编码到 RGB 训练的 VAE 潜在空间中，并解码回类似图像的目标。我们认为，这继承了比密集预测所需的更多生成输出接口：与 RGB 合成不同，密集预测要求同一图像平面上的像素正确、任务本机字段，而不是要渲染的新 RGB 内容。我们的主要观察结果是，预训练的 DiT 已经通过图像平面上的补丁到令牌到补丁晶格来组织 RGB 输入，因此每个令牌都索引一个固定的输出补丁，其通道可以携带任务本机量而不是 RGB 外观。我们将其实例化为 ReChannel：我们保留 DiT 输入分布的 VAE 编码器，但删除目标端解码器，使用任务 LoRA 调整冻结的 DiT，并通过共享令牌局部线性头将每个令牌映射到其 p x p x K_t 像素空间补丁 - 大约 33K 参数，无空间混合。使用 FLUX-Klein，我们评估了六个密集预测任务和十多个基准。这个最小的界面在无 trimap 抠图、KITTI 深度和参考分割方面设置了新的最先进技术，并在法线、显着性和姿势方面保持竞争力。在匹配的 4B 设置中，它比编辑加潜在解码对应项更准确，速度快 2.48 倍——密集感知可以从生成预训练中受益，而无需继承其输出接口。",
-      "authors": "Zanyi Wang, Xin Lin, Haodong Li, Dengyang Jiang, Yijiang Li",
-      "url": "https://huggingface.co/papers/2607.06553",
-      "score": 9,
+      "id": "2607.05394",
+      "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+      "title_zh": "通过直接同策略蒸馏进行弱到强泛化",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-model reasoning, but it is expensive to repeat on every new strong model because the target model must generate many rollouts during training. As models scale, post-training itself becomes a bottleneck. We study a weak-to-strong alternative: run RL on a smaller model where rollouts are cheaper, then reuse what that RL run learned to improve a stronger target model. Directly distilling the post-RL weak teacher is not enough, because the teacher's final policy mixes useful RL gains with the limitations of the smaller model. We propose Direct On-Policy Distillation (Direct-OPD), which transfers the teacher's RL-induced policy shift instead. Direct-OPD compares the post-RL teacher with its own pre-RL reference and treats their log-ratio as a dense implicit reward for the student. In plain terms, the checkpoint pair tells us which actions RL made the weak model more or less likely to take, and Direct-OPD applies that signal on the stronger student's own on-policy states. This directly reuses the weak model's RL supervision signal without running sparse-reward RL on the target model. Empirically, Direct-OPD consistently leverages weaker teachers to improve stronger target models; notably, it boosts Qwen3-1.7B from 48.3% to 58.3% on AIME 2024 in just 4 hours on 8 A100 GPUs. It outperforms step-matched direct RL and enables the sequential composition of multiple policy shifts. Our results show that RL outcomes can be reused across model scales as implicit reward signals, not merely as final models to imitate.",
+      "description_zh": "具有可验证奖励的强化学习 (RLVR) 是改进语言模型推理的有效方法，但在每个新的强模型上重复的成本很高，因为目标模型必须在训练期间生成许多 rollout。随着模型规模的扩大，训练后本身就成为了瓶颈。我们研究了一种从弱到强的替代方案：在较小的模型上运行强化学习，其中部署成本更低，然后重用强化学习运行学到的知识来改进更强的目标模型。直接提取 RL 后的弱教师是不够的，因为教师的最终策略将有用的 RL 收益与较小模型的局限性混合在一起。我们提出直接按策略蒸馏（Direct-OPD），它转移了教师的 RL 诱导的策略转变。 Direct-OPD 将 RL 后的教师与其自己的 RL 前的参考进行比较，并将它们的对数比视为对学生的密集隐式奖励。简单来说，检查点对告诉我们 RL 使弱模型更有可能采取哪些行动，而 Direct-OPD 将该信号应用于更强的学生自己的政策状态。这直接重用了弱模型的 RL 监督信号，而无需在目标模型上运行稀疏奖励 RL。根据经验，Direct-OPD 始终利用较弱的教师来改进更强的目标模型；值得注意的是，它在 8 个 A100 GPU 上仅用了 4 小时就将 Qwen3-1.7B 在 AIME 2024 上的性能从 48.3% 提升到了 58.3%。它的性能优于步长匹配的直接强化学习，并支持多个策略转变的顺序组合。我们的结果表明，强化学习的结果可以在模型尺度上作为隐式奖励信号重复使用，而不仅仅是作为最终的模型来模仿。",
+      "authors": "Shiyuan Feng, Huan-ang Gao, Haohan Chi, Hanlin Wu, Zhilong Zhang, Zheng Jiang, Bingxiang He, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou",
+      "url": "https://huggingface.co/papers/2607.05394",
+      "score": 92,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2607.06553"
+        "upvotes": "92",
+        "paperId": "2607.05394"
       }
     },
     {
-      "id": "2607.09661",
-      "title": "PanoWorld: Real-World Panoramic Generation",
-      "title_zh": "PanoWorld：真实世界全景生成",
-      "description": "In this work, we aim to address the challenge of long-range memory in panoramic world models by exploiting the rotation-equivariant property of omnidirectional representations, where rotation can be treated as an implicit geometric transformation.Building on this insight, we propose PanoWorld, which simplifies camera trajectories into translations via fixed headings for both current-action modeling and long-range memory through Dense Panoramic Ray-Conditioning (DPRC) and Geometry-aware Memory Augmentation (GMA).Then, a three-stage training pipeline is introduced to progressively optimize each component. To better evaluate physical consistency under large-scale spatial variations and diverse illumination conditions, where existing datasets are relatively stable, we construct World360, a large-scale dataset consisting of both real-world video clips collected via panoramic unmanned aerial vehicles and high-quality simulated clips generated by AirSim360.Extensive experiments on World360 demonstrate the effectiveness of PanoWorld, outperforming alternative methods by a large margin.Our models, training code, and dataset will be publicly available. More information can be found on our project page: https://lihaoy-ux.github.io/panoworld-page/.",
-      "description_zh": "在这项工作中，我们的目标是通过利用全向表示的旋转等变属性来解决全景世界模型中的远程记忆的挑战，其中旋转可以被视为隐式几何变换。基于这一见解，我们提出了 PanoWorld，它通过密集全景光线调节（DPRC）和几何感知记忆增强，通过当前动作建模和远程记忆的固定标题将相机轨迹简化为翻译(GMA)。然后，引入三阶段训练管道来逐步优化每个组件。为了更好地评估大规模空间变化和多样化光照条件下的物理一致性，在现有数据集相对稳定的情况下，我们构建了 World360，这是一个大规模数据集，由全景无人机收集的真实��界视频片段和 AirSim360 生成的高质量模拟片段组成。在 World360 上进行的大量实验证明了 PanoWorld 的有效性，大大优于其他方法。我们的模型、训练代码和数据集将公开提供。更多信息可以在我们的项目页面上找到：https://lihaoy-ux.github.io/panoworld-page/。",
-      "authors": "Haoyuan Li, Dizhe Zhang, Yuemei Zhou, Xiangkai Zhang, Haoran Feng, Xiaofan Lin, Wenjie Jiang, Bo Du, Ming-Hsuan Yang, Lu Qi",
-      "url": "https://huggingface.co/papers/2607.09661",
-      "score": 7,
+      "id": "2607.10350",
+      "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+      "title_zh": "ABot-AgentOS：具有终身多模态记忆的通用机器人代理操作系统",
+      "description": "Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification, and cross-embodiment execution. We present ABot-AgentOS, a general robotic Agent Operating System that sits above low-level controllers and provides a deliberative agent layer for scene-conditioned planning, context-isolated skill execution, multi-stage verification, multi-modal memory, and edge-cloud collaboration. To evaluate such systems, we introduce EmbodiedWorldBench, an executable benchmark with 16 indoor, outdoor, and hybrid scenes, four difficulty levels, and over 200 tasks involving navigation, object search, NPC dialogue, dynamic events, and trace-grounded scoring. ABot-AgentOS further introduces Universal Multi-modal Graph Memory, a persistent source-grounded substrate that converts dialogue, visual observations, spatial context, temporal relations, and task traces into typed nodes and edges. A failure-driven self-evolution loop converts diagnosed memory failures into gated runtime evo-assets that are promoted only to later evaluation splits, preventing current-split ground-truth leakage while enabling continual improvement. On an initial EmbodiedWorldBench subset, ABot-AgentOS improves over a single-controller baseline in both task success and goal completion. Across memory benchmarks, ABot-AgentOS Static achieves 87.5 on LoCoMo, 59.9 on OpenEQA EM-EQA, 88.6 on Mem-Gallery, and 76.5 Acc@All on NExT-QA; self-evolution further improves LoCoMo to 88.7, OpenEQA to 60.4, and Mem-Gallery to 89.0. These results suggest that a general Agent OS layer can improve long-horizon embodied execution while providing persistent, auditable memory for continual interaction.",
+      "description_zh": "最近的 VLM 和 VLA 系统改进了机器人感知和动作预测，但长期具体代理仍然需要通用运行时层来进行推理、记忆、工具使用、验证和跨具体执行。我们推出了 ABot-AgentOS，这是一种通用机器人代理操作系统，位于低级控制器之上，并为场景条件规划、上下文隔离技能执行、多阶段验证、多模式内存和边缘云协作提供深思熟虑的代理层。为了评估此类系统，我们引入了 EmbodiedWorldBench，这是一个可执行基准测试，具有 16 个室内、室外和混合场景、四个难度级别以及 200 多个任务，涉及导航、对象搜索、NPC 对话、动态事件和基于轨迹的评分。 ABot-AgentOS 进一步引入了通用多模态图形内存，这是一种持久的基于源的基底，可将对话、视觉观察、空间上下文、时间关系和任务跟踪转换为类型节点和边。故障驱动的自进化循环将诊断出的内存故障转换为门控运行时进化资产，这些资产仅提升到以后的评估分裂，防止当前分裂的地面真相泄漏，同时实现持续改进。在初始 EmbodiedWorldBench 子集上，ABot-AgentOS 在任务成功和目标完成方面均优于单控制器基线。在内存基准测试中，ABot-AgentOS Static 在 LoCoMo 上达到 87.5，在 OpenEQA EM-EQA 上达到 59.9，在 Mem-Gallery 上达到 88.6，在 NExT-QA 上达到 76.5 Acc@All；自我进化进一步将LoCoMo提高到88.7，OpenEQA提高到60.4，Mem-Gallery提高到89.0。这些结果表明，通用代理操作系统层可以改善长期具体执行，同时为持续交互提供持久的、可审计的内存。",
+      "authors": "Jiayi Tian, Shiao Liu, Yuting Xu, Jia Lu, Zihao Guan, Honglin Han, Di Yang, Minqi Gu, Yifei Qian, Tianlin Zhang, Yanqing Zhu, Zeqian Ye, Menglin Yang, Fei Wang, Xu Hu, Xiuxian Li, Wei Zhang, Shihui Su, Yiyan Ji, Jingbo Wang, Ziteng Feng, Jiaheng Liu, Zhaoxiang Zhang, Xiaolong Wu, Mingyang Yin, Zedong Chu, Mu Xu",
+      "url": "https://huggingface.co/papers/2607.10350",
+      "score": 68,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2607.09661"
+        "upvotes": "68",
+        "paperId": "2607.10350"
       }
     },
     {
-      "id": "2607.08393",
-      "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
-      "title_zh": "机械地理解为什么记忆的知识在大型语言模型微调中无法泛化",
-      "description": "Fine-tuning LLMs to inject new knowledge faces a critical challenge: LLMs can quickly memorize new facts, yet fail to use them for downstream reasoning tasks. We formalize this failure as the \\textbf{Knowing--Using Gap}, characterized by an accuracy gap and a temporal lag between memorization and generalization. To understand this phenomenon, we fine-tune LLMs with unseen knowledge and monitor the spatial permeation dynamics of the knowledge internally using a novel intervention technique called self-patching. Self-patching identifies activation locations where relocating representations substantially improves failed generalization cases. These results are consistent with a knowledge-circuit misalignment hypothesis: memorized representations can exist internally but may not be routed to computation-effective layers. To demonstrate the practicality of this diagnostic finding, we design a simple heuristic strategy which recovers 58--75\\% of the oracle headroom in generalization failure. Experiments are done cross-domain for the robustness of this finding.",
-      "description_zh": "微调LLM以注入新知识面临着严峻的挑战：LLM可以快速记住新事实，但无法将它们用于下游推理任务。我们将这种失败形式化为 \\textbf{Knowing--Using Gap}，其特征是准确性差距以及记忆和泛化之间的时间滞后。为了理解这种现象，我们用看不见的知识对LLM进行微调，并使用一种称为“自我修补”的新颖干预技术在内部监控知识的空间渗透动态。自修补可识别激活位置，在这些位置重新定位表示可以显着改善失败的泛化情况。这些结果与知识电路错位假设一致：记忆的表示可以存在于内部，但可能不会路由到计算有效层。为了证明这一诊断结果的实用性，我们设计了一个简单的启发式策略，可以在泛化失败时恢复 58--75% 的预言机空间。为了确保这一发现的稳健性，进行了跨领域的实验。",
-      "authors": "Lu Dai, Ziyang Rao, Yili Wang, Hanqing Wang, Hao Liu, Hui Xiong",
-      "url": "https://huggingface.co/papers/2607.08393",
-      "score": 7,
+      "id": "2607.11849",
+      "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
+      "title_zh": "AdvancedMathBench：高级数学证明生成和验证的基准套件",
+      "description": "Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style mathematics, yet their capabilities on advanced mathematics remain poorly understood. Existing benchmarks, however, fall short in both scope and evaluation granularity: they provide limited disciplinary coverage and often rely on final-answer correctness or coarse judgments, leaving the validity of the reasoning process inadequately assessed. To bridge this gap, we introduce AdvancedMathBench, a benchmark suite designed to evaluate advanced mathematical reasoning capabilities. Its core proof-generation benchmark, ProverBench, contains 296 problems spanning undergraduate and doctoral qualifying-exam levels. To provide reliable evaluation of the proofs, we develop a dedicated automatic verification pipeline trained on large-scale expert annotations to produce both correctness verdicts and fine-grained assessments of proof errors, which exhibits strong agreement with human experts on held-out proof trajectories. We further introduce VerifierBench, consisting of 888 model-generated proof trajectories paired with expert ground truth, to evaluate whether models can correctly judge proof validity and provide sound verification rationales. Experiments show that AdvancedMathBench remains challenging for frontier models. On proof generation, the best-performing model, GPT-5.5-xhigh, achieves only 75.8 and 66.1 on the UGD and QE splits, respectively, indicating substantial room for improvement on advanced mathematical proof construction. On proof verification, the best model attains a Balanced F1 of only 65.1, and models generally exhibit low true negative rates, suggesting that critical error detection remains a major bottleneck.",
+      "description_zh": "大型语言模型（LLM）在高中和奥林匹克数学方面取得了令人瞩目的表现，但它们在高等数学方面的能力仍然知之甚少。然而，现有的基准在范围和评估粒度上都存在不足：它们提供的学科覆盖范围有限，并且通常依赖于最终答案的正确性或粗略的判断，从而导致推理过程的有效性评估不充分。为了弥补这一差距，我们引入了 AdvancedMathBench，这是一个旨在评估高级数学推理能力的基准套件。其核心证明生成基准 ProverBench 包含涵盖本科和博士资格考试级别的 296 个问题。为了提供对证明的可靠评估，我们开发了一个专门的自动验证管道，经过大规模专家注释的训练，可以生成正确性判决和对证明错误的细粒度评估，这与人类专家在保留的证明轨迹上表现出强烈的一致性。我们进一步引入了 VerifierBench，由 888 个模型生成的证明轨迹与专家地面事实配对组成，以评估模型是否能够正确判断证明有效性并提供合理的验证理由。实验表明，AdvancedMathBench 对于前沿模型仍然具有挑战性。在证明生成方面，性能最好的模型 GPT-5.5-xhigh 在 UGD 和 QE 分割上分别仅获得 75.8 和 66.1，这表明高级数学证明构造还有很大的改进空间。在证明验证中，最佳模型的平衡 F1 仅为 65.1，并且模型通常表现出较低的真负率，这表明关键错误检测仍然是主要瓶颈。",
+      "authors": "Lingkai Kong, Zijian Wu, Yuzhe Gu, Haiteng Zhao, Wenyong Huang, Shuang Sun, Zhicheng Xiong, Xiaotian Zhang, Shuya Zhao, Yan Wang, Disheng Xu, Wenwei Zhang, Kai Chen",
+      "url": "https://huggingface.co/papers/2607.11849",
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2607.08393"
+        "upvotes": "19",
+        "paperId": "2607.11849"
       }
     },
     {
-      "id": "2607.04751",
-      "title": "Trust Region Policy Distillation",
-      "title_zh": "信托区域政策蒸馏",
-      "description": "Big goals are hard to achieve all at once; breaking them into small steps is wiser. We present Trust Region Policy Distillation (TOP-D), which transforms the notoriously unstable, high-variance On-Policy Distillation (OPD) into a stable training paradigm by dynamically constructing a proximal teacher. Theoretically, we establish a rigorous framework demonstrating that TOP-D inherently controls gradient variance. By providing a formal global convergence analysis alongside a monotonic improvement bound, we mathematically formalize the reliability and stability of the overall training dynamics. Empirically, TOP-D dramatically enhances training stability, sample efficiency, and final performance on mathematical reasoning tasks. More importantly, TOP-D introduces zero additional computational overhead, positioning itself as a promising alternative to the well-established OPD paradigm.",
-      "description_zh": "大目标很难一下子实现；将它们分成小步骤是更明智的做法。我们提出了信任区域策略蒸馏（TOP-D），它通过动态构建近端教师，将众所周知的不稳定、高方差的在策略蒸馏（OPD）转变为稳定的训练范式。理论上，我们建立了一个严格的框架，证明 TOP-D 本质上控制着梯度方差。通过提供正式的全局收敛分析以及单调改进界限，我们在数学上形式化了整体训练动态的可靠性和稳定性。根据经验，TOP-D 极大地提高了数学推理任务的训练稳定性、样本效率和最终性能。更重要的是，TOP-D 引入了零额外计算开销，将其自身定位为成熟 OPD 范式的有前途的替代方案。",
-      "authors": "Zhengpeng Xie, Li Lyna Zhang, Zeke Xie, Mao Yang",
-      "url": "https://huggingface.co/papers/2607.04751",
-      "score": 17,
+      "id": "2607.11487",
+      "title": "LightMem-Ego: Your AI Memory for Everyday Life",
+      "title_zh": "LightMem-Ego：日常生活中的人工智能记忆",
+      "description": "Personal AI assistants on mobile and wearable devices continuously perceive users' daily lives through visual and audio streams. However, answering queries about past experiences requires lightweight multimodal memory that can continuously accumulate, organize, and retrieve long-term experiences, which remains challenging. To address this challenge, we present LightMem-Ego, a lightweight streaming multimodal memory system for everyday-life assistance. The system continuously captures egocentric visual and audio streams, aligns them on a shared timeline, and organizes them into a hierarchical memory consisting of current, short-term, and long-term memory. Given a user query, LightMem-Ego dynamically routes retrieval to the appropriate memory level and generates answers grounded in multimodal evidence. The demonstration can be deployed on smartphones and AI glasses, supporting object finding, conversation recall, life summarization, routine discovery, and personalized assistance. Code is available at https://github.com/zjunlp/LightMem-Ego.",
+      "description_zh": "移动和可穿戴设备上的个人人工智能助理通过视觉和音频流不断感知用户的日常生活。然而，回答有关过去经历的查询需要轻量级多模态记忆，它可以不断积累、组织和检索长期经验，这仍然具有挑战性。为了应对这一挑战，我们推出了 LightMem-Ego，这是一种用于日常生活辅助的轻量级流式多模式存储系统。该系统不断捕获以自我为中心的视觉和音频流，将它们排列在共享时间线上，并将它们组织成由当前、短期和长期记忆组成的分层记忆。给定用户查询，LightMem-Ego 动态地将检索路由到适当的记忆级别，并生成基于多模式证据的答案。该演示可部署在智能手机和AI眼镜上，支持物体查找、对话回忆、生活总结、日常发现和个性化帮助。代码可在 https://github.com/zjunlp/LightMem-Ego 获取。",
+      "authors": "Yijun Chen, Boyi Xiao, Yixian Zhao, Haoting Xia, Buqiang Xu, Jizhan Fang, Yanya Li, Yaqi Zheng, Xuehai Wang, Zirui Xue, Liuxin Zhang, Hui Li, Ningyu Zhang",
+      "url": "https://huggingface.co/papers/2607.11487",
+      "score": 33,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
-        "paperId": "2607.04751"
-      }
-    },
-    {
-      "id": "2607.09415",
-      "title": "Self-Guided Test-Time Training for Long-Context LLMs",
-      "title_zh": "长情境LLM自学考试时培训",
-      "description": "Long-context processing has become increasingly important for large language models (LLMs), but simply extending the context window does not guarantee effective utilization of long inputs. As input length grows, accuracy often degrades, indicating that models still struggle to identify and use the evidence most relevant to a question. A promising way to improve long-context utilization is test-time training (TTT), which treats the test context as a training example for instance-specific parameter adaptation. However, applying TTT to the entire long context is prohibitively expensive, while adapting on randomly sampled spans introduces severe noise. Because most spans in a long context are irrelevant to the specific question, training on them may even degrade the base model's performance. Our preliminary study shows that TTT is highly sensitive to training-span quality: on LongBench-v2, TTT on randomly sampled spans hurts performance, whereas TTT on oracle spans substantially improves it. Motivated by this, we propose a simple method, Self-Guided TTT (S-TTT): before adaptation, the model identifies the evidence spans it should learn from, and the standard language-modeling training objective is applied only to those selected spans. On two challenging long-context reasoning benchmarks, LongBench-v2 and LongBench-Pro, S-TTT improves accuracy for both Qwen3-4B-Thinking-2507 and Llama-3.1-8B-Instruct, achieving up to a 15% relative improvement.",
-      "description_zh": "长上下文处理对于大型语言模型（LLM）来说变得越来越重要，但简单地扩展上下文窗口并不能保证长输入的有效利用。随着输入长度的增加，准确性通常会降低，这表明模型仍然难以识别和使用与问题最相关的证据。 A promising way to improve long-context utilization is test-time training (TTT), which treats the test context as a training example for instance-specific parameter adaptation. However, applying TTT to the entire long context is prohibitively expensive, while adapting on randomly sampled spans introduces severe noise.由于长上下文中的大多数跨度与具体问题无关，因此对它们进行训练甚至可能会降低基本模型的性能。 Our preliminary study shows that TTT is highly sensitive to training-span quality: on LongBench-v2, TTT on randomly sampled spans hurts performance, whereas TTT on oracle spans substantially improves it. Motivated by this, we propose a simple method, Self-Guided TTT (S-TTT): before adaptation, the model identifies the evidence spans it should learn from, and the standard language-modeling training objective is applied only to those selected spans. On two challenging long-context reasoning benchmarks, LongBench-v2 and LongBench-Pro, S-TTT improves accuracy for both Qwen3-4B-Thinking-2507 and Llama-3.1-8B-Instruct, achieving up to a 15% relative improvement.",
-      "authors": "Xinyu Zhu, Zhe Xu, Xiaohan Wei, Yunchen Pu, Fei Tian, Chonglin Sun, Kaushik Rangadurai, Hua Zhi, Frank Shyu, Sandeep Pandey, Luke Simon, Yu Meng, Xi Liu",
-      "url": "https://huggingface.co/papers/2607.09415",
-      "score": 7,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2607.09415"
-      }
-    },
-    {
-      "id": "2607.09024",
-      "title": "Video Generation Models are General-Purpose Vision Learners",
-      "title_zh": "视频生成模型是通用视觉学习器",
-      "description": "Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foundation models. What, then, is the equivalent catalyst needed to achieve a general-purpose model in computer vision? In this paper, we contend that large-scale text-to-video generation serves as a strong pre-training paradigm for computer vision, providing the necessary spatiotemporal priors, vision-language alignment, and scalability required for general visual intelligence. We introduce GenCeption, which leverages a pre-trained video generative diffusion backbone to define a feed-forward perception model, capable of performing various vision tasks steered by text instructions. Empirical results demonstrate that GenCeption achieves state-of-the-art performance across a diverse suite of tasks, including depth, surface normal, and camera pose estimation, expression-referring segmentation, and 3D keypoint prediction, often matching or surpassing specialized models (e.g. DepthAnything3, SAM3, D4RT, VGGT-Omega, Sapiens, David, Genmo, and Lotus-2). Furthermore, the video generative pretrained backbone outperforms alternative pretraining paradigms (e.g., V-JEPA, and Video MAE) under comparable settings. Importantly, GenCeption exhibits preliminary data and model scaling properties along with exceptional data efficiency, where it achieves comparable performance with leading models like D4RT and VGGT-Omega with 7 to 500 less training data. Finally, GenCeption also exhibits intriguing emergent behaviors: a model trained exclusively on synthetic human videos generalizes to real-world footage and out-of-distribution object categories (e.g., animals and robots). These findings suggest that video generation is not merely a synthesis tool, but a foundational path toward generalist vision intelligence for the physical world. Project page: https://genception.github.io",
-      "description_zh": "在下一个标记预测的推动下，NLP 从特定于任务的模型转变为强大的通用基础模型。那么，实现计算机视觉通用模型所需的等效催化剂是什么？在本文中，我们认为大规模文本到视频的生成可以作为计算机视觉的强大预训练范例，提供必要的时空先验、视觉语言对齐和通用视觉智能所需的可扩展性。我们介绍了 GenCeption，它利用预先训练的视频生成扩散主干来定义前馈感知模型，能够执行由文本指令引导的各种视觉任务。实证结果表明，GenCeption 在各种任务中实现了最先进的性能，包括深度、表面法线和相机姿态估计、表达参考分割和 3D 关键点预测，通常匹配或超越专用模型（例如 DepthAnything3、SAM3、D4RT、VGGT-Omega、Sapiens、David、Genmo 和 Lotus-2）。此外，在可比较的设置下，视频生成预训练骨干网的性能优于替代预训练范例（例如 V-JEPA 和视频 MAE）。重要的是，GenCeption 展示了初步的数据和模型扩展特性以及卓越的数据效率，其性能可与 D4RT 和 VGGT-Omega 等领先模型相媲美，但训练数据少 7 到 500 个。最后，GenCeption 还表现出了有趣的突发行为：专门针对合成人类视频训练的模型可以推广到现实世界的镜头和分布外的对象类别（例如动物和机器人）。这些发现表明，视频生成不仅仅是一种综合工具，而且是实现物理世界通用视觉智能的基本途径。项目页面：https://genception.github.io",
-      "authors": "Letian Wang, Chuhan Zhang, Rishabh Kabra, Jasper Uijlings, Steven Waslander, Andrew Zisserman, Joao Carreira, Kaiming He, Misha Andriluka, Eduard Gabriel Bazavan, Andrei Zanfir, Cristian Sminchisescu",
-      "url": "https://huggingface.co/papers/2607.09024",
-      "score": 39,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "39",
-        "paperId": "2607.09024"
-      }
-    },
-    {
-      "id": "2607.09424",
-      "title": "A Sovereign, Open-Source Foundation Model for German and English",
-      "title_zh": "德语和英语的主权开源基金会模型",
-      "description": "We present Soofi S 30B-A3B, a sovereign, open-source Mixture-of-Experts (MoE) hybrid Mamba Transformer foundation model for German and English. Its hybrid design activates only 3B of 30B parameters per token and keeps the inference cache near-constant as context grows, giving it a decisive throughput advantage over dense models for long-context, high-concurrency deployment. Pretrained on roughly 27 trillion tokens with deliberately up-weighted German, Soofi S matches dense 14 to 27B models on aggregate English and German benchmarks while achieving the best code aggregates in both languages among 17 open base models, and outperforms every European sovereign baseline in our comparison, including ones far larger in active parameters. Among fully open models, Soofi S obtains the highest English and German evaluation scores, ahead of Olmo 3 32B and Apertus 70B. Soofi S was built end-to-end on the German Industrial AI Cloud, a sovereign HPC scale AI infrastructure operated by Deutsche Telekom in Munich. Soofi S will be released under highly permissive, open-access terms: weights, selected intermediate checkpoints, full per-source data accounting, hyperparameters, and training and evaluation code. Where source licenses permit, data-construction artifacts are released under permissive licenses; commercially licensed sources are documented with aggregate statistics and exact mixture accounting.",
-      "description_zh": "我们推出 Soofi S 30B-A3B，这是一个主权、开源的 Mixture-of-Experts (MoE) 混合 Mamba Transformer 基础模型，适用于德语和英语。其混合设计仅激活每个令牌 30B 参数中的 3B，并随着上下文的增长保持推理缓存接近恒定，这使其在长上下文、高并发部署方面比密集模型具有决定性的吞吐量优势。 Soofi S 在大约 27 万亿个代币上进行了预训练，并故意增加了德语权重，在英语和德语聚合基准上匹配了密集的 14 至 27B 模型，同时在 17 个开放基础模型中实现了两种语言的最佳代码聚合，并且在我们的比较中优于每个欧洲主权基准，包括活跃参数大得多的基准。在全开放机型中，Soofi S获得了最高的英语和德语评测分数，领先于Olmo 3 32B和Apertus 70B。 Soofi S 是在德国工业人工智能云上端到端构建的，德国工业人工智能云是由慕尼黑德国电信运营的主权 HPC 规模人工智能基础设施。 Soofi S 将在高度宽松的开放获取条款下发布：权重、选定的中间检查点、完整的按源数据核算、超参数以及培训和评估代码。在源许可证允许的情况下，数据构建工件将在���松的许可证下发布；商业许可的来源记录有汇总统计数据和精确的混合核算。",
-      "authors": "The Soofi-Team, Benedikt Droste, David Fitzek, Ruben Härle, Lukas Helff, Maximilian Idahl, Alex Jude, Abbas Goher Khan, Maurice Kraus, Timm Ruland, Richard Rutmann, Sebastian Sztwiertnia, Markus Frey, Daniil Gurgurov, Jan Pfister, Tom Röhr, Sebastian von Rohrscheidt, Jörg Bienert, Nicolas Flores-Herr, Simon Gottschalk, Andreas Hotho, Kristian Kersting, Joachim Köhler, Alexander Löser, Wolfgang Nejdl, Simon Ostermann, Jan Plogsties, Patrick Putzky, Mehdi Ali, Michael Fromm, Max Lübbering",
-      "url": "https://huggingface.co/papers/2607.09424",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2607.09424"
-      }
-    },
-    {
-      "id": "2607.09657",
-      "title": "Scalable Visual Pretraining for Language Intelligence",
-      "title_zh": "可扩展的语言智能视觉预训练",
-      "description": "The rapid progress of large foundation models has been driven predominantly by pretraining on large-scale text corpora. However, many forms of knowledge are conveyed through visual representations, where figures, typeset equations, and page layouts carry rich information that cannot be faithfully or completely captured by text alone. Yet current pretraining approaches discard these visual cues by converting visually rich sources, such as documents and web pages, into plain text for learning language intelligence. This paper challenges the default assumption that language models must be trained on text-only representations and shows that Visual Pretraining is a scalable learner for foundation model intelligence. To this end, we conduct a systematic study of unsupervised visual pretraining paradigms that directly leverage visual documents without text extraction. Across multiple backbones and benchmarks, visual pretraining on the same underlying corpora consistently outperforms text-only pretraining, offering an efficient pathway to scalable language intelligence.",
-      "description_zh": "大型基础模型的快速进展主要是由大规模文本语料库的预训练推动的。然而，许多形式的知识是通过视觉表示来传达的，其中图形、排版方程和页面布局携带着丰富的信息，这些信息无法仅通过文本忠实或完整地捕获。然而，当前的预训练方法通过将文档和网页等视觉丰富的资源转换为纯文本来学习语言智能，从而抛弃了这些视觉线索。本文挑战了语言模型必须在纯文本表示上进行训练的默认假设，并表明视觉预训练是基础模型智能的可扩展学习器。为此，我们对无监督视觉预训练范例进行了系统研究，这些范例直接利用视觉文档而无需提取文本。在多个主干和基准中，同一底层语料库上的视觉预训练始终优于纯文本预训练，为可扩展的语言智能提供了有效的途径。",
-      "authors": "Yiming Zhang, Zhonghan Zhao, Wenwei Zhang, Haiteng Zhao, Tianyang Lin, Yunhua Zhou, Demin Song, Kuikun Liu, Haochen Ye, Haian Huang, Yuzhe Gu, Haijun Lv, Qipeng Guo, Bin Liu, Gaoang Wang, Kai Chen",
-      "url": "https://huggingface.co/papers/2607.09657",
-      "score": 40,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "40",
-        "paperId": "2607.09657"
-      }
-    },
-    {
-      "id": "2607.08716",
-      "title": "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents",
-      "title_zh": "记住重要的事情：用于长视野代理的主动记忆代理",
-      "description": "In long-horizon tasks, decision-relevant state is often scattered across an expanding trajectory, while the action agent must surface it and act. As trajectories grow, task requirements, environment facts, prior attempts, diagnoses, and open subgoals can be buried in the context window or pushed beyond it, failing to influence decisions when needed. We call this failure mode \"behavioral state decay\". We study memory as an active intervention mechanism rather than passive retrieval. A separate memory agent runs alongside an unmodified action agent, updating a structured memory bank from the recent trajectory and deciding whether to inject a memory-grounded reminder or remain silent. The module is plug-and-play with frontier action agents and existing agent harnesses. Across Terminal-Bench 2.0 and τ^2-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on τ^2-Bench. Ablations show that selective intervention outperforms passive bank exposure, always-on injection, advisor-only guidance, and general retrieval. As an early step toward open-weight memory policies, we train Qwen3.5-27B on SETA using SFT and GRPO, improving validation reward and achieving partial transfer to Terminal-Bench.",
-      "description_zh": "在长视野任务中，与决策相关的状态通常分散在不断扩展的轨迹上，而行动代理必须将其浮出水面并采取行动。随着轨迹的增长，任务要求、环境事实、先前的尝试、诊断和开放的子目标可能会被隐藏在上下文窗口中或被推到上下文窗口之外，从而无法在需要时影响决策。我们将这种故障模式称为“行为状态衰退”。我们将记忆作为一种主动干预机制而不是被动检索来研究。一个单独的记忆代理与一个未修改的动作代理一起运行，根据最近的轨迹更新结构化记忆库，并决定是���入基于记忆的提醒还是保持沉默。该模块可与前沿行动代理和现有代理线束即插即用。在 Terminal-Bench 2.0 和 τ^2-Bench 中，它提高了较弱和较强动作代理的 pass@1，在 Terminal-Bench 上获得了 +8.3 pp，在 τ^2-Bench 上获得了 +6.8 pp。消融表明，选择性干预优于被动银行暴露、始终在线注入、仅限顾问指导和一般检索。作为实现开放权重内存策略的早期步骤，我们使用 SFT 和 GRPO 在 SETA 上训练 Qwen3.5-27B，提高验证奖励并实现部分转移到 Terminal-Bench。",
-      "authors": "Yifan Wu, Lizhu Zhang, Yuhang Zhou, Mingyi Wang, Bo Peng, Serena Li, Xiangjun Fan, Zhuokai Zhao",
-      "url": "https://huggingface.co/papers/2607.08716",
-      "score": 10,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "10",
-        "paperId": "2607.08716"
+        "upvotes": "33",
+        "paperId": "2607.11487"
       }
     }
   ]
