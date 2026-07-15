@@ -1,20 +1,215 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-07-14T20:40:57.023Z",
+  "updatedAt": "2026-07-15T20:38:40.582Z",
   "count": 15,
   "items": [
+    {
+      "id": "2607.08046",
+      "title": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+      "title_zh": "LLM预测者知道但不说的：探索内部表征以实现校准和忠实度",
+      "description": "Large language models fine-tuned for forecasting can be accurate yet poorly calibrated, and their chain-of-thought (CoT) reasoning may not faithfully reflect the evidence behind a forecast. We ask whether internal representations offer a more direct window into both. Working with Eternis-Forecaster 8B on OpenForesight, we train representation-pooling probes on intermediate activations and find they achieve substantially better calibration; a result that also holds for GLM-4.7-Flash and GLM-4.5-Air. We then assess CoT faithfulness through evidence ablation and diversionary injection: removing an influential source in the prompt often changes the model's forecast while leaving the reasoning trace untouched. The same probes function as lie detectors: their activations track behavioral shifts far better than the reasoning trace does, and they also predict the direction of change in 84% of cases, including when the CoT conceals the perturbation's influence. Finally, forced answering reveals that forecasts are largely fixed before reasoning begins: a single pre-reasoning pass recovers the committed answer and confidence, and routing questions by the spread of this pre-set answer distribution saves 30-47% of generated tokens, with no loss of accuracy. Together, these results establish probing internal representations as a practical tool for calibrating, auditing, and triaging language model forecasters and reasoning models more broadly.",
+      "description_zh": "针对预测进行微调的大型语言模型可能很准确，但校准不佳，并且它们的思想链 (CoT) 推理可能无法忠实反映预测背后的证据。我们询问内部陈述是否提供了更直接的窗口来了解两者。我们与 OpenForesight 上的 Eternis-Forecaster 8B 合作，在中间激活上训练表示池探针，发现它们实现了更好的校准；该结果也适用于 GLM-4.7-Flash 和 GLM-4.5-Air。然后，我们通过证据消融和转移性注入来评估 CoT 的忠实度：删除提示中的有影响力的来源通常会改变模型的预测，同时保持推理轨迹不��。相同的探针具有测谎仪的功能：它们的激活跟踪行为变化的能力远远优于推理跟踪，并且它们还可以预测 84% 情况下的变化方向，包括 CoT 隐藏扰动影响的情况。最后，强制回答表明，预测在推理开始之前基本上是固定的：单个预推理过程可以恢复承诺的答案和置信度，并且通过此预设答案分布的分布来路由问题可以节省 30-47% 的生成令牌，而不会损失准确性。总之，这些结果建立了探测内部表示作为更广泛地校准、审计和分类语言模型预测器和推理模型的实用工具。",
+      "authors": "Raphaël Sarfati, Pratyush Ranjan Tiwari, Siddharth Boppana, Christopher J. Earls, Srikar Varadaraj, Eric Ho",
+      "url": "https://huggingface.co/papers/2607.08046",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2607.08046"
+      }
+    },
+    {
+      "id": "2607.10400",
+      "title": "SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding",
+      "title_zh": "SynthDocBench：长上下文视觉文档理解的受控基准",
+      "description": "Vision language models (VLMs) have achieved strong performance on visual document understanding benchmarks such as DocVQA, ChartQA, and MMLongBench-Doc. However, real-world documents combine multiple factors such as length, layout complexity, modality, and question difficulty, which makes it difficult to attribute model failures to specific causes. We introduce SynthDocBench, a fully synthetic benchmark for long-context visual document understanding that systematically controls factors including document length, layout structure, modality composition, and question type. The benchmark is constructed using a combinatorial design, each factor is varied independently across generated documents, enabling controlled analysis of model behavior. Documents are generated end to end using an LLM pipeline across six layout archetypes, with a 40 percent random override to prevent models from exploiting spurious correlations. Additionally, SynthDocBench spans long-context documents with substantially greater length and structural diversity than existing benchmarks. Evaluating seven frontier VLMs, we uncover three failure modes that existing benchmarks cannot surface: sharp degradation with document length, a systematic positional sensitivity in which the middle third of a document is hardest for five of six models and five of six models show a negative Early-to-Late trend (steepest decline: 8.3 percentage points), and breakdown of chart comprehension in long-document settings. These results suggest that current models may be overfitting to benchmark artifacts rather than achieving robust long-context visual document understanding.",
+      "description_zh": "视觉语言模型 (VLM) 在 DocVQA、ChartQA 和 MMLongBench-Doc 等视觉文档理解基准上取得了出色的性能。然而，现实世界的文档结合了长度、布局复杂性、模态和问题难度等多种因素，这使得很难将模型失败归因于特定原因。我们推出了 SynthDocBench，这是一个用于长上下文视觉文档理解的完全综合基准，可以系统地控制文档长度、布局结构、模态组成和问题类型等因素。该基准是使用组合设计构建的，每个因素在生成的文档中独立变化，从而能够对模型行为进行受控分析。文档是使用跨六种布局原型的 LLM 管道端到端生成的，并具有 40% 的随机覆盖率，以防止模型利用虚假相关性。此外，SynthDocBench 涵盖了长上下文文档，其长度和结构多样性比现有基准要大得多。通过评估七个前沿 VLM，我们发现了现有基准无法揭示的三种故障模式：随着文档长度的急剧下降，系统位置敏感性，其中文档的中间三分之一对于六个模型中的五个来说是最难的，并且六个模型中的五个显示出负面的早期到晚期趋势（最大幅度下降：8.3 个百分点），以及长文档设置中图表理解的崩溃。这些结果表明，当前的模型可能过度拟合基准工件，而不是实现强大的长上下文视觉文档理解。",
+      "authors": "Abhigya Verma, Khyati Mahajan, Amit Kumar Saha, Shruthan Radhakrishna, Sagar Davasam, Vikas Yadav, Sai Rajeswar Mudumba",
+      "url": "https://huggingface.co/papers/2607.10400",
+      "score": 50,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "50",
+        "paperId": "2607.10400"
+      }
+    },
+    {
+      "id": "2607.05382",
+      "title": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
+      "title_zh": "超越可教内容的搜索：在代理视觉生成中发展知识边界",
+      "description": "Visual generators excel at rendering, but they confidently fabricate what they do not know. User requests are unbounded, evolving, and deeply long-tailed: new characters, trending entities, post-cutoff events, and more. This world-knowledge bottleneck is structural: generators are trained on fixed corpora, but the visual world is open-ended. We construct SearchGen-20K and SearchGen-Bench, with 20,839 prompts spanning twelve failure categories and twenty-two domains, paired with a pre-executed multimodal SearchGen-Corpus-1M to support offline, reproducible research. On SearchGen-Bench, frontier open generators score only 21 to 28 out of 100, a 40-point collapse invisible to existing benchmarks. The natural remedy is to employ search tools, enabling agentic visual generation. However, we find that naive search fails: it retrieves indiscriminately, injecting noise into prompts the generator already handles. We trace the root cause to a generator-specific, evolving knowledge boundary: the divide between what a generator can internalize through training and what must remain in external context. Although this boundary is hard to specify in advance, we show that it is discoverable through a teach-then-search co-training framework. Even a minimal version of this co-training recipe produces monotonic improvement, laying the foundation for recursive self-improvement in visual generation that can meet world-knowledge-grounded requests. We release the full dataset, co-training corpus, and search corpus as a replayable harness for tool-augmented, world-knowledge-grounded visual generation.",
+      "description_zh": "视觉生成器擅长渲染，但他们自信地制造他们不知道的东西。用户请求是无限的、不断发展的、深度长尾的：新角色、趋势实体、截止后事件等等。这种世界知识瓶颈是结构性的：生成器是在固定语料库上训练的，但视觉世界是开放的。我们构建了 SearchGen-20K 和 SearchGen-Bench，其中包含 20,839 个提示，涵盖 12 个故障类别和 22 个领域，并与预先执行的多模式 SearchGen-Corpus-1M 配对，以支持离线、可重复的研究。在 SearchGen-Bench 上，前沿开放生成器的得分仅为 21 至 28（满分 100），在现有基准测试中无法看到 40 分的下滑。自然的补救措施是使用搜索工具，实现代理视觉生成。然而，我们发现朴素搜索失败了：它不加区别地检索，将噪声注入到生成器已经处理的提示中。我们将根本原因追溯到生成器特定的、不断发展的知识边界：生成器可以通过训练内化的内容和必须保留在外部环境中的内容之间的鸿沟。尽管这个边界很难提前指定，但我们证明它可以通过先教后搜索的协同训练框架来发现。即使是这种协同训练方法的最小版本也会产生单调改进，为视觉生成中的递归自我改进奠定基础，以满足基于世界知识的要求。我们发布了完整的数据集、协同训练语料库和搜索语料库，作为工具增强、基于世界知识的视觉生成的可重播工具。",
+      "authors": "Haozhe Wang, Weijia Feng, Jinpeng Yu, Che Liu, Ping Nie, Fangzhen Lin, Jiaming Liu, Ruihua Huang, Jimmy Lin, Wenhu Chen, Cong Wei",
+      "url": "https://huggingface.co/papers/2607.05382",
+      "score": 18,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "18",
+        "paperId": "2607.05382"
+      }
+    },
+    {
+      "id": "2607.11562",
+      "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+      "title_zh": "MonkeyOCRv2：文档 AI 的视觉文本基础模型",
+      "description": "Mainstream visual encoders are pretrained on natural images and cannot be effectively applied to document images without document-oriented adaptation, as dense text and fine-grained character strokes demand character-level visual perception. We present MonkeyOCRv2, a visual-text pretrained model for document AI. First, we construct MonkeyDoc v2, to our knowledge the largest document-image pretraining corpus, comprising 113 million images spanning 17 languages. Second, we propose a pretraining strategy that jointly learns image-to-text generation and pixel-level document reconstruction: the former aligns visual representations with textual content, while the latter preserves character strokes and layout details. Extensive experiments are conducted on five representative document analysis tasks, including text recognition, formula recognition, text detection, document tampering detection, and overlapping text segmentation. Replacing the original encoders with MonkeyOCRv2 consistently improves performance across all five tasks. Finally, we validate its effectiveness as the vision encoder of multimodal large language models on the more challenging tasks of document parsing and document understanding. Kept frozen and paired with a lightweight language model, it yields a 0.7B document parsing model that sets a new open-source state-of-the-art on MDPBench, a recent benchmark spanning digital-born and photographed documents across 17 languages, surpassing the previous best 3B dots.mocr by 2.8% absolute with a vision encoder roughly 11times smaller. The frozen encoder also powers a document understanding model that outperforms counterparts built on CLIP, DINO, and SAM across eight benchmarks under identical training settings. These results suggest that document-oriented visual pretraining can serve as a foundation for document intelligence in its own right.",
+      "description_zh": "主流视觉编码器是在自然图像上进行预训练的，如果没有面向文档的适应，就无法有效地应用于文档图像，因为密集的文本和细粒度的字符笔划需要字符级的视觉感知。我们推出了 MonkeyOCRv2，这是一种用于文档 AI 的视觉文本预训练模型。首先，我们构建了 MonkeyDoc v2，据我们所知，这是最大的文档图像预训练语料库，包含涵盖 17 种语言的 1.13 亿张图像。其次，我们提出了一种联合学习图像到文本生成和像素级文档重建的预训练策略：前者将视觉表示与文本内容对齐，而后者保留字符笔画和布局细节。对文本识别、公式识别、文本检测、文档篡改检测和重叠文本分割等五个代表性文档分析任务进行了广泛的实验。用 MonkeyOCRv2 ​​替换原始编码器可以持续提高所有五项任务的性能。最后，我们验证了它作为多模态大语言模型的视觉编码器在更具挑战性的文档解析和文档理解任务上的有效性。保持冻结并与轻量级语言模型配对，它产生了一个 0.7B 文档解析模型，该模型在 MDPBench 上树立了新的开源最先进水平，MDPBench 是一个涵盖 17 种语言的数字生成和拍摄文档的最新基准，绝对超过之前最好的 3Bdots.mocr 2.8%，而视觉编码器小了大约 11 倍。冻结编码器还支持文档理解模型，该模型在相同训练设置下的八个基准测试中优于基于 CLIP、DINO 和 SAM 构建的对应模型。这些结果表明，面向文档的视觉预训练本身可以作为文档智能的基础。",
+      "authors": "Yuliang Liu, Zhang Li, Ziyang Zhang, Shuo Zhang, Qiang Liu, Jiajun Song, Zidun Guo, Xinhan Wang, Handong Zheng, Yang Liu, Dongliang Luo, Zhiyin Ma, Jiarui Zhang, Xiang Bai",
+      "url": "https://huggingface.co/papers/2607.11562",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2607.11562"
+      }
+    },
+    {
+      "id": "2607.12450",
+      "title": "Let RGB Be the Language of Vision",
+      "title_zh": "让 RGB 成为视觉语言",
+      "description": "This work introduces a unified formulation for vision models, where diverse forms of visual information beyond natural images, such as masks, depth maps, and other structured visual signals, are all represented as RGB images, while general visual tasks can be converted into a common RGB-to-RGB image editing problem. In this paradigm, different types of visual information internally share the same encoding and decoding architecture and parameters as natural images, enabling a single model to transfer across tasks through a unified visual interface, in a way analogous to how language models operate over text. We refer to this formulation as RGB In and RGB Out (RINO). Built upon a generic image editing backbone without task-specific fine-tuning, RINO demonstrates robust and competitive zero-shot performance on both dense understanding tasks such as segmentation and depth estimation (where we unify outputs as RGB), and dense-conditioned generation tasks such as pose-to-image generation (where we unify inputs as RGB). We hope this study provides useful insights toward general unified vision-language systems, where diverse visual tasks can be expressed, interpreted, and solved through a shared visual language. Code is available at https://github.com/yangtiming/RINO.",
+      "description_zh": "这项工作引入了视觉模型的统一公式，其中自然图像之外的各种形式的视觉信息，例如掩模、深度图和其他结构化视觉信号，都表示为 RGB 图像，而一般视觉任务可以转换为常见的 RGB 到 RGB 图像编辑问题。在这种范式中，不同类型的视觉信息在内部共享与自然图像相同的编码和解码架构和参数，使得单个模型能够通过统一的视觉界面跨任务传输，其方式类似于语言模型对文本的操作方式。我们将此公式称为 RGB 输入和 RGB 输出 (RINO)。绿诺建立在通用图像编辑主干基础上，无需针对特定任务进行微调，在分割和深度估计（我们将输出统一为 RGB）等密集理解任务和姿势到图像生成（我们将输入统一为 RGB）等密集条件生成任务上都展示了强大且有竞争力的零样本性能。我们希望这项研究为通用的统一视觉语言系统提供有用的见解，在该系统中，可以通过共享的视觉语言来表达、解释和解决不同的视觉任务。代码可在 https://github.com/yangtiming/RINO 获取。",
+      "authors": "Timing Yang, Jinrui Yang, Xinlong Li, Yuhan Wang, Haoran Li, Yanqing Liu, Guoyizhe Wei, Jixuan Ying, Chen Wei, Rama Chellappa, Yuyin Zhou, Cihang Xie, Alan Yuille, Feng Wang",
+      "url": "https://huggingface.co/papers/2607.12450",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2607.12450"
+      }
+    },
+    {
+      "id": "2607.08168",
+      "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
+      "title_zh": "MuScriptor：多乐器音乐转录的开放模型",
+      "description": "Existing methods for automatic music transcription are often limited to single-instrument recordings or fail on complex, real music mixes. Although previous work utilizes synthetic training data, the resulting models generalize poorly, leading to largely unusable transcription output in realistic, multi-instrument settings. In this work, we analyze the effectiveness of synthetic data for pre-training while combining it with fine-tuning on real music audio and post-training using reinforcement learning. We further introduce conditioning on instrument presence to customize transcriptions. Finally, we release MuScriptor, an open-weight multi-instrument music transcription model that works on real-world music recordings from across a diverse range of musical genres.",
+      "description_zh": "现有的自动音乐转录方法通常仅限于单乐器录音，或者无法处理复杂的真实音乐混音。尽管之前的工作利用了合成训练数据，但生成的模型泛化能力很差，导致在现实的多仪器设置中很大程度上无法使用转录输出。在这项工作中，我们分析了预训练合成数据的有效性，同时将其与使用强化学习对真实音乐音频和后期训练进行微调相结合。我们进一步引入对仪器存在的条件来定制转录。最后，我们发布了 MuScriptor，这是一种开放式多乐器音乐转录模型，适用于各种音乐流派的真实音乐录音。",
+      "authors": "Simon Rouard, Michael Krause, Axel Roebel, Carl-Johann Simon-Gabriel, Alexandre Défossez",
+      "url": "https://huggingface.co/papers/2607.08168",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2607.08168"
+      }
+    },
+    {
+      "id": "2607.10522",
+      "title": "Towards Autonomous and Auditable Medical Imaging Model Development",
+      "title_zh": "迈向自主和可审计的医学成像模型开发",
+      "description": "Large language model (LLM) agents are beginning to automate machine learning engineering (MLE) by coupling planning, code execution, debugging, and empirical feedback. Translating this capability to medical imaging remains difficult because each task imposes modality-specific experimentation and strict requirements for validation protocols and prediction artifacts. Here we introduce AMID, an autonomous multi-agent framework for medical imaging model development. AMID first proposes Data-Conditioned Method Planning, which refines coarse task-level search spaces into executable, parallelizable method lanes grounded in task-specific data analysis and runnable medical-imaging resources. It then develops Verification-Guided Two-Stage Optimization, moving from broad early exploration of diverse method lanes to selective exploitation of promising candidates while enforcing strict verification of validation protocols, metric computation, and prediction artifacts throughout the optimization. Across 20 medical imaging challenge tasks spanning diverse modalities and prediction types, AMID outperformed evaluated general-purpose MLE systems and, on several tasks, approached or matched strong human-designed challenge solutions. These results suggest that AMID can turn task-specific medical imaging model development from bespoke manual engineering into an agentic workflow for producing high-performing and auditable model artifacts across heterogeneous tasks.",
+      "description_zh": "大型语言模型 (LLM) 代理开始通过耦合规划、代码执行、调试和经验反馈来实现机器学习工程 (MLE) 的自动化。将这种能力转化为医学成像仍然很困难，因为每项任务都强加了特定于模态的实验以及对验证协议和预测工件的严格要求。在这里，我们介绍 AMID，一个用于医学成像模型开发的自主多智能体框架。 AMID 首先提出了数据条件方法规划，它将粗略的任务级搜索空间细化为基于任务特定数据分析和可运行的医学成像资源的可执行、可并行的方法通道。然后，它开发了验证引导的两阶段优化，从对不同方法通道的广泛早期探索转向有选择地利用有前途的候选方案，同时在整个优化过程中对验证协议、度量计算和预测工件进行严格验证。在涵盖不同模式和预测类型的 20 项医学成像挑战任务中，AMID 的表现优于经过评估的通用 MLE 系统，并且在多项任务中，接近或匹配强大的人工设计挑战解决方案。这些结果表明，AMID 可以将特定于任务的医学成像模型开发从定制的手动工程转变为代理工作流程，用于跨异构���务生成高性能且可审核的模型工件。",
+      "authors": "Shengyuan Liu, Jia-Xuan Jiang, Boyun Zheng, Cheng Wang, Zipei Wang, Wentao Pan, Hongtao Wu, Houwen Peng, Yu Gu, Lichao Sun, Yixuan Yuan",
+      "url": "https://huggingface.co/papers/2607.10522",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2607.10522"
+      }
+    },
+    {
+      "id": "2607.07769",
+      "title": "Principled Analysis of Deep Reinforcement Learning Evaluation and Design Paradigms",
+      "title_zh": "深度强化学习评估与设计范式原理分析",
+      "description": "Starting from the utilization of deep neural networks to approximate the state-action value function that led to winning one of the most challenging games, to algorithmic advancements that allowed solving problems without even explicitly stating the rules of the challenge at hand, reinforcement learning research has been the center of remarkable scientific progress for the past decade. In this paper, we focus on the key ingredients of this research progress and we analyze the canonical evaluation and design paradigms in reinforcement learning. We introduce the theoretical foundations of scaling laws in reinforcement learning and show that the asymptotic performance of reinforcement learning algorithms does not have a monotone relationship between performance rankings and data-regimes. We conduct large-scale experiments and our results demonstrate that a line of reinforcement learning research under the canonical design and evaluation paradigms resulted in incorrect conclusions. Our analysis and results provide a core analysis on scaling, capacity and complexity of deep reinforcement learning.",
+      "description_zh": "从利用深度神经网络来逼近导致赢得最具挑战性的游戏之一的状态-动作价值函数，到甚至无需明确说明当前挑战规则即可解决问题的算法进步，强化学习研究一直是过去十年中显着科学进步的中心。在本文中，我们重点关注这一研究进展的关键要素，并分析强化学习中的规范评估和设计范式。我们介绍了强化学习中标度律的理论基础，并表明强化学习算法的渐近性能在性能排名和数据机制之间不存在单调关系。我们进行了大规模的实验，结果表明，在规范设计和评估范式下的一系列强化学习研究得出了错误的结论。我们的分析和结果提供了对深度强化学习的规模、容量和复杂性的核心分析。",
+      "authors": "Ezgi Korkmaz",
+      "url": "https://huggingface.co/papers/2607.07769",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2607.07769"
+      }
+    },
+    {
+      "id": "2607.08317",
+      "title": "Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models",
+      "title_zh": "Blind-Spots-Bench：评估多模式模型中的盲点",
+      "description": "Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce blind-spots-bench, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on blind-spots-bench reveals that closed-source frontier models can substantially outperform open-weight models with even approx10% gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of blind-spots-bench as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
+      "description_zh": "现代人工智能模型在许多既定基准上取得了强劲的性能，但它们在人类认为几乎微不足道的任务上仍然失败，例如操纵一根绳子或画一条有五条腿的狗。这些例子表明，现有的基准可能低估了当前系统中持续存在的盲点。我们引入了“blind-spots-bench”，这是一个基准测试，旨在通过对人类来说看似简单但对现代人工智能仍然具有挑战性的任务来暴露此类盲点。我们在 AI 课程中收集学生的原始问题，使用结构化参考解决方案对其进行清理和注释，并根据 235 个样本的结果数据集提出量身定制的任务分类法。我们进一步开发了一个自动评分管道来评估各种模型，包括开放权重和闭源语言、视觉语言和图像生成模型。我们对“blind-spots-bench”的分析表明，闭源前沿模型的性能可以显着优于开放权重模型，甚至有约 10% 的差距，即使它们在现有基准上获得了可比的性能。更细粒度的分析表明，没有一个模型在所有任务类型中占主导地位，并且某些任务对于所有评估的模型来说仍然具有挑战性。这些结果凸显了盲点基准作为诊断压力测试的价值，用于识别当前现代模型中的具体弱点。",
+      "authors": "Matteo Santelmo, Xiuying Wei, Israa Fakih, Felix Bauer, Juan Garcia Giraldo, Chengkun Li, Etienne Bamas, Emmanuel Abbé",
+      "url": "https://huggingface.co/papers/2607.08317",
+      "score": 19,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "19",
+        "paperId": "2607.08317"
+      }
+    },
+    {
+      "id": "2607.11886",
+      "title": "Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation",
+      "title_zh": "回顾一下：预训练的 MLLM 是用于文本到图像生成的零样本奖励模型",
+      "description": "In this paper, we propose SpectraReward, a training-free reward function that turns pretrained MLLMs into off-the-shelf reward models for image-generation reinforcement learning. Instead of asking the MLLM to judge a generated image or answer decomposed verification questions, SpectraReward measures how well the original prompt can be recovered from the generated image through a single image-conditioned, teacher-forced forward pass. We use the average image-conditioned prompt log-likelihood as the reward, directly reusing the MLLM's pretrained image-text alignment ability without preference labels, reward-model fine-tuning. We further introduce Self-SpectraReward, a special case for unified multimodal models where the policy's own understanding branch serves as the reward model for its generation branch, forming a closed-loop self-improving framework without external reward models or external knowledge. Extensive experiments validate SpectraReward through a broad image-generation RL study covering two diffusion models, three RL algorithms, nine reward MLLM backbones from four MLLM families spanning 4B to 235B parameters, and five out-of-distribution text-to-image benchmarks. Results show that both SpectraReward and Self-SpectraReward significantly and consistently improve generation performance and outperform prior MLLM-derived reward training methods. Further analysis reveals that larger reward MLLMs are not always better, while Self-SpectraReward can match or surpass much larger external reward models, suggesting that reward-policy alignment is a key factor for effective image-generation RL. Project Page: https://huangrh99.github.io/SpectraReward/",
+      "description_zh": "在本文中，我们提出了 SpectraReward，这是一种无需训练的奖励函数，可将预训练的 MLLM 转变为用于图像生成强化学习的现成奖励模型。 SpectraReward 不是要求 MLLM 判断生成的图像或回答分解的验证问题，而是衡量通过单个图像调节的、教师强制的前向传递从生成的图像中恢复原始提示的效果。我们使用平均图像条件提示对数似然作为奖励，直接重用 MLLM 的预训练图像文本对齐能力，无需偏好标签、奖励模型微调。我们进一步引入了Self-SpectraReward，这是统一多模态模型的一个特例，其中策略自身的理解分支作为其生成分支的奖励模型，形成一个闭环的自我改进框架，无需外部奖励模型或外部知识。大量实验通过广泛的图像生成 RL 研究验证了 SpectraReward，该研究涵盖两种扩散模型、三种 RL 算法、来自四个 MLLM 系列（涵盖 4B 至 235B 参数）的九个奖励 MLLM 主干，以及五个分布外文本到图像基准。结果表明，SpectraReward 和 Self-SpectraReward 均显着且持续地提高了生成性能，并且优于先前的 MLLM 派生奖励训练方法。进一步的分析表明，较大的奖励 MLLM 并不总是更好，而 Self-SpectraReward 可以匹配或超越更大的外部奖励模型，这表明奖励政策对齐是有效图像生成 RL 的关键因素。项目页面：https://huangrh99.github.io/SpectraReward/",
+      "authors": "Runhui Huang, Qihui Zhang, Zhe Liu, Yu Gao, Jie Wu, Hengshuang Zhao",
+      "url": "https://huggingface.co/papers/2607.11886",
+      "score": 40,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "40",
+        "paperId": "2607.11886"
+      }
+    },
+    {
+      "id": "2607.11111",
+      "title": "Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution",
+      "title_zh": "修复前了解：QA 驱动的存储库知识获取以解决软件问题",
+      "description": "LLM-based coding agents have significantly advanced automated software issue resolution, yet they remain highly prone to factual errors caused by insufficient repository understanding. Recent methods attempt to mitigate this limitation through pre-repair repository exploration; however, their fix-driven strategies explore repositories without identifying the agent's knowledge gaps, often yielding imprecise context that fails to bridge the underlying understanding deficit. In this paper, we propose ACQUIRE, a QA-driven framework for software issue resolution. Mirroring how experienced developers first comprehend unfamiliar code before attempting a fix, ACQUIRE explicitly acquires repository knowledge prior to repair. The framework decouples knowledge acquisition from patch generation through two stages: in the first stage, a Questioner and an Answerer collaborate to acquire structured repository knowledge, where the Questioner poses targeted questions and the Answerer produces evidence-grounded answers through autonomous exploration; in the second stage, the Resolver leverages the resulting QA knowledge to generate informed patches. By transforming implicit knowledge gaps into explicit, factually reliable understanding, ACQUIRE accelerates knowledge-intensive repair stages and enables more accurate resolution. Experiments on SWE-bench Verified demonstrate that ACQUIRE consistently outperforms representative pre-repair methods, raising Pass@1 by up to 4.4 percentage points with modest additional cost and time.",
+      "description_zh": "基于 LLM 的编码代理具有显着先进的自动化软件问题解决方案，但它们仍然很容易出现由于存储库理解不足而导致的事实错误。最近的方法试图通过预修复存储库探索来减轻这种限制；然而，他们的修复驱动策略在没有识别代理知识差距的情况下探索存储库，通常会产生不精确的上下文，无法弥补潜在的理解缺陷。在本文中，我们提出了 ACQUIRE，一个用于软件问题解决的 QA 驱动框架。 ACQUIRE 反映了经验丰富的开发人员在���试修复之前如何首先理解不熟悉的代码，ACQUIRE 在修复之前显式获取存储库知识。该框架通过两个阶段将知识获取与补丁生成解耦：在第一阶段，提问者和回答者协作获取结构化知识库知识，其中提问者提出有针对性的问题，回答者通过自主探索产生基于证据的答案；在第二阶段，解析器利用生成的 QA 知识来生成知情补丁。通过将隐性知识差距转化为明确的、事实上可靠的理解，ACQUIRE 加速了知识密集型修复阶段并实现更准确的解决方案。 SWE-bench Verified 上的实验表明，ACQUIRE 的性能始终优于代表性的预修复方法，以适度的额外成本和时间将 Pass@1 提高了高达 4.4 个百分点。",
+      "authors": "Haotian Lin, Silin Chen, Xiaodong Gu, Yuling Shi, Chengxi Pan, Jiaqi Ge, Mengfan Li, Jianghong Huang, Mengchieh Chuang, Beijun Shen, Haibing Guan",
+      "url": "https://huggingface.co/papers/2607.11111",
+      "score": 6,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "6",
+        "paperId": "2607.11111"
+      }
+    },
+    {
+      "id": "2607.11250",
+      "title": "Multi-Agent LLMs Fail to Explore Each Other",
+      "title_zh": "多代理LLM无法相互探索",
+      "description": "Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns that lead to suboptimal coordination and increased regret. We formalize this challenge as the Multi-Agent Exploration problem, modeling it as a partially observable stochastic game (POSG) problem in which agents must probe peers to infer their capabilities and identify effective interaction strategies. To address this, we introduce Multi- Agent Contextual Exploration (MACE), a lightweight framework that explicitly promotes exploration through structured peer selection. Across both contextual and parametric diversity settings, MACE substantially improves exploration behavior and downstream task performance. We further show theoretically that the value of exploration increases with agent diversity. Overall, our results highlight a fundamental limitation of current LLM agents and underscore the importance of explicitly guided exploration for reliable multi-agent autonomy. Code will be released in https://github.com/deeplearning-wisc/mace",
+      "description_zh": "探索对于多智能体系统中可靠的自主性至关重要，但目前尚不清楚大型语言模型（LLM）智能体在彼此交互时是否可以有效地进行探索。我们表明，现代LLM代理人未能做到这一点，经常表现出短视和两极分化的互动模式，导致协调不理想并增加遗憾。我们将这一挑战形式化为多智能体探索问题，将其建模为部分可观察随机博弈（POSG）问题，其中智能体必须探测同伴以推断其能力并确定有效的交互策略。为了解决这个问题，我们引入了多智能体上下文探索（MACE），这是一个轻量级框架，可以通过结构化的同伴选择来明确促进探索。在上下文和参数多样性设置中，MACE 显着改善了探索行为和下游任务性能。我们进一步从理论上证明，探索的价值随着代理的多样性而增加。总的来说，我们的结果凸显了当前 LLM 智能体的根本局限性，并强调了明确引导探索对可靠的多智能体自主性的重要性。代码将在 https://github.com/deeplearning-wisc/mace 发布",
+      "authors": "Hyeong Kyu Choi, Jiatong Li, Wendi Li, Xin Eric Wang, Sharon Li",
+      "url": "https://huggingface.co/papers/2607.11250",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2607.11250"
+      }
+    },
+    {
+      "id": "2607.11862",
+      "title": "Evidence-Backed Video Question Answering",
+      "title_zh": "有证据支持的视频问答",
+      "description": "Current Video Large Language Models (Video LLMs) excel in question answering (QA) but largely operate as black boxes, providing textual answers without verifiable visual grounding. Existing explainability efforts rely on textual rationales or sparse bounding boxes, which struggle to capture complex video dynamics such as occlusions and non-rigid deformations. We propose Evidence-Backed Video Question Answering (E-VQA), a novel task requiring models to jointly output a semantic answer and precise spatio-temporal evidence: temporal segments and dense, tracked object segmentation masklets. To support this, we introduce ST-Evidence, the first human-verified benchmark for both discriminative and generative pixel-level grounding. Evaluations of state-of-the-art models reveal a critical decoupling between QA accuracy and true visual perception that scaling alone fails to bridge. To address this, we develop scalable, automated generation pipelines to create ST-Evidence-Instruct, a 160k-scale dataset bridging high-level reasoning with fine-grained grounding. Fine-tuning grounded Video LLMs on this data yields substantial gains over the corresponding size-matched UniPixel baselines (e.g., +27.2 t-mean and +13.8 J&F on a 7B model), establishing a robust baseline for explainable, evidence-backed video understanding. Code and data are available at https://github.com/SalesforceAIResearch/EVQA.",
+      "description_zh": "当前的视频大语言模型（视频LLM）在问答（QA）方面表现出色，但很大程度上作为黑匣子运行，提供文本答案，而无需可验证的视觉基础。现有的可解释性工作依赖于文本原理或稀疏边界框，它们很难捕获复杂的视频动态，例如遮挡和非刚性变形。我们提出了证据支持的视频问答（E-VQA），这是一项新颖的任务，要求模型联合输出语义答案和精确的时空证据：时间片段和密集的跟踪对象分割掩码。为了支持这一点，我们引入了 ST-Evidence，这是第一个经过人类验证���判别性和生成性像素级接地基准。对最先进模型的评估揭示了 QA 准确性和真实视觉感知之间的关键脱钩，而仅靠缩放无法弥合这种脱钩。为了解决这个问题，我们开发了可扩展的自动化生成管道来创建 ST-Evidence-Instruct，这是一个将高级推理与细粒度基础联系起来的 16 万规模数据集。根据这些数据对扎根视频 LLM 进行微调，可比相应的尺寸匹配 UniPixel 基线（例如，7B 模型上的 +27.2 t-mean 和 +13.8 J&F）产生显着的增益，从而为可解释的、有证据支持的视频理解建立了可靠的基线。代码和数据可在 https://github.com/SalesforceAIResearch/EVQA 获取。",
+      "authors": "Shijie Wang, Honglu Zhou, Ziyang Wang, Ran Xu, Caiming Xiong, Silvio Savarese, Chen Sun, Juan Carlos Niebles",
+      "url": "https://huggingface.co/papers/2607.11862",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2607.11862"
+      }
+    },
     {
       "id": "2607.11736",
       "title": "MET: Theory-Grounded and Culture-Aware Multilingual Moral Reasoning",
       "title_zh": "MET：基于理论和文化意识的多语言道德推理",
       "description": "Language models are increasingly used for moral decision-making across diverse linguistic and cultural contexts, yet existing work overlooks multilinguality on three aspects: 1) multilingual evaluation benchmarks use direct translation, failing to adapt culture-specific items; 2) inference-time methods for moral reasoning rely on static, English-centric scaffolds and lack grounding in moral theory; 3) training methods for moral decision-making typically require expensive supervision from stronger models or human annotators. We address these gaps with three contributions. First, we introduce MCLASH, a multilingual moral decision-making benchmark to capture culturally situated moral intuitions and social norms across languages. Second, we propose MET (Multilingual Ethics with Theory-grounded reasoning), a two-step prompting method built on expert-curated, theory-based grounds drawn from psychology and philosophy: the model first selects situation- and culture-specific grounds, then reasons over them in the native language of the user. Third, we introduce MET-D (MET-Distillation), which enhances the second step through a self-distillation training stage that requires no external supervision. MET-D improves macro-F1 over the base model on all three models of different sizes and families (Qwen3-4B, Qwen3-8B, Gemma3-4B), by an average of 3.71 points on MCLASH and 4.23 on MMoralExceptQA, with a peak MCLASH gain of 12.94 points for Malay on Qwen3-8B. We further reveal that MET-D increases native-language reasoning by 62.13 points on average, and that beneficial grounds differ systematically across cultures. Together, these contributions open the path for culture-aligned, theory-grounded multilingual moral reasoning.",
-      "description_zh": "语言模型越来越多地用于跨不同语言和文化背景的道德决策，但现有的工作在三个方面忽视了多语言性：1）多语言评估基准使用直接翻译，未能适应特定文化的项目； 2）道德推理的推理时间方法依赖于静态的、以英语为中心的支架，缺乏道德理论的基础； 3）道德决策的训练方法通常需要来自更强大的模型或人类注释者的昂贵监督。我们通过三项贡献来解决这些差距。首先，我们介绍 MCLASH，一个多语言道德决策基准，用于捕获跨语言的文化道德直觉和社会规范。其次，我们提出了 MET（基于理论推理的多语言伦理），这是一种两步提示方法，建立在专家策划的、基于心理学和哲学的理论基础之上：该模型首先选择特定于情境和文化的理由，然后用用户的母语对其进行推理。第三，我们引入了 MET-D（MET-Distillation），它通过不需要外部监督的自蒸馏训练阶段来增强第二步。 MET-D 在不同尺寸和系列的所有三个模型（Qwen3-4B、Qwen3-8B、Gemma3-4B）上相对于基本模型改进了宏 F1，在 MCLASH 上平均提高了 3.71 点，在 MMoralExceptQA 上平均提高了 4.23 点，在 Qwen3-8B 上马来语的峰值 MCLASH 增益为 12.94 点。我们进一步揭示，MET-D 使母语推理能力平均提高 62.13 分，并且不同文化的有益效果存在系统性差异。这些贡献共同为文化一致、以理论为基础的多语言道德推理开辟了道路。",
+      "description_zh": "语言模型越来越多地用于跨不同语言和文化背景的道德决策，但现有的工作在三个方面忽视了多语言性：1）多语言评估基准使用直接翻译，未能适应特定文化的项目； 2）道德推理的推理时间方法依赖于静态的、以英语为中心的支架，缺乏道德理论的基础； 3）道德决策的训练方法通常需要来自更强大的模型或人类注释者的昂贵监督。我们通过三项贡献来解决这些差距。首先，我们介绍 MCLASH，一个多语言道德���策基准，用于捕获跨语言的文化道德直觉和社会规范。其次，我们提出了 MET（基于理论推理的多语言伦理），这是一种两步提示方法，建立在专家策划的、基于心理学和哲学的理论基础之上：该模型首先选择特定于情境和文化的理由，然后用用户的母语对其进行推理。第三，我们引入了 MET-D（MET-Distillation），它通过不需要外部监督的自蒸馏训练阶段来增强第二步。 MET-D 在不同尺寸和系列的所有三个模型（Qwen3-4B、Qwen3-8B、Gemma3-4B）上相对于基本��型改进了宏 F1，在 MCLASH 上平均提高了 3.71 点，在 MMoralExceptQA 上平均提高了 4.23 点，在 Qwen3-8B 上马来语的峰值 MCLASH 增益为 12.94 点。我们进一步揭示，MET-D 使母语推理能力平均提高 62.13 分，并且不同文化的有益效果存在系统性差异。这些贡献共同为文化一致、以理论为基础的多语言道德推理开辟了道路。",
       "authors": "Ayoung Lee, Ryan Kwon, Yunxiang Zhang, Yuxuan Liu, Peter Railton, Lu Wang",
       "url": "https://huggingface.co/papers/2607.11736",
-      "score": 4,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "7",
         "paperId": "2607.11736"
       }
     },
@@ -26,206 +221,11 @@
       "description_zh": "为什么使用简单图像和增强的对比学习可以为下游任务产生有用的表示？我们通过分析计算一系列基本增强和任何具有固定统计数据的图像数据集的对比损失的最佳表示来解决这个问题。我们表明，对于某些增强，可以通过第一层滤波器为正弦曲线、随后是点非线性、全局平均池化和执行部分白化的最终线性层的 CNN 来获得最佳效果。我们还表明，此类 CNN 中对于更复杂的增强的最佳权重仍然是正弦曲线。给定数据集的预期功率谱，可以使用简单的注水算法来计算正弦曲线的频率及其权重。使用不同图像数据集和增强的实验表明，此类使用 SGD 训练的 CNN 在第一层中凭经验学习正弦曲线并执行部分白化",
       "authors": "Antonio Torralba, Yair Weiss",
       "url": "https://huggingface.co/papers/2607.07470",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2607.07470"
-      }
-    },
-    {
-      "id": "2607.11643",
-      "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
-      "title_zh": "小米-机器人-U0：与世界基础模型的统一体现综合",
-      "description": "Recent foundation image and video generation models offer strong generalization and controllability, but their direct application to embodied scenarios is limited by requirements for multi-view consistency, geometric coherence, and robot embodiment constraints. Existing methods typically adapt foundation models with limited robot data, often sacrificing visual knowledge acquired during large-scale pre-training. We present Xiaomi-Robotics-U0, a 38-billion-parameter multimodal autoregressive model for unified embodied synthesis. It treats embodied generation as an extension of foundation image and video generation and jointly optimizes text-to-image generation, image editing, embodied scene generation, embodied transfer, and embodied video generation. This unified framework preserves the generalization of the pre-trained world foundation model while adapting it to embodied settings. Xiaomi-Robotics-U0 is the first model to support high-quality multi-view scene generation across multiple robot embodiments and to introduce structured, controllable embodied transfer for fine-grained editing while preserving multi-view consistency and interaction dynamics. It achieves state-of-the-art results on single-step and sequential generation tasks, outperforming GPT-Image-2.0 in human evaluations of embodied scene generation and transfer, ranking first on World Arena for embodied video generation, and improving the out-of-distribution success rate of pi_0.5 from 36.9% to 63.2% on challenging real-world manipulation tasks. These results show that foundation world models can serve both as embodied world models and scalable data engines for embodied intelligence. Code and checkpoints are available at https://robotics.xiaomi.com/xiaomi-robotics-u0.html.",
-      "description_zh": "最近的基础图像和视频生成模型提供了很强的泛化性和可控性，但它们在具体场景中的直接应用受到多视图一致性、几何相干性和机器人具体约束的要求的限制。现有方法通常使用有限的机器人数据来调整基础模型，通常会牺牲在大规模预训练期间获得的视觉知识。我们推出了Xiaomi-Robotics-U0，这是一个用于统一具体综合的 380 亿参数多模态自回归模型。它将具体化生成视为基础图像和视频生成的扩展，并联合优化文本到图像生成、图像编辑、具体化场景生成、具体化传输和具体化视频生成。这个统一的框架保留了预先训练的世界基础模型的泛化性，同时使其适应具体的设置。小米机器人-U0是第一个支持跨多个机器人实施例的高质量多视图场景生成的模型，并引入结构化、可控的实施传输以进行细粒度编辑，同时保持多视图一致性和交互动态。它在单步和顺序生成任务上取得了最先进的结果，在具体场景生成和传输的人类评估中优于 GPT-Image-2.0，在具体视频生成的 World Arena 上排名第一，并将 pi_0.5 在具有挑战性的现实世界操作任务上的分布外成功率从 36.9% 提高到 63.2%。这些结果表明，基础世界模型既可以作为具体世界模型，也可以作为具体智能的可扩展数据引擎。代码和检查点可在 https://robotics.xiaomi.com/xiaomi-robotics-u0.html 获取。",
-      "authors": "Xinghang Li, Jun Guo, Qiwei Li, Long Qian, Hang Lai, Yueze Wang, Hongyu Yan, Jiahang Cao, Xi Chen, Jingen Qu, Jiaxi Song, Nan Sun, Hanye Zhao, Futeng Liu, Wanli Peng, Heyun Wang, Yunhong Wang, Caoyu Xia, Jack Zhao, Diyun Xiang, Hangjun Ye, Heng Qu, Huaping Liu, Jason Li",
-      "url": "https://huggingface.co/papers/2607.11643",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2607.11643"
-      }
-    },
-    {
-      "id": "2607.09701",
-      "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
-      "title_zh": "EgoSteer：从以自我为中心的视频实现可操纵灵巧操纵的全栈系统",
-      "description": "Steerability is a defining capability of generalist robot policies, yet remains largely absent in dexterous-hand systems for lack of large-scale, language-aligned, and action-accurate demonstration data. To address this bottleneck, we present a full-stack system that scales dexterous VLA pre-training from egocentric human videos and enables data-efficient real-robot post-training. It integrates EgoSmith, a data pipeline that curates in-the-wild egocentric videos into 9.6K hours of high-quality pre-training data with 9x higher throughput and better accuracy than prior SOTA; a unified robot stack for teleoperation and human-in-the-loop correction; and EgoSteer, a world-model-enhanced VLA trained on optimized infrastructure. Human-data pre-training equips EgoSteer with language-guided manipulation priors, which are grounded through robot post-training and improved by DAgger refinement. Empirically, EgoSteer robustly executes free-form instructions across 40+ diverse tasks, demonstrating failure recovery, dexterity, and generalization. The pre-trained model also few-shot adapts to complex long-horizon tasks, including box folding, on two embodiments with 75+% success. We open-source the system, data, and model at https://egosteer.github.io/.",
-      "description_zh": "可操纵性是通用机器人策略的一项决定性能力，但由于缺乏大规模、语言一致且动作准确的演示数据，在灵巧手系统中仍然基本上不存在。为了解决这个瓶颈，我们提出了一个全栈系统，可以扩展以自我为中心的人类视频的灵巧 VLA 预训练，并实现数据高效的真实机器人后期训练。它集成了 EgoSmith，这是一个数据管道，可将野外的以自我为中心的视频整理为 9600 小时的高质量预训练数据，吞吐量比之前的 SOTA 高出 9 倍，准确性也更高；用于远程操作和人机在环校正的统一机器人��栈； EgoSteer，一个经过优化基础设施训练的世界模型增强型 VLA。人类数据预训练为 EgoSteer 配备了语言引导的操作先验，这些先验通过机器人后训练奠定基础，并通过 DAgger 细化进行改进。根据经验，EgoSteer 在 40 多个不同任务中稳健地执行自由格式指令，展示了故障恢复、灵活性和泛化能力。预训练模型还可以通过少量样本适应复杂的长期任务，包括盒子折叠，在两个实施例中成功率达到 75% 以上。我们在 https://egosteer.github.io/ 开源系统、数据和模型。",
-      "authors": "Yifan Zhong, Zhang Chen, Tianrui Guan, Fanlian Zeng, Yuyao Ye, Tianjia He, Ka Nam Lui, Jiayi Li, Tingrui Zhang, Ruilin Yan, Xinhao Ji, Guangyu Zhao, Wenjie Lou, Jiayuan Zhang, Yuanpei Chen, Yaodong Yang",
-      "url": "https://huggingface.co/papers/2607.09701",
-      "score": 8,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2607.09701"
-      }
-    },
-    {
-      "id": "2607.11885",
-      "title": "Latent-Identity Tuning in Text-to-Image Personalization Models",
-      "title_zh": "文本到图像个性化模型中的潜在身份调整",
-      "description": "Generating and editing a person's face demands high precision, as even minor modifications can significantly alter a subject's perceived identity. Current personalization and editing methods built on general-purpose text-to-image models, however, often lack the precision required for fine-grained facial edits. We present a method for fine-grained identity tuning in text-to-image personalization models. Unlike standard image editing, which operates on a given image, identity tuning modifies the latent representation of a specific identity, enabling the generation of diverse images that consistently depict the same edited identity. To enable fine-grained latent identity tuning, we explore the latent space of a pre-trained, frozen encoder for text-to-image personalization. Our approach requires no additional training. Instead, it leverages the existing architecture of a frozen encoder to uncover latent semantic directions. This space consists of a set of latent tokens that play distinct roles in capturing different aspects of an identity and often correspond to specific spatial or semantic facial regions. We show that meaningful directions can be identified within this space and within subspaces defined by selected tokens, enabling localized, fine-grained, and semantically coherent edits. We validate our approach through qualitative and quantitative experiments that demonstrate diverse localized facial edits while preserving cross-image identity consistency. Project page at: https://garibida.github.io/IdentityTuning/",
-      "description_zh": "生成和编辑人脸需要高精度，因为即使很小的修改也会显着改变对象的感知身份。然而，当前基于通用文本到图像模型构建的个性化和编辑方法通常缺乏细粒度面部编辑所需的精度。我们提出了一种在文本到图像个性化模型中进行细粒度身份调整的方法。与对给定图像进行操作的标准图像编辑不同，身份调整修改特定身份的潜在表示，从而能够生成一致地描述相同编辑身份的不同图像。为了实现细粒度的潜在身份调整，我们探索了用于文本到图像个性化的预训练、冻结编码器的潜在空间。我们的方法不需要额外的培训。相反，它利用冻结编码器的现有架构来发现潜在的语义方向。该空间由一组潜在标记组成，这些标记在捕获身份的不同方面方面发挥着不同的作用，并且通常对应于特定的空间或语义面部区域。我们表明，可以在该空间内以及由所选标记定义的子空间内识别有意义的方向，从而实现本地化、细粒度和语义连贯的编辑。我们通过定性和定量实验验证了我们的方法，这些实验展示了多样化的局部面部编辑，同时保持了跨图像身份的一致性。项目页面：https://garibida.github.io/IdentityTuning/",
-      "authors": "Daniel Garibi, Ronen Kamenetsky, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik",
-      "url": "https://huggingface.co/papers/2607.11885",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2607.11885"
-      }
-    },
-    {
-      "id": "2607.11505",
-      "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
-      "title_zh": "代理探索和可重用指导：通过代理引导更新信号的模块化LLM培训后范式",
-      "description": "Post-training is essential for refining the domain-specific capabilities of large language models (LLMs), yet existing reward optimization and distribution matching methods tightly couple policy exploration with distribution alignment. This coupling forces expensive exploration directly on the policy model and severely hinders the asynchronous generation, reuse, and cross-model transfer of optimization signals. In this paper, we propose Proxy-guided Update Signal Transfer (PUST), a novel post-training framework that fundamentally decouples update-signal exploration from distribution alignment. Instead of utilizing the primary model for costly exploration, PUST employs a lightweight proxy model as an efficient testbed to discover high-reward behaviors. We extract the relative improvement signal between the proxy's initial and optimized states, transferring this directional update to the primary model to guide its policy alignment. This decoupled pipeline, comprising proxy exploration, update-signal extraction, and signal transfer, significantly reduces computational overhead and enables optimization signals to be asynchronously generated, cached, and reused. Crucially, by transferring relative improvements rather than absolute policy distributions, PUST naturally supports weak-to-strong improvement and seamless cross-model transfer. Systematic evaluations on Qwen3-family models across math and code domains demonstrate that update signals extracted from substantially weaker proxies can robustly and adjustably enhance stronger primary models. Ultimately, PUST transforms post-training from a monolithic online optimization process into a highly modular, reusable, and cost-efficient paradigm.",
-      "description_zh": "后训练对于完善大型语言模型 (LLM) 的特定领域功能至关重要，但现有的奖励优化和分布匹配方法将策略探索与分布对齐紧密结合在一起。这种耦合迫使直接在策略模型上进行昂贵的探索，并严重阻碍了优化信号的异步生成、重用和跨模型传输。在本文中，我们提出了代理引导更新信号传输（PUST），这是一种新颖的训练后框架，从根本上将更新信号探索与分布对齐解耦。 PUST 没有利用主要模型进行成本高昂的探索，而是采用轻量级代理模型作为有效的测试平台来��现高回报行为。我们提取代理的初始状态和优化状态之间的相对改进信号，将此定向更新转移到主要模型以指导其策略调整。这种解耦的管道包括代理探索、更新信号提取和信号传输，显着减少了计算开销，并使优化信号能够异步生成、缓存和重用。至关重要的是，通过转移相对改进而不是绝对策略分布，PUST 自然支持从弱到强的改进和无缝的跨模型转移。对跨数学和代码域的 Qwen3 系列模型的系统评估表明，从较弱的代理中提取的更新信号可以稳健且可调节地增强更强的主要模型。最终，PUST 将训练后从单一的在线优化过程转变为高度模块化、可重用且经济高效的范例。",
-      "authors": "Daocheng Fu, Rong Wu, Yu Yang, Xuemeng Yang, Jianbiao Mei, Licheng Wen, Pinlong Cai, Yong Liu, Botian Shi, Yu Qiao",
-      "url": "https://huggingface.co/papers/2607.11505",
-      "score": 7,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2607.11505"
-      }
-    },
-    {
-      "id": "2607.09362",
-      "title": "CtrlVTON: Controllable Virtual Try-On via Visual-Instance-Prompt Segmentation",
-      "title_zh": "CtrlVTON：通过视觉实例提示分割进行可控虚拟试穿",
-      "description": "Virtual try-on (VTO) has made significant progress in realistically transferring garments onto a target person. Yet most systems give the user little control over how a garment should be worn -- its size (loose or fitted), style (e.g., tucked in or untucked, open or closed), and spatial placement on the body. We address this gap with two complementary contributions. First, we define and solve Visual-Instance-Prompt Segmentation via VIP-SAM: given a flatlay image of a garment, segment that specific instance in a photograph of a person wearing it. This is an instance-level task, distinct from the typically studied category-level segmentation. Second, we introduce CtrlVTON, a controllable VTO framework that recasts try-on as an image editing problem and adds segmentation masks as pixel-level control over garment layout, including style, size, and spatial placement on the body. VIP-SAM and CtrlVTON each achieve state-of-the-art results on their respective tasks. In particular, CtrlVTON generates images that follow user-provided layouts far more faithfully than the strongest proprietary editing systems while matching them on garment fidelity.",
-      "description_zh": "虚拟试穿 (VTO) 在将服装真实地转移到目标人身上方面取得了重大进展。然而，大多数系统让用户几乎无法控制衣服的穿着方式——尺寸（宽松或合身）、款式（例如，塞进或不塞进、打开或闭合）以及在身体上的空间位置。我们通过两项互补的贡献来解决这一差距。首先，我们通过 VIP-SAM 定义并解决视觉实例提示分割：给定服装的平面图像，分割穿着该服装的人的照片中的特定实例。这是一个实例级任务，与通常研究的类别级���割不同。其次，我们介绍 CtrlVTON，这是一个可控的 VTO 框架，它将试穿重新定义为图像编辑问题，并添加分割蒙版作为对服装布局的像素级控制，包括款式、尺寸和身体上的空间放置。 VIP-SAM 和 CtrlVTON 在各自的任务上均取得了最先进的结果。特别是，CtrlVTON 生成的图像比最强大的专有编辑系统更忠实地遵循用户提供的布局，同时匹配服装保真度。",
-      "authors": "Seungyong Lee, Hyun Jun Jang, Sangoh Kim, Sungjoon Park",
-      "url": "https://huggingface.co/papers/2607.09362",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2607.09362"
-      }
-    },
-    {
-      "id": "2607.11881",
-      "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
-      "title_zh": "LLM中的元认知：基础、进展和机遇",
-      "description": "Metacognition is a foundational component of intelligence critical to effective learning, problem solving, decision-making, communication, and more. In recent years, it has become increasingly recognized as a cornerstone of capable, transparent AI systems. Yet while LLMs have made significant progress across diverse real-world tasks, it is not yet clear when, how, or to what extent they can exhibit or be endowed with effective metacognitive abilities, nor how such abilities can be adapted to advance the fundamental capabilities, reliability, and intelligence of AI systems. This paper bridges this gap by presenting the first comprehensive overview of the current state of knowledge on metacognition for LLMs. We analyze and taxonomize the landscape of this emerging field and summarize recent technical advancements, including methods and benchmarks to measure and evaluate LLMs' metacognitive abilities, techniques to elicit, improve, and apply metacognition in LLMs, and findings and implications of ongoing research. We also discuss applications, open questions and challenges, and promising directions for future work. Our aim is to provide a detailed and up-to-date review of this topic and stimulate meaningful research and discussion. An organized list of papers can be found at https://github.com/yale-nlp/LLM-Metacognition.",
-      "description_zh": "元认知是智力的基本组成部分，对于有效学习、解决问题、决策、沟通等至关重要。近年来，它越来越被认为是强大、透明的人工智能系统的基石。然而，尽管LLM在各种现实世界任务中取得了重大进展，但尚不清楚他们何时、如何或在多大程度上能够表现出或被赋予有效的元认知能力，也不清楚如何调整这些能力来提高人工智能系统的基本能力、可靠性和智能。本文首次全面概述了LLM元认知知识的现状，弥补了这一差距。我们对这一新兴领域的前景进行分析和分类，并总结最新的技术进展，包括衡量和评估LLM元认知能力的方法和基准，在LLM中引发、改进和应用元认知的技术，以及正在进行的研究的发现和影响。我们还讨论应用、悬而未决的问题和挑战，以及未来工作的有希望的方向。我们的目标是对该主题提供详细且最新的回顾，并激发有意义的研究和讨论。可以在 https://github.com/yale-nlp/LLM-Metacognition 找到有序的论文列表。",
-      "authors": "Gabrielle Kaili-May Liu, Areeb Gani, Jacqueline Lu, Jordan Thomas, Mark Steyvers, Arman Cohan",
-      "url": "https://huggingface.co/papers/2607.11881",
-      "score": 12,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "12",
-        "paperId": "2607.11881"
-      }
-    },
-    {
-      "id": "2607.09125",
-      "title": "4D Human-Scene Reconstruction from Low-Overlap Captures",
-      "title_zh": "从低重叠捕获中重建 4D 人类场景",
-      "description": "Existing volumetric capture of dynamic human performance achieves high fidelity with dense camera arrays. However, in real-world scenarios, only a handful of low-overlap cameras are available, which degrades the output quality and leaves large areas unobserved. Recent 4D reconstruction methods have focused on low-overlap settings, yet they still produce noticeable artifacts in under-observed regions. Video diffusion models have emerged as another option, but they show geometrically inconsistent results for humans. To address these limitations, we propose StudioRecon, a pipeline that reconstructs 4D human scenes from sparse, low-overlap cameras by decoupling background and humans. We densify background supervision by synthesizing hundreds of camera-controlled novel views with a video diffusion model. We also robustly initialize deformable Gaussian humans with cross-view identity association and triangulated multi-view keypoint fitting. Finally, our recursive enhancement module with motion-adaptive consistency injection harmonizes the composed output, thereby further avoiding remaining artifacts. We achieve state-of-the-art novel view synthesis across four real-world datasets and demonstrate applications such as novel trajectory rendering and human replacement.",
-      "description_zh": "现有的动态人体表现的体积捕捉通过密集的相机阵列实现了高保真度。然而，在现实场景中，只有少数低重叠相机可用，这会降低输出质量并导致大面积区域无法观察到。最近的 4D 重建方法侧重于低重叠设置，但它们仍然在观察不足的区域产生明显的伪影。视频扩散模型已成为另一种选择，但它们对人类显示出几何上不一致的结果。为了解决这些限制，我们提出了 StudioRecon，这是一种通过分离背景和人类，从稀疏、低重叠摄像机重建 4D 人类场景的管道���我们通过视频扩散模型合成数百个摄像机控制的新颖视图来强化背景监督。我们还通过跨视图身份关联和三角多视图关键点拟合来稳健地初始化可变形高斯人类。最后，我们的递归增强模块具有运动自适应一致性注入，可以协调组合的输出，从而进一步避免剩余的伪影。我们在四个现实世界数据集上实现了最先进的新颖视图合成，并演示了新颖的轨迹渲染和人类替换等应用。",
-      "authors": "Minhyuk Hwang, Sangmin Kim, Seunguk Do, Daneul Kim, Jaesik Park",
-      "url": "https://huggingface.co/papers/2607.09125",
-      "score": 41,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "41",
-        "paperId": "2607.09125"
-      }
-    },
-    {
-      "id": "2607.11644",
-      "title": "Motion4Motion: Motion Transfer Across Subjects at Inference",
-      "title_zh": "Motion4Motion：推理时跨主体的运动转移",
-      "description": "This work explores the motion transfer from one video to another, which is crucial in animation for diverse characters. Previously, video motion transfer has been largely explored between human and human-like characters, enabling a lot of applications in digital creation. However, these approaches encounter a main limitation. Specifically, related technical pipelines heavily rely on a predefined human skeleton structure and accordingly require skeleton-conditional model training. On the one hand, these methods are difficult to generalize to diverse characters, such as animals from different species, while preserving their unique motion styles. On the other hand, labeled data in diverse skeletons is limited, which additionally restricts the large-scale training for the task. In this paper, we jump out of the skeleton-based motion transfer framework and propose a training-free motion transfer framework, named Motion4Motion. Motion4Motionmodels the motion flow of the character in a video instead of skeletons, which makes motion transfer across species easier. Extensive experimental results and novel applications show our methods outperform baselines impressively. Project page is available at https://lhchen.top/Motion4Motion.",
-      "description_zh": "这项工作探索了从一个视频到另一个视频的动作转移，这对于不同角色的动画至关重要。此前，视频动作传输已在人类和类人角色之间进行了大量探索，在数字创作中实现了许多应用。然而，这些方法遇到了一个主要限制。具体来说，相关技术流程严重依赖于预定义的人体骨骼结构，因此需要骨骼条件模型训练。一方面，这些方法很难推广到不同的角色，例如不同物种的动物，同时保留其独特的运动风格。另一方面，不同骨架中的标记数据是有限的，这进一步限制了任务的大规模训练。在本文中，我们跳出了基于骨架的运动传输框架，提出了一种免训练的运动传输框架，名为Motion4Motion。 Motion4Motion 对视频中角色的运动流而不是骨骼进行建模，这使得跨物种的运动转移变得更容易。广泛的实验结果和新颖的应用表明我们的方法明显优于基线。项目页面位于 https://lhchen.top/Motion4Motion。",
-      "authors": "Ling-Hao Chen, Zixin Yin, Duomin Wang, Xianfang Zeng, Gang Yu",
-      "url": "https://huggingface.co/papers/2607.11644",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2607.11644"
-      }
-    },
-    {
-      "id": "2607.10623",
-      "title": "LATO.2: Factorized 3D Mesh Generation with Vertex and Topology Flow",
-      "title_zh": "LATO.2：使用顶点和拓扑流分解 3D 网格生成",
-      "description": "Flow matching over carefully designed latent representations has recently emerged as a powerful paradigm for topology-aware mesh generation. Existing approaches, however, model vertices and connectivity jointly in a joint latent space, entangling continuous vertex geometry with discrete combinatorial structure; this complicates flow learning and manifests as drifting vertices and broken surfaces. We present LATO.2, a factorized flow matching framework that decomposes mesh generation into a vertex flow followed by a connectivity flow conditioned on the realized vertices, with both stages anchored to a shared coarse voxel scaffold. Dedicated VAEs underpin the two stages, recovering vertices at sub-voxel precision and embedding discrete connectivity into a continuous latent space. We demonstrate two advantages unique to this factorization: (i) part-wise generation, in which the scaffold is partitioned and each part synthesized at full latent capacity, yielding substantially higher-resolution meshes than a monolithic latent permits; and (ii) topology-adaptive editing, in which manipulating first-stage vertices induces the corresponding connectivity without re-optimization. Experiments show that LATO.2 surpasses state-of-the-art topology-aware mesh generators in geometric fidelity and connectivity quality.",
-      "description_zh": "最近，精心设计的潜在表示上的流匹配已成为拓扑感知网格生成的强大范例。然而，现有的方法是在联合潜在空间中联合建模顶点和连接性，将连续的顶点几何形状与离散的组合结构纠缠在一起；这使流学习变得复杂，并表现为漂移的顶点和破碎的表面。我们提出了 LATO.2，一个因式分解的流匹配框架，它将网格生成分解为顶点流，然后是以已实现的顶点为条件的连接流，两个阶段都锚定到共享的粗体素支架。专用 VAE 支持这两个阶段，以亚体素精度恢复顶点并将离散连接嵌入连续的潜在空间。我们证明了这种分解的两个独特优势：（i）部分生成，其中支架被分区，每个部分以完全潜在能力合成，产生比整体潜在能力更高分辨率的网格； (ii) 拓扑自适应编辑，其中操作第一阶段顶点会产生相应的连接而无需重新优化。实验表明，LATO.2 在几何保真度和连接质量方面超越了最先进的拓扑感知网格生成器。",
-      "authors": "Hang Long, Tianhao Zhao, Junkai Lin, Youjia Zhang, Huipeng Guo, Rendong Liang, Jiale Xu, Jozef Hladký, Matthias Nießner, Wei Yang",
-      "url": "https://huggingface.co/papers/2607.10623",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2607.10623"
-      }
-    },
-    {
-      "id": "2607.05394",
-      "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
-      "title_zh": "通过直接同策略蒸馏进行弱到强泛化",
-      "description": "Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-model reasoning, but it is expensive to repeat on every new strong model because the target model must generate many rollouts during training. As models scale, post-training itself becomes a bottleneck. We study a weak-to-strong alternative: run RL on a smaller model where rollouts are cheaper, then reuse what that RL run learned to improve a stronger target model. Directly distilling the post-RL weak teacher is not enough, because the teacher's final policy mixes useful RL gains with the limitations of the smaller model. We propose Direct On-Policy Distillation (Direct-OPD), which transfers the teacher's RL-induced policy shift instead. Direct-OPD compares the post-RL teacher with its own pre-RL reference and treats their log-ratio as a dense implicit reward for the student. In plain terms, the checkpoint pair tells us which actions RL made the weak model more or less likely to take, and Direct-OPD applies that signal on the stronger student's own on-policy states. This directly reuses the weak model's RL supervision signal without running sparse-reward RL on the target model. Empirically, Direct-OPD consistently leverages weaker teachers to improve stronger target models; notably, it boosts Qwen3-1.7B from 48.3% to 58.3% on AIME 2024 in just 4 hours on 8 A100 GPUs. It outperforms step-matched direct RL and enables the sequential composition of multiple policy shifts. Our results show that RL outcomes can be reused across model scales as implicit reward signals, not merely as final models to imitate.",
-      "description_zh": "具有可验证奖励的强化学习 (RLVR) 是改进语言模型推理的有效方法，但在每个新的强模型上重复的成本很高，因为目标模型必须在训练期间生成许多 rollout。随着模型规模的扩大，训练后本身就成为了瓶颈。我们研究了一种从弱到强的替代方案：在较小的模型上运行强化学习，其中部署成本更低，然后重用强化学习运行学到的知识来改进更强的目标模型。直接提取 RL 后的弱教师是不够的，因为教师的最终策略将有用的 RL 收益与较小模型的局限性混合在一起。我们提出直接按策略蒸馏（Direct-OPD），它转移了教师的 RL 诱导的策略转变。 Direct-OPD 将 RL 后的教师与其自己的 RL 前的参考进行比较，并将它们的对数比视为对学生的密集隐式奖励。简单来说，检查点对告诉我们 RL 使弱模型更有可能采取哪些行动，而 Direct-OPD 将该信号应用于更强的学生自己的政策状态。这直接重用了弱模型的 RL 监督信号，而无需在目标模型上运行稀疏奖励 RL。根据经验，Direct-OPD 始终利用较弱的教师来改进更强的目标模型；值得注意的是，它在 8 个 A100 GPU 上仅用了 4 小时就将 Qwen3-1.7B 在 AIME 2024 上的性能从 48.3% 提升到了 58.3%。它的性能优于步长匹配的直接强化学习，并支持多个策略转变的顺序组合。我们的结果表明，强化学习的结果可以在模型尺度上作为隐式奖励信号重复使用，而不仅仅是作为最终的模型来模仿。",
-      "authors": "Shiyuan Feng, Huan-ang Gao, Haohan Chi, Hanlin Wu, Zhilong Zhang, Zheng Jiang, Bingxiang He, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou",
-      "url": "https://huggingface.co/papers/2607.05394",
-      "score": 92,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "92",
-        "paperId": "2607.05394"
-      }
-    },
-    {
-      "id": "2607.10350",
-      "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
-      "title_zh": "ABot-AgentOS：具有终身多模态记忆的通用机器人代理操作系统",
-      "description": "Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification, and cross-embodiment execution. We present ABot-AgentOS, a general robotic Agent Operating System that sits above low-level controllers and provides a deliberative agent layer for scene-conditioned planning, context-isolated skill execution, multi-stage verification, multi-modal memory, and edge-cloud collaboration. To evaluate such systems, we introduce EmbodiedWorldBench, an executable benchmark with 16 indoor, outdoor, and hybrid scenes, four difficulty levels, and over 200 tasks involving navigation, object search, NPC dialogue, dynamic events, and trace-grounded scoring. ABot-AgentOS further introduces Universal Multi-modal Graph Memory, a persistent source-grounded substrate that converts dialogue, visual observations, spatial context, temporal relations, and task traces into typed nodes and edges. A failure-driven self-evolution loop converts diagnosed memory failures into gated runtime evo-assets that are promoted only to later evaluation splits, preventing current-split ground-truth leakage while enabling continual improvement. On an initial EmbodiedWorldBench subset, ABot-AgentOS improves over a single-controller baseline in both task success and goal completion. Across memory benchmarks, ABot-AgentOS Static achieves 87.5 on LoCoMo, 59.9 on OpenEQA EM-EQA, 88.6 on Mem-Gallery, and 76.5 Acc@All on NExT-QA; self-evolution further improves LoCoMo to 88.7, OpenEQA to 60.4, and Mem-Gallery to 89.0. These results suggest that a general Agent OS layer can improve long-horizon embodied execution while providing persistent, auditable memory for continual interaction.",
-      "description_zh": "最近的 VLM 和 VLA 系统改进了机器人感知和动作预测，但长期具体代理仍然需要通用运行时层来进行推理、记忆、工具使用、验证和跨具体执行。我们推出了 ABot-AgentOS，这是一种通用机器人代理操作系统，位于低级控制器之上，并为场景条件规划、上下文隔离技能执行、多阶段验证、多模式内存和边缘云协作提供深思熟虑的代理层。为了评估此类系统，我们引入了 EmbodiedWorldBench，这是一个可执行基准测试，具有 16 个室内、室外和混合场景、四个难度级别以及 200 多个任务，涉及导航、对象搜索、NPC 对话、动态事件和基于轨迹的评分。 ABot-AgentOS 进一步引入了通用多模态图形内存，这是一种持久的基于源的基底，可将对话、视觉观察、空间上下文、时间关系和任务跟踪转换为类型节点和边。故障驱动的自进化循环将诊断出的内存故障转换为门控运行时进化资产，这些资产仅提升到以后的评估分裂，防止当前分裂的地面真相泄漏，同时实现持续改进。在初始 EmbodiedWorldBench 子集上，ABot-AgentOS 在任务成功和目标完成方面均优于单控制器基线。在内存基准测试中，ABot-AgentOS Static 在 LoCoMo 上达到 87.5，在 OpenEQA EM-EQA 上达到 59.9，在 Mem-Gallery 上达到 88.6，在 NExT-QA 上达到 76.5 Acc@All；自我进化进一步将LoCoMo提高到88.7，OpenEQA提高到60.4，Mem-Gallery提高到89.0。这些结果表明，通用代理操作系统层可以改善长期具体执行，同时为持续交互提供持久的、可审计的内存。",
-      "authors": "Jiayi Tian, Shiao Liu, Yuting Xu, Jia Lu, Zihao Guan, Honglin Han, Di Yang, Minqi Gu, Yifei Qian, Tianlin Zhang, Yanqing Zhu, Zeqian Ye, Menglin Yang, Fei Wang, Xu Hu, Xiuxian Li, Wei Zhang, Shihui Su, Yiyan Ji, Jingbo Wang, Ziteng Feng, Jiaheng Liu, Zhaoxiang Zhang, Xiaolong Wu, Mingyang Yin, Zedong Chu, Mu Xu",
-      "url": "https://huggingface.co/papers/2607.10350",
-      "score": 68,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "68",
-        "paperId": "2607.10350"
-      }
-    },
-    {
-      "id": "2607.11849",
-      "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
-      "title_zh": "AdvancedMathBench：高级数学证明生成和验证的基准套件",
-      "description": "Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style mathematics, yet their capabilities on advanced mathematics remain poorly understood. Existing benchmarks, however, fall short in both scope and evaluation granularity: they provide limited disciplinary coverage and often rely on final-answer correctness or coarse judgments, leaving the validity of the reasoning process inadequately assessed. To bridge this gap, we introduce AdvancedMathBench, a benchmark suite designed to evaluate advanced mathematical reasoning capabilities. Its core proof-generation benchmark, ProverBench, contains 296 problems spanning undergraduate and doctoral qualifying-exam levels. To provide reliable evaluation of the proofs, we develop a dedicated automatic verification pipeline trained on large-scale expert annotations to produce both correctness verdicts and fine-grained assessments of proof errors, which exhibits strong agreement with human experts on held-out proof trajectories. We further introduce VerifierBench, consisting of 888 model-generated proof trajectories paired with expert ground truth, to evaluate whether models can correctly judge proof validity and provide sound verification rationales. Experiments show that AdvancedMathBench remains challenging for frontier models. On proof generation, the best-performing model, GPT-5.5-xhigh, achieves only 75.8 and 66.1 on the UGD and QE splits, respectively, indicating substantial room for improvement on advanced mathematical proof construction. On proof verification, the best model attains a Balanced F1 of only 65.1, and models generally exhibit low true negative rates, suggesting that critical error detection remains a major bottleneck.",
-      "description_zh": "大型语言模型（LLM）在高中和奥林匹克数学方面取得了令人瞩目的表现，但它们在高等数学方面的能力仍然知之甚少。然而，现有的基准在范围和评估粒度上都存在不足：它们提供的学科覆盖范围有限，并且通常依赖于最终答案的正确性或粗略的判断，从而导致推理过程的有效性评估不充分。为了弥补这一差距，我们引入了 AdvancedMathBench，这是一个旨在评估高级数学推理能力的基准套件。其核心证明生成基准 ProverBench 包含涵盖本科和博士资格考试级别的 296 个问题。为了提供对证明的可靠评估，我们开发了一个专门的自动验证管道，经过大规模专家注释的训练，可以生成正确性判决和对证明错误的细粒度评估，这与人类专家在保留的证明轨迹上表现出强烈的一致性。我们进一步引入了 VerifierBench，由 888 个模型生成的证明轨迹与专家地面事实配对组成，以评估模型是否能够正确判断证明有效性并提供合理的验证理由。实验表明，AdvancedMathBench 对于前沿模型仍然具有挑战性。在证明生成方面，性能最好的模型 GPT-5.5-xhigh 在 UGD 和 QE 分割上分别仅获得 75.8 和 66.1，这表明高级数学证明构造还有很大的改进空间。在证明验证中，最佳模型的平衡 F1 仅为 65.1，并且模型通常表现出较低的真负率，这表明关键错误检测仍然是主要瓶颈。",
-      "authors": "Lingkai Kong, Zijian Wu, Yuzhe Gu, Haiteng Zhao, Wenyong Huang, Shuang Sun, Zhicheng Xiong, Xiaotian Zhang, Shuya Zhao, Yan Wang, Disheng Xu, Wenwei Zhang, Kai Chen",
-      "url": "https://huggingface.co/papers/2607.11849",
-      "score": 19,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "19",
-        "paperId": "2607.11849"
-      }
-    },
-    {
-      "id": "2607.11487",
-      "title": "LightMem-Ego: Your AI Memory for Everyday Life",
-      "title_zh": "LightMem-Ego：日常生活中的人工智能记忆",
-      "description": "Personal AI assistants on mobile and wearable devices continuously perceive users' daily lives through visual and audio streams. However, answering queries about past experiences requires lightweight multimodal memory that can continuously accumulate, organize, and retrieve long-term experiences, which remains challenging. To address this challenge, we present LightMem-Ego, a lightweight streaming multimodal memory system for everyday-life assistance. The system continuously captures egocentric visual and audio streams, aligns them on a shared timeline, and organizes them into a hierarchical memory consisting of current, short-term, and long-term memory. Given a user query, LightMem-Ego dynamically routes retrieval to the appropriate memory level and generates answers grounded in multimodal evidence. The demonstration can be deployed on smartphones and AI glasses, supporting object finding, conversation recall, life summarization, routine discovery, and personalized assistance. Code is available at https://github.com/zjunlp/LightMem-Ego.",
-      "description_zh": "移动和可穿戴设备上的个人人工智能助理通过视觉和音频流不断感知用户的日常生活。然而，回答有关过去经历的查询需要轻量级多模态记忆，它可以不断积累、组织和检索长期经验，这仍然具有挑战性。为了应对这一挑战，我们推出了 LightMem-Ego，这是一种用于日常生活辅助的轻量级流式多模式存储系统。该系统不断捕获以自我为中心的视觉和音频流，将它们排列在共享时间线上，并将它们组织成由当前、短期和长期记忆组成的分层记忆。给定用户查询，LightMem-Ego 动态地将检索路由到适当的记忆级别，并生成基于多模式证据的答案。该演示可部署在智能手机和AI眼镜上，支持物体查找、对话回忆、生活总结、日常发现和个性化帮助。代码可在 https://github.com/zjunlp/LightMem-Ego 获取。",
-      "authors": "Yijun Chen, Boyi Xiao, Yixian Zhao, Haoting Xia, Buqiang Xu, Jizhan Fang, Yanya Li, Yaqi Zheng, Xuehai Wang, Zirui Xue, Liuxin Zhang, Hui Li, Ningyu Zhang",
-      "url": "https://huggingface.co/papers/2607.11487",
-      "score": 33,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "33",
-        "paperId": "2607.11487"
+        "paperId": "2607.07470"
       }
     }
   ]
