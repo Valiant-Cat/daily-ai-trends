@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-07-18T20:25:09.567Z",
+  "updatedAt": "2026-07-19T20:26:48.341Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "人类视觉系统的一个显着特征是，它通过一系列局部注视点的瞥见而不是单一的全局计算来摄取视觉信息。这使得人类视觉与当今使用的最流行的计算机视觉模型明显不同，后者在全局和单次拍摄中输入图像。因此，一个自然的问题是，除了在生物学上比全局模型更合理之外，局部顺序视觉模型是否可以提供任何基本的计算优势。在这项工作中，我们从视觉状态跟踪和长度泛化的角度研究这个问题。受最近语言模型中长度泛化研究的启发，我们研究了在需要聚合图像上的局部信息的简单视觉任务上训练的视觉模型的行为。我们的实验表明，与语言模型类似，视觉模型可以学习利用全局捷径，从而无法概括任务长度或复杂性。我们还表明，基于严格局部感知的循环视觉策略可以减轻这些失败，从而使模型能够泛化这些任务。我们的结果表明，局部注意力可能是鲁棒组合泛化的一个被忽视的基本要求。",
       "authors": "Pulkit Madan, Sanjay Haresh, Reza Ebrahimi, Sunny Panchal, Apratim Bhattacharyya, Roland Memisevic",
       "url": "https://huggingface.co/papers/2607.09061",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2607.09061"
       }
     },
@@ -26,10 +26,10 @@
       "description_zh": "我们重新审视 LLM 代理的自动工具进化评估。现有的线束演化方法使用单元测试用例来搜索线束配置，然后在同一公共基准上报告最终性能。该协议提出了两个基本问题。首先，线束演化本身就是一个迭代搜索过程，它使用任务反馈反复评估和修改候选线束。与代理测试时间扩展一样，因此应将其与匹配反馈和推理预算下的简单任务级搜索基线进行比较，以确定其收益是否来自改进的线束设计或仅来自额外的搜索。其次，由于搜索和最终评估共享相同的基准，因此报告的增益风险过度拟合该特定任务集。为了解决这些问题，我们在可比较的反馈和推理预算下，对工具的演变与简单的测试时间扩展和发现基线进行了广泛的比较，并评估了保留任务的进化工具，以评估所发现的改进是否具有普遍性。使用 GPT-5.4 和 Claude Opus 4.6 在 Terminal-Bench 2.1 上进行的实验表明，自动线束演化并不总是优于简单的测试时间缩放方法，并且泛化能力有限。我们的结果提出了有关自动线束进化有效性的重要问题，并强调了对自动线束设计更公平的评估协议和基准的需要。我们的代码可在 https://github.com/rethinking-harness-evolution 获取。",
       "authors": "Yike Wang, Huaisheng Zhu, Zhengyu Hu, Yige Yuan, Zhengyu Chen, Shakti Senthil, Hannaneh Hajishirzi, Yulia Tsvetkov, Pradeep Dasigi, Teng Xiao",
       "url": "https://huggingface.co/papers/2607.12227",
-      "score": 4,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "6",
         "paperId": "2607.12227"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "验证自动驾驶系统需要多样化、符合法规的测试场景。在基于模拟的测试中，场景被定义为可执行脚本。然而，从监管描述自动生成此类脚本仍然是一个开放的挑战，现有方法面临着根本性的权衡。检索组装方法实现了合理的编译率，但缺乏可扩展性，而基于检索的全脚本生成则编译成功率较低。我们推出了 Chat2Scenic，这是第一个以领域特定语言 (DSL) 生成场景脚本的迭代检索增强框架。具体来说，Chat2Scenic 提供了一个聊天机器人界面，支持交互式场景细化，并将检索增强生成 (RAG) 集成到监管知识和 DSL 语法中的基础场景生成。此外，我们提出了场景生成的开放基准，其中包括来自各种法规（包括 NHTSA 和联合国车辆法规）以及其他来源的 123 个场景。对最先进 (SOTA) 大型语言模型 (LLM) 的广泛评估表明，Chat2Scenic 实现了 76.42% 的编译成功率 (CSR) 和 58.17% 的框架准确性 (FA)，优于现有方法（检索汇编为 30.08% CSR、11.03% FA，检索完整脚本生成为 16.26%）企业社会责任，10.86% FA）。为了促进未来的研究，我们在 https://github.com/TUM-AVS/chat2scenic 上开源了我们的代码。",
       "authors": "Yuan Gao, Wenting Miao, Mattia Piccinini, Haoyu Wang, Qunying Song, Johannes Betz",
       "url": "https://huggingface.co/papers/2607.14387",
-      "score": 3,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "4",
         "paperId": "2607.14387"
       }
     },
@@ -68,13 +68,13 @@
       "title": "RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination",
       "title_zh": "RxBrain：具有联合语言视觉推理和想象力的具身认知基础模型",
       "description": "Embodied cognition requires agents to connect high-level task reasoning with the physical states to be achieved. We introduce Hy-Embodied-RxBrain, an embodied cognition foundation model with joint language-visual reasoning and imagination. Unlike vision-language models that emphasize scene understanding and textual decision making, or generative world models that mainly predict future visual states, RxBrain represents embodied plans in a single planning sequence where language and visual imagination play complementary roles. Language provides the abstract structure of a plan, including task decomposition, planning primitives, constraints, temporal order, and decision logic, while visual imagination grounds this structure through world state prediction and joint subgoal planning, associating each planning step with intermediate and final physical states. RxBrain adopts a unified multimodal Mixture-of-Transformers architecture that supports language, image, and video understanding and generation within one model. To train this capability, we build an automatic pipeline that converts embodied videos into joint text-visual planning supervision by decomposing videos into planning steps and aligning them with visual state transitions. We further introduce RxBrain-Bench to evaluate whether models can represent embodied plans through joint textual and visual components rather than separate understanding or generation. Experiments show that RxBrain maintains embodied understanding and generation abilities, and produces plans with coupled textual reasoning, world state prediction, and joint subgoal planning. We also extend RxBrain to continuous robot action generation, where it shows promising real-robot performance without large-scale action-data pretraining. These results provide an initial step toward foundation models for embodied cognition.",
-      "description_zh": "具身认知要求智能体将高级任务推理与要实现的物理状态联系起来。我们介绍 Hy-Embodied-RxBrain，一种具有联合语言视觉推理和想象力的具身认知基础模型。与强调场景理解和文本决策的视觉语言模型或主要预测未来视觉状态的生成世界模型不同，RxBrain 表示单个规划序列中的具体计划，其中语言和视觉想象力发挥互补作用。语言提供了计划的抽象结构，包括任务分解、计划原语、约束、时间顺序和决策逻辑，而视觉想象力通过世界状态预测和联合子目标规划来支撑该结构，将每个计划步骤与中间和最终物理状态相关联。 RxBrain 采用统一的多模态 Mixture-of-Transformers 架构，支持在一个模型内理解和生成语言、图像和视频。为了训练这种能力，我们构建了一个自动管道，通过将视频分解为规划步骤并将其与视觉状态转换对齐，将具体视频转换为联合文本视觉规划监督。我们进一步引入 RxBrain-Bench 来评估模型是否可以通过联合文本和视觉组件而不是单独的理解或生成来表示具体计划。实验表明，RxBrain 保持了具体理解和生成能力，并通过耦合文本推理、世界状态预测和联合子目标规划来生成计划。我们还将 RxBrain 扩展到连续的机器人动作生成，它在无需大规模动作数据预训练的情况下显示出有前景的真实机器人性能。这些结果为构建具身认知的基础模型迈出了第一步。",
+      "description_zh": "具身认知要求智能体将高级任务推理与要实现的物理状态联系起来。我们介绍 Hy-Embodied-RxBrain，一种具有联合语言视觉推理和想象力的具身认知基础模型。与强调场景理解和文本决策的视觉语言模型或主要预测未来视觉状态的生成世界模型不同，RxBrain 表示单个规划序列中的具体计划，其中语言和视觉想象力发挥互补作用。语言提供了计划的抽象结构，包括任务分解、计划原语、约束、时间顺序和决策逻辑，而视觉想象力通过世界状态预测和联合子目标规划来支撑该结构，将每个计划步骤与中间和最终物理状态相��联。 RxBrain 采用统一的多模态 Mixture-of-Transformers 架构，支持在一个模型内理解和生成语言、图像和视频。为了训练这种能力，我们构建了一个自动管道，通过将视频分解为规划步骤并将其与视觉状态转换对齐，将具体视频转换为联合文本视觉规划监督。我们进一步引入 RxBrain-Bench 来评估模型是否可以通过联合文本和视觉组件而不是单独的理解或生成来表示具体计划。实验表明，RxBrain 保持了具体理解和生成能力，并通过耦合文本推理、世界状态预测和联合子目标规划来生成计划。我们还将 RxBrain 扩展到连续的机器人动作生成，它在无需大规模动作数据预训练的情况下显示出有前景的真实机器人性能。这些结果为构建具身认知的基础模型迈出了第一步。",
       "authors": "Haotian Liang, Mingkang Chen, Yufei Huang, Yuchun Guo, Xiaomeng Zhu, Xiangli Shi, Kaixuan Wang, Yunxuan Mao, Weijie Zhou, Ling Chen, Shirong Zeng, Yueyu Long, Yuchen Si, Yajuan Zhu, Xingyu Zhou, Minghui Wang, Wanjia He, Xin Yang, Lingzhu Xiang, Zhiqing Liu, Bohan Ma, Xiran Huang, Tianshuo Yang, Zhiheng Liu, Xuantang Xiong, Zisheng Lu, Ping Luo, Yao Mu, Han Hu, Zhengyou Zhang",
       "url": "https://huggingface.co/papers/2607.14187",
-      "score": 20,
+      "score": 23,
       "meta": {
         "source": "huggingface",
-        "upvotes": "20",
+        "upvotes": "23",
         "paperId": "2607.14187"
       }
     },
@@ -86,10 +86,10 @@
       "description_zh": "在本文中，我们介绍了令牌时间连续扩散（TTCD），这是一种新的扩散语言模型，它（a）在连续空间中运行，确定性地将高斯噪声映射到最终令牌画布，而无需进一步采样，并且至关重要的是（b）结合了每个令牌时间的新概念，一些令牌以比其他令牌更快的速度从噪声到令牌。连续空间建模有助于 TTCD 避免多个标记的并行采样，这是纯粹在离散空间中迭代的模型高速加速时不准确的一个关键来源。每个令牌时间的概念有助于 TTCD 更好地模拟条件生成，允许更确定的令牌以更快的速度进行，并允许在细化过程中区分令牌间的影响。 TTCD 在高加速下的性能优于离散模型。我们在OpenWebText上训练一个160M参数的TTCD模型，然后自蒸馏；我们发现，在高加速下，我们在无条件生成质量方面具有可比性，并且在条件生成方面表现优于条件生成，几个现有的类似大小的模型在相同的数据上进行训练并自我蒸馏。我们在数独求解中也取得了类似的成果。",
       "authors": "Parikshit Bansal, Sujay Sanghavi",
       "url": "https://huggingface.co/papers/2607.14106",
-      "score": 6,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "7",
         "paperId": "2607.14106"
       }
     },
@@ -98,13 +98,13 @@
       "title": "SUFLECA: Scaling Up Feature Learning for CAD-to-image Alignment",
       "title_zh": "SUFLECA：扩大 CAD 到图像对齐的特征学习",
       "description": "CAD-to-image alignment aims to estimate an object's 9D pose (rotation, translation, and anisotropic scale) from a single RGB image, enabling applications in robotics and augmented reality. Recent zero-shot methods use visual foundation models to match image regions to CAD models, yet typically their correspondences are appearance-driven and degrade under occlusion or sim-to-real domain shift. To address these limitations, we introduce SUFLECA (Scaling Up Feature LEarning for CAD Alignment), a weakly-supervised framework for zero-shot CAD alignment with two key contributions. First, SUFLECA scales up geometry-grounded feature learning from pretrained visual representations through Normalized Object Coordinates (NOCs) supervision on 674K images spanning 12 real and synthetic datasets, learning compact geometry-aware features that generalize across domains. Second, we propose a geometrically consistent matching algorithm that establishes reliable one-to-one CAD-to-image correspondences. Together, these contributions enable accurate, sub-second alignment per object instance without iterative pose refinement. On ScanNet25k, SUFLECA achieves 33.4%/42.3% category/instance accuracy, outperforming, with a smaller computational footprint, the strongest zero-shot baseline by 10.3/12.2 percentage points and, for the first time on this benchmark, even surpassing fully supervised methods. Code is available at: https://github.com/snt-arg/SUFLECA",
-      "description_zh": "CAD 到图像对齐旨在从单个 RGB 图像估计对象的 9D 姿态（旋转、平移和各向异性比例），从而实现机器人和增强现实中的应用。最近的零样本方法使用视觉基础模型将图像区域与 CAD 模型进行匹配，但它们的对应关系通常是外观驱动的，并且在遮挡或模拟到真实域转换的情况下会退化。为了解决这些限制，我们引入了 SUFLECA（CAD 对齐的扩展特征学习），这是一种用于零样本 CAD 对齐的弱监督框架，具有两个关键贡献。首先，SUFLECA 通过对跨越 12 个真实和合成数据集的 674K 图像进���规范化对象坐标 (NOC) 监督，从预训练的视觉表示中扩展基于几何的特征学习，学习跨领域泛化的紧凑的几何感知特征。其次，我们提出了一种几何一致的匹配算法，可建立可靠的一对一 CAD 与图像对应关系。这些贡献共同实现了每个对象实例的精确、亚秒级对齐，而无需迭代姿态细化。在 ScanNet25k 上，SUFLECA 实现了 33.4%/42.3% 的类别/实例准确率，以更小的计算占用量、最强的零样本基线提高了 10.3/12.2 个百分点，并且首次在该基准测试中甚至超越了完全监督的方法。代码位于：https://github.com/snt-arg/SUFLECA",
+      "description_zh": "CAD 到图像对齐旨在从单个 RGB 图像估计对象的 9D 姿态（旋转、平移和各向异性比例），从而实现机器人和增强现实中的应用。最近的零样本方法使用视觉基础模型将图像区域与 CAD 模型进行匹配，但它们的对应关系通常是外观驱动的，并且在遮挡或模拟到真实域转换的情况下会退化。为了解决这些限制，我们引入了 SUFLECA（CAD 对齐的扩展特征学习），这是一种用于零样本 CAD 对齐的弱监督框架，具有两个关键贡献。首先，SUFLECA 通过对跨越 12 个真实和合成数据集的 674K 图像进��规范化对象坐标 (NOC) 监督，从预训练的视觉表示中扩展基于几何的特征学习，学习跨领域泛化的紧凑的几何感知特征。其次，我们提出了一种几何一致的匹配算法，可建立可靠的一对一 CAD 与图像对应关系。这些贡献共同实现了每个对象实例的精确、亚秒级对齐，而无需迭代姿态细化。在 ScanNet25k 上，SUFLECA 实现了 33.4%/42.3% 的类别/实例准确率，以更小的计算占用量、最强的零样本基线提高了 10.3/12.2 个百分点，并且首次在该基准测试中甚至超越了完全监督的方法。代码位于：https://github.com/snt-arg/SUFLECA",
       "authors": "Saad Ejaz, Miguel Fernandez-Cortizas, Javier Civera, Holger Voos, Jose Luis Sanchez-Lopez",
       "url": "https://huggingface.co/papers/2607.15058",
-      "score": 6,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "7",
         "paperId": "2607.15058"
       }
     },
@@ -116,10 +116,10 @@
       "description_zh": "最近的可推广 3D 高斯 Splatting 模型具有先进的长序列新颖视图合成 (NVS)，但代价是大量冗余计算。我们认为，基于两个观察结果可以减轻冗余：(i) 高质量 NVS 并不严格要求高精度几何结构； (ii) 外观学习通常比几何恢复更容易。受这些见解的启发，我们提出了一种将几何和外观建模解耦的非对称架构。几何分支使用大多数参数处理粗粒度标记以进行多视图重建，而外观分支对细粒度标记进行操作，以使用更少的参数来捕获细节。两个部门通过双边联系进行互动，能够相互指导各自的任务。这种任务感知的不对称性减少了计算冗余并更明智地分配计算，从而提高了参数效率并使较小的模型能够实现强大的性能。在 32 视图 960P 输入上，我们的模型匹配基于优化的方法，同时提供近 800 倍的加速，并超越了最先进的可推广模型的零样本性能，参数显着减少，训练/推理开销减少，实现了整体效率的提高。",
       "authors": "Yingji Zhong, Dave Zhenyu Chen, Fuzhao Ou, Youyu Chen, Zhihao Li, Lanqing Hong, Dan Xu",
       "url": "https://huggingface.co/papers/2607.10995",
-      "score": 6,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "7",
         "paperId": "2607.10995"
       }
     },
@@ -131,10 +131,10 @@
       "description_zh": "推理上下文长度与 RL 训练后的差距越来越大：推理系统正在接近百万个令牌上下文，而训练后工作负载通常保持在 256K 令牌或更低，并且依赖于部署时的长度泛化。这种差距对于人工智能代理来说尤其重要，因为人工智能代理的观察、工具输出、文档和先前的决策都是在很长的轨迹上积累的。 LongStraw 是一个架构感知执行堆栈，用于在固定 GPU 预算下进行百万代币 RL 后训练，并通过组相对策略优化 (GRPO) 进行实例化。它在没有自动分级的情况下评估共享提示，仅保留后续令牌所需的特定于模型的状态，并一次重播一个短响应分支，以额外重播时间为代价减少实时训练图。我们将其实现为混合循环和全注意力 Qwen3.6-27B 和压缩注意力专家混合 GLM-5.2。在 8 个 H20 GPU 上，LongStraw 在 2 组和 8 组的 210 万个位置上完成分组 Qwen 评分和响应；增加组大小仅增加 0.21 GB 峰值分配内存，而单独的压力测试达到 4.46M 位置。在 32 个 H20 GPU 上，我们验证了 GLM-5.2 所有 78 层中 210 万个令牌提示的端到端 LongStraw 执行路径。这些实验建立的是执行能力而不是完整的训练正确性，因为捕获的提示状态是分离的，并且一些分布式前向和梯度合成路径仍然不完整。",
       "authors": "Changhai Zhou, Kieran Liu, Yuhua Zhou, Qian Qiao, Jun Gao, Harry Zhang, Irvine Lu, Nolan Ho, Lucian Li, Andrew Lei, Cleon Cheng, Steven Chiang, Yihang Zeng, Di Zhang, Rio Yang, Kaijie Chen, Andrew Chen, Pony Ma, Weizhong Zhang, Cheng Jin",
       "url": "https://huggingface.co/papers/2607.14952",
-      "score": 169,
+      "score": 175,
       "meta": {
         "source": "huggingface",
-        "upvotes": "169",
+        "upvotes": "175",
         "paperId": "2607.14952"
       }
     },
@@ -158,7 +158,7 @@
       "title": "GRASP: GRanularity-Aware Search Policy for Agentic RAG",
       "title_zh": "GRASP：Agentic RAG 的粒度感知搜索策略",
       "description": "Agentic retrieval-augmented generation (RAG) extends static RAG by allowing language models to iteratively reason, generate search queries, retrieve evidence, and predict answers. However, it remains challenging for models to decide when to retrieve, whether to use lexical matching or semantic similarity, and how to control context granularity to prevent irrelevant tokens from interfering with agent reasoning. In this paper, we introduce GRASP, a reinforcement learning (RL) framework for training agents to adaptively coordinate complementary retrieval tools during multi-step reasoning. GRASP provides the agent with semantic search, keyword search, and paragraph-reading actions, enabling it to retrieve sentence-level evidence and expand further context only when needed. We train the policy with a reward that jointly accounts for answer accuracy, grounded reading, complementary search, and turn efficiency. Experiments on multi-hop reasoning benchmarks show that GRASP improves both retrieval recall and downstream question answering performance compared with single-step retrieval, prompting-based agentic RAG, and RL-based retrieval baselines. Qualitative and ablation analyses show that the learned policy develops interpretable skimming and scanning behavior: it uses semantic search for broad exploration, paragraph reading for local verification, and keyword search for entity-specific evidence. These results suggest that learning to coordinate retrieval signals and context granularity is critical for agent's correct reasoning.",
-      "description_zh": "代理检索增强生成 (RAG) 通过允许语言模型迭代推理、生成搜索查询、检索证据和预测答案来扩展静态 RAG。然而，模型决定何时检索、是否使用词汇匹配或语义相似性以及如何控制上下文粒度以防止不相关的标记干扰代理推理仍然具有挑战性。在本文中，我们介绍了 GRASP，这是一种强化学习（RL）框架，用于训练智能体在多步骤推理过程中自适应地协调互补检索工具。 GRASP 为代理提供语义搜索、关键字搜索和段落阅读操作，使其能够检索句子级证据并仅在需要时扩展进���步的上下文。我们用奖励来训练策略，该奖励共同考虑了答案准确性、接地阅读、互补搜索和转向效率。多跳推理基准实验表明，与单步检索、基于提示的代理 RAG 和基于 RL 的检索基线相比，GRASP 提高了检索召回率和下游问答性能。定性和消融分析表明，学习的策略形成了可解释的略读和扫描行为：它使用语义搜索进行广泛探索，使用段落阅读进行本地验证，以及使用关键字搜索来获取特定于实体的证据。这些结果表明，学习协调检索信号和上下文粒度对于代理的正确推理至关重要。",
+      "description_zh": "代理检索增强生成 (RAG) 通过允许语言模型迭代推理、生成搜索查询、检索证据和预测答案来扩展静态 RAG。然而，模型决定何时检索、是否使用词汇匹配或语义相似性以及如何控制上下文粒度以防止不相关的标记干扰代理推理仍然具有挑战性。在本文中，我们介绍了 GRASP，这是一种强化学习（RL）框架，用于训练智能体在多步骤推理过程中自适应地协调互补检索工具。 GRASP 为代理提供语义搜索、关键字搜索和段落阅读操作，使其能够检索句子级证据并仅在需要时扩展��一步的上下文。我们用奖励来训练策略，该奖励共同考虑了答案准确性、接地阅读、互补搜索和转向效率。多跳推理基准实验表明，与单步检索、基于提示的代理 RAG 和基于 RL 的检索基线相比，GRASP 提高了检索召回率和下游问答性能。定性和消融分析表明，学习的策略形成了可解释的略读和扫描行为：它使用语义搜索进行广泛探索，使用段落阅读进行本地验证，以及使用关键字搜索来获取特定于实体的证据。这些结果表明，学习协调检索信号和上下文粒度对于代理的正确推理至关重要。",
       "authors": "Varun Gandhi, Jaewook Lee, Shantanu Todmal, Franck Dernoncourt, Ryan Rossi, Zichao Wang, Andrew Lan",
       "url": "https://huggingface.co/papers/2607.10463",
       "score": 5,
@@ -176,10 +176,10 @@
       "description_zh": "强化学习已成为大型语言模型的标准训练后配方，但密集的全参数更新会产生两个与部署相关的瓶颈：抑制推理性能（通常表现为测试时间扩展的过早饱和），以及通过多域训练或模型合并整合多种功能时的干扰。我们表明，这些更新的推理有效组件主要集中在基础模型的光谱空间中，从而激发了子空间对齐重新布线（SAR），这是一种事后编辑方法，可以保留该光谱核心，同时删除正交组件。因此，SAR 保留了推理增益并过滤了抑制性能或放大跨域干扰的残余更新方向。在多个模型系列和规模中，SAR 使用少至约 0.58% 的总参数来提取紧凑推理核心：它保留了超过 99% 的训练后性能，并改进了数学推理中的高 k 探索，并通过改进内部模型的七个开放基准中的六个来推广到代理编码。 SAR 还通过释放抑制编码能力来净化混合域训练更新，同时保持数学推理和指令遵循。它进一步实现了跨专家的模型合并，产生的跨领域泛化能力超越了以前的合并基线，甚至超越了最好的单领域专家。总体而言，SAR 表明从参数几何中提取推理有效的更新可以作为一种免训练机制来提高推理和多域性能。",
       "authors": "Zhilong Zhang, Hongli Yu, Huan-ang Gao, Hanlin Wu, Yuxuan Song, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou",
       "url": "https://huggingface.co/papers/2607.03065",
-      "score": 21,
+      "score": 22,
       "meta": {
         "source": "huggingface",
-        "upvotes": "21",
+        "upvotes": "22",
         "paperId": "2607.03065"
       }
     },
@@ -188,13 +188,13 @@
       "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
       "title_zh": "分区、提示、聚合：语言模型中的统计自洽性",
       "description": "In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic identities. In particular, the law of total probability asserts that prior-weighted conditional distributions aggregate into population-level marginals over any valid partition of the population. In this work, we investigate to what extent LLM estimates adhere to this self-consistency principle. We use binary trees as an evaluation scaffold to recursively partition a population into increasingly fine-grained subpopulations. We then prompt LLMs with verbalized subpopulation descriptions in context, aggregate the resulting estimates back into population-level estimates, and compare them across partitions of varying granularity. Applying this protocol across problem domains and state-of-the-art frontier models, we show widespread violations of basic consistency properties. An in-depth study of persona prompting reveals a pattern we call the macro fallacy: estimates reconstructed from more fine-grained subpopulation responses are often better aligned with human reference data than direct population-level estimates. This effect persists across variations in tree structure and estimation task, and can be partially recovered through implicit prompting. Together, these findings suggest that models possess relevant subpopulation knowledge but do not reliably propagate it into aggregate estimates. This gap establishes statistical self-consistency as an unsaturated, reference-free criterion for evaluating LLMs.",
-      "description_zh": "上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了LLM的估计在多大程度上遵守了这种自我一致性原则。我们使用二叉树作为评估支架，将群体递归地划分为越来越细粒度的子群体。然后，我们向LLM提供上下文中的口头亚总体描述，将所得估计值汇总回总体水平估计值，并在不同粒度的分区之间进行比较。跨问题域和最先进的前沿模型应用该协议，我们发现了对基本一致性属性的广泛违反。对角色提示的深入研究揭示了一种我们称之为宏观谬误的模式：从更细粒度的亚群体反应中重建的估计通常比直接的群体水平估计更符合人类参考数据。这种效应在树结构和估计任务的变化中持续存在，并且可以通过隐式提示部分恢复。总之，这些发现表明模型拥有相关的亚群知识，但不能可靠地将其传播到总体估计中。这一差距确立了统计上的自我一致性，作为评估LLM的不饱和、无参考标准。",
+      "description_zh": "上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了LLM的估计在多大程度上遵守了这种自我一致性原则。我们使用二叉树作为评估支架，将群体��归地划分为越来越细粒度的子群体。然后，我们向LLM提供上下文中的口头亚总体描述，将所得估计值汇总回总体水平估计值，并在不同粒度的分区之间进行比较。跨问题域和最先进的前沿模型应用该协议，我们发现了对基本一致性属性的广泛违反。对角色提示的深入研究揭示了一种我们称之为宏观谬误的模式：从更细粒度的亚群体反应中重建的估计通常比直接的群体水平估计更符合人类参考数据。这种效应在树结构和估计任务的变化中持续存在，并且可以通过隐式提示部分恢复。总之，这些发现表明模型拥有相关的亚群知识，但不能可靠地将其传播到总体估计中。这一差距确立了统计上的自我一致性，作为评估LLM的不饱和、无参考标准。",
       "authors": "Patrik Wolf, Thomas Kleine Buening, Andreas Krause, Celestine Mendler-Dünner",
       "url": "https://huggingface.co/papers/2607.15277",
-      "score": 5,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "7",
         "paperId": "2607.15277"
       }
     },
@@ -203,13 +203,13 @@
       "title": "From Pixels to States: Rethinking Interactive World Models as Game Engines",
       "title_zh": "从像素到状态：重新思考作为游戏引擎的交互式世界模型",
       "description": "Building interactive worlds that respond coherently to player actions has long been a shared goal of computer graphics, games, and artificial intelligence. Recent video generative models provide a data-driven route toward this goal by predicting future observations conditioned on user actions, and are increasingly regarded as potential next-generation game engines. Realizing a genuinely interactive game world, however, requires interaction outcomes that follow rules over evolving game conditions, consequences that persist over long horizons, and a generation loop that operates in real time. Conventional game engines realize these properties through a recurrent action-state-observation loop, in which player actions update an explicit game state according to predefined rules and observations are rendered from the resulting state. Taking this loop as an organizing lens, this paper examines interactive game world modeling along four dimensions: player action control, game state dynamics, state-observation persistence, and real-time interactive generation. For each dimension, we start from the capabilities required by an interactive game world, group existing approaches into representative families, and discuss the strengths and trade-offs of each family. Complementing this analysis, we present a scalable data engine for Black Myth: Wukong that collects over 90 hours of gameplay with frame-aligned player actions, ground-truth game states, and visual observations, together with structured and semantic annotations, as a resource for state-aware game world modeling. We hope this paper offers a clear picture of where the field stands and fosters progress toward interactive game worlds.",
-      "description_zh": "构建对玩家行为做出连贯响应的交互式世界长期以来一直是计算机图形、游戏和人工智能的共同目标。最近的视频生成模型通过预测以用户行为为条件的未来观察结果，提供了实现这一目标的数据驱动途径，并且越来越被视为潜在的下一代游戏引擎。然而，实现真正的交互式游戏世界需要遵循不断变化的游戏条件规则的交互结果、长期持续的后果以及实时运行的生成循环。传统的游戏引擎通过循环动作-状态-观察循环来实现这些属性，其中玩家动作根据预定义的规��更新显式游戏状态，并根据结果状态呈现观察结果。以此循环为组织镜头，本文从四个维度研究了交互式游戏世界建模：玩家动作控制、游戏状态动态、状态观察持久性和实时交互生成。对于每个维度，我们从交互式游戏世界所需的功能出发，将现有方法分为代表性的系列，并讨论每个系列的优势和权衡。作为对这一分析的补充，我们为《黑神话：悟空》提供了一个可扩展的数据引擎，该引擎收集超过 90 小时的游��玩法，包括帧对齐的玩家动作、真实的游戏状态和视觉观察，以及结构化和语义注释，作为状态感知游戏世界建模的资源。我们希望本文能够清晰地展示该领域的现状，并促进交互式游戏世界的进步。",
+      "description_zh": "构建对玩家行为做出连贯响应的交互式世界长期以来一直是计算机图形、游戏和人工智能的共同目标。最近的视频生成模型通过预测以用户行为为条件的未来观察结果，提供了实现这一目标的数据驱动途径，并且越来越被视为潜在的下一代游戏引擎。然而，实现真正的交互式游戏世界需要遵循不断变化的游戏条件规则的交互结果、长期持续的后果以及实时运行的生成循环。传统的游戏引擎通过循环动作-状态-观察循环来实现这些属性，其中玩家动作根据预定义的规则更新显式游戏状态，并根据结果状态呈现观察结果。以此循环为组织镜头，本文从四个维度研究了交互式游戏世界建模：玩家动作控制、游戏状态动态、状态观察持久性和实时交互生成。对于每个维度，我们从交互式游戏世界所需的功能出发，将现有方法分为代表性的系列，并讨论每个系列的优势和权衡。作为对这一分析的补充，我们为《黑神话：悟空》提供了一个可扩展的数据引擎，该引擎收集超过 90 小时的���戏玩法，包括帧对齐的玩家动作、真实的游戏状态和视觉观察，以及结构化和语义注释，作为状态感知游戏世界建模的资源。我们希望本文能够清晰地展示该领域的现状，并促进交互式游戏世界的进步。",
       "authors": "Zhen Li, Zian Meng, Shuwei Shi, Mingliang Zhai, Jiaming Tan, Chuanhao Li, Kaipeng Zhang",
       "url": "https://huggingface.co/papers/2607.14076",
-      "score": 26,
+      "score": 29,
       "meta": {
         "source": "huggingface",
-        "upvotes": "26",
+        "upvotes": "29",
         "paperId": "2607.14076"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "直接从原始视觉数据中学习广泛的世界知识是智能的一项基本能力。我们介绍 UniVR，这是第一个通过纯视觉演示同时学习复杂推理、细粒度物理动力学和长期规划的研究。 UniVR 的核心特点是 VR-GRPO，这是一种具有互补的全局和阶梯级奖励的强化学习范式。这种方法在整个推理过程中强制逻辑连贯性和物理一致性，而不需要特定于任务的启发法或图像文本对。为了训练和评估 UniVR，我们构建了 VR-X，这是一个从 16 个不同来源策划的大型基准，涵盖长视界操作、空间谜题和物理推理。它是第一个在纯视觉协议下评估这些异构功能的综合套件。值得注意的是，UniVR 比 VR-X 提升了 25%，其卓越的视觉推理能力也提升了各种多模态理解基准的性能。这些发现强调了视觉空间中推理的巨大潜力，所有代码、数据和模型都是开源的以供进一步研究。",
       "authors": "Zhongwei Ren, Yunchao Wei, Yao Zhao, Weibo Gong, Xiao Liu, Anran Wang, Xiangtai Li, Xiaojie Jin",
       "url": "https://huggingface.co/papers/2607.12800",
-      "score": 27,
+      "score": 28,
       "meta": {
         "source": "huggingface",
-        "upvotes": "27",
+        "upvotes": "28",
         "paperId": "2607.12800"
       }
     }
