@@ -1,6 +1,6 @@
 {
   "source": "github",
-  "updatedAt": "2026-07-19T20:26:37.852Z",
+  "updatedAt": "2026-07-20T20:50:47.645Z",
   "count": 15,
   "items": [
     {
@@ -8,13 +8,13 @@
       "title": "code-review-graph",
       "title_zh": "code-review-graph",
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
-      "description_zh": "MCP 和 CLI 的本地优先代码智能图。构建代码库的持久地图，以便 AI 编码工具仅读取重要内容，并在评论和大型存储库工作流程上进行基准上下文缩减。",
+      "description_zh": "MCP 和 CLI 的本地优先代码智能图。构建代码库的持久映射，以便 AI 编码工具仅读取重要内容，并在评论和大型存储库工作流程上进行基准上下文缩减。",
       "authors": "tirth8205",
       "url": "https://github.com/tirth8205/code-review-graph",
-      "score": 21021,
+      "score": 22936,
       "meta": {
         "source": "github",
-        "stars": "21,021",
+        "stars": "22,936",
         "language": "Python",
         "repo": "tirth8205/code-review-graph",
         "owner": "tirth8205",
@@ -22,21 +22,39 @@
       }
     },
     {
-      "id": "kvcache-ai-ktransformers",
-      "title": "ktransformers",
-      "title_zh": "ktransformers",
-      "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations",
-      "description_zh": "用于体验异构 LLM 推理/微调优化的灵活框架",
-      "authors": "kvcache-ai",
-      "url": "https://github.com/kvcache-ai/ktransformers",
-      "score": 18300,
+      "id": "1jehuang-jcode",
+      "title": "jcode",
+      "title_zh": "jcode",
+      "description": "The most intelligent agent harness for code",
+      "description_zh": "最智能的代码代理工具",
+      "authors": "1jehuang",
+      "url": "https://github.com/1jehuang/jcode",
+      "score": 9538,
       "meta": {
         "source": "github",
-        "stars": "18,300",
-        "language": "Python",
-        "repo": "kvcache-ai/ktransformers",
-        "owner": "kvcache-ai",
-        "repoName": "ktransformers"
+        "stars": "9,538",
+        "language": "Rust",
+        "repo": "1jehuang/jcode",
+        "owner": "1jehuang",
+        "repoName": "jcode"
+      }
+    },
+    {
+      "id": "diegosouzapw-OmniRoute",
+      "title": "OmniRoute",
+      "title_zh": "OmniRoute",
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Claude, GPT, Gemini, Kimi K3, GLM, DeepSeek. Works with Claude Code, Codex, Cursor, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, multimodal, Desktop/PWA. Built by 500+ contributors.",
+      "description_zh": "永远不要停止编码。免费 MIT AI 网关：一个端点、268 多个提供商（50 多个免费）、500 多个模型 — Claude、GPT、Gemini、Kimi K3、GLM、DeepSeek。适用于 Claude Code、Codex、Cursor、Cline 和 Copilot。配额感知自动回退、RTK+Caveman 压缩可节省 15-95% 的令牌、MCP/A2A、多模式、桌面/PWA。由 500 多名贡献者构建。",
+      "authors": "diegosouzapw",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "score": 21538,
+      "meta": {
+        "source": "github",
+        "stars": "21,538",
+        "language": "TypeScript",
+        "repo": "diegosouzapw/OmniRoute",
+        "owner": "diegosouzapw",
+        "repoName": "OmniRoute"
       }
     },
     {
@@ -47,14 +65,50 @@
       "description_zh": "学习它。建造它。寄给别人。",
       "authors": "rohitg00",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "score": 39585,
+      "score": 40449,
       "meta": {
         "source": "github",
-        "stars": "39,585",
+        "stars": "40,449",
         "language": "Python",
         "repo": "rohitg00/ai-engineering-from-scratch",
         "owner": "rohitg00",
         "repoName": "ai-engineering-from-scratch"
+      }
+    },
+    {
+      "id": "msitarzewski-agency-agents",
+      "title": "agency-agents",
+      "title_zh": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "description_zh": "触手可及的完整人工智能机构 - 从前端向导到 Reddit 社区忍者，从奇思妙想的注入者到现实检查者。每个代理都是一位具有个性、流程和经过验证的可交付成果的专业专家。",
+      "authors": "msitarzewski",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "score": 134624,
+      "meta": {
+        "source": "github",
+        "stars": "134,624",
+        "language": "Shell",
+        "repo": "msitarzewski/agency-agents",
+        "owner": "msitarzewski",
+        "repoName": "agency-agents"
+      }
+    },
+    {
+      "id": "kvcache-ai-ktransformers",
+      "title": "ktransformers",
+      "title_zh": "ktransformers",
+      "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations",
+      "description_zh": "用于体验异构 LLM 推理/微调优化的灵活框架",
+      "authors": "kvcache-ai",
+      "url": "https://github.com/kvcache-ai/ktransformers",
+      "score": 18711,
+      "meta": {
+        "source": "github",
+        "stars": "18,711",
+        "language": "Python",
+        "repo": "kvcache-ai/ktransformers",
+        "owner": "kvcache-ai",
+        "repoName": "ktransformers"
       }
     },
     {
@@ -65,10 +119,10 @@
       "description_zh": "开源人工智能语音工作室。克隆、指令、创造。",
       "authors": "jamiepine",
       "url": "https://github.com/jamiepine/voicebox",
-      "score": 43244,
+      "score": 44078,
       "meta": {
         "source": "github",
-        "stars": "43,244",
+        "stars": "44,078",
         "language": "TypeScript",
         "repo": "jamiepine/voicebox",
         "owner": "jamiepine",
@@ -76,147 +130,57 @@
       }
     },
     {
-      "id": "KnockOutEZ-wigolo",
-      "title": "wigolo",
-      "title_zh": "wigolo",
-      "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
-      "description_zh": "AI 编码代理的首选网络 — 通过 MCP 进行本地优先搜索、获取、爬网和研究。没有 API 密钥，没有云，每次查询 0 美元。公开测试版。",
-      "authors": "KnockOutEZ",
-      "url": "https://github.com/KnockOutEZ/wigolo",
-      "score": 1745,
+      "id": "topoteretes-cognee",
+      "title": "cognee",
+      "title_zh": "cognee",
+      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+      "description_zh": "Cognee 是面向代理的开源人工智能记忆平台。通过自托管知识图引擎，为您的人工智能代理提供跨会话的持久长期记忆。",
+      "authors": "topoteretes",
+      "url": "https://github.com/topoteretes/cognee",
+      "score": 28721,
       "meta": {
         "source": "github",
-        "stars": "1,745",
+        "stars": "28,721",
+        "language": "Python",
+        "repo": "topoteretes/cognee",
+        "owner": "topoteretes",
+        "repoName": "cognee"
+      }
+    },
+    {
+      "id": "Robbyant-lingbot-map",
+      "title": "lingbot-map",
+      "title_zh": "lingbot-map",
+      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "description_zh": "用于从流数据重建场景的前馈 3D 基础模型",
+      "authors": "Robbyant",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "score": 14136,
+      "meta": {
+        "source": "github",
+        "stars": "14,136",
+        "language": "Python",
+        "repo": "Robbyant/lingbot-map",
+        "owner": "Robbyant",
+        "repoName": "lingbot-map"
+      }
+    },
+    {
+      "id": "every-app-open-seo",
+      "title": "open-seo",
+      "title_zh": "open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
+      "description_zh": "Semrush 和 Ahrefs 的开源替代方案",
+      "authors": "every-app",
+      "url": "https://github.com/every-app/open-seo",
+      "score": 5741,
+      "meta": {
+        "source": "github",
+        "stars": "5,741",
         "language": "TypeScript",
-        "repo": "KnockOutEZ/wigolo",
-        "owner": "KnockOutEZ",
-        "repoName": "wigolo"
-      }
-    },
-    {
-      "id": "andrewrabert-jellium-desktop",
-      "title": "jellium-desktop",
-      "title_zh": "jellium-desktop",
-      "description": "An unofficial desktop client for Jellyfin",
-      "description_zh": "Jellyfin 的非官方桌面客户端",
-      "authors": "andrewrabert",
-      "url": "https://github.com/andrewrabert/jellium-desktop",
-      "score": 1261,
-      "meta": {
-        "source": "github",
-        "stars": "1,261",
-        "language": "Rust",
-        "repo": "andrewrabert/jellium-desktop",
-        "owner": "andrewrabert",
-        "repoName": "jellium-desktop"
-      }
-    },
-    {
-      "id": "github-copilot-sdk",
-      "title": "copilot-sdk",
-      "title_zh": "copilot-sdk",
-      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
-      "description_zh": "用于将 GitHub Copilot Agent 集成到应用程序和服务中的多平台 SDK",
-      "authors": "github",
-      "url": "https://github.com/github/copilot-sdk",
-      "score": 9935,
-      "meta": {
-        "source": "github",
-        "stars": "9,935",
-        "language": "Java",
-        "repo": "github/copilot-sdk",
-        "owner": "github",
-        "repoName": "copilot-sdk"
-      }
-    },
-    {
-      "id": "PostHog-posthog",
-      "title": "posthog",
-      "title_zh": "posthog",
-      "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
-      "description_zh": "🦔 PostHog 是构建自动驾驶产品的领先平台。我们的开发人员工具——人工智能可观察性、分析、会话重放、标记、实验、错误跟踪、日志等——捕获代理诊断问题、发现机会和发布修复所需的所有上下文。从 Slack、Web、桌面或 MCP 掌控一切。",
-      "authors": "PostHog",
-      "url": "https://github.com/PostHog/posthog",
-      "score": 36888,
-      "meta": {
-        "source": "github",
-        "stars": "36,888",
-        "language": "Python",
-        "repo": "PostHog/posthog",
-        "owner": "PostHog",
-        "repoName": "posthog"
-      }
-    },
-    {
-      "id": "microsoft-terminal",
-      "title": "terminal",
-      "title_zh": "terminal",
-      "description": "The new Windows Terminal and the original Windows console host, all in the same place!",
-      "description_zh": "新的 Windows 终端和原来的 Windows 控制台主机都在同一个地方！",
-      "authors": "microsoft",
-      "url": "https://github.com/microsoft/terminal",
-      "score": 104134,
-      "meta": {
-        "source": "github",
-        "stars": "104,134",
-        "language": "C++",
-        "repo": "microsoft/terminal",
-        "owner": "microsoft",
-        "repoName": "terminal"
-      }
-    },
-    {
-      "id": "AstrBotDevs-AstrBot",
-      "title": "AstrBot",
-      "title_zh": "AstrBot",
-      "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
-      "description_zh": "AI Agent Assistant & 开发框架，集成了大量 IM 平台、LLM、插件和 AI 功能，可以成为您的 openclaw 替代方案。 ✨",
-      "authors": "AstrBotDevs",
-      "url": "https://github.com/AstrBotDevs/AstrBot",
-      "score": 36667,
-      "meta": {
-        "source": "github",
-        "stars": "36,667",
-        "language": "Python",
-        "repo": "AstrBotDevs/AstrBot",
-        "owner": "AstrBotDevs",
-        "repoName": "AstrBot"
-      }
-    },
-    {
-      "id": "1jehuang-jcode",
-      "title": "jcode",
-      "title_zh": "jcode",
-      "description": "Coding Agent Harness",
-      "description_zh": "编码剂线束",
-      "authors": "1jehuang",
-      "url": "https://github.com/1jehuang/jcode",
-      "score": 8826,
-      "meta": {
-        "source": "github",
-        "stars": "8,826",
-        "language": "Rust",
-        "repo": "1jehuang/jcode",
-        "owner": "1jehuang",
-        "repoName": "jcode"
-      }
-    },
-    {
-      "id": "trycua-cua",
-      "title": "cua",
-      "title_zh": "cua",
-      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
-      "description_zh": "通过开源驱动程序、跨操作系统队列以及培训、评估和数据生成基准来扩展计算机使用 2.0。",
-      "authors": "trycua",
-      "url": "https://github.com/trycua/cua",
-      "score": 20210,
-      "meta": {
-        "source": "github",
-        "stars": "20,210",
-        "language": "HTML",
-        "repo": "trycua/cua",
-        "owner": "trycua",
-        "repoName": "cua"
+        "repo": "every-app/open-seo",
+        "owner": "every-app",
+        "repoName": "open-seo"
       }
     },
     {
@@ -227,10 +191,10 @@
       "description_zh": "Kimi Code CLI 是您的下一个 CLI 代理。",
       "authors": "MoonshotAI",
       "url": "https://github.com/MoonshotAI/kimi-cli",
-      "score": 9836,
+      "score": 10192,
       "meta": {
         "source": "github",
-        "stars": "9,836",
+        "stars": "10,192",
         "language": "Python",
         "repo": "MoonshotAI/kimi-cli",
         "owner": "MoonshotAI",
@@ -238,39 +202,75 @@
       }
     },
     {
-      "id": "Flowseal-zapret-discord-youtube",
-      "title": "zapret-discord-youtube",
-      "title_zh": "zapret-discord-youtube",
-      "description": "No description available",
-      "description_zh": "无可用描述",
-      "authors": "Flowseal",
-      "url": "https://github.com/Flowseal/zapret-discord-youtube",
-      "score": 31017,
+      "id": "AstrBotDevs-AstrBot",
+      "title": "AstrBot",
+      "title_zh": "AstrBot",
+      "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+      "description_zh": "AI Agent Assistant & 开发框架，集成了大量 IM 平台、LLM、插件和 AI 功能，可以成为您的 openclaw 替代方案。 ✨",
+      "authors": "AstrBotDevs",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "score": 37037,
       "meta": {
         "source": "github",
-        "stars": "31,017",
-        "language": "Batchfile",
-        "repo": "Flowseal/zapret-discord-youtube",
-        "owner": "Flowseal",
-        "repoName": "zapret-discord-youtube"
+        "stars": "37,037",
+        "language": "Python",
+        "repo": "AstrBotDevs/AstrBot",
+        "owner": "AstrBotDevs",
+        "repoName": "AstrBot"
       }
     },
     {
-      "id": "codecrafters-io-build-your-own-x",
-      "title": "build-your-own-x",
-      "title_zh": "build-your-own-x",
-      "description": "Master programming by recreating your favorite technologies from scratch.",
-      "description_zh": "通过从头开始重新创建您最喜欢的技术来掌握编程。",
-      "authors": "codecrafters-io",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "score": 528853,
+      "id": "PrefectHQ-fastmcp",
+      "title": "fastmcp",
+      "title_zh": "fastmcp",
+      "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "description_zh": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "authors": "PrefectHQ",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "score": 26487,
       "meta": {
         "source": "github",
-        "stars": "528,853",
-        "language": "Markdown",
-        "repo": "codecrafters-io/build-your-own-x",
-        "owner": "codecrafters-io",
-        "repoName": "build-your-own-x"
+        "stars": "26,487",
+        "language": "Python",
+        "repo": "PrefectHQ/fastmcp",
+        "owner": "PrefectHQ",
+        "repoName": "fastmcp"
+      }
+    },
+    {
+      "id": "KnockOutEZ-wigolo",
+      "title": "wigolo",
+      "title_zh": "wigolo",
+      "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
+      "description_zh": "AI 编码代理的首选网络 — 通过 MCP 进行本地优先搜索、获取、爬网和研究。没有 API 密钥，没有云，每次查询 0 美元。公开测试版。",
+      "authors": "KnockOutEZ",
+      "url": "https://github.com/KnockOutEZ/wigolo",
+      "score": 2453,
+      "meta": {
+        "source": "github",
+        "stars": "2,453",
+        "language": "TypeScript",
+        "repo": "KnockOutEZ/wigolo",
+        "owner": "KnockOutEZ",
+        "repoName": "wigolo"
+      }
+    },
+    {
+      "id": "tokio-rs-topcoat",
+      "title": "topcoat",
+      "title_zh": "topcoat",
+      "description": "A batteries-included framework for building web apps",
+      "description_zh": "用于构建 Web 应用程序的包含电池的框架",
+      "authors": "tokio-rs",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "score": 1462,
+      "meta": {
+        "source": "github",
+        "stars": "1,462",
+        "language": "Rust",
+        "repo": "tokio-rs/topcoat",
+        "owner": "tokio-rs",
+        "repoName": "topcoat"
       }
     }
   ]
