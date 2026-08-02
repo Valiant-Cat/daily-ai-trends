@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-01T20:30:05.756Z",
+  "updatedAt": "2026-08-02T20:31:58.977Z",
   "count": 15,
   "items": [
     {
@@ -8,7 +8,7 @@
       "title": "OmniScope: Modality-Decoupled Token Compression for Omnimodal Large Language Models",
       "title_zh": "OmniScope：全模态大语言模型的模态解耦令牌压缩",
       "description": "Existing token compression methods for omnimodal large language models typically rely on one modality to determine what to retain in the other. We show that this assumption often breaks down: for the same query, audio and video relevance often peaks at different moments. This cross-modal salience mismatch makes unidirectional guidance prone to discarding answer-critical cues under aggressive compression. We propose OmniScope, a training-free token compression framework that uses the query as a shared semantic anchor while estimating relevance separately for audio and video. OmniScope allocates modality-specific token budgets, prunes visual tokens with an anchor-delta strategy that preserves both global context and temporal changes, and merges audio tokens within each second to reduce redundancy while maintaining temporal continuity. Across four audio-video benchmarks and two Qwen2.5-Omni model scales, OmniScope achieves the best average accuracy across all compression settings. At 25% overall token retention, it delivers up to 3.53x prefill speedup and more than 15% GPU memory reduction, with only a 0.35-point drop in average accuracy. These results suggest a simple design principle for OmniLLM inference: share the query across modalities, but not the salience estimates. The code is available at https://github.com/MAC-AutoML/OmniScope.",
-      "description_zh": "全模态大语言模型的现有标记压缩方法通常依赖于一种模态来确定在另一种模态中保留什么。我们表明，这种假设经常被打破：对于相同的查询，音频和视频相关性通常在不同时刻达到峰值。这种跨模态显着性不匹配使得单向引导很容易在剧烈压缩下丢弃关键答案线索。我们提出了 OmniScope，这是一种免训练的令牌压缩框架，它使用查询作为共享语义锚，同时分别估计音频和视频的相关性。 OmniScope 分配特定于模态的令牌预算，使用锚点增量策略修剪视觉令牌，保留全局上下文和时间变化，并在每秒内合并音频令牌以减少冗余，同时保持时间连续性。在四个音频视频基准测试和两个 Qwen2.5-Omni 模型尺度中，OmniScope 在所有压缩设置中实现了最佳平均精度。在总体令牌保留率为 25% 的情况下，它可提供高达 3.53 倍的预填充加速和超过 15% 的 GPU 内存减少，而平均准确度仅下降 0.35 点。这些结果提出了 OmniLLM 推理的简单设计原则：跨模态共享查询，但不共享显着性估计。该代码可从 https://github.com/MAC-AutoML/OmniScope 获取。",
+      "description_zh": "全模态大语言模型的现有标记压缩方法通常依赖于一种模态来确定在另一种模态中保留什么。我们表明，这种假设经常被打破：对于相同的查询，音频和视频相关性通常在不同时刻达到峰值。这种跨模态显着性不匹配使得单向引导很容易在剧烈压缩下丢弃关键答案线索。我们提出了 OmniScope，这是一种免训练的令牌压缩框架，它使用查询作为共享语义锚，同时分别估计音频和视频的相关性。 OmniScope 分配特定��模态的令牌预算，使用锚点增量策略修剪视觉令牌，保留全局上下文和时间变化，并在每秒内合并音频令牌以减少冗余，同时保持时间连续性。在四个音频视频基准测试和两个 Qwen2.5-Omni 模型尺度中，OmniScope 在所有压缩设置中实现了最佳平均精度。在总体令牌保留率为 25% 的情况下，它可提供高达 3.53 倍的预填充加速和超过 15% 的 GPU 内存减少，而平均准确度仅下降 0.35 点。这些结果提出了 OmniLLM 推理的简单设计原则：跨模态共享查询，但不共享显着性估计。该代码可从 https://github.com/MAC-AutoML/OmniScope 获取。",
       "authors": "Jinsen Su, Yongdong Luo, Yuexiao Ma, Yibo Hu, Meiguang Jin, Xiaowu Zheng",
       "url": "https://huggingface.co/papers/2607.23193",
       "score": 3,
@@ -23,13 +23,13 @@
       "title": "β-OPSD: Deriving with Policy Optimization, Training with Self-Distillation",
       "title_zh": "β-OPSD：策略优化推导，自蒸馏训练",
       "description": "On-policy self-distillation (OPSD) is a promising approach to improve reasoning language models, but it remains brittle in practice: making it work reliably often requires substantial engineering effort. We identify a structural source of this difficulty: vanilla OPSD is precisely the β=1 member of a broader policy-optimization family, where β weights the KL penalty anchoring the student to a reference policy. This equivalence turns β from an implicit value fixed at one into a controllable regularization parameter, yielding a more general formulation that trades off proximity to a reference policy against privileged teacher guidance. We introduce β-OPSD and derive its optimal policy as a geometric interpolation between the reference policy and the privileged teacher. Directly optimizing this objective with reinforcement learning, however, would be costly and high-variance. Rather than optimize the RL objective directly, we turn its closed-form solution into a distillation target. Each value of β selects a target along the reference-to-teacher path, which we implement efficiently by mixing their token-level logits. In this way, inexpensive distillation approximates the solution of expensive policy optimization. Return-to-go credit assignment further aligns token updates with the sequence-level objective while retaining the simplicity of OPSD. Experiments on mathematical reasoning benchmarks show that β-OPSD consistently outperforms vanilla OPSD, improving optimization stability and downstream reasoning performance. Our results provide a principled route from self-distillation to policy optimization and back without sacrificing the efficiency that makes OPSD practical.",
-      "description_zh": "按策略自蒸馏（OPSD）是一种很有前途的改进推理语言模型的方法，但它在实践中仍然很脆弱：使其可靠地工作通常需要大量的工程工作。我们确定了这种困难的结构性根源：普通 OPSD 正是更广泛的政策优化家族中 β=1 的成员，其中 β 权重 KL 惩罚，将学生锚定到参考政策。这种等价将 β 从固定为 1 的隐含值转变为可控的正则化参数，从而产生一个更通用的公式，该公式在接近参考策略和特权教师指导之间进行权衡。我们引入 β-OPSD 并导出其最优策略作为参考策略和特权教师之间的几何插值。然而，通过强化学习直接优化这个目标将是昂贵的且高方差的。我们没有直接优化 RL 目标，而是将其封闭式解转化为蒸馏目标。 β 的每个值沿着参考教师路径选择一个目标，我们通过混合它们的标记级逻辑来有效地实现该目标。通过这种方式，廉价的蒸馏近似于昂贵的策略优化的解决方案。 Return-to-go 信用分配进一步使令牌更新与序列级目标保持一致，同时保留 OPSD 的简单性。数学推理基准实验表明，β-OPSD 始终优于普通 OPSD，提高了优化稳定性和下游推理性能。我们的结果提供了一条从自我蒸馏到政策优化并返回的原则性路线，且不牺牲使 OPSD 实用的效率。",
+      "description_zh": "按策略自蒸馏（OPSD）是一种很有前途的改进推理语言模型的方法，但它在实践中仍然很脆弱：使其可靠地工作通常需要大量的工程工作。我们确定了这种困难的结构性根源：普通 OPSD 正是更广泛的政策优化家族中 β=1 的成员，其中 β 权重 KL 惩罚，将学生锚定到参考政策。这种等价将 β 从固定为 1 的隐含值转变为可控的正则化参数，从而产生一个更通用的公式，该公式在接近参考策略和特权教师指导之间进行权衡。我们���入 β-OPSD 并导出其最优策略作为参考策略和特权教师之间的几何插值。然而，通过强化学习直接优化这个目标将是昂贵的且高方差的。我们没有直接优化 RL 目标，而是将其封闭式解转化为蒸馏目标。 β 的每个值都会沿着参考教师路径选择一个目标，我们通过混合它们的标记级逻辑来有效地实现该目标。通过这种方式，廉价的蒸馏近似于昂贵的策略优化的解决方案。 Return-to-go 信用分配进一步使令牌更新与序列级目标保持一致，同时保留 OPSD 的简单性。数学推理基准实验表明，β-OPSD 始终优于普通 OPSD，提高了优化稳定性和下游推理性能。我们的结果提供了一条从自我蒸馏到政策优化并返回的原则性路线，且不牺牲使 OPSD 实用的效率。",
       "authors": "Jiawei Xu, Minghui Liu, Juzheng Zhang, Tom Goldstein, Furong Huang",
       "url": "https://huggingface.co/papers/2607.28582",
-      "score": 17,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "19",
         "paperId": "2607.28582"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "部署的 LLM 代理越来越多地将其长期记忆保留为文件系统：代理本身通过​​通用文件工具读取、写入和重新组织的 Markdown 文件的目录树。然而，研究很大程度上忽略了这种媒介：先前的系统设计定制的记忆表示并研究对它们的检索，而默认的两个工作假设未经测试：代理可以随着记忆的积累、冲突和陈旧而组织不断增长的存储，并且该组织付费。我们首次对 LLM 代理基于文件系统的内存进行系统探索。我们将设置形式化为围绕一个内存文件系统的三个角色��管理代理集成和组织传入的内容，搜索代理通过引用的源回答查询，执行代理提供提炼为技能的任务轨迹，将声明性记忆和技能统一在一个存储中。在长时间对话基准和具体任务中，我们改变了内存形状（代理组织的层次结构、逐字转储、块检索）、流规模、工具利用（沙盒外壳、内存工具式函数、各种搜索工具）以及管理和搜索代理的优势，随着内存的增长跟踪答案质量、成本和存储运行状况。组织可靠地购买的是搜索经济：组织良好的商店将大量材料的检索成本大致减半。然而，今天的代理没有达到默认的承诺：在我们的成长研究中，除了最强大的管理代理之外，所有代理的组织都会受到侵蚀，而且我们衡量的代理都无法将组织本身转变为更好的答案。而且模型并不是影响商店形状的唯一杠杆：仅改变工具集就可以像更换模型一样强烈地重塑商店。该研究将文件系统默认值从假设转变为代理内存的设计空间。",
       "authors": "Sizhe Zhou, Sheldon Yu, Hui Wei, Junda Wu, Siru Ouyang, Yizhu Jiao, Shijia Pan, Julian McAuley, Yu Zhang, Tong Yu, Jiawei Han",
       "url": "https://huggingface.co/papers/2607.26637",
-      "score": 6,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "7",
         "paperId": "2607.26637"
       }
     },
@@ -141,9 +141,9 @@
     {
       "id": "2607.28362",
       "title": "ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow",
-      "title_zh": "ShadowDancer：通过从视频及其阴影学习统一动态表示来教学视频世界模拟任何动作",
+      "title_zh": "ShadowDancer：通过从视频及其阴影学习统一动态表示来教学视频世界对任何动作进行建模",
       "description": "We present ShadowDancer, a novel approach to any-action, frame-level control of interactive video world models. The obstacle is representational: existing interfaces either encode an action loosely, leaving how it unfolds for the model to improvise, or encode it exactly through structured signals that serve one family and are hard to acquire, so precise control across diverse dynamics remains impractical. Demonstration videos are the natural remedy, specifying any dynamics frame by frame; yet a video shows its dynamics only through one particular appearance, a single shadow of the underlying dynamics, so actions learned from demonstrations transfer poorly to new scenes. ShadowDancer addresses this with two key innovations: (1) shadow pairs, video pairs that replay the same dynamics under independently resampled appearance, constructed at scale by our Shadow Library, so that a dynamics family becomes controllable exactly when such pairs can be constructed for it; and (2) cross-shadow prediction, which learns actions by predicting one shadow from the other, so that whatever the pairing resamples is discarded by construction and whatever it preserves becomes the action, yielding a unified dynamics representation that drives a block-causal world model. Any demonstrated clip thus becomes a reusable action asset, replayed in new environments without action labels, motion estimators, or fine-tuning. Experiments demonstrate improved action transfer and long action rollout over strong latent-action and interactive world model baselines across diverse dynamics families, with an average blinded win rate of 86% in rollout comparisons. We show video results at https://ShadowDancer-1.github.io",
-      "description_zh": "我们推出 ShadowDancer，这是一种对交互式视频世界模型进行任何动作、帧级控制的新颖方法。障碍是代表性的：现有的界面要么松散地对一个动作进行编码，让模型即兴发挥它的展开方式，要么通过为一个家庭服务且难以获取的结构化信号对其进行精确编码，因此对不同动态的精确控制仍然不切实际。演示视频是自然的补救措施，逐帧指定任何动态；然而，视频仅通过一种特定的外观（潜在动态的单一阴影）来显示其动态，因此从演示中学到的动作很难转移到新场景。 ShadowDancer 通过两项关键创新解决了这个问题：(1) 阴影对，即在独立重采样外观下重播相同动态的视频对，由我们的阴影库按比例构建，这样当可以为其构建此类对时，动态族就变得可以精确控制； （2）交叉阴影预测，它通过预测一个阴影和另一个阴影来学习动作，这样无论配对重采样的是什么，都会被构造丢弃，而保留下来的任何东西都会成为动作，从而产生驱动块因果世界模型的统一动态表示。因此，任何���示的剪辑都成为可重复使用的动作资产，可以在新环境中重播，无需动作标签、运动估计器或微调。实验表明，在不同动态系列的强潜在动作和交互式世界模型基线上，动作转移和长期动作推出得到了改进，在推出比较中平均盲法获胜率为 86%。我们在 https://ShadowDancer-1.github.io 上显示视频结果",
+      "description_zh": "我们推出 ShadowDancer，这是一种对交互式视频世界模型进行任何动作、帧级控制的新颖方法。障碍是代表性的：现有的界面要么松散地对一个动作进行编码，让模型即兴发挥它的展开方式，要么通过为一个家庭服务且难以获取的结构化信号对其进行精确编码，因此对不同动态的精确控制仍然不切实际。演示视频是自然的补救措施，逐帧指定任何动态；然而，视频仅通过一种特定的外观（潜在动态的单一阴影）来显示其动态，因此从演示中学到的动作很难转移到新场景。 ShadowDancer 通过两项关键创新解决了这个问题：(1) 阴影对，即在独立重采样外观下重播相同动态的视频对，由我们的阴影库按比例构建，这样当可以为其构建此类对时，动态族就变得可以精确控制； （2）交叉阴影预测，它通过预测一个阴影和另一个阴影来学习动作，这样无论配对重采样的是什么，都会被构造丢弃，而保留下来的任何东西都会成为动作，从而产生驱动块因果世界模型的统一动态表示。因此，任何演示的剪辑都成为可重复使用的动作资产，可以在新环境中重播，无需动作标签、运动估计器或微调。实验表明，在不同动态系列的强潜在动作和交互式世界模型基线上，动作转移和长期动作推出得到了改进，在推出比较中平均盲法获胜率为 86%。我们在 https://ShadowDancer-1.github.io 上显示视频结果",
       "authors": "Jin Cao, Zian Meng, Kaipeng Zhang",
       "url": "https://huggingface.co/papers/2607.28362",
       "score": 16,
@@ -173,7 +173,7 @@
       "title": "Multi-Head Attention Residuals",
       "title_zh": "多头注意力残差",
       "description": "Transformers propagate information across depth through a single additive residual stream: every sublayer reads only the most recent state. Attention residuals relax this by letting each sublayer attend, through a learned softmax. However, that read uses a single query shared across the entire width, so every feature subspace must read the depth history through one distribution. The cost of this forced compromise grows with how much the subspaces disagree about which layers to read, and disagreement grows with model width. We introduce Multi-Head Attention Residuals (MHAR): the routing query is reshaped into H per-subspace heads, each with its own softmax over the depth history. The read becomes block-diagonal, the reshape adds zero parameters and negligible compute, and H = 1 recovers attention residuals exactly. Trained from scratch on a deduplicated Nemotron-based anneal corpus that is quality-filtered and STEM- and code-heavy, MHAR improves validation loss over a standard Transformer at 100M, 350M, and 1B (-0.061, -0.149, and -0.140). It achieves the best result among four methods in every setting, with the gain increasing from 100M to the larger scales. The head count is a real design axis rather than a free knob: validation loss is U-shaped with respect to H, with a flat optimum at H = 4 or H = 8 across scales. We adopt H = 8 for large-scale models; over-splitting beyond this point (H = 16) consistently gives back part of the gain. A direct probe of the trained queries confirms that learned subspace disagreement is the underlying driver. Fused Triton routing kernels increase attention-residual training throughput from 0.2-0.5x to 0.55-0.88x of the baseline while maintaining near-baseline peak memory. An identity-preserving conversion using delta attention residuals supports 8B mid-training, yielding improvements of +3.2 on GSM8K and +3.1 on GPQA.",
-      "description_zh": "变压器通过单个附加残差流跨深度传播信息：每个子层仅读取最新状态。注意力残差通过学习的 softmax 让每个子层参与来放松这一点。然而，该读取使用在整个宽度上共享的单个查询，因此每个特征子空间都必须通过一个分布读取深度历史记录。这种强制妥协的成本随着子空间对于读取哪些层的分歧程度而增加，并且分歧随着模型宽度的增加而增加。我们引入多头注意力残差（MHAR）：路由查询被重塑为 H 个每个子空间头，每个头在深度历史上都有自己的 softmax。读取变成块对角线，重塑添加零参数和可忽略的计算，并且 H = 1 准确地恢复注意力残差。 MHAR 在经过质量过滤、STEM 和代码较多的基于 Nemotron 的去重退火语料库上从头开始进行训练，与标准 Transformer 相比，在 100M、350M 和 1B（-0.061、-0.149 和 -0.140）下改进了验证损失。在每种设置下，它都达到了四种方法中最好的结果，增益从100M增加到更大的尺度。人数是一个真实的设计轴而不是一个自由旋钮：验证损失相对于 H 呈 U 形，在各个尺度上具有平坦的最佳值 H = 4 或 H = 8。对于大型模型我们采用H=8；超过此点 (H = 16) 的过度分裂始终会返还部分增益。对经过训练的查询的直接探测证实了学习到的子空间分歧是潜在的驱动因素。融合 Triton 路由内核将注意力残差训练吞吐量从基线的 0.2-0.5 倍提高到 0.55-0.88 倍，同时保持接近基线的峰值内存。使用增量注意力残差的身份保留转换支持 8B 中期训练，在 GSM8K 上产生 +3.2 的改进，在 GPQA 上产生 +3.1 的改进。",
+      "description_zh": "变压器通过单个附加残差流跨深度传播信息：每个子层仅读取最新状态。注意力残差通过学习的 softmax 让每个子层参与来放松这一点。然而，该读取使用在整个宽度上共享的单个查询，因此每个特征子空间都必须通过一个分布读取深度历史记录。这种强制妥协的成本随着子空间对于读取哪些层的分歧程度而增加，并且分歧随着模型宽度的增加而增加。我们引入多头注意力残差（MHAR）：路由查询被重塑为 H 个每个子空间头，每个头在深度历史上都有自己的 softmax。读取变成块对角线，重塑添加零参数和可忽略的计算，并且 H = 1 准确地恢复注意力残差。 MHAR 在经过质量过滤、STEM 和代码较多的基于 Nemotron 的去重退火语料库上从头开始进行训练，与标准 Transformer 相比，在 100M、350M 和 1B（-0.061、-0.149 和 -0.140）下改善了验证损失。在每种设置下，它都达到了四种方法中最好的结果，增益从100M增加到更大的尺度。人数是一个真实的设计轴而不是一个自由旋钮：验证损失相对于 H 呈 U 形，在各个尺度上具有平坦的最佳值 H = 4 或 H = 8。对于大型模型我们采用H=8；超过此点 (H = 16) 的过度分裂始终会返还部分增益。对经过训练的查询的直接探测证实了学习到的子空间分歧是潜在的驱动因素。融合 Triton 路由内核将注意力残差训练吞吐量从基线的 0.2-0.5 倍提高到 0.55-0.88 倍，同时保持接近基线的峰值内存。使用增量注意力残差的身份保留转换支持 8B 中期训练，在 GSM8K 上产生 +3.2 的改进，在 GPQA 上产生 +3.1 的改进。",
       "authors": "Cheng Luo, Zefan Cai, Junjie Hu",
       "url": "https://huggingface.co/papers/2607.27230",
       "score": 8,
@@ -191,10 +191,10 @@
       "description_zh": "前向潜在世界模型预测动作如何改变场景，但只能通过昂贵的测试时搜索来恢复所需变化的动作。我们引入了 INTACT（INtent-To-ACTion），这是一种端到端的 JEPA，它将带有动作标记的、无奖励的轨迹转变为可部署的意图到动作界面。每个转变提供物理意图 z_{t+1}-z_t，而未来目标提供部署意图 sg(z_g)-z_t。该架构通过相同的四槽语法和共享参数在本地和目标运动意图主干输入图之间是同构的，并且通过由相同预测器而不是逐点潜在相等引起的动作法则语义在支持的本地和目标运动意图族之间是同构的。 INTACT 还提供从 RGB 证据到行动有效的潜在意图坐标以及从意图族到相应的行动法族的完整转移。非对称端点梯度奠定了物理后继者的基础，并将未来目标固定为锚点，加入表示学习和控制，无需逐点潜在匹配或全局线性动态。由此产生的坐标支持强大的分布行动法则：其条件均值直接用作免搜索策略，而采样仍然可用于多样性或可选验证。在四项官方 LeWM 任务上，一周期、零搜索模型的成功率分别为 85.78\\%、100.00\\%、97.67\\% 和 97.89\\%。以 Direct 计划为中心的可选本地 CEM 使用 384 个而不是 9,000 个候选序列达到了 96.86% 的宏观成功率，减少了 23.44 倍的采样，同时将纯 CEM 提高了 16.00 点。一个共享的四任务编码器达到 89.39% E5 Direct 宏，并在联合训练的 LeWM 上改进了每项任务，而预测的专家动作系列 kNN 在 r=0.954 时跟踪 Direct 成功。直接推理需要 2.9--5.5 ms。",
       "authors": "Junhan Sun, Hao Zhao, Guofeng Zhang",
       "url": "https://huggingface.co/papers/2607.26056",
-      "score": 12,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
+        "upvotes": "13",
         "paperId": "2607.26056"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "AlexNet 引发的深度学习革命告诉我们，端到端训练胜过将问题分解为手工设计的阶段。然而，生成模型仍然是例外——尽管生成模型非常强大，但它们仍然没有经过端到端的训练。这是因为，生成式建模的核心是处理具有多种模式的分布，而现有的可扩展方法以相同的方式处理此问题，即分解生成过程，这会阻止端到端生成。在这项工作中，我们引入了探索性建模，这是一种新的范式，它会考虑训练循环，探索模型生成和数据之间的 K 个候选匹配，并进行最佳训练，因此预测会致力于模式而不是模糊它们。我们发现探索模型 (XM) 在两种情况下很有用。首先，增加探索在现有生成模型的参数和数据之外添加了第三个预训练轴，其中扩展探索单调地提高了连续和离散领域（图像、视频和语言）的性能。值得注意的是，探索带来的收益随着规模的扩大而增加，随着数据规模的扩大，收益从 7% 上升到 36%，随着模型的增长，收益从 13% 上升到 23%，计算量增加 3 倍时，效率提升一倍多。具体来说，探索将 FLOP 效率提高了 4.1 倍，样本效率提高了 6.2 倍，参数效率提高了 47%，在没有指导的情况下将最强的图像生成方法提升到 ImageNet 上接近最先进的 1.43 FID，实现了端到端现有模型的扩展，并解锁了扩展泛化。其次，XM 支持端到端重建生成建模，以减少 16-256 倍的推理步骤来匹配控制任务的扩散。总之，这些结果将 XM 确立为现有生成模型的新预训练轴和独立的端到端生成建模范例。",
       "authors": "Alexi Gladstone, Heng Ji, Yilun Du",
       "url": "https://huggingface.co/papers/2607.27372",
-      "score": 11,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "11",
+        "upvotes": "13",
         "paperId": "2607.27372"
       }
     }
