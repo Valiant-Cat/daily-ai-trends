@@ -1,10 +1,46 @@
 {
-  "generatedAt": "2026-08-04T20:52:31.447Z",
+  "generatedAt": "2026-08-05T20:45:23.794Z",
   "github": {
     "source": "github",
-    "updatedAt": "2026-08-04T20:52:33.992Z",
-    "count": 15,
+    "updatedAt": "2026-08-05T20:45:25.818Z",
+    "count": 13,
     "items": [
+      {
+        "id": "cloudflare-computer",
+        "title": "computer",
+        "title_zh": "computer",
+        "description": "Give your agent a computer 👾",
+        "description_zh": "给你的代理人一台电脑👾",
+        "authors": "cloudflare",
+        "url": "https://github.com/cloudflare/computer",
+        "score": 2611,
+        "meta": {
+          "source": "github",
+          "stars": "2,611",
+          "language": "TypeScript",
+          "repo": "cloudflare/computer",
+          "owner": "cloudflare",
+          "repoName": "computer"
+        }
+      },
+      {
+        "id": "huangruiteng-loopx",
+        "title": "loopx",
+        "title_zh": "loopx",
+        "description": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs.",
+        "description_zh": "适用于长期运行的 AI 代理团队的轻量级循环工程状态内核。跨 Codex、Claude Code 和其他编码代理的代理循环不可知，具有持久目标、配额感知自动唤醒、可执行待办事项、证据日志和可验证的切换。",
+        "authors": "huangruiteng",
+        "url": "https://github.com/huangruiteng/loopx",
+        "score": 2022,
+        "meta": {
+          "source": "github",
+          "stars": "2,022",
+          "language": "Python",
+          "repo": "huangruiteng/loopx",
+          "owner": "huangruiteng",
+          "repoName": "loopx"
+        }
+      },
       {
         "id": "TencentCloud-TencentDB-Agent-Memory",
         "title": "TencentDB-Agent-Memory",
@@ -13,10 +49,10 @@
         "description_zh": "TangentDB Agent Memory 是 AI Agent 的团队级内存中心，将对话、文档和代码转化为四种可重用的内存资产（聊天内存、技能、LLM-Wiki、代码图），并在代理和框架之间进行管理、共享和配备。",
         "authors": "TencentCloud",
         "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-        "score": 13398,
+        "score": 14956,
         "meta": {
           "source": "github",
-          "stars": "13,398",
+          "stars": "14,956",
           "language": "TypeScript",
           "repo": "TencentCloud/TencentDB-Agent-Memory",
           "owner": "TencentCloud",
@@ -24,21 +60,21 @@
         }
       },
       {
-        "id": "zhaoxuya520-reverse-skill",
-        "title": "reverse-skill",
-        "title_zh": "reverse-skill",
-        "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-        "description_zh": "逆向工程/授权渗透测试/安全研究技能路由器包 人工智能路由+按需工具链引导+自进化知识库 支持Claude Code、Kiro、Cursor、Cline等AI编码客户端 逆向/渗透/安全技能路由包 - AI自动路由 + 路由自举工具链 + 自动进化经验库 | 支持Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-        "authors": "zhaoxuya520",
-        "url": "https://github.com/zhaoxuya520/reverse-skill",
-        "score": 17731,
+        "id": "donnemartin-system-design-primer",
+        "title": "system-design-primer",
+        "title_zh": "system-design-primer",
+        "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+        "description_zh": "了解如何设计大型系统。准备系统设计面试。包括 Anki 抽认卡。",
+        "authors": "donnemartin",
+        "url": "https://github.com/donnemartin/system-design-primer",
+        "score": 361438,
         "meta": {
           "source": "github",
-          "stars": "17,731",
-          "language": "PowerShell",
-          "repo": "zhaoxuya520/reverse-skill",
-          "owner": "zhaoxuya520",
-          "repoName": "reverse-skill"
+          "stars": "361,438",
+          "language": "Python",
+          "repo": "donnemartin/system-design-primer",
+          "owner": "donnemartin",
+          "repoName": "system-design-primer"
         }
       },
       {
@@ -49,10 +85,10 @@
         "description_zh": "用于 PDF 检查、分类和文本提取的快速 Rust 库。智能检测扫描 PDF 与基于文本的 PDF，以实现智能路由决策。",
         "authors": "firecrawl",
         "url": "https://github.com/firecrawl/pdf-inspector",
-        "score": 9833,
+        "score": 11304,
         "meta": {
           "source": "github",
-          "stars": "9,833",
+          "stars": "11,304",
           "language": "Rust",
           "repo": "firecrawl/pdf-inspector",
           "owner": "firecrawl",
@@ -60,21 +96,39 @@
         }
       },
       {
-        "id": "uber-ADR",
-        "title": "ADR",
-        "title_zh": "ADR",
-        "description": "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
-        "description_zh": "ADR 通过可观察性、安全基准测试和威胁检测来保护企业 AI 代理。部署在 Uber。",
-        "authors": "uber",
-        "url": "https://github.com/uber/ADR",
-        "score": 635,
+        "id": "esengine-DeepSeek-Reasonix",
+        "title": "DeepSeek-Reasonix",
+        "title_zh": "DeepSeek-Reasonix",
+        "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+        "description_zh": "DeepSeek-适用于您终端的原生 AI 编码代理。围绕前缀缓存稳定性进行设计 - 让它运行。",
+        "authors": "esengine",
+        "url": "https://github.com/esengine/DeepSeek-Reasonix",
+        "score": 31517,
         "meta": {
           "source": "github",
-          "stars": "635",
-          "language": "Python",
-          "repo": "uber/ADR",
-          "owner": "uber",
-          "repoName": "ADR"
+          "stars": "31,517",
+          "language": "Go",
+          "repo": "esengine/DeepSeek-Reasonix",
+          "owner": "esengine",
+          "repoName": "DeepSeek-Reasonix"
+        }
+      },
+      {
+        "id": "addyosmani-agent-skills",
+        "title": "agent-skills",
+        "title_zh": "agent-skills",
+        "description": "Production-grade engineering skills for AI coding agents.",
+        "description_zh": "AI 编码代理的生产级工程技能。",
+        "authors": "addyosmani",
+        "url": "https://github.com/addyosmani/agent-skills",
+        "score": 81932,
+        "meta": {
+          "source": "github",
+          "stars": "81,932",
+          "language": "JavaScript",
+          "repo": "addyosmani/agent-skills",
+          "owner": "addyosmani",
+          "repoName": "agent-skills"
         }
       },
       {
@@ -85,10 +139,10 @@
         "description_zh": "有效的代理技能框架和软件开发方法。",
         "authors": "obra",
         "url": "https://github.com/obra/superpowers",
-        "score": 266387,
+        "score": 267226,
         "meta": {
           "source": "github",
-          "stars": "266,387",
+          "stars": "267,226",
           "language": "Shell",
           "repo": "obra/superpowers",
           "owner": "obra",
@@ -96,165 +150,39 @@
         }
       },
       {
-        "id": "microsoft-generative-ai-for-beginners",
-        "title": "generative-ai-for-beginners",
-        "title_zh": "generative-ai-for-beginners",
-        "description": "21 Lessons, Get Started Building with Generative AI",
-        "description_zh": "21 节课程，开始使用生成式 AI 进行构建",
-        "authors": "microsoft",
-        "url": "https://github.com/microsoft/generative-ai-for-beginners",
-        "score": 116204,
+        "id": "roboflow-supervision",
+        "title": "supervision",
+        "title_zh": "supervision",
+        "description": "We write your reusable computer vision tools. 💜",
+        "description_zh": "我们为您编写可重复使用的计算机视觉工具。 💜",
+        "authors": "roboflow",
+        "url": "https://github.com/roboflow/supervision",
+        "score": 48877,
         "meta": {
           "source": "github",
-          "stars": "116,204",
-          "language": "Jupyter Notebook",
-          "repo": "microsoft/generative-ai-for-beginners",
-          "owner": "microsoft",
-          "repoName": "generative-ai-for-beginners"
-        }
-      },
-      {
-        "id": "cypress-io-cypress",
-        "title": "cypress",
-        "title_zh": "cypress",
-        "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-        "description_zh": "对浏览器中运行的任何内容进行快速、简单且可靠的测试。",
-        "authors": "cypress-io",
-        "url": "https://github.com/cypress-io/cypress",
-        "score": 50753,
-        "meta": {
-          "source": "github",
-          "stars": "50,753",
-          "language": "TypeScript",
-          "repo": "cypress-io/cypress",
-          "owner": "cypress-io",
-          "repoName": "cypress"
-        }
-      },
-      {
-        "id": "lyogavin-airllm",
-        "title": "airllm",
-        "title_zh": "airllm",
-        "description": "AirLLM 70B inference with single 4GB GPU",
-        "description_zh": "使用单个 4GB GPU 进行 AirLLM 70B 推理",
-        "authors": "lyogavin",
-        "url": "https://github.com/lyogavin/airllm",
-        "score": 28249,
-        "meta": {
-          "source": "github",
-          "stars": "28,249",
-          "language": "Jupyter Notebook",
-          "repo": "lyogavin/airllm",
-          "owner": "lyogavin",
-          "repoName": "airllm"
-        }
-      },
-      {
-        "id": "webpack-webpack",
-        "title": "webpack",
-        "title_zh": "webpack",
-        "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
-        "description_zh": "javascript 和朋友的捆绑器。将许多模块打包到一些捆绑资产中。代码分割允许按需加载应用程序的某些部分。通过“加载器”，模块可以是 CommonJs、A​​MD、ES6 模块、CSS、图像、JSON、Coffeescript、LESS ……以及您的自定义内容。",
-        "authors": "webpack",
-        "url": "https://github.com/webpack/webpack",
-        "score": 65918,
-        "meta": {
-          "source": "github",
-          "stars": "65,918",
-          "language": "JavaScript",
-          "repo": "webpack/webpack",
-          "owner": "webpack",
-          "repoName": "webpack"
-        }
-      },
-      {
-        "id": "gabime-spdlog",
-        "title": "spdlog",
-        "title_zh": "spdlog",
-        "description": "Fast C++ logging library.",
-        "description_zh": "快速 C++ 日志库。",
-        "authors": "gabime",
-        "url": "https://github.com/gabime/spdlog",
-        "score": 29365,
-        "meta": {
-          "source": "github",
-          "stars": "29,365",
-          "language": "C++",
-          "repo": "gabime/spdlog",
-          "owner": "gabime",
-          "repoName": "spdlog"
-        }
-      },
-      {
-        "id": "denoland-deno",
-        "title": "deno",
-        "title_zh": "deno",
-        "description": "A modern runtime for JavaScript and TypeScript.",
-        "description_zh": "JavaScript 和 TypeScript 的现代运行时。",
-        "authors": "denoland",
-        "url": "https://github.com/denoland/deno",
-        "score": 108044,
-        "meta": {
-          "source": "github",
-          "stars": "108,044",
-          "language": "Rust",
-          "repo": "denoland/deno",
-          "owner": "denoland",
-          "repoName": "deno"
-        }
-      },
-      {
-        "id": "usekaneo-kaneo",
-        "title": "kaneo",
-        "title_zh": "kaneo",
-        "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
-        "description_zh": "🎯 你所需要的一切。没有什么是你不知道的。开源项目管理适合您，而不是对您不利。",
-        "authors": "usekaneo",
-        "url": "https://github.com/usekaneo/kaneo",
-        "score": 7235,
-        "meta": {
-          "source": "github",
-          "stars": "7,235",
-          "language": "TypeScript",
-          "repo": "usekaneo/kaneo",
-          "owner": "usekaneo",
-          "repoName": "kaneo"
-        }
-      },
-      {
-        "id": "livekit-agents",
-        "title": "agents",
-        "title_zh": "agents",
-        "description": "A framework for building realtime voice AI agents 🤖🎙️📹",
-        "description_zh": "用于构建实时语音 AI 代理的框架🤖🎙️📹",
-        "authors": "livekit",
-        "url": "https://github.com/livekit/agents",
-        "score": 12344,
-        "meta": {
-          "source": "github",
-          "stars": "12,344",
+          "stars": "48,877",
           "language": "Python",
-          "repo": "livekit/agents",
-          "owner": "livekit",
-          "repoName": "agents"
+          "repo": "roboflow/supervision",
+          "owner": "roboflow",
+          "repoName": "supervision"
         }
       },
       {
-        "id": "angular-angular",
-        "title": "angular",
-        "title_zh": "angular",
-        "description": "Deliver web apps with confidence 🚀",
-        "description_zh": "充满信心地交付 Web 应用程序 🚀",
-        "authors": "angular",
-        "url": "https://github.com/angular/angular",
-        "score": 100797,
+        "id": "vercel-next.js",
+        "title": "next.js",
+        "title_zh": "next.js",
+        "description": "The React Framework",
+        "description_zh": "反应框架",
+        "authors": "vercel",
+        "url": "https://github.com/vercel/next.js",
+        "score": 141507,
         "meta": {
           "source": "github",
-          "stars": "100,797",
-          "language": "TypeScript",
-          "repo": "angular/angular",
-          "owner": "angular",
-          "repoName": "angular"
+          "stars": "141,507",
+          "language": "JavaScript",
+          "repo": "vercel/next.js",
+          "owner": "vercel",
+          "repoName": "next.js"
         }
       },
       {
@@ -265,568 +193,604 @@
         "description_zh": "用于快速 UI 开发的实用程序优先 CSS 框架。",
         "authors": "tailwindlabs",
         "url": "https://github.com/tailwindlabs/tailwindcss",
-        "score": 96419,
+        "score": 96806,
         "meta": {
           "source": "github",
-          "stars": "96,419",
+          "stars": "96,806",
           "language": "TypeScript",
           "repo": "tailwindlabs/tailwindcss",
           "owner": "tailwindlabs",
           "repoName": "tailwindcss"
+        }
+      },
+      {
+        "id": "uber-ADR",
+        "title": "ADR",
+        "title_zh": "ADR",
+        "description": "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
+        "description_zh": "ADR 通过可观察性、安全基准测试和威胁检测来保护企业 AI 代理。部署在 Uber。",
+        "authors": "uber",
+        "url": "https://github.com/uber/ADR",
+        "score": 996,
+        "meta": {
+          "source": "github",
+          "stars": "996",
+          "language": "Python",
+          "repo": "uber/ADR",
+          "owner": "uber",
+          "repoName": "ADR"
+        }
+      },
+      {
+        "id": "lyogavin-airllm",
+        "title": "airllm",
+        "title_zh": "airllm",
+        "description": "AirLLM 70B inference with single 4GB GPU",
+        "description_zh": "使用单个 4GB GPU 进行 AirLLM 70B 推理",
+        "authors": "lyogavin",
+        "url": "https://github.com/lyogavin/airllm",
+        "score": 29007,
+        "meta": {
+          "source": "github",
+          "stars": "29,007",
+          "language": "Jupyter Notebook",
+          "repo": "lyogavin/airllm",
+          "owner": "lyogavin",
+          "repoName": "airllm"
         }
       }
     ]
   },
   "huggingface": {
     "source": "huggingface",
-    "updatedAt": "2026-08-04T20:52:39.704Z",
+    "updatedAt": "2026-08-05T20:45:32.704Z",
     "count": 15,
     "items": [
       {
-        "id": "2608.01862",
-        "title": "Wnuan: Staged Post-Training for Question Answering over Proprietary Enterprise Knowledge",
-        "title_zh": "Wnuan：分阶段开展企业专有知识答疑培训",
-        "description": "Enterprise question answering requires models to acquire proprietary knowledge without discarding general capabilities. We present Wnuan, a three-stage pipeline that constructs task-oriented supervision from documents, performs supervised fine-tuning with general-data replay, and applies reinforcement learning to residual errors. On the 707-question WnuanBench, the primary 32B route raises acceptable-answer rate (AAR) from 52.76% before adaptation to 80.06% after SFT and 91.51% after RL. Under a matched 100-update protocol, residual-error sampling outperforms full-pool and size-matched random sampling by 3.11 and 2.97 points, respectively. Source-cluster bootstrap intervals remain above zero for both contrasts, and a same-domain validation set preserves the ordering. The general-benchmark average decreases by 5.17 points across the route, concentrated in instruction following. The automatic evaluation ensemble agrees with an authoritative domain expert on 90.5% of a stratified Wnuan-Inst response sample. These results characterize both the gains and the general-capability cost of staged enterprise adaptation.",
-        "description_zh": "企业问答需要模型在不放弃通用能力的情况下获取专有知识。我们提出了 Wnuan，一个三阶段管道，它从文档构建面向任务的监督，通过一般数据重播执行监督微调，并将强化学习应用于残差。在 707 个问题的 WnuanBench 上，主要 32B 路线将可接受答案率 (AAR) 从适应前的 52.76% 提高到 SFT 后的 80.06% 和 RL 后的 91.51%。在匹配的 100 次更新协议下，残差采样的性能分别比全池采样和大小匹配随机采样高出 3.11 点和 2.97 点。对于两种对比，源簇引导间隔都保持在零以上，并且同域验证集保留顺序。整个路线的一般基准平均值下降了 5.17 点，主要集中在指令遵循方面。自动评估集成与权威领域专家的分层 Wnuan-Inst 响应样本的 90.5% 一致。这些结果表征了分阶段企业适应的收益和一般能力成本。",
-        "authors": "Xiaofeng Shi, Xiaosong Qiu, Wenxin Ma, Qian Kou, Yiming Pan, Longbin Yu, Ying Liu, Haiping Wang, Hua Zhou",
-        "url": "https://huggingface.co/papers/2608.01862",
-        "score": 3,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "3",
-          "paperId": "2608.01862"
-        }
-      },
-      {
-        "id": "2607.28887",
-        "title": "To Add Is Machine, To Delete Is Human: Measuring and Mitigating Deletion Avoidance in LLM Code Editing",
-        "title_zh": "添加是机器，删除是人：测量和减轻LLM代码编辑中的删除避免",
-        "description": "Large language models increasingly write and repair production code, yet evidence is mounting that their test-passing patches leave codebases harder to maintain. We identify one concrete source: deletion avoidance, the systematic tendency to retain code that an intended edit requires removing. Across the five leading models on the official SWE-bench Verified leaderboard, deletion recall against the developer patch reaches at most 71.7% even on tasks all five solve, and models reach the right file for over 92% of required deletions but cut the exact line in under 52% of cases. Instead, 29.0% of passing patches wrap the targeted code in a guard or fallback, a pattern we call Guard-and-Go. Such patches pass because the original tests rarely check removal: when we retrofit 34 Verified tasks with tests that fail if the targeted code remains, four frontier models spanning closed and open weights fall from 63.2% to 41.9%. Because real repairs mix removal with addition, we curate CanItDelete, a benchmark of 200 tasks mined from real commits whose entire required edit is deletion. Even with the addition work gone, the best model still fails one task in five, and smaller open models fall to 18.0%. We then ablate GPT-5.6 Sol under four cumulative prompts; success moves little until we supply the exact lines, which nearly eliminate incomplete deletion yet raise success only to 80.5% because the model then deletes beyond the spans or adds code instead. Finally, through a pilot study we show one potential fix: teaching deletion during post-training reduces deletion avoidance and improves broader code-editing performance, suggesting the behavior is undertrained rather than beyond reach.",
-        "description_zh": "大型语言模型越来越多地编写和修复生产代码，但越来越多的证据表明，它们的测试通过补丁使代码库更难维护。我们确定了一个具体的来源：避免删除，即保留预期编辑需要删除的代码的系统倾向。在官方 SWE-bench Verified 排行榜上的五个主要模型中，即使在所有五个任务都解决的情况下，针对开发人员补丁的删除召回率也最多达到 71.7%，并且模型在超过 92% 的所需删除中达到了正确的文件，但在不到 52% 的情况下删除了确切的行。相反，29.0% 的传递补丁将目标代码包装在防护或回退中，我们将这种模式称为 Guard-and-Go。此类补丁之所以能够通过，是因为原始测试很少检查删除：当我们改造 34 个经过验证的任务时，如果目标代码仍然存在，测试就会失败，跨越封闭和开放权重的四个前沿模型从 63.2% 下降到 41.9%。因为真正的修复混合了删除和添加，所以我们策划了 CanItDelete，这是从真实提交中挖掘的 200 个任务的基准，其整个所需的编辑都是删除。即使没有额外的工作，最好的模型仍然有五分之一的任务失败，而较小的开放模型则下降到 18.0%。然后，我们在四个累积提示下消融 GPT-5.6 Sol；在我们提供精确的行之前，成功率几乎没有变化，这几乎消除了不完全删除，但成功率仅提高到 80.5%，因为模型随后会删除超出范围的内容或添加代码。最后，通过一项试点研究，我们展示了一个潜在的解决方案：在训练后教授删除可以减少删除避免并提高更广泛的代码编辑性能，这表明该行为未经过充分训练而不是超出范围。",
-        "authors": "Amir M. Ebrahimi, Mohammed Mehedi Hasan, Aaditya Bhatia, Gopi Krishnan Rajbahadur, Ahmed E. Hassan",
-        "url": "https://huggingface.co/papers/2607.28887",
-        "score": 18,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "18",
-          "paperId": "2607.28887"
-        }
-      },
-      {
-        "id": "2608.01397",
-        "title": "SG-WAM: Self-Guided World Modeling in Geometry-Aware Policy Space",
-        "title_zh": "SG-WAM：几何感知政策空间中的自引导世界建模",
-        "description": "World Action Models (WAMs) couple action generation with prediction of future states. Their effectiveness depends on whether future dynamics are modeled in a space that is both aligned with action generation and sufficiently geometry-aware to capture where and how actions change the scene. Existing WAMs typically satisfy only part of this requirement, relying on either perceptually heavy observation-space targets or auxiliary latent spaces that are not jointly structured for action relevance and geometry. We propose SG-WAM, a self-guided framework that learns geometry-aware action-conditioned dynamics directly in the policy-derived representation space. SG-WAM introduces learnable dynamics tokens and a Self-Guided World Predictor that forecasts their future latent states conditioned on intervening robot actions. Prediction targets are generated by an exponential moving average copy of the same policy backbone, providing stable supervision within the representation family used by the action expert. Geometric supervision further structures the policy image-token representations, providing spatially grounded context for the dynamics tokens and yielding a future-alignment space that is both action-relevant and geometry-aware. Latent future prediction, geometric grounding, and flow-matching action generation are jointly optimized end-to-end in a unified framework. Built on a 0.9B model without large-scale embodied pretraining, SG-WAM achieves 98.5% average success on LIBERO and 73% on LIBERO-Plus, while outperforming strong baselines in both in-distribution and out-of-distribution real-world evaluations.",
-        "description_zh": "世界行动模型 (WAM) 将行动生成与未来状态预测结合起来。它们的有效性取决于未来的动态是否在一个既与动作生成一致又具有足够的几何感知能力的空间中建模，以捕获动作在何处以及如何改变场景。现有的 WAM 通常仅满足此要求的一部分，依赖于感知上较重的观察空间目标或辅助潜在空间，而这些空间并未针对动作相关性和几何结构进行联合构建。我们提出了 SG-WAM，这是一个自引导框架，可以直接在策略派生的表示空间中学习几何感知的动作条件动力学。 SG-WAM 引入了可学习的动态令牌和自我引导的世界预测器，可以根据机器人的干预动作来预测其未来的潜在状态。预测目标由同一策略主干的指数移动平均副本生成，在行动专家使用的表示系列内提供稳定的监督。几何监督进一步构建了策略图像令牌表示，为动态令牌提供了空间基础上下文，并产生了既与动作相关又具有几何感知的未来对齐空间。潜在未来预测、几何基础和流匹配动作生成在统一框架中进行端到端联合优化。 SG-WAM 基于 0.9B 模型构建，没有进行大规模的具体预训练，在 LIBERO 上实现了 98.5% 的平均成功率，在 LIBERO-Plus 上实现了 73% 的平均成功率，同时在分布内和分布外现实世界评估中均优于强大的基线。",
-        "authors": "Ruiteng Zhao, Zhengshen Zhang, Yue Su, Wenshuo Wang, Jiahui Li, Zhiyuan Yang, Francis E. H. Tay, Marcelo H. Ang Jr., Haiyue Zhu",
-        "url": "https://huggingface.co/papers/2608.01397",
-        "score": 1,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2608.01397"
-        }
-      },
-      {
-        "id": "2607.29377",
-        "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
-        "title_zh": "Zero-Mem：LLM 代理的零令牌内存操作",
-        "description": "LLM agents need memory to act consistently over long interactions, yet many systems use additional LLM calls to operate that memory. Generating intermediate records and mediating their retrieval adds recurring token and time costs, while omitted or merged details can obscure the original evidence. We ask whether structured memory access requires generation at all. Zero-Mem introduces zero-token memory operations: no step outside final question answering invokes an LLM or consumes LLM input or output tokens; encoder computation is accounted for separately. Zero-Mem preserves original interaction traces as its source of record. It organizes the traces in two complementary ways. An entity--context graph exposes connections across interactions, while a temporal hierarchy preserves conversational locality and session state. For each query, Zero-Mem weighs the two views, retrieves from both, and follows their structure to recover supporting relations or surrounding context. Deterministic calibration first discards conflicting evidence and then keeps the reader's answer grounded in the retrieved traces. Only the final-QA reader invokes an LLM. Across long-memory and long-context question-answering benchmarks, Zero-Mem achieves competitive performance while eliminating LLM calls and LLM-token consumption from memory operations. With the same final-QA reader and context budget, it reduces memory-operation time cost by 57.6\\% relative to the fastest compared baseline. Ablations support the contribution of the two views and their query-dependent coordination. Overall, the results show that structured agent memory need not generate an intermediate representation of the past. After peer review, the code and implementation details will be available at blue{https://github.com/TheMoon0815/Zero-mem}.",
-        "description_zh": "LLM 代理需要内存才能在长时间交互中保持一致的行为，但许多系统使用额外的 LLM 调用来操作该内存。生成中间记录并调解其检索会增加重复出现的标记和时间成本，而省略或合并的细节可能会掩盖原始证据。我们询问结构化内存访问是否需要生成。 Zero-Mem 引入了零令牌内存操作：最终问答之外的任何步骤都不会调用 LLM 或消耗 LLM 输入或输出令牌；编码器计算是单独考虑的。零内存保留原始交互痕迹作为其记录来源。它以两种互补的方式组织痕迹。实体-上下文图公开交互之间的连接，而时间层次结构保留会话局部性和会话状态。对于每个查询，Zero-Mem 都会权衡两个视图，从两个视图中检索，并遵循它们的结构来恢复支持关系或周围上下文。确定性校准首先丢弃相互矛盾的证据，然后使读者的答案基于检索到的痕迹。只有最终的 QA 读者才会调用 LLM。在长内存和长上下文问答基准测试中，Zero-Mem 实现了具有竞争力的性能，同时消除了内存操作中的 LLM 调用和 LLM 令牌消耗。在相同的最终 QA 阅读器和上下文预算的情况下，相对于最快的比较基准，它可以将内存操作时间成本降低 57.6%。消融支持两种视图的贡献及其依赖于查询的协调。总的来说，结果表明结构化代理记忆不需要生成过去的中间表示。经过同行评审后，代码和实现细节将在 blue{https://github.com/TheMoon0815/Zero-mem} 上提供。",
-        "authors": "Yilin Xiao, Zhehan Zhu, Yujing Zhang, Jin Chen, Zijin Hong, Luyao Zhuang, Qinggang Zhang, Shengyuan Chen, Xiaocao Ouyang, Lingfei Ren, Xiao Huang",
-        "url": "https://huggingface.co/papers/2607.29377",
-        "score": 5,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "5",
-          "paperId": "2607.29377"
-        }
-      },
-      {
-        "id": "2608.01462",
-        "title": "Loud or Silent? A Reusable Framework for Per-Modality Failure Analysis in Multimodal Clinical AI",
-        "title_zh": "大声还是安静？多模式临床人工智能中按模式故障分析的可重用框架",
-        "description": "Multimodal clinical models are usually judged on accuracy with every modality present, but deployment removes modalities; an echocardiogram is often unavailable where an ECG is routine. Two questions then matter beyond the size of the accuracy loss: which modality was responsible, and whether the model fails loudly or silently once that modality is dropped. The distinction is per-example and modality-level, and is separate from post-hoc feature attribution (e.g. SHAP). Models are replaced often; the evaluation that answers these questions is reused. We present a model-agnostic modality-failure framework: given N modality embeddings, any mask-aware probe, and labels, it returns a per-example failure taxonomy, a per-modality complementarity matrix that attributes error to modalities, and a loud-vs-silent dropout profile separating monitorable failures from those that pass unflagged far from the decision boundary, using only deployment-observable signals. We release it as a small, unit-tested harness and validate it against planted ground truth. Across seeds it recovers that planted modality dominance and complementary subset, reports per-modality loud-vs-silent rates, and scales to a three-modality complementarity matrix; because the planted structure is known by construction, this validates recovery of per-example attribution rather than clinical performance. We then instantiate the framework on frozen EchoJEPA and HuBERT-ECG embeddings for LVEF and the EF <= 40% HFrEF gate over a paired MIMIC-IV cohort, where on the held-out test split (n = 245) dropping echo nearly doubles error. The narrow echo-to-ECG overlap that bounds cohort size is itself a deployment finding for cardiac foundation models. All of our work can be found at https://github.com/criticaldata/PRIMED-AI.",
-        "description_zh": "多模态临床模型通常根据每种模态的准确性来判断，但部署会消除模态；在常规进行心电图检查的情况下，通常无法进行超声心动图检查。除了准确率损失的大小之外，还有两个问题很重要：是哪种模态造成的，以及一旦放弃该模态，模型是否会大声或无声地失败。区别在于每个示例和模态级别，并且与事后特征归因（例如 SHAP）分开。型号经常更换；回答这些问题的评估被重复使用。我们提出了一个与模型无关的模态故障框架：给定 N 个模态嵌入、任何掩码感知探针和标签，它返回每个示例的故障分类、将错误归因于模态的每个模态互补矩阵，以及仅使用部署可观察信号将可监控故障与远离决策边界的未标记故障分开的响亮与静音丢失配置文件。我们将其作为一个小型的、经过单元测试的工具发布，并根据植入的地面事实对其进行验证。在种子中，它恢复了所种植的模态优势和互补子集，报告每种模态的响亮与静音比率，并扩展到三模态互补矩阵；因为植入的结构是通过构造已知的，所以这验证了每个示例归因的恢复而不是临床表现。然后，我们在成对的 MIMIC-IV 队列中针对 LVEF 和 EF <= 40% HFrEF 门在冻结的 EchoJEPA 和 HuBERT-ECG 嵌入上实例化该框架，其中在保留的测试分割 (n = 245) 中，回声下降几乎使误差增加了一倍。限制队列大小的狭窄回波与心电图重叠本身就是心脏基础模型的部署发现。我们所有的工作都可以在 https://github.com/riticdata/PRIMED-AI 找到。",
-        "authors": "Quang Bui, Shlok Jaiswal, Samuel Paik-Heintz, Kevin Zhou, Kaushik Madapati, Krittaphas Chaisutyakorn, Noah Dane Hebdon, Dimitrios Proios, Sebastián Andrés Cajas Ordóñez, Kacper Dobek, Boya Zhang, Aly Dhedhi, Ahram Han, Kushul Reddy Palakala, Rahul Gorijavolu, Jacques Kpodonu, Leo Anthony Celi",
-        "url": "https://huggingface.co/papers/2608.01462",
-        "score": 3,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "3",
-          "paperId": "2608.01462"
-        }
-      },
-      {
-        "id": "2607.26326",
-        "title": "Seeing or Knowing? Visual Context Sensitivity in Multimodal Large Language Models",
-        "title_zh": "看见还是知道？多模态大语言模型中的视觉上下文敏感性",
-        "description": "Multimodal Large Language Models (MLLMs) achieve strong performance by integrating visual inputs with the rich priors of pretrained language models. However, they often fail on vision-centric tasks, especially when visual evidence conflicts with pretrained knowledge. We explore these failures separately using two diagnostic paradigms: (1) probing whether visual information is available, via image reconstruction, and (2) measuring multimodal context sensitivity, the extent to which the model follows visual context versus the language prior. To support the second, we introduce the WhatIfVis, a benchmark spanning five coarse-grained dimensions (spatial-temporal, color, count, size, and weight) whose questions admit answers from either the image or the prior. Our analysis yields three findings: (i) Coarse-grained visual evidence is preserved, as these attributes can be reconstructed from the final-layer image tokens of frozen MLLMs. Failures on questions about these attributes therefore point to post-perceptual utilization, rather than to degraded visual encoding during perception. (ii) Even when explicitly instructed to use or ignore visual evidence, vanilla models (without supervised fine-tuning on the WhatIfVis) show unstable visual context sensitivity. Supervised fine-tuning (SFT) improves this controllability and generalizes across domains, and activation patching further localizes the vision-versus-prior trade-off at architecture-specific depths across all six models. (iii) The vision-versus-prior trade-off is controllable along a learned vector. Applying this steering vector, even without any intent instruction, improves controllability over the vanilla model. Together, these results relocate the bottleneck, indicating that for the coarse attributes we study, MLLMs encode the visual evidence but cannot reliably control their reliance on it.",
-        "description_zh": "多模态大型语言模型 (MLLM) 通过将视觉输入与预训练语言模型的丰富先验相集成，实现了强大的性能。然而，他们经常在以视觉为中心的任务上失败，特别是当视觉证据与预先训练的知识发生冲突时。我们使用两种诊断范式分别探讨这些失败：（1）通过图像重建探测视觉信息是否可用，（2）测量多模态上下文敏感性，即模型遵循视觉上下文与先验语言的程度。为了支持第二个，我们引入了 WhatIfVis，一个跨越五个粗粒度维度（时空、颜色、计数、大小和重量）的基准，其问题承认来自图像或先验的答案��我们的分析得出三个结果：（i）保留了粗粒度的视觉证据，因为这些属性可以从冻结 MLLM 的最后一层图像标记中重建。因此，有关这些属性的问题的失败指向感知后的利用，而不是感知过程中视觉编码的退化。 (ii) 即使明确指示使用或忽略视觉证据，普通模型（没有对 WhatIfVis 进行监督微调）也表现出不稳定的视觉上下文敏感性。有监督微调（SFT）提高了这种可控性并跨领域推广，激活补丁进一步在所有六个模型的架构特定深度上本地化了视觉与先验的权衡。 (iii) 愿景与先验的权衡是沿着学习向量可控的。即使没有任何意图指令，应用此转向向量也可以提高普通模型的可控性。总之，这些结果重新定位了瓶颈，表明对于我们研究的粗略属性，MLLM 对视觉证据进行编码，但无法可靠地控制对其的依赖。",
-        "authors": "Jiaang Li, Chengzu Li, Zhaochong An, Yifei Yuan, Xi Liu, Serge Belongie, Vésteinn Snæbjarnarson",
-        "url": "https://huggingface.co/papers/2607.26326",
+        "id": "2607.00482",
+        "title": "Know When to Stop: Segment-Level Credit Assignment for Reducing Overthinking",
+        "title_zh": "知道何时停止：用于减少过度思考的细分级别信用分配",
+        "description": "Reasoning language models frequently overthink: generating extended chains of behaviors such as hedging, approach abandonment, and self contradiction that consume tokens without improving answers. We show that these behaviors are not merely a consequence of length; even when controlling for response length, incorrect traces exhibit higher rates of unproductive self-reflection than correct ones. Addressing this requires identifying where self-reflection helps vs hurts, but obtaining these step-level annotations is costly. We observe that intermediate answer commitments within reasoning traces can provide a cheap proxy: by comparing each final answer candidate in the trace to the ground truth, we can determine whether subsequent reflection is productive without any additional supervision. Building on this insight, we propose DASH (Drift Aware advantage SHaping), which assigns segment-level credit based on whether each reasoning segment leads toward or away from correctness. On competition-level math benchmarks, DASH achieves the highest accuracy where overthinking is prevalent (Average Accuracy: 59.45% vs. 58.1% Dr.GRPO vs. 56.95% GRPO) while reducing overthinking behaviors and achieving more productive self-correction than baselines.",
+        "description_zh": "推理语言模型经常过度思考：产生延伸的行为链，例如对冲、放弃方法和自相矛盾，这些行为消耗了代币而不改善答案。我们证明这些行为不仅仅是时间长度的结果；而且是时间长度的结果。即使在控制响应长度时，不正确的迹线也比正确的迹线表现出更高的无效自反射率。解决这个问题需要确定自我反思的好处和坏处，但获得这些步骤级注释的成本很高。我们观察到推理轨迹中的中间答案承诺可以提供一个廉价的代理：通过将轨迹中的每个最终��选答案与地面事实进行比较，我们可以确定后续的反思是否有效，而无需任何额外的监督。基于这一见解，我们提出了 DASH（漂移感知优势 SHaping），它根据每个推理片段是否导向正确性来分配片段级别的信用。在竞赛级别的数学基准上，DASH 在过度思考普遍存在的情况下实现了最高准确度（平均准确度：59.45% vs. 58.1% Dr.GRPO vs. 56.95% GRPO），同时减少了过度思考行为并实现了比基线更高效的自我纠正。",
+        "authors": "Chia-Hsuan Lee, Sihui Dai, Mingyang Zhou, Isha Slavin, Hsuan Su, Shi-Xiong Zhang, Sambit Sahu, William Campbell",
+        "url": "https://huggingface.co/papers/2607.00482",
         "score": 2,
         "meta": {
           "source": "huggingface",
           "upvotes": "2",
-          "paperId": "2607.26326"
+          "paperId": "2607.00482"
         }
       },
       {
-        "id": "2607.23693",
-        "title": "Compute Globally, Materialize Locally: The Memory Contract of Sparse Event-KV",
-        "title_zh": "全局计算，本地实现：稀疏事件-KV 的内存契约",
-        "description": "Long-horizon agents increasingly reuse their KV cache as memory: a serving system keeps a subset of cached entries and drops the rest. Eviction and episodic-memory schemes therefore rest on a premise rarely tested directly, that a retained event is still informative once the observations that produced it are gone. We test it by omitting one earlier observation from what is served, across otherwise identical agent histories. Among items sensitive to that observation, the answer overwhelmingly follows the omitted value, though no served span says which value is correct. We call this semantic materialization: a downstream event's cached rows act as an independently servable view of computation whose inputs are gone. It can also be written on purpose. A deliberately phrased, answer-free event raises donor-aligned recovery from 6% to 51% on Qwen3-8B without ever naming the value, whereas passively harvesting natural mentions from long-term dialog yields no detected advantage. What such a row carries is specific and bounded. Compact state survives, larger payloads decay toward chance, and whether a construction writes at all turns on phrasing rather than on meaning alone, so two phrasings the model comprehends equally well can diverge sharply. The result is a memory contract for sparse event-KV serving: what to write, where it lands, and what survives once the source is gone. For anyone who evicts the corollary is that dropping a source event and observing no accuracy loss does not show the source was unnecessary.",
-        "description_zh": "长视野代理越来越多地重用其 KV 缓存作为内存：服务系统保留缓存条目的子集并丢弃其余条目。因此，逐出和情景记忆方案依赖于一个很少直接测试的前提，即一旦产生它的观察消失，保留的事件仍然具有信息性。我们通过在其他相同的代理历史中省略所提供的服务中的一项早期观察来对其进行测试。在对该观察敏感的项目中，答案绝大多数遵循省略的值，尽管没有服务范围表明哪个值是正确的。我们称之为语���物化：下游事件的缓存行充当输入消失的独立可服务的计算视图。也可以是故意写的。在 Qwen3-8B 上，故意措辞的、无答案的事件将捐赠者对齐的恢复率从 6% 提高到 51%，而无需命名该值，而被动地从长期对话中获取自然提及则不会产生任何检测到的优势。这样的行所承载的内容是特定且有界的。紧凑的状态得以幸存，更大的有效载荷逐渐衰减，而结构是否完全取决于措辞而不是仅取决于含义，因此模型同样理解的两个措辞可能会出现巨大分歧。结果是一个用于稀疏事件 KV 服务的内存契约：要写什么，它落在哪里，以及一旦源消失，什么会幸存。对于任何驱逐推论的人来说，删除源事件并观察到没有准确性损失并不表明源是不必要的。",
-        "authors": "Zefeng Cai, Zerui Cai",
-        "url": "https://huggingface.co/papers/2607.23693",
+        "id": "2608.03506",
+        "title": "When Many Answers Are Valid, Voting Fails: Symbolic Verification for Best-of-K Causal Reasoning in LLMs",
+        "title_zh": "当许多答案有效时，投票失败：LLM中 Best-of-K 因果推理的符号验证",
+        "description": "Self-consistency assumes the most frequent answer among sampled reasoning traces is the most reliable, but this can fail in causal reasoning: samples often repeat the same confounding error, and votes fragment across multiple valid answers, letting an invalid answer win despite a valid minority trace. We introduce CALVER (Causal Axiom-Level VERification), a training-free symbolic verifier that scores structured traces against Pearl's causal criteria, including -separation, backdoor adjustment, and intervention, and selects the highest-scoring candidate without consulting a reference answer. On CLEAR find-one-valid queries that admit multiple graph-valid answers, CALVER reaches 42.1% where plurality, a reward model, an LLM judge, and model confidence remain near 30% on identical frozen pools. Scaling the judge to 72B does not close the gap. In an audited clean-core subset, 11 of 21 graph-valid CALVER selections differ from the benchmark's listed answer while still satisfying the requested predicate. The advantage widens with the sampling budget and reproduces across ten published Bayesian networks, a second model family, and settings where the model must build the graph from text. CALVER also improves thresholded average-treatment-effect decisions against exact ground truth, generalizes to logic under a truth-table checker, and scores each candidate in milliseconds on CPU. CALVER needs only a causal structure, supplied outright or built from the text; wherever that holds, selection can aggregate via causal validity.",
+        "description_zh": "自洽性假设采样推理轨迹中最常见的答案是最可靠的，但这在因果推理中可能会失败：样本经常重复相同的混杂错误，并且投票会分散在多个有效答案中，尽管存在有效的少数轨迹，但仍会导致无效答案获胜。我们引入了 CALVER（因果公理级验证），这是一种免训练的符号验证器，可以根据 Pearl 的因果标准对结构化痕迹进行评分，包括分离、后门调整和干预，并在不参考参考答案的情况下选择得分最高的候选者。在接受多个图形有效答案的 CLEAR 查找一有效查询中，CALVER 达到 42.1%，其中复数、奖励模型、LLM 法官和模型置信度在相同的冻结池上保持在 30% 附近。将判断缩放到 72B 并不能缩小差距。在经过审计的干净核心子集中，21 个图有效 CALVER 选择中的 11 个与基准列出的答案不同，但仍满足所请求的谓词。该优势随着采样预算的增加而扩大，并在十个已发布的贝叶斯网络、第二个模型系列以及模型必须从文本构建图形的设置中重现。 CALVER 还根据精确的基本事实改进了阈值平均治疗效果决策，概括为真值表检查器下的逻辑，并在 CPU 上以毫秒为单位对每个候选者进行评分。 CALVER 只需要一个因果结构，直接提供或根据文本构建；无论这种情况成立，选择都可以通过因果有效性进行聚合。",
+        "authors": "Omatharv Bharat Vaidya, Connor Thomas Jerzak, Zayne Rea Sprague, Fangcong Yin, Nhat Ho",
+        "url": "https://huggingface.co/papers/2608.03506",
+        "score": 2,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "2",
+          "paperId": "2608.03506"
+        }
+      },
+      {
+        "id": "2608.02703",
+        "title": "ARCHead: Activation-Metric Residual Correction for Large Language Model Output Heads",
+        "title_zh": "ARHead：大型语言模型输出头的激活度量残差校正",
+        "description": "Weight-only quantization substantially reduces the storage of large language model (LLM) transformer blocks, but practical backends often retain the final language-modeling head (LM-head) in BF16 or FP16. Quantizing this projection naively can strongly perturb the vocabulary-logit distribution. We present ARCHead, a packed LM-head compressor that combines a quantized low-rank core, group-wise INT4 residuals, and a low-rank correction fitted in an activation-derived metric. ARCHead stores no dense BF16 head and reduces persistent LM-head storage by 3.7-3.9x. On Qwen3-8B-Base, it uses 25.6% of BF16 head storage while attaining 1.007 relative perplexity; storage-matched naive INT4 yields 1.14-1.16. Replacing the BF16 head left by AWQ or bitsandbytes adds only 0.006-0.007 cross-entropy, with less than 2% throughput change in our measurements. ARCHead therefore complements block quantizers by compressing the large output projection they can leave untouched. Code is available at https://github.com/suayptalha/archead.",
+        "description_zh": "仅权重量化大大减少了大型语言模型 (LLM) 转换器块的存储，但实际后端通常保留 BF16 或 FP16 中的最终语言建模头 (LM-head)。简单地量化这个投影会强烈扰乱词汇-logit 分布。我们提出了 ARHead，一种打包的 LM 头压缩器，它结合了量化的低秩核心、分组 INT4 残差以及安装在激活派生度量中的低秩校正。 ARHead 不存储密集的 BF16 磁头，并将持久性 LM 磁头存储量减少了 3.7-3.9 倍。在 Qwen3-8B-Base 上，它使用 25.6% 的 BF16 磁头存储，同���获得 1.007 的相对复杂度；存储匹配的朴素 INT4 产生 1.14-1.16。用 AWQ 或 bitsandbytes 替换 BF16 头仅增加 0.006-0.007 交叉熵，在我们的测量中吞吐量变化不到 2%。因此，ARCHead 通过压缩可以保持不变的大输出投影来补充块量化器。代码可在 https://github.com/suayptalha/archead 获取。",
+        "authors": "Şuayp Talha Kocabay, Talha Rüzgar Akkuş, Kamer Ali Yuksel",
+        "url": "https://huggingface.co/papers/2608.02703",
         "score": 3,
         "meta": {
           "source": "huggingface",
           "upvotes": "3",
-          "paperId": "2607.23693"
+          "paperId": "2608.02703"
         }
       },
       {
-        "id": "2607.26848",
-        "title": "ICDAR 2026 Competition on Information Extraction from Atomic Layer Deposition/Etching (ALD/E) Scientific Figures",
-        "title_zh": "ICDAR 2026 原子层沉积/蚀刻 (ALD/E) 科学图形信息提取竞赛",
-        "description": "Scientific figure comprehension and reasoning using multimodal AI requires integrating visual perception with domain-specific reasoning to extract meaningful knowledge, often not presented in the text of a research publication. The Sci-ImageMiner benchmark dataset, accompanied by a community-driven competition, raises the bar over prior scientific competitions by curating a comprehensive, expert-annotated dataset across four end-to-end complementary tasks. The competition attracted 68 active participants and 1,263 public/private submissions from 9th January 2026 to 8th April 2026. Our results show that state-of-the-art multimodal models perform well on classification and summarization tasks but struggle with data extraction and scientific reasoning, particularly in visual question-answering. These findings reveal key limitations and highlight challenges and opportunities for improving domain-aware multimodal AI systems. Overall, the Sci-ImageMiner benchmark and competition establish a rigorous platform for advancing research in scientific figure comprehension and reasoning and demonstrate the potential of state-of-the-art approaches for a challenging and complex research area.",
-        "description_zh": "使用多模态人工智能进行科学图形理解和推理需要将视觉感知与特定领域的推理相结合，以提取有意义的知识，而这些知识通常不会在研究出版物的文本中呈现。 Sci-ImageMiner 基准数据集，伴随着社区驱动的竞赛，通过在四个端到端互补任务中策划一个全面的、专家注释的数据集，提高了之前科学竞赛的标准。 2026 年 1 月 9 日至 2026 年 4 月 8 日期间，该竞赛吸引了 68 名积极参与者和 1,263 份公共/私人提交的作品。我们的结果表明，最先进的多模态模型在分类和摘要任务上表现良好，但在数据提取和科学推理方面表现不佳，尤其是在视觉问答方面。这些发现揭示了关键的局限性，并强调了改进领域感知多模式人工智能系统的挑战和机遇。总体而言，Sci-ImageMiner 基准测试和竞赛为推进科学图形理解和推理方面的研究建立了严格的平台，并展示了最先进的方法在具有挑战性和复杂的研究领域的潜力。",
-        "authors": "Fahad Ahmed, Sören Auer, Jennifer D'Souza",
-        "url": "https://huggingface.co/papers/2607.26848",
+        "id": "2608.03756",
+        "title": "LegalPincite: Multi-level Legal Information Retrieval Dataset",
+        "title_zh": "LegalPincite：多层次法律信息检索数据集",
+        "description": "A common task in legal Information Retrieval (IR) is to find relevant legal sources from case-law collections. While legal practice often requires pinpoint citations (pincites) to specific case paragraphs, most existing public legal IR datasets lack paragraph-level citation annotations. Yet, publicly available datasets with such information contain data leakage in the query text and exclude paragraphs that are neither citing nor cited from the corpora, creating an unrealistic and oversimplified retrieval setting, potentially leading to inflated performance. To address these limitations, we contribute a large-scale legal IR dataset constructed from Court of Justice of the European Union (CJEU) judgments. The dataset contains: (i) masked case/paragraph queries, with removed citation information; (ii) a corpus that includes all paragraphs; and (iii) case- and paragraph-level ground-truth citations, with partial human expert validation. Our dataset supports both the development and rigorous evaluation of legal IR methods, at multiple query-document levels (case-to-case, paragraph-to-case, and paragraph-to-paragraph retrieval). Link to dataset: https://huggingface.co/datasets/theresiavr/legalpincite",
+        "description_zh": "法律信息检索（IR）的一项常见任务是从判例法集合中查找相关的法律来源。虽然法律实践通常需要对特定案例段落进行精确引用（pincites），但大多数现有公共法律 IR 数据集缺乏段落级引用注释。然而，包含此类信息的公开数据集在查询文本中包含数据泄漏，并排除既没有引用也没有从语料库中引用的段落，从而创建了不切实际且过于简单的检索设置，可能导​​致性能膨胀。为了解决这些限制，我们贡献了根据欧盟法院 (CJEU) 判决构建的大规模法律 IR 数据集。数据集包含：（i）屏蔽案例/段落查询，删除了引文信息； (ii) 包含所有段落的语料库； (iii) 案例和段落级别的真实引用，并经过部分人类专家验证。我们的数据集支持在多个查询文档级别（逐个案例、逐个段落和逐个段落检索）合法 IR 方法的开发和严格评估。数据集链接：https://huggingface.co/datasets/theresiavr/legalpincite",
+        "authors": "Theresia Veronika Rampisela, Henrik Palmer Olsen, Giovanni Colavizza",
+        "url": "https://huggingface.co/papers/2608.03756",
+        "score": 2,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "2",
+          "paperId": "2608.03756"
+        }
+      },
+      {
+        "id": "2608.03972",
+        "title": "ReflectRL: Learning from Golden Negative Trajectories via Reflective-to-Direct Reasoning",
+        "title_zh": "ReflectRL：通过反思到直接推理从黄金负轨迹中学习",
+        "description": "On-policy training has emerged as a powerful post-training paradigm for improving the reasoning capabilities of large language models, and is often enhanced by golden trajectories from stronger expert models. However, when the expert fails on harder problems, existing trajectory-guided methods lose their main source of supervision, and these failed trajectories are typically discarded as negative samples. We argue that such failures, which we call Golden Negative Trajectories, can still provide valuable reasoning signals when treated not as demonstrations to imitate, but as flawed trajectories to reflect upon. We identify a Reflection Advantage: for hard problems, reflecting on a flawed trajectory can be easier and more effective than solving the problem directly from scratch. Motivated by this, we propose ReflectRL, a lightweight plug-and-play framework that learns from Golden Negative Trajectories during on-policy training. ReflectRL first uses these trajectories to elicit Reflective Reasoning, then applies Reflective-to-Direct Policy Transition to transfer the acquired reasoning behavior back to Direct Reasoning. Experiments across 9 benchmarks, 4 LLM backbones, and 4 on-policy training methods show that ReflectRL consistently improves reasoning performance with minimal overhead.",
+        "description_zh": "在策略训练已成为一种强大的后训练范例，用于提高大型语言模型的推理能力，并且通常通过更强大的专家模型的黄金轨迹来增强。然而，当专家在更困难的问题上失败时，现有的轨迹引导方法就失去了主要的监督来源，并且这些失败的轨迹通常作为负样本被丢弃。我们认为，这种被我们称为“黄金负轨”的失败，当不被视为可供模仿的示范，而是被视为可供反思的有缺陷的轨线时，仍然可以提供有价值的推理信号。我们确定了反思优势：对于难题��反思有缺陷的轨迹比直接从头开始解决问题更容易、更有效。受此启发，我们提出了 ReflectRL，这是一个轻量级的即插即用框架，可以在策略训练期间从黄金负轨迹中学习。 ReflectRL 首先使用这些轨迹来引发反射推理，然后应用反射到直接策略转换将获得的推理行为转移回直接推理。跨 9 个基准、4 个 LLM 主干和 4 个策略训练方法的实验表明，ReflectRL 以最小的开销持续提高推理性能。",
+        "authors": "Jinhe Bi, Chennan Zhou, Zengjie Jin, Aniri, Shuo Lu, Wenke Huang, Hu Cao, Xun Xiao, Zhihong Zhu, Volker Tresp, Fei Shen, Yunpu Ma, Tat-Seng Chua",
+        "url": "https://huggingface.co/papers/2608.03972",
+        "score": 2,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "2",
+          "paperId": "2608.03972"
+        }
+      },
+      {
+        "id": "2608.02833",
+        "title": "CURV: Enhancing Chart Understanding Through Curriculum Visual Grounded Reasoning",
+        "title_zh": "CURV：通过课程视觉基础推理增强图表理解",
+        "description": "Chart question answering (CQA) requires multimodal large language models (MLLMs) to integrate visual comprehension with logical reasoning, yet current models struggle with accurate visual grounding and coherent reasoning chains. While extrinsic chain-of-thought prompting and visual cues significantly improve performance, current MLLMs lack intrinsic visual grounded reasoning capabilities, leading to inaccurate perception and reasoning disconnected from visual evidence. To address these limitations, we propose CURV, a curriculum learning framework that develops intrinsic visual reasoning capabilities by reformulating CQA as multi-step visual grounded reasoning, where each step coordinates logical reasoning with dynamic visual grounding through spatial attention concentration. To assist model learning, we further introduce CCQA, a three-level curriculum dataset with scalable synthetic generation across diverse chart types and reasoning patterns. Our curriculum systematically progresses from basic single-operation reasoning to complex multi-chart compositional tasks. Experiments demonstrate that CURV achieves up to uparrow20.50% improvements over baselines and is generalizable to real-world benchmarks (up to uparrow12.30%) and out-of-domain multimodal reasoning tasks (up to uparrow10.20%), validating the effectiveness of internalizing visual reasoning with dynamic grounding for enhanced chart understanding capabilities. Code is available at: https://xhguo7.github.io/CURV/.",
+        "description_zh": "图表问答 (CQA) 需要多模态大语言模型 (MLLM) 将视觉理解与逻辑推理相结合，但当前的模型在准确的视觉基础和连贯的推理链方面存在困难。虽然外在的思维链提示和视觉提示可以显着提高性能，但当前的 MLLM 缺乏内在的基于视觉的推理能力，导致与视觉证据脱节的不准确的感知和推理。为了解决这些局限性，我们提出了 CURV，一种课程学习框架，通过将 CQA 重新表述为多步骤视觉基础推理来开发内在视觉推理能力，其中每个步骤通过空间注意力集中来协调逻辑推理与动态视觉基础。为了协助模型学习，我们进一步引入了 CCQA，这是一个三级课程数据集，具有跨不同图表类型和推理模式的可扩展合成生成。我们的课程系统地从基本的单操作推理发展到复杂的多图表组合任务。实验表明，CURV 比基线实现了高达 uparrow20.50% 的改进，并且可推广到现实世界基准（高达 uparrow12.30%）和域外多模态推理任务（高达 uparrow10.20%），验证了通过动态基础内化视觉推理以增强图表理解能力的有效性。代码位于：https://xhguo7.github.io/CURV/。",
+        "authors": "Xuehang Guo, Pingyue Zhang, Ruiyi Zhang, Zhenhailong Wang, Hanrui Lyu, Heng Ji, Tong Sun, Qingyun Wang, Manling Li",
+        "url": "https://huggingface.co/papers/2608.02833",
+        "score": 0,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "0",
+          "paperId": "2608.02833"
+        }
+      },
+      {
+        "id": "2608.01247",
+        "title": "RestoreKV: Recovering Full-Cache Behavior Under Aggressive Query-Agnostic KV Cache Eviction",
+        "title_zh": "RestoreKV：在与查询无关的积极 KV 缓存驱逐下恢复全缓存行为",
+        "description": "Query-agnostic KV cache eviction compresses a context once and reuses the resulting cache for arbitrary future queries, but performance can collapse under tight budgets. Existing methods primarily improve which original KV pairs are retained. We introduce RestoreKV, which complements this selection-based formulation with learned restoration under the same total KV budget. Our key insight is that, although the information lost through eviction is context-specific, the mechanism for generating its compact complement can be shared across contexts. After context prefill, a few restore tokens attend to the full KV cache in a single LoRA-adapted pass, generating a compact, context-conditioned restore cache. The base importance scorer and eviction rule remain unchanged, and the adapters are disabled for all subsequent queries and decoding. RestoreKV is trained through parameter-efficient self-distillation from the frozen full-cache model, optimizing only 0.4% of the parameters and requiring no task-specific tuning. Across four backbones and four long-context benchmarks, RestoreKV substantially reduces compression-induced degradation. On Qwen3-4B, it improves 59 of 60 paired, budget-matched settings across five base eviction methods; at a 5% budget, it raises KVzip from 38.2 to 73.2 on RULER-4K. Applied to KVzip+, RestoreKV reaches 86.4 RULER accuracy at 16times compression on the KVPress Benchmark, while adding less than 0.5% one-time cache-construction overhead in a 32K-context evaluation. Our project page is available at https://paper.pnu-cvsp.com/RestoreKV/",
+        "description_zh": "与查询无关的 KV 缓存驱逐会压缩一次上下文，然后将生成的缓存重新用于任意未来的查询，但在预算紧张的情况下性能可能会崩溃。现有方法主要改进保留哪些原始KV对。我们引入了 RestoreKV，它在相同的总 KV 预算下通过学习恢复来补充这种基于选择的公式。我们的主要见解是，尽管通过驱逐丢失的信息是特定于上下文的，但生成其紧凑补充的机制可以跨上下文共享。上下文预填充后，一些恢复令牌会在单个 LoRA 适配通道中处理���整的 KV 缓存，从而生成紧凑的、上下文条件恢复缓存。基本重要性评分器和逐出规则保持不变，并且对于所有后续查询和解码禁用适配器。 RestoreKV 通过从冻结的全缓存模型中进行参数高效的自蒸馏来进行训练，仅优化 0.4% 的参数，并且不需要特定于任务的调整。在四个主干网和四个长上下文基准测试中，RestoreKV 大大减少了压缩引起的性能下降。在 Qwen3-4B 上，它改进了五种基本驱逐方法中 60 个配对、���算匹配设置中的 59 个；在 5% 的预算下，它将 RULER-4K 上的 KVzip 从 38.2 提高到 73.2。应用于 KVzip+ 时，RestoreKV 在 KVPress 基准测试中以 16 倍压缩时达到 86.4 RULER 精度，同时在 32K 上下文评估中增加了不到 0.5% 的一次性缓存构建开销。我们的项目页面位于 https://paper.pnu-cvsp.com/RestoreKV/",
+        "authors": "Changwoo Baek, Seungjun Shin, Kyeongbo Kong",
+        "url": "https://huggingface.co/papers/2608.01247",
+        "score": 5,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "5",
+          "paperId": "2608.01247"
+        }
+      },
+      {
+        "id": "2608.03507",
+        "title": "ChronoLens: Measuring Language Change Across Time, Languages, and Linguistic Levels",
+        "title_zh": "ChronoLens：测量语言随时间、语言和语言水平的变化",
+        "description": "Historical language change affects morphology, syntax, semantics, and pragmatics, yet computational studies typically examine these levels with incompatible representations and therefore cannot determine whether they evolve together across languages. We address this problem by asking how the magnitude and direction of change vary across linguistic levels, languages, and historical periods within a single analytical space. We introduce ChronoLens, a framework that combines frozen multilingual language models, feature-aligned crosscoders, and post-hoc linguistic interventions, and apply it to 44.98 million documents and approximately 17.2 billion tokens from five parliamentary traditions spanning 1803--2026. The resulting sparse representations agree substantially more strongly with linguistic statistics than dense embeddings or a pooled sparse autoencoder (ρ=0.72 versus 0.29 and 0.28), and reveal that morphology, syntax, semantics, and pragmatics generally change by comparable amounts within a language, while languages differ markedly in when, how far, and in which direction they change. These findings show that historical language change is a structured, multidimensional process: similar magnitudes can conceal different trajectories, and meaningful cross-linguistic comparison requires measuring both distance and direction.",
+        "description_zh": "历史语言的变化影响形态、语法、语义和语用，但计算研究通常用不兼容的表示来检查这些级别，因此无法确定它们是否跨语言一起进化。我们通过询问在单一分析空间内不同语言水平、语言和历史时期变化的幅度和方向如何变化来解决这个问题。我们引入了 ChronoLens，这是一个结合了冻结多语言语言模型、特征对齐交叉编码器和事后语言干预的框架，并将其应用于 1803 年至 2026 年五个议会传统的 4498 万份文档和约 172 亿个令牌。与密集嵌入或池化稀疏自动编码器相比，所得的稀疏表示与语言统计学的一致性更强（ρ=0.72 对比 0.29 和 0.28），并揭示了形态、语法、语义和语用学在语言中通常会发生相当数量的变化，而语言在变化的时间、程度和方向上存在显着差异。这些发现表明，历史语言变化是一个结构化的、多维的过程：相似的幅度可以掩盖不同的轨迹，而有意义的跨语言比较需要测量距离和方向。",
+        "authors": "Gagan Bhatia, Julian Schlenker, Simone Paolo Ponzetto, Steffen Eger",
+        "url": "https://huggingface.co/papers/2608.03507",
+        "score": 1,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "1",
+          "paperId": "2608.03507"
+        }
+      },
+      {
+        "id": "2608.02791",
+        "title": "Better, Stronger, Faster, and Broader: Structured All-Mask Prediction for MLLM-Based Segmentation",
+        "title_zh": "更好、更强、更快、更广泛：基于 MLLM 的分割的结构化全掩模预测",
+        "description": "MLLM-based segmentation faces a core segmentation trilemma: high segmentation performance, preserved dialogue ability, and fast inference. Embedding-prediction methods may disrupt language modeling through pixel-level objectives, whereas next-token generation is inefficient for dense masks. We propose All-Mask Prediction, decoupling autoregressive dialogue from non-autoregressive mask prediction. Its binary instantiation, STAMP (Simultaneous Textual All-Mask Prediction), emits an in-vocabulary <SEG> trigger, fuses image-aligned mask tokens with corresponding patch features, and uses hybrid attention to classify all tokens as foreground or background in one pass. It thereby combines strong referring and reasoning segmentation with preserved multimodal ability and efficient inference. However, binary masks cannot retain multiple semantic or instance identities without repeated target-specific predictions. We therefore propose Structured All-Mask Prediction and develop STAMPlus. It generates a target list with explicit IDs and optional boxes, binds these IDs to a shared multi-class mask space, and jointly predicts all targets in one non-autoregressive pass. A single unified checkpoint retains STAMP's referring and reasoning capabilities while extending to open-vocabulary semantic, instance-aware, and remote-sensing small-target segmentation, where high-resolution mask-token scaling preserves finer spatial evidence. Across these settings, STAMPlus achieves state-of-the-art segmentation performance, preserves general multimodal instruction following, and reduces 12-category latency from 13.50s for repeated STAMP inference to 5.16s. Further analyses show that accurate target cues improve segmentation and learned spatial grounding benefits look-twice reasoning. Overall, STAMPlus resolves the trilemma beyond single-target prediction.",
+        "description_zh": "基于 MLLM 的分割面临着核心分割三难：高分割性能、保留对话能力和快速推理。嵌入预测方法可能会通过像素级目标破坏语言建模，而下一代令牌生成对于密集掩模来说效率低下。我们提出全掩模预测，将自回归对话与非自回归掩模预测解耦。其二进制实例化 STAMP（同时文本全掩模预测）发出词汇内 <SEG> 触发器，将图像对齐的掩模标记与相应的补丁特征融合，并使用混合注意力一次性将所有标记分类为前景或背景。因此，它将强大的引用和推理分割与保留的多模态能力和高效的推理结合起来。然而，如果没有重复的特定目标预测，二进制掩码无法保留多个语义或实例身份。因此，我们提出结构化全掩模预测并开发STAMPlus。它生成一个具有显式 ID 和可选框的目标列表，将这些 ID 绑定到共享的多类掩码空间，并在一次非自回归过程中联合预测所有目标。单个统一检查点保留了 STAMP 的引用和推理��能，同时扩展到开放词汇语义、实例感知和遥感小目标分割，其中高分辨率掩模令牌缩放保留了更精细的空间证据。在这些设置中，STAMPlus 实现了最先进的分段性能，保留了一般的多模式指令遵循，并将 12 类别延迟从重复 STAMP 推理的 13.50 秒减少到 5.16 秒。进一步的分析表明，准确的目标线索可以改善分割，并且学习的空间基础有利于双重推理。总体而言，STAMPlus 解决了单目标预测之外的三难困境。",
+        "authors": "Jiazhen Liu, Mingkuan Feng, Long Chen",
+        "url": "https://huggingface.co/papers/2608.02791",
+        "score": 3,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "3",
+          "paperId": "2608.02791"
+        }
+      },
+      {
+        "id": "2608.03994",
+        "title": "When Attention Goes Blind: Numerical Failure in ALiBi Positional Encodings",
+        "title_zh": "当注意力变得盲目时：ALiBi 位置编码中的数字失败",
+        "description": "We identify a previously overlooked failure mode of ALiBi positional encoding: its linear bias scaling underflows floating-point precision, which zeroes out a large fraction of attention weights and renders the affected attention heads partially blind. We analyze this failure mode, characterize its impact, and examine four mitigation strategies. We further demonstrate its occurrence in state-of-the-art pretrained models based on ALiBi. Comprehensive pretraining experiments with 148M-parameter decoder models help us to disentangle its effects from out-of-context degradation. We find that ALiBi's failure mode can substantially impair token retrieval while having only a minor effect on standard decoder benchmarks. We propose four training-time mitigation strategies and evaluate them individually and in combinations, finding that log-scaled distances yield the most consistent improvements in passkey retrieval. Despite this problem, default ALiBi slopes remain a surprisingly strong baseline, particularly for needle-in-a-haystack retrieval. Based on these findings we provide concrete recommendations on how to train models with ALiBi.",
+        "description_zh": "我们发现了 ALiBi 位置编码的一个先前被忽视的故障模式：它的线性偏差缩放导致浮点精度下溢，从而将大部分注意力权重归零，并使受影响的注意力头部分失明。我们分析了这种故障模式，描述了其影响，并研究了四种缓解策略。我们进一步证明了它在基于 ALiBi 的最先进的预训练模型中的出现。使用 148M 参数解码器模型进行全面的预训练实验有助于我们消除脱离上下文退化的影响。我们发现 ALiBi 的故障模���会严重损害令牌检索，而对标准解码器基准测试的影响很小。我们提出了四种训练时间缓解策略，并对它们进行单独和组合评估，发现对数尺度距离在密钥检索方面产生最一致的改进。尽管存在这个问题，默认的 ALiBi 斜率仍然是一个令人惊讶的强基线，特别是对于大海捞针检索来说。基于这些发现，我们提供了有关如何使用 ALiBi 训练模型的具体建议。",
+        "authors": "Christopher Schröder, Lukas Gienapp, Ferdinand Schlatt, Martin Potthast, Gerhard Heyer",
+        "url": "https://huggingface.co/papers/2608.03994",
         "score": 4,
         "meta": {
           "source": "huggingface",
           "upvotes": "4",
-          "paperId": "2607.26848"
+          "paperId": "2608.03994"
         }
       },
       {
-        "id": "2608.02315",
-        "title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
-        "title_zh": "GEOID-Flood：用于洪水分段的大规模多模态基准数据集",
-        "description": "Geospatial foundation models aim to learn representations that transfer across regions and sensors, yet evaluating them on specific tasks requires large, high-quality, multi-modal benchmarks that measure how well such models extract value from data. Concerning flood mapping, existing datasets rarely combine bi-temporal SAR and co-registered optical imagery at scale, leaving the value of foundation models for this downstream task largely untested. We introduce GEOID-Flood, a large-scale multi-modal flood segmentation benchmark, derived from Copernicus Emergency Management Service activations, spanning 219 events across 65 countries over ten years. The dataset provides more than 14,000 tiles with co-registered pre- and post-event Sentinel-1, in GRD and RTC format, pre-event Sentinel-2 composite, and DEM, including manually validated labels that separate background from permanent water and flooded water. Using this benchmark, we evaluate foundation models against conventional encoders across single-image, multi-temporal, and multi-modal protocols. We report three main findings: foundation models offer a consistent but modest advantage; optical-SAR fusion with finetuning best resolves transient flooding; and models trained on GEOID-Flood transfer to unseen events better than those trained on existing datasets. Dataset and code available at https://github.com/links-ads/geoid-flood.",
-        "description_zh": "地理空间基础模型旨在学习跨区域和传感器传输的表示，但在特定任务上评估它们需要大型、高质量、多模式基准来衡量此类模型从数据中提取价值的程度。关于洪水测绘，现有数据集很少将双时态 SAR 和联合配准的光学图像大规模结合起来，使得这项下游任务的基础模型的价值在很大程度上未经测试。我们推出 GEOID-Flood，这是一种大规模多模式洪水分段基准，源自哥白尼应急管理服务激活，涵盖十年来 65 个国家的 219 次事件。该数据集提供了超过 14,000 个具有共同注册的事件前和事件后 Sentinel-1 的图块（GRD 和 RTC 格式）、事件前 Sentinel-2 复合材料和 DEM，包括手动验证的标签，可将背景与永久水和淹没水分开。使用此基准，我们针对单图像、多时态和多模态协议的传统编码器评估基础模型。我们报告了三个主要发现：基础模型提供了一致但适度的优势；具有微调功能的光学-SAR 融合可以最好地解决瞬态洪水问题；在 GEOID-Flood 上训练的模型比���现有数据集上训练的模型更好地转移到未见过的事件。数据集和代码可在 https://github.com/links-ads/geoid-flood 获取。",
-        "authors": "Gaetano Chiriaco, Luca Barco, Andrea Bragagnolo, Claudio Rossi, Edoardo Arnaudo",
-        "url": "https://huggingface.co/papers/2608.02315",
-        "score": 1,
+        "id": "2608.03419",
+        "title": "Multi-Task Multi-Frame Visual Piano Transcription",
+        "title_zh": "多任务多帧视觉钢琴转录",
+        "description": "Audio-based piano transcription performs well on onset, pitch, and velocity, but the sustain pedal lets sound persist long after key release, so audio systems predict pedal-extended offsets rather than physical key release. Yet existing Visual Piano Transcription (VPT) systems focus on onset detection from short video windows, offset accuracy lags onset by a wide margin, and note-level velocity has not been reported. To address these gaps, we present V2N (Video to Notes), the first complete VPT system: a shared temporal backbone feeds task-specific heads for onset, offset, key hold, and velocity, jointly trained with per-frame supervision rather than only at the window center. Ablations show that multi-task supervision enables offset and velocity prediction while improving onset accuracy; longer temporal context yields further improvements. V2N sets new state-of-the-art results on PianoVAM and R3.",
+        "description_zh": "基于音频的钢琴转录在起音、音高和速度方面表现良好，但延音踏板让声音在琴键释放后持续很长时间，因此音频系统预测踏板扩展的偏移量，而不是物理琴键释放。然而，现有的视觉钢琴转录（VPT）系统专注于短视频窗口的开始检测，偏移精度大幅落后于开始，并且音符级速度尚未报告。为了解决这些差距，我们提出了 V2N（视频到笔记），这是第一个完整的 VPT 系统：共享时间骨干为特定任务的头提供起始、偏移、按键保持和速度，并与每帧监督联合训练，而不仅仅是在窗口中心。消融表明，多任务监督可以实现偏移和速度预测，同时提高起始精度；更长的时间背景会产生进一步的改进。 V2N 在 PianoVAM 和 R3 上创造了新的最先进结果。",
+        "authors": "Yonghyun Kim, Hoyeol Sohn, Juhan Nam, Alexander Lerch",
+        "url": "https://huggingface.co/papers/2608.03419",
+        "score": 3,
         "meta": {
           "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2608.02315"
+          "upvotes": "3",
+          "paperId": "2608.03419"
         }
       },
       {
-        "id": "2607.29122",
-        "title": "A Frozen Pixel-Space Diffusion Model Can Guide Itself with Its Own Samples",
-        "title_zh": "冻结像素空间扩散模型可以用自己的样本进行自我引导",
-        "description": "Pixel-space diffusion models aim to learn an end-to-end generator directly over raw pixels. This is challenging because a single model must capture both global structure and local texture in the same high-dimensional space. While recent work improves pixel diffusion through alternative prediction targets, training objectives, and architectures, these advances typically require training a new model from scratch. We show there is a cheaper, complementary strategy: a frozen, pretrained pixel diffusion model can guide itself. Our key observation is that intermediate layers of a pretrained pixel diffusion transformer can be decoded into coarse predictions that capture the main low-frequency structure, while the final layers progressively refine local, high-frequency details. We therefore attach a lightweight prediction head to an intermediate layer, keep the backbone frozen, and use the discrepancy between the intermediate and final predictions as a self-guidance direction during sampling. To train this head, we further find that real images are not necessary. Instead, model-generated samples suffice and even outperform real images for training the head, especially in enhancing the high-frequency components that pixel diffusion tends to underfit. Across multiple pixel diffusion models on ImageNet, our Synthetic Self-Guidance (SSG) consistently improves generation while adapter training requires less than 1% of full-model training compute: it reduces FID by over 50% across the evaluated JiT variants without classifier-free guidance (CFG) and further improves strong baselines with CFG, e.g., JiT-H/16 from 1.86 to 1.67 and PixelREPA-H/16 from 1.81 to 1.59. Our code is available at https://github.com/zfu006/SSG.",
-        "description_zh": "像素空间扩散模型旨在直接在原始像素上学习端到端生成器。这是具有挑战性的，因为单个模型必须捕获同一高维空间中的全局结构和局部纹理。虽然最近的工作通过替代预测目标、训练目标和架构改善了像素扩散，但这些进步通常需要从头开始训练新模型。我们证明有一种更便宜的补充策略：冻结的、预训练的像素扩散模型可以自我引导。我们的主要观察结果是，预训练像素扩散变换器的中间层可以解码为捕获主要低频结构的粗略预测，而最���层则逐步细化局部高频细节。因此，我们将轻量级预测头附加到中间层，保持骨干网冻结，并使用中间预测和最终预测之间的差异作为采样期间的自我引导方向。为了训练这个大脑，我们进一步发现真实图像并不是必需的。相反，模型生成的样本足以甚至优于真实图像来训练头部，特别是在增强像素扩散往往不适合的高频分量方面。在 ImageNet 上的多个像素扩散模型中，我们的合成自指导 (SSG) 持续改进生成，而适配器训练需要的全模型训练计算量不到 1%：它在没有无分类器指导 (CFG) 的情况下，在评估的 JiT 变体中将 FID 减少了 50% 以上，并利用 CFG 进一步改进了强基线，例如，JiT-H/16 从 1.86 到 1.67，PixelREPA-H/16 从 1.81至 1.59。我们的代码可在 https://github.com/zfu006/SSG 获取。",
-        "authors": "Zixuan Fu, Chong Wang, Lanqing Guo, Kailai Zhou, Jiahao Nie, Bihan Wen",
-        "url": "https://huggingface.co/papers/2607.29122",
-        "score": 1,
+        "id": "2607.28661",
+        "title": "Are the Financial Reasoning from LLMs Credible? A Real World Test over Long-Horizon Statements",
+        "title_zh": "LLM的财务推理可信吗？对长期陈述的现实测试",
+        "description": "Do Large Language Models (LLMs) possess genuine structural reasoning, or merely rely on surface-level pattern matching? The financial domain, demanding numerical precision and multi-step logic over long contexts, is an ideal testbed. Existing benchmarks fail to capture real-world industrial complexity, predominantly relying on multiple-choice questions or single-hop QA over cropped tables while ignoring intricate cross-statement dynamics and temporal de-cumulation.\n  To bridge this gap, we introduce FinIndices, a large-scale benchmark evaluating data-processing fidelity over uncropped financial statements (up to 32K tokens). Utilizing an automated synthesis pipeline with adversarial traps, FinIndices encompasses Single-Index computation and Table-Index tabulation to test complex domain, temporal, and caliber reasoning.\n  Our evaluation reveals two severe LLM vulnerabilities. First, a \"Knowledge Bottleneck\": despite memorizing formulas during pre-training, models demonstrate fragile pattern matching. Removing explicit formula hints causes performance to collapse (e.g., Gemini-3.1-Pro drops from 70.70% to 38.22% on table tasks), exposing fatal flaws in temporal de-cumulation and stock-flow caliber mismatch. Second, a \"Structural Bottleneck\": the intense cognitive load of generating multi-metric, multi-period tables actively drains reasoning capacity. Under structural pressure, LLMs that flawlessly execute isolated derivations regress to shallow heuristics, such as fetching incorrect adjacent columns or substituting deep accounting adjustments with lazy literal arithmetic. Finally, Supervised Fine-Tuning (SFT) yields substantial zero-hint gains (+8.54% Single, +3.82% Table), validating that structured logic can be partially restored via data-centric alignment.",
+        "description_zh": "大型语言模型 (LLM) 是否具有真正的结构推理，还是仅仅依赖于表面级别的模式匹配？金融领域需要长期上下文中的数值精度和多步逻辑，是一个理想的测试平台。现有的基准无法捕捉现实世界的工业复杂性，主要依赖于多项选择题或对裁剪表的单跳 QA，而忽略了复杂的跨语句动态和时间累积。\n  为了弥补这一差距，我们引入了 FinIndices，这是一个大规模基准，用于评估未裁剪财务报表（最多 32K 代币）的数据处理保真度。 FinIndices 利用带有对抗性陷阱的自动合成管道，包含单索引计算和表索引制表来测试复杂的域、时间和口径推理。\n  我们的评估揭示了LLM的两个严重漏洞。首先，“知识瓶颈”：尽管在预训练期间记住了公式，但模型表现出脆弱的模式匹配。删除显式公式提示会导致性能崩溃（例如，Gemini-3.1-Pro 在表任务上从 70.70% 下降到 38.22%），暴露出时间累积和库存流量口径不匹配的致命缺陷。其次，“结构瓶颈”：生成多度量、多周期表的强烈认知负荷会主动消耗推理能力。在结构压力下，完美地执行孤立推导的LLM会回归到浅层启发式，例如获取不正确的相邻列或用惰性文字算术代替深度会计调整。最后，监督微调 (SFT) 产生了可观的零提示增益（+8.54% Single，+3.82% Table），验证了可以通过以数据为中心的对齐来部分恢复结构化逻辑。",
+        "authors": "Xinke Tong, Xuanming Zhang, Tianyi Tang, An Yang, Jiatu Hu, Guojie Lin, Zhenzhen Shi, Lingfeng Zeng, Boyu Yang, Bing Zhao, Hu Wei, Lin Qu, Dayiheng Liu",
+        "url": "https://huggingface.co/papers/2607.28661",
+        "score": 9,
         "meta": {
           "source": "huggingface",
-          "upvotes": "1",
-          "paperId": "2607.29122"
+          "upvotes": "9",
+          "paperId": "2607.28661"
         }
       },
       {
-        "id": "2607.28802",
-        "title": "Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures",
-        "title_zh": "模型还是线束？用于定位代理故障的以交互为中心的分类法",
-        "description": "Existing evaluations often reduce agent failures to system-level outcomes, obscuring where the fault originated and which intervention would improve the agent system. This creates a repair-assignment problem: the same visible failure may call for model post-training, harness engineering, environment redesign, or benchmark repair depending on its source. Because agent behavior emerges from interactions among models, harnesses, users, tools, memory, and environments, outcome-level labels are often insufficient for improvement. Most failure taxonomies do little to resolve this problem because they are benchmark-specific and lack a shared structure. We introduce an interaction-centric taxonomy that localizes failures to the interactions in which they originate and identifies the responsible component. It organizes 41 failure modes by assigning each to an edge between two components and a fault side indicating where the repair belongs. This makes the taxonomy actionable: model-side failures identify targets for post-training, harness-side failures point to scaffolding and tool-integration fixes, and environment or grader failures reveal evaluation conditions requiring redesign. The schema applies across agent architectures, from coding assistants to long-horizon personal assistants and multi-agent systems. We ground the taxonomy in worked examples from public benchmarks, model system cards, published reports, and logged agent trajectories, and evaluate its reproducibility using independent reasoning agents as judges. Across four frontier models, the strongest judge reaches Cohen's κ=0.76 against human category labels, suggesting that the categories capture shared structure rather than annotator-specific preferences.",
-        "description_zh": "现有的评估通常将代理故障减少到系统级结果，从而掩盖了故障的根源以及哪种干预可以改善代理系统。这会产生修复分配问题：相同的可见故障可能需要模型后训练、利用工程、环境重新设计或基准修复，具体取决于其来源。由于代理行为是由模型、线束、用户、工具、内存和环境之间的交互产生的，因此结果级别的标签通常不足以进行改进。大多数失败分类法对解决这个问题作用不大，因为它们是特定于基准的并且缺乏共享结构。我们引入了一种以交互为中心的分类法，将故障定位到故障产生的交互并识别负责的组件。它通过将每个故障模式分配给两个组件之间的边缘和指示维修所属的故障侧来组织 41 种故障模式。这使得分类法具有可操作性：模型端故障确定了训练后的目标，线束端故障指向脚手架和工具集成修复，环境或平地机故障揭示了需要重新设计的评估条件。该模式适用于跨代理架构，从编码助理到长期个人助理和多代理系统。我们将分类法建立在来自公共基准、模型系统卡、已发布的报告和记录的代理轨迹的工作示例中，并使用独立推理代理作为法官来评估其再现性。在四个前沿模型中，最强的判断达到了 Cohen 针对人类类别标签的 κ=0.76，这表明类别捕获了共享结构而不是注释者特定的偏好。",
-        "authors": "Harsh Raj, Vipul Gupta, Anas Mahmoud, Razvan-Gabriel Dumitru, Darvin Yi, Aakash Sabharwal, Yunzhong He",
-        "url": "https://huggingface.co/papers/2607.28802",
-        "score": 8,
+        "id": "2608.00371",
+        "title": "Decoding Children's Gait Behavior",
+        "title_zh": "解读儿童的步态行为",
+        "description": "We introduce a new problem domain for human action recognition: the fine-grained analysis of children's gait behaviors from standard RGB video. We specifically target the ambulatory patterns of children aged 3-17 years. Such behaviors arise naturally in the diagnosis and treatment of several critical developmental and neuromuscular disorders, such as cerebral palsy and hemiplegia. Despite their clinical value, current 3D sensor-based gait analysis systems are expensive, intrusive, and often impractical for young subjects. To address this, we introduce a new dataset comprising over 1,100 high-frame-rate (60 FPS) video sequences from 110 subjects, accompanied by synchronized, anonymized pose sequences. In each session, the child performs a 5-second \"walk-around\" task, capturing the gait cycle from multiple viewpoints. Crucially, we demonstrate that current state-of-the-art approaches, including gait foundation models and Multimodal Large Language Models (MLLMs), fail to effectively resolve these clinical nuances. We identify the key technical challenges in analyzing these erratic and subtle motor patterns and describe a unified end-to-end framework for decoding fundamental components of pediatric gait. Through comprehensive experimental results, we demonstrate the potential of this dataset to drive novel research questions and establish a rigorous baseline for automated child gait assessment.",
+        "description_zh": "我们为人类动作识别引入了一个新的问题领域：从标准 RGB 视频中对儿童步态行为进行细粒度分析。我们专门针对 3-17 岁儿童的行走模式。这种行为在几种严重的发育和神经肌肉疾病（例如脑瘫和偏瘫）的诊断和治疗中自然出现。尽管具有临床价值，但当前基于 3D 传感器的步态分析系统价格昂贵、具有侵入性，而且对于年轻受试者来说往往不切实际。为了解决这个问题，我们引入了一个新的数据集，其中包含来自 110 名受试者的 1,100 多个高帧率 (60 FPS) 视频序列，并附有同步的匿名姿势序列。在每次训练中，孩子都会执行 5 秒的“走动”任务，从多个角度捕捉步态周期。至关重要的是，我们证明了当前最先进的方法，包括步态基础模型和多模态大语言模型（MLLM），无法有效解决这些临床细微差别。我们确定了分析这些不稳定和微妙的运动模式的关键技术挑战，并描述了一个统一的端到端框架来解码儿科步态的基本组成部分。通过全面的实验结果，我们证明了该数据集在推动新颖的研究问题并为自动儿童步态评估建立严格的基线方面的潜力。",
+        "authors": "Yifan Shen, Boyi Li, Meihuan Huang, Yuanzhe Liu, Xu Cao, Jinyang Jin, Zhengyuan Li, Anglin Liu, Junho Kim, Jingyuan Zhu, Lan Fangzhou, Jianguo Cao, Jintai Chen, Ismini Lourentzou, James Matthew Rehg",
+        "url": "https://huggingface.co/papers/2608.00371",
+        "score": 9,
         "meta": {
           "source": "huggingface",
-          "upvotes": "8",
-          "paperId": "2607.28802"
+          "upvotes": "9",
+          "paperId": "2608.00371"
         }
       },
       {
-        "id": "2607.29241",
-        "title": "RecHarness: A Bandit-Routed Agentic Harness for Self-Evolving Recommender Systems",
-        "title_zh": "RecHarness：用于自我进化推荐系统的强盗路由代理工具",
-        "description": "Optimizing modern recommender models still depends heavily on engineers manually iterating over architectural, objective, and training-strategy changes. While LLM-based agents can automate this trial-and-error process, allowing the LLM to both select modification directions and generate concrete hypotheses often leads to unstable search under limited experiment budgets. Inspired by the above challenge, we propose RecHarness, a Bandit-Routed Agentic Harness for automated recommender model optimization. RecHarness separates the optimization process into two steps: a bandit router selects the next modification direction according to historical validation feedback, while the LLM generates a concrete optimization hypothesis and executable code edit within the selected direction. To sustain long-horizon exploration, RecHarness uses a jump-basin mechanism to activate a structural-jump arm when local edits stagnate. Across multiple recommendation tasks, datasets, and model backbones, RecHarness achieves more stable performance improvements and uses limited trial budgets more effectively than LLM-reasoning search. During a 7-day online A/B test on a large-scale short-video advertising platform, the selected candidate improves ADVV by 2.084%, Revenue by 0.534%, and Exposure by 0.559%. Code is available at https://github.com/6lyc/RecHarness.",
-        "description_zh": "优化现代推荐模型仍然在很大程度上依赖于工程师手动迭代架构、目标和训练策略的变化。虽然基于 LLM 的代理可以自动执行此试错过程，但允许 LLM 选择修改方向并生成具体假设通常会导致在有限的实验预算下搜索不稳定。受上述挑战的启发，我们提出了 RecHarness，一种用于自动推荐模型优化的 Bandit-Route Agentic Harness。 RecHarness将优化过程分为两个步骤：强盗路由器根据历史验证反馈选择下一个修改方向，而LLM则生成具体的优化假设并在所选方向内进行可执行代码编辑。为了维持长期探索，RecHarness 使用跳盆机制在本地编辑停滞时激活结构跳臂。在多个推荐任务、数据集和模型主干中，RecHarness 实现了更稳定的性能改进，并且比 LLM 推理搜索更有效地利用有限的试验预算。在某大型短视频广告平台进行的为期7天的在线A/B测试中，所选候选广告的ADVV提高了2.084%，Revenue提高了0.534%，Exposure提高了0.559%。代码可在 https://github.com/6lyc/RecHarness 获取。",
-        "authors": "Haoran Ling, Yuecheng Li, Zeyu Song, Jing Yao, Shuwen Kang, Chi Lu, Wenjin Wu, Peng Jiang",
-        "url": "https://huggingface.co/papers/2607.29241",
-        "score": 7,
+        "id": "2608.01127",
+        "title": "MiniWorld: Democratizing the Training of Video World Models from Scratch",
+        "title_zh": "迷你世界：从头开始民主化视频世界模型的训练",
+        "description": "Video world models predict future observations conditioned on historical observations and control signals, enabling long-horizon generation through autoregressive state transitions. Unlike conventional video generation models that primarily capture visual appearance and motion, video world models learn the underlying dynamics governing environment evolution under agent actions, providing a foundation for embodied AI and interactive simulation. Recent progress has largely relied on adapting pretrained video generation models through post-training or distillation. Although effective, these approaches often require complex training pipelines, substantial computational resources, and suffer from the mismatch between bidirectional pretraining and causal streaming inference. Recent studies have shown that training autoregressive video world models from scratch is feasible and scalable. However, the community still lacks a lightweight, transparent, and fully reproducible baseline trainable end-to-end with modest computational resources. We present MiniWorld, a reproducible framework for training streaming video world models from scratch. MiniWorld employs a block-causal Video Diffusion Transformer trained with Flow Matching in the latent space of a pretrained Video VAE. Building on Diffusion Forcing, it adopts a chunk-wise non-decreasing noise schedule and two-stage continued training to improve temporal modeling and stability. During inference, MiniWorld combines a rolling KV cache with pipelined asynchronous denoising for efficient streaming generation under bounded computation. The entire model can be trained within several days on a single 8-GPU server. By releasing the training and inference codebase and pretrained checkpoints, we hope MiniWorld will facilitate future research on video world modeling.",
+        "description_zh": "视频世界模型根据历史观测和控制信号预测未来观测，从而通过自回归状态转换实现长视野生成。与主要捕获视觉外观和运动的传统视频生成模型不同，视频世界模型学习在代理动作下控制环境演化的底层动态，为具体人工智能和交互式模拟提供基础。最近的进展很大程度上依赖于通过后训练或蒸馏来调整预训练的视频生成模型。尽管有效，但这些方法通常需要复杂的训练管道、大量的计算资源，并且受到双向预训练和因果流推理之间不匹配的影响。最近的研究表明，从头开始训练自回归视频世界模型是可行且可扩展的。然而，社区仍然缺乏一个轻量级、透明且完全可重现的基线，可通过适度的计算资源进行端到端训练。我们提出了 MiniWorld，这是一个可重现的框架，用于从头开始训练流视频世界模型。 MiniWorld 采用了块因果视频扩散变压器，在预训练视频 VAE 的潜在空间中通过流匹配进行训练。它以扩散强迫为基础，采用分块非递减噪声计划和两阶段持续训练来提高时间建模和稳定性。在推理过程中，MiniWorld 将滚动 KV 缓存与流水线异步降噪相结合，以在有界计算下实现高效的流生成。整个模型可以在几天内在单个 8-GPU 服务器上进行训练。通过发布训练和推理代码库以及预训练检查点，我们希望 MiniWorld 能够促进未来视频世界建模的研究。",
+        "authors": "Yian Zhao, Ruochong Zheng, Hongcan Guo, Yu Yan, Jian Zhang, Jie Chen",
+        "url": "https://huggingface.co/papers/2608.01127",
+        "score": 9,
         "meta": {
           "source": "huggingface",
-          "upvotes": "7",
-          "paperId": "2607.29241"
+          "upvotes": "9",
+          "paperId": "2608.01127"
         }
       },
       {
-        "id": "2608.00486",
-        "title": "DreamTraj: Generating 6-DoF Object Trajectories by Reading Unrendered Video Diffusion Latents",
-        "title_zh": "DreamTraj：通过读取未渲染的视频扩散潜伏生成 6-DoF 对象轨迹",
-        "description": "Accurate prediction of object trajectories during manipulation is essential for closing the perception-action loop. Progress is limited on two fronts: available datasets lack fine-grained language-to-motion annotations, and existing predictors either rely on privileged inputs such as video, depth, or CAD models, or recover motion from fully generated videos through costly, error-prone perception pipelines. We close the supervision gap with the MOVE dataset, 5,038 object-centric egocentric trajectories, each paired with a fine-grained natural-language instruction rather than a coarse verb-noun label. We further propose DreamTraj, which predicts a 6-DoF object trajectory from a single RGB image and a task instruction, requiring no video, depth, or CAD model at inference: rather than generating a video, it reads motion from the internal representations of a frozen image-to-video diffusion model at an early denoising step. A lightweight flow-matching Reader decodes query-key attention tracks and pooled hidden states into relative 6-DoF poses. To our knowledge, this is the first approach to directly decode object 6-DoF trajectories from intermediate video diffusion representations rather than generated pixels. DreamTraj sets a new state of the art on both translation and rotation against forecasters that consume multi-frame or privileged inputs, and runs 4.6x faster than generate-then-extract pipelines.",
-        "description_zh": "在操纵过程中准确预测物体轨迹对于闭合感知-动作循环至关重要。进展受到两个方面的限制：可用数据集缺乏细粒度的语言到运动注释，现有的预测器要么依赖视频、深度或 CAD 模型等特权输入，要么通过昂贵且容易出错的感知管道从完全生成的视频中恢复运动。我们使用 MOVE 数据集缩小了监督差距，该数据集有 5,038 个以对象为中心的自我中心轨迹，每个轨迹都配有细粒度的自然语言指令，而不是粗略的动词-名词标签。我们进一步提出了 DreamTraj，它从单个 RGB 图像和任务指令预测 6-DoF 对象轨迹，推理时不需要视频、深度或 CAD 模型：它不是生成视频，而是在早期去噪步骤中从冻结图像到视频扩散模型的内部表示读取运动。轻量级流匹配读取器将查询关键注意力轨迹解码并将隐藏状态池化为相对的 6-DoF 姿势。据我们所知，这是第一种直接从中间视频扩散表示而不是生成的像素解码对象 6-DoF 轨迹的方法。 DreamTraj 在转换和旋转方面针对使用多帧或特权输入的预测器设定了新的技术水平，并且运行速度比生成然后提取管道快 4.6 倍。",
-        "authors": "Tongsheng Ding, Zhen Luo, Yixuan Yang, Boyu Wang, Luyang Xie, Jinyu Yang, Feng Zheng",
-        "url": "https://huggingface.co/papers/2608.00486",
-        "score": 12,
+        "id": "2608.03874",
+        "title": "ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?",
+        "title_zh": "ContinualSkillBench：LLM 代理能够真正发展他们的能力吗？",
+        "description": "Modern agent frameworks equip large language models with external skill libraries to solve complex tasks. However, it remains unclear whether these systems can effectively evolve their skills and whether the resulting skills improve task-solving capabilities. To bridge this gap, we introduce ContinualSkillBench, a dynamic evaluation framework for in-context continual skill learning. It covers five representative domains, each containing 100 interconnected subtasks ordered by increasing difficulty and opportunities for cross-task skill reuse. Our experiments show that sequential execution generally improves performance, but the gains vary substantially across models and domains. Moreover, in-context learning performs comparably to explicit skill maintenance on average, suggesting that much of the improvement arises from adaptation to prior context and feedback rather than reusable skill abstraction alone. Explicit skills nevertheless provide selective benefits for tasks requiring reusable procedures or precise outputs. We further find that less capable models tend to accumulate larger, more fragmented collections of task-specific skills. These findings show that current in-context skill evolution mechanisms can support continual adaptation, but still struggle to consistently consolidate experience into robust and transferable skills.",
+        "description_zh": "现代代理框架为大型语言模型配备了外部技能库来解决复杂的任务。然而，目前尚不清楚这些系统是否可以有效地发展其技能以及由此产生的技能是否可以提高任务解决能力。为了弥补这一差距，我们引入了ContinualSkillBench，这是一个用于情境持续技能学习的动态评估框架。它涵盖五个代表性领域，每个领域包含 100 个相互关联的子任务，这些子任务按照难度的增加和跨任务技能重用的机会进行排序。我们的实验表明，顺序执行通常��以提高性能，但不同模型和领域的收益差异很大。此外，平均而言，上下文学习的表现与显式技能维护相当，这表明大部分改进来自于对先前上下文和反馈的适应，而不仅仅是可重用的技能抽象。然而，显性技能为需要可重用程序或精确输出的任务提供了选择性的好处。我们进一步发现，能力较差的模型往往会积累更大、更分散的特定任务技能集合。这些发现表明，当前的情境技能进化机制可��支持持续适应，但仍难以持续地将经验巩固为强大且可转移的技能。",
+        "authors": "Tianyi Guan, Yiding Wang, Haotong Yang, Siyuan Cao, Shirui Liu, Yi Hu, Jiaqi Li, Muhan Zhang",
+        "url": "https://huggingface.co/papers/2608.03874",
+        "score": 11,
         "meta": {
           "source": "huggingface",
-          "upvotes": "12",
-          "paperId": "2608.00486"
-        }
-      },
-      {
-        "id": "2608.02585",
-        "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
-        "title_zh": "GradCuit：信用分配的梯度流可实现稳健且可解释的测试时潜在推理",
-        "description": "Optimization-based latent reasoning improves large language model outputs by optimizing instance-specific continuous states at test time while keeping model parameters frozen. Existing methods, however, typically connect these states to the reasoning trajectory through decoded tokens, making sequence-level credit assignment indirect and obscuring how latent updates shape subsequent reasoning. We introduce GradCuit (gradient through circuit), which inserts optimizable latent states at a selected Transformer layer between the hidden representations of the prompt and the generated continuation. Causal self-attention provides every continuation-token log-probability with a differentiable path to every preceding latent state through the remaining Transformer blocks, enabling reward-weighted gradients from the entire continuation to be assigned directly to the latents. Across five instruction-tuned backbones, three reasoning benchmarks, and two answer formats, GradCuit achieves an average accuracy of 64.5%, outperforming chain-of-thought prompting by 6.6 percentage points and the strongest competing method by 2.4 points. GradCuit also demonstrates greater robustness: across seven learning-rate settings, it consistently outperforms LatentSeek while reducing the standard deviation of accuracy from 1.53 to 0.82, and even its random-walk variant remains competitive with LatentSeek. For interpretability, token-level gradient attribution reveals that latent influence concentrates on reasoning-connector tokens, while layer analysis identifies early-to-middle Transformer layers as the most effective optimization space. By directly optimizing internal reasoning from outcome feedback, GradCuit opens a new axis of robust and interpretable test-time scaling, where LLMs adapt how they reason rather than merely regenerate, sample, or rerank outputs.",
-        "description_zh": "基于优化的潜在推理通过在测试时优化特定于实例的连续状态同时保持模型参数冻结来改进大型语言模型输出。然而，现有方法通常通过解码的标记将这些状态连接到推理轨迹，从而使序列级信用分配变得间接，并模糊了潜在更新如何塑造后续推理。我们引入了 GradCuit（通过电路的梯度），它在提示的隐藏表示和生成的延续之间的选定 Transformer 层插入可优化的潜在状态。因果自注意力为每个连续标记对数概率提供了通过剩余 Transformer 块到达每个先前潜在状态的可微路径，从而使整个连续的奖励加权梯度能够直接分配给潜在状态。在五个指令调整的主干、三个推理基准和两种答案格式中，GradCuit 的平均准确率达到 64.5%，比思想链提示高 6.6 个百分点，比最强竞争方法高 2.4 个百分点。 GradCuit 还表现出更高的稳健性：在七种学习率设置中，它始终优于 LatentSeek，同时将准确度的标准差从 1.53 降低到 0.82，甚至它的随机游走变体仍然与 LatentSeek 具有竞争力。为了可解释性，令牌级梯度归因揭示了潜在影响集中在推理连接器令牌上，而层分析将早期到中期的 Transformer 层识别为最有效的优化空间。通过直接优化结果反馈的内部推理，GradCuit 开辟了一个稳健且可解释的测试时间缩放的新轴，其中LLM可以调整他们的推理方式，而不仅仅是重新生成、采样或重新排序输出。",
-        "authors": "Zhaoxin Yu, Qi Shen, Hengli Li, Zhaowei Zhang, Song-Chun Zhu, Chi Zhang, Zilong Zheng",
-        "url": "https://huggingface.co/papers/2608.02585",
-        "score": 21,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "21",
-          "paperId": "2608.02585"
-        }
-      },
-      {
-        "id": "2607.27042",
-        "title": "GPTQ-2D: Cubic-Time Two-Sided Adaptive Rounding",
-        "title_zh": "GPTQ-2D：三次时间两侧自适应舍入",
-        "description": "Adaptive rounding methods such as GPTQ, or equivalently Babai's nearest plane algorithm, round a real matrix to integers under a quadratic metric. They process the entries in a fixed order, one at a time, propagating each rounding error to the entries not yet processed through a triangular feedback matrix. We study the two-sided version of this task, in which fixed nonsingular basis matrices act on both the left and the right of the residual; the familiar one-sided case is the special case of an identity right basis. Vectorizing the matrix turns the two-sided objective into a quadratic metric whose Gram matrix is a Kronecker product, so the one-dimensional algorithm applies verbatim, but takes quartic time in the matrix dimension. We present GPTQ-2D, which produces the identical rounded matrix in cubic time. It rounds the entries anti-diagonal by anti-diagonal; entries on the same anti-diagonal are independent and are rounded in parallel.",
-        "description_zh": "自适应舍入方法（例如 GPTQ 或等效的 Babai 的最近平面算法）将实数矩阵舍入为二次度量下的整数。它们以固定的顺序处理条目，一次一个，通过三角反馈矩阵将每个舍入误差传播到尚未处理的条目。我们研究该任务的双边版本，其中固定非奇异基矩阵作用于残差的左侧和右侧；我们所熟悉的片面案例是身份权基础的特例。向量化矩阵将两侧目标转换为二次度量，其 Gram 矩阵是 Kronecker 乘积，因此一维算法逐字应用，但在矩阵维度上需要四次时间。我们提出了 GPTQ-2D，它在立方时间内产生相同的舍入矩阵。它按反对角线对条目进行四舍五入；同一对角线上的条目是独立的并且平行舍入。",
-        "authors": "Jiale Chen, Torsten Hoefler, Dan Alistarh",
-        "url": "https://huggingface.co/papers/2607.27042",
-        "score": 18,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "18",
-          "paperId": "2607.27042"
+          "upvotes": "11",
+          "paperId": "2608.03874"
         }
       }
     ]
   },
   "x": {
     "source": "x",
-    "updatedAt": "2026-08-04T20:52:47.444Z",
+    "updatedAt": "2026-08-05T20:45:37.141Z",
     "count": 15,
     "mode": "follow-builders",
     "items": [
       {
-        "id": "2084312752437481937",
-        "title": "linking my main cua wow moments thread but this one is just about do we need captchas any…",
-        "title_zh": "链接我的主要 cua wow 时刻线程，但这一个只是关于我们是否需要验证码……",
-        "description": "linking my main cua wow moments thread https://t.co/VCXzCTAzRY but this one is just about do we need captchas anymore when clearly bots can clear them",
-        "description_zh": "链接我的主要 cua wow 时刻线程 https://t.co/VCXzCTAzRY 但这只是关于当机器人显然可以清除它们时我们是否还需要验证码",
+        "id": "2084832553895444570",
+        "title": "smol aha moment at @_chenglou’s @midjourney meetup today",
+        "title_zh": "今天在 @_ Chenglou 的 @midjourney 聚会上的 smol 啊哈时刻",
+        "description": "smol aha moment at @_chenglou’s @midjourney meetup today - one reason that ontologies and graph knowledge are finally trending now rather than 3 years ago is that “good enough” intelligence is finally too cheap to meter this is why talks l…",
+        "description_zh": "今天在 @_ Chenglou 的 @midjourney 聚会上，令人惊叹的时刻 - 本体论和图知识最终成为现在而不是 3 年前的趋势的原因之一是“足够好”的智能最终太便宜而无法计量，这就是为什么谈论 l...",
         "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2084312752437481937",
-        "score": 36.6,
+        "url": "https://x.com/swyx/status/2084832553895444570",
+        "score": 68.09,
         "meta": {
           "source": "x",
           "handle": "@swyx",
           "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
+          "likes": "23",
+          "retweets": "1",
+          "replies": "14",
+          "age": "18h ago",
+          "createdAt": "2026-08-05T02:43:09.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084738591109038187",
+        "title": "confirmation here",
+        "title_zh": "在这里确认",
+        "description": "confirmation here https://t.co/gTKw1zNLzd",
+        "description_zh": "此处确认 https://t.co/gTKw1zNLzd",
+        "authors": "Swyx",
+        "url": "https://x.com/swyx/status/2084738591109038187",
+        "score": 11.7,
+        "meta": {
+          "source": "x",
+          "handle": "@swyx",
+          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
+          "likes": "3",
+          "retweets": "0",
+          "replies": "0",
+          "age": "1d ago",
+          "createdAt": "2026-08-04T20:29:47.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084698630653641092",
+        "title": "yes",
+        "title_zh": "是的",
+        "description": "yes https://t.co/yWb8PQwaxS https://t.co/dQwnFxZxqO",
+        "description_zh": "是的 https://t.co/yWb8PQwaxS https://t.co/dQwnFxZxqO",
+        "authors": "Swyx",
+        "url": "https://x.com/swyx/status/2084698630653641092",
+        "score": 126.85,
+        "meta": {
+          "source": "x",
+          "handle": "@swyx",
+          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
+          "likes": "89",
+          "retweets": "2",
+          "replies": "17",
+          "age": "1d ago",
+          "createdAt": "2026-08-04T17:51:00.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084746170576892342",
+        "title": "Notebook is built for thinking, not toggling.",
+        "title_zh": "笔记本是为思考而设计的，而不是为了切换而设计的。",
+        "description": "Notebook is built for thinking, not toggling. While others add more modes, Notebook keeps everything in a single, unified prompt bar and just does the things you want. Ultra and Pro subscribers can jump in now, rolling out to everyone next…",
+        "description_zh": "笔记本是为思考而设计的，而不是为了切换而设计的。当其他人添加更多模式时，Notebook 将所有内容保留在一个统一的提示栏中，并且只做您想做的事情。 Ultra 和 Pro 订阅者现在就可以加入，接下来向所有人推出……",
+        "authors": "Josh Woodward",
+        "url": "https://x.com/joshwoodward/status/2084746170576892342",
+        "score": 431.24,
+        "meta": {
+          "source": "x",
+          "handle": "@joshwoodward",
+          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "likes": "341",
+          "retweets": "23",
+          "replies": "14",
+          "age": "1d ago",
+          "createdAt": "2026-08-04T20:59:54.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084698846609682675",
+        "title": "Nice use case!",
+        "title_zh": "很好的用例！",
+        "description": "Nice use case! https://t.co/EZlX8axJt0",
+        "description_zh": "很好的用例！ https://t.co/EZlX8axJt0",
+        "authors": "Josh Woodward",
+        "url": "https://x.com/joshwoodward/status/2084698846609682675",
+        "score": 194.05,
+        "meta": {
+          "source": "x",
+          "handle": "@joshwoodward",
+          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "likes": "145",
+          "retweets": "11",
+          "replies": "12",
+          "age": "1d ago",
+          "createdAt": "2026-08-04T17:51:51.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084859308165271658",
+        "title": "Better Cyber.",
+        "title_zh": "更好的网络。",
+        "description": "Better Cyber. Excited to welcome Halvar Flake to the team soon. https://t.co/5ZWQ6yydY4",
+        "description_zh": "更好的网络。很高兴欢迎 Halvar Flake 很快加入团队。 https://t.co/5ZWQ6yydY4",
+        "authors": "Thibault Sottiaux",
+        "url": "https://x.com/thsottiaux/status/2084859308165271658",
+        "score": 854.01,
+        "meta": {
+          "source": "x",
+          "handle": "@thsottiaux",
+          "bio": "Codex & ChatGPT @OpenAI",
+          "likes": "467",
+          "retweets": "16",
+          "replies": "228",
+          "age": "16h ago",
+          "createdAt": "2026-08-05T04:29:28.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084738022650892544",
+        "title": "What is my title at OpenAI",
+        "title_zh": "我在 OpenAI 的职位是什么",
+        "description": "What is my title at OpenAI",
+        "description_zh": "我在 OpenAI 的职位是什么",
+        "authors": "Thibault Sottiaux",
+        "url": "https://x.com/thsottiaux/status/2084738022650892544",
+        "score": 4049.6,
+        "meta": {
+          "source": "x",
+          "handle": "@thsottiaux",
+          "bio": "Codex & ChatGPT @OpenAI",
+          "likes": "1464",
+          "retweets": "27",
+          "replies": "1681",
+          "age": "1d ago",
+          "createdAt": "2026-08-04T20:27:31.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084855632029774167",
+        "title": "I think if you vibe code a SaaS these days it can just be a self-serve funnel into a more…",
+        "title_zh": "我认为，如果你现在编写 SaaS 代码，它可能只是一个自助服务渠道，可以提供更多……",
+        "description": "I think if you vibe code a SaaS these days it can just be a self-serve funnel into a more expensive services offering vs. trying to make alot of money with the SaaS itself. But the only thing about services is it feels like consulting and…",
+        "description_zh": "我认为，如果你现在编写 SaaS 代码，它可能只是一个进入更昂贵的服务产品的自助渠道，而不是试图通过 SaaS 本身赚很多钱。但关于服务的唯一一点是它感觉像是咨询和……",
+        "authors": "Peter Yang",
+        "url": "https://x.com/petergyang/status/2084855632029774167",
+        "score": 93.22,
+        "meta": {
+          "source": "x",
+          "handle": "@petergyang",
+          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
+          "likes": "49",
+          "retweets": "1",
+          "replies": "13",
+          "age": "17h ago",
+          "createdAt": "2026-08-05T04:14:52.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084849701351035182",
+        "title": "Hearing that GPT 5.6 Luna High is much cheaper and basically unlimited usage and I'm runn…",
+        "title_zh": "听说 GPT 5.6 Luna High 便宜得多，而且基本上可以无限使用，我就跑了……",
+        "description": "Hearing that GPT 5.6 Luna High is much cheaper and basically unlimited usage and I'm running low on Sol :P Can it do complex browser automation tasks? That's 50% of my Codex usage. https://t.co/v6nEn0z9Rc",
+        "description_zh": "听说 GPT 5.6 Luna High 更便宜，而且基本上可以无限使用，而且我的 Sol 资源不足：P 它可以执行复杂的浏览器自动化任务吗？这是我使用 Codex 的 50%。 https://t.co/v6nEn0z9Rc",
+        "authors": "Peter Yang",
+        "url": "https://x.com/petergyang/status/2084849701351035182",
+        "score": 116.41,
+        "meta": {
+          "source": "x",
+          "handle": "@petergyang",
+          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
+          "likes": "58",
+          "retweets": "3",
+          "replies": "19",
+          "age": "17h ago",
+          "createdAt": "2026-08-05T03:51:18.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084846191456751725",
+        "title": "Easier to make more money from @X payouts than from a micro SaaS these days",
+        "title_zh": "如今，通过 @X 支付比通过微型 SaaS 更容易赚到更多钱",
+        "description": "Easier to make more money from @X payouts than from a micro SaaS these days",
+        "description_zh": "如今，通过 @X 支付比通过微型 SaaS 更容易赚到更多钱",
+        "authors": "Peter Yang",
+        "url": "https://x.com/petergyang/status/2084846191456751725",
+        "score": 59.28,
+        "meta": {
+          "source": "x",
+          "handle": "@petergyang",
+          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
+          "likes": "25",
+          "retweets": "1",
+          "replies": "12",
+          "age": "17h ago",
+          "createdAt": "2026-08-05T03:37:21.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084800235474178138",
+        "title": "Old heads remember Will Smith eating noodles",
+        "title_zh": "老头脑记得威尔·史密斯吃面条",
+        "description": "Old heads remember Will Smith eating noodles https://t.co/ay1A5ahaEV",
+        "description_zh": "老头记得威尔·史密斯吃面条 https://t.co/ay1A5ahaEV",
+        "authors": "Nan Yu",
+        "url": "https://x.com/thenanyu/status/2084800235474178138",
+        "score": 23.52,
+        "meta": {
+          "source": "x",
+          "handle": "@thenanyu",
+          "bio": "head of product @linear",
           "likes": "11",
           "retweets": "0",
-          "replies": "4",
-          "age": "1d ago",
-          "createdAt": "2026-08-03T16:17:39.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084185368950456421",
-        "title": "lol what are we even doing here anymore guys",
-        "title_zh": "哈哈，伙计们，我们还在这里做什么呢？",
-        "description": "lol what are we even doing here anymore guys https://t.co/fqu3W2tMm4",
-        "description_zh": "哈哈，我们还在这里做什么呢，伙计们https://t.co/fqu3W2tMm4",
-        "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2084185368950456421",
-        "score": 1197.15,
-        "meta": {
-          "source": "x",
-          "handle": "@swyx",
-          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
-          "likes": "1094",
-          "retweets": "10",
-          "replies": "48",
-          "age": "2d ago",
-          "createdAt": "2026-08-03T07:51:28.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084506501834829833",
-        "title": "Some fine folks apparently misunderstood, but the GPT-5.6 Luna price reduction by 80% is…",
-        "title_zh": "一些好心人显然误解了，但 GPT-5.6 Luna 降价 80% 是……",
-        "description": "Some fine folks apparently misunderstood, but the GPT-5.6 Luna price reduction by 80% is not a temporary stunt, it's permanent. Efficiency gains don't go away. Fortunately. https://t.co/043ZF9T7gL",
-        "description_zh": "一些好心人显然误解了，但 GPT-5.6 Luna 降价 80% 并不是暂时的噱头，而是永久性的。效率提升不会消失。幸运的是。 https://t.co/043ZF9T7gL",
-        "authors": "Thibault Sottiaux",
-        "url": "https://x.com/thsottiaux/status/2084506501834829833",
-        "score": 3868.04,
-        "meta": {
-          "source": "x",
-          "handle": "@thsottiaux",
-          "bio": "Codex & ChatGPT @OpenAI",
-          "likes": "3100",
-          "retweets": "99",
-          "replies": "367",
-          "age": "16h ago",
-          "createdAt": "2026-08-04T05:07:32.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084483765158719542",
-        "title": "Given some of the results I'm seeing recently, it's pretty clear Codex is a good harness.",
-        "title_zh": "鉴于我最近看到的一些结果，很明显 Codex 是一个很好的工具。",
-        "description": "Given some of the results I'm seeing recently, it's pretty clear Codex is a good harness. But it will seem primitive in 2-3 months and we're about to go through another major evolution in how we use AI at the frontier. The next generation…",
-        "description_zh": "鉴于我最近看到的一些结果，很明显 Codex 是一个很好的工具。但 2 到 3 个月后，它就会显得很原始，我们即将在前沿使用人工智能的方式上经历另一次重大演变。下一代……",
-        "authors": "Thibault Sottiaux",
-        "url": "https://x.com/thsottiaux/status/2084483765158719542",
-        "score": 9971.41,
-        "meta": {
-          "source": "x",
-          "handle": "@thsottiaux",
-          "bio": "Codex & ChatGPT @OpenAI",
-          "likes": "7715",
-          "retweets": "278",
-          "replies": "1118",
-          "age": "17h ago",
-          "createdAt": "2026-08-04T03:37:12.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084196918071357707",
-        "title": "Crazy thing about OpenAI is you just open your laptop, codex a PR into existence and ship…",
-        "title_zh": "OpenAI 的疯狂之处在于，你只需打开你的笔记本电脑，将 PR 编入存在并发布......",
-        "description": "Crazy thing about OpenAI is you just open your laptop, codex a PR into existence and ship an improvement to 1B users. Just like that. https://t.co/YwjkNCN0Oa",
-        "description_zh": "OpenAI 的疯狂之处在于，你只需打开你的笔记本电脑，将 PR 编码成存在，然后将改进交付给 1B 用户。就这样。 https://t.co/YwjkNCN0Oa",
-        "authors": "Thibault Sottiaux",
-        "url": "https://x.com/thsottiaux/status/2084196918071357707",
-        "score": 5366.65,
-        "meta": {
-          "source": "x",
-          "handle": "@thsottiaux",
-          "bio": "Codex & ChatGPT @OpenAI",
-          "likes": "4091",
-          "retweets": "75",
-          "replies": "739",
-          "age": "2d ago",
-          "createdAt": "2026-08-03T08:37:22.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084438872944242932",
-        "title": "ChatGPT is for creating memories",
-        "title_zh": "ChatGPT是为了创造回忆",
-        "description": "ChatGPT is for creating memories https://t.co/EecVEq4iPP",
-        "description_zh": "ChatGPT 用于创造回忆 https://t.co/EecVEq4iPP",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2084438872944242932",
-        "score": 59.32,
-        "meta": {
-          "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
-          "likes": "37",
-          "retweets": "3",
-          "replies": "4",
+          "replies": "1",
           "age": "20h ago",
-          "createdAt": "2026-08-04T00:38:48.000Z",
+          "createdAt": "2026-08-05T00:34:44.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2084330985689428290",
-        "title": "For us, we just want open source to win at the end of the day.",
-        "title_zh": "For us, we just want open source to win at the end of the day.",
-        "description": "“For us, we just want open source to win at the end of the day. We want freedom to happen for people.” You can hear the passion for open source in this clip from my interview with @karan4d, @NousResearch co-founder: “We need to give this l…",
-        "description_zh": "“对我们来说，我们只是希望开源最终能够获胜。我们希望人们能够获得自由。”从我对 @karan4d（@NousResearch 联合创始人）的采访中，您可以在这段视频中听到对开源的热情：“我们需要给予这个……",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2084330985689428290",
-        "score": 57.98,
+        "id": "2084772618314428627",
+        "title": "The real ones remember",
+        "title_zh": "真正的人还记得",
+        "description": "The real ones remember https://t.co/uKcctkLFNK",
+        "description_zh": "真正的人记得 https://t.co/uKcctkLFNK",
+        "authors": "Nan Yu",
+        "url": "https://x.com/thenanyu/status/2084772618314428627",
+        "score": 15.7,
         "meta": {
           "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
-          "likes": "24",
-          "retweets": "2",
-          "replies": "4",
+          "handle": "@thenanyu",
+          "bio": "head of product @linear",
+          "likes": "6",
+          "retweets": "0",
+          "replies": "0",
+          "age": "22h ago",
+          "createdAt": "2026-08-04T22:45:00.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084809416105472070",
+        "title": "Ok builders, here’s your playbook.",
+        "title_zh": "好的建设者，这是你们的剧本。",
+        "description": "Ok builders, here’s your playbook. Prototype your product with the best frontier model. Cost be damned. Validate the user experience. Then, 6-8 weeks later when open-weight models catch up - move your production workloads there, and to sma…",
+        "description_zh": "好的建设者，这是你们的剧本。使用最佳前沿模型制作您的产品原型。成本该死。验证用户体验。然后，6-8 周后，当开放重量模型迎头赶上时 - 将您的生产工作负载转移到那里，并缩小……",
+        "authors": "Madhu Guru",
+        "url": "https://x.com/realmadhuguru/status/2084809416105472070",
+        "score": 46.96,
+        "meta": {
+          "source": "x",
+          "handle": "@realmadhuguru",
+          "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+          "likes": "17",
+          "retweets": "0",
+          "replies": "3",
+          "age": "20h ago",
+          "createdAt": "2026-08-05T01:11:13.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2084667443046502631",
+        "title": "The best model for early product validation is almost never the best model for production.",
+        "title_zh": "早期产品验证的最佳模型几乎从来都不是生产的最佳模型。",
+        "description": "The best model for early product validation is almost never the best model for production. Talked to a bunch of founders this weekend. There’s a standard playbook emerging : 1/ Prototype with the best frontier models. Max quality. Ignore c…",
+        "description_zh": "早期产品验证的最佳模型几乎从来都不是生产的最佳模型。这个周末与一群创始人进行了交谈。正在出现一个标准的剧本：1/具有最佳前沿模型的原型。最大质量。忽略c…",
+        "authors": "Madhu Guru",
+        "url": "https://x.com/realmadhuguru/status/2084667443046502631",
+        "score": 75.91,
+        "meta": {
+          "source": "x",
+          "handle": "@realmadhuguru",
+          "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+          "likes": "40",
+          "retweets": "1",
+          "replies": "6",
           "age": "1d ago",
-          "createdAt": "2026-08-03T17:30:06.000Z",
+          "createdAt": "2026-08-04T15:47:04.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2084289426012897433",
-        "title": "My 6 biggest takeaways from @karan4d, @NousResearch co-founder, on getting the most out o…",
-        "title_zh": "我从 @NousResearch 联合创始人 @karan4d 那里得到的 6 大收获，关于如何充分利用……",
-        "description": "My 6 biggest takeaways from @karan4d, @NousResearch co-founder, on getting the most out of Hermes Agent: 1. The “personal” in personal agent is not the model It’s the agent’s memory of your conversations and the skills you’ve built with it…",
-        "description_zh": "我从 @NousResearch 联合创始人 @karan4d 那里得到的关于充分利用 Hermes Agent 的 6 个最大收获： 1. 个人代理中的“个人”不是模型，而是代理对你的对话的记忆以及你用它建立的技能......",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2084289426012897433",
-        "score": 219.28,
-        "meta": {
-          "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
-          "likes": "138",
-          "retweets": "14",
-          "replies": "19",
-          "age": "1d ago",
-          "createdAt": "2026-08-03T14:44:58.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084519165021528263",
-        "title": "It's surprisingly difficult to acquire a hereditary peerage in the UK.",
-        "title_zh": "在英国获得世袭贵族头衔非常困难。",
-        "description": "It's surprisingly difficult to acquire a hereditary peerage in the UK. Like you can't even take one by force any more, and they just get mad at you if you try.",
-        "description_zh": "在英国获得世袭贵族头衔非常困难。就像你甚至不能再强行夺走一个，如果你尝试，他们只会生你的气。",
-        "authors": "Amanda Askell",
-        "url": "https://x.com/AmandaAskell/status/2084519165021528263",
-        "score": 138.71,
-        "meta": {
-          "source": "x",
-          "handle": "@AmandaAskell",
-          "bio": "Philosopher & ethicist trying to make AI be good @AnthropicAI. Personal account. All opinions c…",
-          "likes": "101",
-          "retweets": "2",
-          "replies": "9",
-          "age": "15h ago",
-          "createdAt": "2026-08-04T05:57:52.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084369056765989224",
-        "title": "I don't agree with this part.",
-        "title_zh": "我不同意这部分。",
-        "description": "I don't agree with this part. I think the takeaway should be that models (like humans) can behave in aligned ways while still causing harm, e.g. because they're given false information about their situation. There isn't a line between alig…",
-        "description_zh": "我不同意这部分。我认为要点应该是模型（像人类一样）可以以一致的方式行事，同时仍然造成伤害，例如因为他们得到的关于自己情况的虚假信息。对齐之间没有界限...",
-        "authors": "Amanda Askell",
-        "url": "https://x.com/AmandaAskell/status/2084369056765989224",
-        "score": 1267.5,
-        "meta": {
-          "source": "x",
-          "handle": "@AmandaAskell",
-          "bio": "Philosopher & ethicist trying to make AI be good @AnthropicAI. Personal account. All opinions c…",
-          "likes": "989",
-          "retweets": "61",
-          "replies": "91",
-          "age": "1d ago",
-          "createdAt": "2026-08-03T20:01:23.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084387305436164162",
-        "title": "do it here",
-        "title_zh": "在这里做",
-        "description": "do it here https://t.co/kMLP7kXtUm",
-        "description_zh": "在这里进行 https://t.co/kMLP7kXtUm",
-        "authors": "Thariq",
-        "url": "https://x.com/trq212/status/2084387305436164162",
-        "score": 48.6,
-        "meta": {
-          "source": "x",
-          "handle": "@trq212",
-          "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-          "likes": "25",
-          "retweets": "2",
-          "replies": "7",
-          "age": "1d ago",
-          "createdAt": "2026-08-03T21:13:54.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084387303959740449",
-        "title": "I think a lot of people don't realize- if you connect a Claude Connector (e.g.",
-        "title_zh": "我认为很多人没有意识到 - 如果您连接 Claude 连接器（例如",
-        "description": "I think a lot of people don't realize- if you connect a Claude Connector (e.g. your gmail, calendar, slack, etc), Claude Code will also be able to use them, including in Artifacts. https://t.co/FZ1iSHqL5m",
-        "description_zh": "我认为很多人没有意识到 - 如果您连接 Claude Connector（例如您的 gmail、日历、slack 等），Claude Code 也将能够使用它们，包括在 Artifacts 中。 https://t.co/FZ1iSHqL5m",
-        "authors": "Thariq",
-        "url": "https://x.com/trq212/status/2084387303959740449",
-        "score": 1403.75,
-        "meta": {
-          "source": "x",
-          "handle": "@trq212",
-          "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-          "likes": "1133",
-          "retweets": "32",
-          "replies": "125",
-          "age": "1d ago",
-          "createdAt": "2026-08-03T21:13:53.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084415670486499779",
-        "title": "We built a self-driving &amp; self-correcting shared semantic layer on top of our databas…",
-        "title_zh": "我们在数据库之上构建了一个自动驱动和自动纠正的共享语义层……",
-        "description": "We built a self-driving &amp; self-correcting shared semantic layer on top of our databases, conversations, and docs. Everything is queryable &amp; joinable—regardless of source! So now anyone at Replit can ask questions that previously ne…",
-        "description_zh": "我们在数据库、对话和文档之上构建了一个自动驱动和自动纠正的共享语义层。一切都是可查询和可连接的——无论来源如何！因此，现在 Replit 的任何人都可以提出以前不需要的问题……",
+        "id": "2084843512496034002",
+        "title": "One might say, the investigation was Bari’d.",
+        "title_zh": "有人可能会说，调查已经完成了。",
+        "description": "One might say, the investigation was Bari’d. https://t.co/YhdfHFSB2j",
+        "description_zh": "有人可能会说，调查已经完成了。 https://t.co/YhdfHFSB2j",
         "authors": "Amjad Masad",
-        "url": "https://x.com/amasad/status/2084415670486499779",
-        "score": 720.03,
+        "url": "https://x.com/amasad/status/2084843512496034002",
+        "score": 207.95,
         "meta": {
           "source": "x",
           "handle": "@amasad",
           "bio": "ceo @replit. civilizationist",
-          "likes": "550",
-          "retweets": "41",
-          "replies": "43",
-          "age": "22h ago",
-          "createdAt": "2026-08-03T23:06:37.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084445517678064092",
-        "title": "This is why P̵L̵G̵ ALG will always be king for startups.",
-        "title_zh": "这就是为什么 P̵L̵G̵ ALG 永远是初创公司的王者。",
-        "description": "This is why P̵L̵G̵ ALG will always be king for startups. Have p̵e̵o̵p̵l̵e̵ agents adopt your product first, then have the meetings, if needed. The companies that start with the meetings are likely not your ideal customers. https://t.co/2e6…",
-        "description_zh": "这就是为什么 P̵L̵G̵ ALG 永远是初创公司的王者。让 p̵e̵o̵p̵l̵e̵ 代理商首先采用您的产品，然后根据需要召开会议。开始会议的公司可能不是您理想的客户。 https://t.co/2e6…",
-        "authors": "Guillermo Rauch",
-        "url": "https://x.com/rauchg/status/2084445517678064092",
-        "score": 214.63,
-        "meta": {
-          "source": "x",
-          "handle": "@rauchg",
-          "bio": "@vercel CEO",
-          "likes": "152",
-          "retweets": "3",
-          "replies": "24",
-          "age": "20h ago",
-          "createdAt": "2026-08-04T01:05:13.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2084426730241220703",
-        "title": "The new AI Gateway logs UI is delightful",
-        "title_zh": "新的AI网关日志UI令人愉悦",
-        "description": "The new AI Gateway logs UI is delightful https://t.co/cpMCaVeTbj https://t.co/rwzkJdf0FW",
-        "description_zh": "新的 AI 网关日志 UI 令人愉悦 https://t.co/cpMCaVeTbj https://t.co/rwzkJdf0FW",
-        "authors": "Guillermo Rauch",
-        "url": "https://x.com/rauchg/status/2084426730241220703",
-        "score": 290.24,
-        "meta": {
-          "source": "x",
-          "handle": "@rauchg",
-          "bio": "@vercel CEO",
-          "likes": "230",
-          "retweets": "11",
-          "replies": "18",
-          "age": "21h ago",
-          "createdAt": "2026-08-03T23:50:33.000Z",
+          "likes": "168",
+          "retweets": "6",
+          "replies": "11",
+          "age": "17h ago",
+          "createdAt": "2026-08-05T03:26:42.000Z",
           "xSource": "follow-builders"
         }
       }
@@ -834,50 +798,165 @@
   },
   "reddit": {
     "source": "reddit",
-    "updatedAt": "2026-08-04T20:52:53.594Z",
+    "updatedAt": "2026-08-05T20:45:43.266Z",
     "count": 10,
     "mode": "report-highlights",
     "upstream": "liyedanpdx/reddit-ai-trends",
     "items": [
       {
-        "id": "1vevsv9",
-        "title": "More Qwen 3.8 sizes coming",
-        "title_zh": "Qwen 3.8系列新尺寸发布",
-        "description": "Qwen is being discussed as a new-model or release signal in r/LocalLLaMA, with attention on capability, accessibility, and where it fits in the current model landscape. It is drawing especially heavy discussion.",
-        "description_zh": "Qwen 正在 r/LocalLLaMA 中作为新模型或发布信号进行讨论，重点关注功能、可访问性以及它在当前模型环境中的位置。它引起了特别热烈的讨论。",
+        "id": "1vfl525",
+        "title": "Kimi K3 full model running on 16x GB10 cluster at 20+tps",
+        "title_zh": "Kimi K3全模型16节点集群部署",
+        "description": "Kimi K3 full model running on 16x GB10 cluster at 20+tps is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
+        "description_zh": "在 16x GB10 集群上以 20+tps 运行的 Kimi K3 完整模型正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它引起了特别热烈的讨论。",
         "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1vevsv9",
-        "score": 954,
+        "url": "https://www.reddit.com/comments/1vfl525",
+        "score": 1273,
         "meta": {
           "source": "reddit",
           "subreddit": "r/LocalLLaMA",
           "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "199",
-          "category": "Discussion",
-          "posted": "2026-08-04 01:05 UTC",
+          "comments": "263",
+          "category": "Resources",
+          "posted": "2026-08-04 19:56 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "high",
+          "summaryConfidence": "medium",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1vffbbw",
+        "title": "Ilya's SSI (Safe Super Intelligence) to release their fir ...",
+        "title_zh": "SSI首款安全框架泄露",
+        "description": "Ilya's SSI (Safe Super Intelligence) to release their fir is being discussed as a new-model or release signal in r/singularity, with attention on capability, accessibility, and where it fits in the current model landscape. It is drawing especially heavy discussion.",
+        "description_zh": "Ilya 的 SSI（安全超级智能）发布的 fir 正在被讨论为 r/singularity 中的新模型或发布信号，重点关注功能、可访问性以及它在当前模型环境中的适合位置。它引起了特别热烈的讨论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1vffbbw",
+        "score": 819,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "211",
+          "category": "AI",
+          "posted": "2026-08-04 16:29 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
           "topic": "release"
         }
       },
       {
-        "id": "1veqt03",
-        "title": "Only 3 days ago ...",
-        "title_zh": "就在 3 天前...",
-        "description": "Only 3 days ago ... is a high-engagement post in r/LocalLLaMA (category: Discussion, comments: 63).",
-        "description_zh": "仅 3 天前...是 r/LocalLLaMA 中的一篇高参与度帖子（类别：讨论，评论：63）。",
+        "id": "1vfj3q7",
+        "title": "Hugging Face CEO says China is winning the AI race and do ...",
+        "title_zh": "Hugging Face 首席执行官表示，中国正在赢得人工智能竞赛，并且...",
+        "description": "Hugging Face CEO says China is winning the AI race and do is being discussed as a policy, labor, or industry-impact topic in r/LocalLLaMA, reflecting broader concern about AI's real-world consequences. It is drawing especially heavy discussion.",
+        "description_zh": "Hugging Face 首席执行官表示，中国正在赢得人工智能竞赛，并且正在 r/LocalLLaMA 中将其作为政策、劳动力或行业影响主题进行讨论，这反映了人们对人工智能对现实世界后果的更广泛担忧。它引起了特别热烈的讨论。",
         "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1veqt03",
-        "score": 825,
+        "url": "https://www.reddit.com/comments/1vfj3q7",
+        "score": 808,
         "meta": {
           "source": "reddit",
           "subreddit": "r/LocalLLaMA",
           "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "63",
+          "comments": "161",
           "category": "Discussion",
-          "posted": "2026-08-03 21:37 UTC",
+          "posted": "2026-08-04 18:42 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "governance"
+        }
+      },
+      {
+        "id": "1vfa3tq",
+        "title": "SK hynix, In Collaboration With SanDisk, Unveils The New ...",
+        "title_zh": "SK 海力士与 SanDisk 合作，推出新...",
+        "description": "SK hynix, In Collaboration With SanDisk, Unveils The New is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is generating sustained community debate.",
+        "description_zh": "SK hynix 与 SanDisk 合作推出新产品，该新产品正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它正在引发持续的社区辩论。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1vfa3tq",
+        "score": 551,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "116",
+          "category": "Discussion",
+          "posted": "2026-08-04 13:17 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1vfnhoj",
+        "title": "AISI caught Mythos 5 trying to insert malicious code into ...",
+        "title_zh": "AISI 发现 Mythos 5 试图将恶意代码插入...",
+        "description": "AISI caught Mythos 5 trying to insert malicious code into is being discussed as a new-model or release signal in r/singularity, with attention on capability, accessibility, and where it fits in the current model landscape. It is generating sustained community debate.",
+        "description_zh": "AISI 发现 Mythos 5 试图将恶意代码插入正在讨论的 r/singularity 中作为新模型或发布信号，并关注功能、可访问性以及它在当前模型环境中的适合位置。它正在引发持续的社区辩论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1vfnhoj",
+        "score": 494,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "96",
+          "category": "AI",
+          "posted": "2026-08-04 21:23 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "release"
+        }
+      },
+      {
+        "id": "1vfirld",
+        "title": "Has anyone tried Mach-1 Additive? 95% of performance of Q ...",
+        "title_zh": "Mach-1 Additive量化方案",
+        "description": "Has anyone tried Mach-1 Additive? 95% of performance of Q is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is generating sustained community debate.",
+        "description_zh": "有人尝试过Mach-1 Additive吗？ Q 95% 的性能正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它正在引发持续的社区辩论。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1vfirld",
+        "score": 466,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "135",
+          "category": "New Model",
+          "posted": "2026-08-04 18:30 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1vfhhpq",
+        "title": "No more SLM open-source??",
+        "title_zh": "不再有 SLM 开源了吗？",
+        "description": "No more SLM open-source?? is a high-engagement post in r/LocalLLaMA (category: Discussion, comments: 110).",
+        "description_zh": "不再有 SLM 开源了吗？是 r/LocalLLaMA 中的高参与度帖子（类别：讨论，评论：110）。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1vfhhpq",
+        "score": 398,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "110",
+          "category": "Discussion",
+          "posted": "2026-08-04 17:45 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "table-fallback",
@@ -886,187 +965,72 @@
         }
       },
       {
-        "id": "1vehn87",
-        "title": "I CANNOT believe I've got DeepSeek-V4-Flash-0731, a fron ...",
-        "title_zh": "DeepSeek-V4-Flash-0731性能实测",
-        "description": "I CANNOT believe I've got DeepSeek-V4-Flash-0731, a fron is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
-        "description_zh": "我不敢相信我已经得到了 DeepSeek-V4-Flash-0731，这是 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论的一个 fron，重点关注量化、硬件限制或设置权衡。它引起了特别热烈的讨论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1vehn87",
-        "score": 765,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "494",
-          "category": "Discussion",
-          "posted": "2026-08-03 16:04 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "local-performance"
-        }
-      },
-      {
-        "id": "1veoeho",
-        "title": "The U.S. lead over China in AI is all but gone.",
-        "title_zh": "中美AI竞争格局剧变",
-        "description": "The U.S. lead over China in AI is all but gone. is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is drawing especially heavy discussion.",
-        "description_zh": "美国在人工智能领域对中国的领先地位几乎消失了。正在被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它引起了特别热烈的讨论。",
+        "id": "1vfp4yb",
+        "title": "WTF!",
+        "title_zh": "卧槽！",
+        "description": "WTF! is a high-engagement post in r/singularity (category: AI, comments: 122).",
+        "description_zh": "卧槽！是 r/singularity 中的高参与度帖子（类别：AI，评论：122）。",
         "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1veoeho",
-        "score": 655,
+        "url": "https://www.reddit.com/comments/1vfp4yb",
+        "score": 368,
         "meta": {
           "source": "reddit",
           "subreddit": "r/singularity",
           "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "241",
+          "comments": "122",
           "category": "AI",
-          "posted": "2026-08-03 20:07 UTC",
+          "posted": "2026-08-04 22:28 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
+          "summaryStrategy": "table-fallback",
+          "summaryConfidence": "low",
           "topic": "frontier-discussion"
         }
       },
       {
-        "id": "1veipya",
-        "title": "Emerging Insight",
-        "title_zh": "新兴洞察力",
-        "description": ": r/LocalLLaMA’s discussion on [Chinese lab differentiation](https://www.reddit.com/comments/1veipya) revealed specialized niches—e.g., DeepSeek for efficiency, Qwen for tooling—countering the \"monolithic China AI\" narrative. -- Conclusion : Today’s trends hi…",
-        "description_zh": "：r/LocalLLaMA 关于[中国实验室差异化](https://www.reddit.com/comments/1veipya) 的讨论揭示了专门的利基市场——例如，DeepSeek 注重效率，Qwen 注重工具——反驳了“中国人工智能整体化”的说法。 -- 结论：当今的趋势...",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1veipya",
-        "score": 646,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "115",
-          "category": "Discussion",
-          "posted": "2026-08-03 16:42 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-highlights",
-          "summaryStrategy": "trend-highlights",
-          "summaryConfidence": "high",
-          "topic": "trend-highlight"
-        }
-      },
-      {
-        "id": "1veslal",
-        "title": "Elon Musk: \\\"The next step is getting rid of \"source code ...",
-        "title_zh": "Elon Musk呼吁淘汰源代码",
-        "description": "Elon Musk: \\\"The next step is getting rid of \"source code is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is drawing especially heavy discussion.",
-        "description_zh": "埃隆·马斯克：“下一步是摆脱”源代码正在被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它引起了特别热烈的讨论。",
+        "id": "1vffle9",
+        "title": "AGI IN AUGUST?",
+        "title_zh": "八月份的 AGI？",
+        "description": "AGI IN AUGUST? is a high-engagement post in r/singularity (category: The Singularity is Near, comments: 226).",
+        "description_zh": "八月份的 AGI？是 r/singularity 中的一篇高参与度帖子（类别：奇点临近，评论：226）。",
         "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1veslal",
-        "score": 602,
+        "url": "https://www.reddit.com/comments/1vffle9",
+        "score": 333,
         "meta": {
           "source": "reddit",
           "subreddit": "r/singularity",
           "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "710",
-          "category": "AI",
-          "posted": "2026-08-03 22:48 UTC",
+          "comments": "226",
+          "category": "The Singularity is Near",
+          "posted": "2026-08-04 16:39 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
+          "summaryStrategy": "table-fallback",
+          "summaryConfidence": "low",
           "topic": "frontier-discussion"
         }
       },
       {
-        "id": "1vellf2",
-        "title": "Qwen3.8-Max matches Kimi K3 and DeepSeek V4 Flash",
-        "title_zh": "Qwen3.8-Max匹配Kimi K3和DeepSeek V4 Flash",
-        "description": "Qwen is being discussed as a new-model or release signal in r/LocalLLaMA, with attention on capability, accessibility, and where it fits in the current model landscape. It is generating sustained community debate.",
-        "description_zh": "Qwen 正在 r/LocalLLaMA 中作为新模型或发布信号进行讨论，重点关注功能、可访问性以及它在当前模型环境中的位置。它正在引发持续的社区辩论。",
+        "id": "1vfqqdb",
+        "title": "White House AI Guidelines Exempt U.S. Open Models Fr ...",
+        "title_zh": "中美AI监管政策分化",
+        "description": "White House AI Guidelines Exempt U.S. Open Models Fr is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is generating sustained community debate.",
+        "description_zh": "白宫人工智能指南豁免美国开放模型 Fr 正在 r/LocalLLaMA 中作为本地人工智能性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它正在引发持续的社区辩论。",
         "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1vellf2",
-        "score": 491,
+        "url": "https://www.reddit.com/comments/1vfqqdb",
+        "score": 261,
         "meta": {
           "source": "reddit",
           "subreddit": "r/LocalLLaMA",
           "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "86",
+          "comments": "92",
           "category": "News",
-          "posted": "2026-08-03 18:25 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "high",
-          "topic": "release"
-        }
-      },
-      {
-        "id": "1vef79c",
-        "title": "Quantization hurts knowledge nonlinearly - Qwen3.6 27B ca ...",
-        "title_zh": "量化对知识损失的非线性影响",
-        "description": "Qwen is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs.",
-        "description_zh": "Qwen 正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1vef79c",
-        "score": 328,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "75",
-          "category": "Other",
-          "posted": "2026-08-03 14:35 UTC",
+          "posted": "2026-08-04 23:35 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "title-synthesis",
           "summaryConfidence": "medium",
           "topic": "local-performance"
-        }
-      },
-      {
-        "id": "1veow4b",
-        "title": "FP8 quantization",
-        "title_zh": "FP8量化",
-        "description": ": Applied selectively to expert weights without accuracy loss. Why It Matters Now : This architecture decouples model size from inference cost—critical as MoEs hit scaling limits. Community tests ([discussion](https://www.reddit.com/comments/1veow4b)) confirm…",
-        "description_zh": "：有选择地应用于专家重量而不会损失准确性。为什么它现在很重要：这种架构将模型大小与推理成本分离——这在 MoE 达到扩展限制时至关重要。社区测试（[讨论](https://www.reddit.com/comments/1veow4b)）确认……",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1veow4b",
-        "score": 264,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "100",
-          "category": "Discussion",
-          "posted": "2026-08-03 20:25 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-highlights",
-          "summaryStrategy": "trend-highlights",
-          "summaryConfidence": "high",
-          "topic": "trend-highlight"
-        }
-      },
-      {
-        "id": "1vei12v",
-        "title": "It's time to desk reject papers that don't include code ...",
-        "title_zh": "机器学习论文需强制附带代码",
-        "description": "It's time to desk reject papers that don't include code is a high-engagement discussion in r/MachineLearning, drawing attention around current AI capabilities, tools, or adoption trends.",
-        "description_zh": "是时候拒绝不包含代码的论文了，这是 r/MachineLearning 中的一个高参与度讨论，引起了人们对当前人工智能功能、工具或采用趋势的关注。",
-        "authors": "r/MachineLearning",
-        "url": "https://www.reddit.com/comments/1vei12v",
-        "score": 208,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/MachineLearning",
-          "subredditUrl": "https://www.reddit.com/r/MachineLearning",
-          "comments": "47",
-          "category": "Discussion",
-          "posted": "2026-08-03 16:17 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "generic"
         }
       }
     ]
