@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-07T00:37:30.164Z",
+  "updatedAt": "2026-08-07T00:48:43.739Z",
   "count": 15,
   "items": [
     {
@@ -38,7 +38,7 @@
       "title": "What AI Red-Team Evaluations Can and Cannot Prove",
       "title_zh": "AI 红队评估可以证明什么，不能证明什么",
       "description": "Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move belief under a fixed testing budget, derive it in closed form for the benchmark null result, and use it to locate that boundary exactly. We find that above a calculable harm rate, a benchmark of modest size certifies a category to a stated evidentiary standard, and a clean sheet is then the stronger of the two possible observations, outweighing a single reproduced failure. Below that rate, no passive benchmark of feasible size provides the specified evidence of safety under the fixed scoring rule and approximately independent trial structure. The crossing between the two regimes has a closed form. The bound is not specific to benchmarks: written in terms of a procedure's hypothesis conditioned elicitation rates, it covers adaptive and automated red teaming as well, and shows that discrimination between the hypotheses rather than attack success is what determines evidential worth. Auditing eight evaluation suites against the boundary, we find that current benchmarks are adequate for high-frequency harm categories and several orders of magnitude short for rare, catastrophic ones. Safety benchmarks are not uninformative. They are informative about a specific and computable set of propositions, and the discipline they need is to state which.",
-      "description_zh": "红队对人工智能模型的评估支持某些主张，但不支持其他主张，两者之间的界限是可以计算的，而不仅仅是判断问题。我们将评估的证据上限定义为一个结果可以在固定测试预算下改变信念的最大因素，以封闭形式导出基准零结果，并使用它来准确定位该边界。我们发现，在可计算的危害率之上，适度规模的基准可以证明某个类别符合规定的证据标准，而干净的表是两种可能的观察结果中更强的，超过了单个再现的失败。低于该比率，���固定评分规则和近似独立的试验结构下，没有可行规模的被动基准可以提供指定的安全性证据。两种制度之间的交叉具有封闭形式。该界限并不特定于基准：根据程序的假设条件引出率编写，它还涵盖自适应和自动红队，并表明假设之间的区分而不是攻击成功才是决定证据价值的因素。根据边界审核八个评估套件，我们发现当前的基准足以应对高频危害类别，但对于罕见的灾难性危害类别来说还差几个数量级。安全基准并非没有信息。它们提供了一组特定且可计算的命题的信息，而它们需要的规则是陈述哪些命题。",
+      "description_zh": "红队对人工智能模型的评估支持某些主张，但不支持其他主张，两者之间的界限是可以计算的，而不仅仅是判断问题。我们将评估的证据上限定义为一个结果可以在固定测试预算下改变信念的最大因素，以封闭形式导出基准零结果，并使用它来准确定位该边界。我们发现，在可计算的危害率之上，适度规模的基准可以证明某个类别符合规定的证据标准，而干净的表是两种可能的观察结果中更强的，超过了单个再现的失败。低于该比率，在固定评分规则和近似独立的试验结构下，没有可行规模的被动基准可以提供指定的安全性证据。两种制度之间的交叉具有封闭形式。该界限并不特定于基准：根据程序的假设条件引出率编写，它还涵盖自适应和自动红队，并表明假设之间的区分而不是攻击成功才是决定证据价值的因素。根据边界审核八个评估套件，我们发现当前的基准足以应对高频危害类别，但对于罕见的灾难性危害类别来说还差几个数量级。安全基准并非没有信息。它们提供了一组特定且可计算的命题的信息，而它们需要的规则是陈述哪些命题。",
       "authors": "Bandana Kaur",
       "url": "https://huggingface.co/papers/2607.21735",
       "score": 0,
@@ -98,7 +98,7 @@
       "title": "DRIFT: Derailing Denoising Trajectories of Flow-Matching VLAs with Adversarial Patch Attack",
       "title_zh": "DRIFT：利用对抗性补丁攻击破坏流量匹配 VLA 的去噪轨迹",
       "description": "Flow-matching vision-language-action (VLA) models such as pi0 generate robot actions by integrating a learned denoising velocity field, and have been reported to resist adversarial perturbations that readily fool autoregressive VLAs. We show that this robustness is largely illusory: it stems from prior attacks ignoring the multi-step denoising ODE. We introduce DRIFT (Denoising Redirection via Input perturbation of the Flow-matching Trajectory), a test-time universal adversarial patch placed on the robot's gripper that attacks the denoising velocity field of an off-the-shelf policy. Our central finding is counterintuitive: attacking only the first denoising step is both stronger and cheaper than attacking a wider window of steps, which we explain through a gradient conflict unique to input-space optimization and which is exactly opposite to the training-time backdoor regime. On pi0 and pi0.5 across four LIBERO suites, DRIFT breaks essentially all originally-solvable tasks with a small single patch, far exceeding action- and embedding-space attack baselines.",
-      "description_zh": "诸如 pi0 之类的流匹配视觉语言动作 (VLA) 模型通过集成学习的去噪速度场来生成机器人动作，并且据报道可以抵抗容易欺骗自回归 VLA 的对抗性扰动。我们证明这种鲁棒性很大程度上是虚幻的：它源于先前的攻击忽略了多步去噪 ODE。我们引入了 DRIFT（通过流匹配轨迹的输入扰动进行去噪重定向），这是一个放置在机器人抓手上的测试时通用对抗补丁，用于攻击现成策略的去噪速度场。我们的中心发现是违反直觉的：仅攻击第一个去噪步骤比攻击更宽的步骤窗口更强大且更便宜，我们通过输入空间优化特有的梯度冲突来解释这一点，这与训练时后门机制完全相反。在四个 LIBERO 套件的 pi0 和 pi0.5 上，DRIFT 通过一个小补丁基本上破坏了所有最初可解决的任务，远远超过了动作和嵌入空间攻击基线。",
+      "description_zh": "诸如 pi0 之类的流匹配视觉语言动作 (VLA) 模型通过集成学习的去噪速度场来生成机器人动作，并且据报道可以抵抗容易欺骗自回归 VLA 的对抗性扰动。我们证明这种鲁棒性很大程度上是虚幻的：它源于先前的攻击忽略了多步去噪 ODE。我们引入了 DRIFT（通过流匹配轨迹的输入扰动进行去噪重定向），这是一个放置在机器人抓手上的测试时通用对抗补丁，用于攻击现成策略的去噪速度场。我们的中心发现是违反直觉的：仅攻击第一个去噪步骤比攻击更宽的步骤窗口更强大且���便宜，我们通过输入空间优化特有的梯度冲突来解释这一点，这与训练时后门机制完全相反。在四个 LIBERO 套件的 pi0 和 pi0.5 上，DRIFT 通过一个小补丁基本上破坏了所有最初可解决的任务，远远超过了动作和嵌入空间攻击基线。",
       "authors": "Hoseong Tae, Jong-Seok Lee",
       "url": "https://huggingface.co/papers/2608.03207",
       "score": 2,
@@ -131,10 +131,10 @@
       "description_zh": "长视野搜索代理必须执行多个连续操作（步骤）来搜索、检索、验证和整合证据以得出最终答案。然而，训练这些智能体的现有方法通常在监督微调（SFT）和强化学习（RL）期间统一处理轨迹内的所有步骤，无法区分有用的动作与错误或冗余的动作。在本文中，我们提出了答案回溯信用分配（ABC），这是一种细粒度的信用分配框架，用于通过将稀疏轨迹级结果转换为密集的步骤级监督来训练长范围搜索代理，奖励有用的行动（即使在失败的轨迹中），同时抑制错误或冗余的行动。具体来说，给定一个可能晦涩难懂的查询及其相应的真实答案，ABC 首先执行答案回溯线索恢复，从答案中回溯以恢复解决问题所需的中间线索。然后，它应用线索锚定步骤评分来根据这些线索评估每个搜索步骤，将稀疏的二元结果监督转换为密集的步骤级奖励。基于这些奖励，我们开发了 ABC-SFT，它重新加权每轮的损失，以及 ABC-GRPO，它使用步骤级别的分数作为 GRPO 中的奖励。在此框架的基础上，我们仅用 8.5k 个示例来基于 Qwen3.5-4B 训练 ABSeeker。 ABSeeker 在 BrowseComp 上获得 37.3%，在 BrowseComp-ZH 上获得 39.1%。通过上下文管理，分数进一步分别提高到 55.3% 和 52.9%，显着优于同规模（4B）代理，甚至与较大代理（大约 30B）的性能相当。这些结果证明了答案回溯步骤级信用分配对于训练长视野搜索代理的有效性。",
       "authors": "Yijun Lu, Rui Ye, Jiajun Wang, Yuwen Du, Tian Jin, Songhua Liu, Siheng Chen",
       "url": "https://huggingface.co/papers/2608.05102",
-      "score": 54,
+      "score": 55,
       "meta": {
         "source": "huggingface",
-        "upvotes": "54",
+        "upvotes": "55",
         "paperId": "2608.05102"
       }
     },
@@ -143,7 +143,7 @@
       "title": "FocusMem: Factorizing Content, Readout, and Trust in Latent GUI Memory",
       "title_zh": "FocusMem：分解内容、读出和对潜在 GUI 内存的信任",
       "description": "GUI agents must remember both useful experience from earlier tasks and unfinished progress in the current interaction. Latent memory offers a compact solution by compressing multimodal trajectories into a few continuous tokens. Existing methods, however, usually map each trajectory to one fixed memory block and train it mainly through next-action supervision. This creates three practical problems: important details may be lost during compression, the same memory block must serve different decision stages, and irrelevant retrieved trajectories may still mislead the agent. We introduce FocusMem, which separates these responsibilities within a compact latent-memory interface. A role-aware content basis encourages episodic memory to retain reusable experience and working memory to retain task progress. A state-conditioned readout generates a decision-specific view of the same stored evidence, while a lightweight trust gate can suppress memory blocks that appear irrelevant to the current step. All components are trained while the GUI policy remains frozen. Across five GUI-agent benchmarks, FocusMem consistently outperforms a fully matched action-only fixed-memory baseline and prior latent memory adaptations. Further analysis shows that semantic and functional supervision preserve complementary information, state-conditioned readout is more robust as surrounding trajectory context grows, and the trust gate reduces the harm caused by injected irrelevant episodic evidence. These results show that effective latent memory depends not only on compressing past interaction, but also on what is retained, what is exposed, and what is allowed.",
-      "description_zh": "GUI 代理必须记住早期任务的有用经验和当前交互中未完成的进度。潜在记忆通过将多模态轨迹压缩为几个连续的标记来提供紧凑的解决方案。然而，现有的方法通常将每个轨迹映射到一个固定的内存块，并主要通过下一动作监督来训练它。这产生了三个实际问题：在压缩过程中可能会丢失重要的细节，相同的内存块必须服务于不同的决策阶段，并且不相关的检索轨迹仍然可能会误导代理。我们引入了 FocusMem，它将这些职责分离到一个紧凑的潜在内存接口中。角色感知的内容基础鼓励情景记忆来保留可重用的经验和工作记忆来保留任务进度。状态条件读出生成相同存储证据的特定于决策的视图，而轻量级信任门可以抑制与当前步骤无关的内存块。所有组件都经过训练，而 GUI 策略保持冻结状态。在五个 GUI 代理基准测试中，FocusMem 始终优于完全匹配的仅动作固定内存基准和先前的潜在内存适应。进一步的分析表明，语义和功能监督保留了补充信息，随着周围轨迹上下文的增长，状态条件读出更加稳健，并且信任门减少了注入不相关的情景证据造成的危害。这些结果表明，有效的潜在记忆不仅取决于压缩过去的互动，还取决于保留什么、暴露什么以及允许什么。",
+      "description_zh": "GUI 代理必须记住早期任务的有用经验和当前交互中未完成的进度。潜在记忆通过将多模态轨迹压缩为几个连续的标记来提供紧凑的解决方案。然而，现有的方法通常将每个轨迹映射到一个固定的内存块，并主要通过下一动作监督来训练它。这产生了三个实际问题：在压缩过程中可能会丢失重要的细节，相同的内存块必须服务于不同的决策阶段，并且不相关的检索轨迹仍然可能会误导代理。我们引入了 FocusMem，它将这些职责分离到一个紧凑的潜在内存接口中。角色感知的内容基础鼓励情景记忆来保留可重复使用的经验和工作记忆来保留任务进度。状态条件读出生成相同存储证据的特定于决策的视图，而轻量级信任门可以抑制与当前步骤无关的内存块。所有组件都经过训练，而 GUI 策略保持冻结状态。在五个 GUI 代理基准测试中，FocusMem 始终优于完全匹配的仅动作固定内存基准和先前的潜在内存适应。进一步的分析表明，语义和功能监督保留了补充信息，随着周围轨迹上下文的增长，状态条件读出更加稳健，并且信任门减少了注入不相关的情景证据造成的危害。这些结果表明，有效的潜在记忆不仅取决于压缩过去的互动，还取决于保留什么、暴露什么以及允许什么。",
       "authors": "Zhuoran Zhang, Bowen Li, Jingcheng Ju, Yang Shi, Qixun Wang, Haotian Wang, Wei Chen, Tengjiao Wang",
       "url": "https://huggingface.co/papers/2608.04530",
       "score": 10,
@@ -186,7 +186,7 @@
     {
       "id": "2608.05108",
       "title": "Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming",
-      "title_zh": "特工对抗特工：自动提示注射红队的特工系统",
+      "title_zh": "特工对特工：自动提示注射红队的特工系统",
       "description": "Prompt injection poses significant security risks to LLM agents. Efficient and effective red-teaming is therefore critical, both for evaluating these risks and for collecting training data to improve defenses. Existing state-of-the-art prompt injection red-teaming methods primarily rely on reinforcement learning (RL), producing attacker models that often generalize poorly to new target LLMs. In this work, we develop PIMiner, an agentic system for prompt injection red-teaming. During training, PIMiner is trained on a sequence of (dataset, target model) pairs and builds a strategy library from scratch. At test time, the learned strategy library can be directly transferred to a previously unseen target LLM without additional training. PIMiner requires only a small number of queries to a target agent (e.g., 10) per test sample. Experimental results demonstrate that PIMiner achieves strong performance. On IPIArena, it attains a 76.2% ASR against Gemini-2.5-Pro, 61.9% ASR against GPT-5.1, and 42.9% ASR against Claude-Sonnet-4.5. On AgentDojo, it achieves an 86.7% ASR against Gemini-2.5-Pro, 53.3% ASR against GPT-5.1, and 40.0% ASR against Claude-Sonnet-4.5.",
       "description_zh": "即时注入给 LLM 代理带来重大安全风险。因此，高效且有效的红队对于评估这些风险和收集训练数据以改善防御至关重要。现有最先进的提示注入红队方法主要依赖于强化学习（RL），产生的攻击者模型通常很难推广到新的目标LLM。在这项工作中，我们开发了 PIMiner，一个用于快速注入红队的代理系统。在训练期间，PIMiner 接受一系列（数据集、目标模型）对的训练，并从头开始构建策略库。在测试时，学习到的策略库可以直接转移到以前未见过的目标LLM，无需额外的训练。每个测试样本 PIMiner 只需要对目标代理进行少量查询（例如 10 次）。实验结果表明 PIMiner 具有很强的性能。在 IPIArena 上，它对 Gemini-2.5-Pro 的 ASR 为 76.2%，对 GPT-5.1 的 ASR 为 61.9%，对 Claude-Sonnet-4.5 的 ASR 为 42.9%。在 AgentDojo 上，它对 Gemini-2.5-Pro 的 ASR 达到 86.7%，对 GPT-5.1 的 ASR 达到 53.3%，对 Claude-Sonnet-4.5 的 ASR 达到 40.0%。",
       "authors": "Yanting Wang, Chenlong Yin, Runpeng Geng, Jinyuan Jia",
