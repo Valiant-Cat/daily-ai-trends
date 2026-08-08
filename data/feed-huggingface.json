@@ -1,8 +1,53 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-07T20:18:22.993Z",
+  "updatedAt": "2026-08-08T19:58:46.735Z",
   "count": 15,
   "items": [
+    {
+      "id": "2608.01492",
+      "title": "GaussianSelector: Lightweight Human-Guided Object Selection in 3D Gaussian Splatting with Graph Optimization",
+      "title_zh": "GaussianSelector：通过图形优化进行 3D 高斯泼溅中的轻量级人工引导对象选择",
+      "description": "Selecting a complete 3D object from a reconstructed scene with minimal user effort is essential for practical scene editing and embodied interaction. Existing 3DGS-based methods either retrain the Gaussian representation to embed per-object labels, or build dense multi-view SAM observations, both requiring heavy computation and dense viewpoint coverage that is rarely available in practice. We present GaussianSelector, a training-free framework for interactive 3D object selection from sparse views and sparse scribble guidance. Operating directly on native Gaussian primitives, we coarsen dense Gaussians into geometrically coherent superpoints and construct a continuity-weighted graph using appearance and spatial cues. Sparse user scribbles are lifted into 3D via visibility-aware transmittance coverage, and selection is solved as a global graph-cut energy minimization that propagates sparse evidence to a complete 3D object. This design naturally supports multi-round refinement, where users iteratively correct the selection from additional viewpoints to progressively improve the result. Experiments demonstrate that GaussianSelector achieves competitive selection quality against state-of-the-art multi-view SAM-based methods, while requiring significantly fewer interaction views and substantially lower computational overhead. These properties make it well suited for human-in-the-loop 3D scene editing and 3D asset extraction in real-world deployment scenarios.",
+      "description_zh": "以最少的用户努力从重建场景中选择完整的 3D 对象对于实际场景编辑和具体交互至关重要。现有的基于 3DGS 的方法要么重新训练高斯表示以嵌入每个对象的标签，要么构建密集的多视图 SAM 观测，两者都需要大量计算和密集的视点覆盖，而这在实践中很少可用。我们提出了 GaussianSelector，这是一个免训练框架，用于从稀疏视图和稀疏涂鸦指导中选择交互式 3D 对象。直接对原生高斯基元进行操作，我们将密集高斯粗化为几何相干的超点，并使用外观和空间线索构建连续性加权图。通过可见性感知的透射率覆盖范围，稀疏的用户涂鸦被提升为 3D，并且选择被解决为全局图切割能量最小化，将稀疏证据传播到完整的 3D 对象。这种设计自然支持多轮细化，用户可以从其他角度迭代地纠正选择，以逐步改进结果。实验表明，与最先进的基于 SAM 的多视图方法相比，GaussianSelector 实现了有竞争力的选择质量，同时需要显着减少的交互视图和显着降低的计算开销。这些属性使其非常适合现实部署场景中的人机交互 3D 场景编辑和 3D 资产提取。",
+      "authors": "Baihan Yang, Tiexin Li, Yuheng Liu, Xin Lin, Xinke Li, Xiaohui Xie, Truong Nguyen",
+      "url": "https://huggingface.co/papers/2608.01492",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2608.01492"
+      }
+    },
+    {
+      "id": "2608.01851",
+      "title": "Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills",
+      "title_zh": "重量还是技能？机器人学习技术调查：从动作预测权重到编写自己技能的机器人",
+      "description": "Robot learning is splitting into two bets: policies that bake competence into frozen weights (vision-language-action, or VLA, models), and agents that write and refine their own executable skills as code. This survey organises the field around that axis of weights versus skills. Its central analytical contribution is a deep-dive that arranges code-as-policy methods by their degree of self-improvement, from zero-shot program synthesis, through closed-loop self-repair and persistent skill memory, to the sparsely populated cell in which execution feedback, skill memory, and evolutionary search combine into one open-ended loop; only a few very recent systems (for example ASPIRE, ENPIRE, and RoboClaw) occupy that cell. We map the complementary \"skills\" pole, from unsupervised reinforcement-learning skill discovery to large-language-model skill libraries, and show that the word \"skill\" is used in at least five distinct senses, of which only the code sense self-improves without gradient updates. We then connect the taxonomy to the emerging skill economy: commercial robot-skill marketplaces now distribute one-tap skills across robots but ship only static playback, which surfaces open problems of adaptation, cross-embodiment portability, provenance, safety verification, composition, and standardisation. This is a deliberately focused survey. Rather than cataloguing the field exhaustively, it examines 77 representative systems across six technique families through one taxonomy and a set of contrast tables, and it supplies operational definitions of the self-improvement mechanisms together with a statement of what each family cannot do.",
+      "description_zh": "机器人学习分为两个赌注：将能力融入冻结权重（视觉-语言-动作，或 VLA，模型）的策略，以及将自己的可执行技能编写和完善为代码的代理。这项调查围绕权重与技能的轴来组织该领域。其核心分析贡献是深入研究，根据自我改进的程度来安排代码即策略方法，从零样本程序合成，通过闭环自我修复和持久技能记忆，到执行反馈、技能记忆和进化搜索结合成一个开放式循环的稀疏单元；只有少数最近的系统（例如 ASPIRE、ENPIRE 和 RoboClaw）���据了该单元。我们绘制了互补的“技能”极点，从无监督强化学习技能发现到大型语言模型技能库，并表明“技能”一词至少有五种不同的含义，其中只有代码含义在没有梯度更新的情况下自我改进。然后，我们将分类法与新兴的技能经济联系起来：商业机器人技能市场现在在机器人之间分配一键式技能，但仅提供静态播放，这暴露了适应性、跨实体可移植性、出处、安全验证、组合和标准化等开放性问题。这是一项有针对性的调查。它没有详尽地对该领域进行编目，而是通过一个分类法和一组对比表检查了六个技术家族的 77 个代表性系统，并提供了自我改进机制的操作定义以及每个家族不能做什么的声明。",
+      "authors": "Gaytri Jena, Kapil Wanaskar, Vinija Jain, Aman Chadha, Vasu Sharma, Amitava Das",
+      "url": "https://huggingface.co/papers/2608.01851",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2608.01851"
+      }
+    },
+    {
+      "id": "2608.01049",
+      "title": "FactorJEPA: Factorizing Monolithic Futures into Layout-Agent-Interaction Channels for Crowded and Chaotic Global South Urban Worlds",
+      "title_zh": "FactorJEPA：将整体未来分解为拥挤和混乱的全球南方城市世界的布局代理交互渠道",
+      "description": "World models have attracted significant attention for their ability to capture and predict the structure and dynamics of the physical world. In this emerging landscape, Joint Embedding Predictive Architectures (JEPA) offer a particularly compelling direction.\n  We study a largely unexplored regime: populous, crowded, and chaotic Global South urban environments, which we call DENSEWORLD. Unlike the lower-density, lane-structured settings that dominate existing evaluations, these scenes exhibit soft spatial boundaries, extreme agent heterogeneity, persistent occlusion, and rapid social negotiation under mixed traffic. We introduce the first large-scale dataset for this regime: 1,000 hours of drive-through, walk-through, and aerial video across 22 cities. Existing JEPA formulations struggle to preserve dense interaction dynamics under heterogeneity and partial observability.\n  We introduce FactorJEPA, which makes world structure a first-class predictive primitive. Rather than encoding the future in a monolithic latent, it composes layout, entities, and interactions, using a visibility gate and separated subspaces to preserve partially observed agents and discourage cross-factor shortcuts. FactorJEPA improves (i) future-latent accuracy (Future-frame L1), (ii) intervention-sensitive prediction (Causal L1), and (iii) robustness to reduced visual evidence (Mask-ratio slope), while exposing (iv) a reproducible motion-information trade-off (Motion cosine). Method rankings replicate across 2B and 1B V-JEPA 2.1 backbones, with rho = 0.895 to 0.978.\n  We publicly release the DENSEWORLD-115k dataset (https://huggingface.co/datasets/anonymousML123/denseworld-115k) and the surgery-trained FactorJEPA checkpoints (https://huggingface.co/datasets/anonymousML123/factorjepa-outputs/tree/main/outputs/full/vjepa_2_1_vitg_1B/train/m09c_surgery_3stage_DI_diheavy_encoder).",
+      "description_zh": "世界模型因其捕捉和预测物理世界的结构和动态的能力而引起了极大的关注。在这个新兴领域，联合嵌入预测架构（JEPA）提供了一个特别引人注目的方向。\n  我们研究了一个很大程度上未经探索的政权：人口稠密、拥挤且混乱的全球南方城市环境，我们称之为密集世界。与主导现有评估的低密度、车道结构设置不同，这些场景表现出软空间边界、极端的代理异质性、持续遮挡和混合交通下的快速社交协商。我们引入了该机制的第一个大规模数据集：跨越 22 个城市的 1,000 小时的驾车穿过、步行穿过和航拍视频。现有的 JEPA 公式很难在异质性和部分可观察性下保持密集的相互作用动态。\n  我们引入了 FactorJEPA，它使世界结构成为一流的预测原语。它不是用整体的潜在编码来编码未来，而是组合布局、实体和交互，使用可见性门和分离的子空间来保留部分观察到的代理并阻止跨因素的捷径。 FactorJEPA 提高了 (i) 未来潜在准确性（未来帧 L1）、(ii) 干预敏感预测（因果 L1）和 (iii) 对减少的视觉证据的鲁棒性（掩模比斜率），同时暴露 (iv) 可再现的运动信息权衡（运动余弦）。方法排名在 2B 和 1B V-JEPA 2.1 主干上重复，rho = 0.895 至 0.978。\n  我们公开发布了 DENSEWORLD-115k 数据集 (https://huggingface.co/datasets/anonymousML123/denseworld-115k) 和经过手术训练的 FactorJEPA 检查点（https://huggingface.co/datasets/anonymousML123/factorjepa-outputs/tree/main/outputs/full/vjepa_2_1_vitg_1B/train/m09c_surgery_3stage_DI_diheavy_encoder）。",
+      "authors": "Kapil Wanaskar, Gaytri Jena, Aman Chadha, Vinija Jain, Vasu Sharma, Amitava Das",
+      "url": "https://huggingface.co/papers/2608.01049",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2608.01049"
+      }
+    },
     {
       "id": "2608.05798",
       "title": "KVAE: Family of Tokenizers for Multimodal Generative Models",
@@ -11,10 +56,10 @@
       "description_zh": "潜在扩散建模 (LDM) 是一种重要的范例，它利用分词器将输入信号映射到压缩表示。这种依赖性将分词器定位为生成过程本身的一个组成部分，因为它影响学习速度、合成样本的质量并为以后的应用奠定基础。本报告介绍了一系列用于音频、图像和视频的 KVAE 分词器，所有这些都是为后续文本调节生成而设计的：KVAE-Audio，一种连续全频带 48 kHz 分词器，具有 50 Hz 潜在的 64 个通道； KVAE-3D——两个用于 4x16x16 和 4x8x8 压缩的因果视频分词器； KVAE-2D，一种图像模型，将输入压缩 8 倍，具有 32 个通道。我们证明了客观（Frechet Distance、CLIP 分数、CLAP 分数等）和主观（并行评估）指标的重建（PSNR、LPIPS、PESQ 等）和生成结果匹配或超越了前沿开源分词器，例如来自 Wan-2.2、HunyuanVideo-1.5、FLUX.2、MovieGen、StableAudio 和 MMAudio 的 VAE。考虑到开发难度，我们与社区分享培训细节、模型选择方法以及设计选择的消融。该代码可在 https://github.com/kandinskylab/kvae 和 https://github.com/kandinskylab/kvae-audio 上公开获取。",
       "authors": "Andrey Shutkin, Denis Parkhomenko, Ivan Kirillov, Kirill Chernyshev, Kirill Malakhov, Ilia Vasiliev, Ilia Trushkin, Valeriya Kobenko, David Chikovani, Alexander Ivanov, Azat Saginbaev, Egor Silvestrov, Ivan Mikheev, Konstantin Zakharov",
       "url": "https://huggingface.co/papers/2608.05798",
-      "score": 10,
+      "score": 14,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "14",
         "paperId": "2608.05798"
       }
     },
@@ -26,10 +71,10 @@
       "description_zh": "计算机使用代理支付全部前沿推理来重新推导用户已经执行的例程，因为今天代理的内存记录用户所说的话，而不是用户所做的。我们使用确定性的零模型管道将被动捕获的屏幕活动编译到代理内存中：它将本地捕获流分段为类型化的活动帧、携带应用程序、站点、计时、输入量和返回原始行的证据指针的有界片段，循环中没有模型，因此输出是字节相同的、可缓存的和机械可审计的。在一名专业人士在 51 个活跃日内包含 128,756 帧的单用户语料库中，编译器将一天的原始捕获量减少为一个可立即使用的上下文块，在 68 毫秒内缩小了 86 倍，并且读取该块的��理相对于独立预言机以 98.4% 的准确率（Wilson 95% CI 91.7-99.7%）回答有关当天的问题，而LLM摘要的准确度为 66-80%。同样的捕获，中间层模型读取与前沿模型匹配的块。\n  同一个编译器还兼作需求方成本工具。读出被动的、预授权的人类活动而不是代理的推出，它提供了代理成本模型假设的两个参数，但据我们所知，尚未测量：例行开销比率 R 和例行重复 h。我们报告了 R 的第一个值，即 60-343 倍的建模上限，以及样本内 9.0% 和样本外 7.7% 的可委托重复率，现实的全舰队代币上限接近 8%；编译后的例程会在循环外确定性地重放模型，并在守卫匹配命中时以零模型标记进行现场演示。架构、编译器和评估工具都是开放的。",
       "authors": "Nossa Iyamu",
       "url": "https://huggingface.co/papers/2608.05784",
-      "score": 8,
+      "score": 18,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "18",
         "paperId": "2608.05784"
       }
     },
@@ -41,10 +86,10 @@
       "description_zh": "数据代理支持在组织工作空间中进行自然语言分析，其中相关证据可能分散在数据库、结构化文件、长文档和多媒体中。现有的基准在很大程度上隔离了结构化查询、检索或开放式分析，使得异构证据发现、完整的表格输出和确定性评估不够统一。我们引入了 DataSpace，这是一个基准，数据代理可以从任务本地异构工作空间生成可验证的表格结果。它包含 410 个跨语言任务和 7,439 个工件，总计 15.01 GB，跨 CSV、JSON、SQLite、Markdown、PDF 和视频。 DataSpace 还担任 KDD Cup 2026 Data Agents for Complex Data Analysis 竞赛的官方评估基准。每个代理仅接收一个问题和工作区，并返回完整请求的表格结果。我们使用 DataSpace-Builder 构建 DataSpace，这是一个基于执行的框架，包括跨语言转换、约束感知关系采样、模态路由和工件渲染，以及由 11 名领域专家进行的人工审查和任务修复。确定性求值器执行标题不变的列对齐、类型和精度感知的标准化以及顺序感知的行比较。在最近发布的 6 个前沿多模态模型和 5 个广泛使用的代理线束中，最佳准确率达到 66.34%，而线束选择在主干固定的情况下产生了 15.36 点的分布。多模式证据集成和连接持续降低所有六个主干网的准确性。这些结果表明数据空间仍然不饱和，并确定了提高数据代理可靠性的关键挑战。",
       "authors": "Boyan Li, Zhuowen Liang, Yupeng Xie, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yizhang Zhu, Zhangyang Peng, Yuan Li, Zhengxuan Zhang, Jiayi Zhang, Nan Tang, Guoliang Li, Yuyu Luo",
       "url": "https://huggingface.co/papers/2608.03451",
-      "score": 19,
+      "score": 24,
       "meta": {
         "source": "huggingface",
-        "upvotes": "19",
+        "upvotes": "24",
         "paperId": "2608.03451"
       }
     },
@@ -56,10 +101,10 @@
       "description_zh": "通过针对 wav2vec 2.0 音频嵌入进行 CLIP 式目标训练的深度网络，可以从非侵入性脑磁图 (MEG) 记录中检索感知语音的短片段。然而它们的权重并没有映射到电生理量，而且目前还不清楚哪些语音特性驱动检索。\n  我们建立在高性能 MEG 到音频检索架构的基础上，但重新设计了其前端和解码器。它的空间注意力在扁平的传感器布局上运行；我们将其替换为在三维 MEG 头盔几何结构上定义的球谐函数。我们将特定于主题的表示从 270 个分支减少到 25 个，为每个分支添加一个时间滤波器，以将其与空间和时间上的神经元源相匹配，并使卷积解码器更浅。在训练前移除眼部和心脏部件，以降低刺激锁定捷径的风险。\n  在 MEG-MASC 上，该模型在 6 个经过训练的解决方案的 1005 个候选者中达到了 39.75 +/- 0.34% Top-1 准确率，解码器参数减少了约 20 倍。它的权重映射到源空间，恢复与语音感知网络一致的生成器，而左侧分支携带右侧不明显的高频节奏成分。配对 MEG 遮挡显示 19 个刺激特征中的 15 个有贡献，其中对静音、声音强度、元音和声学起始的影响最大。随机单词列表的行为则相反：将叙述性 MEG 替换到其中可以改善检索，这表明没有叙述结构的活动比连贯语音期间的活动携带的可恢复信息更少。 wav2vec 目标可以减少到大约 12 个学习特征维度，而不会损失准确性，而强时间压缩会导致明显的损失。\n  源映射和输入干预共同揭示了驱动检索的因素。",
       "authors": "Ilia Semenkov, Daria Kleeva, Ivan Dakhtin, Zarina Maksudova, Alex Ossadtchi",
       "url": "https://huggingface.co/papers/2608.01481",
-      "score": 39,
+      "score": 58,
       "meta": {
         "source": "huggingface",
-        "upvotes": "39",
+        "upvotes": "58",
         "paperId": "2608.01481"
       }
     },
@@ -71,10 +116,10 @@
       "description_zh": "我们推出 MameLoshnLM，这是第一个专为依地语构建的开源 8B 参数语言模型。尽管意第绪语具有丰富的文本传统，但其有限的数字存在和可靠评估资源的稀缺限制了意第绪语语言建模的进展。现有的多语言语料库和基准通常不能很好地代表该语言，包含大量嘈杂的、机器翻译的和错误分类的文本。我们通过引入 Oytser（一个高质量的意第绪语预训练语料库，将当代网络原生资源与文学材料相结合）和 Kashes（一个涵盖翻译、语言分析、信息提取和语言理解的多任务基准）来解决这些差距。使用这些资源，我们继续预训练 Llama 3.1 8B 以获得 MameLoshnLM。在基准测试中的所有任务中，MameLoshnLM 的性能优于类似规模的开放基准。我们的分析表明，这些收益不仅仅是定量的：相对于通用多语言模型，MameLoshnLM 更好地捕获了语言定义的词汇和形态模式，指出了低资源语言的噪声网络规模多语言数据的更广泛的失败模式。我们的结果既为意第绪语 NLP 奠定了基础，也为历史���富但数字代表性不足的语言的语言模型开发提供了实用模板。",
       "authors": "Uri Katz, Omer Goldman, Tomasz Limisiewicz, Reut Tsarfaty, Noah A. Smith",
       "url": "https://huggingface.co/papers/2608.05850",
-      "score": 10,
+      "score": 14,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "14",
         "paperId": "2608.05850"
       }
     },
@@ -86,10 +131,10 @@
       "description_zh": "经典的持续学习（CL）主要侧重于使模型能够通过以参数为中心的机制来更新和保留知识，例如训练策略、架构设计和权重适应。然而，新兴范式正在重塑 CL 的范围，超越这种传统的模型适应观点。例如，在策略学习拓宽了更新机制的空间；测试时训练将 CL 从训练阶段延伸到推理阶段；内存、技能库和交互协议等外部线束组件将模型功能的进化边界扩展到静态参数空间之外。总的来说，这些发展表明从以参数为中心的学习向系统级适应的转变。为了描述这一转变的特征，我们从三个维度审视持续学习的演变：学习发生的时间、方式和地点。 “如何”维度包括离策略、在策略和超梯度优化机制。 When 维度捕获训练前、训练后和推理时间阶段的演变。其中维度描述了内部参数与外部结构约束之间发生的更新。以此三轴框架为基础，我们系统地调查了代表性方法，追踪持续学习的持续转变，并讨论了这种范式转变所带来的关键挑战、更广泛的影响和未来方向。",
       "authors": "Zhiyan Hou, Dan Zhang, Tao Feng, Liyuan Wang, Wei Li, Xiangzhao Hao, Hongyan An, Junfeng Fang, Haokai Ma, Zhaohui Xu, Haiyun Guo, Jinqiao Wang, Tat-Seng Chua",
       "url": "https://huggingface.co/papers/2608.06216",
-      "score": 2,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "13",
         "paperId": "2608.06216"
       }
     },
@@ -98,13 +143,13 @@
       "title": "Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation",
       "title_zh": "用于平衡多语言文本嵌入适应的任务条件流匹配",
       "description": "Multilingual text embedding models are commonly adapted using a single training objective across diverse tasks, despite different tasks requiring fundamentally different optimization strategies. We introduce Task-Conditional Flow Matching (TCFM), a multilingual embedding adaptation framework that selectively applies Flow Matching to translation tasks while optimizing retrieval, classification, and pair-classification tasks with objectives better aligned to their learning dynamics. TCFM further combines teacher-guided representation preservation with a three-stage curriculum to enable stable adaptation. Evaluated on the Indic Massive Text Embedding Benchmark, TCFM establishes a new state-of-the-art, consistently improving embedding quality across a diverse set of multilingual tasks and generalizing across embedding model families. We will publicly release the codebase and datasets upon acceptance of the paper.",
-      "description_zh": "尽管不同的任务需要根本不同的优化策略，但多语言文本嵌入模型通常使用跨不同任务的单一训练目标进行调整。我们引入了任务条件流匹配（TCFM），这是一种多语言嵌入适应框架，它有选择地将流匹配应用于翻译任务，同时优化检索、分类和配对分类任务，使其目标更好地符合其学习动态。 TCFM进一步将教师指导的表征保存与三阶段课程相结合，以实现稳定的适应。根据印度海量文本嵌入基准进行评估，TCFM 建立了一种新的最先进的技术，在各种多语言任务中持续提高嵌入质量，并在嵌入模型系列中进行推广。我们将在论文被接受后公开发布代码库和数据集。",
+      "description_zh": "尽管不同的任务需要根本不同的优化策略，但多语言文本嵌入模型通常使用跨不同任务的单一训练目标进行调整。我们引入了任务条件流匹配（TCFM），这是一种多语言嵌入适应框架，它有选择地将流匹配应用于翻译任务，同时优化检索、分类和配对分类任务，使其目标更好地符合其学习动态。 TCFM进一步将教师指导的表征保存与三阶段课程相结合，以实现稳定的适应。根据印度海量文本嵌入基准进行评估，TCFM 建立了一种新的最先进的技术，在各种多语言��务中持续提高嵌入质量，并在嵌入模型系列中进行推广。我们将在论文被接受后公开发布代码库和数据集。",
       "authors": "Tirth Bhatt, Naren Kumar S, Mayank Singh",
       "url": "https://huggingface.co/papers/2608.05785",
-      "score": 0,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "4",
         "paperId": "2608.05785"
       }
     },
@@ -113,13 +158,13 @@
       "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
       "title_zh": "Nemotron 希腊语教学：挖掘语料库、调整检索并为跨专业领域的现代希腊语奠定基础",
       "description": "Modern Greek is absent from NVIDIA's Nemotron retrieval models and from major multilingual retrieval benchmarks, despite being important for retrieval-augmented generation (RAG) in legal, energy, financial, and medical applications. We present an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek, including corpus mining, synthetic supervision, retrieval model training, reranker adaptation, reader fine-tuning, and a new benchmark called HERA. Our study shows that a parameter-free BM25 baseline outperforms several off-the-shelf multilingual dense retrieval models on specialist Greek corpora. After fine-tuning on 65,773 Greek retrieval pairs, a Nemotron 1B embedder improves nDCG@10 from 0.362 to 0.835 and substantially outperforms its unadapted counterpart. The learned language competence transfers to general-domain Greek, although the advantage over BM25 remains domain-dependent. We further adapt a cross-encoder reranker and demonstrate consistent improvements across specialist domains. Finally, we LoRA-tune a Nemotron 30B-A3B mixture-of-experts reader for grounded generation, increasing judged answer correctness from 29.4% to 66.9% while significantly improving faithfulness and citation quality. We also introduce HERA, the first large-scale Greek benchmark for retrieval-augmented generation, and release our adapted models and benchmark to support future research on Greek-language RAG systems.",
-      "description_zh": "尽管现代希腊语对于法律、能源、金融和医疗应用中的检索增强生成 (RAG) 很重要，但 NVIDIA Nemotron 检索模型和主要多语言检索基准中均未包含现代希腊语。我们提出了 Nemotron 检索堆栈对现代希腊语的端到端适应，包括语料库挖掘、综合监督、检索模型训练、重新排序适应、读者微调以及名为 HERA 的新基准。我们的研究表明，无参数 BM25 基线优于专业希腊语语料库上的几种现成的多语言密集检索模型。在对 65,773 个希腊语检索对进行微调后，Nemotron 1B 嵌入器将 nDCG@10 从 0.362 提高到 0.835，并且大大优于其未适应的对应物。所学语言能力转移到通用领域希腊语，尽管相对 BM25 的优势仍然取决于领域。我们进一步调整了跨编码器重新排序器，并展示了跨专业领域的一致改进。最后，我们对 Nemotron 30B-A3B 专家混合阅读器进行 LoRA 调整，以实现接地生成，将判断答案的正确性从 29.4% 提高到 66.9%，同时显着提高忠实度和引文质量。我们还推出��� HERA，这是第一个用于检索增强生成的大规模希腊语基准，并发布了我们的改编模型和基准以支持希腊语 RAG 系统的未来研究。",
+      "description_zh": "尽管现代希腊语对于法律、能源、金融和医疗应用中的检索增强生成 (RAG) 很重要，但 NVIDIA Nemotron 检索模型和主要多语言检索基准中均未包含现代希腊语。我们提出了 Nemotron 检索堆栈对现代希腊语的端到端适应，包括语料库挖掘、综合监督、检索模型训练、重新排序适应、读者微调以及名为 HERA 的新基准。我们的研究表明，无参数 BM25 基线优于专业希腊语语料库上的几种现成的多语言密集检索模型。在对 65,773 个希腊语检索对进行微调后，Nemotron 1B ���入器将 nDCG@10 从 0.362 提高到 0.835，并且大大优于其未适应的对应物。所学语言能力转移到通用领域希腊语，尽管相对 BM25 的优势仍然取决于领域。我们进一步调整了跨编码器重新排序器，并展示了跨专业领域的一致改进。最后，我们对 Nemotron 30B-A3B 专家混合阅读器进行 LoRA 调整，以实现接地生成，将判断答案的正确性从 29.4% 提高到 66.9%，同时显着提高忠实度和引文质量。我们还推出了 HERA，这是第一个用于检索增强生成的大规模希腊语基准，并发布了我们的改编模型和基准以支持希腊语 RAG 系统的未来研究。",
       "authors": "Ayoub Kirouane, Christos Petrocheilos",
       "url": "https://huggingface.co/papers/2608.05138",
-      "score": 17,
+      "score": 23,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "23",
         "paperId": "2608.05138"
       }
     },
@@ -131,10 +176,10 @@
       "description_zh": "经济世界模型 (EWM) 是生成经济模型，通过对异质主体、他们的信念和行为以及他们的相互作用产生总体结果的市场和制度机制进行建模，模拟经济如何从内部演变。本文制定了一个实施路线图，用于将经济世界模型构建为生成引擎，其中异构主体与市场和机构共同行动、互动、适应和共同进化，从而从内部产生经济动态。我们将 EWM 系统组织成一个六级能力阶梯，从固定的基于规则的代理世界到自适应和基于 LLM 的代理世界、自我进化的代理、不断发展的制度世界以及与真实观察一致的模拟到现实的经济双胞胎。跨这些级别的系统文献调查表明，现有的工作仍然集中在较低级别的代理和模拟环境中，而具有自我进化代理、内生机构、持久的经验一致性和经过验证的经济机制的系统仍然很少。通过将 EWM 议程转化为实施蓝图，本文旨在加速下一代经济模拟环境的开发，该环境可以作为人类决策者的高保真沙箱，并作为人工智能代理的培训、规划、评估和安全基础。我们发布了精选论文列表和相关资源以支持未来的研究。",
       "authors": "Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao, Ye Luo, Hongyuan Zha, Dacheng Tao, Benyou Wang, Lin William Cong",
       "url": "https://huggingface.co/papers/2608.06020",
-      "score": 24,
+      "score": 28,
       "meta": {
         "source": "huggingface",
-        "upvotes": "24",
+        "upvotes": "28",
         "paperId": "2608.06020"
       }
     },
@@ -146,10 +191,10 @@
       "description_zh": "当前的视频世界模型在多人游戏环境中举步维艰，因为它们将世界状态与依赖于视图的视觉潜伏纠缠在一起，导致冗余计算、视图不一致和可扩展性差。我们提出 MAS（具有权威共享状态的多人世界模型）来解决此限制。受多人游戏架构的启发，MAS 解开了世界动态和视图渲染。学习逻辑引擎通过联合动作推进全局的、权威的类型化状态，无需任何手写的转换函数，充当唯一的循环记忆和同步参考。根据这种共享状态，学习的渲染引擎可以根据需要为任何请求的摄像机生成独立且一致的视图。与匹配的多人 Snake 基准测试上最先进的多视图基线相比，这种明确的解开使得 MAS 能够实现卓越的状态准确性和更低的跨视图不一致。它推进了具有 1,024 个并发玩家并执行 10,000 个循环步骤的预测世界。我们的结果表明，明确、权威的状态建模为可扩展且一致的多智能体世界模拟提供了实用的基础。",
       "authors": "Ziqi Cai, Siqi Yang, Yimu Wang, Zixian Gao, Yunheng Liu, Shuchen Weng, Erwin Wu, Kaipeng Zhang, Boxin Shi",
       "url": "https://huggingface.co/papers/2608.06257",
-      "score": 3,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "8",
         "paperId": "2608.06257"
       }
     },
@@ -161,10 +206,10 @@
       "description_zh": "最近的视频模型越来越多地支持在单个模型中生成、参考调节和编辑，但通常将它们公开为固定输入上的单独操作。实际创作涉及多个镜头，需要一个模型从文本生成、遵循参考或编辑源素材，同时维护共享历史记录。我们将此设置形式化为交互式多镜头视频创建（IMVC），并引入 ContextMaster，这是一个统一模型，具有用于这些操作的角色感知上下文表示。交互式模型必须保留对扩展历史记录的访问，而不允许每个去噪步骤的上下文读取成本增长。 ContextMaster 将可重用的干净上下文状态与固定预算稀疏上下文路由相结合，并使用 ConstraintSink 来保持任务约束可见。为了解决稀疏上下文访问和推理的双重挑战，只需很少的去噪步骤，我们提出了一个两阶段特权上下文蒸馏框架，该框架通过一致性蒸馏从密集教师传输完整的上下文行为，然后通过分布匹配完善部署部署。对三个原始任务的实验表明，在专门的基线上，任务完成度和镜头之间的一致性得到了改善。用户研究进一步验证了灵活组合的工作流程，同时模型在单个 GPU 上达到了 16 FPS。",
       "authors": "Xu Guo, Zhengxuan Wei, Xinghui Li, Hanzhuo Huang, Xinyu Liu, Xiangyang Luo, Min Wei, Yiran Zhu, Qiulin Wang, Yulong Xu, Xintao Wang, Pengfei Wan, Qi Fan, Xiangwang Hou",
       "url": "https://huggingface.co/papers/2608.04956",
-      "score": 5,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "10",
         "paperId": "2608.04956"
       }
     },
@@ -176,56 +221,11 @@
       "description_zh": "视频对象去除不仅必须消除目标对象，还要消除其引起的影响，同时保持高保真和时空相干的恢复。现有的方法主要从预定义的效果类别和固定的数据分布中隐式地学习对象效果对应关系，限制了它们对涉及成分效果、空间分离或弱相关效果、长尾物理现象和动态演化交互的复杂现实场景的泛化。我们提出了 EffectLearner，这是一种语义推理增强框架，它将基于 VLM 的对象效果推理器与基于 DiT 的视频擦除器相结合。在结构���效果分析提示的指导下，Reasoner 对目标突出显示的视频执行跨模式推理，并提取紧凑的效果感知上下文，从而引导视频擦除器全面消除对象效果。运动感知掩模引导和运动一致性监督进一步提高了对象运动和不断变化的场景动态下的去除覆盖范围和时空稳定性。为了在具有挑战性的现实场景中充分利用该框架，我们进一步构建了 EffectWorld，一个专门为复杂对象引起的效果而设计的配对视频数据集，并引入了将常见监督与复杂效果数据相结合的渐进式培训课程。在标准 ROSE-Bench 上，EffectLearner 在大多数指标上都优于现有基准，并且在 EffectWorld-Eval 和具有挑战性的 EffectWorld-Wild 上都取得了明显的优势，展示了其在复杂的现实场景中提供高质量视频对象去除的能力。",
       "authors": "Feier Wu, Wanke Xia, Xu He, Zilang Zhou, Si Chen, Dongxia Liu, Liyang Chen, Qimeng Wu, Zhengbo Zhang, Wenming Yang, Zhiyong Wu",
       "url": "https://huggingface.co/papers/2608.05565",
-      "score": 12,
+      "score": 16,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
+        "upvotes": "16",
         "paperId": "2608.05565"
-      }
-    },
-    {
-      "id": "2608.05424",
-      "title": "Invisible Shortcuts: Why Vision Encoders Know Your Camera",
-      "title_zh": "看不见的捷径：为什么视觉编码器了解您的相机",
-      "description": "Deep vision models exploit shortcuts, relying on cues that correlate with supervision signals. Prior work has focused on visible biases, such as object-background or texture correlations. We identify a different source of shortcut learning: invisible metadata traces embedded at the pixel level, for metadata such as image processing and photo acquisition. We hypothesize that large-scale semantic supervision, whether through categorical labels (ImageNet) or billion-scale captions (LAION), naturally induces metadata-semantics correlations during pretraining, leading models to convert low-level signals into predictive features. By introducing controlled metadata-semantics correlations, we show that stronger ones produce systematically higher sensitivity to metadata traces and larger performance degradation under metadata distribution shifts. We further explore mitigation strategies applied during and after pretraining that reduce sensitivity not only to targeted metadata but also to unseen ones, without sacrificing performance on downstream tasks. Metadata sensitivity also has a positive side: it partly explains the strong generated-image detection ability of some encoders, while its mitigation can improve out-of-distribution generalization. Code: https://github.com/ryan-caesar-ramos/visual-encoder-traces",
-      "description_zh": "深度视觉模型利用捷径，依赖于与监督信号相关的线索。之前的工作主要集中在可见偏差上，例如对象背景或纹理相关性。我们确定了捷径学习的不同来源：嵌入在像素级的不可见元数据痕迹，用于图像处理和照片采集等元数据。我们假设大规模语义监督，无论是通过分类标签（ImageNet）还是十亿级标题（LAION），都会在预训练期间自然地诱发元数据语义相关性，从而导致模型将低级信号转换为预测特征。通过引入受控的元数据语义相关性，我们表明，更强的相关性会系统地对元数据跟踪产生更高的敏感性，并在元数据分布变化的情况下产生更大的性能下降。我们进一步探索在预训练期间和之后应用的缓解策略，这些策略不仅可以降低对目标元数据的敏感性，还可以降低对看不见的元数据的敏感性，而不会牺牲下游任务的性能。元数据敏感性也有积极的一面：它部分解释了某些编码器强大的生成图像检测能力，而其缓解可以提高分布外泛化能力。代码：https://github.com/ryan-caesar-ramos/visual-encoder-traces",
-      "authors": "Vladan Stojnić, Ryan Ramos, Giorgos Kordopatis-Zilos, Noa Garcia, Giorgos Tolias",
-      "url": "https://huggingface.co/papers/2608.05424",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2608.05424"
-      }
-    },
-    {
-      "id": "2607.28609",
-      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
-      "title_zh": "OSReward：为跨平台计算机使用奖励模型建立标准化评估",
-      "description": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60% lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/.",
-      "description_zh": "计算机使用代理 (CUA) 在数字世界中快速发展。 CUA 轨迹记录了智能体的动作、状态和推理。验证它是否完成任务指令是 CUA 评估、数据管理和强化学习的核心。人工编写的验证器和人工注释器都无法大规模提供此类验证，因此该领域越来越多地转向视觉语言模型 (VLM) 作为 CUA 轨迹的判断。但一个基本问题长期以来一直未被审视：这些 VLM 法官是否足够可靠？为���系统地研究它，我们引入了 OSReward，这是一个现实的、高质量的基准，用于根据 CUA 轨迹评估 VLM 法官。这些轨迹来自不同的代理主干，跨平台执行经过人工验证的指令，然后通过多阶段人工注释严格标记真实判决。在此基础上，我们衍生出了 OSReward-Hard，这是一个专注于真正困难案例的挑战集，以及 OSReward-Multi，用于细粒度的效率和对齐评分。迄今为止对 VLM 判断最全面的评估发现，即使是最先进的模型也达不到理想的判断，它们都存在系统性的宽大偏见，将失败的运行错误地标记为成功。少数可靠到值得信赖的模型由于成本太高而无法大规模运行，而经济实惠的开放模型则远远落后。为了弥补这一差距，我们构建并发布了 OS-Shepherd-100K，这是一个为 CUA 社区提供推理注释轨迹判断的开放语料库。在其上，我们训练 OS-Shepherd（9B 和 35B），这是一个开放的奖励模型，提供低成本、稳定、可靠的奖励信号，以比前沿低 30-60% 的成本匹配商业法官。广泛的分析进一步为大规模可靠 CUA 奖励的设计提供了信息。我们的代码、基准测试、数据集和模型检查点可在 https://os-copilot.github.io/OSReward-Home/ 上获取。",
-      "authors": "Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen, Fangzhi Xu, Zichen Ding, Nuo Chen, Jialin Cao, Xingdong Gong, Zehao Li, Kaiming Jin, Xinfeng Yuan, Zhoumianze Liu, Jingyang Gong, Zhangyue Yin, Jiahui Gao, Zhiyong Wu, Tianbao Xie, Jianbing Zhang, Ben Kao, Lingpeng Kong",
-      "url": "https://huggingface.co/papers/2607.28609",
-      "score": 50,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "50",
-        "paperId": "2607.28609"
-      }
-    },
-    {
-      "id": "2608.06146",
-      "title": "PaDoc: Layout-Grounded Parallel Decoding for Document Parsing",
-      "title_zh": "PaDoc：用于文档解析的基于布局的并行解码",
-      "description": "End-to-end document parsers provide a unified interface, but serialize page layouts and regional contents into one autoregressive sequence. This formulation forces independent regions onto a decoding path whose length grows with the total content, whereas crop-based two-stage parsers expose region-level parallelism at the cost of repeated visual prefills and fragmented page context. To retain full-page context while removing dependencies, we propose PaDoc, a layout-grounded parser that treats the predicted layout as a branching structure over a shared page representation. Under a region-sufficiency assumption, we derive a prefix-conditioned factorization in which the layout stream and regional content branches advance concurrently, reducing the decoding depth to the longest layout-content path. We realize this factorization within a single MLLM: packed variable-length ancestor attention preserves the visibility under standard next-token training, while masked parallel decoding creates branches that the evaluated vLLM backend serves as concurrent requests with cache-resident shared-prefix reuse. On OmniDocBench Full, PaDoc attains an Overall layout F1 of 91.1 and, among end-to-end parsers, a top-tier Overall score of 94.24 together with the best Text Edit (0.038) and Formula CDM (95.59). On a 384-page subset and one A800 GPU, it is the fastest end-to-end parser at five concurrency levels, improving valid-page throughput by 67.4-118% and reducing P95 latency by 39.2-54.9% relative to a same-backbone Sequential SFT baseline. Code is available at https://github.com/Longin-Yu/Padoc",
-      "description_zh": "端到端文档解析器提供了统一的接口，但将页面布局和区域内容序列化为一个自回归序列。这种公式迫使独立区域进入长度随着总内容而增长的解码路径，而基于裁剪的两阶段解析器以重复的视觉预填充和碎片化的页面上下文为代价来暴露区域级并行性。为了在删除依赖项的同时保留整页上下文，我们提出了 PaDoc，这是一个基于布局的解析器，它将预测的布局视为共享页面表示上的分支结构。在区域充足性假设下，我们导出了前缀条件分解，其中布局流和区域内容分支同时前进��将解码深度减少到最长的布局内容路径。我们在单个 MLLM 中实现了这种因式分解：打包的可变长度祖先注意力保留了标准下​​一个令牌训练下的可见性，而屏蔽并行解码创建了分支，评估的 vLLM 后端充当具有缓存驻留共享前缀重用的并发请求。在 OmniDocBench Full 上，PaDoc 的总体布局 F1 为 91.1，在端到端解析器中，总体得分最高为 94.24，同时最好的文本编辑 (0.038) 和公式 CDM (95.59)。在 384 页子集和一个 A800 GPU 上，它是五个并发级别上最快的端到端解析器，相对于相同骨干顺序 SFT 基准，有效页面吞吐量提高了 67.4-118%，P95 延迟降低了 39.2-54.9%。代码可在 https://github.com/Longin-Yu/Padoc 获取",
-      "authors": "Hao Yu, Jiabo Zhan, Kang Liu, Linnan Zhao, Dongxu Yue, Rui Chen, Jinglin Wang, Chong Sun, Chen Li, Jing Lyu, Chun Yuan",
-      "url": "https://huggingface.co/papers/2608.06146",
-      "score": 10,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "10",
-        "paperId": "2608.06146"
       }
     }
   ]
