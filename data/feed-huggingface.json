@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-09T20:01:32.070Z",
+  "updatedAt": "2026-08-10T12:41:18.585Z",
   "count": 15,
   "items": [
     {
-      "id": "2608.01492",
-      "title": "GaussianSelector: Lightweight Human-Guided Object Selection in 3D Gaussian Splatting with Graph Optimization",
-      "title_zh": "GaussianSelector：通过图形优化进行 3D 高斯泼溅中的轻量级人工引导对象选择",
-      "description": "Selecting a complete 3D object from a reconstructed scene with minimal user effort is essential for practical scene editing and embodied interaction. Existing 3DGS-based methods either retrain the Gaussian representation to embed per-object labels, or build dense multi-view SAM observations, both requiring heavy computation and dense viewpoint coverage that is rarely available in practice. We present GaussianSelector, a training-free framework for interactive 3D object selection from sparse views and sparse scribble guidance. Operating directly on native Gaussian primitives, we coarsen dense Gaussians into geometrically coherent superpoints and construct a continuity-weighted graph using appearance and spatial cues. Sparse user scribbles are lifted into 3D via visibility-aware transmittance coverage, and selection is solved as a global graph-cut energy minimization that propagates sparse evidence to a complete 3D object. This design naturally supports multi-round refinement, where users iteratively correct the selection from additional viewpoints to progressively improve the result. Experiments demonstrate that GaussianSelector achieves competitive selection quality against state-of-the-art multi-view SAM-based methods, while requiring significantly fewer interaction views and substantially lower computational overhead. These properties make it well suited for human-in-the-loop 3D scene editing and 3D asset extraction in real-world deployment scenarios.",
-      "description_zh": "以最少的用户努力从重建场景中选择完整的 3D 对象对于实际场景编辑和具体交互至关重要。现有的基于 3DGS 的方法要么重新训练高斯表示以嵌入每个对象的标签，要么构建密集的多视图 SAM 观测，两者都需要大量计算和密集的视点覆盖，而这在实践中很少可用。我们提出了 GaussianSelector，这是一个免训练框架，用于从稀疏视图和稀疏涂鸦指导中选择交互式 3D 对象。直接对原生高斯基元进行操作，我们将密集高斯粗化为几何相干的超点，并使用外观和空间线索构建连续性加权图。通过可见性感知的透射率覆盖范围，稀疏的用户涂鸦被提升为 3D，并且选择被解决为全局图切割能量最小化，将稀疏证据传播到完整的 3D 对象。这种设计自然支持多轮细化，用户可以从其他角度迭代地纠正选择，以逐步改进结果。实验表明，与最先进的基于 SAM 的多视图方法相比，GaussianSelector 实现了有竞争力的选择质量，同时需要显着减少的交互视图和显着降低的计算开销。这些属性使其非常适合现实部署场景中的人机交互 3D 场景编辑和 3D 资产提取。",
-      "authors": "Baihan Yang, Tiexin Li, Yuheng Liu, Xin Lin, Xinke Li, Xiaohui Xie, Truong Nguyen",
-      "url": "https://huggingface.co/papers/2608.01492",
+      "id": "2608.05224",
+      "title": "Small Foundation Models of Human Cognition and Behaviour",
+      "title_zh": "人类认知和行为的小型基础模型",
+      "description": "Large language models fine-tuned on human behavioural data have emerged as general-purpose cognitive proxies, but the scale this requires, and whether these models process task structure or exploit statistical shortcuts, remain open questions. We train fourteen models from 135M to 14B parameters across four architecture families on Psych-101, a dataset of 10.7 million trial-level choices from 160 experiments. In-distribution, scale barely matters. The models fall within a narrow band, as though against a ceiling, and 0.6B to 1B parameters suffice to match a 70B baseline on held-out participants. Out-of-distribution, that band opens into a markedly steeper scaling gradient, with larger models clearly advantaged in generalisation to novel task structure. To determine what information these models use, we run two diagnostics. We progressively strip four prompt channels -- task instructions, experimental stimuli, outcome feedback, and choice history -- across 27 experiments, and permute trial order. Masking the content of stimuli and feedback destroys 75.7% of learned information and pushes models below chance, demonstrating that choice history alone does not account for performance. Permutation reveals invariance on tasks with independent trials but sensitivity where trial order is determined by prior responses. Small cognitively fine-tuned models therefore show promise as noise ceiling estimators for psychological experiments, though their scope remains bounded by the paradigms seen in training.",
+      "description_zh": "根据人类行为数据进行微调的大型语言模型已成为通用认知代理，但其所需的规模以及这些模型是否处理任务结构或利用统计捷径仍然是悬而未决的问题。我们在 Psych-101（包含来自 160 个实验的 1070 万个试验级选择的数据集）上跨四个架构系列训练了 14 个模型，参数范围从 1.35 亿到 14B 个。在分销方面，规模几乎不重要。这些模型落在一个狭窄的范围内，就像面对天花板一样，0.6B 到 1B 的参数足以匹配坚持参加的参与者的 70B 基线。在分布之外，该带会出现明显更陡的缩放梯度，较大的模型在泛化到新颖的任务结构方面明显具有优势。为了确定这些模型使用哪些信息，我们进行了两次诊断。我们在 27 个实验中逐步剥离四个提示通道——任务说明、实验刺激、结果反馈和选择历史，并重新排列试验顺序。掩盖刺激和反馈的内容会破坏 75.7% 的学习信息，并使模型低于概率，这表明选择历史本身并不能解释性能。排列揭示了独立​​试验任务的不变性，但试验顺序由先前的响应决定的敏感性。因此，小型认知微调模型显示出作为心理实验的噪声上限估计器的前景，尽管它们的范围仍然受到训练中看到的范式的限制。",
+      "authors": "Nick Oh, Fernand Gobet",
+      "url": "https://huggingface.co/papers/2608.05224",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2608.05224"
+      }
+    },
+    {
+      "id": "2608.04314",
+      "title": "Adversarial Attacks for Good: A Survey of Proactive Protection across the Visual Content Lifecycle",
+      "title_zh": "善意的对抗性攻击：整个视觉内容生命周期的主动保护调查",
+      "description": "Once visual content enters an AI pipeline, its owner often retains little technical control over how it is used. Legal and regulatory remedies can address misuse, but many technical interventions must be applied earlier, when content is released or accessed. This survey examines the protective paradigm that has grown around this intervention point, which we call adversarial attacks for good. Perturbations and structured signals long studied as attacks on learned models are instead applied by data owners, creators, platforms, or auditors to disrupt unauthorized automation or support later accountability. Five research communities have arrived at this inversion largely independently, each addressing a different stage of a visual asset's lifecycle: privacy filters against unwanted recognition at sharing time, unlearnable examples against unauthorized training, generative safeguards against malicious editing or imitation, adversarial CAPTCHAs for access control against automated agents, and provenance mechanisms for post-circulation attribution. Although developed in separate venues with incompatible success criteria, many of these methods exploit persistent gaps between human perception, semantic interpretation, and machine inference, suggesting that the paradigm remains relevant as visual pipelines evolve toward multimodal models and autonomous agents. To make their claims comparable, we evaluate all five families along shared axes of transferability, adaptability, and deployment readiness. Across the lifecycle, we find that most protections are still validated mainly against static or weakly adaptive adversaries, while evidence beyond controlled benchmarks remains scarce. We close by consolidating cross-stage countermeasures and open problems for robust, composable, and deployable owner-side protection.",
+      "description_zh": "一旦视觉内容进入人工智能管道，其所有者通常对其使用方式几乎没有技术控制。法律和监管补救措施可以解决滥用问题，但许多技术干预措施必须在内容发布或访问时尽早实施。这项调查研究了围绕这一干预点发展起来的保护范式，我们将其称为“对抗性攻击”。长期以来，扰动和结构化信号被研究为对学习模型的攻击，而被数据所有者、创建者、平台或审计员用来破坏未经授权的自动化或支持以后的问责。五个研究社区基本上独立地实现了这种反转，每个社区都解决了视觉资产生命周期的不同阶段：在共享时防止不需要的识别的隐私过滤器、针对未经授权的训练的不可学习的示例、针对恶意编辑或模仿的生成性保护、针对自动化代理的访问控制的对抗性验证码以及针对流通后归因的来源机制。尽管这些方法是在具有不兼容的成功标准的不同场所开发的，但其中许多方法利用了人类感知、语义解释和机器推理之间持续存在的差距，这表明随着视觉管道向多模式模型和自主代理发展，该范式仍然具有相关性。为了使他们的主张具有可比性，我们沿着可转移性、适应性和部署准备度的共同轴对所有五个系列进行了评估。在整个生命周期中，我们发现大多数保护措施仍然主要针对静态或弱适应性对手进行验证，而超出受控基准的证据仍然很少。最后，我们整合了跨阶段对策和开放问题，以实现稳健、可组合和可部署的所有者端保护。",
+      "authors": "Jiaming Zhang, Boyang Chen, Zherui Li, Fuyao Zhang, Xinyu Yan, Hong Xi Tae, Wenwen He, Xuan Wang, Siqi Guo, Junhao Dong, Kun Wang, Hanxun Huang, Yige Li, Xingjun Ma, Yang Cao, Lingjuan Lyu, Wei Yang Bryan Lim",
+      "url": "https://huggingface.co/papers/2608.04314",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2608.04314"
+      }
+    },
+    {
+      "id": "2607.23379",
+      "title": "When Activation Oracles Learn Not to Read: Concept-Specific Blind Spots in Fine-Tuned Oracles",
+      "title_zh": "当激活预言机学会不阅读时：微调预言机中特定概念的盲点",
+      "description": "Activation Oracles (AOs) are language models trained to answer natural-language questions about another model's internal activations. They offer a flexible interface for reading hidden information from model states, especially when relevant information is internally represented but absent or incomplete in visible behavior. However, AOs are themselves learned systems: their answers are shaped by training data, objectives, and learned reporting behavior, rather than being neutral readouts of represented information. We study this in a controlled Taboo Word Guessing setting, where subject models are fine-tuned to internally use a hidden concept while avoiding direct disclosure. Contrary to the expectation that an AO trained on such a subject becomes a specialist reader, we find that fine-tuned AOs can become concept-specific anti-readers: they selectively fail to recover the concept persistently present during their own training. This failure is not simply explained by absence of the concept from the subject or oracle representations: the target remains decodable inside the oracle, while LogitLens and layer-ablation analyses indicate that the failure arises in the AO readout pathway. Our results show that behavioral leakage, representation-level decodability, and AO-verbalizability can come apart, raising a reliability concern for learned interpretability interfaces.",
+      "description_zh": "激活预言 (AO) 是经过训练的语言模型，用于回答有关另一个模型内部激活的自然语言问题。它们提供了一个灵活的接口，用于从模型状态读取隐藏信息，特别是当相关信息在内部表示但在可见行为中不存在或不完整时。然而，AO 本身就是学习系统：它们的答案是由训练数据、目标和学习的报告行为决定的，而不是所表示信息的中立读数。我们在受控的禁忌词猜测环境中研究这一点，其中主题模型经过微调以在内部使用隐藏的概念，同时避免直接披露。与接受此类主题培训的 AO 成为专业阅读者的预期相反，我们发现经过微调的 AO 可以成为特定于概念的反阅读者：它们选择性地无法恢复在自己的训练期间持续存在的概念。这种失败不能简单地用主题或预言表示中概念的缺失来解释：目标在预言中仍然可解码，而 LogitLens 和层消融分析表明失败出现在 AO 读出路径中。我们的结果表明，行为泄漏、表示级可解码性和 AO 可语言性可能会分崩离析，从而引发对学习可解释性接口的可靠性问题。",
+      "authors": "Tobias Bersia, Tatiana Gaintseva",
+      "url": "https://huggingface.co/papers/2607.23379",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2607.23379"
+      }
+    },
+    {
+      "id": "2608.01310",
+      "title": "FATE: Frame-Level Audio-Visual Temporal Embedding",
+      "title_zh": "FATE：帧级视听时间嵌入",
+      "description": "When a dog opens its mouth and barks, humans naturally recognize what the sound is and when it occurs. Building audio-visual models with this same ability requires representations that capture both semantic and temporal alignment. Current approaches fall short on one side or the other: embedding models match semantic but lose temporal information; synchronization models capture temporal offsets but lack semantic understanding. To bridge this gap, we propose FATE, Frame-level Audio-visual Temporal Embedding. Unlike prior embedding models that pool each modality into a single embedding and discard temporal information, FATE retains frame-level sequences, aligns them on the physical timeline, and computes similarity over strictly aligned frame pairs. Unlike synchronization models that output only an offset prediction, FATE encodes synchronization in a reusable embedding space, trained with a joint objective combining cross-video semantic and within-video temporal contrastive learning to capture both what sounds and when it occurs. Across three tasks, FATE surpasses the strongest baseline on temporal and semantic retrieval by a large margin, matches fully supervised methods on event localization in a zero-shot setting, and achieves the best correlation with human judgments as a generation evaluation metric. The source code can be found at https://github.com/guankaisi/FATE.",
+      "description_zh": "当狗张开嘴吠叫时，人类自然会识别出声音是什么以及何时发生。构建具有相同能力的视听模型需要捕获语义和时间对齐的表示。当前的方法在一方面或另一方面都有不足：嵌入模型匹配语义，但丢失了时间信息；同步模型捕获时间偏移但缺乏语义理解。为了弥补这一差距，我们提出了 FATE，即帧级视听时间嵌入。与先前将每种模态合并为单个嵌入并丢弃时间信息的嵌入模型不同，FATE 保��帧级序列，在物理时间轴上对齐它们，并计算严格对齐的帧对上的相似性。与仅输出偏移预测的同步模型不同，FATE 在可重用的嵌入空间中对同步进行编码，并通过结合跨视频语义和视频内时间对比学习的联合目标进行训练，以捕获声音及其发生时间。在三项任务中，FATE 大幅超越了时间和语义检索的最强基线，在零样本设置中匹配完全监督的事件定位方法，并作为生成评估指标实现了与人类判断的最佳相关性。源代码可以在https://github.com/guankaisi/FATE找到。",
+      "authors": "Kaisi Guan, Bingzi Zhang, Xihua Wang, Ying Ba, Xin Cheng, Yijing Chen, Ruihua Song",
+      "url": "https://huggingface.co/papers/2608.01310",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2608.01310"
+      }
+    },
+    {
+      "id": "2608.03796",
+      "title": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
+      "title_zh": "LLM 的高效知识蒸馏：离线 Top-K Logits 和融合分块 KL 损失",
+      "description": "Small language models are often the only option for deployment under tight latency, cost, and on-premises constraints, but they are rarely trained from scratch: a compressed model is usually recovered through knowledge distillation (KD). This recovery step largely decides the final quality, yet it is expensive. We present a practitioner's study of how to make distillation training efficient, organised around two systems contributions. First, we show that offline KD (caching the teacher's top-K logits once and training the student against the cache) matches online distillation at near-identical training loss while removing the teacher from memory, running about 29\\% faster per iteration, and reaching up to 41\\% higher throughput on a single H200 GPU. Second, we introduce a fused, chunked KL loss that never materialises the full vocabulary-sized logit tensor, making peak memory linear in the sequence length. This removes the memory spike that otherwise caps context length and lets us train at four times the context (32{,}768 tokens) on a single GPU. A separate output-head-only toy benchmark isolates the loss kernel and confirms its memory and iteration-rate scaling from 4K to 256K tokens. Together these make large-scale healing and hundreds of ablations affordable. We also report supporting ablations on loss design and sequence packing. We release our chunked-loss implementation: https://github.com/CompactifAI/Full-Chunked-KL-Loss.",
+      "description_zh": "小语言模型通常是在严格的延迟、成本和本地限制下部署的唯一选择，但它们很少从头开始训练：压缩模型通常通过知识蒸馏（KD）来恢复。这一恢复步骤在很大程度上决定了最终的质量，但其成本很高。我们提出了一项从业者关于如何提高蒸馏训练效率的研究，围绕两个系统贡献进行组织。首先，我们展示了离线 KD（缓存一次教师的前 K 个逻辑并针对缓存训练学生）在几乎相同的训练损失下与在线蒸馏相匹配，同时将教师从内存中删除，每次迭代运行速度提高约 29%，并且在单个 H200 GPU 上达到高出 41% 的吞吐量。其次，我们引入了一种融合的分块 KL 损失，它永远不会实现完整词汇大小的 Logit 张量，从而使峰值记忆与序列长度呈线性关系。这消除了内存峰值，否则会限制上下文长度，并让我们可以在单个 GPU 上以上下文的四倍（32{,}768 个令牌）进行训练。一个单独的仅输出头玩具基准隔离了损失内核，并确认其内存和迭代率从 4K 到 256K 令牌的缩放。这��共同使得大规模治疗和数百次消融变得负担得起。我们还报告了对损失设计和序列打包的支持消融。我们发布了分块损失实现：https://github.com/CompactifAI/Full-Chunked-KL-Loss。",
+      "authors": "Bakbergen Ryskulov, Iker García-Ferrero, David Montero, David Jansen, Ali Hashemi, Jezabel R. Garcia, Antonio Tiene, Román Orús",
+      "url": "https://huggingface.co/papers/2608.03796",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2608.03796"
+      }
+    },
+    {
+      "id": "2608.06013",
+      "title": "OneEmo: A Unified Multimodal Reasoning Model for Emotion Perception, Understanding, and Interaction",
+      "title_zh": "OneEmo：用于情感感知、理解和交互的统一多模态推理模型",
+      "description": "Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in emotional intelligence. However, prevailing research predominantly focuses on task-specific specialization, often neglecting inter-task synergy and leaving latent reasoning potential underexplored. To bridge this gap, we introduce OneEmo, a unified affective generalist capable of mastering emotion perception, comprehension, and interaction. For this purpose, we first construct EmoWorld-130K, a comprehensive dataset that distills specialized affective knowledge into explicit reasoning trajectories via a human-in-the-loop workflow. Supervised fine-tuning on this corpus reveals significant mutual benefits derived from multi-task learning. Second, to fully unlock the latent reasoning potential, we propose Emo-Chord, a novel reinforcement learning strategy that stabilizes optimization through unified multi-task reward allocation. Extensive experiments demonstrate that OneEmo achieves state-of-the-art performance against similarly sized baselines across most benchmarks. Notably, despite having significantly fewer parameters than commercial models, OneEmo delivers highly competitive results. This paper paves the way for more reliable and interpretable affective computing. The code is available at https://github.com/waHAHJIAHAO/OneEmo.",
+      "description_zh": "多模态大语言模型（MLLM）在情商方面表现出了卓越的能力。然而，主流研究主要关注特定任务的专业化，往往忽视任务间的协同作用，并导致潜在的推理潜力未被充分开发。为了弥补这一差距，我们引入了 OneEmo，一个统一的情感通才，能够掌握情感感知、理解和交互。为此，我们首先构建了 EmoWorld-130K，这是一个综合数据集，可通过人机交互工作流程将专业情感知识提炼为明确的推理轨迹。该语料库的监督微调揭示了多任务学习带来的显着的互惠互利。其次，为了充分释放潜在的推理潜力，我们提出了 Emo-Chord，这是一种新颖的强化学习策略，通过统一的多任务奖励分配来稳定优化。大量实验表明，OneEmo 在大多数基准测试中相对于类似大小的基线实现了最先进的性能。值得注意的是，尽管 OneEmo 的参数明显少于商业模型，但仍提供了极具竞争力的结果。本文为更可靠和可解释的情感计算铺平了道路。代码可在 https://github.com/waHAHJIAHAO/OneEmo 获取。",
+      "authors": "Jiahao Huang, Zheng Lian, Jingyi Zhang, Zhide Chen, Xiaojiang Peng, Shaonan Wang",
+      "url": "https://huggingface.co/papers/2608.06013",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2608.06013"
+      }
+    },
+    {
+      "id": "2608.06756",
+      "title": "Capek 0.5: An Execution-Centric Vision-Language Model for Embodied Intelligence",
+      "title_zh": "Capek 0.5：以执行为中心的体现智能视觉语言模型",
+      "description": "Vision-language models are increasingly serving as the reasoning core of embodied agents. Robot execution is inherently iterative: each action reshapes the scene and physical state, continually renewing what must be perceived, reasoned about, and verified. Meeting these demands requires complementary capabilities that differ in supervision signals, prediction formats, and verification criteria. Existing approaches typically develop these capabilities against isolated, task-specific objectives, leaving open how they should be organized and integrated around execution as a whole. We present Capek 0.5, an embodied vision-language model built around an execution-centric capability taxonomy. Rather than organizing training by datasets or tasks, the taxonomy groups embodied capabilities according to their functional roles throughout execution and comprises four capability families: Spatial Reasoning, Temporal Understanding, Action Guidance, and State Verification. Each capability is first acquired by a dedicated specialist through reinforcement learning with verifiable rewards from a shared backbone, and the specialists are then consolidated into a single inference-time model through weight-space merging followed by routed policy-space distillation. We instantiate Capek 0.5 at the 2B and 35B-A3B scales and evaluate it from three complementary perspectives: comprehensive benchmark suites including Capek-StateBench, a new benchmark for state verification; a controlled study of capability retention from specialists to the unified model; and closed-loop evaluation in simulated embodied environments. Capek 0.5 improves the large majority of matched benchmark rows over its initialization, retains all four specialized capabilities in one checkpoint with quantified losses, and transfers to closed-loop embodied task execution.",
+      "description_zh": "视觉语言模型越来越多地充当实体代理的推理核心。机器人执行本质上是迭代的：每个动作都会重塑场景和物理状态，不断更新必须感知、推理和验证的内容。满足这些需求需要在监督信号、预测格式和验证标准方面有所不同的互补能力。现有的方法通常针对孤立的、特定于任务的目标来开发这些功能，而如何围绕整个执行来组织和集成它们则保持开放。我们推出了 Capek 0.5，这是一种围绕以执行为中心��能力分类法构建的具体视觉语言模型。分类组不是按数据集或任务组织培训，而是根据其在整个执行过程中的功能角色来体现能力，并包含四个能力系列：空间推理、时间理解、行动指导和状态验证。每项能力首先由专门的专家通过强化学习获得，并从共享骨干网获得可验证的奖励，然后通过权重空间合并和路由策略空间蒸馏将专家合并为单个推理时间模型。我们在 2B 和 35B-A3B 尺度上实例化 Capek 0.5，并从三个���补的角度对其进行评估：全面的基准套件，包括 Capek-StateBench（状态验证的新基准）；从专家到统一模型的能力保留受控研究；以及模拟具体环境中的闭环评估。 Capek 0.5 在其初始化过程中改进了绝大多数匹配的基准行，在一个检查点中保留了所有四种专门功能，并量化了损失，并转移到闭环具体任务执行。",
+      "authors": "Ying Chen, Weizhen Li, Zhe Hu, Zhenjiang Li, Rui Jiang, Zhifeng Gu, Lihuang Fang, Jiangping Liu, Lei Yi, Jie Chen",
+      "url": "https://huggingface.co/papers/2608.06756",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2608.06756"
+      }
+    },
+    {
+      "id": "2603.18846",
+      "title": "Towards Interpretable Foundation Models for Retinal Fundus Images",
+      "title_zh": "建立可解释的视网膜眼底图像基础模型",
+      "description": "Foundation models are used to extract transferable representations from large amounts of unlabeled data, typically via self-supervised learning (SSL). However, many of these models rely on architectures that offer limited interpretability, a critical issue in high-stakes domains such as medical imaging. We propose DualIFM, a foundation model that is interpretable-by-design via a BagNet backbone whose small receptive fields generate class evidence maps that are faithful to the model's decision-making process. Additionally, DualIFM incorporates a 2D projection layer during pretraining that enables direct visualization of the representation space, providing a dataset-level view of the learned structure including meaningful clinical clusters as well as potential spurious correlations. We trained DualIFM on over 800,000 color fundus photographs from various sources to learn generalizable representations for different downstream tasks. Our model achieves performance comparable to RETFound, which has 16times more parameters, while providing interpretable predictions on out-of-distribution data. These results suggest that large-scale SSL pretraining paired with inherent interpretability can lead to robust representations for retinal imaging. Code and pretrained models are available at github.com/berenslab/interpretable_FM.",
+      "description_zh": "基础模型用于从大量未标记数据中提取可转移表示，通常通过自监督学习 (SSL)。然而，其中许多模型依赖于可解释性有限的架构，这在医学成像等高风险领域是一个关键问题。我们提出了 DualIFM，这是一种可通过 BagNet 主干进行设计解释的基础模型，其小感受野生成忠实于模型决策过程的类证据图。此外，DualIFM 在预训练期间合并了一个 2D 投影层，可以直接可视化表示空间，提供学习结构的数据集级视图，包括有意义的临床聚类以及潜在的虚假相关性。我们使用来自不同来源的超过 800,000 张彩色眼底照片对 DualIFM 进行训练，以学习不同下游任务的通用表示。我们的模型实现了与 RETFound 相当的性能，后者的参数多了 16 倍，同时提供了对分布外数据的可解释预测。这些结果表明，大规模 SSL 预训练与固有的可解释性相结合可以为视网膜成像提供稳健的表示。代码和预训练模型可在 github.com/berenslab/interpretable_FM 上获取。",
+      "authors": "Samuel Ofosu Mensah, Camila Roa, Kerol Djoumessi, Philipp Berens",
+      "url": "https://huggingface.co/papers/2603.18846",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2603.18846"
+      }
+    },
+    {
+      "id": "2608.07341",
+      "title": "Zero Gap Is Not Restoration: Stratified Per-Question Probability Evaluation and Step-wise Mitigation of Benchmark Contamination",
+      "title_zh": "零差距不是恢复：按问题概率分层评估和基准污染的逐步缓解",
+      "description": "Test data from public benchmarks inevitably leaks into pretraining corpora, inflating evaluation scores once memorized. Contamination mitigation evaluation intervenes in the decoding process to suppress memorization and restore a contaminated model's genuine capability, but its prevailing metric, the G-AP (Gap of Aggregate Performance), is flawed. Discrete correct/incorrect readouts cannot characterize per-question performance, averaging before differencing lets over- and under-suppression cancel out, and uniform per-question weighting invites strategies to push solve probabilities onto the clean model's high-frequency values. We propose SA-PPG (Stratified Aggregate of Per-question Probability Gaps): estimate each question's solve probability by sampling, difference it against the clean model per question, and aggregate within groups defined by the clean model's solve probability. Existing mitigation strategies first estimate where contamination lies and then operate on the estimate, so they are only as correct as the estimate. RailCap instead judges contamination during generation: whenever a sample falls back onto the greedy trajectory, the next trajectory token is capped to the runner-up, accumulating suppression until the response distribution becomes sufficiently dispersed. Across multiple contaminated models and benchmarks, SA-PPG reveals that prior strategies' restoration is substantially overestimated, while RailCap attains the lowest SA-PPG.",
+      "description_zh": "来自公共基准的测试数据不可避免地会泄漏到预训练语料库中，一旦记住就会夸大评估分数。污染缓解评估会干预解码过程，以抑制记忆并恢复受污染模型的真实能力，但其流行的指标 G-AP（聚合性能差距）存在缺陷。离散的正确/不正确读数无法表征每个问题的性能，求差之前求平均值可以抵消过度抑制和抑制不足，而统一的每个问题加权则需要采取策略将解决概率推到干净模型的高频值上。我们提出 SA-PPG（每个问题概率差距的分层聚��）：通过采样估计每个问题的解决概率，将其与每个问题的干净模型进行差异，并在由干净模型的解决概率定义的组内进行聚合。现有的缓解策略首先估计污染所在，然后根据估计进行操作，因此它们的正确性取决于估计。相反，RailCap 在生成过程中判断污染：每当样本回落到贪婪轨迹时，下一个轨迹标记就会被限制为亚军，累积抑制，直到响应分布变得足够分散。在多个受污染模型和基准中，SA-PPG 揭示了先前策略的恢��被大大高估，而 RailCap 获得了最低的 SA-PPG。",
+      "authors": "Ruijie Hou, Yueyang Jiao, Zhao Wang, Yingming Li",
+      "url": "https://huggingface.co/papers/2608.07341",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2608.07341"
+      }
+    },
+    {
+      "id": "2608.03571",
+      "title": "Beyond Simply Environment Scaling: Designing Effective Environment Distributions for Multimodal Agent Learning",
+      "title_zh": "超越简单的环境缩放：为多模式代理学习设计有效的环境分布",
+      "description": "Recent works train agents by constructing large-scale multimodal environment pools. However, we find that simply increasing the number of multimodal environments does not always benefit. We further analyze the limitations in current multimodal environment distributions through a series of experiments. Based on these findings, we study how to build more effective training environment distributions from two dimensions: **diversity** and **difficulty structure**. For diversity, we propose **Ability-aware Environment Selection (AES)** to obtain diverse environment sets. For difficulty structure, we propose **Hierarchical Difficulty Curriculum (HDC)**, which organizes curriculum learning through two difficulty levels: harness weakening and state-scale progression. Experiments show that AES and HDC effectively improve multimodal agent training.",
+      "description_zh": "最近的工作通过构建大规模多模式环境池来训练智能体。然而，我们发现仅仅增加多模式环境的数量并不总是有益。我们通过一系列实验进一步分析当前多模态环境分布的局限性。基于这些发现，我们从**多样性**和**难度结构**两个维度研究如何构建更有效的训练环境分布。为了多样性，我们提出**能力感知环境选择（AES）**来获得不同的环境集。对于难度结构，我们提出**分级难度课程（HDC）**，它通过两个难度级别来组织课程学习：利用弱化和状态规模进展。实验表明，AES 和 HDC 有效改善了多模态智能体训练。",
+      "authors": "Kejian Zhu, Zhuoran Jin, Dongqi Huang, Hongbang Yuan, Yupu Hao, Kang Liu, Jun Zhao",
+      "url": "https://huggingface.co/papers/2608.03571",
+      "score": 25,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "25",
+        "paperId": "2608.03571"
+      }
+    },
+    {
+      "id": "2608.03573",
+      "title": "SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs",
+      "title_zh": "SFT 冲突，RL 共存：LLM多任务学习的理论与实证分析",
+      "description": "Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) exhibit fundamentally different behaviors in enhancing multi-task reasoning for large language models (LLMs). Our preliminary experiments revealed a phenomenon: SFT suffers from severe task conflicts under multi-stage training, whereas RL enables stable coexistence across diverse tasks. Empirically, we trace this to the parameter level, observing that RL induces sparse and approximately orthogonal updates across tasks. We provide a theoretical explanation for this mechanism by analyzing multi-task gradient interference. Our results reveal a distinction: interference in SFT is norm-limited, scaling with the absolute gradient magnitude, whereas interference in RL is variance-limited, bounded by the gradient variance induced by advantage normalization and on-policy optimization. This small variance bound yields near-orthogonal optimization directions across tasks. Leveraging this insight, we propose Parallel-RL, a paradigm that decouples multi-task training, significantly improving efficiency and flexibility.",
+      "description_zh": "监督微调 (SFT) 和强化学习 (RL) 在增强大型语言模型 (LLM) 的多任务推理方面表现出根本不同的行为。我们的初步实验揭示了一个现象：SFT 在多阶段训练下会遇到严重的任务冲突，而 RL 可以实现不同任务之间的稳定共存。根据经验，我们将其追溯到参数级别，观察到 RL 会导致跨任务的稀疏且近似正交的更新。我们通过分析多任务梯度干扰，为这种机制提供了理论解释。我们的结果揭示了一个区别：SFT 中���干扰是范数限制的，随绝对梯度大小缩放，而 RL 中的干扰是方差限制的，受优势归一化和同策略优化引起的梯度方差的限制。这种小方差界限在任务之间产生近乎正交的优化方向。利用这一见解，我们提出了并行强化学习，这是一种解耦多任务训练的范式，可显着提高效率和灵活性。",
+      "authors": "Kejian Zhu, Zhuoran Jin, Shangqing Tu, Hongbang Yuan, Yushi Bai, Kang Liu, Juanzi Li, Jun Zhao",
+      "url": "https://huggingface.co/papers/2608.03573",
+      "score": 25,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "25",
+        "paperId": "2608.03573"
+      }
+    },
+    {
+      "id": "2608.06501",
+      "title": "Can MLLMs Decode the Creative Leap? Introducing C4 for Cross-Concept Understanding",
+      "title_zh": "MLLM 能否解码创意飞跃？引入 C4 进行跨概念理解",
+      "description": "Creative capabilities of MLLMs matter in design, communication, education, and human--AI collaboration, yet remain difficult to evaluate because explicit targets and reward signals are scarce compared with accuracy-oriented tasks. Cross-concept understanding is a core cognitive capacity underlying receptive creativity. It enables a perceiver to recover intended meaning from non-obvious but meaningful conceptual relations. We operationalize item construction as cross-concept encoding and model inference as cross-concept decoding. We introduce C4, a cognition-inspired evaluation framework for Chengyu (Chinese idiom)-based Cross-Concept Creativity. Its encoding component maps target slots to imageable substitute concepts along bridge paths in a manually annotated and third-party-reviewed cross-concept network, enabling batch generation with explicit structure, difficulty indexed by bridge count and depth, and exact answers. Using this framework, we instantiate the C4 Evaluation Set (C4-Eval), comprising 184 synthetic items and 37 human-created cross-concept chengyu figures collected from online sources. We manually construct and review cross-concept relations, bridge paths, and reasoning processes for the collected figures. Each C4-Eval item is instantiated in five task settings, yielding 884 primary answer-recovery cases. Across ten evaluated MLLMs, the strongest closed models reach 50.7% and 48.0% primary accuracy, while open-source models remain substantially lower. Candidate constraints improve accuracy sharply, but bridge hints and explanation requests provide only modest gains. These results expose a substantial gap in how current MLLMs decode creatively encoded meaning through cross-concept relations. The code is in the supplementary material.",
+      "description_zh": "MLLM 的创造力在设计、通信、教育和人类与人工智能的协作中很重要，但仍然难以评估，因为与以准确性为导向的任务相比，明确的目标和奖励信号很少。跨概念理解是接受创造力的核心认知能力。它使感知者能够从不明显但有意义的概念关系中恢复预期的含义。我们将项目构建操作为跨概念编码，将模型推理操作为跨概念解码。我们介绍了 C4，一个基于成语（中国成语）的跨概念创造力的认知启发评估框架。其编码组件将目标槽映射到手动注释和第三方审查的跨概念网络中的桥路径上的可成像替代概念，从而实现具有显式结构的批量生成、按桥数量和深度索引的难度以及准确的答案。使用该框架，我们实例化了 C4 评估集（C4-Eval），其中包括从在线资源收集的 184 个合成项目和 37 个人工创建的跨概念成宇人物。我们手动构建和审查所收集数据的跨概念关系、桥梁路径和推理过程。每个 C4-Eval 项目在五个任务设置中实例化，产生 884 个主要答案恢复案例。在十个经过评估的 MLLM 中，最强的封闭模型达到了 50.7% 和 48.0% 的主要准确率，而开源模型仍然低得多。候选约束极大地提高了准确性，但桥接提示和解释请求仅提供了有限的收益。这些结果揭示了当前 MLLM 如何通过跨概念关系创造性地解码编码含义方面存在巨大差距。代码位于补充材料中。",
+      "authors": "Ming Wang, Yuqing Zhang, Tingna Xie, Xiangju Li, Xiaocui Yang, Daling Wang, Shi Feng, Yifei Zhang",
+      "url": "https://huggingface.co/papers/2608.06501",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2608.06501"
+      }
+    },
+    {
+      "id": "2608.06485",
+      "title": "Do AI Personas Grow? Analyzing and Benchmarking Personality Evolution in LLM Agents After Life Events",
+      "title_zh": "人工智能角色会成长吗？LLM代理人在生活事件后的人格演变分析和基准测试",
+      "description": "Personality-conditioned LLM agents (PC-Agents) are increasingly used in emotional support, social simulation, and role-playing, motivating the development of lifelong agents that remain coherent over extended interactions. A key component of such coherence is personality evolution: agents should undergo plausible, psychology-grounded changes as they experience life events in different contexts. Although prior work shows that LLM personalities can shift under contextual perturbations, how these shifts vary across traits, events, personas, and models remains poorly understood. We study event-induced personality change after 11 major life events, using the Big Five traits as a psychometric anchor and interpreting the resulting trajectories against longitudinal evidence from human personality psychology. Across four diagnostic axes, PC-Agents exhibit measurable trait shifts at similar rates for event-trait pairs with and without documented human change directions. Even when shifts follow the expected direction, their magnitudes usually fall below human effect-size ranges. Gender and cultural-region prompts show little moderating effect, while persona-level dispersion is compressed three- to four-fold relative to human samples. To enable systematic comparison, we introduce BFI-Adapt, a reusable benchmark for scoring the directional fidelity of event-induced personality change, and use it to rank 14 models. A validation suite shows that the measured shifts exceed no-event retest noise, remain stable under independently paraphrased prompts, exhibit limited and model-dependent convergence with scenario-based behavioral choices, and persist across intervening unrelated dialogue. Together, these checks establish the measured trajectories as robust event-conditioned response patterns. Our results suggest that current PC-Agents simulate the mean of human personality dynamics, but not its shape.",
+      "description_zh": "人格调节的 LLM 代理（PC-Agents）越来越多地用于情感支持、社交模拟和角色扮演，激励终身代理的发展，这些代理在长期互动中保持一致。这种一致性的一个关键组成部分是人格进化：当代理人在不同的背景下经历生活事件时，他们应该经历合理的、基于心理学的变化。尽管之前的研究表明LLM的性格可以在环境扰动下发生变化，但这些变化如何随着特征、事件、人物角色和模型的不同而变化，人们仍然知之甚少。我们研究了 11 个重大生活事件后由事件引起的人格变化��使用大五特征作为心理测量锚点，并根据人类人格心理学的纵向证据解释由此产生的轨迹。在四个诊断轴上，无论有无记录的人类变化方向，PC-Agents 对于事件-特征对都以相似的速率表现出可测量的特征变化。即使变化遵循预期方向，其幅度通常也会低于人类效应大小范围。性别和文化区域提示几乎没有显示出调节作用，而角色层面的分散度相对于人类样本被压缩了三到四倍。为了进行系统比较，我们引入了 BFI-Adapt，这是一个可重复使用的基准，用于对事件引起的人格变化的方向保真度进行评分，并用它对 14 个模型进行排名。验证套件显示，测量的变化超过无事件重新测试噪声，在独立解释的提示下保持稳定，与基于场景的行为选择表现出有限且依赖于模型的收敛，并在干预的不相关对话中持续存在。这些检查共同将测量的轨迹建立为稳健的事件条件响应模式。我们的结果表明，当前的 PC 代理模拟了人类人格动态的平均值，但不是其形状。",
+      "authors": "Ming Wang, Peidong Wang, Xiaocui Yang, Daling Wang, Shi Feng, Fiona Fui-Hoon Nah, Ee-Peng Lim",
+      "url": "https://huggingface.co/papers/2608.06485",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2608.06485"
+      }
+    },
+    {
+      "id": "2608.02831",
+      "title": "Reinforcement Learning with Evolving Rubrics as Rewards for Audio Reasoning",
+      "title_zh": "使用不断演变的规则作为音频推理奖励的强化学习",
+      "description": "Audio reasoning is essential for machine understanding of the acoustic world. Reinforcement learning with verifiable rewards can elicit such reasoning, yet existing reward designs are complementary in their limitations: outcome-based rewards supervise only the final answer and let the model reach it without attending to the audio, whereas process-based rewards score the reasoning itself but rely on coarse, hand-crafted, and fixed criteria that neither adapt to each question nor stay grounded in the acoustic evidence. Moreover, questions differ in what they demand, with some hinging on perception and others on multi-step reasoning, and any static criterion weakens as the policy improves. Supervising the reasoning process with fine-grained, audio-grounded, and adaptive rewards is therefore crucial, yet challenging since such rewards are impractical to design by hand for every sample. To this end, we introduce AudioRubrics, a reinforcement learning framework that supervises audio reasoning with self-evolving, audio-grounded rubric rewards. AudioRubrics synthesizes per-sample rubrics from the raw waveform and, conditioned on the model's own rollouts, regenerates and reweights criteria per group, supplying a continuous learning signal that keeps targeting the current policy's weaknesses as static criteria saturate. Comprehensive evaluations across three audio reasoning benchmarks reveal that AudioRubrics substantially outperforms a wide range of open-source and training-based baselines. Furthermore, our analysis shows that the gains scale with the capability of the rubric generator and judge, and AudioRubrics converges to a stable reasoning length that avoids both degenerate collapse and unbounded growth. The improvement in audio perception further demonstrates the effectiveness of anchoring supervision in the acoustic evidence. Our project page is available at https://audiorubrics.github.io.",
+      "description_zh": "音频推理对于机器理解声学世界至关重要。具有可验证奖励的强化学习可以引发这样的推理，但现有的奖励设计在其局限性方面是互补的：基于结果的奖励仅监督最终答案，让模型在不关注音频的情况下达到答案，而基于过程的奖励对推理本身进行评分，但依赖于粗略的、手工设计的和固定的标准，既不适应每个问题，也不立足于声学证据。此外，问题的要求也各不相同，有些取决于感知，有些则取决于多步骤推理，任何静态标准都会随着政策的改进而减弱。因此，用细粒度、基于音频的自适应奖励来监督推理过程至关重要，但也具有挑战性，因为为每个样本手工设计这样的奖励是不切实际的。为此，我们引入了 AudioRubrics，这是一个强化学习框架，它通过自我进化、基于音频的评分规则奖励来监督音频推理。 AudioRubrics 从原始波形中合成每个样本的规则，并以模型自身的推出为条件，重新生成并重新加权每组标准，提供持续学习信号，在静态标准饱和时不断针对当前策略的弱点。对三个音频推理基准的综合评估表明，AudioRubrics 的性能大大优于各种开源和基于训练的基准。此外，我们的分析表明，增益随 Rubric 生成器和判断的能力而变化，并且 AudioRubrics 收敛到稳定的推理长度，避免退化崩溃和无界增长。音频感知的改善进一步证明了声学证据中锚定监督的有效性。我们的项目页面位于 https://audiorubrics.github.io。",
+      "authors": "Fangxu Yu, Tao Feng, Dehai Min, Zinan Lin, Weijia Xu, Michael Xu, Philip S. Yu, Ge Liu, Tianyi Zhou",
+      "url": "https://huggingface.co/papers/2608.02831",
       "score": 9,
       "meta": {
         "source": "huggingface",
         "upvotes": "9",
-        "paperId": "2608.01492"
+        "paperId": "2608.02831"
       }
     },
     {
-      "id": "2608.01851",
-      "title": "Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills",
-      "title_zh": "重量还是技能？机器人学习技术调查：从动作预测权重到编写自己技能的机器人",
-      "description": "Robot learning is splitting into two bets: policies that bake competence into frozen weights (vision-language-action, or VLA, models), and agents that write and refine their own executable skills as code. This survey organises the field around that axis of weights versus skills. Its central analytical contribution is a deep-dive that arranges code-as-policy methods by their degree of self-improvement, from zero-shot program synthesis, through closed-loop self-repair and persistent skill memory, to the sparsely populated cell in which execution feedback, skill memory, and evolutionary search combine into one open-ended loop; only a few very recent systems (for example ASPIRE, ENPIRE, and RoboClaw) occupy that cell. We map the complementary \"skills\" pole, from unsupervised reinforcement-learning skill discovery to large-language-model skill libraries, and show that the word \"skill\" is used in at least five distinct senses, of which only the code sense self-improves without gradient updates. We then connect the taxonomy to the emerging skill economy: commercial robot-skill marketplaces now distribute one-tap skills across robots but ship only static playback, which surfaces open problems of adaptation, cross-embodiment portability, provenance, safety verification, composition, and standardisation. This is a deliberately focused survey. Rather than cataloguing the field exhaustively, it examines 77 representative systems across six technique families through one taxonomy and a set of contrast tables, and it supplies operational definitions of the self-improvement mechanisms together with a statement of what each family cannot do.",
-      "description_zh": "机器人学习分为两个赌注：将能力融入冻结权重（视觉-语言-动作，或 VLA，模型）的策略，以及将自己的可执行技能编写和完善为代码的代理。这项调查围绕权重与技能的轴来组织该领域。其核心分析贡献是深入研究，根据自我改进的程度来安排代码即策略方法，从零样本程序合成，通过闭环自我修复和持久技能记忆，到执行反馈、技能记忆和进化搜索结合成一个开放式循环的稀疏单元；只有少数最近的系统（例如 ASPIRE、ENPIRE 和 RoboClaw��占据了该单元。我们绘制了互补的“技能”极点，从无监督强化学习技能发现到大型语言模型技能库，并表明“技能”一词至少有五种不同的含义，其中只有代码含义在没有梯度更新的情况下自我改进。然后，我们将分类法与新兴的技能经济联系起来：商业机器人技能市场现在在机器人之间分配一键式技能，但仅提供静态播放，这暴露了适应性、跨实体可移植性、出处、安全验证、组合和标准化等开放性问题。这是一项有针对性的调查。它没有详尽地对该领域进行编目，而是通过一个分类法和一组对比表检查了六个技术家族的 77 个代表性系统，并提供了自我改进机制的操作定义以及每个家族不能做什么的声明。",
-      "authors": "Gaytri Jena, Kapil Wanaskar, Vinija Jain, Aman Chadha, Vasu Sharma, Amitava Das",
-      "url": "https://huggingface.co/papers/2608.01851",
-      "score": 10,
+      "id": "2606.00152",
+      "title": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
+      "title_zh": "PrivacyPeek：审计LLM代理人获得的内容，而不仅仅是他们所说的内容",
+      "description": "LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents often acquire more sensitive information than the task requires. Existing privacy benchmarks audit what the agent's response or outgoing actions disclose, but overlook the acquisition stage where data first enters the agent's context. The over-acquired information is then one careless action or one attack away from an outright leak. To assess its prevalence, we introduce PrivacyPeek, a benchmark for evaluating acquisition-stage privacy leakage of LLM-based agents, with 1{,}182 cases across 7 acquisition behaviours and 16 application domains. Specifically, Acquisition Inspection examines the agent's tool-call trajectory, both the tools it invokes and the data it receives, to detect when it acquires sensitive information beyond the task scope. Probe Elicitation then issues a follow-up probe and measures how readily an attacker could elicit sensitive information the agent acquired but did not disclose. Our experiments on 10 LLM-based agents across 4 model families show that the unnecessary acquisition of sensitive information is widespread. In addition, we observe a correlation between the task-completion capability and acquisition-stage leakage. Prompt-level defences reduce only a small fraction of acquisition-stage leakage, leaving the majority unmitigated. These results make auditing acquisition-stage privacy both urgent and necessary. Our dataset and code are available at https://github.com/Xuan269/PrivacyPeek-Resource.",
+      "description_zh": "基于LLM的代理正在快速发展，自主调用外部工具为用户完成多步骤任务。然而，代理通常会获取比任务所需的更敏感的信息。现有的隐私基准审核代理的响应或传出行为所披露的内容，但忽略了数据首次进入代理上下文的获取阶段。过度获取的信息只是一次不小心的行为或一次攻击，就可能导致彻底泄露。为了评估其普遍性，我们引入了 PrivacyPeek，这是一个用于评估基于 LLM 的代理的获取阶段隐私泄露的基准，涉及 7 个获取行为和 16 个应用领域的 1{,}182 个案例。具体来说，获取检查检查代理的工具调用轨迹，包括它调用的工具和它接收的数据，以检测它何时获取超出任务范围的敏感信息。然后，探测获取会发出后续探测，并测量攻击者获取代理获取但未披露的敏感信息的容易程度。我们对 4 个模型系列的 10 个基于 LLM 的代理进行的实验表明，不必要的敏感信息获取非常普遍。此外，我们观察到任务完成能力和采集阶段泄漏之间的相关性。即时级防御仅减少了一小部分采集阶段的泄漏，而大多数则未得到缓解。这些结果使得审计采集阶段的隐私变得紧迫和必要。我们的数据集和代码可在 https://github.com/Xuan269/PrivacyPeek-Resource 获取。",
+      "authors": "Mingxuan Zhang, Jiahui Han, Dadi Guo, Songze Li, Guanchu Wang, Na Zou, Dongrui Liu, Xia Hu",
+      "url": "https://huggingface.co/papers/2606.00152",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
-        "paperId": "2608.01851"
-      }
-    },
-    {
-      "id": "2608.01049",
-      "title": "FactorJEPA: Factorizing Monolithic Futures into Layout-Agent-Interaction Channels for Crowded and Chaotic Global South Urban Worlds",
-      "title_zh": "FactorJEPA：将整体未来分解为拥挤和混乱的全球南方城市世界的布局代理交互渠道",
-      "description": "World models have attracted significant attention for their ability to capture and predict the structure and dynamics of the physical world. In this emerging landscape, Joint Embedding Predictive Architectures (JEPA) offer a particularly compelling direction.\n  We study a largely unexplored regime: populous, crowded, and chaotic Global South urban environments, which we call DENSEWORLD. Unlike the lower-density, lane-structured settings that dominate existing evaluations, these scenes exhibit soft spatial boundaries, extreme agent heterogeneity, persistent occlusion, and rapid social negotiation under mixed traffic. We introduce the first large-scale dataset for this regime: 1,000 hours of drive-through, walk-through, and aerial video across 22 cities. Existing JEPA formulations struggle to preserve dense interaction dynamics under heterogeneity and partial observability.\n  We introduce FactorJEPA, which makes world structure a first-class predictive primitive. Rather than encoding the future in a monolithic latent, it composes layout, entities, and interactions, using a visibility gate and separated subspaces to preserve partially observed agents and discourage cross-factor shortcuts. FactorJEPA improves (i) future-latent accuracy (Future-frame L1), (ii) intervention-sensitive prediction (Causal L1), and (iii) robustness to reduced visual evidence (Mask-ratio slope), while exposing (iv) a reproducible motion-information trade-off (Motion cosine). Method rankings replicate across 2B and 1B V-JEPA 2.1 backbones, with rho = 0.895 to 0.978.\n  We publicly release the DENSEWORLD-115k dataset (https://huggingface.co/datasets/anonymousML123/denseworld-115k) and the surgery-trained FactorJEPA checkpoints (https://huggingface.co/datasets/anonymousML123/factorjepa-outputs/tree/main/outputs/full/vjepa_2_1_vitg_1B/train/m09c_surgery_3stage_DI_diheavy_encoder).",
-      "description_zh": "世界模型因其捕捉和预测物理世界的结构和动态的能力而引起了极大的关注。在这个新兴领域，联合嵌入预测架构（JEPA）提供了一个特别引人注目的方向。\n  我们研究了一个很大程度上未经探索的政权：人口稠密、拥挤且混乱的全球南方城市环境，我们称之为密集世界。与主导现有评估的低密度、车道结构设置不同，这些场景表现出软空间边界、极端的代理异质性、持续遮挡和混合交通下的快速社交协商。我们引入了该机制的第一个大规模数据集：跨越 22 个城市的 1,000 小时的驾车穿过、步行穿过和航拍视频。现有的 JEPA 公式很难在异质性和部分可观察性下保持密集的相互作用动态。\n  我们引入了 FactorJEPA，它使世界结构成为一流的预测原语。它不是用整体的潜在编码来编码未来，而是组合布局、实体和交互，使用可见性门和分离的子空间来保留部分观察到的代理并阻止跨因素的捷径。 FactorJEPA 提高了 (i) 未来潜在准确性（未来帧 L1）、(ii) 干预敏感预测（因果 L1）和 (iii) 对减少的视觉证据的鲁棒性（掩模比斜率），同时暴露 (iv) 可再现的运动信息权衡（运动余弦）。方法排名在 2B 和 1B V-JEPA 2.1 主干上重复，rho = 0.895 至 0.978。\n  我们公开发布了 DENSEWORLD-115k 数据集 (https://huggingface.co/datasets/anonymousML123/denseworld-115k) 和经过手术训练的 FactorJEPA 检查点（https://huggingface.co/datasets/anonymousML123/factorjepa-outputs/tree/main/outputs/full/vjepa_2_1_vitg_1B/train/m09c_surgery_3stage_DI_diheavy_encoder）。",
-      "authors": "Kapil Wanaskar, Gaytri Jena, Aman Chadha, Vinija Jain, Vasu Sharma, Amitava Das",
-      "url": "https://huggingface.co/papers/2608.01049",
-      "score": 10,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "10",
-        "paperId": "2608.01049"
-      }
-    },
-    {
-      "id": "2608.05798",
-      "title": "KVAE: Family of Tokenizers for Multimodal Generative Models",
-      "title_zh": "KVAE：多模态生成模型的分词器系列",
-      "description": "Latent diffusion modeling (LDM), a prominent paradigm, utilizes tokenizers to map input signal to compressed representation. This dependency positions tokenizer as an integral part of generation process itself, since it affects learning speed, quality of synthesized samples and lay foundation for later applications. This report presents series of KVAE tokenizers for audio, image and video, all designed for subsequent text-conditioned generation: KVAE-Audio, a continuous full-band 48 kHz tokenizer with a 50 Hz latent of 64 channels; KVAE-3D -- two causal video tokenizers for 4x16x16 and 4x8x8 compression; KVAE-2D, an image model, compressing input by factor of 8 with 32 channels. We demonstrate that reconstruction (PSNR, LPIPS, PESQ, etc.) and generation results on objective (Frechet Distance, CLIP score, CLAP score, etc.) and subjective (side-by-side evaluation) metrics matches or surpasses frontier opensource tokenizers, such as VAEs from Wan-2.2, HunyuanVideo-1.5, FLUX.2, MovieGen, StableAudio and MMAudio. Considering difficulty of development, we share with community training details, model selection method and ablation on design choices. The code is publicly available at https://github.com/kandinskylab/kvae and https://github.com/kandinskylab/kvae-audio.",
-      "description_zh": "潜在扩散建模 (LDM) 是一种重要的范例，它利用分词器将输入信号映射到压缩表示。这种依赖性将分词器定位为生成过程本身的一个组成部分，因为它影响学习速度、合成样本的质量并为以后的应用奠定基础。本报告介绍了一系列用于音频、图像和视频的 KVAE 分词器，所有这些都是为后续文本调节生成而设计的：KVAE-Audio，一种连续全频带 48 kHz 分词器，具有 50 Hz 潜在的 64 个通道； KVAE-3D——两个用于 4x16x16 和 4x8x8 压缩的因果视频分词器； KVAE-2D，一种图像模型，将输入压缩 8 倍，具有 32 个通道。我们证明了客观（Frechet Distance、CLIP 分数、CLAP 分数等）和主观（并行评估）指标的重建（PSNR、LPIPS、PESQ 等）和生成结果匹配或超越了前沿开源分词器，例如来自 Wan-2.2、HunyuanVideo-1.5、FLUX.2、MovieGen、StableAudio 和 MMAudio 的 VAE。考虑到开发难度，我们与社区分享培训细节、模型选择方法以及设计选择的消融。该代码可在 https://github.com/kandinskylab/kvae 和 https://github.com/kandinskylab/kvae-audio 上公开获取。",
-      "authors": "Andrey Shutkin, Denis Parkhomenko, Ivan Kirillov, Kirill Chernyshev, Kirill Malakhov, Ilia Vasiliev, Ilia Trushkin, Valeriya Kobenko, David Chikovani, Alexander Ivanov, Azat Saginbaev, Egor Silvestrov, Ivan Mikheev, Konstantin Zakharov",
-      "url": "https://huggingface.co/papers/2608.05798",
-      "score": 20,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "20",
-        "paperId": "2608.05798"
-      }
-    },
-    {
-      "id": "2608.05784",
-      "title": "Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay",
-      "title_zh": "活动框架：用于代理记忆和重放的确定性屏幕活动编译",
-      "description": "Computer-use agents pay full frontier inference to re-derive routines their user has already performed, because an agent's memory today records what the user said, not what the user did. We compile passively captured screen activity into agent memory with a deterministic, zero-model pipeline: it segments a local capture stream into typed activity frames, bounded episodes carrying application, site, timing, input volume, and evidence pointers back to the raw rows, with no model in the loop, so the output is byte-identical, cacheable, and mechanically auditable. On one professional's single-user corpus of 128,756 frames over 51 active days, the compiler reduces a day of raw capture to a prompt-ready context block 86x smaller in 68 ms, and an agent reading that block answers questions about the day at 98.4% accuracy (Wilson 95% CI 91.7-99.7%) against an independent oracle, versus 66-80% for an LLM summary of the same capture, a mid-tier model reading the block matching a frontier one.\n  The same compiler doubles as a demand-side cost instrument. Read off passive, pre-delegation human activity rather than agent rollouts, it supplies two parameters that agent-cost models assume but, to our knowledge, have not measured: the Routine Overhead Ratio R and the routine recurrence h. We report first values of R, a modeled upper bound, at 60-343x, and a delegable recurrence of 9.0% in-sample and 7.7% out-of-sample, for a realistic all-fleet token ceiling near 8%; a compiled routine replays deterministically with the model out of the loop, demonstrated live at zero model tokens on a guard-matched hit. Schema, compiler, and evaluation harness are open.",
-      "description_zh": "计算机使用代理支付全部前沿推理来重新推导用户已经执行的例程，因为今天代理的内存记录用户所说的话，而不是用户所做的。我们使用确定性的零模型管道将被动捕获的屏幕活动编译到代理内存中：它将本地捕获流分段为类型化的活动帧、携带应用程序、站点、计时、输入量和返回原始行的证据指针的有界片段，循环中没有模型，因此输出是字节相同的、可缓存的和机械可审计的。在一名专业人士在 51 个活跃日内包含 128,756 帧的单用户语料库中，编译器将一天的原始捕获量减少为一个可立即使用的上下文块，在 68 毫秒内缩小了 86 倍，并且读取该块的��理相对于独立预言机以 98.4% 的准确率（Wilson 95% CI 91.7-99.7%）回答有关当天的问题，而LLM摘要的准确度为 66-80%。同样的捕获，中间层模型读取与前沿模型匹配的块。\n  同一个编译器还兼作需求方成本工具。读出被动的、预授权的人类活动而不是代理的推出，它提供了代理成本模型假设的两个参数，但据我们所知，尚未测量：例行开销比率 R 和例行重复 h。我们报告了 R 的第一个值，即 60-343 倍的建模上限，以及样本内 9.0% 和样本外 7.7% 的可委托重复率，现实的全舰队代币上限接近 8%；编译后的例程会在循环外确定性地重放模型，并在守卫匹配命中时以零模型标记进行现场演示。架构、编译器和评估工具都是开放的。",
-      "authors": "Nossa Iyamu",
-      "url": "https://huggingface.co/papers/2608.05784",
-      "score": 23,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "23",
-        "paperId": "2608.05784"
-      }
-    },
-    {
-      "id": "2608.03451",
-      "title": "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces",
-      "title_zh": "DataSpace：对数据代理进行基准测试，以实现异构工作空间上的可验证分析",
-      "description": "Data agents enable natural-language analytics over organizational workspaces, where relevant evidence may be scattered across databases, structured files, long documents, and multimedia. Existing benchmarks largely isolate structured querying, retrieval, or open-ended analysis, leaving heterogeneous evidence discovery, complete tabular outputs, and deterministic evaluation insufficiently unified. We introduce DataSpace, a benchmark in which data agents produce verifiable tabular results from task-local heterogeneous workspaces. It contains 410 cross-language tasks and 7,439 artifacts totaling 15.01 GB across CSV, JSON, SQLite, Markdown, PDF, and video. DataSpace also served as the official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition. Each agent receives only a question and workspace and returns the complete requested tabular result. We construct DataSpace with DataSpace-Builder, an execution-grounded framework comprising cross-language transformation, constraint-aware relational sampling, modality routing and artifact rendering, and human review and task repair by 11 domain experts. A deterministic evaluator performs header-invariant column alignment, type- and precision-aware normalization, and order-aware row comparison. Across six recently released frontier multimodal models and five widely used agent harnesses, the best accuracy reaches 66.34%, while harness choice creates a 15.36-point spread with the backbone fixed. Multimodal evidence integration and joins consistently reduce accuracy across all six backbones. These results show that DataSpace remains unsaturated and identify key challenges for improving data-agent reliability.",
-      "description_zh": "数据代理支持在组织工作空间中进行自然语言分析，其中相关证据可能分散在数据库、结构化文件、长文档和多媒体中。现有的基准在很大程度上隔离了结构化查询、检索或开放式分析，使得异构证据发现、完整的表格输出和确定性评估不够统一。我们引入了 DataSpace，这是一个基准，数据代理可以从任务本地异构工作空间生成可验证的表格结果。它包含 410 个跨语言任务和 7,439 个工件，总计 15.01 GB，跨 CSV、JSON、SQLite、Markdown、PDF 和视频。 DataSpace 还担任 KDD Cup 2026 Data Agents for Complex Data Analysis 竞赛的官方评估基准。每个代理仅接收一个问题和工作区，并返回完整请求的表格结果。我们使用 DataSpace-Builder 构建 DataSpace，这是一个基于执行的框架，包括跨语言转换、约束感知关系采样、模态路由和工件渲染，以及由 11 名领域专家进行的人工审查和任务修复。确定性求值器执行标题不变的列对齐、类型和精度感知的标准化以及顺序感知的行比较。在最近发布的 6 个前沿多模态模型和 5 个广泛使用的代理线束中，最佳准确率达到 66.34%，而线束选择在主干固定的情况下产生了 15.36 点的分布。多模式证据集成和连接持续降低所有六个主干网的准确性。这些结果表明数据空间仍然不饱和，并确定了提高数据代理可靠性的关键挑战。",
-      "authors": "Boyan Li, Zhuowen Liang, Yupeng Xie, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yizhang Zhu, Zhangyang Peng, Yuan Li, Zhengxuan Zhang, Jiayi Zhang, Nan Tang, Guoliang Li, Yuyu Luo",
-      "url": "https://huggingface.co/papers/2608.03451",
-      "score": 30,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "30",
-        "paperId": "2608.03451"
-      }
-    },
-    {
-      "id": "2608.01481",
-      "title": "Interpretable MEG Decoding of Perceived Speech: Cortical Sources and the Stimulus Features That Drive Retrieval",
-      "title_zh": "感知语音的可解释 MEG 解码：皮质源和驱动检索的刺激特征",
-      "description": "Short segments of perceived speech can be retrieved from non-invasive magnetoencephalographic (MEG) recordings by deep networks trained with a CLIP-style objective against wav2vec 2.0 audio embeddings. Yet their weights do not map onto electrophysiological quantities, and it remains unclear which speech properties drive retrieval.\n  We build on a high-performing MEG-to-audio retrieval architecture but redesign both its front end and decoder. Its spatial attention operates on a flattened sensor layout; we replace it with spherical harmonics defined on the three-dimensional MEG helmet geometry. We reduce the subject-specific representation from 270 to 25 branches, add a temporal filter to each branch to match it to a neuronal source in space and time, and make the convolutional decoder shallower. Ocular and cardiac components are removed before training to reduce the risk of stimulus-locked shortcuts.\n  On MEG-MASC, the model reaches 39.75 +/- 0.34% Top-1 accuracy among 1005 candidates across six trained solutions, with about 20 times fewer decoder parameters. Its weights map to source space, recovering generators consistent with the speech-perception network, while left-lateralized branches carry higher-frequency rhythmic components not evident on the right. Paired MEG occlusion shows that 15 of 19 stimulus features contribute, with the largest effects for silence, sound intensity, vowels, and acoustic onsets. Random word lists behave oppositely: substituting narrative MEG into them improves retrieval, indicating that activity without narrative structure carries less recoverable information than activity during coherent speech. The wav2vec target can be reduced to about twelve learned feature dimensions without loss of accuracy, whereas strong temporal compression causes a clear loss.\n  Together, source mapping and input interventions reveal what drives retrieval.",
-      "description_zh": "通过针对 wav2vec 2.0 音频嵌入进行 CLIP 式目标训练的深度网络，可以从非侵入性脑磁图 (MEG) 记录中检索感知语音的短片段。然而它们的权重并没有映射到电生理量，而且目前还不清楚哪些语音特性驱动检索。\n  我们建立在高性能 MEG 到音频检索架构的基础上，但重新设计了其前端和解码器。它的空间注意力在扁平的传感器布局上运行；我们将其替换为在三维 MEG 头盔几何结构上定义的球谐函数。我们将特定于主题的表示从 270 个分支减少到 25 个，为每个分支添加一个时间滤波器，以将其与空间和时间上的神经元源相匹配，并使卷积解码器更浅。在训练前移除眼部和心脏部件，以降低刺激锁定捷径的风险。\n  在 MEG-MASC 上，该模型在 6 个经过训练的解决方案的 1005 个候选者中达到了 39.75 +/- 0.34% Top-1 准确率，解码器参数减少了约 20 倍。它的权重映射到源空间，恢复与语音感知网络一致的生成器，而左侧分支携带右侧不明显的高频节奏成分。配对 MEG 遮挡显示 19 个刺激特征中的 15 个有贡献，其中对静音、声音强度、元音和声学起始的影响最大。随机单词列表的行为则相反：将叙述性 MEG 替换到其中可以改善检索，这表明没有叙述结构的活动比连贯语音期间的活动携带的可恢复信息更少。 wav2vec 目标可以减少到大约 12 个学习特征维度，而不会损失准确性，而强时间压缩会导致明显的损失。\n  源映射和输入干预共同揭示了驱动检索的因素。",
-      "authors": "Ilia Semenkov, Daria Kleeva, Ivan Dakhtin, Zarina Maksudova, Alex Ossadtchi",
-      "url": "https://huggingface.co/papers/2608.01481",
-      "score": 65,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "65",
-        "paperId": "2608.01481"
-      }
-    },
-    {
-      "id": "2608.05850",
-      "title": "MameLoshnLM: Yiddish Language Model and Evaluation Benchmark",
-      "title_zh": "MameLoshnLM：意第绪语语言模型和评估基准",
-      "description": "We present MameLoshnLM, the first open-source 8B-parameter language model built specifically for Yiddish. Despite Yiddish's rich textual tradition, its limited digital presence and the scarcity of reliable evaluation resources have constrained progress in Yiddish language modeling. Existing multilingual corpora and benchmarks are often poor proxies for the language, containing substantial amounts of noisy, machine-translated, and misclassified text. We address these gaps by introducing Oytser, a high-quality Yiddish pretraining corpus that combines contemporary web-native sources with literary materials, and Kashes, a multi-task benchmark spanning translation, linguistic analysis, information extraction, and language understanding. Using these resources, we continue pretraining Llama 3.1 8B to obtain MameLoshnLM. Across the tasks in the benchmark, MameLoshnLM outperforms open baselines of similar scale. Our analyses show that these gains are not only quantitative: relative to general-purpose multilingual models, MameLoshnLM better captures language-defining lexical and morphological patterns, pointing to a broader failure mode of noisy web-scale multilingual data for low-resource languages. Our results provide both a foundation for Yiddish NLP and a practical template for language model development in historically rich but digitally underrepresented languages.",
-      "description_zh": "我们推出 MameLoshnLM，这是第一个专为依地语构建的开源 8B 参数语言模型。尽管意第绪语具有丰富的文本传统，但其有限的数字存在和可靠评估资源的稀缺限制了意第绪语语言建模的进展。现有的多语言语料库和基准通常不能很好地代表该语言，包含大量嘈杂的、机器翻译的和错误分类的文本。我们通过引入 Oytser（一个高质量的意第绪语预训练语料库，将当代网络原生资源与文学材料相结合）和 Kashes（一个涵盖翻译、语言分析、信息提取和语言理解的多任务基准）来解决这些差距。使用这些资源，我们继续预训练 Llama 3.1 8B 以获得 MameLoshnLM。在基准测试中的所有任务中，MameLoshnLM 的性能优于类似规模的开放基准。我们的分析表明，这些收益不仅仅是定量的：相对于通用多语言模型，MameLoshnLM 更好地捕获了语言定义的词汇和形态模式，指出了低资源语言的噪声网络规模多语言数据的更广泛的失败模式。我们的结果既为意第绪语 NLP 奠定了基础，也为历史���富但数字代表性不足的语言的语言模型开发提供了实用模板。",
-      "authors": "Uri Katz, Omer Goldman, Tomasz Limisiewicz, Reut Tsarfaty, Noah A. Smith",
-      "url": "https://huggingface.co/papers/2608.05850",
-      "score": 19,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "19",
-        "paperId": "2608.05850"
-      }
-    },
-    {
-      "id": "2608.06216",
-      "title": "Continual Learning in Transition",
-      "title_zh": "转型中的持续学习",
-      "description": "Classical continual learning (CL) has primarily focused on enabling models to update and retain knowledge through parameter-centric mechanisms, e.g., training strategies, architectural designs, and weight adaptation. However, emerging paradigms are reshaping the scope of CL beyond this traditional model adaptation view. For instance, on-policy learning broadens the space of update mechanisms; test-time training extends CL from the training phase to inference; and external harness components such as memory, skill libraries, and interaction protocols extend the evolutionary boundaries of model capabilities far beyond the static parameter space. Collectively, these developments indicate a transition from parameter-centric learning toward system-level adaptation. To characterize this transition, we examine the evolution of continual learning through three dimensions: When, How, and Where learning occurs. The How dimension encompasses off-policy, on-policy, and beyond-gradient optimization mechanics. The When dimension captures evolution across pre-training, post-training, and inference-time stages. The Where dimension delineates updates occurring within internal parameters versus external structural constraints. Anchored by this tri-axial framework, we systematically survey representative methods, trace the ongoing transition of continual learning, and discuss the key challenges, broader implications, and future directions arising from this paradigm shift.",
-      "description_zh": "经典的持续学习（CL）主要侧重于使模型能够通过以参数为中心的机制来更新和保留知识，例如训练策略、架构设计和权重适应。然而，新兴范式正在重塑 CL 的范围，超越这种传统的模型适应观点。例如，在策略学习拓宽了更新机制的空间；测试时训练将 CL 从训练阶段延伸到推理阶段；内存、技能库和交互协议等外部线束组件将模型功能的进化边界扩展到静态参数空间之外。总的来说，这些发展表明从以参数为中心的学习向系统级适应的转变。为了描述这一转变的特征，我们从三个维度审视持续学习的演变：学习发生的时间、方式和地点。 “如何”维度包括离策略、在策略和超梯度优化机制。 When 维度捕获训练前、训练后和推理时间阶段的演变。其中维度描述了内部参数与外部结构约束之间发生的更新。以此三轴框架为基础，我们系统地调查了代表性方法，追踪持续学习的持续转变，并讨论了这种范式转变所带来的关键挑战、更广泛的影响和未来方向。",
-      "authors": "Zhiyan Hou, Dan Zhang, Tao Feng, Liyuan Wang, Wei Li, Xiangzhao Hao, Hongyan An, Junfeng Fang, Haokai Ma, Zhaohui Xu, Haiyun Guo, Jinqiao Wang, Tat-Seng Chua",
-      "url": "https://huggingface.co/papers/2608.06216",
-      "score": 18,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "18",
-        "paperId": "2608.06216"
-      }
-    },
-    {
-      "id": "2608.05785",
-      "title": "Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation",
-      "title_zh": "用于平衡多语言文本嵌入适应的任务条件流匹配",
-      "description": "Multilingual text embedding models are commonly adapted using a single training objective across diverse tasks, despite different tasks requiring fundamentally different optimization strategies. We introduce Task-Conditional Flow Matching (TCFM), a multilingual embedding adaptation framework that selectively applies Flow Matching to translation tasks while optimizing retrieval, classification, and pair-classification tasks with objectives better aligned to their learning dynamics. TCFM further combines teacher-guided representation preservation with a three-stage curriculum to enable stable adaptation. Evaluated on the Indic Massive Text Embedding Benchmark, TCFM establishes a new state-of-the-art, consistently improving embedding quality across a diverse set of multilingual tasks and generalizing across embedding model families. We will publicly release the codebase and datasets upon acceptance of the paper.",
-      "description_zh": "尽管不同的任务需要根本不同的优化策略，但多语言文本嵌入模型通常使用跨不同任务的单一训练目标进行调整。我们引入了任务条件流匹配（TCFM），这是一种多语言嵌入适应框架，它有选择地将流匹配应用于翻译任务，同时优化检索、分类和配对分类任务，使其目标更好地符合其学习动态。 TCFM进一步将教师指导的表征保存与三阶段课程相结合，以实现稳定的适应。根据印度海量文本嵌入基准进行评估，TCFM 建立了一种新的最先进的技术，在各种多语言��务中持续提高嵌入质量，并在嵌入模型系列中进行推广。我们将在论文被接受后公开发布代码库和数据集。",
-      "authors": "Tirth Bhatt, Naren Kumar S, Mayank Singh",
-      "url": "https://huggingface.co/papers/2608.05785",
-      "score": 9,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2608.05785"
-      }
-    },
-    {
-      "id": "2608.05138",
-      "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
-      "title_zh": "Nemotron 希腊语教学：挖掘语料库、调整检索并为跨专业领域的现代希腊语奠定基础",
-      "description": "Modern Greek is absent from NVIDIA's Nemotron retrieval models and from major multilingual retrieval benchmarks, despite being important for retrieval-augmented generation (RAG) in legal, energy, financial, and medical applications. We present an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek, including corpus mining, synthetic supervision, retrieval model training, reranker adaptation, reader fine-tuning, and a new benchmark called HERA. Our study shows that a parameter-free BM25 baseline outperforms several off-the-shelf multilingual dense retrieval models on specialist Greek corpora. After fine-tuning on 65,773 Greek retrieval pairs, a Nemotron 1B embedder improves nDCG@10 from 0.362 to 0.835 and substantially outperforms its unadapted counterpart. The learned language competence transfers to general-domain Greek, although the advantage over BM25 remains domain-dependent. We further adapt a cross-encoder reranker and demonstrate consistent improvements across specialist domains. Finally, we LoRA-tune a Nemotron 30B-A3B mixture-of-experts reader for grounded generation, increasing judged answer correctness from 29.4% to 66.9% while significantly improving faithfulness and citation quality. We also introduce HERA, the first large-scale Greek benchmark for retrieval-augmented generation, and release our adapted models and benchmark to support future research on Greek-language RAG systems.",
-      "description_zh": "尽管现代希腊语对于法律、能源、金融和医疗应用中的检索增强生成 (RAG) 很重要，但 NVIDIA Nemotron 检索模型和主要多语言检索基准中均未包含现代希腊语。我们提出了 Nemotron 检索堆栈对现代希腊语的端到端适应，包括语料库挖掘、综合监督、检索模型训练、重新排序适应、读者微调以及名为 HERA 的新基准。我们的研究表明，无参数 BM25 基线优于专业希腊语语料库上的几种现成的多语言密集检索模型。在对 65,773 个希腊语检索对进行微调后，Nemotron 1B ��入器将 nDCG@10 从 0.362 提高到 0.835，并且大大优于其未适应的对应物。所学语言能力转移到通用领域希腊语，尽管相对 BM25 的优势仍然取决于领域。我们进一步调整了跨编码器重新排序器，并展示了跨专业领域的一致改进。最后，我们对 Nemotron 30B-A3B 专家混合阅读器进行 LoRA 调整，以实现接地生成，将判断答案的正确性从 29.4% 提高到 66.9%，同时显着提高忠实度和引文质量。我们还推出了 HERA，这是第一个用于检索增强生成的大规模希腊语基准，并发布了我们的改编模型和基准以支持希腊语 RAG 系统的未来研究。",
-      "authors": "Ayoub Kirouane, Christos Petrocheilos",
-      "url": "https://huggingface.co/papers/2608.05138",
-      "score": 29,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "29",
-        "paperId": "2608.05138"
-      }
-    },
-    {
-      "id": "2608.06020",
-      "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
-      "title_zh": "从经济主体到主体经济：经济世界模型的系统蓝图",
-      "description": "Economic World Models (EWMs) are generative economic models that simulate how economies evolve from within by modeling heterogeneous agents, their beliefs and actions, and the market and institutional mechanisms through which their interactions produce aggregate outcomes. This paper develops an implementation roadmap for building economic world models as generative engines in which heterogeneous agents act, interact, adapt, and co-evolve with markets and institutions, thereby producing economic dynamics from the inside. We organize EWM systems into a six-level capability ladder, from fixed rule-based agent worlds to adaptive and LLM-based agent worlds, self-evolving agents, evolving institutional worlds, and sim-to-real economic twins aligned with real observations. A systematic literature survey across these levels reveals that existing work remains concentrated in lower-level agent and simulation environments, while systems with self-evolving agents, endogenous institutions, persistent empirical alignment, and validated economic mechanisms remain rare. By translating the EWM agenda into an implementation blueprint, this paper aims to accelerate the development of the next generation of economic simulation environments that can serve as high-fidelity sandboxes for human decision-makers and as training, planning, evaluation, and safety substrates for AI agents. We release a curated paper list and related resources to support future research.",
-      "description_zh": "经济世界模型 (EWM) 是生成经济模型，通过对异质主体、他们的信念和行为以及他们的相互作用产生总体结果的市场和制度机制进行建模，模拟经济如何从内部演变。本文制定了一个实施路线图，用于将经济世界模型构建为生成引擎，其中异构主体与市场和机构共同行动、互动、适应和共同进化，从而从内部产生经济动态。我们将 EWM 系统组织成一个六级能力阶梯，从固定的基于规则的代理世界到自适应和基于 LLM 的代理世界、自我进化的代理、不断发展的制度世界以及与真实观察一致的模拟到现实的经济双胞胎。跨这些级别的系统文献调查表明，现有的工作仍然集中在较低级别的代理和模拟环境中，而具有自我进化代理、内生机构、持久的经验一致性和经过验证的经济机制的系统仍然很少。通过将 EWM 议程转化为实施蓝图，本文旨在加速下一代经济模拟环境的开发，该环境可以作为人类决策者的高保真沙箱，并作为人工智能代理的培训、规划、评估和安全基础。我们发布了精选论文列表和相关资源以支持未来的研究。",
-      "authors": "Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao, Ye Luo, Hongyuan Zha, Dacheng Tao, Benyou Wang, Lin William Cong",
-      "url": "https://huggingface.co/papers/2608.06020",
-      "score": 32,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "32",
-        "paperId": "2608.06020"
-      }
-    },
-    {
-      "id": "2608.06257",
-      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
-      "title_zh": "MASS：具有权威共享状态的多人世界模型",
-      "description": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scalability. We propose MAS (Multiplayer world models with Authoritative Shared State) to resolve this limitation. Inspired by multiplayer game architectures, MAS disentangles world dynamics and view rendering. A learned Logic Engine advances a global, authoritative typed state from joint actions without any hand-written transition function, acting as the sole recurrent memory and synchronization reference. From this shared state, a learned Rendering Engine generates independent and consistent views for any requested camera on demand. This explicit disentangling allows MAS to achieve superior state accuracy and lower cross-view inconsistency compared to state-of-the-art multi-view baselines on a matched multiplayer Snake benchmark. It advances predicted worlds with 1,024 concurrent players for 10,000 recurrent steps. Our results show that explicit, authoritative state modeling provides a practical foundation for scalable and consistent multi-agent world simulation.",
-      "description_zh": "当前的视频世界模型在多人游戏环境中举步维艰，因为它们将世界状态与依赖于视图的视觉潜伏纠缠在一起，导致冗余计算、视图不一致和可扩展性差。我们提出 MAS（具有权威共享状态的多人世界模型）来解决此限制。受多人游戏架构的启发，MAS 解开了世界动态和视图渲染。学习逻辑引擎通过联合动作推进全局的、权威的类型化状态，无需任何手写的转换函数，充当唯一的循环记忆和同步参考。根据这种共享状态，学习的渲染引擎可以根据需要为任何请求的摄像机生成独立且一致的视图。与匹配的多人 Snake 基准测试上最先进的多视图基线相比，这种明确的解开使得 MAS 能够实现卓越的状态准确性和更低的跨视图不一致。它推进了具有 1,024 个并发玩家并执行 10,000 个循环步骤的预测世界。我们的结果表明，明确、权威的状态建模为可扩展且一致的多智能体世界模拟提供了实用的基础。",
-      "authors": "Ziqi Cai, Siqi Yang, Yimu Wang, Zixian Gao, Yunheng Liu, Shuchen Weng, Erwin Wu, Kaipeng Zhang, Boxin Shi",
-      "url": "https://huggingface.co/papers/2608.06257",
-      "score": 13,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "13",
-        "paperId": "2608.06257"
-      }
-    },
-    {
-      "id": "2608.04956",
-      "title": "ContextMaster: Interactive Multi-Shot Video Creation via Fixed-Budget Sparse Context Routing",
-      "title_zh": "ContextMaster：通过固定预算稀疏上下文路由创建交互式多镜头视频",
-      "description": "Recent video models increasingly support generation, reference conditioning, and editing within a single model, yet typically expose them as separate operations over fixed inputs. Practical creation unfolds across multiple shots, requiring one model to generate from text, follow a reference, or edit source footage while maintaining shared history. We formalize this setting as interactive multi-shot video creation (IMVC) and introduce ContextMaster, a unified model with a role-aware context representation for these operations. An interactive model must retain access to an expanding history without allowing the context read cost at each denoising step to grow. ContextMaster combines reusable clean context states with fixed budget sparse context routing and uses ConstraintSink to keep task constraints visible. To address the dual challenges of sparse context access and inference with few denoising steps, we propose a two-stage privileged context distillation framework, which transfers full context behavior from a dense teacher through consistency distillation and then refines deployment rollouts with distribution matching. Experiments on the three primitive tasks demonstrate improved task fulfillment and consistency across shots over specialized baselines. User studies further validate flexibly composed workflows, while the model reaches 16 FPS on a single GPU.",
-      "description_zh": "最近的视频模型越来越多地支持在单个模型中生成、参考调节和编辑，但通常将它们公开为固定输入上的单独操作。实际创作涉及多个镜头，需要一个模型从文本生成、遵循参考或编辑源素材，同时维护共享历史记录。我们将此设置形式化为交互式多镜头视频创建（IMVC），并引入 ContextMaster，这是一个统一模型，具有用于这些操作的角色感知上下文表示。交互式模型必须保留对扩展历史记录的访问，而不允许每个去噪步骤的上下文读取成本增长。 ContextMaster 将可重用的干净上下文状态与固定预算稀疏上下文路由相结合，并使用 ConstraintSink 来保持任务约束可见。为了解决稀疏上下文访问和推理的双重挑战，只需很少的去噪步骤，我们提出了一个两阶段特权上下文蒸馏框架，该框架通过一致性蒸馏从密集教师传输完整的上下文行为，然后通过分布匹配完善部署部署。对三个原始任务的实验表明，在专门的基线上，任务完成度和镜头之间的一致性得到了改善。用户研究进一步验证了灵活组合的工作流程，同时模型在单个 GPU 上达到了 16 FPS。",
-      "authors": "Xu Guo, Zhengxuan Wei, Xinghui Li, Hanzhuo Huang, Xinyu Liu, Xiangyang Luo, Min Wei, Yiran Zhu, Qiulin Wang, Yulong Xu, Xintao Wang, Pengfei Wan, Qi Fan, Xiangwang Hou",
-      "url": "https://huggingface.co/papers/2608.04956",
-      "score": 14,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "14",
-        "paperId": "2608.04956"
-      }
-    },
-    {
-      "id": "2608.05565",
-      "title": "EffectLearner: World-Aware Object-Effect Reasoning for Real-World Video Object Removal",
-      "title_zh": "EffectLearner：用于现实世界视频对象移除的世界感知对象效果推理",
-      "description": "Video object removal must eliminate not only the target object but also its induced effects while maintaining high-fidelity and spatiotemporally coherent restoration. Existing methods mainly learn object-effect correspondences implicitly from predefined effect categories and fixed data distributions, limiting their generalization to complex real-world scenes involving compositional effects, spatially detached or weakly correlated effects, long-tail physical phenomena, and dynamically evolving interactions. We propose EffectLearner, a semantic-reasoning-enhanced framework that combines a VLM-based Object-Effect Reasoner with a DiT-based Video Eraser. Guided by a structured effect-analysis prompt, the Reasoner performs cross-modal reasoning over a target-highlighted video and extracts compact effect-aware context, which guides the Video Eraser toward comprehensive object-effect removal. Motion-aware mask guidance and motion-consistency supervision further improve removal coverage and spatiotemporal stability under object motion and evolving scene dynamics. To fully exploit the framework in challenging real-world scenarios, we further construct EffectWorld, a paired video dataset specifically designed for complex object-induced effects, and introduce a progressive training curriculum that combines common supervision with complex-effect data. On the standard ROSE-Bench, EffectLearner outperforms existing baselines on most metrics and achieves clear advantages on both EffectWorld-Eval and the challenging EffectWorld-Wild, demonstrating its ability to deliver high-quality video object removal in complex real-world scenes.",
-      "description_zh": "视频对象去除不仅必须消除目标对象，还要消除其引起的影响，同时保持高保真和时空相干的恢复。现有的方法主要从预定义的效果类别和固定的数据分布中隐式地学习对象效果对应关系，限制了它们对涉及成分效果、空间分离或弱相关效果、长尾物理现象和动态演化交互的复杂现实场景的泛化。我们提出了 EffectLearner，这是一种语义推理增强框架，它将基于 VLM 的对象效果推理器与基于 DiT 的视频擦除器相结合。在结��化效果分析提示的指导下，Reasoner 对目标突出显示的视频执行跨模式推理，并提取紧凑的效果感知上下文，从而引导视频擦除器全面消除对象效果。运动感知掩模引导和运动一致性监督进一步提高了对象运动和不断变化的场景动态下的去除覆盖范围和时空稳定性。为了在具有挑战性的现实场景中充分利用该框架，我们进一步构建了 EffectWorld，一个专门为复杂对象引起的效果而设计的配对视频数据集，并引入了将常见监督与复杂效果数据相结合的渐进式培训课程。在标准 ROSE-Bench 上，EffectLearner 在大多数指标上都优于现有基准，并且在 EffectWorld-Eval 和具有挑战性的 EffectWorld-Wild 上都取得了明显的优势，展示了其在复杂的现实场景中提供高质量视频对象去除的能力。",
-      "authors": "Feier Wu, Wanke Xia, Xu He, Zilang Zhou, Si Chen, Dongxia Liu, Liyang Chen, Qimeng Wu, Zhengbo Zhang, Wenming Yang, Zhiyong Wu",
-      "url": "https://huggingface.co/papers/2608.05565",
-      "score": 20,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "20",
-        "paperId": "2608.05565"
+        "upvotes": "2",
+        "paperId": "2606.00152"
       }
     }
   ]
