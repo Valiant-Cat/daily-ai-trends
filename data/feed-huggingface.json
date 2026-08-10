@@ -1,8 +1,83 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-10T12:41:18.585Z",
+  "updatedAt": "2026-08-10T20:19:04.497Z",
   "count": 15,
   "items": [
+    {
+      "id": "2607.27945",
+      "title": "Complementary Matrix-Gated QKAN Fast-Weight Programmers for Quantum Dynamics Forecasting",
+      "title_zh": "用于量子动力学预测的互补矩阵门控 QKAN 快速权重编程器",
+      "description": "Sequence models must decide what to write into memory and what to retain. In quantum and quantum-inspired sequence learning, nonlinear recurrent updates often require repeated circuit evaluations and sequential backpropagation through time, making long contexts costly. Gated fast-weight programmers (FWPs) based on quantum-inspired Kolmogorov-Arnold networks (QKANs) alleviate this bottleneck by storing context in time-varying fast parameters. However, their scalar gate applies one retention-write balance to every fast-state coordinate, forcing all parameters to share a memory timescale. We introduce Self-Modulating QKAN-based FWPs, which replace this broadcast gate with low-rank-generated element-wise modulation of the new-proposal branch, a bounded old-state branch, or both. We further propose Complementary Matrix Gating (CMG), which uses one sigmoid matrix gate to retain the old state and its complement to write the new proposal. CMG provides coordinate-wise memory control while preserving the bounded convex update and affine prefix-scan structure of scalar gating, at the modulation-head cost of a single-branch rule. We compare four self-modulating rules with scalar gating across four FWP architectures combining classical and QKAN-based slow and fast programmers. Across seven single-step forecasting benchmarks and five sequence lengths, CMG gives the most consistent improvements for architectures whose fast programmer incorporates a QKAN-based module. In direct multi-step forecasting of Jaynes-Cummings and transmon-resonator dynamics simulated with CUDA-Q Dynamics, CMG models maintain mean-squared errors on the order of 0.001 or lower across forecasting horizons of 4, 8, and 16 steps, while improving on their scalar-gated counterparts by at least 91.2%. These results establish coordinate-wise complementary modulation as a stable and effective update for QKAN-based FWPs.",
+      "description_zh": "序列模型必须决定将什么写入内存以及保留什么。在量子和量子启发的序列学习中，非线性循环更新通常需要重复的电路评估和随时间的顺序反向传播，使得长上下文成本高昂。基于量子启发的柯尔莫哥洛夫-阿诺德网络 (QKAN) 的门控快速权重程序员 (FWP) 通过将上下文存储在时变快速参数中来缓解这一瓶颈。然而，它们的标量门对每个快速状态坐标应用一个保留-写入平衡，强制所有参数共享内存时间尺度。我们引入了基于 QKAN 的自调制 FWP，它将广播门替换为新提案分支、有界旧状态分支或两者的低秩生成的逐元素调制。我们进一步提出了互补矩阵门控（CMG），它使用一个 sigmoid 矩阵门来保留旧状态及其补码来编写新提案。 CMG 提供坐标存储控制，同时保留标量门控的有界凸更新和仿射前缀扫描结构，以单分支规则的调制头成本。我们比较了四种结合了经典和基于 QKAN 的慢速和快速程序员的 FWP 架构的四种自调节规则和标量门控。在七个单步预测基准和五个序列长度中，CMG 为其快速编程器合并了基于 QKAN 的模块的架构提供了最一致的改进。在使用 CUDA-Q Dynamics 模拟的 Jaynes-Cummings 和跨谐振器动力学的直接多步预测中，CMG 模型在 4、8 和 16 步的预测范围内将均方误差保持在 0.001 或更低的量级，同时比标量门控模型提高了至少 91.2%。这些结果建立了坐标互补调制作为基于 QKAN 的 FWP 的稳定有效的更新。",
+      "authors": "Kuo-Chung Peng, Samuel Yen-Chi Chen, Jiun-Cheng Jiang, Chen-Yu Liu, En-Jui Kuo, Yun-Yuan Wang, Tzung-Chi Huang, Prayag Tiwari, Chi-Sheng Chen, Chun-Hua Lin, Yu-Chao Hsu, Tai-Yue Li, Saif Al-Kuwari, Simon See, Kuan-Cheng Chen, Nan-Yow Chen, Hsi-Sheng Goan",
+      "url": "https://huggingface.co/papers/2607.27945",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2607.27945"
+      }
+    },
+    {
+      "id": "2608.04205",
+      "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+      "title_zh": "MatrAIx：用 83 亿角色代理模拟世界",
+      "description": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, and Claude Haiku 4.5. The resulting feedback captures how decisions and preferences vary across persona backgrounds, including hesitation after a price increase, willingness to continue after an AI assistant fails, and latency tolerance. We conducted two main validation studies: First, a 400-trial controlled study evaluated persona adherence across ten behavioral attributes and all four environments. The declared behavior was expressed or correctly suppressed in 366 trials (91.5%). Second, human and LLM judges evaluated the extraction quality of human-grounded personas. Overall, MatrAIx provides an end-to-end infrastructure for evaluating AI systems and digital products with diverse simulated human users.",
+      "description_zh": "人类对人工智能系统和数字产品的评估成本高昂、速度缓慢且难以扩展。离线评估更具可扩展性，但通常会抽象出人类的多样性和交互行为。因此，我们推出了MatrAIx，一种人口规模的模拟用户评估基础设施，用于使用异构用户测试人工智能系统和数字产品。 MatrAIx 具有三个核心组件：首先，Persona 8B 包含由 1,290 个分类维度表示的 83 亿条角色记录。记录要么从保留相关属性的依赖关系图中采样，要么从人类编写的配置文件中派生。我们发布了约 100 万个角色的质量过滤核心集，其中包括 599,847 条基于人类的记录和 400,000 条综合记录。其次，MatrAIx Playground 提供了四种环境供不同用户评估并与数字产品交互：调查、AI 聊天机器人、Web 和应用程序。第三，MatrAIx 提供了 1,010 个应用程序任务，涵盖超过 25 个领域，包括商业、软件、金融和医疗保健。我们针对八项代表性任务进行了 18,189 项评估试验。 Persona 代理由三个LLM提供支持：Claude Opus 4.8、GPT 5.5 和 Claude Haiku 4.5。由此产生的反馈反映了不同角色背景下决策和偏好的差​​异，包括价格上涨后的犹豫、人工智能助手失败后继续的意愿以及延迟容忍度。我们进行了两项主要验证研究：首先，一项 400 项试验对照研究评估了十种行为属性和所有四种环境中的角色依从性。在 366 项试验中（91.5%）表达或正确抑制了所声明的行为。其次，人类和LLM评委评估了以人为本的角色的提取质量。总的来说，MatrAIx 提供了一个端到端的基础设施，用于通过不同的模拟人类用户来评估人工智能系统和数字产品。",
+      "authors": "Xiaomin Li, Yuexing Hao, Jianheng Hou, Jintao Huang, Qianfeng Wen, Shirley Huang, Yifan Liu, Xiaoyi Liu, Yilan Fan, Yijun Wang, Koutian Wu, Ruoqi Gao, Muhammad Ahmed Mohsin, Jing Tang, Brihi Joshi, Heming Liu, Zheyuan Deng, Zonglin Di, Sankalp Jajee, Jiuyao Lu, Zhiwei Zhang, Saksham Kapoor, Ishan Gupta, Yunhan Zhao, Chanwoo Park, Yucheng Lu, Bing Hu, Weihang Xiao, Aravind Mohan, Hanwen Xing, Runyu Zhang, Mihir Kulshreshtha, Yuanda Xu, Qianyu Zhu, Dianzhuo Wang, Yuxin Xiao, Bowen Jiang, Yongye Su, Wenhao Chai, Zuxin Liu, Lawrence Yunliang Chen, Xuandong Zhao, Ethan Ye, Shivam Patel, Jason Xie, Alex Martin Richmond, Weixiang Ding, Emre Okcular, Diya Mathew, Ziheng Wang, Rana M. Shahroz Khan, Zhejian Peng, Fang Wu, Fan Nie, Xinyang Han, Yubin Kim, Jiawei Zhang, Zhenting Qi, Huangyuan Su, Xu Pan, Abinitha Gourabathina, Hyewon Jeong, Hemanth Neelgund Ramesh, Kumail Alhamoud, Kimia Hamidieh, Zidi Xiong, Samuel Schmidgall, Pengrui Han, Yepeng Huang, Yongheng Wang, Bowen Yang, Alex Gu, Yuchu Wang, Akshay Paruchuri, Brenna Li, Hejie Cui, Jiayuan Ding, Chaosheng Dong, Jiahao Wang, Yixuan He, Chi Wang, Pamela Bhattacharya, Tianyi Peng, Paul Pu Liang, Mitchell Gordon, Yilun Du, Marinka Zitnik, James Zou, Prasanna Tambe, Philip Torr, Emily Fox, Asu Ozdaglar, Dawn Song",
+      "url": "https://huggingface.co/papers/2608.04205",
+      "score": 6,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "6",
+        "paperId": "2608.04205"
+      }
+    },
+    {
+      "id": "2608.06113",
+      "title": "DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds",
+      "title_zh": "DCAS：解耦 CLI 代理脚手架以内部化跨脚手架的规划",
+      "description": "CLI-based software-engineering agents have matured rapidly, yet the open ecosystem has converged on a single training environment: trajectory datasets used to fine-tune open models are collected almost exclusively under OpenHands. Models fine-tuned on this data score well under OpenHands but degrade substantially when deployed under any non-training scaffold. Untrained base models do not show this divergence, indicating the gap is fine-tuning-induced and tied to the conventions of the training scaffold. We argue that a load-bearing scaffold-specific behavior is planning structure, in two senses this paper distinguishes: explicit planning, a pre-execution plan produced as a first-class artifact, and implicit planning, the structural conventions that shape execution throughout the agent loop. Under this hypothesis, closing the gap requires moving planning from a fixed scaffold artifact to a learned model capability. We introduce Decoupling CLI Agent Scaffolding (DCAS), a backend-substitution interception layer that routes API traffic between any CLI scaffold and any backend model without modifying the scaffold, enabling cross-scaffold evaluation and planning-aware trajectory collection. Using DCAS, a controlled plan-source intervention confirms planning quality is a high-leverage component, with gains exceeding the cross-scaffold drops we observe. A model fine-tuned on a small set of DCAS-collected planning-aware trajectories under a single scaffold gains consistently across non-training scaffolds, and the two senses of planning are empirically separable in training data.",
+      "description_zh": "基于 CLI 的软件工程代理已经迅速成熟，但开放生态系统已融合在单一训练环境中：用于微调开放模型的轨迹数据集几乎全部在 OpenHands 下收集。根据该数据进行微调的模型在 OpenHands 下得分良好，但在部署在任何非训练支架下时会大幅下降。未经训练的基础模型没有显示出这种差异，这表明差距是微调引起的，并且与训练支架的惯例有关。我们认为，承载脚手架特定的行为是规划结构，本文在两种意义上进行了区分：显式规划（作为一流工件生成的预执行计划）和隐式规划（在整个代理循环中塑造执行的结构约定）。在这个假设下，缩小差距需要将规划从固定的脚手架工件转移到学习的模型功能。我们引入了解耦 CLI 代理脚手架 (DCAS)，这是一个后端替代拦截层，可在任何 CLI 脚手架和任何后端模型之间路由 API 流量，而无需修改脚手架，从而实现跨脚手架评估和规划感知轨迹收集。使用 DCAS，受控的计划源干预证实了计划质量是一个高杠杆组成部分，其收益超过了我们观察到的跨支架下降。在单个支架下对 DCAS 收集的一小组规划感知轨迹进行微调的模型在非训练支架上一致增益，并且两种规划意义在训练数据中根据经验是可分离的。",
+      "authors": "Kishanthan Thangarajah, Boyuan Chen, Ahmed E. Hassan",
+      "url": "https://huggingface.co/papers/2608.06113",
+      "score": 12,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "12",
+        "paperId": "2608.06113"
+      }
+    },
+    {
+      "id": "2608.06865",
+      "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
+      "title_zh": "用于泛化 Deepfake 视频检测的多智能体取证推理",
+      "description": "The malicious use of generative artificial intelligence to create highly realistic deepfake videos raises serious ethical concerns and poses substantial challenges to AI safety. However, existing deepfake video benchmarks provide limited coverage of recent synthesis methods and generally lack reliable fine-grained textual annotations. Meanwhile, conventional detectors and multimodal large language models (MLLMs), whether operating as a single model or relying on a single analytical perspective, often fail to capture subtle forgery artifacts, limiting their generalization to emerging AI-generated methods. To address these limitations, we introduce FaceVid-Forensics-100K, a large-scale deepfake video dataset comprising 100,000 videos and spanning 33 synthesis methods across face swapping, face reenactment, and entire-face synthesis, including recent generators such as Seedance 2.0. The dataset provides fine-grained textual annotations of visual observations and verdict-consistent forensic explanations, automatically synthesized through a multi-model aggregation and conflict-resolution pipeline powered by advanced MLLMs. Building on this benchmark, we propose a multi-agent forensic reasoning framework that employs four specialized domain-expert agents to independently analyze forgery cues from four perspectives: texture, lighting, motion, and physics. A judge agent then reconciles their reports to produce a final prediction together with an explanation. Extensive evaluations on out-of-domain test sets show that, despite being composed entirely of small open-source MLLMs, our framework outperforms all methods including closed-source GPT and Gemini models and ranks first across all reported metrics on this benchmark. The project page is available at https://xavierjiezou.github.io/ARGUS/.",
+      "description_zh": "恶意使用生成人工智能来创建高度逼真的深度伪造视频引发了严重的道德问题，并对人工智能安全构成了重大挑战。然而，现有的 Deepfake 视频基准测试对最新合成方法的覆盖范围有限，并且通常缺乏可靠的细粒度文本注释。与此同时，传统的检测器和多模态大语言模型（MLLM），无论是作为单一模型运行还是依赖于单一分析视角，通常无法捕获微妙的伪造伪影，从而限制了它们对新兴人工智能生成方法的推广。为了解决这些限制，我们引入了 FaceVid-Forensics-100K，这是一个大规模的 Deepfake 视频数据集，包含 100,000 个视频，涵盖 33 种合成方法，涵盖面部交换、面部重演和全脸合成，包括最新的生成器，例如 Seedance 2.0。该数据集提供了视觉观察的细粒度文本注释和与判决一致的取证解释，这些注释是通过由高级 MLLM 提供支持的多模型聚合和冲突解决管道自动合成的。在此基准的基础上，我们提出了一个多智能体取证推理框架，该框架采用四个专门的领域专家智能体，从纹理、照明、运动和物理四个角度独立分析伪造线索。然后，法官代理人会核对他们的报告，以得出最终的预测和解释。对域外测试集的广泛评估表明，尽管我们的框架完全由小型开源 MLLM 组成，但其性能优于包括闭源 GPT 和 Gemini 模型在内的所有方法，并且在该基准测试的所有报告指标中排名第一。该项目页面位于 https://xavierjiezou.github.io/ARGUS/。",
+      "authors": "Xuechao Zou, Shun Zhang, Kai Li, Yi Zhou, Xinyu Sun, Yuhui Chen, Zhe Wu, Congyan Lang, Junliang Xing",
+      "url": "https://huggingface.co/papers/2608.06865",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2608.06865"
+      }
+    },
+    {
+      "id": "2608.04569",
+      "title": "Relevant but Incomplete: Referential Dangling as a Paradigm-Level Failure Mode in Hard Prompt Compression",
+      "title_zh": "相关但不完整：参考悬空作为硬提示压缩中的范例级故障模式",
+      "description": "Hard prompt compression reduces long-context inference cost by independently scoring tokens, sentences, or chunks and retaining the highest-scoring units under a budget. We identify a structural failure in this procedure: independent selection can split dependent evidence pairs, retaining one member while deleting the other. When retained text contains an answer but deleted text defines the entity needed to interpret it, we call the result referential dangling. At a compression ratio of 0.30, Beaver, which ranks coherent chunks using Qwen3-0.6B embeddings, leaves the answer path incomplete in 34-54% of bridge examples across three multi-hop question answering datasets. On a shared HotpotQA bridge set, all six hard compressors we test exhibit dangling at rates up to 60%, and every document in LongBench-v2 Single-Document QA contains at least one dangling reference. On dangling examples evaluated with Qwen3-8B, reinserting the missing supporting paragraph while removing nonsupporting paragraphs to maintain the token budget improves accuracy by 29-34 percentage points (p < 0.0001), recovering at least 88% of the gap to contexts retaining both supporting paragraphs. Stronger answer models do not absorb the loss: on MuSiQue, GPT-5.5 is 8.8 points less accurate on compressed contexts than on contexts retaining both supporting paragraphs. Finally, we train a compact classifier to rank omitted sentences by whether they are needed to interpret retained text and reinsert the top-ranked candidates without support annotations at inference. On HotpotQA with Qwen3-8B, this automatic restoration improves accuracy by 4.7 points while changing the compression ratio only from 0.30 to 0.31. Hard compressors should optimize both relevance and referential completeness.",
+      "description_zh": "硬提示压缩通过独立地对标记、句子或块进行评分并在预算内保留得分最高的单元来降低长上下文推理成本。我们在这个过程中发现了一个结构性失败：独立选择可以分割依赖的证据对，保留一个成员，同时删除另一个。当保留的文本包含答案但删除的文本定义解释它所需的实体时，我们将结果称为引用悬空。在压缩率为 0.30 时，Beaver 使用 Qwen3-0.6B 嵌入对连贯块进行排序，在三个多跳问答数据集中，34-54% 的桥接示例中的答案路径不完整。在共享的 HotpotQA 桥接器组上，我们测试的所有六台硬压缩器都表现出高达 60% 的悬空率，并且 LongBench-v2 单文档 QA 中的每个文档都至少包含一个悬空引用。在使用 Qwen3-8B 评估的悬空示例中，重新插入缺失的支持段落，同时删除非支持段落以维持令牌预算，可将准确性提高 29-34 个百分点 (p < 0.0001)，恢复至少 88% 的与保留两个支持段落的上下文之间的差距。更强的答案模型不会吸收损失：在 MuSiQue 上，GPT-5.5 在压缩上下文上的准确度比在保留两个支持段落的上下文上的准确度低 8.8 分。最后，我们训练一个紧凑的分类器，根据是否需要解释保留的文本来对省略的句子进行排名，并在推理时重新插入排名靠前的候选者，而无需支持注释。在使用 Qwen3-8B 的 HotpotQA 上，这种自动恢复将精度提高了 4.7 个点，同时压缩率仅从 0.30 更改为 0.31。硬压缩器应该优化相关性和参考完整性。",
+      "authors": "Zhengpei Hu, Kai Li, Dapeng Fu, Xuechao Zou, Yuanhao Tang, Yue Li, Tengfei Cao, Jianqiang Huang",
+      "url": "https://huggingface.co/papers/2608.04569",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2608.04569"
+      }
+    },
     {
       "id": "2608.05224",
       "title": "Small Foundation Models of Human Cognition and Behaviour",
@@ -11,10 +86,10 @@
       "description_zh": "根据人类行为数据进行微调的大型语言模型已成为通用认知代理，但其所需的规模以及这些模型是否处理任务结构或利用统计捷径仍然是悬而未决的问题。我们在 Psych-101（包含来自 160 个实验的 1070 万个试验级选择的数据集）上跨四个架构系列训练了 14 个模型，参数范围从 1.35 亿到 14B 个。在分销方面，规模几乎不重要。这些模型落在一个狭窄的范围内，就像面对天花板一样，0.6B 到 1B 的参数足以匹配坚持参加的参与者的 70B 基线。在分布之外，该带会出现明显更陡的缩放梯度，较大的模型在泛化到新颖的任务结构方面明显具有优势。为了确定这些模型使用哪些信息，我们进行了两次诊断。我们在 27 个实验中逐步剥离四个提示通道——任务说明、实验刺激、结果反馈和选择历史，并重新排列试验顺序。掩盖刺激和反馈的内容会破坏 75.7% 的学习信息，并使模型低于概率，这表明选择历史本身并不能解释性能。排列揭示了独立​​试验任务的不变性，但试验顺序由先前的响应决定的敏感性。因此，小型认知微调模型显示出作为心理实验的噪声上限估计器的前景，尽管它们的范围仍然受到训练中看到的范式的限制。",
       "authors": "Nick Oh, Fernand Gobet",
       "url": "https://huggingface.co/papers/2608.05224",
-      "score": 2,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "5",
         "paperId": "2608.05224"
       }
     },
@@ -26,10 +101,10 @@
       "description_zh": "一旦视觉内容进入人工智能管道，其所有者通常对其使用方式几乎没有技术控制。法律和监管补救措施可以解决滥用问题，但许多技术干预措施必须在内容发布或访问时尽早实施。这项调查研究了围绕这一干预点发展起来的保护范式，我们将其称为“对抗性攻击”。长期以来，扰动和结构化信号被研究为对学习模型的攻击，而被数据所有者、创建者、平台或审计员用来破坏未经授权的自动化或支持以后的问责。五个研究社区基本上独立地实现了这种反转，每个社区都解决了视觉资产生命周期的不同阶段：在共享时防止不需要的识别的隐私过滤器、针对未经授权的训练的不可学习的示例、针对恶意编辑或模仿的生成性保护、针对自动化代理的访问控制的对抗性验证码以及针对流通后归因的来源机制。尽管这些方法是在具有不兼容的成功标准的不同场所开发的，但其中许多方法利用了人类感知、语义解释和机器推理之间持续存在的差距，这表明随着视觉管道向多模式模型和自主代理发展，该范式仍然具有相关性。为了使他们的主张具有可比性，我们沿着可转移性、适应性和部署准备度的共同轴对所有五个系列进行了评估。在整个生命周期中，我们发现大多数保护措施仍然主要针对静态或弱适应性对手进行验证，而超出受控基准的证据仍然很少。最后，我们整合了跨阶段对策和开放问题，以实现稳健、可组合和可部署的所有者端保护。",
       "authors": "Jiaming Zhang, Boyang Chen, Zherui Li, Fuyao Zhang, Xinyu Yan, Hong Xi Tae, Wenwen He, Xuan Wang, Siqi Guo, Junhao Dong, Kun Wang, Hanxun Huang, Yige Li, Xingjun Ma, Yang Cao, Lingjuan Lyu, Wei Yang Bryan Lim",
       "url": "https://huggingface.co/papers/2608.04314",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2608.04314"
       }
     },
@@ -41,10 +116,10 @@
       "description_zh": "激活预言 (AO) 是经过训练的语言模型，用于回答有关另一个模型内部激活的自然语言问题。它们提供了一个灵活的接口，用于从模型状态读取隐藏信息，特别是当相关信息在内部表示但在可见行为中不存在或不完整时。然而，AO 本身就是学习系统：它们的答案是由训练数据、目标和学习的报告行为决定的，而不是所表示信息的中立读数。我们在受控的禁忌词猜测环境中研究这一点，其中主题模型经过微调以在内部使用隐藏的概念，同时避免直接披露。与接受此类主题培训的 AO 成为专业阅读者的预期相反，我们发现经过微调的 AO 可以成为特定于概念的反阅读者：它们选择性地无法恢复在自己的训练期间持续存在的概念。这种失败不能简单地用主题或预言表示中概念的缺失来解释：目标在预言中仍然可解码，而 LogitLens 和层消融分析表明失败出现在 AO 读出路径中。我们的结果表明，行为泄漏、表示级可解码性和 AO 可语言性可能会分崩离析，从而引发对学习可解释性接口的可靠性问题。",
       "authors": "Tobias Bersia, Tatiana Gaintseva",
       "url": "https://huggingface.co/papers/2607.23379",
-      "score": 3,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "10",
         "paperId": "2607.23379"
       }
     },
@@ -53,13 +128,13 @@
       "title": "FATE: Frame-Level Audio-Visual Temporal Embedding",
       "title_zh": "FATE：帧级视听时间嵌入",
       "description": "When a dog opens its mouth and barks, humans naturally recognize what the sound is and when it occurs. Building audio-visual models with this same ability requires representations that capture both semantic and temporal alignment. Current approaches fall short on one side or the other: embedding models match semantic but lose temporal information; synchronization models capture temporal offsets but lack semantic understanding. To bridge this gap, we propose FATE, Frame-level Audio-visual Temporal Embedding. Unlike prior embedding models that pool each modality into a single embedding and discard temporal information, FATE retains frame-level sequences, aligns them on the physical timeline, and computes similarity over strictly aligned frame pairs. Unlike synchronization models that output only an offset prediction, FATE encodes synchronization in a reusable embedding space, trained with a joint objective combining cross-video semantic and within-video temporal contrastive learning to capture both what sounds and when it occurs. Across three tasks, FATE surpasses the strongest baseline on temporal and semantic retrieval by a large margin, matches fully supervised methods on event localization in a zero-shot setting, and achieves the best correlation with human judgments as a generation evaluation metric. The source code can be found at https://github.com/guankaisi/FATE.",
-      "description_zh": "当狗张开嘴吠叫时，人类自然会识别出声音是什么以及何时发生。构建具有相同能力的视听模型需要捕获语义和时间对齐的表示。当前的方法在一方面或另一方面都有不足：嵌入模型匹配语义，但丢失了时间信息；同步模型捕获时间偏移但缺乏语义理解。为了弥补这一差距，我们提出了 FATE，即帧级视听时间嵌入。与先前将每种模态合并为单个嵌入并丢弃时间信息的嵌入模型不同，FATE 保��帧级序列，在物理时间轴上对齐它们，并计算严格对齐的帧对上的相似性。与仅输出偏移预测的同步模型不同，FATE 在可重用的嵌入空间中对同步进行编码，并通过结合跨视频语义和视频内时间对比学习的联合目标进行训练，以捕获声音及其发生时间。在三项任务中，FATE 大幅超越了时间和语义检索的最强基线，在零样本设置中匹配完全监督的事件定位方法，并作为生成评估指标实现了与人类判断的最佳相关性。源代码可以在https://github.com/guankaisi/FATE找到。",
+      "description_zh": "当狗张开嘴吠叫时，人类自然会识别出声音是什么以及何时发生。构建具有相同能力的视听模型需要捕获语义和时间对齐的表示。当前的方法在一方面或另一方面都有不足：嵌入模型匹配语义，但丢失了时间信息；同步模型捕获时间偏移但缺乏语义理解。为了弥补这一差距，我们提出了 FATE，即帧级视听时间嵌入。与先前将每种模态合并为单个嵌入并丢弃时间信息的嵌入模型不同，FATE 保���帧级序列，在物理时间轴上对齐它们，并计算严格对齐的帧对上的相似性。与仅输出偏移预测的同步模型不同，FATE 在可重用的嵌入空间中对同步进行编码，并通过结合跨视频语义和视频内时间对比学习的联合目标进行训练，以捕获声音及其发生时间。在三项任务中，FATE 大幅超越了时间和语义检索的最强基线，在零样本设置中匹配完全监督的事件定位方法，并作为生成评估指标实现了与人类判断的最佳相关性。源代码可以在https://github.com/guankaisi/FATE找到。",
       "authors": "Kaisi Guan, Bingzi Zhang, Xihua Wang, Ying Ba, Xin Cheng, Yijing Chen, Ruihua Song",
       "url": "https://huggingface.co/papers/2608.01310",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2608.01310"
       }
     },
@@ -71,10 +146,10 @@
       "description_zh": "小语言模型通常是在严格的延迟、成本和本地限制下部署的唯一选择，但它们很少从头开始训练：压缩模型通常通过知识蒸馏（KD）来恢复。这一恢复步骤在很大程度上决定了最终的质量，但其成本很高。我们提出了一项从业者关于如何提高蒸馏训练效率的研究，围绕两个系统贡献进行组织。首先，我们展示了离线 KD（缓存一次教师的前 K 个逻辑并针对缓存训练学生）在几乎相同的训练损失下与在线蒸馏相匹配，同时将教师从内存中删除，每次迭代运行速度提高约 29%，并且在单个 H200 GPU 上达到高出 41% 的吞吐量。其次，我们引入了一种融合的分块 KL 损失，它永远不会实现完整词汇大小的 Logit 张量，从而使峰值记忆与序列长度呈线性关系。这消除了内存峰值，否则会限制上下文长度，并让我们可以在单个 GPU 上以上下文的四倍（32{,}768 个令牌）进行训练。一个单独的仅输出头玩具基准隔离了损失内核，并确认其内存和迭代率从 4K 到 256K 令牌的缩放。这��共同使得大规模治疗和数百次消融变得负担得起。我们还报告了对损失设计和序列打包的支持消融。我们发布了分块损失实现：https://github.com/CompactifAI/Full-Chunked-KL-Loss。",
       "authors": "Bakbergen Ryskulov, Iker García-Ferrero, David Montero, David Jansen, Ali Hashemi, Jezabel R. Garcia, Antonio Tiene, Román Orús",
       "url": "https://huggingface.co/papers/2608.03796",
-      "score": 5,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "9",
         "paperId": "2608.03796"
       }
     },
@@ -98,7 +173,7 @@
       "title": "Capek 0.5: An Execution-Centric Vision-Language Model for Embodied Intelligence",
       "title_zh": "Capek 0.5：以执行为中心的体现智能视觉语言模型",
       "description": "Vision-language models are increasingly serving as the reasoning core of embodied agents. Robot execution is inherently iterative: each action reshapes the scene and physical state, continually renewing what must be perceived, reasoned about, and verified. Meeting these demands requires complementary capabilities that differ in supervision signals, prediction formats, and verification criteria. Existing approaches typically develop these capabilities against isolated, task-specific objectives, leaving open how they should be organized and integrated around execution as a whole. We present Capek 0.5, an embodied vision-language model built around an execution-centric capability taxonomy. Rather than organizing training by datasets or tasks, the taxonomy groups embodied capabilities according to their functional roles throughout execution and comprises four capability families: Spatial Reasoning, Temporal Understanding, Action Guidance, and State Verification. Each capability is first acquired by a dedicated specialist through reinforcement learning with verifiable rewards from a shared backbone, and the specialists are then consolidated into a single inference-time model through weight-space merging followed by routed policy-space distillation. We instantiate Capek 0.5 at the 2B and 35B-A3B scales and evaluate it from three complementary perspectives: comprehensive benchmark suites including Capek-StateBench, a new benchmark for state verification; a controlled study of capability retention from specialists to the unified model; and closed-loop evaluation in simulated embodied environments. Capek 0.5 improves the large majority of matched benchmark rows over its initialization, retains all four specialized capabilities in one checkpoint with quantified losses, and transfers to closed-loop embodied task execution.",
-      "description_zh": "视觉语言模型越来越多地充当实体代理的推理核心。机器人执行本质上是迭代的：每个动作都会重塑场景和物理状态，不断更新必须感知、推理和验证的内容。满足这些需求需要在监督信号、预测格式和验证标准方面有所不同的互补能力。现有的方法通常针对孤立的、特定于任务的目标来开发这些功能，而如何围绕整个执行来组织和集成它们则保持开放。我们推出了 Capek 0.5，这是一种围绕以执行为中心��能力分类法构建的具体视觉语言模型。分类组不是按数据集或任务组织培训，而是根据其在整个执行过程中的功能角色来体现能力，并包含四个能力系列：空间推理、时间理解、行动指导和状态验证。每项能力首先由专门的专家通过强化学习获得，并从共享骨干网获得可验证的奖励，然后通过权重空间合并和路由策略空间蒸馏将专家合并为单个推理时间模型。我们在 2B 和 35B-A3B 尺度上实例化 Capek 0.5，并从三个���补的角度对其进行评估：全面的基准套件，包括 Capek-StateBench（状态验证的新基准）；从专家到统一模型的能力保留受控研究；以及模拟具体环境中的闭环评估。 Capek 0.5 在其初始化过程中改进了绝大多数匹配的基准行，在一个检查点中保留了所有四种专门功能，并量化了损失，并转移到闭环具体任务执行。",
+      "description_zh": "视觉语言模型越来越多地充当实体代理的推理核心。机器人执行本质上是迭代的：每个动作都会重塑场景和物理状态，不断更新必须感知、推理和验证的内容。满足这些需求需要在监督信号、预测格式和验证标准方面有所不同的互补能力。现有的方法通常针对孤立的、特定于任务的目标来开发这些功能，而如何围绕整个执行来组织和集成它们则保持开放。我们推出了 Capek 0.5，这是一种围绕以执行为中心的能力分类法构建的具体视觉语言模型。分类组不是按数据集或任务组织培训，而是根据其在整个执行过程中的功能角色来体现能力，并包含四个能力系列：空间推理、时间理解、行动指导和状态验证。每项能力首先由专门的专家通过强化学习获得，并从共享骨干网获得可验证的奖励，然后通过权重空间合并和路由策略空间蒸馏将专家合并为单个推理时间模型。我们在 2B 和 35B-A3B 尺度上实例化 Capek 0.5，并从三个互补的角度对其进行评估：全面的基准套件，包括 Capek-StateBench（状态验证的新基准）；从专家到统一模型的能力保留受控研究；以及模拟具体环境中的闭环评估。 Capek 0.5 在其初始化过程中改进了绝大多数匹配的基准行，在一个检查点中保留了所有四种专门功能，并量化了损失，并转移到闭环具体任务执行。",
       "authors": "Ying Chen, Weizhen Li, Zhe Hu, Zhenjiang Li, Rui Jiang, Zhifeng Gu, Lihuang Fang, Jiangping Liu, Lei Yi, Jie Chen",
       "url": "https://huggingface.co/papers/2608.06756",
       "score": 0,
@@ -116,10 +191,10 @@
       "description_zh": "基础模型用于从大量未标记数据中提取可转移表示，通常通过自监督学习 (SSL)。然而，其中许多模型依赖于可解释性有限的架构，这在医学成像等高风险领域是一个关键问题。我们提出了 DualIFM，这是一种可通过 BagNet 主干进行设计解释的基础模型，其小感受野生成忠实于模型决策过程的类证据图。此外，DualIFM 在预训练期间合并了一个 2D 投影层，可以直接可视化表示空间，提供学习结构的数据集级视图，包括有意义的临床聚类以及潜在的虚假相关性。我们使用来自不同来源的超过 800,000 张彩色眼底照片对 DualIFM 进行训练，以学习不同下游任务的通用表示。我们的模型实现了与 RETFound 相当的性能，后者的参数多了 16 倍，同时提供了对分布外数据的可解释预测。这些结果表明，大规模 SSL 预训练与固有的可解释性相结合可以为视网膜成像提供稳健的表示。代码和预训练模型可在 github.com/berenslab/interpretable_FM 上获取。",
       "authors": "Samuel Ofosu Mensah, Camila Roa, Kerol Djoumessi, Philipp Berens",
       "url": "https://huggingface.co/papers/2603.18846",
-      "score": 0,
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "1",
         "paperId": "2603.18846"
       }
     },
@@ -128,13 +203,13 @@
       "title": "Zero Gap Is Not Restoration: Stratified Per-Question Probability Evaluation and Step-wise Mitigation of Benchmark Contamination",
       "title_zh": "零差距不是恢复：按问题概率分层评估和基准污染的逐步缓解",
       "description": "Test data from public benchmarks inevitably leaks into pretraining corpora, inflating evaluation scores once memorized. Contamination mitigation evaluation intervenes in the decoding process to suppress memorization and restore a contaminated model's genuine capability, but its prevailing metric, the G-AP (Gap of Aggregate Performance), is flawed. Discrete correct/incorrect readouts cannot characterize per-question performance, averaging before differencing lets over- and under-suppression cancel out, and uniform per-question weighting invites strategies to push solve probabilities onto the clean model's high-frequency values. We propose SA-PPG (Stratified Aggregate of Per-question Probability Gaps): estimate each question's solve probability by sampling, difference it against the clean model per question, and aggregate within groups defined by the clean model's solve probability. Existing mitigation strategies first estimate where contamination lies and then operate on the estimate, so they are only as correct as the estimate. RailCap instead judges contamination during generation: whenever a sample falls back onto the greedy trajectory, the next trajectory token is capped to the runner-up, accumulating suppression until the response distribution becomes sufficiently dispersed. Across multiple contaminated models and benchmarks, SA-PPG reveals that prior strategies' restoration is substantially overestimated, while RailCap attains the lowest SA-PPG.",
-      "description_zh": "来自公共基准的测试数据不可避免地会泄漏到预训练语料库中，一旦记住就会夸大评估分数。污染缓解评估会干预解码过程，以抑制记忆并恢复受污染模型的真实能力，但其流行的指标 G-AP（聚合性能差距）存在缺陷。离散的正确/不正确读数无法表征每个问题的性能，求差之前求平均值可以抵消过度抑制和抑制不足，而统一的每个问题加权则需要采取策略将解决概率推到干净模型的高频值上。我们提出 SA-PPG（每个问题概率差距的分层聚��）：通过采样估计每个问题的解决概率，将其与每个问题的干净模型进行差异，并在由干净模型的解决概率定义的组内进行聚合。现有的缓解策略首先估计污染所在，然后根据估计进行操作，因此它们的正确性取决于估计。相反，RailCap 在生成过程中判断污染：每当样本回落到贪婪轨迹时，下一个轨迹标记就会被限制为亚军，累积抑制，直到响应分布变得足够分散。在多个受污染模型和基准中，SA-PPG 揭示了先前策略的恢��被大大高估，而 RailCap 获得了最低的 SA-PPG。",
+      "description_zh": "来自公共基准的测试数据不可避免地会泄漏到预训练语料库中，一旦记住就会夸大评估分数。污染缓解评估会干预解码过程，以抑制记忆并恢复受污染模型的真实能力，但其流行的指标 G-AP（聚合性能差距）存在缺陷。离散的正确/不正确读数无法表征每个问题的性能，求差之前求平均值可以抵消过度抑制和抑制不足，而统一的每个问题加权则需要采取策略将解决概率推到干净模型的高频值上。我们提出 SA-PPG（每个问题概率差距的分层聚���）：通过采样估计每个问题的解决概率，将其与每个问题的干净模型进行差异，并在由干净模型的解决概率定义的组内进行聚合。现有的缓解策略首先估计污染所在，然后根据估计进行操作，因此它们的正确性取决于估计。相反，RailCap 在生成过程中判断污染：每当样本回落到贪婪轨迹时，下一个轨迹标记就会被限制为亚军，累积抑制，直到响应分布变得足够分散。在多个受污染模型和基准中，SA-PPG 揭示了先前策略的恢复被大大高估，而 RailCap 获得了最低的 SA-PPG。",
       "authors": "Ruijie Hou, Yueyang Jiao, Zhao Wang, Yingming Li",
       "url": "https://huggingface.co/papers/2608.07341",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2608.07341"
       }
     },
@@ -146,86 +221,11 @@
       "description_zh": "最近的工作通过构建大规模多模式环境池来训练智能体。然而，我们发现仅仅增加多模式环境的数量并不总是有益。我们通过一系列实验进一步分析当前多模态环境分布的局限性。基于这些发现，我们从**多样性**和**难度结构**两个维度研究如何构建更有效的训练环境分布。为了多样性，我们提出**能力感知环境选择（AES）**来获得不同的环境集。对于难度结构，我们提出**分级难度课程（HDC）**，它通过两个难度级别来组织课程学习：利用弱化和状态规模进展。实验表明，AES 和 HDC 有效改善了多模态智能体训练。",
       "authors": "Kejian Zhu, Zhuoran Jin, Dongqi Huang, Hongbang Yuan, Yupu Hao, Kang Liu, Jun Zhao",
       "url": "https://huggingface.co/papers/2608.03571",
-      "score": 25,
+      "score": 28,
       "meta": {
         "source": "huggingface",
-        "upvotes": "25",
+        "upvotes": "28",
         "paperId": "2608.03571"
-      }
-    },
-    {
-      "id": "2608.03573",
-      "title": "SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs",
-      "title_zh": "SFT 冲突，RL 共存：LLM多任务学习的理论与实证分析",
-      "description": "Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) exhibit fundamentally different behaviors in enhancing multi-task reasoning for large language models (LLMs). Our preliminary experiments revealed a phenomenon: SFT suffers from severe task conflicts under multi-stage training, whereas RL enables stable coexistence across diverse tasks. Empirically, we trace this to the parameter level, observing that RL induces sparse and approximately orthogonal updates across tasks. We provide a theoretical explanation for this mechanism by analyzing multi-task gradient interference. Our results reveal a distinction: interference in SFT is norm-limited, scaling with the absolute gradient magnitude, whereas interference in RL is variance-limited, bounded by the gradient variance induced by advantage normalization and on-policy optimization. This small variance bound yields near-orthogonal optimization directions across tasks. Leveraging this insight, we propose Parallel-RL, a paradigm that decouples multi-task training, significantly improving efficiency and flexibility.",
-      "description_zh": "监督微调 (SFT) 和强化学习 (RL) 在增强大型语言模型 (LLM) 的多任务推理方面表现出根本不同的行为。我们的初步实验揭示了一个现象：SFT 在多阶段训练下会遇到严重的任务冲突，而 RL 可以实现不同任务之间的稳定共存。根据经验，我们将其追溯到参数级别，观察到 RL 会导致跨任务的稀疏且近似正交的更新。我们通过分析多任务梯度干扰，为这种机制提供了理论解释。我们的结果揭示了一个区别：SFT 中���干扰是范数限制的，随绝对梯度大小缩放，而 RL 中的干扰是方差限制的，受优势归一化和同策略优化引起的梯度方差的限制。这种小方差界限在任务之间产生近乎正交的优化方向。利用这一见解，我们提出了并行强化学习，这是一种解耦多任务训练的范式，可显着提高效率和灵活性。",
-      "authors": "Kejian Zhu, Zhuoran Jin, Shangqing Tu, Hongbang Yuan, Yushi Bai, Kang Liu, Juanzi Li, Jun Zhao",
-      "url": "https://huggingface.co/papers/2608.03573",
-      "score": 25,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "25",
-        "paperId": "2608.03573"
-      }
-    },
-    {
-      "id": "2608.06501",
-      "title": "Can MLLMs Decode the Creative Leap? Introducing C4 for Cross-Concept Understanding",
-      "title_zh": "MLLM 能否解码创意飞跃？引入 C4 进行跨概念理解",
-      "description": "Creative capabilities of MLLMs matter in design, communication, education, and human--AI collaboration, yet remain difficult to evaluate because explicit targets and reward signals are scarce compared with accuracy-oriented tasks. Cross-concept understanding is a core cognitive capacity underlying receptive creativity. It enables a perceiver to recover intended meaning from non-obvious but meaningful conceptual relations. We operationalize item construction as cross-concept encoding and model inference as cross-concept decoding. We introduce C4, a cognition-inspired evaluation framework for Chengyu (Chinese idiom)-based Cross-Concept Creativity. Its encoding component maps target slots to imageable substitute concepts along bridge paths in a manually annotated and third-party-reviewed cross-concept network, enabling batch generation with explicit structure, difficulty indexed by bridge count and depth, and exact answers. Using this framework, we instantiate the C4 Evaluation Set (C4-Eval), comprising 184 synthetic items and 37 human-created cross-concept chengyu figures collected from online sources. We manually construct and review cross-concept relations, bridge paths, and reasoning processes for the collected figures. Each C4-Eval item is instantiated in five task settings, yielding 884 primary answer-recovery cases. Across ten evaluated MLLMs, the strongest closed models reach 50.7% and 48.0% primary accuracy, while open-source models remain substantially lower. Candidate constraints improve accuracy sharply, but bridge hints and explanation requests provide only modest gains. These results expose a substantial gap in how current MLLMs decode creatively encoded meaning through cross-concept relations. The code is in the supplementary material.",
-      "description_zh": "MLLM 的创造力在设计、通信、教育和人类与人工智能的协作中很重要，但仍然难以评估，因为与以准确性为导向的任务相比，明确的目标和奖励信号很少。跨概念理解是接受创造力的核心认知能力。它使感知者能够从不明显但有意义的概念关系中恢复预期的含义。我们将项目构建操作为跨概念编码，将模型推理操作为跨概念解码。我们介绍了 C4，一个基于成语（中国成语）的跨概念创造力的认知启发评估框架。其编码组件将目标槽映射到手动注释和第三方审查的跨概念网络中的桥路径上的可成像替代概念，从而实现具有显式结构的批量生成、按桥数量和深度索引的难度以及准确的答案。使用该框架，我们实例化了 C4 评估集（C4-Eval），其中包括从在线资源收集的 184 个合成项目和 37 个人工创建的跨概念成宇人物。我们手动构建和审查所收集数据的跨概念关系、桥梁路径和推理过程。每个 C4-Eval 项目在五个任务设置中实例化，产生 884 个主要答案恢复案例。在十个经过评估的 MLLM 中，最强的封闭模型达到了 50.7% 和 48.0% 的主要准确率，而开源模型仍然低得多。候选约束极大地提高了准确性，但桥接提示和解释请求仅提供了有限的收益。这些结果揭示了当前 MLLM 如何通过跨概念关系创造性地解码编码含义方面存在巨大差距。代码位于补充材料中。",
-      "authors": "Ming Wang, Yuqing Zhang, Tingna Xie, Xiangju Li, Xiaocui Yang, Daling Wang, Shi Feng, Yifei Zhang",
-      "url": "https://huggingface.co/papers/2608.06501",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2608.06501"
-      }
-    },
-    {
-      "id": "2608.06485",
-      "title": "Do AI Personas Grow? Analyzing and Benchmarking Personality Evolution in LLM Agents After Life Events",
-      "title_zh": "人工智能角色会成长吗？LLM代理人在生活事件后的人格演变分析和基准测试",
-      "description": "Personality-conditioned LLM agents (PC-Agents) are increasingly used in emotional support, social simulation, and role-playing, motivating the development of lifelong agents that remain coherent over extended interactions. A key component of such coherence is personality evolution: agents should undergo plausible, psychology-grounded changes as they experience life events in different contexts. Although prior work shows that LLM personalities can shift under contextual perturbations, how these shifts vary across traits, events, personas, and models remains poorly understood. We study event-induced personality change after 11 major life events, using the Big Five traits as a psychometric anchor and interpreting the resulting trajectories against longitudinal evidence from human personality psychology. Across four diagnostic axes, PC-Agents exhibit measurable trait shifts at similar rates for event-trait pairs with and without documented human change directions. Even when shifts follow the expected direction, their magnitudes usually fall below human effect-size ranges. Gender and cultural-region prompts show little moderating effect, while persona-level dispersion is compressed three- to four-fold relative to human samples. To enable systematic comparison, we introduce BFI-Adapt, a reusable benchmark for scoring the directional fidelity of event-induced personality change, and use it to rank 14 models. A validation suite shows that the measured shifts exceed no-event retest noise, remain stable under independently paraphrased prompts, exhibit limited and model-dependent convergence with scenario-based behavioral choices, and persist across intervening unrelated dialogue. Together, these checks establish the measured trajectories as robust event-conditioned response patterns. Our results suggest that current PC-Agents simulate the mean of human personality dynamics, but not its shape.",
-      "description_zh": "人格调节的 LLM 代理（PC-Agents）越来越多地用于情感支持、社交模拟和角色扮演，激励终身代理的发展，这些代理在长期互动中保持一致。这种一致性的一个关键组成部分是人格进化：当代理人在不同的背景下经历生活事件时，他们应该经历合理的、基于心理学的变化。尽管之前的研究表明LLM的性格可以在环境扰动下发生变化，但这些变化如何随着特征、事件、人物角色和模型的不同而变化，人们仍然知之甚少。我们研究了 11 个重大生活事件后由事件引起的人格变化��使用大五特征作为心理测量锚点，并根据人类人格心理学的纵向证据解释由此产生的轨迹。在四个诊断轴上，无论有无记录的人类变化方向，PC-Agents 对于事件-特征对都以相似的速率表现出可测量的特征变化。即使变化遵循预期方向，其幅度通常也会低于人类效应大小范围。性别和文化区域提示几乎没有显示出调节作用，而角色层面的分散度相对于人类样本被压缩了三到四倍。为了进行系统比较，我们引入了 BFI-Adapt，这是一个可重复使用的基准，用于对事件引起的人格变化的方向保真度进行评分，并用它对 14 个模型进行排名。验证套件显示，测量的变化超过无事件重新测试噪声，在独立解释的提示下保持稳定，与基于场景的行为选择表现出有限且依赖于模型的收敛，并在干预的不相关对话中持续存在。这些检查共同将测量的轨迹建立为稳健的事件条件响应模式。我们的结果表明，当前的 PC 代理模拟了人类人格动态的平均值，但不是其形状。",
-      "authors": "Ming Wang, Peidong Wang, Xiaocui Yang, Daling Wang, Shi Feng, Fiona Fui-Hoon Nah, Ee-Peng Lim",
-      "url": "https://huggingface.co/papers/2608.06485",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2608.06485"
-      }
-    },
-    {
-      "id": "2608.02831",
-      "title": "Reinforcement Learning with Evolving Rubrics as Rewards for Audio Reasoning",
-      "title_zh": "使用不断演变的规则作为音频推理奖励的强化学习",
-      "description": "Audio reasoning is essential for machine understanding of the acoustic world. Reinforcement learning with verifiable rewards can elicit such reasoning, yet existing reward designs are complementary in their limitations: outcome-based rewards supervise only the final answer and let the model reach it without attending to the audio, whereas process-based rewards score the reasoning itself but rely on coarse, hand-crafted, and fixed criteria that neither adapt to each question nor stay grounded in the acoustic evidence. Moreover, questions differ in what they demand, with some hinging on perception and others on multi-step reasoning, and any static criterion weakens as the policy improves. Supervising the reasoning process with fine-grained, audio-grounded, and adaptive rewards is therefore crucial, yet challenging since such rewards are impractical to design by hand for every sample. To this end, we introduce AudioRubrics, a reinforcement learning framework that supervises audio reasoning with self-evolving, audio-grounded rubric rewards. AudioRubrics synthesizes per-sample rubrics from the raw waveform and, conditioned on the model's own rollouts, regenerates and reweights criteria per group, supplying a continuous learning signal that keeps targeting the current policy's weaknesses as static criteria saturate. Comprehensive evaluations across three audio reasoning benchmarks reveal that AudioRubrics substantially outperforms a wide range of open-source and training-based baselines. Furthermore, our analysis shows that the gains scale with the capability of the rubric generator and judge, and AudioRubrics converges to a stable reasoning length that avoids both degenerate collapse and unbounded growth. The improvement in audio perception further demonstrates the effectiveness of anchoring supervision in the acoustic evidence. Our project page is available at https://audiorubrics.github.io.",
-      "description_zh": "音频推理对于机器理解声学世界至关重要。具有可验证奖励的强化学习可以引发这样的推理，但现有的奖励设计在其局限性方面是互补的：基于结果的奖励仅监督最终答案，让模型在不关注音频的情况下达到答案，而基于过程的奖励对推理本身进行评分，但依赖于粗略的、手工设计的和固定的标准，既不适应每个问题，也不立足于声学证据。此外，问题的要求也各不相同，有些取决于感知，有些则取决于多步骤推理，任何静态标准都会随着政策的改进而减弱。因此，用细粒度、基于音频的自适应奖励来监督推理过程至关重要，但也具有挑战性，因为为每个样本手工设计这样的奖励是不切实际的。为此，我们引入了 AudioRubrics，这是一个强化学习框架，它通过自我进化、基于音频的评分规则奖励来监督音频推理。 AudioRubrics 从原始波形中合成每个样本的规则，并以模型自身的推出为条件，重新生成并重新加权每组标准，提供持续学习信号，在静态标准饱和时不断针对当前策略的弱点。对三个音频推理基准的综合评估表明，AudioRubrics 的性能大大优于各种开源和基于训练的基准。此外，我们的分析表明，增益随 Rubric 生成器和判断的能力而变化，并且 AudioRubrics 收敛到稳定的推理长度，避免退化崩溃和无界增长。音频感知的改善进一步证明了声学证据中锚定监督的有效性。我们的项目页面位于 https://audiorubrics.github.io。",
-      "authors": "Fangxu Yu, Tao Feng, Dehai Min, Zinan Lin, Weijia Xu, Michael Xu, Philip S. Yu, Ge Liu, Tianyi Zhou",
-      "url": "https://huggingface.co/papers/2608.02831",
-      "score": 9,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2608.02831"
-      }
-    },
-    {
-      "id": "2606.00152",
-      "title": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
-      "title_zh": "PrivacyPeek：审计LLM代理人获得的内容，而不仅仅是他们所说的内容",
-      "description": "LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents often acquire more sensitive information than the task requires. Existing privacy benchmarks audit what the agent's response or outgoing actions disclose, but overlook the acquisition stage where data first enters the agent's context. The over-acquired information is then one careless action or one attack away from an outright leak. To assess its prevalence, we introduce PrivacyPeek, a benchmark for evaluating acquisition-stage privacy leakage of LLM-based agents, with 1{,}182 cases across 7 acquisition behaviours and 16 application domains. Specifically, Acquisition Inspection examines the agent's tool-call trajectory, both the tools it invokes and the data it receives, to detect when it acquires sensitive information beyond the task scope. Probe Elicitation then issues a follow-up probe and measures how readily an attacker could elicit sensitive information the agent acquired but did not disclose. Our experiments on 10 LLM-based agents across 4 model families show that the unnecessary acquisition of sensitive information is widespread. In addition, we observe a correlation between the task-completion capability and acquisition-stage leakage. Prompt-level defences reduce only a small fraction of acquisition-stage leakage, leaving the majority unmitigated. These results make auditing acquisition-stage privacy both urgent and necessary. Our dataset and code are available at https://github.com/Xuan269/PrivacyPeek-Resource.",
-      "description_zh": "基于LLM的代理正在快速发展，自主调用外部工具为用户完成多步骤任务。然而，代理通常会获取比任务所需的更敏感的信息。现有的隐私基准审核代理的响应或传出行为所披露的内容，但忽略了数据首次进入代理上下文的获取阶段。过度获取的信息只是一次不小心的行为或一次攻击，就可能导致彻底泄露。为了评估其普遍性，我们引入了 PrivacyPeek，这是一个用于评估基于 LLM 的代理的获取阶段隐私泄露的基准，涉及 7 个获取行为和 16 个应用领域的 1{,}182 个案例。具体来说，获取检查检查代理的工具调用轨迹，包括它调用的工具和它接收的数据，以检测它何时获取超出任务范围的敏感信息。然后，探测获取会发出后续探测，并测量攻击者获取代理获取但未披露的敏感信息的容易程度。我们对 4 个模型系列的 10 个基于 LLM 的代理进行的实验表明，不必要的敏感信息获取非常普遍。此外，我们观察到任务完成能力和采集阶段泄漏之间的相关性。即时级防御仅减少了一小部分采集阶段的泄漏，而大多数则未得到缓解。这些结果使得审计采集阶段的隐私变得紧迫和必要。我们的数据集和代码可在 https://github.com/Xuan269/PrivacyPeek-Resource 获取。",
-      "authors": "Mingxuan Zhang, Jiahui Han, Dadi Guo, Songze Li, Guanchu Wang, Na Zou, Dongrui Liu, Xia Hu",
-      "url": "https://huggingface.co/papers/2606.00152",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2606.00152"
       }
     }
   ]
