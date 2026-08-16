@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-15T19:51:33.569Z",
+  "updatedAt": "2026-08-16T19:50:47.222Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "我们引入了一种具有固定大小内存的循环 Transformer 架构，它概括了滑动窗口注意力，同时在训练期间保持可并行性。  由两个耦合模型组成：预填充器 Q，它利用充分注意力。在实践中，我们对 Q 使用交错的完全注意力和滑动窗口注意力，因为这会产生更强的性能。基本要求是 Q 比 P 更具表现力，可以访问完整的历史记录。生成内存目标 m'_t，以及解码器 P，仅使用滑动窗口注意力和循环 K/V 注入来生成用于下一个标记预测的解码器内存 m_t。我们使用将 m_t 与 m'_t 对齐的内存一致性损失进行训练，从而允许推理单独使用 P。根据经验，相对于滑动窗口和潜在循环变压器基线，改进了验证损失和下游预训练基准。此外，P 和 Q 之间共享参数可以减少参数存储，同时保留大部分增益。",
       "authors": "Bo Liu, Qiang Liu",
       "url": "https://huggingface.co/papers/2608.02870",
-      "score": 5,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "9",
         "paperId": "2608.02870"
       }
     },
@@ -23,13 +23,13 @@
       "title": "Thought-Level Beam Search for Reasoning",
       "title_zh": "用于推理的思想级束搜索",
       "description": "Test-time compute scaling is a primary driver of performance in large reasoning models (LRMs), but extreme inefficiency bounds current approaches, shifting the critical question from how much compute to spend, to where to allocate it. We formalize test-time reasoning as a constrained compute allocation problem over partial trajectories. Under a fixed hardware budget, existing paradigms fail to actively allocate the compute to the most promising partial progress: traditional parallel sampling treats traces independently and induces severe memory bottlenecks, while subtractive pruning starves hardware and fails to actively and sufficiently shift the output distribution. To overcome this dichotomy, we introduce Gambit, an inference algorithm that executes thought-level beam search. By periodically pruning unpromising trajectories and immediately branching from high-quality prefixes, Gambit dynamically concentrates compute onto the most promising reasoning traces via a light-weight scorer probing hidden states while maintaining continuous high hardware utilization. Extensive evaluations across multiple models and benchmarks demonstrate that Gambit strictly dominates existing baselines. Under identical hardware constraints, our method yields up to a +6.7\\% absolute accuracy gain on HMMT-24 and +3.3\\% on AIME-25 over pruning baselines, delivers >2times higher throughput on trace completion, and reduces total token consumption by up to 68.5\\% relative to standard parallel sampling.",
-      "description_zh": "测试时计算扩展是大型推理模型 (LRM) 性能的主要驱动因素，但极端低效限制了当前的方法，将关键问题从花费多少计算转移到在哪里分配计算。我们将测试时推理形式化为部分轨迹上的受限计算分配问题。在固定的硬件预算下，现有的范式无法主动将计算分配给最有希望的部分进展：传统的并行采样独立处理轨迹并导致严重的内存瓶颈，而减法剪枝则导致硬件匮乏，并且无法主动且充分地改变输出分布。���了克服这种二分法，我们引入了 Gambit，一种执行思想级波束搜索的推理算法。通过定期修剪无希望的轨迹并立即从高质量前缀分支，Gambit 通过轻量级记分器探测隐藏状态，动态地将计算集中到最有希望的推理轨迹上，同时保持持续的高硬件利用率。跨多个模型和基准的广泛评估表明，Gambit 严格主导现有基准。在相同的硬件限制下，我们的方法在修剪基线上在 HMMT-24 上产生高达 +6.7\\% 的绝对精度增益，在 AIME-25 上产生 +3.3\\% 的绝对精度增益，在跟踪完成时提供超过 2 倍的吞吐量，并相对于标准并行采样将总令牌消耗减少高达 68.5\\%。",
+      "description_zh": "测试时计算扩展是大型推理模型 (LRM) 性能的主要驱动因素，但极端低效限制了当前的方法，将关键问题从花费多少计算转移到在哪里分配计算。我们将测试时推理形式化为部分轨迹上的受限计算分配问题。在固定的硬件预算下，现有的范式无法主动将计算分配给最有希望的部分进展：传统的并行采样独立处理轨迹并导致严重的内存瓶颈，而减法剪枝则导致硬件匮乏，并且无法主动且充分地改变输出分布。��了克服这种二分法，我们引入了 Gambit，一种执行思想级波束搜索的推理算法。通过定期修剪无希望的轨迹并立即从高质量前缀分支，Gambit 通过轻量级记分器探测隐藏状态，动态地将计算集中到最有希望的推理轨迹上，同时保持持续的高硬件利用率。跨多个模型和基准的广泛评估表明，Gambit 严格主导现有基准。在相同的硬件限制下，我们的方法在修剪基线上在 HMMT-24 上产生高达 +6.7\\% 的绝对精度增益，在 AIME-25 上产生 +3.3\\% 的绝对精度增益，在跟踪完成时提供超过 2 倍的吞吐量，并相对于标准并行采样将总令牌消耗减少高达 68.5\\%。",
       "authors": "Lijie Yang, Hongyin Luo, Jiawei Zhao, Tri Dao, Ravi Netravali",
       "url": "https://huggingface.co/papers/2608.08020",
-      "score": 6,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "10",
         "paperId": "2608.08020"
       }
     },
@@ -38,13 +38,13 @@
       "title": "RibAssist 3D: Biplanar Rib-Fracture Detection, Addressing, and Selective 3D Localization from CT-Derived Projections",
       "title_zh": "RibAssist 3D：根据 CT 导出的投影进行双平面肋骨骨折检测、定位和选择性 3D 定位",
       "description": "Rib fractures are common and time-consuming to localize on computed tomography (CT). We ask whether fractures detected independently in two orthogonal CT-derived projections (anteroposterior and lateral) can be paired across views and triangulated into reliable 3D points at a controlled rate of false outputs, and we answer it with a staged diagnostic study. The projection geometry is exact, and given correct correspondence, localization is accurate (median 4.0 mm, 88% within 10 mm, 93.6% rib-exact). On a sealed 55-case cohort, a large share of fractures is in principle recoverable (61.1% dual-view availability, and a correct pair present in the candidate graph for 58.4% of fractures), yet the binding limitation is neither geometry nor localization but confidence-limited cross-view correspondence. A controlled detector-by-correspondence factorial attributes the operational gain to lateral-detector quality rather than the tested matching methods; retraining the lateral detector produces the first nonzero controlled-budget reconstructions. Under a deliberately conservative commitment policy, a pre-specified sealed pass promotes 15 of 601 fractures to correct 3D localizations at 0.436 false points per case (2.50% end-to-end commitment yield), and committed points are accurate (median 1.49 mm, 93% rib-exact). The low yield is a consequence of confidence-gated abstention, not of geometry or detection: the study establishes a reproducible framework for selective 3D localization and identifies cross-view correspondence as the dominant operational bottleneck.",
-      "description_zh": "肋骨骨折很常见，并且通过计算机断层扫描 (CT) 进行定位非常耗时。我们询问在两个正交 CT 衍生投影（前后和侧向）中独立检测到的骨折是否可以跨视图配对，并以受控的错误输出率三角测量为可靠的 3D 点，我们通过分阶段诊断研究来回答这个问题。投影几何形状准确，并且给出正确的对应关系，定位准确（中值 4.0 毫米，88% 在 10 毫米内，93.6% 肋骨精确）。在密封的 55 例队列中，原则上大部分骨折是可恢复的（61.1% 的双视图可用性，58.4% 的骨折候选图中存在一对正确的骨折），但约束限制既不是几何形状，也不是定位，而是置信��限的交叉视图对应。受控探测器对应因子将操作增益归因于横向探测器质量而不是测试的匹配方法；重新训练横向检测器会产生第一个非零受控预算重建。在故意保守的承诺政策下，预先指定的密封通道可促进 601 处骨折中的 15 处骨折以每个病例 0.436 个错误点（2.50% 端到端承诺率）纠正 3D 定位，并且承诺点是准确的（中位 1.49 毫米，肋骨精确度为 93%）。低产量是置信门弃权的结果，而不是几何或检测的结果：该研究为选择性 3D 定位建立了一个可重复的框架，并将跨视图对应确定为主要的操作瓶颈。",
+      "description_zh": "肋骨骨折很常见，并且通过计算机断层扫描 (CT) 进行定位非常耗时。我们询问在两个正交 CT 衍生投影（前后位和侧位）中独立检测到的骨折是否可以跨视图配对，并以受控的错误输出率三角测量为可靠的 3D 点，我们通过分阶段诊断研究来回答这个问题。投影几何形状准确，并且给出正确的对应关系，定位准确（中值 4.0 毫米，88% 在 10 毫米内，93.6% 肋骨精确）。在密封的 55 例队列中，原则上大部分骨折是可恢复的（61.1% 的双视图可用性，58.4% 的骨折候选图中存在一对正确的骨折），但约束限制既不是几何形状，也不是定位，而是置信有限的交叉视图对应。受控探测器对应因子将操作增益归因于横向探测器质量而不是测试的匹配方法；重新训练横向检测器会产生第一个非零受控预算重建。在故意保守的承诺政策下，预先指定的密封通道可促进 601 处骨折中的 15 处骨折以每个病例 0.436 个错误点（2.50% 端到端承诺率）纠正 3D 定位，并且承诺点是准确的（中值 1.49 毫米，肋骨精确度为 93%）。低产量是置信门弃权的结果，而不是几何或检测的结果：该研究为选择性 3D 定位建立了一个可重复的框架，并将跨视图对应确定为主要的操作瓶颈。",
       "authors": "Kabila Haile Soboka",
       "url": "https://huggingface.co/papers/2608.06914",
-      "score": 0,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "4",
         "paperId": "2608.06914"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "交互式自回归视频生成需要低延迟推出和精确的在线控制。少步蒸馏通过减少去噪步骤来加速生成，而在线控制则施加因果约束：帧和块应取决于生成期间可用的历史和控制。然而，现有的视频分发匹配蒸馏（DMD）管道通常使用对完整剪辑进行评分的双向教师来监督因果几步的学生。因此，目标的分数可能取决于学生生成目标时不可用的未来框架和控制，从而使教师监督与学生的因果信息集不一致。我们引入了上下文匹配蒸馏（CMD），这是一种因果 DMD 框架，可将教师监督与生成每个目标时可用的信息保持一致。 CMD 用因果教师取代了双向全剪辑评分，该教师可以评估每个目标，而无需访问未来的帧或控件。同一个因果教师初始化了几个步骤的学生，在教师培训、学生蒸馏和推理过程中建立了一致的因果表述。除了对齐时间信息边界之外，前缀评分还通过评估缓存的学生生成的前缀下的每个目标，将监督与学生实现的部署上下文相匹配。前缀损坏通过扰乱训练早期产生的不可靠前缀，同时保持目标上下文对齐，进一步稳定训练。通过简单的因果公式，CMD 自然地扩展到逐帧和逐块生成、长视频蒸馏和相机条件蒸馏。实验证明了自回归方法在短视频和长视频基准上的最先进的总体性能，以及对时变相机控制的遵守程度的显着提高。",
       "authors": "Hmrishav Bandyopadhyay, Xuanchi Ren, Zijian Huang, Jay Zhangjie Wu, Tianshi Cao, Ruilong Li, Bryan Chu, Sanja Fidler, Yi-Zhe Song, Zian Wang",
       "url": "https://huggingface.co/papers/2608.13391",
-      "score": 5,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "9",
         "paperId": "2608.13391"
       }
     },
@@ -68,13 +68,13 @@
       "title": "From Inaudible Inputs to Model Failures: Low-Frequency Safety Risks in LALMs",
       "title_zh": "从听不见的输入到模型故障：LALM 中的低频安全风险",
       "description": "Large audio-language models (LALMs) have demonstrated strong capabilities in understanding diverse audio inputs. This diversity includes low-frequency signals that are inaudible to humans but can still enter the model and influence its generation. However, the practical impact of such low-frequency inputs on LALMs remains largely unexplored. In this paper, we propose Intermittent Low-Frequency Lockout (ILL), an inaudible red teaming method that evaluates this risk using a universal waveform template in a black box setting. ILL uses Sentence Attention Scale Estimation to determine active intervals and Frequency Confusion Transfer to construct a low-frequency waveform with continuous phase from corpus spectral variation. To mitigate this risk, we propose Distributional Requery Guard (DRG) to detect low-frequency distribution shifts and conditionally request a second recording for semantic recovery. Across six LALMs and multiple audio understanding tasks, ILL reduces accuracy by up to 67 percentage points while receiving a mean human audibility rating of 1.33, close to 1.17 for clean audio; DRG raises mean attacked accuracy from 28.5\\% to 46.1\\% after clean reacquisition. These findings identify a previously overlooked safety risk for LALMs and provide a foundation for future research on robust audio understanding.",
-      "description_zh": "大型音频语言模型（LALM）在理解不同音频输入方面表现出了强大的能力。这种多样性包括人类听不见但仍然可以进入模型并影响其生成的低频信号。然而，这种低频输入对 LALM 的实际影响在很大程度上仍未得到探索。在本文中，我们提出了间歇性低频锁定（ILL），这是一种听不见的红队方法，可在黑盒设置中使用通用波形模板来评估这种风险。 ILL 使用句子注意力量表估计来确定活动间隔，并使用频率混淆转移根据语料库频谱变化构建具有连续��位的低频波形。为了减轻这种风险，我们提出分布式重新查询防护（DRG）来检测低频分布变化，并有条件地请求第二次记录以进行语义恢复。在 6 个 LALM 和多个音频理解任务中，ILL 的准确性降低了高达 67 个百分点，同时人类平均听觉等级为 1.33，接近干净音频的 1.17；在干净重新捕获后，DRG 将平均攻击准确度从 28.5\\% 提高到 46.1\\%。这些发现确定了 LALM ���前被忽视的安全风险，并为未来强大的音频理解研究奠定了基础。",
+      "description_zh": "大型音频语言模型（LALM）在理解不同音频输入方面表现出了强大的能力。这种多样性包括人类听不见但仍然可以进入模型并影响其生成的低频信号。然而，这种低频输入对 LALM 的实际影响在很大程度上仍未得到探索。在本文中，我们提出了间歇性低频锁定（ILL），这是一种听不见的红队方法，可在黑盒设置中使用通用波形模板来评估这种风险。 ILL 使用句子注意力量表估计来确定活动间隔，并使用频率混淆转移根据语料库频谱变化构建具有连续���位的低频波形。为了减轻这种风险，我们提出分布式重新查询防护（DRG）来检测低频分布变化，并有条件地请求第二次记录以进行语义恢复。在 6 个 LALM 和多个音频理解任务中，ILL 的准确性降低了高达 67 个百分点，同时人类平均听觉等级为 1.33，接近干净音频的 1.17；在干净重新捕获后，DRG 将平均攻击准确度从 28.5\\% 提高到 46.1\\%。这些发现确定了 LALM 之前被忽视的安全风险，并为未来强大的音频理解研究奠定了基础。",
       "authors": "Yuanhe Zhang, Weiliu Wang, Jie Ren, Liang Lin, Zhenhong Zhou, Haoran Gao, Kun Wang, Chen Li, Li Sun, Sen Su",
       "url": "https://huggingface.co/papers/2608.09158",
-      "score": 2,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "6",
         "paperId": "2608.09158"
       }
     },
@@ -86,10 +86,10 @@
       "description_zh": "机器翻译 (MT) 系统通常无法正确翻译性别，尤其是在从英语等性别中立语言转换为罗马尼亚语等性别目标语言时。这种偏见导致翻译默认为男性形式或强化性别刻板印象。我们提出了一种混合管道，通过将基于大语言模型（LLM）的性别分类与神经机器翻译（NMT）相结合来缓解这个问题。我们的系统使用微调的LLM来检测英语句子中目标单词的预期性别，并插入内联性别提示标签。然后，这些标记��句子被传递到经过微调的 Transformer 模型，以生成形态正确的罗马尼亚语翻译。为了支持这一点，我们引入了三个用于性别消歧和翻译的新颖数据集。与基线 MT 系统相比，我们的方法将 WinoMT 和 WinoGender 基准的性别准确性提高了 40 个百分点以上。这是第一个使用 LLM 推理和标签感知翻译来明确解决和评估英语-罗马尼亚语机器翻译中性别偏见的方法。",
       "authors": "Ioana Grigore, Sergiu Nisioi",
       "url": "https://huggingface.co/papers/2608.08606",
-      "score": 0,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "5",
         "paperId": "2608.08606"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "大型语言模型 (LLM) 在自然语言任务中取得了卓越的性能，但它们是在静态语料库上进行训练的，并且它们的知识在快速变化的世界中很快就会过时。这激发了知识编辑（KE），它更新LLM中的特定知识，而不改变不相关的其他知识。最近的作品从结构化知识三元组转向非结构化 KE (UKE)，其中编辑是自由形式的段落，可以同时陈述多个事实。尽管如此，现有的编辑器插入了这样的一段话却未能使用它：编辑后的模型可以回忆起这段话，但既不能回答有关其事实的原子问题，也不能将它们组合成多跳推理。我们将这种缺失的属性（我们称之为可组合性）归因于编辑对固定段落作为唯一学习来源的被动依赖。作为回应，我们将编辑视为从同一模型的特权上下文状态中主动自我蒸馏，不需要外部监督。我们进一步揭示，由于注入知识的新颖性，预编辑模型本身的推出很少覆盖它，这限制了纯策略蒸馏的有效性。为了缩小这一差距，我们提出了 HPSE，它建立了一个混合部署，将缺失���事实准确地放置在学生自己的轨迹上，而在其他地方则保持政策不变。我们从理论上分析了 HPSE 相对于纯策略蒸馏的优势，并根据经验在不同场景下跨四个 LLM 主干和两个 KE 编辑器建立了即插即用的改进。",
       "authors": "Tianci Liu, Zihan Dong, Tianchun Li, Yi-Chung Chen, Qiming Cao, Xingchen Wang, Shiyang Wang, Zichen Miao, Linjun Zhang, Haoyu Wang, Jing Gao",
       "url": "https://huggingface.co/papers/2608.11660",
-      "score": 4,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "7",
         "paperId": "2608.11660"
       }
     },
@@ -116,10 +116,10 @@
       "description_zh": "本文报告了人工智能编码代理在规范优先协议下进行的大规模架构重构的单一、完全仪器化的案例研究，没有对生成的代码进行人工审查，也没有预先存在的预言机来验证目标行为。作者评估这项任务，即在大型相互依赖的代码库中拆除一个中心不变量，通过增量重构实际上是不可行的，这种改变通常需要重写。根据此处描述的协议，代理成功完成了它。\n  该系统是一个包含 3,648 个文件的 717,725 行生产 TypeScript 应用程序。该任务需要拆除核心生命周期不变量：保证 UI 面板在 AI 请求期间保持打开状态。目标行为是流媒体生成在其面板关闭后仍然存在，并且可以在重新打开时重新连接到同一个直播流，而不会丢失或重复。\n  协议：由代理制定正式规范，根据源代码审核该规范的 14 个细化周期，原子实现，编译/测试反馈循环，然后根据冻结规范审核代码的 17 个验证周期。在 31 次审核中，在任何人执行该程序之前，纠正了 201 ��缺陷。收敛标准是经验性的：连续两次验证返回零结果。\n  此次变更涉及 189 个文件（31 个新文件）；在提取阶段，两人总共提交了 288 个文件、34,770 个插入、16,422 个删除。在第一个和大约三十个后续会话中，软件的行为符合指定，没有观察到错误。已过去：三天；费用：2,430 美元。\n  完整的规范和原始会话日志（1,500 多页法语）作为证据发布，允许检查流程并提交给语言模型进行一致性检查。",
       "authors": "Joel Abenhaim",
       "url": "https://huggingface.co/papers/2608.12440",
-      "score": 2,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "6",
         "paperId": "2608.12440"
       }
     },
@@ -128,13 +128,13 @@
       "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
       "title_zh": "AVA-Encoder：迈向代理原生视频表示学习",
       "description": "Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film content and directly usable for agentic reasoning and manipulation. To address the challenge, we propose the Agentic Video Auto-Encoder (AVA-Encoder), a framework for learning agent-native video representations via agentic auto-encoding.\n  AVA-Encoder transforms a video into a knowledge graph (KG) representation and then reconstructs it back into video. Its hierarchy and state nodes store structured text, while a linked asset layer holds generated images, audio, and video. Typed edges preserve the relations between these text descriptions and assets in a form that agents can easily understand, query, and edit. The video reconstruction differences drive a textual-gradient optimization framework, which expresses evaluation feedback as natural-language update directions for Data-Independent Encoding Policy Pseudo-Training in the outer loop and optional Data-Dependent KG Representation Refinement in the test-time inner loop.\n  Extensive experiments show that AVA-Encoder improves by 20.7 percentage points over the strongest external baseline. In the controlled policy-only setting, its pseudo-trained shot-level Agentic Video Encoder policy also outperforms a carefully human-tuned policy while using 74.3% fewer system-prompt tokens. We release the complete AVA-Encoder framework, a reliable agentic video reconstruction benchmark, and the first dataset of high-quality film KG representations.",
-      "description_zh": "创意人员仍然缺乏从高质量人类电影中学习的有效方法，限制了他们制作电影级视频的能力。一个关键的挑战是缺乏既忠实于电影内容又可直接用于代理推理和操作的结构化视频表示。为了应对这一挑战，我们提出了代理视频自动编码器（AVA-Encoder），这是一个通过代理自动编码学习代理原生视频表示的框架。\n  AVA-Encoder 将视频转换为知识图 (KG) 表示，然后将其重建回视频。它的层次结构和状态节点存储结构化文本，而链接的资产层则保存生成的图像、音频和视频。键入的边缘以代理可以轻松理解、查询和编辑的形式保留这些文本描述和资产之间的关系。视频重建差异驱动了文本梯度优化框架，该框架将评估反馈表示为外循环中数据独立编码策略伪训练的自然语言更新方向，以及测试时内循环中可选的数据相关 KG 表示细化。\n  大量实验表明，AVA-Encoder 比最强的外部基线提高了 20.7 个百分点。在仅受控策略设置中，其伪训练镜头级代理视频编码器策略也优于精心人工调整的策略，同时使用的系统提示令牌减少了 74.3%。我们发布了完整的 AVA-Encoder 框架、可靠的代理视频重建基准，以及第一个高质量电影 KG 表示的数据集。",
+      "description_zh": "创意人员仍然缺乏从高质量人类电影中学习的有效方法，限制了他们制作电影级视频的能力。一个关键的挑战是缺乏既忠实于电影内容又可直接用于代理推理和操作的结构化视频表示。为了应对这一挑战，我们提出了代理视频自动编码器（AVA-Encoder），这是一个通过代理自动编码学习代理本地视频表示的框架。\n  AVA-Encoder 将视频转换为知识图 (KG) 表示，然后将其重建回视频。它的层次结构和��态节点存储结构化文本，而链接的资产层则保存生成的图像、音频和视频。键入的边缘以代理可以轻松理解、查询和编辑的形式保留这些文本描述和资产之间的关系。视频重建差异驱动了文本梯度优化框架，该框架将评估反馈表示为外循环中数据独立编码策略伪训练的自然语言更新方向，以及测试时内循环中可选的数据相关 KG 表示细化。\n  大量实验表明，AVA-Encoder 比最强的外部基线提高了 20.7 个百分点。在仅受控策略设置中，其伪训练镜头级代理视频编码器策略也优于精心人工调整的策略，同时使用的系统提示令牌减少了 74.3%。我们发布了完整的 AVA-Encoder 框架、可靠的代理视频重建基准，以及第一个高质量电影 KG 表示的数据集。",
       "authors": "Chuyue Li, Jinpeng Yu, Haozhe Wang, Tian Xueyun, Zhijing Zhang, Bingnan Li, Shuqi Gu, Kan Ren, Jiaming Liu, Ruihua Hua",
       "url": "https://huggingface.co/papers/2608.12313",
-      "score": 6,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "10",
         "paperId": "2608.12313"
       }
     },
@@ -146,10 +146,10 @@
       "description_zh": "分数蒸馏采样 (SDS) 通过事先预先训练的扩散来优化渲染图像，从而实现文本到 3D 的生成，但潜在的 SDS 通常会产生结构化颜色伪影和高频纹理噪声。我们确定了由 VAE 引起的像素漂移引起的潜在 SDS 的故障模式：优化后的图像可以沿着受 VAE 编码器弱约束的像素空间方向移动，因此其潜在表示保持干净且具有语义意义，而图像本身会积累可见的伪影。我们通过受控 2D SDS 实验、仅 VAE 优化和简化分析来支持这一诊断，该分析表明，当到像素的逆映射受到约束时，类似编码器的潜在目标可以放大图像空间噪声。受这一观察的启发，我们提出了 PixSDS，一种轻量级的 VAE 一致梯度修复方法。 PixSDS 解码潜在的 SDS 前瞻步骤，并使用解码的图像作为像素空间优化的干净方向，减少 VAE 不一致方向上的运动，而无需重新训练扩散模型、更改渲染器或替换 SDS 目标。 2D 优化和文本到 3D 生成的实验表明，PixSDS 大大减少了结构化伪影，同时保留了语义内容。代码可在 https://sevashasla.github.io/pixsds-webpage/ 上公开获取。",
       "authors": "Vsevolod Skorokhodov",
       "url": "https://huggingface.co/papers/2608.12997",
-      "score": 0,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "3",
         "paperId": "2608.12997"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "航空运输中的极端事件，例如严重的到达延误和异常的飞行时间，会导致连锁网络中断，带来巨大的运营、经济和安全成本。此类事件在历史记录中很少见，导致机器学习模型的训练信号不足。合成数据增强提供了一个原则性的解决方案，但传统的生成模型不足以代表分布式尾部，并且无法保证防止操作上不可行的情况，例如短飞行时间与长飞行距离的情况。没有现有的方法可以解决混合类型表格记录的这两个限制。我们提出了 TailBooster，一种将生成建模与两个异常检测层相结合的双层生成框架。统计层通过四分位数范围提取极值，为专用生成模型（此处为表格变分自动编码器）提供尾部集中的训练信号。然后，深度学习层应用基于自动编码器的清理，丢弃违反从历史数据中学到的操作范围的合成记录。该框架根据美国飞行记录的五个维度进行了评估：多样性、统计相似性、保真度、操作有效性和实用性，后两个是主要的改进目标。数据驱动的清理显着提高了操作的有效性，而有针对性的增强增强了极端事件预测的实用性。在六种回归算法中，相对于传统合成数据，对框架记录的训练将极端飞行时间的平均绝对误差降低了 47-49%，将极端到达延迟预测的平均绝对误差降低了 29-57%，而当真实记录富含合成极值时，则获得了可比的增益。 TailBooster 完全由数据驱动且与模型无关，可扩展到极端事件预测至关重要且特定于领域的规则不可用的领域。",
       "authors": "Karim Aly, Alexei Sharpanskykh, Jacco Hoekstra",
       "url": "https://huggingface.co/papers/2608.11951",
-      "score": 1,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "4",
         "paperId": "2608.11951"
       }
     },
@@ -176,10 +176,10 @@
       "description_zh": "经过指令调整的语言模型在一系列生成任务中取得了出色的性能，但最近也被证明表现出言语上的过度自信。在回答问题时，言语模型的过度自信可能与生成的支持理由的一致性有关。在本文中，我们研究了生成的答案基本原理的词汇多样性的相应变化是否伴随着指令调整引起的模型置信度的变化。我们跨问答基准评估了三个匹配的基础模型和指令调整模型，发现指令调整一致地改变了答案置信度，尽管预测准确性的变化有限并且基于可能性的校准有所减少。其次，我们观察到指令调整对基本原理多样性的非均匀影响：跨基本原理多样性持续下降，而表面层面的词汇多样性在不同模型和基准的方向和幅度上都存在变化。最后，我们发现在控制答案选择和基本原理长度后，这些差异仍然存在，证实置信度和基本原理多样性捕获了指令调整的不同影响。",
       "authors": "Irina Proskurina, Mayank Kumar, Oyindolapo O. Komolafe",
       "url": "https://huggingface.co/papers/2608.13430",
-      "score": 3,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "7",
         "paperId": "2608.13430"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "大型语言模型会在超出能力的任务上生成计算成本昂贵但语义上无效的推理，从而产生听起来合理但不正确的推导误导用户的风险。我们通过系统分析来描述这种徒劳的推理现象，揭示普遍的能力超越以及能力与行为之间的系统性错误校准。主要的失败模式是似是而非的推理，其输出表面上看起来有效，但包含微妙的错误，并随着任务难度的增加而升级。为了解决这个问题，我们引入了 CaRL（能力对齐强化学习），它通过奖励塑造使模型行为与能力边界保持一致，奖励塑造激励拒绝无效推理，以及事后拒绝增强将失���转化为拒绝监督。实验表明，在保持跨任务困难的性能的同时，显着减少了无用的推理，从而在不牺牲效用的情况下有效地实现了与能力一致的行为。 https://github.com/icip-cas/Knowing-When-to-Quit",
       "authors": "Xinyan Guan, Jiali Zeng, Chunlei Xin, Yaojie Lu, Hongyu Lin, Xianpei Han, Le Sun, Fandong Meng",
       "url": "https://huggingface.co/papers/2607.29211",
-      "score": 3,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "7",
         "paperId": "2607.29211"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "视觉令牌修剪可以大大降低多模态大型语言模型（MLLM）的推理成本，但现有方法很大程度上依赖于固定的、手工设计的启发式方法和昂贵的专家试错法。随着修剪目标、预算和模型架构的多样化，手动导航不断扩大的设计空间变得越来越困难。本文旨在通过解决一个自然问题来构建用于视觉标记修剪的 AI4AI 框架：大型语言模型能否自动设计有效的视觉标记减少算法？尽管LLM拥有广泛的算法知识和强大的推理能力，但将这些常识转化为专门任务的有效解决方案仍然很重要。我们认为，关键在于设计一种适当的搜索状态表示，将LLM的内部知识与视觉标记修剪的结构要求和约束联系起来。基于这一见解，我们提出了 AutoPrune，这是一种用于 LLM 驱动的视觉令牌修剪策略设计的免培训框架。 AutoPrune 的核心是引入了令牌修剪领域特定语言 (TPDSL)，其中包含 131 个可重用原子，用于预算控制、令牌评分、选择约束和令牌重组。 TPDSL 的一个关键属性是它将每个搜索状态表示为强基础策略的剩余修改。这种残差公式缩小了搜索空间，并将LLM的注意力引向对绩效最重要的政策组成部分。在 14 个多模态基准和三个 MLLM 主干上进行的实验证明了 AutoPrune 的有效性、效率和可转移性。即使删除 94.4% 的视觉令牌，AutoPrune 仍能保留超过 99% 的完整令牌性能，同时将 FLOP 减少 9.9 倍，将预填充延迟减少 6.4 倍。",
       "authors": "Zhen Liu, Wenli Huang, Wei Song, Yuhan Liu, Zhiqin Yang, Jingwen Fu",
       "url": "https://huggingface.co/papers/2608.07193",
-      "score": 7,
+      "score": 11,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
+        "upvotes": "11",
         "paperId": "2608.07193"
       }
     },
@@ -218,13 +218,13 @@
       "title": "SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models",
       "title_zh": "SKILLER：用于小语言模型中可重用技能提取的语言级强化学习",
       "description": "Agent skills represent a standardized format for packaging procedural knowledge and domain expertise, serving within agent harness systems as an essential mechanism to continually constrain a language model's behavior space for repeatable, high-quality task execution. However, because strong closed-source models entail high inference costs, current popular agent harnesses, such as Codex and OpenClaw, remain prohibitively expensive when deploying these skills to accomplish real-world tasks. The rapid capability enhancement of open-source models deployable on consumer-grade GPUs presents a compelling opportunity to drastically reduce these costs by leveraging skill-based behavioral constraints. Nevertheless, automatically generating effective skills tailored specifically for such compact models remains a significant practical challenge. To address this, we propose SKILLER, a natural-language-driven reinforcement learning framework designed to automatically generate executor-specific skills for small models, which employs a strong model as the actor and critic, treats the small-model agent system as the environment, and propagates all reinforcement learning signals entirely via natural language. Extensive experimental evaluations across five relevant benchmarks using Qwen3.5-9B and Qwen3.5-4B demonstrate that SKILLER outperforms three open-source and one closed-source skill generation or evolution methods, achieving absolute gains ranging from 4.3 to 20.4 percentage points for the 9B model and 1.8 to 13.3 points for the 4B model, while remarkably matching the performance of strong closed-source models on single-skill tasks in SkillsBench. The project is available at https://github.com/DANG-ai/SKILLER.",
-      "description_zh": "代理技能代表了打包程序知识和领域专业知识的标准化格式，在代理控制系统中作为一种基本机制来服务，以持续约束语言模型的行为空间，以实现可重复的、高质量的任务执行。然而，由于强大的闭源模型需要很高的推理成本，当前流行的代理工具（例如 Codex 和 OpenClaw）在部署这些技能来完成现实世界任务时仍然非常昂贵。可部署在消费级 GPU 上的开源模型的快速功能增强提供了一个令人信服的机会，可以通过利用基于技能的行为约束来大幅降低这些成本。然而，自动生成专门为这种紧凑模型定制的有效技能仍然是一个重大的实际挑战。为了解决这个问题，我们提出了 SKILLER，一种自然语言驱动的强化学习框架，旨在自动为小模型生成执行者特定的技能，它采用强大的模型作为参与者和批评者，将小模型代理系统视为环境，并完全通过自然语言传播所有强化学习信号。使用 Qwen3.5-9B 和 Qwen3.5-4B 在五个相关基准上进行的广泛实验评估表明，SKILLER 优于三种开源和一种闭源技能生成或进化方法，9B 模型的绝对增益为 4.3 至 20.4 个百分点，4B 模型的绝对增益为 1.8 至 13.3 个百分点，同时在单技���任务上与强大的闭源模型的性能显着匹配。技能台。该项目可在 https://github.com/DANG-ai/SKILLER 上获取。",
+      "description_zh": "代理技能代表了打包程序知识和领域专业知识的标准化格式，在代理控制系统中作为一种基本机制来服务，以持续约束语言模型的行为空间，以实现可重复的、高质量的任务执行。然而，由于强大的闭源模型需要很高的推理成本，当前流行的代理工具（例如 Codex 和 OpenClaw）在部署这些技能来完成现实世界任务时仍然非常昂贵。可部署在消费级 GPU 上的开源模型的快速功能增强提供了一个令人信服的机会，可以通过利用基于技能的行为约束来大幅降低这些成本。然而，自动生成专门为此类紧凑模型定制的有效技能仍然是一个重大的实际挑战。为了解决这个问题，我们提出了 SKILLER，一种自然语言驱动的强化学习框架，旨在自动为小模型生成执行者特定的技能，它采用强大的模型作为参与者和批评者，将小模型代理系统视为环境，并完全通过自然语言传播所有强化学习信号。使用 Qwen3.5-9B 和 Qwen3.5-4B 在五个相关基准上进行的广泛实验评估表明，SKILLER 优于三种开源和一种闭源技能生成或进化方法，9B 模型的绝对增益为 4.3 至 20.4 个百分点，4B 模型的绝对增益为 1.8 至 13.3 个百分点，同时在单��能任务上与强大的闭源模型的性能显着匹配。技能台。该项目可在 https://github.com/DANG-ai/SKILLER 上获取。",
       "authors": "Chenhao Dang, Siyuan Xiong, Conghui He, Weijia Li",
       "url": "https://huggingface.co/papers/2608.10538",
-      "score": 5,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "9",
         "paperId": "2608.10538"
       }
     }
