@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-08-20T19:59:11.761Z",
+  "updatedAt": "2026-08-21T19:53:00.525Z",
   "count": 15,
   "items": [
     {
-      "id": "2512.14629",
-      "title": "Evaluating Music Context Preservation: A Multi-facet Framework for Music Editing Systems",
-      "title_zh": "评估音乐上下文保存：音乐编辑系统的多方面框架",
-      "description": "Music editing plays a vital role in modern music production, with applications in film, broadcasting, and game development. Recent advances in music editing systems have enabled diverse editing tasks such as timbre transfer, instrument substitution, and genre transformation. However, many existing works overlook evaluating their ability to preserve musical facets that should remain unchanged during editing, which we define as Music Context Preservation (MuseCP). While some studies do consider MuseCP, their evaluation protocols and metrics are not comprehensive. To address this, we introduce the first MuseCP evaluation framework, MuseCPEval, that covers four categories of music facets with fine-grained and well-tailored metrics to capture nuanced changes in music attributes. Objective validation and a human study demonstrate the effectiveness of these metrics. Moreover, the case studies on diverse music editing systems illustrate the practical utility of these metrics as a testbed and diagnostic tool, providing insights into the strengths and limitations of existing systems. We hope our metrics and findings can offer practical guidance for developing more effective and reliable music editing strategies with strong MuseCP capability",
-      "description_zh": "音乐编辑在现代音乐制作中发挥着至关重要的作用，在电影、广播和游戏开发中都有应用。音乐编辑系统的最新进展已经实现了多种编辑任务，例如音色传输、乐器替换和流派转换。然而，许多现有的作品忽视了评估它们在编辑过程中保留应保持不变的音乐方面的能力，我们将其定义为音乐语境保护（MuseCP）。虽然一些研究确实考虑了 MuseCP，但他们的评估方案和指标并不全面。为了解决这个问题，我们引入了第一个 MuseCP 评估框架 MuseCPEval，它涵盖了四个类别的音乐方面，并具有细粒度和精心定制的指标，以捕获音乐属性的细微变化。客观验证和人体研究证明了这些指标的有效性。此外，对不同音乐编辑系统的案例研究说明了这些指标作为测试平台和诊断工具的实用性，提供了对现有系统的优点和局限性的见解。我们希望我们的指标和研究结果能够为开发具有强大 MuseCP 功能的更有效和可靠的音乐编辑策略提供实用指导",
-      "authors": "Yash Vishe, Eric Xue, Xunyi Jiang, Zachary Novack, Junda Wu, Julian McAuley, Xin Xu",
-      "url": "https://huggingface.co/papers/2512.14629",
+      "id": "2608.12875",
+      "title": "The Embedder's Dilemma: LLMs Are Better, but at What Cost?",
+      "title_zh": "嵌入者的困境：LLM更好，但代价是什么？",
+      "description": "Should you replace your text-embedding pipeline with a large language model? We answer this with a controlled, cost-aware comparison of ten LLMs across six families and 26 embedding models (118M to 14B parameters) on 37 tasks spanning classification, semantic textual similarity (STS), clustering, pair classification, and retrieval. In aggregate the two paradigms are effectively tied: the best LLM (Gemini 3.1 Pro, 77.6) and the best embedding model (77.2) differ by 0.4 points. Their strengths differ by task: LLMs lead on reasoning-heavy retrieval, embedding models lead on classification, and the two match on clustering, STS, and pair classification. Reaching that parity is expensive. An LLM costs up to 1,431x more than an embedding model of comparable quality (USD 154 vs. USD 0.11 per benchmark pass), and the open LLMs tested process tokens 2.5 to 736x more slowly on the same GPU. Reasoning tokens account for 28 to 81% of LLM inference cost; lower reasoning budgets preserve or improve retrieval quality for most models in our ablation. The Pareto frontier contains the leading embedding models and one LLM, Gemini 3.1 Pro. These results support a division of labour: use embedding models for similarity, classification, and clustering, and reserve LLMs for reasoning-intensive retrieval. Our code, datasets, and results are publicly available at https://github.com/embeddings-benchmark/embedders-dilemma.",
+      "description_zh": "您是否应该用大型语言模型替换文本嵌入管道？我们通过对 6 个系列的 10 个LLM和 26 个嵌入模型（118M 到 14B 参数）在分类、语义文本相似性 (STS)、聚类、对分类和检索等 37 个任务上进行受控、成本感知的比较来回答这个问题。总的来说，这两个范式有效地联系在一起：最好的 LLM（Gemini 3.1 Pro，77.6）和最好的嵌入模型（77.2）相差 0.4 个百分点。他们的优势因任务而异：LLM擅长推理型检索，嵌入模型擅长分类，两者在聚类、STS 和配对分类上相匹配。达到这种平等的代价是昂贵的。 LLM 的成本比同等质量的嵌入模型高出 1,431 倍（每个基准测试通过 154 美元 vs. 0.11 美元），而开放式 LLM 在相同 GPU 上测试的处理令牌速度要慢 2.5 到 736 倍。推理代币占LLM推理成本的28%到81%；较低的推理预算可以保持或提高我们消融中大多数模型的检索质量。 Pareto 前沿包含领先的嵌入模型和一位LLM Gemini 3.1 Pro。这些结果支持分工：使用嵌入模型进行相似性、分类和聚类，并保留LLM用于推理密集型检索。我们的代码、数据集和结果可在 https://github.com/embeddings-benchmark/embedders-dilemma 上公开获取。",
+      "authors": "Adnan El Assadi, Niklas Muennighoff, Jinhyuk Lee",
+      "url": "https://huggingface.co/papers/2608.12875",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2512.14629"
+        "paperId": "2608.12875"
       }
     },
     {
-      "id": "2608.16490",
-      "title": "Towards Real-Time and Adaptable LiDAR Scene Completion",
-      "title_zh": "实现实时、适应性强的 LiDAR 场景完成",
-      "description": "LiDAR scene completion is a key component of 3D perception in autonomous driving, where the scene must be completed in real time to be usable in downstream tasks. Existing approaches typically follow an initialize-and-refine paradigm, in which a coarse initialization of the scene is first constructed, then refined into complete 3D geometry. Generative models are slower because they iteratively refine random Gaussian noise into the scene, while non-generative methods perturb the partial scene with a fixed noise scale, which limits coverage of large gaps and occluded regions and requires manual recalibration for each new sensor configuration. We present RapidLiDAR, a LiDAR scene completion method that treats the initialization itself as a learned, data-driven component. We propose an adaptive initialization module that predicts a spatially varying displacement for each partial input point, expanding the partial observations into a coarse scene initialization adapted to the local geometry, without requiring manual noise tuning. To refine this coarse initialization into a complete and coherent scene, we additionally propose a multi-scale reconstruction module that further refines point positions by querying multi-scale 3D voxel and 2D BEV feature maps constructed from the input scan. By replacing point-neighborhood operators such as farthest point sampling and k-nearest neighbor search with voxel- and BEV-based feature extraction, our architecture is faster and can handle different input resolutions by design. Experiments on SemanticKITTI and KITTI-360 show that our method achieves completion performance on par with the state of the art while completing a full scene in 0.1 seconds, which is 2.3 times faster than the fastest prior method. This matches the 10 Hz acquisition rate of typical automotive LiDAR sensors, taking a step toward real-time LiDAR scene completion.",
-      "description_zh": "LiDAR 场景补全是自动驾驶 3D 感知的关键组成部分，其中场景必须实时补全才能用于下游任务。现有方法通常遵循初始化和细化范例，其中首先构建场景的粗略初始化，然后细化为完整的 3D 几何形状。生成模型速度较慢，因为它们迭代地将随机高斯噪声细化到场景中，而非生成方法则以固定噪声尺度扰乱部分场景，这限制了大间隙和遮挡区域的覆盖范围，并且需要对每个新传感器配置进行手动重新校准。我们提出了 RapidLiDAR，��是一种 LiDAR 场景完成方法，它将初始化本身视为一个学习的数据驱动组件。我们提出了一种自适应初始化模块，该模块可以预测每个部分输入点的空间变化位移，将部分观测扩展到适应局部几何形状的粗略场景初始化，而不需要手动噪声调整。为了将这种粗略初始化细化为完整且连贯的场景，我们还提出了一个多尺度重建模块，该模块通过查询从输入扫描构建的多尺度 3D 体素和 2D BEV 特征图来进一步细化点位置。通过用基于体素�� BEV 的特征提取替换点邻域运算符（例如最远点采样和 k 最近邻搜索），我们的架构速度更快，并且可以通过设计处理不同的输入分辨率。 SemanticKITTI 和 KITTI-360 上的实验表明，我们的方法实现了与现有技术相当的完成性能，同时在 0.1 秒内完成整个场景，这比最快的现有方法快了 2.3 倍。这与典型汽车 LiDAR 传感器的 10 Hz 采集率相匹配，向实时 LiDAR 场景完成迈出了一步。",
-      "authors": "Azhar Hussian, Martin Vossiek, Vasileios Belagiannis",
-      "url": "https://huggingface.co/papers/2608.16490",
+      "id": "2608.16885",
+      "title": "τ_0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+      "title_zh": "τ_0-VLA：具有世界模型引导测试时计算的分层机器人基础模型",
+      "description": "Long-horizon robot manipulation requires a robot to both execute individual skills reliably and sequence them coherently over extended tasks. Most hierarchical vision-language-action (VLA) models make each such decision with a single forward pass, leaving no mechanism to allocate additional computation to difficult or consequential choices. We introduce τ_0-VLA, a hierarchical robot foundation model that formulates high-level subtask generation as a compute-scalable inference problem through world-model-guided test-time computation. At each inference step, the high-level policy uses execution memory to generate a subtask and, when needed, searches over alternatives before committing to its output. A low-level policy then executes the generated subtask across multiple robot embodiments. The policy is trained on 40,115 hours of heterogeneous real-world data with multimodal co-training. Across in-domain and distribution-shifted settings, allocating additional test-time computation substantially improves next-subtask prediction accuracy, and these gains translate into higher closed-loop success on long-horizon robot manipulation tasks.",
+      "description_zh": "长视野机器人操作要求机器人既能可靠地执行个人技能，又能在扩展任务中连贯地对它们进行排序。大多数分层视觉-语言-动作（VLA）模型通过一次前向传递做出每个此类决策，没有留下任何机制来为困难或后果性的选择分配额外的计算。我们引入了 τ_0-VLA，这是一种分层机器人基础模型，它通过世界模型引导的测试时间计算将高级子任务生成制定为计算可扩展的推理问题。在每个推理步骤中，高级策略使用执行内存来生成子任务，并在需要时在提交其输出之前搜索替代方案。然后，低级策略跨多个机器人实施例执行生成的子任务。该策略接受了 40,115 小时的异构现实世界数据和多模式协同训练的训练。在域内和分布转移的设置中，分配额外的测试时间计算大大提高了下一个子任务的预测准确性，并且这些收益转化为长视野机器人操作任务的更高闭环成功率。",
+      "authors": "Xiaowei Cai, Yunuo Cai, Bingao Chen, Jingxiao Chen, Zhi Chen, Siyuan Feng, Tengyu Hou, Jingshun Huang, Han Jiang, Runkun Ju, Dong Li, Mingxiang Li, Shaowei Li, Xinchen Li, Yifan Li, Yi Liu, Zhongyuan Liu, Jianlan Luo, Junwen Miao, Ruiqi Ni, Buqing Nie, Mingjie Pan, Xinlin Ren, Jianheng Song, Jiaxu Wang, Peiqi Wang, Sen Wang, Xiaoyan Wang, Dafeng Wei, Dongming Wu, Pengwei Xie, Pu Yang, Hangjian Ye, Xiangyu Yue, Jinyu Zhang, Qinglin Zhang, Xueyong Zhao, Pengfei Zhou, Yue Zhou",
+      "url": "https://huggingface.co/papers/2608.16885",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2608.16490"
+        "paperId": "2608.16885"
       }
     },
     {
-      "id": "2608.19080",
-      "title": "SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection",
-      "title_zh": "SPK：在实时目标检测中引入结构化先验知识以进行可解释的分布外检测",
-      "description": "Object detectors often produce over-confident predictions for objects outside their training categories, leading to so-called out-of-distribution (OoD) hallucinations. Existing approaches for detecting or mitigating such hallucinations typically either construct scoring functions directly over learned object detector representations or modify the object detector itself to suppress hallucination emergence. However, the latent priors implicitly encoded in these representations remain largely unexplored and have not been explicitly decoded for OoD detection. To uncover and exploit these latent priors, we propose Structured Prior Knowledge (SPK), a hallucination-oriented framework that explicitly elicits OoD-relevant priors from pretrained object detectors. Specifically, SPK leverages in-distribution data and hallucination-inducing samples as diagnostic supervision to elicit part-level semantic concepts underlying object detector decision-making, rather than using them merely for rejection or object detector adaptation. The elicited semantic priors are further integrated with geometric and contextual priors to form a compact five-dimensional SPK representation for OoD detection. Extensive experiments across diverse object detector architectures and multiple OoD benchmarks demonstrate that SPK achieves state-of-the-art OoD detection. Our findings reveal that pretrained object detectors already encode substantially richer latent knowledge than is typically exploited for OoD detection. More importantly, this knowledge can be explicitly elicited and organized into a compact, structured, and interpretable knowledge space for prediction reliability analysis. This suggests a promising proactive route for improving object detector reliability by explicitly uncovering and leveraging latent priors. Code and data are available at: https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/spk",
-      "description_zh": "物体检测器通常会对其训练类别之外的物体产生过于自信的预测，从而导致所谓的分布外（OoD）幻觉。用于检测或减轻此类幻觉的现有方法通常要么直接在学习的对象检测器表示上构建评分函数，要么修改对象检测器本身以抑制幻觉的出现。然而，这些表示中隐式编码的潜在先验在很大程度上仍未被探索，并且尚未针对 OoD 检测进行显式解码。为了发现和利用这些潜在先验，我们提出了结构化先验知识（SPK），这是一种面向幻觉的框架，可以从预训练的对象检测器中明确引出与 OoD 相关的先���。具体来说，SPK 利用分布数据和幻觉诱发样本作为诊断监督来引出对象检测器决策基础的部分级语义概念，而不是仅仅将它们用于拒绝或对象检测器适应。引出的语义先验进一步与几何和上下文先验相结合，形成用于 OoD 检测的紧凑的五维 SPK 表示。跨不同对象检测器架构和多个 OoD 基准的大量实验表明，SPK 实现了最先进的 OoD 检测。我们的研究结果表明，预训练的目标检测器已经编码了比 OoD 检测通常利用的更丰富的潜在知识。更重要的是，这些知识可以被明确地引出并组织成一个紧凑的、结构化的、可解释的知识空间，用于预测可靠性分析。这提出了一种通过明确发现和利用潜在先验来提高物体检测器可靠性的有前途的主动途径。代码和数据可在以下网址获取：https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/spk",
-      "authors": "Changshun Wu, Weicheng He, Xiaowei Huang, Saddek Bensalem",
-      "url": "https://huggingface.co/papers/2608.19080",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2608.19080"
-      }
-    },
-    {
-      "id": "2608.15964",
-      "title": "LLMs Get Smarter from Targeted Synthetic Multilingual Data",
-      "title_zh": "LLM从有针对性的综合多语言数据中变得更聪明",
-      "description": "Language-specific competency (LSC) is the phenomenon of a language model performing better or worse depending on the language of the prompt. In other words, a language model outputs different (and potentially incorrect) responses to the same semantic query when prompted in different languages. Prior work attributes this to an internal misalignment of semantic representation across languages. Currently, there are two main approaches to address LSC in the literature: (1) routing all queries through English, improving performance, but limiting language expressivity to English; or (2) training on language-balanced data, equalizing model performance across languages, but reducing overall performance. In this work, we take a data centric perspective and introduce HOTFIXR: Hardness Optimized Training data For Improving X-Lingual Reasoning. It is a data generation framework that uses models to probe and learn a student model's multilingual weaknesses, and generates data to mitigate them. HOTFIXR can generate multilingual synthetic training data that can improve multilingual performance. We evaluate on three in-distribution tasks, three out-of-distribution tasks, and four out-of-distribution languages. On average, HOTFIXR (1) improves in-distribution performance by 6.2%, (2) reduces catastrophic forgetting (induced by fine-tuning) on OOD tasks by 3.7%, and (3) on OOD languages by 7.1%. Overall, as many real-world applications requires multilingual LLMs, our work contributes to the efforts of making LLMs multilingually proficient. We will release code upon acceptance.",
-      "description_zh": "语言特定能力 (LSC) 是一种语言模型根据提示语言表现得更好或更差的现象。换句话说，当用不同的语言提示时，语言模型会对同一语义查询输出不同的（并且可能不正确的）响应。先前的工作将此归因于跨语言语义表示的内部不一致。目前，文献中解决LSC的方法主要有两种：（1）通过英语路由所有查询，提高性能，但将语言表达能力限制为英语； （2）对语言平衡数据进行训练，均衡跨语言的模型性能，但降低整体性能。在这项工作中，我们采取以数据为中心的视角，并介绍 HOTFIXR：用于改进 X-Lingual Reasoning 的硬度优化训练数据。它是一个数据生成框架，使用模型来探索和学习学生模型的多语言弱点，并生成数据来缓解这些弱点。 HOTFIXR 可以生成多语言合成训练数据，从而提高多语言性能。我们评估了三个分布内任务、三个分布外任务和四种分布外语言。平均而言，HOTFIXR (1) 将分布内性能提高了 6.2%，(2) 将 OOD 任务上的灾难性遗忘（由微调引起）减少了 3.7%，(3) 将 OOD 语言上的灾难性遗忘减少了 7.1%。总的来说，由于许多现实世界的应用程序需要多语言LLM，我们的工作有助于使LLM精通多语言。我们将在接受后发布代码。",
-      "authors": "Ishika Agarwal, Arkajyoti Charaborty, Tanner Sorensen, Neha Gupta, Andreas Stolcke",
-      "url": "https://huggingface.co/papers/2608.15964",
+      "id": "2608.13547",
+      "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+      "title_zh": "QuoteBench：匹配的分数如何隐藏命令路径故障",
+      "description": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks from 14 incident-derived families, crossing the generation contract with the execution transport around one deliberately unescaped added parser. Escaping at the interpolation point reproduces each replayed reply's raw-path outcome, so any recovery under a disclosed boundary must come from the model changing its generation. Across eight same-window configurations, replaying the same reply through the added parser lowers success by 55.4 to 73.2 percentage points; disclosure recovers 30.4 to 60.7 points for six configurations, and zero or slightly negative for the other two. Raw generation is nearly saturated at the frontier; boundary adaptation is what still separates models. GPT-5.6-sol's matched gap of -3.6 points hides -64.3 points of damage and +60.7 points of compensation. The deployment configuration reorders models: one reversal among 26 comparable pairs is unambiguous and four more sit on single-task margins. Evaluations of command-issuing agents should report the model configuration, generation contract, execution path, operating point, and final-state validator rather than treat a matched score as an intrinsic model property.",
+      "description_zh": "LLM 编码代理通过可以序列化、包装和重新解析模型输出的接口发出 Bash 命令。仅匹配的执行分数无法区分命令生成错误和生成后引入的故障。 QuoteBench 通过对来自 14 个事件派生系列的 56 个一次性任务进行精确的最终状态验证来测量这一边界，跨越生成合同与围绕一个故意未转义的附加解析器的执行传输。在插值点处转义会重现每个重放回复的原始路径结果，因此公开边界下的任何恢复都必须来自更改其生成的模型。在八个相同窗口配置中，通过添加的解析器重放相同的回复会使成功率降低 55.4 到 73.2 个百分点；六种配置的披露恢复了 30.4 至 60.7 点，其他两种配置恢复为零或略有负值。原始发电量在前沿几乎饱和；边界适应仍然是模型之间的区别。 GPT-5.6-sol 的 -3.6 点匹配差距隐藏了 -64.3 点伤害和 +60.7 点补偿。部署配置对模型进行了重新排序：26 个可比对中的 1 个逆转是明确的，另外 4 个逆转位于单任务边缘。命令发布代理的评估应报告模型配置、生成契约、执行路径、操作点和最终状态验证器，而不是将匹配分数视为内在模型属性。",
+      "authors": "Shangao Li, Yao Zhang, Volker Tresp, Yuanyuan Yang",
+      "url": "https://huggingface.co/papers/2608.13547",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2608.15964"
+        "paperId": "2608.13547"
       }
     },
     {
-      "id": "2608.15888",
-      "title": "Bounded Agents: Delegation Security for Multi-Agent AI Systems",
-      "title_zh": "有界代理：多代理人工智能系统的委派安全",
-      "description": "LLM-based agents can act on behalf of a user to access cloud services, call tools, or invoke agents. At session start, the agent's permissions are set but remain static, and each request is evaluated independently, without considering prior actions. Within its permissions, an agent may act contrary to the delegated task, combine individually permitted actions into a prohibited outcome, or delegate authority to a sub-agent without limiting it. A prompt injection poses a risk only if the agent has authority to perform such actions; this is therefore a problem of authorization architecture, not just the model. The Agentic Principal Chain (APC) tracks delegated authority from one principal to the next. APC evaluates each request against the accumulated session state using six authorization checks. APC carries forward and restricts delegated scope and budgets. Using composition closure, APC checks requests against prior actions to prevent prohibited combinations and enforces the decision outside the model. We prove Blast Radius Monotonicity and Composition Soundness for APC implementations; Composition Soundness is limited to prohibited combinations under a complete restriction set and serialized admission. We evaluated 3,154 instances including InjecAgent, AgentDojo, and ASB. Our compromised-model evaluation tests APC independently of model behavior by inserting the ground-truth attack call after the first legitimate tool call. AgentDojo exfiltration fell from 75-100% to 0% across all four domains; APC blocked all 544 InjecAgent data-stealing cases. Intent binding reduced destruction from 38.6% to 4.0% and manipulation from 90.5% to 12.1%. Authorization latency was 0.24 ms at the 99th percentile on an idle host; across 949 AgentDojo task-injection pairs, utility was 8.6 and 13.9 percentage points lower in the two settings. Implementation, evaluation tools, and data are publicly available.",
-      "description_zh": "基于LLM的代理可以代表用户访问云服务、调用工具或调用代理。在会话开始时，代理的权限已设置但保持静态，并且每个请求都会独立评估，而不考虑先前的操作。在其权限范围内，代理可以采取与委托任务相反的行为，将单独允许的操作组合成禁止的结果，或者将权限委托给子代理而不对其进行限制。仅当代理人有权执行此类操作时，立即注射才会构成风险；因此，这是授权架构的问题，而不仅仅是模型的问题。代理主体链（APC）跟踪从一个主体到下一个主体的委托权限。 APC 使用六次授权检查根据累积的会话状态评估每个请求。 APC 推进并限制授权范围和预算。使用组合闭包，APC 根据先前的操作检查请求，以防止禁止的组合，并在模型之外强制执行决策。我们证明了 APC 实现的爆炸半径单调性和组合健全性；组合健全性仅限于完整限制集和序列化准入下的禁止组合。我们评估了 3,154 个实例，包括 InjecAgent、AgentDojo 和 ASB。我们的受损模型评估通过在第一个合法工具调用之后插入真实攻击调用来独立于模型行为来测试 APC。 AgentDojo 的渗透率在所有四个域中从 75-100% 下降到 0%； APC 阻止了所有 544 个 InjecAgent 数据窃取案件。意图绑定将破坏从 38.6% 减少到 4.0%，操纵从 90.5% 减少到 12.1%。空闲主机上第 99 个百分位数的授权延迟为 0.24 毫秒；在 949 个 AgentDojo 任务注入对中，两种设置的效用分别降低了 8.6 和 13.9 个百分点。实施、评估工具和数据都是公开的。",
-      "authors": "Xabier Muruaga",
-      "url": "https://huggingface.co/papers/2608.15888",
+      "id": "2608.08466",
+      "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
+      "title_zh": "分层自我改进：特定任务的可进化代理框架的框架",
+      "description": "Modern LLM agents are often improved by modifying prompts, tools, or workflows manually, while the executable scaffold surrounding the model---the harness---is typically treated as a fixed artifact after deployment. This work studies an alternative where the harness is task-specific and continuously evolvable: each task family maintains its own harness, which is hot-swapped across iterations through a fixed task-injection seam and rewritten using environment feedback. We introduce Hierarchical Self-Improvement (HSI), a framework in which a single frozen LLM M operates across three hierarchical scopes: a task harness H that executes tasks, an evolver that rewrites H, and a meta-evolver that rewrites the evolver's strategy code under a frozen outer anchor. A thinking-on/off design isolates the contribution of harness evolution by disabling reasoning during task execution while enabling it during self-modification. HSI is bounded by two factors: a feedback-fidelity bound, since evolution requires informative reward signals to guide selection, and a backbone capability bound, since harness redesign cannot overcome limitations of the frozen model. On BALROG with DeepSeek-V4-Flash-Preview as the frozen backbone, HSI achieves consistent gains over the initial harness on moderate-difficulty tasks (+39.3 on BabyAI, +33.0 on Crafter, +25.0 on TextWorld, and +15.0 on MiniHack, all in raw \\% Progress), while obtaining strong held-out generalization on BabaIsAI sub-suites (0.98 best-test on BreakStop and 1.00 on GoTo from a 20% unseen split). On tasks beyond the backbone's capability (NLE), harness evolution provides no improvement. These results demonstrate task-specific harness evolution as a viable axis for improving frozen LLM agents under clear empirical limits. Code is available at https://github.com/TailinZhou/hsi.",
+      "description_zh": "现代 LLM 代理通常通过手动修改提示、工具或工作流程来改进，而围绕模型的可执行支架（线束）通常在部署后被视为固定工件。这项工作研究了一种替代方案，其中线束是特定于任务的且可不断演化：每个任务族都维护自己的线束，该线束通过固定的任务注入接缝在迭代之间进行热交换，并使用环境反馈进行重写。我们引入了分层自我改进（HSI），这是一个框架，其中单个冻结的 LLM M 在三个分层范围内运行：执行任务的任务工具 H、重写 H 的演化器以及在冻结的外部锚点下重写演化器策略代码的元演化器。思考开/关设计通过在任务执行期间禁用推理而在自我修改期间启用推理来隔离线束进化的贡献。 HSI 受到两个因素的限制：反馈保真度限制（因为进化需要信息奖励信号来指导选择）和骨干能力限制（因为线束重新设计无法克服冻结模型的限制）。在以 DeepSeek-V4-Flash-Preview 作为冻结主干的 BALROG 上，HSI 在中等难度的任务上比初始利用取得了一致的收益（BabyAI 上+39.3，Crafter 上+33.0，TextWorld 上+25.0，MiniHack 上+15.0，所有这些都是原始 \\% Progress），同时在 BabaIsAI 子套件上获得了强大的保留泛化（在 BreakStop 和 0.98 上的最佳测试�� GoTo 上的 1.00 来自 20% 看不见的分割）。对于超出骨干网能力（NLE）的任务，线束进化没有提供任何改进。这些结果表明，特定任务的工具进化是在明确的经验限制下改进冻结的 LLM 代理的可行轴。代码可在 https://github.com/TailinZhou/hsi 获取。",
+      "authors": "Tailin Zhou",
+      "url": "https://huggingface.co/papers/2608.08466",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2608.15888"
+        "paperId": "2608.08466"
       }
     },
     {
-      "id": "2608.18852",
-      "title": "SkillGate: Training In-Policy Skill Selection in Long-Horizon Agents",
-      "title_zh": "SkillGate：训练长期代理的策略内技能选择",
-      "description": "Agent frameworks increasingly package procedural knowledge as skills: instruction files an agent reads on demand, while public libraries now hold thousands of them. Which skill to read has thus become a decision the policy itself makes in the middle of an episode, yet no existing signal trains it. We show that the default remedy, outcome-rewarded RL over the candidate slate, cannot teach it, for a structural reason we identify and name selector credit starvation: under a broadcast, sequence-level advantage, the few tokens that name the chosen skill carry a vanishing share of the loss, and the credit they inherit is increasingly wrong-signed as trajectories lengthen. A correct choice is punished whenever the execution after it fails, even though the choice itself is among the most valuable decisions in the trajectory. Auditing a completed run's own training artifacts confirms all three properties, each worsening monotonically with horizon. SkillGate removes the failure by construction: it partitions the token support into two disjoint credit channels, outcome credit reaching only execution tokens, and a separate action-local advantage reaching exactly the skill-naming tokens, positive only when a trajectory's single read is the correct one. On five agentic benchmarks under a 16-candidate slate, SkillGate lifts a 9B policy from 40.8% to 53.2% trial success, well ahead of the identical budget spent on outcome reward alone, while cutting exposure to misleading candidates by two thirds and reading fewer skills.",
-      "description_zh": "代理框架越来越多地将程序知识打包为技能：代理按需阅读的指令文件，而公共图书馆现在拥有数千个指令文件。因此，阅读哪种技能已经成为政策本身在事件中间做出的决定，但没有现有的信号对其进行训练。我们证明，默认的补救措施，即对候选者名单进行结果奖励的强化学习，无法教授它，因为我们识别并命名了选择器信用饥饿的结构性原因：在广播、序列级优势下，命名所选技能的少数标记所承担的损失份额正在消失，并且随着轨迹的延长，它们继承的信用越来越多地被错误签名。每当执行失败后，正确的选择都会受到惩罚，即使该选择本身是轨迹中最有价值的决策之一。审核已完成的运行自身的训练工件证实了所有三个属性，每个属性都随着范围单调恶化。 SkillGate 通过构建消除了失败：它将令牌支持划分为两个不相交的信用通道，结果信用仅到达执行令牌，而单独的动作本地优势恰好到达技能命名令牌，仅当轨迹的单次读取正确时才为正。在 16 名候选人名单下的五个代���基准上，SkillGate 将 9B 政策的试验成功率从 40.8% 提高到 53.2%，远远高于仅用于结果奖励的相同预算，同时将误导候选人的风险减少了三分之二，阅读的技能也减少了。",
-      "authors": "Qingyao Li, Wenxiang Jiao, Shuai Shao, Kangning Zhang, Yuan Lu, Yi Guo, Weiwen Liu, Weinan Zhang, Yong Yu",
-      "url": "https://huggingface.co/papers/2608.18852",
+      "id": "2608.19759",
+      "title": "GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation",
+      "title_zh": "GOAG：用于灵巧机器人操作的生成式和与对象无关的抓取规划器",
+      "description": "Multifingered grasping is a crucial robotic skill, but current deep-learning grasp planners often struggle to generalize to new objects because they are trained on limited, object-specific datasets. We introduce a fundamentally different approach, grounded in the observation that the gripper and the object share identical surface geometry at their mutual contact points. We propose GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation, a novel deep generative model that learns a compact latent representation of a specific gripper's contact surface distribution, enabling the efficient sampling of valid grasp configurations without relying on object-specific training data. We show that by introducing object features only at inference time, our model can effectively retrieve admissible contact areas that are compatible with the gripper's capabilities. We validate our approach through extensive experiments on established grasp protocols in both simulated and real-world scenarios, demonstrating its effectiveness with different grippers from the literature. Our method delivers state-of-the-art results on the objects from the MultiDex dataset, achieving an average success rate of 86.93%. It offers significantly faster processing when generating numerous grasps, while matching the performance of leading approaches specifically trained on this dataset. Unlike these methods, our approach does not rely on object-specific training data, highlighting the advantages of object-agnostic learning. It effectively addresses the generalization challenges faced by traditional data-driven grasp planners. Code and videos are available on our project website https://cea-list.github.io/goagweb/ .",
+      "description_zh": "多指抓取是一项至关重要的机器人技能，但当前的深度学习抓取规划器通常很难推广到新物体，因为它们是在有限的、特定于物体的数据集上进行训练的。我们引入了一种根本不同的方法，其基础是观察到夹具和物体在相互接触点处具有相同的表面几何形状。我们提出了 GOAG：用于灵巧机器人操作的生成和与对象无关的抓取规划器，这是一种新颖的深度生成模型，可以学习特定抓取器接触面分布的紧凑潜在表示，从而能够在不依赖于特定于对象的训练数据的情况下对有效抓取配置进行有效采样。我们表明，通过仅在推理时引入对象特征，我们的模型可以有效地检索与夹具功能兼容的允许接触区域。我们通过在模拟和现实场景中对已建立的抓取协议进行广泛的实验来验证我们的方法，证明其对文献中不同夹具的有效性。我们的方法在 MultiDex 数据集中的对象上提供了最先进的结果，平均成功率为 86.93%。它在生成大量抓取时提供显着更快的处理速度，同时匹配专门在此数据集上训练的领先方法的性能。与这些方法不同，我们的方法不依赖于特定于对象的训练数据，突出了与对象无关的学习的优势。它有效地解决了传统数据驱动的抓取规划器面临的泛化挑战。代码和视频可在我们的项目网站 https://cea-list.github.io/goagweb/ 上找到。",
+      "authors": "Julien Merand, Boris Meden, Mathieu Grossard, Liming Chen",
+      "url": "https://huggingface.co/papers/2608.19759",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2608.19759"
+      }
+    },
+    {
+      "id": "2608.19776",
+      "title": "CoToGrasp: Contact-Topology-Conditioned Dexterous Grasp Synthesis via Canonical Workspace Learning",
+      "title_zh": "CoToGrasp：通过规范工作空间学习进行接触拓扑条件的灵巧抓取合成",
+      "description": "Current dexterous grasp planners primarily optimize for physical stability, focusing on whether an object can be grasped rather than how it should be grasped to support downstream functional tasks. However, conditioning grasp synthesis on specific human grasp taxonomies typically requires prohibitively expensive, object-annotated datasets. To address these limitations, we propose CoToGrasp, a novel generative framework that synthesizes diverse, stable grasps strictly conditioned on specific contact topologies. To bypass the data collection bottleneck, CoToGrasp is trained entirely in an object-agnostic manner. We introduce a feature-based canonical workspace that projects local object features into a unified gripper-centric domain, effectively decoupling the semantic functional intent from the arbitrary object geometry. By learning the intrinsic contact manifold of the gripper within this workspace, our model achieves zero-shot generalization to unseen objects at inference. Extensive evaluations on the large-scale DexGraspNet dataset demonstrate that CoToGrasp achieves state-of-the-art performance, outperforming existing taxonomy-guided planners. Finally, we demonstrate the physical viability and kinematic feasibility of our synthesized contact topologies on a physical robot platform. Code is available on our project website https://cea-list.github.io/cotograspweb/ .",
+      "description_zh": "目前的灵巧抓取规划器主要针对物理稳定性进行优化，重点关注是否可以抓取物体，而不是应该如何抓取物体以支持下游功能任务。然而，根据特定的人类掌握分类法调节掌握合成通常需要极其昂贵的对象注释数据集。为了解决这些限制，我们提出了 CoToGrasp，一种新颖的生成框架，它综合严格限制在特定接触拓扑上的多样化、稳定的抓取。为了绕过数据收集瓶颈，CoToGrasp 完全以与对象无关的方式进行训练。我们引入了一个基于特征的规范工作空间，它将局部对象特征投影到一个统一的以抓手为中心的域中，有效地将语义功能意图与任意对象几何形状解耦。通过学习该工作空间内夹具的固有接触流形，我们的模型在推理时实现了对不可见物体的零样本泛化。对大规模 DexGraspNet 数据集的广泛评估表明，CoToGrasp 实现了最先进的性能，优于现有的分类法引导规划器。最后，我们在物理机器人平台上展示了​​我们合成的接触拓扑的物理可行性和运动学可行性。代码可在我们的项目网站 https://cea-list.github.io/cotograspweb/ 上获取。",
+      "authors": "Julien Merand, Boris Meden, Liming Chen, Mathieu Grossard",
+      "url": "https://huggingface.co/papers/2608.19776",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2608.19776"
+      }
+    },
+    {
+      "id": "2608.17744",
+      "title": "Thinking in a Low-Resource Language: What SFT Builds, What RL Fixes, What Accuracy Cannot See",
+      "title_zh": "用低资源语言思考：SFT 构建什么、RL 修复什么、准确性看不到什么",
+      "description": "Take three frontier mixture-of-experts models (Alibaba, OpenAI, NVIDIA; 3.6-4.0B active parameters each) and fine-tune them to reason in a low-resource language. On accuracy benchmarks almost nothing happens, and the benchmark itself is noise at this scale: changing only the random seed moves the score by 7.7 points, more than every data and recipe effect we measured. That null is our first result. The real changes live where accuracy cannot see. Base models never think in Greek: 0 of 1,000 reasoning traces, even when the question is Greek, so the model answers correctly while reasoning in a form its user cannot read, audit, or correct. After supervised fine-tuning (SFT), every released checkpoint reasons in the language of the question on ~98% of items, one family at 3x fewer tokens, with judged grammaticality improving on all four models and general ability within a few points of each base: nothing was forgotten, and fluency was gained. We propose six behavioural dimensions that make such changes measurable, each gated to reject any metric that correlates with output length, and we report how our own instruments lied: six failures, each caught by a control. What SFT cannot do is fix its own defects: a quarter of answers skip the requested format, answers leak into the reasoning channel, and an explicit \"think in English\" is obeyed under half the time. Reinforcement learning with verifiable rewards, pre-registered before training, fixes the first two outright (fallback 24% to 2.5%, leak 3.5% to 0.0%, both against a flat random-reward control) and moves the third (+9.1pp), while the Greek reasoning habit survives an accuracy-only gradient untouched. We release five checkpoints. The instruments, the controls and the pre-registration travel to any low-resource language; Greek is the case that let us measure them.",
+      "description_zh": "采用三个前沿专家混合模型（阿里巴巴、OpenAI、NVIDIA；每个模型有 3.6-4.0B 的活动参数）并对它们进行微调，以用低资源语言进行推理。在准确性基准测试中几乎没有任何反应，并且基准测试本身在这种规模上就是噪音：仅更改随机种子即可将分数提高 7.7 分，比我们测量的所有数据和配方效果都高。这个 null 是我们的第一个结果。真正的变化存在于准确性无法看到的地方。基本模型从不用希腊语思考：即使问题是希腊语，1,000 个推理轨迹中的 0 个也不会，因此模型在以用户无法阅读、审核或更正的形式��行推理时正确回答。经过监督微调 (SFT) 后，每个发布的检查点都以问题语言对约 98% 的项目进行推理，一个系列的标记数量减少了 3 倍，所有四个模型的语法判断都得到了改善，并且每个基础的几个点内的一般能力都得到了提高：没有忘记任何内容，并且获得了流畅性。我们提出了六个行为维度，使这些变化可测量，每个维度都拒绝与输出长度相关的任何度量，并且我们报告了我们自己的仪器如何撒谎：六次失败，每次都被控制捕获。 SFT 不能做的是修复其自身的缺陷：四分之一的答案跳过了所要求的格式，答案泄漏到推理通道中，并且只有不到一半的时间遵守明确的“用英语思考”。具有可验证奖励的强化学习，在训练前预先注册，彻底修复了前两个（回退 24% 到 2.5%，泄漏 3.5% 到 0.0%，均针对平坦随机奖励控制）并移动了第三个（+9.1pp），而希腊推理习惯则在仅精度梯度中保持不变。我们释放了五个检查点。仪器、控件和预注册可支持任何资源匮乏的语言；希腊语就是这样让我们衡量它们的。",
+      "authors": "Ayoub Kirouane, Christos Petrocheilos",
+      "url": "https://huggingface.co/papers/2608.17744",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2608.17744"
+      }
+    },
+    {
+      "id": "2608.13210",
+      "title": "NARU: A Benchmark for NARrative Evolution and Cultural Nuance Understanding in Japanese Extreme Long Video",
+      "title_zh": "NARU：日本超长视频叙事演变和文化细微差别理解的基准",
+      "description": "Long-form video understanding encompasses tasks that go beyond retrieving isolated events, including tracking an evolving narrative and interpreting social meaning that may remain implicit. However, existing benchmarks rarely evaluate these capabilities jointly, particularly in high-context, non-English media. To address this gap, we introduce NARU, a benchmark designed to evaluate Narrative evolution and Reasoning on cultural Understanding in Japanese long-form video. NARU consists of 1,481 questions grounded in 155 videos totaling 146.8 hours, spanning four narrative and five cultural dimensions. To construct the benchmark at this scale, we propose a hierarchical memory-based annotation pipeline that transforms raw video into structured event, narrative, and cultural annotations, then generates questions via task-oriented synthesis and iterative shortcut removal. The construction process includes two native-speaker verification stages involving 68 annotators. Evaluations across eight model configurations reveal substantial limitations in both long-range narrative integration and culturally grounded reasoning. By exposing these persistent gaps, NARU offers a systematic testing ground for developing MLLMs capable of reliably interpreting long-form, high-context video.",
+      "description_zh": "长篇视频理解涵盖的任务不仅仅是检索孤立的事件，还包括跟踪不断发展的叙述和解释可能仍然隐含的社会意义。然而，现有的基准很少联合评估这些能力，特别是在高语境、非英语媒体中。为了解决这一差距，我们引入了 NARU，这是一个旨在评估日本长视频中的叙事演变和文化理解推理的基准。 NARU 包含 1,481 个问题，涉及 155 个视频，总计 146.8 小时，涵盖四个叙事和五个文化维度。为了构建这种规模的基准，我们提出了一种基于分层内存的注释管道，将原始视频转换为结构化事件、叙事和文化注释，然后通过面向任务的合成和迭代快捷方式删除来生成问题。构建过程包括两个母语验证阶段，涉及 68 个注释者。对八种模型配置的评估揭示了长期叙事整合和基于文化的推理的巨大局限性。通过揭示这些持续存在的差距，NARU 为开发能够可靠地解释长格式、高上下文视频的 MLLM 提供了一个系统测试平台。",
+      "authors": "Yuheng Huang, Jianlang Chen, Jiayang Song, Hua Qi, Aza Kai, Vincent Markert, Edison Marrese-Taylor, Jianjun Zhao, Lei Ma",
+      "url": "https://huggingface.co/papers/2608.13210",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2608.18852"
+        "paperId": "2608.13210"
       }
     },
     {
-      "id": "2608.14229",
-      "title": "The More Popular, The Harder to Forget: Adaptive Popularity for LLM Unlearning",
-      "title_zh": "越受欢迎，越难忘记：LLM遗忘的适应性流行",
-      "description": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
-      "description_zh": "流行的事实在预训练过程中会被记住得更深入，并且比罕见的事实更难被删除，但现有的 LLM 遗忘方法无论训练数据频率如何，都会应用均匀的梯度压力。我们提出了 AdaPop（自适应流行度）方法，它将本地令牌置信度与从外部代理（例如维基数据站点链接、LLM-as-Judge）派生的实际流行度相关指数相结合，并通过双上升控制器自动执行忘记保留平衡，该控制器在每个时期调整保留惩罚。在三个模型系列和两个基准测试中，AdaPop 在释义查询下泄漏的遗忘内容比竞争方法少约 5 倍，在对抗性重构下泄漏约 1.6 倍。我们用内部指标支持我们的分析：在我们的方法下，遗忘集隐藏状态比其他方法更远离学习前模型的状态，而保留集表示仍然接近。",
-      "authors": "Anna Borisiuk, Andrey Savchenko, Alexander Panchenko, Elena Tutubalina",
-      "url": "https://huggingface.co/papers/2608.14229",
-      "score": 13,
+      "id": "2608.19863",
+      "title": "Listening Forward: Next Patch Embedding Prediction Enables Scalable Audio Learners",
+      "title_zh": "向前聆听：下一个补丁嵌入预测可实现可扩展的音频学习器",
+      "description": "Self-supervised learning (SSL) has driven substantial progress in audio representation learning, though existing methods have increasingly relied on elaborate pre-training recipes to reach competitive performance. A markedly different pre-training philosophy underpins the most influential progress in language modeling and, more recently, in visual representation learning: rather than train encoders as static feature extractors, models are trained to predict the next element, a discrete token or a continuous embedding, from the preceding context. Autoregressive prediction thereby provides a unified pre-training interface that transfers across modalities, compelling the model to learn the underlying data distribution. We ask whether such a simple causal paradigm can yield strong audio learners, given that audio's temporal structure makes autoregressive prediction of patch embeddings a natural fit. We introduce NAPE (Next-Audio-Patch-Embedding prediction), a self-supervised framework in which a causal Transformer predicts each next patch embedding of a log-mel spectrogram from the previous ones, using causal masking and stop-gradient as its sole training signal. The design is intentionally minimalist, avoiding reconstruction decoders, acoustic tokenizers, student-teacher setups, and auxiliary regularization losses. Across six audio and speech benchmarks, NAPE achieves state-of-the-art fine-tuning performance on several tasks, scales consistently across encoder sizes, and yields strong linear-probing results. NAPE also produces structured attention patterns without explicit supervision.",
+      "description_zh": "自监督学习（SSL）推动了音频表示学习的实质性进展，尽管现有方法越来越依赖于精心设计的预训练方法来达到有竞争力的表现。一种明显不同的预训练理念支撑着语言建模以及最近的视觉表示学习中最有影响力的进展：不是将编码器训练为静态特征提取器，而是训练模型根据先前的上下文预测下一个元素、离散标记或连续嵌入。因此，自回归预测提供了一个跨模态传输的统一预训练界面，迫使模型学习底层数据分布。我们询问这样一个简单的因果范式是否可以产生强大的音频学习器，因为音频的时间结构使得补丁嵌入的自回归预测成为自然的选择。我们引入了 NAPE（下一个音频补丁嵌入预测），这是一种自监督框架，其中因果 Transformer 使用因果掩蔽和停止梯度作为其唯一的训练信号，预测前一个 log-mel 频谱图的每个下一个补丁嵌入。该设计有意简约，避免了重建解码器、声学分词器、学生-教师设置和辅助正则化损失。在六��音频和语音基准测试中，NAPE 在多项任务上实现了最先进的微调性能，在编码器尺寸上保持一致的扩展，并产生强大的线性探测结果。 NAPE 还可以在没有明确监督的情况下产生结构化的注意力模式。",
+      "authors": "Umberto Cappellazzo, Xubo Liu, Stavros Petridis, Maja Pantic",
+      "url": "https://huggingface.co/papers/2608.19863",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "13",
-        "paperId": "2608.14229"
+        "upvotes": "1",
+        "paperId": "2608.19863"
       }
     },
     {
-      "id": "2608.18115",
-      "title": "Temporal Multi-Signal Fusion for Token-Level Hallucination Detection",
-      "title_zh": "用于令牌级幻觉检测的时间多信号融合",
-      "description": "Token-level hallucination detectors score each token independently from a single signal, and fail exactly when the generating model is confidently wrong. This paper instead treats hallucination as a temporally extended span and detects it by sequence labeling: each token is scored from a 33-dimensional feature stream that fuses text statistics, Natural Language Inference (NLI) entailment, and language model surprisal, with no access to model internals. A Bidirectional Gated Recurrent Unit (BiGRU) over these features reaches an AUC of 0.840 on RAGTruth (10 seeds), an 11-point gain over an independent logistic-regression baseline (p = 0.002, Wilcoxon signed-rank). A controlled decomposition attributes most of the gain to temporal order rather than model capacity: evidence propagates from confident positions to ambiguous neighbors within a span. The same 0.845 ceiling recurs across recurrent, state-space (Mamba), and attention architectures, locating the bottleneck in the feature set rather than the model. Because it reads only the generated text and external signals, the detector works on closed-source models, and it keeps working on text produced by language models it never saw during training, losing under 4% AUC.",
-      "description_zh": "令牌级幻觉检测器独立于单个信号对每个令牌进行评分，并且当生成模型确信错误时会失败。相反，本文将幻觉视为时间上延伸的跨度，并通过序列标记来检测它：每个标记都是从融合了文本统计、自然语言推理 (NLI) 蕴涵和语言模型惊喜的 33 维特征流中评分的，无法访问模型内​​部。基于这些特征的双向门控循环单元 (BiGRU) 在 RAGTruth（10 个种子）上的 AUC 达到 0.840，比独立逻辑回归基线提高了 11 点（p = 0.002，Wilcoxon 符号秩）。受控分解将大部分增益归因于时间顺序而不是模型容量：证据从可靠的位置传播到跨度内的模糊邻居。同样的 0.845 上限在循环、状态空间 (Mamba) 和注意力架构中重复出现，将瓶颈定位在特征集而不是模型中。因为它只读取生成的文本和外部信号，所以检测器在闭源模型上工作，并且它继续处理在训练期间从未见过的语言模型生成的文本，AUC 损失低于 4%。",
-      "authors": "Igor Itkin",
-      "url": "https://huggingface.co/papers/2608.18115",
+      "id": "2608.19936",
+      "title": "Towards Quantifying Benchmark Optimization in ASR Models",
+      "title_zh": "迈向量化 ASR 模型中的基准优化",
+      "description": "Public benchmarks are important measures of Automatic Speech Recognition (ASR) model capabilities. However, by nature of being public, there is risk of models being optimized for these benchmarks in ways that do not generalize well to real-world data. We present a methodology for quantifying benchmark optimization, focusing on cases where the audio underdetermines the reference transcript. We identify three families of behavioral probes that reveal models' capabilities of reproducing benchmark reference spans despite underdetermined audio: reference disagreement, masked-number recovery, and orthographic switching. We find that the highest-scoring open source models output verbatim reference transcript spans even when the relevant audio is contradictory, masked, or ambiguous. Using a variety of mechanistic probes, we show that models respond to narrow acoustic cues to override the faithful representation of the audio in favor of a benchmark-optimized policy. We show the benchmark-optimized behavior can be causally manipulated via low-rank linear steering or simply appending audio to the end of a segment in some cases. Overall, our results indicate that high-performing models exhibit benchmark-conditioned behaviors that can inflate benchmark performance without reflecting improved general-purpose transcription ability.",
+      "description_zh": "公共基准是自动语音识别 (ASR) 模型功能的重要衡量标准。然而，由于其公开的性质，模型针对这些基准进行优化的方式可能无法很好地推广到现实世界的数据。我们提出了一种量化基准优化的方法，重点关注音频不足以确定参考转录的情况。我们确定了三个行为探针系列，这些探针揭示了模型在音频不确定的情况下再现基准参考跨度的能力：参考不一致、屏蔽数恢复和正交转换。我们发现，即使相关音频相互矛盾、被掩盖或含糊不清，得分最高的开源模型也会输出逐字参考转录本。使用各种机械探针，我们表明模型对狭窄的声学线索做出响应，以覆盖音频的忠实表示，以支持基准优化策略。我们展示了基准优化的行为可以通过低秩线性转向或在某些情况下简单地将音频附加到片段的末尾来进行因果操作。总体而言，我们的结果表明，高性能模型表现出基准条件行为，这些行为可能会夸大基准性能，而不会反映出通用转录能力的提高。",
+      "authors": "Theo Lebryk, David Ayllon, Alice Baird, Jakub Piotr Cłapa, Jens Madsen, Panagiotis Tzirakis",
+      "url": "https://huggingface.co/papers/2608.19936",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2608.19936"
+      }
+    },
+    {
+      "id": "2608.19799",
+      "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+      "title_zh": "SWE-bench Science：编码代理可以解决科学中的工程任务吗？",
+      "description": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions. Yet existing evaluations of coding agents largely emphasize aggregate task success, providing limited insight into why agents fail when repairing scientific software. We introduce SWE-bench Science, a repository-level benchmark for scientific software engineering comprising 119 tasks from 98 GitHub repositories across 20 scientific domains. Each task is organized into one of three paradigms: Issue-driven, Expert-exploratory, and Engineering-integration. Even the best-performing agent, Claude Code with Opus-5 (max), achieves a pass@1 below 50\\%, highlighting the substantial challenges posed by scientific software engineering. We identify four recurring failure mechanisms: deficits in scientific knowledge or abstraction, misguided exploration or surface-level repair, incomplete repair coverage or system integration, and failures to generalize scientific knowledge beyond observed cases in our analysis. We further conduct a paired ablation that removes explicit scientific guidance while preserving the repository and executable engineering context. The results show that scientific knowledge is not uniformly beneficial: well-grounded information can constrain repair and improve average performance and token efficiency, whereas poorly aligned guidance can induce anchoring and does not necessarily improve exact repair success. Together, SWE-bench Science provides a broad testbed for studying both the capabilities and failure mechanisms of coding agents in scientific software engineering.",
+      "description_zh": "软件越来越多地充当科学仪器本身的一部分，使得科学代码中的故障不仅会损害程序行为，还会损害科学结论背后的证据。然而，现有的编码代理评估主要强调总体任务成功，对代理在修复科学软件时失败的原因提供的了解有限。我们推出了 SWE-bench Science，这是科学软件工程的存储库级基准，包含来自 20 个科学领域 98 个 GitHub 存储库的 119 项任务。每项任务都被组织为三种范式之一：问题驱动、专家探索和工程集成。即使是表现最好的代理，使用 Opus-5（最大）的 Claude Code，也能达到低于 50\\% 的 pass@1 成绩，凸显了科学软件工程带来的巨大挑战。我们确定了四种反复出现的故障机制：科学知识或抽象的缺陷、误导性的探索或表面修复、不完整的修复覆盖或系统集成，以及未能将科学知识推广到我们分析中观察到的案例之外。我们进一步进行配对消融，删除明确的科学指导，同时保留存储库和可执行的工程环境。结果表明，科学知识并不总是有益的：基础良好的信息可以限制修复并提高平均性能和令牌效率，而不一致的指导可能会导致锚定，并且不一定会提高精确的修复成功率。 SWE-bench Science 共同提供了一个广泛的测试平台，用于研究科学软件工程中编码代理的功能和故障机制。",
+      "authors": "Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang, Xipeng Qiu",
+      "url": "https://huggingface.co/papers/2608.19799",
+      "score": 51,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "51",
+        "paperId": "2608.19799"
+      }
+    },
+    {
+      "id": "2608.18027",
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "title_zh": "持续改进LLM的经验链",
+      "description": "Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study how LLMs learn from iterative experience at test time, a setting we refer to as Chain-of-Experience (CoE), where models accumulate experiential traces through iterative interactions with self or environmental feedback to form a continual improvement loop beyond zero-shot inference. We instantiate CoE with diverse feedback mechanisms, including model self-feedback and environmental signals such as correctness or public coding test pass rates, and evaluate across math, coding, and knowledge domains using 8 LLMs, including GPT-5, Gemini-2.5 Pro, Claude-4.5 Sonnet. Our study shows that leveraging iterative experience consistently outperforms feedback-free baselines, achieving substantial gains with self feedback alone, alongside a 5.6% overall improvement and 19% lower API cost across tasks and models. We further show that combining complementary feedback channels (e.g., model and correctness signals) yields additional gains, and that CoE delivers higher accuracy per token than existing test-time strategies. We observe a positive correlation between LLM base ability and improvement capacity, and show that models remain robust under weak or spurious feedback, with different feedback contributing to distinct improvement aspects and most gains emerging early in the iterations.",
+      "description_zh": "人类不断从经验中学习，而传统的大语言模型 (LLM) 评估忽略了模型通过推理时间交互进行改进的能力。在本文中，我们研究了LLM如何在测试时从迭代经验中学习，我们将这种设置称为经验链（CoE），其中模型通过与自我或环境反馈的迭代交互来积累经验痕迹，以形成超越零样本推理的持续改进循环。我们用不同的反馈机制实例化 CoE，包括模型自我反馈和环境信号，例如正确性或公共编码测试通过率，并使用 8 个 LLM（包括 GPT-5、Gemini-2.5 Pro、Claude-4.5 Sonnet）跨数学、编码和知识领域进行评估。我们的研究表明，利用迭代经验始终优于无反馈基线，仅通过自我反馈即可实现显着收益，同时任务和模型的总体改进为 5.6%，API 成本降低了 19%。我们进一步表明，结合互补的反馈渠道（例如模型和正确性信号）会产生额外的收益，并且 CoE 比现有的测试时间策略提供更高的每个令牌的准确性。我们观察到LLM基础能力和改进能力之间存在正相关性，并表明模型在弱或虚假反馈下保持稳健，不同的反馈有助于不同的改进方面，并且大多数收益在迭代早期出现。",
+      "authors": "Haoqin Tu, Yunhao Fang, Yizhong Wang, Cihang Xie, Shen Yan",
+      "url": "https://huggingface.co/papers/2608.18027",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2608.18115"
+        "paperId": "2608.18027"
       }
     },
     {
-      "id": "2608.17253",
-      "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
-      "title_zh": "Co-RL：无监督推理从多智能体 RL 的多样化队列中出现",
-      "description": "Reinforcement learning (RL) has emerged as a powerful approach for improving reasoning in language and vision-language models, yet its strongest successes still depend heavily on ground-truth supervision (e.g., verifiable reward). Such annotations are costly to obtain and become increasingly scarce as reasoning capabilities advance beyond what humans can reliably evaluate. Self-rewarding RL reduces this dependence by enabling models to derive reward signals from their own completions. However, training solely on self-generated feedback can reinforce existing biases and suboptimal behaviors, reduce response diversity, and ultimately lead to homogenized responses and training collapse. In this work, we show that unsupervised reasoning can emerge through cooperative multi-agent training. We introduce Co-RL, a framework in which multiple decoupled models, sharing no parameters, are simultaneously optimized through RL using rewards derived from their peers. We further show that increasing cohort diversity, through heterogeneous model families, sizes, and rephrased training samples, reduces the correlated errors that drive self-reinforcing feedback loops. This diversity consistently improves reasoning performance, maintains behavioral diversity, and mitigates training collapse. Across text-only and multimodal domains, Co-RL consistently outperforms the base models and prior label-free approaches, while matching or surpassing supervised methods, without access to any ground-truth labels. Concretely, Co-RL yields average gains of 3.0-8.6% across seven text-only benchmarks for LLMs and 2.3-7.2% across four multimodal benchmarks for VLMs. Code is available at https://github.com/DrStranded/Co-RL.",
-      "description_zh": "强化学习（RL）已成为改善语言和视觉语言模型推理的强大方法，但其最大的成功仍然在很大程度上依赖于真实的监督（例如，可验证的奖励）。获得此类注释的成本很高，并且随着推理能力的发展超出了人类可靠评估的范围，此类注释变得越来越稀缺。自我奖励强化学习使模型能够从自己的完成情况中获取奖励信号，从而减少了这种依赖性。然而，仅根据自我生成的反馈进行训练可能会加剧现有的偏见和次优行为，减少响应多样性，并最终导致同质化响应和训练崩溃。在这项工作中，我们证明了可以通过协作多智能体训练来出现无监督推理。我们引入了 Co-RL，这是一个框架，其中多个解耦模型（不共享参数）通过 RL 使用来自同行的奖励同时进行优化。我们进一步表明，通过异构模型系列、大小和重新表述的训练样本来增加队列多样性，可以减少驱动自我强化反馈循环的相关错误。这种多样性持续提高推理性能，保持行为多样性，并减轻训练崩溃。在纯文本和多模态领域，Co-RL 始终优于基本模型和先前的无标签方法，同时匹配或超越监督方法，无需访问任何真实标签。具体而言，Co-RL 在LLM的 7 个纯文本基准中的平均收益为 3.0-8.6%，在 VLM 的四个多模式基准中的平均收益为 2.3-7.2%。代码可在 https://github.com/DrStranded/Co-RL 获取。",
-      "authors": "Yunhao Yang, Yuexin Bian, Yunjie Tian, Di Fu, Tianjin Huang, Yuanyuan Shi, Ziang Xiao, Nuno Vasconcelos, Yijiang Li",
-      "url": "https://huggingface.co/papers/2608.17253",
-      "score": 81,
+      "id": "2608.19758",
+      "title": "FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+      "title_zh": "FlashPrefill V2：用于长上下文 LLM 服务的块稀疏预填充注意力",
+      "description": "Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexity of attention remains a critical bottleneck, particularly during the compute-intensive prefilling phase. Our previous work, FlashPrefill, mitigates this cost through instantaneous pattern discovery and max-based dynamic thresholding; however, it remains an algorithmic prototype that is still distant from production deployment. In this paper, we present FlashPrefill V2, which evolves FlashPrefill from a prototype toward practical long-context serving along three dimensions. First, we introduce a mean correction term that effectively suppresses the approximation error, keeping performance degradation manageable even at extreme sparsity levels. Second, we redesign the sparse attention operator with PackGQA memory access, warp specialization, and pingpong pipelining, fully aligning with the latest FlashAttention-3/4 implementations and supporting FP8 inference to meet practical quantization requirements. Third, FlashPrefill V2 natively supports paged KV cache and continuous batching, allowing integration as an attention backend in modern inference frameworks such as SGLang. Extensive evaluations on NVIDIA H20 GPUs---among the most widely deployed inference accelerators---demonstrate that FlashPrefill V2 delivers up to 47.26x and 27.19x speedups over FlashAttention-2 at 128K context length under FP8 and BF16 precision, respectively, and, in FP8, still achieves a 30.49x speedup against an FA3/4-aligned dense baseline.",
+      "description_zh": "长上下文建模是大型语言模型的关键功能，但注意力的二次复杂性仍然是一个关键瓶颈，特别是在计算密集型预填充阶段。我们之前的工作 FlashPrefill 通过即时模式发现和基于最大值的动态阈值来降低这种成本；然而，它仍然是一个算法原型，距离生产部署还很遥远。在本文中，我们提出了 FlashPrefill V2，它将 FlashPrefill 从原型发展为沿三个维度的实用长上下文服务。首先，我们引入了一个均值校正项，它可以��效地抑制近似误差，即使在极端稀疏的情况下也能保持性能下降的可控性。其次，我们通过 PackGQA 内存访问、warp 专门化和乒乓流水线重新设计了稀疏注意力算子，与最新的 FlashAttention-3/4 实现完全一致，并支持 FP8 推理以满足实际的量化要求。第三，FlashPrefill V2 本身支持分页 KV 缓存和连续批处理，允许作为注意力后端集成到 SGLang 等现代推理框架中。对 NVIDIA H20 GPU（部署最广泛的推理加速器之一）的广泛评估表明，在 FP8 和 BF16 精度下，FlashPrefill V2 在 128K 上下文长度下分别比 FlashAttention-2 提供高达 47.26 倍和 27.19 倍的加速，并且在 FP8 中，相对于 FA3/4 对齐的密集基线，仍然实现了 30.49 倍的加速。",
+      "authors": "Qihang Fan, Huaibo Huang, Zhiying Wu, Bingning Wang, Ran He",
+      "url": "https://huggingface.co/papers/2608.19758",
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "81",
-        "paperId": "2608.17253"
+        "upvotes": "9",
+        "paperId": "2608.19758"
       }
     },
     {
-      "id": "2608.13947",
-      "title": "Scaling Creative Writing Beyond Story-Centric Data with Attribute-Guided Genre Expansion",
-      "title_zh": "通过属性引导的类型扩展将创意写作扩展到以故事为中心的数据之外",
-      "description": "High-quality creative writing data for large language models (LLMs) remains dominated by story-centric data, limiting models' ability to follow the structural and functional conventions of diverse creative formats. We propose an attribute-guided genre expansion framework for scaling creative writing data beyond story generation. By separating thematic breadth from genre-form control, our framework leverages human-authored story prompts as diverse creative seeds, while utilizing manually curated genre attributes to enforce distinct structural, stylistic, and formatting conventions. We combine these to prompt strong LLMs for genre-faithful query-response pairs, which are then quality-filtered. Applying this framework, we construct the Multi-Genre Collection, a 50K-example corpus spanning 13 creative genres, including story, rap, lyrics, scripts, game design, character design, and other creative formats. Experiments across out-of-distribution writing benchmarks and held-out genre diagnostics demonstrate that models fine-tuned on our data consistently surpass not only base models and writing-specialized baselines, but also models trained on existing writing corpora. Genre-count ablations further indicate that controlled genre expansion, rather than story-centric scaling alone, is a key driver of robust creative writing capability.",
-      "description_zh": "大型语言模型 (LLM) 的高质量创意写作数据仍然以故事为中心的数据为主，限制了模型遵循不同创意格式的结构和功能惯例的能力。我们提出了一个属性引导的类型扩展框架，用于将创意写作数据扩展到故事生成之外。通过将主题广度与流派形式控制分开，我们的框架利用人类创作的故事提示作为不同的创意种子，同时利用手动策划的流派属性来强制执行不同的结构、风格和格式约定。我们将这些结合起来，以提示强大的LLM提供忠实于流派的查询-响应对，然后对这��查询-响应对进行质量过滤。应用这个框架，我们构建了多流派集合，一个包含 5 万个示例的语料库，涵盖 13 个创意流派，包括故事、说唱、歌词、剧本、游戏设计、角色设计和其他创意格式。跨发行版写作基准和保留体裁诊断的实验表明，根据我们的数据进行微调的模型不仅持续超越基本模型和写作专业基线，而且超越基于现有写作语料库训练的模型。类型计数消融进一步表明，受控的类型扩展，而不是单独以故事为中心的扩展，是强大的创意写作能力的关键驱动力。",
-      "authors": "Hwan Chang, Yongil Kim, Heuiyeen Yeen, Yireun Kim, Jinsik Lee, Hwanhee Lee",
-      "url": "https://huggingface.co/papers/2608.13947",
-      "score": 13,
+      "id": "2608.13120",
+      "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+      "title_zh": "SkillEvo：来自多轮交互反馈的自我更新进化梯度",
+      "description": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
+      "description_zh": "如今，代理技能要么是手工编写的，要么是在单次LLM生成过程中生成的，因此不具有闭环，可以通过闭环来改进它们实际导致的交互失败。最近的工作确实关闭了这个循环，但其反馈来自单轮问答评估。其结果是一种严重的不对称：一旦第一轮修补了单次交换可以揭示的差距，进化梯度就会衰减，仅在多轮中出现的缺陷仍然不可见，进化就会停滞。这些系统中的治理同样由端到端验证分数驱动，这是一个标量门，可以拒绝降级的候选者，但既不能定位也不能修复其结构原因。我们认为，对持续技能进化的约束约束既不是编辑能力也不是迭代次数，而是评估反馈是否持续提供值得信赖的进化梯度。我们引入SkillEvo，其中可信的反馈产生梯度，可控的治理约束其方向。第一个组件将多轮用户模拟从评估端点重铸为反馈生成器：后续问题逐层暴露缺陷，以便每一轮修订都消耗反馈并产生新的反馈。第二个方法用独立的治理层取代了对标量门的被动拒绝，该治理层主动修复事实退化和结构膨胀，防止梯度随着退化累积而漂移。在六类云服务、9 个生产技能和 98 个技能参考文件中，SkillEvo 超过基于自我反思的进化 23.0 分，超过单轮 QA 驱动的进化 15.4 分。",
+      "authors": "Qianxi Yan, Chunrong Chen, Jiuzhou Zhao, Min Zhang, Yongzhou Xu, Xiaochuan Xu",
+      "url": "https://huggingface.co/papers/2608.13120",
+      "score": 21,
       "meta": {
         "source": "huggingface",
-        "upvotes": "13",
-        "paperId": "2608.13947"
+        "upvotes": "21",
+        "paperId": "2608.13120"
       }
     },
     {
-      "id": "2608.13558",
-      "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
-      "title_zh": "OmniScientist：全模态、全学科人工智能科学家",
-      "description": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
-      "description_zh": "基础模型的最新进展使人工智能科学家能够自动化日益完整的研究工作流程，从假设生成和代码执行到手稿准备。然而，仅工作流程覆盖并不能提供科学发现所依赖的完整证据。现有系统通常对文本、代码、标签或预先计算的摘要进行推理，从而使智能体无法获得科学决定性的空间、时间、跨渠道和程序关系。我们介绍 OmniScientist，这是一位端到端、全模式人工智能科学家，直接根据异构原始证据进行多学科研究。感知层和 3 个用于构思、实验和撰写的自主代理在确定性管道内运行，允许观察在整个研究生命周期中形成研究问题、实验决策和最终主张。通过在代码中运行想法、严格性和声明检查，系统强制执行新颖性筛选、统计有效性、执行来源和数字可追溯性。我们根据涵盖 5 个学科系列、4 个科学证据系列以及包括图像、信号、音频、视频、3-D 结构、轨迹、表格、公式和图表在内的模式的 36 个真实数据案例来评估 OmniScientist。该系统完成了所有 36 个案例中从原始数据到编译稿件的完整路径，并通过参考推理主干获得了 6.3 的平均论文总分。在与仅接收预先计算的标量特征的盲变体的配对比较中，直接感知改善了所有 7 个评估维度，并赢得了 85% 的正面判断。这些结果表明，全生命周期的感知对于基于证据的科学发现至关重要，并为培养具有广泛能力的人工智能科学家提供了一条实用途径。",
-      "authors": "Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee, Wynne Hsu",
-      "url": "https://huggingface.co/papers/2608.13558",
-      "score": 83,
+      "id": "2608.19854",
+      "title": "Repo0: Design-Driven Zero-to-All Code Generation",
+      "title_zh": "Repo0：设计驱动的零到全部代码生成",
+      "description": "Large language model agents have made substantial progress in code generation, yet most existing systems assume a predefined repository architecture. This assumption does not hold in zero-to-all code generation, where an agent must construct an entire software project directly from natural-language requirements while maintaining a modular repository architecture throughout development. We present Repo0, a continuous structural evolution framework for zero-to-all code generation. Repo0 maintains an explicit architectural state instantiated as a Dual-Directed-Acyclic-Graph (Dual-DAG), consisting of a requirement-level DAG, a component-level DAG, and their alignment relation. Starting from natural-language requirements, it iteratively evolves component boundaries through structural actions guided by modularity metrics until structural convergence, after which the converged architecture guides test-driven development code generation. We evaluate Repo0 on six real-world repositories from RepoCraft using GPT-5 mini and DeepSeek V3.2. Repo0 achieves the highest Functionality Coverage and Pass Rate across all settings. Compared with RPG, the strongest repository-planning baseline, Repo0 improves Functionality Coverage by up to 20.08 percentage points and Pass Rate by up to 29.74 percentage points. Ablation and structural-evolution analyses further demonstrate the importance of the Dual-DAG architectural state, modularity-guided structural evolution, and explicit structural convergence.",
+      "description_zh": "大型语言模型代理在代码生成方面取得了实质性进展，但大多数现有系统都采用预定义的存储库架构。这种假设在零到全部代码生成中并不成立，在这种情况下，代理必须直接根据自然语言需求构建整个软件项目，同时在整个开发过程中维护模块化存储库架构。我们提出了 Repo0，一个用于从零到全部代码生成的持续结构演化框架。 Repo0 维护一个实例化为双有向无环图 (Dual-DAG) 的显式架构状态，由需求级 DAG、组件级 DAG 及其对齐关系组成。从自然语言需求开始，它通过模块化度量指导的结构操作迭代地演化组件边界，直到结构收敛，之后收敛的架构指导测试驱动的开发代码生成。我们使用 GPT-5 mini 和 DeepSeek V3.2 在 RepoCraft 的六个真实存储库上评估 Repo0。 Repo0 在所有设置中实现了最高的功能覆盖率和通过率。与最强的存储库规划基线 RPG 相比，Repo0 的功能覆盖率提高了 20.08 个百分点，通过率提高了 29.74 个百分点。消融和结构演化分析进一步证明了双 DAG 架构状态、模块化引导的结构演化和显式结构收敛的重要性。",
+      "authors": "Silin Chen, Haoyi Teng, Xiaodong Gu, Yuling Shi, Jiale Huang, Yongpan Wang, Hongyu Zhang, Haibing Guan",
+      "url": "https://huggingface.co/papers/2608.19854",
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "83",
-        "paperId": "2608.13558"
-      }
-    },
-    {
-      "id": "2608.16590",
-      "title": "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
-      "title_zh": "Zetta ζ：一种用于自我进化身体智能的高效闭环具体化安全带",
-      "description": "Embodied agents are increasingly used to close the gap left by end-to-end policy models. Yet the agentic path has not realized closed-loop learning in physical execution: existing harnesses remain largely open-loop, following fixed skills during rollout and reflecting only after an episode completes. Such post-hoc reflection cannot govern execution as it unfolds, because physical interaction requires decisions to track rapidly changing robot-environment states at a frequency beyond today's large agentic models. We present Zetta, a closed-loop embodied harness that evolves code-based runtime critics and recovery skills online while keeping the base policy frozen. Through three timescale-separated loops, Zetta provides action-frequency governance, rollout-level critic-recovery proposal, and validation-gated skill updates. Together with Z-Infra, a rollout infrastructure decoupling agent logic from heterogeneous execution resources, Zetta achieves state-of-the-art success on LIBERO-Pro and RoboCasa under our current rollout budget, reaching 90.8% and 93.6%, with an 11.1x inference speedup; success continues to scale with self-exploration experience; learned skills transfer zero-shot, and clear robotic \"Aha Moments\" emerge. These results show that closed-loop harness self-evolution opens a scaling path for reliable physical intelligence.",
-      "description_zh": "实体代理越来越多地用于缩小端到端政策模型留下的差距。然而，代理路径尚未实现物理执行中的闭环学习：现有的安全带在很大程度上仍然是开环的，在推出期间遵循固定技能，并且仅在情节完成后才反映。这种事后反思无法控制执行过程的展开，因为物理交互需要决策来跟踪快速变化的机器人环境状态，其频率超出了当今大型代理模型的频率。我们推出了 Zetta，一种闭环具体化工具，可在线发展基于代码的运行时批评和恢复技能，同时保持基本策略冻结。通过三个时间尺度分隔的循环，Zetta 提供了行动频率治理、推出级批评者恢复建议和验证门控技能更新。与 Z-Infra（一种将代理逻辑与异构执行资源解耦的推出基础设施）一起，Zetta 在我们当前的推出预算下在 LIBERO-Pro 和 RoboCasa 上取得了最先进的成功，分别达到 90.8% 和 93.6%，推理速度提高了 11.1 倍；随着自我探索经验的不断积累，成功不断扩大；学到的技能零射击转移，并出现清晰的机器人“啊哈时刻”。这些结果表明，闭环线束自我进化为可靠的物理智能开辟了一条扩展路径。",
-      "authors": "Xin Ding, Liang Mi, Mingzhe Huang, Zixuan Wang, Chao Zhang, Zixu Hao, Fu Chen, Xiangyu Li, Yikai Zheng, Yaoyu Guo, Weijun Wang, Kun Li, Hao Wu, Yunxin Liu, Ting Cao",
-      "url": "https://huggingface.co/papers/2608.16590",
-      "score": 129,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "129",
-        "paperId": "2608.16590"
-      }
-    },
-    {
-      "id": "2608.18746",
-      "title": "Decision-Metric Alignment in Latent World Models: Diagnostics and Action-Conditioned Objectives for MPC Planning",
-      "title_zh": "潜在世界模型中的决策度量对齐：MPC 规划的诊断和行动条件目标",
-      "description": "JEPA-style latent world models can use Euclidean distance to a goal latent as the cost for model-predictive control (MPC). Strong decoding of task variables, however, does not guarantee that this particular cost ranks candidate action sequences by real task progress. We call the latter property decision-metric alignment. We introduce Plan-Real Spearman, which measures latent--real rank agreement on random plans, and CEM-stage Spearman, which measures the same agreement as cross-entropy-method (CEM) search concentrates its proposal. We analyze sufficient conditions under which latent distance preserves real-cost rankings, identifying encoder distortion, terminal rollout error, and candidate margins as the controlling quantities. Guided by the observed empirical alignment gap, DA-LeWM augments LeWM with inverse-dynamics and demonstration-conditioned goal-action heads. Across all our experiments, DA-LeWM accelerates convergence and achieves higher online success than LeWM, while probe scores remain similar. These results show that action-conditioned objectives improve the geometry used by Euclidean-cost, CEM-based latent MPC.",
-      "description_zh": "JEPA 式的潜在世界模型可以使用到潜在目​​标的欧几里得距离作为模型预测控制 (MPC) 的成本。然而，任务变量的强解码并不能保证该特定成本按实际任务进度对候选动作序列进行排名。我们将后者称为属性决策度量对齐。我们引入了 Plan-Real Spearman，它测量随机计划的潜在真实排名一致性，以及 CEM-stage Spearman，它测量与交叉熵方法 (CEM) 搜索集中其建议相同的一致性。我们分析了潜在距离保留实际成本排名的充分条件，识别编码器失真、终端转出误差和候选余量作为控制量。在观察到的经验对齐差距的指导下，DA-LeWM 通过逆动力学和演示条件目标行动头增强了 LeWM。在我们所有的实验中，DA-LeWM 比 LeWM 加速了收敛并取得了更高的在线成功率，同时探测分数保持相似。这些结果表明，动作条件目标改进了欧几里得成本、基于 CEM 的潜在 MPC 所使用的几何结构。",
-      "authors": "Jiawei Wang, Ke Rui, Yushen Zuo, Yichun Feng, Minglei Li",
-      "url": "https://huggingface.co/papers/2608.18746",
-      "score": 15,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "15",
-        "paperId": "2608.18746"
-      }
-    },
-    {
-      "id": "2608.18701",
-      "title": "SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation",
-      "title_zh": "SoftVTBench：变形感知视觉触觉数据集和可变形对象操作的基准",
-      "description": "Physical interaction quality is central to deformable-object manipulation, yet most benchmarks evaluate task success alone. A policy may complete the task while allowing slip or causing excessive compression. A primary bottleneck is the absence of visuo-tactile datasets that pair policy-visible contact observations with independent physical ground truth over complete tasks. We introduce SoftVTBench, a visuo-tactile dataset for physical-interaction-aware deformable-object manipulation. It contains 4,000 expert demonstrations and more than 50 assets, including volumetric deformable objects and visually matched rigid twins. At 20 Hz, each episode synchronizes multi-view RGB, dual-finger tactile RGB and marker motion, proprioception, language, and binary and continuous gripper actions, alongside evaluator-only finite-element (FEM) states. Building upon this dataset, we establish a closed-loop benchmark that uses fixed object-specific calibration to define the Deformation-aware Success Rate (DSR), which counts a rollout as successful only when it completes the task and keeps peak normalized deformation within tolerance. Across Diffusion Policy, π_{0.5}, and FastWAM, all 12 in-distribution configurations contain successful rollouts that violate the deformation tolerance, accounting for 0.7--24% of each configuration's successes. Under distribution shift, visuo-tactile variants achieve higher task success in all six policy--suite comparisons and higher DSR in five, whereas their in-distribution benefits are mixed. These results show that making touch available does not by itself ensure effective multimodal fusion. SoftVTBench therefore provides a common visuo-tactile resource for studying not only whether a policy succeeds, but how it physically interacts with deformable objects and when touch improves that interaction.",
-      "description_zh": "物理交互质量是可变形物体操作的核心，但大多数基准测试仅评估任务成功与否。策略可能会在允许滑动或导致过度压缩的同时完成任务。主要瓶颈是缺乏将政策可见接触观察与完整任务上的独立物理地面实况配对的视觉触觉数据集。我们引入了 SoftVTBench，这是一个用于物理交互感知可变形对象操作的视觉触觉数据集。它包含 4,000 个专家演示和 50 多个资产，包括体积可变形对象和视觉匹配的刚性双胞胎。在 20 Hz 频率下，每一集同步多视图 RGB、双指触觉 RGB 和标记运动、本体感觉、语言以及二进制和连续的抓手动作，以及仅限评估器的有限元 (FEM) 状态。在此数据集的基础上，我们建立了一个闭环基准，该基准使用固定的特定于对象的校准来定义变形感知成功率（DSR），只有当完成任务并将峰值归一化变形保持在公差范围内时，它才算成功。在扩散策略、π_{0.5} 和 FastWAM 中，所有 12 个分布内配置都包含违反变形容差的成功部署，占每种配置成功的 0.7--24%。在分配转移下，视觉触觉变体在所有六种策略套件比较中实现了更高的任务成功率，在五种策略套件比较中实现了更高的 DSR，而它们的分配内收益是好坏参半的。这些结果表明，提供触摸功能本身并不能确保有效的多模式融合。因此，SoftVTBench 提供了一个通用的视觉触觉资源，不仅可以用于研究策略是否成功，还可以研究它如何与可变形对象进行物理交互，以及触摸何时可以改善这种交互。",
-      "authors": "Bowen Jing, Mingxin Wang, Ruiyang Hao, Chenchen Ge, Hanwen Shen, Junjie He, Yang Cui, Yiming Hou, Weitao Zhou, Jiawei Wang, Minglei Li, Dandan Zhang, Ding Zhao, Houde Liu, Xiaofan Li, Si Liu, Ping Luo, Haibao Yu",
-      "url": "https://huggingface.co/papers/2608.18701",
-      "score": 12,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "12",
-        "paperId": "2608.18701"
-      }
-    },
-    {
-      "id": "2608.17426",
-      "title": "SemComp-Bench: Benchmarking Semantic Task Completion in Video Generation",
-      "title_zh": "SemComp-Bench：视频生成中语义任务完成的基准测试",
-      "description": "We introduce Semantic Task Completion Video Generation, an outcome-oriented video generation task. Under this formulation, success requires both achievement of the intended outcome and semantic grounding. Semantic grounding characterizes the correspondence between the reference image and the generated outcome in terms of high-level semantics relevant to the task. Evaluation focuses on the generated outcome and requires neither the presentation of a complete sequence of intermediate task steps nor conventional appearance consistency with the reference image. To support systematic evaluation, we construct SemComp-Data, an evaluation dataset covering six domains. Each instance comprises a reference image, a detailed instruction, a brief instruction, and an outcome-centric video clip. A scalable four-stage curation pipeline converts raw videos into standardized SemComp-Data instances. We further introduce SemComp-Bench, an evaluation protocol that uses a vision-language model (VLM) to answer structured binary questions. SemComp-Bench reports the OA Score and the GR Score for Outcome Achievement and Generation Reliability, respectively. Experiments on representative video generation models show that achieving intended outcomes while maintaining task-relevant semantic grounding in reference images remains challenging.",
-      "description_zh": "我们引入语义任务完成视频生成，这是一种面向结果的视频生成任务。根据这种表述，成功需要实现预期结果和语义基础。语义基础根据与任务相关的高级语义来表征参考图像和生成的结果之间的对应关系。评估侧重于生成的结果，既不需要呈现完整的中间任务步骤序列，也不需要与参考图像的传统外观一致性。为了支持系统评估，我们构建了 SemComp-Data，一个涵盖六个领域的评估数据集。每个实例都包含参考图像、详细说明、简要说明和以结果为中心的视频剪辑。可扩展的四阶段管理管道将原始视频转换为标准化的 SemComp-Data 实例。我们进一步介绍了 SemComp-Bench，这是一种使用视觉语言模型（VLM）来回答结构化二进制问题的评估协议。 SemComp-Bench 分别报告成果成就和发电可靠性的 OA 分数和 GR 分数。对代表性视频生成模型的实验表明，在保持参考图像中与��务相关的语义基础的同时实现预期结果仍然具有挑战性。",
-      "authors": "Keyu Tu, Zhuowei Chen, Mengqi Huang, Yuxin Wang, Jiahao Zhu, Zhendong Mao, Yongdong Zhang",
-      "url": "https://huggingface.co/papers/2608.17426",
-      "score": 151,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "151",
-        "paperId": "2608.17426"
+        "upvotes": "10",
+        "paperId": "2608.19854"
       }
     }
   ]
