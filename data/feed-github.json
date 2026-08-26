@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-08-25T19:58:46.207Z",
+  "updatedAt": "2026-08-26T22:29:33.880Z",
   "count": 15,
   "items": [
+    {
+      "id": "tt-a1i-archify",
+      "title": "archify",
+      "title_zh": "archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "description_zh": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "authors": "tt-a1i",
+      "url": "https://github.com/tt-a1i/archify",
+      "score": 17749,
+      "meta": {
+        "source": "github",
+        "stars": "17,749",
+        "language": "HTML",
+        "repo": "tt-a1i/archify",
+        "owner": "tt-a1i",
+        "repoName": "archify"
+      }
+    },
     {
       "id": "freestylefly-awesome-gpt-image-2",
       "title": "awesome-gpt-image-2",
@@ -11,10 +29,10 @@
       "description_zh": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "authors": "freestylefly",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "score": 17453,
+      "score": 21209,
       "meta": {
         "source": "github",
-        "stars": "17,453",
+        "stars": "21,209",
         "language": "JavaScript",
         "repo": "freestylefly/awesome-gpt-image-2",
         "owner": "freestylefly",
@@ -22,21 +40,39 @@
       }
     },
     {
-      "id": "anthropics-claude-plugins-community",
-      "title": "claude-plugins-community",
-      "title_zh": "claude-plugins-community",
-      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
-      "description_zh": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "id": "anthropics-claude-plugins-official",
+      "title": "claude-plugins-official",
+      "title_zh": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "description_zh": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "authors": "anthropics",
-      "url": "https://github.com/anthropics/claude-plugins-community",
-      "score": 1677,
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "score": 34343,
       "meta": {
         "source": "github",
-        "stars": "1,677",
+        "stars": "34,343",
         "language": "Python",
-        "repo": "anthropics/claude-plugins-community",
+        "repo": "anthropics/claude-plugins-official",
         "owner": "anthropics",
-        "repoName": "claude-plugins-community"
+        "repoName": "claude-plugins-official"
+      }
+    },
+    {
+      "id": "Alishahryar1-free-claude-code",
+      "title": "free-claude-code",
+      "title_zh": "free-claude-code",
+      "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+      "description_zh": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+      "authors": "Alishahryar1",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "score": 50335,
+      "meta": {
+        "source": "github",
+        "stars": "50,335",
+        "language": "Python",
+        "repo": "Alishahryar1/free-claude-code",
+        "owner": "Alishahryar1",
+        "repoName": "free-claude-code"
       }
     },
     {
@@ -47,50 +83,14 @@
       "description_zh": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "authors": "MadsLorentzen",
       "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "score": 35132,
+      "score": 36405,
       "meta": {
         "source": "github",
-        "stars": "35,132",
+        "stars": "36,405",
         "language": "Python",
         "repo": "MadsLorentzen/ai-job-search",
         "owner": "MadsLorentzen",
         "repoName": "ai-job-search"
-      }
-    },
-    {
-      "id": "apache-maka",
-      "title": "maka",
-      "title_zh": "maka",
-      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "description_zh": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "authors": "apache",
-      "url": "https://github.com/apache/maka",
-      "score": 3268,
-      "meta": {
-        "source": "github",
-        "stars": "3,268",
-        "language": "TypeScript",
-        "repo": "apache/maka",
-        "owner": "apache",
-        "repoName": "maka"
-      }
-    },
-    {
-      "id": "TauricResearch-TradingAgents",
-      "title": "TradingAgents",
-      "title_zh": "TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "description_zh": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "authors": "TauricResearch",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "score": 100109,
-      "meta": {
-        "source": "github",
-        "stars": "100,109",
-        "language": "Python",
-        "repo": "TauricResearch/TradingAgents",
-        "owner": "TauricResearch",
-        "repoName": "TradingAgents"
       }
     },
     {
@@ -101,14 +101,32 @@
       "description_zh": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "authors": "AgriciDaniel",
       "url": "https://github.com/AgriciDaniel/claude-obsidian",
-      "score": 12585,
+      "score": 13380,
       "meta": {
         "source": "github",
-        "stars": "12,585",
+        "stars": "13,380",
         "language": "Python",
         "repo": "AgriciDaniel/claude-obsidian",
         "owner": "AgriciDaniel",
         "repoName": "claude-obsidian"
+      }
+    },
+    {
+      "id": "basecamp-omarchy",
+      "title": "omarchy",
+      "title_zh": "omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "description_zh": "Beautiful, Modern & Opinionated Linux",
+      "authors": "basecamp",
+      "url": "https://github.com/basecamp/omarchy",
+      "score": 31952,
+      "meta": {
+        "source": "github",
+        "stars": "31,952",
+        "language": "Shell",
+        "repo": "basecamp/omarchy",
+        "owner": "basecamp",
+        "repoName": "omarchy"
       }
     },
     {
@@ -119,10 +137,10 @@
       "description_zh": "Learn it. Build it. Ship it for others.",
       "authors": "rohitg00",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "score": 48859,
+      "score": 49561,
       "meta": {
         "source": "github",
-        "stars": "48,859",
+        "stars": "49,561",
         "language": "Python",
         "repo": "rohitg00/ai-engineering-from-scratch",
         "owner": "rohitg00",
@@ -137,104 +155,14 @@
       "description_zh": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
       "authors": "tinyhumansai",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "score": 37697,
+      "score": 38177,
       "meta": {
         "source": "github",
-        "stars": "37,697",
+        "stars": "38,177",
         "language": "Rust",
         "repo": "tinyhumansai/openhuman",
         "owner": "tinyhumansai",
         "repoName": "openhuman"
-      }
-    },
-    {
-      "id": "basecamp-omarchy",
-      "title": "omarchy",
-      "title_zh": "omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "description_zh": "Beautiful, Modern & Opinionated Linux",
-      "authors": "basecamp",
-      "url": "https://github.com/basecamp/omarchy",
-      "score": 31090,
-      "meta": {
-        "source": "github",
-        "stars": "31,090",
-        "language": "Shell",
-        "repo": "basecamp/omarchy",
-        "owner": "basecamp",
-        "repoName": "omarchy"
-      }
-    },
-    {
-      "id": "Shubhamsaboo-awesome-llm-apps",
-      "title": "awesome-llm-apps",
-      "title_zh": "awesome-llm-apps",
-      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "description_zh": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "authors": "Shubhamsaboo",
-      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "score": 134140,
-      "meta": {
-        "source": "github",
-        "stars": "134,140",
-        "language": "Python",
-        "repo": "Shubhamsaboo/awesome-llm-apps",
-        "owner": "Shubhamsaboo",
-        "repoName": "awesome-llm-apps"
-      }
-    },
-    {
-      "id": "multica-ai-andrej-karpathy-skills",
-      "title": "andrej-karpathy-skills",
-      "title_zh": "andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "description_zh": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "authors": "multica-ai",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "score": 207102,
-      "meta": {
-        "source": "github",
-        "stars": "207,102",
-        "language": "Mixed",
-        "repo": "multica-ai/andrej-karpathy-skills",
-        "owner": "multica-ai",
-        "repoName": "andrej-karpathy-skills"
-      }
-    },
-    {
-      "id": "openai-codex",
-      "title": "codex",
-      "title_zh": "codex",
-      "description": "Lightweight coding agent that runs in your terminal",
-      "description_zh": "Lightweight coding agent that runs in your terminal",
-      "authors": "openai",
-      "url": "https://github.com/openai/codex",
-      "score": 118021,
-      "meta": {
-        "source": "github",
-        "stars": "118,021",
-        "language": "Rust",
-        "repo": "openai/codex",
-        "owner": "openai",
-        "repoName": "codex"
-      }
-    },
-    {
-      "id": "marin-community-marin",
-      "title": "marin",
-      "title_zh": "marin",
-      "description": "Open-source framework for the research and development of foundation models.",
-      "description_zh": "Open-source framework for the research and development of foundation models.",
-      "authors": "marin-community",
-      "url": "https://github.com/marin-community/marin",
-      "score": 2055,
-      "meta": {
-        "source": "github",
-        "stars": "2,055",
-        "language": "Python",
-        "repo": "marin-community/marin",
-        "owner": "marin-community",
-        "repoName": "marin"
       }
     },
     {
@@ -245,10 +173,10 @@
       "description_zh": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "authors": "DietrichGebert",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "score": 110779,
+      "score": 112479,
       "meta": {
         "source": "github",
-        "stars": "110,779",
+        "stars": "112,479",
         "language": "JavaScript",
         "repo": "DietrichGebert/ponytail",
         "owner": "DietrichGebert",
@@ -256,21 +184,93 @@
       }
     },
     {
-      "id": "anthropics-claude-plugins-official",
-      "title": "claude-plugins-official",
-      "title_zh": "claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "description_zh": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "id": "anthropics-claude-plugins-community",
+      "title": "claude-plugins-community",
+      "title_zh": "claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "description_zh": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "authors": "anthropics",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "score": 34031,
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "score": 2166,
       "meta": {
         "source": "github",
-        "stars": "34,031",
+        "stars": "2,166",
         "language": "Python",
-        "repo": "anthropics/claude-plugins-official",
+        "repo": "anthropics/claude-plugins-community",
         "owner": "anthropics",
-        "repoName": "claude-plugins-official"
+        "repoName": "claude-plugins-community"
+      }
+    },
+    {
+      "id": "ConardLi-garden-skills",
+      "title": "garden-skills",
+      "title_zh": "garden-skills",
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "description_zh": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "authors": "ConardLi",
+      "url": "https://github.com/ConardLi/garden-skills",
+      "score": 10893,
+      "meta": {
+        "source": "github",
+        "stars": "10,893",
+        "language": "CSS",
+        "repo": "ConardLi/garden-skills",
+        "owner": "ConardLi",
+        "repoName": "garden-skills"
+      }
+    },
+    {
+      "id": "browser-use-browser-use",
+      "title": "browser-use",
+      "title_zh": "browser-use",
+      "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "description_zh": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "authors": "browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "score": 110929,
+      "meta": {
+        "source": "github",
+        "stars": "110,929",
+        "language": "Python",
+        "repo": "browser-use/browser-use",
+        "owner": "browser-use",
+        "repoName": "browser-use"
+      }
+    },
+    {
+      "id": "K-Dense-AI-scientific-agent-skills",
+      "title": "scientific-agent-skills",
+      "title_zh": "scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "description_zh": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "authors": "K-Dense-AI",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "score": 34699,
+      "meta": {
+        "source": "github",
+        "stars": "34,699",
+        "language": "Python",
+        "repo": "K-Dense-AI/scientific-agent-skills",
+        "owner": "K-Dense-AI",
+        "repoName": "scientific-agent-skills"
+      }
+    },
+    {
+      "id": "marin-community-marin",
+      "title": "marin",
+      "title_zh": "marin",
+      "description": "Open-source framework for the research and development of foundation models.",
+      "description_zh": "Open-source framework for the research and development of foundation models.",
+      "authors": "marin-community",
+      "url": "https://github.com/marin-community/marin",
+      "score": 2435,
+      "meta": {
+        "source": "github",
+        "stars": "2,435",
+        "language": "Python",
+        "repo": "marin-community/marin",
+        "owner": "marin-community",
+        "repoName": "marin"
       }
     }
   ]
