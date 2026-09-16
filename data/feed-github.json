@@ -1,20 +1,20 @@
 {
   "source": "github",
-  "updatedAt": "2026-09-15T22:25:12.411Z",
-  "count": 14,
+  "updatedAt": "2026-09-16T22:17:55.323Z",
+  "count": 15,
   "items": [
     {
       "id": "alibaba-open-code-review",
       "title": "open-code-review",
       "title_zh": "open-code-review",
       "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "description_zh": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "description_zh": "快速、高效，经过阿里巴巴规模的实战考验。混合架构代码审查工具：确定性管道+LLM代理，精确的行级注释，内置多语言规则集（NPE，线程安全，XSS，SQL注入），兼容OpenAI和Anthropic。",
       "authors": "alibaba",
       "url": "https://github.com/alibaba/open-code-review",
-      "score": 28369,
+      "score": 31627,
       "meta": {
         "source": "github",
-        "stars": "28,369",
+        "stars": "31,627",
         "language": "Go",
         "repo": "alibaba/open-code-review",
         "owner": "alibaba",
@@ -22,17 +22,35 @@
       }
     },
     {
+      "id": "cloudflare-security-audit-skill",
+      "title": "security-audit-skill",
+      "title_zh": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证的机器可读结果",
+      "authors": "cloudflare",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "score": 6993,
+      "meta": {
+        "source": "github",
+        "stars": "6,993",
+        "language": "JavaScript",
+        "repo": "cloudflare/security-audit-skill",
+        "owner": "cloudflare",
+        "repoName": "security-audit-skill"
+      }
+    },
+    {
       "id": "JustVugg-colibri",
       "title": "colibri",
       "title_zh": "colibri",
       "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "description_zh": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "description_zh": "在您已经拥有的硬件上运行前沿 MoE 模型 - 纯 C、零依赖、从磁盘流式传输的专家。微小的发动机，巨大的模型。 🐦",
       "authors": "JustVugg",
       "url": "https://github.com/JustVugg/colibri",
-      "score": 33725,
+      "score": 34962,
       "meta": {
         "source": "github",
-        "stars": "33,725",
+        "stars": "34,962",
         "language": "C",
         "repo": "JustVugg/colibri",
         "owner": "JustVugg",
@@ -40,17 +58,89 @@
       }
     },
     {
+      "id": "abue-ammar-tinycast",
+      "title": "tinycast",
+      "title_zh": "tinycast",
+      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+      "description_zh": "Tinycast — 一个小型、完全原生的 macOS 启动器、热键和剪贴板历史记录。",
+      "authors": "abue-ammar",
+      "url": "https://github.com/abue-ammar/tinycast",
+      "score": 5537,
+      "meta": {
+        "source": "github",
+        "stars": "5,537",
+        "language": "Swift",
+        "repo": "abue-ammar/tinycast",
+        "owner": "abue-ammar",
+        "repoName": "tinycast"
+      }
+    },
+    {
+      "id": "jamiepine-voicebox",
+      "title": "voicebox",
+      "title_zh": "voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "description_zh": "开源人工智能语音工作室。克隆、指令、创造。",
+      "authors": "jamiepine",
+      "url": "https://github.com/jamiepine/voicebox",
+      "score": 54329,
+      "meta": {
+        "source": "github",
+        "stars": "54,329",
+        "language": "TypeScript",
+        "repo": "jamiepine/voicebox",
+        "owner": "jamiepine",
+        "repoName": "voicebox"
+      }
+    },
+    {
+      "id": "Lakr233-vphone-cli",
+      "title": "vphone-cli",
+      "title_zh": "vphone-cli",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "Lakr233",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "score": 13313,
+      "meta": {
+        "source": "github",
+        "stars": "13,313",
+        "language": "Swift",
+        "repo": "Lakr233/vphone-cli",
+        "owner": "Lakr233",
+        "repoName": "vphone-cli"
+      }
+    },
+    {
+      "id": "anthropics-knowledge-work-plugins",
+      "title": "knowledge-work-plugins",
+      "title_zh": "knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件存储库",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "score": 24265,
+      "meta": {
+        "source": "github",
+        "stars": "24,265",
+        "language": "Python",
+        "repo": "anthropics/knowledge-work-plugins",
+        "owner": "anthropics",
+        "repoName": "knowledge-work-plugins"
+      }
+    },
+    {
       "id": "ever-co-ever-gauzy",
       "title": "ever-gauzy",
       "title_zh": "ever-gauzy",
       "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
-      "description_zh": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
+      "description_zh": "Ever® Gauzy™ - 开放式业务管理平台 (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
       "authors": "ever-co",
       "url": "https://github.com/ever-co/ever-gauzy",
-      "score": 6574,
+      "score": 7266,
       "meta": {
         "source": "github",
-        "stars": "6,574",
+        "stars": "7,266",
         "language": "TypeScript",
         "repo": "ever-co/ever-gauzy",
         "owner": "ever-co",
@@ -58,75 +148,21 @@
       }
     },
     {
-      "id": "debpalash-VoiceStudio",
-      "title": "VoiceStudio",
-      "title_zh": "VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "description_zh": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "authors": "debpalash",
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "score": 30846,
+      "id": "ankitects-anki",
+      "title": "anki",
+      "title_zh": "anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "description_zh": "Anki 是一款智能间隔重复抽认卡程序",
+      "authors": "ankitects",
+      "url": "https://github.com/ankitects/anki",
+      "score": 30821,
       "meta": {
         "source": "github",
-        "stars": "30,846",
-        "language": "Python",
-        "repo": "debpalash/VoiceStudio",
-        "owner": "debpalash",
-        "repoName": "VoiceStudio"
-      }
-    },
-    {
-      "id": "Homebrew-BrewUI",
-      "title": "BrewUI",
-      "title_zh": "BrewUI",
-      "description": "📺 Homebrew's official macOS GUI",
-      "description_zh": "📺 Homebrew's official macOS GUI",
-      "authors": "Homebrew",
-      "url": "https://github.com/Homebrew/BrewUI",
-      "score": 1301,
-      "meta": {
-        "source": "github",
-        "stars": "1,301",
-        "language": "Swift",
-        "repo": "Homebrew/BrewUI",
-        "owner": "Homebrew",
-        "repoName": "BrewUI"
-      }
-    },
-    {
-      "id": "melgarafael-DeskcommCRM",
-      "title": "DeskcommCRM",
-      "title_zh": "DeskcommCRM",
-      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
-      "description_zh": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
-      "authors": "melgarafael",
-      "url": "https://github.com/melgarafael/DeskcommCRM",
-      "score": 2780,
-      "meta": {
-        "source": "github",
-        "stars": "2,780",
-        "language": "TypeScript",
-        "repo": "melgarafael/DeskcommCRM",
-        "owner": "melgarafael",
-        "repoName": "DeskcommCRM"
-      }
-    },
-    {
-      "id": "alphaXiv-OpenResearch",
-      "title": "OpenResearch",
-      "title_zh": "OpenResearch",
-      "description": "Turn your coding agents into research agents",
-      "description_zh": "Turn your coding agents into research agents",
-      "authors": "alphaXiv",
-      "url": "https://github.com/alphaXiv/OpenResearch",
-      "score": 3277,
-      "meta": {
-        "source": "github",
-        "stars": "3,277",
+        "stars": "30,821",
         "language": "Rust",
-        "repo": "alphaXiv/OpenResearch",
-        "owner": "alphaXiv",
-        "repoName": "OpenResearch"
+        "repo": "ankitects/anki",
+        "owner": "ankitects",
+        "repoName": "anki"
       }
     },
     {
@@ -134,13 +170,13 @@
       "title": "ghidra",
       "title_zh": "ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "description_zh": "Ghidra is a software reverse engineering (SRE) framework",
+      "description_zh": "Ghidra 是一个软件逆向工程 (SRE) 框架",
       "authors": "NationalSecurityAgency",
       "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "score": 76648,
+      "score": 77716,
       "meta": {
         "source": "github",
-        "stars": "76,648",
+        "stars": "77,716",
         "language": "Java",
         "repo": "NationalSecurityAgency/ghidra",
         "owner": "NationalSecurityAgency",
@@ -148,111 +184,93 @@
       }
     },
     {
-      "id": "danny-avila-LibreChat",
-      "title": "LibreChat",
-      "title_zh": "LibreChat",
-      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
-      "description_zh": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
-      "authors": "danny-avila",
-      "url": "https://github.com/danny-avila/LibreChat",
-      "score": 43780,
+      "id": "anthropics-claude-code",
+      "title": "claude-code",
+      "title_zh": "claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "description_zh": "Claude Code 是一种代理编码工具，它位于您的终端中，了解您的代码库，并通过执行例行任务、解释复杂代码和处理 git 工作流程来帮助您更快地编码 - 所有这些都通过自然语言命令进行。",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/claude-code",
+      "score": 145472,
       "meta": {
         "source": "github",
-        "stars": "43,780",
+        "stars": "145,472",
         "language": "TypeScript",
-        "repo": "danny-avila/LibreChat",
-        "owner": "danny-avila",
-        "repoName": "LibreChat"
+        "repo": "anthropics/claude-code",
+        "owner": "anthropics",
+        "repoName": "claude-code"
       }
     },
     {
-      "id": "pacifio-atlas",
-      "title": "atlas",
-      "title_zh": "atlas",
-      "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
-      "description_zh": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
-      "authors": "pacifio",
-      "url": "https://github.com/pacifio/atlas",
-      "score": 4575,
+      "id": "roboflow-supervision",
+      "title": "supervision",
+      "title_zh": "supervision",
+      "description": "We write your reusable computer vision tools. 💜",
+      "description_zh": "我们为您编写可重复使用的计算机视觉工具。 💜",
+      "authors": "roboflow",
+      "url": "https://github.com/roboflow/supervision",
+      "score": 50570,
       "meta": {
         "source": "github",
-        "stars": "4,575",
-        "language": "Rust",
-        "repo": "pacifio/atlas",
-        "owner": "pacifio",
-        "repoName": "atlas"
-      }
-    },
-    {
-      "id": "MG1937-ASC",
-      "title": "ASC",
-      "title_zh": "ASC",
-      "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
-      "description_zh": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
-      "authors": "MG1937",
-      "url": "https://github.com/MG1937/ASC",
-      "score": 1121,
-      "meta": {
-        "source": "github",
-        "stars": "1,121",
+        "stars": "50,570",
         "language": "Python",
-        "repo": "MG1937/ASC",
-        "owner": "MG1937",
-        "repoName": "ASC"
+        "repo": "roboflow/supervision",
+        "owner": "roboflow",
+        "repoName": "supervision"
       }
     },
     {
-      "id": "addyosmani-agent-skills",
-      "title": "agent-skills",
-      "title_zh": "agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "description_zh": "Production-grade engineering skills for AI coding agents.",
-      "authors": "addyosmani",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "score": 94730,
+      "id": "alphaXiv-OpenResearch",
+      "title": "OpenResearch",
+      "title_zh": "OpenResearch",
+      "description": "Turn your coding agents into research agents",
+      "description_zh": "将您的编码代理转变为研究代理",
+      "authors": "alphaXiv",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "score": 4349,
       "meta": {
         "source": "github",
-        "stars": "94,730",
-        "language": "JavaScript",
-        "repo": "addyosmani/agent-skills",
-        "owner": "addyosmani",
-        "repoName": "agent-skills"
-      }
-    },
-    {
-      "id": "tonhowtf-omniget",
-      "title": "omniget",
-      "title_zh": "omniget",
-      "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
-      "description_zh": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
-      "authors": "tonhowtf",
-      "url": "https://github.com/tonhowtf/omniget",
-      "score": 12840,
-      "meta": {
-        "source": "github",
-        "stars": "12,840",
+        "stars": "4,349",
         "language": "Rust",
-        "repo": "tonhowtf/omniget",
-        "owner": "tonhowtf",
-        "repoName": "omniget"
+        "repo": "alphaXiv/OpenResearch",
+        "owner": "alphaXiv",
+        "repoName": "OpenResearch"
       }
     },
     {
-      "id": "earendil-works-pi",
-      "title": "pi",
-      "title_zh": "pi",
-      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-      "description_zh": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-      "authors": "earendil-works",
-      "url": "https://github.com/earendil-works/pi",
-      "score": 105652,
+      "id": "supabase-supabase",
+      "title": "supabase",
+      "title_zh": "supabase",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "description_zh": "Postgres 开发平台。 Supabase 为您提供专用的 Postgres 数据库来构建您的 Web、移动和 AI 应用程序。",
+      "authors": "supabase",
+      "url": "https://github.com/supabase/supabase",
+      "score": 109665,
       "meta": {
         "source": "github",
-        "stars": "105,652",
+        "stars": "109,665",
         "language": "TypeScript",
-        "repo": "earendil-works/pi",
-        "owner": "earendil-works",
-        "repoName": "pi"
+        "repo": "supabase/supabase",
+        "owner": "supabase",
+        "repoName": "supabase"
+      }
+    },
+    {
+      "id": "rlaope-oh-my-hermes",
+      "title": "oh-my-hermes",
+      "title_zh": "oh-my-hermes",
+      "description": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages",
+      "description_zh": "Hermes Agent 的多合一插件 ⚚ 编码智能、长期记忆系统和模型优化的工作流程包",
+      "authors": "rlaope",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "score": 2520,
+      "meta": {
+        "source": "github",
+        "stars": "2,520",
+        "language": "Python",
+        "repo": "rlaope/oh-my-hermes",
+        "owner": "rlaope",
+        "repoName": "oh-my-hermes"
       }
     }
   ]
