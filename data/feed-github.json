@@ -1,26 +1,8 @@
 {
   "source": "github",
-  "updatedAt": "2026-09-17T22:24:31.688Z",
+  "updatedAt": "2026-09-18T21:50:06.466Z",
   "count": 15,
   "items": [
-    {
-      "id": "alibaba-open-code-review",
-      "title": "open-code-review",
-      "title_zh": "open-code-review",
-      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "description_zh": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "authors": "alibaba",
-      "url": "https://github.com/alibaba/open-code-review",
-      "score": 34593,
-      "meta": {
-        "source": "github",
-        "stars": "34,593",
-        "language": "Go",
-        "repo": "alibaba/open-code-review",
-        "owner": "alibaba",
-        "repoName": "open-code-review"
-      }
-    },
     {
       "id": "cloudflare-security-audit-skill",
       "title": "security-audit-skill",
@@ -29,68 +11,14 @@
       "description_zh": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "authors": "cloudflare",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "score": 10446,
+      "score": 13434,
       "meta": {
         "source": "github",
-        "stars": "10,446",
+        "stars": "13,434",
         "language": "JavaScript",
         "repo": "cloudflare/security-audit-skill",
         "owner": "cloudflare",
         "repoName": "security-audit-skill"
-      }
-    },
-    {
-      "id": "addyosmani-agent-skills",
-      "title": "agent-skills",
-      "title_zh": "agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "description_zh": "Production-grade engineering skills for AI coding agents.",
-      "authors": "addyosmani",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "score": 95799,
-      "meta": {
-        "source": "github",
-        "stars": "95,799",
-        "language": "JavaScript",
-        "repo": "addyosmani/agent-skills",
-        "owner": "addyosmani",
-        "repoName": "agent-skills"
-      }
-    },
-    {
-      "id": "Tencent-BrowserSkill",
-      "title": "BrowserSkill",
-      "title_zh": "BrowserSkill",
-      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
-      "description_zh": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
-      "authors": "Tencent",
-      "url": "https://github.com/Tencent/BrowserSkill",
-      "score": 4059,
-      "meta": {
-        "source": "github",
-        "stars": "4,059",
-        "language": "TypeScript",
-        "repo": "Tencent/BrowserSkill",
-        "owner": "Tencent",
-        "repoName": "BrowserSkill"
-      }
-    },
-    {
-      "id": "alphaXiv-OpenResearch",
-      "title": "OpenResearch",
-      "title_zh": "OpenResearch",
-      "description": "Turn your coding agents into research agents",
-      "description_zh": "Turn your coding agents into research agents",
-      "authors": "alphaXiv",
-      "url": "https://github.com/alphaXiv/OpenResearch",
-      "score": 4908,
-      "meta": {
-        "source": "github",
-        "stars": "4,908",
-        "language": "Rust",
-        "repo": "alphaXiv/OpenResearch",
-        "owner": "alphaXiv",
-        "repoName": "OpenResearch"
       }
     },
     {
@@ -101,10 +29,10 @@
       "description_zh": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "authors": "anthropics",
       "url": "https://github.com/anthropics/claude-code",
-      "score": 145834,
+      "score": 146249,
       "meta": {
         "source": "github",
-        "stars": "145,834",
+        "stars": "146,249",
         "language": "TypeScript",
         "repo": "anthropics/claude-code",
         "owner": "anthropics",
@@ -112,111 +40,21 @@
       }
     },
     {
-      "id": "NationalSecurityAgency-ghidra",
-      "title": "ghidra",
-      "title_zh": "ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "description_zh": "Ghidra is a software reverse engineering (SRE) framework",
-      "authors": "NationalSecurityAgency",
-      "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "score": 78430,
+      "id": "alibaba-open-code-review",
+      "title": "open-code-review",
+      "title_zh": "open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "description_zh": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "authors": "alibaba",
+      "url": "https://github.com/alibaba/open-code-review",
+      "score": 36569,
       "meta": {
         "source": "github",
-        "stars": "78,430",
-        "language": "Java",
-        "repo": "NationalSecurityAgency/ghidra",
-        "owner": "NationalSecurityAgency",
-        "repoName": "ghidra"
-      }
-    },
-    {
-      "id": "anthropics-knowledge-work-plugins",
-      "title": "knowledge-work-plugins",
-      "title_zh": "knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "description_zh": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "score": 24538,
-      "meta": {
-        "source": "github",
-        "stars": "24,538",
-        "language": "Python",
-        "repo": "anthropics/knowledge-work-plugins",
-        "owner": "anthropics",
-        "repoName": "knowledge-work-plugins"
-      }
-    },
-    {
-      "id": "Tencent-WeKnora",
-      "title": "WeKnora",
-      "title_zh": "WeKnora",
-      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-      "description_zh": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-      "authors": "Tencent",
-      "url": "https://github.com/Tencent/WeKnora",
-      "score": 26146,
-      "meta": {
-        "source": "github",
-        "stars": "26,146",
+        "stars": "36,569",
         "language": "Go",
-        "repo": "Tencent/WeKnora",
-        "owner": "Tencent",
-        "repoName": "WeKnora"
-      }
-    },
-    {
-      "id": "abue-ammar-tinycast",
-      "title": "tinycast",
-      "title_zh": "tinycast",
-      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
-      "description_zh": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
-      "authors": "abue-ammar",
-      "url": "https://github.com/abue-ammar/tinycast",
-      "score": 6113,
-      "meta": {
-        "source": "github",
-        "stars": "6,113",
-        "language": "Swift",
-        "repo": "abue-ammar/tinycast",
-        "owner": "abue-ammar",
-        "repoName": "tinycast"
-      }
-    },
-    {
-      "id": "cilium-cilium",
-      "title": "cilium",
-      "title_zh": "cilium",
-      "description": "eBPF-based Networking, Security, and Observability",
-      "description_zh": "eBPF-based Networking, Security, and Observability",
-      "authors": "cilium",
-      "url": "https://github.com/cilium/cilium",
-      "score": 25250,
-      "meta": {
-        "source": "github",
-        "stars": "25,250",
-        "language": "Go",
-        "repo": "cilium/cilium",
-        "owner": "cilium",
-        "repoName": "cilium"
-      }
-    },
-    {
-      "id": "jamiepine-voicebox",
-      "title": "voicebox",
-      "title_zh": "voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "description_zh": "The open-source AI voice studio. Clone, dictate, create.",
-      "authors": "jamiepine",
-      "url": "https://github.com/jamiepine/voicebox",
-      "score": 54810,
-      "meta": {
-        "source": "github",
-        "stars": "54,810",
-        "language": "TypeScript",
-        "repo": "jamiepine/voicebox",
-        "owner": "jamiepine",
-        "repoName": "voicebox"
+        "repo": "alibaba/open-code-review",
+        "owner": "alibaba",
+        "repoName": "open-code-review"
       }
     },
     {
@@ -227,10 +65,10 @@
       "description_zh": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "authors": "affaan-m",
       "url": "https://github.com/affaan-m/ECC",
-      "score": 261085,
+      "score": 261969,
       "meta": {
         "source": "github",
-        "stars": "261,085",
+        "stars": "261,969",
         "language": "JavaScript",
         "repo": "affaan-m/ECC",
         "owner": "affaan-m",
@@ -238,39 +76,201 @@
       }
     },
     {
-      "id": "roboflow-supervision",
-      "title": "supervision",
-      "title_zh": "supervision",
-      "description": "We write your reusable computer vision tools. 💜",
-      "description_zh": "We write your reusable computer vision tools. 💜",
-      "authors": "roboflow",
-      "url": "https://github.com/roboflow/supervision",
-      "score": 50784,
+      "id": "Tencent-BrowserSkill",
+      "title": "BrowserSkill",
+      "title_zh": "BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "description_zh": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "authors": "Tencent",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "score": 5228,
       "meta": {
         "source": "github",
-        "stars": "50,784",
-        "language": "Python",
-        "repo": "roboflow/supervision",
-        "owner": "roboflow",
-        "repoName": "supervision"
+        "stars": "5,228",
+        "language": "TypeScript",
+        "repo": "Tencent/BrowserSkill",
+        "owner": "Tencent",
+        "repoName": "BrowserSkill"
       }
     },
     {
-      "id": "JustVugg-colibri",
-      "title": "colibri",
-      "title_zh": "colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "description_zh": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "authors": "JustVugg",
-      "url": "https://github.com/JustVugg/colibri",
-      "score": 35715,
+      "id": "addyosmani-agent-skills",
+      "title": "agent-skills",
+      "title_zh": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "description_zh": "Production-grade engineering skills for AI coding agents.",
+      "authors": "addyosmani",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "score": 96353,
       "meta": {
         "source": "github",
-        "stars": "35,715",
-        "language": "C",
-        "repo": "JustVugg/colibri",
-        "owner": "JustVugg",
-        "repoName": "colibri"
+        "stars": "96,353",
+        "language": "JavaScript",
+        "repo": "addyosmani/agent-skills",
+        "owner": "addyosmani",
+        "repoName": "agent-skills"
+      }
+    },
+    {
+      "id": "TencentCloud-Octop",
+      "title": "Octop",
+      "title_zh": "Octop",
+      "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "description_zh": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "authors": "TencentCloud",
+      "url": "https://github.com/TencentCloud/Octop",
+      "score": 3924,
+      "meta": {
+        "source": "github",
+        "stars": "3,924",
+        "language": "Python",
+        "repo": "TencentCloud/Octop",
+        "owner": "TencentCloud",
+        "repoName": "Octop"
+      }
+    },
+    {
+      "id": "Fission-AI-OpenSpec",
+      "title": "OpenSpec",
+      "title_zh": "OpenSpec",
+      "description": "Spec-driven development (SDD) for AI coding assistants.",
+      "description_zh": "Spec-driven development (SDD) for AI coding assistants.",
+      "authors": "Fission-AI",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "score": 69298,
+      "meta": {
+        "source": "github",
+        "stars": "69,298",
+        "language": "TypeScript",
+        "repo": "Fission-AI/OpenSpec",
+        "owner": "Fission-AI",
+        "repoName": "OpenSpec"
+      }
+    },
+    {
+      "id": "ankitects-anki",
+      "title": "anki",
+      "title_zh": "anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "description_zh": "Anki is a smart spaced repetition flashcard program",
+      "authors": "ankitects",
+      "url": "https://github.com/ankitects/anki",
+      "score": 31182,
+      "meta": {
+        "source": "github",
+        "stars": "31,182",
+        "language": "Rust",
+        "repo": "ankitects/anki",
+        "owner": "ankitects",
+        "repoName": "anki"
+      }
+    },
+    {
+      "id": "anthropics-knowledge-work-plugins",
+      "title": "knowledge-work-plugins",
+      "title_zh": "knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "description_zh": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "score": 24852,
+      "meta": {
+        "source": "github",
+        "stars": "24,852",
+        "language": "Python",
+        "repo": "anthropics/knowledge-work-plugins",
+        "owner": "anthropics",
+        "repoName": "knowledge-work-plugins"
+      }
+    },
+    {
+      "id": "supermemoryai-supermemory",
+      "title": "supermemory",
+      "title_zh": "supermemory",
+      "description": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
+      "description_zh": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
+      "authors": "supermemoryai",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "score": 30232,
+      "meta": {
+        "source": "github",
+        "stars": "30,232",
+        "language": "TypeScript",
+        "repo": "supermemoryai/supermemory",
+        "owner": "supermemoryai",
+        "repoName": "supermemory"
+      }
+    },
+    {
+      "id": "tradesdontlie-tradingview-mcp",
+      "title": "tradingview-mcp",
+      "title_zh": "tradingview-mcp",
+      "description": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+      "description_zh": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+      "authors": "tradesdontlie",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp",
+      "score": 6443,
+      "meta": {
+        "source": "github",
+        "stars": "6,443",
+        "language": "JavaScript",
+        "repo": "tradesdontlie/tradingview-mcp",
+        "owner": "tradesdontlie",
+        "repoName": "tradingview-mcp"
+      }
+    },
+    {
+      "id": "rustfs-rustfs",
+      "title": "rustfs",
+      "title_zh": "rustfs",
+      "description": "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.",
+      "description_zh": "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.",
+      "authors": "rustfs",
+      "url": "https://github.com/rustfs/rustfs",
+      "score": 33122,
+      "meta": {
+        "source": "github",
+        "stars": "33,122",
+        "language": "Rust",
+        "repo": "rustfs/rustfs",
+        "owner": "rustfs",
+        "repoName": "rustfs"
+      }
+    },
+    {
+      "id": "supabase-supabase",
+      "title": "supabase",
+      "title_zh": "supabase",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "description_zh": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "authors": "supabase",
+      "url": "https://github.com/supabase/supabase",
+      "score": 110116,
+      "meta": {
+        "source": "github",
+        "stars": "110,116",
+        "language": "TypeScript",
+        "repo": "supabase/supabase",
+        "owner": "supabase",
+        "repoName": "supabase"
+      }
+    },
+    {
+      "id": "coder-coder",
+      "title": "coder",
+      "title_zh": "coder",
+      "description": "Secure environments for developers and their agents",
+      "description_zh": "Secure environments for developers and their agents",
+      "authors": "coder",
+      "url": "https://github.com/coder/coder",
+      "score": 15250,
+      "meta": {
+        "source": "github",
+        "stars": "15,250",
+        "language": "Go",
+        "repo": "coder/coder",
+        "owner": "coder",
+        "repoName": "coder"
       }
     }
   ]
