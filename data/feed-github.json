@@ -1,24 +1,42 @@
 {
   "source": "github",
-  "updatedAt": "2026-09-24T22:43:30.887Z",
-  "count": 14,
+  "updatedAt": "2026-09-25T22:46:41.936Z",
+  "count": 15,
   "items": [
     {
-      "id": "rohitg00-ai-engineering-from-scratch",
-      "title": "ai-engineering-from-scratch",
-      "title_zh": "ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "description_zh": "Learn it. Build it. Ship it for others.",
-      "authors": "rohitg00",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "score": 56485,
+      "id": "paperclipai-paperclip",
+      "title": "paperclip",
+      "title_zh": "paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "description_zh": "每个人都用它来管理工作中的座席的开源应用程序",
+      "authors": "paperclipai",
+      "url": "https://github.com/paperclipai/paperclip",
+      "score": 84785,
       "meta": {
         "source": "github",
-        "stars": "56,485",
+        "stars": "84,785",
+        "language": "TypeScript",
+        "repo": "paperclipai/paperclip",
+        "owner": "paperclipai",
+        "repoName": "paperclip"
+      }
+    },
+    {
+      "id": "anthropics-claude-plugins-official",
+      "title": "claude-plugins-official",
+      "title_zh": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "description_zh": "由 Anthropic 管理的官方高品质 Claude 代码插件目录。",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "score": 36900,
+      "meta": {
+        "source": "github",
+        "stars": "36,900",
         "language": "Python",
-        "repo": "rohitg00/ai-engineering-from-scratch",
-        "owner": "rohitg00",
-        "repoName": "ai-engineering-from-scratch"
+        "repo": "anthropics/claude-plugins-official",
+        "owner": "anthropics",
+        "repoName": "claude-plugins-official"
       }
     },
     {
@@ -26,13 +44,13 @@
       "title": "hindsight",
       "title_zh": "hindsight",
       "description": "Hindsight: Agent Memory That Learns",
-      "description_zh": "Hindsight: Agent Memory That Learns",
+      "description_zh": "事后诸葛亮：智能体的学习记忆",
       "authors": "vectorize-io",
       "url": "https://github.com/vectorize-io/hindsight",
-      "score": 27725,
+      "score": 29743,
       "meta": {
         "source": "github",
-        "stars": "27,725",
+        "stars": "29,743",
         "language": "Python",
         "repo": "vectorize-io/hindsight",
         "owner": "vectorize-io",
@@ -40,17 +58,53 @@
       }
     },
     {
+      "id": "obra-superpowers",
+      "title": "superpowers",
+      "title_zh": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_zh": "有效的代理技能框架和软件开发方法。",
+      "authors": "obra",
+      "url": "https://github.com/obra/superpowers",
+      "score": 291634,
+      "meta": {
+        "source": "github",
+        "stars": "291,634",
+        "language": "Shell",
+        "repo": "obra/superpowers",
+        "owner": "obra",
+        "repoName": "superpowers"
+      }
+    },
+    {
+      "id": "mattpocock-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "description_zh": "真正工程师的技能。直接来自我的 .agents 目录。",
+      "authors": "mattpocock",
+      "url": "https://github.com/mattpocock/skills",
+      "score": 269696,
+      "meta": {
+        "source": "github",
+        "stars": "269,696",
+        "language": "Shell",
+        "repo": "mattpocock/skills",
+        "owner": "mattpocock",
+        "repoName": "skills"
+      }
+    },
+    {
       "id": "dream-num-univer",
       "title": "univer",
       "title_zh": "univer",
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-      "description_zh": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "description_zh": "AI 代理的 Office 工具 — 在一个运行时中处理电子表格、文档、幻灯片、画布、关系表和 PDF。",
       "authors": "dream-num",
       "url": "https://github.com/dream-num/univer",
-      "score": 17522,
+      "score": 18386,
       "meta": {
         "source": "github",
-        "stars": "17,522",
+        "stars": "18,386",
         "language": "TypeScript",
         "repo": "dream-num/univer",
         "owner": "dream-num",
@@ -58,17 +112,125 @@
       }
     },
     {
+      "id": "anthropics-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "Public repository for Agent Skills",
+      "description_zh": "代理技能的公共存储库",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/skills",
+      "score": 178276,
+      "meta": {
+        "source": "github",
+        "stars": "178,276",
+        "language": "Python",
+        "repo": "anthropics/skills",
+        "owner": "anthropics",
+        "repoName": "skills"
+      }
+    },
+    {
+      "id": "androoAGI-starnet",
+      "title": "starnet",
+      "title_zh": "starnet",
+      "description": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
+      "description_zh": "一个活生生的像素艺术站，真正的人工智能代理在这里做真正的工作。本地优先的桌面代理工具 - 带上您自己的钥匙，观看您的工作人员实际运行。",
+      "authors": "androoAGI",
+      "url": "https://github.com/androoAGI/starnet",
+      "score": 451,
+      "meta": {
+        "source": "github",
+        "stars": "451",
+        "language": "JavaScript",
+        "repo": "androoAGI/starnet",
+        "owner": "androoAGI",
+        "repoName": "starnet"
+      }
+    },
+    {
+      "id": "derv82-wifit3",
+      "title": "wifit3",
+      "title_zh": "wifit3",
+      "description": "Wifite but USB-only & cross-platform.",
+      "description_zh": "Wifite，但仅限 USB 且跨平台。",
+      "authors": "derv82",
+      "url": "https://github.com/derv82/wifit3",
+      "score": 891,
+      "meta": {
+        "source": "github",
+        "stars": "891",
+        "language": "Python",
+        "repo": "derv82/wifit3",
+        "owner": "derv82",
+        "repoName": "wifit3"
+      }
+    },
+    {
+      "id": "kelseyhightower-kubernetes-the-hard-way",
+      "title": "kubernetes-the-hard-way",
+      "title_zh": "kubernetes-the-hard-way",
+      "description": "Bootstrap Kubernetes the hard way. No scripts.",
+      "description_zh": "以艰难的方式引导 Kubernetes。没有脚本。",
+      "authors": "kelseyhightower",
+      "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+      "score": 50115,
+      "meta": {
+        "source": "github",
+        "stars": "50,115",
+        "language": "Mixed",
+        "repo": "kelseyhightower/kubernetes-the-hard-way",
+        "owner": "kelseyhightower",
+        "repoName": "kubernetes-the-hard-way"
+      }
+    },
+    {
+      "id": "rohitg00-ai-engineering-from-scratch",
+      "title": "ai-engineering-from-scratch",
+      "title_zh": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "description_zh": "学习它。建造它。寄给别人。",
+      "authors": "rohitg00",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "score": 57433,
+      "meta": {
+        "source": "github",
+        "stars": "57,433",
+        "language": "Python",
+        "repo": "rohitg00/ai-engineering-from-scratch",
+        "owner": "rohitg00",
+        "repoName": "ai-engineering-from-scratch"
+      }
+    },
+    {
+      "id": "shy3130-tick-stock-panel",
+      "title": "tick-stock-panel",
+      "title_zh": "tick-stock-panel",
+      "description": "TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源",
+      "description_zh": "TSP自托管、零运维的A股「选股+监控+回测」量化工作台| LLM能力驱动使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据| 个人开源",
+      "authors": "shy3130",
+      "url": "https://github.com/shy3130/tick-stock-panel",
+      "score": 5121,
+      "meta": {
+        "source": "github",
+        "stars": "5,121",
+        "language": "Python",
+        "repo": "shy3130/tick-stock-panel",
+        "owner": "shy3130",
+        "repoName": "tick-stock-panel"
+      }
+    },
+    {
       "id": "google-ax",
       "title": "ax",
       "title_zh": "ax",
       "description": "Google's open agentic orchestration runtime",
-      "description_zh": "Google's open agentic orchestration runtime",
+      "description_zh": "Google 的开放代理编排运行时",
       "authors": "google",
       "url": "https://github.com/google/ax",
-      "score": 10330,
+      "score": 11445,
       "meta": {
         "source": "github",
-        "stars": "10,330",
+        "stars": "11,445",
         "language": "Go",
         "repo": "google/ax",
         "owner": "google",
@@ -80,13 +242,13 @@
       "title": "Model-Optimizer",
       "title_zh": "Model-Optimizer",
       "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
-      "description_zh": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
+      "description_zh": "量化、蒸馏、剪枝、神经架构搜索、推测解码等 SOTA 模型优化技术的统一库。它为 TensorRT-LLM、TensorRT、vLLM 等下游部署框架压缩深度学习模型，以优化推理速度。",
       "authors": "NVIDIA",
       "url": "https://github.com/NVIDIA/Model-Optimizer",
-      "score": 4047,
+      "score": 4445,
       "meta": {
         "source": "github",
-        "stars": "4,047",
+        "stars": "4,445",
         "language": "Python",
         "repo": "NVIDIA/Model-Optimizer",
         "owner": "NVIDIA",
@@ -94,165 +256,21 @@
       }
     },
     {
-      "id": "FxEmbed-FxEmbed",
-      "title": "FxEmbed",
-      "title_zh": "FxEmbed",
-      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
-      "description_zh": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
-      "authors": "FxEmbed",
-      "url": "https://github.com/FxEmbed/FxEmbed",
-      "score": 5352,
+      "id": "pbakaus-impeccable",
+      "title": "impeccable",
+      "title_zh": "impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "description_zh": "使您的 AI 线束在设计上更加出色的设计语言。",
+      "authors": "pbakaus",
+      "url": "https://github.com/pbakaus/impeccable",
+      "score": 71168,
       "meta": {
         "source": "github",
-        "stars": "5,352",
-        "language": "TypeScript",
-        "repo": "FxEmbed/FxEmbed",
-        "owner": "FxEmbed",
-        "repoName": "FxEmbed"
-      }
-    },
-    {
-      "id": "anthropics-financial-services",
-      "title": "financial-services",
-      "title_zh": "financial-services",
-      "description": "No description available",
-      "description_zh": "No description available",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/financial-services",
-      "score": 37338,
-      "meta": {
-        "source": "github",
-        "stars": "37,338",
-        "language": "Python",
-        "repo": "anthropics/financial-services",
-        "owner": "anthropics",
-        "repoName": "financial-services"
-      }
-    },
-    {
-      "id": "HKUDS-CLI-Anything",
-      "title": "CLI-Anything",
-      "title_zh": "CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "description_zh": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "authors": "HKUDS",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "score": 50307,
-      "meta": {
-        "source": "github",
-        "stars": "50,307",
-        "language": "Python",
-        "repo": "HKUDS/CLI-Anything",
-        "owner": "HKUDS",
-        "repoName": "CLI-Anything"
-      }
-    },
-    {
-      "id": "mvt-project-mvt",
-      "title": "mvt",
-      "title_zh": "mvt",
-      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
-      "description_zh": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
-      "authors": "mvt-project",
-      "url": "https://github.com/mvt-project/mvt",
-      "score": 14713,
-      "meta": {
-        "source": "github",
-        "stars": "14,713",
-        "language": "Python",
-        "repo": "mvt-project/mvt",
-        "owner": "mvt-project",
-        "repoName": "mvt"
-      }
-    },
-    {
-      "id": "obra-superpowers",
-      "title": "superpowers",
-      "title_zh": "superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "description_zh": "An agentic skills framework & software development methodology that works.",
-      "authors": "obra",
-      "url": "https://github.com/obra/superpowers",
-      "score": 291211,
-      "meta": {
-        "source": "github",
-        "stars": "291,211",
-        "language": "Shell",
-        "repo": "obra/superpowers",
-        "owner": "obra",
-        "repoName": "superpowers"
-      }
-    },
-    {
-      "id": "strands-agents-harness-sdk",
-      "title": "harness-sdk",
-      "title_zh": "harness-sdk",
-      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
-      "description_zh": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
-      "authors": "strands-agents",
-      "url": "https://github.com/strands-agents/harness-sdk",
-      "score": 8229,
-      "meta": {
-        "source": "github",
-        "stars": "8,229",
-        "language": "Python",
-        "repo": "strands-agents/harness-sdk",
-        "owner": "strands-agents",
-        "repoName": "harness-sdk"
-      }
-    },
-    {
-      "id": "julyx10-lap",
-      "title": "lap",
-      "title_zh": "lap",
-      "description": "An offline-first photo manager for large local libraries",
-      "description_zh": "An offline-first photo manager for large local libraries",
-      "authors": "julyx10",
-      "url": "https://github.com/julyx10/lap",
-      "score": 2847,
-      "meta": {
-        "source": "github",
-        "stars": "2,847",
-        "language": "Vue",
-        "repo": "julyx10/lap",
-        "owner": "julyx10",
-        "repoName": "lap"
-      }
-    },
-    {
-      "id": "superdesigndev-treg",
-      "title": "treg",
-      "title_zh": "treg",
-      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
-      "description_zh": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
-      "authors": "superdesigndev",
-      "url": "https://github.com/superdesigndev/treg",
-      "score": 3136,
-      "meta": {
-        "source": "github",
-        "stars": "3,136",
-        "language": "Python",
-        "repo": "superdesigndev/treg",
-        "owner": "superdesigndev",
-        "repoName": "treg"
-      }
-    },
-    {
-      "id": "leejet-stable-diffusion.cpp",
-      "title": "stable-diffusion.cpp",
-      "title_zh": "stable-diffusion.cpp",
-      "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
-      "description_zh": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
-      "authors": "leejet",
-      "url": "https://github.com/leejet/stable-diffusion.cpp",
-      "score": 7228,
-      "meta": {
-        "source": "github",
-        "stars": "7,228",
-        "language": "C++",
-        "repo": "leejet/stable-diffusion.cpp",
-        "owner": "leejet",
-        "repoName": "stable-diffusion.cpp"
+        "stars": "71,168",
+        "language": "JavaScript",
+        "repo": "pbakaus/impeccable",
+        "owner": "pbakaus",
+        "repoName": "impeccable"
       }
     }
   ]
