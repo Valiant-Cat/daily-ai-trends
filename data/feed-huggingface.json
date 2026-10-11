@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-10-10T22:54:32.198Z",
+  "updatedAt": "2026-10-11T23:07:35.489Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "扩散和自回归（AR）长期以来一直被视为不同类别的生成模型，扩散专门针对连续领域，而 AR 专门针对离散标记。最近的工作试图结合这两种模型的优点，并且每种混合模型都通过设计固定了其解码时间表。在本文中，我们询问是否可以在以固定步数进行解码之前预测一种模型的解码时间表的性能。我们将扩散、AR 和之间的模型描述为一个腐败网格上的路径，并将调度的成本定义为其并行步骤丢弃的依赖性。成本表明零成本计划的最少步骤是由数据的几何形状设置的，对于令牌和连续字段也是如此。特别是，对于图上马尔可夫且沿其路径相关的数据，最少的步骤等于图的树深度，其与序列的长度呈对数关系，与网格的边长呈线性关系。由于步数少于树深度，每个调度都会付出正成本，我们在解码之前使用根据预训练权重估计的成对依赖核来预测其排名。在文本生成、图像生成和视频生成中，我们验证了关于不同指标和基准下不同调度的排名的大部分预测。因此，这项工作为未来 AR 模型、扩散模型以及介于两者之间的任何模型的解码提供了设计原则。我们的代码可在 https://github.com/TSUITUENYUE/The-Lattice-of-Transition-Laws 获取。",
       "authors": "T. Y. Tsui, Jiatao Gu, Lingjie Liu",
       "url": "https://huggingface.co/papers/2610.11216",
-      "score": 1,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "5",
         "paperId": "2610.11216"
       }
     },
@@ -26,10 +26,10 @@
       "description_zh": "这项工作评估了协同进化通信协议从 2D 模拟到 3D 物理环境的直接转移，而无需重新训练网络权重。两个 e-puck 型机器人由具有剩余连接的 GRU 网络控制，在带有社交信号的食物寻找任务中进行了评估。感觉和运动翻译层需要进行三项校正才能实现稳定的物理操作，包括基于训练的剩余权重中可测量的不对称性来校准饥饿项。即使进行了这些修正，转移仍然是部分和不对称的：一种试剂到达了三十个测试种子中的一颗的食物源，而另一种则没有到达任何种子中。任务成功是通过两个智能体到达食物区域来衡量的。另一项实验在社交渠道中结合了明确的方向信息，使接收代理的轨迹发生了可观察到的变化，并在几个特定情况下得到了改进。然而，这些改进不足以让第二个智能体到达食物源，这表明这种限制可能不仅仅可以通过信号翻译来解释，还可以通过在新的物理限制下导航的能力来解释。结果表明，紧急通信的成功转移可能不仅取决于保护信号过��本身，还取决于保护协议演化的生态和航行条件。",
       "authors": "Fernando Montes-Gonzalez",
       "url": "https://huggingface.co/papers/2609.38527",
-      "score": 0,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "4",
         "paperId": "2609.38527"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "这项工作研究了两个机器人代理之间共同进化的通信机制从离散的二维 (2D) 模拟器到具有真实物理 (3D) 的三维模拟器的转移。该研究的重点是在 2D 环境中共同进化的通信机制在转移到基于物理的 3D 模拟器后是否仍保留其功能角色。为了支持这一分析，我们检查了剧集时间预算、社交线索以及两个共同进化角色之间的不对称性的影响。结果表明，成功率随着评估的时间预算近似线性增加，没有证据表明 2,000 到 6,000 个物理步骤之间存在平台期，这表明基于较短事件的评估可能会低估经过训练的控制器的性能。在这两个模拟器中，社交提示主要起到堵塞辅助机制的作用，而不是导航指南，尽管在 2D 中效果更明显。对八次独立进化运行的分析揭示了一致的不对称方向，尽管其大小在不同运行中有所不同。控制代理之间的处理顺序使我们能够排除物理引擎的影响。最后，根据可能导致转移后观察到的剩余绩效差距的因素对结果进行了讨论。",
       "authors": "Fernando Montes-Gonzalez",
       "url": "https://huggingface.co/papers/2610.09280",
-      "score": 0,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "4",
         "paperId": "2610.09280"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "长期编码代理需要及时纠正，但当反馈误判正在进行的工作或未能解决根本问题时，反馈可能无效甚至有害。现有的批评者专注于评估轨迹和生成反馈，但很少跟踪反馈后发生的情况。我们提出了 Opera，一个口头批评框架，它将每次纠正视为一个持久的注释，直到诊断出的问题得到解决。 Opera 决定何时通过定期和事件驱动的触发器进行审查，诊断类型化操作员的问题，在交付前根据可见证据审核反馈，并跟踪代理的后续操作以区分单纯的合规性和实际解决方案。作为测试时批评者，Opera 在四个策略模型中的 Terminal-Bench 2.1（SWE-Bench Pro 子集）和 DeepSWE v1.1 上分别将非批评者代理的解决率提高了 12.4、15.0 和 8.9 个百分点，并在所有三个基准上实现了竞争批评者基线中最高的平均解决率，并且在政策批评本身时也改进了政策模型。除了推理之外，Opera 引导的推出还提供了近似策略上的训练数据：对 Qwen3.5-9B 进行微调，可以将其在保留的 SWE-Bench Pro 存储库上的解析率提高了 10.2 个百分点，而在推理时没有批评，匹配对来自更强模型的推出的微调，同时在切换工具时保持其性能，即从 Openhands 到 Terminus-2，后者会大大降低性能。我们的代码位于：https://github.com/dongyuanjushi/Opera。",
       "authors": "Kai Mei, Zhiyuan Hu, Yutong Dai, Juntao Tan, Yifan Zhang, Dingjie Song, Dimitris N. Metaxas, Silvio Savarese, Ran Xu, Zeyuan Chen",
       "url": "https://huggingface.co/papers/2609.33987",
-      "score": 10,
+      "score": 14,
       "meta": {
         "source": "huggingface",
-        "upvotes": "10",
+        "upvotes": "14",
         "paperId": "2609.33987"
       }
     },
@@ -68,13 +68,13 @@
       "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
       "title_zh": "技能星座：在 GitHub 上追踪代理技能的供应链",
       "description": "Agent skills are SKILL.md instructions and scripts that AI coding agents such as Claude Code and Codex run with the permissions of their user. Developers share skills by copying them between repositories, which makes them a software supply chain without a registry, versions or provenance. The origin of a copied skill, the reach of a security fix and the repositories that warrant review are therefore unknown. Studies that record which repositories hold a skill at a single point in time cannot reveal who copied it from whom. We contribute the first dated copy network of agent skills, built from the git history of every SKILL.md in GitSkills and covering 2,193,119 skill adoptions across GitHub, together with an interactive viewer. A few repositories are the source of almost all copies, and GitHub stars do not identify them. Skill copies almost never change with their source, and a fix at the source therefore rarely reaches them. We fit a model of which repositories others copy from and use it to rank repositories for audit. Reviewing the 100 repositories it ranks highest prevents 14.9% of later adoptions of high-risk skills, against 0.5% for the 100 most starred, which gives security engineers a short list to check before a skill spreads. Platforms should therefore distribute versioned references rather than copies. Project Website: https://fahdseddik.github.io/Skill-Constellations/",
-      "description_zh": "代理技能是 AI 编码代理（例如 Claude Code 和 Codex）在其用户权限下运行的 SKILL.md 指令和脚本。开发人员通过在存储库之间复制技能来共享技能，这使得它们成为一个没有注册表、版本或出处的软件供应链。因此，复制技能的来源、安全修复的范围以及需要审查的存储库都是未知的。记录哪些存储库在某个时间点拥有某项技能的研究无法揭示谁从谁那里复制了该技能。我们贡献了第一个过时的代理技能副本网络，该网络是根据 GitSkills 中每个 SKILL.md 的 git 历史记录构建的，涵盖 GitHub 上的 2,193,119 项技能采用情况，以及交互式查看器。少数存储库是几乎所有副本的来源，并且 GitHub 星星不会识别它们。技能副本几乎不会随其来源而改变，因此很少能对来源进行修复。我们拟合了其他人从中复制的存储库的模型，并使用它对存储库进行排名以进行审核。审查排名最高的 100 个存储库，可以防止 14.9% 的高风险技能日后被采用，而排名最高的 100 个存储库则为 0.5%，这为安全工程师提供了一份在技能传播之前进行检查��简短列表。因此，平台应该分发版本化的引用而不是副本。项目网站：https://fahdseddik.github.io/Skill-Constellations/",
+      "description_zh": "代理技能是 AI 编码代理（例如 Claude Code 和 Codex）在其用户权限下运行的 SKILL.md 指令和脚本。开发人员通过在存储库之间复制技能来共享技能，这使得它们成为一个没有注册表、版本或出处的软件供应链。因此，复制技能的来源、安全修复的范围以及需要审查的存储库都是未知的。记录哪些存储库在某个时间点拥有某项技能的研究无法揭示谁从谁那里复制了该技能。我们贡献了第一个过时的代理技能副本网络，该网络是根据 GitSkills 中每个 SKILL.md 的 git 历史记录构建的，涵盖 GitHub 上的 2,193,119 项技能采用情况，以及交互式查看器。少数存储库是几乎所有副本的来源，并且 GitHub 星星不会识别它们。技能副本几乎不会随其来源而改变，因此很少能对来源进行修复。我们拟合了其他人从中复制的存储库的模型，并使用它对存储库进行排名以进行审核。审查排名最高的 100 个存储库，可以防止 14.9% 的高风险技能日后被采用，而排名最高的 100 个存储库则为 0.5%，这为安全工程师提供了一份在技能传播之前进行检查的简短列表。因此，平台应该分发版本化的引用而不是副本。项目网站：https://fahdseddik.github.io/Skill-Constellations/",
       "authors": "Fahd Seddik",
       "url": "https://huggingface.co/papers/2610.11169",
-      "score": 1,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "5",
         "paperId": "2610.11169"
       }
     },
@@ -83,13 +83,13 @@
       "title": "Predicting Cable Dynamics with Physical Attention Bias",
       "title_zh": "预测具有物理注意力偏差的电缆动力学",
       "description": "Learned simulators for deformable linear objects (DLOs) such as cables have to predict the motion of cables they were not trained on and stay stable over long rollouts. Most of their error occurs where the cable touches itself or the floor. Attention over all pairs of cable segments can represent contact between parts of the cable that are far apart along its length, but attention has no notion of geometry. A cable has two pairwise distances, which agree only while it is straight: the arc-length distance along the cable, which governs elastic forces, and the Euclidean distance in space, which governs contact. We add a physical attention bias, an additive term on the attention logits with a learned rate, and ask which distance it should use. We compare no bias, each distance alone, and both distances on disjoint sets of heads, keeping the rest of the model and the training protocol fixed. A physical bias improves prediction on unseen cables. The gain is largest when attention is the only mechanism that connects distant segments: there, the arc-length bias reduces prediction error by 15% and more than halves the drift in segment length. The Euclidean bias alone stays close to unbiased attention, while assigning both distances across heads is best or near-best on every metric we report. Code and per-run records: https://github.com/avihaig/dlogps.",
-      "description_zh": "用于可变形线性物体 (DLO)（例如电缆）的学习模拟器必须预测未经训练的电缆的运动，并在长时间部署中保持稳定。大多数错误发生在电缆接触自身或地板的地方。对所有成对电缆段的注意力可以表示沿其长度相距较远的电缆部分之间的接触，但注意力没有几何概念。电缆有两个成对的距离，仅当它是直的时才一致：沿电缆的弧长距离（控制弹力）和空间中的欧几里得距离（控制接触）。我们添加物理注意力偏差（具有学习率的注意力逻辑的附加项），并询问它应该使用哪个距离。我们不存在偏差，单独比较每个距离，以及在不相交的头部组上比较两个距离，保持模型的其余部分和训练协议固定。物理偏差改善了对看不见的电缆的预测。当注意力是连接远距离片段的唯一机制时，增益最大：此时，弧长偏差将预测误差降低了 15%，并将片段长度的漂移减少了一半以上。仅欧几里得偏差就接近无偏见的注意力，而在我们报��的每个指标上，分配两个头部的距离是最好或接近最佳的。代码和每次运行记录：https://github.com/avihaig/dlogps。",
+      "description_zh": "用于可变形线性物体 (DLO)（例如电缆）的学习模拟器必须预测未经训练的电缆的运动，并在长时间部署中保持稳定。大多数错误发生在电缆接触自身或地板的地方。对所有成对电缆段的注意力可以表示沿其长度相距较远的电缆部分之间的接触，但注意力没有几何概念。电缆有两个成对的距离，仅当它是直的时才一致：沿电缆的弧长距离（控制弹力）和空间中的欧几里得距离（控制接触）。我们添加物理注意力偏差（具有学习率的注意力逻辑的附加项），并询问它应该使用哪个距离。我们不存在偏差，单独比较每个距离，以及在不相交的头部组上比较两个距离，保持模型的其余部分和训练协议固定。物理偏差改善了对看不见的电缆的预测。当注意力是连接远距离片段的唯一机制时，增益最大：此时，弧长偏差将预测误差降低了 15%，并将片段长度的漂移减少了一半以上。仅欧几里得偏差就接近无偏见的注意力，而在我们报告���每个指标上，分配两个头部的距离是最好或接近最佳的。代码和每次运行记录：https://github.com/avihaig/dlogps。",
       "authors": "Avihai Giuili, Rotem Atari, Avishai Sintov, Maya Bechler-Speicher",
       "url": "https://huggingface.co/papers/2610.11975",
-      "score": 1,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "5",
         "paperId": "2610.11975"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "GPU 并行仿真提供了丰富的机器人交互，但现有基准很少将这种规模与异构操作任务和标准化多任务 RL 评估结合起来。我们推出了 Hebero（机器人学习异构基准），这是一个 GPU 并行 Isaac Lab 基准，可实现跨所有 40 个异构任务的单一策略的高效联合训练和评估。扩展实验表明，在固定的时钟预算下，增加每个任务的并行副本可以提高成功率。为了支持稀疏奖励和有限演示的学习，我们提出了演示引导策略优化（DGPO），它重用了密集跟踪奖励和不对称价值学习的演示。其共享堆栈支持 PPO 中特定于学习者的演示界面的受控比较。在DGPO框架内，我们引入了IW-ABC，它使用轻量级的每任务学习进度信号来协调自适应行为克隆（ABC），放松任务进度的演示指导，以及重要性加权（IW），强调PPO更新中的滞后任务。每个任务进行 50 次演示，IW-ABC 实现了 90.1% 的状态输入平均成功率，比最强的基线 FAMO-ABC 高出 7.8 个百分点。其视觉对应的平均成功率达到 93.5%。现实世界的实验进一步证明，在模拟中训练的单个多任务策略可以在物理 Piper 机器人上成功执行四项任务。该项目页面位于 https://hebero-rl.github.io/。",
       "authors": "Rui Zhang, Qiwei Wu, Zhengyu Zhang, Tao Li, Hongyu Zhou, Xiang Li, Yunrong Guo, Junjie Lai, Renjing Xu, Weihua Zhang",
       "url": "https://huggingface.co/papers/2606.03335",
-      "score": 8,
+      "score": 12,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "12",
         "paperId": "2606.03335"
       }
     },
@@ -116,10 +116,10 @@
       "description_zh": "优化已部署的人工智能系统越来越多地涉及编辑提示、技能、工具和代码，而不是模型权重。现有方法通常通过建议-评估-选择过程来优化这些工件，其中评估候选配置，并且仅选择那些满足验收标准的配置。然而我们的分析表明，被丢弃的候选者通常包含对后续优化至关重要的信息。丢弃它们会导致后来的提案重新审视相同的故障模式。我们引入了 Mara Chain，这是一种将被拒绝的候选人变成踏脚石的细化程序。 Mara Chain 没有丢弃被拒绝的候选者，而是保留并使用之前尝试中积累的证据迭代地完善它。该过程将每个细化链限制在固定深度，并应用 Pareto 过滤的 Top-N 选择来限制候选池。通过 AppWorld 技能优化、TerminalBench 2.1 工具优化和 MuSiQue 检索管道优化，Mara Chain 以更少的部署次数实现了更大的任务性能提升。它在 AppWorld 上的相对性能比 GEPA、ACE 和 SkillOpt-Lite 高出 20.5%，达到目标分数时，部署次数比 GEPA 少 65.5%。与 TerminalBench 2.1 上的 AHE 和 Meta-Harness 相比，它的通过率分别提高了 20.2 和 22.5 个百分点，并且与手写检索管道相比，MuSiQue 测试 nDCG@10 和 Recall@10 分别提高了 0.104 和 0.131。",
       "authors": "Yubin Lyu, Fu Li, Jiawei Fei, Yang Zhao, Weixing Mei, Yinan Wu",
       "url": "https://huggingface.co/papers/2609.35855",
-      "score": 5,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "9",
         "paperId": "2609.35855"
       }
     },
@@ -131,10 +131,10 @@
       "description_zh": "人们越来越依赖大型语言模型 (LLM) 来支持环境文档和临床推理。在这里，我们通过评估这两个应用程序对患者遇到的附带信息的敏感性来检查这两个应用程序之间共享的故障模式的影响。在 576 场患者与临床医生的对话中，我们发现前沿模型在 35% 的笔记中插入了闲聊交流，而平均质量得分在五分制上最多变化了 0.20 分。在 3.7% 的前沿笔记中，模型错误地归因了旁白或临床上使用了它们。在 57 次模拟录制的咨询中，-10 dB 的��独患者遭遇的背景语音泄漏到 48.2% 的笔录中，在四个开放权重模型生成的 5.3% 的下游笔记中检测到污染。我们提出了LLM临床推理和分心的双重编码假设，初步证据表明与偶然信息干扰相关的LLM成分也支持临床推理。这些发现支持在临床使用前评估对附带信息的抵抗力，并采取保护措施防止污染，同时保留临床推理。",
       "authors": "Krithik Vishwanath, Brandon Ye, Anton Alyakin, John E. Markert, Aaron Hsieh, Michał Mańkowski, Eric K. Oermann",
       "url": "https://huggingface.co/papers/2610.08585",
-      "score": 2,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "6",
         "paperId": "2610.08585"
       }
     },
@@ -146,10 +146,10 @@
       "description_zh": "大型语言模型 (LLM) 和视觉语言模型 (VLM) 通常在部署后被冻结，因此它们无法从解决的案例中学习。这在医学领域尤其令人担忧，因为新的临床证据、更新的指南和新的疗法可以改变既定的实践。微调可以更新模型，但需要访问模型权重和额外的训练。无参数方法避免了训练，但它们可能会过度拟合固定的验证集、缺乏可靠的领域知识，或者仅将经验保存为文本而丢失视觉细节。为了解决这些限制，我们提出了一个与模��无关的框架，允许冻结的LLM和VLM通过三种形式的外部专业知识从部署经验中学习：指导推理和工具使用的技能，存储由早期案例或可信外部证据支持的可靠事实的知识记忆，以及保留视觉示例并指导模型将每个检索到的案例与当前图像相关联的多模态知识库。验证策略不依赖固定的验证集，而是仅在有助于新案例且不会降低早期案例性能的情况下才保留更新。在涵盖临床诊断、临床工作流程、医学推理、医学和非医学视觉推理的六个基准测试中，以及四个开放权重和闭源基础模型，我们的框架在在线部署过程中的性能比医疗任务基础模型提高了高达 34.2%，泛化到未见过的病例，无需进一步优化即可转移到其他模型，并且适用于非医学领域。",
       "authors": "Yexiao He, Yucheng Tang, Pengfei Guo, Yufan He, Andriy Myronenko, Can Zhao, Ang Li, Daguang Xu, Dong Yang",
       "url": "https://huggingface.co/papers/2610.09146",
-      "score": 2,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "6",
         "paperId": "2610.09146"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "工具调用代理已成为企业人工智能的核心，但由于企业系统、数据和数据库模式的业务和法律限制，大规模培训和评估它们仍然受到严重限制。表格数据合成提供了一种自然的替代方案，但其有效性从根本上受到结构有效性和模式可用性的限制，而基于过程的方法则产生相反的弱点，通常缺乏分布式保真度而无需按域创作。我们引入**通过模拟进行合成** (STS)，这是一种**无模式**数据合成范例，其中 LLM 代理通过在模拟企业环境中针对策略执行 API 执行操作来生成数据。由于数据是通过定义有效内容的相同环境生成的，因此 STS 通过构造保证结构有效性，同时将有效性执行与分布建模解耦，从而允许独立处理每个数据。 STS 的领域不可知代理 **Generalist Populator** (GP) 解决了分布式保真度和合成可扩展性方面的剩余挑战：GP 在所有十个环境中实现了 **0.88** 平均边际保真度和 **100\\% 约束满足** *无需访问数据库模式*，而统计合成器由于必要的种子数据要求而不适用于七个环境，并且模式特权代理在航空公司的轨迹中失败了 82%由于任务组合脆弱，环境的工作流程紧密耦合。我们在 https://github.com/SAP/synthesis-through-simulation 上开源了完整的框架、所有十个环境以及生成的数据集。",
       "authors": "Yipeng Li, Ashutosh Hathidara, Jane Lo, Harshavardhan Abichandani, Gunraj Singh, Atin Ghosh",
       "url": "https://huggingface.co/papers/2610.10549",
-      "score": 3,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "7",
         "paperId": "2610.10549"
       }
     },
@@ -173,13 +173,13 @@
       "title": "SpecFold: Folding Multi-Branch Redundancy for Faster Speculative Decoding in Diffusion Language Models",
       "title_zh": "SpecFold：折叠多分支冗余以实现扩散语言模型中更快的推测解码",
       "description": "Diffusion large language models (DLLMs) generate text through iterative block denoising, and multi-branch speculative decoding accelerates this process by verifying a main branch together with multiple draft branches in a single forward pass. While prior DLLM acceleration methods primarily exploit temporal redundancy across denoising steps, we identify a complementary redundancy axis within each speculative verification step: multi-branch computational redundancy. During speculative verification, draft branches inherit most tokens from their parents while unmasking a small set of additional positions, causing large portions of hidden states to remain highly similar across branches. We propose SpecFold, an algorithm-system co-design that exploits this multi-branch redundancy to reduce the cost of multi-branch speculative verification. Algorithmically, SpecFold performs token-level residual gating and selectively reuses parent computation through folded attention and FFN while preserving residual hidden states. Systemically, a Triton kernel implementation translates this fine-grained reuse into end-to-end throughput gains through efficient sparse multi-branch execution. SpecFold is orthogonal to temporal caching and compatible with existing DLLM speculation strategies. Across two DLLM families, five models, and five standard benchmarks, SpecFold achieves up to 1.64x throughput over Spiffy and up to 1.99x over vanilla decoding, while maintaining comparable task performance.",
-      "description_zh": "扩散大语言模型 (DLLM) 通过迭代块去噪生成文本，多分支推测解码通过在单次前向传递中验证主分支和多个草稿分支来加速此过程。虽然之前的 DLLM 加速方法主要利用去噪步骤中的时间冗余，但我们在每个推测验证步骤中确定了一个互补的冗余轴：多分支计算冗余。在推测性验证过程中，草案分支从其父级继承大部分令牌，同时揭露一小部分附加位置，导致大部分隐藏状态在分支之间保持高度相似。我们提出了 SpecFold，一种算法系统协同设计，利用这种多分支冗余来降低多分支推测验证的成本。在算法上，SpecFold 执行 token 级残差门控，并通过折叠注意力和 FFN 选择性地重用父计算，同时保留残差隐藏状态。从系统上来说，Triton 内核实现通过高效的稀疏多分支执行将这种细粒度的重用转化为端到端的吞吐量增益。 SpecFold 与时间缓存正交，并与现有的 DLLM 推测策略兼容。在两个 DLLM 系列、五个��型和五个标准基准测试中，SpecFold 的吞吐量比 Spiffy 提高了 1.64 倍，比普通解码提高了 1.99 倍，同时保持了相当的任务性能。",
+      "description_zh": "扩散大语言模型 (DLLM) 通过迭代块去噪生成文本，多分支推测解码通过在单次前向传递中验证主分支和多个草稿分支来加速此过程。虽然之前的 DLLM 加速方法主要利用去噪步骤中的时间冗余，但我们在每个推测验证步骤中确定了一个互补的冗余轴：多分支计算冗余。在推测性验证过程中，草案分支从其父级继承大部分令牌，同时揭露一小部分附加位置，导致大部分隐藏状态在分支之间保持高度相似。我们提出了 SpecFold，一种算法系统协同设计，利用这种多分支冗余来降低多分支推测验证的成本。在算法上，SpecFold 执行 token 级残差门控，并通过折叠注意力和 FFN 选择性地重用父计算，同时保留残差隐藏状态。从系统上来说，Triton 内核实现通过高效的稀疏多分支执行将这种细粒度的重用转化为端到端的吞吐量增益。 SpecFold 与时间缓存正交，并与现有的 DLLM 推测策略兼容。在两个 DLLM 系列、五个模���和五个标准基准测试中，SpecFold 的吞吐量比 Spiffy 提高了 1.64 倍，比普通解码提高了 1.99 倍，同时保持了相当的任务性能。",
       "authors": "Chung-En Ho, Weiyu Sun, Cheng-Jhih Shih, He Li, Yong Liu, Yingyan Celine Lin",
       "url": "https://huggingface.co/papers/2610.04875",
-      "score": 3,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "7",
         "paperId": "2610.04875"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "文本到音乐系统产生越来越令人信服的音频，但评估却很少揭示结果是否符合用户意图。全局文本-音频相关性评分可能会忽略未指定提示中的隐含意图，并掩盖特定要求（例如乐器、结构、节奏或情绪进展）中的失败。为了弥补这一差距，我们制定了文本到音乐意图的对齐方式，以满足每个请求的独立可验证项目的标准，涵盖请求的明确要求及其隐含的音乐意图。单独评分项目可以根据意图来源和音乐维度进行评估诊断，而不是单个不透明的分数。我们将其实例化为 MuRA-Bench，这是由音乐专家策划的现实世界平台请求的基准。我们进一步提出 MIRA（音乐意图细化代理），这是一种测试时代理，它首先将请求的意图纳入规则，然后在有限预算下搜索黑盒生成器的提示修订，迭代生成音乐，根据规则进行验证，并使用此反馈来指导轨迹感知树搜索。跨开源和商业后端的实验表明，MIRA 改善了意图一致性，使开源生成器能够实现与代表性商业系统（例如 Suno 和 Mureka）相当的性能。项目页面：https://mirareview.github.io/。",
       "authors": "Zekai Liu, Zhilin Wang, Xuzheng He, Yu Cheng, Yang Yang",
       "url": "https://huggingface.co/papers/2610.10355",
-      "score": 2,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "8",
         "paperId": "2610.10355"
       }
     },
@@ -203,13 +203,13 @@
       "title": "Can AI Agents Make Open-Ended Scientific Discovery? Evidence from Station",
       "title_zh": "人工智能代理可以做出开放式的科学发现吗？来自车站的证据",
       "description": "Recent AI systems have made rapid progress in scientific discovery when given well-defined metrics, but whether they can autonomously undertake open-ended scientific discovery remains unclear. We investigate AI's ability to tackle open-ended tasks in Station, an open-world environment in which multiple agents simulate a scientific ecosystem. To tackle challenges specific to open-ended tasks, we propose augmenting Station with two mechanisms: a Supervisor mechanism and periodic Meta Reflection, which encourage persistent exploration even when intermediate metrics are lacking. We construct open-ended tasks from three recent oral papers presented at ICLR. We give agents the main research question studied in each paper while withholding the paper's results and disabling web access. We then measure how many of the original findings-partitioned into individual criteria-agents rediscover. We find that Station rediscovers 62.7% of the criteria on average, compared with 15.4% for Codex Multiagent-v2 and 14.4-20.6% for AI Scientist-v2. Ablation and behavioral analyses indicate that adding the two mechanisms together improves research coverage and continuity. We further evaluate Station on two open-ended tasks without oracle papers and find that some of the discoveries made by the agents closely match discoveries reported by researchers after the knowledge cutoff date. Together, these results indicate that a suitable environment can enable agents to autonomously make meaningful progress in open-ended scientific discovery.",
-      "description_zh": "当给定明确的指标时，最近的人工智能系统在科学发现方面取得了快速进展，但它们是否能够自主地进行开放式科学发现仍不清楚。我们研究了人工智能在 Station 中处理开放式任务的能力，Station 是一个开放世界环境，其中多个代理模拟科学生态系统。为了应对开放式任务特有的挑战，我们建议通过两种机制来增强 Station：监督机制和定期元反射，即使在缺乏中间指标的情况下，它们也会鼓励持续探索。我们根据最近在 ICLR 上发表的三篇口头论文构建了开放式任务。我们向代理提供每篇论文中研究的主要研究问题，同时保留论文结果并禁用网络访问。然后，我们测量有多少原始发现（划分为单独的标准）代理重新发现。我们发现 Station 平均重新发现了 62.7% 的标准，而 Codex Multiagent-v2 为 15.4%，AI Scientist-v2 为 14.4-20.6%。消融和行为分析表明，将两种机制结合在一起可以提高研究的覆盖范围和连续性。我们进一步在��个没有预言论文的开放式任务上评估 Station，发现智能体做出的一些发现与知识截止日期后研究人员报告的发现非常匹配。总之，这些结果表明，合适的环境可以使智能体在开放式科学发现中自主取得有意义的进展。",
+      "description_zh": "当给定明确的指标时，最近的人工智能系统在科学发现方面取得了快速进展，但它们是否能够自主地进行开放式科学发现仍不清楚。我们研究了人工智能在 Station 中处理开放式任务的能力，Station 是一个开放世界环境，其中多个代理模拟科学生态系统。为了应对开放式任务特有的挑战，我们建议通过两种机制来增强 Station：监督机制和定期元反射，即使在缺乏中间指标的情况下，它们也会鼓励持续探索。我们根据最近在 ICLR 上发表的三篇口头论文构建了开放式任务。我们向代理提供每篇论文中研究的主要研究问题，同时保留论文结果并禁用网络访问。然后，我们测量有多少原始发现（划分为单独的标准）代理重新发现。我们发现 Station 平均重新发现了 62.7% 的标准，而 Codex Multiagent-v2 为 15.4%，AI Scientist-v2 为 14.4-20.6%。消融和行为分析表明，将两种机制结合在一起可以提高研究的覆盖范围和连续性。我们进一步在两个没有预言论文的开放式任务上评估 Station，发现智能体做出的一些发现与知识截止日期后研究人员报告的发现非常匹配。总之，这些结果表明，合适的环境可以使智能体在开放式科学发现中自主取得有意义的进展。",
       "authors": "Wenyu Du, Stephen Chung",
       "url": "https://huggingface.co/papers/2610.08927",
-      "score": 5,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "8",
         "paperId": "2610.08927"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "我们提出了 Pumpire，一个统一的基准，用于评估图像和视频级 3D 基础模型的度量点对距离估计能力，无论有或没有深度先验。与之前通常分别评估深度和相机内在特性或使用几何相似性度量评估点云的方法相比，这些方法无法直接反映模型的点对点距离估计能力，而 Pumpire 直接评估与重建几何体的点对点距离。为此，我们收集了一个大规模且多样化的数据集（pumpire-6k），其中包含 100 个真实场景，每个场景都用物理测量的点对距离进行注释，并包含 64 帧，总共 6,400 帧。在此数据集的基础上，我们建立了一个整体评估协议，涵盖图像和视频级 3D 基础模型，并能够直接评估点对距离误差和交叉设置比较。我们对代表性 3D 基础模型的 29 种基线配置进行了广泛的实验，并对结果进行了全面分析。通过提供这个基准，我们的目标是在重建的 3D 空间中感知和估计物理尺度的更基本的能力，而先前的评估协议在很大程度上忽视了这一点。项目页面可以在 https://pumpire.github.io/ 找到",
       "authors": "Siyu Chen, Zehan Wang, Jiayang Xu, Yihan Wu, Jialei Wang, Junming Chen, Ziang Zhang, Yutong Ying, Zhou Zhao",
       "url": "https://huggingface.co/papers/2610.12423",
-      "score": 15,
+      "score": 18,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "18",
         "paperId": "2610.12423"
       }
     }
