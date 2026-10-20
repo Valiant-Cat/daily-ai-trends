@@ -1,7 +1,7 @@
 {
   "source": "github",
-  "updatedAt": "2026-10-19T23:03:42.992Z",
-  "count": 12,
+  "updatedAt": "2026-10-20T22:37:09.926Z",
+  "count": 13,
   "items": [
     {
       "id": "MadsLorentzen-ai-job-search",
@@ -11,10 +11,10 @@
       "description_zh": "在您的计算机上运行的职位搜索。基于 Claude Code 构建的人工智能职位申请框架：评估职位、定制简历、撰写求职信、准备面试。分叉并拥有它。",
       "authors": "MadsLorentzen",
       "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "score": 57063,
+      "score": 60382,
       "meta": {
         "source": "github",
-        "stars": "57,063",
+        "stars": "60,382",
         "language": "Python",
         "repo": "MadsLorentzen/ai-job-search",
         "owner": "MadsLorentzen",
@@ -22,39 +22,57 @@
       }
     },
     {
-      "id": "anomalyco-opencode",
-      "title": "opencode",
-      "title_zh": "opencode",
-      "description": "The open source coding agent.",
-      "description_zh": "开源编码代理。",
-      "authors": "anomalyco",
-      "url": "https://github.com/anomalyco/opencode",
-      "score": 217746,
+      "id": "cloudflare-security-audit-skill",
+      "title": "security-audit-skill",
+      "title_zh": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证、机器可读的结果",
+      "authors": "cloudflare",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "score": 34011,
       "meta": {
         "source": "github",
-        "stars": "217,746",
-        "language": "TypeScript",
-        "repo": "anomalyco/opencode",
-        "owner": "anomalyco",
-        "repoName": "opencode"
+        "stars": "34,011",
+        "language": "JavaScript",
+        "repo": "cloudflare/security-audit-skill",
+        "owner": "cloudflare",
+        "repoName": "security-audit-skill"
       }
     },
     {
-      "id": "akitaonrails-ai-memory",
-      "title": "ai-memory",
-      "title_zh": "ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "description_zh": "用于代理编码 CLI 的长期记忆解决方案，并促进不同代理供应商之间的切换",
-      "authors": "akitaonrails",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "score": 11286,
+      "id": "stablyai-orca",
+      "title": "orca",
+      "title_zh": "orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "description_zh": "Orca 是与代理团队（例如 Grok Bot、Claude Code）合作的地方。使用您自己的订阅运行任何编码代理。可在桌面、移动和远程运行时使用。",
+      "authors": "stablyai",
+      "url": "https://github.com/stablyai/orca",
+      "score": 99657,
       "meta": {
         "source": "github",
-        "stars": "11,286",
-        "language": "Rust",
-        "repo": "akitaonrails/ai-memory",
-        "owner": "akitaonrails",
-        "repoName": "ai-memory"
+        "stars": "99,657",
+        "language": "TypeScript",
+        "repo": "stablyai/orca",
+        "owner": "stablyai",
+        "repoName": "orca"
+      }
+    },
+    {
+      "id": "DietrichGebert-ponytail",
+      "title": "ponytail",
+      "title_zh": "ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "description_zh": "让你的人工智能代理像房间里最懒的高级开发人员一样思考。最好的代码是你从未编写过的代码。",
+      "authors": "DietrichGebert",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "score": 169534,
+      "meta": {
+        "source": "github",
+        "stars": "169,534",
+        "language": "JavaScript",
+        "repo": "DietrichGebert/ponytail",
+        "owner": "DietrichGebert",
+        "repoName": "ponytail"
       }
     },
     {
@@ -65,10 +83,10 @@
       "description_zh": "最强大的模块化扩散模型 GUI、API 和带有图形/节点接口的后端。世界上最快的本地推理引擎。",
       "authors": "Comfy-Org",
       "url": "https://github.com/Comfy-Org/ComfyUI",
-      "score": 139669,
+      "score": 140704,
       "meta": {
         "source": "github",
-        "stars": "139,669",
+        "stars": "140,704",
         "language": "Python",
         "repo": "Comfy-Org/ComfyUI",
         "owner": "Comfy-Org",
@@ -83,10 +101,10 @@
       "description_zh": "🌊 原始特工安全带。部署智能多人群体、协调自主工作流程并构建对话式人工智能系统。具有自适应记忆、自学习智能、联邦、矢量 RAG 集成以及原生 Claude Code / Codex / Hermes 等集成功能",
       "authors": "ruvnet",
       "url": "https://github.com/ruvnet/ruflo",
-      "score": 77154,
+      "score": 77793,
       "meta": {
         "source": "github",
-        "stars": "77,154",
+        "stars": "77,793",
         "language": "TypeScript",
         "repo": "ruvnet/ruflo",
         "owner": "ruvnet",
@@ -94,21 +112,57 @@
       }
     },
     {
-      "id": "stablyai-orca",
-      "title": "orca",
-      "title_zh": "orca",
-      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "description_zh": "Orca 是与代理团队（例如 Grok Bot、Claude Code）合作的地方。使用您自己的订阅运行任何编码代理。可在桌面、移动和远程运行时使用。",
-      "authors": "stablyai",
-      "url": "https://github.com/stablyai/orca",
-      "score": 98196,
+      "id": "Graphify-Labs-graphify",
+      "title": "graphify",
+      "title_zh": "graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "description_zh": "将任何代码库及其文档、SQL 架构、配置和 PDF 转换为可查询的知识图。适用于 Claude Code、Cursor、Codex 和 Gemini CLI 的 /graphify 技能：本地确定性 AST 解析，每条边均已解释，无向量存储。",
+      "authors": "Graphify-Labs",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "score": 130151,
       "meta": {
         "source": "github",
-        "stars": "98,196",
+        "stars": "130,151",
+        "language": "Python",
+        "repo": "Graphify-Labs/graphify",
+        "owner": "Graphify-Labs",
+        "repoName": "graphify"
+      }
+    },
+    {
+      "id": "anomalyco-opencode",
+      "title": "opencode",
+      "title_zh": "opencode",
+      "description": "The open source coding agent.",
+      "description_zh": "开源编码代理。",
+      "authors": "anomalyco",
+      "url": "https://github.com/anomalyco/opencode",
+      "score": 218851,
+      "meta": {
+        "source": "github",
+        "stars": "218,851",
         "language": "TypeScript",
-        "repo": "stablyai/orca",
-        "owner": "stablyai",
-        "repoName": "orca"
+        "repo": "anomalyco/opencode",
+        "owner": "anomalyco",
+        "repoName": "opencode"
+      }
+    },
+    {
+      "id": "msitarzewski-agency-agents",
+      "title": "agency-agents",
+      "title_zh": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "description_zh": "触手可及的完整人工智能机构 - 从前端向导到 Reddit 社区忍者，从奇思妙想的注入者到现实检查者。每个代理都是一位具有个性、流程和经过验证的可交付成果的专业专家。",
+      "authors": "msitarzewski",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "score": 162286,
+      "meta": {
+        "source": "github",
+        "stars": "162,286",
+        "language": "Shell",
+        "repo": "msitarzewski/agency-agents",
+        "owner": "msitarzewski",
+        "repoName": "agency-agents"
       }
     },
     {
@@ -119,10 +173,10 @@
       "description_zh": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
       "authors": "headroomlabs-ai",
       "url": "https://github.com/headroomlabs-ai/headroom",
-      "score": 76207,
+      "score": 76723,
       "meta": {
         "source": "github",
-        "stars": "76,207",
+        "stars": "76,723",
         "language": "Python",
         "repo": "headroomlabs-ai/headroom",
         "owner": "headroomlabs-ai",
@@ -130,75 +184,21 @@
       }
     },
     {
-      "id": "withmarbleapp-os-taxonomy",
-      "title": "os-taxonomy",
-      "title_zh": "os-taxonomy",
-      "description": "No description available",
-      "description_zh": "无可用描述",
-      "authors": "withmarbleapp",
-      "url": "https://github.com/withmarbleapp/os-taxonomy",
-      "score": 6088,
-      "meta": {
-        "source": "github",
-        "stars": "6,088",
-        "language": "JavaScript",
-        "repo": "withmarbleapp/os-taxonomy",
-        "owner": "withmarbleapp",
-        "repoName": "os-taxonomy"
-      }
-    },
-    {
-      "id": "Kruk2-jasna",
-      "title": "jasna",
-      "title_zh": "jasna",
-      "description": "Video restoration tool",
-      "description_zh": "视频修复工具",
-      "authors": "Kruk2",
-      "url": "https://github.com/Kruk2/jasna",
-      "score": 2868,
-      "meta": {
-        "source": "github",
-        "stars": "2,868",
-        "language": "Python",
-        "repo": "Kruk2/jasna",
-        "owner": "Kruk2",
-        "repoName": "jasna"
-      }
-    },
-    {
-      "id": "HKUDS-CLI-Anything",
-      "title": "CLI-Anything",
-      "title_zh": "CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
-      "authors": "HKUDS",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "score": 55198,
-      "meta": {
-        "source": "github",
-        "stars": "55,198",
-        "language": "Python",
-        "repo": "HKUDS/CLI-Anything",
-        "owner": "HKUDS",
-        "repoName": "CLI-Anything"
-      }
-    },
-    {
-      "id": "anthropics-claude-code",
-      "title": "claude-code",
-      "title_zh": "claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "description_zh": "Claude Code 是一种代理编码工具，它位于您的终端中，了解您的代码库，并通过执行例行任务、解释复杂代码和处理 git 工作流程来帮助您更快地编码 - 所有这些都通过自然语言命令进行。",
+      "id": "anthropics-knowledge-work-plugins",
+      "title": "knowledge-work-plugins",
+      "title_zh": "knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件存储库",
       "authors": "anthropics",
-      "url": "https://github.com/anthropics/claude-code",
-      "score": 152624,
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "score": 30770,
       "meta": {
         "source": "github",
-        "stars": "152,624",
-        "language": "TypeScript",
-        "repo": "anthropics/claude-code",
+        "stars": "30,770",
+        "language": "Python",
+        "repo": "anthropics/knowledge-work-plugins",
         "owner": "anthropics",
-        "repoName": "claude-code"
+        "repoName": "knowledge-work-plugins"
       }
     },
     {
@@ -209,14 +209,32 @@
       "description_zh": "Kronos：金融市场语言的基础模型",
       "authors": "shiyu-coder",
       "url": "https://github.com/shiyu-coder/Kronos",
-      "score": 41612,
+      "score": 42315,
       "meta": {
         "source": "github",
-        "stars": "41,612",
+        "stars": "42,315",
         "language": "Python",
         "repo": "shiyu-coder/Kronos",
         "owner": "shiyu-coder",
         "repoName": "Kronos"
+      }
+    },
+    {
+      "id": "vllm-project-vllm",
+      "title": "vllm",
+      "title_zh": "vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "description_zh": "适用于LLM的高吞吐量和内存高效推理和服务引擎",
+      "authors": "vllm-project",
+      "url": "https://github.com/vllm-project/vllm",
+      "score": 94412,
+      "meta": {
+        "source": "github",
+        "stars": "94,412",
+        "language": "Python",
+        "repo": "vllm-project/vllm",
+        "owner": "vllm-project",
+        "repoName": "vllm"
       }
     }
   ]
