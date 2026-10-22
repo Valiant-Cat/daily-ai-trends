@@ -1,78 +1,42 @@
 {
   "source": "github",
-  "updatedAt": "2026-10-21T22:41:56.713Z",
-  "count": 12,
+  "updatedAt": "2026-10-22T22:43:40.669Z",
+  "count": 9,
   "items": [
     {
-      "id": "cloudflare-security-audit-skill",
-      "title": "security-audit-skill",
-      "title_zh": "security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "description_zh": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "authors": "cloudflare",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "score": 36209,
+      "id": "php-php-src",
+      "title": "php-src",
+      "title_zh": "php-src",
+      "description": "The PHP Interpreter",
+      "description_zh": "PHP 解释器",
+      "authors": "php",
+      "url": "https://github.com/php/php-src",
+      "score": 41116,
       "meta": {
         "source": "github",
-        "stars": "36,209",
-        "language": "JavaScript",
-        "repo": "cloudflare/security-audit-skill",
-        "owner": "cloudflare",
-        "repoName": "security-audit-skill"
+        "stars": "41,116",
+        "language": "C",
+        "repo": "php/php-src",
+        "owner": "php",
+        "repoName": "php-src"
       }
     },
     {
-      "id": "vllm-project-vllm",
-      "title": "vllm",
-      "title_zh": "vllm",
-      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
-      "description_zh": "A high-throughput and memory-efficient inference and serving engine for LLMs",
-      "authors": "vllm-project",
-      "url": "https://github.com/vllm-project/vllm",
-      "score": 94836,
+      "id": "anthropics-knowledge-work-plugins",
+      "title": "knowledge-work-plugins",
+      "title_zh": "knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件存储库",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "score": 31545,
       "meta": {
         "source": "github",
-        "stars": "94,836",
+        "stars": "31,545",
         "language": "Python",
-        "repo": "vllm-project/vllm",
-        "owner": "vllm-project",
-        "repoName": "vllm"
-      }
-    },
-    {
-      "id": "stablyai-orca",
-      "title": "orca",
-      "title_zh": "orca",
-      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "description_zh": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "authors": "stablyai",
-      "url": "https://github.com/stablyai/orca",
-      "score": 101160,
-      "meta": {
-        "source": "github",
-        "stars": "101,160",
-        "language": "TypeScript",
-        "repo": "stablyai/orca",
-        "owner": "stablyai",
-        "repoName": "orca"
-      }
-    },
-    {
-      "id": "headroomlabs-ai-headroom",
-      "title": "headroom",
-      "title_zh": "headroom",
-      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "description_zh": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "authors": "headroomlabs-ai",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "score": 77215,
-      "meta": {
-        "source": "github",
-        "stars": "77,215",
-        "language": "Python",
-        "repo": "headroomlabs-ai/headroom",
-        "owner": "headroomlabs-ai",
-        "repoName": "headroom"
+        "repo": "anthropics/knowledge-work-plugins",
+        "owner": "anthropics",
+        "repoName": "knowledge-work-plugins"
       }
     },
     {
@@ -80,13 +44,13 @@
       "title": "ponytail",
       "title_zh": "ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "description_zh": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "description_zh": "让你的人工智能代理像房间里最懒的高级开发人员一样思考。最好的代码是你从未编写过的代码。",
       "authors": "DietrichGebert",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "score": 171498,
+      "score": 173365,
       "meta": {
         "source": "github",
-        "stars": "171,498",
+        "stars": "173,365",
         "language": "JavaScript",
         "repo": "DietrichGebert/ponytail",
         "owner": "DietrichGebert",
@@ -94,111 +58,21 @@
       }
     },
     {
-      "id": "Comfy-Org-ComfyUI",
-      "title": "ComfyUI",
-      "title_zh": "ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "description_zh": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "authors": "Comfy-Org",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "score": 141468,
+      "id": "cloudflare-security-audit-skill",
+      "title": "security-audit-skill",
+      "title_zh": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证的机器可读结果",
+      "authors": "cloudflare",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "score": 39404,
       "meta": {
         "source": "github",
-        "stars": "141,468",
-        "language": "Python",
-        "repo": "Comfy-Org/ComfyUI",
-        "owner": "Comfy-Org",
-        "repoName": "ComfyUI"
-      }
-    },
-    {
-      "id": "supabase-supabase",
-      "title": "supabase",
-      "title_zh": "supabase",
-      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "description_zh": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "authors": "supabase",
-      "url": "https://github.com/supabase/supabase",
-      "score": 112954,
-      "meta": {
-        "source": "github",
-        "stars": "112,954",
-        "language": "TypeScript",
-        "repo": "supabase/supabase",
-        "owner": "supabase",
-        "repoName": "supabase"
-      }
-    },
-    {
-      "id": "twentyhq-twenty",
-      "title": "twenty",
-      "title_zh": "twenty",
-      "description": "The open alternative to Salesforce, designed for AI.",
-      "description_zh": "The open alternative to Salesforce, designed for AI.",
-      "authors": "twentyhq",
-      "url": "https://github.com/twentyhq/twenty",
-      "score": 59115,
-      "meta": {
-        "source": "github",
-        "stars": "59,115",
-        "language": "TypeScript",
-        "repo": "twentyhq/twenty",
-        "owner": "twentyhq",
-        "repoName": "twenty"
-      }
-    },
-    {
-      "id": "shiyu-coder-Kronos",
-      "title": "Kronos",
-      "title_zh": "Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "description_zh": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "authors": "shiyu-coder",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "score": 42795,
-      "meta": {
-        "source": "github",
-        "stars": "42,795",
-        "language": "Python",
-        "repo": "shiyu-coder/Kronos",
-        "owner": "shiyu-coder",
-        "repoName": "Kronos"
-      }
-    },
-    {
-      "id": "strelov1-freehire",
-      "title": "freehire",
-      "title_zh": "freehire",
-      "description": "freehire — the open-source search engine for job seekers",
-      "description_zh": "freehire — the open-source search engine for job seekers",
-      "authors": "strelov1",
-      "url": "https://github.com/strelov1/freehire",
-      "score": 2346,
-      "meta": {
-        "source": "github",
-        "stars": "2,346",
-        "language": "Go",
-        "repo": "strelov1/freehire",
-        "owner": "strelov1",
-        "repoName": "freehire"
-      }
-    },
-    {
-      "id": "akitaonrails-ai-memory",
-      "title": "ai-memory",
-      "title_zh": "ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "description_zh": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "authors": "akitaonrails",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "score": 12283,
-      "meta": {
-        "source": "github",
-        "stars": "12,283",
-        "language": "Rust",
-        "repo": "akitaonrails/ai-memory",
-        "owner": "akitaonrails",
-        "repoName": "ai-memory"
+        "stars": "39,404",
+        "language": "JavaScript",
+        "repo": "cloudflare/security-audit-skill",
+        "owner": "cloudflare",
+        "repoName": "security-audit-skill"
       }
     },
     {
@@ -206,17 +80,89 @@
       "title": "graphify",
       "title_zh": "graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-      "description_zh": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "description_zh": "将任何代码库及其文档、SQL 架构、配置和 PDF 转换为可查询的知识图。适用于 Claude Code、Cursor、Codex 和 Gemini CLI 的 /graphify 技能：本地确定性 AST 解析，每条边均已解释，无向量存储。",
       "authors": "Graphify-Labs",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "score": 131549,
+      "score": 132878,
       "meta": {
         "source": "github",
-        "stars": "131,549",
+        "stars": "132,878",
         "language": "Python",
         "repo": "Graphify-Labs/graphify",
         "owner": "Graphify-Labs",
         "repoName": "graphify"
+      }
+    },
+    {
+      "id": "supabase-supabase",
+      "title": "supabase",
+      "title_zh": "supabase",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "description_zh": "Postgres 开发平台。 Supabase 为您提供专用的 Postgres 数据库来构建您的 Web、移动和 AI 应用程序。",
+      "authors": "supabase",
+      "url": "https://github.com/supabase/supabase",
+      "score": 113458,
+      "meta": {
+        "source": "github",
+        "stars": "113,458",
+        "language": "TypeScript",
+        "repo": "supabase/supabase",
+        "owner": "supabase",
+        "repoName": "supabase"
+      }
+    },
+    {
+      "id": "fastapi-fastapi",
+      "title": "fastapi",
+      "title_zh": "fastapi",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "description_zh": "FastAPI框架，高性能，易学，快速编码，可用于生产",
+      "authors": "fastapi",
+      "url": "https://github.com/fastapi/fastapi",
+      "score": 103691,
+      "meta": {
+        "source": "github",
+        "stars": "103,691",
+        "language": "Python",
+        "repo": "fastapi/fastapi",
+        "owner": "fastapi",
+        "repoName": "fastapi"
+      }
+    },
+    {
+      "id": "luongnv89-claude-howto",
+      "title": "claude-howto",
+      "title_zh": "claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "description_zh": "克劳德代码的可视化、示例驱动指南 - 从基本概念到高级代理，以及可带来即时价值的复制粘贴模板。",
+      "authors": "luongnv89",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "score": 43132,
+      "meta": {
+        "source": "github",
+        "stars": "43,132",
+        "language": "Python",
+        "repo": "luongnv89/claude-howto",
+        "owner": "luongnv89",
+        "repoName": "claude-howto"
+      }
+    },
+    {
+      "id": "Meloong-Git-PCL",
+      "title": "PCL",
+      "title_zh": "PCL",
+      "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+      "description_zh": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+      "authors": "Meloong-Git",
+      "url": "https://github.com/Meloong-Git/PCL",
+      "score": 8670,
+      "meta": {
+        "source": "github",
+        "stars": "8,670",
+        "language": "Visual Basic .NET",
+        "repo": "Meloong-Git/PCL",
+        "owner": "Meloong-Git",
+        "repoName": "PCL"
       }
     }
   ]
