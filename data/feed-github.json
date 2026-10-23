@@ -1,8 +1,26 @@
 {
   "source": "github",
-  "updatedAt": "2026-10-22T22:43:40.669Z",
-  "count": 9,
+  "updatedAt": "2026-10-23T22:36:04.011Z",
+  "count": 8,
   "items": [
+    {
+      "id": "cloudflare-security-audit-skill",
+      "title": "security-audit-skill",
+      "title_zh": "security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证、机器可读的结果",
+      "authors": "cloudflare",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "score": 42021,
+      "meta": {
+        "source": "github",
+        "stars": "42,021",
+        "language": "JavaScript",
+        "repo": "cloudflare/security-audit-skill",
+        "owner": "cloudflare",
+        "repoName": "security-audit-skill"
+      }
+    },
     {
       "id": "php-php-src",
       "title": "php-src",
@@ -11,10 +29,10 @@
       "description_zh": "PHP 解释器",
       "authors": "php",
       "url": "https://github.com/php/php-src",
-      "score": 41116,
+      "score": 41544,
       "meta": {
         "source": "github",
-        "stars": "41,116",
+        "stars": "41,544",
         "language": "C",
         "repo": "php/php-src",
         "owner": "php",
@@ -29,10 +47,10 @@
       "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件存储库",
       "authors": "anthropics",
       "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "score": 31545,
+      "score": 32179,
       "meta": {
         "source": "github",
-        "stars": "31,545",
+        "stars": "32,179",
         "language": "Python",
         "repo": "anthropics/knowledge-work-plugins",
         "owner": "anthropics",
@@ -40,129 +58,93 @@
       }
     },
     {
-      "id": "DietrichGebert-ponytail",
-      "title": "ponytail",
-      "title_zh": "ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "description_zh": "让你的人工智能代理像房间里最懒的高级开发人员一样思考。最好的代码是你从未编写过的代码。",
-      "authors": "DietrichGebert",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "score": 173365,
+      "id": "NVIDIA-OpenShell",
+      "title": "OpenShell",
+      "title_zh": "OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "description_zh": "OpenShell 是自主 AI 代理的安全、私有运行时。",
+      "authors": "NVIDIA",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "score": 18738,
       "meta": {
         "source": "github",
-        "stars": "173,365",
-        "language": "JavaScript",
-        "repo": "DietrichGebert/ponytail",
-        "owner": "DietrichGebert",
-        "repoName": "ponytail"
+        "stars": "18,738",
+        "language": "Rust",
+        "repo": "NVIDIA/OpenShell",
+        "owner": "NVIDIA",
+        "repoName": "OpenShell"
       }
     },
     {
-      "id": "cloudflare-security-audit-skill",
-      "title": "security-audit-skill",
-      "title_zh": "security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证的机器可读结果",
-      "authors": "cloudflare",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "score": 39404,
+      "id": "Renhuai123-ziwei-doushu",
+      "title": "ziwei-doushu",
+      "title_zh": "ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "description_zh": "紫微斗数排盘引擎 — 基于开源倪海大厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍元数据",
+      "authors": "Renhuai123",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "score": 6832,
       "meta": {
         "source": "github",
-        "stars": "39,404",
-        "language": "JavaScript",
-        "repo": "cloudflare/security-audit-skill",
-        "owner": "cloudflare",
-        "repoName": "security-audit-skill"
-      }
-    },
-    {
-      "id": "Graphify-Labs-graphify",
-      "title": "graphify",
-      "title_zh": "graphify",
-      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-      "description_zh": "将任何代码库及其文档、SQL 架构、配置和 PDF 转换为可查询的知识图。适用于 Claude Code、Cursor、Codex 和 Gemini CLI 的 /graphify 技能：本地确定性 AST 解析，每条边均已解释，无向量存储。",
-      "authors": "Graphify-Labs",
-      "url": "https://github.com/Graphify-Labs/graphify",
-      "score": 132878,
-      "meta": {
-        "source": "github",
-        "stars": "132,878",
-        "language": "Python",
-        "repo": "Graphify-Labs/graphify",
-        "owner": "Graphify-Labs",
-        "repoName": "graphify"
-      }
-    },
-    {
-      "id": "supabase-supabase",
-      "title": "supabase",
-      "title_zh": "supabase",
-      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "description_zh": "Postgres 开发平台。 Supabase 为您提供专用的 Postgres 数据库来构建您的 Web、移动和 AI 应用程序。",
-      "authors": "supabase",
-      "url": "https://github.com/supabase/supabase",
-      "score": 113458,
-      "meta": {
-        "source": "github",
-        "stars": "113,458",
+        "stars": "6,832",
         "language": "TypeScript",
-        "repo": "supabase/supabase",
-        "owner": "supabase",
-        "repoName": "supabase"
+        "repo": "Renhuai123/ziwei-doushu",
+        "owner": "Renhuai123",
+        "repoName": "ziwei-doushu"
       }
     },
     {
-      "id": "fastapi-fastapi",
-      "title": "fastapi",
-      "title_zh": "fastapi",
-      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
-      "description_zh": "FastAPI框架，高性能，易学，快速编码，可用于生产",
-      "authors": "fastapi",
-      "url": "https://github.com/fastapi/fastapi",
-      "score": 103691,
+      "id": "SnailSploit-Claude-Red",
+      "title": "Claude-Red",
+      "title_zh": "Claude-Red",
+      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+      "description_zh": "claude-red 是一个专为 Claude 技能系统设计的进攻性安全技能库。每项技能都是一个结构化的 SKILL.md 文件，为 Claude 提供针对特定攻击面的专家级方法——从 SQLi 到 shellcode，从 EDR 规避到漏洞利用开发。",
+      "authors": "SnailSploit",
+      "url": "https://github.com/SnailSploit/Claude-Red",
+      "score": 8424,
       "meta": {
         "source": "github",
-        "stars": "103,691",
+        "stars": "8,424",
         "language": "Python",
-        "repo": "fastapi/fastapi",
-        "owner": "fastapi",
-        "repoName": "fastapi"
+        "repo": "SnailSploit/Claude-Red",
+        "owner": "SnailSploit",
+        "repoName": "Claude-Red"
       }
     },
     {
-      "id": "luongnv89-claude-howto",
-      "title": "claude-howto",
-      "title_zh": "claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "description_zh": "克劳德代码的可视化、示例驱动指南 - 从基本概念到高级代理，以及可带来即时价值的复制粘贴模板。",
-      "authors": "luongnv89",
-      "url": "https://github.com/luongnv89/claude-howto",
-      "score": 43132,
+      "id": "OpenBMB-VoxCPM",
+      "title": "VoxCPM",
+      "title_zh": "VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "description_zh": "VoxCPM2：用于多语言语音生成、创意语音设计和逼真克隆的无分词器 TTS",
+      "authors": "OpenBMB",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "score": 40226,
       "meta": {
         "source": "github",
-        "stars": "43,132",
+        "stars": "40,226",
         "language": "Python",
-        "repo": "luongnv89/claude-howto",
-        "owner": "luongnv89",
-        "repoName": "claude-howto"
+        "repo": "OpenBMB/VoxCPM",
+        "owner": "OpenBMB",
+        "repoName": "VoxCPM"
       }
     },
     {
-      "id": "Meloong-Git-PCL",
-      "title": "PCL",
-      "title_zh": "PCL",
-      "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
-      "description_zh": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
-      "authors": "Meloong-Git",
-      "url": "https://github.com/Meloong-Git/PCL",
-      "score": 8670,
+      "id": "nodejs-node",
+      "title": "node",
+      "title_zh": "node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "description_zh": "Node.js JavaScript 运行时✨🐢🚀✨",
+      "authors": "nodejs",
+      "url": "https://github.com/nodejs/node",
+      "score": 122832,
       "meta": {
         "source": "github",
-        "stars": "8,670",
-        "language": "Visual Basic .NET",
-        "repo": "Meloong-Git/PCL",
-        "owner": "Meloong-Git",
-        "repoName": "PCL"
+        "stars": "122,832",
+        "language": "JavaScript",
+        "repo": "nodejs/node",
+        "owner": "nodejs",
+        "repoName": "node"
       }
     }
   ]
