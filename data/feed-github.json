@@ -1,7 +1,7 @@
 {
   "source": "github",
-  "updatedAt": "2026-10-23T22:36:04.011Z",
-  "count": 8,
+  "updatedAt": "2026-10-24T21:51:07.944Z",
+  "count": 10,
   "items": [
     {
       "id": "cloudflare-security-audit-skill",
@@ -11,50 +11,14 @@
       "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证、机器可读的结果",
       "authors": "cloudflare",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "score": 42021,
+      "score": 44306,
       "meta": {
         "source": "github",
-        "stars": "42,021",
+        "stars": "44,306",
         "language": "JavaScript",
         "repo": "cloudflare/security-audit-skill",
         "owner": "cloudflare",
         "repoName": "security-audit-skill"
-      }
-    },
-    {
-      "id": "php-php-src",
-      "title": "php-src",
-      "title_zh": "php-src",
-      "description": "The PHP Interpreter",
-      "description_zh": "PHP 解释器",
-      "authors": "php",
-      "url": "https://github.com/php/php-src",
-      "score": 41544,
-      "meta": {
-        "source": "github",
-        "stars": "41,544",
-        "language": "C",
-        "repo": "php/php-src",
-        "owner": "php",
-        "repoName": "php-src"
-      }
-    },
-    {
-      "id": "anthropics-knowledge-work-plugins",
-      "title": "knowledge-work-plugins",
-      "title_zh": "knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "description_zh": "主要供知识工作者在 Claude Cowork 中使用的开源插件存储库",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "score": 32179,
-      "meta": {
-        "source": "github",
-        "stars": "32,179",
-        "language": "Python",
-        "repo": "anthropics/knowledge-work-plugins",
-        "owner": "anthropics",
-        "repoName": "knowledge-work-plugins"
       }
     },
     {
@@ -65,10 +29,10 @@
       "description_zh": "OpenShell 是自主 AI 代理的安全、私有运行时。",
       "authors": "NVIDIA",
       "url": "https://github.com/NVIDIA/OpenShell",
-      "score": 18738,
+      "score": 19412,
       "meta": {
         "source": "github",
-        "stars": "18,738",
+        "stars": "19,412",
         "language": "Rust",
         "repo": "NVIDIA/OpenShell",
         "owner": "NVIDIA",
@@ -76,75 +40,147 @@
       }
     },
     {
-      "id": "Renhuai123-ziwei-doushu",
-      "title": "ziwei-doushu",
-      "title_zh": "ziwei-doushu",
-      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-      "description_zh": "紫微斗数排盘引擎 — 基于开源倪海大厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍元数据",
-      "authors": "Renhuai123",
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "score": 6832,
+      "id": "aws-agent-toolkit-for-aws",
+      "title": "agent-toolkit-for-aws",
+      "title_zh": "agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "description_zh": "AWS 支持的官方 MCP 服务器、技能和插件可帮助 AI 代理在 AWS 上构建",
+      "authors": "aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "score": 3093,
       "meta": {
         "source": "github",
-        "stars": "6,832",
+        "stars": "3,093",
+        "language": "Python",
+        "repo": "aws/agent-toolkit-for-aws",
+        "owner": "aws",
+        "repoName": "agent-toolkit-for-aws"
+      }
+    },
+    {
+      "id": "Nutlope-hallmark",
+      "title": "hallmark",
+      "title_zh": "hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "description_zh": "Claude Code、Cursor、Codex 的防 AI 设计技巧。",
+      "authors": "Nutlope",
+      "url": "https://github.com/Nutlope/hallmark",
+      "score": 32035,
+      "meta": {
+        "source": "github",
+        "stars": "32,035",
+        "language": "CSS",
+        "repo": "Nutlope/hallmark",
+        "owner": "Nutlope",
+        "repoName": "hallmark"
+      }
+    },
+    {
+      "id": "luongnv89-claude-howto",
+      "title": "claude-howto",
+      "title_zh": "claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "description_zh": "克劳德代码的可视化、示例驱动指南——从基本概念到高级代理，以及可带来即时价值的复制粘贴模板。",
+      "authors": "luongnv89",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "score": 44474,
+      "meta": {
+        "source": "github",
+        "stars": "44,474",
+        "language": "Python",
+        "repo": "luongnv89/claude-howto",
+        "owner": "luongnv89",
+        "repoName": "claude-howto"
+      }
+    },
+    {
+      "id": "pbakaus-impeccable",
+      "title": "impeccable",
+      "title_zh": "impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "description_zh": "使您的 AI 线束在设计上更加出色的设计语言。",
+      "authors": "pbakaus",
+      "url": "https://github.com/pbakaus/impeccable",
+      "score": 86314,
+      "meta": {
+        "source": "github",
+        "stars": "86,314",
+        "language": "Rust",
+        "repo": "pbakaus/impeccable",
+        "owner": "pbakaus",
+        "repoName": "impeccable"
+      }
+    },
+    {
+      "id": "pollen-robotics-microduck",
+      "title": "microduck",
+      "title_zh": "microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "description_zh": "小型双足鸭子机器人🦆",
+      "authors": "pollen-robotics",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "score": 10924,
+      "meta": {
+        "source": "github",
+        "stars": "10,924",
+        "language": "Rust",
+        "repo": "pollen-robotics/microduck",
+        "owner": "pollen-robotics",
+        "repoName": "microduck"
+      }
+    },
+    {
+      "id": "google-gemini-gemini-cli",
+      "title": "gemini-cli",
+      "title_zh": "gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "description_zh": "一款开源 AI 代理，可将 Gemini 的强大功能直接带入您的终端。",
+      "authors": "google-gemini",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "score": 107969,
+      "meta": {
+        "source": "github",
+        "stars": "107,969",
         "language": "TypeScript",
-        "repo": "Renhuai123/ziwei-doushu",
-        "owner": "Renhuai123",
-        "repoName": "ziwei-doushu"
+        "repo": "google-gemini/gemini-cli",
+        "owner": "google-gemini",
+        "repoName": "gemini-cli"
       }
     },
     {
-      "id": "SnailSploit-Claude-Red",
-      "title": "Claude-Red",
-      "title_zh": "Claude-Red",
-      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
-      "description_zh": "claude-red 是一个专为 Claude 技能系统设计的进攻性安全技能库。每项技能都是一个结构化的 SKILL.md 文件，为 Claude 提供针对特定攻击面的专家级方法——从 SQLi 到 shellcode，从 EDR 规避到漏洞利用开发。",
-      "authors": "SnailSploit",
-      "url": "https://github.com/SnailSploit/Claude-Red",
-      "score": 8424,
+      "id": "jbiaojerry-ebook-treasure-chest",
+      "title": "ebook-treasure-chest",
+      "title_zh": "ebook-treasure-chest",
+      "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
+      "description_zh": "欢迎来到电子书下载宝库，汇集了各类电子书下载链接的地方。无论你喜欢阅读经典文学、经管励志、人生学习、职场创业、技术手册还是其他类型的书籍，都能满足你的需求。该库头部了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
+      "authors": "jbiaojerry",
+      "url": "https://github.com/jbiaojerry/ebook-treasure-chest",
+      "score": 22554,
       "meta": {
         "source": "github",
-        "stars": "8,424",
+        "stars": "22,554",
         "language": "Python",
-        "repo": "SnailSploit/Claude-Red",
-        "owner": "SnailSploit",
-        "repoName": "Claude-Red"
+        "repo": "jbiaojerry/ebook-treasure-chest",
+        "owner": "jbiaojerry",
+        "repoName": "ebook-treasure-chest"
       }
     },
     {
-      "id": "OpenBMB-VoxCPM",
-      "title": "VoxCPM",
-      "title_zh": "VoxCPM",
-      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-      "description_zh": "VoxCPM2：用于多语言语音生成、创意语音设计和逼真克隆的无分词器 TTS",
-      "authors": "OpenBMB",
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "score": 40226,
+      "id": "makecindy-cindy",
+      "title": "cindy",
+      "title_zh": "cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "description_zh": "认为它完成了。开箱即用的开源AI代理·设想，能够实现。开源、开箱即用的AI Agent。",
+      "authors": "makecindy",
+      "url": "https://github.com/makecindy/cindy",
+      "score": 4035,
       "meta": {
         "source": "github",
-        "stars": "40,226",
-        "language": "Python",
-        "repo": "OpenBMB/VoxCPM",
-        "owner": "OpenBMB",
-        "repoName": "VoxCPM"
-      }
-    },
-    {
-      "id": "nodejs-node",
-      "title": "node",
-      "title_zh": "node",
-      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
-      "description_zh": "Node.js JavaScript 运行时✨🐢🚀✨",
-      "authors": "nodejs",
-      "url": "https://github.com/nodejs/node",
-      "score": 122832,
-      "meta": {
-        "source": "github",
-        "stars": "122,832",
-        "language": "JavaScript",
-        "repo": "nodejs/node",
-        "owner": "nodejs",
-        "repoName": "node"
+        "stars": "4,035",
+        "language": "TypeScript",
+        "repo": "makecindy/cindy",
+        "owner": "makecindy",
+        "repoName": "cindy"
       }
     }
   ]
