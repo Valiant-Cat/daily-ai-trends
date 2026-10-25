@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-10-24T21:51:11.620Z",
+  "updatedAt": "2026-10-25T22:01:23.672Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "机器人必须在物理和社会约束下行动，同时适应环境和人类需求的变化。现有的具身代理系统通常专注于特定的目标或抽象执行为象征性的行动，限制了不断发展的世界中的评估。我们推出了 TARSphere，这是一个面向机器人的全栈框架，适用于基于物理和社交的长期具体代理。 TARSphere-Infra 在具有具体 NPC 和受限对话的物理模拟器中运行机器人策略。事件驱动的有限状态机 (FSM) 使用已完成的操作和交付的信息来更新任务状态并评估结果。 TARSphere-Harness 是其具体化的大脑工具，让冻结的多模态大语言模型 (MLLM) 通过多级可执行技能发挥作用，使用观察、分层记忆和执行反馈来修改其决策。在此基础上，智能体在环管理调整任务语义、因果依赖性和场景几何形状，以构建 TARSphere-Bench：跨 30 个室内场景的 360 个剧集。五配对条件评估感知稳健性、中断适应、任务更新、人员协调以及导航和报告以及获取和交付任务的意图理解。我们对 8 个 MLLM 的评估表明，通用模型可以优于具体模型，而任务更新和人机交互仍然很困难。即使使用共享的操作界面和决策预算，频繁的碰撞和跌倒也会进一步促使评估执行安全性和任务成功率。",
       "authors": "Yicheng Xu, Zhikai Xu, Ziyuan Chen, Yuhang Dong, Tao Zhang, Zhucun Xue, Yong Liu, Jiangning Zhang",
       "url": "https://huggingface.co/papers/2610.30043",
-      "score": 2,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "8",
         "paperId": "2610.30043"
       }
     },
@@ -26,10 +26,10 @@
       "description_zh": "分割语言模型将输入文本保留在客户端上，但将中间表示发送到服务器。攻击可以从这些消息中重建文本。当攻击者看到不同的消息、了解不同的模型权重或使用不同的数据集和恢复措施时，比较隐私评估就很困难。我们提出了 LLM-Attacker，一个记录这些选择并让研究人员检查、比较和扩展评估的框架。兼容的攻击重复使用记录的消息，并且保存它们的预测以进行独立评分。得分规则要求在防守通过之前有一个链接的无防守参考。报告还指出了尚未经过测试的攻击。在受控 GPT-2 实验中，添加训练期间返回的梯度将标记恢复率从 94.20% 提高到 97.38%，将精确文档恢复率从 13.71% 提高到 37.77%。代币增益的 95% 区间高于测试前固定的两个百分点阈值。该实验与一项同伴研究共享；在这里，它测试评估如何响应攻击者访问的变化。进一步的研究测量语料库选择和压缩防御如何影响恢复，将改编后的已发布攻击与其参考实现进行比较，并测试测量代码。该框架将实施检查与测量的攻击有效性分开报告。每个隐私声明都应说明攻击者、数据集和评分规则，报告其控制措施并识别未经测试的攻击。",
       "authors": "Georgios Politis, Evangelos Pappas",
       "url": "https://huggingface.co/papers/2610.22722",
-      "score": 4,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "10",
         "paperId": "2610.22722"
       }
     },
@@ -41,10 +41,10 @@
       "description_zh": "递归自我改进 (RSI) 依靠评估反馈来评估进展并指导进一步的研究，但重复运行复杂的基准测试成本高昂且会减慢迭代速度。人类专家通过选择基准子集或设计紧凑套件来降低成本。我们询问人工智能代理是否可以自动化此设计过程，并引入 EvalResearchBench (ERB)，这是自主评估研究的基准。给定目标材料、开发参考、候选 API 以及固定时间和 API 预算，称为研究人员的代理会选择或综合任务、实施评分器并在试点测试中对其进行修改，然后冻结用于编码、协作和推理的可执行评估器。我们研究了 9 位研究人员和 13 个候选模型，并将每个冻结的评估者与 14 个目标基准的分数一致性和成对一致性进行比较。最好的评估者按照目标对大约 75% 的候选对进行排序，低于目标之间的分歧所设定的 91% 上限。没有研究人员在每一个指标上都处于领先地位，并且发展目标的最佳评估者也不是研究人员隐藏的密封目标的最佳评估者。人工设计的公共任务样本仍然是强有力的基线，记录执行成本最低的评估者获得最高的成对协议。代理通过试点反馈修复任务和评分者，但他们的评估者仍然可以截断答案，耗尽评估预算，或者让几个问题主导领域分数。",
       "authors": "Yaolun Zhang, Tianyi Xu, Yujie Zhao, Jishen Zhao, Qingyun Wu, Huazheng Wang",
       "url": "https://huggingface.co/papers/2610.04184",
-      "score": 2,
+      "score": 22,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "22",
         "paperId": "2610.04184"
       }
     },
@@ -53,13 +53,13 @@
       "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
       "title_zh": "扩散语言模型改变任务和语言的速度",
       "description": "Diffusion language models can write several tokens in one forward pass, and they decide during generation how many passes to spend. Two outputs of the same token length can therefore vary a lot in cost. To understand the underlying factors of this cost variation, we analyze two diffusion models across 10 tasks. We find that the number of forward passes per token depends heavily on the task. Text copied or lightly edited from the input is cheap, while open-ended writing is costly. In DiffusionGemma, generating a token for story writing requires more than three times as many forward passes as for grammar correction. Two output properties explain much of this gap: how much of it is new relative to the input, and how rare its words are within the task. The same holds within a single response when thinking is involved. The final answer is cheap when it repeats the model's reasoning trace and costly when it adds something new. In multilingual generation, we find that highly tokenized languages also require more passes per token, adding to the cost they already pay with more tokens. Finally, cost tracks correctness: on the same math problem, wrong answers take more passes per token than correct ones, and weighting candidate answers by decoding speed beats majority voting by up to 4.2 points at no extra cost. Taken together, our results show that diffusion's computational advantage depends on how much of the output is already determined, while its decoding effort offers a practical signal for making inference more efficient and reliable.",
-      "description_zh": "扩散语言模型可以在一次前向传递中写入多个标记，并且它们在生成过程中决定要花费多少次传递。因此，具有相同令牌长度的两个输出的成本可能相差很大。为了了解这种成本变化的根本因素，我们分析了 10 个任务的两个扩散模型。我们发现每个令牌的前向传递次数在很大程度上取决于任务。从输入中复制或轻微编辑的文本成本低廉，而开放式写作成本高昂。在 DiffusionGemma 中，生成用于故事写作的标记需要的前向传递次数是语法校正的三倍多。两个输出属性在很大程度上解释了这种差距：相对于输入有多少是新的，以及它的单词在任务中有多罕见。当涉及思考时，这同样适用于单一反应。当最终答案重复模型的推理轨迹时，它的成本很低；而当它添加新的东西时，它的成本很高。在多语言生成中，我们发现高度标记化的语言还需要每个标记更多的传递，这增加了它们已经为更多标记付出的成本。最后，成本跟踪正确性：在同一数学问题上，错误答案比正确答案需要更多的通过，并且通过解码速度对候选答案进行加权比多数投票高出 4.2 个点，且无需额外成本。总而言之，我们的结果表明，扩散的计算优势取决于已经确定了多少输出，而其解码工作提供了实用的信号，使推理更加高效和可靠。",
+      "description_zh": "扩散语言模型可以在一次前向传递中写入多个标记，并且它们在生成过程中决定要花费多少次传递。因此，具有相同令牌长度的两个输出的成本可能相差很大。为了了解这种成本变化的根本因素，我们分析了 10 个任务的两个扩散模型。我们发现每个令牌的前向传递次数在很大程度上取决于任务。从输入中复制或轻微编辑的文本成本低廉，而开放式写作成本高昂。在 DiffusionGemma 中，生成用于故事写作的标记需���的前向传递次数是语法校正的三倍多。两个输出属性在很大程度上解释了这种差距：相对于输入有多少是新的，以及它的单词在任务中有多罕见。当涉及思考时，这同样适用于单一反应。当最终的答案重复模型的推理轨迹时，它的成本很低；而当它添加新的东西时，它的成本很高。在多语言生成中，我们发现高度标记化的语言还需要每个标记更多的传递，这增加了它们已经为更多标记付出的成本。最后，成本跟踪正确性：在同一数学问题上，错误答案比正确答案需要更多的通过，并且通过解码速度对候选答案进行加权比多数投票高出 4.2 个点，且无需额外成本。总而言之，我们的结果表明，扩散的计算优势取决于已经确定了多少输出，而其解码工作提供了实用的信号，使推理更加高效和可靠。",
       "authors": "Mohsen Fayyaz, Ali Modarressi, Daniel Israel, Lucas Bandarkar, Nanyun Peng",
       "url": "https://huggingface.co/papers/2610.25835",
-      "score": 3,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "10",
         "paperId": "2610.25835"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "扩散语言模型 (DLM) 由于其迭代去噪过程而带来了独特的量化挑战。在这项工作中，我们揭示了量化灵敏度既依赖于任务又依赖于时间，不同的下游任务在去噪步骤中表现出不同的精度要求。我们进一步表明，可以在没有真实标签或特定于任务的评估指标的情况下预测这些模式。基于这些发现，我们引入了 T 2Quant，一种任务和时间感知的混合精度量化框架，它使用无标签敏感度信号在固定位宽预算下跨降噪步骤优化分配激活精度。跨越三个 DLM 和六个基准的大量实验表明，T 2Quant 持续提高了现有量化方法的平均精度，在相同预算下实现了高达 6.7 个百分点的增益。",
       "authors": "Ofek Avivi, Eliron Rahimi, Avi Mendelson, Chaim Baskin",
       "url": "https://huggingface.co/papers/2610.31198",
-      "score": 15,
+      "score": 23,
       "meta": {
         "source": "huggingface",
-        "upvotes": "15",
+        "upvotes": "23",
         "paperId": "2610.31198"
       }
     },
@@ -83,13 +83,13 @@
       "title": "Bridging Exploration and Persona: Information-Directed Dueling for Test-Time Agent Personalization",
       "title_zh": "连接探索和角色：测试时代理个性化的信息导向决斗",
       "description": "Effective test-time personalization requires LLM agents to adapt to query-dependent user preferences from lightweight interaction. We study persona selection with binary comparisons between candidate responses as the online signal. We present ID-TAP, a scalable, IDS-inspired neural dueling-bandit framework for large discrete persona spaces. ID-TAP combines a query-conditioned neural utility model with a lightweight Bradley-Terry explorer, and transfers comparison evidence across related queries through similarity-weighted warm starts. The neural model shares statistical strength across queries while preserving query-specific scores, and efficient BT updates score hypothetical challengers. Across seven user-conditioned generation benchmarks under reference- and model-based preference simulators, ID-TAP achieves the strongest aggregate performance among the evaluated baselines within a fixed ten-round comparison budget. These results support information-directed challenger selection as an effective design for test-time persona adaptation.",
-      "description_zh": "有效的测试时个性化要求 LLM 代理通过轻量级交互来适应依赖于查询的用户偏好。我们通过候选响应之间的二元比较作为在线信号来研究角色选择。我们提出了 ID-TAP，这是一种可扩展的、受 IDS 启发的神经决斗强盗框架，适用于大型离散角色空间。 ID-TAP 将查询条件神经实用模型与轻量级 Bradley-Terry 浏览器相结合，并通过相似性加权热启动在相关查询之间传输比较证据。神经模型在查询之间共享统计强度，同时保留查询特定的分数，并且��效的 BT 更新可以为假设的挑战者打分。在基于参考和基于模型的偏好模拟器下的七个用户条件生成基准中，ID-TAP 在固定的十轮比较预算内的评估基线中实现了最强的总体性能。这些结果支持信息引导的挑战者选择作为测试时角色适应的有效设计。",
+      "description_zh": "有效的测试时个性化要求LLM代理通过轻量级交互来适应依赖于查询的用户偏好。我们通过候选响应之间的二元比较作为在线信号来研究角色选择。我们提出了 ID-TAP，这是一种可扩展的、受 IDS 启发的神经决斗强盗框架，适用于大型离散角色空间。 ID-TAP 将查询条件神经实用模型与轻量级 Bradley-Terry 浏览器相结合，并通过相似性加权热启动在相关查询之间传输比较证据。神经模型在查询之间共享统计强度，同时保留查询特定的分数，并且高���的 BT 更新可以为假设的挑战者打分。在基于参考和基于模型的偏好模拟器下的七个用户条件生成基准中，ID-TAP 在固定的十轮比较预算内的评估基线中实现了最强的总体性能。这些结果支持信息引导的挑战者选择作为测试时角色适应的有效设计。",
       "authors": "Jie Mao, Pingchen Lu, Xiangyi Wang, Hengquan Huang, Shuang Qiu, Min Zhang, Zhongxiang Dai",
       "url": "https://huggingface.co/papers/2610.24385",
-      "score": 1,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "7",
         "paperId": "2610.24385"
       }
     },
@@ -98,13 +98,13 @@
       "title": "IF-MAP: Influence-Function-Inspired Agent Prioritization in Multi-Agent Systems",
       "title_zh": "IF-MAP：多智能体系统中受影响函数启发的智能体优先级排序",
       "description": "Improving every agent in an LLM-based multi-agent system can be prohibitively costly, making it important to identify which agent should be prioritized to achieve the greatest system-level gain with limited resources. Failure attribution can inform this decision, but an agent's responsibility for failures does not directly reveal the system-level gains achievable by improving it. We therefore introduce IF-MAP, an influence-function-inspired method for identifying agents with high potential for system-level improvement. For each agent, IF-MAP measures end-to-end loss changes under controlled semantic prompt perturbations, fits a regularized local response model in a low-dimensional prompt-embedding subspace, and uses the estimated response norm as a priority score. This black-box procedure requires no access to model parameters or gradients and produces agent priorities that can guide subsequent improvement effort. We evaluate IF-MAP across six multi-agent workflows spanning code generation, question answering, and mathematical reasoning, using the same priorities for prompt optimization and model upgrades. Optimizing the selected agents' prompts achieves a macro-average gain of 3.81 percentage points, compared with 1.85 for uniform agent selection. Across five target models, upgrading the selected agents yields macro-average gains of 7.62-16.42 percentage points, compared with 3.81-8.62 for uniform agent selection. Despite its probing overhead, IF-MAP reduces Qwen3-8B and DeepSeek-V3.2 token use by 74.2% and 35.2%, respectively, relative to optimizing every agent, and reduces target-model tokens by 63.6-64.9% relative to upgrading every agent. These results support the use of IF-MAP to identify promising agents and direct improvement effort toward greater end-to-end performance gains.",
-      "description_zh": "改进基于 LLM 的多智能体系统中的每个智能体可能成本高昂，因此确定应优先考虑哪个智能体以利用有限的资源实现最大的系统级收益非常重要。故障归因可以为该决策提供信息，但代理对故障的责任并不能直接揭示通过改进可以实现的系统级收益。因此，我们引入了 IF-MAP，这是一种受影响函数启发的方法，用于识别具有系统级改进潜力的代理。对于每个代理，IF-MAP 测量受控语义提示扰动下的端到端损失变化，在低维提示嵌入子空间中拟合正则化局部响应模型，并使用估计的响应范数作为优先级分数。这种黑盒程序不需要访问模型参数或梯度，并产生可以指导后续改进工作的代理优先级。我们跨代码生成、问答和数学推理的六个多智能体工作流程评估 IF-MAP，使用相同的优先级进行即时优化和模型升级。优化所选座席的提示可实现 3.81 个百分点的宏观平均增益，而统一座席选择的宏观平均增益为 1.85 个百分点。在五个目标模型中，升级所选代理的宏观平均收益为 7.62-16.42 个百分点，而统一代理选择的宏观平均收益为 3.81-8.62 个百分点。尽管有探测开销，IF-MAP 相对于优化每个代理，将 Qwen3-8B 和 DeepSeek-V3.2 令牌使用量分别减少了 74.2% 和 35.2%，并且相对于升级每个代理，将目标模型令牌减少了 63.6-64.9%。这些结果支持使用 IF-MAP 来识别有前途的代理并直接改进工作以实现更大的端到端性能提升。",
+      "description_zh": "改进基于 LLM 的多智能体系统中的每个智能体可能成本高昂，因此确定应优先考虑哪个智能体以利用有限的资源实现最大的系统级收益非常重要。故障归因可以为该决策提供信息，但代理对故障的责任并不能直接揭示通过改进可以实现的系统级收益。因此，我们引入了 IF-MAP，这是一种受影响函数启发的方法，用于识别具有系统级改进潜力的代理。对于每个代理，IF-MAP 测量受控语义提示扰动下的端到端损失变化，在低维提示嵌入子空间中拟合正则化局部响应模型，并使用估计的响应范数作为优先级分数。这种黑盒程序不需要访问模型参数或梯度，并产生可以指导后续改进工作的代理优先级。我们跨代码生成、问答和数学推理的六个多智能体工作流程评估 IF-MAP，使用相同的优先级进行即时优化和模型升级。优化选定座席的提示可实现 3.81 个百分点的宏观平均增益，而统一座席选择的宏观平均增益为 1.85 个百分点。在五个目标模型中，升级所选代理的宏观平均收益为 7.62-16.42 个百分点，而统一代理选择的宏观平均收益为 3.81-8.62 个百分点。尽管有探测开销，IF-MAP 相对于优化每个代理，将 Qwen3-8B 和 DeepSeek-V3.2 令牌使用量分别减少了 74.2% 和 35.2%，并且相对于升级每个代理，将目标模型令牌减少了 63.6-64.9%。这些结果支持使用 IF-MAP 来识别有前途的代理并直接改进工作以实现更大的端到端性能提升。",
       "authors": "Jie Mao, Pingchen Lu, Zikun Qu, Jiahang Sun, Xiangyi Wang, Zhiwei Shang, Zhiyong Wang, Guojun Xiong, Zhongxiang Dai",
       "url": "https://huggingface.co/papers/2610.24383",
-      "score": 2,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "8",
         "paperId": "2610.24383"
       }
     },
@@ -116,10 +116,10 @@
       "description_zh": "现代LLM代理人可以从可访问的文档中检索信息，然后披露从这些文档中汇总的敏感结论。这种马赛克效应给处理机密数据的代理带来了重大风险。我们通过 30 个综合网络安全、医疗和军事示例来量化其实现，从受控模拟中的三个 LLM 代理获得了 10,800 个最终答案，并从两个开源工具中的现场代理获得了 1,440 个答案。即使在旨在从一份文档中回答的良性查询下，测试中性能最好的模型 GPT-5.6-Sol 在模拟中也有 7.08% 的答案（95% CI：3.75-10.67%）披露了禁止的复合材料，而实时线束中的披露率更差。添加可见的分类标头和显式聚合规则大大降低了汇总披露率，但尽管有这些保护措施，但在所有意图中 32.37% 的模拟答案中仍然存在不安全披露（95% CI：28.33-36.19%）。此外，增加拒绝并不能保证保密性，因为无论如何，严重的拒绝都会揭示禁止的结论。这些结果指出了一个令人不安的结论：通过马赛克式事件泄露敏感数据是评估设置中观察到的机密性故障模式，其发生率不可忽略。它们促使对代理在具有混合权限的用户的敏感数据环境中推断和披露的内容进行更强有力的控制。",
       "authors": "Daniel Ruiz, Luca Luceri, Emilio Ferrara",
       "url": "https://huggingface.co/papers/2610.30418",
-      "score": 16,
+      "score": 23,
       "meta": {
         "source": "huggingface",
-        "upvotes": "16",
+        "upvotes": "23",
         "paperId": "2610.30418"
       }
     },
@@ -131,10 +131,10 @@
       "description_zh": "我们推出了 HyperDrone，这是一款速度极快的四旋翼飞行器模拟器，专注于高性能批量渲染，其速度比现有最先进的批量四旋翼飞行器模拟器快 20 倍以上。 HyperDrone 将高度优化的多旋翼动力学与 HyperLux 相结合，HyperLux 是一种新的光线追踪引擎，支持 Nvidia OptiX、Vulkan、Apple Metal 和 WebGPU 后端，充分利用现代光线追踪硬件，能够完全在 GPU 上运行这两个组件。 HyperLux 以可配置的保真度级别渲染 RGB、深度、语义/实例分割、表面法线和光流观察，包括反射、真实光照、运动模糊、抗锯齿和基于物理的渲染 (PBR)。即使在最高保真度设置下，HyperLux 也能在消费级 GPU 上实现数百万帧每秒 (FPS)，同时渲染逼真的 3D 场景。我们通过纯粹在模拟中训练基于视觉的偏航控制策略并将其转移到带有摄像头的真正小型四旋翼飞行器（Crazyflie）上并完全在机上运行来展示 HyperDrone 的优点。",
       "authors": "Jonas Eschmann, Giuseppe Loianno",
       "url": "https://huggingface.co/papers/2610.28950",
-      "score": 2,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "10",
         "paperId": "2610.28950"
       }
     },
@@ -146,10 +146,10 @@
       "description_zh": "前沿编码代理越来越擅长 3D 建模。然而，当构建要在物理世界中组装的对象时，他们仍然面临挑战，通常会创建具有浮动、碰撞或断开连接的零件的无效组件。我们认为，为代理提供用于组装构建并验证其物理可行性的工具足以让他们生成仍然遵循输入提示的物理有效的组件。专注于乐高积木构建领域，我们提出了 BrickWright，这是一个使用预先训练的代理根据文本或图像提示生成物理上可行的积木构建的框架，其中如果仅使用真实部件，没有碰撞或浮动部件，并在可能的情况下形成连接结构，则该构建在物理上是可行的。 BrickWright 指导代理通过使用 BrickLayer 编写代码来创建构建，BrickLayer 是一个 Python 工具包，具有两个主要组件：一个符合人体工程学的积木组装 API，与使用原始 LDraw 相比，推理成本减半；以及一个提供物理可行性反馈的验证器。基线代理的物理有效性仅为 9% (GPT-6 Luna) 到 69% (GPT-6 Astra)，而 BrickWright 指导的代理在 512 个提示样本上实现了 100% 的有效性，同时提高了轻量级代理的提示依从性，并维持了更强代理的提示依从性。此外，它们在文本到程序块任务上的性能优于专用模型。代码可在我们的项目页面上找到：https://avalovelace1.github.io/brickwright/",
       "authors": "Ava Pun, Kevin Dai, Sally Chen, Maxwell Jones, Ruixuan Liu, Kangle Deng, Changliu Liu, Maneesh Agrawala, Deva Ramanan, Jun-Yan Zhu",
       "url": "https://huggingface.co/papers/2610.31651",
-      "score": 7,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
+        "upvotes": "13",
         "paperId": "2610.31651"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "随着语言模型代理的能力越来越强，他们可以承担更多的任务，而无需向任何人寻求帮助。对人类伙伴的依赖很容易被解读为合作的失败，而实际上这可能是正确的劳动分工，而仅靠人类参与率并不能区分两者。我们系统地研究了这一点，将代理人和个人置于共同的目标下，同时改变谁拥有优势：人类有明显的优势，要么没有，要么代理人有。为了获得这种控制，我们引入了共享控制迷宫，其中代理控制的化身和人类控制的化身共享目标，即在尽可能少的团队轮次中达到共同目标。代理在自己行动和将动作交给人员之间分配每个团队的轮次，并且初始放置设置人员的最短路径优势，而任务在其他方面保持不变。我们评估了 GPT~5.6~Sol、Command~A+、Qwen~3.8~27B 和 Command~R，首先使用单个头像和全地图可观察性测量单独能力，然后在三个优势条件下与人类参与者进行合作游戏。在这四个模型中，更强的独奏性能与选择性的、有路线条件的人类参与有关：当人类没有优势时，模型几乎无一例外地自行可靠地解决迷宫，并且当人类路线较短时，大约 80% 的初始决策都由人类参与。 Command R 的独奏性能明显较弱，没有表现出这样的选择性。",
       "authors": "Weien Li, Haochen Liu, Zeyu Li, Rui Song, Zixuan Dong, Ye Yuan",
       "url": "https://huggingface.co/papers/2610.27148",
-      "score": 5,
+      "score": 10,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "10",
         "paperId": "2610.27148"
       }
     },
@@ -173,13 +173,13 @@
       "title": "FilmFlow: Agentic System for 3D Virtual Film Cinematography",
       "title_zh": "FilmFlow：3D 虚拟电影摄影代理系统",
       "description": "Complex camera motion is central to visual storytelling, yet translating cinematographic intent into controllable, executable camera trajectories remains challenging. We introduce FilmFlow, an agentic framework that converts natural-language instructions or reference videos into explicit camera trajectories for dynamic 3D environments. To generate these trajectories, a Director agent constructs executable camera plans by composing high-level motions from concurrent atomic operations that jointly control translation, rotation, and framing. The Director is supported by three specialized agents: an Interpreter that extracts scene-grounded cinematographic intent, a Scout that selects initial viewpoints, and a Critic that evaluates rendered results and provides visual feedback for iterative plan refinement. We also introduce CinemaBench, comprising 150 Blender scenes from self-created and licensed sources, with five camera instructions per scene for 750 text-directed tasks and 60 reference videos associated with a subset of scenes. CinemaBench supports evaluation of both text-directed camera generation and video reference-directed camera generation. Across a diverse set of evaluated baselines, FilmFlow achieves the strongest benchmark performance and the highest user preference, demonstrating effective spatial reasoning, temporal coordination, and visual composition for executable 3D cinematography.",
-      "description_zh": "复杂的摄像机运动是视觉叙事的核心，但将电影摄影意图转化为可控、可执行的摄像机轨迹仍然具有挑战性。我们引入了 FilmFlow，这是一个代理框架，可将自然语言指令或参考视频转换为动态 3D 环境的明确相机轨迹。为了生成这些轨迹，Director 代理通过从共同控制平移、旋转和取景的并发原子操作中组合高级运动来构建可执行的摄像机计划。导演由三个专门代理支持：一个解释器，提取基于场景的电影摄影意图；一个侦察员，选择初始视点；以及一个评论家，评估渲染结果并为迭代计划细化提供视觉反��。我们还推出了 CinemaBench，其中包含来自自行创建和许可来源的 150 个 Blender 场景，每个场景有 5 个摄像机指令，用于 750 个文本指导任务以及与场景子集相关的 60 个参考视频。 CinemaBench 支持对文本引导相机生成和视频参考引导相机生成进行评估。在一系列不同的评估基准中，FilmFlow 实现了最强的基准性能和最高的用户偏好，展示了可执行 3D 电影摄影的有效空间推理、时间协调和视觉合成。",
+      "description_zh": "复杂的摄像机运动是视觉叙事的核心，但将电影摄影意图转化为可控、可执行的摄像机轨迹仍然具有挑战性。我们引入了 FilmFlow，这是一个代理框架，可将自然语言指令或参考视频转换为动态 3D 环境的明确相机轨迹。为了生成这些轨迹，Director 代理通过从共同控制平移、旋转和取景的并发原子操作中组合高级运动来构建可执行的摄像机计划。导演由三个专门代理支持：一个解释器，提取基于场景的电影摄影意图；一个侦察员，选择初始视点；以及一个评论家，评估渲染结果并为迭代计划细化提供视觉反馈。我们还推出了 CinemaBench，其中包含来自自行创建和许可来源的 150 个 Blender 场景，每个场景有 5 个摄像机指令，用于 750 个文本指导任务以及与场景子集相关的 60 个参考视频。 CinemaBench 支持对文本引导相机生成和视频参考引导相机生成进行评估。在一组不同的评估基准中，FilmFlow 实现了最强的基准性能和最高的用户偏好，展示了可执行 3D 电影摄影的有效空间推理、时间协调和视觉合成。",
       "authors": "Yiming Zhang, Jiarui Guo, Haojia Wei, Yifei Liu, Yifan Yang, Hongjie Zhang, Xue Yang, Zhihang Zhong",
       "url": "https://huggingface.co/papers/2610.30753",
-      "score": 26,
+      "score": 31,
       "meta": {
         "source": "huggingface",
-        "upvotes": "26",
+        "upvotes": "31",
         "paperId": "2610.30753"
       }
     },
@@ -188,13 +188,13 @@
       "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
       "title_zh": "RIDAR：通过自动检测和运行时干预保护自主研究代理的研究完整性",
       "description": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
-      "description_zh": "自主研究代理越来越多地用于自动化大部分科学研究，但它们很容易出现研究完整性违规（RIV）：损害研究过程的有效性、可重复性或忠实性的行为。我们提出了 RIDAR，一个用于自动 RIV 检测和运行时干预的框架。首先，我们介绍 RIVT，这是涵盖整个研究生命周期的 14 种 RIV 类型的综合分类法。在 RIVT 的基础上，我们提出了 RIDAR-post-hoc，一个用于检测智能体轨迹内的 RIV 的框架。 RIDAR-post-hoc 在 RIV-Gold 上实现了 85.2% 的 F1 性能，RIV-Gold 是具有 60 个专家注释轨迹的 RIV 检测基准。将 RIDAR-post-hoc 应用于 RIV-Wild（涵盖 50 个不同研究任务的 300 个智能体轨迹的数据集），我们在 99.7% 的轨迹中检测到 3,964 个 RIV 实例，揭示了 RIV 在当前智能体中的普遍性。最后，我们提出了 RIDAR-runtime，一个用于在代理运行时动态检测和纠正 RIV 的框架。 RIDAR 运行时有效地将任务完成时剩余的代理 RIV 减少了 36.8%。我们将发布我们的代码和数据以方便未来的研究。",
+      "description_zh": "自主研究代理越来越多地用于自动化大部分科学研究，但它们很容易出现研究完整性违规（RIV）：损害研究过程的有效性、可重复性或忠实性的行为。我们提出了 RIDAR，一个用于自动 RIV 检测和运行时干预的框架。首先，我们介绍 RIVT，这是涵盖整个研究生命周期的 14 种 RIV 类型的综合分类法。在 RIVT 的基础上，我们提出了 RIDAR-post-hoc，一个用于检测智能体轨迹内 RIV 的框架。 RIDAR-post-hoc 在 RIV-Gold 上实现了 85.2% 的 F1 性能，RIV-Gold 是具有 60 个专家注释轨迹的 RIV 检测基准。将 RIDAR-post-hoc 应用于 RIV-Wild（涵盖 50 个不同研究任务的 300 个智能体轨迹的数据集），我们在 99.7% 的轨迹中检测到 3,964 个 RIV 实例，揭示了 RIV 在当前智能体中的普遍性。最后，我们提出了 RIDAR-runtime，一个用于在代理运行时动态检测和纠正 RIV 的框架。 RIDAR 运行时有效地将任务完成时剩余的代理 RIV 减少了 36.8%。我们将发布我们的代码和数据以方便未来的研究。",
       "authors": "Jiening Siow, Amy Xin, Junjie Wang, Ziyu Tang, Zijun Yao, Yunjia Qi, Fanjin Zhang, Lei Hou, Jie Tang, Juanzi Li",
       "url": "https://huggingface.co/papers/2610.31372",
-      "score": 8,
+      "score": 16,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "16",
         "paperId": "2610.31372"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "事件序列是随机事件链，每个事件都由异构（数字和分类）特征描述。事件序列预测问题出现在金融、医疗、业务流程智能等领域。在这项工作中，我们研究事件序列的多水平预测作为条件生成建模问题。我们不仅评估预测的准确性，还评估分布的真实性。为此，我们提出了一个基准，包括质量方面的指标、强大的统计基线、从相邻领域改编的最新模型以及精心策划的真实世界数据集。仔细的评估表明，没有一种方法能够同时兼顾准确性和真实性，这凸显了两者之间的基本权衡。最后，我们介绍了 Wasserstein BaryBooster，这是一种将真实性强扩散模型中的样本聚合到最先进的预测器中的算法，证明分布真实性可以转化为预测精度。代码可在 https://github.com/xaosina/event-sequence-forecasting 获取。",
       "authors": "Dmitry Osin, Egor Surkov, Petr Mokrov, Igor Udovichenko, Ivan Karpukhin, Evgeny Burnaev, Egor Shvetsov, Alexander Korotin",
       "url": "https://huggingface.co/papers/2610.12586",
-      "score": 1,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "7",
         "paperId": "2610.12586"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "视觉-语言-动作（VLA）模型在通用机器人操作方面显示出强大的前景，但其推理成本仍然是实时控制的主要瓶颈。这种限制在诸如 π_{0.5} 之类的流匹配 VLA 中尤其明显，其中动作专家在迭代去噪期间被反复评估。我们引入 MambaAct，它是一个高效的 Mamba 操作专家，用于流量匹配 VLA 策略。 MambaAct 保留了预训练的视觉语言前缀编码器 π_{0.5}，同时用紧凑的基于 Mamba 的动作专家替换了基于 Transformer 的动作专家。在这位专家中，Mamba 充当动作混合器，对嘈杂的连续动作序列中的依赖关系进行建模。为了保留视觉语言调节而不需要重复的标记级交叉注意，MambaAct 使用轻量级上下文压缩器将视觉语言模型 (VLM) 前缀标记映射到紧凑的调节信号中，该信号控制和调制每个 Mamba 操作块。 MambaAct 使用缩小了 10 倍的动作专家，将 LIBERO 上的流匹配降噪延迟减少了 64.8%，在实际部署中减少了 58.8%，同时将三个独立微调种子的平均 LIBERO 成功率提高了 1.08 个百分点，并保持了 LIBERO-Plus 和实际基准的收益。我们的代码和模型权重可在 https://github.com/giakhuyendihoc/MambaAct 上公开获取。",
       "authors": "Khuyen Pham, Tran Nguyen Le, Edoardo Fazzari, Cesare Stefanini",
       "url": "https://huggingface.co/papers/2610.22951",
-      "score": 3,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "9",
         "paperId": "2610.22951"
       }
     }
