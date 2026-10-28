@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-10-27T23:07:31.878Z",
+  "updatedAt": "2026-10-28T23:29:44.025Z",
   "count": 15,
   "items": [
     {
-      "id": "2610.21240",
-      "title": "Representation Redistribution in Sparse Autoencoders",
-      "title_zh": "稀疏自动编码器中的表示重新分布",
-      "description": "Sparse autoencoders (SAEs) decompose language model activations into sparse features, but prompt transformations designed to preserve the underlying request can redistribute activity across them. A feature change observed on one transformed prompt need not recur, and even a recurring change need not affect a downstream computation. We introduce the redistribution sensitivity score (RSS), which identifies large feature responses that recur in a consistent direction, and evaluate the resulting supports on variants excluded from selection. Across 27 pretrained SAEs spanning eight language models, the tested prompt transformations produce a reproducible redistribution profile on these excluded variants. We then separate recurring representation change from signed readout contribution and decision failure. For a fixed linear readout, an exact decomposition shows how response magnitude, readout coefficients, directional alignment, and the clean margin determine downstream consequences. In two frozen safety readouts, combining RSS support erosion with the full clean margin yields recurrent failure AUROCs of 0.935 and 0.958 using median supports of 20 and 19 features, compared with 0.965 and 0.964 using full erosion. RSS therefore provides a way to identify recurring sparse representation changes and quantify their contribution to a downstream readout without equating representation change with failure. Code is available at https://github.com/OpenSAE/Redistribution-Sensitivity-Score",
-      "description_zh": "稀疏自动编码器 (SAE) 将语言模型激活分解为稀疏特征，但旨在保留底层请求的提示转换可以在它们之间重新分配活动。在一个转换后的提示上观察到的特征更改不需要重复出现，甚至重复出现的更改也不需要影响下游计算。我们引入了重新分布敏感性评分（RSS），它可以识别以一致方向重复出现的大特征响应，并评估对从选择中排除的变体的支持结果。在跨越八种语言模型的 27 个预训练 SAE 中，经过测试的提示转换在这些排除的变体上生成了可重现的重新分布配置文件。然后，我们将经常性的表示变化与签名的读出贡献和决策失败分开。对于固定的线性读数，精确的分解显示了响应幅度、读数系数、方向对准和干净裕度如何确定下游后果。在两个冻结的安全读数中，将 RSS 支持侵蚀与完全干净裕度相结合，使用 20 和 19 个特征的中值支持产生经常性故障 AUROC 分别为 0.935 和 0.958，而使用完全侵蚀时则为 0.965 和 0.964。因此，RSS 提供了一种方法来识别重复出现的稀疏表示变化并量化它们对下游读数的贡献，而不将表示变化等同于失败。代码可在 https://github.com/OpenSAE/Redistribution-Sensitivity-Score 获取",
-      "authors": "Ziye Mei, Haotian Ma",
-      "url": "https://huggingface.co/papers/2610.21240",
+      "id": "2509.05512",
+      "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+      "title_zh": "用于增强图像分类和定向对象检测的四元数近似网络",
+      "description": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results highlight its potential for deployment in resource-constrained robotic systems requiring rotation-aware perception and application in other domains. Code: https://cwru-aism.github.io/ QUANpaper/",
+      "description_zh": "本文介绍了四元数近似网络（QUAN），这是一种新颖的深度学习框架，利用四元数代数进行旋转等变图像分类和对象检测。与尝试完全在四元数域中操作的传统四元数神经网络不同，QUAN 使用实值运算通过汉密尔顿乘积分解来近似四元数卷积。这种方法保留了几何属性，同时支持自定义 CUDA 内核的高效实现。我们引入独立四元数批量归一化（IQBN）来提高训练稳定性，并将四元数操作扩展到空间注意机制。 QUAN 在图像分类（CIFAR-10/100、ImageNet）、对象检测（COCO、DOTA）和机器人感知任务上进行评估。在分类任务中，与现有的基于卷积和四元数的模型相比，QUAN 以更少的参数和更快的收敛速度实现了更高的准确率。对于目标检测，QUAN 展示了比标准卷积神经网络 (CNN) 更高的参数效率和旋转处理能力，同时在此下游任务中为四元数 CNN 建立了 SOTA。这些结果凸显了其在需要旋转感知感知和其他领域应用的资源受限机器人系统中的部署潜力。代码：https://cwru-aism.github.io/QUANpaper/",
+      "authors": "Bryce Grant, Peng Wang",
+      "url": "https://huggingface.co/papers/2509.05512",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2610.21240"
+        "paperId": "2509.05512"
       }
     },
     {
-      "id": "2610.33817",
-      "title": "EnvLunch: The Environment as a Free Lunch for Learning to Interact",
-      "title_zh": "EnvLunch：环境作为学习互动的免费午餐",
-      "description": "For agentic data analysis, language-model agents often require a large number of annotated tasks to learn how to interact effectively with executable environments (i.e., databases). While high-quality annotated tasks require heavy manual effort, an executable environment already provides rich interaction structure and verifiable outcomes. In this sense, the environment itself offers a free lunch, an additional set of verifiable tasks that require no human annotation. We propose EnvLunch, a warm-up stage that turns this environmental signal into agent training without human-written or model-generated task descriptions, before downstream agentic reinforcement learning. EnvLunch samples valid action trajectories, executes them to obtain final observations, and trains an agent to recover a functionally equivalent trajectory given only its final observation. This label-free warm-up enables the model to outperform the baseline by over 9 points on average across all downstream training budgets, and with few labels, the baseline needs 8 to 32 times as many annotated examples to match the accuracy that the EnvLunch model reaches at its smallest training budget. Letting the environment alone define the task yields a larger gain than having the model write its own tasks over the same environments, and this warm-up also improves fine-tuning on benchmarks beyond data analysis. EnvLunch therefore saves annotated tasks and provides a better starting point for fine-tuning agentic models when such tasks are limited.",
-      "description_zh": "对于代理数据分析，语言模型代理通常需要大量带注释的任务来学习如何与可执行环境（即数据库）有效交互。虽然高质量的带注释的任务需要大量的手动工作，但可执行环境已经提供了丰富的交互结构和可验证的结果。从这个意义上说，环境本身提供了一顿免费午餐，一组额外的不需要人工注释的可验证任务。我们提出了 EnvLunch，这是一个预热阶段，在下游代理强化学习之前，将这种环境信号转化为代理训练，而无需人工编写或模型生成的任务描述。 EnvLunch 对有效的动作轨迹进行采样，执行它们以获得最终观察结果，并训练代理在仅给出最终观察结果的情况下恢复功能等效的轨迹。这种无标签预热使模型在所有下游训练预算中平均优于基线 9 个点以上，并且在标签很少的情况下，基线需要 8 到 32 倍的带注释示例才能匹配 EnvLunch 模型在其最小训练预算下达到的准确性。让环境单独定义任务比让模型在相同环境中编写自己的任务产生更大的收益，并且这种预热还改进了数据分析之外的基准的微调。因此，EnvLunch 保存了带注释的任务，并在此类任务受到限制时为微调代理模型提供了更好的起点。",
-      "authors": "Wei Liu, Min Gao, Yali Du, Yulan He",
-      "url": "https://huggingface.co/papers/2610.33817",
+      "id": "2610.22684",
+      "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+      "title_zh": "AlphaBet：LLM事件预测代理的强化学习",
+      "description": "Forecasting an unresolved event requires finding relevant evidence and deciding how strongly it supports each outcome. Yet outcome-based training of Large Language Model (LLM) forecasters often begins with preassembled evidence at a single prediction date, leaving evidence acquisition outside the learning loop. We introduce AlphaBet, an agentic reinforcement learning (RL) framework that trains a single LLM policy to search, reason, and report probabilities across multiple pre-resolution dates. Each dated forecast is scored by a proper scoring rule against the eventual outcome, allowing one resolved event to supervise decisions under different information states. We decompose forecasting regret into an evidence-acquisition gap and a probability-reporting gap, and show that Group Relative Policy Optimization (GRPO)'s standard-deviation normalization can distort the reporting target under multi-class proper scores. On GLM-4.5-Air, AlphaBet reduces the Brier score from 0.731 to 0.626 on Forecast-Dojo and from 0.612 to 0.528 on FutureX. Controlled ablations attribute these gains to multi-date training and show that they come from improvements in both information acquisition and probability reporting. Our empirical results validate that GRPO's std normalization degrades proper-scoring-rule performance while leaving top-outcome accuracy largely unchanged.",
+      "description_zh": "预测未解决的事件需要找到相关证据并确定它对每个结果的支持程度。然而，基于结果的大型语言模型（LLM）预测者培训通常从单个预测日期预先收集的证据开始，将证据获取留在学习循环之外。我们引入了 AlphaBet，这是一种代理强化学习 (RL) 框架，可训练单个 LLM 策略来搜索、推理和报告多个预决议日期的概率。每个过时的预测都根据最终结果通过适当的评分规则进行评分，从而允许一个已解决的事件在不同的信息状态下监督决策。我们将预测后悔分解为证据获取差距和概率报告差距，并表明组相对政策优化（GRPO）的标准差归一化可以扭曲多类正确分数下的报告目标。在 GLM-4.5-Air 上，AlphaBet 将 Forecast-Dojo 上的 Brier 分数从 0.731 降低到 0.626，将 FutureX 上的 Brier 分数从 0.612 降低到 0.528。受控消融将这些收益归因于多日期训练，并表明它们来自信息获取和概率报告方面的改进。我们的实证结果证实，GRPO 的标准标准化会降低正确评分规则的性能，同时使最高结果的准确性基本保持不变。",
+      "authors": "Liqin Ye, Rongzhi Zhang, Xin Liu, Zheng Li, Yuan He, Qingyu Yin, Priyanka Nigam, Chao Zhang",
+      "url": "https://huggingface.co/papers/2610.22684",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2610.33817"
+        "paperId": "2610.22684"
       }
     },
     {
-      "id": "2610.32046",
-      "title": "Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?",
-      "title_zh": "在科学发现方面，测试时记忆进化能否胜过测试时训练？",
-      "description": "Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates during the discovery process, making computational efficiency an important consideration when scaling to larger models. This motivates us to explore an efficient test-time adaptation method for scientific discovery. We introduce Test-Time Memory Evolution (TTME), a plug-and-play test-time adaptation method, as an alternative to TTT. TTME continually updates the external memory by distilling the experience to guide subsequent discovery without updating model weights. To have a clean comparison, we evaluate TTME and TTT under the same discovery framework, replacing only the test-time adaptation method. Our evaluation shows that TTME outperforms TTT on all five mathematical tasks, while reducing computational cost by 82.8-84.6% in FLOPs and 47.7-58.4% in runtime. These results establish TTME as an effective and computationally efficient alternative to TTT in the evaluated discovery settings.",
-      "description_zh": "最近的测试时训练 (TTT) 框架使开放权重大型语言模型 (LLM) 的性能优于由科学发现任务的前沿模型支持的纯推理框架。然而，TTT 在发现过程中引入了在线权重更新的额外计算成本，使得计算效率成为扩展到更大模型时的重要考虑因素。这激励我们探索一种有效的科学发现测试时间适应方法。我们引入测试时内存演化（TTME），一种即插即用的测试时适应方法，作为 TTT 的替代方法。 TTME ���过提取经验来不断更新外部存储器，以指导后续发现，而无需更新模型权重。为了进行清晰的比较，我们在相同的发现框架下评估 TTME 和 TTT，仅替换测试时间适应方法。我们的评估表明，TTME 在所有五项数学任务上都优于 TTT，同时在 FLOP 中降低了 82.8-84.6% 的计算成本，在运行时中降低了 47.7-58.4%。这些结果表明 TTME 在评估的发现环境中是 TTT 的有效且计算效率高的替代方案。",
-      "authors": "Yepeng Liu, Shengmai Chen, Xuandong Zhao, Chengzhi Liu, Dawn Song, Xin Eric Wang, Yuheng Bu",
-      "url": "https://huggingface.co/papers/2610.32046",
+      "id": "2610.31924",
+      "title": "Sub-monolayer tracking of molecular states at buried interfaces",
+      "title_zh": "掩埋界面分子态的亚单层跟踪",
+      "description": "Phenomena responsible for emerging technologies originate from novel molecular states at buried interfaces. Yet quantitatively resolving these features is out of reach in most cases. Resonant scattering has demonstrated sensitivity to these local states but is limited due to a lack of accurate interpretive models. We leverage a machine learning (ML)-optimized optical model to analyze polarized resonant soft X-ray scattering (RSoXS) from molecular thin films. This new analysis establishes the direct and quantitative interpretation of molecular orientation, chemical identity and packing states as a function of depth with sub-monolayer resolution - reaching beyond the diffraction limit via locking energy and polarization through the optical model. From our analysis, we discover a gradient evolution of molecular orientation and packing emerging from the interface, indicative of competing surface versus bulk growth dynamics and contradicting hypotheses of substrate patterning. This nondestructive insight into buried interfacial formation and final state opens possibilities in controlling interfacial states and phenomena in next-generation technologies.",
+      "description_zh": "新兴技术的现象源于埋藏界面处的新颖分子态。然而，在大多数情况下，定量解决这些特征是不可能的。共振散射已证明对这些局部状态敏感，但由于缺乏准确的解释模型而受到限制。我们利用机器学习 (ML) 优化的光学模型来分析分子薄膜的偏振共振软 X 射线散射 (RSoXS)。这项新分析建立了分子取向、化学特性和堆积状态作为深度函数的直接定量解释，具有亚单层分辨率——通过光学模型锁定能量和偏振，超出了衍射极限。从我们的分析中，我们发现界面上出现的分子取向和堆积的梯度演化，表明表面与整体生长动力学的竞争以及基材图案化的相互矛盾的假设。这种对埋藏界面形成和最终状态的非破坏性洞察为控制下一代技术中的界面状态和现象提供了可能性。",
+      "authors": "Harlan Heilman, Em Biegler, Sushil Adhikari, Victor Murcia, Tanner Melody, Fred Woodall, Lars Thomsen, Obaid Alqahtani, Brian A. Collins",
+      "url": "https://huggingface.co/papers/2610.31924",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2610.31924"
+      }
+    },
+    {
+      "id": "2610.36184",
+      "title": "Lipi-Ghor: A Large-Scale, Diarized, Multi-Domain Bengali Speech Corpus and a Scalable Pipeline for Building It",
+      "title_zh": "Lipi-Ghor：大规模、分类、多域孟加拉语音语料库和可扩展的构建流程",
+      "description": "Bengali, spoken by over 230 million people, remains severely under-resourced in spoken language research. Existing open Bengali ASR corpora are confined to short, read or crowd-sourced speech and lack speaker diarization and long-form audio.\n  We present Lipi-Ghor, a large-scale weakly-supervised Bengali speech corpus comprising 885 hours of audio sourced from 998 YouTube videos across 596 unique channels, spanning 17 diverse domains including audiobooks, drama, religious sermons, news, and regional dialects. Each recording is annotated in SSTT format (Speaker, Speech, Transcription, Timestamp), which combines automated diarization with Bengali YouTube caption tracks.\n  To our knowledge, Lipi-Ghor is the first Bengali speech corpus to pair large-scale coverage with speaker-diarized, long-form audio annotations, both of which are absent from existing open Bengali resources. We also present the construction methodology as a replicable pipeline for any language with a sufficient captioned YouTube presence. Targeted channel curation across a handful of rich domains yields corpus scales that were previously out of reach for low-resource languages.\n  We benchmark four widely-used ASR models under zero-shot and fine-tuned conditions. All four degrade consistently on emotive, dialectal, and long-form content. Because caption targets are noisy, we also release a human-annotated gold evaluation split, verified by 17 volunteer annotators over 30 hours of human-in-the-loop correction and stratified across all 17 domains.\n  We release our original contributions (video-ID lists, diarization output, pipeline code, and the gold annotations) under CC-BY-4.0, and distribute caption-derived transcripts for research use only; no raw audio is redistributed.",
+      "description_zh": "孟加拉语的使用者超过 2.3 亿，但口语研究的资源仍然严重不足。现有的开放孟加拉语 ASR 语料库仅限于简短的、阅读的或众包的语音，缺乏说话人分类和长格式音频。\n  我们提出了 Lipi-Ghor，一个大规模的弱监督孟加拉语语音语料库，包含来自 596 个独特频道的 998 个 YouTube 视频的 885 小时音频，涵盖 17 个不同的领域，包括有声读物、戏剧、宗教布道、新闻和地方方言。每个录音都以 SSTT 格式（说话者、语音、转录、时间戳）进行注释，该格式将自动分类与孟加拉语 YouTube 字幕轨道相结合。\n  据我们所知，Lipi-Ghor 是第一个将大规模覆盖范围与说话者分类的长格式音频注释相结合的孟加拉语语音语料库，而这两者在现有的开放孟加拉语资源中都是不存在的。我们还将构建方法作为可复制的管道，适用于任何具有足够字幕的 YouTube 存在的语言。跨少数丰富领域的有针对性的渠道管理产生的语料库规模是以前低资源语言无法达到的。\n  我们在零样本和微调条件下对四种广泛使用的 ASR 模型进行了基准测试。所有四种语言在情感、方言和长篇内容上的表现都一致下降。由于字幕目标存在噪音，我们还发布了人工注释的黄金评估分割，由 17 名志愿者注释者经过 30 个小时的人机循环校正进行验证，并在所有 17 个领域进行分层。\n  我们在 CC-BY-4.0 下发布了我们的原始贡献（视频 ID 列表、二值化输出、管道代码和黄金注释），并分发源自字幕的转录本仅供研究使用；不会重新分发原始音频。",
+      "authors": "Sanjid Hasan, A H M Fuad, Risalat Labib, Bayazid Hasan Simon",
+      "url": "https://huggingface.co/papers/2610.36184",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2610.36184"
+      }
+    },
+    {
+      "id": "2610.36192",
+      "title": "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models",
+      "title_zh": "超出估计：维纳信息解码可更轻松地训练像素空间流模型",
+      "description": "Learning velocity fields directly in pixel space is difficult and slow. We show that coarse second-order image statistics can ease this task: frozen Wiener estimates improve velocity learning, with gains extending beyond the linear predictions they explicitly provide. Moreover, we observe similar but complementary gains from frozen bases and pixel decoding. These observations motivate Wiener-informed Decoding (WiD), which uses statistical knowledge both for direct prediction and to organize decoder computation without modifying native blocks. WiD combines a trainable Wiener prediction path with coefficient interfaces that inject features into the native decoder and return its predicted coefficient corrections, with these components initialized with data statistics. All introduced parameters, including the spectrum and coordinate transforms, are trained jointly under the original pixel-space velocity objective. Across model scales and decoder architectures, WiD accelerates training and improves generation quality with modest parameter overhead. It also yields smoother gradient trajectories and remains effective with representation alignment. WiD improves class-conditional and text-to-image generation across different resolutions. On ImageNet 256 x 256, PixelDiT-XL with WiD reaches FID 1.53 after 500 epochs, achieving comparable quality to PixelDiT with 37.5% fewer training epochs. Statistical denoisers contribute beyond the estimate: their computational structure can also ease pixel-space training.",
+      "description_zh": "直接在像素空间中学习速度场既困难又缓慢。我们表明，粗略的二阶图像统计可以简化这项任务：冻结维纳估计可以提高速度学习，其增益超出了它们明确提供的线性预测。此外，我们观察到来自冻结基数和像素解码的类似但互补的增益。这些观察结果激发了维纳信息解码 (WiD)，它使用统计知识进行直接预测并在不修改本机块的情况下组织解码器计算。 WiD 将可训练的维纳预测路径与系数接口相结合，将特征注入本机解码器并返回其预测系数校正，这些组件使用数据统计进行初始化。所有引入的参数，包括频谱和坐标变换，都是在原始像素空间速度目标下联合训练的。在模型规模和解码器架构中，WiD 以适度的参数开销加速训练并提高生成质量。它还产生更平滑的梯度轨迹，并在表示对齐方面保持有效。 WiD 改进了不同分辨率下的类条件和文本到图像的生成。在 ImageNet 256 x 256 上，具有 WiD 的 PixelDiT-XL 在 500 个 epoch 后达到 FID 1.53，达到与 PixelDiT 相当的质量，但训练次数减少了 37.5%。统计降噪器的贡献超出了估计：它们的计算结构还可以简化像素空间训练。",
+      "authors": "Ziqiao Wang, Yang You",
+      "url": "https://huggingface.co/papers/2610.36192",
+      "score": 9,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "9",
+        "paperId": "2610.36192"
+      }
+    },
+    {
+      "id": "2610.34894",
+      "title": "What Outcome RL Buys: Finishing, Reliability, Rarely Reach",
+      "title_zh": "RL 购买什么结果：精加工、可靠性、很少达到",
+      "description": "Outcome RL raises pass@1 but not pass@k at large k (Yue et al., 2025). But every pass@1 is scored under a token budget. Every recipe also trains under one. On physics and math problems at fixed token budgets, we compare the pass@1 of 20 released RL models (1.5B to 32B) with that of the thinking models they started from. We ask whether each pass@1 gain is changed behaviour or new knowledge. We divide each change in pass@1 into three parts. Finishing measures answering before the budget runs out. Reliability measures being right once finished. Reach measures problems RL solves that its base answered wrongly in all eight tries, minus problems the base solves that RL answered wrongly in all eight. We find four things. (1) Where the base often hits the token budget before answering, most of the change, gain or loss, is finishing (82% at 4k and 8k). Given more tokens, the base closes most of the finishing gap itself. (2) Where the base has enough tokens, the gain is reliability: the RL model is graded right more often, even on problems both finish. (3) By our definition, RL rarely solves what its base cannot. Reach adds at most 2.1 percentage points on any of our four physics and math sets. We checked 144 physics problems that only the RL model solved. Of these, 3.5% hold up when resampled or read. In a random sample, nine of ten new RL steps a human confirmed also appear in the base's samples. (4) In a small-scale RL run on an 8B model, the gain on new problems is finishing, with reliability flat. Supplying each problem's physical setup was not shown to improve on plain RL.",
+      "description_zh": "结果 RL 在大 k 时提高了 pass@1，但没有提高 pass@k (Yue et al., 2025)。但每一次 pass@1 都是在象征性预算下评分的。每个食谱也都在一个食谱下进行训练。在固定代币预算下的物理和数学问题上，我们将 20 个已发布的 RL 模型（1.5B 到 32B）的 pass@1 与它们最初的思维模型进行了比较。我们询问每一次 pass@1 的收获是行为改变还是新知识。我们将 pass@1 中的每个更改分为三个部分。在预算用完之前完成答复的措施。可靠性措施一旦完成就正确。达到衡量的是 RL 解决的其基地在所有八次尝试中回答错误的问题，减去基地解决的 RL 在所有八次尝试中回答错误的问题。我们发现四件事。 (1) 如果基础经常在回答之前达到代币预算，则大部分变化、收益或损失正在完成（4k 和 8k 时为 82%）。如果有更多的代币，基数本身就会弥补大部分的整理差距。 (2) 当基础有足够的代币时，增益就是可靠性：强化学习模型更频繁地被正确评分，即使问题都完成了。 (3) 根据我们的定义，强化学习很少能解决其基础无法解决的问题。在我们的四门物理和数学课程中，Reach 最多可增加 2.1 个百分点。我们检查了 144 个仅 RL 模型能够解决的物理问题。其中，3.5% 在重新采样或读取时成立。在随机样本中，人类确认的十个新强化学习步骤中有九个也出现在基地的样本中。 (4) 在 8B 模型上运行的小规模 RL 中，新问题的增益正在结束，可靠性持平。提供每个问题的物理设置并没有显示出可以改善普通强化学习。",
+      "authors": "Shan Yang",
+      "url": "https://huggingface.co/papers/2610.34894",
       "score": 3,
       "meta": {
         "source": "huggingface",
         "upvotes": "3",
-        "paperId": "2610.32046"
+        "paperId": "2610.34894"
       }
     },
     {
-      "id": "2610.35295",
-      "title": "Did the Model Use That? Counterfactual Training Boosts Self-Attribution in Language Models",
-      "title_zh": "模型用过这个吗？反事实训练增强语言模型中的自我归因",
-      "description": "A fundamental challenge for explainable and accountable language models is revealing how external information influences their answers. This paper examines whether models are self-attributive: that is, whether they indicate when -- and only when -- their responses to questions are influenced by information provided alongside the question. Furthermore, we explore how self-attribution can be improved through counterfactual training, which explicitly teaches models to distinguish between answers that do and do not depend on supplied information.\n  We found that most of the eleven frontier models rarely attribute influential information in their answers, and the rest attribute non-influential information. Training acknowledgment into reasoning does not fix this: the acknowledgment does not reach the final answer.\n  We introduce CREDIT, which directly supervises final-answer self-attribution with counterfactual labels, without the need for human annotation. CREDIT substantially improves attribution in four open models, including two distilled reasoning models, and outperforms reasoning-level fine-tuning and prompting baselines. Among answers that agree with a user's suggestion, CREDIT distinguishes those changed by the suggestion from those the model would have given anyway. Gains transfer partly to unseen information types and prompts containing sources that support conflicting answers.",
-      "description_zh": "可解释和负责任的语言模型的一个基本挑战是揭示外部信息如何影响他们的答案。本文研究了模型是否具有自我归因：也就是说，它们是否表明何时——且仅何时——他们对问题的回答受到与问题一起提供的信息的影响。此外，我们探讨了如何通过反事实训练来改善自我归因，反事实训练明确地教导模型区分依赖于和不依赖于所提供信息的答案。\n  我们发现，十一个前沿模型中的大多数很少在其答案中归因有影响力的信息，其余的则归因于无影响力的信息。将确认训练成推理并不能解决这个问题：确认无法得出最终答案。\n  我们引入了 CREDIT，它通过反事实标签直接监督最终答案的自我归因，而不需要人工注释。 CREDIT 显着提高了四个开放模型（包括两个精炼推理模型）的归因，并且优于推理级微调和提示基线。在同意用户建议的答案中，CREDIT 将建议更改的答案与模型本来会给出的答案区分开来。收益部分转移到看不见的信息类型和包含支持冲突答案的来源的提示。",
-      "authors": "Zikai Zhou, Jiacheng Sang, Yilin Xu, Yufei Jin, Monica S. Lam",
-      "url": "https://huggingface.co/papers/2610.35295",
-      "score": 0,
+      "id": "2610.36082",
+      "title": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
+      "title_zh": "提示有多重要？财务推理中事后自我蒸馏的范围条件",
+      "description": "Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own rollouts, but traditional OPD requires a strong external teacher, and on-policy self-distillation (OPSD) conditions on a full reference solution. We ask how much of that signal is necessary. We present Fin-SD, a localized hindsight self-distillation recipe for multi-step reasoning. Given a problem the student fails, the student itself identifies the first incorrect reasoning step and writes a short critique of that step. We truncate the student's trajectory immediately before the error (aiming to obtain a correct prefix), condition a frozen copy of the student on the same prefix plus the hint, and distill that hint-conditioned teacher into the student over a short rollout under reverse KL. No external model contributes a gradient. We apply Fin-SD to GPT-OSS-20B on a custom multi-step financial reasoning benchmark that requires deriving formula inputs from realistic scenarios via accounting conventions. We find: (i) replacing the critique with a generic-feedback control matches Fin-SD's entire 3.03 pp accuracy gain over the base model on the FinanceReasoning Hard subset, suggesting the gain comes from where supervision is applied, not hint content; (ii) the model writing the hint does not need to be stronger than the model receiving it: hints from same-family GPT-OSS-120B, at roughly 6x the parameters, yield no materially greater benefits than self-written hints; and (iii) Fin-SD matches on-policy self-distillation from full reference solutions on accuracy while generating 9.5% fewer tokens. With Fin-SD, general reasoning on MMLU-Pro and a fourteen-metric compliance audit on FinTrust show no material regression.",
+      "description_zh": "在数据驻留限制下运营的金融机构仅限于小到足以在本地托管的开放权重模型，该模型在多步骤定量推理方面落后于前沿系统。按策略蒸馏通过监督学生自己的推出来缩小这种差距，但传统的 OPD 需要强大的外部教师，以及在完整参考解决方案上的按策略自我蒸馏 (OPSD) 条件。我们询问有多少信号是必要的。我们提出了 Fin-SD，这是一种用于多步骤推理的本地化后见之明自蒸馏方法。考虑到学生失败的问题，学生自己找出第���个不正确的推理步骤，并对该步骤写下简短的批评。我们在错误发生之前截断学生的轨迹（旨在获得正确的前缀），在相同的前缀和提示上条件化学生的冻结副本，并在反向 KL 下通过短暂的 rollout 将经过提示条件化的教师提取到学生中。没有外部模型提供梯度。我们将 Fin-SD 应用于自定义多步骤财务推理基准上的 GPT-OSS-20B，该基准需要通过会计惯例从现实场景中导出公式输入。我们发现：(i) 用通用反馈控制替换批评与 Fin-SD 在 FinanceReasoning Hard 子集上的基本模型上的整体 3.03 pp 准确度增益相匹配，这表明增益来自应用监督的地方，而不是提示内容； (ii) 编写提示的模型不需要比接收提示的模型更强：来自同系列 GPT-OSS-120B 的提示，参数大约是 6 倍，并不比自己编写的提示产生更大的好处； (iii) Fin-SD 在准确性方面与完整参考解决方案的合规自蒸馏相匹配，同时生成的代币数量减少了 9.5%。对于 Fin-SD，MMLU-Pro 上的一般推理和 FinTrust 上的十四���指标合规性审计显示没有实质性回归。",
+      "authors": "Johnny Yu, Cyril Gorlla",
+      "url": "https://huggingface.co/papers/2610.36082",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2610.35295"
+        "upvotes": "3",
+        "paperId": "2610.36082"
       }
     },
     {
-      "id": "2610.34577",
-      "title": "Rethinking Verification in Agent Harnesses",
-      "title_zh": "重新思考代理安全带中的验证",
-      "description": "Agent harnesses enable large language models to act through tools, observe the results, and iteratively work toward a task goal. Verification checks and revises agents' work to improve output quality. Yet there is limited guidance on how harnesses should organize this effort. We study verification as an axis of test-time scaling by examining when to intervene, who checks the work, and how checking leads to revision. Our framework spans four layers of the agent lifecycle: initial instructions, mid-turn reminders, completion gates, and independent review. We compare 17 designs across seven frontier coding models on Terminal-Bench (TB) and SWE-bench Verified (SWE), and introduce VisualBench for expert evaluation of visual and interactive artifacts. Initial instructions and execution-time reminders yield modest, model-dependent average gains on the coding benchmarks, without substantially increasing average output token use. Completion gates can yield larger gains but may substantially increase cost. Independent review by a critic offers a more favorable accuracy-cost tradeoff, improving average accuracy by 5.9-9.5 percentage points on TB and 3.9-6.6 on SWE at 1.13-1.25 and 1.00-1.04 times baseline cost, respectively. On VisualBench, independent review achieves net preferences of 13.2-23.8 points over the baseline across its four designs, exceeding the evaluated L0-L2 designs. Additional review rounds or independent critics further improve average TB accuracy by up to 3.5 percentage points. Together, these results provide empirical guidance for verification design in agent harnesses and support independent review as a practical axis of test-time scaling.",
-      "description_zh": "代理工具使大型语言模型能够通过工具进行操作、观察结果并迭代地实现任务目标。验证检查并修改代理的工作以提高输出质量。然而，关于线束应如何组织这项工作的指导却很有限。我们通过检查何时干预、谁检查工作以及检查如何导致修改来研究验证作为测试时间缩放的轴。我们的框架跨越代理生命周期的四个层面：初始指令、中期提醒、完成门和独立审查。我们在 Terminal-Bench (TB) 和 SWE-bench Verified (SWE) 上比较了 7 个前沿编码模型的 17 种设计，并引入 VisualBench 对视觉和交互式工件进行专家评估。初始指令和执行时间提醒在编码基准上产生适度的、依赖于模型的平均收益，而不会显着增加平均输出令牌的使用。完成门可以产生更大的收益，但可能会大幅增加成本。评论家的独立审查提供了更有利的准确性与成本权衡，将 TB 的平均准确性提高了 5.9-9.5 个百分点，将 SWE 的平均准确性提高了 3.9-6.6 个百分点，而基线成本分别为 1.13-1.25 倍和 1.00-1.04 倍。在 VisualBench 上，独立审查在其四种设计中实现了比基线高出 13.2-23.8 点的净偏好，超过了评估的 L0-L2 设计。额外的审查轮次或独立批评家进一步将平均 TB 准确率提高了 3.5 个百分点。总之，这些结果为代理线束中的验证设计提供了经验指导，并支持独立审查作为测试时间扩展的实用轴。",
-      "authors": "Zhengxin Zhang, Erkang Zhu, Yin Lin, Claire Cardie, Bolin Ding, Jingren Zhou",
-      "url": "https://huggingface.co/papers/2610.34577",
-      "score": 2,
+      "id": "2610.37364",
+      "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations",
+      "title_zh": "EmbeddingGemma 2：统一高效的多模态表示",
+      "description": "We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with modality and objective progression which ensure strong quality across unimodal, cross-modal, and mixed-modal evaluations. Notably, in comprehensive embedding benchmarks across all modalities, EmbeddingGemma 2 establishes a new Pareto frontier, outperforming both specialist models and models two to twelve times larger. Furthermore, our design offers flexibility for resource-constrained environments, supporting selective modality encoder loading, adjustable vision token budgets, truncatable embedding dimensions, and quantized weights. We present ablations analyzing key decisions and release EmbeddingGemma 2 to promote further research.",
+      "description_zh": "我们提出了 EmbeddingGemma 2，这是一种开放的多模式嵌入模型，它在统一的空间中原生表示文本、图像、音频、视频及其组合。我们的方法引入了改进，例如简化的每层嵌入以及具有模态和目标进展的多阶段课程，确保单模态、跨模态和混合模态评估的高质量。值得注意的是，在所有模式的综合嵌入基准中，EmbeddingGemma 2 建立了一个新的 Pareto 前沿，其性能优于专业模型和大 2 到 12 倍的模型。此外，我们的设计为资源受限的环境提供了灵活性，支持选择性模态编码器加载、可调整的视觉令牌预算、可截断的嵌入维度和量化权重。我们提出了消融分析关键决策并发布 EmbeddingGemma 2 以促进进一步的研究。",
+      "authors": "Henrique Schechter Vera, Sahil Dua, Jovan Andonov, Sara Smoot, Sebastian Russo, Ivan Llanos, Max Matveev, Jae Hyeon Yoo, Kat Black, Shih-Cheng Huang, Josiah Aklilu, Maarten Grootendorst, Omar Sanseviero, Chandramouli Amarnath, Ian Ballantyne, Zhe Li, Daniel Salz, Ibrahim Alabdulmohsin, Ilya Philippov, Kristen Quan, Glenn Cameron, Edouard Yvinec, Luciano Martins, Doug Reid, Sindhu Raghuram Panyam, Weiyi Wang, Hengxuan Ying, Madhuri Shanbhogue, Tanmaya Dabral, Shanfeng Zhang, Juyeong Ji, Renjie Wu, Joe Zou, Xu Chen, Yunan Zhang, Yu-Hui Chen, Matthew Soulanille, Vinod Mamillapalli, Yi-Chun Kuo, Wai Hon Law, Matt Kreileder, Alice Zheng, Suril Shah, Mogan Shieh, Pooja Consul, Alberto Montes, Andreas Hess, Andres Sevilla, Babak Samari, Brendan McCloskey, Brian Potetz, Daniel Cer, Georgios Kathareios, Gustavo Hernández Ábrego, Hesen Zhang, Ji Ma, Jiaxing Wu, Keegan Mosley, Paul Suganthan, Rui Meng, Shen Gao, Shengcao Cao, Yi-Ting Chen, Yichang Chen, Zhongli Ding, Kendra Byrne, Cormac Brick, Olivier Lacombe, Qin Yin, Tris Warkentin, Armand Joulin, Tom Duerig, Mojtaba Seyedhosseini",
+      "url": "https://huggingface.co/papers/2610.37364",
+      "score": 15,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2610.34577"
+        "upvotes": "15",
+        "paperId": "2610.37364"
       }
     },
     {
-      "id": "2610.33861",
-      "title": "ReGE: Stronger Agents through Experience Synthesis",
-      "title_zh": "ReGE：通过经验综合增强智能体",
-      "description": "Repeated attempts at interactive tasks uncover facts, useful operations, and failures that can inform subsequent execution. We introduce ReGE, a framework for turning this recorded experience into guidance for a fresh attempt. Its main implementation, ReGE-Syn, uses a single coach call to jointly synthesize bounded execution records and available artifacts into self-contained guidance, connecting task-specific findings with proposed actions and relevant pitfalls. A student starts from the task's initial environment state and adapts this guidance to current observations. Source generation, synthesis, and student execution use the same base model, without parameter updates or a stronger teacher. Across four benchmarks, ReGE improves accuracy by an average of 9.9 percentage points for GPT and 8.8 percentage points for Claude compared with unguided execution. On matched BrowseComp-Plus subsets, ReGE-Syn reduces guidance-construction tokens by 98.2\\% on GPT and 95.5\\% on Claude relative to adapted AggAgent, with observed success. Combined construction and execution tokens decrease by 15.7\\% and 35.4\\%, respectively, counting input plus output and excluding source generation. BrowseComp-Plus ablations further associate access to process information with fewer student steps and show that joint synthesis produces substantially shorter guidance than Direct history or Independent summaries, with observed success. These results demonstrate how agents can use their own recorded experience to improve subsequent task completion, and suggest a low-cost way to consolidate the execution records of parallel agent systems such as agent swarms.",
-      "description_zh": "对交互式任务的反复尝试会发现事实、有用的操作和失败，这些可以为后续执行提供信息。我们引入了 ReGE，这是一个将记录的经验转化为新尝试指导的框架。其主要实现 ReGE-Syn 使用单个 coach 调用将有界执行记录和可用工件联合合成为独立的指导，将特定于任务的发现与建议的操作和相关陷阱联系起来。学生从任务的初始环境状态开始，并使该指导适应当前的观察结果。源生成、综合和学生执行使用相同的���本模型，无需参数更新或更强的教师。在四个基准测试中，与无引导执行相比，ReGE 的 GPT 准确率平均提高了 9.9 个百分点，Claude 平均提高了 8.8 个百分点。在匹配的 BrowseComp-Plus 子集上，相对于改编后的 AggAgent，ReGE-Syn 在 GPT 上减少了 98.2%，在 Claude 上减少了 95.5%，并取得了成功。计算输入加输出并排除源生成，组合构建和执行令牌分别减少 15.7% 和 35.4%。 BrowseComp-Plus 消融进一步将过程信息的访问与更少的学生步骤联系起来，并表明联合综合产生的指导比直接历史或独立摘要要短得多，并取得了明显的成功。这些结果展示了代理如何利用自己记录的经验来改善后续任务的完成情况，并提出了一种低成本的方法来整合并行代理系统（例如代理群）的执行记录。",
-      "authors": "Jiarong Liang, Yubo Wang, Zijie Liu, Yuxuan Zhang, Ping Nie, Wenhu Chen",
-      "url": "https://huggingface.co/papers/2610.33861",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2610.33861"
-      }
-    },
-    {
-      "id": "2610.32004",
-      "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
-      "title_zh": "CRM-Agent-Bench：在有状态的企业环境中使用代理的基准测试工具",
-      "description": "Deploying language agents in real applications demands more than the right answer: an agent must execute a multi-step business process correctly, follow domain-specific rules, and interact with a user across a dialogue, where the gap between saying and doing is the gap between a satisfied customer and a real loss. We argue that a deployable-agent benchmark should jointly assess four facets: the outcome an agent reaches, the trajectory it takes, its operational viability, and its policy compliance. Customer relationship management (CRM), where mutable records meet operational rules and consequential effects, exercises all four. We introduce CRM-Agent-Bench, an execution-grounded benchmark of 555 stateful, multi-turn tasks across nine business domains and 36 capability tags. Each task supplies a task-specific executable contract drawn from checks over actions, arguments, order, response, target state, and protected state; success is the strict conjunction of the checks declared for that task. We evaluate the complete agent system through these contracts and report scored coverage, latency, and cost. Across sixteen systems evaluated on the audited final release, strict success spans 64.32% to 83.60%; the closely grouped leading systems nonetheless diverge sharply in cost and per-domain reliability. CRM-Agent-Bench offers an auditable framework for measuring contract-grounded business-transaction integrity and adherence to task-declared benchmark policies, with a portable structure designed for extension as models improve. Github repository: https://github.com/salesforce-misc/crm-agent-bench",
-      "description_zh": "在实际应用程序中部署语言代理需要的不仅仅是正确的答案：代理必须正确执行多步骤业务流程，遵循特定于领域的规则，并通过对话与用户交互，其中说与做之间的差距就是满意的客户与真正的损失之间的差距。我们认为，可部署代理基准应该联合评估四个方面：代理达到的结果、所采取的轨迹、操作可行性以及策略合规性。客户关系管理 (CRM) 中的可变记录满足操作规则和后果性影响，可实现所有四个功能。我们推出了 CRM-Agent-Bench���这是一个基于执行的基准测试，包含跨 9 个业务领域和 36 个功能标签的 555 个有状态、多轮任务。每个任务都提供一个特定于任务的可执行合约，该合约通过对操作、参数、顺序、响应、目标状态和受保护状态的检查而得出；成功是为该任务声明的检查的严格结合。我们通过这些合同评估完整的代理系统，并报告覆盖范围、延迟和成本的评分。在对经审核的最终版本进行评估的 16 个系统中，严格成功率为 64.32% 至 83.60%；尽管如此，紧密分组的领先系统在成本和每个域的可靠性方面仍然存在很大差异。 CRM-Agent-Bench 提供了一个可审核的框架，用于衡量基于合同的业务交易完整性以及对任务声明的基准策略的遵守情况，并具有可移植的结构，旨在随着模型的改进进行扩展。 Github 存储库：https://github.com/salesforce-misc/crm-agent-bench",
-      "authors": "Monojit Banerjee, Zhujun Lan, Defu Cao",
-      "url": "https://huggingface.co/papers/2610.32004",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2610.32004"
-      }
-    },
-    {
-      "id": "2610.17117",
-      "title": "Gluing Local Contexts into Global Meaning: A Sheaf-Theoretic Decomposition of Transformer Representations",
-      "title_zh": "将局部上下文粘合到全局含义：变压器表示的层理论分解",
-      "description": "Existing interpretability tools do not test whether a representation keeps the same content when only the phrasing changes. We treat each paraphrase pair as a local witness that two activations should agree and build a cellular sheaf over the paraphrase graph; its Laplacian L_F answers the question on a frozen model with no training. The kernel H^0 is a content subspace: at 20 dimensions it beats the preserved subspace of the concept eraser LEACE on held-out CounterFact fact retrieval across eight architectures by a mean +17.1\\,pp, and constraining all paraphrases of a fact jointly adds a further +6.5\\,pp. The spectral complement concentrates causal influence: ablating the most paraphrase-variable coordinates, a coordinate-wise proxy for it, changes model outputs 5.6 to 26.5times more than ablating coordinates of matched per-coordinate variability, across nine models from 124M to 13B parameters. Stacking layers into a grid creates b_1 = N(L-1) algebraic 1-cycles, and the resulting model-derived harmonic mass varies by nearly three orders of magnitude across six architectures and ranks them as their steering fragility does (Spearman ρ= 0.90, exact one-sided permutation p = 0.014). The same paraphrase graph yields the content subspace, the influence directions, and the fragility measure. Project page: https://cwru-aism.github.io/gluing-lc-page/",
-      "description_zh": "现有的可解释性工具不会测试仅措辞发生变化时表示形式是否保持相同的内容。我们将每个释义对视为两个激活应该一致的本地见证，并在释义图上构建一个细胞束；它的拉普拉斯 L_F 在未经训练的冻结模型上回答了问题。内核 H^0 是一个内容子空间：在 20 维上，它在跨八个架构的 CounterFact 事实检索中击败了概念橡皮擦 LEACE 的保留子空间，平均为 +17.1\\,pp，并且约束事实的所有释义共同增加了 +6.5\\,pp。谱补集集中了因果影响：在从 124M 到 13B 参数的 9 个模型中，消融最多释义变量坐标（其坐标代理）比消融匹配的每坐标变异性坐标的模型输出变化多 5.6 到 26.5 倍。将层堆叠到网格中会创建 b_1 = N(L-1) 代数 1 周期，并且由此产生的模型导出的谐波质量在六种架构中变化近三个数量级，并根据其转向脆弱性对它们进行排名（Spearman ρ = 0.90，精确的单边排列 p = 0.014）。相同的释义图产生内容子空间、影响方向和脆弱性度量。项目页面：https://cwru-aism.github.io/gluing-lc-page/",
-      "authors": "Bryce Grant, Peng Wang",
-      "url": "https://huggingface.co/papers/2610.17117",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2610.17117"
-      }
-    },
-    {
-      "id": "2610.34886",
-      "title": "ThinkBit: Search Codewords, Recalibrate Scales, Select by Reasoning",
-      "title_zh": "ThinkBit：搜索码字、重新校准刻度、通过推理进行选择",
-      "description": "Reasoning language models generate thousands of tokens per answer, and generation speed is limited by memory bandwidth, so storing weights in two bits instead of bfloat16 can potentially make inference 8times cheaper. Two-bit methods are usually judged by perplexity and multiple-choice question-answering accuracy, both of which say little about whether a model can still reason through more difficult problems. We present ThinkBit, a strictly scalar two-bit framework built to preserve reasoning, in which every weight is an integer codeword times a bfloat16 scale shared by a group of weights. We first use a sensitivity metric to assign each layer a ternary, 2-bit, or 3-bit tier to allocate bitwidths optimally among layers. This is followed by a layerwise Gumbel-softmax-based scalar quantization algorithm that searches for optimal codewords block by block. Since a layerwise scheme does not capture how quantized layers interact with each other, we recalibrate scales, with the codewords frozen, using a knowledge-distillation-based loss against the teacher model. We then perform a short quantization-aware training (QAT) stage that lets the model mimic the base model's distribution by reassigning codewords. Finally, a paired reasoning test on training problems selects the final checkpoint between the recalibration stage and the QAT stage. On Qwen3-1.7B at matched size, our recalibrated checkpoint scores 46.7 on MATH-500 against 30.0 for EfficientQAT trained on the same data, and 73.0 after QAT on reasoning traces; at 0.52 GB it is smaller than every published 2-bit GGUF of the model yet more accurate on MATH-500. We show that this framework scales and up to 14B, a 3.74 GB model scores 94.8 on MATH-500, against 97.5 for the 29.5 GB bfloat16 model.",
-      "description_zh": "推理语言模型为每个答案生成数千个标记，并且生成速度受到内存带宽的限制，因此将权重存储在两位而不是 bfloat16 中可能会使推理成本降低 8 倍。两位方法通常通过困惑度和多项选择题回答准确性来判断，这两者都不能说明模型是否仍然可以推理更困难的问题。我们提出了 ThinkBit，一个严格标量的两位框架，旨在保留推理能力，其中每个权重都是整数代码字乘以一组权重共享的 bfloat16 标度。我们首先使用敏感度度量为每个层分配一个三元、2 位或 3 位层，以在���层之间优化分配位宽。接下来是基于 Gumbel-softmax 的分层标量量化算法，逐块搜索最佳码字。由于分层方案无法捕获量化层之间如何相互作用，因此我们在冻结码字的情况下，使用针对教师模型的基于知识蒸馏的损失来重新校准尺度。然后，我们执行一个简短的量化感知训练 (QAT) 阶段，让模型通过重新分配码字来模拟基本模型的分布。最后，针对训练问题的配对推理测试选择重新校准阶段和 QAT 阶段之间的最终检查点。在大小匹配的 Qwen3-1.7B 上，我们重新校准的检查点在 MATH-500 上得分为 46.7，而在相同数据上训练的 EfficientQAT 得分为 30.0，在 QAT 后推理轨迹得分为 73.0；大小为 0.52 GB，比该模型的每个已发布的 2 位 GGUF 小，但在 MATH-500 上更准确。我们展示了该框架可扩展至 14B，3.74 GB 模型在 MATH-500 上得分为 94.8，而 29.5 GB bfloat16 模型得分为 97.5。",
-      "authors": "Rhea Sanjay Sukthanker, Pashmina Cameron",
-      "url": "https://huggingface.co/papers/2610.34886",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2610.34886"
-      }
-    },
-    {
-      "id": "2610.34735",
-      "title": "iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents",
-      "title_zh": "iPrefBench：以用户为中心的个性化移动使用代理基准",
-      "description": "An agent that truly knows and acts on behalf of its user has been a long-standing promise of AI assistants. Computer-use agents bring this promise within reach by capably executing fully specified tasks across apps. However, real-world user requests are often underspecified. To act correctly for the particular user, an agent must infer some missing information from the user's activity history and ask for other information that only the user can provide, without making unsupported assumptions or burdening the user with unnecessary questions. We present iPrefBench, a benchmark for evaluating the infer and ask capabilities of personal mobile-use agents in an executable iOS environment with an interactive simulated user. Grounded in a coherent persona with 3,051 past activity events, iPrefBench comprises 130 underspecified user tasks across 26 apps. Each omitted user-dependent requirement is, by construction, either history-inferable or ask-only. iPrefBench evaluates personalized mobile agents on both whether agents complete tasks correctly for the user (i.e., personalized task completion) and whether they seek user input when necessary (i.e., user-agent interaction). Evaluation of 7 frontier agents reveals a substantial gap between execution and personalization. Agents achieve high action completion scores (up to 91.6%) but low full task success (up to 47.7%) because personalization lags behind. They especially struggle with ask-only information, failing to request enough necessary information. Our findings highlight a challenge for personalized agents in knowing what to infer and when to ask. We hope that iPrefBench can serve as a valuable testbed for building agents that know their user and work with them.",
-      "description_zh": "真正了解用户并代表用户采取行动的代理一直是人工智能助手的长期承诺。计算机使用代理通过能够跨应用程序执行完全指定的任务来实现这一承诺。然而，现实世界的用户请求通常是不明确的。为了对特定用户正确采取行动，代理必须从用户的活动历史记录中推断出一些缺失的信息，并询问只有用户可以提供的其他信息，而不会做出不受支持的假设或给用户带来不必要的问题负担。我们提出了 iPrefBench，这是一个基准，用于评��个人移动使用代理在可执行 iOS 环境中与交互式模拟用户的推断和询问能力。 iPrefBench 以具有 3,051 个过去活动事件的连贯角色为基础，包含 26 个应用程序中的 130 个未指定的用户任务。通过构造，每个被省略的用户相关需求要么是历史可推断的，要么是仅询问的。 iPrefBench 评估个性化移动代理，评估代理是否为用户正确完成任务（即个性化任务完成）以及是否在必要时寻求用户输入（即用户与代理交互）。对 7 名前沿代理商的评估揭示了执行力和个性化之间的巨大差距。由于个性化滞后，代理的行动完成率很高（高达 91.6%），但完整任务成功率较低（高达 47.7%）。他们尤其难以处理仅询问信息，无法请求足够的必要信息。我们的研究结果突显了个性化代理在了解要推断什么以及何时提问方面面临的挑战。我们希望 iPrefBench 能够成为构建了解用户并与他们合作的代理的有价值的测试平台。",
-      "authors": "Yuting Ning, Ruijia Cheng, Sushobhan Ghosh, Peitong Duan, HungShi Lin, Abhishek Sundararajan, Shreyash Pandey, Huan Sun, Jeffrey Nichols, Eldon Schoop",
-      "url": "https://huggingface.co/papers/2610.34735",
-      "score": 7,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "7",
-        "paperId": "2610.34735"
-      }
-    },
-    {
-      "id": "2610.33877",
-      "title": "Semantic Concept Steering Breaks the Explanation Drift Loop in Continual Learning",
-      "title_zh": "语义概念引导打破了持续学习中的解释漂移循环",
-      "description": "Catastrophic forgetting in continual learning (CL) manifests not only as accuracy degradation but also as explanation drift: models maintain predictive accuracy while silently shifting attention from diagnostic features to spurious correlations. This work identifies and resolves a previously overlooked structural flaw in explanation-aware CL: pixel-level saliency regularization derives supervision targets from the model's own frozen saliency maps, creating a self-referential drift loop that actively reinforces spurious attention across tasks. We introduce C^3L (Concept-Consistent Continual Learning), which breaks this loop by anchoring regularization to class-consistent semantic concepts (e.g., ``curved beak'', ``striped pattern'') discovered offline, independent of model state, providing (i) target independence from model drift, and (ii) cross-instance semantic consistency across every instance of a class. We identify that our concept-based objective, combined with approximate LRP relevance conservation, induces a crowding-out effect: since concept and background regions compete for the relevance of the same prediction, enforcing high relevance within concept regions implicitly suppresses spurious background correlations without explicit penalization. \\method does not require human-annotated concept sets, as it employs a fully automated concept discovery and spatial grounding. Extensive evaluation across five benchmarks and over 20 baselines demonstrates state-of-the-art performance in accuracy, forgetting, explanation quality, spurious correlation mitigation, and out-of-distribution robustness.",
-      "description_zh": "持续学习（CL）中的灾难性遗忘不仅表现为准确性下降，还表现为解释漂移：模型保持预测准确性，同时默默地将注意力从诊断特征转移到虚假相关性。这项工作识别并解决了解释感知 CL 中先前被忽视的结构缺陷：像素级显着性正则化从模型自己的冻结显着性图导出监督目标，创建一个自引用漂移循环，主动强化跨任务的虚假注意力。我们引入了 C^3L（概念一致的持续学习），它通过将正则化锚定到离线发现的类一致的语义概念（例如“弯曲的喙”、“条纹图案”）来打破这个循环，与模型状态无关，提供（i）目标独立于模型漂移，以及（ii）跨类的每个实例的跨实例��义一致性。我们发现，基于概念的目标与近似 LRP 相关性守恒相结合，会产生挤出效应：由于概念和背景区域竞争同一预测的相关性，因此在概念区域内强制执行高相关性会隐式抑制虚假的背景相关性，而无需明确的惩罚。 \\方法不需要人工注释的概念集，因为它采用完全自动化的概念发现和空间基础。对五个基准和 20 多个基线的广泛评估证明了在准确性、遗忘、解释质量、虚假相关性缓解和分布外稳健性方面的最先进的性能。",
-      "authors": "Yehonatan Elisha, Oren Barkan, Noam Koenigstein",
-      "url": "https://huggingface.co/papers/2610.33877",
+      "id": "2610.29003",
+      "title": "T-DIG: Text-Conditioned Diversity for Image Generation",
+      "title_zh": "T-DIG：用于图像生成的文本调节多样性",
+      "description": "Text-to-image (T2I) platforms typically return several images per prompt so users can explore different visual interpretations and choose one that matches their intent. However, T2I models are usually optimized for single-image quality which comes at a cost of multi-image diversity, limiting this exploration. Diversity is also contextual: one user wants variations in background, while another wants them in artistic style, and the same user may later want variations in clothing. The generated images should differ along whatever axis the user cares about. In this paper, we introduce T-DIG, a text-conditioned diversity framework for image generation and editing. T-DIG is an iterative framework comprising multiple modules that lets users type prompts, inspect default generations, request variations using natural language, and continue refining outputs until they're satisfied. At its core, T-DIG uses an LLM policy that produces K axis-conditioned prompts or edit instructions for a frozen generator or editor. We train this policy with GRPO using a text-conditioned diversity reward and alignment penalties. Because the image generator remains frozen, T-DIG applies to open-weight, distilled, and proprietary models. We also release the first dataset for text-conditioned prompt diversity in image generation, with the training and validation splits built from human-written axes and a test set drawn from real user interactions with T-DIG. T-DIG far exceeds baselines in improving text-conditioned diversity, while preserving base-prompt alignment across a variety of metrics and human judgements. We show that user-directed diversity exploration can be added to a wide range of image generation models, open and closed, without the need to access their weights. Website: https://image-study.org/t-dig/",
+      "description_zh": "文本到图像 (T2I) 平台通常会根据提示返回多个图像，以便用户可以探索不同的视觉解释并选择符合其意图的图像。然而，T2I 模型通常针对单图像质量进行优化，这会以多图像多样性为代价，从而限制了这种探索。多样性也是与上下文相关的：一个用户想要背景的变化，而另一个用户想要艺术风格的变化，而同一个用户后来可能想要服装的变化。生成的图像应该沿着用户关心的任何轴有所不同。在本文中，我们介绍了 T-DIG���一种用于图像生成和编辑的文本条件多样性框架。 T-DIG 是一个迭代框架，包含多个模块，允许用户输入提示、检查默认生成、使用自然语言请求变化，并继续完善输出，直到他们满意为止。 T-DIG 的核心是使用 LLM 策略，为冻结的生成器或编辑器生成 K 轴条件提示或编辑指令。我们使用 GRPO 使用文本条件的多样性奖励和对齐惩罚来训练该策略。由于图像生成器保持冻结状态，T-DIG 适用于开放重量、蒸馏和专有模型。我们还发布了第一个用于图像生成中文本条件提示多样性的数据集，其中训练和验证分割是根据人类编写的轴构建的，测试集是根据真实用户与 T-DIG 的交互得出的。 T-DIG 在改善文本条件多样性方面远远超出了基线，同时在各种指标和人类判断中保持了碱基提示对齐。我们证明，用户引导的多样性探索可以添加到各种开放和封闭的图像生成模型中，而无需访问其权重。网站：https://image-study.org/t-dig/",
+      "authors": "Simran Khanuja, Rohit Gandikota, Gaurav Parmar, Graham Neubig",
+      "url": "https://huggingface.co/papers/2610.29003",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2610.33877"
+        "paperId": "2610.29003"
       }
     },
     {
-      "id": "2610.28490",
-      "title": "Learning from Automatic 3D Gaussian Splatting Edits for Online Bayesian Scene Change Detection",
-      "title_zh": "从自动 3D 高斯泼溅编辑中学习以进行在线贝叶斯场景变化检测",
-      "description": "Online scene change detection requires integrating incoming observations to determine which regions have changed relative to a reference scene. We update change beliefs as new images arrive using generalised Bayesian evidence fusion. However, the prior probability of change and evidence models are unknown beforehand, and numerical Bayesian inference can be costly. We address these challenges by learning offline from automatic edits to a reference 3D Gaussian Splatting (3DGS) model. These edits generate labelled training views without manual annotations. Together with unchanged reference observations, they provide supervision for learning scene-specific evidence models and estimating the effective pixel prior and response statistics. Online prediction combines current evidence with historical support, while closed-form local Bayes factors, parameterized by the learned response statistics, update an accumulated 3D Gaussian field. Object-guided refinement produces the final change masks. Our method achieves state-of-the-art accuracy on PASLCD and CCS3D, with 67.64% and 75.82% mIoU, respectively. On PASLCD, the complete pipeline runs at 17.2\\,FPS over complete query sequences, the fastest among the evaluated online methods. Project page: https://changruizhu96.github.io/work/lego-scd/",
-      "description_zh": "在线场景变化检测需要集成传入的观察结果，以确定哪些区域相对于参考场景发生了变化。当新图像到达时，我们使用广义贝叶斯证据融合来更新改变信念。然而，变化的先验概率和证据模型事先是未知的，并且数值贝叶斯推断的成本可能很高。我们通过离线学习从自动编辑到参考 3D 高斯泼溅 (3DGS) 模型来应对这些挑战。这些编辑会生成带标签的训练视图，无需手动注释。与不变的参考观察一起，它们为学习特定场景的证据模型和估计有效像素先验和响应统计数据提供监督。在线预测将当前证据与历史支持相结合，而由学习到的响应统计数据参数化的封闭式局部贝叶斯因子则更新累积的 3D 高斯场。对象引导的细化产生最终的变化蒙版。我们的方法在 PASLCD 和 CCS3D 上实现了最先进的精度，分别为 67.64% 和 75.82% mIoU。在 PASLCD 上，完整的管道在完整的查询序列上以 17.2\\,FPS 运行，是评估���在线方法中最快的。项目页面：https://changruizhu96.github.io/work/lego-scd/",
-      "authors": "Changrui Zhu, Simon Julier",
-      "url": "https://huggingface.co/papers/2610.28490",
-      "score": 0,
+      "id": "2610.35013",
+      "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+      "title_zh": "长期 LLM 代理的多尺度策略优化",
+      "description": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
+      "description_zh": "长视野 LLM 代理通过完整的助理轮流与其环境进行交互，同时逐个生成每个操作令牌。我们观察到，评论家的价值主要在不同回合之间有所不同，从而激励以轮次为基础的优化，并在代币之间进行更精细的信用分配。我们提出多尺度策略优化（MPO），结合多尺度优势估计（MAE）和回合级重要性采样，以在回合尺度上调整信用分配和策略更新。使用 4B 和 30B-A3B 模型进行的跨搜索、工具使用和自动化任务的广泛实验表明，与强大的 RL 基线相比，具有一致的增益。",
+      "authors": "Tao Ren, Hui Yang, Jia Deng, Tingyang Chen, Qiyao Wang, Shuo Tang, Ziyang Zeng, Yuhua Jiang, Guanghao Li, Huatong Song, Yining Li, Yifan Luo, Kunbao Ding, Feng Chang, Chuan Hao, Ran Tao, Bryan Dai, Jiafeng Liang, Jinyang Jiang",
+      "url": "https://huggingface.co/papers/2610.35013",
+      "score": 363,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2610.28490"
+        "upvotes": "363",
+        "paperId": "2610.35013"
       }
     },
     {
-      "id": "2610.34638",
-      "title": "Intrinsic Goals for Autonomous Agents: Hierarchical Exploration Captures Future Volitional Action in Drosophila",
-      "title_zh": "自主代理的内在目标：分层探索捕捉果蝇未来的意志行动",
-      "description": "Animals have a remarkable capacity for autonomy---driven by intrinsic motivation---without external sensory cues or extrinsic objectives, yet the computational mechanisms behind this ability largely remain a mystery. We combine whole-brain recordings in the fruit fly (Drosophila melanogaster), which reveal neural representations of spontaneous exploratory decisions more than 10 seconds in advance, with a neuromechanical digital twin to test whether optimizing intrinsic goals yields realistically embodied artificial agents that quantitatively match fly behavior and internal representations of future volitional action during exploration. Our hierarchical policy selects from a discrete library of low-level motor primitives, consistent with ethological theories of behavioral syllables. We train agents without external reward using 20 intrinsic motivation algorithms spanning curiosity, entropy, and competency methods. The agents are evaluated in a virtual tethered-ball assay modeled on the fly experiment, comparing spontaneous locomotor statistics and internal representations and decoding future turn direction from kinematics and neural activity on the same timescales observed in flies. DIAYN, a hierarchical competency algorithm learning discrete policies that maximize behavioral entropy and the separability of induced sensory observations, achieves the strongest joint behavioral and neural prospective coding performance relative to flies. Its learned policies closely capture individual variability in fly exploration strategies, suggesting that this diversity serves to maximize state-space coverage at the population level. DIAYN's latent activity also closely captures the sum-difference rule for interhemispheric encoding of kinematics in biological flies. These results establish hierarchical, intrinsically motivated agents as a powerful framework for reverse-engineering animal autonomy.",
-      "description_zh": "动物具有非凡的自主能力（由内在动机驱动），无需外部感官提示或外在目标，但这种能力背后的计算机制在很大程度上仍然是个谜。我们将果蝇（果蝇）的全脑记录（提前 10 秒以上揭示了自发探索性决策的神经表征）与神经机械数字孪生相结合，以测试优化内在目标是否能产生真实体现的人工代理，从而在探索过程中定量匹配果蝇行为和未来意志行动的内部表征。我们的分层策略从低级运动原语的离散库中进行选择，与行为音节的行为学理论一致。我们使用 20 种内在动机算法（涵盖好奇心法、熵法和能力法）在没有外部奖励的情况下训练智能体。这些代理在模拟苍蝇实验的虚拟系留球测定中进行评估，比较自发运动统计数据和内部表征，并根据在苍蝇中观察到的相同时间尺度的运动学和神经活动解码未来的转向方向。 DIAYN 是一种学习离散策略的分层能力算法，可最大化行为熵和诱导感官观察的可分离性，实现相对于果蝇而言最强的联合行为和神经前瞻性编码性能。它的学习策略密切捕捉了飞行探索策略中的个体差异，这表明这种多样性有助于最大限度地提高种群水平的状态空间覆盖率。 DIAYN 的潜在活性也密切捕捉了生物果蝇运动学半球间编码的和差规则。这些结果建立了分层的、内在动机的代理，作为逆向工程动物自主性的强大框架。",
-      "authors": "Declan Kutscher, Reece Keller, Alyn Kirsch, Felix Pei, Aran Nayebi",
-      "url": "https://huggingface.co/papers/2610.34638",
-      "score": 2,
+      "id": "2610.35962",
+      "title": "h1: A Taste of the Bitter Lesson in Automated Theorem Proving",
+      "title_zh": "h1：自动化定理证明的惨痛教训",
+      "description": "While progress in informal mathematics has come largely from scaling the chain-of-thought and agentic reasoning of frontier language models, formal theorem proving has increasingly relied on human-designed workflows around these models, such as planning, decomposition, and orchestrating specialized provers. This raises a bitter-lesson question: can a simple agentic loop that scales test-time compute match these workflows? The answer matters as formal verification must scale to keep up with frontier models producing research mathematics, yet new workflows rarely settle it, as their gains are often confounded with stronger models or more compute. We study this question with h1, a simple harness that gives a model an efficient interface to Lean 4 and keeps it working through verifier feedback and self-reflection, without imposing a decomposition or search structure. h1 reaches state-of-the-art results on PutnamBench, FATE-X, and FormalConjectures100-Solved, settles eight open problems in FormalConjectures, and, at matched models, matches or outperforms specialized workflows such as Goedel-Architect and AlphaProof Nexus, surprisingly showing that a single attempt (pass@1) can often scale to solve open problems. Through ablations and matched-model comparisons with Claude Code and AxProverBase, we find that simplicity alone is not enough: an efficient Lean interface largely determines cost and solve rate. We thus recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons.",
+      "description_zh": "虽然非正式数学的进步主要来自扩展前沿语言模型的思想链和代理推理，但形式定理证明越来越依赖于围绕这些模型的人为设计的工作流程，例如规划、分解和编排专门的证明者。这就提出了一个惨痛的问题：一个可扩展测试时计算的简单代理循环能否与这些工作流程相匹配？答案很重要，因为形式验证必须扩展以跟上产生研究数学的前沿模型，但新的工作流程很少解决这个问题，因为它们的收益常常与更强大的模型或更多的计算相混淆。我们使用 h1 来研究这个问题，h1 是一个简单的工具，它为模型提供了与精益 4 的有效接口，并通过验证者反馈和自我反思使其保持正常工作，而无需强加分解或搜索结构。 h1 在 PutnamBench、FATE-X 和 FormalConjectures100-Solved 上达到了最先进的结果，解决了 FormalConjectures 中的八个开放问题，并且在匹配的模型上，匹配或优于 Goedel-Architect 和 AlphaProof Nexus 等专业工作流程，令人惊讶地表明，单次尝试 (pass@1) 通常可以扩展以解决开放问题。通过与 Claude Code 和 AxProverBase 的消融和匹配模型比较，我们发现仅简单性是不够的：高效的精益界面在很大程度上决定了成本和解决率。因此，我们建议未来的工作在规定工作流程之前通过有效的执行反馈来评估前沿模型，冒着惨痛教训的风险。",
+      "authors": "Skander Moalla, Ahmad Rammal, Niket Patel, Remi Munos, Julia Kempe",
+      "url": "https://huggingface.co/papers/2610.35962",
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2610.34638"
+        "upvotes": "13",
+        "paperId": "2610.35962"
       }
     },
     {
-      "id": "2610.35450",
-      "title": "OBB-PBD: Extending Parallel Box Decoding to Oriented Bounding Boxes for Referring Expression Grounding in Aerial Imagery",
-      "title_zh": "OBB-PBD：将并行框解码扩展到定向边界框，以参考航空图像中的表达基础",
-      "description": "Referring expression grounding in overhead imagery requires oriented bounding boxes rather than horizontal ones, since aerial objects appear at arbitrary orientations. Most grounding models emit box coordinates sequentially; Parallel Box Decoding (PBD) instead predicts all geometry slots in one forward pass, but only for four-coordinate horizontal boxes. We extend this block-aligned interface to a six-slot oriented representation using a double-angle parameterization. Rather than assuming correctness from a decreasing loss curve, we verify the extension with image/prompt-shuffle controls and visibility/leakage probes, which show that the corrected model depends on both the image and the prompt rather than on prompt statistics alone. On the aerial vehicle visual grounding (AVVG) benchmark, whose targets are genuinely oriented, the extended model improves rotated intersection over union (rotIoU) from 0.1253 for the zero-shot baseline to 0.303 +/- 0.012 (mean +/- standard deviation over three training seeds) across the complete 6139-record test split spanning all 120 images. Learning oriented boxes rather than their axis-aligned envelopes adds 0.055 +/- 0.008 rotIoU beyond a matched control (per-seed 95% confidence intervals all excluding zero), whereas block expansion alone yields no rotIoU gain distinguishable from zero.",
-      "description_zh": "在俯视图像中引用表达基础需要定向边界框而不是水平边界框，因为空中物体出现在任意方向。大多数接地模型按顺序发出盒坐标；并行框解码 (PBD) 会在一次前向传递中预测所有几何槽，但仅限于四坐标水平框。我们使用双角度参数化将此块对齐接口扩展为面向六槽的表示。我们不是从下降的损失曲线中假设正确性，而是使用图像/提示洗牌控件和可见性/泄漏探针来验证扩展，这表明校正后的模型取决于图像和提示，而不是仅取决于提示统计数据。在目标真正定向的飞行器视觉接地 (AVVG) 基准上，扩展模型将跨越所有 120 个图像的完整 6139 条记录测试分割的旋转交集比并集 (rotIoU) 从零样本基线的 0.1253 提高到 0.303 +/- 0.012（三个训练种子的平均值 +/- 标准差）。面向学习的盒子而不是轴对齐的包络线在匹配控制之外增加了 0.055 +/- 0.008 rotIoU（每个种子 95% 置信区间均不包括零），而单独的块扩展不会产生与零可区分的 rotIoU 增益。",
-      "authors": "Chang Woo Song, Yeong Jun Koh",
-      "url": "https://huggingface.co/papers/2610.35450",
-      "score": 2,
+      "id": "2602.10657",
+      "title": "The Lexical Imprint of Pre-training Data",
+      "title_zh": "预训练数据的词汇印记",
+      "description": "How much of zero-shot benchmark accuracy is captured by word-level alignment between a pre-training corpus and the benchmark target? We study this question through word-level unigram cross-entropy (UCE), a tokenizer-agnostic, model-free measure of lexical alignment between a reference corpus and a target benchmark. Likelihood training shapes the model's predictive distribution from the pre-training corpus, and zero-shot scores under likelihood-based evaluation depend in part on the lexical alignment between that corpus and the benchmark target. Cleanly tracing how the lexical imprint of pre-training data scales with corpus--benchmark alignment requires controlled from-scratch pre-training that varies corpus identity while holding the training recipe fixed. Across this controlled sweep, spanning 10 zero-shot benchmarks, 4 pre-training corpora, and 3 model scales, we find that corpus--benchmark lexical alignment, UCE, consistently tracks zero-shot accuracy on every benchmark, with corpora more aligned with the benchmark (lower UCE) achieving higher accuracy. The same signal extends from measurement to control at finer scopes. At the document level, strengthening the imprint by selecting training documents to maximize lexical alignment with the benchmark produces the accuracy gains predicted by the mechanism. At the prompt level, matching the imprint per prompt by routing each prompt to the drafter whose domain corpus is most lexically aligned with it produces measurable throughput gains over a generalist-drafter baseline. Taken together, pre-training corpora leave a measurable lexical imprint on base-model zero-shot behavior, and UCE provides a model-free probe of lexical alignment between reference and target data.",
+      "description_zh": "预训练语料库和基准目标之间的词级对齐可以捕获多少零样本基准精度？我们通过词级一元交叉熵（UCE）来研究这个问题，UCE 是一种与分词器无关、无模型的参考语料库和目标基准之间的词汇对齐度量。似然训练根据预训练语料库塑造模型的预测分布，基于似然评估的零样本分数部分取决于该语料库和基准目标之间的词汇对齐。清晰地追踪预训练数据的词汇印记如何随语料库进行缩放——基准对齐需要从头开始受控预训练，在保持训练配方固定的同时改变语料库身份。在这个受控扫描中，跨越 10 个零样本基准、4 个预训练语料库和 3 个模型尺度，我们发现语料库（基准词汇对齐 UCE）一致地跟踪每个基准上的零样本准确性，语料库与基准（较低的 UCE）更加一致，从而实现更高的准确性。相同的信号从测量延伸到更精细范围的控制。在文档级别，通过选择训练文档以最大化与基准的词汇对齐来加强印记，从而产生该机制预测的准确性增益。在提示级别，通过将每个提示路由到领域语料库与其在词汇上最一致的起草者来匹配每个提示的印记，可以在通才起草者基线上产生可测量的吞吐量增益。总而言之，预训练语料库在基本模型零样本行为上留下了可测量的词汇印记，而 UCE 提供了参考数据和目标数据之间词汇对齐的无模型探测。",
+      "authors": "Jeonghoon Kim, Woojin Chung, Woomin Song, Cheonbok Park, Nako Sung, Jinwoo Shin",
+      "url": "https://huggingface.co/papers/2602.10657",
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2610.35450"
+        "upvotes": "7",
+        "paperId": "2602.10657"
       }
     },
     {
-      "id": "2610.33718",
-      "title": "RoboJev: An Open Vision-Language Judge for Robot Success Detection",
-      "title_zh": "RoboJev：用于机器人成功检测的开放视觉语言法官",
-      "description": "Many robot manipulation videos do not indicate whether the task was successfully completed. RoboJev-27B is an open-weight vision-language model that takes a task instruction, 10 frames of a manipulation attempt, and (if available) final frames from auxiliary cameras and predicts whether the robot accomplished the task. RoboJev-27B is a variant of JEV-27B-VL, trained with a rank-32 LoRA adapter on the language model only (keeping the vision encoder frozen) using 52,598 episode records. It also uses a source-specific KL penalty that applies only to research data, anchoring predictions closer to the original model on those sources. It uses a calibrated two-token readout that outputs success/failure probabilities in a single forward pass. On 268 held-out episodes of the same robot model (SO-101), RoboJev-27B attains 95.2% balanced accuracy and 0.993 AUROC. It also generalises to episodes collected by unseen labs/robots (AUROC = 0.890 over 459 episodes) as well as to clearly labelled community-collected episodes (accuracy = 93.3% over 135 episodes), where the base model attains an AUROC = 0.900 on the unseen-lab/robot subset with the same inputs. It takes 0.26 seconds per episode (median, serial) to infer on a single H100, which is about \\0.19 per 1,000 success predictions at 2.69 per GPU-hour (not including media processing and serving costs). RoboJev-27B is released together with its inference code, along with a transparent evaluation: 20,628 predictions organized into 29 model/protocol entries are made available to facilitate browsing and to enable reproducible benchmarking of success detection. We also compare against strong API-based frontier VLMs, which take in fewer input frames (4 images from the primary camera only); note that this comparison is not strictly like-for-like because RoboJev-27B is given more frames at inference.",
-      "description_zh": "许多机器人操作视频并没有表明任务是否成功完成。 RoboJev-27B 是一种开放权重视觉语言模型，它采用任务指令、10 帧操作尝试以及来自辅助摄像机的最终帧（如果可用），并预测机器人是否完成任务。 RoboJev-27B 是 JEV-27B-VL 的变体，仅使用 52,598 个情节记录在语言模型上使用 32 级 LoRA 适配器进行训练（保持视觉编码器冻结）。它还使用仅适用于研究数据的特定于源的 KL 惩罚，使预测更接近这些源的原始模型。它使用校准的双令牌读数，在单次前向传递中输出成功/失败概率。在同一机器人模型 (SO-101) 的 268 个持续回合中，RoboJev-27B 达到了 95.2% 的平衡准确度和 0.993 AUROC。它还推广到由看不见的实验室/机器人收集的情节（AUROC = 0.890，超过 459 个情节）以及明确标记的社区收集的情节（准确度 = 93.3%，超过 135 个情节），其中基本模型在具有相同输入的看不见的实验室/机器人子集上获得 AUROC = 0.900。每集（中值、连续）需要 0.26 秒来推断单个 H100，每 1,000 个成功预测大���需要 0.19 秒，每 GPU 小时 2.69 秒（不包括媒体处理和服务成本）。 RoboJev-27B 与其推理代码以及透明的评估一起发布：组织成 29 个模型/协议条目的 20,628 个预测可供使用，以方便浏览并实现成功检测的可重复基准测试。我们还与基于 API 的强大前沿 VLM 进行比较，后者接收的输入帧更少（仅来自主摄像头的 4 个图像）；请注意，这种比较并不是严格意义上的同类比较，因为 RoboJev-27B 在推理时被赋予了更多帧。",
-      "authors": "Josef Liyanjun Chen",
-      "url": "https://huggingface.co/papers/2610.33718",
-      "score": 4,
+      "id": "2610.37037",
+      "title": "Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception",
+      "title_zh": "无需缩放即可缩放 v2：从查看细节到连接可泛化多模态感知的证据",
+      "description": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
+      "description_zh": "多模态感知构成了多模态智能的基础。特别是，空间感知和多模态长上下文理解是支撑具体人工智能和多模态代理的两项关键任务。然而，为这些任务合成有针对性的高质量训练数据仍然很困难且成本高昂。我们的主要见解是，这些任务共享一个潜在的能力，我们称之为连接证据：识别相关的视觉事实，将它们绑定到正确的实体，恢复它们的关系，并将它们组合成答案。至关重要的是，与这些任务本身相比，针对此功能合成有针对性的训练数据要容易得多。为了加强这种能力，我们提出了 EvidenceConnect，这是一种易于实现的数据合成框架，它使用单个图像中相关区域的缩放视图来生成需要比较、聚合或链接视觉证据的问题。为了确保质量，只有当独立的 VLM 同意时才会保留参考答案，并且区域消融测试会丢弃其答案在删除选定区域后仍然存在的问题。然后，我们使用 RLVR 根据结果数据训练基础 VLM，获得 Zooming without Zooming v2 (ZwZ2)。尽管合成数据并未针对任何下游基准进行定制，但 ZwZ2 改进了细粒度和空间感知，进一步增强了体现空间推理、多模式长上下文理解、多模式代理任务和一般视觉推理。这些结果将 EvidenceConnect 确立为监督证据连接的有效框架，并表明加强这种共享能力可以带来更普遍的多模式感知。",
+      "authors": "Lai Wei, Yatai Li, Liangbo He, Jun Lan, Renjie Gu, Linhan Cao, Junkai Lin, Huijia Zhu, Weiqiang Wang, Linghe Kong, Yue Wang, Zhuosheng Zhang, Weiran Huang",
+      "url": "https://huggingface.co/papers/2610.37037",
+      "score": 24,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2610.33718"
+        "upvotes": "24",
+        "paperId": "2610.37037"
+      }
+    },
+    {
+      "id": "2610.37662",
+      "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+      "title_zh": "离散标记可以作为视觉信号的语义无损表示吗？",
+      "description": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal understanding. Trained on industrial-scale multimodal data, our model achieves state-of-the-art performance among discrete-representation models, outperforming UniAR and Emu3-Chat by 22.8% and 59.2%, respectively, on a nine-metric average. To our knowledge, it is also the first discrete-representation model competitive with strong continuous-representation models such as Qwen3-VL, including on fine-grained OCR tasks. We further identify the key principles and a practical recipe enabling this competitiveness. These results and insights support the potential of discrete visual representations to underpin large-scale native multimodal foundation models. Code and models are available at https://github.com/hustvl/FVQ",
+      "description_zh": "离散视觉标记以类似于语言的离散形式表示视觉，为共享下一个标记预测目标下的多模态建模提供本机接口。然而，量化误差被广泛认为会导致不可避免的语义损失，从根本上限制了离散视觉标记的语义保真度，并将连续视觉表示定位为内在上限。使用多模态理解作为语义保真度的代理，我们重新审视这个假设并发现量化误差不可靠，因为具有更大误差的离散表示可以实现更好的理解。相反，离散索引的有效比特预算成为下游性能的关键决定因素。然而，随着额外的码本贡献的语义信息逐渐减少，现有的量化器最终会饱和。作为缓解这种饱和度的一种方法，我们引入了分解矢量量化，它使用对称并行码本对视觉特征的互补、固定维度视图进行量化。它在更大的比特预算下继续改进，最终匹配多模式理解中的连续视觉表示。经过工业规模多模态数据的训练，我们的模型在离散表示模型中实现了最先进的性能，在九个指标的平均值上分别比 UniAR 和 Emu3-Chat 高出 22.8% 和 59.2%。据我们所知，它也是第一个可与 Qwen3-VL 等强大的连续表示模型竞争的离散表示模型，包括在细粒度 OCR 任务上。我们进一步确定了实现这种竞争力的关键原则和实用秘诀。这些结果和见解支持离散视觉表示支持大规模本地多模态基础模型的潜力。代码和模型可在 https://github.com/hustvl/FVQ 获取",
+      "authors": "Jialv Zou, Xiaotong Li, Zhengrong Yue, Xu Huang, Yaxin Luo, Wenhao Yan, Haodong Li, Wenyu Liu, Xinggang Wang",
+      "url": "https://huggingface.co/papers/2610.37662",
+      "score": 88,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "88",
+        "paperId": "2610.37662"
+      }
+    },
+    {
+      "id": "2610.26030",
+      "title": "Truncate or Not? A Scaling Study of Looped Transformers with Truncated Backpropagation",
+      "title_zh": "截断还是不截断？截断反向传播环形变压器的尺度研究",
+      "description": "Looped transformers reuse a shared block of layers to increase computational depth without increasing the number of trainable parameters. They are trained with backpropagation through time (BPTT). To save training compute, BPTT is often truncated to the last few loops, but truncation yields biased gradients that may weaken the benefit of looping. In this work, we study the value of truncation in looped transformer training in a systematic way: we jointly vary model size, training tokens, and forward and backward loop counts across nearly 600 training runs and fit a unified scaling law that captures the effects of looping and truncation through effective parameters. Despite the training-compute savings of truncation, our fitted law favors full BPTT when forward and backward loop counts are jointly optimized. In matched-compute runs, full BPTT through fewer loops consistently outperforms truncated settings of the same compute. The law further shows that at fixed model size, the compute-optimal loop count and training-token budget both grow with compute. When model size is also free, the law identifies two fully trained loops as the best looped setting. Experimentally, this setting achieves lower validation loss than the compute-optimal non-looped model with about 27% fewer non-embedding parameters and only 8% more training compute.",
+      "description_zh": "循环变压器重用共享的层块来增加计算深度，而不增加可训练参数的数量。他们接受随时间反向传播（BPTT）的训练。为了节省训练计算量，BPTT 通常被截断到最后几个循环，但截断会产生有偏差的梯度，这可能会削弱循环的好处。在这项工作中，我们以系统的方式研究截断在循环 Transformer 训练中的价值：我们在近 600 次训练运行中共同改变模型大小、训练标记以及前向和后向循环计数，并拟合一个统一的缩放法则，该法则通过有效参数捕获循环和截断的影响。尽管截断可以节省训练计算量，但当联合优化前向和后向循环计数时，我们的拟合法则有利于完整的 BPTT。在匹配计算运行中，通过较少循环的完整 BPTT 始终优于相同计算的截断设置。该定律进一步表明，在固定的模型大小下，计算最优循环计数和训练令牌预算都随着计算量的增长而增长。当模型大小也自由时，该定律将两个完全训练的循环确定为最佳循环设置。实验上，此设置比计算最优非循环模型实现了更低的验证损失，非嵌入参数减少了约 27%，训练计算量仅增加了 8%。",
+      "authors": "Xuyuan Xiong, Siyu Chen, Zihan Shao, Yue Su, Weiyang Jin, Ping Luo, Zhuoran Yang, Xihui Liu",
+      "url": "https://huggingface.co/papers/2610.26030",
+      "score": 26,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "26",
+        "paperId": "2610.26030"
       }
     }
   ]
