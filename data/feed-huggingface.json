@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-10-30T23:11:12.893Z",
+  "updatedAt": "2026-10-31T22:47:37.026Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "季度收益预测要求代理将财务证据与产生公司报告收益的损益表行项目联系起来。我们引入 EPSBench，这是一个研究 86 家美国公司 149 个季度的这种能力的基准。代理人阅读一系列固定的文件、财报电话会议记录和新闻，然后用引用的证据估计公司特定的损益表驱动因素。共享会计计算器将这些估计值转换为 GAAP 摊薄每股收益 (EPS)，为比较预测假设提供共同基础。我们在通用工具下评估六个模型，评估相对���日期匹配的分析师共识的点预测误差，并检查它们的预测区间是否达到规定的覆盖范围。三个模型在点预测误差与共识方面没有显示出可检测到的配对差异，并且三个模型具有更高的误差。在所有六个模型中，名义 80% 区间仅在返回区间的运行中包含报告的 EPS 37--70%，并且大多数未命中值都低于上限，因为预测值较低。驾驶员记录追踪了模型与营业收入估计之间的大部分误差差距。",
       "authors": "Yanbin Yin, Chuyu Xu, Liqin Ye, Jing Peng, Chao Zhang",
       "url": "https://huggingface.co/papers/2610.38293",
-      "score": 0,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "2",
         "paperId": "2610.38293"
       }
     },
@@ -26,10 +26,10 @@
       "description_zh": "当没有合适的外部老师时，自我蒸馏提供了一种改进推理模型的方法。然而，常见的方法依赖于特权信息来构建更强大的自学工具，当只有未标记的提示可用时限制了它们的使用。在本文中，我们引入了弱化诱导的策略自蒸馏（WISD），它构建了原始模型的较弱对应模型，并使用两者之间的对比作为训练信号，而不需要特权信息。我们探索了两种构建较弱模型的方法：低位量化和幅度剪枝。我们在数学和编码推理任务上跨不同的架构和规模评估 WISD。在这些基准测试中，量化和剪枝使原始模型的平均准确度分别提高了 4.0 和 5.5 个百分点，即使没有特权信息也能实现最先进的性能。值得注意的是，修剪将 Qwen3.5-4B 在 HMMT 2025 上的准确率从 57.7% 提高到 70.5%，在 LiveCodeBench v6 上从 39.1% 提高到 56.7%。在相同的基准上，量化将 Qwen3.6-35B-A3B 的准确率分别从 68.5% 提高到 74.6%，从 61.8% 提高到 69.5%。这些结果将 WISD 确立为大型推理模型的新颖且有效的自蒸馏框架。",
       "authors": "Yecheng Wu, Song Han, Han Cai",
       "url": "https://huggingface.co/papers/2610.38681",
-      "score": 0,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
+        "upvotes": "2",
         "paperId": "2610.38681"
       }
     },
@@ -38,13 +38,13 @@
       "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
       "title_zh": "解锁预训练自回归图像模型中的任意阶生成",
       "description": "Autoregressive (AR) image generators are powerful in principle but inflexible in practice: training with a fixed raster-scan order hardcodes a single factorization of the image distribution into the model, leaving it unable to inpaint, outpaint, or edit at inference time. Existing solutions, including the modern discrete-diffusion family, train from scratch on a mixture of token orderings, paying roughly 3x the compute of standard raster-scan training; discrete diffusion further sacrifices compatibility with the AR inference ecosystem (KV caching, vLLM) by construction. We argue that this cost is unnecessary. A pretrained raster-scan AR model has already learned the joint distribution over image tokens; what it lacks is not knowledge but the ability to express that knowledge through non-sequential conditional pathways. We propose a recipe for adapting pretrained raster-scan models into any-order generators using two components: future-aware positional embeddings that resolve a target-position identifiability problem at negligible overhead, and an ordering curriculum that traces a stable optimization path from the pretrained solution to a good any-order basin. Applied to four base models across two architectures and two scales (LlamaGen-L/XL, RAR-L/XL), the recipe substantially outperforms MaskGIT on ImageNet inpainting (FID 6.21 vs. 10.44) and outpainting, is competitive with MAR-L, trades a 1.2-1.9 increase in class-conditional FID for this flexibility, and costs 13-33% additional compute beyond pretraining, while leaving the standard AR inference stack untouched. Inpainting, outpainting, and editing, our results suggest, need not be added to autoregressive image models. They can be unlocked from the ones that exist. Code is available at https://github.com/Ordered-AR/unlockedadaptation.",
-      "description_zh": "自回归 (AR) 图像生成器原则上功能强大，但在实践中缺乏灵活性：使用固定光栅扫描顺序进行训练将图像分布的单个因式分解硬编码到模型中，使其无法在推理时进行修复、覆盖或编辑。现有的解决方案，包括现代离散扩散系列，从头开始对令牌排序的混合进行训练，花费的计算量大约是标准光栅扫描训练的 3 倍；离散扩散通过构建进一步牺牲了与 AR 推理生态系统（KV 缓存、vLLM）的兼容性。我们认为这个成本是不必要的。预训练的光栅扫描 AR 模型已经学习了图像标记上的联合分布；它缺乏的不是知识，而是通过非顺序条件路径表达知识的能力。我们提出了一种方法，使用两个组件将预训练的光栅扫描模型调整为任意阶生成器：未来感知的位置嵌入，以可忽略的开销解决目标位置可识别性问题，以及排序课程，跟踪从预训练的解决方案到良好的任意阶盆地的稳定优化路径。应用于两种架构和两种规模（LlamaGen-L/XL、RAR-L/XL）的四个基本模型时，该方法在 ImageNet 修复（FID 6.21 与 10.44）和修复方面大大优于 MaskGIT，与 MAR-L 具有竞争力，以类条件 FID 增加 1.2-1.9 倍来换取这种灵活性，并且在预训练之外花费 13-33% 的额外计算成本，而标准 AR 推理堆栈保持不变。我们的结果表明，修复、修复和编辑不需要添加到自回归图像模型中。它们可以从现有的中解锁。代码可在 https://github.com/Ordered-AR/unlockedadaptation 获取。",
+      "description_zh": "自回归 (AR) 图像生成器原则上功能强大，但在实践中缺乏灵活性：使用固定光栅扫描顺序进行训练将图像分布的单个因式分解硬编码到模型中，使其无法在推理时进行修复、覆盖或编辑。现有的解决方案，包括现代离散扩散系列，从头开始对令牌排序的混合进行训练，花费的计算量大约是标准光栅扫描训练的 3 倍；离散扩散通过构建进一步牺牲了与 AR 推理生态系统（KV 缓存、vLLM）的兼容性。我们认为这个成本是不必要的。预训练的光栅扫描 AR 模型已经学习了图像标记上的联合分布；它缺乏的不是知识，而是通过非顺序条件路径表达知识的能力。我们提出了一种方法，使用两个组件将预训练的光栅扫描模型调整为任意阶生成器：未来感知的位置嵌入，以可忽略的开销解决目标位置可识别性问题，以及排序课程，跟踪从预训练的解决方案到良好的任意阶盆地的稳定优化路径。应用于两种架构和两种规模（LlamaGen-L/XL、RAR-L/XL）的四个基本模型时，该方法在 ImageNet 修复（FID 6.21 �� 10.44）和修复方面大大优于 MaskGIT，与 MAR-L 具有竞争力，以类条件 FID 增加 1.2-1.9 倍来换取这种灵活性，并且在预训练之外花费 13-33% 的额外计算成本，而标准 AR 推理堆栈保持不变。我们的结果表明，修复、修复和编辑不需要添加到自回归图像模型中。它们可以从现有的中解锁。代码可在 https://github.com/Ordered-AR/unlockedadaptation 获取。",
       "authors": "Rishav Pramanik, Marco Pedersoli, Zhaozheng Yin",
       "url": "https://huggingface.co/papers/2610.39293",
-      "score": 1,
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "2",
         "paperId": "2610.39293"
       }
     },
@@ -56,10 +56,10 @@
       "description_zh": "语言代理越来越多地通过外部工具和交互环境进行操作，使模型及其可执行功能之间的接口成为决策过程的一部分。模型上下文协议 (MCP) 和命令行界面 (CLI) 可以通过明显不同的面向模型的表示来公开相同的语义操作。我们研究当可执​​行能力匹配时，这些代表性差异是否会改变代理行为。我们引入了匹配接口比较和分析 (MICA)，它从共享语义操作合约呈现 MCP 和 CLI，并通过同一运行时路由解码的操作。在六种模型和三种交互环境中，匹配的界面会在任务性能和交互成本方面产生显着差异。这些影响超出了表面有效性，延伸到语义动作选择、故障路径和恢复。匹配状态探针定位对能力呈现、实现和反馈的敏感性。成对的自然轨迹揭示了 2,004 个片段中 94.3% 的结构分歧，并表明早期差异通过随后的相互作用传播。该分析将接口实现确定为直接干预边界。因此，我们引入了解耦操作实现和目标修复（DART），它在修复特定于接口的实现的同时保留了经过验证的语义承诺。 DART 将所有六种评估设置中的基准分数提高了多达 9.0 分，并将所有三种环境中的每个任务的 MCP 令牌成本降低了多达 27.1k 令牌。这些结果共同建立了界面表示，作为闭环决策环境塑造代理行为的一部分。",
       "authors": "Zhenning Shi, Liang Pang, Yongqi Li",
       "url": "https://huggingface.co/papers/2610.34298",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2610.34298"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "开发人员从公共注册中心下载量化大型语言模型 (LLM) 以在本地运行。我们检查的所有注册表均未记录其文件的功能测试。我们测试了官方 Ollama 库中 15 个模型系列的所有 305 个符合条件的、支持代码的 GGUF 标签（llama.cpp 格式），以及 22 个流行的 Hugging Face 社区文件。 15 项任务的代码筛选确定了嫌疑人，我们对所有 164 个 HumanEval+ 任务进行了重新测试。七个官方标签（2.3%）最多解决了其中的六个。所有这些都是模型的低位量化，最多有 40 亿个参数。我们根据原始权重重建了五个可疑文件。所有五个注册表文件都与我们未校准的张量重建张量相匹配，因此没有任何文件被损坏。精确的再现性并不意味着功能。在权重、工具链和张量混合保持固定的情况下，添加重要性矩阵将三个 Qwen2.5-Coder-3B 构建从零提高到 76-113 个已解决的任务。同样未经校准的配方使较小的 Qwen2.5-Coder-1.5B 发挥作用，表明该配方本身并不能预测故障。通过筛选的 66 个采样标签中没有一个是不起作用的。我们发布审核数据和 quantcheck 工具，并建议在发布之前筛选低位标签，然后校准或保留失败。",
       "authors": "Aditi Patodiya",
       "url": "https://huggingface.co/papers/2609.05881",
-      "score": 2,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "5",
         "paperId": "2609.05881"
       }
     },
@@ -83,13 +83,13 @@
       "title": "Training Foundation Models with a Single Algorithm",
       "title_zh": "使用单一算法训练基础模型",
       "description": "Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning. This work lays the groundwork for a unified science of foundation-model training, connecting mathematical principles, training infrastructure, and the development of model capabilities.",
-      "description_zh": "基础模型通常分阶段进行训练：预训练、训练中期、监督微调 (SFT) 和强化学习 (RL)，同时数据和学习算法都会发生变化。我们证明这种算法分离并不是根本性的。通过导出合适的 RL 目标作为模型生成的目标分布的最大似然拟合，我们将所有这些阶段置于单一基于似然的训练算法（统一训练）下。这种观点将基础模型训练生命周期转化为选择哪些数据、以何种比例以及何时进行训练的问题，传统的分阶段训练是一个特例。我们在一个统一的训练系统中实例化这个框架，该系统在单个训练器中混合静态数据和强化学习生成。在受控实验和现实实验中，统一训练可以提高准确性-计算权衡和任务覆盖范围，同时保留更广泛的功能，并为持续学习提供更强有力的起点。这项工作为基础模型训练的统一科学奠定了基础，将数学原理、训练基础设施和模型能力的开发联系起来。",
+      "description_zh": "基础模型通常分阶段进行训练：预训练、训练中期、监督微调 (SFT) 和强化学习 (RL)，同时数据和学习算法都会发生变化。我们证明这种算法分离并不是根本性的。通过导出合适的 RL 目标作为模型生成的目标分布的最大似然拟合，我们将所有这些阶段置于单一基于似然的训练算法（统一训练）下。这种观点将基础模型训练生命周期转变为选择哪些数据、以何种比例以及何时进行训练的问题，传统的分阶段训练是一个特例。我们在一个统一的训练系统中实例化这个框架，该系统在单个训练器中混合静态数据和强化学习生成。在受控实验和现实实验中，统一训练可以提高准确性-计算权衡和任务覆盖范围，同时保留更广泛的功能，并为持续学习提供更强有力的起点。这项工作为基础模型训练的统一科学奠定了基础，将数学原理、训练基础设施和模型能力的开发联系起来。",
       "authors": "Yuda Song, Alvin Zhang, Fahim Tajwar, Daman Arora, Jeff Schneider, Daniel Khashabi, Ruslan Salakhutdinov, J. Andrew Bagnell, Aarti Singh, Andrea Zanette",
       "url": "https://huggingface.co/papers/2610.40564",
-      "score": 2,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "8",
         "paperId": "2610.40564"
       }
     },
@@ -98,7 +98,7 @@
       "title": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
       "title_zh": "ABF-Bench：代理区块链取证的可验证基准",
       "description": "Blockchain forensics is adversarial and open-ended: money launderers split, swap, and bridge funds, cut their trail at mixers or custodial services, and change tactics from one incident to the next. Investigators must keep adapting their tracing in response. Yet the immutability of public ledgers preserves every recorded movement in public view, making much of the investigation independently verifiable. We introduce ABF-Bench, an interactive benchmark that makes evidence-backed fund tracing a verifiable agent task, in which every claimed movement must cite ledger records the agent retrieved. A case-to-task pipeline builds well-posed tasks across ledgers: conservative rules halt tracing wherever the records leave a continuation unresolved, and each task's reference graph is the answer those rules determine. Built from real laundering activity, the tasks combine multi-hop transfers, DeFi exchanges, cross-chain round trips, custodial and mixer deposits, and address poisoning. We also propose the ABF agent harness, built around a working memory, and evaluate it alongside general-purpose agents and fixed-order tracers. The harness reaches 75% edge recall, against 47% for Codex with the same model and 10% for Claude Code, which loses recall to overconfidence: it cites records it left unretrieved. Compared with fixed-order tracers, the harness acquires evidence faster than the best of them early in the budget and recognizes undisclosed custodial services that they walk past (89% vs. 0%), with 98% fidelity. However, agents tend to stop early and lose recall on larger tasks, which holds their final recall below the best tracer. Beyond exposing these gaps, ABF-Bench opens blockchain forensics to LLM agents as a verifiable domain, where the verdicts that score agents also offer potential training signals.",
-      "description_zh": "区块链取证是对抗性的、开放式的：洗钱者分割、互换和桥接资金，在混合器或托管服务中切断踪迹，并从一个事件到下一个事件改变策略。调查人员必须不断调整追踪方式以应对。然而，公共账本的不变性将每一个记录的活动保留在公众视野中，使得大部分调查都可以独立验证。我们引入了 ABF-Bench，这是一种交互式基准，使有证据支持的资金追踪成为一项可验证的代理任务，其中每个声称的动作都必须引用代理检索到的账本记录。案例到任务的管道跨分类账构建适定的任务：只要记录留下未解决的延续，保守的规则就会停止跟踪，每个任务的参考图就是这些规则确定的答案。这些任务基于真实的洗钱活动，结合了多跳转账、DeFi 交换、跨链往返、托管和混合器存款以及地址中毒。我们还提出了围绕工作记忆构建的 ABF 代理工具，并将其与通用代理和固定顺序跟踪器一起评估。该线束的边缘召回率达到 75%，而同型号的 Codex 为 47%，Claude Code 为 10%，后者因过度自信而失去了召回率：它引用了未检索到的记录��与固定订单追踪器相比，该工具在预算初期比最好的追踪器获取证据的速度更快，并以 98% 的保真度识别它们走过的未公开的托管服务（89% 与 0%）。然而，智能体往往会提前停止并失去对较大任务的回忆，这使得他们的最终回忆低于最佳追踪器。除了暴露这些差距之外，ABF-Bench 还向 LLM 代理开放区块链取证作为可验证的领域，其中对代理进行评分的判决也提供了潜在的训练信号。",
+      "description_zh": "区块链取证是对抗性的、开放式的：洗钱者分割、互换和桥接资金，在混合器或托管服务中切断踪迹，并从一个事件到下一个事件改变策略。调查人员必须不断调整追踪方式以做出回应。然而，公共账本的不变性将每一个记录的活动保留在公众视野中，使得大部分调查都可以独立验证。我们引入了 ABF-Bench，这是一种交互式基准，使有证据支持的资金追踪成为一项可验证的代理任务，其中每个声称的动作都必须引用代理检索到的账本记录。案例到任务的管道跨分类账构建适定的任务：只要记录留下未解决的延续，保守的规则就会停止跟踪，每个任务的参考图就是这些规则确定的答案。这些任务基于真实的洗钱活动，结合了多跳转账、DeFi 交换、跨链往返、托管和混合器存款以及地址中毒。我们还提出了围绕工作记忆构建的 ABF 代理工具，并将其与通用代理和固定顺序跟踪器一起评估。该线束的边缘召回率达到 75%，而同型号的 Codex 为 47%，Claude Code 为 10%，后者因过度自信而失去了召回率：它引用了未检索到的��录。与固定订单追踪器相比，该工具在预算初期比最好的追踪器获取证据的速度更快，并以 98% 的保真度识别它们走过的未公开的托管服务（89% 与 0%）。然而，智能体往往会提前停止并失去对较大任务的回忆，这使得他们的最终回忆低于最佳追踪器。除了暴露这些差距之外，ABF-Bench 还向 LLM 代理开放区块链取证作为可验证的领域，其中对代理进行评分的判决也提供了潜在的训练信号。",
       "authors": "Xiaohang Yu, Hejia Geng, William Knottenbelt",
       "url": "https://huggingface.co/papers/2610.23656",
       "score": 3,
@@ -116,10 +116,10 @@
       "description_zh": "在不同模式上训练的模型是否收敛到世界的相同表示是人工智能的核心。柏拉图表示假说 (PRH) 推测它们会按比例缩放，但如果没有证据，它既不能提供保证，也不能提供解决办法。我们将假设转化为定理。首先，我们证明了柏拉图表示定理：在任意数量的模态上单独训练的联合嵌入预测架构（JEPA）在它们的正对是一个场景的两个观察（良好的视图）时学习相同的表示直到一个旋转，并且它们的错位否则受到限制。其次，我们表明下一个标记预测是一个具有不良视图的 JEPA，是单个文档的一部分，这解释了为什么语言模型仅通过规模与愿景保持一致。第三，我们从 145k 字幕到 940M 网络图像的文本验证了该理论，并揭示了预测种子噪声中看不见的运行的对齐缩放法则。好的视图需要比同一语料库上的下一个标记预测少 42 倍的训练样本才能达到相同的对齐方式，并且 1.09M 参数的文本 JEPA 与 DINOv2 和 CLIP 的图像编码器的对齐效果比我们评估的每个语言模型（最多 72B 个参数）以及 CLIP 的文本编码器都要好：下一个标记预测是柏拉图式表示的一种非常低效的途径。作为展示，一次旋转将单独训练的编码器变成图像字幕器（COCO 上的 CIDEr .838）。即使这种旋转也不需要配对：在最新的无配对基准测试中，我们的文本 JEPA 击败了高达 8B 参数的语言模型报告的所有零射击精度，例如，64\\% 与 ImageNet-100 上最多 56\\% 的 top-5 相比。因此，积极的观点，而不仅仅是规模，是建立柏拉图式表征的杠杆。",
       "authors": "Randall Balestriero, Yann LeCun",
       "url": "https://huggingface.co/papers/2610.39302",
-      "score": 50,
+      "score": 58,
       "meta": {
         "source": "huggingface",
-        "upvotes": "50",
+        "upvotes": "58",
         "paperId": "2610.39302"
       }
     },
@@ -131,10 +131,10 @@
       "description_zh": "我们推出了 EasyProver，这是一个由具有隔离上下文、异步搜索、并行策略探测和弹性细化服务的递归代理构建的精益证明系统。使用现成的前沿模型，无需额外训练，即可证明 669/672 PutnamBench 问题和所有 6 个 IMO 2026 形式化，并通过证明或反驳解决 597/600 NTP4VC 验证条件和所有 189 个 VERINA 任务。由于这些基准测试接近饱和，我们还引入了 Aegis，它将竞争性编程问题转化为比实际实现更困难的验证任务。该管道编写安全的 Rust 解决方案，将它们转换为 Aeneas 的精益，生成规范，并使用经过内核检查的证明或反驳来标记每个冻结的语句。它生成 2,045 个经过差异验证的 Rust-Lean 程序对和 11,533 个候选规范。与手写基准不同，这些任务承担来自固定宽度算术、显式失败、生成循环、强制转换和功能化突变的实现级义务。在 2,000 个语句的分层样本中，EasyProver 在每个语句的 30 分钟预算内证明了 1,054 个语句 (52.7%)。相同的任务还可以用于对其他证明者进行基准测试并作为强化���习的奖励。",
       "authors": "Debargha Ganguly, Divya Raghunathan, Dejan Jovanović, Vikash Singh, Soonho Kong, Aaron Tomb, Aman Goel, Ferhat Erata, Sam Bayless",
       "url": "https://huggingface.co/papers/2610.38174",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2610.38174"
       }
     },
@@ -161,10 +161,10 @@
       "description_zh": "从新的相机轨迹合成单目视频需要保留观察到的场景几何形状和运动，同时完成新可见的区域。前馈 4D 重建器恢复观察到的场景的结构，而视频扩散模型则为完成未见过的内容提供生成先验。我们介绍 Holo4D，这是一种视频重新拍摄框架，它使用重建的 3D 轨迹作为整体源视图 4D 支架。我们将这些轨迹投影到请求的视图中，并对它们的几何形状和源外观进行编码，以指导预训练的视频扩散模型。与源视频和目标摄像机一起，支架将生成基于重建的观察结果，同时将不受支持的区域留给生成先验。实验证明了基于轨迹的调节对于相机控制和新颖视图合成的价值。该框架可容纳不同的 4D 重建器，而无需重新训练视频生成器，使其能够从源重建的未来进步中受益。更多详细信息可以在我们的项目页面中找到。",
       "authors": "Yushi Lan, Zeren Jiang, Koichi Namekata, Xingang Pan, Chuanxia Zheng, Andrea Vedaldi",
       "url": "https://huggingface.co/papers/2610.25276",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2610.25276"
       }
     },
@@ -176,10 +176,10 @@
       "description_zh": "我们推出了 Youtu-Parsing-Omni，这是一种全模态解析器，可将文档、图像、音频和视频转换为基于空间和时间的结构化记录，为跨模态阅读、定位和引用证据的代理提供感知层。它的设计依赖于针对每种模式的一个编码器和针对每项任务的模式。 Youtu-Omni-Encoder从预训练的语言模型初始化，以加强文本阅读，在统一的时空坐标系中对具有共享权重的所有模态进行编码，并且一些融合层让视频帧参与并发音频，将跨模态融合和时间对齐带入感知本身。 OmniSchema 统一了所有十个解析任务的输出，允许单个自我演化的训练后过程（OmniSchema 感知按策略蒸馏 (OSAD)）在任务之间提供基于共享令牌角色的目标。在每一轮中，模型都会根据其自身的参考条件副本针对标记级目标进行训练，然后使用经过训练的权重进行刷新，以便解析器及其监督共同发展。通过单个 5 个 B 参数检查点，Youtu-Parsing-Omni 在 OmniDocBench v1.6 上实现了最先进的性能（总体 96.96），并在 OmniParsingBench 上领先于所有开放权重模型（平均 75.08），其优势集中在音频和视频上。它还在比较系统中实现了最佳的整体图表解析分数（95.02）和最精确的化学指纹一致性，并在排版乐谱的字符级转录中匹配专用的光学音乐模型，同时远远领先于通用系统。代码和模型权重是公开的。",
       "authors": "Yunhang Shen, Zhangquan Chen, Xiaotian Li, Zhongpeng Cai, Qing Zhou, Zekai Zhang, Kun Zhang, Zezhong Wu, Jian Hu, Haihan Gao, Heting Gao, Xin Li, Yinsong Liu, Deqian Jiang, Di Yin, Haoyu Cao, Xing Sun, Bing Liu, Yanqiu Qu, Yunfei Wu, Kun Yin, Zhixiang Wei, Yongxiang Hua, Qianyu Li, Xiaoxing Hu, Peiyuan Zhang, Lijiang Li, Dong Xu, Zhenchuan Yang, Yiliang Jiang",
       "url": "https://huggingface.co/papers/2610.39301",
-      "score": 55,
+      "score": 68,
       "meta": {
         "source": "huggingface",
-        "upvotes": "55",
+        "upvotes": "68",
         "paperId": "2610.39301"
       }
     },
@@ -191,10 +191,10 @@
       "description_zh": "人类认知灵活地利用共享的感知基础来理解环境、关注引用的实体、推理空间关系并采取行动。赋予空中机器人类似的功能组织仍然具有挑战性，因为现有系统通常专门针对个体功能，依赖于机外计算，或者无法在资源有限的平台上维持闭环操作。我们提出了 OpenFlyV2，这是一种统一的机载视觉-语言-动作架构，它使用共享的视觉-语言表示来支持单个模型内的语义理解、基于语言的感知、空间推理和连续空中控制。紧凑的动作专家将共享的多模式上下文转换为短视距飞行航路点，而运动感知时间记忆和动作先验则减少了闭环执行的计算成本。我们构建了一个基于模拟的数据集，包含大约 70,000 个导航轨迹和 60,000 个视觉-语言指令-响应对。 OpenFlyV2 生成动作块，每个动作块包含 12 个路径点，完全使用 NVIDIA Jetson Orin NX 以 10 Hz 的频率运行。它将零射击从模拟转移到物理四旋翼飞行，在没有真实航空训练数据的情况下，在四个真实环境中实现了 48% 的导航成功率。大量结果表明，广泛的视觉语言能力和连续闭环飞行可以在资源有限的空中平台上的单个模型中共存。代码将在 https://github.com/Ideal-ljl/AeroBrain 上公开发布。",
       "authors": "Junli Liu, Zhongrui You, Chenhui Li, Zhen Li, Yuyang Tian, Qizhen Chen, Delin Qu, Haoming Song, Dong Wang, Xuelong Li, Zhigang Wang, Bin Zhao",
       "url": "https://huggingface.co/papers/2610.39287",
-      "score": 4,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "5",
         "paperId": "2610.39287"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "我们提出了 PhysInsert，一个用于物理上合理的基于参考的对象插入的框架，它共同适应对象及其周围的场景。现有的方法通常依赖于屏蔽输入、基于生成的对或具有有限视点变化的训练对，从而导致姿势和照明适应以及双向对象场景交互受到不够的约束。我们使用严格对齐的 Blender 渲染的反事实对和跨视点和照明条件的对象引用构建插入世界数据集。基于这些数据，几何引导适应将 VGGT 几何流与目标场景特征监督下的图像和文本流结合起来，以指导空间一致的插入。互补的 2D 对象场景空间监督联合监督对象占用和环境变化，同时通过图像文本注意将空间指令扎根于对象区域。我们引入了 PhysInsert-Bench，它具有专用的跨环境和跨视图案例，除了外观复制之外还需要照明和姿势适应。 PhysInsert-Bench 和 DreamBooth 上的实验证明图像保真度有所提高；用户研究进一步显示了更准确的放置以及改进的照明集成、视角和姿势合理性。",
       "authors": "Yue Gong, Le Zhang, Rui Chen, Song Chang, Xiaochao Qu, Luoqi Liu, Ting Liu, Yebin Liu",
       "url": "https://huggingface.co/papers/2610.40453",
-      "score": 12,
+      "score": 13,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
+        "upvotes": "13",
         "paperId": "2610.40453"
       }
     },
@@ -218,13 +218,13 @@
       "title": "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers",
       "title_zh": "AB-Attention：用于加速视频扩散变压器的准确块注意力",
       "description": "Video diffusion transformers generate high-quality videos, but the quadratic cost of 3D full attention dominates their inference. Dynamic block-sparse attention reduces this cost by computing exact attention only on key/value blocks selected from current activations. However, its fidelity degrades under aggressive sparsity: blocks are scored from coarse summaries or formed by costly global clustering, pruned blocks vanish from the softmax, and whole tiles are kept or dropped even when only a few of their keys matter. To address these limitations, we propose Accurate Block Attention (AB-Attention), a training-free method that accurately approximates dense attention at high sparsity. Its Intra-Block Clustering Selector (IBCS) estimates block importance faithfully yet cheaply by clustering queries only within each query block, without permuting tokens. Sampling with Inclusion-Probability Weighting (SIP) then samples blocks in proportion to these estimates and reweights them by inverse inclusion probability, so that one pass estimates dense attention rather than truncating it. Finally, its kernel gathers key/value blocks much smaller than a tile into full tensor-core tiles, refining selection at no extra tensor-core cost. On Wan2.1 and HunyuanVideo, AB-Attention skips 89--92\\% of attention, whereas the baselines compute 1.8--3.6times as much, yet it still improves PSNR by up to 4.4~dB over the strongest baseline and achieves up to 2.23times end-to-end speedup. Our code is available at https://github.com/InfRec-Cardinal/AB-Attention.",
-      "description_zh": "视频扩散变压器生成高质量视频，但 3D 全注意力的二次成本主导了他们的推论。动态块稀疏注意力通过仅计算从当前激活中选择的键/值块上的精确注意力来降低这种成本。然而，它的保真度在极度稀疏的情况下会降低：块是根据粗略的摘要进行评分的，或者是通过昂贵的全局聚类形成的，修剪后的块从 softmax 中消失，并且即使只有少数几个键重要，整个块也会被保留或丢弃。为了解决这些限制，我们提出了准确的块注意力（AB-Attention），这是一种无需训练的方法，可以在高稀疏性下准确地近似密集注意力。其块内聚类选择器 (IBCS) 通过仅在每个查询块内对查询进行聚类来忠实而廉价地估计块重要性，而无需排列标记。使用包含概率加权（SIP）进行采样，然后按照这些估计的比例对块进行采样，并通过逆包含概率对其进行重新加权，以便一次通过估计密集注意力而不是截断它。最后，它的内核将比图块小得多的键/值块收集到完整的张量核心图块中，无需额外的张量核心成本即可优化选择。在 Wan2.1 和 HunyuanVideo 上，AB-Attention 跳过了 89--92% 的注意力，而基线计算量是基线的 1.8--3.6 倍，但它仍然比最强基线提高了 4.4~dB 的 PSNR，并实现了高达 2.23 倍的端到端加速。我们的代码可在 https://github.com/InfRec-Cardinal/AB-Attention 获取。",
+      "description_zh": "视频扩散转换器生成高质量视频，但 3D 全注意力的二次成本主导了他们的推论。动态块稀疏注意力通过仅计算从当前激活中选择的键/值块的精确注意力来降低这种成本。然而，它的保真度在极度稀疏的情况下会降低：块是根据粗略的摘要进行评分的，或者是通过昂贵的全局聚类形成的，修剪后的块从 softmax 中消失，并且即使只有少数几个键重要，整个块也会被保留或丢弃。为了解决这些限制，我们提出了准确的块注意力（AB-Attention），这是一种无需训练的方法，可以在高稀疏性下准确地近似密集注意力。其块内聚类选择器 (IBCS) 通过仅在每个查询块内对查询进行聚类来忠实而廉价地估计块重要性，而无需排列标记。使用包含概率加权（SIP）进行采样，然后按照这些估计的比例对块进行采样，并通过逆包含概率对其进行重新加权，以便一次通过估计密集注意力而不是截断它。最后，它的内核将比图块小得多的键/值块收集到完整的张量核心图块中，无需额外的张量核心成本即可优化选择。在 Wan2.1 和 HunyuanVideo 上，AB-Attention 跳过了 89--92% 的注意力，而基线计算量是基线的 1.8--3.6 倍，但它仍然比最强基线提高了 4.4~dB 的 PSNR，并实现了高达 2.23 倍的端到端加速。我们的代码可在 https://github.com/InfRec-Cardinal/AB-Attention 获取。",
       "authors": "Bin Xu, Mo Zhang, Zhengfeiyang Zhang, Xinfeng Yang, Yixing Ma, Wei Wang, HeXin Wang, Pengfei Zhou, Wangbo Zhao",
       "url": "https://huggingface.co/papers/2610.39663",
-      "score": 4,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "5",
         "paperId": "2610.39663"
       }
     }
