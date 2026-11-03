@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-01T23:01:23.696Z",
+  "updatedAt": "2026-11-03T01:46:03.179Z",
   "count": 15,
   "items": [
     {
-      "id": "2610.38293",
-      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
-      "title_zh": "EPSBench：LLM 代理盈利预测的基准测试",
-      "description": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings. We introduce EPSBench, a benchmark for studying this ability across 149 firm-quarters from 86 US companies. Agents read a fixed collection of filings, earnings-call transcripts, and news, then estimate company-specific income-statement drivers with cited evidence. A shared accounting calculator converts these estimates into GAAP diluted earnings per share (EPS), providing a common basis for comparing forecast assumptions. We evaluate six models under a common harness, assessing point forecast error relative to date-matched analyst consensus and checking whether their prediction intervals achieve the stated coverage. Three models show no detectable paired difference in point forecast error from consensus, and three have higher error. Across all six models, nominal 80% intervals contain reported EPS in only 37--70% of runs that return an interval, and most misses fall above the upper bound because the forecasts run low. The driver records trace most of the error gap between models to operating-income estimates.",
-      "description_zh": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings. We introduce EPSBench, a benchmark for studying this ability across 149 firm-quarters from 86 US companies. Agents read a fixed collection of filings, earnings-call transcripts, and news, then estimate company-specific income-statement drivers with cited evidence. A shared accounting calculator converts these estimates into GAAP diluted earnings per share (EPS), providing a common basis for comparing forecast assumptions.我们在通用工具下评估六个模型，评估相对于日期匹配的分析师共识的点预测误差，并检查它们的预测区间是否达到规定的覆盖范围。 Three models show no detectable paired difference in point forecast error from consensus, and three have higher error. Across all six models, nominal 80% intervals contain reported EPS in only 37--70% of runs that return an interval, and most misses fall above the upper bound because the forecasts run low. The driver records trace most of the error gap between models to operating-income estimates.",
-      "authors": "Yanbin Yin, Chuyu Xu, Liqin Ye, Jing Peng, Chao Zhang",
-      "url": "https://huggingface.co/papers/2610.38293",
-      "score": 2,
+      "id": "2610.40901",
+      "title": "TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research",
+      "title_zh": "TSFLab：用于时间序列预测研究的自我改进的与代理无关的工作台",
+      "description": "As publications and products on time series forecasting (TSF) proliferate, researchers face a growing burden of analyzing existing work. First, not all publications release code. For instance, only about 20% of arXiv TSF papers have a code link in the surveyed period. Second, released code also requires manual maintenance. Thus, TSF researchers must constantly adapt or implement existing works. However, independent implementations can differ in experimental settings and are difficult to maintain. We therefore propose to use AI agents for benchmarking TSF research and even supporting autoresearch, e.g., developing new TSF models. Yet directly applying existing coding agents, such as Claude Code and Codex, is suboptimal: prohibitive costs, limited scalability to large research projects (e.g., benchmarking), and lack of self-maintenance. To address these challenges, we propose TSFLab, a self-improving agent-agnostic \"workbench\" that equips compatible coding agents with shared resources and tools for low-cost TSF research and continuous maintenance of research resources. Our experiments cover reproduction, benchmarking, and new method development. In reproduction and benchmarking, TSFLab improves task completion by 20-163% and cuts fresh tokens per completed task by 11-66% across baselines. A pilot study of agent-driven method development also shows improved forecasting accuracy via TSFLab, with 32.8-73.6% fewer fresh tokens and 9.2-68.8% less development time than the other settings.",
+      "description_zh": "随着时间序列预测 (TSF) 的出版物和产品激增，研究人员在分析现有工作方面面临着越来越大的负担。首先，并非所有出版物都发布代码。例如，在调查期间，只有约 20% 的 arXiv TSF 论文有代码链接。其次，发布的代码也需要人工维护。因此，TSF 研究人员必须不断调整或实施现有的工作。然而，独立的实现可能在实验设置上有所不同并且难以维护。因此，我们建议使用人工智能代理对 TSF 研究进行基准测试，甚至支持自动研究，例如开发新的 TSF 模型。然而，直接应用现有的编码代理（例如 Claude Code 和 Codex）并不是最理想的：成本过高，大型研究项目（例如基准测试）的可扩展性有限，并且缺乏自我维护。为了应对这些挑战，我们提出了 TSFLab，这是一个自我改进的与代理无关的“工作台”，它为兼容的编码代理配备了共享资源和工具，用于低成本 TSF 研究和研究资源的持续维护。我们的实验涵盖再现、��准测试和新方法开发。在复制和基准测试中，TSFLab 将任务完成率提高了 20-163%，并将每个已完成任务的新代币在基线上减少了 11-66%。代理驱动方法开发的试点研究还表明，通过 TSFLab 提高了预测准确性，与其他设置相比，新令牌减少了 32.8-73.6%，开发时间减少了 9.2-68.8%。",
+      "authors": "ChengAo Shen, Yanjun Zhao, Haoxin Liu, Bonnie Chen, Miles Ma, Dongjin Song, Hanghang Tong, Qingsong Wen, Jingrui He, Jingchao Ni",
+      "url": "https://huggingface.co/papers/2610.40901",
+      "score": 0,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2610.38293"
+        "upvotes": "0",
+        "paperId": "2610.40901"
       }
     },
     {
-      "id": "2610.38681",
-      "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
-      "title_zh": "从弱到强：大型推理模型的弱化诱导的策略自蒸馏",
-      "description": "Self-distillation offers a way to improve reasoning models when a suitable external teacher is unavailable. However, common approaches rely on privileged information to construct a stronger self-teacher, limiting their use when only unlabeled prompts are available. In this paper, we introduce Weakening-Induced On-Policy Self-Distillation (WISD), which instead constructs a weaker counterpart of the original model and uses the contrast between the two as a training signal without requiring privileged information. We explore two ways to construct the weaker model: low-bit quantization and magnitude pruning. We evaluate WISD across diverse architectures and scales on mathematical and coding reasoning tasks. Across these benchmarks, quantization and pruning improve average accuracy over the original models by 4.0 and 5.5 percentage points, respectively, achieving state-of-the-art performance even without privileged information. Notably, pruning raises Qwen3.5-4B's accuracy from 57.7% to 70.5% on HMMT 2025 and from 39.1% to 56.7% on LiveCodeBench v6. Quantization raises Qwen3.6-35B-A3B's accuracy from 68.5% to 74.6% and from 61.8% to 69.5% on the same benchmarks, respectively. These results establish WISD as a novel and effective self-distillation framework for large reasoning models.",
-      "description_zh": "当没有合适的外部老师时，自我蒸馏提供了一种改进推理模型的方法。然而，常见的方法依赖于特权信息来构建更强大的自学工具，当只有未标记的提示可用时限制了它们的使用。在本文中，我们引入了弱化诱导的策略自蒸馏（WISD），它构建了原始模型的较弱对应模型，并使用两者之间的对比作为训练信号，而不需要特权信息。我们探索了两种构建较弱模型的方法：低位量化和幅度剪枝。我们在数学和编码推理任务上跨不同的架构和规模评估 WISD。在这些基准测试中，量化和剪枝使原始模型的平均准确度分别提高了 4.0 和 5.5 个百分点，即使没有特权信息也能实现最先进的性能。值得注意的是，修剪将 Qwen3.5-4B 在 HMMT 2025 上的准确率从 57.7% 提高到 70.5%，在 LiveCodeBench v6 上从 39.1% 提高到 56.7%。在相同的基准上，量化将 Qwen3.6-35B-A3B 的准确率分别从 68.5% 提高到 74.6%，从 61.8% 提高到 69.5%。这些结果�� WISD 确立为大型推理模型的新颖且有效的自蒸馏框架。",
-      "authors": "Yecheng Wu, Song Han, Han Cai",
-      "url": "https://huggingface.co/papers/2610.38681",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2610.38681"
-      }
-    },
-    {
-      "id": "2610.39293",
-      "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
-      "title_zh": "解锁预训练自回归图像模型中的任意阶生成",
-      "description": "Autoregressive (AR) image generators are powerful in principle but inflexible in practice: training with a fixed raster-scan order hardcodes a single factorization of the image distribution into the model, leaving it unable to inpaint, outpaint, or edit at inference time. Existing solutions, including the modern discrete-diffusion family, train from scratch on a mixture of token orderings, paying roughly 3x the compute of standard raster-scan training; discrete diffusion further sacrifices compatibility with the AR inference ecosystem (KV caching, vLLM) by construction. We argue that this cost is unnecessary. A pretrained raster-scan AR model has already learned the joint distribution over image tokens; what it lacks is not knowledge but the ability to express that knowledge through non-sequential conditional pathways. We propose a recipe for adapting pretrained raster-scan models into any-order generators using two components: future-aware positional embeddings that resolve a target-position identifiability problem at negligible overhead, and an ordering curriculum that traces a stable optimization path from the pretrained solution to a good any-order basin. Applied to four base models across two architectures and two scales (LlamaGen-L/XL, RAR-L/XL), the recipe substantially outperforms MaskGIT on ImageNet inpainting (FID 6.21 vs. 10.44) and outpainting, is competitive with MAR-L, trades a 1.2-1.9 increase in class-conditional FID for this flexibility, and costs 13-33% additional compute beyond pretraining, while leaving the standard AR inference stack untouched. Inpainting, outpainting, and editing, our results suggest, need not be added to autoregressive image models. They can be unlocked from the ones that exist. Code is available at https://github.com/Ordered-AR/unlockedadaptation.",
-      "description_zh": "自回归 (AR) 图像生成器原则上功能强大，但在实践中缺乏灵活性：使用固定光栅扫描顺序进行训练将图像分布的单个因式分解硬编码到模型中，使其无法在推理时进行修复、覆盖或编辑。现有的解决方案，包括现代离散扩散系列，从头开始对令牌排序的混合进行训练，花费的计算量大约是标准光栅扫描训练的 3 倍；离散扩散通过构建进一步牺牲了与 AR 推理生态系统（KV 缓存、vLLM）的兼容性。我们认为这个成本是不必要的。预训练的光栅扫描 AR 模型已经学习了图像标记上的联合分布；它缺乏的不是知识，而是通过非顺序条件路径表达知识的能力。我们提出了一种方法，使用两个组件将预训练的光栅扫描模型调整为任意阶生成器：未来感知的位置嵌入，以可忽略的开销解决目标位置可识别性问题，以及排序课程，跟踪从预训练的解决方案到良好的任意阶盆地的稳定优化路径。应用于两种架构和两种规模（LlamaGen-L/XL、RAR-L/XL）的四个基本模型时，该方法在 ImageNet 修复（FID 6.21 与 10.44）和修复方面大大优于 MaskGIT，与 MAR-L 具有竞争力，以类条件 FID 增加 1.2-1.9 倍来换取这种灵活性，并且在预训练之外花费 13-33% 的额外计算成本，而标准 AR 推理堆栈保持不变。我们的结果表明，修复、修复和编辑不需要添加到自回归图像模型中。它们可以从现有的中解锁。代码可在 https://github.com/Ordered-AR/unlockedadaptation 获取。",
-      "authors": "Rishav Pramanik, Marco Pedersoli, Zhaozheng Yin",
-      "url": "https://huggingface.co/papers/2610.39293",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2610.39293"
-      }
-    },
-    {
-      "id": "2610.34298",
-      "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
-      "title_zh": "匹配的功能，不同的行为：语言代理 MCP 和 CLI 接口的对照研究",
-      "description": "Language agents increasingly act through external tools and interactive environments, making the interface between the model and its executable capabilities part of the decision process. Model Context Protocol (MCP) and command-line interfaces (CLI) can expose the same semantic operations through markedly different model-facing representations. We study whether these representational differences change agent behavior when executable capabilities are matched. We introduce Matched Interface Comparison and Analysis (MICA), which renders MCP and CLI from a shared semantic action contract and routes decoded actions through the same runtime. Across six models and three interactive environments, matched interfaces produce substantial differences in task performance and interaction cost. These effects extend beyond surface validity to semantic action selection, failure pathways, and recovery. Matched-state probes localize sensitivity to capability presentation, realization, and feedback. Paired natural trajectories reveal structured divergence in 94.3% of 2,004 episodes and show that early differences propagate through subsequent interaction. This analysis identifies interface realization as a direct intervention boundary. We therefore introduce Decoupled Action Realization and Targeted Repair (DART), which preserves validated semantic commitments while repairing interface-specific realization. DART improves benchmark score in all six evaluated settings by up to 9.0 points and reduces MCP token cost in all three environments by up to 27.1k tokens per task. Together, these results establish interface representation as part of the closed-loop decision environment shaping agent behavior.",
-      "description_zh": "语言代理越来越多地通过外部工具和交互环境进行操作，使模型及其可执行功能之间的接口成为决策过程的一部分。模型上下文协议 (MCP) 和命令行界面 (CLI) 可以通过明显不同的面向模型的表示来公开相同的语义操作。我们研究当可执​​行能力匹配时，这些代表性差异是否会改变代理行为。我们引入了匹配接口比较和分析 (MICA)，它从共享语义操作合约呈现 MCP 和 CLI，并通过同一运行时路由解码的操作。在六种模型和三种交互环境中，匹配的界面会在任务性能和交互成本方面产生显着差异。这些影响超出了表面有效性，延伸到语义动作选择、故障路径和恢复。匹配状态探针定位对能力呈现、实现和反馈的敏感性。成对的自然轨迹揭示了 2,004 个片段中 94.3% 的结构分歧，并表明早期差异通过随后的相互作用传播。该分析将接口实现确定为直接干预边界。因此，我们引入了解耦操作实现和目标修复（DART），它在修复特定于接口的实现的同时保留了经过验证的语义承诺。 DART 将所有六种评估设置中的基准分数提高了多达 9.0 分，并将所有三种环境中的每个任务的 MCP 令牌成本降低了多达 27.1k 令牌。这些结果共同建立了界面表示，作为闭环决策环境塑造代理行为的一部分。",
-      "authors": "Zhenning Shi, Liang Pang, Yongqi Li",
-      "url": "https://huggingface.co/papers/2610.34298",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2610.34298"
-      }
-    },
-    {
-      "id": "2609.05881",
-      "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
-      "title_zh": "到达时损坏：公共模型注册中心中的非功能性量化 LLM 工件以及如何捕获它们",
-      "description": "Developers download quantized large language models (LLMs) from public registries to run them locally. None of the registries we examined documented functional testing of their files. We tested all 305 eligible code-capable GGUF tags (the llama.cpp format) across 15 model lines in the official Ollama library, plus 22 popular Hugging Face community files. A 15-task code screen identified suspects, which we retested on all 164 HumanEval+ tasks. Seven official tags (2.3%) solved at most six of them. All were low-bit quantizations of models with at most four billion parameters. We rebuilt five suspect files from the original weights. All five registry files matched our uncalibrated rebuilds tensor for tensor, so none was corrupted. Exact reproducibility did not imply function. With the weights, toolchain and tensor mix held fixed, adding an importance matrix raised three Qwen2.5-Coder-3B builds from zero to 76-113 solved tasks. The same uncalibrated recipe left the smaller Qwen2.5-Coder-1.5B functional, showing that the recipe alone does not predict failure. None of 66 sampled tags that passed the screen was non-functional. We release the audit data and the quantcheck tool and recommend screening low-bit tags before publication, then calibrating or withholding failures.",
-      "description_zh": "开发人员从公共注册中心下载量化大型语言模型 (LLM) 以在本地运行。我们检查的所有注册表均未记录其文件的功能测试。我们测试了官方 Ollama 库中 15 个模型系列的所有 305 个符合条件的、支持代码的 GGUF 标签（llama.cpp 格式），以及 22 个流行的 Hugging Face 社区文件。 15 项任务的代码筛选确定了嫌疑人，我们对所有 164 个 HumanEval+ 任务进行了重新测试。七个官方标签（2.3%）最多解决了其中的六个。所有这些都是模型的低位量化，最多有 40 亿个参数。我们根据原始权重重建了五个可疑文件。所有五个注册表文件都与我们未校准的张量重建张量相匹配，因此没有任何文件被损坏。精确的再现性并不意味着功能。在权重、工具链和张量混合保持固定的情况下，添加重要性矩阵将三个 Qwen2.5-Coder-3B 构建从零提高到 76-113 个已解决的任务。同样未经校准的配方使较小的 Qwen2.5-Coder-1.5B 发挥作用，表明该配方本身并不能预测故障。通过筛选的 66 个采样标签中没有一个是不起作用的。我们发布审核数据和 quantcheck 工具，并建议在发布之前筛选低位标签，然后校准或保留失败。",
-      "authors": "Aditi Patodiya",
-      "url": "https://huggingface.co/papers/2609.05881",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2609.05881"
-      }
-    },
-    {
-      "id": "2610.40564",
-      "title": "Training Foundation Models with a Single Algorithm",
-      "title_zh": "使用单一算法训练基础模型",
-      "description": "Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning. This work lays the groundwork for a unified science of foundation-model training, connecting mathematical principles, training infrastructure, and the development of model capabilities.",
-      "description_zh": "基础模型通常分阶段进行训练：预训练、训练中期、监督微调 (SFT) 和强化学习 (RL)，同时数据和学习算法都会发生变化。我们证明这种算法分离并不是根本性的。通过导出合适的 RL 目标作为模型生成的目标分布的最大似然拟合，我们将所有这些阶段置于单一基于似然的训练算法（统一训练）下。这种观点将基础模型训练生命周期转变为选择哪些数据、以何种比例以及何时进行训练的问题，传统的分阶段训练是一个特例。我们在统一训练系统中实例化该框架，该系统在单个训练器中混合静态数据和强化学习生成。在受控实验和现实实验中，统一训练可以提高准确性-计算权衡和任务覆盖范围，同时保留更广泛的功能，并为持续学习提供更强有力的起点。这项工作为基础模型训练的统一科学奠定了基础，将数学原理、训练基础设施和模型能力的开发联系起来。",
-      "authors": "Yuda Song, Alvin Zhang, Fahim Tajwar, Daman Arora, Jeff Schneider, Daniel Khashabi, Ruslan Salakhutdinov, J. Andrew Bagnell, Aarti Singh, Andrea Zanette",
-      "url": "https://huggingface.co/papers/2610.40564",
-      "score": 8,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2610.40564"
-      }
-    },
-    {
-      "id": "2610.23656",
-      "title": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
-      "title_zh": "ABF-Bench：代理区块链取证的可验证基准",
-      "description": "Blockchain forensics is adversarial and open-ended: money launderers split, swap, and bridge funds, cut their trail at mixers or custodial services, and change tactics from one incident to the next. Investigators must keep adapting their tracing in response. Yet the immutability of public ledgers preserves every recorded movement in public view, making much of the investigation independently verifiable. We introduce ABF-Bench, an interactive benchmark that makes evidence-backed fund tracing a verifiable agent task, in which every claimed movement must cite ledger records the agent retrieved. A case-to-task pipeline builds well-posed tasks across ledgers: conservative rules halt tracing wherever the records leave a continuation unresolved, and each task's reference graph is the answer those rules determine. Built from real laundering activity, the tasks combine multi-hop transfers, DeFi exchanges, cross-chain round trips, custodial and mixer deposits, and address poisoning. We also propose the ABF agent harness, built around a working memory, and evaluate it alongside general-purpose agents and fixed-order tracers. The harness reaches 75% edge recall, against 47% for Codex with the same model and 10% for Claude Code, which loses recall to overconfidence: it cites records it left unretrieved. Compared with fixed-order tracers, the harness acquires evidence faster than the best of them early in the budget and recognizes undisclosed custodial services that they walk past (89% vs. 0%), with 98% fidelity. However, agents tend to stop early and lose recall on larger tasks, which holds their final recall below the best tracer. Beyond exposing these gaps, ABF-Bench opens blockchain forensics to LLM agents as a verifiable domain, where the verdicts that score agents also offer potential training signals.",
-      "description_zh": "区块链取证是对抗性的、开放式的：洗钱者分割、互换和桥接资金，在混合器或托管服务中切断踪迹，并从一个事件到下一个事件改变策略。调查人员必须不断调整追踪方式以做出回应。然而，公共账本的不变性将每一个记录的活动保留在公众视野中，使得大部分调查都可以独立验证。我们引入了 ABF-Bench，这是一种交互式基准，使有证据支持的资金追踪成为一项可验证的代理任务，其中每个声称的动作都必须引用代理检索到的账本记录。案例到任务的管道跨分类账构建适定的任务：只要记录留下未解决的延续，保守的规则就会停止跟踪，每个任务的参考图就是这些规则确定的答案。这些任务基于真实的洗钱活动，结合了多跳转账、DeFi 交换、跨链往返、托管和混合器存款以及地址中毒。我们还提出了围绕工作记忆构建的 ABF 代理工具，并将其与通用代理和固定顺序跟踪器一起评估。该线束的边缘召回率达到 75%，而同型号的 Codex 为 47%，Claude Code 为 10%，后者因过度自信而失去了召回率：它引用了未检索到的记���。与固定订单追踪器相比，该工具在预算初期比最好的追踪器获取证据的速度更快，并以 98% 的保真度识别它们走过的未公开的托管服务（89% 与 0%）。然而，智能体往往会提前停止并失去对较大任务的回忆，这使得他们的最终回忆低于最佳追踪器。除了暴露这些差距之外，ABF-Bench 还向 LLM 代理开放区块链取证作为可验证的领域，其中对代理进行评分的判决也提供了潜在的训练信号。",
-      "authors": "Xiaohang Yu, Hejia Geng, William Knottenbelt",
-      "url": "https://huggingface.co/papers/2610.23656",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2610.23656"
-      }
-    },
-    {
-      "id": "2610.39302",
-      "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
-      "title_zh": "用 JEPA 证明和改进柏拉图表示假说",
-      "description": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a Platonic Representation Theorem: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--good views--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with bad views, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP's image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP's text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\\% against at most 56\\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.",
-      "description_zh": "在不同模式上训练的模型是否收敛到世界的相同表示是人工智能的核心。柏拉图表示假说 (PRH) 推测它们会按比例缩放，但如果没有证据，它既不能提供保证，也不能提供解决办法。我们将假设转化为定理。首先，我们证明了柏拉图表示定理：在任意数量的模态上单独训练的联合嵌入预测架构（JEPA）在它们的正对是一个场景的两个观察（良好的视图）时学习相同的表示直到一个旋转，并且它们的错位否则受到限制。其次，我们表明下一个标记预测是一个具有不良视图的 JEPA，是单个文档的一部分，这解释了为什么语言模型仅通过规模与愿景保持一致。第三，我们从 145k 字幕到 940M 网络图像的文本验证了该理论，并揭示了预测种子噪声中看不见的运行的对齐缩放法则。好的视图需要比同一语料库上的下一个标记预测少 42 倍的训练样本才能达到相同的对齐方式，并且 1.09M 参数的文本 JEPA 与 DINOv2 和 CLIP 的图像编码器的对齐效果比我们评估的每个语言模型（最多 72B 个参数）以及 CLIP 的文本编码器都要好：下一个标记预测是柏拉图式表示的一种非常低效的途径。 As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO).即使这种旋转也不需要配对：在最新的无配对基准测试中，我们的文本 JEPA 击败了高达 8B 参数的语言模型报告的所有零射击精度，例如，64\\% 与 ImageNet-100 上最多 56\\% 的 top-5 相比。 Positive views, and not scale alone, are thus the lever to build platonic representations.",
-      "authors": "Randall Balestriero, Yann LeCun",
-      "url": "https://huggingface.co/papers/2610.39302",
-      "score": 64,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "64",
-        "paperId": "2610.39302"
-      }
-    },
-    {
-      "id": "2610.38174",
-      "title": "Scaling Lean Theorem Proving for Real-World Code Verification",
-      "title_zh": "扩展精益定理证明以实现现实世界的代码验证",
-      "description": "We present EasyProver, a Lean proving system built from recursive agents with isolated contexts, asynchronous search, parallel tactic probing, and an elastic elaboration service. Using an off-the-shelf frontier model with no additional training, it proves 669/672 PutnamBench problems and all six IMO 2026 formalizations and resolves 597/600 NTP4VC verification conditions and all 189 VERINA tasks by proof or refutation. Because these benchmarks are close to saturation, we also introduce Aegis, which converts competitive programming problems into much harder verification tasks over real implementations. The pipeline writes safe Rust solutions, translates them into Lean with Aeneas, generates specifications, and labels each frozen statement with a kernel-checked proof or refutation. It produces 2,045 differentially validated Rust-Lean program pairs and 11,533 candidate specifications. Unlike hand-written benchmarks, these tasks carry implementation-level obligations from fixed-width arithmetic, explicit failure, generated loops, casts, and functionalized mutation. On a stratified sample of 2,000 statements, EasyProver proves 1,054 (52.7%) within a 30-minute budget per statement. The same tasks can also be used to benchmark other provers and as rewards for reinforcement learning.",
-      "description_zh": "We present EasyProver, a Lean proving system built from recursive agents with isolated contexts, asynchronous search, parallel tactic probing, and an elastic elaboration service. Using an off-the-shelf frontier model with no additional training, it proves 669/672 PutnamBench problems and all six IMO 2026 formalizations and resolves 597/600 NTP4VC verification conditions and all 189 VERINA tasks by proof or refutation.由于这些基准测试接近饱和，我们还引入了 Aegis，它将竞争性编程问题转化为比实际实现更困难的验证任务。该管道编写安全的 Rust 解决方案，将它们转换为 Aeneas 的精益，生成规范，并使用经过内核检查的证明或反驳来标记每个冻结的语句。它生成 2,045 个经过差异验证的 Rust-Lean 程序对和 11,533 个候选规范。 Unlike hand-written benchmarks, these tasks carry implementation-level obligations from fixed-width arithmetic, explicit failure, generated loops, casts, and functionalized mutation.在 2,000 个语句的分层样本中，EasyProver 在每个语句的 30 分钟预算内证明了 1,054 个语句 (52.7%)。相同的任务还可以用于对其他证明者进行基准测试并作为强化学习的奖励。",
-      "authors": "Debargha Ganguly, Divya Raghunathan, Dejan Jovanović, Vikash Singh, Soonho Kong, Aaron Tomb, Aman Goel, Ferhat Erata, Sam Bayless",
-      "url": "https://huggingface.co/papers/2610.38174",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2610.38174"
-      }
-    },
-    {
-      "id": "2610.39423",
-      "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
-      "title_zh": "FDSML：具有参数感知三元组损失的公式驱动的监督度量学习",
-      "description": "Formula-Driven Supervised Learning (FDSL) enables vision pre-training without real images, but existing methods cast pre-training as classification on discretized labels, discarding continuity in the generative process. We propose Formula-Driven Supervised Metric Learning (FDSML), which derives relational supervision from image-generation parameters beyond discrete class labels. FDSML combines FineFractalDB, our refined fractal dataset with higher intra-class variation and more stable structures, with a Parameter-Aware Triplet (PA-Triplet) Loss that assigns positives and negatives according to distances in the underlying Iterated Function System parameter space. This objective trains embeddings to respect parameter-derived relative similarity orderings. Experiments show that FDSML improves transferability to image retrieval while remaining competitive on downstream classification and improving robustness under several corruption settings. On ResNet-50, Recall@1 improves from 65.6% to 74.0% on Stanford Online Products and from 56.2% to 78.4% on Stanford Cars over FDSL pre-training. These results suggest that parameter-derived relational supervision provides a stronger synthetic pre-training signal than label-based classification for transfer beyond recognition.",
-      "description_zh": "Formula-Driven Supervised Learning (FDSL) enables vision pre-training without real images, but existing methods cast pre-training as classification on discretized labels, discarding continuity in the generative process. We propose Formula-Driven Supervised Metric Learning (FDSML), which derives relational supervision from image-generation parameters beyond discrete class labels. FDSML combines FineFractalDB, our refined fractal dataset with higher intra-class variation and more stable structures, with a Parameter-Aware Triplet (PA-Triplet) Loss that assigns positives and negatives according to distances in the underlying Iterated Function System parameter space.该目标训练嵌入以尊重参数导出的相对相似性排序。 Experiments show that FDSML improves transferability to image retrieval while remaining competitive on downstream classification and improving robustness under several corruption settings.在 ResNet-50 上，通过 FDSL 预训练，Recall@1 在斯坦福在线产品上的性能从 65.6% 提高到 74.0%，在斯坦福汽车上的性能从 56.2% 提高到 78.4%。 These results suggest that parameter-derived relational supervision provides a stronger synthetic pre-training signal than label-based classification for transfer beyond recognition.",
-      "authors": "Hina Otake, Shinei Arakawa, Keitaro Tanaka, Yoshihiro Fukuhara, Hirokatsu Kataoka, Shigeo Morishima",
-      "url": "https://huggingface.co/papers/2610.39423",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2610.39423"
-      }
-    },
-    {
-      "id": "2610.25276",
-      "title": "Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion",
-      "title_zh": "Holo4D：整体 4D 重建作为视频扩散的几何控制",
-      "description": "Synthesizing a monocular video from a new camera trajectory requires preserving the observed scene geometry and motion while completing regions that become newly visible. Feed-forward 4D reconstructors recover the structure of the observed scene, whereas video diffusion models provide a generative prior for completing unseen content. We introduce Holo4D, a video reshooting framework that uses reconstructed 3D trajectories as a holistic source-view 4D scaffold. We project these trajectories into the requested views and encode their geometry and source appearance to guide a pretrained video diffusion model. Together with the source video and target cameras, the scaffold grounds generation in reconstructed observations while leaving unsupported regions to the generative prior. Experiments demonstrate the value of trajectory-based conditioning for camera control and novel-view synthesis. The framework accommodates different 4D reconstructors without retraining the video generator, allowing it to benefit from future advances in source reconstruction. More details can be found in our project page.",
-      "description_zh": "从新的相机轨迹合成单目视频需要保留观察到的场景几何形状和运动，同时完成新可见的区域。前馈 4D 重建器恢复观察到的场景的结构，而视频扩散模型则为完成未见过的内容提供生成先验。我们介绍 Holo4D，这是一种视频重新拍摄框架，它使用重建的 3D 轨迹作为整体源视图 4D 支架。我们将这些轨迹投影到请求的视图中，并对它们的几何形状和源外观进行编码，以指导预训练的视频扩散模型。与源视频和目标摄像机一起，支架将生成基于重建的观察结果，同时将不受支持的区域留给生成先验。实验证明了基于轨迹的调节对于相机控制和新颖视图合成的价值。该框架可容纳不同的 4D 重建器，而无需重新训练视频生成器，使其能够从源重建的未来进步中受益。更多详细信息可以在我们的项目页面中找到。",
-      "authors": "Yushi Lan, Zeren Jiang, Koichi Namekata, Xingang Pan, Chuanxia Zheng, Andrea Vedaldi",
-      "url": "https://huggingface.co/papers/2610.25276",
+      "id": "2610.36384",
+      "title": "SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding",
+      "title_zh": "SOMA：细粒度自我中心行为和身体运动理解的基准",
+      "description": "Perceiving human body motion is critical for multimodal systems that understand and assist people. Yet current evaluations of Multimodal Large Language Models (MLLMs) largely focus on objects, scenes, and coarse actions, leaving their ability to reason about the body itself poorly assessed. This is especially challenging from the egocentric perspective, in which the body is only partially visible and motion must be inferred from occluded and temporally distributed cues. We introduce SOMA, a benchmark for fine-grained body-motion understanding from egocentric video, comprising 1,632 human-verified questions across three capability axes: body configuration, motion dynamics, and temporal reasoning. We evaluate 37 leading closed-source, open-source, and specialized egocentric MLLMs, complemented by an extensive human evaluation. We find that humans also find this task difficult from video alone (68.5% accuracy), yet clearly outperform the strongest MLLM (Qwen3.6-27B), which reaches 50.0% zero-shot accuracy. Our error analysis shows that MLLMs often misread the wearer's own body, misjudge events in time, and are prone to biases such as favoring the right hand or under-counting repetitions. To narrow the gap to human performance and support further progress, we introduce a training dataset of aligned video, body motion, and language supervision, and a multimodal baseline that jointly learns from these modalities. By identifying common failure modes and missing capabilities in current MLLMs, we hope SOMA will inspire future research on body-motion understanding and multimodal reasoning. Full benchmark, training data, and code will be released at: https://cnai.epfl.ch/soma",
+      "description_zh": "感知人体运动对于理解和帮助人类的多模式系统至关重要。然而，目前对多模态大语言模型（MLLM）的评估主要集中在物体、场景和粗略动作上，而对它们推理身体本身的能力评估不力。从以自我为中心的角度来看，这尤其具有挑战性，其中身体仅部分可见，并且必须根据遮挡和时间分布的线索来推断运动。我们引入了 SOMA，这是从以自我为中心的视频中进行细粒度身体运动理解的基准，包含跨越三个能力轴的 1,632 个经过人类验证的问题：身体配置、运动动力学和时间推理。我们评估了 37 个领先的闭源、开源和专业的以自我为中心的 MLLM，并辅以广泛的人工评估。我们发现，人类也发现仅靠视频来完成这项任务很困难（68.5% 的准确率），但明显优于最强的 MLLM (Qwen3.6-27B)，它达到了 50.0% 的零样本准确率。我们的误差分析表明，MLLM 经常误读佩戴者自己的身体，误判事件的及时性，并且容易出现偏向右手或低估重复次数等偏差。为了缩小与人类表现的差距并��持进一步的进步，我们引入了对齐视频、身体运动和语言监督的训练数据集，以及从这些模式中共同学习的多模式基线。通过识别当前 MLLM 中常见的故障模式和缺失的功能，我们希望 SOMA 能够激发未来对身体运动理解和多模态推理的研究。完整的基准测试、训练数据和代码将在以下位置发布：https://cnai.epfl.ch/soma",
+      "authors": "Matea Tashkovska, Naël Ouerghemi, Haozhe Qi, Alexander Mathis",
+      "url": "https://huggingface.co/papers/2610.36384",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2610.25276"
+        "paperId": "2610.36384"
       }
     },
     {
-      "id": "2610.39301",
-      "title": "Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities",
-      "title_zh": "Youtu-Parsing-Omni：一个编码器，一种模式，所有模式",
-      "description": "We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities. Its design rests on one encoder for every modality and one schema for every task. Youtu-Omni-Encoder, initialized from a pre-trained language model to strengthen text reading, encodes all modalities with shared weights in a unified space-time coordinate system, and a few fusion layers let video frames attend to concurrent audio, bringing cross-modal fusion and temporal alignment into perception itself. OmniSchema unifies the outputs of all ten parsing tasks, allowing a single self-evolving post-training procedure, OmniSchema-Aware On-Policy Distillation (OSAD), to provide a shared token-role-based objective across tasks. In each round, the model is trained on its own rollouts against token-level targets from a reference-conditioned copy of itself, which is then refreshed with the trained weights, so that the parser and its supervision co-evolve. With a single 5 B-parameter checkpoint, Youtu-Parsing-Omni achieves state-of-the-art performance on OmniDocBench v1.6 (96.96 Overall) and leads all open-weight models on OmniParsingBench (75.08 Avg.), with its advantage concentrated on audio and video. It also achieves the best overall chart-parsing score (95.02) and the highest exact chemical-fingerprint agreement among compared systems, and matches a dedicated optical-music model in character-level transcription of typeset sheet music while staying far ahead of general-purpose systems. Code and model weights are publicly available.",
-      "description_zh": "We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities.它的设计依赖于针对每种模式的一个编码器和针对每项任务的模式。 Youtu-Omni-Encoder, initialized from a pre-trained language model to strengthen text reading, encodes all modalities with shared weights in a unified space-time coordinate system, and a few fusion layers let video frames attend to concurrent audio, bringing cross-modal fusion and temporal alignment into perception itself. OmniSchema unifies the outputs of all ten parsing tasks, allowing a single self-evolving post-training procedure, OmniSchema-Aware On-Policy Distillation (OSAD), to provide a shared token-role-based objective across tasks. In each round, the model is trained on its own rollouts against token-level targets from a reference-conditioned copy of itself, which is then refreshed with the trained weights, so that the parser and its supervision co-evolve. With a single 5 B-parameter checkpoint, Youtu-Parsing-Omni achieves state-of-the-art performance on OmniDocBench v1.6 (96.96 Overall) and leads all open-weight models on OmniParsingBench (75.08 Avg.), with its advantage concentrated on audio and video. It also achieves the best overall chart-parsing score (95.02) and the highest exact chemical-fingerprint agreement among compared systems, and matches a dedicated optical-music model in character-level transcription of typeset sheet music while staying far ahead of general-purpose systems.代码和模型权重是公开的。",
-      "authors": "Yunhang Shen, Zhangquan Chen, Xiaotian Li, Zhongpeng Cai, Qing Zhou, Zekai Zhang, Kun Zhang, Zezhong Wu, Jian Hu, Haihan Gao, Heting Gao, Xin Li, Yinsong Liu, Deqian Jiang, Di Yin, Haoyu Cao, Xing Sun, Bing Liu, Yanqiu Qu, Yunfei Wu, Kun Yin, Zhixiang Wei, Yongxiang Hua, Qianyu Li, Xiaoxing Hu, Peiyuan Zhang, Lijiang Li, Dong Xu, Zhenchuan Yang, Yiliang Jiang",
-      "url": "https://huggingface.co/papers/2610.39301",
-      "score": 13,
+      "id": "2610.37651",
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "title_zh": "GEPA-Curator：自我改进代理的策划学习",
+      "description": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to the prompt optimizer for better performance. We introduce GEPA-Curator, a framework that augments the prompt optimizer to select which agent experiences should shape prompt optimization. In particular, GEPA-Curator consists of two components: task curation, which filters out tasks that are likely to provide noisy or unreliable learning signals, and prior success retrieval, which selectively retrieves past successful trajectories for a task and provides them as additional context to the prompt optimizer. We evaluate GEPA-Curator on GoBrowse, ALFWorld, AppWorld, and τ-bench, using both Gemini 3.1 Pro and Claude Opus 5 as optimizer models. GEPA-Curator matches or exceeds the mean performance of both baselines, with gains of up to 20.7% over GEPA and 21.2% over ACE.",
+      "description_zh": "大型语言模型 (LLM) 越来越多地用于需要与复杂环境持续交互的多轮代理工作负载。现有的反射提示优化器（例如 GEPA）可以从失败的部署中学习，但代理失败也可能来自提示弱点、利用限制、随机执行或嘈杂的判断。我们认为，这种失败可能无法提供有用的学习信号，甚至可能是有害的；因此，必须策划向提示优化器提供哪些任务以获得更好的性能。我们引入了 GEPA-Curator，这是一个增强提示优化器的框架，可以选择哪些代理体验应该���造提示优化。特别是，GEPA-Curator 由两个组件组成：任务管理（过滤掉可能提供嘈杂或不可靠学习信号的任务）和先前成功检索（有选择地检索任务过去的成功轨迹并将其作为提示优化器的附加上下文提供）。我们使用 Gemini 3.1 Pro 和 Claude Opus 5 作为优化器模型，在 GoBrowse、ALFWorld、AppWorld 和 τ-bench 上评估 GEPA-Curator。 GEPA-Curator 达到或超过了两个基线的平均性能，比 GEPA 提高了 20.7%，比 ACE 提高了 21.2%。",
+      "authors": "Zack Yu, Nicholas Lee, Minjae Lee, Lakshya Agarwal, Luca Manolache, Wonjun Kang, Matei Zaharia, Michael W. Mahoney, Kurt Keutzer, Sehoon Kim, Amir Gholami",
+      "url": "https://huggingface.co/papers/2610.37651",
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "13",
-        "paperId": "2610.39301"
+        "upvotes": "4",
+        "paperId": "2610.37651"
       }
     },
     {
-      "id": "2610.39287",
-      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
-      "title_zh": "OpenFlyV2：用于空中感知和导航的机载视觉-语言-动作模型",
-      "description": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
-      "description_zh": "人类认知灵活地利用共享的感知基础来理解环境、关注引用的实体、推理空间关系并采取行动。赋予空中机器人类似的功能组织仍然具有挑战性，因为现有系统通常专门针对个体功能，依赖于机外计算，或者无法在资源有限的平台上维持闭环操作。我们提出了 OpenFlyV2，这是一种统一的机载视觉-语言-动作架构，它使用共享的视觉-语言表示来支持单个模型内的语义理解、基于语言的感知、空间推理和连续空中控制。紧凑的动作专家将共享的多模式上下文转换为短视距飞行航路点，而运动感知时间记忆和动作先验则减少了闭环执行的计算成本。我们构建了一个基于模拟的数据集，包含大约 70,000 个导航轨迹和 60,000 个视觉-语言指令-响应对。 OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data.大量结果表明，广泛的视觉语言能力和连续闭环飞行可以在资源有限的空中平台上的单个模型中共存。 Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
-      "authors": "Junli Liu, Zhongrui You, Chenhui Li, Zhen Li, Yuyang Tian, Qizhen Chen, Delin Qu, Haoming Song, Dong Wang, Xuelong Li, Zhigang Wang, Bin Zhao",
-      "url": "https://huggingface.co/papers/2610.39287",
-      "score": 6,
+      "id": "2610.41278",
+      "title": "AuditFL: A Contract-Backed Clearing Layer for Open Federated Learning",
+      "title_zh": "AuditFL：用于开放式联合学习的合同支持的清算层",
+      "description": "Federated learning (FL) keeps raw data local, but most deployments still rely on a trusted coordinator for client admission, checkpoint distribution, update collection, aggregation, and rewards. This paper presents AuditFL, a contract-backed clearing layer for auditable FL in open settings. AuditFL keeps training and aggregation off chain, stores model artifacts in an assumed reliable off-chain artifact store, and records only content identifiers and economic state on chain. Clients reserve update tickets with deposits, publish update identifiers, and later claim refunds or rewards; the task coordinator publishes global checkpoints and finalizes rounds through deterministic settlement rules. The design does not remove the aggregator, but makes its on-chain round decisions attributable, replayable, auditable, and economically constrained. We implement AuditFL as both a deterministic state-machine prototype and a Solidity contract on a local Ethereum-compatible Anvil chain. On full MNIST with Dirichlet non-IID splits, 12 rounds, and up to 200 clients, AuditFL preserves the Plain FL learning trajectory while its overhead follows closed-form control-plane models. At 200 clients, the contract run issues 5,026 transactions, stores 2,413 off-chain artifacts (144.9 MiB), and consumes 829.7M EVM gas, dominated by per-client reserve and publish calls. Controlled dropout, invalid-update, and artifact-unavailability stress tests reduce inclusion nearly linearly but still finalize rounds, with final-accuracy changes remaining within a few tenths of an accuracy percentage point even under high injected failure rates.",
+      "description_zh": "联邦学习 (FL) 将原始数据保留在本地，但大多数部署仍然依赖可信协调器来进行客户端准入、检查点分发、更新收集、聚合和奖励。本文介绍了 AuditFL，这是一个在开放环境中用于可审计 FL 的合约支持的清算层。 AuditFL 将训练和聚合保持在链外，将模型工件存储在假定可靠的链下工件存储中，并且仅记录链上的内容标识符和经济状态。客户用押金预订更新票，发布更新标识符，然后要求退款或奖励；���务协调员发布全球检查点并通过确定性解决规则完成回合。该设计并没有删除聚合器，而是使其链上回合决策可归因、可重玩、可审计且受到经济约束。我们将 AuditFL 作为确定性状态机原型和本地以太坊兼容 Anvil 链上的 Solidity 合约来实现。在具有 Dirichlet 非 IID 分割、12 轮和最多 200 个客户端的完整 MNIST 上，AuditFL 保留了普通 FL 学习轨迹，而其开销遵循封闭式控制平面模型。在 200 个客户端上，合约运行发�� 5,026 笔交易，存储 2,413 个链下工件 (144.9 MiB)，并消耗 829.7M EVM 气体，主要由每个客户端的预留和发布调用组成。受控丢失、无效更新和工件不可用压力测试几乎线性地减少了包含，但仍然最终确定回合，即使在高注入失败率下，最终精度变化仍保持在精度百分点以内。",
+      "authors": "Alexandros Balla, Spyros Lalis",
+      "url": "https://huggingface.co/papers/2610.41278",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2610.39287"
+        "upvotes": "1",
+        "paperId": "2610.41278"
       }
     },
     {
-      "id": "2610.40453",
-      "title": "PhysInsert: Physically Plausible Object Insertion with Geometric Priors and Bidirectional Object-Scene Interactions",
-      "title_zh": "PhysInsert：具有几何先验和双向对象场景交互的物理上合理的对象插入",
-      "description": "We present PhysInsert, a framework for physically plausible reference-based object insertion that jointly adapts objects and their surrounding scenes. Existing methods often rely on masked inputs, generation-based pairs, or training pairs with limited viewpoint variation, leaving pose and illumination adaptation and bidirectional object-scene interactions insufficiently constrained. We construct the Insert World dataset with strictly aligned Blender-rendered counterfactual pairs and object references across viewpoints and lighting conditions. Building on these data, Geometry-Guided Adaptation couples a VGGT geometry stream with image and text streams under target-scene feature supervision to guide spatially consistent insertion. Complementary 2D Object-Scene Spatial Supervision jointly supervises object occupancy and environmental changes while grounding spatial instructions in object regions through image-text attention. We introduce PhysInsert-Bench with dedicated cross-environment and cross-view cases requiring illumination and pose adaptation beyond appearance copying. Experiments on PhysInsert-Bench and DreamBooth demonstrate improved image fidelity; a user study further shows more accurate placement and improved lighting integration, perspective, and pose plausibility.",
-      "description_zh": "We present PhysInsert, a framework for physically plausible reference-based object insertion that jointly adapts objects and their surrounding scenes. Existing methods often rely on masked inputs, generation-based pairs, or training pairs with limited viewpoint variation, leaving pose and illumination adaptation and bidirectional object-scene interactions insufficiently constrained. We construct the Insert World dataset with strictly aligned Blender-rendered counterfactual pairs and object references across viewpoints and lighting conditions. Building on these data, Geometry-Guided Adaptation couples a VGGT geometry stream with image and text streams under target-scene feature supervision to guide spatially consistent insertion. Complementary 2D Object-Scene Spatial Supervision jointly supervises object occupancy and environmental changes while grounding spatial instructions in object regions through image-text attention. We introduce PhysInsert-Bench with dedicated cross-environment and cross-view cases requiring illumination and pose adaptation beyond appearance copying. PhysInsert-Bench 和 DreamBooth 上的实验证明图像保真度有所提高；用户研究进一步显示了更准确的放置以及改进的照明集成、视角和姿势合理性。",
-      "authors": "Yue Gong, Le Zhang, Rui Chen, Song Chang, Xiaochao Qu, Luoqi Liu, Ting Liu, Yebin Liu",
-      "url": "https://huggingface.co/papers/2610.40453",
-      "score": 13,
+      "id": "2610.37481",
+      "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+      "title_zh": "遵循梯度：将安全退化追溯到训练数据",
+      "description": "Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks harmful. Because this safety-degrading data looks benign, standard content filters struggle to catch it. We tackle this problem by developing SimpleLoRIF, a scalable gradient embedding method that identifies fine-tuning examples whose gradients align with unsafe behavior. By simplifying a low-rank attribution method and restricting backpropagation to the final four transformer blocks, SimpleLoRIF can embed datasets on the order of a million examples, boosting gradient attribution from a small-scale analysis tool into a practical filter for full post-training datasets. We first validate it on emergent misalignment, where we find that gradients can connect insecure-code training data to the broadly harmful behaviors that appear after fine-tuning, with AUC as high as 0.865 in the gradient space of misaligned models. We then use SimpleLoRIF to build SafeTulu, a version of Tulu 3 with the 20% of examples most gradient-aligned with unsafe responses removed. Training on SafeTulu reduces GCG attack success rate by up to 22% across Qwen, Llama, and Olmo, outperforming both LLM-as-a-judge and prior gradient-based filtering, while largely preserving or even improving capability. Finally, we analyzed the removed data and identify possibly under-studied sources of safety degradation, such as tool-execution failures and narrative arithmetic. We release SafeTulu along with a Hugging Face Space that lets researchers build their own customized versions of SafeTulu to fine-tune on, such as by changing the removal fraction or filtering only certain subsets.",
+      "description_zh": "即使没有训练示例看起来有害，对指令数据进行微调大型语言模型 (LLM) 也会悄悄地削弱其安全性。由于这种降低安全性的数据看起来是良性的，因此标准内容过滤器很难捕获它。我们通过开发 SimpleLoRIF 来解决这个问题，这是一种可扩展的梯度嵌入方法，可以识别梯度与不安全行为一致的微调示例。通过简化低秩归因方法并将反向传播限制到最后四个变压器块，SimpleLoRIF 可以嵌入大约一百万个示例的数据集，将梯度归因从小规模分析工具提升为完整训练后数据集的实用过滤器。我们首先在紧急错位上进行验证，我们发现梯度可以将不安全代码训练数据与微调后出现的广泛有害行为联系起来，在错位模型的梯度空间中 AUC 高达 0.865。然后，我们使用 SimpleLoRIF 构建 SafeTulu，这是 Tulu 3 的一个版本，其中 20% 的示例最梯度对齐，并删除了不安全响应。 SafeTulu 上的训练将 Qwen、Llama 和 Olmo 的 GCG 攻击成功率降低了 22%，优于作为法官的 LLM 和之前基于梯度的过滤，同时在很大程度上保留甚至提高了能力。最后，我们分析了删除的数据，并确定了可能未被充分研究的安全退化来源，例如工具执行失败和叙述算术。我们发布了 SafeTulu 以及 Hugging Face Space，让研究人员可以构建自己的定制版本的 SafeTulu 进行微调，例如通过更改去除分数或仅过滤某些子集。",
+      "authors": "Saket Reddy, Amro Abbas, Anshuman Suri, Ari Morcos, David Schwab, Pratyush Maini",
+      "url": "https://huggingface.co/papers/2610.37481",
+      "score": 26,
       "meta": {
         "source": "huggingface",
-        "upvotes": "13",
-        "paperId": "2610.40453"
+        "upvotes": "26",
+        "paperId": "2610.37481"
       }
     },
     {
-      "id": "2610.39663",
-      "title": "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers",
-      "title_zh": "AB-Attention：用于加速视频扩散变压器的准确块注意力",
-      "description": "Video diffusion transformers generate high-quality videos, but the quadratic cost of 3D full attention dominates their inference. Dynamic block-sparse attention reduces this cost by computing exact attention only on key/value blocks selected from current activations. However, its fidelity degrades under aggressive sparsity: blocks are scored from coarse summaries or formed by costly global clustering, pruned blocks vanish from the softmax, and whole tiles are kept or dropped even when only a few of their keys matter. To address these limitations, we propose Accurate Block Attention (AB-Attention), a training-free method that accurately approximates dense attention at high sparsity. Its Intra-Block Clustering Selector (IBCS) estimates block importance faithfully yet cheaply by clustering queries only within each query block, without permuting tokens. Sampling with Inclusion-Probability Weighting (SIP) then samples blocks in proportion to these estimates and reweights them by inverse inclusion probability, so that one pass estimates dense attention rather than truncating it. Finally, its kernel gathers key/value blocks much smaller than a tile into full tensor-core tiles, refining selection at no extra tensor-core cost. On Wan2.1 and HunyuanVideo, AB-Attention skips 89--92\\% of attention, whereas the baselines compute 1.8--3.6times as much, yet it still improves PSNR by up to 4.4~dB over the strongest baseline and achieves up to 2.23times end-to-end speedup. Our code is available at https://github.com/InfRec-Cardinal/AB-Attention.",
-      "description_zh": "Video diffusion transformers generate high-quality videos, but the quadratic cost of 3D full attention dominates their inference. Dynamic block-sparse attention reduces this cost by computing exact attention only on key/value blocks selected from current activations. However, its fidelity degrades under aggressive sparsity: blocks are scored from coarse summaries or formed by costly global clustering, pruned blocks vanish from the softmax, and whole tiles are kept or dropped even when only a few of their keys matter. To address these limitations, we propose Accurate Block Attention (AB-Attention), a training-free method that accurately approximates dense attention at high sparsity. Its Intra-Block Clustering Selector (IBCS) estimates block importance faithfully yet cheaply by clustering queries only within each query block, without permuting tokens. Sampling with Inclusion-Probability Weighting (SIP) then samples blocks in proportion to these estimates and reweights them by inverse inclusion probability, so that one pass estimates dense attention rather than truncating it. Finally, its kernel gathers key/value blocks much smaller than a tile into full tensor-core tiles, refining selection at no extra tensor-core cost.在 Wan2.1 和 HunyuanVideo 上，AB-Attention 跳过了 89--92% 的注意力，而基线计算量是基线的 1.8--3.6 倍，但它仍然比最强基线提高了 4.4~dB 的 PSNR，并实现了高达 2.23 倍的端到端加速。我们的代码可在 https://github.com/InfRec-Cardinal/AB-Attention 获取。",
-      "authors": "Bin Xu, Mo Zhang, Zhengfeiyang Zhang, Xinfeng Yang, Yixing Ma, Wei Wang, HeXin Wang, Pengfei Zhou, Wangbo Zhao",
-      "url": "https://huggingface.co/papers/2610.39663",
+      "id": "2610.40488",
+      "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
+      "title_zh": "rTaste：研究人员有味道吗？评估早期研究判断",
+      "description": "Do research agents have taste, the judgment of which experiments are worth running before their outcomes are known? We give six frontier models seven recent NLP papers. Each model, working as a research agent alone or as a team, proposes minimum viable experiments (MVEs), forecasts whether each will pass a threshold it sets and ranks them. A separate executor then attempts every MVE, including those ranked last, and three model auditors judge the results. Of 415 MVEs, 194 are judged sound, valuable and new, but fewer than half of these (73) are also judged beyond the seed paper and non obvious. The agents' first choices match the auditors' most valued experiment more often than a random pick, but are not shown to improve on choosing the experiment written first. Their forecasts beat a base rate but are not measurably more accurate than those of a fresh instance of the same model given only the paper and registrations. Teams cost more without a clear overall improvement in proposal quality. The agents produce many worthwhile experiments, but the evidence that their rankings improve the choice of which to run remains limited. The evaluation harness and a dataset of all 415 MVEs, with their forecasts and audited outcomes, are available at https://github.com/ArtKanke/rTaste.",
+      "description_zh": "研究人员是否有品味，在知道结果之前判断哪些实验值得进行？我们给出了六种前沿模型，七篇最近的 NLP 论文。每个模型单独或作为一个团队作为研究代理工作，提出最小可行实验（MVE），预测每个模型是否会通过它设置的阈值并对它们进行排名。然后，一个单独的执行者会尝试每个 MVE，包括排名最后的那些，然后由三名模型审核员来判断结果。在 415 个 MVE 中，有 194 个被认为是合理的、有价值的和新颖的，但其中不到一半（73 个）也被认为超出了种子论文的范围并且不明显。代理的第一选择比随机选择更符合审计师最有价值的实验，但在选择首先编写的实验方面并没有表现出改进。他们的预测超过了基准率，但与仅考虑论文和注册的同一模型的新实例的预测相比，并没有明显更准确。如果提案质量没有明显的整体提升，团队的成本就会更高。这些代理进行了许多有价值的实验，但表明它们的排名改善了运行哪个实验的选择的证据仍然有限。所有 415 个 MVE 的评估工具和数据集及其预测和审计结果可在 https://github.com/ArtKanke/rTaste 上获取。",
+      "authors": "Art Kanke",
+      "url": "https://huggingface.co/papers/2610.40488",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2610.40488"
+      }
+    },
+    {
+      "id": "2610.35850",
+      "title": "OSWAM: An Effective World Action Model with One-Step Action Generation",
+      "title_zh": "OSWAM：一种具有一步行动生成功能的有效世界行动模型",
+      "description": "Direct-policy World Action Models (WAM) have demonstrated the benefits of decoupling action generation from explicit future visual prediction for efficient inference in autonomous driving and embodied control. However, they still require tens of denoising steps to achieve competitive action quality, incurring substantial latency and hindering real-time deployment. Simply reducing the number of denoising steps will collapse the nonlinear multi-step denoising trajectory into coarse updates, substantially degrading action quality. To reduce the denoising steps while enabling real-time action generation, we present an effective world action model with one-step action generation, namely OSWAM, for autonomous driving and embodied control. We argue that it is the absence of structured action priors in random noise initialization that forces direct-policy WAMs to recover coherent action sequences through iterative denoising. Hence, we construct imagination tokens to initialize the diffusion process, providing physical priors and action-conditioned representations. We further introduce privileged information distillation with future conditioning to enhance future-aware action generation. As a result, OSWAM can efficiently and effectively generate high quality actions in just one diffusion step. Our experiments demonstrate that OSWAM achieves comparable or even better results in both autonomous driving and embodied control than direct-policy WAM and Joint-WAM that require tens of steps. It obtains approximately 3times speedup over direct-policy WAM baselines and supports real-time compiled inference with latency as low as 40ms on an NVIDIA RTX 5090 GPU. The project page is available at https://gwenzhang.github.io/OSWAM/",
+      "description_zh": "直接策略世界行动模型（WAM）已经证明了将行动生成与明确的未来视觉预测分离的好处，可以在自动驾驶和具体控制中进行有效推理。然而，它们仍然需要数十个降噪步骤才能实现竞争性动作质量，从而导致大量延迟并阻碍实时部署。简单地减少去噪步骤的数量会将非线性多步去噪轨迹压缩为粗略更新，从而大大降低动作质量。为了减少去噪步骤，同时实现实时动作生成，我们提出了一种具有一步动作生成功能的有效世界动作模型，即 OSWAM，用于自动驾驶和体现控制。我们认为，正是随机噪声初始化中缺乏结构化动作先验，迫使直接策略 WAM 通过迭代去噪来恢复连贯的动作序列。因此，我们构建想象令牌来初始化扩散过程，提供物理先验和动作条件表示。我们进一步引入具有未来条件的特权信息蒸馏，以增强未来感知行动的生成。因此，OSWAM 只需一个扩散步骤即可高效且有效地生成高质量的动作。我们的实验表明，与需要数十个步骤的直接策略 WAM 和联合 WAM 相比，OSWAM 在自动驾驶和体现控制方面取得了相当甚至更好的结果。它比直接策略 WAM 基准获得约 3 倍的加速，并支持实时编译推理，在 NVIDIA RTX 5090 GPU 上延迟低至 40 毫秒。项目页面位于 https://gwenzhang.github.io/OSWAM/",
+      "authors": "Guowen Zhang, Liyi Chen, Xu Hu, Pengfei Wang, Jingfan Chen, Chenhang He, Lei Zhang",
+      "url": "https://huggingface.co/papers/2610.35850",
+      "score": 23,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "23",
+        "paperId": "2610.35850"
+      }
+    },
+    {
+      "id": "2610.37903",
+      "title": "Think Twice: The Metis-1.6 Technical Report",
+      "title_zh": "三思而行：Metis-1.6 技术报告",
+      "description": "Metis is a bet that better data, better training methods and new architectures can buy what a bigger parameter count cannot, at a fraction of the cost. Metis-1.6 is its latest step: two language models built from scratch by a single researcher, Praxis (2.94B parameters, 0.46B active per pass) and Logos (10.23B parameters, 1.18B active per pass). Both run a hybrid Mamba-2 and attention mixture-of-experts stack twice for every token, so each token gets a second look. Each was trained on 1.02T tokens in total: 804.76B of pretraining, 18B of context extension to 131,072 tokens, and 200B of supervised fine-tuning. Metis-1.6 was never meant to challenge frontier models, and across 40 post-trained benchmarks it mostly does not: Logos averages 52.93, seventh of 17 models in its comparison set and within a point of Qwen3-4B. But it gets there on roughly a twelfth of the median training data of the comparators that disclose it, and with fewer active parameters per token than any model that beats it, which puts it on the Pareto frontier for both. In mathematics it ranks second of 30 models, with 67.50% on AIME 2025 and 63.64% on HMMT February 2026. It is weak at code, instruction following and long context. The rest of the report is the part I found most valuable: what went wrong. The optimizer I configured never ran, and attention trained with AdamW for all of pretraining. A 1.77B-parameter n-gram memory learned to switch itself off. Five fine-tuning choices cost capability. And a length reward under group-mean normalization punished correct solutions for being long once a group's pass rate passed 2/3, a sign inversion I prove and fix with a one-line clamp. I close with the 10B-token ablations behind MoRE (Mixture of Recursive Experts), the looped architecture of Metis-1.7.",
+      "description_zh": "Metis 押注于更好的数据、更好的训练方法和新的架构可以以很小的成本买到更多参数数量所买不到的东西。 Metis-1.6 是其最新的一步：由单个研究人员从头开始构建的两个语言模型，Praxis（2.94B 参数，每次传递 0.46B 活跃）和 Logos（10.23B 参数，每次传递 1.18B 活跃）。两者都针对每个令牌运行混合 Mamba-2 和注意力混合专家堆栈两次，因此每个令牌都会得到第二次查看。每个模型总共接受了 1.02T 个 token 的训练：804.76B 的预训练、18B 的上下文扩展至 131,072 个 token，以及 200B 的监督微调。 Metis-1.6 从来就不是为了挑战前沿模型，在 40 个训练后的基准测试中，它基本上也没有挑战：Logos 的平均值为 52.93，在其比较集中的 17 个模型中排名第七，与 Qwen3-4B 相差不远。但它达到了这一目标，大约是披露它的比较器中值训练数据的十二分之一，并且每个令牌的活动参数比任何击败它的模型都要少，这使它处于两者的帕累托前沿。在数学方面，它在 30 个模型中排名第二，在 AIME 2025 上占 67.50%，在 HMMT February 2026 上占 63.64%。它在代码、指令跟踪和长上下文方面较弱。报告的其余部分是我认为最有价值的部分：出了什么问题。我配置的优化器从未运行过，并且所有预训练都使用 AdamW 进行注意力训练。一个 1.77B 参数的 n-gram 存储器学会了自行关闭。五种微调选择的成本能力。一旦组的通过率超过 2/3，组均值归一化下的长度奖励就会惩罚较长的正确解决方案，这是我证明并用单行钳位修复的符号反转。我以 Metis-1.7 的循环架构 MoRE（递归专家混合）背后的 10B 代币消融作为结束语。",
+      "authors": "Giulianno Vollmer",
+      "url": "https://huggingface.co/papers/2610.37903",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2610.37903"
+      }
+    },
+    {
+      "id": "2610.42010",
+      "title": "TurnTurk-GPT: Text-Based Turn-Taking Prediction for Turkish",
+      "title_zh": "TurnTurk-GPT：基于文本的土耳其语轮流预测",
+      "description": "This paper presents TurnTurk-GPT, a text-based turn-taking predictor for Turkish obtained by fine-tuning a Turkish GPT-2 model with the TurnGPT objective on synthetic and real dialogue, and evaluates it on real Turkish conversation against rule baselines, a zero-shot Turkish language model and a widely used multilingual end-of-turn detector. Evaluation uses word-level decision points on unpunctuated, lower-cased text approximating the output of streaming speech recognisers, recording-disjoint and speaker-disjoint folds, nested threshold selection and paired cluster bootstrap tests. TurnTurk-GPT outperforms the multilingual detector under both recording-disjoint and speaker-disjoint evaluation. It outperforms the zero-shot language model only when the test speakers occur in training; on unseen speakers the two are statistically indistinguishable. Removing the suffixes of the turn-final word reduces AP by up to 44%, against 2% for a sentence-internal word, locating the Turkish end-of-turn cue in verb-final morphology. Synthetic dialogue alone yields the weakest trained model, and when a speaker pauses the zero-shot and multilingual baselines remain close to chance. The model and the evaluation protocol are publicly released.",
+      "description_zh": "本文提出了 TurnTurk-GPT，一种基于文本的土耳其语轮流预测器，通过在合成和真实对话上使用 TurnGPT 目标对土耳其语 GPT-2 模型进行微调而获得，并根据规则基线、零样本土耳其语模型和广泛使用的多语言轮流结束检测器在真实土耳其语对话中对其进行评估。评估使用无标点、小写文本上的字级决策点来近似流式语音识别器的输出、录音不相交和说话者不相交折叠、嵌套阈值选择和配对集群引导测试。在录音不相交和说话者不相交评估下，TurnTurk-GPT 的性能优于多语言检测器。仅当测试说话者出现在训练中时，它才优于零样本语言模型；对于看不见的说话者，这两者在统计上是无法区分的。删除回合结束词的后缀可将 AP 降低高达 44%，而句子内部词的 AP 则减少 2%，从而将土耳其语回合结束提示定位在动词词尾形态中。仅综合对话会产生最弱的训练模型，并且当说话者暂停时，零样本和多语言基线仍然接近机会。该模型和评估协议已公开发布。",
+      "authors": "Ahmet Tuğrul Bayrak, Fatma Nur Korkmaz, Nur Yağmur Tuncer, Mustafa Sertaç Türkel",
+      "url": "https://huggingface.co/papers/2610.42010",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2610.42010"
+      }
+    },
+    {
+      "id": "2610.40256",
+      "title": "When Requirements Interact: Scaling Long-Horizon Coding via Interdependent Specifications",
+      "title_zh": "当需求相互作用时：通过相互依赖的规范扩展长期编码",
+      "description": "To succeed in real-world long-horizon software development, coding agents must satisfy multi-dimensional task specifications, such as interface compatibility and error handling, and do so without breaking existing dependencies. However, current works lack specification in both quantity and diversity, often emphasizing primary goals while ignoring complex constraints. Synthesizing tasks to bridge this gap presents two challenges: naively adding specifications risks reducing tasks to trivial checklists rather than compelling joint reasoning, and verifying these subtle interactions risks overlooking hidden flaws or rejecting valid alternatives. To address these challenges, we introduce CodeSpecWeave, a framework for synthesizing tasks with rich, interdependent specifications. Grounded in real developer seeds, a synthesis agent iteratively develops both coupled task requirements and executable tests, while a review agent audits solution trajectories from multiple models to guarantee test reliability. Using this pipeline, we construct 4,670 training tasks across 2,865 repositories. Applying Reinforcement learning on these tasks significantly improves performance over the base model on DeepSWE-v1.1, largely outperforming existing baselines. Furthermore, we curate CodeSpecWeave-Bench, a rigorous benchmark comprising 100 tasks and 1,044 specifications, which clearly separates frontier models and reveals significant headroom in handling interdependent engineering constraints.",
+      "description_zh": "为了在现实世界的长期软件开发中取得成功，编码代理必须满足多维任务规范，例如接口兼容性和错误处理，并且在不破坏现有依赖关系的情况下做到这一点。然而，当前的作品在数量和多样性上都缺乏规范，往往强调主要目标而忽视复杂的约束。综合任务来弥补这一差距面临着两个挑战：天真地添加规范可能会将任务减少到琐碎的清单中，而不是令人信服的联合推​​理，而验证这些微妙的交互可能会忽视隐藏的缺陷或拒绝有效的替代方案。为了应对这些挑战，我们引入了 CodeSpecWeave，这是一个用于综合具有丰富且相互依赖的规范的任务的框架。以真实的开发人员种子为基础，综合代理迭代地开发耦合的任务要求和可执行测试，而审查代理则审核多个模型的解决方案轨迹，以保证测试的可靠性。使用此管道，我们在 2,865 个存储库中构建了 4,670 个训练任务。在这些任务上应用强化学习可以显着提高 DeepSWE-v1.1 上基本模型的性能，很大程度上优于现有基线。此外，我们还策划了 CodeSpecWeave-Bench，这是一个严格的基准测试，包含 100 项任务和 1,044 项规范，它清楚地区分了前沿模型，并揭示了处理相互依赖的工程约束方面的巨大空间。",
+      "authors": "Yishuo Cai, Minzheng Wang, Liang Zhao, Linghao Zhang, Lei Li, Shicheng Li, Xu Sun, Fuli Luo",
+      "url": "https://huggingface.co/papers/2610.40256",
+      "score": 8,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "8",
+        "paperId": "2610.40256"
+      }
+    },
+    {
+      "id": "2610.37393",
+      "title": "Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling",
+      "title_zh": "通过迭代事后重新标记来学习质量可控的机器人策略",
+      "description": "Robot policy evaluation often relies on a binary success signal for task completion. In real-world deployment, however, desired execution behaviors are also defined by quality attributes such as execution speed and motion smoothness, which need to be dynamically controlled according to task requirements. To address this, we introduce Quality-Controllable Policy (QCP), a robot policy that enables inference-time control over both individual quality attributes and their combinations. To extend the controllable quality range beyond initial demonstrations, we further propose an iterative hindsight relabeling loop: QCP collects online rollouts under target quality labels, adds successful trajectories to the dataset, relabels the accumulated trajectories in hindsight according to their measured quality, and fine-tunes the policy. Experiments on Robomimic and RoboEval demonstrate that QCP consistently improves both task execution quality and success rates across iterations, producing successful rollouts that exceed the quality of the initial demonstrations. Finally, we validate QCP on real-world manipulation tasks, where controlling speed increases throughput in conveyor operations and controlling transport stability improves success when carrying wine glasses, demonstrating that quality-controllable policies yield practical gains in physical deployment.",
+      "description_zh": "机器人策略评估通常依赖于任务完成的二元成功信号。然而，在实际部署中，所需的执行行为也由执行速度和运动平滑度等质量属性定义，需要根据任务要求动态控制。为了解决这个问题，我们引入了质量可控策略（QCP），这是一种机器人策略，可以对单个质量属性及其组合进行推理时间控制。为了将可控质量范围扩展到初始演示之外，我们进一步提出了一种迭代的事后重新标记循环：QCP收集目标质量标签下的在线部署，将成功的轨迹添加到数据集中，根据测量的质量事后重新标记累积的轨迹，并微调策略。 Robomimic 和 RoboEval 上的实验表明，QCP 在迭代中持续提高任务执行质量和成功率，成功推出的质量超出了初始演示的质量。最后，我们在现实世界的操纵任务中验证了 QCP，其中控制速度可以增加输送机操作的吞吐量，控制运输稳定性可以提高运送酒杯时的成功率，这表明质量可控的策略可以在物理部署中产生实际收益。",
+      "authors": "Sinjae Kang, Dong Kyu Shin, Jaehong Kim, Kamin Lee, Hyoeun Kim, Kaixin Wang, Li Zhao, Seonghyeon Ye, Kimin Lee",
+      "url": "https://huggingface.co/papers/2610.37393",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2610.37393"
+      }
+    },
+    {
+      "id": "2610.34926",
+      "title": "Supervising the Visible State: Separating Representation from View Selection in Streaming Video",
+      "title_zh": "监督可见状态：将流媒体视频中的表示与视图选择分离",
+      "description": "An action seen once and the same action seen three times receive the same action-recognition label, so that supervision does not require a model to count. Answers shared across histories that differ in event order, accumulation, or relations leave those distinctions unconstrained; we call this state under-specification. Visible-State Supervision (ViSS) addresses it by training on source-grounded probes of event identity, order, accumulation, relation change, and answer sufficiency; under the same recent-frame interface it improves OVO-Bench over a strict-matched generic temporal supervision baseline while remaining comparable on StreamingBench, with the largest gain in hallucination detection. Test-Time Causal View Search (TVS) then adapts evidence access while keeping the learned model fixed, expanding from recent frames to sparse event and compact history views on demand. The two interventions separate representation from view selection: supervision particularly benefits hallucination detection and causal reasoning, access particularly benefits event recall and forward reasoning. Together they reach the best reported accuracy among the published systems compared here on StreamingBench and OVO-Bench at a fraction of the processed frames of exhaustive selection, and strict replay shows that most of the remaining gap to a three-view oracle is a correct answer that was later replaced. Streaming accuracy depends on what supervision asks the model to keep, what evidence inference exposes, and whether the model keeps a correct answer once it has one.",
+      "description_zh": "看到一次的动作和看到三次的相同动作会获得相同的动作识别标签，因此监督不需要模型来计数。事件顺序、积累或关系不同的历史所共享的答案使这些区别不受限制；我们称这种状态为规格不足。可见状态监督（ViSS）通过对事件身份、顺序、累积、关系变化和答案充分性的源头探测进行训练来解决这个问题；在相同的最近帧接口下，它在严格匹配的通用时间监督基线上改进了 OVO-Bench，同时在 StreamingBench 上保持可比性，在幻觉检测方面具有最大的增益。然后，测试时因果视图搜索 (TVS) 会调整证据访问，同时保持学习模型固定，根据需要从最近的帧扩展到稀疏事件和紧凑的历史视图。这两种干预措施将表征与视图选择分开：监督特别有利于幻觉检测和因果推理，访问特别有利于事件回忆和前向推理。在 StreamingBench 和 OVO-Bench 上进行比较时，它们共同达到了已发布系统中报告的最佳准确度，仅占详尽选择处理帧的一小部分，严格的重播表明，与三视图预言机的剩余差距大部分是后来被替换的正确答案。流传输的准确性取决于监督要求模型保留什么、推理暴露什么证据以及模型一旦得到正确答案是否保留正确答案。",
+      "authors": "Yihao Hu, Pan Wang, Yitong Lin, Zhihao Wen, Deyuan Liu, Hang Wang, Mingda Wan, Yiwen Zhao, Yutong Li, Yuchen Mao, Tao Lin",
+      "url": "https://huggingface.co/papers/2610.34926",
       "score": 5,
       "meta": {
         "source": "huggingface",
         "upvotes": "5",
-        "paperId": "2610.39663"
+        "paperId": "2610.34926"
+      }
+    },
+    {
+      "id": "2610.37918",
+      "title": "Venus-DefakerOne2: A Vision-Forensics Foundation Model with Broader Coverage",
+      "title_zh": "Venus-DefakerOne2：覆盖范围更广的视觉取证基础模型",
+      "description": "Real-world forgery is inherently heterogeneous: it manifests not only as digital manipulation but also as physical spoofing, and is carried not only by images but also by videos. Despite substantial progress, a unified anti-forgery foundation model covering such a broad threat spectrum remains absent. In this paper, we present Venus-DefakerOne2, which substantially extends the forensic capability boundary along both the forgery-form and media-type dimensions. Trained on tens of millions of open-source and in-house samples, it incorporates two key designs. Tide-Style-Tuning alternates LoRA and full-parameter fine-tuning to balance computational efficiency, generalization, and hard-sample fitting while mitigating catastrophic forgetting. Entropy-based Test Adaptation determines the optimal prediction modality by analyzing prediction entropy. Venus-DefakerOne2 achieves new state-of-the-art performance across a comprehensive suite of benchmarks, including DeepFake faces (96.7%), AI-generated images (93.3%), tampered documents (87.6%), manipulated natural images (89.6%), physical spoofs (93.1%), and AI-generated videos (96.0%). It significantly outperforms both specialized expert models and its predecessor, DefakerOne, establishing itself as a powerful and versatile foundation model for binary-decision forensic tasks.",
+      "description_zh": "现实世界的伪造本质上是异质的：它不仅表现为数字操纵，而且表现为物理欺骗，并且不仅通过图像也通过视频来传播。尽管取得了重大进展，但仍然缺乏涵盖如此广泛威胁范围的统一防伪基础模型。在本文中，我们提出了 Venus-DefakerOne2，它沿着伪造形式和媒体类型维度大幅扩展了取证能力边界。它经过数千万个开源和内部样本的训练，包含两个关键设计。 Tide-Style-Tuning 交替使用 LoRA 和全参数微调，以平衡计算效率、泛��和硬样本拟合，同时减轻灾难性遗忘。基于熵的测试适应通过分析预测熵来确定最佳预测模式。 Venus-DefakerOne2 在一系列全面的基准测试中实现了新的最先进的性能，包括 DeepFake 人脸 (96.7%)、人工智能生成的图像 (93.3%)、篡改文档 (87.6%)、操纵的自然图像 (89.6%)、物理欺骗 (93.1%) 和人工智能生成的视频 (96.0%)。它的性能显着优于专业专家模型及其前身 DefakerOne，成为二元决策取证任务的强大且多功能的基础模型。",
+      "authors": "Chenfan Qu, Yachao Liang, Mingqi Fang, Jiangwei Xie, Zhenming Wang, Baoyue Zhang, Changjiang Jiang, Zheng Chang, Fanli Jin, Xuekang Zhu, Kaiwen Feng, Junchi Li, Weihong Zhang, Haoyue Wang, Chenfeng Zhang, Yinan Xia, Fangming Cui, Dong Fan, Jingjing Liu, Tianyi Zhang, Luobin Chen, Ji-Zhe Zhou, Sheng Li, Wei Wang, Bin Li, Ran He, Xinpeng Zhang, Linna Zhou, Jian Liu, Weiqiang Wang",
+      "url": "https://huggingface.co/papers/2610.37918",
+      "score": 20,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "20",
+        "paperId": "2610.37918"
+      }
+    },
+    {
+      "id": "2610.39276",
+      "title": "MemSteer: Turning User Histories into Supervision for Agent Memory Optimization",
+      "title_zh": "MemSteer：将用户历史记录转化为代理内存优化的监督",
+      "description": "An effective agent memory system should adapt to a user's history and task requirements. Human-annotated supervision can guide this adaptation by providing feedback for evaluating and improving memory designs. Yet suitable labels are rarely available for new user histories, and manually constructing QA pairs and supporting evidence is costly. We introduce MemSteer, which turns unlabeled user histories into question-answer (QA) supervision with supporting evidence for memory-design optimization. MemSteer constructs an evidence-grounded answer plan that specifies how facts across related records jointly support a reference answer. The plan guides question generation, while source-grounded auditing and blind answer recovery check the resulting annotations. To study the utility of this supervision, we develop MemSteer-Opt, which combines QA-based design evaluation with evidence-guided failure diagnosis to revise memory store, retrieval, and context construction without updating model parameters. Experiments on ATM-Bench and RHELM show that this supervision is competitive with official-QA-guided optimization. Relative to Base-BM25, MemSteer-Opt improves ATM-Bench Question Score by 13.4 points and RHELM accuracy by 4.1 and 6.6 points without and with external data, respectively. The supervision also benefits two existing optimizers on ATM-Bench, while new-user experiments demonstrate continued design optimization using supervision generated from the target histories.",
+      "description_zh": "有效的代理记忆系统应该适应用户的历史和任务要求。人工注释的监督可以通过提供评估和改进内存设计的反馈来指导这种适应。然而，新用户历史很少有合适的标签，而且手动构建 QA 对和支持证据的成本很高。我们引入了 MemSteer，它将未标记的用户历史转化为问答 (QA) 监督，并提供内存设计优化的支持证据。 MemSteer 构建了一个基于证据的答案计划，指定相关记录中的事实如何共同支持参考答案。该计划指导问题生成，同时基于源的审核和盲答恢复检查生成的注释。为了研究这种监督的实用性，我们开发了 MemSteer-Opt，它将基于 QA 的设计评估与证据引导的故障诊断相结合，以修改内存存储、检索和上下文构建，而无需更新模型参数。 ATM-Bench 和 RHELM 上的实验表明，这种监督与官方 QA 指导的优化具有竞争力。相对于 Base-BM25，MemSteer-Opt 在没有和有外部数据的情况下分别将 ATM-Bench 问题得分提高了 13.4 分，RHELM 准确度分别提高了 4.1 分和 6.6 分。这种监督也有利于 ATM-Bench 上的两个现有优化器，而新用户实验则证明了使用目标历史生成的监督可以持续进行设计优化。",
+      "authors": "Jie Huang, Cuiling Lan, Qize Yu, Xiulian Peng, Yan Lu",
+      "url": "https://huggingface.co/papers/2610.39276",
+      "score": 6,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "6",
+        "paperId": "2610.39276"
+      }
+    },
+    {
+      "id": "2610.40727",
+      "title": "VoxLock: Target-Speaker Extraction for Voice Agents Without an Enrollment Step",
+      "title_zh": "VoxLock：无需注册步骤即可提取语音代理的目标说话人",
+      "description": "A voice agent's speech recognizer transcribes everyone near the microphone, including people other than the caller. I fine-tuned a public causal target-speaker extraction model (REAL-TSE, 27M parameters) on one GPU to work from a voice sample cut from the call itself, and released it as VoxLock. I score it by what a recognizer writes on real recordings. On Krisp's 265-recording benchmark it reaches 4.95% WER against 23.21% unprocessed and lets 9 background words into the transcript over 85 minutes of background-only speech. Its WER is not significantly different from Krisp's best filters and is significantly lower than the other commercial and open systems I tested. On 400 AMI meeting windows built and frozen before scoring, it cuts WER from 42.95% to 10.63%. The 8-bit model runs a live call on 77% of one CPU thread with 24 ms of algorithmic latency. Model, code and per-file scores are open.",
+      "description_zh": "语音代理的语音识别器会转录麦克风附近的每个人，包括呼叫者以外的人。我在一个 GPU 上微调了公共因果目标说话人提取模型（REAL-TSE，27M 参数），以根据从通话本身截取的语音样本进行工作，并将其发布为 VoxLock。我根据识别器在真实录音上写下的内容来评分。在 Krisp 的 265 条录音基准测试中，WER 达到 4.95%，而未处理的 WER 为 23.21%，并且在 85 分钟的纯背景演讲中允许 9 个背景单词进入转录本。它的 WER 与 Krisp 最好的过滤器没有显着差异，并���明显低于我测试的其他商业和开放系统。在评分前构建并冻结的 400 个 AMI 会议窗口中，WER 从 42.95% 降低到 10.63%。 8 位模型在一个 CPU 线程的 77% 上运行实时调用，算法延迟为 24 毫秒。模型、代码和每个文件的分数都是开放的。",
+      "authors": "Arbaz Siddiqui",
+      "url": "https://huggingface.co/papers/2610.40727",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2610.40727"
       }
     }
   ]
