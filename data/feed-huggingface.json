@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-04T00:11:01.012Z",
+  "updatedAt": "2026-11-05T00:30:47.818Z",
   "count": 15,
   "items": [
     {
-      "id": "2610.38252",
-      "title": "A Tutorial on Generative Models for Music Audio",
-      "title_zh": "音乐音频生成模型教程",
-      "description": "Music audio generation spans instrumental clips, full songs with vocals, edits of existing recordings, and systems that play alongside a musician in real time. This monograph explains the methods behind these systems for readers familiar with neural-network training who are new to music generation. It introduces neural audio codecs and autoencoders, autoregressive and masked token models, diffusion and flow matching, sampling acceleration, and preference optimization in a shared notation. Worked examples connect training objectives and sampling procedures to published systems. The application sections relate the musical requirements of instrumental generation, songs, editing, and live performance to model design. Comparison tables record representations, methods, inputs, tasks, and release information documented in papers and official sources. Symbolic composition, speech, and sound effects are included where they connect to music audio. We explain how to interpret automatic metrics and learned judges, design and report listening tests, and assess evidence about data provenance, memorization, attribution, and output detection. Selected legal decisions and disputes illustrate the implications for training and release. The reviewed systems combine established generative paradigms with new representations, planning stages, and post-training procedures. Differences in data, scale, and evaluation limit what cross-system comparisons can establish about the sources of reported gains.",
-      "description_zh": "音乐音频生成涵盖乐器剪辑、带人声的完整歌曲、现有录音的编辑以及与音乐家实时一起演奏的系统。本专着为熟悉神经网络训练但不熟悉音乐生成的读者解释了这些系统背后的方法。它介绍了神经音频编解码器和自动编码器、自回归和屏蔽令牌模型、扩散和流匹配、采样加速以及共享符号中的偏好优化。工作示例将培训目标和抽样程序与已发布的系统联系起来。应用部分将乐器生成、歌曲、编辑和现场表演的音乐要求与模型设计联系起来。比较表记录了论文和官方来源中记录的表述、方法、输入、任务和发布信息。符号构成、语音和声音效果都包含在与音乐音频连接的地方。我们解释如何解释自动指标和学习判断，设计和报告听力测试，以及评估有关数据来源、记忆、归因和输出检测的证据。选定的法律判决和争议说明了对培训和释放的影响。审查的系统将已建立的生成范式与新的表示、规划阶段和培训后程序结合起来。数据、规模和评估方面的差异限制了跨系统比较可以确定的报告收益来源。",
-      "authors": "Mateusz Modrzejewski, Joanna Kurkowska, Dorien Herremans",
-      "url": "https://huggingface.co/papers/2610.38252",
+      "id": "2611.01621",
+      "title": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
+      "title_zh": "FinForesight：金融预测深度研究系统的诊断回测基准",
+      "description": "Anticipating financial outcomes requires synthesizing evolving evidence and reasoning under uncertainty, making deep research systems promising tools for forecasting. Yet evaluating forecasting ability is challenging because historical backtests may reward memorized outcomes or information retrieved after the forecast date. Live forecasting avoids direct access to realized outcomes, but feedback arrives only after events resolve. To obtain timely feedback and assess historical scores, we introduce FinForesight, a diagnostic backtesting benchmark for financial deep research systems. Across the Chinese, U.S., and Hong Kong markets, the benchmark evaluates four forecasting tasks: valuation, return ranking, event direction, and future financial fundamentals. Two capability diagnostic tasks assess counterfactual reasoning and financial calculation, scored separately from forecasting performance. Our harness-compatible framework restricts retrieved evidence to information available at the forecast date. We compare pretraining-era, resolved post-cutoff, and live evaluations to test whether controlled backtests approximate future performance. Pretraining-era scores exceed post-cutoff scores in most temporal comparisons, and stronger retrieval controls narrow the gap between post-cutoff backtests and live results. Forecasting attribution and robustness analyses reveal how scores respond to retrieval policy and how predictions respond to prompt rewrites and numerical perturbations. The code and benchmark data are publicly available.",
+      "description_zh": "预测财务结果需要在不确定性下综合不断变化的证据和推理，使深度研究系统成为有希望的预测工具。然而，评估预测能力具有挑战性，因为历史回测可能会奖励记忆的结果或预测日期后检索的信息。实时预测避免直接访问已实现的结果，但反馈只有在事件解决后才会到达。为了获得及时反馈并评估历史分数，我们引入了 FinForesight，这是一种针对金融深度研究系统的诊断回测基准。该基准在中国、美国和香港市场评估了四项预测任务：估值、回报排名、事件方向和未来财务基本面。两项能力诊断任务评估反事实推理和财务计算，与预测绩效分开评分。我们的线束兼容框架将检索到的证据限制为预测日期可用的信息。我们比较预训练时代、已解决的截止后和实时评估，以测试受控回测是否接近未来的表现。在大多数时间比较中，训练前时代的分数超过截止后分数，更强的检索控制缩小了截止后回测和实时结果之间的差距。预测归因和稳健性分析揭示了分数如何响应检索策略以及预测如何响应即时重写和数值扰动。代码和基准数据是公开的。",
+      "authors": "Fengyuan Liu, Mukai Li, Jieshun You, Yilin Zheng, Chenjia Min, Yizhou Zhang, Harper Chen, Qi Liu",
+      "url": "https://huggingface.co/papers/2611.01621",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2611.01621"
+      }
+    },
+    {
+      "id": "2610.35497",
+      "title": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
+      "title_zh": "当细粒度的信用分配有所帮助和有害时：通过视频编辑的多模式代理强化学习",
+      "description": "Reinforcement learning (RL) has shown promise for training multimodal agents to reason and use tools. However, it remains unclear when fine-grained credit assignment improves learning and when it fails to improve task performance. Video editing provides a useful testbed for this question, combining multimodal perception, long-horizon planning, and tool use with delayed outcome feedback. We construct four movie-trailer editing task types---Content Selection, Narrative Sequencing, Rough Cut, and Fine Cut---that reflect real-world editing workflows and span different levels of task complexity and interaction horizon. Decaying process rewards provides the largest benefit on Fine Cut, with a 45.4% relative gain over outcome-only GRPO on tasks averaging more than 60 turns under outcome-only GRPO. On the three shorter-horizon task types averaging 30--40 turns under the same baseline, outcome-only GRPO remains competitive, with decaying process rewards yielding at most a 10.4% relative gain. Process rewards from an LLM judge initially improve tool use and encourage visual inspection. As training progresses, however, GRPO+PRM with a fixed process-reward weight increasingly exhibits excessive reasoning and redundant tool calls: process rewards continue to rise while task completion rates and outcome scores decline. Decaying the process-reward weight to zero mitigates this reward-hacking behavior while preserving the early gains. Despite dense token-level supervision, on-policy self-distillation (OPSD) yields little improvement or substantial degradation and is highly sensitive to the choice of privileged information. Our analysis reveals differences in teacher--student disagreement and gradient magnitudes, and suggests possible dilution of informative signals over long trajectories.",
+      "description_zh": "强化学习 (RL) 在训练多模式智能体推理和使用工具方面显示出良好的前景。然而，目前尚不清楚细粒度学分分配何时可以改善学习，何时不能提高任务绩效。视频编辑为这个问题提供了一个有用的测试平台，它将多模态感知、长期规划和工具使用与延迟结果反馈结合起来。我们构建了四种电影预告片编辑任务类型——内容选择、叙事排序、粗剪和精剪——反映了现实世界的编辑工作流程，涵盖了不同级别的任务复杂性和交互范围。衰减过程奖励为 Fine Cut 提供了最大的好处，在仅结果 GRPO 下平均超过 60 轮的任务上，与仅结果 GRPO 相比，相对增益为 45.4%。在相同基线下平均 30--40 轮的三种短期任务类型中，仅结果的 GRPO 仍然具有竞争力，随着过程奖励的衰减最多产生 10.4% 的相对收益。LLM评委的奖励流程最初可以改善工具的使用并鼓励目视检查。然而，随着训练的进展，具有固定过程奖励权重的 GRPO+PRM 越来越多地表现出过度推理和冗余工具调用：过程奖励持续上升，而任务完成率和结果分数下降。将过程奖励权重降低到零可以减轻这种奖励黑客行为，同时保留早期收益。尽管有密集的代币级监管，但策略自蒸馏（OPSD）几乎没有带来任何改善或大幅退化，并且对特权信息的选择高度敏感。我们的分析揭示了师生分歧和梯度大小的差异，并表明长轨迹上的信息信号可能会被稀释。",
+      "authors": "Lei Zhao, Zongheng Cao, Xinyu Hu",
+      "url": "https://huggingface.co/papers/2610.35497",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2610.35497"
+      }
+    },
+    {
+      "id": "2611.00352",
+      "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
+      "title_zh": "实体替换响应的交叉提示重用",
+      "description": "With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions to a target question about the same entity, comparing the predicted log-probability shift between two relations' published answers, given known answer prefixes, with the measured one. Hidden reuse injects the aligned change at 50% depth before the target's remaining layers; direct reuse adds source output-score changes. With other-relation sources, hidden reuse removes 45% and 49% of no-change error on 0.5-1B Qwen and Llama. Gemma-2-2B removes 22% and passes one of three comparisons in plain text without its default beginning-of-sequence (BOS) token. A later protocol restoring it yields 58-68%, passing every comparison on three cohorts. Larger checkpoints, chat format and new entities show replication and format- or cohort-dependent failures. On small plain-format checkpoints, other-relation hidden reuse mainly reproduces the shift both relations' questions share, without reliably lowering relation-selective error. With target-relation sources, hidden reuse's post hoc advantage over direct reuse is 0.2-0.9 nats outside chat format, unconfirmed and not replacement-specific. The same relation-neutral change at both questions' entity tokens lowers relation-selective error more than random or other-replacement changes, indicating receiving-question dependence.",
+      "description_zh": "在模型权重固定的情况下，我们测量实体替换响应在英语事实问题之间转移的程度，而不仅仅是答案是否发生变化。我们将两个源问题的隐藏状态变化添加到关于同一实体的目标问题，将给定已知答案前缀的两个关系的已发布答案之间的预测对数概率变化与测量的答案进行比较。隐藏重用在目标剩余层之前的 50% 深度处注入对齐的更改；直接重用会增加源输出分数的变化。对于其他关系源，隐藏重用消除了 0.5-1B Qwen 和 Llama 上 45% 和 49% 的无变化错误。 Gemma-2-2B 删除了 22%，并以纯文本形式传递了三个比较之一，而没有默认的序列开始 (BOS) 标记。后来的恢复方案的收益率为 58-68%，通过了三个队列的所有比较。更大的检查点、聊天格式和新实体显示了复制和格式或队列相关的失败。在小型纯格式检查点上，其他关系隐藏重用主要重现两个关系的问题共享的转变，而不能可靠地降低关系选择错误。对于目标关系源，隐藏重用相对于直接重用的事后优势是聊天格式之外的 0.2-0.9 nat，未经确认且不特定于替换。两个问题的实体标记的相同关系中性变化比随机或其他替换变化更能降低关系选择错误，表明接收问题依赖性。",
+      "authors": "Jinkun Chen, Xuemin Yu, Sijia Han, Vlado Keselj",
+      "url": "https://huggingface.co/papers/2611.00352",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2611.00352"
+      }
+    },
+    {
+      "id": "2611.04414",
+      "title": "SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere",
+      "title_zh": "SphereFlow：通过超球面上的几何传输进行缺失模态插补",
+      "description": "Missing modality imputation aims to synthesize unobserved modalities from observed ones. Existing methods treat each modality as living on its own latent manifold, forcing the generator to learn a long, unstructured jump between them. We present SphereFlow, which takes a fundamentally different view: by projecting all modalities into a shared hyperspherical latent space via a frozen self-supervised encoder, cross-modal imputation reduces to short-range geometric transport between nearby points on the sphere. Realizing this idea with flow matching, however, exposes two geometric conflicts: the standard Gaussian noise source is catastrophically mismatched with the unit-norm data manifold, and the linear interpolation path departs the sphere surface into a region where the decoder has no training signal. We resolve both with simple, geometry-aware modifications: replacing the noise source with the observed-modality latent so that the velocity field learns only the cross-modal displacement, and training the decoder with a time-weighted loss that extends its domain to the near-surface region traversed by the flow. We prove that this data-as-source formulation reduces the worst-case off-manifold deviation from a quantity that grows with the latent dimension to a small, dimension-independent bound governed by inter-modality similarity. Experiments on BraTS multi-modal MRI imputation and CT-MRI translation demonstrate state-of-the-art generation fidelity across all settings, while downstream brain tumor segmentation with our imputed data closes roughly eighty percent of the gap to the full-modality oracle. Code is available at https://github.com/WTHH031230/SphereFlow.",
+      "description_zh": "缺失模态插补旨在从观察到的模态合成未观察到的模态。现有的方法将每种模态视为存在于其自己的潜在流形上，迫使生成器学习它们之间的长的、非结构化的跳跃。我们提出了 SphereFlow，它采取了根本不同的观点：通过冻结的自监督编码器将所有模态投影到共享的超球面潜在空间中，跨模态插补减少了球体上附近点之间的短程几何传输。然而，通过流匹配实现这一想法暴露了两个几何冲突：标准高斯噪声源与单位范数数据流形灾难性地不匹配，并且线性插值路径使球体表面离开球体表面进入解码器没有训练信号的区域。我们通过简单的、几何感知的修改来解决这两个问题：用观察到的潜在模态替换噪声源，以便速度场仅学习跨模态位移，并使用时间加权损失训练解码器，将其域扩展到流穿过的近地表区域。我们证明，这种以数据为源的公式将最坏情况下的流形偏差从随潜在维度增长的数量减少到由模态间相似性控制的小的、与维度无关的界限。 BraTS 多模态 MRI 插补和 CT-MRI 翻译的实验证明了所有设��中最先进的生成保真度，而使用我们的插补数据进行的下游脑肿瘤分割缩小了与全模态预言的大约 80% 的差距。代码可在 https://github.com/WTHH031230/SphereFlow 获取。",
+      "authors": "Huihan Wang, Juncheng Wang, Yuxiang Feng, Wenlong Hou, Guoqi Yu, Chao Xu, Yang Liu, Baigui Sun, Shujun Wang",
+      "url": "https://huggingface.co/papers/2611.04414",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2611.04414"
+      }
+    },
+    {
+      "id": "2611.04169",
+      "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+      "title_zh": "长度很便宜，竞争却不是：注意力预测检索中的上下文腐烂",
+      "description": "Why do language models fail on long inputs? The common answer is length. We show that, for retrieval, length is cheap and competition is not. On five open models (0.5B to 3B parameters, four families), neutral filler costs nothing: accuracy stays at 0.97 to 1.00, up to 32K tokens on Qwen2.5-1.5B. Statements in the format of the evidence, placed at the same positions, drop it to 0.16 to 0.33. A single statement that gives the queried key a rival value multiplies the loss by 9 to 110, and every additional rival adds to it. Inside the model, one quantity tracks the failure: the attention mass left on the evidence. Across 126,473 trials it explains up to 58% of the variance in loss; log length explains at most 8%. The masked-filler protocol behind the claim that length alone hurts reproduces on MMLU (11 to 18 points lost at 30K tokens), but fails a visible control in retrieval: masking costs 45 accuracy points at 32K tokens, while the same filler left visible costs none. In retrieval, context rot is a competition for attention. We release the probe and all 126K trial-level measurements.",
+      "description_zh": "为什么语言模型在长输入时会失败？常见的答案是长度。我们表明，对于检索来说，长度是廉价的，而竞争则不然。在五个开放模型（0.5B 到 3B 参数，四个系列）上，中性填充物不花费任何成本：准确度保持在 0.97 到 1.00，Qwen2.5-1.5B 上最多 32K 令牌。证据格式的陈述，放置在相同位置，则将其降至 0.16 至 0.33。为查询的键赋予竞争值的单个语句会将损失乘以 9 到 110，并且每增加一个竞争者都会增加损失。在模型内部，有一个量追踪失败：证据上留下的注意力。在 126,473 项试验中，它解释了高达 58% 的损失方差；对数长度最多解释8%。声称长度本身会损害 MMLU 上的再现（30K 令牌丢失 11 到 18 点）背后的屏蔽填充协议，但在检索中未能实现可见控制：屏蔽在 32K 令牌时花费 45 个准确度点，而相同的填充留下可见成本则没有成本。在检索中，上下文腐烂是一种注意力的竞争。我们发布了探头��所有 126K 试验级测量结果。",
+      "authors": "Yinuo Liu",
+      "url": "https://huggingface.co/papers/2611.04169",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2611.04169"
+      }
+    },
+    {
+      "id": "2611.01598",
+      "title": "QFabric: Guarded Cross-Domain Task Recovery and Its Limits on a Linux-RTOS Board",
+      "title_zh": "QFabric：Linux-RTOS 板上的受保护跨域任务恢复及其限制",
+      "description": "Heterogeneous embedded boards pair a Linux application processor with a real-time microcontroller (MCU), which suggests moving a task between the two domains when its timing degrades. We present QFabric, a prototype that treats cross-domain placement as guarded recovery from a violated empirical soft real-time contract: a bounded task is compiled for both domains, monitored in windows with hysteresis, switched only after semantic and capacity admission at a quiescent epoch boundary, and committed or rolled back after probation. On an Arduino UNO Q (Cortex-A53 Linux and a Cortex-M33 running Zephyr), we characterize the stock Bridge RPC interconnect and measure five workloads in both domains under idle, CPU-load, and higher-priority SCHED_FIFO contention, with ordinary and real-time callers. Each MCU invocation costs about 19 ms of dispatch regardless of compute, the MCU runs the heaviest kernel 34x slower, and because every call traverses Linux userspace, Linux contention inflates the MCU path far more than the Linux path (p99 up to 400 ms versus 17.0 ms). Across 30 cells of a four-node chain, Linux meets every contract within 0.8% misses and QFabric correctly never migrates; a controller without hysteresis migrates in 7 cells, raising p95 by up to 177x, and probation rolls back 5 of those moves. On Linux-dispatched heterogeneous boards, migration therefore cannot isolate a task from Linux interference, and recovery guards matter chiefly by preventing harmful moves. This paper supersedes an earlier artifact release whose reported improvement arose from measurement defects that we identify. All source, raw traces, and generators are public.",
+      "description_zh": "异构嵌入式板将 Linux 应用处理器与实时微控制器 (MCU) 配对，这建议当任务时序恶化时在两个域之间移动任务。我们提出了 QFabric，一种将跨域放置视为从违反的经验软实时合约中进行保护恢复的原型：为两个域编译有界任务，在带有滞后的窗口中进行监视，仅在静态纪元边界的语义和容量许可后进行切换，并在试用后提交或回滚。在 Arduino UNO Q（Cortex-A53 Linux 和运行 Zephyr 的 Cortex-M33）上，我们描述了库存 Bridge RPC 互连的特征，并测量了两个域中空闲、CPU 负载和更高优先级 SCHED_FIFO 争用以及普通调用者和实时调用者的五个工作负载。无论计算如何，每次 MCU 调用都会花费约 19 毫秒的调度时间，MCU 运行最重的内核速度要慢 34 倍，而且由于每次调用都会遍历 Linux 用户空间，Linux 争用使 MCU 路径的膨胀远远超过 Linux 路径（p99 高达 400 毫秒，而 17.0 毫秒）。在四节点链的 30 个单元中，Linux 在 0.8% 的遗漏率内满足每个合约，并且 QFabric 不会正确迁移；没有滞后的控制器会在 7 个单元中迁移，将 p95 提高高达 177 倍，并且试用期会回滚其中的 5 个移动。因此，在 Linux 调度的异构板上，迁移无法将任务与 Linux 干扰隔离开来，而恢复防护的作用主要在于防止有害的移动。本文取代了早期的工件版本，该版本报告的改进源于我们发现的测量缺陷。所有来源、原始痕迹和生成器都是公开的。",
+      "authors": "Ayushman Bhattacharya, Anwesha Chakraborty",
+      "url": "https://huggingface.co/papers/2611.01598",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2611.01598"
+      }
+    },
+    {
+      "id": "2611.05345",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "title_zh": "对抗性推测推理改进了长视野智能体",
+      "description": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+      "description_zh": "推测解码纯粹被视为一种系统优化，可以在不改变模型行为的情况下加速大型语言模型解码。根据这种观点，越来越多的训练更好选秀模型的努力仅仅集中在接受率上。我们认为，这种观点对于长期代理推理来说并不成立。使用不同的推测性解码方法测量复杂代理任务上的前沿开放权重模型，我们发现数值噪声在验证窗口内增长，并且思维过程的草稿接受结果可以在 30 个步骤后改变模型的输出分布，从而显着影响长视野代理在随机方向上的推理准确性。在这项工作中，我们通过控制此类噪声来提高目标模型的推理能力。虽然我们无法改变目标模型验证的整体令牌分布，但我们可以通过训练要拒绝的草稿模型来以最高精度编码关键推理。我们在代理追踪中识别这些点，并训练草稿模型以支持对抗性偏好。在推理时，经过训练的草稿和目标在这些决策点精确分开，验证重新启动，以便从目标模型中采样批判性思维标记，并在其噪声最小的条件下进行编码。这种方法使批判性推理能够更好地建立索引，并且从长远来看更持久。在复杂的代理编码基准上，我们的方法提高了端到端的成功率，而不改变目标模型或其输出分布。我们的结果将推测性解码机制从纯粹的加速器改造成上下文精度的主动分配器，通过训练 0.06% 到 0.28% 的托管参数来提高长视野代理的准确性。",
+      "authors": "Hongyin Luo, Wei Fang, Lijie Yang, Owen Stepan, Daniel Suit, Jeff Krapf, Dana Wensberg, Jack O&#39;Brien",
+      "url": "https://huggingface.co/papers/2611.05345",
+      "score": 6,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "6",
+        "paperId": "2611.05345"
+      }
+    },
+    {
+      "id": "2611.03806",
+      "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
+      "title_zh": "BEND 2.0：设计 DNA 所需能力的基准测试",
+      "description": "Genomic foundation models are increasingly used to propose DNA sequences and edits. But successful design requires capabilities that current benchmarks do not measure. Here we introduce BEND 2.0 (BENchmark for DNA language models), which tests how well models predict the effects of DNA changes and whether these predictions can guide sequence design. Across eight tasks built on five experimental datasets, we find that model choice and how representations are accessed both affect performance. Linear readouts fitted to frozen representations can match or exceed models' native outputs, and functional post-training substantially improves the models' capabilities. Linear readouts transfer well across experimental assays and genes, suggesting that models capture functional patterns beyond the data used to fit individual predictors. At the same time, strong prediction of average effects can conceal weaker prediction of context-specific effects, and accurate prediction of combined mutation effects does not imply accurate prediction of their interactions. In design tasks, model predictions can reduce the number of candidates needed to find a desired response, but still leave substantial room for better design choices, particularly for context-specific and multi-cell objectives. Our benchmark reveals that genomic models now display signs of general utility but have yet to saturate on performance in even simple tasks.",
+      "description_zh": "基因组基础模型越来越多地用于提出 DNA 序列和编辑。但成功的设计需要当前基准无法衡量的功能。这里我们介绍BEND 2.0（DNA语言模型的BENchmark），它测试模型预测DNA变化影响的效果以及这些预测是否可以指导序列设计。在基于五个实验数据集的八个任务中，我们发现模型选择和表示的访问方式都会影响性能。适合冻结表示的线性读数可以匹配或超过模型的本机输出，并且功能性后训练大大提高了模型的能力。线性读数在实验测定和基因之间转移良好，这表明模型捕获了超出用于拟合个体预测因子的数据的功能模式。同时，对平均效应的强预测可以掩盖对上下文特定效应的较弱预测，并且对组合突变效应的准确预测并不意味着对其相互作用的准确预测。在设计任务中，模型预测可以减少找到所需响应所需的候选数量，但仍然为更好的设计选择留下了很大的空间，特别是对于特定于上下文的多单元目标。我们��基准测试表明，基因组模型现在显示出通用性的迹象，但即使在简单的任务中，性能也尚未达到饱和。",
+      "authors": "Andreas Bjerregaard, Rachael DeVries, Dionysia Danai Brilli, Panagiotis Antoniadis, Yan Li, Anders Krogh, Wouter Boomsma, Ole Winther, Frederikke Isa Marin",
+      "url": "https://huggingface.co/papers/2611.03806",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2610.38252"
+        "paperId": "2611.03806"
       }
     },
     {
-      "id": "2611.02782",
-      "title": "History Forcing: Distilling History-Dependent Continuations for Long-Horizon Video World Models",
-      "title_zh": "历史强迫：为长视野视频世界模型提炼历史相关的延续",
-      "description": "Few-step autoregressive video diffusion enables efficient generation, yet maintaining consistency over long rollouts remains challenging, especially when subjects or scenes reappear after going out of sight. Despite progress in fidelity and rollout robustness, existing distillation methods do not fully exploit richer historical information to constrain the student's current prediction. To address this gap, we introduce History Forcing, a unified on-policy distillation framework that strengthens historical supervision for few-step autoregressive video generators. The framework uses the residual between teacher predictions with and without informative historical context to decouple this supervision. Such a historical context can be obtained using earlier generated chunks with less accumulated drift or a fixed-view teacher rollout that keeps the scene visible while the student looks away. The residual is then weighted and added to the score or velocity prediction used for distillation, forming a corrected target. By aligning the student with this corrected target through distillation, History Forcing incorporates long-range historical constraints into autoregressive generation. Our method achieves state-of-the-art performance among 1.3B models, with a VBench quality score of 85.07 for 15s video generation and a VBench-Long aggregate score of 79.82 for 60s generation. For out-of-sight world modeling, evaluations further demonstrate more plausible scene evolution and more consistent states when the camera returns, with Evolution Quality improving from 2.35 to 2.70 on PlayWorld and Object Consistency from 58.43 to 62.18 on MemoBench.",
-      "description_zh": "少步自回归视频扩散可以实现高效生成，但在长时间部署中保持一致性仍然具有挑战性，特别是当主体或场景在离开视线后重新出现时。尽管在保真度和推出稳健性方面取得了进步，但现有的蒸馏方法并没有充分利用更丰富的历史信息来限制学生当前的预测。为了解决这一差距，我们引入了历史强制，这是一个统一的策略蒸馏框架，可以加强对少步自回归视频生成器的历史监督。该框架使用有或没有信息历史背景的教师预测之间的残差来解耦这种监督。这样的历史背景可以使用较早生成的具有较少累积漂移的块或固定视图教师卷展来获得，该固定视图教师卷展在学生移开视线时保持场景可见。然后对残差进行加权并添加到用于蒸馏的分数或速度预测中，形成校正目标。通过蒸馏使学生与这个修正后的目标保持一致，历史强迫将长期历史约束纳入自回归生成中。我们的方法在 1.3B 模型中实现了最先进的性能，15 秒视频生成的 VBench 质量得分为 85.07，60 秒视频生成的 VBench-Long 总得分为 79.82。对于视线外的世界建模，评估进一步展示了相机返回时更合理的场景演化和更一致的状态，PlayWorld 上的演化质量从 2.35 提高到 2.70，MemoBench 上的对象一致性从 58.43 提高到 62.18。",
-      "authors": "Hangyi Kuang, Chengzhi Wang, Yefei He, Weijie Wang, Yuke Zhao, Zhuokun Chen, Zisu Huang, Yifan Yang, Xiaoxuan He, Feng Chen, Bohan Zhuang",
-      "url": "https://huggingface.co/papers/2611.02782",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2611.02782"
-      }
-    },
-    {
-      "id": "2611.03424",
-      "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
-      "title_zh": "IdeaTaste：LLM是否具有人类研究人员的研究品味？",
-      "description": "Research taste, the judgment of what to read, which problems to pursue, and which methods to try, increasingly shapes the work of AI scientists, yet it remains far less understood than their ability to execute research. We introduce IdeaTaste, a benchmark that scores an LLM by how closely the research proposals it writes from a literature snapshot frozen at 2025 match the work the same communities published in 2026. Our experiments span six contemporary language models and four research areas from established to emerging fields, covering more than 90{,}000 proposals in total. LLM agents fall well short of human communities in both the literature they cite and the ideas they state, reaching about 26\\% of the human level on citation matching and only 18\\% on idea matching. Their populations can cite as diversely as a community and take up its tasks and methods, yet rarely arrive at the concrete approaches and research plans it pursues. Neither richer field context nor larger populations substantially close this gap. In blinded expert review, AI proposals trail the 2026 papers least in presentation and most in expected success, echoing their gap in concrete approaches, and those whose ideas no human paper shares fare worst, suggesting weaker directions rather than overlooked opportunities. These results indicate that the main bottleneck in AI research taste lies less in finding the directions a community works on than in turning them into the concrete approaches it goes on to pursue. We release IdeaTaste as an open, continuously updated leaderboard (https://cxcscmu.github.io/IdeaTaste) that benchmarks contemporary AI proposals against future publication cycles.",
-      "description_zh": "研究品味、对读什么、要解决哪些问题以及尝试哪些方法的判断，日益影响着人工智能科学家的工作，但人们对其执行研究的能力的理解仍然远远不够。我们推出了 IdeaTaste，这是一个基准，根据 2025 年冻结的文献快照撰写的研究提案与 2026 年同一社区发表的工作的匹配程度来对LLM进行评分。我们的实验涵盖六种当代语言模型和从成熟领域到新兴领域的四个研究领域，总共涵盖 90{,}000 多个提案。 LLM 代理在引用的文献和表达的想法方面都远远低于人类社区，在引文匹配方面达到人类水平的 26% 左右，而在想法匹配方面仅达到人类水平的 18%。他们的人口可以像一个社区一样多样化地引用并承担其任务和方法，但很少达成其所追求的具体方法和研究计划。更丰富的野外环境和更多的人口都无法实质性缩小这一差距。在盲法专家评审中，人工智能提案在表述方面落后于 2026 年论文，但在预期成功方面落后于 2026 年论文，这反映了它们在具体方法方面的差距，而那些没有人类论文分享想法的论文表现最差，这表明方向较弱，而不是被忽视的机会。这些结果表明，人工智能研究品味的主要瓶颈不在于找到社区的工作方向，而在于将其转化为社区继续追求的具体方法。我们将 IdeaTaste 作为一个开放的、持续更新的排行榜 (https://cxcscmu.github.io/IdeaTaste) 发布，该排行榜根据未来的出版周期对当代人工智能提案进行基准测试。",
-      "authors": "Shanshan Zhong, Chen Xu, Jingjie Ning, Zhengzhong Liu, Aviral Kumar, Chenyan Xiong",
-      "url": "https://huggingface.co/papers/2611.03424",
-      "score": 25,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "25",
-        "paperId": "2611.03424"
-      }
-    },
-    {
-      "id": "2611.02112",
-      "title": "Order-Only On-Policy Distillation",
-      "title_zh": "仅订单按策略蒸馏",
-      "description": "On-policy distillation (OPD) trains a student on its own generations by matching the teacher's token probabilities. These probabilities entangle two kinds of information: which tokens the teacher prefers, and how confident it is. The latter reflects the teacher's own capacity and calibration, which a smaller student may be unable to reproduce. Because the teacher temperature changes these values without changing the ordering, OPD is also sensitive to the temperature choice. We ask whether the teacher's ordering of candidate tokens is enough, and propose Order-Only On-Policy Distillation (O^{3}PD). At each student-generated prefix, O^{3}PD trains the student to reproduce the order of the teacher's top-K tokens, without fitting their probability values. The objective is therefore invariant to the teacher temperature and needs no temperature tuning. Across six teacher--student pairs, O^{3}PD outperforms OPD on the average over HMMT25, AIME24, and AIME25 in every pair, by up to 2.9 points, with gains of up to 5.6 points on AIME25. Other ranking losses yield similar gains, so the benefit comes from ordinal supervision itself. Analysis shows that O^{3}PD departs further from the teacher's probabilities than OPD, yet reproduces its ranking more faithfully and yields a stronger student. The ranking, not the probability values, thus carries the knowledge that on-policy distillation needs to transfer.",
-      "description_zh": "在策略蒸馏（OPD）通过匹配老师的令牌概率来训练学生在自己的世代上。这些概率涉及两种信息：老师更喜欢哪些标记，以及它的置信度如何。后者反映了教师自身的能力和校准，而较小的学生可能无法复制。由于教师温度会更改这些值而不更改顺序，因此 OPD 对温度选择也很敏感。我们询问老师对候选令牌的排序是否足够，并提出 Order-Only On-Policy Distillation (O^{3}PD)。在每个学生生成的前缀处，O^{3}PD 训练学生重现教师的前 K 个标记的顺序，而不拟合它们的概率值。因此，物镜不受教师温度的影响，无需进行温度调节。在六个教师-学生对中，O^{3}PD 在每对中比 HMMT25、AIME24 和 AIME25 平均优于 OPD，最多 2.9 个百分点，在 AIME25 上最多提高 5.6 个百分点。其他排名损失产生类似的收益，因此收益来自顺序监督本身。分析表明，O^{3}PD 比 OPD 更偏离教师的概率，但更忠实地再现其排名并产生更强的学生。因此，排名（而不是概率值）承载了同策略蒸馏需要转移的知识。",
-      "authors": "Guangzeng Han, Yu Wu, Xiaolei Huang",
-      "url": "https://huggingface.co/papers/2611.02112",
-      "score": 25,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "25",
-        "paperId": "2611.02112"
-      }
-    },
-    {
-      "id": "2610.32878",
-      "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
-      "title_zh": "通过逐层错误模型搜索推进基于 SVD 的 LLM 压缩",
-      "description": "Low-rank SVD-based compression offers a powerful strategy to reduce the computational costs of LLMs. However, existing methods face two key limitations: (i) global rank allocation, where uncalibrated error proxies fail to capture complex error propagation, and (ii) decomposition quality, where Fisher-based estimators suffer from severe rank collapse. In this work, we address these limitations by introducing Layer-wise Error Modeling Search (LEMS) and KFAC-SVD. LEMS advances rank allocation by introducing a layer-wise error surrogate that integrates local and global layer importance alongside a propagation bias, enabling effective global rank allocation via an ILP formulation. KFAC-SVD improves decomposition quality by utilizing token-wise statistics, mitigating the rank deficiency observed in prior Fisher-based SVD approaches. Across Mistral, Qwen3, and Llama 3 model families, we show that LEMS consistently outperforms existing search strategies, delivering significant zero-shot accuracy gains of up to 4.8 p.p. that generalize to model sizes of 70B parameters, while KFAC-SVD achieves an average perplexity improvement of 15%. Project page and code: https://lems-svd.github.io",
-      "description_zh": "基于低秩 SVD 的压缩提供了一种强大的策略来降低 LLM 的计算成本。然而，现有方法面临两个关键限制：（i）全局排名分配，其中未校准的误差代理无法捕获复杂的误差传播，以及（ii）分解质量，其中基于 Fisher 的估计器遭受严重的排名崩溃。在这项工作中，我们通过引入逐层误差建模搜索 (LEMS) 和 KFAC-SVD 来解决这些限制。 LEMS 通过引入分层误差代理来推进排名分配，该代理将局部和全局层重要性与传播偏差相结合，从而通过 ILP 公式实现有效的全局排名分配。 KFAC-SVD 通过利用 token-wise 统计数据来提高分解质量，缓解先前基于 Fisher 的 SVD 方法中观察到的排名缺陷。在 Mistral、Qwen3 和 Llama 3 模型系列中，我们表明 LEMS 始终优于现有搜索策略，可实现高达 4.8 p.p 的显着零射击精度增益。推广到 70B 参数的模型大小，而 KFAC-SVD 实现了 15% 的平均困惑度改进。项目页面和代码：https://lems-svd.github.io",
-      "authors": "Moritz Thoma, Maximilian Groezinger, Maximilian Forstenhäusler, Emad Aghajanzadeh, Manoj Rohit Vemparala, Christos Anagnostopoulos, Pierpaolo Mori, Nael Fasfous, Alexander Frickenstein, Daniel Mueller-Gritschneder, Ulf Schlichtmann",
-      "url": "https://huggingface.co/papers/2610.32878",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2610.32878"
-      }
-    },
-    {
-      "id": "2610.41994",
-      "title": "DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention",
-      "title_zh": "DAMI：双轴内存初始化，用于增强门控线性注意力中的长上下文检索",
-      "description": "Linear attention scales linearly with sequence length, but its finite-state memory can limit long-context retrieval. In gated linear recurrences, memory retention depends on state decay, which is shaped jointly by gate parameters A_log and dt_bias and by input activations. In controlled Gated DeltaNet (GDN) experiments, both parameters remain highly correlated with their initial values after training, highlighting the importance of initialization. Therefore, we introduce Dual-Axis Memory Initialization (DAMI), which jointly configures these parameters before training. DAMI assigns geometric timescales across heads for varied retrieval distances and a low-high-low input-sensitivity profile across layers. A small activation sample calibrates the GDN-family implementation to match both behavioral targets without adding trainable parameters. Across GDN, KDA, GDN2, Mamba-2, and RWKV-7, DAMI improves average RULER-style retrieval accuracy by 5.29 to 16.71 percentage points over the corresponding random-initialization baselines. Performance on language modeling, commonsense reasoning, and 2K real-world retrieval remains broadly comparable to those baselines. Our code is available at https://speedai.com/research/dami.",
-      "description_zh": "线性注意力随序列长度线性扩展，但其有限状态记忆会限制长上下文检索。在门控线性递归中，记忆保留取决于状态衰减，状态衰减由门参数 A_log 和 dt_bias 以及输入激活共同决定。在受控门控 DeltaNet (GDN) 实验中，两个参数在训练后仍与其初始值高度相关，凸显了初始化的重要性。因此，我们引入了双轴内存初始化（DAMI），它在训练之前联合配置这些参数。 DAMI 为不同的检索距离和跨层的低-高-低输入灵敏度配置文件分配了跨头的几何时间尺度。一个小的激活样本可以校准 GDN 系列的实现，以匹配两个行为目标，而无需添加可训练参数。在 GDN、KDA、GDN2、Mamba-2 和 RWKV-7 中，DAMI 将平均 RULER 式检索精度比相应的随机初始化基线提高了 5.29 至 16.71 个百分点。语言建模、常识推理和 2K 现实世界检索的性能与这些基线大致相当。我们的代码可在 https://speedai.com/research/dami 获取。",
-      "authors": "Zhangchi Feng, Harry Jiang, Yangyifei Luo, Ray Zhang, Richong Zhang",
-      "url": "https://huggingface.co/papers/2610.41994",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2610.41994"
-      }
-    },
-    {
-      "id": "2611.03097",
-      "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
-      "title_zh": "DR Pixel：使用视觉语言模型进行页面原生深度研究",
-      "description": "Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models (VLMs) can enable page-native deep research: directly retrieving and reasoning over rendered document page images. We introduce DR Pixel, the first open-source end-to-end multimodal DR agent that uses rendered page images as its sole retrieval and reasoning unit, operating over a corpus of 1.06M pages. To evaluate this setting, we construct DRPixelBench, a benchmark on scientific papers requiring reasoning over text, figures, tables, and equations. Surprisingly, page-native DR already works well without training, outperforming OCR-based baselines across state-of-the-art models like GPT-5.4, Gemini-3.5-Flash, and Qwen3.6-27B, while requiring fewer tool calls. We next turn to DR training. A key challenge is that teacher trajectories for agentic supervised finetuning are noisy, mixing critical reasoning and action steps with redundant or failed attempts. To address this, we introduce counterfactual credit reweighting, a fine-grained credit assignment method that weights individual reasoning and action steps by their counterfactual contribution to the final answer. Our training improves retrieval recall by about 15 points and final accuracy by over 10 points on DRPixelBench, and likewise outperforms the untrained baseline on four existing benchmarks. On out-of-distribution ViDoRe-V3, DR Pixel comes within 1.8 points of an oracle that is given the gold pages directly. Our results suggest that the conventional OCR-then-retrieve pipeline is not only unnecessary but suboptimal: directly retrieving and reasoning over visual document pages makes complex DR both more effective and more efficient.",
-      "description_zh": "复杂的文档（例如科学论文）包含丰富的表格、图形和方程式信息；然而，现有的深度研究 (DR) 代理通常会将论文缩减为 OCR 提取的文本。相反，我们询问视觉语言模型 (VLM) 是否可以实现页面本机深度研究：直接检索和推理渲染的文档页面图像。我们推出 DR Pixel，这是第一个开源端到端多模式 DR 代理，它使用渲染的页面图像作为唯一的检索和推理单元，在 106 万页的语料库上运行。为了评估此设置，我们构建了 DRPixelBench，这是需要对文本、图形、表格和方程进行推理的科学论���的基准。令人惊讶的是，页面原生 DR 无需训练即可运行良好，在 GPT-5.4、Gemini-3.5-Flash 和 Qwen3.6-27B 等最先进模型中的性能优于基于 OCR 的基线，同时需要更少的工具调用。我们接下来讨论灾难恢复培训。一个关键的挑战是，用于代理监督微调的教师轨迹是嘈杂的，将批判性推理和行动步骤与冗余或失败的尝试混合在一起。为了解决这个问题，我们引入了反事实信用重新加权，这是一种细粒度的信用分配方法，通过个人推理和行动步骤对最终答案的反事实贡献来加权。我们的训练在 DRPixelBench 上将检索召回率提高了约 15 点，最终准确率提高了 10 多点，同样在四个现有基准上优于未经训练的基线。在未发行的 ViDoRe-V3 上，DR Pixel 与直接获得金页的预言机相差 1.8 分。我们的结果表明，传统的 OCR-then-retrieve 管道不仅不必要，而且不是最理想的：直接检索和推理可视文档页面使复杂的 DR 更加有效和高效。",
-      "authors": "Tiansheng Hu, Yichuan Wang, James V. Talwar, Nicholas Tomlin, Chen Zhao, Sewon Min",
-      "url": "https://huggingface.co/papers/2611.03097",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2611.03097"
-      }
-    },
-    {
-      "id": "2610.38623",
-      "title": "Cross-Primitive Consistency in Jev",
-      "title_zh": "Jev 中的跨原语一致性",
-      "description": "Jev enables efficient decision-making with large language models (LLMs) through typed querying primitives, allowing the same semantic state to be expressed in different formats, such as binary and multiple-choice queries. However, the consistency of decisions across primitives has not been systematically evaluated. This work introduces PrimaCons, a four-axis benchmark for assessing cross-primitive consistency while preserving the semantics of the query. Evaluations across three Jev sizes reveal consistency violations across all four axes. Our analysis shows that these violations follow systematic patterns and that cross-primitive discrepancies predict decision failure with a ROC-AUC of 0.91. To mitigate these inconsistencies, we propose the Cross-Primitive Residual Calibrator (CPRC), which attaches a lightweight residual network to a frozen backbone and jointly optimizes predictive accuracy and cross-primitive consistency. Under a leave-one-domain-out protocol, CPRC reduces cross-primitive inconsistency by 58.57% and improves accuracy by +2.97%., demonstrating its effectiveness in both in-domain and out-of-domain settings. Our findings establish cross-primitive consistency as a key dimension for evaluating Jev and provide a practical approach to improving the reliability of its decisions. Code and benchmark is available at https://github.com/67L1/PrimaCons-CRPR.",
-      "description_zh": "Jev enables efficient decision-making with large language models (LLMs) through typed querying primitives, allowing the same semantic state to be expressed in different formats, such as binary and multiple-choice queries.然而，跨原语决策的一致性尚未得到系统评估。这项工作引入了 PrimaCons，这是一个四轴基准，用于评估跨基元一致性，同时保留查询的语义。对三种 Jev 尺寸的评估揭示了所有四个轴的一致性违规。 Our analysis shows that these violations follow systematic patterns and that cross-primitive discrepancies predict decision failure with a ROC-AUC of 0.91. To mitigate these inconsistencies, we propose the Cross-Primitive Residual Calibrator (CPRC), which attaches a lightweight residual network to a frozen backbone and jointly optimizes predictive accuracy and cross-primitive consistency. Under a leave-one-domain-out protocol, CPRC reduces cross-primitive inconsistency by 58.57% and improves accuracy by +2.97%., demonstrating its effectiveness in both in-domain and out-of-domain settings. Our findings establish cross-primitive consistency as a key dimension for evaluating Jev and provide a practical approach to improving the reliability of its decisions.代码和基准可在 https://github.com/67L1/PrimaCons-CRPR 获取。",
-      "authors": "Xu Liu, Guikun Chen, Kanzhi Wu, Wenguan Wang",
-      "url": "https://huggingface.co/papers/2610.38623",
+      "id": "2611.03998",
+      "title": "Dory1.0-4B: A Looped Normalized-GPT",
+      "title_zh": "Dory1.0-4B：循环标准化 GPT",
+      "description": "We introduce Dory1.0-4B, a 4-billion-parameter looped (latent-recurrent) language model with elastic depth: a single checkpoint serves different inference compute budgets. Dory1.0-4B is built on a normalized Transformer (nGPT) backbone with interleaved sliding-window and full-attention layers, organized into an input block, a shared recurrent block, and an output block. At inference, the recurrent block can be applied a variable number of times. We pre-trained Dory1.0-4B on 6 trillion tokens. The first 4.5 trillion tokens were trained in NVFP4, and additional pre-training then extended the context length to 256K tokens. Next, we post-trained the model using Supervised Fine-Tuning (SFT) and Reinforcement Learning with Verifiable Rewards (RLVR), with a difficulty-aware loop curriculum that routes harder prompts to deeper loops. Increasing the loop count improves accuracy, with the largest gains on coding, agentic, and long-context benchmarks. With two or more loops, Dory1.0-4B outperforms larger models such as Qwen3.5-9B, Gemma 4 12B, and Gemma 4 26B-A4B on average across 12 benchmarks. Looping also makes Dory1.0-4B more token-efficient on agentic benchmarks: with four loops, it generates 1.3-2.5x fewer tokens than with one loop, as the extra computation is spent in latent space rather than on longer outputs. To reduce memory during looping, Dory1.0-4B caches keys and values only from the last loop, keeping its KV-cache footprint equal to that of a non-looped model at any loop count while retaining most of the accuracy gains. We open-source the BF16, MXFP8, NVFP4, and GGUF quantized checkpoints.",
+      "description_zh": "我们引入了 Dory1.0-4B，这是一个具有弹性深度的 40 亿参数循环（潜在循环）语言模型：单个检查点服务于不同的推理计算预算。 Dory1.0-4B 构建在归一化 Transformer (nGPT) 主干上，具有交错的滑动窗口和全注意力层，组织为输入块、共享循环块和输出块。据推断，循环块可以应用可变次数。我们用 6 万亿个代币对 Dory1.0-4B 进行了预训练。前 4.5 万亿个令牌在 NVFP4 中进行训练，然后额外的预训练将上下文长度扩展到 256K 个令牌。接下来，我们使用监督微调（SFT）和具有可验证奖励的强化学习（RLVR）对模型进行后训练，并使用难度感知循环课程将较难的提示路由到更深的循环。增加循环计数可以提高准确性，在编码、代理和长上下文基准测试中获得最大收益。通过两个或更多循环，Dory1.0-4B 在 12 个基准测试中的平均性能优于 Qwen3.5-9B、Gemma 4 12B 和 Gemma 4 26B-A4B 等较大模型。循环还使 Dory1.0-4B 在代理基准上更具令牌效率：使用四个循环，它生成的令牌比使用一个循环少 1.3-2.5 倍，因为额外的计算花费在潜在空间而不是较长的输出上。为了减少循环期间的内存，Dory1.0-4B 仅缓存最后一个循环的键和值，在任何循环计数下使其 KV 缓存占用量与非循环模型的占用量相同，同时保留大部分精度增益。我们开源了 BF16、MXFP8、NVFP4 和 GGUF 量化检查点。",
+      "authors": "Maxim Fishman, Simeng Sun, Shantanu Acharya, Faisal Ladhak, Brian Chmiel, Santiago Akle Serano, Ron Banner, Boris Ginsburg, Krishna C. Puvvada",
+      "url": "https://huggingface.co/papers/2611.03998",
       "score": 6,
       "meta": {
         "source": "huggingface",
         "upvotes": "6",
-        "paperId": "2610.38623"
+        "paperId": "2611.03998"
       }
     },
     {
-      "id": "2610.35219",
-      "title": "Multi-Agent Relay Thinking",
-      "title_zh": "多Agent接力思维",
-      "description": "Existing multi-agent collaboration (MAC) methods have primarily explored a group thinking collaboration topology, where agents independently generate solutions and aggregate their outputs. In this work, we investigate an alternative relay thinking topology, where reasoning ownership is dynamically transferred across agents, allowing subsequent agents to inherit and refine an evolving reasoning trajectory. We introduce Multi-Agent Confidence-guided Relay (MACR), a framework that enables dynamical relay collaboration among agents. The key challenge is determining when reasoning should be relayed and which agent should continue the process. method addresses this challenge through confidence-guided relay triggering and a bidding mechanism that selects the next agent based on its confidence. Experiments on four benchmarks show that method outperforms the strongest single-model strategies in accuracy, e.g., +3.3% on MathVista and +3.9% on MMStar, and remains on par with multi-agent strategies while consuming 6.0x less token overhead on HallusionBench and MMStar. Further analysis demonstrates that relay collaboration enables heterogeneous agents to progressively integrate complementary insights, combining heterogeneous capabilities across reasoning stages. Our source code is available at https://github.com/67L1/MACR.",
-      "description_zh": "现有的多智能体协作（MAC）方法主要探索了群体思维协作拓扑，其中智能体独立生成解决方案并聚合其输出。在这项工作中，我们研究了一种替代的中继思维拓扑，其中推理所有权在代理之间动态转移，允许后续代理继承和完善不断发展的推理轨迹。我们引入了多代理置信引导中继（MACR），这是一个支持代理之间动态中继协作的框架。关键的挑战是确定何时应该转发推理以及哪个代理应该继续该过程。该方法通过置信引导的中继触发和基于置信度选择下一个代理的竞价机制来解决这一挑战。四个基准测试的实验表明，该方法在准确性方面优于最强的单模型策略，例如，在 MathVista 上为 +3.3%，在 MMStar 上为 +3.9%，并且与多代理策略保持一致，同时在 HallusionBench 和 MMStar 上消耗的代币开销减少了 6.0 倍。进一步的分析表明，中继协作使异构代理能够逐步集成互补的见解，跨推理阶段组合异构功能。我们的源代码位于 https://github.com/67L1/MACR。",
-      "authors": "Xu Liu, Jungang Qiao, Guikun Chen, Xiaojuan Qi, Wenguan Wang",
-      "url": "https://huggingface.co/papers/2610.35219",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2610.35219"
-      }
-    },
-    {
-      "id": "2610.39639",
-      "title": "Where Do Vision Language Models Fail at 3D Reasoning?",
-      "title_zh": "视觉语言模型在 3D 推理中的失败之处在哪里？",
-      "description": "Vision-language models can get individual judgments right while struggling to recover and consistently use the exact properties of a 3D object. To characterize this gap, we introduce BedBench, a controlled benchmark of thirteen procedurally generated tasks spanning individual judgments and composite answers. Across twelve open-weight and four frontier models, per-color counting exposes a pronounced weakness: humans achieve 93.3% accuracy, compared with 7.2% for the best model. Targeted fine-tuning raises one model's accuracy from 3.0% to 68.6%, but reveals a further difficulty: its answers about the most common colors remain inconsistent with its own per-color counts. Supplying those counts as text improves its judgments, showing that recovering a property does not mean using it consistently. Reasoning, scaling, and added visual cues each improve individual judgments, but none makes exact answers reliable. To locate the difficulty, we probe Qwen3.5-27B: exact per-color counts remain recoverable at the language model's input, yet the model's answers rarely recover them (65.0% for the probe vs. 3.0% for the model). Image-removal controls further show that some apparent successes require no visual evidence. These findings motivate evaluating 3D reasoning by exact correctness, consistent use, and image dependence, rather than accuracy alone. Code and dataset are publicly available: https://github.com/leduckhai/BedBench",
-      "description_zh": "视觉语言模型可以在努力恢复和一致使用 3D 对象的精确属性的同时做出正确的个人判断。为了描述这一差距，我们引入了 BedBench，这是一个由十三个程序生成的任务组成的受控基准，涵盖个人判断和综合答案。在 12 个开放权重模型和 4 个前沿模型中，按颜色计数暴露出一个明显的弱点：人类的准确率达到 93.3%，而最佳模型的准确率仅为 7.2%。有针对性的微调将模型的准确率从 3.0% 提高到 68.6%，但也暴露出进一步的困难：它对最常见颜色的答案与其自身的每种颜色计数仍然不一致。将这些计数作为文本提供可以提高其判断力，这表明恢复财产并不意味着始终如一地使用它。推理、缩放和添加视觉提示都可以改善个人判断，但都无法使准确的答案变得可靠。为了定位困难，我们探测了 Qwen3.5-27B：在语言模型的输入中仍然可以恢复精确的每种颜色计数，但模型的答案很少恢复它们（探测为 65.0%，模型为 3.0%）。图像删除控制进一步表明，一些明显的成功不需要视觉证据。这些发现促使通过精确的正确性、一致的使用和图像依赖性来评估 3D 推理，而不仅仅是准确性。代码和数据集已公开：https://github.com/leduckhai/BedBench",
-      "authors": "Khai Le-Duc, Nguyen Kim Hai Bui, An Ngo, Nam D. Hoang, Yueqi Song, Jiarui Liu, Thai Quoc Hoang, Fang Wu, Chris Ngo, Terry Jingchen Zhang, Mona T. Diab, Ran Xu, Silvio Savarese, Xiao-Ming Wu",
-      "url": "https://huggingface.co/papers/2610.39639",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2610.39639"
-      }
-    },
-    {
-      "id": "2611.02074",
-      "title": "SWE-Trail: History-Guided Trajectory Collection for Coding Agent Training",
-      "title_zh": "SWE-Trail：用于编码代理训练的历史引导轨迹收集",
-      "description": "Coding agents solve repository issues through long sequences of exploration, editing, and validation. These trajectories are increasingly used as post-training data, so how they are collected shapes what the trained model learns. A common approach is to sample multiple trajectories independently for each issue and then select or curate them. However, as more trajectories are sampled independently, later trajectories become increasingly redundant, even though earlier trajectories could guide where subsequent collection effort should be spent. A natural way to use this history is to expose it to the coding agent as advice. But training on such trajectories can make the model rely on advice that is unavailable at test time, creating a train-test mismatch. Instead, we argue that history should guide where collection effort is spent, while the coding agent decides what to generate. We introduce SWE-Trail, a trajectory collector that uses earlier trajectories to guide subsequent collection while keeping that history outside the coding agent's context. During a new rollout, SWE-Trail uses history to identify a state where additional collection effort may be useful. There, the coding agent proposes candidate next actions from its ordinary context, and SWE-Trail briefly executes them from the same checkpoint to decide which route continues. We evaluate collection approaches by training student models on the trajectories they produce. For a 124B student initialized from Ling-3.0-flash-base, SWE-Trail improves mean resolution over independent sampling by 2.33 and 1.60 percentage points on SWE-bench Multilingual and SWE-bench Pro, respectively. Without history, the same pipeline produces more resolved trajectories than independent sampling, but improves by only 0.11 points on Multilingual. These results show the value of using history to guide collection without exposing it to the coding agent.",
-      "description_zh": "编码代理通过长时间的探索、编辑和验证序列来解决存储库问题。这些轨迹越来越多地用作训练后数据，因此它们的收集方式决定了训练模型的学习内容。一种常见的方法是针对每个问题独立采样多个轨迹，然后选择或管理它们。然而，随着越来越多的轨迹被独立采样，后来的轨迹变得越来越冗余，尽管早期的轨迹可以指导后续收集工作应该花在哪里。使用此历史记录的一种自然方法是将其作为建议公开给编码代理。但是，对此类轨迹进行训练可能会使模型依赖于测试时无法获得的建议，从而造成训练与测试不匹配。相反，我们认为历史应该指导收集工作的用途，而编码代理则决定生成什么。我们引入了 SWE-Trail，一种轨迹收集器，它使用早期轨迹来指导后续收集，同时将该历史记录保留在编码代理的上下文之外。在新的推出期间，SWE-Trail 使用历史记录来识别可能需要额外收集工作的状态。在那里，编码代理从其普通上��文中提出候选的下一步动作，SWE-Trail 从同一检查点短暂执行它们，以决定继续哪条路线。我们通过训练学生模型产生的轨迹来评估收集方法。对于从 Ling-3.0-flash-base 初始化的 124B 学生，SWE-Trail 在 SWE-bench Multilingual 和 SWE-bench Pro 上分别比独立采样提高了 2.33 个百分点和 1.60 个百分点。如果没有历史记录，相同的管道会比独立采样产生更多的解析轨迹，但在多语言上仅提高 0.11 个点。这些结果显示了使用历史记录来指导收集而不将其暴露给编码代理的价值。",
-      "authors": "Ziming Li, Lu Yu, Jiatan Huang, Qing Cui, Jun Zhou, Chuxu Zhang",
-      "url": "https://huggingface.co/papers/2611.02074",
-      "score": 34,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "34",
-        "paperId": "2611.02074"
-      }
-    },
-    {
-      "id": "2611.02332",
-      "title": "LEANGUARD: Lean-Verified Guardrails for Tool-Using Agents",
-      "title_zh": "LEANGUARD：针对工具使用代理的精益验证护栏",
-      "description": "Tool-using language-model agents often execute actions that their domain policies forbid. We present LeanGuard, a runtime that checks every proposed tool call against a policy written in Lean4 before the call reaches the environment. Policies combine state predicates with scoped past-time temporal operators over the execution history, evaluation is fail-closed, and the decision procedure is proved equivalent to a LeanLTL semantics. A denied call can be corrected in two ways. With feedback, the agent receives the violated rule and a hint; with proof-guided repair, Lean metaprogramming searches for a nearby call that preserves the user's intent and proves that the policy admits it, without the model. On Tau-Bench with five Qwen models (0.8B-27B), unguarded agents execute at least 33 calls that the Lean policy forbids, while LeanGuard executes none; with feedback, task success does not change significantly. On DTap, LeanGuard reduces direct prompt-injection success from 57.9% to 5.9%, and in telecom, where benign tasks need no writes, benign success is unchanged. Feedback reduces repeated blocked calls and raises task success for four of five models over a bare denial. On replayed denials, repair proves an admissible edit for 88 of 252 denials caused by argument values, in a median of 2,ms.",
-      "description_zh": "使用工具的语言模型代理经常执行其域策略禁止的操作。我们推出了 LeanGuard，这是一个运行时，可以在调用到达环境之前根据 Lean4 中编写的策略检查每个建议的工具调用。策略将状态谓词与执行历史上范围内的过去时间运算符相结合，评估是失败关闭的，并且决策过程被证明相当于 LeanLTL 语义。被拒绝的呼叫可以通过两种方式纠正。通过反馈，代理收到违反的规则和提示；通过证据引导的修复，精益元编��可以搜索附近的调用来保留用户的意图，并证明策略承认该意图，而无需模型。在具有五个 Qwen 模型 (0.8B-27B) 的 Tau-Bench 上，无人看守的代理执行至少 33 个精益策略禁止的调用，而 LeanGuard 则不执行任何调用；通过反馈，任务成功不会发生显着变化。在 DTap 上，LeanGuard 将直接提示注入的成功率从 57.9% 降低到 5.9%，而在电信中，良性任务不需要写入，良性成功保持不变。反馈减少了重复被阻止的呼叫，并提高了五分之四模型的任务成功率。在重放的拒绝中，修复证明了由参数值引起的 252 个拒绝中的 88 个是可接受的编辑，中位数为 2 毫秒。",
-      "authors": "Sreehari Sankar, Debargha Ganguly, Vikash Singh, Mohsen Hariri, Weicong Chen, Yanyan Zhang, Shouren Wang, Wang Yang, Chaoda Song, Alexander Nemecek, Osama Zafar, Idan Davidovich, Yuting Shao, Kai Ye, Biyao Zhang, Xinpeng Li, Joe Stubbs, Erman Ayday, Jing Ma, Vipin Chaudhary",
-      "url": "https://huggingface.co/papers/2611.02332",
+      "id": "2610.40574",
+      "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+      "title_zh": "每个代币都需要自己的老师：多老师自适应在策略自蒸馏",
+      "description": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to +5.9 over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
+      "description_zh": "事实证明，通过构建以特权引用为条件的教师，按策略自蒸馏（OPSD）对于训练后大型语言模型是有效的。然而，现有的方法要么在整个训练过程中通过始终将其暴露于完整参考来使教师保持固定，要么在每个响应中通过仅在响应中自适应地改变部分参考暴露来固定教师。在本文中，我们认为它们都不够。相反，每个标记都需要自己的老师，因为老师的偏好可以在同一响应中逐个标记地变化。通过教师干预试点研究，我们验证了不同代币的教师偏好不同，并揭示��可以通过多数投票和基于 KL 的选择为每个代币确定首选教师。受这些发现的启发，我们提出了多教师自适应同策略自蒸馏（MTA-OPSD），这是第一个令牌级自适应 OPSD 方法。我们的方法构建了一个由候选教师组成的多教师池，并使每个令牌能够在训练期间自适应地选择其首选教师。在数学推理任务上使用 Qwen3 模型进行的实验表明，MTA-OPSD 始终优于现有的 OPSD 方法，与基本模型相比平均增益高达 +5.9，这凸显了在令牌级别调整教师监督的重要性。代码可在 https://github.com/xingzhejun/MTA-OPSD 获取。",
+      "authors": "Yifu Luo, Chuang Ma, Zeyu Chen, Enkelejda Kasneci, Qi Chen, Gjergji Kasneci",
+      "url": "https://huggingface.co/papers/2610.40574",
       "score": 9,
       "meta": {
         "source": "huggingface",
         "upvotes": "9",
-        "paperId": "2611.02332"
+        "paperId": "2610.40574"
       }
     },
     {
-      "id": "2611.01860",
-      "title": "Advances in Agentic Computer Graphics",
-      "title_zh": "代理计算机图形学的进展",
-      "description": "Computer graphics is built on code. Large language model (LLM) agents can now generate graphics code and iteratively refine it through various feedback. This capability opens the door to a potentially new paradigm of computer graphics, with graphics algorithms increasingly built around agentic systems to automate progressively complex tasks. Over the past years, research on agentic graphics has expanded rapidly across a diverse range of tasks. This rapid growth makes it increasingly difficult for manual literature reviews to keep pace with new developments. At the same time, similar ideas are often described using different terminology across these tasks, further complicating efforts to develop a systematic understanding of the field. In this report, we address these challenges through two contributions. First, we introduce a unified taxonomy for characterizing agentic systems across diverse computer graphics tasks. Second, we develop an agentic literature system that can assist human researchers in analyzing existing and newly published papers at scale. Building on these contributions, we analyze emerging research trends and discuss open challenges in coordinating agents and tools across graphics tasks, designing interfaces and representations for human-agent collaboration, sustaining long-horizon planning and refinement, and reliably evaluating interactive graphics systems.",
-      "description_zh": "计算机图形学是建立在代码之上的。大型语言模型 (LLM) 代理现在可以生成图形代码并通过各种反馈迭代地完善它。这一功能为计算机图形学的潜在新范式打开了大门，图形算法越来越多地围绕代理系统构建，以自动执行逐渐复杂的任务。在过去的几年里，代理图形的研究在各种任务中迅速扩展。这种快速增长使得手工文献综述越来越难以跟上新发展的步伐。与此同时，在这些任务中，类似的想法经常使用不同的术语来描述，这使得系统地理解该领域的工作进一步复杂化。在本报告中，我们通过两项贡献应对这些挑战。首先，我们引入了一个统一的分类法，用于描述不同计算机图形任务中的代理系统的特征。其次，我们开发了一个代理文献系统，可以帮助人类研究人员大规模分析现有和新发表的论文。在这些贡献的基础上，我们分析了新兴的研究趋势，并讨论了跨图形任务协调代理和工具、设计人机协作的界面和表示、维持长期规划和细化以及可靠地评估交互式图形系统等方面的开放挑战。",
-      "authors": "Hengyu Liu, Jihyeon Je, Ruiqi Wang, Mingxuan Wu, Haven Feng, Qixing Huang, Georgios Pavlakos, Hao Zhang, Jiajun Wu, Maneesh Agrawala, Leonidas Guibas, R. Kenny Jones, Shangzhe Wu, Guandao Yang",
-      "url": "https://huggingface.co/papers/2611.01860",
-      "score": 108,
+      "id": "2611.04785",
+      "title": "Kierston & KierstonBench: Simulation of Allentown, PA and Evaluation of Language Models in Crime Investigation and Surveillance Tasks",
+      "title_zh": "Kierston 和 KierstonBench：宾夕法尼亚州阿伦敦的模拟以及犯罪调查和监视任务中语言模型的评估",
+      "description": "Large language models are candidates for collecting and analyzing records in criminal investigations and mass surveillance. Their capability and accuracy in this work cannot currently be measured. Real deployments lack the ground truth needed to score a model's conclusions, and no benchmark evaluates these capabilities in a simulated environment. We present Kierston, a city-scale simulation engine, and KierstonBench, a benchmark that tests these capabilities against known simulated events. Kierston models approximately 125,000 residents of Allentown, Pennsylvania, generating their daily activities and the telecommunications, financial, administrative and license-plate records that surveillance and investigative systems collect about them. These records derive from a common behavioral timeline and are distributed across sources representing separate providers. Models investigate through a restricted records interface, linking observations across sources without access to the underlying simulation. The benchmark comprises 32 task families covering record linkage, routine reconstruction, incident investigation and assessment of deceptive accounts. In an evaluation of sixteen language models, most could not perform records investigation and submitted identifications the records did not support. A small number of frontier models solved most of the tasks and abstained when evidence was insufficient. In some cases these models still fell for common deceptions and assumptions, and none replaced an investigator.",
+      "description_zh": "大型语言模型是收集和分析刑事调查和大规模监视记录的候选者。目前无法衡量他们在这项工作中的能力和准确性。实际部署缺乏对模型结论进行评分所需的基本事实，并且没有基准可以在模拟环境中评估这些功能。我们推出了 Kierston（城市规模的模拟引擎）和 KierstonBench（根据已知模拟事件测试这些功能的基准）。 Kierston 对宾夕法尼亚州阿伦敦的大约 125,000 名居民进行了建模，生成他们的日常活动以及监视和调查系统收集的有关他们的电信、财务、行政和车牌记录。这些记录源自共同的行为时间线，并分布在代表不同提供商的来源之间。模型通过受限记录界面进行调查，将跨来源的观察结果链接起来，而无需访问底层模拟。该基准包括 32 个任务系列，涵盖记录链接、日常重建、事件调查和欺骗性账户评估。在对十六种语言模型的评估中，大多数语言模型无法进行记录调查并提交了记录不支持的标识。少数前沿模型解决了大部分任务，并在证据不足时弃权。在某些情况下，这些模型仍然容易受到常见的欺骗和假设的影响，并且没有一个可以取代调查员。",
+      "authors": "Andrew Semenov, Svyatoslav Dorofeev",
+      "url": "https://huggingface.co/papers/2611.04785",
+      "score": 1,
       "meta": {
         "source": "huggingface",
-        "upvotes": "108",
-        "paperId": "2611.01860"
+        "upvotes": "1",
+        "paperId": "2611.04785"
       }
     },
     {
-      "id": "2611.01815",
-      "title": "When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?",
-      "title_zh": "潜在预测误差何时支持视频世界模型中的物理惊喜声明？",
-      "description": "Prediction errors from video world models are often treated as physical surprise, but they can also reflect appearance, static content, motion, or ordinary prediction difficulty. We present an evaluation framework that separates what frozen representations contain, how they organize appearance and physical differences, and what changes a model's own prediction error. On IntPhys2, a benchmark of physically possible and impossible events, we compare representations from latent prediction, masked pixel reconstruction, and simple visual statistics. Appearance remains easy to decode, while V-JEPA2 exposes modest information about whether events are possible or impossible. Looking at the latent geometry, appearance changes become smaller compared with differences between videos, their directions line up more consistently across scenes, and their overlap with physical changes decreases in deeper layers. Across action-conditioned models, incorrect actions raise prediction error, while appearance changes also produce substantial responses. In Physion++ video clips, repeating a single frame can produce higher error than the original clip, while changing color throughout the clip can lower it. Using Kubric, a simulation and rendering framework, we find that impossible events can produce lower error than possible events. A fixed error threshold also incorrectly flags many possible events as impossible. A model can therefore represent physical information and respond to incorrect actions without its native prediction error reliably measuring physical surprise.",
-      "description_zh": "视频世界模型的预测错误通常被视为物理意外，但它们也可以反映外观、静态内容、运动或普通预测难度。我们提出了一个评估框架，该框架区分了冻结表示所包含的内容、它们如何组织外观和物理差异，以及模型自身预测误差的变化。在 IntPhys2（物理上可能和不可能事件的基准）上，我们比较了潜在预测、掩模像素重建和简单视觉统计的表示。外观仍然易于解码，而 V-JEPA2 公开了有关事件是否可能或不可能的适度信息。观察潜在的几何形状，与视频之间的差异相比，外观变化变得更小，它们的方向在场景中排列得更加一致，并且它们与物理变化的重叠在更深的层中减少。在动作条件模型中，不正确的动作会增加预测误差，而外观变化也会产生实质性的反应。在 Physion++ 视频剪辑中，重复单个帧可能会产生比原始剪辑更高的错误，而更改整个剪辑的颜色可以降低错误。使用模拟和渲染框架 Kubric，我们发现不可能的事件比可能的事件产生的错误要低。固定错误阈值还会错误地将许多可能的事件标记为不可能的事件。因此，模型可以表示物理信息并对不正确的动作做出响应，而无需其固有的预测误差可靠地测量物理惊喜。",
-      "authors": "Anton Hristov, Aleksandar Slavov, Vasil Vasilev",
-      "url": "https://huggingface.co/papers/2611.01815",
-      "score": 23,
+      "id": "2611.05193",
+      "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
+      "title_zh": "用于组合图像检索的分解 MLLM 嵌入",
+      "description": "Composed Image Retrieval (CIR) aims to retrieve a target image given a reference image and a modification text. Although recent approaches leveraging Multimodal Large Language Models (MLLMs) have shown significant progress, we argue that the MLLM's compositional understanding remains underutilized. This stems from directly mapping composed queries into a retrieval embedding via contrastive supervision alone, without explicitly resolving the intended visual modifications. In this work, we introduce Factorized MLLM Embeddings (FactEmbed), which decouples compositional query comprehension from building discriminative embeddings. Rather than directly projecting the composed query into a single embedding without internal reasoning, FactEmbed employs a set of factorized latents that simulate the intended visual modifications via an intermediate target imagination objective. This process encourages the latents to ground into target semantics before forming discriminative representations for retrieval. Subsequently, to propagate these factorized representations throughout the model for retrieval, we optimize a factor-level contrastive loss while distilling the decomposed representations into a deeper attention layer of the MLLM. Finally, for efficient inference, we retain the [EOS] token to establish a global-level embedding on top of these factorized latents, while we exploit the mean-pooled factorized latents to rerank a short candidate list at negligible cost, as both are produced by the same forward pass. Extensive evaluations demonstrate that FactEmbed outperforms prior works across CIR benchmarks.",
+      "description_zh": "组合图像检索（CIR）旨在在给定参考图像和修改文本的情况下检索目标图像。尽管最近利用多模态大语言模型 (MLLM) 的方法已经取得了重大进展，但我们认为 MLLM 的组合理解仍未得到充分利用。这源于仅通过对比监督将组合查询直接映射到检索嵌入，而没有明确解决预期的视觉修改。在这项工作中，我们引入了因子化 MLLM 嵌入 (FactEmbed)，它将组合查询理解与构建判别性嵌入解耦。 FactEmbed 不是在没有内部推理的情况下直接将组合查询投影到单个嵌入中，而是采用一组因式分解的潜在变量，通过中间目标想象目标来模拟预期的视觉修改。这个过程鼓励潜伏在形成用于检索的区分性表示之前深入了解目标语义。随后，为了在整个模型中传播这些因式分解表示以进行检索，我们优化了因子级对比损失，同时将分解的表示提炼到 MLLM 的更深的关注层中。最后，为了高效推理，我们保留 [EOS] 令牌以在这些因式分解潜在变量之上建立全局级嵌入，同时我们利用均值池因式分解潜在变量以可忽略不计的成本对短候选列表进行重新���序，因为两者都是由相同的前向传递生成的。广泛的评估表明，FactEmbed 在 CIR 基准测试中的表现优于之前的工作。",
+      "authors": "WonJun Moon, Seongchan Kim, Dahun Kim, Seungryong Kim",
+      "url": "https://huggingface.co/papers/2611.05193",
+      "score": 43,
       "meta": {
         "source": "huggingface",
-        "upvotes": "23",
-        "paperId": "2611.01815"
+        "upvotes": "43",
+        "paperId": "2611.05193"
       }
     },
     {
-      "id": "2611.03393",
-      "title": "TaoMate-FVSR:Audio-Guided Facial Video Restoration",
-      "title_zh": "TaoMate-FVSR：音频引导面部视频修复",
-      "description": "AI-generated videos often depict people within detailed scenes while leaving their small facial regions poorly resolved. Visual super-resolution can sharpen these regions without resolving whether the recovered lips and teeth agree with the spoken audio. We present an audio-guided facial video restoration framework that addresses this ambiguity within a reference-guided video flow model. Source--noise mixing initializes reconstruction from a partially preserved observation, and structured reference injection separates appearance anchors from continuous motion context. Training combines restoration of degraded images and videos with correction of degraded dubbed sources under target audio. Appearance and synchronization supervision allow the model to recover facial detail and support visual dubbing when the audio is replaced. On talking-head restoration benchmarks, our method achieves the best paired perceptual similarity and synchronization scores among the compared restoration methods. Component comparisons examine audio conditioning, the reconstruction formulation, and reference injection. Native AIGC examples further illustrate the recovery of lip contours, dental structure, and surrounding facial texture in scene-level footage. injection. Native AIGC examples further illustrate the recovery of lip contours, dental structure, and surrounding facial texture in scene-level footage.",
-      "description_zh": "人工智能生成的视频通常会在详细的场景中描绘人物，但他们的小面部区域的分辨率却很差。视觉超分辨率可以锐化这些区域，而无需解决恢复的嘴唇和牙齿是否与口语音频一致的问题。我们提出了一种音频引导的面部视频恢复框架，该框架解决了参考引导的视频流模型中的这种模糊性。源噪声混合从部分保留的观察中初始化重建，结构化参考注入将外观锚点与连续运动上下文分开。训练将退化图像和视频的恢复与目标音频下退化的配音源的校正结合起来。外观和同步监督允许模型在替换音频时恢复面部细节并支持视觉配音。在头部说话恢复基准上，我们的方法在比较的恢复方法中实现了最佳配对感知相似性和同步分数。组件比较检查音频调节、重建公式和参考注入。原生 AIGC 示例进一步说明了场景级镜头中嘴唇轮廓、牙齿结构和周围面部纹理的恢复。注射。原生 AIGC 示例进一步说明了场景级镜头中嘴唇轮廓、牙齿结构和周围面部纹理的恢复。",
-      "authors": "Xinyang Li, Zeran Xu, Qijun Gan, Chenwei Zhang, Meiguang Jin, Junfeng Ma",
-      "url": "https://huggingface.co/papers/2611.03393",
-      "score": 2,
+      "id": "2611.04814",
+      "title": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
+      "title_zh": "本地少思考：推理压缩的本地偏好学习",
+      "description": "Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given the current state. We propose LoCo, a local preference learning method for reasoning compression. LoCo detects candidate overthinking states from the model's own traces, freezes the corresponding reasoning prefixes, regenerates shorter verified continuations from the same states, and trains on the resulting state-conditioned preference pairs with DPO. This formulation teaches the model when to continue reasoning and when to conclude, rather than simply encouraging shorter trajectories overall. We construct training data entirely from self-generated mathematical traces and evaluate LoCo on five mathematical and three code generation benchmarks. LoCo reduces completion length by 41.7\\%--45.4\\% on mathematics and 23.4\\%--36.3\\% on code, while maintaining or improving accuracy and achieving the best AUC across all code benchmarks. LoCo consistently improves the accuracy-efficiency trade-off on mathematics and transfers effectively to code generation despite math-only training, demonstrating the cross-domain generality of local preference learning for reasoning compression. The code and model will be publicly released at https://github.com/MuyaoYuan/LoCo.",
+      "description_zh": "大型推理模型在具有挑战性的任务上表现出色，但其较长的思维链往往会在获得足够信息后继续深思熟虑，从而产生巨大的推理成本。现有的推理压缩方法主要对推理轨迹进行操作，较少关注在给定当前状态下是否需要进一步推理的局部决策。我们提出了 LoCo，一种用于推理压缩的局部偏好学习方法。 LoCo 从模型自身的轨迹中检测候选过度思考状态，冻结相应的推理前缀，从相同状态重新生成更短的经过验证的延续，并使用 DPO 对生成的状态条件偏好对进行训练。这个公式教导模型何时继续推理以及何时得出结论，而不是简单地鼓励整体上较短的轨迹。我们完全根据自生成的数学轨迹构建训练数据，并在五个数学基准和三个代码生成基准上评估 LoCo。 LoCo 将数学上的完成长度减少了 41.7\\%--45.4\\%，将代码上的完成长度减少了 23.4\\%--36.3\\%，同时保持或提高了准确性，并在所有代码基准测试中实现了最佳 AUC。尽管仅进行数学训练，LoCo 仍不断改进数学的准确性与效率权衡，并有效地转移到代码生成，这证明了推理压缩的局部偏好学习的跨域通用性。代码和模型将在https://github.com/MuyaoYuan/LoCo公开发布。",
+      "authors": "Muyao Yuan, Liyan Xu, Weizhan Zhang, Muyan Jiao, Jiangnan Li, Jinchao Zhang, Jie Zhou",
+      "url": "https://huggingface.co/papers/2611.04814",
+      "score": 65,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2611.03393"
+        "upvotes": "65",
+        "paperId": "2611.04814"
+      }
+    },
+    {
+      "id": "2611.05306",
+      "title": "You don't need long context",
+      "title_zh": "你不需要很长的上下文",
+      "description": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
+      "description_zh": "后来的代币的生成成本比早期的代币更高。在前沿开放重量模型上，成本差异可能高达 7 倍。通过频繁的压缩，我们在广泛的长视野和长输入任务中展示了前沿语言模型在维护短上下文时几乎没有牺牲任务准确性。我们进一步证明，即使在每个上下文最多执行一个操作时，LLM 性能也不会在长期软件工程任务中崩溃，并在此基础上我们概述了语义状态空间模型（SSSM）的概念。我们的研究结果质疑长上下文语言模型的必要性。",
+      "authors": "Peter Belcak, Saurav Muralidharan, Jindong Jiang, Yonggan Fu, Wonmin Byeon, Hanrong Ye, Ryan Angilly, Ali Taghibakhshi, Shih-Yang Liu, Siru Ouyang, Greg Heinrich, Pavlo Molchanov",
+      "url": "https://huggingface.co/papers/2611.05306",
+      "score": 9,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "9",
+        "paperId": "2611.05306"
+      }
+    },
+    {
+      "id": "2611.02476",
+      "title": "GigaSpeech 3: Scaling Multi-Dialect Arabic Speech Recognition with Weakly Labeled Data",
+      "title_zh": "GigaSpeech 3：使用弱标记数据扩展多方言阿拉伯语语音识别",
+      "description": "Dialectal Arabic speech recognition remains constrained by the scarcity of dialect-resolved transcribed speech despite the abundance of web audio. We introduce GigaSpeech 3, a corpus of 39,000 hours and 10 million weakly transcribed speech segments covering Algerian, Egyptian, Iraqi, Saudi, and Syrian Arabic. Starting from 60 hours of manual transcription per dialect, we train labeling models using speech-recognition-biased self-supervised learning and apply them to dialect-matched web audio. Data selection and four rounds of noisy-student refinement for Saudi and Syrian Arabic yield the final corpus. We validate its utility through dialect-specific and multi-dialect speech recognition training and cross-domain evaluation. On GigaSpeechBench, the final dialect-specific models outperform their labeling models across all five dialects and achieve a macro-average word error rate of 23.86%, a 16.6% relative reduction from the strongest third-party system covering all five dialects, while outperforming the best third-party result on three dialects. A multi-dialect model using self-predicted dialect identities achieves a macro-average word error rate of 25.51% while also supporting Modern Standard Arabic. Across eight conditions from three external corpora, a GigaSpeech 3-trained Zipformer achieves the lowest word error rate among six evaluated models in every condition, while adapting the Qwen3 speech recognizer on GigaSpeech 3 improves performance across all eight conditions. We release the corpus and recipes as a foundation for dialect-aware Arabic speech processing.",
+      "description_zh": "尽管网络音频丰富，但阿拉伯语方言语音识别仍然受到方言解析转录语音稀缺的限制。我们推出了 GigaSpeech 3，这是一个包含 39,000 小时和 1000 万个弱转录语音片段的语料库，涵盖阿尔及利亚语、埃及语、伊拉克语、沙特语和叙利亚阿拉伯语。从每种方言 60 小时的手动转录开始，我们使用基于语音识别的自监督学习来训练标签模型，并将其应用于方言匹配的网络音频。针对沙特和叙利亚阿拉伯语的数据选择和四轮嘈杂学生细化产生了最终语料库。我们通过特定方言和多方言语音识别训练和跨域评估来验证其实用性。在 GigaSpeechBench 上，最终的方言特定模型在所有五种方言上都优于其标记模型，宏观平均单词错误率为 23.86%，比涵盖所有五种方言的最强第三方系统相对降低了 16.6%，同时在三种方言上的表现优于第三方的最佳结果。使用自我预测方言身份的多方言模型实现了 25.51% 的宏观平均单词错误率，同时还支持现代标准阿拉伯语。在来自三个外部语料库的八个条件下，经过 GigaSpeech 3 训练的 Zipformer 在每个条件下的六个评估模型中实现了最低的单词错误率，同时在 GigaSpeech 3 上采用 Qwen3 语音识别器提高了所有八个条件下的性能。我们发布语料库和配方作为方言感知的阿拉伯语语音处理的基础。",
+      "authors": "Junzhe Liu, Yujie Tu, Yifan Yang, Peng Wang, Haoran Wang, Guodong Lin, Leyan Liao, Chengquan Zhang, Zhifu Gao, Xiangang Li, Qinyuan Cheng, Xipeng Qiu, Wei-Qiang Zhang, Guoguo Chen, Kai Yu, Xie Chen",
+      "url": "https://huggingface.co/papers/2611.02476",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2611.02476"
       }
     }
   ]
