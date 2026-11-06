@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-05T00:30:47.818Z",
+  "updatedAt": "2026-11-06T00:32:33.662Z",
   "count": 15,
   "items": [
     {
-      "id": "2611.01621",
-      "title": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
-      "title_zh": "FinForesight：金融预测深度研究系统的诊断回测基准",
-      "description": "Anticipating financial outcomes requires synthesizing evolving evidence and reasoning under uncertainty, making deep research systems promising tools for forecasting. Yet evaluating forecasting ability is challenging because historical backtests may reward memorized outcomes or information retrieved after the forecast date. Live forecasting avoids direct access to realized outcomes, but feedback arrives only after events resolve. To obtain timely feedback and assess historical scores, we introduce FinForesight, a diagnostic backtesting benchmark for financial deep research systems. Across the Chinese, U.S., and Hong Kong markets, the benchmark evaluates four forecasting tasks: valuation, return ranking, event direction, and future financial fundamentals. Two capability diagnostic tasks assess counterfactual reasoning and financial calculation, scored separately from forecasting performance. Our harness-compatible framework restricts retrieved evidence to information available at the forecast date. We compare pretraining-era, resolved post-cutoff, and live evaluations to test whether controlled backtests approximate future performance. Pretraining-era scores exceed post-cutoff scores in most temporal comparisons, and stronger retrieval controls narrow the gap between post-cutoff backtests and live results. Forecasting attribution and robustness analyses reveal how scores respond to retrieval policy and how predictions respond to prompt rewrites and numerical perturbations. The code and benchmark data are publicly available.",
-      "description_zh": "预测财务结果需要在不确定性下综合不断变化的证据和推理，使深度研究系统成为有希望的预测工具。然而，评估预测能力具有挑战性，因为历史回测可能会奖励记忆的结果或预测日期后检索的信息。实时预测避免直接访问已实现的结果，但反馈只有在事件解决后才会到达。为了获得及时反馈并评估历史分数，我们引入了 FinForesight，这是一种针对金融深度研究系统的诊断回测基准。该基准在中国、美国和香港市场评估了四项预测任务：估值、回报排名、事件方向和未来财务基本面。两项能力诊断任务评估反事实推理和财务计算，与预测绩效分开评分。我们的线束兼容框架将检索到的证据限制为预测日期可用的信息。我们比较预训练时代、已解决的截止后和实时评估，以测试受控回测是否接近未来的表现。在大多数时间比较中，训练前时代的分数超过截止后分数，更强的检索控制缩小了截止后回测和实时结果之间的差距。预测归因和稳健性分析揭示了分数如何响应检索策略以及预测如何响应即时重写和数值扰动。代码和基准数据是公开的。",
-      "authors": "Fengyuan Liu, Mukai Li, Jieshun You, Yilin Zheng, Chenjia Min, Yizhou Zhang, Harper Chen, Qi Liu",
-      "url": "https://huggingface.co/papers/2611.01621",
-      "score": 1,
+      "id": "2611.03768",
+      "title": "Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention",
+      "title_zh": "多层索引器：DeepSeek稀疏注意力中的重叠选择和注意力",
+      "description": "Sparse attention cuts the cost of long-context inference by making the attention matrix sparse: each query attends only a subset of the sequence, chosen by a fixed pattern or, in recent production LLMs, learned per query. In DeepSeek Sparse Attention (DSA), the attention of DeepSeek-V3.2 and the GLM-5 family, every layer is preceded by a lightning indexer that scores the whole cache and keeps the k=2048 highest-scoring tokens for the layer to attend. At long context this indexer scan, not the sparse attention it feeds, is where the decode time goes. But adjacent layers select nearly the same tokens, so a layer can attend the selection of the previous indexer layer instead of its own. This removes the dependency: each indexer then runs concurrently with the attention of its layer. The resulting Multi-layer Indexer (MLI) needs no retraining and no new weights. Its default realization changes no kernel, running inside SGLang's production decode graph; an optional fused decode kernel accelerates it further on DeepSeek-V3.2. MLI composes with IndexCache (the cross-layer reuse GLM-5.2 ships as IndexShare): IndexCache drops the indexer from some layers, and MLI hides the scan on the rest. We serve DeepSeek-V3.2 and GLM-5 under IndexCache's protocol at retentions 1/2 to 1/32 (the fraction of layers that keep an indexer) and contexts 10K to 195K. At equal retention the composition decodes faster than IndexCache: up to 14.5% faster on DeepSeek-V3.2 and 9.8% on GLM-5 at 1/2, and 7.9% and 5.1% at 1/4, largest where IndexCache keeps the most indexers and growing with context. At retention 1/r it is faster still than IndexCache at 1/(2r) while keeping twice the fresh selections: at 128K it reaches 1.32x the unmodified model's decode throughput at 1/4, above IndexCache's 1.28x at 1/8. Its LongBench, RULER and LongBench v2 accuracy stays within a few percentage points of IndexCache's.",
+      "description_zh": "稀疏注意力通过使注意力矩阵稀疏来降低长上下文推理的成本：每个查询仅关注序列的一个子集，由固定模式选择，或者在最近的生产LLM中，每个查询都学习。在 DeepSeek 稀疏注意力 (DSA)、DeepSeek-V3.2 和 GLM-5 系列的注意力中，每一层之前都有一个闪电索引器，该索引器对整个缓存进行评分，并保留 k=2048 个最高得分令牌供该层参与。在长上下文中，解码时间花在索引器扫描上，而不是它所提供的稀疏注意力上。但相邻层选择几乎相同的标记，因此层可以参与前一个索引器层的选择，而不是自己的选择。这消除了依赖性：每个索引器然后与其层的注意力同时运行。由此产生的多层索引器 (MLI) 不需要重新训练，也不需要新的权重。它的默认实现不改变内核，在 SGLang 的生产解码图中运行；可选的融合解码内核可在 DeepSeek-V3.2 上进一步加速。 MLI 与 IndexCache 组合（跨层重用 GLM-5.2 作为 IndexShare 提供）：IndexCache 从某些层删除索引器，MLI 隐藏其余层的扫描。我们在 IndexCache 协议下提供 DeepSeek-V3.2 和 GLM-5，保留量为 1/2 到 1/32（保留索引器的层的分数），上下文为 10K 到 195K。在保留相同的情况下，该组合的解码速度比 IndexCache 更快：在 1/2 时，DeepSeek-V3.2 上快了 14.5%，在 GLM-5 上快了 9.8%，在 1/4 时分别快了 7.9% 和 5.1%，其中 IndexCache 保留了最多的索引器，并随着上下文而增长。在保留 1/r 时，它仍然比 IndexCache 在 1/(2r) 时更快，同时保留两倍的新鲜选择：在 128K 时，它达到未修改模型解码吞吐量的 1.32 倍（1/4 时），高于 IndexCache 1/8 时的 1.28 倍。它的 LongBench、RULER 和 LongBench v2 准确度与 IndexCache 的准确度相差几个百分点。",
+      "authors": "Serdarcan Dilbaz, Arjun Krishna, Kiran Kamble, Daniel M. Bikel",
+      "url": "https://huggingface.co/papers/2611.03768",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.01621"
+        "upvotes": "3",
+        "paperId": "2611.03768"
       }
     },
     {
-      "id": "2610.35497",
-      "title": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
-      "title_zh": "当细粒度的信用分配有所帮助和有害时：通过视频编辑的多模式代理强化学习",
-      "description": "Reinforcement learning (RL) has shown promise for training multimodal agents to reason and use tools. However, it remains unclear when fine-grained credit assignment improves learning and when it fails to improve task performance. Video editing provides a useful testbed for this question, combining multimodal perception, long-horizon planning, and tool use with delayed outcome feedback. We construct four movie-trailer editing task types---Content Selection, Narrative Sequencing, Rough Cut, and Fine Cut---that reflect real-world editing workflows and span different levels of task complexity and interaction horizon. Decaying process rewards provides the largest benefit on Fine Cut, with a 45.4% relative gain over outcome-only GRPO on tasks averaging more than 60 turns under outcome-only GRPO. On the three shorter-horizon task types averaging 30--40 turns under the same baseline, outcome-only GRPO remains competitive, with decaying process rewards yielding at most a 10.4% relative gain. Process rewards from an LLM judge initially improve tool use and encourage visual inspection. As training progresses, however, GRPO+PRM with a fixed process-reward weight increasingly exhibits excessive reasoning and redundant tool calls: process rewards continue to rise while task completion rates and outcome scores decline. Decaying the process-reward weight to zero mitigates this reward-hacking behavior while preserving the early gains. Despite dense token-level supervision, on-policy self-distillation (OPSD) yields little improvement or substantial degradation and is highly sensitive to the choice of privileged information. Our analysis reveals differences in teacher--student disagreement and gradient magnitudes, and suggests possible dilution of informative signals over long trajectories.",
-      "description_zh": "强化学习 (RL) 在训练多模式智能体推理和使用工具方面显示出良好的前景。然而，目前尚不清楚细粒度学分分配何时可以改善学习，何时不能提高任务绩效。视频编辑为这个问题提供了一个有用的测试平台，它将多模态感知、长期规划和工具使用与延迟结果反馈结合起来。我们构建了四种电影预告片编辑任务类型——内容选择、叙事排序、粗剪和精剪——反映了现实世界的编辑工作流程，涵盖了不同级别的任务复杂性和交互范围。衰减过程奖励为 Fine Cut 提供了最大的好处，在仅结果 GRPO 下平均超过 60 轮的任务上，与仅结果 GRPO 相比，相对增益为 45.4%。在相同基线下平均 30--40 轮的三种短期任务类型中，仅结果的 GRPO 仍然具有竞争力，随着过程奖励的衰减最多产生 10.4% 的相对收益。LLM评委的奖励流程最初可以改善工具的使用并鼓励目视检查。然而，随着训练的进展，具有固定过程奖励权重的 GRPO+PRM 越来越多地表现出过度推理和冗余工具调用：过程奖励持续上升，而任务完成率和结果分数下降。将过程奖励权重降低到零可以减轻这种奖励黑客行为，同时保留早期收益。尽管有密集的代币级监管，但策略自蒸馏（OPSD）几乎没有带来任何改善或大幅退化，并且对特权信息的选择高度敏感。我们的分析揭示了师生分歧和梯度大小的差异，并表明长轨迹上的信息信号可能会被稀释。",
-      "authors": "Lei Zhao, Zongheng Cao, Xinyu Hu",
-      "url": "https://huggingface.co/papers/2610.35497",
-      "score": 0,
+      "id": "2611.04408",
+      "title": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
+      "title_zh": "Halley：光学人工智能数据中心网络的预测控制平面",
+      "description": "A frontier AI model is trained in an AI data center, on tens of thousands of accelerators joined by a dedicated network, and every training step ends with all of them exchanging data at once. Between racks, that network is optical, and each of its four layers, from lasers to switches, runs a fixed or after-the-fact policy. Lasers sharing an enclosure, cooling, and power can fail together. At a fixed spare ratio, correlated failure provably caps a pool's availability however large it grows. In this paper, we present a comprehensive predictive control plane framework, called Halley, that reads each resource's next state and acts before the failure occurs. It has four components, each carrying a formal guarantee: LightReserve that sizes the laser pool to provide a coverage bound, FoldFit that schedules the switch within 11/9 of the optimal, ThermaLead that holds a microring with one-step-ahead control, and TriageGuard that protects the highest-risk modules first. Halley gives each layer a predictive controller that defers to the deployed policy when unsure. Composed from simulations at that point, effective goodput, the share of ideal throughput kept, rises from 65.2\\% to 76.5\\% if a window that exhausts its spares is lost. If only the dark channels' bandwidth is lost, it reaches 67.4\\%. Per megawatt, that is up to 1.03--1.17 times the training; for the same training, up to 3.3--14.7\\% less data center capacity. Halley's fallback circuits are formally verified and are shown to achieve close timing on a commercial FPGA, and pass a 130~nm signoff.",
+      "description_zh": "前沿人工智能模型在人工智能数据中心、由专用网络连接的数万个加速器上进行训练，每个训练步骤都以所有加速器同时交换数据结束。在机架之间，该网络是光纤网络，从激光器到交换机，其四层中的每一层都运行固定或事后策略。共享外壳、冷却和电源的激光器可能会同时发生故障。在固定备用率下，无论池增长到多大，相关故障都可能限制池的可用性。在本文中，我们提出了一个名为 Halley 的综合预测控制平面框架，它读取每个资源的下一个状态并在故障发生之前采取行动。它有四个组件，每个组件都有正式的保证：LightReserve 调整激光池大小以提供覆盖范围，FoldFit 将切换安排在最佳值的 11/9 以内，ThermaLead 持有微环并进行一步控制，TriageGuard 首先保护最高风险的模块。 Halley 为每一层提供了一个预测控制器，在不确定时会遵循已部署的策略。从当时的模拟来看，如果耗尽备用资源的窗口丢失，有效吞吐量（保留的理想吞吐量的份额）将从 65.2% 上升到 76.5%。如果仅损失暗通道的带宽，则达到 67.4%。每兆瓦，即达到训练的1.03--1.17倍；对于相同的训练，数据中心容量最多可减少 3.3--14.7%。 Halley 的回退电路经过正式验证，并显示在商用 FPGA 上实现了接近的时序，并通过了 130nm 签核。",
+      "authors": "Manav Mishra, Krishna M. Sivalingam",
+      "url": "https://huggingface.co/papers/2611.04408",
+      "score": 29,
       "meta": {
         "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2610.35497"
+        "upvotes": "29",
+        "paperId": "2611.04408"
       }
     },
     {
-      "id": "2611.00352",
-      "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
-      "title_zh": "实体替换响应的交叉提示重用",
-      "description": "With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions to a target question about the same entity, comparing the predicted log-probability shift between two relations' published answers, given known answer prefixes, with the measured one. Hidden reuse injects the aligned change at 50% depth before the target's remaining layers; direct reuse adds source output-score changes. With other-relation sources, hidden reuse removes 45% and 49% of no-change error on 0.5-1B Qwen and Llama. Gemma-2-2B removes 22% and passes one of three comparisons in plain text without its default beginning-of-sequence (BOS) token. A later protocol restoring it yields 58-68%, passing every comparison on three cohorts. Larger checkpoints, chat format and new entities show replication and format- or cohort-dependent failures. On small plain-format checkpoints, other-relation hidden reuse mainly reproduces the shift both relations' questions share, without reliably lowering relation-selective error. With target-relation sources, hidden reuse's post hoc advantage over direct reuse is 0.2-0.9 nats outside chat format, unconfirmed and not replacement-specific. The same relation-neutral change at both questions' entity tokens lowers relation-selective error more than random or other-replacement changes, indicating receiving-question dependence.",
-      "description_zh": "在模型权重固定的情况下，我们测量实体替换响应在英语事实问题之间转移的程度，而不仅仅是答案是否发生变化。我们将两个源问题的隐藏状态变化添加到关于同一实体的目标问题，将给定已知答案前缀的两个关系的已发布答案之间的预测对数概率变化与测量的答案进行比较。隐藏重用在目标剩余层之前的 50% 深度处注入对齐的更改；直接重用会增加源输出分数的变化。对于其他关系源，隐藏重用消除了 0.5-1B Qwen 和 Llama 上 45% 和 49% 的无变化错误。 Gemma-2-2B 删除了 22%，并以纯文本形式传递了三个比较之一，而没有默认的序列开始 (BOS) 标记。后来的恢复方案的收益率为 58-68%，通过了三个队列的所有比较。更大的检查点、聊天格式和新实体显示了复制和格式或队列相关的失败。在小型纯格式检查点上，其他关系隐藏重用主要重现两个关系的问题共享的转变，而不能可靠地降低关系选择错误。对于目标关系源，隐藏重用相对于直接重用的事后优势是聊天格式之外的 0.2-0.9 nat，未经确认且不特定于替换。两个问题的实体标记的相同关系中性变化比随机或其他替换变化更能降低关系选择错误，表明接收问题依赖性。",
-      "authors": "Jinkun Chen, Xuemin Yu, Sijia Han, Vlado Keselj",
-      "url": "https://huggingface.co/papers/2611.00352",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.00352"
-      }
-    },
-    {
-      "id": "2611.04414",
-      "title": "SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere",
-      "title_zh": "SphereFlow：通过超球面上的几何传输进行缺失模态插补",
-      "description": "Missing modality imputation aims to synthesize unobserved modalities from observed ones. Existing methods treat each modality as living on its own latent manifold, forcing the generator to learn a long, unstructured jump between them. We present SphereFlow, which takes a fundamentally different view: by projecting all modalities into a shared hyperspherical latent space via a frozen self-supervised encoder, cross-modal imputation reduces to short-range geometric transport between nearby points on the sphere. Realizing this idea with flow matching, however, exposes two geometric conflicts: the standard Gaussian noise source is catastrophically mismatched with the unit-norm data manifold, and the linear interpolation path departs the sphere surface into a region where the decoder has no training signal. We resolve both with simple, geometry-aware modifications: replacing the noise source with the observed-modality latent so that the velocity field learns only the cross-modal displacement, and training the decoder with a time-weighted loss that extends its domain to the near-surface region traversed by the flow. We prove that this data-as-source formulation reduces the worst-case off-manifold deviation from a quantity that grows with the latent dimension to a small, dimension-independent bound governed by inter-modality similarity. Experiments on BraTS multi-modal MRI imputation and CT-MRI translation demonstrate state-of-the-art generation fidelity across all settings, while downstream brain tumor segmentation with our imputed data closes roughly eighty percent of the gap to the full-modality oracle. Code is available at https://github.com/WTHH031230/SphereFlow.",
-      "description_zh": "缺失模态插补旨在从观察到的模态合成未观察到的模态。现有的方法将每种模态视为存在于其自己的潜在流形上，迫使生成器学习它们之间的长的、非结构化的跳跃。我们提出了 SphereFlow，它采取了根本不同的观点：通过冻结的自监督编码器将所有模态投影到共享的超球面潜在空间中，跨模态插补减少了球体上附近点之间的短程几何传输。然而，通过流匹配实现这一想法暴露了两个几何冲突：标准高斯噪声源与单位范数数据流形灾难性地不匹配，并且线性插值路径使球体表面离开球体表面进入解码器没有训练信号的区域。我们通过简单的、几何感知的修改来解决这两个问题：用观察到的潜在模态替换噪声源，以便速度场仅学习跨模态位移，并使用时间加权损失训练解码器，将其域扩展到流穿过的近地表区域。我们证明，这种以数据为源的公式将最坏情况下的流形偏差从随潜在维度增长的数量减少到由模态间相似性控制的小的、与维度无关的界限。 BraTS 多模态 MRI 插补和 CT-MRI 翻译的实验证明了所有设��中最先进的生成保真度，而使用我们的插补数据进行的下游脑肿瘤分割缩小了与全模态预言的大约 80% 的差距。代码可在 https://github.com/WTHH031230/SphereFlow 获取。",
-      "authors": "Huihan Wang, Juncheng Wang, Yuxiang Feng, Wenlong Hou, Guoqi Yu, Chao Xu, Yang Liu, Baigui Sun, Shujun Wang",
-      "url": "https://huggingface.co/papers/2611.04414",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.04414"
-      }
-    },
-    {
-      "id": "2611.04169",
-      "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
-      "title_zh": "长度很便宜，竞争却不是：注意力预测检索中的上下文腐烂",
-      "description": "Why do language models fail on long inputs? The common answer is length. We show that, for retrieval, length is cheap and competition is not. On five open models (0.5B to 3B parameters, four families), neutral filler costs nothing: accuracy stays at 0.97 to 1.00, up to 32K tokens on Qwen2.5-1.5B. Statements in the format of the evidence, placed at the same positions, drop it to 0.16 to 0.33. A single statement that gives the queried key a rival value multiplies the loss by 9 to 110, and every additional rival adds to it. Inside the model, one quantity tracks the failure: the attention mass left on the evidence. Across 126,473 trials it explains up to 58% of the variance in loss; log length explains at most 8%. The masked-filler protocol behind the claim that length alone hurts reproduces on MMLU (11 to 18 points lost at 30K tokens), but fails a visible control in retrieval: masking costs 45 accuracy points at 32K tokens, while the same filler left visible costs none. In retrieval, context rot is a competition for attention. We release the probe and all 126K trial-level measurements.",
-      "description_zh": "为什么语言模型在长输入时会失败？常见的答案是长度。我们表明，对于检索来说，长度是廉价的，而竞争则不然。在五个开放模型（0.5B 到 3B 参数，四个系列）上，中性填充物不花费任何成本：准确度保持在 0.97 到 1.00，Qwen2.5-1.5B 上最多 32K 令牌。证据格式的陈述，放置在相同位置，则将其降至 0.16 至 0.33。为查询的键赋予竞争值的单个语句会将损失乘以 9 到 110，并且每增加一个竞争者都会增加损失。在模型内部，有一个量追踪失败：证据上留下的注意力。在 126,473 项试验中，它解释了高达 58% 的损失方差；对数长度最多解释8%。声称长度本身会损害 MMLU 上的再现（30K 令牌丢失 11 到 18 点）背后的屏蔽填充协议，但在检索中未能实现可见控制：屏蔽在 32K 令牌时花费 45 个准确度点，而相同的填充留下可见成本则没有成本。在检索中，上下文腐烂是一种注意力的竞争。我们发布了探头��所有 126K 试验级测量结果。",
-      "authors": "Yinuo Liu",
-      "url": "https://huggingface.co/papers/2611.04169",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2611.04169"
-      }
-    },
-    {
-      "id": "2611.01598",
-      "title": "QFabric: Guarded Cross-Domain Task Recovery and Its Limits on a Linux-RTOS Board",
-      "title_zh": "QFabric：Linux-RTOS 板上的受保护跨域任务恢复及其限制",
-      "description": "Heterogeneous embedded boards pair a Linux application processor with a real-time microcontroller (MCU), which suggests moving a task between the two domains when its timing degrades. We present QFabric, a prototype that treats cross-domain placement as guarded recovery from a violated empirical soft real-time contract: a bounded task is compiled for both domains, monitored in windows with hysteresis, switched only after semantic and capacity admission at a quiescent epoch boundary, and committed or rolled back after probation. On an Arduino UNO Q (Cortex-A53 Linux and a Cortex-M33 running Zephyr), we characterize the stock Bridge RPC interconnect and measure five workloads in both domains under idle, CPU-load, and higher-priority SCHED_FIFO contention, with ordinary and real-time callers. Each MCU invocation costs about 19 ms of dispatch regardless of compute, the MCU runs the heaviest kernel 34x slower, and because every call traverses Linux userspace, Linux contention inflates the MCU path far more than the Linux path (p99 up to 400 ms versus 17.0 ms). Across 30 cells of a four-node chain, Linux meets every contract within 0.8% misses and QFabric correctly never migrates; a controller without hysteresis migrates in 7 cells, raising p95 by up to 177x, and probation rolls back 5 of those moves. On Linux-dispatched heterogeneous boards, migration therefore cannot isolate a task from Linux interference, and recovery guards matter chiefly by preventing harmful moves. This paper supersedes an earlier artifact release whose reported improvement arose from measurement defects that we identify. All source, raw traces, and generators are public.",
-      "description_zh": "异构嵌入式板将 Linux 应用处理器与实时微控制器 (MCU) 配对，这建议当任务时序恶化时在两个域之间移动任务。我们提出了 QFabric，一种将跨域放置视为从违反的经验软实时合约中进行保护恢复的原型：为两个域编译有界任务，在带有滞后的窗口中进行监视，仅在静态纪元边界的语义和容量许可后进行切换，并在试用后提交或回滚。在 Arduino UNO Q（Cortex-A53 Linux 和运行 Zephyr 的 Cortex-M33）上，我们描述了库存 Bridge RPC 互连的特征，并测量了两个域中空闲、CPU 负载和更高优先级 SCHED_FIFO 争用以及普通调用者和实时调用者的五个工作负载。无论计算如何，每次 MCU 调用都会花费约 19 毫秒的调度时间，MCU 运行最重的内核速度要慢 34 倍，而且由于每次调用都会遍历 Linux 用户空间，Linux 争用使 MCU 路径的膨胀远远超过 Linux 路径（p99 高达 400 毫秒，而 17.0 毫秒）。在四节点链的 30 个单元中，Linux 在 0.8% 的遗漏率内满足每个合约，并且 QFabric 不会正确迁移；没有滞后的控制器会在 7 个单元中迁移，将 p95 提高高达 177 倍，并且试用期会回滚其中的 5 个移动。因此，在 Linux 调度的异构板上，迁移无法将任务与 Linux 干扰隔离开来，而恢复防护的作用主要在于防止有害的移动。本文取代了早期的工件版本，该版本报告的改进源于我们发现的测量缺陷。所有来源、原始痕迹和生成器都是公开的。",
-      "authors": "Ayushman Bhattacharya, Anwesha Chakraborty",
-      "url": "https://huggingface.co/papers/2611.01598",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2611.01598"
-      }
-    },
-    {
-      "id": "2611.05345",
-      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
-      "title_zh": "对抗性推测推理改进了长视野智能体",
-      "description": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
-      "description_zh": "推测解码纯粹被视为一种系统优化，可以在不改变模型行为的情况下加速大型语言模型解码。根据这种观点，越来越多的训练更好选秀模型的努力仅仅集中在接受率上。我们认为，这种观点对于长期代理推理来说并不成立。使用不同的推测性解码方法测量复杂代理任务上的前沿开放权重模型，我们发现数值噪声在验证窗口内增长，并且思维过程的草稿接受结果可以在 30 个步骤后改变模型的输出分布，从而显着影响长视野代理在随机方向上的推理准确性。在这项工作中，我们通过控制此类噪声来提高目标模型的推理能力。虽然我们无法改变目标模型验证的整体令牌分布，但我们可以通过训练要拒绝的草稿模型来以最高精度编码关键推理。我们在代理追踪中识别这些点，并训练草稿模型以支持对抗性偏好。在推理时，经过训练的草稿和目标在这些决策点精确分开，验证重新启动，以便从目标模型中采样批判性思维标记，并在其噪声最小的条件下进行编码。这种方法使批判性推理能够更好地建立索引，并且从长远来看更持久。在复杂的代理编码基准上，我们的方法提高了端到端的成功率，而不改变目标模型或其输出分布。我们的结果将推测性解码机制从纯粹的加速器改造成上下文精度的主动分配器，通过训练 0.06% 到 0.28% 的托管参数来提高长视野代理的准确性。",
-      "authors": "Hongyin Luo, Wei Fang, Lijie Yang, Owen Stepan, Daniel Suit, Jeff Krapf, Dana Wensberg, Jack O&#39;Brien",
-      "url": "https://huggingface.co/papers/2611.05345",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2611.05345"
-      }
-    },
-    {
-      "id": "2611.03806",
-      "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
-      "title_zh": "BEND 2.0：设计 DNA 所需能力的基准测试",
-      "description": "Genomic foundation models are increasingly used to propose DNA sequences and edits. But successful design requires capabilities that current benchmarks do not measure. Here we introduce BEND 2.0 (BENchmark for DNA language models), which tests how well models predict the effects of DNA changes and whether these predictions can guide sequence design. Across eight tasks built on five experimental datasets, we find that model choice and how representations are accessed both affect performance. Linear readouts fitted to frozen representations can match or exceed models' native outputs, and functional post-training substantially improves the models' capabilities. Linear readouts transfer well across experimental assays and genes, suggesting that models capture functional patterns beyond the data used to fit individual predictors. At the same time, strong prediction of average effects can conceal weaker prediction of context-specific effects, and accurate prediction of combined mutation effects does not imply accurate prediction of their interactions. In design tasks, model predictions can reduce the number of candidates needed to find a desired response, but still leave substantial room for better design choices, particularly for context-specific and multi-cell objectives. Our benchmark reveals that genomic models now display signs of general utility but have yet to saturate on performance in even simple tasks.",
-      "description_zh": "基因组基础模型越来越多地用于提出 DNA 序列和编辑。但成功的设计需要当前基准无法衡量的功能。这里我们介绍BEND 2.0（DNA语言模型的BENchmark），它测试模型预测DNA变化影响的效果以及这些预测是否可以指导序列设计。在基于五个实验数据集的八个任务中，我们发现模型选择和表示的访问方式都会影响性能。适合冻结表示的线性读数可以匹配或超过模型的本机输出，并且功能性后训练大大提高了模型的能力。线性读数在实验测定和基因之间转移良好，这表明模型捕获了超出用于拟合个体预测因子的数据的功能模式。同时，对平均效应的强预测可以掩盖对上下文特定效应的较弱预测，并且对组合突变效应的准确预测并不意味着对其相互作用的准确预测。在设计任务中，模型预测可以减少找到所需响应所需的候选数量，但仍然为更好的设计选择留下了很大的空间，特别是对于特定于上下文的多单元目标。我们��基准测试表明，基因组模型现在显示出通用性的迹象，但即使在简单的任务中，性能也尚未达到饱和。",
-      "authors": "Andreas Bjerregaard, Rachael DeVries, Dionysia Danai Brilli, Panagiotis Antoniadis, Yan Li, Anders Krogh, Wouter Boomsma, Ole Winther, Frederikke Isa Marin",
-      "url": "https://huggingface.co/papers/2611.03806",
+      "id": "2611.03394",
+      "title": "TaoMate-HD: Progressive-Resolution Autoregressive Audio-Video Generation",
+      "title_zh": "TaoMate-HD：渐进分辨率自回归音频视频生成",
+      "description": "Streaming digital humans produce detailed video while continuing speech as new text arrives. High-resolution denoising is costly, and text updates can cause repeated or interrupted speech. We present TaoMate-HD, an autoregressive model for high-resolution audio-video streaming. For each short segment, or chunk, two denoising steps establish coarse video structure at low resolution. A final step refines the video to high resolution, with audio generated throughout the same trajectory. Each stage passes its audiovisual predictions to the same stage of the next chunk as history. Across text updates, the model retains this history to infer what has already been spoken. Continuation training utilizes asymmetric text conditioning, with separate text windows for generation and distillation. Experiments show a 1.6x speedup over direct high-resolution generation with the same model and hardware. Optimized stage-parallel deployment provides a further 1.9x overall speedup over serial progressive generation. Our continuation training reduces character error rate by 11.18 percentage points relative to the baseline. The model also supports hour-long audiovisual generation. Our project page is https://taoliveaigc.github.io/TaoMate-HD.",
+      "description_zh": "流式数字人类会生成详细的视频，同时在新文本到达时继续进行语音。高分辨率去噪成本高昂，并且文本更新可能导致语音重复或中断。我们提出了TaoMate-HD，一种用于高分辨率音频视频流的自回归模型。对于每个短片段或块，两个降噪步骤以低分辨率建立粗略的视频结构。最后一步将视频优化为高分辨率，并在同一轨迹上生成音频。每个阶段将其视听预测作为历史传递到下一个块的同一阶段。在文本更新过程中，模型会保留此历史记录来推断已经说过的内容。继续训练利用不对称文本调节，具有用于生成和蒸馏的单独文本窗口。实验表明，使用相同的模型和硬件，比直接高分辨率生成速度提高了 1.6 倍。优化的级并行部署比串行渐进生成进一步提供 1.9 倍的整体加速。相对于基线，我们的继续训练将字符错误率降低了 11.18 个百分点。该模型还支持长达一小时的视听生成。我们的项目页面是https://taoliveaigc.github.io/TaoMate-HD。",
+      "authors": "Qijun Gan, Chenwei Zhang, Xinyang Li, Meiguang Jin, Junfeng Ma, Shen Qiu",
+      "url": "https://huggingface.co/papers/2611.03394",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2611.03806"
+        "paperId": "2611.03394"
       }
     },
     {
-      "id": "2611.03998",
-      "title": "Dory1.0-4B: A Looped Normalized-GPT",
-      "title_zh": "Dory1.0-4B：循环标准化 GPT",
-      "description": "We introduce Dory1.0-4B, a 4-billion-parameter looped (latent-recurrent) language model with elastic depth: a single checkpoint serves different inference compute budgets. Dory1.0-4B is built on a normalized Transformer (nGPT) backbone with interleaved sliding-window and full-attention layers, organized into an input block, a shared recurrent block, and an output block. At inference, the recurrent block can be applied a variable number of times. We pre-trained Dory1.0-4B on 6 trillion tokens. The first 4.5 trillion tokens were trained in NVFP4, and additional pre-training then extended the context length to 256K tokens. Next, we post-trained the model using Supervised Fine-Tuning (SFT) and Reinforcement Learning with Verifiable Rewards (RLVR), with a difficulty-aware loop curriculum that routes harder prompts to deeper loops. Increasing the loop count improves accuracy, with the largest gains on coding, agentic, and long-context benchmarks. With two or more loops, Dory1.0-4B outperforms larger models such as Qwen3.5-9B, Gemma 4 12B, and Gemma 4 26B-A4B on average across 12 benchmarks. Looping also makes Dory1.0-4B more token-efficient on agentic benchmarks: with four loops, it generates 1.3-2.5x fewer tokens than with one loop, as the extra computation is spent in latent space rather than on longer outputs. To reduce memory during looping, Dory1.0-4B caches keys and values only from the last loop, keeping its KV-cache footprint equal to that of a non-looped model at any loop count while retaining most of the accuracy gains. We open-source the BF16, MXFP8, NVFP4, and GGUF quantized checkpoints.",
-      "description_zh": "我们引入了 Dory1.0-4B，这是一个具有弹性深度的 40 亿参数循环（潜在循环）语言模型：单个检查点服务于不同的推理计算预算。 Dory1.0-4B 构建在归一化 Transformer (nGPT) 主干上，具有交错的滑动窗口和全注意力层，组织为输入块、共享循环块和输出块。据推断，循环块可以应用可变次数。我们用 6 万亿个代币对 Dory1.0-4B 进行了预训练。前 4.5 万亿个令牌在 NVFP4 中进行训练，然后额外的预训练将上下文长度扩展到 256K 个令牌。接下来，我们使用监督微调（SFT）和具有可验证奖励的强化学习（RLVR）对模型进行后训练，并使用难度感知循环课程将较难的提示路由到更深的循环。增加循环计数可以提高准确性，在编码、代理和长上下文基准测试中获得最大收益。通过两个或更多循环，Dory1.0-4B 在 12 个基准测试中的平均性能优于 Qwen3.5-9B、Gemma 4 12B 和 Gemma 4 26B-A4B 等较大模型。循环还使 Dory1.0-4B 在代理基准上更具令牌效率：使用四个循环，它生成的令牌比使用一个循环少 1.3-2.5 倍，因为额外的计算花费在潜在空间而不是较长的输出上。为了减少循环期间的内存，Dory1.0-4B 仅缓存最后一个循环的键和值，在任何循环计数下使其 KV 缓存占用量与非循环模型的占用量相同，同时保留大部分精度增益。我们开源了 BF16、MXFP8、NVFP4 和 GGUF 量化检查点。",
-      "authors": "Maxim Fishman, Simeng Sun, Shantanu Acharya, Faisal Ladhak, Brian Chmiel, Santiago Akle Serano, Ron Banner, Boris Ginsburg, Krishna C. Puvvada",
-      "url": "https://huggingface.co/papers/2611.03998",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2611.03998"
-      }
-    },
-    {
-      "id": "2610.40574",
-      "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
-      "title_zh": "每个代币都需要自己的老师：多老师自适应在策略自蒸馏",
-      "description": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to +5.9 over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
-      "description_zh": "事实证明，通过构建以特权引用为条件的教师，按策略自蒸馏（OPSD）对于训练后大型语言模型是有效的。然而，现有的方法要么在整个训练过程中通过始终将其暴露于完整参考来使教师保持固定，要么在每个响应中通过仅在响应中自适应地改变部分参考暴露来固定教师。在本文中，我们认为它们都不够。相反，每个标记都需要自己的老师，因为老师的偏好可以在同一响应中逐个标记地变化。通过教师干预试点研究，我们验证了不同代币的教师偏好不同，并揭示��可以通过多数投票和基于 KL 的选择为每个代币确定首选教师。受这些发现的启发，我们提出了多教师自适应同策略自蒸馏（MTA-OPSD），这是第一个令牌级自适应 OPSD 方法。我们的方法构建了一个由候选教师组成的多教师池，并使每个令牌能够在训练期间自适应地选择其首选教师。在数学推理任务上使用 Qwen3 模型进行的实验表明，MTA-OPSD 始终优于现有的 OPSD 方法，与基本模型相比平均增益高达 +5.9，这凸显了在令牌级别调整教师监督的重要性。代码可在 https://github.com/xingzhejun/MTA-OPSD 获取。",
-      "authors": "Yifu Luo, Chuang Ma, Zeyu Chen, Enkelejda Kasneci, Qi Chen, Gjergji Kasneci",
-      "url": "https://huggingface.co/papers/2610.40574",
+      "id": "2611.03330",
+      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+      "title_zh": "LLM 推理能源成本的简单法则",
+      "description": "Generative AI is billed per token, yet tokens are not equally expensive. Each token enters the KV-cache and raises the cost of those that follow, so energy grows non-linearly along a sequence whose tokens look identical. No analytical model states what a token costs, and the most accurate SOTA model is a fit, not a law: it absorbs architecture into fitted coefficients, requiring per-LLM fitting. We derive closed-form expressions of the computational and memory-access complexity of LLM inference in terms of architectural hyperparameters, covering MHA and GQA, and compare a family of analytical models of increasing granularity. From these, we obtain the SIMPLE Inference Model to Predict LLMs Energy (SIMPLE), a four-parameter law that separates prefill from decode, and decode into KV-cache cost and next-token computation. Over traces of 13 dense LLMs from six families on NVIDIA H100 GPUs, it attains R2 = 0.969 and 11.97% MAPE, 3.1-3.5x below the SOTA, without per-LLM calibration. The SIMPLE law explains as well as predicts: prefill energy grows quadratically with the hidden dimension, so larger LLMs suffer most from long inputs; and more aggressive GQA KV grouping reduces the per-token energy by up to 3x relative to standard MHA. Increasing the reasoning token budget pushes output length beyond the analytically derived energy minimum, driving super-linear energy growth; although accuracy grows with the budget, energy grows faster, so Intelligence per Joule peaks at an intermediate budget and falls by up to 3.14x across a 4.0x reasoning-budget range. Agentic serving raises energy per request by 13.0x relative to non-agentic ones, driven by the growth of both the prefill and the KV-cache terms with input length; while prefix caching removes most of the prefill cost (-93%), the KV-cache term is unaffected, so even a cached agentic request costs 4.8x more.",
+      "description_zh": "生成式人工智能按代币计费，但代币并不同样昂贵。每个令牌进入 KV 缓存并提高后续令牌的成本，因此能量沿着令牌看起来相同的序列非线性增长。没有分析模型说明代币的成本，最准确的 SOTA 模型是一个拟合，而不是一个定律：它将架构吸收到拟合系数中，需要每个 LLM 拟合。我们根据架构超参数推导了 LLM 推理的计算和内存访问复杂性的封闭式表达式，涵盖 MHA 和 GQA，并比较了一系列粒度递增的分析模型。���此，我们获得了预测 LLM 能量的简单推理模型 (SIMPLE)，这是一个四参数定律，将预填充与解码分开，并解码为 KV 缓存成本和下一个令牌计算。在 NVIDIA H100 GPU 上对来自 6 个系列的 13 个密集 LLM 进行跟踪后，它获得了 R2 = 0.969 和 11.97% MAPE，比 SOTA 低 3.1-3.5 倍，无需进行每个 LLM 校准。 SIMPLE 定律解释并预测：预填充能量随隐藏维度呈二次方增长，因此较大的 LLM 受到长输入的影响最大；与标准 MHA 相比，更积极的 GQA KV 分组可将每个代币的能量降低多达 3 倍。增加推理代币预算使输出长度超出分析得出的能量最小值，推动超线性能量增长；虽然准确性随着预算的增加而增加，但能量的增长速度更快，因此每焦耳智能在中间预算时达到峰值，并在 4.0 倍推理预算范围内下降最多 3.14 倍。由于预填充和 KV 缓存项随输入长度的增长，代理服务相对于非代理服务将每个请求的能量提高了 13.0 倍；虽然前缀缓存消除了大部分预填充成本 (-93%)，但 KV 缓存项不受影响，因此即使是缓存的代理请求，成本也会增加 4.8 倍。",
+      "authors": "Hiari Pizzini Cavagna, Andrea Proia, Daniele Cesarini, Zeynep Kiziltan, Andrea Bartolini",
+      "url": "https://huggingface.co/papers/2611.03330",
       "score": 9,
       "meta": {
         "source": "huggingface",
         "upvotes": "9",
-        "paperId": "2610.40574"
+        "paperId": "2611.03330"
       }
     },
     {
-      "id": "2611.04785",
-      "title": "Kierston & KierstonBench: Simulation of Allentown, PA and Evaluation of Language Models in Crime Investigation and Surveillance Tasks",
-      "title_zh": "Kierston 和 KierstonBench：宾夕法尼亚州阿伦敦的模拟以及犯罪调查和监视任务中语言模型的评估",
-      "description": "Large language models are candidates for collecting and analyzing records in criminal investigations and mass surveillance. Their capability and accuracy in this work cannot currently be measured. Real deployments lack the ground truth needed to score a model's conclusions, and no benchmark evaluates these capabilities in a simulated environment. We present Kierston, a city-scale simulation engine, and KierstonBench, a benchmark that tests these capabilities against known simulated events. Kierston models approximately 125,000 residents of Allentown, Pennsylvania, generating their daily activities and the telecommunications, financial, administrative and license-plate records that surveillance and investigative systems collect about them. These records derive from a common behavioral timeline and are distributed across sources representing separate providers. Models investigate through a restricted records interface, linking observations across sources without access to the underlying simulation. The benchmark comprises 32 task families covering record linkage, routine reconstruction, incident investigation and assessment of deceptive accounts. In an evaluation of sixteen language models, most could not perform records investigation and submitted identifications the records did not support. A small number of frontier models solved most of the tasks and abstained when evidence was insufficient. In some cases these models still fell for common deceptions and assumptions, and none replaced an investigator.",
-      "description_zh": "大型语言模型是收集和分析刑事调查和大规模监视记录的候选者。目前无法衡量他们在这项工作中的能力和准确性。实际部署缺乏对模型结论进行评分所需的基本事实，并且没有基准可以在模拟环境中评估这些功能。我们推出了 Kierston（城市规模的模拟引擎）和 KierstonBench（根据已知模拟事件测试这些功能的基准）。 Kierston 对宾夕法尼亚州阿伦敦的大约 125,000 名居民进行了建模，生成他们的日常活动以及监视和调查系统收集的有关他们的电信、财务、行政和车牌记录。这些记录源自共同的行为时间线，并分布在代表不同提供商的来源之间。模型通过受限记录界面进行调查，将跨来源的观察结果链接起来，而无需访问底层模拟。该基准包括 32 个任务系列，涵盖记录链接、日常重建、事件调查和欺骗性账户评估。在对十六种语言模型的评估中，大多数语言模型无法进行记录调查并提交了记录不支持的标识。少数前沿模型解决了大部分任务，并在证据不足时弃权。在某些情况下，这些模型仍然容易受到常见的欺骗和假设的影响，并且没有一个可以取代调查员。",
-      "authors": "Andrew Semenov, Svyatoslav Dorofeev",
-      "url": "https://huggingface.co/papers/2611.04785",
+      "id": "2611.04949",
+      "title": "HERIT: Enabling Global Access to Hanja-to-English Historical Translation by Mitigating Temporal Bias",
+      "title_zh": "HERIT：通过减轻时间偏差实现汉字到英语历史翻译的全球访问",
+      "description": "Historical archives are invaluable for multidisciplinary research but remain inaccessible globally due to severe language barriers. While manual translation is prohibitively expensive and time-consuming, simply applying existing machine translation models is inadequate due to unique linguistic nuances and the temporal bias inherent in scarce human-labeled corpora. To address these challenges, we propose HERIT, a systematic domain-adaptation pipeline that leverages retrieval-augmented generation (RAG) to generate high-quality pseudo-labeled data from abundant Hanja-Korean corpora. This approach substantially expands the training dataset, mitigating both data scarcity and temporal overfitting across different historical periods. Extensive automated and human evaluations demonstrate that HERIT consistently outperforms baselines. Finally, we translate previously untranslated portions of the archives using our model, thereby enabling global access to these resources for researchers.",
+      "description_zh": "历史档案对于多学科研究来说非常宝贵，但由于严重的语言障碍，在全球范围内仍然无法访问。虽然手动翻译非常昂贵且耗时，但由于独特的语言细微差别和稀缺的人工标记语料库固有的时间偏差，仅仅应用现有的机器翻译模型是不够的。为了应对这些挑战，我们提出了 HERIT，这是一种系统的领域适应管道，利用检索增强生成 (RAG) 从丰富的韩语韩语语料库中生成高质量的伪标记数据。这种方法大大扩展了训练数据集，缓解了不同历史时期的数据稀缺和时间过度拟合。广泛的自动化和人工评估表明 HERIT 始终优于基线。最后，我们使用我们的模型翻译以前未翻译的档案部分，从而使研究人员能够在全球范围内访问这些资源。",
+      "authors": "Dayeon Jeong, Kyeongpil Kang",
+      "url": "https://huggingface.co/papers/2611.04949",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2611.04785"
+        "paperId": "2611.04949"
       }
     },
     {
-      "id": "2611.05193",
-      "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
-      "title_zh": "用于组合图像检索的分解 MLLM 嵌入",
-      "description": "Composed Image Retrieval (CIR) aims to retrieve a target image given a reference image and a modification text. Although recent approaches leveraging Multimodal Large Language Models (MLLMs) have shown significant progress, we argue that the MLLM's compositional understanding remains underutilized. This stems from directly mapping composed queries into a retrieval embedding via contrastive supervision alone, without explicitly resolving the intended visual modifications. In this work, we introduce Factorized MLLM Embeddings (FactEmbed), which decouples compositional query comprehension from building discriminative embeddings. Rather than directly projecting the composed query into a single embedding without internal reasoning, FactEmbed employs a set of factorized latents that simulate the intended visual modifications via an intermediate target imagination objective. This process encourages the latents to ground into target semantics before forming discriminative representations for retrieval. Subsequently, to propagate these factorized representations throughout the model for retrieval, we optimize a factor-level contrastive loss while distilling the decomposed representations into a deeper attention layer of the MLLM. Finally, for efficient inference, we retain the [EOS] token to establish a global-level embedding on top of these factorized latents, while we exploit the mean-pooled factorized latents to rerank a short candidate list at negligible cost, as both are produced by the same forward pass. Extensive evaluations demonstrate that FactEmbed outperforms prior works across CIR benchmarks.",
-      "description_zh": "组合图像检索（CIR）旨在在给定参考图像和修改文本的情况下检索目标图像。尽管最近利用多模态大语言模型 (MLLM) 的方法已经取得了重大进展，但我们认为 MLLM 的组合理解仍未得到充分利用。这源于仅通过对比监督将组合查询直接映射到检索嵌入，而没有明确解决预期的视觉修改。在这项工作中，我们引入了因子化 MLLM 嵌入 (FactEmbed)，它将组合查询理解与构建判别性嵌入解耦。 FactEmbed 不是在没有内部推理的情况下直接将组合查询投影到单个嵌入中，而是采用一组因式分解的潜在变量，通过中间目标想象目标来模拟预期的视觉修改。这个过程鼓励潜伏在形成用于检索的区分性表示之前深入了解目标语义。随后，为了在整个模型中传播这些因式分解表示以进行检索，我们优化了因子级对比损失，同时将分解的表示提炼到 MLLM 的更深的关注层中。最后，为了高效推理，我们保留 [EOS] 令牌以在这些因式分解潜在变量之上建立全局级嵌入，同时我们利用均值池因式分解潜在变量以可忽略不计的成本对短候选列表进行重新���序，因为两者都是由相同的前向传递生成的。广泛的评估表明，FactEmbed 在 CIR 基准测试中的表现优于之前的工作。",
-      "authors": "WonJun Moon, Seongchan Kim, Dahun Kim, Seungryong Kim",
-      "url": "https://huggingface.co/papers/2611.05193",
-      "score": 43,
+      "id": "2610.36544",
+      "title": "Monitor Accuracy Isn't the Answer: A Decision-Value Framework for Evaluating AI Agent Restart Monitors",
+      "title_zh": "监视器准确性不是答案：用于评估 AI 代理重启监视器的决策价值框架",
+      "description": "Classification accuracy and true-positive and false-positive rates alone do not determine whether restarting an AI agent improves success. Using an exact alarm-to-action identity for an independent clean restart with zero monitoring overhead, we show analytically that a monitor with fixed 90% accuracy can swing from a five-percentage-point loss to a 35-point gain in success rate, depending solely on the replacement attempt's residual-budget success probability. We introduce two techniques for evaluating monitors and progress signals in decision terms. First, a decision-sufficiency criterion, a binary-action specialization of Blackwell's comparison of experiments, identifies which progress representations or context compressions preserve the information needed to choose optimally between the specified actions, independent of trace reconstruction fidelity. Second, a finite-sample, model-free decision audit uses simultaneous binomial intervals over existing agent traces, without additional model calls, to certify a preference for \"restart\" or \"continue\" under stated sampling assumptions, or return \"abstain\" when evidence is insufficient. In a study of 194 externally evaluated model executions on 19 selected SymPy issues from SWE-bench Verified, with a retrospective audit of 130 of these traces, we find a 2.29-point apparent restart gain traced to a single surviving failed attempt, a 42.29-point loss on a second model, no positive replication of the initial gain on prospective task cohorts, and zero of 103 live comparisons meeting the specified certification bar. These results motivate evaluating agent monitors through recovery opportunity, decision value, and statistical support, rather than classification performance alone.",
+      "description_zh": "仅靠分类准确性以及真阳性率和假阳性率并不能确定重新启动 AI 代理是否会提高成功率。使用精确的警报到操作标识进行零监控开销的独立干净重启，我们分析表明，具有固定 90% 准确度的监控器可以在成功率上从 5 个百分点的损失变为 35 个百分点的增益，这仅取决于替换尝试的剩余预算成功概率。我们介绍了两种在决策方面评估监视器和进度信号的技术。首先，决策充分性标准是 Blackwell 实验比较的二元动作专门化，它确定哪些进度表示或上下文压缩保留了在指定动作之间进行最佳选择所需的信息，而与迹线重建保真度无关。其次，有限样本、无模型决策审计在现有代理轨迹上使用同时二项式区间，无需额外的模型调用，以证明在规定的抽样假设下偏好“重新启动”或“继续”，或者在证据不足时返回“弃权”。在对来自 SWE-bench Verified 的 19 个选定 SymPy 问题的 194 个外部评估模型执行进行的研究中，对其中 130 个跟踪进行了回顾性审计，我们发现，由于单个幸存的失败尝试，明显的重新启动增益为 2.29 点，第二个模型的损失为 42.29 点，在预期任务组中没有正面复制初始增益，并且满足指定认证标准的 103 个实时比较中的零个。这些结果激励通过恢复机会、决策值和统计支持来评估代理监控器，而不仅仅是分类性能。",
+      "authors": "Siddharth Jain, Venkat N. Vedam",
+      "url": "https://huggingface.co/papers/2610.36544",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "43",
-        "paperId": "2611.05193"
+        "upvotes": "2",
+        "paperId": "2610.36544"
       }
     },
     {
-      "id": "2611.04814",
-      "title": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
-      "title_zh": "本地少思考：推理压缩的本地偏好学习",
-      "description": "Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given the current state. We propose LoCo, a local preference learning method for reasoning compression. LoCo detects candidate overthinking states from the model's own traces, freezes the corresponding reasoning prefixes, regenerates shorter verified continuations from the same states, and trains on the resulting state-conditioned preference pairs with DPO. This formulation teaches the model when to continue reasoning and when to conclude, rather than simply encouraging shorter trajectories overall. We construct training data entirely from self-generated mathematical traces and evaluate LoCo on five mathematical and three code generation benchmarks. LoCo reduces completion length by 41.7\\%--45.4\\% on mathematics and 23.4\\%--36.3\\% on code, while maintaining or improving accuracy and achieving the best AUC across all code benchmarks. LoCo consistently improves the accuracy-efficiency trade-off on mathematics and transfers effectively to code generation despite math-only training, demonstrating the cross-domain generality of local preference learning for reasoning compression. The code and model will be publicly released at https://github.com/MuyaoYuan/LoCo.",
-      "description_zh": "大型推理模型在具有挑战性的任务上表现出色，但其较长的思维链往往会在获得足够信息后继续深思熟虑，从而产生巨大的推理成本。现有的推理压缩方法主要对推理轨迹进行操作，较少关注在给定当前状态下是否需要进一步推理的局部决策。我们提出了 LoCo，一种用于推理压缩的局部偏好学习方法。 LoCo 从模型自身的轨迹中检测候选过度思考状态，冻结相应的推理前缀，从相同状态重新生成更短的经过验证的延续，并使用 DPO 对生成的状态条件偏好对进行训练。这个公式教导模型何时继续推理以及何时得出结论，而不是简单地鼓励整体上较短的轨迹。我们完全根据自生成的数学轨迹构建训练数据，并在五个数学基准和三个代码生成基准上评估 LoCo。 LoCo 将数学上的完成长度减少了 41.7\\%--45.4\\%，将代码上的完成长度减少了 23.4\\%--36.3\\%，同时保持或提高了准确性，并在所有代码基准测试中实现了最佳 AUC。尽管仅进行数学训练，LoCo 仍不断改进数学的准确性与效率权衡，并有效地转移到代码生成，这证明了推理压缩的局部偏好学习的跨域通用性。代码和模型将在https://github.com/MuyaoYuan/LoCo公开发布。",
-      "authors": "Muyao Yuan, Liyan Xu, Weizhan Zhang, Muyan Jiao, Jiangnan Li, Jinchao Zhang, Jie Zhou",
-      "url": "https://huggingface.co/papers/2611.04814",
-      "score": 65,
+      "id": "2611.03517",
+      "title": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization",
+      "title_zh": "询问，不要装备：用于深度内核优化的问题驱动编码代理",
+      "description": "LLM agents for GPU kernel optimization sit at two ends of a structure-freedom tradeoff. Scripted agents fix what the model does at each step, via a learned policy, an optimization menu, or fixed roles, and are sample-efficient where the recipe applies and stall where it does not. Open-ended agents let a self-directed model mutate a population of kernels and pay for the freedom in trials: thousands of evaluations, repeated edits, and wrong candidates. Both respond to hard targets by equipping the agent with more: parsed profiler output, disassembly analysis, retrieval over documentation and libraries, and stores of lessons. We argue that both lack direction, a hypothesis about where the remaining gap is, and that a short question asked at the right moment supplies it without narrowing what the agent may do next. We present KernelSeek, a question-driven agent that makes an existing CUDA kernel faster with no operator-specific knowledge and no faster implementation to imitate: a general-purpose coding agent, a minimal harness that enforces a verifiable goal, and questions at decision points, first from a human, then from a bank the agent applies to itself. On the same task, evaluator, hardware, and week, a tool-rich autonomous agent built in the prevailing style plateaued at 0.50x FlashAttention-3 after 133 model-driven steps; KernelSeek reached 1.13x. It then produced dependency-free FlashAttention forward kernels for Hopper and Blackwell, single CUDA files with no CUTLASS, CuTe, cuBLAS, or cuDNN, correct on all 182 scenarios per architecture and 1.16x FlashAttention-3 and 1.46x FlashAttention-4 (geometric mean). Across 162 human messages and 11.5K agent tool calls, every large gain followed a question that moved the agent to a different layer of the system or rejected a claimed limit, never one that supplied information. We release the kernels, harness, question bank, and all traces.",
+      "description_zh": "用于 GPU 内核优化的 LLM 代理位于结构自由权衡的两端。脚本化代理通过学习策略、优化菜单或固定角色来修复模型在每个步骤中执行的操作，并且在适用配方的地方具有样本效率，在不适用配方的地方则停滞不前。开放式智能体让自我导向的模型改变一群内核，并为试验中的自由付出代价：数千次评估、重复编辑和错误的候选者。两者都通过为代理配备更多功能来响应硬目标：解析分析器输出、反汇编分析、文档和库检索以及课程存储。我们认为两者都缺乏方向，即对剩余差距在哪里的假设，并且在正确的时刻提出一个简短的问题可以提供方向，而不会缩小智能体下一步可能做什么。我们提出了 KernelSeek，一个问题驱动的代理，它使现有的 CUDA 内核更快，无需特定于操作员的知识，也无需模仿更快的实现：通用编码代理，强制执行可验证目标的最小工具，以及决策点的问题，首先来自人类，然后来自代理应用于自身的银行。在相同的任务、评估器、硬件和周内，以流行风格构建的工具丰富的自主代理在 133 个模型驱动步骤后稳定在 0.50x FlashAttention-3； KernelSeek 达到 1.13 倍。然后，它为 Hopper 和 Blackwell 生成了无依赖性的 FlashAttention 前向内核、没有 CUTLASS、CuTe、cuBLAS 或 cuDNN 的单个 CUDA 文件，在每个架构的所有 182 个场景上都正确，并且是 1.16 倍的 FlashAttention-3 和 1.46 倍的 FlashAttention-4（几何平均值）。在 162 条人工消息和 11,500 次代理工具调用中，每一次重大收获都伴随着一个问题，该问题将代理移至系统的不同层或拒绝声称的限制，但从未提供信息。我们发布了内核、工具、问题库和所有痕迹。",
+      "authors": "Gabriele Oliaro, Jaeseong Lee, Zhaoyuan Su, Sreeram Vennam, Zhihao Jia, Samyam Rajbhandari",
+      "url": "https://huggingface.co/papers/2611.03517",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "65",
-        "paperId": "2611.04814"
+        "upvotes": "2",
+        "paperId": "2611.03517"
       }
     },
     {
-      "id": "2611.05306",
-      "title": "You don't need long context",
-      "title_zh": "你不需要很长的上下文",
-      "description": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
-      "description_zh": "后来的代币的生成成本比早期的代币更高。在前沿开放重量模型上，成本差异可能高达 7 倍。通过频繁的压缩，我们在广泛的长视野和长输入任务中展示了前沿语言模型在维护短上下文时几乎没有牺牲任务准确性。我们进一步证明，即使在每个上下文最多执行一个操作时，LLM 性能也不会在长期软件工程任务中崩溃，并在此基础上我们概述了语义状态空间模型（SSSM）的概念。我们的研究结果质疑长上下文语言模型的必要性。",
-      "authors": "Peter Belcak, Saurav Muralidharan, Jindong Jiang, Yonggan Fu, Wonmin Byeon, Hanrong Ye, Ryan Angilly, Ali Taghibakhshi, Shih-Yang Liu, Siru Ouyang, Greg Heinrich, Pavlo Molchanov",
-      "url": "https://huggingface.co/papers/2611.05306",
+      "id": "2611.03852",
+      "title": "Why Pay for Long Reasoning When Rewrite Do Trick? Causal Effects of Reasoning History Compaction on Future Generation and Agent Cost",
+      "title_zh": "为什么重写时要付出长推理的代价？推理历史压缩对未来生成和代理成本的因果影响",
+      "description": "Reasoning substantially improves language models' ability to solve difficult problems, but long reasoning traces make these gains expensive. Efficient reasoning should express useful analysis in fewer tokens by reducing repetition and text that adds little value to solving the problem. Progress in proprietary models motivates this goal, yet their hidden scratchpads limit direct study of how it is achieved. We investigate whether open-weight models can generate less verbose reasoning by changing the form of their own earlier thoughts, without retraining. Our intervention rewrites prior reasoning into compact state records before pending tool results are revealed, then compares continuations from original and compact histories. Across the tested models, accepted compact histories usually shorten future reasoning; a coding case study also shows less repeated verification after a shared candidate solution. In software-agent deployments, compaction can reduce total spending, although task quality and rewrite-inclusive time depend on the target and compressor. These findings identify reasoning history as one way to reduce future reasoning-token use and motivate model-specific compaction policies evaluated for both efficiency and retained capability.",
+      "description_zh": "推理极大地提高了语言模型解决难题的能力，但长推理轨迹使这些收益变得昂贵。有效的推理应该通过减少重复和对解决问题没有多大价值的文本，以更少的标记表达有用的分析。专有模型的进步推动了这一目标，但其隐藏的暂存器限制了对其实现方式的直接研究。我们研究开放权重模型是否可以通过改变其早期思想的形式来生成不那么冗长的推理，而无需重新训练。在显示待处理的工具结果之前，我们的干预将先前的推理重写为紧凑的状态记录，然后比较原始历史和紧凑历史的延续。在测试的模型中，公认的紧凑历史通常会缩短未来的推理；编码案例研究还表明，在共享候选解决方案后，重复验证会减少。在软件代理部署中，压缩可以减少总支出，尽管任务质量和重写时间取决于目标和压缩器。这些发现将推理历史确定为减少未来推理令牌使用并激励针对效率和保留能力进行评估的特定于模型的压缩策略的一种方法。",
+      "authors": "Anton Hristov",
+      "url": "https://huggingface.co/papers/2611.03852",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2611.03852"
+      }
+    },
+    {
+      "id": "2611.05029",
+      "title": "DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI",
+      "title_zh": "DRAP：物理人工智能持续学习的动态风险自适应可塑性",
+      "description": "Continual learning in physical AI differs from conventional continual learning because small per-step policy errors can accumulate over a trajectory. Each deviation may move the agent outside the training distribution, increase subsequent prediction errors, and ultimately cause closed-loop task failure. This work introduces Dynamics-Risk Adaptive Plasticity (DRAP), a replay-free method that estimates the historical importance of adaptable model tensors from sample-level action gradients weighted by local trajectory-amplification risk. A ridge-regularized local linear model is fitted to expert state-action transitions, and the largest singular value of its state-transition matrix provides a policy-independent, Lyapunov-inspired estimate of one-step perturbation amplification. After each task, risk-weighted squared gradients are accumulated in a tensor-level importance memory. During subsequent tasks, DRAP uses normalized cumulative importance to scale the effective AdamW learning rate of each tensor, immediately reducing the plasticity of components that supported previous behavior at dynamically sensitive trajectory points. We instantiate DRAP on a fixed KappaTune-selected subnetwork of OpenVLA and evaluate replay-free sequential adaptation across the LIBERO Spatial, Object, and Goal suites. Compared with standard AdamW fine-tuning and EWC, the results show substantially improved retention of previously learned behaviors while preserving strong new-suite acquisition.",
+      "description_zh": "物理人工智能中的持续学习与传统的持续学习不同，因为每步的小策略错误可能会在轨迹上累积。每个偏差都可能使智能体脱离训练分布，增加后续的预测误差，最终导致闭环任务失败。这项工作引入了动态风险自适应可塑性（DRAP），这是一种免重放的方法，可以根据局部轨迹放大风险加权的样本级动作梯度来估计自适应模型张量的历史重要性。岭正则化局部线性模型适合专家状态-动作转换，其状态转换矩阵的最大奇异值提供了一种与策略无关、受李雅普诺夫启发的单步扰动放大估计。每个任务完成后，风险加权平方梯度都会累积在张量级重要性存储器中。在后续任务中，DRAP 使用归一化累积重要性来缩放每个张量的有效 AdamW 学习率，立即降低在动态敏感轨迹点支持先前行为的组件的可塑性。我们在 OpenVLA 的固定 KappaTune 选择的子网络上实例化 DRAP，并评估 LIBERO 空间、对象和目标套件中的无重放顺序适应。与标准 AdamW 微调和 EWC 相比，结果显示，对先前学到���行为的保留率得到了显着提高，同时保持了强大的新套件获取能力。",
+      "authors": "Oswaldo Ludwig",
+      "url": "https://huggingface.co/papers/2611.05029",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2611.05029"
+      }
+    },
+    {
+      "id": "2611.05988",
+      "title": "LiveFoley: Dynamic Real-Time Video-to-Audio Generation for Immersive Interactive Worlds",
+      "title_zh": "LiveFoley：用于沉浸式交互世界的动态实时视频音频生成",
+      "description": "Streaming video-to-audio (V2A) generation is essential for immersive interactive applications. However, real-time constraints leave existing streaming V2A methods far behind offline models: (1) visual frontends shrink their receptive fields to cut look-ahead latency, severely degrading audio-visual alignment; (2) causal autoregressive diffusion backends denoise each audio patch in isolation, impairing audio quality. To this end, we present LiveFoley, a streaming causal autoregressive diffusion architecture that addresses both bottlenecks with imperceptible latency. For the visual frontend, we introduce a Trailing Sliding Window that converts non-causal segment-level encoders into streaming modules without retraining. By simply realigning the window, it preserves precise audio-visual alignment, while a configurable hop size reduces the frontend look-ahead well below the human perceptual threshold. Building on this tunable hop size, we propose the Unified Varhop Framework to accommodate scenarios with diverse latency and computation budgets. For the audio backend, we explore widening the denoising window of the local diffusion transformer (LocDiT) head in two temporal directions. History LocDiT adds past context to improve quality at no latency cost and serves as our default. Alternatively, Future-Warmup LocDiT breaks the autoregressive deadlock with an approximate future condition, further improving generation quality at the cost of an acceptable backend look-ahead. Extensive experiments demonstrate that LiveFoley matches offline models in temporal alignment and leads streaming systems in generation quality. Project page: https://dalision.github.io/livefoley-page/",
+      "description_zh": "流式视频转音频 (V2A) 生成对于沉浸式交互应用至关重要。然而，实时限制使现有的流式 V2A 方法远远落后于离线模型：（1）视觉前端缩小其感受野以减少前视延迟，严重降低了视听对齐； (2) 因果自回归扩散后端对每个音频补丁进行隔离降噪，从而损害音频质量。为此，我们提出了 LiveFoley，一种流式因果自回归扩散架构，它以难以察觉的延迟解决了这两个瓶颈。对于视觉前端，我们引入了一个尾随滑动窗口，它将非因果段级编码器转换为流模块，而无需重新训练。通过简单地重新对齐窗口，它可以保持精确的视听对齐，同时可配置的跳跃大小将前端前视降低到远低于人类感知阈值。在此可调跳大小的基础上，我们提出了统一 Varhop 框架，以适应具有不同延迟和计算预算的场景。对于音频后端，我们探索在两个时间方向上扩大局部扩散变压器（LocDiT）头的去噪窗口。历史 LocDiT 添加过去的上下文以提高质量，且无延迟成本，并且作为我们的默认设置。或者，Future-Warmup LocDiT 通过近似的未来条件打破自回归僵局，以可接受的后端前瞻为代价进一步提高发电质量。大量实验表明，LiveFoley 在时间对齐方面与离线模型相匹配，并在生成质量方面领先于流媒体系统。项目页面：https://dalision.github.io/livefoley-page/",
+      "authors": "Yusheng Dai, Vladimir Iashin, Kangdi Wang, Yuxuan Jiang, Ilpo Viertola, Weiqiang Wang, Qiuhong Ke, Min Zhao, Jianfei Cai",
+      "url": "https://huggingface.co/papers/2611.05988",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2611.05988"
+      }
+    },
+    {
+      "id": "2611.06042",
+      "title": "UniRestorer++: Scalable Universal Image Restoration with Multi-Granularity Degradation Modeling",
+      "title_zh": "UniRestorer++：具有多粒度退化建模的可扩展通用图像恢复",
+      "description": "Universal image restoration aims to handle diverse degradations within a single model, but a reliable scaling strategy remains underexplored. Increasing backbone depth and width can lead to performance saturation, while degradation-aware specialization depends on accurate degradation estimation and is vulnerable to errors on out-of-distribution and real-world inputs. We propose UniRestorer++, a scalable framework based on multi-granularity degradation modeling. It progressively refines degradation groups and introduces group-specific experts, coupling capacity growth with specialization. Degradation-estimation-based routing selects a root-to-leaf path, while granularity-estimation-based routing chooses a level along that path to balance specialization and robustness. Spatially dense degradation representation maps further enable region-aware routing for spatially non-uniform corruptions. We develop CDD-50, a benchmark covering 50 degradation categories from single to penta-degradation. Experiments show approximately log-linear PSNR trends over the evaluated model-size range and stronger scaling gains on out-of-distribution and real-world data than vanilla MoE scaling. UniRestorer++ achieves state-of-the-art performance across benchmarks and demonstrates zero-shot generalization and few-shot transfer on real-world images. Code: https://github.com/mrluin/UniRestorer_plusplus",
+      "description_zh": "通用图像恢复旨在处理单个模型内的各种退化，但可靠的缩放策略仍未得到充分探索。增加主干深度和宽度可能会导致性能饱和，而降级感知专业化取决于准确的降级估计，并且容易受到分布外和现实世界输入的错误影响。我们提出了 UniRestorer++，一个基于多粒度退化建模的可扩展框架。它逐步细化降解小组并引入特定小组的专家，将能力增长与专业化结合起来。基于降级估计的路由选择根到叶路径，而基于粒度估计的路由选择沿该路径的��别以平衡专业化和鲁棒性。空间密集的退化表示图进一步实现了空间非均匀损坏的区域感知路由。我们开发了 CDD-50，这是一个涵盖从单次降解到五次降解的 50 个降解类别的基准。实验表明，在评估的模型大小范围内，PSNR 呈近似对数线性趋势，并且与普通 MoE 缩放相比，分布外数据和真实世界数据的缩放增益更强。 UniRestorer++ 在基准测试中实现了最先进的性能，并在现实世界图像上演示了零样本泛化和少样本传输。代码：https://github.com/mrluin/UniRestorer_plusplus",
+      "authors": "Jingbo Lin, Zhilu Zhang, Fan Li, Renjing Pei, Wenbo Li, Hang Xu, Hongzhi Zhang, Wangmeng Zuo",
+      "url": "https://huggingface.co/papers/2611.06042",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.06042"
+      }
+    },
+    {
+      "id": "2611.05593",
+      "title": "GaussianRenderFormer: Transformer-based Rendering of 3D Gaussian Splats",
+      "title_zh": "GaussianRenderFormer：基于 Transformer 的 3D 高斯 Splats 渲染",
+      "description": "Can a neural network learn to render 3D Gaussian splats on its own, with no rasterizer in the renderer? We present GaussianRenderFormer, a transformer that takes a set of Gaussians and a camera and outputs the image directly. Each Gaussian becomes one token in a view-independent encoder, and a view-dependent decoder turns small patches of camera rays into pixels by attending to those tokens. Trained on 26,820 Objaverse objects pruned to 20,000 Gaussians each, GaussianRenderFormer renders 300 unseen objects at 38.08 dB PSNR against the full, unpruned splats, while rasterizing the same pruned input reaches 44.02 dB. The gap is not one of generalization, and our diagnostics are consistent with a bottleneck in the view decoder: telling it the projected footprint of each Gaussian, which it could in principle infer, adds 1.4 dB. Under-training is not ruled out. Code, trained models and videos: https://svlwoof.github.io/gaussianrenderformer",
+      "description_zh": "神经网络能否学会在渲染器中没有光栅器的情况下自行渲染 3D 高斯图？我们提出了 GaussianRenderFormer，一个转换器，它采用一组高斯函数和一个相机并直接输出图像。每个高斯成为与视图无关的编码器中的一个标记，并且与视图相关的解码器通过关注这些标记将小块相机光线转换为像素。 GaussianRenderFormer 在 26,820 个 Objaverse 对象（每个对象修剪为 20,000 高斯）上进行训练，针对完整的未修剪的图块以 38.08 dB PSNR 渲染 300 个看不见的对象，而光栅化相同的修剪输入达到 44.02 dB。这一差距不是泛化性的，我们的诊断与视图解码器中的瓶颈一致：告诉它每个高斯的预计足迹，它原则上可以推断出增加了 1.4 dB。不排除训练不足的情况。代码、训练模型和视频：https://svlwoof.github.io/gaussianrenderformer",
+      "authors": "Shahaf Valencia Levy, Sagie Benaim",
+      "url": "https://huggingface.co/papers/2611.05593",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2611.05593"
+      }
+    },
+    {
+      "id": "2611.01926",
+      "title": "TAC-CoT: Tool-Empowered Implicit Chain-of-Thought via Interleaving Explicit Tokens",
+      "title_zh": "TAC-CoT：通过交错显式令牌实现工具授权的隐式思维链",
+      "description": "LLM-based agentic systems are increasingly combined with CoT reasoning to solve tasks that require accurate reasoning, external knowledge, and multi-step deliberation. Yet, explicit CoT incurs substantial generation overhead, while implicit CoT, which replaces textual rationales with compact continuous tokens, does not naturally support the explicit communication interface required for agentic tool-use. We propose TAC-CoT, a tool-empowered adaptive implicit CoT framework that replaces explicit reasoning traces with compact latent reasoning segments while retaining textual tokens only for tool calls, observations, and final answers. This interleaved design enables agentic tool-use without verbalizing every intermediate reasoning step. Experiments on agentic math and QA benchmarks show that TAC-CoT improves accuracy by up to 8.8 points while reducing model forward passes by up to 6.8x. Furthermore, analyses show that TAC-CoT improves tool-use quality in both single- and multi-tool settings.",
+      "description_zh": "基于 LLM 的代理系统越来越多地与 CoT 推理相结合，以解决需要准确推理、外部知识和多步骤审议的任务。然而，显式 CoT 会产生大量的生成开销，而隐式 CoT（用紧凑的连续标记取代文本原理）自然不支持代理工具使用所需的显式通信接口。我们提出了 TAC-CoT，一种工具赋能的自适应隐式 CoT 框架，它用紧凑的潜在推理片段取代显式推理轨迹，同时仅保留工具调用、观察和最终答案的文本标记。这种交错设计可以实现代理工具的使用，而无需用语言描述每个中间推理步骤。代理数学和 QA 基准测试表明，TAC-CoT 将准确性提高了 8.8 分，同时将模型前向传递次数减少了 6.8 倍。此外，分析表明，TAC-CoT 提高了单工具和多工具设置中的工具使用质量。",
+      "authors": "Juseon Do, Sangmin Bae, Jeesu Jung, Hwanjun Song",
+      "url": "https://huggingface.co/papers/2611.01926",
+      "score": 14,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "14",
+        "paperId": "2611.01926"
+      }
+    },
+    {
+      "id": "2611.05648",
+      "title": "NitroFusion2: Bringing Adversarial Loss to the Text Stream of Multimodal Diffusion Transformers",
+      "title_zh": "NitroFusion2：为多模态扩散变压器的文本流带来对抗性损失",
+      "description": "Adversarial diffusion distillation has conventionally relied on image features for discrimination. We revisit this choice for multimodal diffusion transformers (MMDiTs), whose text stream becomes image-dependent through joint attention. We introduce Text-Stream Adversarial Distillation (TSAD), which exploits intermediate text-token states as a new adversarial representation. Because the text stream has already read the image while remaining tied to the text condition, changing that condition changes what information it extracts from the image. Building on this property, we introduce Aspect-Cued Discrimination (ACD), which conditions the discriminator on different aspects of the sample, such as typography, objects, or style, to steer which properties are emphasized during adversarial training. Building on the expert-discriminator design of NitroFusion, we integrate TSAD and ACD in NitroFusion2. NitroFusion2 brings few-step distillation from the conventional 4-8-step regime down to just 1-2 steps at comparable quality. At one step, it produces sharp rendered text and rich fine-grained details, making one-step generation practical rather than merely a stress test for distillation. At two steps, it remains competitive across the evaluated benchmarks. These results establish the MMDiT text stream as a powerful and steerable representation for adversarial diffusion distillation.",
+      "description_zh": "对抗性扩散蒸馏传统上依赖图像特征进行区分。我们重新审视多模态扩散变换器（MMDiT）的这种选择，其文本流通过联合注意力变得依赖于图像。我们引入了文本流对抗蒸馏（TSAD），它利用中间文本令牌状态作为新的对抗性表示。由于文本流已经读取了图像，同时仍与文本条件相关，因此更改该条件会更改它从图像中提取的信息。在此属性的基础上，我们引入了方面提示判别（ACD），它根据样本的不同方面（例如版式、对象或风格）来限制判别器，以引导在对抗性训练期间���调哪些属性。基于 NitroFusion 的专家鉴别器设计，我们将 TSAD 和 ACD 集成到 NitroFusion2 中。 NitroFusion2 将数步蒸馏从传统的 4-8 步方案减少到仅需 1-2 步，且质量相当。第一步，它会生成清晰的渲染文本和丰富的细粒度细节，使一步生成变得实用，而不仅仅是蒸馏的压力测试。通过两个步骤，它在评估的基准中保持竞争力。这些结果将 MMDiT 文本流确立为对抗性扩散蒸馏的强大且可操纵的表示形式。",
+      "authors": "Dar-Yen Chen, Yi-Zhe Song",
+      "url": "https://huggingface.co/papers/2611.05648",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2611.05648"
+      }
+    },
+    {
+      "id": "2610.41432",
+      "title": "Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents",
+      "title_zh": "混合计算机使用：通用代理的统一编程、语义和可视化界面",
+      "description": "Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and-keyboard actions can impose a human-interaction prior, requiring repeated screen interpretation while leaving the computer's semantic and programmatic capabilities underexposed. We argue for exposing these capabilities and letting models choose and combine them. We introduce Hybrid Computer Use (HCU), a unified interface for general agents that combines three complementary channels: programmatic interaction through code and command-line tools, semantic interaction through accessibility (AX), and visual interaction through graphical user interfaces (GUI). Our HCU supports efficient AX interaction and guards against stale-state actions during channel switching. A supplementary HCU skill guides agents in selecting and coordinating channels to use the unified interface effectively. Our designed AX tools return compact observations, execute actions in batches, and report their effects as AX diffs, so the model needs fewer round trips. On OSWorld 2.0, HCU achieves the highest Partial and Binary scores among the compared systems. Analyzing agent trajectories, we find that all evaluated models improve with HCU yet allocate work across the channels differently and consistently outperform compared baselines in terms of both efficiency and task success, highlighting the value of unified computer-use interfaces that allow flexible channel selection and combination.",
+      "description_zh": "使用计算机的代理越来越多地处理从日常桌面活动到长期专业工作流程的任务。然而，以屏幕截图和鼠标键盘操作为中心的界面可能会优先考虑人机交互，需要重复的屏幕解释，同时使计算机的语义和编程能力暴露不足。我们主张公开这些功能并让模型选择和组合它们。我们引入了混合计算机使用（HCU），这是一个通用代理的统一界面，它结合了三个互补渠道：通过代码和命令行工具的编程交互、通过可访问性（AX）的语义交互以及通过图形用户界面（GUI）的视觉交互。我们的 HCU 支持高效的 AX 交互并防止通道切换期间的陈旧状态操作。补充 HCU 技能可指导座席选择和协调渠道，以有效地使用统一界面。我们设计的 AX 工具返回紧凑的观察结果，批量执行操作，并将其效果报告为 AX 差异，因此模型需要更少的往返。在 OSWorld 2.0 上，HCU 在比较系统中获得了最高的部分和二进制分数。通过分析代理轨迹，我们发现所有评估的模型都通过 HCU 进行了改进，但在不同渠��之间分配工作的方式不同，并且在效率和任务成功方面始终优于比较基准，这凸显了允许灵活渠道选择和组合的统一计算机使用界面的价值。",
+      "authors": "Haoqing Wang, Xiaoyi Zhang, Sicheng Fan, Zhexin Zhang, Xinjie Zhang, Jiahao Li, Bin Li, Yan Lu",
+      "url": "https://huggingface.co/papers/2610.41432",
       "score": 9,
       "meta": {
         "source": "huggingface",
         "upvotes": "9",
-        "paperId": "2611.05306"
-      }
-    },
-    {
-      "id": "2611.02476",
-      "title": "GigaSpeech 3: Scaling Multi-Dialect Arabic Speech Recognition with Weakly Labeled Data",
-      "title_zh": "GigaSpeech 3：使用弱标记数据扩展多方言阿拉伯语语音识别",
-      "description": "Dialectal Arabic speech recognition remains constrained by the scarcity of dialect-resolved transcribed speech despite the abundance of web audio. We introduce GigaSpeech 3, a corpus of 39,000 hours and 10 million weakly transcribed speech segments covering Algerian, Egyptian, Iraqi, Saudi, and Syrian Arabic. Starting from 60 hours of manual transcription per dialect, we train labeling models using speech-recognition-biased self-supervised learning and apply them to dialect-matched web audio. Data selection and four rounds of noisy-student refinement for Saudi and Syrian Arabic yield the final corpus. We validate its utility through dialect-specific and multi-dialect speech recognition training and cross-domain evaluation. On GigaSpeechBench, the final dialect-specific models outperform their labeling models across all five dialects and achieve a macro-average word error rate of 23.86%, a 16.6% relative reduction from the strongest third-party system covering all five dialects, while outperforming the best third-party result on three dialects. A multi-dialect model using self-predicted dialect identities achieves a macro-average word error rate of 25.51% while also supporting Modern Standard Arabic. Across eight conditions from three external corpora, a GigaSpeech 3-trained Zipformer achieves the lowest word error rate among six evaluated models in every condition, while adapting the Qwen3 speech recognizer on GigaSpeech 3 improves performance across all eight conditions. We release the corpus and recipes as a foundation for dialect-aware Arabic speech processing.",
-      "description_zh": "尽管网络音频丰富，但阿拉伯语方言语音识别仍然受到方言解析转录语音稀缺的限制。我们推出了 GigaSpeech 3，这是一个包含 39,000 小时和 1000 万个弱转录语音片段的语料库，涵盖阿尔及利亚语、埃及语、伊拉克语、沙特语和叙利亚阿拉伯语。从每种方言 60 小时的手动转录开始，我们使用基于语音识别的自监督学习来训练标签模型，并将其应用于方言匹配的网络音频。针对沙特和叙利亚阿拉伯语的数据选择和四轮嘈杂学生细化产生了最终语料库。我们通过特定方言和多方言语音识别训练和跨域评估来验证其实用性。在 GigaSpeechBench 上，最终的方言特定模型在所有五种方言上都优于其标记模型，宏观平均单词错误率为 23.86%，比涵盖所有五种方言的最强第三方系统相对降低了 16.6%，同时在三种方言上的表现优于第三方的最佳结果。使用自我预测方言身份的多方言模型实现了 25.51% 的宏观平均单词错误率，同时还支持现代标准阿拉伯语。在来自三个外部语料库的八个条件下，经过 GigaSpeech 3 训练的 Zipformer 在每个条件下的六个评估模型中实现了最低的单词错误率，同时在 GigaSpeech 3 上采用 Qwen3 语音识别器提高了所有八个条件下的性能。我们发布语料库和配方作为方言感知的阿拉伯语语音处理的基础。",
-      "authors": "Junzhe Liu, Yujie Tu, Yifan Yang, Peng Wang, Haoran Wang, Guodong Lin, Leyan Liao, Chengquan Zhang, Zhifu Gao, Xiangang Li, Qinyuan Cheng, Xipeng Qiu, Wei-Qiang Zhang, Guoguo Chen, Kai Yu, Xie Chen",
-      "url": "https://huggingface.co/papers/2611.02476",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.02476"
+        "paperId": "2610.41432"
       }
     }
   ]
