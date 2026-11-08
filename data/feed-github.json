@@ -1,134 +1,8 @@
 {
   "source": "github",
-  "updatedAt": "2026-11-07T22:57:37.196Z",
-  "count": 15,
+  "updatedAt": "2026-11-08T23:06:37.115Z",
+  "count": 9,
   "items": [
-    {
-      "id": "vercel-labs-agent-browser",
-      "title": "agent-browser",
-      "title_zh": "agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "description_zh": "用于 AI 代理的浏览器自动化 CLI",
-      "authors": "vercel-labs",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "score": 46779,
-      "meta": {
-        "source": "github",
-        "stars": "46,779",
-        "language": "Rust",
-        "repo": "vercel-labs/agent-browser",
-        "owner": "vercel-labs",
-        "repoName": "agent-browser"
-      }
-    },
-    {
-      "id": "cloudflare-security-audit-skill",
-      "title": "security-audit-skill",
-      "title_zh": "security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "description_zh": "用于多阶段安全审计的编码代理技能，具有独立验证的机器可读结果",
-      "authors": "cloudflare",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "score": 65620,
-      "meta": {
-        "source": "github",
-        "stars": "65,620",
-        "language": "JavaScript",
-        "repo": "cloudflare/security-audit-skill",
-        "owner": "cloudflare",
-        "repoName": "security-audit-skill"
-      }
-    },
-    {
-      "id": "google-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Agent Skills for Google products and technologies",
-      "description_zh": "Google 产品和技术的代理技能",
-      "authors": "google",
-      "url": "https://github.com/google/skills",
-      "score": 23358,
-      "meta": {
-        "source": "github",
-        "stars": "23,358",
-        "language": "Python",
-        "repo": "google/skills",
-        "owner": "google",
-        "repoName": "skills"
-      }
-    },
-    {
-      "id": "mattpocock-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "description_zh": "真正工程师的技能。直接来自我的 .agents 目录。",
-      "authors": "mattpocock",
-      "url": "https://github.com/mattpocock/skills",
-      "score": 317645,
-      "meta": {
-        "source": "github",
-        "stars": "317,645",
-        "language": "Shell",
-        "repo": "mattpocock/skills",
-        "owner": "mattpocock",
-        "repoName": "skills"
-      }
-    },
-    {
-      "id": "anthropics-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Public repository for Agent Skills",
-      "description_zh": "代理技能的公共存储库",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/skills",
-      "score": 188741,
-      "meta": {
-        "source": "github",
-        "stars": "188,741",
-        "language": "Python",
-        "repo": "anthropics/skills",
-        "owner": "anthropics",
-        "repoName": "skills"
-      }
-    },
-    {
-      "id": "meta-astryx",
-      "title": "astryx",
-      "title_zh": "astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "description_zh": "完全可定制且可供代理使用的开源设计系统",
-      "authors": "meta",
-      "url": "https://github.com/meta/astryx",
-      "score": 14445,
-      "meta": {
-        "source": "github",
-        "stars": "14,445",
-        "language": "TypeScript",
-        "repo": "meta/astryx",
-        "owner": "meta",
-        "repoName": "astryx"
-      }
-    },
-    {
-      "id": "prometheus-prometheus",
-      "title": "prometheus",
-      "title_zh": "prometheus",
-      "description": "The Prometheus monitoring system and time series database.",
-      "description_zh": "Prometheus监控系统和时间序列数据库。",
-      "authors": "prometheus",
-      "url": "https://github.com/prometheus/prometheus",
-      "score": 67434,
-      "meta": {
-        "source": "github",
-        "stars": "67,434",
-        "language": "Go",
-        "repo": "prometheus/prometheus",
-        "owner": "prometheus",
-        "repoName": "prometheus"
-      }
-    },
     {
       "id": "sherlock-project-sherlock",
       "title": "sherlock",
@@ -137,122 +11,14 @@
       "description_zh": "通过社交网络上的用户名查找社交媒体帐户",
       "authors": "sherlock-project",
       "url": "https://github.com/sherlock-project/sherlock",
-      "score": 100353,
+      "score": 103328,
       "meta": {
         "source": "github",
-        "stars": "100,353",
+        "stars": "103,328",
         "language": "Python",
         "repo": "sherlock-project/sherlock",
         "owner": "sherlock-project",
         "repoName": "sherlock"
-      }
-    },
-    {
-      "id": "milind-soni-OpenMausBot",
-      "title": "OpenMausBot",
-      "title_zh": "OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "description_zh": "开源 Grok Bot 替代品，带有机器人可以使用的虚拟机",
-      "authors": "milind-soni",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "score": 16903,
-      "meta": {
-        "source": "github",
-        "stars": "16,903",
-        "language": "TypeScript",
-        "repo": "milind-soni/OpenMausBot",
-        "owner": "milind-soni",
-        "repoName": "OpenMausBot"
-      }
-    },
-    {
-      "id": "astral-sh-ruff",
-      "title": "ruff",
-      "title_zh": "ruff",
-      "description": "An extremely fast Python linter and code formatter, written in Rust.",
-      "description_zh": "一个非常快的 Python linter 和代码格式化程序，用 Rust 编写。",
-      "authors": "astral-sh",
-      "url": "https://github.com/astral-sh/ruff",
-      "score": 50961,
-      "meta": {
-        "source": "github",
-        "stars": "50,961",
-        "language": "Rust",
-        "repo": "astral-sh/ruff",
-        "owner": "astral-sh",
-        "repoName": "ruff"
-      }
-    },
-    {
-      "id": "tailwindlabs-tailwindcss",
-      "title": "tailwindcss",
-      "title_zh": "tailwindcss",
-      "description": "A utility-first CSS framework for rapid UI development.",
-      "description_zh": "用于快速 UI 开发的实用程序优先 CSS 框架。",
-      "authors": "tailwindlabs",
-      "url": "https://github.com/tailwindlabs/tailwindcss",
-      "score": 98438,
-      "meta": {
-        "source": "github",
-        "stars": "98,438",
-        "language": "TypeScript",
-        "repo": "tailwindlabs/tailwindcss",
-        "owner": "tailwindlabs",
-        "repoName": "tailwindcss"
-      }
-    },
-    {
-      "id": "mbillow-localthings",
-      "title": "localthings",
-      "title_zh": "localthings",
-      "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account.",
-      "description_zh": "通过家庭网络从家庭助理控制您的三星设备，无需云帐户。",
-      "authors": "mbillow",
-      "url": "https://github.com/mbillow/localthings",
-      "score": 1040,
-      "meta": {
-        "source": "github",
-        "stars": "1,040",
-        "language": "Python",
-        "repo": "mbillow/localthings",
-        "owner": "mbillow",
-        "repoName": "localthings"
-      }
-    },
-    {
-      "id": "zed-industries-zed",
-      "title": "zed",
-      "title_zh": "zed",
-      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "description_zh": "以思想的速度编写代码 – Zed 是一款高性能、多人代码编辑器，由 Atom 和 Tree-sitter 的创建者开发。",
-      "authors": "zed-industries",
-      "url": "https://github.com/zed-industries/zed",
-      "score": 94247,
-      "meta": {
-        "source": "github",
-        "stars": "94,247",
-        "language": "Rust",
-        "repo": "zed-industries/zed",
-        "owner": "zed-industries",
-        "repoName": "zed"
-      }
-    },
-    {
-      "id": "ranxianglei-billion-context",
-      "title": "billion-context",
-      "title_zh": "billion-context",
-      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
-      "description_zh": "一个上下文压缩插件，用于长达一个月的单个会话（数十亿个令牌），小上下文窗口（100K上下文就足够了）和令牌节省（5倍更少的令牌）。上下文压缩插件，月级长会话会话，兼顾小窗口(100k上下文足矣)省token(省5倍token)。十亿上下文就是您所需要的",
-      "authors": "ranxianglei",
-      "url": "https://github.com/ranxianglei/billion-context",
-      "score": 4578,
-      "meta": {
-        "source": "github",
-        "stars": "4,578",
-        "language": "TypeScript",
-        "repo": "ranxianglei/billion-context",
-        "owner": "ranxianglei",
-        "repoName": "billion-context"
       }
     },
     {
@@ -263,14 +29,140 @@
       "description_zh": "NVIDIA Kubernetes 引擎 (NVKE)。裸机上 GPU Kubernetes 的管理平面。",
       "authors": "dsx-ai-factory",
       "url": "https://github.com/dsx-ai-factory/nvke",
-      "score": 536,
+      "score": 824,
       "meta": {
         "source": "github",
-        "stars": "536",
+        "stars": "824",
         "language": "Go",
         "repo": "dsx-ai-factory/nvke",
         "owner": "dsx-ai-factory",
         "repoName": "nvke"
+      }
+    },
+    {
+      "id": "milind-soni-OpenMausBot",
+      "title": "OpenMausBot",
+      "title_zh": "OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "description_zh": "开源 Grok Bot 替代品，带有机器人可以使用的虚拟机",
+      "authors": "milind-soni",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "score": 18179,
+      "meta": {
+        "source": "github",
+        "stars": "18,179",
+        "language": "TypeScript",
+        "repo": "milind-soni/OpenMausBot",
+        "owner": "milind-soni",
+        "repoName": "OpenMausBot"
+      }
+    },
+    {
+      "id": "anthropics-claude-quickstarts",
+      "title": "claude-quickstarts",
+      "title_zh": "claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "description_zh": "旨在帮助开发人员快速开始使用 Claude API 构建可部署应用程序的项目集合",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "score": 19386,
+      "meta": {
+        "source": "github",
+        "stars": "19,386",
+        "language": "Python",
+        "repo": "anthropics/claude-quickstarts",
+        "owner": "anthropics",
+        "repoName": "claude-quickstarts"
+      }
+    },
+    {
+      "id": "vercel-labs-agent-browser",
+      "title": "agent-browser",
+      "title_zh": "agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "description_zh": "用于 AI 代理的浏览器自动化 CLI",
+      "authors": "vercel-labs",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "score": 47541,
+      "meta": {
+        "source": "github",
+        "stars": "47,541",
+        "language": "Rust",
+        "repo": "vercel-labs/agent-browser",
+        "owner": "vercel-labs",
+        "repoName": "agent-browser"
+      }
+    },
+    {
+      "id": "meta-astryx",
+      "title": "astryx",
+      "title_zh": "astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "description_zh": "完全可定制且可供代理使用的开源设计系统",
+      "authors": "meta",
+      "url": "https://github.com/meta/astryx",
+      "score": 16552,
+      "meta": {
+        "source": "github",
+        "stars": "16,552",
+        "language": "TypeScript",
+        "repo": "meta/astryx",
+        "owner": "meta",
+        "repoName": "astryx"
+      }
+    },
+    {
+      "id": "anthropics-skills",
+      "title": "skills",
+      "title_zh": "skills",
+      "description": "Public repository for Agent Skills",
+      "description_zh": "代理技能的公共存储库",
+      "authors": "anthropics",
+      "url": "https://github.com/anthropics/skills",
+      "score": 189573,
+      "meta": {
+        "source": "github",
+        "stars": "189,573",
+        "language": "Python",
+        "repo": "anthropics/skills",
+        "owner": "anthropics",
+        "repoName": "skills"
+      }
+    },
+    {
+      "id": "google-deepmind-mujoco",
+      "title": "mujoco",
+      "title_zh": "mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "description_zh": "具有接触的多关节动力学。通用物理模拟器。",
+      "authors": "google-deepmind",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "score": 16374,
+      "meta": {
+        "source": "github",
+        "stars": "16,374",
+        "language": "C++",
+        "repo": "google-deepmind/mujoco",
+        "owner": "google-deepmind",
+        "repoName": "mujoco"
+      }
+    },
+    {
+      "id": "ranxianglei-billion-context",
+      "title": "billion-context",
+      "title_zh": "billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "description_zh": "一个上下文压缩插件，用于长达一个月的单个会话（数十亿个令牌），小上下文窗口（100K上下文就足够了）和令牌节省（5倍更少的令牌）。上下文压缩插件，月级长会话会话，兼顾小窗口(100k上下文足矣)省token(省5倍token)。十亿上下文就是您所需要的",
+      "authors": "ranxianglei",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "score": 5102,
+      "meta": {
+        "source": "github",
+        "stars": "5,102",
+        "language": "TypeScript",
+        "repo": "ranxianglei/billion-context",
+        "owner": "ranxianglei",
+        "repoName": "billion-context"
       }
     }
   ]

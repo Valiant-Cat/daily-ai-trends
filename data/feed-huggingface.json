@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-07T22:57:43.466Z",
+  "updatedAt": "2026-11-08T23:06:40.969Z",
   "count": 15,
   "items": [
     {
@@ -11,10 +11,10 @@
       "description_zh": "大型语言模型 (LLM) 代理通常将原始工具输出附加到其上下文中。在多步交互中，长时间且嘈杂的观察会产生大量的上下文开销，并削弱代理对任务相关信息的注意力。现有的标记修剪和摘要方法仍然受到离散文本表示的限制，限制了可实现的压缩比。\n  在这项工作中，我们挑战了普遍的假设，即代理必须将工具观察结果作为显式文本标记来使用。为此，我们提出了 Coca-Cola，一种用于 LLM 代理的连续潜在上下文压缩模型。可口可乐将工具观察结果压缩为潜在标记，并将其嵌入到代理的输入嵌入空间中。我们进一步引入了动作保留训练，它在完整和压缩的观察下调整代理的下一步动作分布。这训练压缩模型来学习保留决策关键信息的足够动作的潜在令牌。在四个 QA 基准和两个模型系列上对网络搜索代理进行的实验表明，可口可乐将代理的令牌消耗减少了 70.01%-89.24%，将端到端运行时间减少了 24.45%-55.97%，同时持续提高了任务性能。这些结果表明，可口可乐为代理中的上下文压缩提供了一种有前途的方法。我们的代码可在 https://github.com/THU-Agent/Coca-cola 获取。",
       "authors": "Yuetong Liu, Zhehao Zhou, Yitong Zhang, Haorui Chen, Jia Li",
       "url": "https://huggingface.co/papers/2611.06500",
-      "score": 2,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "6",
         "paperId": "2611.06500"
       }
     },
@@ -26,10 +26,10 @@
       "description_zh": "边缘设备上的离线检索增强生成（RAG）通过携带文本和预先计算的嵌入向量的签名知识包进行更新。签名证明谁发布了一个包，而不是它的向量对其文本进行编码。我们研究了这种文本向量完整性差距。重新计算向量并在余弦容差范围内接受它们的验证者向控制向量的攻击者承认可预测的查询份额：劫持率等于容差处的角度检索裕度的分布（裕度定律）。五个语料库和两个嵌入模型的边距很小，因此浮点噪声水平的理想化容差会导致高达 5.5% 的查询暴露（一旦排除精确的重复文档，任何语料库中最多为 1.2%），而根据我们的 CPU INT8-FP32 比较小型嵌入模型（在诚实余弦的经验 0.1% 分位数）校准的阈值会导致 98-100% 的查询暴露；在运行本地语言模型的 Raspberry Pi 5 上，此类攻击会将正确答案从 0.75 降低到 0.39。压缩矢量存储的完整性审计也好不到哪儿去：在超过 57,638 个文档的 FAISS 产品量化索引上，所有通过审计的被篡改矢量将攻击者的文档放在了 25% 目标的首位。相反，验证量化代码，由验证者决定模���性，校准保护带和规范化，接受我们在三个平台上的样本中的每个诚实向量，并使发布者别无选择。我们还表明，常见的浮点和动态 INT8 推理管道在批量大小或架构上不可进行位再现，并报告预先注册的关于弃权、上下文修剪和语义筛选的负面结果。我们发布代码和数据。",
       "authors": "Georgios Feretzakis, Alexandros Papaspyridis",
       "url": "https://huggingface.co/papers/2611.06498",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2611.06498"
       }
     },
@@ -53,13 +53,13 @@
       "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
       "title_zh": "SwarmEvolve：用于进化发现和优化的潜在代理群",
       "description": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
-      "description_zh": "LLM 引导的进化搜索使用 AI 代理，通过迭代改进解决方案并结合高分方法来改进数学和计算问题的程序。然而，这个过程通常很慢，因为LLM每轮都会生成很长的文本思想链，并且必须多次重复这一生成以保持群体多样性。我们提出了 SwarmEvolve，这是一个框架，其中每轮数百个低成本代理以群体的形式工作，在潜在空间中进行推理而无需解码为文本，并通过传递 KV 缓存来共享信息。每个群体从不同的角度研究问题。新奇过��器通过直接测量代理隐藏状态向量之间的距离来保留最独特的代理想法。思想的交叉在潜在空间中自然发生，因为摘要器代理接收所有群体成员的组合 KV 缓存。在数学发现和科学计算的 21 个问题上，SwarmEvolve 获得了最高的平均分数，并且只需要 3 到 8 分钟的中位数即可达到其他最先进框架在 60 分钟内达到的最佳分数。在几个问题上，SwarmEvolve 与 Qwen3 8B 改进了 AlphaEvolve 首次通过前沿 LLM 找到的解决方案。我们的工作表明，在潜���空间中进行通信的代理群为科学问题的程序搜索提供了一种快速、低成本的方法。",
+      "description_zh": "LLM 引导的进化搜索使用 AI 代理，通过迭代改进解决方案并结合高分方法来改进数学和计算问题的程序。然而，这个过程通常很慢，因为LLM每轮都会生成很长的文本思想链，并且必须多次重复这一生成以保持群体多样性。我们提出了 SwarmEvolve，这是一个框架，其中每轮数百个低成本代理以群体的形式工作，在潜在空间中进行推理而无需解码为文本，并通过传递 KV 缓存来共享信息。每个群体从不同的角度研究问题。新奇过���器通过直接测量代理隐藏状态向量之间的距离来保留最独特的代理想法。思想的交叉在潜在空间中自然发生，因为摘要器代理接收所有群体成员的组合 KV 缓存。在数学发现和科学计算的 21 个问题上，SwarmEvolve 获得了最高的平均分数，并且只需要 3 到 8 分钟的中位数即可达到其他最先进框架在 60 分钟内达到的最佳分数。在几个问题上，SwarmEvolve 与 Qwen3 8B 改进了 AlphaEvolve 首次通过前沿 LLM 找到的解决方案。我们的工作表明，在��在空间中进行通信的代理群为科学问题的程序搜索提供了一种快速、低成本的方法。",
       "authors": "Qile Jiang, George Em Karniadakis",
       "url": "https://huggingface.co/papers/2611.08483",
-      "score": 8,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "9",
         "paperId": "2611.08483"
       }
     },
@@ -71,10 +71,10 @@
       "description_zh": "大型语言模型（LLM）在解决研究级问题方面显示出越来越大的前景，但仍然缺乏此类问题的全面集合，并且在研究级问题上评估它们仍然具有挑战性。我们介绍 OpenFrontiers，这是一个跨学科资源，它将开放研究问题的结构化语料库与最近解决的数学问题的回顾性基准相结合。该语料库记录了 12,151 个问题的问题陈述、背景、进度和其他信息。该基准包含 200 个问题，其中 110 个将于 2026 年解决，90 个仍悬而未决，每个问题都有一个由自动探针和两次独立审查检查的 Lean~4 声明； HQ-50 子集根据质量分数等进一步过滤。我们的评估协议在闭卷、冻结检索和实时网络条件下，在隔离沙箱中使用两个独立检查器对形式证明进行评分。在标准化预算下评估 HQ-50 子集上的 7 个 LLM 代理，我们发现闭卷重新发现的情况很少见，最多 40 个已解决问题中的 7 个，而实时网络的成功主要反映了对已发布解决方案的检索。通过将广泛的研究问题语料库与带有记录解决方案的正式分级评估子集联系起来，OpenFrontiers 为衡量研究水平的重新发现和研究解决当前开放科学问题的进展奠定了基础。数据集和基准可以在 https://huggingface.co/collections/FlippyDora/​​openfrontiers 中找到。",
       "authors": "Jiarui Yao, Ruida Wang, Tong Zhang",
       "url": "https://huggingface.co/papers/2610.37739",
-      "score": 4,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "6",
         "paperId": "2610.37739"
       }
     },
@@ -83,13 +83,13 @@
       "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
       "title_zh": "终端式数学建模平台：第一个可代理、可验证的数学建模基准",
       "description": "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agentic, verifiable, and terminal at once, over 18 real CUMCM and MCM problems (2023--2025). Each task ships the verbatim statement, official attachments, and figures in a containerized terminal; the agent returns one JSON artifact, scored on the numeric core of the final question against a reproduction of the Outstanding-award paper. Two design choices distinguish it: direction-aware, one-sided scoring, which never penalises beating the anchor, and two-layer feasibility verification---a programmatic gate over six decidable invariant forms plus 624 Lean~4 obligations---with a hard gate that zeroes infeasible answers. Each task is scored against a panel of human outstanding papers rather than one, so a model must be close to many accepted answers; across seven multimodal entries (three seeds each) the strongest reach a multi-reference O-Eval of 64.58\\%, while the \\2.54 open model holds 59.81% at 1/100$ the cost. TB-MathModel turns the numeric core of modeling into a reproducible, machine-checkable signal for measuring long-horizon modeling competence and for collecting agent trajectories. The source code is available at https://github.com/wxj630/terminal-bench-math-modeling.",
-      "description_zh": "数学建模将开放式的现实世界问题转化为假设、模型、解决方案和有说服力的建议，只有当其答案接近可信参考且物理上可行时，它的答案才重要；现有的基准要么对解算器片段进行评分，要么对LLM法官的成绩报告进行评分，而对这些数字不加检查。我们推出了 TB-MathModel（终端式数学建模平台），这是第一个使完整竞赛式建模问题同时变得可代理、可验证和终端的基准，超过 18 个真实的 CUMCM 和 MCM 问题（2023--2025）。每项任务都会在集装箱码头中运送逐字陈述、官方附件和数据；代理返回一个 JSON 工件，根据最终问题的数字核心与杰出奖论文的复制品进行评分。两种设计选择使其与众不同：方向感知、片面评分，永远不会惩罚击中锚点，以及两层可行性验证——超过 6 个可判定不变形式的程序化门加上 624 个 Lean~4 义务——以及一个将不可行答案归零的硬门。每项任务都是根据一组人类杰出论文而不是一篇进行评分，因此模型必须接近许多公认的答案；在七个多模式条目（每个三个种子）中，最强��多参考 O-Eval 达到 64.58%，而 2.54 开放模型以 1/100 美元的成本保持 59.81%。 TB-MathModel 将建模的数字核心转化为可重复的、机器可检查的信号，用于测量长期建模能力并收集代理轨迹。源代码可在 https://github.com/wxj630/terminal-bench-math-modeling 获取。",
+      "description_zh": "数学建模将开放式的现实世界问题转化为假设、模型、解决方案和有说服力的建议，只有当其答案接近可信参考且物理上可行时，它的答案才重要；现有的基准要么对解算器片段进行评分，要么对LLM法官的成绩报告进行评分，而对这些数字不加检查。我们推出了 TB-MathModel（终端式数学建模平台），这是第一个使完整竞赛式建模问题同时变得可代理、可验证和终端的基准，超过 18 个真实的 CUMCM 和 MCM 问题（2023--2025）。每项任务都会在集装箱码头中运送逐字陈述、官方附件和数据；代理返回一个 JSON 工件，根据最终问题的数字核心与杰出奖论文的复制品进行评分。两种设计选择使其与众不同：方向感知、片面评分，永远不会惩罚击中锚点，以及两层可行性验证——超过 6 个可判定不变形式的程序化门加上 624 个 Lean~4 义务——以及一个将不可行答案归零的硬门。每项任务都是根据一组人类杰出论文而不是一篇进行评分，因此模型必须接近许多公认的答案；在七个多模式条目（每个三个种子）中，最���的多参考 O-Eval 达到 64.58%，而 2.54 开放模型以 1/100 美元的成本保持 59.81%。 TB-MathModel 将建模的数字核心转化为可重复的、机器可检查的信号，用于测量长期建模能力并收集代理轨迹。源代码可在 https://github.com/wxj630/terminal-bench-math-modeling 获取。",
       "authors": "Xiaojun Wu, Cehao Yang, Xuhui Jiang, Chengjin Xu, Jia Li, Jian Guo",
       "url": "https://huggingface.co/papers/2611.08237",
-      "score": 9,
+      "score": 11,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
+        "upvotes": "11",
         "paperId": "2611.08237"
       }
     },
@@ -101,10 +101,10 @@
       "description_zh": "线性注意力将上下文压缩为固定大小的键值状态，用于线性时间训练和常量内存推理。门控增量规则模型会衰减此状态，并在写入新值之前擦除其对传入密钥的预测；门控 DeltaNet-2 (GDN-2) 通过通道衰减和解耦、全等级擦除和写入门来概括这一点。然而，我们表明状态更新对擦除的敏感度远低于对写入的敏感度：密钥激活和单元归一化将密钥能量集中到稀疏的通道子集上，而值写入则缩放所有通道，因此擦除门可以在较低的等级上进行参数化。此外，慢速衰减状态行比快速行累积更大的范数，主导未加权读出并强制更强的写入时擦除以抑制干扰。在此分析的指导下，我们引入了 Muir，它将所有门融合到灵敏度分配的低秩投影中，使用匹配滤波器读出门重新加权状态行，并将保存的参数重新投入到更广泛的前馈网络中。由于标准分块算法在饱和宽矩阵单元所需的大块大小时变得数值不稳定，因此我们设计了并行更新以实现稳定、高效的训练。在 166M-1.34B 参数中，Muir 比 GDN-2 降低了 1.8-2.0% 的困惑度，比 Transformer 降低了 2.5-3.6%，将常识准确性提高了 1.9 个点，并比 GDN-2 提高了提取召回率。在 1.34B 时，Muir 在多跳和多针召回方面均优于基线，从 4K 训练长度推断 2,560 倍到 10M 令牌流，而没有困惑度漂移，并通过静态读出保持对 1M 令牌的近 100% 密钥检索。 Muir 实现了这些收益，同时与 GDN-2 吞吐量相匹配，其 100B 令牌验证损失速度比 Transformer 在 32K 速度下快 1.2 倍，训练速度比 Transformer 快 2.7 倍。",
       "authors": "Tushaar Gangavarapu, Gil Tabak, Clemens JS Schaefer",
       "url": "https://huggingface.co/papers/2611.08376",
-      "score": 6,
+      "score": 12,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
+        "upvotes": "12",
         "paperId": "2611.08376"
       }
     },
@@ -158,13 +158,13 @@
       "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
       "title_zh": "关于预填充到自回归跨模型迁移的机遇和挑战",
       "description": "Prefill-to-Autoregressive Cross-model Transfer (PACT), a form of latent communication between language models, combines a larger model's prompt representations with a smaller model's efficient generation, offering a promising way to balance capability and inference cost. However, existing systems provide limited support for independently evaluating large-small model collaboration, and improved task performance alone does not establish whether the receiver benefits from the sender's information. We introduce PLatour, an open-source PACT framework that connects frozen models through lightweight, zero-initialized linear bridges trained directly with task rewards and supports hybrid-attention architectures. PLatour significantly outperforms open-source baselines on generation tasks and surpasses Mostik's reported results on shared mathematics and coding benchmarks using a substantially smaller sender. However, controlled experiments show that the gains on some tasks can be reproduced by uninformative sender signals, self-communication, or receiver-only training. We find that trainable bridges can act as parameter-efficient adaptation mechanisms without exploiting useful sender information. We therefore propose PACT-Check to quantify how much of a trained PACT system's gain genuinely comes from communication. Finally, we discuss the opportunities and challenges of PACT systems. Code is available at https://github.com/zhenyi4/platour.",
-      "description_zh": "预填充到自回归跨模型迁移 (PACT) 是语言模型之间潜在通信的一种形式，它将较大模型的即时表示与较小模型的高效生成相结合，提供了一种平衡能力和推理成本的有前途的方法。然而，现有系统对独立评估大小模型协作的支持有限，并且仅改进任务性能并不能确定接收者是否从发送者的信息中受益。我们引入了 PLAtour，这是一个开源 PACT 框架，它通过轻量级、零初始化的线性桥连接冻结模型，直接使用任务奖励进行训练，并支持混合注意力架构。 PLAtour 在生成任务上显着优于开源基线，并在使用小得多的发送器的共享数学和编码基准上超过了 Mostik 报告的结果。然而，对照实验表明，某些任务的收益可以通过无信息的发送者信号、自我通信或仅接收者训练来重现。我们发现可训练的桥可以充当参数有效的适应机制，而无需利用有用的发送者信息。因此，我们建议使用 PACT-Check 来量化经过训练的 PACT 系统的收益有多少真正来自于通信。最后，我们讨论了 PACT 系统的机遇和挑战。代码可在 https://github.com/zhenyi4/platour 获取。",
+      "description_zh": "预填充到自回归跨模型迁移 (PACT) 是语言模型之间潜在通信的一种形式，它将较大模型的即时表示与较小模型的高效生成相结合，提供了一种平衡能力和推理成本的有前途的方法。然而，现有系统对独立评估大小模型协作的支持有限，并且仅改进任务性能并不能确定接收者是否从发送者的信息中受益。我们引入了 PLAtour，这是一个开源 PACT 框架，它通过轻量级、零初始化的线性桥连接冻结模型，直接使用任务奖励进行训练，并支持混合注意力架构。 PLAtour 在生成任务上显着优于开源基线，并在使用小得多的发送器的共享数学和编码基准上超过了 Mostik 报告的结果。然而，对照实验表明，某些任务的收益可以通过无信息的发送者信号、自我通信或仅接收者训练来重现。我们发现可训练的桥可以充当参数有效的适应机制，而无需利用有用的发送者信息。因此，我们建议使用 PACT-Check 来量化经过训练的 PACT 系统的收益有多少真正来自于通信。最后，我们讨���了 PACT 系统的机遇和挑战。代码可在 https://github.com/zhenyi4/platour 获取。",
       "authors": "Zhenyi Shen, Junru Lu, Wei Liu, Jiangnan Ye, Jiazheng Li, Di Yin, Xing Sun, Tameem Adel, Yali Du, Lin Gui, Yulan He",
       "url": "https://huggingface.co/papers/2611.06976",
-      "score": 14,
+      "score": 15,
       "meta": {
         "source": "huggingface",
-        "upvotes": "14",
+        "upvotes": "15",
         "paperId": "2611.06976"
       }
     },
@@ -173,7 +173,7 @@
       "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
       "title_zh": "通过强度引导令牌减少和物理感知增强实现实时全波形 LiDAR 变压器",
       "description": "LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: high computational cost from redundant tokens in low-intensity background regions, and limited generalization due to scarce annotated training data. We address both bottlenecks by exploiting the physical structure inherent to FWL data. First, we propose FWL-ToPM, a token pruning and merging mechanism that leverages intensity distributions to selectively reduce tokens while retaining critical waveform content. Second, we introduce FWLAug, a data augmentation framework designed as a regularization method that preserves waveform structure, retaining the Time-of-Flight waveform of each ray and the frustum geometry, to improve generalization to unseen scenes. Evaluated on the Ghost-FWL benchmark, FWL-ToPM achieves over 8 times speedup at real-time throughput alongside a nearly 9-point F1 gain over the prior state of the art, establishing the first real-time FWL Transformer that simultaneously improves accuracy. FWLAug further improves performance on both the standard benchmark and an out-of-distribution test set of unseen scenes. Together, these methods push FWL-based perception toward practical deployment. The code and the OOD dataset are publicly available and can be accessed via the project page: https://keio-csg.github.io/FWL-ToPM",
-      "description_zh": "激光雷达是自动驾驶和机器人技术的关键传感器，但它仍然容易受到雾、雨、透明物体和低反射表面等不利条件的影响。全波形激光雷达 (FWL) 通过捕获完整的返回波形作为直方图来解决这些限制，保留丰富的反射特性，包括多路径回波和微弱信号。虽然最近基于 Transformer 的方法在 FWL 数据上表现出了良好的前景，但仍然存在两个基本瓶颈：低强度背景区域中的冗余标记导致计算成本较高，以及由于带注释的训练数据稀缺而导致泛化能力有限。我们通过利用 FWL 数据固有���物理结构来解决这两个瓶颈。首先，我们提出 FWL-ToPM，一种令牌修剪和合并机制，利用强度分布有选择地减少令牌，同时保留关键波形内容。其次，我们介绍 FWLAug，一种数据增强框架，设计为一种正则化方法，可保留波形结构，保留每条光线的飞行时间波形和截头体几何形状，以提高对未见过场景的泛化能力。根据 Ghost-FWL 基准进行评估，FWL-ToPM 在实时吞吐量方面实现了超过 8 倍的加速，同时 F1 增益比现有技术高出近 9 点，从而建立了第一个同时提高准确性的实时 FWL Transformer。 FWLAug 进一步提高了标准基准测试和未见过场景的分布外测试集的性能。这些方法共同推动基于 FWL 的感知走向实际部署。代码和 OOD 数据集是公开可用的，可以通过项目页面访问：https://keio-csg.github.io/FWL-ToPM",
+      "description_zh": "激光雷达是自动驾驶和机器人技术的关键传感器，但它仍然容易受到雾、雨、透明物体和低反射表面等不利条件的影响。全波形激光雷达 (FWL) 通过捕获完整的返回波形作为直方图来解决这些限制，保留丰富的反射特性，包括多路径回波和微弱信号。虽然最近基于 Transformer 的方法在 FWL 数据上表现出了良好的前景，但仍然存在两个基本瓶颈：低强度背景区域中的冗余标记导致计算成本较高，以及由于带注释的训练数据稀缺而导致泛化能力有限。我们通过利用 FWL 数据固��的物理结构来解决这两个瓶颈。首先，我们提出 FWL-ToPM，一种令牌修剪和合并机制，利用强度分布有选择地减少令牌，同时保留关键波形内容。其次，我们介绍 FWLAug，一种数据增强框架，设计为一种正则化方法，可保留波形结构，保留每条光线的飞行时间波形和截头体几何形状，以提高对未见过场景的泛化能力。根据 Ghost-FWL 基准进行评估，FWL-ToPM 在实时吞吐量方面实现了超过 8 倍的加速，同时 F1 增益比现有技术高出近 9 点，从而建立了第一个同时提高准确性的实时 FWL Transformer。 FWLAug 进一步提高了标准基准测试和未见过场景的分布外测试集的性能。这些方法共同推动基于 FWL 的感知走向实际部署。代码和 OOD 数据集是公开可用的，可以通过项目页面访问：https://keio-csg.github.io/FWL-ToPM",
       "authors": "Kotaro Oishi, Kazuma Ikeda, Ryosei Hara, Ryo Yoshida, Mariko Isogawa, Kentaro Yoshioka",
       "url": "https://huggingface.co/papers/2611.07613",
       "score": 5,
@@ -188,7 +188,7 @@
       "title": "SynthFaces: Balanced Large Scale Human Dataset",
       "title_zh": "SynthFaces：平衡的大规模人类数据集",
       "description": "The pursuit of fair and equitable AI in human-centric tasks is critically hindered by the inherent biases and privacy risks of real-world datasets, which offer imbalanced representations of identity and often contain sensitive personal information. Consequently, state-of-the-art generative models trained on this skewed data exhibit unfair performance, particularly in identity-preserving generation. In this work we propose a pipeline for controllable generation of dataset with diverse faces for generative models training and finetuning. We achieve this by expanding foundational Arc2Face diffusion model with a flow matching generative model in the manifold of identity embeddings. We demonstrate that such approach achieves both goals of generative fidelity and label diversity not present in real human-centric datasets. As a result we collect and further contextualize a highly balanced identity-centric dataset of humans named SynthFaces. By design, our released images and identities are synthetic, reducing direct reliance on real personal images; we empirically check identity separation with a nearest-neighbor non-leakage metric. We purpose it for training and tuning of fair models for various downstream tasks, and showcase its usability in finetuning an existing adapter-based method for personalized generation.",
-      "description_zh": "在以人为中心的任务中追求公平和公正的人工智能受到现实世界数据集固有的偏见和隐私风险的严重阻碍，这些数据集提供了不平衡的身份表示，并且通常包含敏感的个人信息。因此，在这种倾斜数据上训练的最先进的生成模型表现出不公平的性能，特别是在身份保留生成方面。在这项工作中，我们提出了一种用于可控生成具有不同面孔的数据集的管道，用于生成模型训练和微调。我们通过在身份嵌入流形中使用流匹配生成模型扩展基础 Arc2Face 扩散模型来实现这一目标。我们证明这种方法实现了生成保真度和标签多样性的目标，而这在真实的以人类为中心的数据集中是不存在的。因此，我们收集了一个高度平衡的以身份为中心的人类数据集，名为 SynthFaces，并进一步将其置于上下文中。根据设计，我们发布的图像和身份是合成的，减少了对真实个人图像的直接依赖；我们使用最近邻非泄漏指标凭经验检查身份分离。我们的目的是为各种下游任务训练和调整公平模型，并展示其在微调现有的基于适配器的个性化生成方法方面的可用性。",
+      "description_zh": "在以人为中心的任务中追求公平和公正的人工智能受到现实世界数据集固有的偏见和隐私风险的严重阻碍，这些数据集提供了不平衡的身份表示，并且通常包含敏感的个人信息。因此，在这种倾斜数据上训练的最先进的生成模型表现出不公平的性能，特别是在身份保留生成方面。在这项工作中，我们提出了一种用于可控生成具有不同面孔的数据集的管道，用于生成模型训练和微调。我们通过在身份嵌入流形中使用流匹配生成模型扩展基础 Arc2Face 扩散模型来实现这一目标。我们证明这种方法实现了生成保真度和标签多样性的目标，而这在真实的以人类为中心的数据集中是不存在的。因此，我们收集了一个高度平衡的以身份为中心的人类数据集，名为 SynthFaces，并进一步将其置于上下文中。根据设计，我们发布的图像和身份是合成的，减少了对真实个人图像的直接依赖；我们使用最近邻非泄漏指标凭经验检查身份分离。我们的目的是为各种下游任务训练和调整公平模型，并展示其在微调现有的基于适配器的个性化生成���法方面的可用性。",
       "authors": "Sergey Karpukhin, Denis Bobkov, Kirill Morozov, Aibek Alanov",
       "url": "https://huggingface.co/papers/2610.40119",
       "score": 1,
@@ -206,10 +206,10 @@
       "description_zh": "代理决策取决于部署观察揭示的经验关系，而任务描述本身可能无法解决。我们引入了解耦预测决策（DPDM），这是一种利用共享预训练学习器将异构代理决策制定为条件预测的架构。语言模型提供当前和历史记录的语义表示，而通用条件预测器则根据表示的证据预测任务定义的目标。预训练提供可重用的推理能力；部署证据实例化特定问题的预测，而无需更新任一模型的神经参数。工具判断、候选人偏好和推理评估共享一个证据和查询界面，预测通过决策规则映射到选择。该架构建立了代理能力的互补来源：通过语言预训练获得的语义知识和通过结构化数据预训练获得的经验推理。单个冻结的 LimiX-2 预测器可服务于所有五个任务类别。使用 Qwen3.5-27B 作为语义编码器，DPDM 将 50 个基准测试的平均准确度从几次提示的 78.80% 提高到各自评估的历史预算下的 84.92%，并在相同的历史和查询下达到 82.33%。在 ToolPRMBench 的 BFCL 和 ToolSandbox 任务上，在方法各自评估的历史预算下，绝对精度增益分别为 34.26% 和 28.87%。随着历史的增长，准确性会提高。在相同的不平衡历史记录下，五个推理步骤评估任务和四个编码器的平均平衡精度绝对提高了 14.51%。 DPDM 使从经验中学习成为一种可独立改进的基础模型能力，为条件预测的进步创建共享路径，以改进跨代理任务的决策。",
       "authors": "Lang Mo, Xingxuan Zhang, Qi Wang, Mingchao Hao, Hao Yuan, Chunjing Gan, Wang Lu, Peng Cui",
       "url": "https://huggingface.co/papers/2611.02075",
-      "score": 79,
+      "score": 81,
       "meta": {
         "source": "huggingface",
-        "upvotes": "79",
+        "upvotes": "81",
         "paperId": "2611.02075"
       }
     },
@@ -221,10 +221,10 @@
       "description_zh": "专家混合（MoE）模型将每个代币分配给众多专家中的少数几个，但单个专家负责的内容仍然不确定。现有的分析计算了在领域标记语料库上选择专家的频率，这是一种提前确定分类法、保持粗略并记录选择而不是贡献的工具。相反，我们通过在 MoE 层的输出上训练稀疏自动编码器（SAE）来研究特征空间的专业化。由于该输出是专家输出的路由器加权总和，并且 SAE 编码器是仿射的，因此每个潜在变量的预激活都可以在专家上精确分解。通过语料库聚合，这为每个专家提供了一组主要的潜在变量，这些潜在变量的激活主要由专家驱动。在 Qwen3-30B-A3B 的第 4、30 和 46 层，贡献远比门控集中，大多数潜在者只有一两个支配者，支配集之间的重叠集中在少数专家对上。自动解释这些集合揭示了粗略领域下面的劳动分工，Java 和前端 Web 代码、几何、算术和多项式都有不同的专家，而粗略领域本身所需要的专家数量却非常不平等。我们的 SAE 和代码可从 https://github.com/Bytedance-Seed/SAE-Interprets-MoE 获取。",
       "authors": "Anyuan Zhuo, Shaohua Zhang, Yuan Lin, Pinyan Lu",
       "url": "https://huggingface.co/papers/2611.08089",
-      "score": 7,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
+        "upvotes": "9",
         "paperId": "2611.08089"
       }
     }
