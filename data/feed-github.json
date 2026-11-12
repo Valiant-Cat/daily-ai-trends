@@ -1,7 +1,7 @@
 {
   "source": "github",
-  "updatedAt": "2026-11-11T00:12:45.160Z",
-  "count": 12,
+  "updatedAt": "2026-11-12T01:39:44.878Z",
+  "count": 10,
   "items": [
     {
       "id": "meta-astryx",
@@ -11,10 +11,10 @@
       "description_zh": "完全可定制且可供代理使用的开源设计系统",
       "authors": "meta",
       "url": "https://github.com/meta/astryx",
-      "score": 22743,
+      "score": 25054,
       "meta": {
         "source": "github",
-        "stars": "22,743",
+        "stars": "25,054",
         "language": "TypeScript",
         "repo": "meta/astryx",
         "owner": "meta",
@@ -22,21 +22,57 @@
       }
     },
     {
-      "id": "anthropics-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Public repository for Agent Skills",
-      "description_zh": "代理技能的公共存储库",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/skills",
-      "score": 192289,
+      "id": "ZhuLinsen-daily_stock_analysis",
+      "title": "daily_stock_analysis",
+      "title_zh": "daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "description_zh": "LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动自主，支持零定时运行。LLM驱动的多市场股票智能分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
+      "authors": "ZhuLinsen",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "score": 70294,
       "meta": {
         "source": "github",
-        "stars": "192,289",
+        "stars": "70,294",
         "language": "Python",
-        "repo": "anthropics/skills",
-        "owner": "anthropics",
-        "repoName": "skills"
+        "repo": "ZhuLinsen/daily_stock_analysis",
+        "owner": "ZhuLinsen",
+        "repoName": "daily_stock_analysis"
+      }
+    },
+    {
+      "id": "GoogleChrome-modern-web-guidance-src",
+      "title": "modern-web-guidance-src",
+      "title_zh": "modern-web-guidance-src",
+      "description": "No description available",
+      "description_zh": "无可用描述",
+      "authors": "GoogleChrome",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "score": 1792,
+      "meta": {
+        "source": "github",
+        "stars": "1,792",
+        "language": "TypeScript",
+        "repo": "GoogleChrome/modern-web-guidance-src",
+        "owner": "GoogleChrome",
+        "repoName": "modern-web-guidance-src"
+      }
+    },
+    {
+      "id": "shadcn-improve",
+      "title": "improve",
+      "title_zh": "improve",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "description_zh": "使用最有能力的模型来审核您的代码库并编写更便宜的模型执行计划。",
+      "authors": "shadcn",
+      "url": "https://github.com/shadcn/improve",
+      "score": 10916,
+      "meta": {
+        "source": "github",
+        "stars": "10,916",
+        "language": "Mixed",
+        "repo": "shadcn/improve",
+        "owner": "shadcn",
+        "repoName": "improve"
       }
     },
     {
@@ -47,10 +83,10 @@
       "description_zh": "AI 编码代理的生产级工程技能。",
       "authors": "addyosmani",
       "url": "https://github.com/addyosmani/agent-skills",
-      "score": 115140,
+      "score": 115978,
       "meta": {
         "source": "github",
-        "stars": "115,140",
+        "stars": "115,978",
         "language": "JavaScript",
         "repo": "addyosmani/agent-skills",
         "owner": "addyosmani",
@@ -58,39 +94,21 @@
       }
     },
     {
-      "id": "anthropics-claude-quickstarts",
-      "title": "claude-quickstarts",
-      "title_zh": "claude-quickstarts",
-      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-      "description_zh": "旨在帮助开发人员快速开始使用 Claude API 构建可部署应用程序的项目集合",
-      "authors": "anthropics",
-      "url": "https://github.com/anthropics/claude-quickstarts",
-      "score": 20481,
+      "id": "vercel-labs-agent-browser",
+      "title": "agent-browser",
+      "title_zh": "agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "description_zh": "用于 AI 代理的浏览器自动化 CLI",
+      "authors": "vercel-labs",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "score": 49891,
       "meta": {
         "source": "github",
-        "stars": "20,481",
-        "language": "Python",
-        "repo": "anthropics/claude-quickstarts",
-        "owner": "anthropics",
-        "repoName": "claude-quickstarts"
-      }
-    },
-    {
-      "id": "google-deepmind-mujoco",
-      "title": "mujoco",
-      "title_zh": "mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "description_zh": "具有接触的多关节动力学。通用物理模拟器。",
-      "authors": "google-deepmind",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "score": 17339,
-      "meta": {
-        "source": "github",
-        "stars": "17,339",
-        "language": "C++",
-        "repo": "google-deepmind/mujoco",
-        "owner": "google-deepmind",
-        "repoName": "mujoco"
+        "stars": "49,891",
+        "language": "Rust",
+        "repo": "vercel-labs/agent-browser",
+        "owner": "vercel-labs",
+        "repoName": "agent-browser"
       }
     },
     {
@@ -101,10 +119,10 @@
       "description_zh": "适合所有人（所有人）的个人理财应用程序",
       "authors": "we-promise",
       "url": "https://github.com/we-promise/sure",
-      "score": 11914,
+      "score": 12988,
       "meta": {
         "source": "github",
-        "stars": "11,914",
+        "stars": "12,988",
         "language": "Ruby",
         "repo": "we-promise/sure",
         "owner": "we-promise",
@@ -119,10 +137,10 @@
       "description_zh": "使用 Claude、ChatGPT 和其他 AI 助手配置和自动化 Home Assistant。",
       "authors": "homeassistant-ai",
       "url": "https://github.com/homeassistant-ai/ha-mcp",
-      "score": 6632,
+      "score": 7388,
       "meta": {
         "source": "github",
-        "stars": "6,632",
+        "stars": "7,388",
         "language": "Python",
         "repo": "homeassistant-ai/ha-mcp",
         "owner": "homeassistant-ai",
@@ -130,93 +148,39 @@
       }
     },
     {
-      "id": "vercel-labs-agent-browser",
-      "title": "agent-browser",
-      "title_zh": "agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "description_zh": "用于 AI 代理的浏览器自动化 CLI",
-      "authors": "vercel-labs",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "score": 49190,
+      "id": "openai-codex-security",
+      "title": "codex-security",
+      "title_zh": "codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "description_zh": "OpenAI 的 Codex Security CLI 和 TypeScript SDK 用于查找、验证和修复安全漏洞。 npm：https://www.npmjs.com/package/@openai/codex-security",
+      "authors": "openai",
+      "url": "https://github.com/openai/codex-security",
+      "score": 11767,
       "meta": {
         "source": "github",
-        "stars": "49,190",
-        "language": "Rust",
-        "repo": "vercel-labs/agent-browser",
-        "owner": "vercel-labs",
-        "repoName": "agent-browser"
-      }
-    },
-    {
-      "id": "sherlock-project-sherlock",
-      "title": "sherlock",
-      "title_zh": "sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "description_zh": "通过社交网络上的用户名查找社交媒体帐户",
-      "authors": "sherlock-project",
-      "url": "https://github.com/sherlock-project/sherlock",
-      "score": 108935,
-      "meta": {
-        "source": "github",
-        "stars": "108,935",
-        "language": "Python",
-        "repo": "sherlock-project/sherlock",
-        "owner": "sherlock-project",
-        "repoName": "sherlock"
-      }
-    },
-    {
-      "id": "tokio-rs-topcoat",
-      "title": "topcoat",
-      "title_zh": "topcoat",
-      "description": "A batteries-included framework for building web apps",
-      "description_zh": "用于构建 Web 应用程序的包含电池的框架",
-      "authors": "tokio-rs",
-      "url": "https://github.com/tokio-rs/topcoat",
-      "score": 6796,
-      "meta": {
-        "source": "github",
-        "stars": "6,796",
-        "language": "Rust",
-        "repo": "tokio-rs/topcoat",
-        "owner": "tokio-rs",
-        "repoName": "topcoat"
-      }
-    },
-    {
-      "id": "ranxianglei-billion-context",
-      "title": "billion-context",
-      "title_zh": "billion-context",
-      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
-      "description_zh": "一个上下文压缩插件，用于长达一个月的单个会话（数十亿个令牌），小上下文窗口（100K上下文就足够了）和令牌节省（5倍更少的令牌）。上下文压缩插件，月级长会话会话，兼顾小窗口(100k上下文足矣)省token(省5倍token)。十亿上下文就是您所需要的",
-      "authors": "ranxianglei",
-      "url": "https://github.com/ranxianglei/billion-context",
-      "score": 6300,
-      "meta": {
-        "source": "github",
-        "stars": "6,300",
+        "stars": "11,767",
         "language": "TypeScript",
-        "repo": "ranxianglei/billion-context",
-        "owner": "ranxianglei",
-        "repoName": "billion-context"
+        "repo": "openai/codex-security",
+        "owner": "openai",
+        "repoName": "codex-security"
       }
     },
     {
-      "id": "mattpocock-skills",
-      "title": "skills",
-      "title_zh": "skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "description_zh": "真正工程师的技能。直接来自我的 .agents 目录。",
-      "authors": "mattpocock",
-      "url": "https://github.com/mattpocock/skills",
-      "score": 320883,
+      "id": "TheAlgorithms-Java",
+      "title": "Java",
+      "title_zh": "Java",
+      "description": "All Algorithms implemented in Java",
+      "description_zh": "所有算法均用 Java 实现",
+      "authors": "TheAlgorithms",
+      "url": "https://github.com/TheAlgorithms/Java",
+      "score": 67040,
       "meta": {
         "source": "github",
-        "stars": "320,883",
-        "language": "Shell",
-        "repo": "mattpocock/skills",
-        "owner": "mattpocock",
-        "repoName": "skills"
+        "stars": "67,040",
+        "language": "Java",
+        "repo": "TheAlgorithms/Java",
+        "owner": "TheAlgorithms",
+        "repoName": "Java"
       }
     }
   ]
