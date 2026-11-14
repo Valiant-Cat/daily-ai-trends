@@ -1,24 +1,24 @@
 {
   "source": "github",
-  "updatedAt": "2026-11-14T00:26:57.360Z",
-  "count": 12,
+  "updatedAt": "2026-11-14T23:20:46.184Z",
+  "count": 15,
   "items": [
     {
-      "id": "alibaba-open-code-review",
-      "title": "open-code-review",
-      "title_zh": "open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "description_zh": "安全、快速、高效，经过阿里巴巴规模的实战考验。混合架构代码审查工具：确定性管道+LLM代理，精确的行级注释，内置多语言规则集（NPE，线程安全，XSS，SQL注入），兼容OpenAI和Anthropic。",
-      "authors": "alibaba",
-      "url": "https://github.com/alibaba/open-code-review",
-      "score": 50608,
+      "id": "backnotprop-plannotator",
+      "title": "plannotator",
+      "title_zh": "plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "description_zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
+      "authors": "backnotprop",
+      "url": "https://github.com/backnotprop/plannotator",
+      "score": 11092,
       "meta": {
         "source": "github",
-        "stars": "50,608",
-        "language": "Go",
-        "repo": "alibaba/open-code-review",
-        "owner": "alibaba",
-        "repoName": "open-code-review"
+        "stars": "11,092",
+        "language": "TypeScript",
+        "repo": "backnotprop/plannotator",
+        "owner": "backnotprop",
+        "repoName": "plannotator"
       }
     },
     {
@@ -29,122 +29,14 @@
       "description_zh": "让您的编码代理了解最新的网络最佳实践",
       "authors": "GoogleChrome",
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "score": 4828,
+      "score": 5976,
       "meta": {
         "source": "github",
-        "stars": "4,828",
+        "stars": "5,976",
         "language": "TypeScript",
         "repo": "GoogleChrome/modern-web-guidance-src",
         "owner": "GoogleChrome",
         "repoName": "modern-web-guidance-src"
-      }
-    },
-    {
-      "id": "openai-codex-security",
-      "title": "codex-security",
-      "title_zh": "codex-security",
-      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-      "description_zh": "OpenAI 的 Codex Security CLI 和 TypeScript SDK 用于查找、验证和修复安全漏洞。 npm：https://www.npmjs.com/package/@openai/codex-security",
-      "authors": "openai",
-      "url": "https://github.com/openai/codex-security",
-      "score": 13124,
-      "meta": {
-        "source": "github",
-        "stars": "13,124",
-        "language": "TypeScript",
-        "repo": "openai/codex-security",
-        "owner": "openai",
-        "repoName": "codex-security"
-      }
-    },
-    {
-      "id": "ZhuLinsen-daily_stock_analysis",
-      "title": "daily_stock_analysis",
-      "title_zh": "daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "description_zh": "LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动自主，支持零定时运行。LLM驱动的多市场股票智能分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
-      "authors": "ZhuLinsen",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "score": 71582,
-      "meta": {
-        "source": "github",
-        "stars": "71,582",
-        "language": "Python",
-        "repo": "ZhuLinsen/daily_stock_analysis",
-        "owner": "ZhuLinsen",
-        "repoName": "daily_stock_analysis"
-      }
-    },
-    {
-      "id": "we-promise-sure",
-      "title": "sure",
-      "title_zh": "sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "description_zh": "适合所有人（所有人）的个人理财应用程序",
-      "authors": "we-promise",
-      "url": "https://github.com/we-promise/sure",
-      "score": 14733,
-      "meta": {
-        "source": "github",
-        "stars": "14,733",
-        "language": "Ruby",
-        "repo": "we-promise/sure",
-        "owner": "we-promise",
-        "repoName": "sure"
-      }
-    },
-    {
-      "id": "backnotprop-plannotator",
-      "title": "plannotator",
-      "title_zh": "plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "description_zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
-      "authors": "backnotprop",
-      "url": "https://github.com/backnotprop/plannotator",
-      "score": 10447,
-      "meta": {
-        "source": "github",
-        "stars": "10,447",
-        "language": "TypeScript",
-        "repo": "backnotprop/plannotator",
-        "owner": "backnotprop",
-        "repoName": "plannotator"
-      }
-    },
-    {
-      "id": "louislam-uptime-kuma",
-      "title": "uptime-kuma",
-      "title_zh": "uptime-kuma",
-      "description": "A fancy self-hosted monitoring tool",
-      "description_zh": "一个精美的自托管监控工具",
-      "authors": "louislam",
-      "url": "https://github.com/louislam/uptime-kuma",
-      "score": 93855,
-      "meta": {
-        "source": "github",
-        "stars": "93,855",
-        "language": "JavaScript",
-        "repo": "louislam/uptime-kuma",
-        "owner": "louislam",
-        "repoName": "uptime-kuma"
-      }
-    },
-    {
-      "id": "block-buzz",
-      "title": "buzz",
-      "title_zh": "buzz",
-      "description": "A hive mind communication platform",
-      "description_zh": "蜂巢思维交流平台",
-      "authors": "block",
-      "url": "https://github.com/block/buzz",
-      "score": 37297,
-      "meta": {
-        "source": "github",
-        "stars": "37,297",
-        "language": "Rust",
-        "repo": "block/buzz",
-        "owner": "block",
-        "repoName": "buzz"
       }
     },
     {
@@ -155,50 +47,14 @@
       "description_zh": "克劳德代码为股票投资者和交易者提供的技能——市场分析、技术图表、经济日历、筛选器和交易策略开发。",
       "authors": "tradermonty",
       "url": "https://github.com/tradermonty/claude-trading-skills",
-      "score": 4161,
+      "score": 4769,
       "meta": {
         "source": "github",
-        "stars": "4,161",
+        "stars": "4,769",
         "language": "Python",
         "repo": "tradermonty/claude-trading-skills",
         "owner": "tradermonty",
         "repoName": "claude-trading-skills"
-      }
-    },
-    {
-      "id": "tailscale-tailcat",
-      "title": "tailcat",
-      "title_zh": "tailcat",
-      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
-      "description_zh": "类似于 netcat，但通过 Tailscale 的数据平面，没有 Tailscale 的控制平面",
-      "authors": "tailscale",
-      "url": "https://github.com/tailscale/tailcat",
-      "score": 9452,
-      "meta": {
-        "source": "github",
-        "stars": "9,452",
-        "language": "Go",
-        "repo": "tailscale/tailcat",
-        "owner": "tailscale",
-        "repoName": "tailcat"
-      }
-    },
-    {
-      "id": "Likely7-Veyra-NRVideo",
-      "title": "Veyra-NRVideo",
-      "title_zh": "Veyra-NRVideo",
-      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
-      "description_zh": "通过 DLSS 5 将 PS5 GTA6 提升至 120FPS。先进的 Windows 视频播放器和捕捉增强工具，具有视频、图像和捕捉卡源的实时预览功能。结合 AI 驱动的超分辨率、DLSS5 图像增强和帧生成，提供下一代视觉体验。",
-      "authors": "Likely7",
-      "url": "https://github.com/Likely7/Veyra-NRVideo",
-      "score": 1615,
-      "meta": {
-        "source": "github",
-        "stars": "1,615",
-        "language": "C++",
-        "repo": "Likely7/Veyra-NRVideo",
-        "owner": "Likely7",
-        "repoName": "Veyra-NRVideo"
       }
     },
     {
@@ -209,14 +65,212 @@
       "description_zh": "用于编码代理的 Chrome DevTools",
       "authors": "ChromeDevTools",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "score": 55446,
+      "score": 56267,
       "meta": {
         "source": "github",
-        "stars": "55,446",
+        "stars": "56,267",
         "language": "TypeScript",
         "repo": "ChromeDevTools/chrome-devtools-mcp",
         "owner": "ChromeDevTools",
         "repoName": "chrome-devtools-mcp"
+      }
+    },
+    {
+      "id": "alibaba-open-code-review",
+      "title": "open-code-review",
+      "title_zh": "open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "description_zh": "安全、快速、高效，经过阿里巴巴规模的实战考验。混合架构代码审查工具：确定性管道+LLM代理，精确的行级注释，内置多语言规则集（NPE，线程安全，XSS，SQL注入），兼容OpenAI和Anthropic。",
+      "authors": "alibaba",
+      "url": "https://github.com/alibaba/open-code-review",
+      "score": 51396,
+      "meta": {
+        "source": "github",
+        "stars": "51,396",
+        "language": "Go",
+        "repo": "alibaba/open-code-review",
+        "owner": "alibaba",
+        "repoName": "open-code-review"
+      }
+    },
+    {
+      "id": "QwenLM-qwen-code",
+      "title": "qwen-code",
+      "title_zh": "qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "description_zh": "位于您终端中的开源人工智能编码代理。",
+      "authors": "QwenLM",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "score": 30311,
+      "meta": {
+        "source": "github",
+        "stars": "30,311",
+        "language": "TypeScript",
+        "repo": "QwenLM/qwen-code",
+        "owner": "QwenLM",
+        "repoName": "qwen-code"
+      }
+    },
+    {
+      "id": "dream-num-univer",
+      "title": "univer",
+      "title_zh": "univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "description_zh": "使用 Univer Office SDK 构建您自己的 AI 办公室。将编辑、计算、协作和文件处理引入您的产品中，供人员和 AI 代理使用。基于可扩展的开源核心构建。",
+      "authors": "dream-num",
+      "url": "https://github.com/dream-num/univer",
+      "score": 24460,
+      "meta": {
+        "source": "github",
+        "stars": "24,460",
+        "language": "TypeScript",
+        "repo": "dream-num/univer",
+        "owner": "dream-num",
+        "repoName": "univer"
+      }
+    },
+    {
+      "id": "ag-ui-protocol-ag-ui",
+      "title": "ag-ui",
+      "title_zh": "ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "description_zh": "AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
+      "authors": "ag-ui-protocol",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "score": 17342,
+      "meta": {
+        "source": "github",
+        "stars": "17,342",
+        "language": "TypeScript",
+        "repo": "ag-ui-protocol/ag-ui",
+        "owner": "ag-ui-protocol",
+        "repoName": "ag-ui"
+      }
+    },
+    {
+      "id": "ashhart-TensorFold",
+      "title": "TensorFold",
+      "title_zh": "TensorFold",
+      "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "description_zh": "适用于 Metal、CUDA 和 Vulkan 的LLM推理引擎。",
+      "authors": "ashhart",
+      "url": "https://github.com/ashhart/TensorFold",
+      "score": 2153,
+      "meta": {
+        "source": "github",
+        "stars": "2,153",
+        "language": "Zig",
+        "repo": "ashhart/TensorFold",
+        "owner": "ashhart",
+        "repoName": "TensorFold"
+      }
+    },
+    {
+      "id": "JuliusBrussee-caveman",
+      "title": "caveman",
+      "title_zh": "caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "description_zh": "🪨 当很少的令牌可以欺骗时为什么要使用很多令牌。病毒式技能 + 编码代理的代理，通过像穴居人一样说话来减少 65% 的代币。",
+      "authors": "JuliusBrussee",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "score": 120041,
+      "meta": {
+        "source": "github",
+        "stars": "120,041",
+        "language": "Go",
+        "repo": "JuliusBrussee/caveman",
+        "owner": "JuliusBrussee",
+        "repoName": "caveman"
+      }
+    },
+    {
+      "id": "louislam-uptime-kuma",
+      "title": "uptime-kuma",
+      "title_zh": "uptime-kuma",
+      "description": "A fancy self-hosted monitoring tool",
+      "description_zh": "一个精美的自托管监控工具",
+      "authors": "louislam",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "score": 94219,
+      "meta": {
+        "source": "github",
+        "stars": "94,219",
+        "language": "JavaScript",
+        "repo": "louislam/uptime-kuma",
+        "owner": "louislam",
+        "repoName": "uptime-kuma"
+      }
+    },
+    {
+      "id": "we-promise-sure",
+      "title": "sure",
+      "title_zh": "sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "description_zh": "适合所有人（所有人）的个人理财应用程序",
+      "authors": "we-promise",
+      "url": "https://github.com/we-promise/sure",
+      "score": 15273,
+      "meta": {
+        "source": "github",
+        "stars": "15,273",
+        "language": "Ruby",
+        "repo": "we-promise/sure",
+        "owner": "we-promise",
+        "repoName": "sure"
+      }
+    },
+    {
+      "id": "Tencent-LoopForge",
+      "title": "LoopForge",
+      "title_zh": "LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "description_zh": "用于编码代理交付的自托管工作流程。使用脚本和人工审批门来编排 CodeBuddy、Codex 和 Claude Code。包括编码助理的本地工作流程。",
+      "authors": "Tencent",
+      "url": "https://github.com/Tencent/LoopForge",
+      "score": 880,
+      "meta": {
+        "source": "github",
+        "stars": "880",
+        "language": "Go",
+        "repo": "Tencent/LoopForge",
+        "owner": "Tencent",
+        "repoName": "LoopForge"
+      }
+    },
+    {
+      "id": "Likely7-Veyra-NRVideo",
+      "title": "Veyra-NRVideo",
+      "title_zh": "Veyra-NRVideo",
+      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "description_zh": "通过 DLSS 5 将 PS5 GTA6 提升至 120FPS。先进的 Windows 视频播放器和捕捉增强工具，具有视频、图像和捕捉卡源的实时预览功能。结合 AI 驱动的超分辨率、DLSS5 图像增强和帧生成，提供下一代视觉体验。",
+      "authors": "Likely7",
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "score": 2201,
+      "meta": {
+        "source": "github",
+        "stars": "2,201",
+        "language": "C++",
+        "repo": "Likely7/Veyra-NRVideo",
+        "owner": "Likely7",
+        "repoName": "Veyra-NRVideo"
+      }
+    },
+    {
+      "id": "martin-olivier-airgorah",
+      "title": "airgorah",
+      "title_zh": "airgorah",
+      "description": "A WiFi security auditing software",
+      "description_zh": "一款WiFi安全审计软件",
+      "authors": "martin-olivier",
+      "url": "https://github.com/martin-olivier/airgorah",
+      "score": 5829,
+      "meta": {
+        "source": "github",
+        "stars": "5,829",
+        "language": "Rust",
+        "repo": "martin-olivier/airgorah",
+        "owner": "martin-olivier",
+        "repoName": "airgorah"
       }
     }
   ]

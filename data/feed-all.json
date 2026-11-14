@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-14T00:26:54.690Z",
+  "generatedAt": "2026-11-14T23:20:44.455Z",
   "github": {
     "source": "github",
-    "updatedAt": "2026-11-14T00:26:57.360Z",
-    "count": 12,
+    "updatedAt": "2026-11-14T23:20:46.184Z",
+    "count": 15,
     "items": [
       {
-        "id": "alibaba-open-code-review",
-        "title": "open-code-review",
-        "title_zh": "open-code-review",
-        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-        "description_zh": "安全、快速、高效，经过阿里巴巴规模的实战考验。混合架构代码审查工具：确定性管道+LLM代理，精确的行级注释，内置多语言规则集（NPE，线程安全，XSS，SQL注入），兼容OpenAI和Anthropic。",
-        "authors": "alibaba",
-        "url": "https://github.com/alibaba/open-code-review",
-        "score": 50608,
+        "id": "backnotprop-plannotator",
+        "title": "plannotator",
+        "title_zh": "plannotator",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+        "description_zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
+        "authors": "backnotprop",
+        "url": "https://github.com/backnotprop/plannotator",
+        "score": 11092,
         "meta": {
           "source": "github",
-          "stars": "50,608",
-          "language": "Go",
-          "repo": "alibaba/open-code-review",
-          "owner": "alibaba",
-          "repoName": "open-code-review"
+          "stars": "11,092",
+          "language": "TypeScript",
+          "repo": "backnotprop/plannotator",
+          "owner": "backnotprop",
+          "repoName": "plannotator"
         }
       },
       {
@@ -31,122 +31,14 @@
         "description_zh": "让您的编码代理了解最新的网络最佳实践",
         "authors": "GoogleChrome",
         "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-        "score": 4828,
+        "score": 5976,
         "meta": {
           "source": "github",
-          "stars": "4,828",
+          "stars": "5,976",
           "language": "TypeScript",
           "repo": "GoogleChrome/modern-web-guidance-src",
           "owner": "GoogleChrome",
           "repoName": "modern-web-guidance-src"
-        }
-      },
-      {
-        "id": "openai-codex-security",
-        "title": "codex-security",
-        "title_zh": "codex-security",
-        "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-        "description_zh": "OpenAI 的 Codex Security CLI 和 TypeScript SDK 用于查找、验证和修复安全漏洞。 npm：https://www.npmjs.com/package/@openai/codex-security",
-        "authors": "openai",
-        "url": "https://github.com/openai/codex-security",
-        "score": 13124,
-        "meta": {
-          "source": "github",
-          "stars": "13,124",
-          "language": "TypeScript",
-          "repo": "openai/codex-security",
-          "owner": "openai",
-          "repoName": "codex-security"
-        }
-      },
-      {
-        "id": "ZhuLinsen-daily_stock_analysis",
-        "title": "daily_stock_analysis",
-        "title_zh": "daily_stock_analysis",
-        "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-        "description_zh": "LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动自主，支持零定时运行。LLM驱动的多市场股票智能分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
-        "authors": "ZhuLinsen",
-        "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-        "score": 71582,
-        "meta": {
-          "source": "github",
-          "stars": "71,582",
-          "language": "Python",
-          "repo": "ZhuLinsen/daily_stock_analysis",
-          "owner": "ZhuLinsen",
-          "repoName": "daily_stock_analysis"
-        }
-      },
-      {
-        "id": "we-promise-sure",
-        "title": "sure",
-        "title_zh": "sure",
-        "description": "The personal finance app for everyone (by everyone)",
-        "description_zh": "适合所有人（所有人）的个人理财应用程序",
-        "authors": "we-promise",
-        "url": "https://github.com/we-promise/sure",
-        "score": 14733,
-        "meta": {
-          "source": "github",
-          "stars": "14,733",
-          "language": "Ruby",
-          "repo": "we-promise/sure",
-          "owner": "we-promise",
-          "repoName": "sure"
-        }
-      },
-      {
-        "id": "backnotprop-plannotator",
-        "title": "plannotator",
-        "title_zh": "plannotator",
-        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-        "description_zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
-        "authors": "backnotprop",
-        "url": "https://github.com/backnotprop/plannotator",
-        "score": 10447,
-        "meta": {
-          "source": "github",
-          "stars": "10,447",
-          "language": "TypeScript",
-          "repo": "backnotprop/plannotator",
-          "owner": "backnotprop",
-          "repoName": "plannotator"
-        }
-      },
-      {
-        "id": "louislam-uptime-kuma",
-        "title": "uptime-kuma",
-        "title_zh": "uptime-kuma",
-        "description": "A fancy self-hosted monitoring tool",
-        "description_zh": "一个精美的自托管监控工具",
-        "authors": "louislam",
-        "url": "https://github.com/louislam/uptime-kuma",
-        "score": 93855,
-        "meta": {
-          "source": "github",
-          "stars": "93,855",
-          "language": "JavaScript",
-          "repo": "louislam/uptime-kuma",
-          "owner": "louislam",
-          "repoName": "uptime-kuma"
-        }
-      },
-      {
-        "id": "block-buzz",
-        "title": "buzz",
-        "title_zh": "buzz",
-        "description": "A hive mind communication platform",
-        "description_zh": "蜂巢思维交流平台",
-        "authors": "block",
-        "url": "https://github.com/block/buzz",
-        "score": 37297,
-        "meta": {
-          "source": "github",
-          "stars": "37,297",
-          "language": "Rust",
-          "repo": "block/buzz",
-          "owner": "block",
-          "repoName": "buzz"
         }
       },
       {
@@ -157,50 +49,14 @@
         "description_zh": "克劳德代码为股票投资者和交易者提供的技能——市场分析、技术图表、经济日历、筛选器和交易策略开发。",
         "authors": "tradermonty",
         "url": "https://github.com/tradermonty/claude-trading-skills",
-        "score": 4161,
+        "score": 4769,
         "meta": {
           "source": "github",
-          "stars": "4,161",
+          "stars": "4,769",
           "language": "Python",
           "repo": "tradermonty/claude-trading-skills",
           "owner": "tradermonty",
           "repoName": "claude-trading-skills"
-        }
-      },
-      {
-        "id": "tailscale-tailcat",
-        "title": "tailcat",
-        "title_zh": "tailcat",
-        "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
-        "description_zh": "类似于 netcat，但通过 Tailscale 的数据平面，没有 Tailscale 的控制平面",
-        "authors": "tailscale",
-        "url": "https://github.com/tailscale/tailcat",
-        "score": 9452,
-        "meta": {
-          "source": "github",
-          "stars": "9,452",
-          "language": "Go",
-          "repo": "tailscale/tailcat",
-          "owner": "tailscale",
-          "repoName": "tailcat"
-        }
-      },
-      {
-        "id": "Likely7-Veyra-NRVideo",
-        "title": "Veyra-NRVideo",
-        "title_zh": "Veyra-NRVideo",
-        "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
-        "description_zh": "通过 DLSS 5 将 PS5 GTA6 提升至 120FPS。先进的 Windows 视频播放器和捕捉增强工具，具有视频、图像和捕捉卡源的实时预览功能。结合 AI 驱动的超分辨率、DLSS5 图像增强和帧生成，提供下一代视觉体验。",
-        "authors": "Likely7",
-        "url": "https://github.com/Likely7/Veyra-NRVideo",
-        "score": 1615,
-        "meta": {
-          "source": "github",
-          "stars": "1,615",
-          "language": "C++",
-          "repo": "Likely7/Veyra-NRVideo",
-          "owner": "Likely7",
-          "repoName": "Veyra-NRVideo"
         }
       },
       {
@@ -211,23 +67,251 @@
         "description_zh": "用于编码代理的 Chrome DevTools",
         "authors": "ChromeDevTools",
         "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-        "score": 55446,
+        "score": 56267,
         "meta": {
           "source": "github",
-          "stars": "55,446",
+          "stars": "56,267",
           "language": "TypeScript",
           "repo": "ChromeDevTools/chrome-devtools-mcp",
           "owner": "ChromeDevTools",
           "repoName": "chrome-devtools-mcp"
+        }
+      },
+      {
+        "id": "alibaba-open-code-review",
+        "title": "open-code-review",
+        "title_zh": "open-code-review",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+        "description_zh": "安全、快速、高效，经过阿里巴巴规模的实战考验。混合架构代码审查工具：确定性管道+LLM代理，精确的行级注释，内置多语言规则集（NPE，线程安全，XSS，SQL注入），兼容OpenAI和Anthropic。",
+        "authors": "alibaba",
+        "url": "https://github.com/alibaba/open-code-review",
+        "score": 51396,
+        "meta": {
+          "source": "github",
+          "stars": "51,396",
+          "language": "Go",
+          "repo": "alibaba/open-code-review",
+          "owner": "alibaba",
+          "repoName": "open-code-review"
+        }
+      },
+      {
+        "id": "QwenLM-qwen-code",
+        "title": "qwen-code",
+        "title_zh": "qwen-code",
+        "description": "An open-source AI coding agent that lives in your terminal.",
+        "description_zh": "位于您终端中的开源人工智能编码代理。",
+        "authors": "QwenLM",
+        "url": "https://github.com/QwenLM/qwen-code",
+        "score": 30311,
+        "meta": {
+          "source": "github",
+          "stars": "30,311",
+          "language": "TypeScript",
+          "repo": "QwenLM/qwen-code",
+          "owner": "QwenLM",
+          "repoName": "qwen-code"
+        }
+      },
+      {
+        "id": "dream-num-univer",
+        "title": "univer",
+        "title_zh": "univer",
+        "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+        "description_zh": "使用 Univer Office SDK 构建您自己的 AI 办公室。将编辑、计算、协作和文件处理引入您的产品中，供人员和 AI 代理使用。基于可扩展的开源核心构建。",
+        "authors": "dream-num",
+        "url": "https://github.com/dream-num/univer",
+        "score": 24460,
+        "meta": {
+          "source": "github",
+          "stars": "24,460",
+          "language": "TypeScript",
+          "repo": "dream-num/univer",
+          "owner": "dream-num",
+          "repoName": "univer"
+        }
+      },
+      {
+        "id": "ag-ui-protocol-ag-ui",
+        "title": "ag-ui",
+        "title_zh": "ag-ui",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+        "description_zh": "AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
+        "authors": "ag-ui-protocol",
+        "url": "https://github.com/ag-ui-protocol/ag-ui",
+        "score": 17342,
+        "meta": {
+          "source": "github",
+          "stars": "17,342",
+          "language": "TypeScript",
+          "repo": "ag-ui-protocol/ag-ui",
+          "owner": "ag-ui-protocol",
+          "repoName": "ag-ui"
+        }
+      },
+      {
+        "id": "ashhart-TensorFold",
+        "title": "TensorFold",
+        "title_zh": "TensorFold",
+        "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+        "description_zh": "适用于 Metal、CUDA 和 Vulkan 的LLM推理引擎。",
+        "authors": "ashhart",
+        "url": "https://github.com/ashhart/TensorFold",
+        "score": 2153,
+        "meta": {
+          "source": "github",
+          "stars": "2,153",
+          "language": "Zig",
+          "repo": "ashhart/TensorFold",
+          "owner": "ashhart",
+          "repoName": "TensorFold"
+        }
+      },
+      {
+        "id": "JuliusBrussee-caveman",
+        "title": "caveman",
+        "title_zh": "caveman",
+        "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+        "description_zh": "🪨 当很少的令牌可以欺骗时为什么要使用很多令牌。病毒式技能 + 编码代理的代理，通过像穴居人一样说话来减少 65% 的代币。",
+        "authors": "JuliusBrussee",
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "score": 120041,
+        "meta": {
+          "source": "github",
+          "stars": "120,041",
+          "language": "Go",
+          "repo": "JuliusBrussee/caveman",
+          "owner": "JuliusBrussee",
+          "repoName": "caveman"
+        }
+      },
+      {
+        "id": "louislam-uptime-kuma",
+        "title": "uptime-kuma",
+        "title_zh": "uptime-kuma",
+        "description": "A fancy self-hosted monitoring tool",
+        "description_zh": "一个精美的自托管监控工具",
+        "authors": "louislam",
+        "url": "https://github.com/louislam/uptime-kuma",
+        "score": 94219,
+        "meta": {
+          "source": "github",
+          "stars": "94,219",
+          "language": "JavaScript",
+          "repo": "louislam/uptime-kuma",
+          "owner": "louislam",
+          "repoName": "uptime-kuma"
+        }
+      },
+      {
+        "id": "we-promise-sure",
+        "title": "sure",
+        "title_zh": "sure",
+        "description": "The personal finance app for everyone (by everyone)",
+        "description_zh": "适合所有人（所有人）的个人理财应用程序",
+        "authors": "we-promise",
+        "url": "https://github.com/we-promise/sure",
+        "score": 15273,
+        "meta": {
+          "source": "github",
+          "stars": "15,273",
+          "language": "Ruby",
+          "repo": "we-promise/sure",
+          "owner": "we-promise",
+          "repoName": "sure"
+        }
+      },
+      {
+        "id": "Tencent-LoopForge",
+        "title": "LoopForge",
+        "title_zh": "LoopForge",
+        "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+        "description_zh": "用于编码代理交付的自托管工作流程。使用脚本和人工审批门来编排 CodeBuddy、Codex 和 Claude Code。包括编码助理的本地工作流程。",
+        "authors": "Tencent",
+        "url": "https://github.com/Tencent/LoopForge",
+        "score": 880,
+        "meta": {
+          "source": "github",
+          "stars": "880",
+          "language": "Go",
+          "repo": "Tencent/LoopForge",
+          "owner": "Tencent",
+          "repoName": "LoopForge"
+        }
+      },
+      {
+        "id": "Likely7-Veyra-NRVideo",
+        "title": "Veyra-NRVideo",
+        "title_zh": "Veyra-NRVideo",
+        "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+        "description_zh": "通过 DLSS 5 将 PS5 GTA6 提升至 120FPS。先进的 Windows 视频播放器和捕捉增强工具，具有视频、图像和捕捉卡源的实时预览功能。结合 AI 驱动的超分辨率、DLSS5 图像增强和帧生成，提供下一代视觉体验。",
+        "authors": "Likely7",
+        "url": "https://github.com/Likely7/Veyra-NRVideo",
+        "score": 2201,
+        "meta": {
+          "source": "github",
+          "stars": "2,201",
+          "language": "C++",
+          "repo": "Likely7/Veyra-NRVideo",
+          "owner": "Likely7",
+          "repoName": "Veyra-NRVideo"
+        }
+      },
+      {
+        "id": "martin-olivier-airgorah",
+        "title": "airgorah",
+        "title_zh": "airgorah",
+        "description": "A WiFi security auditing software",
+        "description_zh": "一款WiFi安全审计软件",
+        "authors": "martin-olivier",
+        "url": "https://github.com/martin-olivier/airgorah",
+        "score": 5829,
+        "meta": {
+          "source": "github",
+          "stars": "5,829",
+          "language": "Rust",
+          "repo": "martin-olivier/airgorah",
+          "owner": "martin-olivier",
+          "repoName": "airgorah"
         }
       }
     ]
   },
   "huggingface": {
     "source": "huggingface",
-    "updatedAt": "2026-11-14T00:27:12.142Z",
+    "updatedAt": "2026-11-14T23:21:04.053Z",
     "count": 15,
     "items": [
+      {
+        "id": "2611.10439",
+        "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+        "title_zh": "谁记得什么？用于多用户、多代理交互的多粒度内存提取",
+        "description": "Self-evolving agents improve their own skills, memory, and harness code from experience without retraining the base LLM, and group-evolving agents go further by sharing these lessons across agents. Yet most such systems overlook that sharing across users and heterogeneous agents requires deciding who can benefit from each lesson and what information must remain private. We present MixUA, a memory system that distills independent user-agent trajectories into lessons and assigns each lesson to a user-agent pair, user, agent, or global scope according to whom it benefits and what it may disclose. For evaluation, we introduce CrossLearnBench, a mixed-user-agent benchmark that pairs established agent tasks with user preferences and privacy probes that test whether private facts leak into memory other users can read. With five users and seven agents, MixUA raises pass rates by up to 16 points over no memory and 5 over a single global memory, even on tasks previously tried only by other users on other agents. It retains up to 90% of previously stated preferences, and at most 0.02% of privacy probes find a planted private fact in a forbidden scope. We hope MixUA offers a scalable path toward a global system where users and agents co-evolve.",
+        "description_zh": "自我进化代理可以提高自己的技能、记忆力，并利用经验中的代码，而无需重新培训基础LLM，而群体进化代理则可以通过在代理之间分享这些经验教训来进一步发展。然而，大多数此类系统忽视了用户和异构代理之间的共享需要决定谁可以从每节课中受益以及哪些信息必须保持私密。我们提出了 MixUA，一个内存系统，它将独立的用户代理轨迹提炼成课程，并根据其受益者和可能披露的内容将每个课程分配给用户代理对、用户、代理或全局范围。为了进行评估，我们引入了 CrossLearnBench，这是一种混合用户代理基准测试，它将已建立的代理任务与用户偏好和隐私探针配对，以测试私人事实是否泄漏到其他用户可以读取的内存中。凭借 5 个用户和 7 个代理，MixUA 在没有内存的情况下将通过率提高了 16 个点，在单个全局内存的情况下提高了 5 个点，即使是以前仅由其他用户在其他代理上尝试过的任务也是如此。它保留了高达 90% 的先前声明的偏好，最多 0.02% 的隐私调查会在禁止范围内发现植入的隐私事实。我们希望 MixUA 提供一条通向用户和代理共同发展的全球系统的可扩展路径。",
+        "authors": "Yunzhe Wang, Mesut Erhan Unal, Sheng Zhang, Shabnam Ghadar, Peng Tang",
+        "url": "https://huggingface.co/papers/2611.10439",
+        "score": 7,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "7",
+          "paperId": "2611.10439"
+        }
+      },
+      {
+        "id": "2611.16728",
+        "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
+        "title_zh": "EgoX：以自我为中心的跨具身操纵与具身梦",
+        "description": "Generalist manipulation policies can benefit from the complementary experience of humans, real robots, and simulated agents. However, differences in morphology, sensing, and control interfaces make it difficult to learn effectively from their combined demonstrations. We introduce EgoX, an egocentric cross-embodiment learning framework that organizes heterogeneous demonstrations through semantically corresponding observation and action modalities. EgoX pretrains a Modularized Cross-Embodiment Transformer with Embodiment Dreaming (MXT+) on this mixture and fine-tunes it on target-embodiment demonstrations. Within each embodiment, MXT+ assigns a dedicated tokenizer to each observation modality and a dedicated expert to each action modality, with a Transformer trunk shared across embodiments. A training-only embodiment-dreaming objective predicts latent representations of future visual and proprioceptive states, encouraging the shared trunk to model each embodiment's dynamics. Across 13 task-embodiment pairs spanning five tasks and six robot embodiments, including five physical robots and one simulated humanoid, cross-embodiment pretraining raises MXT+'s average normalized task progress from 0.63 to 0.80 over training from scratch. The gains are particularly pronounced under out-of-distribution conditions, where average task progress increases from 0.53 to 0.77. Ablations demonstrate the benefits of broader pretraining mixtures, modular interfaces, and embodiment dreaming, with dreaming producing more similar latent geometry across embodiments. Project page: egox-dream.github.io.",
+        "description_zh": "通才操纵政策可以​​受益于人类、真实机器人和模拟代理的互补经验。然而，形态、传感和控制界面的差异使得很难从它们的组合演示中有效地学习。我们引入了 EgoX，一个以自我为中心的跨实体学习框架，它通过语义对应的观察和行动模式来组织异构演示。 EgoX 在此混合物上使用“体现梦想”(MXT+) 预训练模块化跨体现变压器，并在目标体现演示中对其进行微调。在每个实施例中，MXT+为每个观察模态分配专用分词器，为每个动作模态分配专用专家，并在实施例之间共享 Transformer 主干。仅训练的体现梦想目标可以预测未来视觉和本体感觉状态的潜在表征，鼓励共享躯干对每个体现的动态进行建模。在涵盖 5 个任务和 6 个机器人实施例的 13 个任务实施例对中，包括 5 个物理机器人和 1 个模拟人形机器人，跨实施例预训练将 MXT+ 的平均标准化任务进度从头开始训练的 0.63 提高到 0.80。在分布不均的情况下，这种收益尤其明显，平均任务进度从 0.53 增加到 0.77。消融展示了更广泛的预训练混合、模块化接口和具体化梦想的好处，梦想在各个具体化中产生了更相似的潜在几何形状。项目页面：egox-dream.github.io。",
+        "authors": "Yaru Niu, Binghong Chen, Changwei Yao, Shangtao Li, Zhenlong Fang, Revanth Krishna Senthilkumaran, Shuai Zhou, Yuemin Mao, Kalie Ching, Po-Ju Chao, Yudong Luo, Peiqi Yu, Heng Zhang, Hao Zhang, Bingqing Chen, Chen Qiu, H. Eric Tseng, Ye Yuan, Umar Iqbal, Changliu Liu, Jonathan Francis, Ding Zhao",
+        "url": "https://huggingface.co/papers/2611.16728",
+        "score": 1,
+        "meta": {
+          "source": "huggingface",
+          "upvotes": "1",
+          "paperId": "2611.16728"
+        }
+      },
       {
         "id": "2611.17336",
         "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
@@ -236,10 +320,10 @@
         "description_zh": "前沿视频生成模型在 VAE 潜在空间中工作，在空间和时间上压缩视频。这种压缩使训练变得容易处理，但现在限制了高分辨率、可控和交互式生成——分辨率加倍使令牌计数增加四倍，条件适用于帧组而不是单个帧，并且每个响应必须等待其多帧块的其余部分。我们提出了 PixVid，这是一种简单而有效的方法，可以提升预训练的潜在视频模型以直接生成像素空间中的每一帧。 PixVid 保留了扩散变换器，并用卷积头替换了 VAE 解码器，将其输出渲染为像素。我们发现预测干净的视频而不是速度以及较大的噪声变化是质量的关键。 PixVid 从 Wan2.1-14B 进行了微调，可与 sim 1.3M 训练剪辑中的潜在基线相媲美。它以像素为单位工作，以相同的每帧标记数生成两倍的分辨率，保持深度调节视频编辑在快速运动下对齐，并响应下一帧的每个动作。项目页面：https://chenshuo20.github.io/PixVid/",
         "authors": "Yanke Song, Shuo Chen, Chris Rockwell, Guande He, Nan Liu, Desai Xie, Tianpei Gu, Yong-Hyun Park, Aryan V S, Dennis Yuren Menn, Ming-Hsuan Yang, Xun Huang",
         "url": "https://huggingface.co/papers/2611.17336",
-        "score": 1,
+        "score": 3,
         "meta": {
           "source": "huggingface",
-          "upvotes": "1",
+          "upvotes": "3",
           "paperId": "2611.17336"
         }
       },
@@ -248,13 +332,13 @@
         "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
         "title_zh": "基于参考的无人机视频稳定的共识捕获：动态城市场景的基准",
         "description": "Reference-frame stabilization registers every frame of a hovering-drone video onto one reference frame, keeping object positions comparable. The registration pipelines it relies on are selected on feature-matching benchmarks in which only the camera moves. Over a busy intersection, vehicles moving together supply mutually consistent correspondences that can draw the robust homography estimate toward their motion: consensus capture, which inlier statistics cannot flag. A two-part benchmark measures it and the object masking meant to prevent it. A static protocol scores ten pipelines under exactly known homographies on 4K aerial frames, tuned on a site-disjoint split at a matched resolution and feature budget. A dynamic protocol scores them at an offline and a real-time budget on hovers selected from the video alone to span the amount and coherence of moving foreground, plus a stationary control. It measures background alignment, object position error and the share of a moving group's displacement an estimate follows, against a pseudo-ground-truth reference audited with manually annotated ground control points, which also score every candidate. On static scenes, tuned AKAZE, RootSIFT, SIFT and BRISK lead, retuning the matcher thresholds raises the mean average accuracy (mAA) by at most 0.0062, and masking costs less than 0.005. Unmasked ORB is captured on 28 of 304 real-time dynamic pairs and on 6 offline; its real-time captured estimates have a median corner error of 18.8 px yet typical inlier counts and ratios. Masking removes capture for every pipeline and leaves the leading pipelines unchanged. Code, data and results are released.",
-        "description_zh": "参考系稳定将悬停无人机视频的每一帧记录到一个参考系上，保持物体位置可比。它所依赖的配准管道是根据仅相机移动的特征匹配基准来选择的。在繁忙的十字路口，一起移动的车辆提供相互一致的对应关系，可以对它们的运动进行稳健的单应性估计：共识捕获，这是内部统计数据无法标记的。一个由两部分组成的基准测试测量它以及旨在防止它的对象屏蔽。静态协议在 4K 航拍帧上的已知单应性下对 10 个管道进行评分，并以匹配的分辨率和功能预算调整站点不相交的��割。动态协议对仅从视频中选择的悬停进行离线和实时预算评分，以跨越移动前景的数量和连贯性以及固定控制。它测量背景对准、物体位置误差以及估计的移动组位移的份额，对照使用手动注释的地面控制点审核的伪地面实况参考，这也对每个候选者进行评分。在静态场景中，调整 AKAZE、RootSIFT、SIFT 和 BRISK 领先，重新调整匹配器阈值最多可将平均准确度 (mAA) 提高 0.0062，并且掩蔽成本低于 0.005。未屏蔽的 ORB 在 304 个实时动态对中的 28 个和 6 个离线对上捕获；其实时捕获的估计值的中值角误差为 18.8 px，但具有典型的内点计数和比率。屏蔽会删除每个管道的捕获，并保持领先管道不变。代码、数据和结果已发布。",
+        "description_zh": "参考系稳定将悬停无人机视频的每一帧记录到一个参考系上，保持物体位置可比。它所依赖的配准管道是根据仅相机移动的特征匹配基准来选择的。在繁忙的十字路口，一起移动的车辆提供相互一致的对应关系，可以对它们的运动进行稳健的单应性估计：共识捕获，这是内部统计数据无法标记的。一个由两部分组成的基准测试测量它以及旨在防止它的对象屏蔽。静态协议在 4K 航拍帧上的已知单应性下对 10 个管道进行评分，并以匹配的分辨率和功能预算调整站点不相交的��割。动态协议对仅从视频中选择的悬停进行离线和实时预算评分，以跨越移动前景的数量和连贯性以及固定控制。它测量背景对准、物体位置误差以及估计的移动组位移的份额，对照使用手动注释的地面控制点审核的伪地面实况参考，这也对每个候选者进行评分。在静态场景中，调整 AKAZE、RootSIFT、SIFT 和 BRISK 领先，重新调整匹配器阈值最多可将平均准确度 (mAA) 提高 0.0062，并且掩蔽成本低于 0.005。在 304 个实时动态对中的 28 个和 6 个离线对中捕获了未屏蔽的 ORB；其实时捕获的估计值的中值角误差为 18.8 px，但具有典型的内点计数和比率。屏蔽会删除每个管道的捕获，并保持领先管道不变。代码、数据和结果已发布。",
         "authors": "Robert Fonod, Nikolas Geroliminis",
         "url": "https://huggingface.co/papers/2611.17190",
-        "score": 2,
+        "score": 4,
         "meta": {
           "source": "huggingface",
-          "upvotes": "2",
+          "upvotes": "4",
           "paperId": "2611.17190"
         }
       },
@@ -266,10 +350,10 @@
         "description_zh": "机器学习替代品越来越多地用于加速计算流体动力学，但由于缺乏捕捉现实的、与时间相关的湍流的基准，进展受到限制。我们引入了 TurtLES，这是一个 14 TB 的剪切层过渡区域 3D 湍流圆柱尾流数据集，通过高保真隐式大涡模拟计算得出。该数据集包含 400 个轨迹，每个轨迹有 400 个时间步长，每帧有 3-1100 万个点，涵盖几何形状、雷诺数和攻角的变化。与现有数据集不同，TurtLES 结合了 (i) 物理上真实的湍流与由涡旋拉伸驱动的主动能量级联，(ii) 密集的不规则网格，以及 (iii) 长视野时间动力学。我们对自回归推出的最先进的神经算子进行基准测试，并确定关键的故障模式，包括时间不稳定性、小规模能量损失以及大型不规则域学习的挑战。 TurtLES 提供了一个新的基准，用于在工业相关网格分辨率下评估 3D 湍流尾流的替代模型。",
         "authors": "Jarno Platenburg, Armand Kassaï Koupaï, Paola Cinnella, Patrick Gallinari",
         "url": "https://huggingface.co/papers/2611.09567",
-        "score": 3,
+        "score": 4,
         "meta": {
           "source": "huggingface",
-          "upvotes": "3",
+          "upvotes": "4",
           "paperId": "2611.09567"
         }
       },
@@ -278,13 +362,13 @@
         "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
         "title_zh": "思考的价值：学习何时在混合决策模型中进行推理",
         "description": "Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from the implicit thinking inside one forward pass, generating no token, or performs full autoregressive reasoning at a cost of T tokens when that is worth paying. We realise it in a hybrid decision model (HDM), where one frozen backbone serves both modes and a lightweight self-routing block chooses between them. The block estimates the value of thinking, the utility the slow mode is expected to add over the fast one, from what that implicit thinking has already produced, and the slow mode runs only where that value exceeds a price λ set per request. Where no per-decision label exists, as in episodic agentic tasks, we introduce Calibrated Decision Policy Optimisation (CDPO), a reinforcement-learning recipe that trains the block from episode-level returns. We evaluate HDM on MMLU-Pro, AGIEval, GPQA-Diamond, JevBench, BANKING77 and MiniWoB. Specifically, on JevBench HDM-4B scores 0.857 against Jev's 0.851 (+0.7%) at a median 0.179\\,s against 0.652 (-72.5%). On the agentic venue MiniWoB HDM-27B cuts token cost by 80.1%.",
-        "description_zh": "现有的自适应推理方法缩短了模型编写的显式推理，或者通过切换模式来跳过它；无论哪种方式，答案仍然是逐个标记地写出。我们不是决定思考多少，而是探索一种不同的范式，零或 T 思维：单一模型要么从一次前向传递中的隐式思维中给出答案，不生成令牌，要么在值得支付时以 T 令牌为代价执行完全自回归推理。我们在混合决策模型（HDM）中实现这一点，其中一个冻结骨干网服务于两种模式，并由一个轻量级自路由块在它们之间进行选择。该块根据隐式思维已经产生的内容来估计思维的价值，即慢速模式预计在快速模式上增加的效用，并且慢速模式仅在该值超过每个请求设置的价格 λ 时运行。在不存在每个决策标签的情况下，例如在情景代理任务中，我们引入了校准决策策略优化（CDPO），这是一种强化学习方法，可以根据情景级返回来训练块。我们在 MMLU-Pro、AGIEval、GPQA-Diamond、JevBench、BANKING77 和 MiniWoB 上评估 HDM。具体来说，在 JevBench 上，HDM-4B 的得分为 0.857，Jev 的得分为 0.851 (+0.7%)，中位数为 0.179，而 Jev 的得分为 0.652 (-72.5%)。在代理场所 MiniWoB HDM-27B 将代币成本降低了 80.1%。",
+        "description_zh": "现有的自适应推理方法缩短了模型编写的显式推理，或者通过切换模式来跳过它；不管怎样，答案仍然是逐个标记地写出来的。我们不是决定思考多少，而是探索一种不同的范式，零或 T 思维：单一模型要么从一次前向传递中的隐式思维中给出答案，不生成令牌，要么在值得支付时以 T 令牌为代价执行完全自回归推理。我们在混合决策模型（HDM）中实现这一点，其中一个冻结骨干网服务于两种模式，并由一个轻量级自路由块在它们之间进行选择。该块根据隐式思维已经产生的内容来估计思维的价值，即慢速模式预计在快速模式上增加的效用，并且慢速模式仅在该值超过每个请求设置的价格 λ 时运行。在不存在每个决策标签的情况下，例如在情景代理任务中，我们引入了校准决策策略优化（CDPO），这是一种强化学习方法，可以根据情景级返回来训练块。我们在 MMLU-Pro、AGIEval、GPQA-Diamond、JevBench、BANKING77 和 MiniWoB 上评估 HDM。具体来说，在 JevBench 上，HDM-4B 的得分为 0.857，Jev 的得分为 0.851 (+0.7%)，中位数为 0.179，而 Jev 的得分为 0.652 (-72.5%)。在代理场所 MiniWoB HDM-27B 将代币成本降低了 80.1%。",
         "authors": "Zhengxu Yu, Ke Xu, Meng Fang, Haitham Ammar, Weilin Luo, Jun Wang",
         "url": "https://huggingface.co/papers/2611.16961",
-        "score": 1,
+        "score": 4,
         "meta": {
           "source": "huggingface",
-          "upvotes": "1",
+          "upvotes": "4",
           "paperId": "2611.16961"
         }
       },
@@ -296,10 +380,10 @@
         "description_zh": "大型语言模型 (LLM) 越来越多地调节人们寻找和消费信息的方式，包括跨语言和地区不同的帐户，尤其是在有争议的主题上。支持多样化的信息搜索需要模型来帮助用户跨语言和信息流导航相互竞争的叙述。我们定义了多样化多语言信息搜索所需的六种能力：叙事包含、叙事排除和缺失叙事识别的三种基本能力；以及三种更高级别的功能，用于呈现不同的叙述、在确认性查询下保留叙述覆盖范围以及维持跨语言的信息对等。为了指导这些信息搜索能力的发展，我们引入了 NarrativeBench，这是一个基准，包含 23 种出版语言的 1,333 篇新闻文章，涉及 23 个有争议的主题和 460 个基于 Reddit 的查询。通过评估 24 种查询语言的 14 个LLM，我们发现当前模型缺乏可靠地导航不同叙述所需的功能，限制了用户对其接收的观点的控制，并且即使在明确要求多样性的情况下，在竞争账户的曝光度上也留下了巨大的差距。不同查询框架和语言的信息访问也有所不同，存在回声室、语言过滤泡沫和信息差异的风险，从而削弱了民主话语所需的共同点。 NarrativeBench 为开发信息系统提供了基础，使跨语言和跨地区的用户能够导航不同的叙述。",
         "authors": "Nikhil Sharma, Kelly Marchisio, Kenton Murray, Ziang Xiao",
         "url": "https://huggingface.co/papers/2611.12750",
-        "score": 0,
+        "score": 2,
         "meta": {
           "source": "huggingface",
-          "upvotes": "0",
+          "upvotes": "2",
           "paperId": "2611.12750"
         }
       },
@@ -311,10 +395,10 @@
         "description_zh": "医学成像对于诊断疾病、指导治疗和长期监测患者至关重要。尽管人工智能具有先进的图像解释功能，但现有的医学模型通常只能解决有限的任务，而通用专有模型无法获得获得医学专业知识所需的私人临床成像。开发能够解释复杂检查并在临床决策背景下传达其结果的模型仍然是一项重大挑战。在这里，我们展示了 Neuro-VL，这是一种视觉语言模型，经过近一百万个来自常规临床护理的神经影像研究的训练，可以解释完整的影像检查并就其发现进行自然语言对话。在内部和国际数据集中，Neuro-VL 在诊断、定位和描述异常以及生成综合放射学报告方面优于前沿通用和专业医学模型。该模型还比较了一系列检查以评估疾病进展，并且比 OpenAI 和 Google 的领先前沿模型更可靠地抵制了误导性的临床假设。这些结果将卫生系统的学习扩展到个人预测之外，扩展到交互式图像解释和纵向疾病监测。他们展示了如何利用卫生系统的集体临床经验来开发具有专业知识和广泛���床能力的医疗人工智能。",
         "authors": "Chenhui Zhao, Akshay Rao, Akhil Kondepudi, Yiwei Lyu, Xinhai Hou, Rikhil Seshadri, Cheng Jiang, Soumyanil Banerjee, Rushikesh Joshi, Samir Harake, Ashok Srinivasan, Shruti Mishra, Francisco Rivas-Rodriguez, Seunghong Rhee, Nathaniel Roddenberry, Neeraj Chaudhary, Zach Wilseck, Paul Park, Honglak Lee, Vikas Gulani, Aditya Pandey, Todd Hollon",
         "url": "https://huggingface.co/papers/2611.15094",
-        "score": 0,
+        "score": 1,
         "meta": {
           "source": "huggingface",
-          "upvotes": "0",
+          "upvotes": "1",
           "paperId": "2611.15094"
         }
       },
@@ -323,13 +407,13 @@
         "title": "Unbundling Multimodal Vision Encoding",
         "title_zh": "分拆多模态视觉编码",
         "description": "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it entirely. Vision encoders bundle together three design choices: a visual prior from upstream pretraining, dedicated vision capacity, and pre-fusion placement of that capacity (i.e., before the multimodal backbone). Because published models also differ in data, architecture, and compute, comparing them cannot isolate the effect of each choice. We disentangle these choices via a controlled framework where we pretrain all models from scratch on common data and compare them on visual question answering and language benchmarks at matched lifetime compute. We find that the visual prior is not necessary; an encoder trained jointly from scratch is on par with a pretrained one, without a separate training stage. What matters instead is dedicated vision capacity: an encoder-free model trails on visual understanding even when its backbone is enlarged by the encoder's parameter count. Yet that capacity need not precede multimodal fusion, as vision-only modules added in-fusion to early backbone layers perform comparably to a pre-fusion encoder and can lower time to first token. These results also hold across backbone sizes, when encoder pretraining is treated as free, and when starting from a pretrained language model. Overall, our findings favor dedicated vision capacity trained jointly with the backbone and placed early within it.",
-        "description_zh": "多模态语言模型应如何编码视觉输入仍有争议。大多数模型使用预训练的视觉编码器，而最近的一些方法使用语言模型从头开始训练编码器或完全删除它。视觉编码器将三种设计选择捆绑在一起：来自上游预训练的视觉先验、专用视觉容量以及该容量的预融合放置（即在多模式主干之前）。由于已发布的模型在数据、架构和计算方面也有所不同，因此对它们进行比较并不能隔离每个选择的影响。我们通过一个受控框架来理清这些选择，在该框架中，我们在通用���据上从头开始对所有模型进行预训练，并在匹配的生命周期计算中将它们与视觉问答和语言基准进行比较。我们发现视觉先验是不必要的；从头开始联合训练的编码器与预训练的编码器相当，无需单独的训练阶段。相反，重要的是专用的视觉能力：即使编码器的参数计数扩大了其主干网，无编码器的模型在视觉理解上仍落后。然而，这种能力不需要先于多模态融合，因为在早期骨干层中添加融合的仅视觉模块的性能与融合前编码器相当，并且可以缩短获得第一个令牌的时间。当编码器预训练被视为免费时，以及从预训练语言模型开始时，这些结果也适用于主干尺寸。总体而言，我们的研究结果支持与骨干联合训练并早期放置在骨干中的专用视觉能力。",
+        "description_zh": "多模态语言模型应如何编码视觉输入仍有争议。大多数模型使用预训练的视觉编码器，而最近的一些方法使用语言模型从头开始训练编码器或完全删除它。视觉编码器将三种设计选择捆绑在一起：来自上游预训练的视觉先验、专用视觉容量以及该容量的预融合放置（即在多模式主干之前）。由于已发布的模型在数据、架构和计算方面也有所不同，因此对它们进行比较并不能隔离每个选择的效果。我们通过一个受控框架来理清这些选择，在该框架中，我们在通用���据上从头开始对所有模型进行预训练，并在匹配的生命周期计算中将它们与视觉问答和语言基准进行比较。我们发现视觉先验是不必要的；从头开始联合训练的编码器与预训练的编码器相当，无需单独的训练阶段。相反，重要的是专用的视觉能力：即使编码器的参数计数扩大了其主干网，无编码器的模型在视觉理解上仍落后。然而，这种能力不需要先于多模态融合，因为在早期骨干层中添加融合的仅视觉模块的性能与融合前编码器相当，并且可以缩短获得第一个令牌的时间。当编码器预训练被视为免费时，以及从预训练语言模型开始时，这些结果也适用于主干尺寸。总体而言，我们的研究结果支持与骨干联合训练并早期放置在骨干中的专用视觉能力。",
         "authors": "Ellis Brown, Chris Hoang, Shengyi Qian, Shang-Wen Li, Mike Lewis, Marjan Ghazvininejad, Luke Zettlemoyer, Lucas Beyer, Mengye Ren, Jakob Verbeek, Saining Xie, Hu Xu",
         "url": "https://huggingface.co/papers/2611.17334",
-        "score": 8,
+        "score": 14,
         "meta": {
           "source": "huggingface",
-          "upvotes": "8",
+          "upvotes": "14",
           "paperId": "2611.17334"
         }
       },
@@ -341,10 +425,10 @@
         "description_zh": "通过标量奖励的强化学习 (RL) 来训练用于代理任务的大型语言模型 (LLM) 是很常见的。然而，这会丢弃有关代理在试验期间经历的环境的细粒度信息（例如错误日志）。为了利用这些丰富的信息，最近的工作将代理包装在一个工具中，通过反射或压缩来完善自己的输入，并将过去的经验传递给未来的部署，但传递的工件（例如，剧本）的构建本身并不是学习的。我们希望两全其美：从标量奖励中进行梯度更新，同时还利用环境信息来传递体验。作为一个具体的测试平台，我们修复了 Agentic Context Engineering () 工具并训练一个模型来执行、反映和管理任务本地剧本。我们的方法通过对未来参与者推出的下游影响来评估候选体验切换工件，并在固定支架下共同优化特定于角色的行为（动作生成器、洞察反射器和剧本策展人）。在代理基准测试中，实现了比基线方法更高的保留性能。结果表明，代理训练不仅应该优化当前推出中的操作，还应该优化未来推出继承的模型编写的经验。",
         "authors": "Doyoung Kim, Byeongguk Jeon, Kailin Zhang, Sherry Yang",
         "url": "https://huggingface.co/papers/2611.16409",
-        "score": 1,
+        "score": 4,
         "meta": {
           "source": "huggingface",
-          "upvotes": "1",
+          "upvotes": "4",
           "paperId": "2611.16409"
         }
       },
@@ -356,10 +440,10 @@
         "description_zh": "GPT-6 Astra 可以通过固定线束直接驱动机器人手臂，自此之后，RoboDojo 上使用此类机器人的代理数量迅速增加。报告的系统在利用和测试子集方面有所不同，并且经常同时更改多个设计，因此很难判断哪些选择会产生收益。我们将这些设计拆开，并在一个框架中测试它们，沿着模型周围的工具、动作界面、经验的重用以及赋予模型的场景几何形状。一个精益的安全带可以保留完整的情节历史并尽早停止每个动作，这会大有帮助。重用经验会改变模型的行为方��，但这并不是免费的午餐，场景几何学的帮助最大，即使深度是单独从 RGB 预测的。 JustRUA 从官方 L3 安全带开始，只保留最重要的内容。即使没有学习策略、自我改进循环或特定于任务的调整，这个简单的工具也能大幅提高 RoboDojo 模拟基准的分数，从 29.7 提高到 50.3。",
         "authors": "Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao",
         "url": "https://huggingface.co/papers/2611.16009",
-        "score": 3,
+        "score": 4,
         "meta": {
           "source": "huggingface",
-          "upvotes": "3",
+          "upvotes": "4",
           "paperId": "2611.16009"
         }
       },
@@ -371,10 +455,10 @@
         "description_zh": "最近的工作表明，预训练的图像生成器可以对图像合成之外的现实世界理解进行编码。 Vision Banana 通过将视觉任务框架为条件图像编辑来利用这一点。然而，它的数据、权重、代码和实现细节并不公开。我们提出了 Open Vision Banana (OVB)，这是一种完全开放且可重复的配方，用于将预训练的生成器转换为统一的多任务感知系统。我们的分析确定了对泛化最重要的设计选择，包括颜色编码、提示设计、参数适应和任务平衡。这些选择是相互作用的，因此对个人有用的选择与其他选择结合起来可能会造成伤害。从 4B 和 9B 参数开放权重基础模型开始，并使用来自公共数据集的 210 万到 380 万个训练对，OVB 超越了 Vision Banana 报道的 Cityscapes 零样本性能（73.9 vs. 69.9 mIoU），并且可以与最先进的仿射不变深度估计器相媲美。其非零样本变体在引用和推理分割方面与 Vision Banana 相差五分，但在实例分割方面仍然落后。所有型号在很大程度上保留了基本型号的图像编辑功能。通过图例集成，我们引入了一种用于基于生成器的感知的测试时间缩放方法。它在多个类颜色图例下分割图像，并通过多数投票融合结果，纠正不稳定的颜色类绑定，并将 Cityscapes 上的 mIoU 提高高达 8.7 点，在 COCO-Object 上提高 15.0 点，而无需重新训练。我们发布了数据集构建和处理流程、训练和评估代码以及最终、中间和消融检查点。项目网站：https://openvisionbanana.github.io",
         "authors": "Arpit Jadon, Valentinos Pariza, Jona Ruthardt, Ryousuke Yamada, A. Sophia Koepke, Andrei Bursuc, Yuki M. Asano",
         "url": "https://huggingface.co/papers/2611.15844",
-        "score": 29,
+        "score": 34,
         "meta": {
           "source": "huggingface",
-          "upvotes": "29",
+          "upvotes": "34",
           "paperId": "2611.15844"
         }
       },
@@ -386,10 +470,10 @@
         "description_zh": "最近的工作表明，多模式代理越来越多地自我改进，而无需重复的人工注释。然而，每种自我改进机制都是在单一场景内设计和评估的，其前提条件在跨场景转移下未经验证。这项调查研究了四种场景中不对称机制转移的结构来源：多模态推理、多模态生成、GUI 和 Web 导航以及具体化操作。我们首先通过四个标准和自我参考差异来形式化自我进化多模式代理，并采用经验生成、反馈获取和更新整合的三阶段自我进化循环作为我们的分析框架，以将场景定位在推出计数和反馈保真度的上限上。将每个场景中的自演化与固定循环进行比较，可以将场景施加的限制与自演化设计中固有的限制区分开来。然后，我们将每种机制重新设计为一种权衡，通过预设任务结构资源（例如输出等价或可检查的结果）来提高稀缺因素，并判断其跨场景的可移植性、条件性、阻塞性或冗余性。我们将这种不对称性归因于相反转移方向上稀缺因素和资源的不同组合，并确定了可能推翻这些尚未检验的结论的匹配预算衡量标准。",
         "authors": "Jingjing Jiang",
         "url": "https://huggingface.co/papers/2611.14256",
-        "score": 1,
+        "score": 2,
         "meta": {
           "source": "huggingface",
-          "upvotes": "1",
+          "upvotes": "2",
           "paperId": "2611.14256"
         }
       },
@@ -401,10 +485,10 @@
         "description_zh": "自我改进的实体代理越来越多地被开发出来，并在机器人模拟基准上进行比较。最近的几项工作向学习代理公开了基准测试的成功标准，我们将这种做法称为标准暴露（CE）。这些标准最初是为了验证通过模仿学习训练的策略而编写的，通常比相应的语言指令要求更多，因此这样的验证者的分数可能无法忠实地反映指示的任务是否完成，特别是对于代理编写的机器人控制程序。随着具体编码代理报告的基准分数越来越高，一个自然的问题就出现了：当编码代理暴露于基准标准时，它是否生成能够更好地执行指示任务的代码，或者只是过度拟合验��标准的代码？我们对带有和不带有CE的自我改进智能体进行了对照实验，发现使用CE，智能体在给定的标准下可以快速生成具有更高成功率的代码，但是当标准稍微改变而不偏离原始指令时，这种优势就消失了。更重要的是，智能体在 CE 下开发的技能在任务之间的迁移很差。我们进一步提出了指令忠实标准，并表明它们更好地反映了代理生成程序的性能。",
         "authors": "Wenbo Huang, Jianxin Bi, Shunyu Yang, Ruiyang Si, Rui Ni, Qiang Wang, Shulong Jiang, Yintianrun Zhang, Feixiang Ruan, Kewei Zhang, Ye Huang, Shukai Gong, Daquan Zhou",
         "url": "https://huggingface.co/papers/2611.08318",
-        "score": 6,
+        "score": 18,
         "meta": {
           "source": "huggingface",
-          "upvotes": "6",
+          "upvotes": "18",
           "paperId": "2611.08318"
         }
       },
@@ -413,366 +497,336 @@
         "title": "DeepStress: Stress-Testing Deep Search Agents",
         "title_zh": "DeepStress：压力测试深度搜索代理",
         "description": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framework that subjects agents to degraded evidence at controlled rates. It replaces the retrieval module with a synthetic environment where documents are generated dynamically for each query, under independent control of their trustworthiness, relevance, and factuality. To characterize behavior under stress, we go beyond binary accuracy with a five-way classification of final-answer outcomes and two new reliability-aware metrics, RAS and CoPRAS, which credit cautious behavior and account for computational cost. Evaluating 12 systems on questions from HotpotQA and BrowseComp-Plus, we find that several open-weight agents answer confidently when sources contain obvious credibility red flags, and that many HotpotQA questions are answered from parametric knowledge even when all returned documents are factually wrong.",
-        "description_zh": "虽然搜索代理在多步骤问答方面表现出了令人印象深刻的能力，但它们对低质量证据的鲁棒性仍有待探索。此类证据在基准语料库中很少见，并且由此产生的失败很难重现。我们提出了 DeepStress，这是一种动态压力测试框架，可以让代理以受控的速率接受降级的证据。它用一个合成环境取代了检索模块，在该环境中，文档是在其可信度、相关性和事实性的独立控制下为每个查询动态生成的。为了表征压力下的行为，我们超越了二元准确性，对最终答案结果进行��五种分类，并采用了两个新的可靠性感知指标 RAS 和 CoPRAS，这些指标归功于谨慎的行为并考虑了计算成本。根据 HotpotQA 和 BrowseComp-Plus 的问题评估 12 个系统，我们发现，当来源包含明显的可信度危险信号时，一些开放权重代理可以自信地回答，并且即使所有返回的文档实际上都是错误的，许多 HotpotQA 问题也可以根据参数知识得到回答。",
+        "description_zh": "虽然搜索代理在多步骤问答方面表现出了令人印象深刻的能力，但它们对低质量证据的鲁棒性仍有待探索。此类证据在基准语料库中很少见，并且由此产生的失败很难重现。我们提出了 DeepStress，这是一种动态压力测试框架，可以让代理以受控的速率接受降级的证据。它用一个合成环境取代了检索模块，在该环境中，文档是在其可信度、相关性和事实性的独立控制下为每个查询动态生成的。为了表征压力下的行为，我们超越了二元准确性，对最终答案结果进行了五种分类，并采用了两个新的可靠性感知指标 RAS 和 CoPRAS，这些指标归功于谨慎的行为并考虑了计算成本。根据 HotpotQA 和 BrowseComp-Plus 的问题评估 12 个系统，我们发现，当来源包含明显的可信度危险信号时，一些开放权重代理可以自信地回答，并且即使所有返回的文档实际上都是错误的，许多 HotpotQA 问题也可以根据参数知识得到回答。",
         "authors": "Ismael Rousseau, Geraldine Damnati, Frederic Bechet",
         "url": "https://huggingface.co/papers/2607.13920",
-        "score": 4,
+        "score": 6,
         "meta": {
           "source": "huggingface",
-          "upvotes": "4",
+          "upvotes": "6",
           "paperId": "2607.13920"
-        }
-      },
-      {
-        "id": "2611.14046",
-        "title": "Structured Confidence Perturbation via Fisher Geometry for Adversarial Training",
-        "title_zh": "通过 Fisher 几何进行结构化置信扰动进行对抗训练",
-        "description": "Adversarial training is often plagued by \"pseudo-attacks\", perturbations that significantly increase the loss value but fail to truly alter the model's confidence structure. To address this, we propose two complementary approaches to directly attack and defend against confidence structure deformation. First, building upon the traditional loss maximization perspective, we introduce a hybrid objective that integrates cross-entropy and KL divergence, encouraging adversarial examples to simultaneously disrupt prediction accuracy and distribution consistency. Second, we geometrically reconstruct adversarial training by generating perturbations that maximize the distribution distance on the confidence manifold. Theoretical analysis shows that the optimal perturbation direction aligns with the principal eigenvectors of the Fisher information matrix. We also propose an efficient algorithm to avoid high-dimensional matrix computations. Experiments on multiple datasets and model architectures demonstrate that our method outperforms existing methods in adversarial robustness and robust transferability, particularly excelling in structural perturbations within high-confidence regions.",
-        "description_zh": "对抗性训练经常受到“伪攻击”的困扰，这种扰动会显着增加损失值，但无法真正改变模型的置信结构。为了解决这个问题，我们提出了两种互补的方法来直接攻击和防御置信结构变形。首先，基于传统损失最大化的观点，我们引入了一个集成交叉熵和 KL 散度的混合目标，鼓励对抗性示例同时破坏预测准确性和分布一致性。其次，我们通过生成最大化置信流形上的分布距离的扰动来几何重建对抗训练。理论分析表明，最优扰动方向与Fisher信息矩阵的主特征向量一致。我们还提出了一种有效的算法来避免高维矩阵计算。对多个数据集和模型架构的实验表明，我们的方法在对抗鲁棒性和鲁棒可转移性方面优于现有方法，特别是在高置信区域内的结构扰动方面表现出色。",
-        "authors": "Chenlong Wei, Hanling Wang, Chong Zhang, Qinkai Yu, Fangyu Wu, Xiaobo Jin",
-        "url": "https://huggingface.co/papers/2611.14046",
-        "score": 2,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "2",
-          "paperId": "2611.14046"
-        }
-      },
-      {
-        "id": "2611.12872",
-        "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
-        "title_zh": "HiVe-Mem：多模式代理的交错水平内存扩展和垂直证据组合",
-        "description": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over compressed memories and expose predefined representations, which may miss relevant memories and overlook heterogeneous evidence needs across queries. We introduce \\hivemem, a multimodal memory framework that interleaves \\textsc{H}or\\textsc{i}zontal Memory Expansion with \\textsc{Ve}rtical Evidence Composition. For horizontal memory expansion, \\hivemem organizes memory episodes into a relational graph using textual and visual anchors, expanding semantically retrieved seeds with related neighbors to recover complementary information. For vertical evidence composition, each retrieved memory retains multiple evidence forms, including compact summaries, captions, grounded visual views, raw images, and interaction history. A lightweight trainable selector independently composes an evidence subset for each retrieved memory, enabling query-adaptive utilization of heterogeneous multimodal information. This two-dimensional design jointly broadens memory coverage and adapts the evidence contributed by individual memories. Experiments across three multimodal memory benchmarks show that \\hivemem consistently improves task performance across base models while reducing token consumption by about 90\\% compared with the most efficient competing multimodal baselines.",
-        "description_zh": "随着多模式代理积累越来越长的交互历史，有效检索和利用过去的信息对于长期交互变得至关重要。现有的记忆系统通常依赖于压缩记忆的语义检索并公开预定义的表示，这可能会丢失相关记忆并忽略跨查询的异构证据需求。我们引入 \\hivemem，一个多模态记忆框架，它将 \\textsc{H} 或 \\textsc{i} 区域记忆扩展与 \\textsc{Ve}rtical 证据组合交织在一起。对于水平记忆扩展，\\hivemem 使用文本和视觉锚点将记忆片段组织成关系图，通过相关邻居扩展语义检索的种子以恢复补充信息。对于垂直证据构成，每个检索到的记忆都保留多种证据形式，包括紧凑的摘要、标题、基础视觉视图、原始图像和交互历史。轻量级可训练选择器独立地为每个检索到的内存组成一个证据子集，从而实现异构多模态信息的查询自适应利用。这种二维设计共同扩大了记忆覆盖范围并调整了个人记忆提供的证据。跨三个多模式内存基准的实验表明，与最有效的竞争多模式基准相比，hivemem 持续提高了基本模型的任务性能，同时��少了约 90% 的令牌消耗。",
-        "authors": "Haozhen Zhang, Bohan Liu, Jianzhu Bao, Qingyuan Liu, Haodong Yue, Xiao Li, Zi Pong Lim, Wenya Wang",
-        "url": "https://huggingface.co/papers/2611.12872",
-        "score": 3,
-        "meta": {
-          "source": "huggingface",
-          "upvotes": "3",
-          "paperId": "2611.12872"
         }
       }
     ]
   },
   "x": {
     "source": "x",
-    "updatedAt": "2026-11-14T00:27:17.905Z",
+    "updatedAt": "2026-11-14T23:21:12.617Z",
     "count": 15,
     "mode": "follow-builders",
     "items": [
       {
-        "id": "2121088973372334443",
-        "title": "and straight to broadway show rehearsal :) see you saturday",
-        "title_zh": "直接去百老汇演出排练:)周六见",
-        "description": "and straight to broadway show rehearsal :) see you saturday https://t.co/YaSKdiTPkb https://t.co/eRIxAwTCHT",
-        "description_zh": "直接去百老汇演出排练:)周六见 https://t.co/YaSKdiTPkb https://t.co/eRIxAwTCHT",
+        "id": "2121473082372292885",
+        "title": "come to tmr !",
+        "title_zh": "来tmr吧！",
+        "description": "come to https://t.co/Jlx1Lz0P5U tmr ! https://t.co/3Zb9a9HZlY",
+        "description_zh": "来 https://t.co/Jlx1Lz0P5U tmr ！ https://t.co/3Zb9a9HZlY",
         "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2121088973372334443",
-        "score": 51.02,
+        "url": "https://x.com/swyx/status/2121473082372292885",
+        "score": 21.4,
         "meta": {
           "source": "x",
           "handle": "@swyx",
           "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
-          "likes": "33",
-          "retweets": "0",
-          "replies": "4",
+          "likes": "3",
+          "retweets": "1",
+          "replies": "3",
+          "age": "18h ago",
+          "createdAt": "2026-11-14T05:19:32.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121431117526134923",
+        "title": "And here's a story from an NVIDIA employee.",
+        "title_zh": "这是一位 NVIDIA 员工的故事。",
+        "description": "And here's a story from an NVIDIA employee. Btw, I encourage anyone reading this to do your own research. https://t.co/Yf5NhhhArY",
+        "description_zh": "这是一位 NVIDIA 员工的故事。顺便说一句，我鼓励任何阅读本文的人进行自己的研究。 https://t.co/Yf5NhhhArY",
+        "authors": "Peter Yang",
+        "url": "https://x.com/petergyang/status/2121431117526134923",
+        "score": 34.23,
+        "meta": {
+          "source": "x",
+          "handle": "@petergyang",
+          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
+          "likes": "14",
+          "retweets": "1",
+          "replies": "1",
           "age": "21h ago",
-          "createdAt": "2026-11-13T03:53:13.000Z",
+          "createdAt": "2026-11-14T02:32:47.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2121060183988486493",
-        "title": "the production team got us a cake!!",
-        "title_zh": "制作组给我们准备了蛋糕！！",
-        "description": "the production team got us a cake!! #aie1m https://t.co/TYkzM7lfDP https://t.co/xTb0EjSdC7",
-        "description_zh": "制作组给我们准备了蛋糕！！ #aie1m https://t.co/TYkzM7lfDP https://t.co/xTb0EjSdC7",
-        "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2121060183988486493",
-        "score": 168.93,
-        "meta": {
-          "source": "x",
-          "handle": "@swyx",
-          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
-          "likes": "122",
-          "retweets": "2",
-          "replies": "21",
-          "age": "22h ago",
-          "createdAt": "2026-11-13T01:58:49.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2120981552561844593",
-        "title": "lance starting out his keynote strong with fermat's proof aie code is now aie math",
-        "title_zh": "lance 以费马的证明开始了他的主题演讲 aie 代码现在是 aie math",
-        "description": "lance starting out his keynote strong with fermat's proof aie code is now aie math https://t.co/NK14Cf5Ztu https://t.co/DETBjzaOGv",
-        "description_zh": "lance 以费马的证明开始他的主题演讲 aie 代码现在是 aie 数学 https://t.co/NK14Cf5Ztu https://t.co/DETBjzaOGv",
-        "authors": "Swyx",
-        "url": "https://x.com/swyx/status/2120981552561844593",
-        "score": 21.45,
-        "meta": {
-          "source": "x",
-          "handle": "@swyx",
-          "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai…",
-          "likes": "2",
-          "retweets": "0",
-          "replies": "2",
-          "age": "1d ago",
-          "createdAt": "2026-11-12T20:46:22.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2120990821902397885",
-        "title": "Pre-order today at and demo them in select Warby Parker, Gentle Monster, and Google store…",
-        "title_zh": "立即在指定 Warby Parker、Gentle Monster 和 Google 商店预订并演示它们......",
-        "description": "Pre-order today at https://t.co/7M3kHsrTgU and demo them in select Warby Parker, Gentle Monster, and Google stores (shipping Dec 10th!)",
-        "description_zh": "立即在 https://t.co/7M3kHsrTgU 预订，并在精选 Warby Parker、Gentle Monster 和 Google 商店中进行演示（12 月 10 日发货！）",
-        "authors": "Josh Woodward",
-        "url": "https://x.com/joshwoodward/status/2120990821902397885",
-        "score": 76.7,
-        "meta": {
-          "source": "x",
-          "handle": "@joshwoodward",
-          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-          "likes": "56",
-          "retweets": "3",
-          "replies": "0",
-          "age": "1d ago",
-          "createdAt": "2026-11-12T21:23:12.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2120990820631450061",
-        "title": "Gemini, now from your point of view",
-        "title_zh": "双子座，现在从你的角度来看",
-        "description": "Gemini, now from your point of view https://t.co/D15CnXvMvP",
-        "description_zh": "双子座，现在从你的角度来看 https://t.co/D15CnXvMvP",
-        "authors": "Josh Woodward",
-        "url": "https://x.com/joshwoodward/status/2120990820631450061",
-        "score": 1229.95,
-        "meta": {
-          "source": "x",
-          "handle": "@joshwoodward",
-          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-          "likes": "976",
-          "retweets": "88",
-          "replies": "45",
-          "age": "1d ago",
-          "createdAt": "2026-11-12T21:23:12.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2120942262054232392",
-        "title": "Introducing Gemini 4 Hydrogen, cutting-edge intelligence for everyone!",
-        "title_zh": "隆重推出 Gemini 4 Hydrogen，为大家带来尖端智能！",
-        "description": "Introducing Gemini 4 Hydrogen, cutting-edge intelligence for everyone! Now in @GeminiApp. It's fast. It's smart. It's a big jump. Enjoy! https://t.co/5AAIN6ryyh",
-        "description_zh": "隆重推出 Gemini 4 Hydrogen，为大家带来尖端智能！现在在@GeminiApp。速度很快。它很聪明。这是一个很大的跳跃。享受！ https://t.co/5AAIN6ryyh",
-        "authors": "Josh Woodward",
-        "url": "https://x.com/joshwoodward/status/2120942262054232392",
-        "score": 1061.4,
-        "meta": {
-          "source": "x",
-          "handle": "@joshwoodward",
-          "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-          "likes": "847",
-          "retweets": "59",
-          "replies": "54",
-          "age": "1d ago",
-          "createdAt": "2026-11-12T18:10:15.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2121062974161092792",
-        "title": "How can codex be improved?",
-        "title_zh": "如何改进法典？",
-        "description": "How can codex be improved? Try not to say model.",
-        "description_zh": "如何改进法典？尽量不要说型号。",
-        "authors": "Thibault Sottiaux",
-        "url": "https://x.com/thsottiaux/status/2121062974161092792",
-        "score": 17530.76,
-        "meta": {
-          "source": "x",
-          "handle": "@thsottiaux",
-          "bio": "Codex & ChatGPT @OpenAI",
-          "likes": "5486",
-          "retweets": "98",
-          "replies": "7891",
-          "age": "22h ago",
-          "createdAt": "2026-11-13T02:09:55.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2121036562058400200",
-        "title": "We announced new tools we're developing for cybersecurity today across automated patching…",
-        "title_zh": "我们今天宣布了我们正在为网络安全开发的新工具，包括自动修补……",
-        "description": "We announced new tools we're developing for cybersecurity today across automated patching and automated red teaming. Watch the recording here https://t.co/fW371aFjB5",
-        "description_zh": "我们今天宣布了我们正在为网络安全开发的新工具，包括自动补丁和自动红队。在这里观看录音 https://t.co/fW371aFjB5",
-        "authors": "Thibault Sottiaux",
-        "url": "https://x.com/thsottiaux/status/2121036562058400200",
-        "score": 3466,
-        "meta": {
-          "source": "x",
-          "handle": "@thsottiaux",
-          "bio": "Codex & ChatGPT @OpenAI",
-          "likes": "2350",
-          "retweets": "108",
-          "replies": "590",
-          "age": "1d ago",
-          "createdAt": "2026-11-13T00:24:58.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2120999993079451919",
-        "title": "We shipped some good updates to dots today and the banked reset has been activated and sh…",
-        "title_zh": "今天我们对点进行了一些不错的更新，银行重置已被激活，并且……",
-        "description": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon! https://t.co/Y7Mnp6Cuu1",
-        "description_zh": "今天我们对点进行了一些不错的更新，银行重置已经激活，应该很快就会登陆每个人的帐户！ https://t.co/Y7Mnp6Cuu1",
-        "authors": "Thibault Sottiaux",
-        "url": "https://x.com/thsottiaux/status/2120999993079451919",
-        "score": 8356.05,
-        "meta": {
-          "source": "x",
-          "handle": "@thsottiaux",
-          "bio": "Codex & ChatGPT @OpenAI",
-          "likes": "5699",
-          "retweets": "215",
-          "replies": "1474",
-          "age": "1d ago",
-          "createdAt": "2026-11-12T21:59:39.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2121100531502620784",
-        "title": "Can't tell if this is real but if NVIDIA employees feels strongly doing something like th…",
-        "title_zh": "无法判断这是否属实，但如果 NVIDIA 员工强烈地感觉正在做这样的事情……",
-        "description": "Can't tell if this is real but if NVIDIA employees feels strongly doing something like this isn't a bad idea. https://t.co/oQ8085yvMY",
-        "description_zh": "无法判断这是否属实，但如果 NVIDIA 员工强烈感觉这样做并不是一个坏主意。 https://t.co/oQ8085yvMY",
+        "id": "2121430819667579031",
+        "title": "Here's some evidence of the questionable reporting",
+        "title_zh": "这是可疑报告的一些证据",
+        "description": "Here's some evidence of the questionable reporting - it's still unclear that Alice Huang is a spy despite WSJ jumping to conclusions. This is from the Singapore gov: https://t.co/6WnZqOt0KH https://t.co/TvUEyV1bOB",
+        "description_zh": "以下是可疑报道的一些证据——尽管《华尔街日报》仓促下结论，但仍不清楚爱丽丝黄是否是间谍。这是来自新加坡政府：https://t.co/6WnZqOt0KH https://t.co/TvUEyV1bOB",
         "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2121100531502620784",
-        "score": 312.63,
+        "url": "https://x.com/petergyang/status/2121430819667579031",
+        "score": 37.38,
         "meta": {
           "source": "x",
           "handle": "@petergyang",
           "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
-          "likes": "242",
-          "retweets": "17",
-          "replies": "14",
-          "age": "20h ago",
-          "createdAt": "2026-11-13T04:39:09.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2121098361201918301",
-        "title": "Beautiful",
-        "title_zh": "美丽的",
-        "description": "Beautiful https://t.co/pTTkF9jDJE",
-        "description_zh": "美丽https://t.co/pTTkF9jDJE",
-        "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2121098361201918301",
-        "score": 18.46,
-        "meta": {
-          "source": "x",
-          "handle": "@petergyang",
-          "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
-          "likes": "8",
+          "likes": "16",
           "retweets": "0",
           "replies": "1",
-          "age": "20h ago",
-          "createdAt": "2026-11-13T04:30:32.000Z",
+          "age": "21h ago",
+          "createdAt": "2026-11-14T02:31:36.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2121035933541941297",
-        "title": "This man clearly was an inspiration to many people and well respected by NVIDIA employees…",
-        "title_zh": "这个人显然激励了很多人，并深受 NVIDIA 员工的尊敬……",
-        "description": "This man clearly was an inspiration to many people and well respected by NVIDIA employees which makes his downfall all the sadder 😢 https://t.co/jmxBPZnKAM",
-        "description_zh": "这个人显然激励了很多人，并受到 NVIDIA 员工的尊敬，这使得他的垮台更加令人悲伤 😢 https://t.co/jmxBPZnKAM",
+        "id": "2121430386685395022",
+        "title": "If you know a loved one suffering from cancer or another long-term illness: 1.",
+        "title_zh": "如果您知道您的亲人患有癌症或其他长期疾病： 1.",
+        "description": "If you know a loved one suffering from cancer or another long-term illness: 1. Upload all of the patient's medical records (e.g., to a Google Drive folder) 2. Tell ChatGPT or Claude to install my free /fuck-cancer skill (just point them at…",
+        "description_zh": "如果您知道您的亲人患有癌症或其他长期疾病： 1. 上传患者的所有医疗记录（例如，到 Google 云端硬盘文件夹） 2. 告诉 ChatGPT 或 Claude 安装我的免费 /fuck-cancer 技能（只需将他们指向...",
         "authors": "Peter Yang",
-        "url": "https://x.com/petergyang/status/2121035933541941297",
-        "score": 211.05,
+        "url": "https://x.com/petergyang/status/2121430386685395022",
+        "score": 541.85,
         "meta": {
           "source": "x",
           "handle": "@petergyang",
           "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at htt…",
-          "likes": "185",
-          "retweets": "2",
-          "replies": "4",
-          "age": "1d ago",
-          "createdAt": "2026-11-13T00:22:28.000Z",
+          "likes": "434",
+          "retweets": "36",
+          "replies": "7",
+          "age": "21h ago",
+          "createdAt": "2026-11-14T02:29:53.000Z",
           "xSource": "follow-builders"
         }
       },
       {
-        "id": "2121069823069421706",
-        "title": "context-",
-        "title_zh": "语境-",
-        "description": "context- https://t.co/hShN4DHnpJ",
-        "description_zh": "上下文- https://t.co/hShN4DHnpJ",
-        "authors": "Thariq",
-        "url": "https://x.com/trq212/status/2121069823069421706",
-        "score": 63.67,
-        "meta": {
-          "source": "x",
-          "handle": "@trq212",
-          "bio": "playing WoW forever, formerly Claude Code @anthropicai",
-          "likes": "46",
-          "retweets": "0",
-          "replies": "6",
-          "age": "22h ago",
-          "createdAt": "2026-11-13T02:37:08.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2121067561915916575",
-        "title": "it’s time to retvrn",
-        "title_zh": "是时候返回了",
-        "description": "it’s time to retvrn https://t.co/2vx6G3oPne",
-        "description_zh": "是时候返回 https://t.co/2vx6G3oPne",
-        "authors": "Thariq",
-        "url": "https://x.com/trq212/status/2121067561915916575",
-        "score": 180.2,
-        "meta": {
-          "source": "x",
-          "handle": "@trq212",
-          "bio": "playing WoW forever, formerly Claude Code @anthropicai",
-          "likes": "143",
-          "retweets": "4",
-          "replies": "13",
-          "age": "22h ago",
-          "createdAt": "2026-11-13T02:28:08.000Z",
-          "xSource": "follow-builders"
-        }
-      },
-      {
-        "id": "2121081862659739870",
-        "title": "Makes total sense that congressman leading the inquiry into Jensen’s alleged foreign ties…",
-        "title_zh": "国会议员领导对詹森所谓的外交关系的调查是完全有道理的……",
-        "description": "Makes total sense that congressman leading the inquiry into Jensen’s alleged foreign ties is the same guy who showed up at the Capitol wearing a foreign army uniform. He’s an expert at foreign ties! https://t.co/9DfLI6DEwq",
-        "description_zh": "领导对詹森所谓的外国关系进行调查的国会议员就是穿着外国军队制服出现在国会大厦的同一个人，这是完全有道理的。他是外交专家！ https://t.co/9DfLI6DEwq",
+        "id": "2121428406764204199",
+        "title": "It's been great partnering with @Visa on agentic commerce.",
+        "title_zh": "与 @Visa 在代理商务方面的合作非常愉快。",
+        "description": "It's been great partnering with @Visa on agentic commerce. More features and use cases are coming! https://t.co/R15wSaMQ7c",
+        "description_zh": "与 @Visa 在代理商务方面的合作非常愉快。更多功能和用例即将推出！ https://t.co/R15wSaMQ7c",
         "authors": "Amjad Masad",
-        "url": "https://x.com/amasad/status/2121081862659739870",
-        "score": 2223.84,
+        "url": "https://x.com/amasad/status/2121428406764204199",
+        "score": 183.55,
         "meta": {
           "source": "x",
           "handle": "@amasad",
           "bio": "ceo @replit. civilizationist",
-          "likes": "1705",
-          "retweets": "211",
-          "replies": "51",
+          "likes": "105",
+          "retweets": "6",
+          "replies": "35",
           "age": "21h ago",
-          "createdAt": "2026-11-13T03:24:58.000Z",
+          "createdAt": "2026-11-14T02:22:01.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121389001546567837",
+        "title": "Worked with the owner of the StandWithJensen page, which is built and hosted on Replit, t…",
+        "title_zh": "与 StandWithJensen 页面的所有者合作，该页面在 Replit 上构建和托管，...",
+        "description": "Worked with the owner of the StandWithJensen page, which is built and hosted on Replit, to raise the rate limit. It should now scale! Feel free to share @GavinSBaker https://t.co/7fMPobz2ud",
+        "description_zh": "与在 Replit 上构建和托管的 StandWithJensen 页面的所有者合作，提高速率限制。现在应该可以扩展了！欢迎分享@GavinSBaker https://t.co/7fMPobz2ud",
+        "authors": "Amjad Masad",
+        "url": "https://x.com/amasad/status/2121389001546567837",
+        "score": 1586.31,
+        "meta": {
+          "source": "x",
+          "handle": "@amasad",
+          "bio": "ceo @replit. civilizationist",
+          "likes": "1270",
+          "retweets": "104",
+          "replies": "59",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T23:45:26.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121377395244749097",
+        "title": "Read the Stand with Jensen letter and consider adding your name.",
+        "title_zh": "阅读 Jensen 的立场信函并考虑添加您的名字。",
+        "description": "Read the Stand with Jensen letter and consider adding your name. #standwithjensen https://t.co/eZvYNAc43r",
+        "description_zh": "阅读 Jensen 的立场信函并考虑添加您的名字。 #standwithjensen https://t.co/eZvYNAc43r",
+        "authors": "Amjad Masad",
+        "url": "https://x.com/amasad/status/2121377395244749097",
+        "score": 3465.2,
+        "meta": {
+          "source": "x",
+          "handle": "@amasad",
+          "bio": "ceo @replit. civilizationist",
+          "likes": "2557",
+          "retweets": "367",
+          "replies": "108",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T22:59:18.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121351007615811799",
+        "title": "Co-sign",
+        "title_zh": "联署",
+        "description": "Co-sign https://t.co/BaaFgrSaXG",
+        "description_zh": "联合签名 https://t.co/BaaFgrSaXG",
+        "authors": "Guillermo Rauch",
+        "url": "https://x.com/rauchg/status/2121351007615811799",
+        "score": 3661.85,
+        "meta": {
+          "source": "x",
+          "handle": "@rauchg",
+          "bio": "@vercel CEO",
+          "likes": "3392",
+          "retweets": "103",
+          "replies": "37",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T21:14:27.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121347136965210286",
+        "title": "Vercel Sandbox is inevitable",
+        "title_zh": "Vercel 沙箱是不可避免的",
+        "description": "Vercel Sandbox is inevitable https://t.co/w25tdheX95",
+        "description_zh": "Vercel 沙箱是不可避免的 https://t.co/w25tdheX95",
+        "authors": "Guillermo Rauch",
+        "url": "https://x.com/rauchg/status/2121347136965210286",
+        "score": 344.9,
+        "meta": {
+          "source": "x",
+          "handle": "@rauchg",
+          "bio": "@vercel CEO",
+          "likes": "227",
+          "retweets": "4",
+          "replies": "67",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T20:59:04.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121277727940776114",
+        "title": "Workflow SDK 5 and Vercel Workflows are a monumental step forward for agents.",
+        "title_zh": "Workflow SDK 5 和 Vercel Workflows 对于客服人员来说是一个里程碑式的进步。",
+        "description": "Workflow SDK 5 and Vercel Workflows are a monumental step forward for agents. ◾ The 'time to first step' and 'time between steps' have massively improved. ◾ We doubled down on encryption and security. ◾ The reliability of the overall syste…",
+        "description_zh": "Workflow SDK 5 和 Vercel Workflows 对于客服人员来说是一个里程碑式的进步。 ∎ “迈出第一步的时间”和“步骤之间的时间”得到了极大改善。 ◾ 我们在加密和安全性方面加倍努力。 ◾ 整个系统的可靠性……",
+        "authors": "Guillermo Rauch",
+        "url": "https://x.com/rauchg/status/2121277727940776114",
+        "score": 536.79,
+        "meta": {
+          "source": "x",
+          "handle": "@rauchg",
+          "bio": "@vercel CEO",
+          "likes": "345",
+          "retweets": "8",
+          "replies": "101",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T16:23:16.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121464508225053153",
+        "title": "Keep Opus 5.5 as your coding default in Claude Code.",
+        "title_zh": "将 Opus 5.5 保留为 Claude Code 中的默认编码。",
+        "description": "Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claude Code 2.1.322, Fable 5.2 solved about as many (82.7% vs 84.6%) but cost 2.80x as much per solved task. Opus already solves most of these tasks, though, so tel…",
+        "description_zh": "将 Opus 5.5 保留为 Claude Code 中的默认编码。在 Claude Code 2.1.322 中的 52 个编码任务中，《神鬼寓言 5.2》解决了大约同样多的任务（82.7% vs 84.6%），但每个解决任务的成本却是原来的 2.80 倍。不过，Opus 已经解决了大部分任务，所以电话……",
+        "authors": "Garry Tan",
+        "url": "https://x.com/garrytan/status/2121464508225053153",
+        "score": 303.51,
+        "meta": {
+          "source": "x",
+          "handle": "@garrytan",
+          "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer…",
+          "likes": "154",
+          "retweets": "10",
+          "replies": "69",
+          "age": "19h ago",
+          "createdAt": "2026-11-14T04:45:28.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121463161069228382",
+        "title": "Here's my open source harness eval repo and what it found",
+        "title_zh": "这是我的开源工具评估存储库及其发现的内容",
+        "description": "Here's my open source harness eval repo and what it found https://t.co/v0sQymE8qM https://t.co/XWp5KliSlN",
+        "description_zh": "这是我的开源工具评估存储库及其发现的内容 https://t.co/v0sQymE8qM https://t.co/XWp5KliSlN",
+        "authors": "Garry Tan",
+        "url": "https://x.com/garrytan/status/2121463161069228382",
+        "score": 201.25,
+        "meta": {
+          "source": "x",
+          "handle": "@garrytan",
+          "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer…",
+          "likes": "135",
+          "retweets": "8",
+          "replies": "24",
+          "age": "19h ago",
+          "createdAt": "2026-11-14T04:40:07.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121462697787342932",
+        "title": "Jensen deserves due process, not whatever is happening right now.",
+        "title_zh": "詹森应该得到正当程序，而不是现在发生的任何事情。",
+        "description": "Jensen deserves due process, not whatever is happening right now. I signed. #standwithjensen https://t.co/3yTMpxHJoC",
+        "description_zh": "詹森应该得到正当程序，而不是现在发生的任何事情。我签了。 #standwithjensen https://t.co/3yTMpxHJoC",
+        "authors": "Garry Tan",
+        "url": "https://x.com/garrytan/status/2121462697787342932",
+        "score": 2379.44,
+        "meta": {
+          "source": "x",
+          "handle": "@garrytan",
+          "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer…",
+          "likes": "2017",
+          "retweets": "122",
+          "replies": "69",
+          "age": "19h ago",
+          "createdAt": "2026-11-14T04:38:16.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121358328169132503",
+        "title": "Breaking news: VCs to opine shortly on FAA nationwide airport ground stop.",
+        "title_zh": "突发新闻：风险投资家很快将对美国联邦航空局全国机场地面站发表意见。",
+        "description": "Breaking news: VCs to opine shortly on FAA nationwide airport ground stop.",
+        "description_zh": "突发新闻：风险投资家很快将对美国联邦航空局全国机场地面站发表意见。",
+        "authors": "Matt Turck",
+        "url": "https://x.com/mattturck/status/2121358328169132503",
+        "score": 195.2,
+        "meta": {
+          "source": "x",
+          "handle": "@mattturck",
+          "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+          "likes": "150",
+          "retweets": "3",
+          "replies": "18",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T21:43:33.000Z",
+          "xSource": "follow-builders"
+        }
+      },
+      {
+        "id": "2121366466905981435",
+        "title": "Just to shed some light on how crazy the FAA ground stop is, this is only the THIRD time…",
+        "title_zh": "只是为了让大家了解美国联邦航空管理局 (FAA) 的地面停车有多疯狂，这只是第三次……",
+        "description": "Just to shed some light on how crazy the FAA ground stop is, this is only the THIRD time in modern history it's ever happened.. First time was 9/11, second time was the NOTAM system outage in 2023, and now today (reasons unclear). Happy Fr…",
+        "description_zh": "只是为了说明 FAA 地面停止是多么疯狂，这只是现代历史上第三次发生。第一次是 9/11，第二次是 2023 年的 NOTAM 系统中断，现在是今天（原因尚不清楚）。快乐的Fr…",
+        "authors": "Nikunj Kothari",
+        "url": "https://x.com/nikunj/status/2121366466905981435",
+        "score": 88.8,
+        "meta": {
+          "source": "x",
+          "handle": "@nikunj",
+          "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian…",
+          "likes": "54",
+          "retweets": "2",
+          "replies": "4",
+          "age": "1d ago",
+          "createdAt": "2026-11-13T22:15:53.000Z",
           "xSource": "follow-builders"
         }
       }
@@ -780,73 +834,27 @@
   },
   "reddit": {
     "source": "reddit",
-    "updatedAt": "2026-11-14T00:27:29.257Z",
+    "updatedAt": "2026-11-14T23:21:28.785Z",
     "count": 10,
     "mode": "report-highlights",
     "upstream": "liyedanpdx/reddit-ai-trends",
     "items": [
       {
-        "id": "1xuqlkb",
-        "title": "Judging by the current exponential rate, Jensen Huang's ...",
-        "title_zh": "从目前的指数速度来看，黄仁勋的……",
-        "description": "Judging by the current exponential rate, Jensen Huang's is circulating as a sentiment-driven community post in r/singularity, showing that the underlying topic has spilled beyond purely technical discussion. It is generating sustained community debate.",
-        "description_zh": "从目前的指数速度来看，黄仁勋的帖子正在 r/singularity 中作为情感驱动的社区帖子流传，这表明潜在的主题已经超出了纯粹的技术讨论范围。它正在引发持续的社区辩论。",
+        "id": "1xva8yj",
+        "title": "Huang: The Game",
+        "title_zh": "黄：游戏",
+        "description": "Huang: The Game is a high-engagement post in r/singularity (category: Shitposting, comments: 148).",
+        "description_zh": "黄：《游戏》是 r/singularity 中参与度很高的帖子（类别：Shitposting，评论：148）。",
         "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1xuqlkb",
-        "score": 4920,
+        "url": "https://www.reddit.com/comments/1xva8yj",
+        "score": 2971,
         "meta": {
           "source": "reddit",
           "subreddit": "r/singularity",
           "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "127",
-          "category": "Meme",
-          "posted": "2026-11-12 22:21 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "meme"
-        }
-      },
-      {
-        "id": "1xuhhvn",
-        "title": "China offers Jensen new opportunities",
-        "title_zh": "中国为詹森提供了新机遇",
-        "description": "China offers Jensen new opportunities is circulating as a sentiment-driven community post in r/singularity, showing that the underlying topic has spilled beyond purely technical discussion. It is drawing especially heavy discussion.",
-        "description_zh": "中国为 Jensen 提供的新机会正在 r/singularity 中以情感驱动的社区帖子的形式流传，这表明潜在的主题已经超出了纯粹的技术讨论范围。它引起了特别热烈的讨论。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1xuhhvn",
-        "score": 2755,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "217",
-          "category": "Meme",
-          "posted": "2026-11-12 16:36 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "meme"
-        }
-      },
-      {
-        "id": "1xudfv3",
-        "title": "Jensen Huang Resigns",
-        "title_zh": "黄仁勋辞职",
-        "description": "Jensen Huang Resigns is a high-engagement post in r/singularity (category: Discussion, comments: 915).",
-        "description_zh": "Jensen Huang 辞职是 r/singularity 中的一个高参与度帖子（类别：讨论，评论：915）。",
-        "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1xudfv3",
-        "score": 2716,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/singularity",
-          "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "915",
-          "category": "Discussion",
-          "posted": "2026-11-12 13:58 UTC",
+          "comments": "148",
+          "category": "Shitposting",
+          "posted": "2026-11-13 15:06 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "table-fallback",
@@ -855,164 +863,210 @@
         }
       },
       {
-        "id": "1xujb7c",
-        "title": "Jensen Huang's mistake was being too pro LocalAI, which ...",
-        "title_zh": "黄仁勋的错误是过于支持 LocalAI，这......",
-        "description": "Jensen Huang's mistake was being too pro LocalAI, which is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
-        "description_zh": "Jensen Huang 的错误在于过于支持 LocalAI，该问题正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它引起了特别热烈的讨论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1xujb7c",
-        "score": 2111,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "367",
-          "category": "Discussion",
-          "posted": "2026-11-12 17:43 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "local-performance"
-        }
-      },
-      {
-        "id": "1xuvexw",
-        "title": "Stories coming out about Jensen",
-        "title_zh": "关于詹森的故事",
-        "description": "Stories coming out about Jensen is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
-        "description_zh": "有关 Jensen 的故事正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它引起了特别热烈的讨论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1xuvexw",
-        "score": 1820,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "322",
-          "category": "News",
-          "posted": "2026-11-13 01:58 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "local-performance"
-        }
-      },
-      {
-        "id": "1xukt9t",
-        "title": "So this will be true in couple of years?",
-        "title_zh": "那么几年后这会成为现实吗？",
-        "description": "So this will be true in couple of years? is circulating as a sentiment-driven community post in r/LocalLLaMA, showing that the underlying topic has spilled beyond purely technical discussion. It is drawing especially heavy discussion.",
-        "description_zh": "那么几年后这会成为现实吗？作为情绪驱动的社区帖子在 r/LocalLLaMA 中流传，表明基本主题已经超出了纯粹的技术讨论范围。它引起了特别热烈的讨论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1xukt9t",
-        "score": 1452,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "220",
-          "category": "Funny",
-          "posted": "2026-11-12 18:38 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "meme"
-        }
-      },
-      {
-        "id": "1xudeev",
-        "title": "Nvidia's Jensen Huang Resigns as CEO, Colette Kress Name ...",
-        "title_zh": "英伟达 (Nvidia) 黄仁勋 (Jensen Huang) 辞去首席执行官职务，科莱特·克雷斯 (Colette Kress) 命名...",
-        "description": "Nvidia's Jensen Huang Resigns as CEO, Colette Kress Name is being discussed as a policy, labor, or industry-impact topic in r/LocalLLaMA, reflecting broader concern about AI's real-world consequences. It is drawing especially heavy discussion.",
-        "description_zh": "Nvidia 的黄仁勋 (Jensen Huang) 辞去首席执行官职务，科莱特·克雷斯 (Colette Kress) 的名字正在 r/LocalLLaMA 中作为政策、劳工或行业影响的话题进行讨论，反映出人们对人工智能对现实世界后果的更广泛担忧。它引起了特别热烈的讨论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1xudeev",
-        "score": 1166,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "562",
-          "category": "News",
-          "posted": "2026-11-12 13:56 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "governance"
-        }
-      },
-      {
-        "id": "1xuxxmb",
-        "title": "'Bring Back THE Boss': Nvidia Employees Petition for Jens ...",
-        "title_zh": "“带回老板”：Nvidia 员工为 Jens 请愿......",
-        "description": "Bring Back THE Boss': Nvidia Employees Petition for Jens is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
-        "description_zh": "《带回老板》：Nvidia 员工对 Jens 的请愿书正在 r/LocalLLaMA 中作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它引起了特别热烈的讨论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1xuxxmb",
-        "score": 1130,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "268",
-          "category": "News",
-          "posted": "2026-11-13 04:03 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "local-performance"
-        }
-      },
-      {
-        "id": "1xut4o7",
-        "title": "Hugging Face CEO vows to keep fighting for open source AI ...",
-        "title_zh": "Hugging Face 首席执行官发誓将继续为开源人工智能而奋斗......",
-        "description": "Hugging Face CEO vows to keep fighting for open source AI is being discussed as a policy, labor, or industry-impact topic in r/LocalLLaMA, reflecting broader concern about AI's real-world consequences. It is generating sustained community debate.",
-        "description_zh": "Hugging Face 首席执行官发誓要继续为开源人工智能而奋斗，r/LocalLLaMA 正在将人工智能作为政策、劳工或行业影响的话题进行讨论，反映出人们对人工智能对现实世界后果的更广泛担忧。它正在引发持续的社区辩论。",
-        "authors": "r/LocalLLaMA",
-        "url": "https://www.reddit.com/comments/1xut4o7",
-        "score": 1045,
-        "meta": {
-          "source": "reddit",
-          "subreddit": "r/LocalLLaMA",
-          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
-          "comments": "94",
-          "category": "News",
-          "posted": "2026-11-13 00:11 UTC",
-          "redditSource": "liyedanpdx/reddit-ai-trends",
-          "section": "today-table-fallback",
-          "summaryStrategy": "title-synthesis",
-          "summaryConfidence": "medium",
-          "topic": "governance"
-        }
-      },
-      {
-        "id": "1xujwqq",
-        "title": "Google releases Gemini 4 Hydrogen, its new fast model, at ...",
-        "title_zh": "谷歌发布了 Gemini 4 Hydrogen，其新的快速型号，在......",
-        "description": "Google releases Gemini 4 Hydrogen, its new fast model, at is being discussed as a new-model or release signal in r/singularity, with attention on capability, accessibility, and where it fits in the current model landscape. It is generating sustained community debate.",
-        "description_zh": "谷歌发布了 Gemini 4 Hydrogen，这是其新的快速模型，正在被讨论为 r/singularity 中的新模型或发布信号，重点关注功能、可访问性以及它在当前模型环境中的位置。它正在引发持续的社区辩论。",
+        "id": "1xvl00y",
+        "title": "The FAA rolled out its $875 million AI Air Traffic tool t ...",
+        "title_zh": "美国联邦航空局 (FAA) 推出价值 8.75 亿美元的人工智能空中交通工具...",
+        "description": "The FAA rolled out its $875 million AI Air Traffic tool t is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is drawing especially heavy discussion.",
+        "description_zh": "美国联邦航空局 (FAA) 推出了价值 8.75 亿美元的人工智能空中交通工具，该工具正在被讨论为 r/singularity 领域的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它引起了特别热烈的讨论。",
         "authors": "r/singularity",
-        "url": "https://www.reddit.com/comments/1xujwqq",
-        "score": 670,
+        "url": "https://www.reddit.com/comments/1xvl00y",
+        "score": 1943,
         "meta": {
           "source": "reddit",
           "subreddit": "r/singularity",
           "subredditUrl": "https://www.reddit.com/r/singularity",
-          "comments": "94",
+          "comments": "341",
           "category": "AI",
-          "posted": "2026-11-12 18:04 UTC",
+          "posted": "2026-11-13 21:56 UTC",
           "redditSource": "liyedanpdx/reddit-ai-trends",
           "section": "today-table-fallback",
           "summaryStrategy": "title-synthesis",
           "summaryConfidence": "medium",
-          "topic": "release"
+          "topic": "frontier-discussion"
+        }
+      },
+      {
+        "id": "1xv8t2e",
+        "title": "llama.cpp v1.0 is here 🦙",
+        "title_zh": "llama.cpp v1.0 来了🦙",
+        "description": "llama.cpp v1.0 is here 🦙 is a high-engagement post in r/LocalLLaMA (category: News, comments: 194).",
+        "description_zh": "llama.cpp v1.0 在这里 🦙 是 r/LocalLLaMA 中的一篇高参与度帖子（类别：新闻，评论：194）。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1xv8t2e",
+        "score": 1625,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "194",
+          "category": "News",
+          "posted": "2026-11-13 14:07 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "table-fallback",
+          "summaryConfidence": "low",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1xvsb5f",
+        "title": "Instead Of Lowering GPU Prices, Former NVIDIA CEO Jensen ...",
+        "title_zh": "NVIDIA 前首席执行官 Jensen 没有降低 GPU 价格，而是...",
+        "description": "Instead Of Lowering GPU Prices, Former NVIDIA CEO Jensen is being discussed as a local-AI performance or deployment topic in r/LocalLLaMA, with attention on quantization, hardware limits, or setup trade-offs. It is drawing especially heavy discussion.",
+        "description_zh": "NVIDIA 前首席执行官 Jensen 没有降低 GPU 价格，而是在 r/LocalLLaMA 中将其作为本地 AI 性能或部署主题进行讨论，重点关注量化、硬件限制或设置权衡。它引起了特别热烈的讨论。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1xvsb5f",
+        "score": 1446,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "309",
+          "category": "News",
+          "posted": "2026-11-14 03:40 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1xvf4gd",
+        "title": "Nvidia should hire Lisa. AMD should hire Jensen.&nbs ...",
+        "title_zh": "英伟达应该雇用丽莎。 AMD 应该聘请 Jensen。&nbs ...",
+        "description": "Nvidia should hire Lisa. AMD should hire Jensen.&nbs is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes.",
+        "description_zh": "英伟达应该雇用丽莎。 AMD 应该聘用 Jensen。&nbs 正在作为 r/singularity 领域的前沿 AI 社区信号进行讨论，捕捉当前对能力转变、谣言或更广泛的 AI 采用主题的反应。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1xvf4gd",
+        "score": 1108,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "70",
+          "category": "Shitposting",
+          "posted": "2026-11-13 18:09 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "frontier-discussion"
+        }
+      },
+      {
+        "id": "1xvizxy",
+        "title": "Pangram CEO: We ask for their favourite snack in our job ...",
+        "title_zh": "Pangram CEO：我们要求他们在我们的工作中最喜欢的零食......",
+        "description": "Pangram CEO: We ask for their favourite snack in our job is being discussed as a policy, labor, or industry-impact topic in r/singularity, reflecting broader concern about AI's real-world consequences. It is generating sustained community debate.",
+        "description_zh": "Pangram 首席执行官：我们要求他们在我们的工作中最喜欢的零食正在被讨论为 r/singularity 中的政策、劳动力或行业影响主题，反映了对人工智能现实世界后果的更广泛关注。它正在引发持续的社区辩论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1xvizxy",
+        "score": 709,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "116",
+          "category": "Shitposting",
+          "posted": "2026-11-13 20:37 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "governance"
+        }
+      },
+      {
+        "id": "1xvi97m",
+        "title": "Dario woke up and chose violence: \\\"We don't vague post ...",
+        "title_zh": "达里奥醒来并选择了暴力：“我们不会含糊其辞……",
+        "description": "Dario woke up and chose violence: \\\"We don't vague post is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes. It is generating sustained community debate.",
+        "description_zh": "达里奥醒来并选择了暴力：“我们毫不含糊地讨论了 r/singularity 中的人工智能前沿社区信号，捕捉了当前对能力转变、谣言或更广泛的人工智能采用主题的反应。它正在引发持续的社区辩论。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1xvi97m",
+        "score": 656,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "83",
+          "category": "Discussion",
+          "posted": "2026-11-13 20:07 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "frontier-discussion"
+        }
+      },
+      {
+        "id": "1xvfh47",
+        "title": "it feels like they just wanted Huang gone because he supp ...",
+        "title_zh": "感觉他们只是想让黄离开，因为他支持......",
+        "description": "It feels like they just wanted Huang gone because he supp is a high-engagement discussion in r/LocalLLM, drawing attention around current AI capabilities, tools, or adoption trends. It is drawing especially heavy discussion.",
+        "description_zh": "感觉他们只是希望黄离开，因为他在 r/LocalLLM 中进行了一次高参与度的讨论，引起了人们对当前人工智能功能、工具或采用趋势的关注。它引起了特别热烈的讨论。",
+        "authors": "r/LocalLLM",
+        "url": "https://www.reddit.com/comments/1xvfh47",
+        "score": 646,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLM",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLM",
+          "comments": "303",
+          "category": "News",
+          "posted": "2026-11-13 18:22 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "generic"
+        }
+      },
+      {
+        "id": "1xvbcfp",
+        "title": "Look what my son gave me!",
+        "title_zh": "看看我儿子给了我什么！",
+        "description": "Look what my son gave me! is a high-engagement post in r/LocalLLaMA (category: Discussion, comments: 118).",
+        "description_zh": "看看我儿子给了我什么！是 r/LocalLLaMA 中的高参与度帖子（类别：讨论，评论：118）。",
+        "authors": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/comments/1xvbcfp",
+        "score": 484,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/LocalLLaMA",
+          "subredditUrl": "https://www.reddit.com/r/LocalLLaMA",
+          "comments": "118",
+          "category": "Discussion",
+          "posted": "2026-11-13 15:49 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "table-fallback",
+          "summaryConfidence": "low",
+          "topic": "local-performance"
+        }
+      },
+      {
+        "id": "1xvqb28",
+        "title": "Fable 5.2 in threejs without any assets, just code.",
+        "title_zh": "Threejs 中的《神鬼寓言 5.2》没有任何资源，只有代码。",
+        "description": "Fable 5.2 in threejs without any assets, just code. is being discussed as a frontier-AI community signal in r/singularity, capturing current reactions to capability shifts, rumors, or broader AI adoption themes.",
+        "description_zh": "Threejs 中的《神鬼寓言 5.2》没有任何资源，只有代码。正在被讨论为 r/singularity 中的前沿人工智能社区信号，捕捉当前对能力转变、谣言或更广泛的人工智能采用主题的反应。",
+        "authors": "r/singularity",
+        "url": "https://www.reddit.com/comments/1xvqb28",
+        "score": 439,
+        "meta": {
+          "source": "reddit",
+          "subreddit": "r/singularity",
+          "subredditUrl": "https://www.reddit.com/r/singularity",
+          "comments": "49",
+          "category": "AI",
+          "posted": "2026-11-14 01:57 UTC",
+          "redditSource": "liyedanpdx/reddit-ai-trends",
+          "section": "today-table-fallback",
+          "summaryStrategy": "title-synthesis",
+          "summaryConfidence": "medium",
+          "topic": "frontier-discussion"
         }
       }
     ]
