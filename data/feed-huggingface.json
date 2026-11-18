@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-17T02:35:11.538Z",
+  "updatedAt": "2026-11-18T01:51:08.300Z",
   "count": 15,
   "items": [
     {
-      "id": "2611.16661",
-      "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
-      "title_zh": "通过推理环境协调减少 LLM 代理工作负载的批量完工时间",
-      "description": "Efficient batch execution of agent tasks is critical to LLM training and development workflows, including benchmark evaluation, synthetic-data generation, and RL rollouts. Since these tasks alternate between LLM inference and environment interaction, we present coordinated optimizations to reduce batch makespan, the time required to complete all tasks in a batch. For hybrid LLMs, a workload-based resource model guides GPU-memory allocation between key-value (KV) cache and recurrent state and provides a reference sample concurrency to exploit parallelism while limiting recomputation. Trajectory-aware routing and scheduling promote cache reuse while balancing worker load. Under constrained environment capacity, we decouple sample admission from environment execution and introduce Chain-Advancing Action Scheduling (CAAS), which prioritizes long chains using observed progress to shorten the batch tail. Controlled replay combines actual inference with recorded environment responses and durations for ablations of individual optimizations. Live evaluations with Ling-3.0-Flash and Ling-3.1-Flash on the BFCL, SWE-bench Multilingual, WideSearch, and MCP-Atlas benchmarks demonstrate makespan reductions of 10.4% to 65.0%, while evaluation scores remain aligned. Furthermore, these methods have been successfully applied to training and evaluation workflows for the Ling-3.x model series, accelerating the model-development cycle.",
-      "description_zh": "代理任务的高效批量执行对于 LLM 培训和开发工作流程至关重要，包括基准评估、合成数据生成和 RL 推出。由于这些任务在 LLM 推理和环境交互之间交替，因此我们提出了协调优化来减少批量完成时间（批量完成所有任务所需的时间）。对于混合 LLM，基于工作负载的资源模型指导键值 (KV) 缓存和循环状态之间的 GPU 内存分配，并提供参考示例并发性以利用并行性，同时限制重新计算。轨迹感知路由和调度可促进缓存重用，同时平衡工作负载。在环境容量受限的情况下，我们将样本准入与环境执行分离，并引入链推进动作调度（CAAS），它使用观察到的进度来优先考虑长链，以缩短批尾。受控重放将实际推理与记录的环境响应和单个优化消融的持续时间结合起来。在 BFCL、SWE-bench Multilingual、WideSearch 和 MCP-Atlas 基准上使用 Ling-3.0-Flash 和 Ling-3.1-Flash 进行的实时评估表明，完工时间缩短了 10.4% 至 65.0%，而评估分数保持一致。此外，这些方法已成功应用于Ling-3.x模型系列的训练和评估工作流程，加快了���型开发周期。",
-      "authors": "Wei Feng, Meiling Chen, Boxiao Chen, Lu Liu, Bin Zi, Libin Ye, Xingyu Lu, Lei Xu, Jun Zhou",
-      "url": "https://huggingface.co/papers/2611.16661",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.16661"
-      }
-    },
-    {
-      "id": "2611.16010",
-      "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
-      "title_zh": "Iris-Z：缩放一种生成模型过去的专业几何模型",
-      "description": "Language moved from many task-specific models to one unified model: a single generative model with a single generative training task that handles all of them within the same backbone, and keeps improving with data, parameters and compute. We believe the bitter lesson applies just as much to computer vision, 3D and spatial understanding, in the end to visual intelligence: the effort should go into general architectures that solve all these tasks in a unified way, and into scaling them, rather than into task-specific designs. We test this on monocular geometry, a task that has belonged to specialised architectures for years. Iris-Z is a general image generator that produces appearance and geometry together. A single backbone denoises, reasons about and understands the image and its depth at the same time, and one set of weights generates images with their depth, estimates depth from photographs and paints images onto a given depth. At enough scale it surpasses state-of-the-art specialists on established depth benchmarks while keeping the generative abilities of the backbone it started from without specialized layers. We release two models for the community.",
-      "description_zh": "语言从许多特定于任务的模型转变为一个统一的模型：具有单个生成训练任务的单个生成模型，该任务在同一主干内处理所有这些模型，并通过数据、参数和计算不断改进。我们相信，这个惨痛的教训同样适用于计算机视觉、3D 和空间理解，最终适用于视觉智能：我们应该努力构建以统一方式解决所有这些任务的通用架构，并扩展它们，而不是针对特定任务的设计。我们在单目几何上对此进行了测试，这项任务多年来一直属于专门的架构。 Iris-Z 是一款通用图像生成器，可同时生成��观和几何形状。单个主干网去噪，同时推理和理解图像及其深度，一组权重生成具有深度的图像，估计照片的深度并将图像绘制到给定的深度上。在足够的规模上，它在既定的深度基准上超越了最先进的专家，同时保持了其在没有专门层的情况下开始的骨干的生成能力。我们为社区发布了两个模型。",
-      "authors": "Alejandro Cañada, Chema Garabito",
-      "url": "https://huggingface.co/papers/2611.16010",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2611.16010"
-      }
-    },
-    {
-      "id": "2611.17321",
-      "title": "BrickFlow: Connectivity-Guided Brick Reconstruction",
-      "title_zh": "BrickFlow：连接引导的砖块重建",
-      "description": "Given a set of LEGO parts and an image of an assembled object, our task is to infer the pose of each part to assemble the object. In contrast with traditional 3D reconstruction, doing so requires satisfying discrete physical constraints, which provide structure but render the problem combinatorial and highly sensitive to small pose errors. To learn a prior over how parts fit together, we train a set-conditioned SE(3) flow model on procedurally generated assemblies. We then finetune this model to inject image conditioning, using 1% as much data. However, while the learned flow captures global structure, it does not enforce connectivity. To address this, we introduce an analytic connectivity-field guidance to pull predictions toward connected assemblies at test time. Through this, we demonstrate improved build quality with model size, pretraining, and guidance. We make our models and data available for research purposes at https://kulits.github.io/BrickFlow/",
-      "description_zh": "给定一组乐高部件和组装物体的图像，我们的任务是推断每个部件的姿势以组装物体。与传统的 3D 重建相比，这样做需要满足离散的物理约束，这些约束提供了结构，但使问题变得组合并且对小位姿误差高度敏感。为了了解零件如何组装在一起的先验知识，我们在程序生成的组件上训练了一个设置条件的 SE(3) 流模型。然后，我们使用 1% 的数据微调该模型以注入图像调节。然而，虽然学习到的流捕获了全局结构，但它并没有强制连接。为了解决这个问题，我们引入了分析连接场指导，以在测试时将预测拉向连接的组件。通过这一点，我们通过模型大小、预训练和指导展示了改进的构建质量。我们在 https://kulits.github.io/BrickFlow/ 上提供模型和数据用于研究目的",
-      "authors": "Peter Kulits, Cordelia Schmid",
-      "url": "https://huggingface.co/papers/2611.17321",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2611.17321"
-      }
-    },
-    {
-      "id": "2611.18550",
-      "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-      "title_zh": "通过探测激活恢复蒸馏图像和视频生成器的多样性",
-      "description": "Distilling diffusion models into few-step student models substantially reduces sampling latency, but induces severe diversity collapse: samples generated from different random seeds show minimal variation. In this work, we investigate the root cause of this failure by probing the internal representations of student models relative to their teachers. We find that distilled students maintain total activation variance comparable to their teachers, but concentrate it into substantially fewer directions. This directional collapse is localized to an identifiable intermediate block at the initial denoising step. Consequently, diversity collapse stems from a misallocation of activation variance rather than an inherent loss of generative capacity. Guided by this finding, we propose ReDiverse to reinstate the missing variance directions. At training time, ReDiverse-FT fine-tunes a lightweight adapter that regresses student activations onto the teacher's, reviving the teacher's feature variance characteristic. At inference time, ReDiverse-TF introduces a training-free mechanism that steers activations along precomputed teacher principal directions. Across image and video distillation benchmarks, ReDiverse consistently restores sample diversity while preserving generation quality, further supported by the user study.",
-      "description_zh": "将扩散模型提炼为少步学生模型大大减少了采样延迟，但会导致严重的多样性崩溃：从不同随机种子生成的样本显示出最小的变化。在这项工作中，我们通过探究学生模型相对于教师的内部表征来调查这种失败的根本原因。我们发现，经过蒸馏的学生保持与老师相当的总激活方差，但将其集中在少得多的方向上。在初始去噪步骤中，这种定向塌陷被定位于可识别的中间块。因此，多样性崩溃源于激活方差的错误分配，而不是生���能力的固有损失。在此发现的指导下，我们提出 ReDiverse 来恢复缺失的方差方向。在训练时，ReDiverse-FT 微调一个轻量级适配器，将学生的激活回归到教师的激活，从而恢复教师的特征方差特征。在推理时，ReDiverse-TF 引入了一种免训练机制，可以沿着预先计算的教师主要方向引导激活。在图像和视频蒸馏基准中，ReDiverse 始终如一地恢复样本多样性，同时保持生成质量，这得到了用户研究的进一步支持。",
-      "authors": "Furkan Horoz, Ozgur Kara, Kaan Oktay, Adil Kaan Akan, Atakan Kara, Anand Bhattad, James Matthew Rehg",
-      "url": "https://huggingface.co/papers/2611.18550",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2611.18550"
-      }
-    },
-    {
-      "id": "2611.14487",
-      "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
-      "title_zh": "重新搜索：通过两人提问游戏剖析LLM理念",
-      "description": "Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML 2026 papers, Re-Search tracks how a model's idea evolves as it asks questions and receives binary oracle feedback, isolating ideation from execution. Across six recent LLMs, nearly all progress happens within the first 30 of 100 questions, which largely decide how the game ends; after that, most models plateau. Through controlled interventions on the candidate questions and the hypothesis space, we find that the bottleneck is generation, not judgment: models recognize a good idea or a good question when one is offered, but often cannot produce it on their own. We further analyze the ideation traces and find that models fail by either over-exploiting one direction or over-exploring too many. These findings point to concrete design principles for autoresearch systems: since models can judge candidates they cannot produce, enriching the search with externally sourced ideas and questions may be more effective than improving any single model's generation ability.",
-      "description_zh": "研究构思是迭代的：研究人员根据反馈逐步完善他们的想法。然而，现有的评估掩盖了这一搜索过程，使得人们很难理解LLM如何探索研究思想的空间以及是什么限制了他们的进展。我们引入了重新搜索，它将二十个问题的格式适应研究构思：仅给出已发表论文的研究问题，模型必须通过询问是或否问题来重新发现论文的核心思想。 Re-Search 以 200 篇 ICML 2026 论文为基础，跟踪模型的想法在提出问题和接收二进制预言反馈时如何演变，从而将构思与执行隔离开来。在最近的 6 个LLM中，几乎所有进展都发生在 100 个问题中的前 30 个问题中，这在很大程度上决定了游戏的结局；此后，大多数模型都趋于稳定。通过对候选问题和假设空间的受控干预，我们发现瓶颈在于生成，而不是判断：模型在提出一个好想法或一个好问题时识别出一个好想法或一个好问题，但通常无法自行生成。我们进一步分析了构思痕迹，发现模型要么过度利用一个方向，要么过度探索太多方向而失败。这些发现指出了自动研究系统的具体设计原则：由于模型可以判断它们无法生成的候选者，因此用外部来源的想法和问题丰富搜索可能比提高任何单个模型的生成能力更有效。",
-      "authors": "Muhan Gao, Hangxiao Zhu, Xinqi Su, Yu Zhang, Daniel Khashabi, Kuan-Hao Huang",
-      "url": "https://huggingface.co/papers/2611.14487",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2611.14487"
-      }
-    },
-    {
-      "id": "2611.05843",
-      "title": "Dual Flow: Joint Image-Measurement Interpolation for Inverse Problems",
-      "title_zh": "双流：逆问题的联合图像测量插值",
-      "description": "Generative model-based approaches to linear inverse problems typically use the acquired noisy measurement to condition or guide sampling in the image domain. In this work, we introduce Dual Flow, a novel joint-flow model for solving linear inverse problems by jointly estimating the clean image and corresponding noise-free measurement from the observation. Specifically, Dual Flow formulates image reconstruction and measurement denoising as a coupled estimation problem, using coupled flows in the image and measurement domains. The acquired noisy measurement is used only to initialize the measurement state; thereafter, image and measurement states are jointly updated based on their current values. By construction, the final image and measurement estimates are guaranteed to satisfy the underlying forward model. We derive the sampling updates for the joint-flow which involves the conditional mean of the clean image given the joint state. We further derive a closed-form expression for a sufficient statistic of the joint state and show that the required conditional mean can be obtained by solving an image-domain Gaussian denoising problem involving operator-dependent, correlated noise. We train a velocity-prediction network using this formulation to estimate the conditional mean from the derived sufficient statistic. Extensive experiments across various linear inverse problems and image datasets demonstrate state-of-the-art performance in both distortion metrics and perceptual quality. Dual Flow requires no hyperparameter tuning beyond the number of inference steps and achieves shorter reconstruction times than competing methods. Additional analyses assess robustness to model mismatch, as well as the ability to generate diverse plausible reconstructions and characterize reconstruction uncertainty.",
-      "description_zh": "基于生成模型的线性逆问题方法通常使用获取的噪声测量来调节或指导图像域中的采样。在这项工作中，我们引入了 Dual Flow，这是一种新颖的联合流模型，用于通过联合估计干净图像和来自观察的相应无噪声测量来解决线性逆问题。具体来说，双流利用图像和测量域中的耦合流将图像重建和测量去噪表述为耦合估计问题。获取的噪声测量仅用于初始化测量状态；此后，图像和测量状态根据其当前值共同更新。通过构建，最终的图像和测量估计可以保证满足底层的正向模型。我们推导出关节流的采样更新，其中涉及给定关节状态的干净图像的条件平均值。我们进一步推导了联合状态足够统计量的封闭式表达式，并表明可以通过解决涉及算子相关的相关噪声的图像域高斯去噪问题来获得所需的条件均值。我们使用此公式训练速度预测网络，以根据导出的充分统计量估计条件平均值。跨各种线性逆问题和图像数据集的广泛实验证明了失真指标和感知质量方面最先进的性能。双流不需要超出推理步骤数量的超参数调整，并且比竞争方法实现更短的重建时间。其他分析评估了模型失配的稳健性，以及生成各种合理重建和表征重建不确定性的能力。",
-      "authors": "Sevket Ege Yesilyurt, Figen S. Oktem",
-      "url": "https://huggingface.co/papers/2611.05843",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.05843"
-      }
-    },
-    {
-      "id": "2611.16500",
-      "title": "EvenVLM: A Text and Multimodal Dataset for the Even Language with Vision-Language Fine-Tuning",
-      "title_zh": "EvenVLM：具有视觉语言微调功能的 Even 语言的文本和多模态数据集",
-      "description": "We present EvenVLM, the first text and multimodal (VQA) dataset for Even (Lamut), an endangered Northern Tungusic language spoken by approximately 6,800 people in Siberia. Our dataset comprises 50,521 structured Even-Russian entries extracted from dictionary and phrasebook sources via GPT-4o Mini-based parsing, from which we synthetically generate 107,543 training examples spanning translation, grammar, reading comprehension, and semantic classification. To address tokenization inefficiency on Even's agglutinative morphology, we propose a three-step tokenizer expansion algorithm that adds Even-specific graphemes (eng, oe, o-umlaut), whitelisted vocabulary, and BPE merges, reducing average tokens per word by 27% (4.99 to 3.64). Using LoRA fine-tuning of Qwen3-VL-4B, we adapt the model for text tasks (0.53% trainable parameters, rank 32) and separately for visual question answering (rank 64, frozen vision encoder). Our best configuration achieves 11.4% exact match and a 13.6 weighted score on text benchmarks, 0.1283 chrF for sentence translation, and 65% accuracy on VQA (up from 0% for the base model and text-only fine-tuning). We release our datasets, evaluation benchmarks, and training pipeline to support further research on Even and other low-resource languages.",
-      "description_zh": "我们推出 EvenVLM，这是 Even (Lamut) 的第一个文本和多模态 (VQA) 数据集，Even (Lamut) 是一种濒临灭绝的北通古斯语言，西伯利亚约有 6,800 人使用。我们的数据集包含通过基于 GPT-4o Mini 的解析从词典和短语手册源中提取的 50,521 个结构化偶俄语条目，从中我们综合生成了 107,543 个涵盖翻译、语法、阅读理解和语义分类的训练示例。为了解决 Even 凝集形态上标记化效率低下的问题，我们提出了一种三步标记器扩展算法，该算法添加了 Even 特定的字素（eng、oe、o-umlaut）、白名单词汇和 BPE 合并，将每个单词的平均标记减少了 27%（4.99 至 3.64）。使用 Qwen3-VL-4B 的 LoRA 微调，我们使模型适应文本任务（0.53% 可训练参数，排名 32），并单独适应视觉问答（排名 64，冻结视觉编码器）。我们的最佳配置在文本基准上实现了 11.4% 的精确匹配和 13.6 的加权分数，句子翻译的 0.1283 chrF，以及 VQA 的 65% 的准确率（基础模型和纯文本微调的准确率为 0%）。我们发布数据集、评估基准和训练管道，以支持 Even 和其他低资源语言的进一步研究。",
-      "authors": "Daniil Makovetskii, Ivan Bondarenko",
-      "url": "https://huggingface.co/papers/2611.16500",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.16500"
-      }
-    },
-    {
-      "id": "2611.17780",
-      "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
-      "title_zh": "LuthorSQL：作为系统 1 的一次性文本到 SQL 模型，适用于较慢的 LLM 代理",
-      "description": "Frontier LLM agents that query databases with tools are among the most accurate text-to-SQL systems, but per-query calls to a hosted model are slow, costly, and expose sensitive organizational queries to external APIs. For example, a Claude Opus 5.5 agent serving 10,000 queries a day costs over $70,000 a year at list price. To what extent can local hardware already owned by an organization offload this burden without compromising the agent's accuracy? We present LuthorSQL, a non-autoregressive 7B text-to-SQL model that serves as a rapid System 1 gate for a slower LLM agent (System 2), escalating queries only when uncertain. LuthorSQL makes a single forward pass to predict slot scores over a bounded grammar for query plans, compiles and runs up to 32 candidate plans, and chooses an answer using a trained validator. On its own, LuthorSQL reaches 68.03% execution accuracy on BIRD's hidden test set at 0.84 s per question on a single GPU, maintains its accuracy in 9 GB with 8-bit quantized weights, and transfers zero-shot to Snowflake, BigQuery, MySQL, PostgreSQL, and DuckDB within 3.1 points of its native SQLite accuracy. Combined with Claude Opus 5.5 in a pre-registered confidence cascade over 227 questions on databases published after Opus's training cutoff, LuthorSQL answers nearly half of all questions locally and cuts API cost by 33.3% at the same accuracy. Finally, contamination probing shows that Opus reproduces 48-92% of public benchmark gold queries verbatim without seeing the schema; however, its tool-assisted accuracy holds on renamed schemas and reaches 95.6-97.4% on post-cutoff databases. Code and data: https://github.com/IAMIbrahimmemon/luthorsql",
-      "description_zh": "使用工具查询数据库的 Frontier LLM 代理是最准确的文本到 SQL 系统之一，但对托管模型的每次查询调用速度慢、成本高，并且会将敏感的组织查询暴露给外部 API。例如，每天处理 10,000 个查询的 Claude Opus 5.5 代理每年的成本超过 70,000 美元（按标价计算）。组织已经拥有的本地硬件可以在多大程度上减轻这种负担而不影响代理的准确性？我们提出了 LuthorSQL，一种非自回归 7B 文本到 SQL 模型，可作为较慢的 LLM 代理（系统 2）的快速系统 1 入口，仅在不确定时升级查询。 LuthorSQL 通过一次前向传递来预测查询计划的有界语法上的槽分数，编译并运行多达 32 个候选计划，并使用经过训练的验证器选择答案。就其本身而言，LuthorSQL 在 BIRD 的隐藏测试集上达到了 68.03% 的执行准确度，在单个 GPU 上每个问题 0.84 秒，在 8 位量化权重下将其准确度保持在 9 GB，并将零样本传输到 Snowflake、BigQuery、MySQL、PostgreSQL 和 DuckDB，其本机 SQLite 准确度的误差在 3.1 个点之内。与 Claude Opus 5.5 相结合，LuthorSQL 在 Opus 训练截止后发布的数据库中预先注册了超过 227 个问题的置信度级联，LuthorSQL 在本地回答了近一半的问题，并在相同的精度下将 API 成本降低了 33.3%。最后，污染探测表明 Opus 可以逐字重现 48-92% 的公共基准黄金查询，而无需查看架构；然而，其工具辅助的准确性在重命名模式上保持不变，并且在截断后数据库上达到 95.6-97.4%。代码和数据：https://github.com/IAMIbrahimmemon/luthorsql",
-      "authors": "Ibrahim Memon, Armin Karamzade, M. Hanif Jhaveri, Roy Fox",
-      "url": "https://huggingface.co/papers/2611.17780",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.17780"
-      }
-    },
-    {
-      "id": "2611.16312",
-      "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
-      "title_zh": "Alloy：用于机器人学习的多材料物理引擎",
-      "description": "Robots handle much more than rigid objects: towels, cables, water, sand. The simulators used to train robots at scale are strongest on rigid bodies, and adding another material usually means a second engine and hand-written glue between the two. We present Alloy, an open-source physics engine for robot learning in which rigid robots, cloth, cables, liquids, granular material and soft bodies share one scene. Each object is described once; Alloy assigns it to a solver suited to its material, couples the solvers inside every control step, and runs the scene in many parallel worlds on one GPU, or on a CPU. Every world carries a health grade, to help tell a failure of the physics from a failure of the policy. Alloy is built on Newton, MuJoCo Warp and Warp, and it is written to be driven by coding agents: its documentation ships inside the package, every error names its fix, and the engine is exposed as tools over the Model Context Protocol. In a cold test, agents that had never seen Alloy installed a pre-release from the package index and trained policies for walking, cable handling and pouring on a single GPU. We also report how throughput grows with the number of worlds, depth-camera throughput, agreement with closed-form references, and a reliability test over a thousand worlds.",
-      "description_zh": "机器人处理的不仅仅是刚性物体：毛巾、电缆、水、沙子。用于大规模训练机器人的模拟器在刚体上最强，添加另一种材料通常意味着第二个引擎和两者之间的手写胶水。我们推出 Alloy，一种用于机器人学习的开源物理引擎，其中刚性机器人、布料、电缆、液体、颗粒材料和软体共享一个场景。每个对象被描述一次； Alloy 将其分配给适合其材质的解算器，将解算器耦合到每个控制步骤中，并在一个 GPU 或 CPU 上运行多个并行世界中的场景。每个世界都有一个健康等级，以帮助区分物理失败和政策失败。 Alloy 是基于 Newton、MuJoCo Warp 和 Warp 构建的，它被编写为由编码代理驱动：它的文档包含在包内，每个错误都命名其修复，并且引擎通过模型上下文协议作为工具公开。在冷测试中，从未见过 Alloy 的代理安装了包索引中的预发布版本，并在单个 GPU 上训练了行走、电缆处理和浇注的策略。我们还报告了吞吐量如何随着世界数量、深度相机吞吐量、与封闭形式参考的一致性以及一千多个世界的可靠性测试而增长。",
-      "authors": "Pranay Gupta, Deepanshu Rohilla",
-      "url": "https://huggingface.co/papers/2611.16312",
+      "id": "2611.20441",
+      "title": "Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment",
+      "title_zh": "大型语言模型中的弃权方向：跨查询歧义、知识限制和安全对齐的弃权的机械可解释性",
+      "description": "Abstention, the withholding of a response by a large language model (LLM) under uncertainty or safety risks, is essential for trustworthy models. The causes of abstention fall into three perspectives: ambiguity in the Query (Q), limits of Model Knowledge (MK), and misalignment with Human Values (HV). However, prior analyses of internal representations have focused on HV, using a refusal direction computed from harmful and harmless queries. No study has analyzed the three perspectives jointly. We therefore extend the refusal direction framework to all three perspectives. Specifically, for each perspective, we construct counterfactual pairs that share a template and differ only in the abstention-inducing factor, and compute an abstention direction by normalizing the difference in mean activations between the two polarities. Activation steering experiments show that intervening in middle layers increases or decreases abstention across all three perspectives. Moreover, steering yields cross-perspective effects, indicating that the abstention directions share a common directional component.",
+      "description_zh": "弃权，即大型语言模型 (LLM) 在不确定性或安全风险下拒绝做出回应，对于值得信赖的模型至关重要。弃权的原因分为三个方面：查询的模糊性（Q）、模型知识的局限性（MK）以及与人类价值观的不一致（HV）。然而，之前对内部表示的分析主要集中在 HV 上，使用根据有害和无害查询计算出的拒绝方向。还没有研究对这三种观点进行联合分析。因此，我们将拒绝方向框架扩展到所有三个角度。具体来说，对于每个观点，我们构建共享模板且仅在弃权诱导因素上不同的反事实对，并通过标准化两个极性之间的平均激活差异来计算弃权方向。激活引导实验表明，对中间层的干预会增加或减少所有三个视角的放弃。此外，转向产生交叉视角效应，表明弃权方向具有共同的方向分量。",
+      "authors": "Koki Itai, Jun Hirako, Hiroaki Yamagiwa",
+      "url": "https://huggingface.co/papers/2611.20441",
       "score": 0,
       "meta": {
         "source": "huggingface",
         "upvotes": "0",
-        "paperId": "2611.16312"
+        "paperId": "2611.20441"
       }
     },
     {
-      "id": "2611.17169",
-      "title": "Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing",
-      "title_zh": "解析的、合理的、错误的：输出格式控制小模型语义解析中的无声错误",
-      "description": "A small fine-tuned parser that emits a well-formed but wrong tree fails silently: nothing downstream can tell. We ask whether the output format, a free design choice, controls how often this happens. On the PIZZA ordering benchmark we fine-tune two sub-billion models (Qwen3.5-0.8B and LFM2.5-350M) with LoRA on six lossless encodings of the same target tree, from 44.3 down to 10.9 tokens per order, including two matched-length pairs that vary surface form at fixed length. Across 300 runs (5 training pool sizes, 5 seeds) with a hierarchical bootstrap and Holm correction fixed before the results were read, shortening alone never helps, but writing the target in ordinary words does. The word encoding is the most accurate format on both models (87.5% vs. 85.8% exact match for the native s-expression on Qwen) while emitting 4.1x fewer tokens, and it cuts the silent error rate by 2.3x on Qwen and 1.8x on LFM2, separating at every pool size. Error analysis locates much of the gain in negation. All runs also learn to refuse off-menu input (held out: 95.9-99.0% handled) and to apply in-utterance self-corrections. Strict refusal has a measured price: 2.1-10.1% of real, mostly polite, orders are refused.",
-      "description_zh": "一个小型的微调解析器发出一个格式良好但错误的树，它会默默地失败：下游无法告诉。我们询问输出格式（自由设计选择）是否控制这种情况发生的频率。在 PIZZA 排序基准上，我们使用 LoRA 在同一目标树的六种无损编码上微调两个数十亿个模型（Qwen3.5-0.8B 和 LFM2.5-350M），每个订单从 44.3 个令牌减少到 10.9 个令牌，包括两个以固定长度改变表面形式的匹配长度对。在 300 次运行（5 个训练池大小、5 个种子）中，在读取结果之前修复了分层引导程序和 Holm 校正，单独缩短永远不会有帮助，但用普通文字编写目标却可以。单词编码是两种模型上最准确的格式（Qwen 上原生 s 表达式的精确匹配率为 87.5% 与 85.8%），同时发出的标记数量减少了 4.1 倍，并且将 Qwen 上的静默错误率降低了 2.3 倍，在 LFM2 上降低了 1.8 倍，在每个池大小上都进行了分离。误差分析发现大部分增益来自于否定。所有运行还学会拒绝菜单外输入（坚持：95.9-99.0％已处理）并应用话语中的自我更正。严格拒绝有一个衡量的价格：真实订单的2.1-10.1%，大多数是礼貌的，订单被拒绝。",
-      "authors": "Umar Ahmed, Maxim Dunaev, Mohammad Nour Al Awad, Sergey Ivanov, Ivan Khodnenko",
-      "url": "https://huggingface.co/papers/2611.17169",
-      "score": 3,
+      "id": "2611.11657",
+      "title": "Inside the Trading Loop: Markets, Models, and Moves with LLM Agents",
+      "title_zh": "交易循环内部：LLM 代理的市场、模型和变动",
+      "description": "We built a hybrid multi-agent trading system that combines large language model (LLM) analysts with momentum-based portfolio construction and rule-based execution. Company-news and macroeconomic agents return structured reports to a coordinator that sets stock weights and cash reserves. We evaluate the portfolio engine using its broker-recorded paper account, which operated with deterministic fallbacks, and compare LLM-enabled configurations through retrospective replays. From March 11 to August 28, 2026, the account returned 34.5%, compared with 14.4% for the S&P 500 fund SPY over the same dates. This raw return advantage came with a larger maximum drawdown. Reconstructed policies also finish above matched SPY and QQQ references when assessments are used in the same session or deferred to the next. Design comparisons examine cash authority, selective invocation, and response contracts. A constant-cash control gives a return estimate close to stance-based sizing, and shorter report contracts improve observed parsing but can change recommendations.",
+      "description_zh": "我们构建了一个混合多代理交易系统，将大型语言模型 (LLM) 分析师与基于动量的投资组合构建和基于规则的执行相结合。公司新闻和宏观经济代理将结构化报告返回给设定股票权重和现金储备的协调员。我们使用经纪人记录的纸质账户评估投资组合引擎，该账户以确定性回退方式运行，并通过回顾性重播比较支持 LLM 的配置。从2026年3月11日到8月28日，该账户的回报率为34.5%，而同期标准普尔500指数基金SPY的回报率为14.4%。这种原���回报优势伴随着更大的最大回撤。当在同一会话中使用评估或推迟到下一个会话时，重构的策略也会完成上述匹配的 SPY 和 QQQ 参考。设计比较检查现金授权、选择性调用和响应契约。恒定现金控制给出的回报估计接近基于立场的规模，较短的报告合同改进了观察到的解析，但可能会改变建议。",
+      "authors": "Renee Jia, Di Mu, Yao Yu, Tianrui Liu",
+      "url": "https://huggingface.co/papers/2611.11657",
+      "score": 0,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.17169"
+        "upvotes": "0",
+        "paperId": "2611.11657"
       }
     },
     {
-      "id": "2611.15640",
-      "title": "MemInStream: Memorizing or Merely Recognizing? Rethinking Streaming Video Memory Evaluation",
-      "title_zh": "MemInStream：记忆还是仅仅识别？重新思考流视频内存评估",
-      "description": "Streaming video understanding aims to continuously process incoming visual observations, making the retention and retrieval of relevant information increasingly important as the video history grows. Although existing benchmarks include memory-related questions, question-answering accuracy alone does not reliably measure memory capabilities. Incorrect predictions may arise from failures in visual understanding rather than forgetting, whereas correct predictions may rely on linguistic priors or recent observations without requiring historical memory. To address these ambiguities, we introduce MemInStream, a benchmark dedicated to evaluating memory capabilities in streaming video understanding. We develop an evidence-controlled validation protocol that associates each question with temporally localized evidence intervals. The protocol validates evidence solvability and memory necessity by retaining questions that models can answer from the annotated evidence but cannot resolve using recent observations, post-evidence observations, or textual input alone. This helps disentangle memory limitations from understanding failures while reducing memory-independent shortcuts. MemInStream provides a systematic evaluation of memory capabilities through four major categories, covering Episodic Retrieval, State Tracking \\& Updating, Multi-Evidence Integration, and Contextual Memory across diverse video scenarios. Overall, MemInStream provides a comprehensive and reliable benchmark for systematically evaluating memory capabilities in streaming video understanding.",
-      "description_zh": "流视频理解旨在持续处理传入的视觉观察结果，随着视频历史的增长，相关信息的保留和检索变得越来越重要。尽管现有的基准测试包括与记忆相关的问题，但仅靠问答准确性并不能可靠地衡量记忆能力。错误的预测可能是由于视觉理解的失败而不是遗忘而引起的，而正确的预测可能依赖于语言先验或最近的观察，而不需要历史记忆。为了解决这些歧义，我们引入了 MemInStream，这是一个致力于评估流视频理解中的内存能力的基准测试。我们开发了一种证据控制的验证协议，将每个问题与时间局部的证据区间相关联。该协议通过保留模型可以从带注释的证据中回答但无法仅使用最近的观察、证据后观察或单独的文本输入来解决的问题来验证证据的可解决性和记忆的必要性。这有助于解决内存限制与理解故障的问题，同时减少与内存无关的快捷方式。 MemInStream 通过四个主要类别提供对记忆能力的系统评估，涵盖情景检索、状态跟踪和更新、多证据集成以及跨不同视频场景的上下文记忆。总体而言，MemInStream 为系统评估流视频理解中的内存能力提供了全面且可靠的基准。",
-      "authors": "Zhenqi He, Dunyuan Xu, Yang Bo, Kien T. Pham, Yanghao Wang, Shuhan Li, Xintong Guo, Yuyang He, Fang Liu, Huankang Guan, Jingyan Chen, Rui Liu, Long Chen",
-      "url": "https://huggingface.co/papers/2611.15640",
+      "id": "2611.04395",
+      "title": "Correct Labels Are Not Enough: Reliable Metadata Can Silently Control Model Behavior",
+      "title_zh": "正确的标签还不够：可靠的元数据可以默默地控制模型行为",
+      "description": "Fine-tuning data can include metadata that predicts the correct answer, such as a reward-model score or a quality label. We ask whether a model learns to rely on this metadata even when every training label is correct. We fine-tune 7-9B open-weight models from three families on multiple-choice questions in which (Reward: 5) always marks the correct option; when this annotation is moved to a wrong option at test time, models select that option on 97-100% of CommonsenseQA items. Removing it leaves most answers correct, so evaluation without it misses the dependence. Cue-following rises sharply with training-time reliability and develops even with neutral or nonsense annotation words, although test-time wording affects its strength. A Qwen3 experiment also finds cue dependence in option-letter scores after direct preference optimization. Audits can test for this dependence by moving or removing visible annotations while holding the task and correct answer fixed.",
+      "description_zh": "微调数据可以包括预测正确答案的元数据，例如奖励模型分数或质量标签。我们询问即使每个训练标签都是正确的，模型是否学会依赖这些元数据。我们对来自三个系列的 7-9B 开放权重模型进行多项选择题的微调，其中（奖励：5）始终标记正确的选项；当此注释在测试时移至错误选项时，模型会在 97-100% 的 CommonsenseQA 项目上选择该选项。删除它会使大多数答案正确，因此没有它的评估会错过依赖性。尽管测试时的措辞会影响其强度，但线索跟随能力随着训练时的可靠性而急剧上升，甚至在使用中性或无意义的注释词时也会得到发展。 Qwen3 实验还发现直接偏好优化后选项字母分数中的线索依赖性。审核可以通过移动或删除可见注释来测试这种依赖性，同时保持任务和正确答案不变。",
+      "authors": "Renee Jia, Jinzhou Wu",
+      "url": "https://huggingface.co/papers/2611.04395",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.04395"
+      }
+    },
+    {
+      "id": "2611.08977",
+      "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+      "title_zh": "基于能量的推理机：您的循环推理机应该是基于能量的模型",
+      "description": "Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it difficult to determine when to stop looping and how to improve upon the current state. To enable this, we introduce Energy-Based Reasoners (EBRs), which learn an energy function over latent reasoning states and formulate looped updates as gradient descent on this energy. The energy scores latent states, while its gradient guides refinement and provides a signal for stopping. To train EBRs effectively, we further introduce exploration-based training to discover additional modes and to better shape the energy landscape over a broader set of states. Across four algorithmic reasoning benchmarks, EBRs match or outperform prior recurrent reasoning models, achieving 99.9% accuracy on Sudoku-Extreme while using 345times less inference compute than the next-best model and maintaining comparable training compute. On all multi-solution benchmarks, EBRs achieve state-of-the-art coverage of distinct valid solutions while maintaining near-100% single-sample accuracy. These results suggest that energy-based models are a promising approach for strong reasoning performance.",
+      "description_zh": "循环是一种强大的推理归纳偏差。通过重复迭代循环块，循环模型可以扩展其有效深度并在潜在空间中实现多步推理。然而，现有的循环模型本质上并没有明确的进度度量来指导，因此很难确定何时停止循环以及如何改进当前状态。为了实现这一点，我们引入了基于能量的推理器（EBR），它学习潜在推理状态的能量函数，并将循环更新公式化为该能量的梯度下降。能量对潜在状态进行评分，而其梯度指导细化并提供停止信号。为了有效地训练 EBR，我们进一步引入基于探索的训练来发现其他模式并更好地塑造更广泛的州的能源格局。在四个算法推理基准中，EBR 匹配或优于先前的循环推理模型，在 Sudoku-Extreme 上实现 99.9% 的准确率，同时使用的推理计算量比次佳模型少 345 倍，并保持可比的训练计算量。在所有多解决方案基准测试中，EBR 实现了对不同有效解决方案的最先进的覆盖，同时保持接近 100% 的单样本准确性。这些结果表��，基于能量的模型是实现强推理性能的一种有前途的方法。",
+      "authors": "William Xingxu Chen, Alexi Gladstone, Zeyu Michael Li, Heng Ji, Yilun Du",
+      "url": "https://huggingface.co/papers/2611.08977",
       "score": 5,
       "meta": {
         "source": "huggingface",
         "upvotes": "5",
-        "paperId": "2611.15640"
+        "paperId": "2611.08977"
       }
     },
     {
-      "id": "2610.41354",
-      "title": "OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
-      "title_zh": "OneSteer：通过一步扩散全身控制解锁可操纵的通用人形运动跟踪",
-      "description": "Deployment objectives often specify desired outcomes without providing revised trajectories, while parts of the original reference must still be followed. We present OneSteer, a one-step diffusion whole-body controller that combines general motion tracking with selective test-time steering. To accommodate new objectives, differentiable task costs guide optimization of the generator's input noise with frozen weights, while body-group reference masks relax selected tracking requirements. Predicted state-action plans provide a shared interface for task optimization and feedback-conditioned execution. For nominal tracking, the model trained from scratch achieves the lowest local tracking error among the evaluated baselines on successful held-out AMASS and BONES clips. For steering, one frozen distilled controller adapts across diverse deployment objectives in simulation, raising the clean passage rate under a 1.25 m bar from 2% to 90%. On a physical Unitree G1, OneSteer completes all 27 nominal tracking trials across nine diverse whole-body motion sequences without falling. With a steering cost derived from a signed distance field built using only onboard LiDAR, it also passes under a 1.1 m low bar in four of five attempts and steps over a 12 cm hurdle without falling in all three attempts. Beyond control, prediction variation in the model trained from scratch ranks likely tracking failures without physics rollouts. This scoring method is more than 10x faster than simulation-based scoring with five rollouts per clip and guides targeted fine-tuning. Project page: https://onesteer.github.io",
-      "description_zh": "部署目标通常会指定期望的结果，而不提供修改的轨迹，而原始参考的部分内容仍必须遵循。我们推出了 OneSteer，这是一种单步扩散全身控制器，它将一般运动跟踪与选择性测试时间转向相结合。为了适应新的目标，可微分的任务成本指导使用冻结权重优化生成器的输入噪声，而身体组参考掩模放宽了选定的跟踪要求。预测状态行动计划为任务优化和反馈条件执行提供了一个共享接口。对于标称跟踪，从头开始训练的模型在成功保���的 AMASS 和 BONES 剪辑的评估基线中实现了最低的局部跟踪误差。对于转向，一个冷冻蒸馏控制器可适应模拟中的不同部署目标，将 1.25 m bar 下的干净通过率从 2% 提高到 90%。在实体 Unitree G1 上，OneSteer 完成了九个不同全身运动序列的全部 27 次标称跟踪试验，没有摔倒。由于转向成本源自仅使用机载 LiDAR 构建的有符号距离场，因此它在五次尝试中的四次中也通过了 1.1 m 的低栏，并且在所有 3 次尝试中跨过 12 cm 的障碍而没有摔倒。除了控制之外，从头开始训练的模型中的预测变化会在没有物理推出的情况下对可能的跟踪失败进行排名。这种评分方法比基于模拟的评分快 10 倍以上，每个剪辑有 5 次滚动，并指导有针对性的微调。项目页面：https://onesteer.github.io",
-      "authors": "Yifei Huang, Yazhao Yang, Li Weijia, Tianle Shi, Ji Jin, Zhihui Cai, Zihao Liu, Jianzhuang Zhao, Songlin Dong, Xinyuan Chang, Yihong Gong, Dian Shen, Zhiheng Ma",
-      "url": "https://huggingface.co/papers/2610.41354",
-      "score": 12,
+      "id": "2611.21412",
+      "title": "Flexible Multi-Stack Super-Resolution of Clinical Brain MRI Using Hetero-Orientation Variational Encoding: Expert Reader Evaluation in a Nigerian Cohort",
+      "title_zh": "使用异向变分编码的临床脑 MRI 的灵活多堆栈超分辨率：尼日利亚队列中的专家读者评估",
+      "description": "High-resolution brain MRI is important for neuroradiological assessment, yet routine clinical protocols often rely on fast, anisotropic 2D acquisitions, particularly in resource-constrained settings. These acquisitions may differ in orientation, alignment and anatomical coverage, resulting in partially overlapping image stacks. Existing learning-based super-resolution methods typically rely on single, under-constrained inputs or fixed multi-stack configurations with idealised acquisition geometry. We introduce MS-HVED, a sequence-agnostic framework for flexible multi-stack brain MRI super-resolution. Available axial, coronal and sagittal stacks are independently encoded into multi-scale Gaussian posteriors and fused using a field-of-view-aware Product-of-Gaussians formulation that limits contributions from unsupported regions. Physics-informed domain randomisation simulates heterogeneous clinical acquisition conditions, including obliqueness, partial coverage and imaging artefacts. MS-HVED achieved competitive or superior reconstruction fidelity across synthetic benchmarks and improved downstream tissue segmentation relative to low-resolution inputs. To assess generalisation beyond the training cohorts, we performed external clinical validation on 30 routine brain MRI examinations from a Nigerian cohort, representing an under-represented population in medical imaging research. These examinations formed the largest component of a blinded reader study involving 44 real cases and seven expert neuroradiologists. In the Nigerian cohort, MS-HVED was preferred over the supervised baseline for overall image quality in 187 of 210 paired assessments. Across all clinical cohorts, MS-HVED achieved higher overall-quality scores with all available inputs (5.93 vs. 4.49, p<.001), with the preference persisting when axial or coronal inputs were omitted (p<.001). Code at github.com/cai4cai/ms-hved",
+      "description_zh": "高分辨率脑部 MRI 对于神经放射学评估非常重要，但常规临床方案通常依赖于快速、各向异性的 2D 采集，特别是在资源有限的环境中。这些采集可能在方向、对齐和解剖覆盖范围上有所不同，导致图像堆栈部分重叠。现有的基于学习的超分辨率方法通常依赖于单一的、欠约束的输入或具有理想化采集几何结构的固定多堆栈配置。我们介绍了 MS-HVED，一种用于灵活的多堆栈脑 MRI 超分辨率的序列无关框架。可用的轴向、冠状和矢状堆栈独立编码为多尺度高斯后验，并使用视野感知的高斯乘积公式进行融合，限制来自不受支持区域的贡献。基于物理的域随机化模拟异质临床采集条件，包括倾斜、部分覆盖和成像伪影。 MS-HVED 在综合基准上实现了有竞争力或卓越的重建保真度，并相对于低分辨率输入改进了下游组织分割。为了评估训练队列之外的普遍性，我们对来自尼日利亚队列的 30 项常规脑部 MRI 检查进行了外部临床验证，这些尼日利亚队列代表了医学影像研究中代表性不足的人群。这些检查构成了盲读者研究的最大组成部分，涉及 44 个真实病例和 7 名神经放射学家专家。在尼日利亚队列中，在 210 项配对评估中的 187 项中，MS-HVED 优于监督基线的整体图像质量。在所有临床队列中，MS-HVED 在所有可用输入中均获得了较高的总体质量得分（5.93 比 4.49，p<.001），并且当省略轴向或冠状输入时，偏好仍然存在（p<.001）。代码位于 github.com/cai4cai/ms-hved",
+      "authors": "Kabir Hamzah Muhammad, Lorena Garcia-Foncillas Macias, Soumya Snigdha Kundu, Emily Guilhem, Jon Cleary, Amal Saleh Nour, Yodit Abraham Yaynishet, Chinasa Kalaiwo, Peter Chibuta, Ugumba Kwikima, Udunna Anazodo, Jonathan Shapey, Tom Vercauteren",
+      "url": "https://huggingface.co/papers/2611.21412",
+      "score": 0,
       "meta": {
         "source": "huggingface",
-        "upvotes": "12",
-        "paperId": "2610.41354"
+        "upvotes": "0",
+        "paperId": "2611.21412"
       }
     },
     {
-      "id": "2611.17440",
-      "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
-      "title_zh": "通过行为轨迹解释编码代理",
-      "description": "Standard coding-agent benchmarks primarily evaluate binary task success, treating execution as a black box and obscuring the behaviors that produce those outcomes. We analyze a large corpus of 143,209 execution trajectories from 125 agent configurations spanning 117 unique models. To enable comparisons across heterogeneous agent interfaces, we develop a rule-based parser that maps raw execution traces to high-level actions such as repository search, file editing, and test execution, and audit its predictions against a six-model consensus reference on 500 events. We find that agents with similar solve rates can nevertheless differ substantially in how they explore, modify and verify code. Moreover, without using task outcomes, token counts, or tool names as features, aggregate behavioral profiles retrieve the corresponding agent stack across disjoint repository sets and programming languages, although task composition is not fully controlled in the cross-repository setting. Through analyses of frontier models and agent scaffolds, we further show that scaffold choice and reasoning effort systematically shift agents' search, editing, and testing behavior. We release the deterministic parser together with the full annotation and analysis pipeline alongside an annotated trajectory subset.",
-      "description_zh": "标准编码代理基准主要评估二元任务的成功，将执行视为黑匣子并掩盖产生这些结果的行为。我们分析了来自 125 个代理配置、涵盖 117 个独特模型的 143,209 个执行轨迹的大型语料库。为了能够跨异构代理接口进行比较，我们开发了一个基于规则的解析器，将原始执行跟踪映射到存储库搜索、文件编辑和测试执行等高级操作，并根据 500 个事件的六模型共识参考审核其预测。我们发现，具有相似解决率的代理在探索、修改和验证代码的方式上可能存在很大差异。此外，在不使用任务结果、令牌计数或工具名称作为特征的情况下，聚合行为配置文件跨不相交的存储库集和编程语言检索相应的代理堆栈，尽管任务组合在跨存储库设置中并未完全控制。通过对前沿模型和代理支架的分析，我们进一步表明支架选择和推理工作系统地改变了代理的搜索、编辑和测试行为。我们发布了确定性解析器以及完整的注释和分析管道以及带注释的轨迹子集。",
-      "authors": "Ibragim Badertdinov, Alexander Golubev",
-      "url": "https://huggingface.co/papers/2611.17440",
-      "score": 8,
+      "id": "2611.17610",
+      "title": "More Agents, More Samples, or More Thinking? Untangling Coordination, Ensembling, and Test-Time Compute in Multi-Agent LLMs",
+      "title_zh": "更多的代理，更多的样品，还是更多的思考？解开多代理 LLM 中的协调、集成和测试时计算",
+      "description": "Evaluations of multi-agent language models often compare communicating architectures against a single greedy pass. This practice confounds coordination with sample multiplicity and inference compute. We synthesize nine primary empirical evaluations comprising 516 unique multi-agent configurations organized along a resource vector R with six dimensions and a baseline ladder with four categories. Against baselines with a single pass (Category A), multi-agent accuracy differences are negative overall and near zero when omitting the largest contributing study. When evaluated against baselines matched on sample count (Category B) or resource budget (Category C), multi-agent systems average -0.042 in accuracy, and multilevel random effects modeling on the log odds scale remains negative across sensitivity checks. Multi-agent accuracy equals or falls below the baseline in 74% of these comparable contrasts, and study means are nonpositive in almost all evaluated studies. Across studies reporting both baselines, moving from a greedy pass to a sampled baseline shifts accuracy differences by -0.038 on average. Because communication adds no information when agents share identical evidence, positive returns require partitioned evidence, external verification, or error diversity across models. We provide a reviewer checklist and accounting utilities.",
+      "description_zh": "多智能体语言模型的评估通常将通信架构与单个贪婪传递进行比较。这种做法混淆了样本多重性和推理计算的协调。我们综合了九个主要的实证评估，包括 516 个独特的多智能体配置，这些配置沿着具有六个维度的资源向量 R 和一个具有四个类别的基线阶梯进行组织。与单次通过的基线（A 类）相比，多智能体准确率差异总体为负，并且在忽略最大贡献研究时接近于零。当根据样本计数（B 类）或资源预算（C 类）匹配的基线进行评估时，多智能体系统的平均准确度为 -0.042，并且对数比值尺度的多级随机效应模型在敏感性检查中仍然为负。在这些可比较的对比中，74% 的多智能体准确度等于或低于基线，并且几乎所有评估的研究中的研究平均值都是非阳性的。在报告这两个基线的研究中，从贪婪传递转移到采样基线会使准确度差异平均移动 -0.038。由于当代理共享相同的证据时，沟通不会添加任何信息，因此正回报需要分区证据、外部验证或跨模型的错误多样性。我们提供审阅者清单和会计实用程序。",
+      "authors": "Seyed Mahmoud Sajjadi Mohammadabadi",
+      "url": "https://huggingface.co/papers/2611.17610",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
-        "paperId": "2611.17440"
+        "upvotes": "3",
+        "paperId": "2611.17610"
       }
     },
     {
-      "id": "2611.17194",
-      "title": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
-      "title_zh": "eDMD：少步扩散蒸馏的终点分布匹配",
-      "description": "Distribution matching distillation (DMD) has emerged as a leading paradigm for distilling diffusion models into few-step students, where an auxiliary fake score model tracks the student's distribution and the discrepancy between the teacher and fake predictions drives the student toward the teacher. In multi-step distillation, although only the student's final output is delivered, existing methods train the fake model on intermediate states or across all denoising steps. Consequently, the student's update signal becomes entangled with intermediate distributions, which can distort the matching direction and remain nonzero even after the student's final outputs already match the teacher distribution. To resolve this mismatch, we propose Endpoint Distribution Matching Distillation (eDMD), which trains a single shared fake model exclusively on the student's final outputs and uses it to correct every denoising step. Our theoretical analysis proves that this endpoint reference guarantees that the distribution matching term vanishes if and only if the student's final output distribution matches the teacher's, regardless of intermediate distributions. Beyond the fake reference, we further strengthen teacher supervision through a precise teacher (PT) that replaces single-step guided predictions with short multi-step trajectories on the final noise interval, paired with a calibrated query density for intermediate steps. Experiments on SD3-Medium, FLUX.2-klein (4B and 9B), and Qwen-Image-2.1 demonstrate that eDMD consistently outperforms existing distribution matching methods for 4-step generation.",
-      "description_zh": "分布匹配蒸馏（DMD）已成为将扩散模型蒸馏为几步学生的领先范例，其中辅助假分数模型跟踪学生的分布，并且教师和假预测之间的差异驱使学生转向教师。在多步骤蒸馏中，虽然只提供学生的最终输出，但现有方法会在中间状态或所有去噪步骤上训练假模型。因此，学生的更新信号与中间分布纠缠在一起，这可能会扭曲匹配方向并保持非零，即使学生的最终输出已经与教师分布匹配。为了解决这种不匹配问题，我们提出了端点分布匹配蒸馏（eDMD），它专门根据学生的最终输出训练单个共享假模型，并使用它来纠正每个去噪步骤。我们的理论分析证明，当且仅当学生的最终输出分布与教师的匹配时，无论中间分布如何，该端点参考保证分布匹配项消失。除了假参考之外，我们还通过精确教师（PT）进一步加强教师监督，该精确教师用最终噪声区间上的短多步轨迹取代单步引导预测，并与中间步骤的校准查询密度配对。 SD3-Medium、FLUX.2-klein（4B 和 9B）和 Qwen-Image-2.1 上的实验表明，对于 4 步生成，eDMD 始终优于现有的分布匹配方法。",
-      "authors": "Tong Zhao, Xianfang Zeng, Yucheng Han, Ruoyu Wang, Mingkun Lei, Gang Yu, Chi Zhang",
-      "url": "https://huggingface.co/papers/2611.17194",
-      "score": 6,
+      "id": "2611.18330",
+      "title": "Marimba: A System One Model for Speech",
+      "title_zh": "马林巴琴：语音系统一模型",
+      "description": "Speech applications require decisions about term presence, turn completion, and language within an audio window. We present Marimba, an interface for typed speech decisions built on frozen Qwen3-ASR 0.6B features. Lexical questions use zero-shot scoring of ASR transcripts; non-lexical questions use a question-conditioned head and a separate layer-18 turn-end readout. Language identification uses the ASR model's own language scores. On private conversational test sets, decoder AUROC is 0.80-0.92; on public read speech it is 0.92-0.97. Speech Commands four-way accuracy is 0.93; binary lexical ECE is at most 0.08. Personal-information detection, which passes the greedy transcript to a private, curated PII pipeline, reaches item-level F1 0.904 on synthetic Brazilian Portuguese speech (1.000 on reference transcripts). Layer-12 speaker readouts detect speaker change with AUROC 0.966-0.980 on AMI and VoxConverse, above an ECAPA baseline, and count speakers (0, 1, 2, or 3+) more accurately than pyannote 3.1. The turn-end readout reaches AUROC 0.930 versus Smart Turn v3.2 at 0.982 on Smart Turn's own test set. On a subset of ICSI meetings labeled by next speaker, AUROC is 0.716 versus 0.712; the paired confidence interval includes zero.",
+      "description_zh": "语音应用程序需要做出关于音频窗口内的术语存在、回合完成和语言的决策。我们推出了 Marimba，这是一个基于冻结的 Qwen3-ASR 0.6B 功能构建的打字语音决策界面。词汇问题使用 ASR 笔录的零样本评分；非词汇问题使用问题条件头部和单独的第 18 层回合结束读出。语言识别使用 ASR 模型自己的语言分数。在私人会话测试集上，解码器 AUROC 为 0.80-0.92；公开朗读的演讲的得分��� 0.92-0.97。语音命令四向准确度为0.93；二进制词汇 ECE 最多为 0.08。个人信息检测将贪婪的转录本传递到私人的、策划的 PII 管道，在合成的巴西葡萄牙语语音上达到项目级 F1 0.904（参考转录本为 1.000）。第 12 层发言者读数可在 AMI 和 VoxConverse 上使用 AUROC 0.966-0.980 检测发言者变化（高于 ECAPA 基线），并比 pyannote 3.1 更准确地计算发言者数量（0、1、2 或 3+）。在 Smart Turn 自己的测试装置上，转弯结束读数达到 AUROC 0.930，而 Smart Turn v3.2 的���数为 0.982。在由下一位发言者标记的 ICSI 会议子集上，AUROC 为 0.716 与 0.712；配对置信区间包括零。",
+      "authors": "Solano Amadori",
+      "url": "https://huggingface.co/papers/2611.18330",
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2611.17194"
+        "upvotes": "4",
+        "paperId": "2611.18330"
       }
     },
     {
-      "id": "2611.17878",
-      "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
-      "title_zh": "DySENSE：利用卫星图像进行动态时空能量合成和仿真",
-      "description": "Cities account for over two-thirds of the world's energy and more than 70% of global carbon dioxide emissions. City energy is essential for achieving the 2050 net-zero target and the UN's Sustainable Development Goals 7 and 11. Although existing studies have made progress, they are limited by data and methodological gaps. Existing studies are largely predictive for existing cities rather than generative for future cities; fine-grained, aligned monthly dynamic energy data are scarce; and existing GenAI models struggle to generate dynamic urban functional monthly energy. We present DySENSE, a joint multimodal GenAI framework that synthesizes static urban satellite imagery together with spatially aligned, dynamic monthly building energy consumption maps. We decouple long-term static urban morphology from short-term dynamic energy consumption. By conditioning on static urban land use, DySENSE can generate realistic, diverse and new static urban imagery with aligned energy maps. By conditioning on dynamic monthly and climate prompts, DySENSE can jointly generate dynamic, monthly energy consumption maps while keeping the urban morphology static. Experiments across four cities (New York, Washington, Norfolk, Busan) demonstrated that DySENSE can generate annotated high-fidelity synthetic energy data using less than 25% labelled data, boosting downstream prediction performance by 8% mIoU, and achieving strong energy dynamic consistency. Compared to existing methods, DySENSE significantly improved prediction performance (8.7% accuracy) and reduced prediction error (9%-18% CVRMSE, ASHRAE). DySENSE offers an effective foundation for energy-efficient cities, peak-load analysis, building performance simulation and dynamic demand response for city, energy, and building science. The data and code: https://huggingface.co/datasets/skl24/MUSE2 and https://github.com/kailaisun/DySENSE",
-      "description_zh": "城市消耗了全球三分之二以上的能源，占全球二氧化碳排放量的70%以上。城市能源对于实现 2050 年净零排放目标以及联合国可持续发展目标 7 和 11 至关重要。尽管现有研究取得了进展，但受到数据和方法差距的限制。现有的研究主要是对现有城市的预测，而不是对未来城市的生成；细粒度、一致的每月动态能源数据稀缺；现有的 GenAI 模型很难产生动态的城市功能性每月能源。我们推���了 DySENSE，这是一个联合多模式 GenAI 框架，它将静态城市卫星图像与空间对齐的动态每月建筑能耗地图合成在一起。我们将长期静态城市形态与短期动态能源消耗脱钩。通过调节静态城市土地利用，DySENSE 可以生成具有对齐能量图的真实、多样化和新的静态城市图像。通过调节动态的每月和气候提示，DySENSE 可以共同生成动态的每月能源消耗地图，同时保持城市形态静态。在四个城市（纽约、华盛顿、诺福克、釜山）的实验表明，DySENSE 可以使用少于 25% 的���记数据生成带注释的高保真合成能源数据，将下游预测性能提升 8% mIoU，并实现强大的能源动态一致性。与现有方法相比，DySENSE 显着提高了预测性能（8.7% 准确度）并降低了预测误差（9%-18% CVRMSE、ASHRAE）。 DySENSE 为城市、能源和建筑科学的节能城市、峰值负载分析、建筑性能模拟和动态需求响应提供了有效的基础。数据和代码：https://huggingface.co/datasets/skl24/MUSE2 和 https://github.com/kailaisun/DySENSE",
-      "authors": "Kailai Sun, Zijie Gao, Mingyi He, Can Rong, Alok Prakash, Baoshen Guo, Shenhao Wang, Jinhua Zhao",
-      "url": "https://huggingface.co/papers/2611.17878",
-      "score": 21,
+      "id": "2611.20595",
+      "title": "Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures",
+      "title_zh": "恒定感知线束实施可保护 LLM 代理免受静默 API 故障的影响",
+      "description": "LLM agents answer questions by calling APIs and trusting the results. An API can fail silently. It ignores part of a request, such as a misnamed filter, yet returns HTTP 200 and a plausible but wrong result. Current fixes, such as checklists, reviewer models and LLM judges, ask the model to catch it. But models often see the problem and answer anyway. We present SilentGuard, which moves the decision from the model to the harness running tool calls. It tests each result against invariants that any correct API must satisfy and withholds values that break one. We find silent failures in 11 of 15 public research APIs, with counts inflated up to 691 times. Current fixes leave over 70% of answers wrong, and agents report 77.4% of counts a judge flags. Across 7 open models, SilentGuard cuts wrong answers on its target faults from 74.0% to 1.7%, with no loss on fault-free tasks. On three frontier models they fall from 70.2% to 0.5%. A warning from the same check leaves 70.1% wrong, so enforcement is the key. On new fault types, the harness alone cuts wrong answers from 61.1% to 24.5%. It avoids wrong answers by abstaining rather than recovering.",
+      "description_zh": "LLM 代理通过调用 API 并信任结果来回答问题。 API 可能会默默地失败。它会忽略请求的一部分，例如命名错误的过滤器，但会返回 HTTP 200 和看似合理但错误的结果。当前的修复，例如清单、审稿人模型和 LLM 法官，要求模型捕获它。但模型常常能看到问题并给出答案。我们提出了 SilentGuard，它将决策从模型转移到线束运行工具调用。它根据任何正确的 API 必须满足的不变量来测试每个结果，并保留破坏不变���的值。我们在 15 个公共研究 API 中的 11 个中发现了无声故障，计数夸大了 691 倍。目前的修复有超过 70% 的答案是错误的，特工报告了法官标记的 77.4% 的答案。在 7 个开放模型中，SilentGuard 将目标故障的错误答案从 74.0% 减少到 1.7%，并且无故障任务没有损失。在三个前沿模型上，它们从 70.2% 下降到 0.5%。同一次检查的警告会导致 70.1% 的错误，因此执行是关键。对于新的故障类型，仅使用线束就能将错误答案从 61.1% 减少到 24.5%。它通过放弃而不是恢复来避免错误的答案。",
+      "authors": "Sajib Acharjee Dip, Brian Ouyang, Lala Motlhabi",
+      "url": "https://huggingface.co/papers/2611.20595",
+      "score": 2,
       "meta": {
         "source": "huggingface",
-        "upvotes": "21",
-        "paperId": "2611.17878"
+        "upvotes": "2",
+        "paperId": "2611.20595"
+      }
+    },
+    {
+      "id": "2611.16694",
+      "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
+      "title_zh": "当专家分歧造成伤害时：LLM决策修订中的声望和选择性",
+      "description": "When language models revise a decision after another agent disagrees, neither reversal counts nor final accuracy shows whether they are fixing mistakes or abandoning correct answers. We introduce a controlled two-pass audit that holds the question, the evidence, and the model's initial answer fixed and varies only the revision context: neutral reflection, anonymous disagreement, or disagreement attributed to a domain expert. For binary decisions the accounting is exact: revision raises accuracy only if it is selective enough, reversing wrong answers more than a/(1-a) times as often as correct ones, where a is initial accuracy (nine times at 90%). Across five models and 1,989 evidence-grounded decisions in medicine, science, and law, no model clears this bar under expert disagreement, and accuracy falls by up to 16.1 points. The expert label, a prestige cue, adds reversals for four of the five models, yet its effect on accuracy ranges from a 5.2-point loss to a 2.4-point gain, so reversal counts are a poor proxy for harm. With identical arguments from both sources, the label still raises reversal for three proprietary models and in a pooled analysis of four newer models. Models also respond to stated source reliability. Revision pipelines should therefore be evaluated with paired, conditional metrics, per model and protocol.",
+      "description_zh": "当语言模型在另一个智能体不同意后修改决策时，无论是逆转还是最终准确性都不能表明他们是在纠正错误还是放弃正确答案。我们引入了受控的两遍审核，该审核将问题、证据和模型的初始答案固定下来，并且仅改变修订上下文：中立的反思、匿名的分歧或归因于领域专家的分歧。对于二元决策，计算是精确的：只有在选择性足够的情况下，修订才能提高准确性，扭转错误答案的频率超过正确答案的 a/(1-a) 倍，其中 a 是初始准确性（90% 时的九倍）。在医学、科��和法律领域的 5 个模型和 1,989 个基于证据的决策中，没有一个模型能够在专家意见不一致的情况下清除这一障碍，准确性下降高达 16.1 个百分点。专家标签是一种声望提示，为五个模型中的四个增加了逆转，但它对准确性的影响范围从 5.2 点损失到 2.4 点增益，因此逆转计数并不能很好地代表伤害。由于两个来源的论据相同，该标签仍然对三个专有模型和四个较新模型的汇总分析提出了逆转。模型还响应规定的来源可靠性。因此，应根据模型和协议使用���对的条件指标来评估修订管道。",
+      "authors": "Yupeng Tang, Mingfeng Lin",
+      "url": "https://huggingface.co/papers/2611.16694",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2611.16694"
+      }
+    },
+    {
+      "id": "2611.21605",
+      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "title_zh": "ViRA：通过交叉输入相对策略优化实现超高分辨率视觉代理",
+      "description": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
+      "description_zh": "视觉代理通过放大相关区域来回答有关超高分辨率照片的问题。然而，现有的代理人经常根据常识来回答，而不是阅读证据。对最终答案的强化学习（RL）无法纠正这个问题，因为猜测可以获得与阅读相同的奖励。我们提出了交叉输入相对策略优化（CrossRPO），它在对比集上训练代理。对比集询问关于图像的多个版本的一个问题，这些版本仅在证据的一小部分不同并且具有不同的答案，因此仅阅读证据就可以解决整个集合。 CrossRPO 奖励解决整个集合，并且我们证明它不会强化根据常识回答的集合。我们通过编辑 21 至 120 兆像素图像中的一个小物体来构建用于训练 (ViRA-Train) 和评估 (ViRA-Bench) 的对比集，并拍摄具有真实变化的进一步集 (ViRA-Bench-Real) 以排除编辑痕迹。我们使用 CrossRPO 训练了两个视觉推理代理 ViRA-9B 和 ViRA-27B，每个代理仅在 ViRA-Train 的约 3,500 个项目上进行训练。 CrossRPO 在 ViRA-Bench 上以最大分辨率实现了 63.3% 的设置精度，而 GRPO 为 59.3%。 ViRA-9B 在所有基准测试中是同尺寸中最准确的开放模型，而 ViRA-27B 在大多数基准测试中均优于 Claude Haiku 5.5 和 GPT-6-Luna，两者均处于最高思维水平。",
+      "authors": "Huawei Lin, Jinting Liu, Tongyan Wang, Xuyang Chen, Ruihua Shi, Zhichao Xu, Jiaxin Qin, Guoshenghui Zhao, Baijian Yang, Yingjie Victor Chen, Tan Yu, Weijie Zhao",
+      "url": "https://huggingface.co/papers/2611.21605",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.21605"
+      }
+    },
+    {
+      "id": "2611.18981",
+      "title": "GPBam: A Retrieval-Aware German Public Law Exam Benchmark",
+      "title_zh": "GPBam：具有检索意识的德国公法考试基准",
+      "description": "Legal reasoning in civil-law systems is not rule-lookup: the German state examination asks for a structured opinion (Gutachten) that names the governing norms, applies them to the facts, and argues to a conclusion. We introduce GPBam (German Public Law Bar-style Exam), 81 public-law examination cases with reference solutions, paired with a recitation task over 200 statutory provisions. Drawn from state examination preparation, the cases are broad and rarely repeat, and are not publicly available - we find no evidence of exact-solution memorisation in the models we evaluate, and keeping them private limits contamination. Because each reference solution's cited norms form a retrieval gold set over the very instances the essays are graded on, GPBam scores retrieval and long-form generation jointly, which makes it a benchmark for legal retrieval as well as for legal writing and lets us ask how much retrieval quality a legal opinion actually needs. Across 32 open-weight and proprietary models evaluated without retrieval, scores span 4.81-76.42 out of 100. Supplying the law helps modestly: across seven models and eight retrieval configurations, retrieval performance varies nearly threefold and buys at most 4.1 essay points, and nothing significant for three of the seven, while an oracle with 91% gold-norm recall improves scores by 2-6 points. Essay quality strongly tracks prior knowledge: verbatim statute recall, measured in a separate task, correlates at ρ= 0.92 over 32 models.",
+      "description_zh": "民法体系中的法律推理不是规则查找：德国国家考试要求提供结构化意见（Gutachten），该意见指定管理规范，将其应用于事实，并得出结论。我们介绍GPBam（德国公法律师考试），81个公法考试案例并附有参考答案，并配有超过200条法律条文的背诵任务。这些案例来自国家考试准备，范围广泛，很少重复，并且不公开——我们在我们评估的模型中没有发现精确解决方案记忆的证据，并将它们保密以限制污染。由于每个参考解决方案引用的规范形成了针对论文评分实例的检索黄金，因此 GPBam 联合对检索和长格式生成进行评分，这使其成为法律检索和法律写作的基准，并让我们询问法律意见实际上需要多少检索质量。在没有检索的情况下评估的 32 个开放权重和专有模型中，得分为 4.81-76.42（满分 100）。提供法律有一定帮助：在 7 个模型和 8 种检索配置中，检索性能变化近三倍，最多获得 4.1 论文分，而这 7 个模型中的 3 个没有什么显着性，而具有 91% 黄金标准召回率的预言机将分数提高了 2-6 分。论文质量强烈跟踪先验知识：在单独的任务中测量的逐字法规回忆，在 32 ���模型中以 ρ= 0.92 相关。",
+      "authors": "Abdullah Al Zubaer, Lorenz Wendlinger, Simon Alexander Nonn, Michael Granitzer, Jelena Mitrović",
+      "url": "https://huggingface.co/papers/2611.18981",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2611.18981"
+      }
+    },
+    {
+      "id": "2611.09825",
+      "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+      "title_zh": "BitDecoding-FP4：通过算法系统协同设计进行本机 FP4 KV 缓存解码",
+      "description": "The key-value (KV) cache dominates memory capacity and bandwidth in long-context LLM serving. While 4-bit microscaling formats (NVFP4, MXFP4) shrink the cache and run attention on FP4 Tensor Cores, a fundamental gap remains between algorithmic quantization and system-aware acceleration: existing FP4 KV systems use vanilla quantization that causes severe accuracy drops, whereas accuracy-oriented 4-bit algorithms rely on vector codebooks whose lookup overhead degrades decoding throughput. We present BitDecoding-FP4, an algorithm--system co-design for accurate and efficient native FP4 KV decoding. We mitigate three error sources: Dual-Residual Query Quantization splits queries into two FP4 tensors, cutting query logit error from 60% to 1%; Underflow-Aware Probability Scaling prevents E4M3 scales from rounding long-context probabilities to zero; and Outlier-Aware Key Quantization combines static smoothing, Hadamard rotation, and scale search to suppress key outliers under token-wise scaling. At the system level, we remove the softmax bottleneck via transposed softmax with fused probability quantization and stacked query MMA on paged KV caches. Across dense and MoE models with GQA and MLA, BitDecoding-FP4 stays within 0.5 points of BF16 KV accuracy with NVFP4 (1 point with MXFP4), and tracks BF16 KV in RL training rollouts. In end-to-end serving on NVIDIA B300 with Qwen3-4B and Qwen3-30B-A3B, it delivers 2.4-3.0times higher peak serving throughput than BF16 KV. The implementation is available at https://github.com/OpenBitSys/BitDecoding-FP4.",
+      "description_zh": "键值 (KV) 缓存在长上下文 LLM 服务中主导内存容量和带宽。虽然 4 位微缩放格式（NVFP4、MXFP4）缩小了缓存并在 FP4 Tensor Core 上运行注意力，但算法量化和系统感知加速之间仍然存在根本差距：现有 FP4 KV 系统使用普通量化，导致精度严重下降，而面向精度的 4 位算法依赖于矢量码本，其查找开销会降低解码吞吐量。我们提出了 BitDecoding-FP4，这是一种算法系统协同设计，用于准确高效的本地 FP4 KV 解码。我们减轻了三个错误源：双残差查询量化将查询拆分为两个 FP4 张量，将查询 logit 错误从 60% 减少到 1%；下溢感知概率缩放可防止 E4M3 缩放将长上下文概率舍入为零；离群值感知关键量化结合了静态平滑、Hadamard 旋转和尺度搜索，以抑制 token-wise 缩放下的关键离群值。在系统层面，我们通过转置softmax与融合概率量化和分页KV缓存上的堆叠查询MMA来消除softmax瓶颈。在具有 GQA 和 MLA 的密集模型和 MoE 模型中，BitDecoding-FP4 使用 NVFP4 时的 BF16 KV 精度保持在 0.5 点以内（使用 MXFP4 时为 1 点），并在 RL 训练中跟踪 BF16 KV。在采用 Qwen3-4B 和 Qwen3-30B-A3B 的 NVIDIA B300 上进行端到端服务时，其峰值服务吞吐量比 BF16 KV 高 2.4-3.0 倍。该实现可在 https://github.com/OpenBitSys/BitDecoding-FP4 上找到。",
+      "authors": "Dayou Du, Woon Yee Ng, Guangming Sheng, Nick Lau, Jianyi Cheng, Luo Mai",
+      "url": "https://huggingface.co/papers/2611.09825",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2611.09825"
+      }
+    },
+    {
+      "id": "2611.14960",
+      "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
+      "title_zh": "终止滞后：编码代理解决早但停止晚",
+      "description": "Coding agents can solve a task well before they stop working on it. We characterize termination lag--the number of steps between an agent's first correct patch and the end of its run--across five models, two agent frameworks, and three SWE-bench datasets by recording and testing every distinct repository patch generated during execution. Our analysis reveals that 38--82% of successful runs achieve a correct solution on their initial source-code edit. However, agents continue to expend substantial effort after correct patches, with post-solution steps accounting for a median of 35--37% for Qwen3-Coder and 54--60% for Laguna-XS.2 in successful runs on SWE-bench Verified and Multilingual. Agents spend most of these additional steps verifying their work and exploring the repository. In a small fraction of cases (1--8%), this continued activity leads agents to undo their earlier correct patch, leaving the final solution incorrect.",
+      "description_zh": "编码代理可以在停止工作之前很好地解决任务。我们通过记录和测试执行期间生成的每个不同的存储库补丁，在五个模型、两个代理框架和三个 SWE 基准数据集上描述终止滞后（代理的第一个正确补丁与其运行结束之间的步骤数）。我们的分析表明，38--82% 的成功运行在最初的源代码编辑中获得了正确的解决方案。然而，在正确的补丁之后，代理继续花费大量的精力，在 SWE 基准验证和多语言上成功运行时，解决方案后步骤的中位数为 Qwen3-Coder 的 35--37% 和 Laguna-XS.2 的 54--60%。代理花费大部分额外步骤来验证他们的工作并探索存储库。在一小部分情况下（1--8%），这种持续的活动会导致代理撤消其先前的正确补丁，从而导致最终的解决方案不正确。",
+      "authors": "Musa Cim, Burak Topcu, Mahmut Taylan Kandemir",
+      "url": "https://huggingface.co/papers/2611.14960",
+      "score": 5,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "5",
+        "paperId": "2611.14960"
+      }
+    },
+    {
+      "id": "2611.19771",
+      "title": "JEPA4R: Embodied JEPA World Models with 4D Point Planning",
+      "title_zh": "JEPA4R：具有 4D 点规划的具体化 JEPA 世界模型",
+      "description": "Joint-embedding predictive architecture (JEPA) world models predict future embeddings instead of pixels and plan in latent space. Two challenges remain: 2D images leave the metric geometry that manipulation acts on implicit and entangled with appearance, and what these models imagine stays hidden, as they are mostly judged in simulation by short-horizon latent planning. We present JEPA4R, a JEPA world model that observes single-depth-camera point clouds, predicts and plans in their latent space, and acts through a policy head on its frozen latents; we call this 4D point planning. A decoder on the frozen world model shows what it imagines as 4D point clouds, with a mean point error within 1.1 cm over 200 steps. Under the policy-learning protocols of OGBench and CortexBench, JEPA4R leads pixel JEPA models on OGBench Cube-Single, Cube-Double, Cube-Triple and Scene, and ranks first on MetaWorld and Adroit Relocate with 98.4% and 88.0%, above the runner-up, R3M, at 96.0% and 65.3%. Trained only in a digital twin, JEPA4R and its policy heads run zero-shot on the real arm with both a gripper and a dexterous hand.",
+      "description_zh": "联合嵌入预测架构（JEPA）世界模型预测未来的嵌入而不是像素并在潜在空间中进行规划。仍然存在两个挑战：二维图像留下了操纵作用隐式并与外观纠缠在一起的度量几何，而这些模型的想象仍然是隐藏的，因为它们在模拟中主要是通过短视界潜在规划来判断的。我们提出了 JEPA4R，这是一种 JEPA 世界模型，可以观察单深度相机点云，在其潜在空间中进行预测和规划，并通过策略头对其冻结的潜在空间采取行动；我们称之为 4D 点规划。冻结世界���型上的解码器显示了它所想象的 4D 点云，200 个步骤的平均点误差在 1.1 厘米以内。在 OGBench 和 CortexBench 的策略学习协议下，JEPA4R 在 OGBench Cube-Single、Cube-Double、Cube-Triple 和 Scene 上领先像素 JEPA 模型，并在 MetaWorld 和 Adroit Relocate 上以 98.4% 和 88.0% 排名第一，高于第二名 R3M（96.0% 和 65.3%）。 JEPA4R 及其政策负责人仅在数字孪生中接受过训练，并通过夹具和灵巧的手在真实手臂上进行零射击。",
+      "authors": "Jiarui Dong, Zhiheng Liang, Yanjun Li, Zeyu Zhang, Heejeong Nam, Haoyu Chen, Hao Tang",
+      "url": "https://huggingface.co/papers/2611.19771",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2611.19771"
+      }
+    },
+    {
+      "id": "2611.06238",
+      "title": "Zuse: A Decision Model for European Languages",
+      "title_zh": "Zuse：欧洲语言的决策模型",
+      "description": "Decision models read a document and return a probability for each of a fixed set of options instead of generating text. Several appeared in 2026, but none has published results outside English. We describe Zuse, three decision models (4B, 9B and 27B) that train a low-rank adapter and a pointer head on frozen open-weight bases, targeting 27 European languages, and use them to study how this design behaves across languages and tasks. On a broad European suite of 11 sources excluded from training, covering 9 task groups and 27 languages, a development set that also guided model selection, the 27B model reaches 87.5% accuracy with a pooled expected calibration error of 0.016, and 0.035 when weighted per source. Post-hoc analyses of these single-seed results give three findings. First, miscalibration is structured by task rather than language: on parallel reading and topic items in 26 languages the confidence gap varies about as much as sampling noise, while across sources it spans -0.07 to +0.09, with knowledge tasks overconfident and acceptability judgements underconfident at all three sizes, so one fitted temperature cannot correct both. Second, the share of decisions that can be automated at a 5% error budget follows chance-corrected skill (Spearman 0.97 over 33 source and model pairs) more closely than raw accuracy (0.91). Third, reach beyond the training languages is set by the base model: across 210 languages, changing the training run moved scores by at most about 2 points within a size, while languages outside the base's documented list trail by 23 to 28 points at every size. On English public suites Zuse is behind Jev and Kev, including Kev models on the same bases. We also report two pitfalls in building multi-source training data: label-word collision between topic schemes, and an injection augmentation that taught a shortcut. Zuse can be tried at https://bineric.com/zuse.",
+      "description_zh": "决策模型读取文档并返回每个固定选项集的概率，而不是生成文本。有几个在 2026 年出现，但没有一个在英语之外发表结果。我们描述了 Zuse，三种决策模型（4B、9B 和 27B），它们在冻结的开放权重基础上训练低阶适配器和指针头，针对 27 种欧洲语言，并使用它们来研究该设计在不同语言和任务中的行为方式。在排除在培训之外的欧洲 11 个来源套件（涵盖 9 个任务组和 27 种语言）（一个还指导模型选择的开发集）上，27B 模型达到 87.5% 的准确率，汇总预期校准误差为 0.016，每个来源加权时为 0.035。对这些单种子结果的事后分析得出了三个发现。首先，错误校准是由任务而不是语言构成的：在 26 种语言的并行阅读和主题项目上，置信差距的变化与采样噪声一样大，而跨源的置信差距则跨度为 -0.07 到 +0.09，在所有三种尺寸下，知识任务都过于自信，而可接受性判断则不够自信，因此一个拟合的温度无法同时纠正这两者。其次，可以在 5% 错误预算下实现自动化的决策份额比原始准确性 (0.91) 更接近于机会校正技能（在 33 个源和模型对上，Spearman 为 0.97）。第三，超越训练语言是由基础模型设定的：在 210 种语言中，改变训练运行在一个尺寸内最多将分数移动大约 2 分，而基础记录列表之外的语言在每个尺寸下都会移动 23 到 28 分。在英语公共套件中，Zuse 落后于 Jev 和 Kev，包括基于相同基础的 Kev 模型。我们还报告了构建多源训练数据时的两个陷阱：主题方案之间的标签词冲突，以及教授捷径的注入增强。可以在 https://bineric.com/zuse 上试用 Zuse。",
+      "authors": "Umair Mehmood Imam",
+      "url": "https://huggingface.co/papers/2611.06238",
+      "score": 1,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "1",
+        "paperId": "2611.06238"
       }
     }
   ]
