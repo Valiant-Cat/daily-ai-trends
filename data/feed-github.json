@@ -1,24 +1,42 @@
 {
   "source": "github",
-  "updatedAt": "2026-11-18T01:50:55.521Z",
+  "updatedAt": "2026-11-19T01:27:41.304Z",
   "count": 15,
   "items": [
     {
-      "id": "elementalsouls-Claude-BugHunter",
-      "title": "Claude-BugHunter",
-      "title_zh": "Claude-BugHunter",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "description_zh": "用于错误搜寻和外部红队工作的 Claude Code 技能包 - 82 项技能、15 个斜线命令、涵盖 24 个核心漏洞类别的 681 个披露报告模式，以及企业身份 + 基础设施攻击矩阵。",
-      "authors": "elementalsouls",
-      "url": "https://github.com/elementalsouls/Claude-BugHunter",
-      "score": 9389,
+      "id": "cursor-plugins",
+      "title": "plugins",
+      "title_zh": "plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "description_zh": "光标插件规范和官方插件",
+      "authors": "cursor",
+      "url": "https://github.com/cursor/plugins",
+      "score": 17215,
       "meta": {
         "source": "github",
-        "stars": "9,389",
+        "stars": "17,215",
+        "language": "TypeScript",
+        "repo": "cursor/plugins",
+        "owner": "cursor",
+        "repoName": "plugins"
+      }
+    },
+    {
+      "id": "HKUDS-CLI-Anything",
+      "title": "CLI-Anything",
+      "title_zh": "CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "score": 59765,
+      "meta": {
+        "source": "github",
+        "stars": "59,765",
         "language": "Python",
-        "repo": "elementalsouls/Claude-BugHunter",
-        "owner": "elementalsouls",
-        "repoName": "Claude-BugHunter"
+        "repo": "HKUDS/CLI-Anything",
+        "owner": "HKUDS",
+        "repoName": "CLI-Anything"
       }
     },
     {
@@ -29,68 +47,14 @@
       "description_zh": "AI 代理技能可研究 Reddit、X、YouTube、HN、Polymarket 和网络上的任何主题，然后综合得出有根据的摘要",
       "authors": "mvanhorn",
       "url": "https://github.com/mvanhorn/last30days-skill",
-      "score": 69110,
+      "score": 70036,
       "meta": {
         "source": "github",
-        "stars": "69,110",
+        "stars": "70,036",
         "language": "Python",
         "repo": "mvanhorn/last30days-skill",
         "owner": "mvanhorn",
         "repoName": "last30days-skill"
-      }
-    },
-    {
-      "id": "alibaba-open-code-review",
-      "title": "open-code-review",
-      "title_zh": "open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "description_zh": "安全、快速、高效，经过阿里巴巴规模的实战考验。混合架构代码审查工具：确定性管道+LLM代理，精确的行级注释，内置多语言规则集（NPE，线程安全，XSS，SQL注入），兼容OpenAI和Anthropic。",
-      "authors": "alibaba",
-      "url": "https://github.com/alibaba/open-code-review",
-      "score": 53763,
-      "meta": {
-        "source": "github",
-        "stars": "53,763",
-        "language": "Go",
-        "repo": "alibaba/open-code-review",
-        "owner": "alibaba",
-        "repoName": "open-code-review"
-      }
-    },
-    {
-      "id": "Tencent-LoopForge",
-      "title": "LoopForge",
-      "title_zh": "LoopForge",
-      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
-      "description_zh": "用于编码代理交付的自托管工作流程。使用脚本和人工审批门来编排 CodeBuddy、Codex 和 Claude Code。包括编码助理的本地工作流程。",
-      "authors": "Tencent",
-      "url": "https://github.com/Tencent/LoopForge",
-      "score": 3212,
-      "meta": {
-        "source": "github",
-        "stars": "3,212",
-        "language": "Go",
-        "repo": "Tencent/LoopForge",
-        "owner": "Tencent",
-        "repoName": "LoopForge"
-      }
-    },
-    {
-      "id": "dream-num-univer",
-      "title": "univer",
-      "title_zh": "univer",
-      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "description_zh": "使用 Univer Office SDK 构建您自己的 AI 办公室。将编辑、计算、协作和文件处理引入您的产品中，供人员和 AI 代理使用。基于可扩展的开源核心构建。",
-      "authors": "dream-num",
-      "url": "https://github.com/dream-num/univer",
-      "score": 28924,
-      "meta": {
-        "source": "github",
-        "stars": "28,924",
-        "language": "TypeScript",
-        "repo": "dream-num/univer",
-        "owner": "dream-num",
-        "repoName": "univer"
       }
     },
     {
@@ -101,14 +65,86 @@
       "description_zh": "现代 Docker 管理，专为所有人设计",
       "authors": "getarcaneapp",
       "url": "https://github.com/getarcaneapp/arcane",
-      "score": 9351,
+      "score": 9819,
       "meta": {
         "source": "github",
-        "stars": "9,351",
+        "stars": "9,819",
         "language": "Go",
         "repo": "getarcaneapp/arcane",
         "owner": "getarcaneapp",
         "repoName": "arcane"
+      }
+    },
+    {
+      "id": "NVIDIA-SkillEvaluator",
+      "title": "SkillEvaluator",
+      "title_zh": "SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "description_zh": "用于评估 AI 代理技能和插件的多层框架，具有质量门、语义重叠检测、综合评估数据集生成以及衡量技能如何影响代理行为的实时代理评估。",
+      "authors": "NVIDIA",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "score": 3731,
+      "meta": {
+        "source": "github",
+        "stars": "3,731",
+        "language": "Python",
+        "repo": "NVIDIA/SkillEvaluator",
+        "owner": "NVIDIA",
+        "repoName": "SkillEvaluator"
+      }
+    },
+    {
+      "id": "nvm-sh-nvm",
+      "title": "nvm",
+      "title_zh": "nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "description_zh": "Node Version Manager - 符合 POSIX 标准的 bash 脚本，用于管理多个活动的 Node.js 版本。",
+      "authors": "nvm-sh",
+      "url": "https://github.com/nvm-sh/nvm",
+      "score": 96152,
+      "meta": {
+        "source": "github",
+        "stars": "96,152",
+        "language": "Shell",
+        "repo": "nvm-sh/nvm",
+        "owner": "nvm-sh",
+        "repoName": "nvm"
+      }
+    },
+    {
+      "id": "astral-sh-uv",
+      "title": "uv",
+      "title_zh": "uv",
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "description_zh": "一个非常快的 Python 包和项目管理器，用 Rust 编写。",
+      "authors": "astral-sh",
+      "url": "https://github.com/astral-sh/uv",
+      "score": 92224,
+      "meta": {
+        "source": "github",
+        "stars": "92,224",
+        "language": "Rust",
+        "repo": "astral-sh/uv",
+        "owner": "astral-sh",
+        "repoName": "uv"
+      }
+    },
+    {
+      "id": "google-research-paper-orchestra",
+      "title": "paper-orchestra",
+      "title_zh": "paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "description_zh": "PaperOrchestra 是一个用于自动化人工智能研究论文写作的多代理框架。",
+      "authors": "google-research",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "score": 4306,
+      "meta": {
+        "source": "github",
+        "stars": "4,306",
+        "language": "Python",
+        "repo": "google-research/paper-orchestra",
+        "owner": "google-research",
+        "repoName": "paper-orchestra"
       }
     },
     {
@@ -119,86 +155,14 @@
       "description_zh": "旨在与 Stitch MCP 服务器配合使用的代理技能库。每个技能都遵循 Agent Skills 开放标准，以便与 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理兼容。",
       "authors": "google-labs-code",
       "url": "https://github.com/google-labs-code/stitch-skills",
-      "score": 10121,
+      "score": 10410,
       "meta": {
         "source": "github",
-        "stars": "10,121",
+        "stars": "10,410",
         "language": "TypeScript",
         "repo": "google-labs-code/stitch-skills",
         "owner": "google-labs-code",
         "repoName": "stitch-skills"
-      }
-    },
-    {
-      "id": "cursor-plugins",
-      "title": "plugins",
-      "title_zh": "plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "description_zh": "光标插件规范和官方插件",
-      "authors": "cursor",
-      "url": "https://github.com/cursor/plugins",
-      "score": 16917,
-      "meta": {
-        "source": "github",
-        "stars": "16,917",
-        "language": "TypeScript",
-        "repo": "cursor/plugins",
-        "owner": "cursor",
-        "repoName": "plugins"
-      }
-    },
-    {
-      "id": "obra-superpowers",
-      "title": "superpowers",
-      "title_zh": "superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "description_zh": "有效的代理技能框架和软件开发方法。",
-      "authors": "obra",
-      "url": "https://github.com/obra/superpowers",
-      "score": 319367,
-      "meta": {
-        "source": "github",
-        "stars": "319,367",
-        "language": "Shell",
-        "repo": "obra/superpowers",
-        "owner": "obra",
-        "repoName": "superpowers"
-      }
-    },
-    {
-      "id": "ag-ui-protocol-ag-ui",
-      "title": "ag-ui",
-      "title_zh": "ag-ui",
-      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-      "description_zh": "AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
-      "authors": "ag-ui-protocol",
-      "url": "https://github.com/ag-ui-protocol/ag-ui",
-      "score": 20029,
-      "meta": {
-        "source": "github",
-        "stars": "20,029",
-        "language": "TypeScript",
-        "repo": "ag-ui-protocol/ag-ui",
-        "owner": "ag-ui-protocol",
-        "repoName": "ag-ui"
-      }
-    },
-    {
-      "id": "backnotprop-plannotator",
-      "title": "plannotator",
-      "title_zh": "plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "description_zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
-      "authors": "backnotprop",
-      "url": "https://github.com/backnotprop/plannotator",
-      "score": 13085,
-      "meta": {
-        "source": "github",
-        "stars": "13,085",
-        "language": "TypeScript",
-        "repo": "backnotprop/plannotator",
-        "owner": "backnotprop",
-        "repoName": "plannotator"
       }
     },
     {
@@ -209,14 +173,86 @@
       "description_zh": "适合我们其他人的网络开发",
       "authors": "sveltejs",
       "url": "https://github.com/sveltejs/svelte",
-      "score": 89616,
+      "score": 89623,
       "meta": {
         "source": "github",
-        "stars": "89,616",
+        "stars": "89,623",
         "language": "JavaScript",
         "repo": "sveltejs/svelte",
         "owner": "sveltejs",
         "repoName": "svelte"
+      }
+    },
+    {
+      "id": "jquery-jquery",
+      "title": "jquery",
+      "title_zh": "jquery",
+      "description": "jQuery JavaScript Library",
+      "description_zh": "jQuery JavaScript 库",
+      "authors": "jquery",
+      "url": "https://github.com/jquery/jquery",
+      "score": 60011,
+      "meta": {
+        "source": "github",
+        "stars": "60,011",
+        "language": "JavaScript",
+        "repo": "jquery/jquery",
+        "owner": "jquery",
+        "repoName": "jquery"
+      }
+    },
+    {
+      "id": "appwrite-appwrite",
+      "title": "appwrite",
+      "title_zh": "appwrite",
+      "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+      "description_zh": "面向代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息传递、托管、实时、WAF 等",
+      "authors": "appwrite",
+      "url": "https://github.com/appwrite/appwrite",
+      "score": 58232,
+      "meta": {
+        "source": "github",
+        "stars": "58,232",
+        "language": "TypeScript",
+        "repo": "appwrite/appwrite",
+        "owner": "appwrite",
+        "repoName": "appwrite"
+      }
+    },
+    {
+      "id": "openvinotoolkit-openvino",
+      "title": "openvino",
+      "title_zh": "openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "description_zh": "OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
+      "authors": "openvinotoolkit",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "score": 11332,
+      "meta": {
+        "source": "github",
+        "stars": "11,332",
+        "language": "C++",
+        "repo": "openvinotoolkit/openvino",
+        "owner": "openvinotoolkit",
+        "repoName": "openvino"
+      }
+    },
+    {
+      "id": "obra-superpowers",
+      "title": "superpowers",
+      "title_zh": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_zh": "有效的代理技能框架和软件开发方法。",
+      "authors": "obra",
+      "url": "https://github.com/obra/superpowers",
+      "score": 321337,
+      "meta": {
+        "source": "github",
+        "stars": "321,337",
+        "language": "Shell",
+        "repo": "obra/superpowers",
+        "owner": "obra",
+        "repoName": "superpowers"
       }
     },
     {
@@ -227,50 +263,14 @@
       "description_zh": "代理利用性能优化系统。 Claude Code、Codex、Opencode、Cursor 等的技能、直觉、记忆、安全性和研究优先的开发。",
       "authors": "affaan-m",
       "url": "https://github.com/affaan-m/ECC",
-      "score": 305548,
+      "score": 306529,
       "meta": {
         "source": "github",
-        "stars": "305,548",
+        "stars": "306,529",
         "language": "JavaScript",
         "repo": "affaan-m/ECC",
         "owner": "affaan-m",
         "repoName": "ECC"
-      }
-    },
-    {
-      "id": "jingyaogong-minimind",
-      "title": "minimind",
-      "title_zh": "minimind",
-      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
-      "description_zh": "🧠 只需 2 小时从头开始训练 64M 参数的 LLM！",
-      "authors": "jingyaogong",
-      "url": "https://github.com/jingyaogong/minimind",
-      "score": 66023,
-      "meta": {
-        "source": "github",
-        "stars": "66,023",
-        "language": "Python",
-        "repo": "jingyaogong/minimind",
-        "owner": "jingyaogong",
-        "repoName": "minimind"
-      }
-    },
-    {
-      "id": "google-research-paper-orchestra",
-      "title": "paper-orchestra",
-      "title_zh": "paper-orchestra",
-      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-      "description_zh": "PaperOrchestra 是一个用于自动化 AI 研究论文写作的多代理框架。",
-      "authors": "google-research",
-      "url": "https://github.com/google-research/paper-orchestra",
-      "score": 3067,
-      "meta": {
-        "source": "github",
-        "stars": "3,067",
-        "language": "Python",
-        "repo": "google-research/paper-orchestra",
-        "owner": "google-research",
-        "repoName": "paper-orchestra"
       }
     }
   ]
