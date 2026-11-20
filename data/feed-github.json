@@ -1,240 +1,24 @@
 {
   "source": "github",
-  "updatedAt": "2026-11-19T01:27:41.304Z",
+  "updatedAt": "2026-11-20T01:25:45.618Z",
   "count": 15,
   "items": [
     {
-      "id": "cursor-plugins",
-      "title": "plugins",
-      "title_zh": "plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "description_zh": "光标插件规范和官方插件",
-      "authors": "cursor",
-      "url": "https://github.com/cursor/plugins",
-      "score": 17215,
+      "id": "elementalsouls-Claude-BugHunter",
+      "title": "Claude-BugHunter",
+      "title_zh": "Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "description_zh": "用于错误搜寻和外部红队工作的 Claude Code 技能包 - 82 项技能、15 个斜线命令、涵盖 24 个核心漏洞类别的 681 个披露报告模式，以及企业身份 + 基础设施攻击矩阵。",
+      "authors": "elementalsouls",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "score": 12563,
       "meta": {
         "source": "github",
-        "stars": "17,215",
-        "language": "TypeScript",
-        "repo": "cursor/plugins",
-        "owner": "cursor",
-        "repoName": "plugins"
-      }
-    },
-    {
-      "id": "HKUDS-CLI-Anything",
-      "title": "CLI-Anything",
-      "title_zh": "CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
-      "authors": "HKUDS",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "score": 59765,
-      "meta": {
-        "source": "github",
-        "stars": "59,765",
+        "stars": "12,563",
         "language": "Python",
-        "repo": "HKUDS/CLI-Anything",
-        "owner": "HKUDS",
-        "repoName": "CLI-Anything"
-      }
-    },
-    {
-      "id": "mvanhorn-last30days-skill",
-      "title": "last30days-skill",
-      "title_zh": "last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "description_zh": "AI 代理技能可研究 Reddit、X、YouTube、HN、Polymarket 和网络上的任何主题，然后综合得出有根据的摘要",
-      "authors": "mvanhorn",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "score": 70036,
-      "meta": {
-        "source": "github",
-        "stars": "70,036",
-        "language": "Python",
-        "repo": "mvanhorn/last30days-skill",
-        "owner": "mvanhorn",
-        "repoName": "last30days-skill"
-      }
-    },
-    {
-      "id": "getarcaneapp-arcane",
-      "title": "arcane",
-      "title_zh": "arcane",
-      "description": "Modern Docker Management, Designed for Everyone",
-      "description_zh": "现代 Docker 管理，专为所有人设计",
-      "authors": "getarcaneapp",
-      "url": "https://github.com/getarcaneapp/arcane",
-      "score": 9819,
-      "meta": {
-        "source": "github",
-        "stars": "9,819",
-        "language": "Go",
-        "repo": "getarcaneapp/arcane",
-        "owner": "getarcaneapp",
-        "repoName": "arcane"
-      }
-    },
-    {
-      "id": "NVIDIA-SkillEvaluator",
-      "title": "SkillEvaluator",
-      "title_zh": "SkillEvaluator",
-      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-      "description_zh": "用于评估 AI 代理技能和插件的多层框架，具有质量门、语义重叠检测、综合评估数据集生成以及衡量技能如何影响代理行为的实时代理评估。",
-      "authors": "NVIDIA",
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
-      "score": 3731,
-      "meta": {
-        "source": "github",
-        "stars": "3,731",
-        "language": "Python",
-        "repo": "NVIDIA/SkillEvaluator",
-        "owner": "NVIDIA",
-        "repoName": "SkillEvaluator"
-      }
-    },
-    {
-      "id": "nvm-sh-nvm",
-      "title": "nvm",
-      "title_zh": "nvm",
-      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-      "description_zh": "Node Version Manager - 符合 POSIX 标准的 bash 脚本，用于管理多个活动的 Node.js 版本。",
-      "authors": "nvm-sh",
-      "url": "https://github.com/nvm-sh/nvm",
-      "score": 96152,
-      "meta": {
-        "source": "github",
-        "stars": "96,152",
-        "language": "Shell",
-        "repo": "nvm-sh/nvm",
-        "owner": "nvm-sh",
-        "repoName": "nvm"
-      }
-    },
-    {
-      "id": "astral-sh-uv",
-      "title": "uv",
-      "title_zh": "uv",
-      "description": "An extremely fast Python package and project manager, written in Rust.",
-      "description_zh": "一个非常快的 Python 包和项目管理器，用 Rust 编写。",
-      "authors": "astral-sh",
-      "url": "https://github.com/astral-sh/uv",
-      "score": 92224,
-      "meta": {
-        "source": "github",
-        "stars": "92,224",
-        "language": "Rust",
-        "repo": "astral-sh/uv",
-        "owner": "astral-sh",
-        "repoName": "uv"
-      }
-    },
-    {
-      "id": "google-research-paper-orchestra",
-      "title": "paper-orchestra",
-      "title_zh": "paper-orchestra",
-      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-      "description_zh": "PaperOrchestra 是一个用于自动化人工智能研究论文写作的多代理框架。",
-      "authors": "google-research",
-      "url": "https://github.com/google-research/paper-orchestra",
-      "score": 4306,
-      "meta": {
-        "source": "github",
-        "stars": "4,306",
-        "language": "Python",
-        "repo": "google-research/paper-orchestra",
-        "owner": "google-research",
-        "repoName": "paper-orchestra"
-      }
-    },
-    {
-      "id": "google-labs-code-stitch-skills",
-      "title": "stitch-skills",
-      "title_zh": "stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "description_zh": "旨在与 Stitch MCP 服务器配合使用的代理技能库。每个技能都遵循 Agent Skills 开放标准，以便与 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理兼容。",
-      "authors": "google-labs-code",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "score": 10410,
-      "meta": {
-        "source": "github",
-        "stars": "10,410",
-        "language": "TypeScript",
-        "repo": "google-labs-code/stitch-skills",
-        "owner": "google-labs-code",
-        "repoName": "stitch-skills"
-      }
-    },
-    {
-      "id": "sveltejs-svelte",
-      "title": "svelte",
-      "title_zh": "svelte",
-      "description": "web development for the rest of us",
-      "description_zh": "适合我们其他人的网络开发",
-      "authors": "sveltejs",
-      "url": "https://github.com/sveltejs/svelte",
-      "score": 89623,
-      "meta": {
-        "source": "github",
-        "stars": "89,623",
-        "language": "JavaScript",
-        "repo": "sveltejs/svelte",
-        "owner": "sveltejs",
-        "repoName": "svelte"
-      }
-    },
-    {
-      "id": "jquery-jquery",
-      "title": "jquery",
-      "title_zh": "jquery",
-      "description": "jQuery JavaScript Library",
-      "description_zh": "jQuery JavaScript 库",
-      "authors": "jquery",
-      "url": "https://github.com/jquery/jquery",
-      "score": 60011,
-      "meta": {
-        "source": "github",
-        "stars": "60,011",
-        "language": "JavaScript",
-        "repo": "jquery/jquery",
-        "owner": "jquery",
-        "repoName": "jquery"
-      }
-    },
-    {
-      "id": "appwrite-appwrite",
-      "title": "appwrite",
-      "title_zh": "appwrite",
-      "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
-      "description_zh": "面向代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息传递、托管、实时、WAF 等",
-      "authors": "appwrite",
-      "url": "https://github.com/appwrite/appwrite",
-      "score": 58232,
-      "meta": {
-        "source": "github",
-        "stars": "58,232",
-        "language": "TypeScript",
-        "repo": "appwrite/appwrite",
-        "owner": "appwrite",
-        "repoName": "appwrite"
-      }
-    },
-    {
-      "id": "openvinotoolkit-openvino",
-      "title": "openvino",
-      "title_zh": "openvino",
-      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-      "description_zh": "OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
-      "authors": "openvinotoolkit",
-      "url": "https://github.com/openvinotoolkit/openvino",
-      "score": 11332,
-      "meta": {
-        "source": "github",
-        "stars": "11,332",
-        "language": "C++",
-        "repo": "openvinotoolkit/openvino",
-        "owner": "openvinotoolkit",
-        "repoName": "openvino"
+        "repo": "elementalsouls/Claude-BugHunter",
+        "owner": "elementalsouls",
+        "repoName": "Claude-BugHunter"
       }
     },
     {
@@ -245,10 +29,10 @@
       "description_zh": "有效的代理技能框架和软件开发方法。",
       "authors": "obra",
       "url": "https://github.com/obra/superpowers",
-      "score": 321337,
+      "score": 322098,
       "meta": {
         "source": "github",
-        "stars": "321,337",
+        "stars": "322,098",
         "language": "Shell",
         "repo": "obra/superpowers",
         "owner": "obra",
@@ -256,21 +40,237 @@
       }
     },
     {
-      "id": "affaan-m-ECC",
-      "title": "ECC",
-      "title_zh": "ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "description_zh": "代理利用性能优化系统。 Claude Code、Codex、Opencode、Cursor 等的技能、直觉、记忆、安全性和研究优先的开发。",
-      "authors": "affaan-m",
-      "url": "https://github.com/affaan-m/ECC",
-      "score": 306529,
+      "id": "HKUDS-CLI-Anything",
+      "title": "CLI-Anything",
+      "title_zh": "CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "score": 60578,
       "meta": {
         "source": "github",
-        "stars": "306,529",
-        "language": "JavaScript",
-        "repo": "affaan-m/ECC",
-        "owner": "affaan-m",
-        "repoName": "ECC"
+        "stars": "60,578",
+        "language": "Python",
+        "repo": "HKUDS/CLI-Anything",
+        "owner": "HKUDS",
+        "repoName": "CLI-Anything"
+      }
+    },
+    {
+      "id": "jingyaogong-minimind",
+      "title": "minimind",
+      "title_zh": "minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "description_zh": "🧠两小时从0训出你的64M大模型。2小时内从头开始训练你自己的64M LLM。",
+      "authors": "jingyaogong",
+      "url": "https://github.com/jingyaogong/minimind",
+      "score": 66890,
+      "meta": {
+        "source": "github",
+        "stars": "66,890",
+        "language": "Python",
+        "repo": "jingyaogong/minimind",
+        "owner": "jingyaogong",
+        "repoName": "minimind"
+      }
+    },
+    {
+      "id": "cursor-plugins",
+      "title": "plugins",
+      "title_zh": "plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "description_zh": "光标插件规范和官方插件",
+      "authors": "cursor",
+      "url": "https://github.com/cursor/plugins",
+      "score": 17567,
+      "meta": {
+        "source": "github",
+        "stars": "17,567",
+        "language": "TypeScript",
+        "repo": "cursor/plugins",
+        "owner": "cursor",
+        "repoName": "plugins"
+      }
+    },
+    {
+      "id": "firecrawl-firecrawl",
+      "title": "firecrawl",
+      "title_zh": "firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+      "description_zh": "知识基础设施让您的座席变得更加聪明。通过一个 API 搜索、抓取和 550 多个数据提供商。",
+      "authors": "firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "score": 204251,
+      "meta": {
+        "source": "github",
+        "stars": "204,251",
+        "language": "TypeScript",
+        "repo": "firecrawl/firecrawl",
+        "owner": "firecrawl",
+        "repoName": "firecrawl"
+      }
+    },
+    {
+      "id": "nginx-nginx",
+      "title": "nginx",
+      "title_zh": "nginx",
+      "description": "The official NGINX Open Source repository.",
+      "description_zh": "官方 NGINX 开源存储库。",
+      "authors": "nginx",
+      "url": "https://github.com/nginx/nginx",
+      "score": 32342,
+      "meta": {
+        "source": "github",
+        "stars": "32,342",
+        "language": "C",
+        "repo": "nginx/nginx",
+        "owner": "nginx",
+        "repoName": "nginx"
+      }
+    },
+    {
+      "id": "openvinotoolkit-openvino",
+      "title": "openvino",
+      "title_zh": "openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "description_zh": "OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
+      "authors": "openvinotoolkit",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "score": 11570,
+      "meta": {
+        "source": "github",
+        "stars": "11,570",
+        "language": "C++",
+        "repo": "openvinotoolkit/openvino",
+        "owner": "openvinotoolkit",
+        "repoName": "openvino"
+      }
+    },
+    {
+      "id": "cathrynlavery-diagram-design",
+      "title": "diagram-design",
+      "title_zh": "diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "description_zh": "Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图设计。 45 种图表类型。独立的 HTML + SVG。没有阴影。没有美人鱼污水。",
+      "authors": "cathrynlavery",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "score": 68643,
+      "meta": {
+        "source": "github",
+        "stars": "68,643",
+        "language": "HTML",
+        "repo": "cathrynlavery/diagram-design",
+        "owner": "cathrynlavery",
+        "repoName": "diagram-design"
+      }
+    },
+    {
+      "id": "mvanhorn-last30days-skill",
+      "title": "last30days-skill",
+      "title_zh": "last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "description_zh": "AI 代理技能可研究 Reddit、X、YouTube、HN、Polymarket 和网络上的任何主题，然后综合得出有根据的摘要",
+      "authors": "mvanhorn",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "score": 70810,
+      "meta": {
+        "source": "github",
+        "stars": "70,810",
+        "language": "Python",
+        "repo": "mvanhorn/last30days-skill",
+        "owner": "mvanhorn",
+        "repoName": "last30days-skill"
+      }
+    },
+    {
+      "id": "google-labs-code-stitch-skills",
+      "title": "stitch-skills",
+      "title_zh": "stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "description_zh": "旨在与 Stitch MCP 服务器配合使用的代理技能库。每个技能都遵循 Agent Skills 开放标准，以便与 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理兼容。",
+      "authors": "google-labs-code",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "score": 10724,
+      "meta": {
+        "source": "github",
+        "stars": "10,724",
+        "language": "TypeScript",
+        "repo": "google-labs-code/stitch-skills",
+        "owner": "google-labs-code",
+        "repoName": "stitch-skills"
+      }
+    },
+    {
+      "id": "mjmirza-app-store-compliance",
+      "title": "app-store-compliance",
+      "title_zh": "app-store-compliance",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "description_zh": "避免常见的 App Store 和 Google Play 拒绝。开放剧本和提交前保护，包含 117 个记录的拒绝模式和修复、隐私清单和数据安全检查、95 个跟踪截止日期（欧盟人工智能法案、DSA、COPPA、年龄法）以及人工智能编码代理的技能。",
+      "authors": "mjmirza",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "score": 1861,
+      "meta": {
+        "source": "github",
+        "stars": "1,861",
+        "language": "Shell",
+        "repo": "mjmirza/app-store-compliance",
+        "owner": "mjmirza",
+        "repoName": "app-store-compliance"
+      }
+    },
+    {
+      "id": "Tracer-Cloud-opensre",
+      "title": "opensre",
+      "title_zh": "opensre",
+      "description": "The open-source agent for CI/CD reliability.",
+      "description_zh": "CI/CD 可靠性的开源代理。",
+      "authors": "Tracer-Cloud",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "score": 13138,
+      "meta": {
+        "source": "github",
+        "stars": "13,138",
+        "language": "Python",
+        "repo": "Tracer-Cloud/opensre",
+        "owner": "Tracer-Cloud",
+        "repoName": "opensre"
+      }
+    },
+    {
+      "id": "toeverything-AFFiNE",
+      "title": "AFFiNE",
+      "title_zh": "AFFiNE",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+      "description_zh": "不仅仅是 Notion 和 Miro。 AFFiNE（发音为 [ə‘fain]）是一个集规划、分类和创建于一体的下一代知识库。隐私第一、开源、可定制且随时可用。",
+      "authors": "toeverything",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "score": 75183,
+      "meta": {
+        "source": "github",
+        "stars": "75,183",
+        "language": "TypeScript",
+        "repo": "toeverything/AFFiNE",
+        "owner": "toeverything",
+        "repoName": "AFFiNE"
+      }
+    },
+    {
+      "id": "XiaoYouChR-Ghost-Downloader-3",
+      "title": "Ghost-Downloader-3",
+      "title_zh": "Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "description_zh": "您唯一需要的下载器。 下载器的集大成者。",
+      "authors": "XiaoYouChR",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "score": 12745,
+      "meta": {
+        "source": "github",
+        "stars": "12,745",
+        "language": "Python",
+        "repo": "XiaoYouChR/Ghost-Downloader-3",
+        "owner": "XiaoYouChR",
+        "repoName": "Ghost-Downloader-3"
       }
     }
   ]

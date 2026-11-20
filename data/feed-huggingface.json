@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-19T01:27:50.470Z",
+  "updatedAt": "2026-11-20T01:25:55.994Z",
   "count": 15,
   "items": [
     {
-      "id": "2611.11937",
-      "title": "Attention at Absolute Zero",
-      "title_zh": "注意绝对零",
-      "description": "Attention scores candidate supports of an answer, which we call witnesses, and reads the scores at a temperature. We build a higher-order attention layer whose state lives on pairs of items: for a pair (a, b), each third item k is a witness judged through its legs (a, k) and (k, b). It reads witnesses at zero temperature, keeping the best and the number tied with it, passes on only bits comparing such counts, rebuilds its pair state from the input and these bits at every loop, and is trained from answers alone. Each choice removes one way soft attention fails at size: dispersed weight, unresolved gaps between learned scores, and a drifting soft state. In maximum retrieval it is right on at least 99.95% of sets 1,000 times larger than in training, on all ten seeds; trained with a soft count, the same network falls to 42% at 4,096 items. On CLRS-30 without hints, a general form of the layer (half its channels read at zero temperature, numbers embedded, state carried) beats the best published model, which uses hints on some tasks; the full cold layer is exact on every test input of 9 of the 12 tasks whose answers depend on numbers only through comparisons. From yes-or-no answers it decides 2-SAT and two-colouring exactly at 500 variables and, as our theory predicts, not parity equations. Beside a frozen 7B language model it chains family relations exactly at 1,000 statements after training on 16, where the model alone falls to 44%; finite checks on the weights prove every block that learned correct at every size, on acyclic contexts and given what the model reads. On CLUTRR it is right on every story of five to ten relations given the graphs, learning the 62 rules exactly; from text, with the model frozen, no hand-written rule and only a small read-in trained, it lifts an open 7B model from 33% to 65%, above every system we found without hand-written rules except frontier reasoning models.",
-      "description_zh": "注意力对候选人对答案的支持进行评分，我们称之为证人，并在一定温度下阅读分数。我们构建了一个高阶注意力层，其状态依赖于成对的项目：对于一对 (a, b)，每个第三个项目 k 都是通过其腿 (a, k) 和 (k, b) 判断的见证人。它在零温度下读取见证，保持最好的和与其相关的数字，仅传递比较这些计数的位，在每个循环中根据输入和这些位重建其配对状态，并仅根据答案进行训练。每种选择都消除了软注意力在规模上失败的一种方式：分散的权重、学习分数之间未解决的差距以及漂移的软状态。在最大检索中，对于所有 10 个种子，在比训练大 1,000 倍的集合中，至少 99.95% 的结果是正确的；经过软计数训练后，同一网络在 4,096 个项目时下降至 42%。在没有提示的 CLRS-30 上，该层的一般形式（一半通道在零温度下读取、嵌入数字、携带状态）击败了最好的已发布模型，该模型在某些任务上使用提示；完整的冷层对于 12 个任务中的 9 个任务的每个测试输入都是准确的，这些任务的答案仅取决于通过比较的数字。根据是或否的答案，它精确地在 500 个变量上决定 2-SAT 和双色，并且正如我们的理论预测的那样，而不是奇偶方程。除了冻结的 7B 语言模型之外，它在 16 次训练后将家庭关系精确地链接到 1,000 个语句，仅该模型就下降到 44%；对权重的有限检查证明每个块在每个大小、非循环上下文以及给定模型读取的内容下都学习正确。在 CLUTRR 上，对于给定图表的五到十个关系的每个故事都是正确的，准确地学习了 62 条规则；从文本来看，在模型冻结、没有手写规则、仅训练少量读入的情况下，它将开放 7B 模型从 33% 提升到 65%，高于我们发现的除前沿推理模型之外没有手写规则的所有系统。",
-      "authors": "Mostafa &#39;Neo&#39; Mohsenvand",
-      "url": "https://huggingface.co/papers/2611.11937",
-      "score": 1,
+      "id": "2611.24844",
+      "title": "General progress substitutes for specific training data in language models",
+      "title_zh": "一般进展替代语言模型中的特定训练数据",
+      "description": "Language models acquire their capabilities from training data, and developers withhold data during training to keep models from learning capabilities that could be misused. How long this delays a capability, and how much data is needed to acquire it later, is unknown. Here we show that the general progress a model makes on the rest of its training data substitutes for the data that was withheld. We withheld the training signal for individual skills in models of chess, Othello, molecular strings, bracket languages and web text. The delay of a withheld skill in larger models was predicted from smaller ones. A chess model never explicitly trained to respond to check ranked the legal responses almost as well as a model that was. When models were then trained on the withheld data, they acquired the skill with a small fraction of the data needed from initialization, and this fraction decreased as the models progressed. A control rule of equal difficulty was learned much more slowly. A programming language withheld from the training text of a 7-billion-parameter model was regained in the same way. Data filtering therefore delays a capability, and the data required to regain it decreases as models improve.",
+      "description_zh": "语言模型从训练数据中获取其功能，开发人员在训练期间保留数据，以防止模型学习可能被滥用的功能。这会延迟一项功能多长时间，以及稍后需要多少数据才能获取该功能，目前尚不清楚。在这里，我们展示了模型在其余训练数据上取得的总体进展替代了保留的数据。我们保留了国际象棋、黑白棋、分子弦、括号语言和网络文本模型中个人技能的训练信号。较大模型中保留技能的延迟是通过较小模型来预测的。从未经过明确训练来响应检查的国际象棋模型对合法响应的排名几乎与经过训练的模型一样。然后，当模型根据保留的数据进行训练时，他们通过初始化所需的一小部分数据获得了技能，并且随着模型的进展，这一比例逐渐减少。同等难度的控制规则学习起来要慢得多。以同样的方式重新获得了从 70 亿参数模型的训练文本中保留的编程语言。因此，数据过滤会延迟某种能力，并且随着模型的改进，重新获得该能力所需的数据也会减少。",
+      "authors": "Mark Marosi, Peter Antal",
+      "url": "https://huggingface.co/papers/2611.24844",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.11937"
+        "upvotes": "3",
+        "paperId": "2611.24844"
       }
     },
     {
-      "id": "2611.20995",
-      "title": "CONGA: Compiling Gaussian Fiber Geometry for Structured Bayesian Inference",
-      "title_zh": "CONGA：编译高斯纤维几何用于结构化贝叶斯推理",
-      "description": "In structured Bayesian models, a large latent block is often Gaussian conditional on a smaller set of parameters, yet generic inference methods relearn this geometry during warmup. We study how this structure can be used to construct transports for posterior inference. The conditional mean and precision determine exact affine maps, including symmetric Brenier and triangular Knothe-Rosenblatt maps, that separate a standard normal block from the remaining non-Gaussian core. KL and relative Fisher objectives then reduce to objectives on this core. We introduce CONGA, a compiler that identifies candidate Gaussian blocks and selects a temporal, spectral, or sparse implementation according to their structure and computational cost. Marginalization requires an identity established from the model; numerical evidence alone permits only a target-preserving change of variables, and a failed check leaves the model unchanged. On the Stock-Watson inflation model, CONGA improves minimum ESS per second by 12.5x for NUTS. It also restores convergence where the raw target fails: for WALNUTS on the same model, and for NUTS on a 6760-dimensional electricity load model reduced to 34 core coordinates. Experiments on graph-indexed fields show how coloring and fill affect the choice of map, including cases where retaining the original target is preferable.\n  Code at https://github.com/vicgalle/conga",
-      "description_zh": "在结构化贝叶斯模型中，大的潜在块通常以较小的参数集为高斯条件，但通用推理方法会在预热期间重新学习此几何形状。我们研究如何使用这种结构来构建后验推理的传输。条件均值和精度确定精确的仿射图，包括对称 Brenier 和三角 Knothe-Rosenblatt 图，它们将标准法线块与剩余的非高斯核心分开。然后，KL 和相对费舍尔的目标会简化为该核心的目标。我们引入 CONGA，这是一种编译器，可以识别候选高斯块并根据其结构和计算成本选择时间、频谱或稀疏实现。边缘化需要根据模型建立身份；仅数字证据仅允许变量的目标保留变化，并且失败的检查会使模型保持不变。在 Stock-Watson 膨胀模型上，CONGA 将 NUTS 的每秒最小 ESS 提高了 12.5 倍。它还可以恢复原始目标失败的收敛：对于同一模型上的 WALNUTS，以及对于减少到 34 个核心坐标的 6760 维电力负荷模型上的 NUTS。对图形索引字段的实验显示了着色和填充如何��响地图的选择，包括最好保留原始目标的情况。\n  代码位于 https://github.com/vicgalle/conga",
-      "authors": "Víctor Gallego",
-      "url": "https://huggingface.co/papers/2611.20995",
-      "score": 1,
+      "id": "2611.24059",
+      "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+      "title_zh": "重播，不要重新采样：长期 RL 专家的离策略整合",
+      "description": "Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every sampled token, and the student inherits the drift of the final experts. Yet we argue that the experts' RL runs have already produced what consolidation needs: rollouts with their sampling probabilities and rewards, in the order the experts learned from them. We propose multi-expert replay policy distillation (MRPD), which replays these training logs through the student in the experts' order. At each step, the policy gradient is recomputed on these scored trajectories, and the final experts' distributions are distilled at the logged prefixes. Following the experts' own trajectory reduces the training-inference mismatch and keeps the student within the clip range, so the replay is off-policy in origin but quasi-on-policy throughout consolidation. MRPD samples nothing and calls no environment or reward model: the trainer is the sole process, and consolidating the experts costs only about a seventh of the compute used to train them. On three long-horizon agentic domains (reasoning, search and SQL), MRPD yields the best student model, substantially outperforming online RL baselines, and surpassing MOPD from the same experts at a fraction of MOPD's cost. Our analysis on the same logs shows that the replayed trajectories carry most of the gain, and that both the policy gradient and the distillation term add to it. Most interestingly, the order of the logs matters more than their amount or rewards, suggesting that expert training logs are a curriculum, not a data mixture.",
+      "description_zh": "前沿后训练遵循一个常见的方法：通过强化学习 (RL) 为每个领域训练一名专家，然后通过多教师策略蒸馏 (MOPD) 将专家整合到一个模型中。这种整合的成本很高：学生在每个环境中再次采样，专家对每个采样的标记进行评分，并且学生继承了最终专家的漂移。然而我们认为，专家的 RL 运行已经产生了整合所需的内容：按照专家向他们学习的顺序，推出了采样概率和奖励。我们提出多专家重放策略蒸馏（MRPD），它按照专家的顺序通过学生重放这些训练日志。在每一步中，都会根据这些评分轨迹重新计算策略梯度，并根据记录的前缀提取最终专家的分布。遵循专家自己的轨迹可以减少训练与推理的不匹配，并使学生保持在剪辑范围内，因此重播在最初是偏离策略的，但在整个巩固过程中是准策略的。 MRPD 不采样任何内容，也不调用任何环境或奖励模型：训练器是唯一的过程，整合专家的成本仅为训练专家所需计算量的七分之一左右。在三个长期代理领域（推理、搜索和 SQL），MRPD 产生了最好的学生模型，其性���大大优于在线 RL 基线，并以 MOPD 成本的一小部分超越了来自相同专家的 MOPD。我们对相同日志的分析表明，重放的轨迹带来了大部分增益，并且策略梯度和蒸馏项都增加了增益。最有趣的是，日志的顺序比它们的数量或奖励更重要，这表明专家培训日志是课程，而不是数据混合物。",
+      "authors": "Zhenrui Yue, Gongxiaohui Chen, Huimin Zeng, Honglei Zhuang, Jiashuo Sun, Zhen Han, Dong Wang",
+      "url": "https://huggingface.co/papers/2611.24059",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.20995"
+        "upvotes": "3",
+        "paperId": "2611.24059"
       }
     },
     {
-      "id": "2611.20003",
-      "title": "The novelty exposed: ablation, reproducibility and transparency in 40 technical reports of open-weight large language models (LLMs)",
-      "title_zh": "新颖性暴露：开放权重大语言模型 (LLM) 的 40 份技术报告中的消融、可重复性和透明度",
-      "description": "In 2025 alone, 48 new large language model (LLM) architectures were added to the Hugging Face transformers library, and many of them arrive with a technical report that presents the model as new. What is actually new in these models, and is it tested? We put this question to LLM technical reports. We look at three things: what the reference code shows about how new open-weight architectures differ from earlier ones; what 40 randomly sampled technical reports claim as new and whether they support it with ablation studies; and what they disclose for reproducibility and transparency. In the library, 39 of the 48 architectures added in 2025 take at least two of their three core blocks from another model, most often Llama, although part of this reflects how the library writes code. In the reports, 19 of 73 architectural or training novelty claims come with a controlled with/without comparison; 4 of 40 reports state more than one training run; 8 rerun the models they compare against under one setup; and 1 discloses data mixture, token count, and compute together. We also looked for known components given new names: none of five candidate cases hid its origin, though we did not study model names. We propose seven reporting rules for LLM release reports and apply them to two reports. We do not judge model quality, and an untested claim may still be true.",
-      "description_zh": "仅在 2025 年，Hugging Face 转换器库中就添加了 48 个新的大型语言模型 (LLM) 架构，其中许多架构都附带了一份技术报告，表明该模型是新的。这些模型实际上有哪些新内容，是否经过测试？我们把这个问题提交给LLM技术报告。我们关注三件事：参考代码显示了新的开放权重架构与早期架构有何不同； 40 份随机抽样的技术报告声称什么是新的，以及它们是否通过消融研究来支持它；以及他们为了可重复性和透明度而披露的��容。在该库中，2025 年添加的 48 个架构中的 39 个至少从另一个模型（最常见的是 Llama）中获取了三个核心模块中的两个，尽管其中部分反映了该库编写代码的方式。在报告中，73 项建筑或培训新颖性声明中的 19 项带有受控的有/无比较； 40 份报告中有 4 份指出进行了多次培训； 8 在一种设置下重新运行他们进行比较的模型； 1 公开了数据混合、令牌计数和一起计算。我们还寻找给定新名称的已知组件：尽管我们没有研究模型名称，但五个候选案例中没有一个隐藏其起源。我们为LLM发布报告提出了七项报告规则，并将其应用于两份报告。我们不判断模型的质量，未经测试的声明可能仍然是正确的。",
-      "authors": "Bahaeddin Türkoğlu",
-      "url": "https://huggingface.co/papers/2611.20003",
-      "score": 1,
+      "id": "2611.24917",
+      "title": "Unified Law for Visual Tasks (The Four Laws of Computer Vision)",
+      "title_zh": "视觉任务统一定律（计算机视觉四大定律）",
+      "description": "In this paper, we propose a Unified Law for Visual Tasks, which could be further divided into Four Laws of Computer Vision, with the goal of enabling a single framework or method to uniformly train on and perform nearly all visual tasks. Our starting point is an inspiration and hypothesis: if the world information is encoded into image, which we call World Snapshots, then image processing is world processing, and image generation is World Snapshot generation. Furthermore, if all visual and visualization tasks can be reformulated as generation tasks, then a unified method, World Snapshot Models (WSMs), can perform the vast majority of visual tasks, much as large language models have largely unified natural language processing. This paper validates these laws across more than 1,000 trained and evaluated visual tasks (defined by distinct input-output mappings) and presents a unified training framework for future visual-task research and applications.",
+      "description_zh": "在本文中，我们提出了视觉任务统一定律，它可以进一步分为计算机视觉四大定律，目标是使单个框架或方法能够统一训练和执行几乎所有视觉任务。我们的出发点是一个灵感和假设：如果把世界信息编码成图像，我们称之为世界快照，那么图像处理就是世界处理，图像生成就是世界快照生成。此外，如果所有视觉和可视化任务都可以重新表述为生成任务，那么统一的方法，即世界快照模型（WSM），就可以执行绝大多数视觉任务，就像大型语言模型在很大程度上统一了自然语言处理一样。本文在 1,000 多个经过训练和评估的视觉任务（由不同的输入输出映射定义）中验证了这些定律，并为未来的视觉任务研究和应用提供了一个统一的训练框架。",
+      "authors": "Sen Fang, Yalin Feng, Yancheng Zhang, Yanxin Zhang, Zonglin Lyu, Hongbin Zhong, Liwei Che, Rui Wu, Chen Chen, Dimitris N. Metaxas",
+      "url": "https://huggingface.co/papers/2611.24917",
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.20003"
+        "upvotes": "3",
+        "paperId": "2611.24917"
       }
     },
     {
-      "id": "2611.18553",
-      "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
-      "title_zh": "WeightBench：作为权重空间程序员评估语言模型",
-      "description": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to do, fix a network that fails, and write working networks from scratch, all without gradient descent. This capability has been termed Weight-Space Programming (WSP). Exploring this new paradigm systematically requires a robust benchmark. We introduce WEIGHTBENCH, a benchmark that evaluates LLMs of increasing capability on 42 WSP tasks across five tracks: reading, fixing and writing weights, recognizing edits that are impossible, and data-free compression. The networks whose weights the LLMs read and edit range from 2K-parameter control policies to 7B-parameter language models. Experimental benchmark results show that frontier agents can already read small networks and write working control policies without ever running them, but cannot yet patch language models, compress them without data, or tell an impossible edit from a hard one. On all 42 tasks, Claude Opus 5.5 reaches a macro score of 0.535 (Sonnet 5.5 0.466, Haiku 5.5 0.402, DeepSeek v4-flash 0.215); on the 38 tasks it was run on, GPT-6.1-sol reaches 0.568 against Opus's 0.546. Code, the task registry, our OS-level sandbox harness, and the live leaderboard are publicly available at https://github.com/Aayush-Marasini/WeightBench.",
-      "description_zh": "最近的工作表明，大型语言模型（LLM）可以直接对其他神经网络的参数进行操作。他们可以读取网络的训练目的，修复失败的网络，并从头开始编写工作网络，所有这些都不需要梯度下降。这种能力被称为权重空间规划（WSP）。系统地探索这种新范式需要强大的基准。我们推出了 WEIGHTBENCH，这是一个基准，用于评估LLM在 42 个 WSP 任务上的能力提升，涉及五个方面：读取、修复和写入权重、识别不可能的编辑以及无数据压缩。LLM读取和编辑权重的网络范围从 2K 参数控制策略到 7B 参数语言模型。实验基准测试结果表明，前沿代理已经可以读取小型网络并编写工作控制策略，而无需运行它们，但还无法修补语言模型，在没有数据的情况下压缩它们，或者区分不可能的编辑和困难的编辑。在所有 42 项任务中，Claude Opus 5.5 的宏观得分为 0.535（Sonnet 5.5 0.466、Haiku 5.5 0.402、DeepSeek v4-flash 0.215）；在运行的 38 个任务中，GPT-6.1-sol 达到 0.568，而 Opus 为 0.546。代码、任务注册表、操作系统级沙箱工具和实时排行榜均可在 https://github.com/Aayush-Marasini/WeightBench 上公开获取。",
-      "authors": "Aayush Marasini, Barsat Khadka, Nick Rahimi",
-      "url": "https://huggingface.co/papers/2611.18553",
+      "id": "2611.17605",
+      "title": "Choosing Quantized Code LLMs by File Size and Energy per Solved Task",
+      "title_zh": "根据文件大小和每个解决任务的能量选择量化代码 LLM",
+      "description": "A developer running a code assistant on a laptop downloads one model file, and local inference moves the energy of every request onto that machine. A common rule says a larger model at lower precision tends to beat a smaller one at higher precision. We ran 24 GGUF files of Qwen2.5-Coder at four sizes on a fanless MacBook Air M2 and priced each in energy per solved task on 542 EvalPlus tasks. The result is a selection guide indexed by Ollama's listed file size, with an evidence label on each pick. At 1 and 2 GB it picks the q4_K_M files of the 1.5B and 3B models, both on the correctness and energy frontier under every accounting. At 3 GB as listed, the larger-model rule picks 7B-q2_K, the only measured 7B file that fits, and there it does not pay. That file brings no significant gain in solves over the 2 GB pick, 3B-q4_K_M, and the 90% CI limits any 3B-q4_K_M deficit to 2.4 points. Yet 7B-q2_K needs 2.03 times the energy per solved task on CPU, GPU and memory rails, or 1.66 to 1.81 times on whole-system power. On HumanEval+, five alternating session pairs give a ratio of 1.925 against 1.956 in the main grid. At 8 GB, 7B-q6_K buys a significant gain over the 2 GB pick at a higher energy price. From 1.5B up, q4_K_M trails the highest precision measured at its size by less than 3 points (90% CI). We release per-task results, power logs and the analysis script.",
+      "description_zh": "在笔记本电脑上运行代码助手的开发人员下载一个模型文件，本地推理将每个请求的能量转移到该机器上。一个常见的规则是，精度较低的较大模型往往会击败精度较高的较小模型。我们在无风扇 MacBook Air M2 上运行了 24 个 Qwen2.5-Coder 的 4 种大小的 GGUF 文件，并在 542 个 EvalPlus 任务上按每个解决任务的能耗对每个文件进行了定价。结果是根据 Ollama 列出的文件大小编制索引的选择指南，每个选择上都带有证据标签。在 1 GB 和 2 GB 时，它选择 1.5B 和 3B 模型的 q4_K_M 文件，无论是在每种计算下的正确性还是能量边��上。在列出的 3 GB 中，较大模型规则选择 7B-q2_K，这是唯一适合的测量 7B 文件，但它不值得。与 2 GB 选择 3B-q4_K_M 相比，该文件在求解方面没有带来显着的增益，并且 90% CI 将 3B-q4_K_M 的任何缺陷限制为 2.4 点。然而，7B-q2_K 在 CPU、GPU 和内存轨上每个解决任务需要的能量是 2.03 倍，或者整个系统功耗的 1.66 到 1.81 倍。在 HumanEval+ 上，五个交替会话对的比率为 1.925，而主网格中的比率为 1.956。在 8 GB 时，7B-q6_K 以更高的能源价格购买了比 2 GB 选择显着的收益。从 1.5B 开始，q4_K_M 落后于其尺寸测量的最高精度不到 3 个点 (90% CI)。我们发布每个任务的结果、电源日志和分析脚本。",
+      "authors": "Aditi Patodiya",
+      "url": "https://huggingface.co/papers/2611.17605",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2611.18553"
+        "paperId": "2611.17605"
       }
     },
     {
-      "id": "2611.20321",
-      "title": "Unreasonable Confidence from Simulator Misspecification: Directional Robustness on the SPEED+ Sim-to-Real Benchmark",
-      "title_zh": "模拟器错误指定带来的不合理信心：SPEED+ 模拟到真实基准的方向稳健性",
-      "description": "Vision-based navigation systems for orbit must be trained almost entirely on synthetic imagery, because real labelled images of a given spacecraft in flight rarely exist. Benchmarks like SPEED+ are built for that situation: the training set comes from a simulator, and the test sets are real images of a satellite mockup under two kinds of lighting. That simulator approximates how light reflects off mylar and aluminium, and like every scientific simulator it is misspecified. Its error is radiometric, since it misses the specular highlights, hard shadows and sensor saturation common in real images. We probe the resulting synthetic-to-real gap, the central risk for such systems, with a deliberately simple monocular pose estimator. In a 2x2 study of backbone adaptation and photometric augmentation, trained on synthetic images and tested on both real hardware-in-the-loop domains, we find three things. (1) The model does not know it is failing: regions conformally calibrated to 90% on synthetic data cover only 9-15% of rotation errors on sunlamp and 21-38% on lightbox, so a wrong pose carries the confidence of a correct one. (2) Transfer is asymmetric: scaling data and features improved synthetic rotation error from 1.65 to 1.03 rad but moved the harshly lit sunlamp domain by only 0.05 rad, under twice its seed s.d., whereas adapting the backbone's last stage carried 63-83% of its extra synthetic gain to both real domains. (3) Once the backbone adapts, augmentation helps only in the direction it models: our photometric stack improved the diffusely lit lightbox domain from 1.17 to 0.99 rad on every seed but moved sunlamp no more than seed-to-seed variation, while with the backbone frozen it helped sunlamp more. Every post-review experiment was pre-registered, and the code, per-image predictions and pre-registration record are at https://github.com/lokindoo/spacecraft-pose-estimation.",
-      "description_zh": "基于视觉的轨道导航系统必须几乎完全基于合成图像进行训练，因为飞行中的给定航天器的真实标记图像很少存在。像 SPEED+ 这样的基准测试就是针对这种情况而构建的：训练集来自模拟器，测试集是卫星模型在两种照明下的真实图像。该模拟器近似地描述了光从聚酯薄膜和铝反射的方式，并且像每个科学模拟器一样，它的指定是错误的。它的误差是辐射误差，因为它错过了真实图像中常见的镜面高光、硬阴影和传感器饱和度。我们��用一个特意简单的单目姿态估计器来探究由此产生的合成与真实的差距，这是此类系统的主要风险。在主干适应和光度增强的 2x2 研究中，在合成图像上进行训练并在真实的硬件在环域上进行测试，我们发现了三件事。 (1) 模型并不知道自己失败了：在合成数据上共形校准到 90% 的区域仅覆盖太阳灯上的 9-15% 的旋转误差和灯箱上的 21-38% 的旋转误差，因此错误的姿势具有正确姿势的置信度。 (2) 传输是不对称的：缩放数据和特征将合成旋转误差从 1.65 拉德改进到 1.03 拉德，但将强光照射的太阳灯域仅移动了 0.05 拉德，低于其种子 s.d. 的两倍，而调整主干网的最后一���将其额外合成增益的 63-83% 带到了两个真实域。 (3) 一旦主干适应，增强仅在其建模的方向上有帮助：我们的光度测量堆栈将每个种子上的漫射照明灯箱域从 1.17 拉德改进到 0.99 拉德，但移动的太阳灯不超过种子与种子之间的变化，而主干冻结时，它对太阳灯的帮助更大。每个审后实验均经过预注册，代码、每幅图像的预测和预注册记录位于 https://github.com/lokinoo/spacecraft-pose-estimation。",
-      "authors": "Nikolay Dolgov",
-      "url": "https://huggingface.co/papers/2611.20321",
-      "score": 1,
+      "id": "2611.23779",
+      "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+      "title_zh": "TabBioMed：生物医学表格学习的大规模基准",
+      "description": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmark 23 models across classical baselines, gradient-boosted trees, neural tabular architectures, and tabular foundation models. Foundation models deliver the strongest family-level predictive performance. However, their gains are regime-dependent: tree-based models and tuned multilayer perceptrons remain highly competitive, often dominating under inference-time or training-cost constraints. Overall, TabBioMed shows that biomedical tabular learning is strongly context-dependent, with optimal model choice depending on data regime, task type, and computational budget. We release TabBioMed with curated datasets and splits, preprocessing code, baselines, and results, providing a reproducible benchmark for practical model selection and future methods development in biomedical machine learning, available at https://github.com/AI-sandbox/TabBioMed.",
+      "description_zh": "机器学习的最新进展加速了生物医学预测，但对结构化生物医学数据的评估仍然碎片化，特别是对于高维、大样本、缺失和类别不平衡的数据集。我们推出 TabBioMed，这是一个包含 94 个精选公共生物医学表格数据集的大型基准，涵盖电子健康记录、药物发现、基因组学、转录组学、蛋白质组学、代谢组学、单细胞组学和系统生物学。 TabBioMed 通过标准化、数据集感知的预处理和评估框架统一这些数据集，从而实现分类、回归和多目标任务之间的可重复比较。我们对经典基线、梯度提升树、神经表格架构和表格基础模型的 23 个模型进行了基准测试。基础模型提供最强的家庭级预测性能。然而，它们的收益取决于机制：基于树的模型和调谐的多层感知器仍然具有高度竞争力，通常在推理时间或训练成本限制下占据主导地位。总体而言，TabBioMed 表明生物医学表格学习强烈依赖于上下文，最佳模型选择取决于数据体系、任务类型和计算预算。我们发布了 TabBioMed，其中包含精选的数据集和分割、预处理代码、基线和结果，为生物医学机器学习中的实际模型选择和未来方法开发提供可重复的基准，可在 https://github.com/AI-sandbox/TabBioMed 上获取。",
+      "authors": "Pau Mateo-Bernadó, Saivenkata Nagavyjayanthi Polapragada, David Bonet, Pol Arbiol Rakuljic, Laia Mogas Pladevall, Marçal Comajoan Cara, Jesus Gonzalez-Ferrer, Jordi Abante, Daniel Mas Montserrat, David Haussler, Alexander G. Ioannidis",
+      "url": "https://huggingface.co/papers/2611.23779",
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.20321"
+        "upvotes": "7",
+        "paperId": "2611.23779"
       }
     },
     {
-      "id": "2611.23140",
-      "title": "GameRealm: Grounding Visual Learning in Interactive Games",
-      "title_zh": "GameRealm：在互动游戏中奠定视觉学习的基础",
-      "description": "Visual foundation models are central to physical intelligence, yet their development remains constrained by fragmented training datasets, inconsistent annotation quality, and limited multimodal supervision. To address these challenges, we introduce GameRealm, a large-scale, richly annotated dataset that grounds visual observations in synchronized, game-native supervision. GameRealm encompasses over 120 million RGB frames and 1,000 hours of gameplay footage across all views. Beyond its unprecedented scale, GameRealm provides rich multimodal supervision, including metric depth, camera parameters, synchronized audio, control inputs, and 3D point trajectories. Its diversity further extends to flexible view configurations, spanning single-view, stereo, multi-view, and panoramic recordings. To enable scalable acquisition across diverse game environments, we develop a unified data collection pipeline that combines human-operated interaction with agentic exploration. Extensive experiments across diverse visual learning tasks demonstrate that GameRealm consistently strengthens visual foundation models in both visual generation and geometric learning. These results establish GameRealm as a versatile and valuable data resource, unlocking new opportunities for advancing visual intelligence.",
-      "description_zh": "视觉基础模型是物理智能的核心，但其发展仍然受到分散的训练数据集、不一致的注释质量和有限的多模式监督的限制。为了应对这些挑战，我们引入了 GameRealm，这是一个大规模、注释丰富的数据集，它将视觉观察建立在同步的游戏原生监督中。 GameRealm 包含超过 1.2 亿个 RGB 帧和 1,000 小时的所有视图的游戏片段。除了前所未有的规模之外，GameRealm 还提供丰富的多模式监控，包括度量深度、相机参数、同步音频、控制输入和 3D 点轨迹。其多样性进一步延伸到灵活的视图配置，涵盖单视图、立体、多视图和全景录制。为了实现跨不同游戏环境的可扩展采集，我们开发了一个统一的数据收集管道，将人工操作的交互与代理探索相结合。跨不同视觉学习任务的大量实验表明，GameRealm 始终增强视觉生成和几何学习方面的视觉基础模型。这些结果使 GameRealm 成为一种多功能且有价值的数据资源，为推进视觉智能带来了新的机遇。",
-      "authors": "Weiguang Zhao, Yifan Wang, Ni Yang, Yating Wang, Xingyu Miao, Yankai Jiang, Mulin Yu, Tao Lu, Haoyu Guo, Junting Dong, Weinan Zhang, Chunhua Shen",
-      "url": "https://huggingface.co/papers/2611.23140",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.23140"
-      }
-    },
-    {
-      "id": "2611.21925",
-      "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
-      "title_zh": "DNeo：您的并行草稿模型需要更好的目标特征编码",
-      "description": "Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. However, standard feature encoding mechanisms have three limitations: (1) they are lossy, applying encoding projections that are destructive to the underlying target feature-space via a discovered effect known as residual mixing, (2) they are memory-less, with no record of previously processed proposals, and (3) they utilize features sampled uniformly from across the target layers, omitting important hidden states. To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality. DNeo marks a new state of the art in high quality, fast LLM inference.",
-      "description_zh": "推测扩散解码使用小型并行起草模型在一次前向传递中生成 b 个草稿令牌，然后通过更大的目标模型进行并行验证。当多个草稿令牌同时通过验证时，可以实现更快的推理。最近的并行草稿架构（DFlash、DSpark）通过一种称为特征编码的机制对目标计算的丰富特征进行调节，从而提高草稿质量。然而，标准特征编码机制具有三个局限性：（1）它们是有损的，通过一种被称为残差混合的发现效应应用对底层目标特征空间具有破坏性的编码投影，（2）它们是无记忆的，没有先前处理的提案的记录，（3）它们利用从目标层均匀采样的特征，省略了重要的隐藏状态。为了解决这些问题，我们提出了混合特征注意力（MoFA），这是一种轻量级的特征编码方法，配备了一个工作记忆，可以对之前被拒绝的提案进行编码。利用 MoFA、拒绝内存和一系列进一步的增强功能，包括 2-tap 因果卷积、仅前缀交叉注意和非均匀目标层选择，最终架构 DNeo 的生成速度比 SoTA (DFlash-2) 快 1.3 倍，而不影响绘图器占用空间或生成质量。 DNeo 标志着高质量、快速的 LLM 推理的最新技术水平。",
-      "authors": "Jameson Sandler, Shane Bergsma, Mostafa Elhoushi, Bin Claire Zhang, Gavia Gray, Joel Hestness, Nolan Dey, Ferdinando Fioretto",
-      "url": "https://huggingface.co/papers/2611.21925",
+      "id": "2611.22382",
+      "title": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+      "title_zh": "RICoT：页面流分段的循环交错思想链",
+      "description": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it has read, keeping per-call cost bounded. We also introduce FinancePSS-205, a benchmark of 205 real-world, de-identified financial page streams, to be released publicly. On FinancePSS-205, RICoT matches or outperforms pairwise and windowed prompting with the same backbone for each of three open-weight LLMs; on a TABME test subset, RICoT with GLM-5 reaches document F1 0.847 and boundary F1 0.915, above published zero-shot results. A 2B-parameter student, trained on a larger teacher's decisions with and without the page-level reasoning, performs comparably in both modes and comes within 0.05 document F1 of the strongest prompted model on FinancePSS-205.",
+      "description_zh": "大型语言模型 (LLM) 对页面流分段 (PSS) 重新产生了兴趣，将多页文件分割为其组成文档。然而，已发表的 LLM 方法仍然将任务框架为一个或几个相邻页面的边界分类，并且商业文档分割 API 没有公开他们的方法。我们将LLM的 PSS 重新想象为整个流上的顺序过程，并提出了 RICoT（循环交错思想链），这是一种提示框架，可以像读者一样浏览页面：在滑动窗口内，它对每个页面进行推理，并在继续之前提交其边界决策，跨窗口，它会保留其所阅读内容的紧凑记录，从而限制每次调用的成本。我们还推出了将公开发布的 FinancePSS-205，这是 205 个真实世界、去识别化的金融页面流的基准。在 FinancePSS-205 上，对于三个开放权重 LLM 中的每一个，RICoT 都匹配或优于具有相同骨干的成对和窗口提示；在 TABME 测试子集上，使用 GLM-5 的 RICoT 达到文档 F1 0.847 和边界 F1 0.915，高于已发布的零样本结果。一名 2B 参数学生接受过较大教师决策（有或没有页面级推理）的训练，在两种模式下的表现相当，并且在 FinancePSS-205 上最强提示模型的 0.05 文档 F1 范围内。",
+      "authors": "Prashant Khatri, Bhavana Malagavalli, Saiful Haq, Niyati Chhaya",
+      "url": "https://huggingface.co/papers/2611.22382",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2611.21925"
+        "paperId": "2611.22382"
       }
     },
     {
-      "id": "2611.21938",
-      "title": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
-      "title_zh": "HubEgo-100K：机器人学习技能工作的野外自我中心视频",
-      "description": "Robot policies trained by imitation generalize poorly outside the environments and objects seen in training. Published data-scaling studies find that generalization grows with the diversity of training environments and objects rather than with more demonstrations per environment. Robot data is costly to collect across many environments, whereas egocentric human video can be recorded in the wild at scale; existing egocentric video, however, mostly shows daily-life activity and contains little skilled work in real workplaces. We present HubEgo-100K, a dataset built for diversity. This version of the paper covers the first release, v1.0: 10,124 hours of 1080p egocentric video with synchronized 100 Hz inertial (IMU) data from one head-mounted phone camera. In v1.0, 12,227 contributors record their own unscripted work in 15,548 environments (each one contributor's own setting of one type, such as their kitchen or workshop) across 11 setting types, 30 work categories, 56 task types and 35 action families, with 83% of hours in workplace settings. The release comprises 72,754 episodes with machine-generated action and language annotations, in LeRobot and MCAP formats under CC BY 4.0. We measure diversity along each axis, show that inside v1.0, with episodes in random order, new contributors and words keep appearing, and relate the measurements to published evidence on six data properties tied to policy performance, including hand visibility and inertial sensing. We also document collection, curation, privacy measures and data format, and provide a datasheet. Later versions of this paper will add benchmarks and cover further releases toward 100,000 hours.",
-      "description_zh": "通过模仿训练的机器人策略在训练中看到的环境和物体之外的泛化能力很差。已发表的数据扩展研究发现，泛化随着训练环境和对象的多样性而增长，而不是随着每个环境的演示次数的增加而增长。在许多环境中收集机器人数据的成本很高，而以自我为中心的人类视频可以在野外大规模录制；然而，现有的以自我为中心的视频大多展示日常生活活动，很少包含真实工作场所的技术工作。我们推出了 HubEgo-100K，这是一个为多样性而构建的数据集。此版本的论文涵盖了第一个版本 v1.0：10,124 小时的 1080p 以自我为中心的视频，以及来自一个头戴式手机摄像头的同步 100 Hz 惯性 (IMU) 数据。在 v1.0 中，12,227 名贡献者在 15,548 个环境（每个贡献者自己的一种类型的环境，例如厨房或车间）中记录了自己的即兴工作，​​涉及 11 个环境类型、30 个工作类别、56 个任务类型和 35 个操作系列，其中 83% 的时间是在工作场所环境中。该版本包含 72,754 集，带有机器生成的动作和语言注释，采用 CC BY 4.0 下的 LeRobot 和 MCAP 格式。我们沿着每个轴测量多样性，表明在 v1.0 中，随着情节的随机顺序，新的贡献者和单词不断出现，并将测量结果与与政策绩效相关的六个数据属性的已发布证据相关联，包括手可见性和惯性感知。我们还记录收集、管理、隐私措施和数据格式，并提供数据表。本文的后续版本将添加基准测试并涵盖 100,000 小时的进一步版本。",
-      "authors": "Javad Amirian, Armin Kiani, Loïc Schaeffer, Tim Sprecher, Mohamed Taha, Karthik Yadati",
-      "url": "https://huggingface.co/papers/2611.21938",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2611.21938"
-      }
-    },
-    {
-      "id": "2611.22563",
-      "title": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
-      "title_zh": "CADMAGEDDON：利用局部推理进行高保真 CAD 重建",
-      "description": "CAD practitioners often work with proprietary parts that they are unwilling to share with external services. For individuals and small companies, bringing this work in-house also requires computational resources they can afford. We introduce CADMAGEDDON, an open-source agent that reconstructs editable CAD from meshes and can run locally on single-GPU systems and current-generation laptops. The method decomposes this complex task into a chain of simple visual decisions about what to construct and what to correct. Geometric tools support precise construction, allowing the agent to focus on visual reasoning. Using the mid-sized Qwen3.8-27B model, CADMAGEDDON outperforms prior approaches, including systems based on frontier models, in reconstruction quality on all the main benchmarks. CADMAGEDDON integrates with FreeCAD, bringing its reconstructions into practitioners' existing CAD workflows. Code: https://github.com/kulibinai/cadmageddon",
-      "description_zh": "CAD 从业人员经常使用他们不愿意与外部服务共享的专有部件。对于个人和小公司来说，将这项工作带到内部还需要他们能够负担得起的计算资源。我们推出 CADMAAGEDDON，这是一种开源代理，可以从网格重建可编辑 CAD，并且可以在单 GPU 系统和当前一代笔记本电脑上本地运行。该方法将这个复杂的任务分解为一系列简单的视觉决策，决定构建什么和纠正什么。几何工具支持精确构建，使代理能够专注于视觉推理。使用中型 Qwen3.8-27B 模型，CADMAGEDDON 在所有主要基准的重建质量上都优于先前的方法，包括基于前沿模型的系统。 CADMAGEDDON 与 FreeCAD 集成，将其重建带入从业者现有的 CAD 工作流程中。代码：https://github.com/kulibinai/cadmageddon",
-      "authors": "Oleg Pavlov, Nikita Gavrilov, Soslan Kabisov, Gennadii Savrasov, Andrey Kuznetsov, Anton Konushin, Dmitrii Zhemchuzhnikov",
-      "url": "https://huggingface.co/papers/2611.22563",
+      "id": "2611.21553",
+      "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+      "title_zh": "BLIP-Live：平衡主动流视频代理的及时性和触发精度",
+      "description": "Streaming video understanding is becoming increasingly important for real-world interactive systems. Such systems must be proactive for natural and useful human interaction: they should respond as soon as sufficient evidence becomes available while avoiding premature, redundant, or incorrect responses. We present BLIP-Live, a framework unifying data, metrics, harness, and training around a shared formulation of proactivity as effective causal response decisions balancing the two competing objectives of responding vs silence. First, we construct BLIP-Live-780K dataset containing human annotations of proactive response content and timing, which defines this desired behavior. We then propose PAUC-F, a metric to effectively measure our desired proactive behavior. PAUC-F combines existing response timeliness metrics with firing precision to reward early useful responses without rewarding excessive firing. With our desired behavior defined and measurable, we finally investigate model-agnostic inference harnesses that draw out proactive streaming capabilities of offline vision language models (VLMs), together with training pipelines that learn to further improve their proactive responsiveness. Across both settings, we find that combinations of sliding visual windows, online interaction memory, and structured response outputs consistently yield strongest proactive performance. Our experiments result in two models, with our BLIP-Live-Qwen model achieving state-of-the-art performance across four proactive streaming benchmarks, with gains up to 44% over baselines and outperforming multiple closed API models. Our code and data will be released publicly.",
+      "description_zh": "流媒体视频理解对于现实世界的交互系统变得越来越重要。此类系统必须主动进行自然且有用的人类交互：一旦有足够的证据，它们就应立即做出响应，同时避免过早、冗余或不正确的响应。我们提出了 BLIP-Live，这是一个围绕主动性的共享表述统一数据、指标、利用和培训的框架，作为有效的因果响应决策，平衡响应与沉默这两个相互竞争的目标。首先，我们构建 BLIP-Live-780K 数据集，其中包含主动响应内容和时间的人工注释，它定义了这种期望的行为。然后，我们提出 PAUC-F，这是一个有效衡量我们期望的主动行为的指标。 PAUC-F 将现有的响应及时性指标与发射精度相结合，以奖励早期有用的响应，而不奖励过度发射。通过定义和测量我们期望的行为，我们最终研究了与模型无关的推理工具，这些工具可以提取离线视觉语言模型（VLM）的主动流功能，以及学习进一步提高其主动响应能力的训练管道。在这两种设置中，我们发现滑动视觉窗口、在线交互记忆和结构化响应输出的组合始终能产生最强的主动性能。我们的实验产生了两个模型，其中我们的 BLIP-Live-Qwen 模型在四个主动流媒体基准测试中实现了最先进的性能，比基准提升高达 44%，并且优于多个封闭 API 模型。我们的代码和数据将公开发布。",
+      "authors": "Kanchana Ranasinghe, Honglu Zhou, Dominick Reilly, Le Xue, Shusheng Yang, Juan Carlos Niebles, Silvio Savarese, Ran Xu",
+      "url": "https://huggingface.co/papers/2611.21553",
       "score": 9,
       "meta": {
         "source": "huggingface",
         "upvotes": "9",
-        "paperId": "2611.22563"
+        "paperId": "2611.21553"
       }
     },
     {
-      "id": "2611.22565",
-      "title": "MillBill: A Machining Agent with Geometric Feedback",
-      "title_zh": "MillBill：具有几何反馈的加工代理",
-      "description": "Turning a CAD model into a machining program requires both process knowledge and geometric precision. Language models can generate such workflows by writing geometry and toolpath code for each part, but this makes numerical execution part of the model's task. We introduce MillBill, an agent that separates machining decisions from their geometric execution and verification. Given a boundary-representation part, stock, and material, a locally hosted, mid-sized open model proposes operations and cutting parameters for indexed three-axis machining. A geometric harness generates toolpaths, simulates material removal, and returns feedback for plan refinement. Setup planning accounts for what the available cutters can physically reach, rather than visibility alone. We evaluate the resulting programs by the fraction of the target surface area within the specified tolerance after simulated machining. With Qwen3.8-27B, MillBill outperforms frontier-model approaches that construct their own geometry and toolpath workflows on the evaluated machining tasks. Code: https://github.com/kulibinai/millbill",
-      "description_zh": "将 CAD 模型转变为加工程序需要工艺知识和几何精度。语言模型可以通过为每个零件编写几何图形和刀具路径代码来生成此类工作流程，但这使得数值执行成为模型任务的一部分。我们介绍 MillBill，这是一种将加工决策与其几何执行和验证分开的代理。给定边界表示零件、库存和材料，本地托管的中型开放模型会为索引三轴加工提出操作和切削参数。几何线束生成刀具路径，模拟材料去除，并返回反馈以进行计划细化。设置规划考虑了可用刀具可以实际到达的范围，而不仅仅是可见性。我们通过模拟加工后指定公差内的目标表面积分数来评估生成的程序。借助 Qwen3.8-27B，MillBill 的性能优于前沿模型方法，后者根据评估的加工任务构建自己的几何形状和刀具路径工作流程。代码：https://github.com/kulibinai/millbill",
-      "authors": "Gennadii Savrasov, Artem Slavin, Soslan Kabisov, Andrey Kuznetsov, Anton Konushin, Dmitrii Zhemchuzhnikov",
-      "url": "https://huggingface.co/papers/2611.22565",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.22565"
-      }
-    },
-    {
-      "id": "2611.21382",
-      "title": "VisualArtifactSpec 1.0: Evaluating Visual Artifacts under Task Specifications",
-      "title_zh": "VisualArtifactSpec 1.0：评估任务规范下的视觉伪影",
-      "description": "Visual artifact tasks test agents' ability to translate task specifications and source materials into outputs that meet practical needs. Evaluation across artifact families helps distinguish broadly applicable authoring capabilities from strengths confined to a particular medium. We introduce VisualArtifactSpec 1.0 (VAS), a benchmark of 211 creation and modification tasks spanning presentations, static graphics, animations and videos, and web interfaces. Each task specifies authoring objectives, source materials, constraints, and deliverables. Existing benchmarks provide limited support for systematically evaluating how authoring choices suit different audiences, purposes, and media across artifact families. VAS evaluates two aspects separately: Task Fulfillment verifies explicit requirements and applicable functionality, while Artifact Performance assesses Content, Organization, Visuals, and Delivery. Task-specific rating anchors instantiate shared criteria for the intended audience, purpose, and medium, with judgments grounded in source materials and artifact inspection records. We evaluate nine model-harness configurations on all 211 tasks. Overall scores range from 42.12 to 70.52, with Artifact Performance accounting for 73.4% of the gap between the highest- and lowest-scoring configurations.",
-      "description_zh": "视觉工件任务测试代理将任务规范和源材料转化为满足实际需求的输出的能力。跨工件系列的评估有助于区分广泛适用的创作能力和仅限于特定媒体的优势。我们推出了 VisualArtifactSpec 1.0 (VAS)，这是涵盖演示文稿、静态图形、动画和视频以及 Web 界面的 211 个创建和修改任务的基准。每项任务都指定创作目标、源材料、限制和可交付成果。现有的基准对于系统地评估创作选择如何适合跨工件系列的不同受众、目的和媒体提供了有限的支持。 VAS 分别评估两个方面：任务完成验证明确的要求和适用的功能，而工件性能评估内容、组织、视觉效果和交付。特定任务的评级锚点实例化了目标受众、目的和媒介的共享标准，并根据源材料和工件检查记录做出判断。我们针对所有 211 项任务评估了 9 种模型线束配置。总体得分范围为 42.12 至 70.52，其中工件性能占最高和最低得分配置之间差距的 73.4%。",
-      "authors": "Shuyi Ouyang, Xiaojun Tang, Zijian Zou, Xintong Zhang, Mingli Song, Guannan Zhang, Hongwei Xue",
-      "url": "https://huggingface.co/papers/2611.21382",
-      "score": 6,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "6",
-        "paperId": "2611.21382"
-      }
-    },
-    {
-      "id": "2611.21421",
-      "title": "AuXSpec: Learning to Autoformalize Program Specifications via Executable Postconditions",
-      "title_zh": "AuXSpec：学习通过可执行后置条件自动形式化程序规范",
-      "description": "Formal specifications define intended program behavior and underpin verification, but writing them in theorem provers such as Lean is slow and expertise-intensive, making specification a major bottleneck to scaling formally correct code. Autoformalization from natural-language problems is promising, yet training specification models requires scalable feedback on whether generated specifications capture intended behavior. Prior approaches obtain this feedback through explicit proofs or separately implemented code with formal correspondence proofs, both expensive. We introduce AuXSpec, a Lean framework that pairs declarative postconditions with executable counterparts, obtained through type class resolution when possible and otherwise defined separately with an equivalence proof. Test cases can then evaluate declarative specifications by execution, letting us use agreement as a reinforcement-learning reward. Using AuXSpec, we synthesize 3,037 LeetCode problems and expand training to 19.5K samples through expert iteration on Codeforces. Experiments show that training Qwen3.5-9B and Qwen3.8-27B with the execution-based reward improves SpecGen pass@4 on AuXSpec-Test 0.7% to 82.7% and 14.3% to 84.3%, and the 27B model outperforms all frontier models. On the out-of-domain Verina benchmark with its original prompts, both models improve 7.0% to 90.5% and 21.9% to 90.5% and surpass VeriSpecGen-30B-A3B, the prior state of the art among open-source specification models, on pass@1 (theirs 47.6% vs. ours 73.7% and 84.5%) and pass@4 (theirs 63.9% at pass@10 vs. ours 90.5%). We release the weights of the trained 9B and 27B models and the 3,037 problems with test cases, including the 300-problem AuXSpec-Test benchmark with expert review and correctness proofs for future evaluation. Models and data: https://huggingface.co/collections/eth-algopt/auxspec. Website: https://auxspec.org",
-      "description_zh": "正式规范定义了预期的程序行为并支撑验证，但在 Lean 等定理证明器中编写它们速度缓慢且需要大量专业知识，这使得规范成为扩展正式正确代码的主要瓶颈。自然语言问题的自动形式化前景广阔，但训练规范模型需要关于生成的规范是否捕获预期行为的可扩展反馈。先前的方法通过显式证明或带有正式对应证明的单独实现的代码来获取此反馈，这两种方法都很昂贵。我们引入了 AuXSpec，这是一个精益框架，它将声明性后置条件与可执行对应物配对，在可能的情况下通过类型类解析获得，否则通过等价证明单独定义。然后，测试用例可以通过执行来评估声明性规范，让我们使用协议作为强化学习奖励。使用 AuXSpec，我们综合了 3,037 个 LeetCode 问题，并通过 Codeforces 上的专家迭代将训练扩展到 19.5K 个样本。实验表明，使用基于执行的奖励训练 Qwen3.5-9B 和 Qwen3.8-27B 将 AuXSpec-Test 上的 SpecGen pass@4 提高了 0.7% 至 82.7% 和 14.3% 至 84.3%，并且 27B 模型优于所有前沿模型。在具有原始提示的域外 Verina 基准测试中，两个模型在 pass@1（他们的 47.6% 对比我们的 73.7% 和 84.5%）和 pass@4（他们的pass@10 时为 63.9%，而我们的为 90.5%）。我们发布了经过训练的 9B 和 27B 模型的权重以及 3,037 个问题的测试用例，包括 300 个问题的 AuXSpec-Test 基准，并提供专家评审和正确性证明，以供未来评估。模型和数据：https://huggingface.co/collections/eth-algopt/auxspec。网站：https://auxspec.org",
-      "authors": "Haocheng Wang, Weixuan Yuan, Florian Hübler, Yinya Huang, Zhijiang Guo, Sorrachai Yingchareonthawornchai, Rasmus Kyng",
-      "url": "https://huggingface.co/papers/2611.21421",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.21421"
-      }
-    },
-    {
-      "id": "2611.19857",
-      "title": "PanDWM: Panoramic 4D Driving World Models",
-      "title_zh": "PanDWM：全景4D驾驶世界模型",
-      "description": "Driving world models usually generate videos from six pinhole cameras with separate optical centres and small overlaps, and must learn to keep these views consistent. We present PanDWM, which stitches them into one 360^circ panoramic band. Camera boundaries then fall inside one image, so keeping the views consistent means keeping the image continuous, and each pixel still records its camera ray. Conditioned on layouts, a causal student generates the band window by window in four steps; it is distilled from a causal teacher and trained on its own rollouts. A feed-forward decoder lifts each frame along these rays into 3D Gaussians, and static Gaussians from neighbouring frames complete them into 4D scenes. On nuScenes, scored in one stitched 360^circ view, PanDWM has lower FID and FVD than the multi-camera baselines at 8-46times their speed, and keeps its 50-step teacher's FID while lowering FVD by 22-25%.",
-      "description_zh": "驾驶世界模型通常从六个具有独立光学中心和小重叠的针孔摄像机生成视频，并且必须学会保持这些视图一致。我们提出了 PanDWM，它将它们缝合成一个 360^circ 全景带。然后，相机边界落在一张图像内，因此保持视图一致意味着保持图像连续，并且每个像素仍然记录其相机光线。以布局为条件，因果学生通过四个步骤逐个窗口地生成带；它是从一位因果老师那里提炼出来的，并根据自己的部署进行训练。前馈解码器将沿着这些光线的每一帧提升为 3D 高斯，而相邻帧的静态高斯将它们补充为 4D 场景。在 nuScenes 上，在一个缝合的 360^circ 视图中得分，PanDWM 的 FID 和 FVD 比多摄像机基线低，速度是其速度的 8-46 倍，并保持其 50 步教师的 FID，同时将 FVD 降低 22-25%。",
-      "authors": "Jiajun Sun, Zeyu Zhang, Zeyu Ren, Guangfeng Jiang, Yang Zhao, Hao Tang",
-      "url": "https://huggingface.co/papers/2611.19857",
-      "score": 1,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "1",
-        "paperId": "2611.19857"
-      }
-    },
-    {
-      "id": "2611.17048",
-      "title": "Beyond Answering: Learning to Speak First and Act in Streaming Video",
-      "title_zh": "超越回答：在流媒体视频中学会先说话、后行动",
-      "description": "Most AI assistants respond only when prompted, remaining silent even when events in the video stream offer meaningful opportunities for conversation. To move beyond purely user-driven interaction, we present AURA 2.0, a streaming video large language model that introduces three core upgrades to AURA. The key advance is Model-Initiated Conversation (MIC), which enables the model to identify topics worth discussing in the evolving visual stream and initiate conversations at appropriate moments without a user query. Stream-Aware Tool Calling (SATC) lets the model act on what it sees by invoking external tools using the current visual and conversational context and incorporating returned information into the ongoing interaction. Interactive Visual Grounding (IVG) supports visual grounding in both user inputs and model outputs. The model can identify objects marked by users on video frames and produce frame-aligned bounding boxes to link its responses to specific objects and regions. To develop these capabilities, we construct a dedicated streaming interaction dataset and adopt a three-stage training scheme to integrate the new behaviors with AURA's existing streaming interaction abilities. We further incorporate Long-Horizon Interaction Memory (LHIM) to maintain contextual continuity over extended video streams. Evaluations on public streaming benchmarks show that AURA 2.0 achieves leading performance among open-source streaming models, while targeted evaluations further validate its new interaction capabilities.",
-      "description_zh": "大多数人工智能助手仅在收到提示时才会做出反应，即使视频流中的事件提供了有意义的对话机会，也保持沉默。为了超越纯粹的用户驱动交互，我们推出了 AURA 2.0，这是一种流视频大语言模型，为 AURA 引入了三个核心升级。关键的进步是模型发起的对话（MIC），它使模型能够识别不断发展的视觉流中值得讨论的主题，并在适当的时刻发起对话，而无需用户查询。流感知工具调用 (SATC) 让模型通过使用当前的视觉和对话上下文调用外部工具并将返回的信息合并到正在进行的交互中，根据所看到的内容采取行动。交互式视觉基础 (IVG) 支持用户输入和模型输出中的视觉基础。该模型可以识别用户在视频帧上标记的对象，并生成帧对齐的边界框，以将其响应链接到特定对象和区域。为了开发这些能力，我们构建了专用的流媒体交互数据集，并采用三阶段训练方案将新行为与AURA现有的流媒体交互能力相结合。我们进一步结合了长视野交互记忆（LHIM）来保持扩展视频流的上下文连续性。公共流媒体基准评测表明，AURA 2.0在开源流媒体模型中取得了领先的性能，而有针对性的评估进一步验证了其新的交互能力。",
-      "authors": "Shuhan Li, Huankang Guan, Xintong Guo, Yang Bo, Yuyang He, Dunyuan Xu, Jingyan Chen, Fang Liu, Tsz Kin Wan, Jinpeng Chen, Zhenqi He, Yuxuan Hu, Wenbo Li, Han Gao, Qijun Li, Long Chen, Hongsheng Li, Rui Liu",
-      "url": "https://huggingface.co/papers/2611.17048",
-      "score": 33,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "33",
-        "paperId": "2611.17048"
-      }
-    },
-    {
-      "id": "2611.15671",
-      "title": "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models",
-      "title_zh": "量化比较的本底噪声：引擎、重启、批次和内核漂移，在两个决策模型中针对 8 位和 4 位效应进行测量",
-      "description": "A quantized model is usually judged by comparing it with its BF16 original, but that comparison changes more than the weights. It often changes the serving engine, it always runs on a different server instance, it may change how requests are batched, and on some stacks the library selects a different kernel depending only on which packages import. We measure each of these sources on the same 2,400 public decisions for two of Cloudflare's decision models, Clef-flash (9B) and Clef (27B), on an NVIDIA GB10, and state every quantization effect as the excess over them. Sources that are not quantization move between 0 and 0.92% of decisions. llama.cpp restarts are bit-identical on every record for both models. vLLM restarts flip 0, 5 and 20 decisions at BF16, FP8 and NVFP4 on Clef-flash and 4, 0 and 22 on Clef; a third instance of Clef's quantized builds (exploratory) leaves FP8 at 0 and puts NVFP4 at 4 to 22, depending on which two instances are compared. An engine change at BF16 flips 6 to 16, a batch-size change 8 to 15, and the Gated DeltaNet kernel transformers selects unasked 10 to 14. Quantization inside one engine moves more: for Clef-flash and Clef, 0.88% and 1.04% at Q8_0, 2.12% and 1.62% at FP8, 5.79% and 3.50% at Q4_K_M, and 5.79% and 5.67% at NVFP4. On both models, every 4-bit interval excludes every non-quantization source. Two of our five pre-registered predictions failed, and the same two fail when the tests are rerun on the 27B: FP8 is not inside restart noise, and changing engine moves fewer decisions than 8-bit quantization does. Accuracy hides most of this. Over the full 31,275 public questions, Clef's Q4_K_M build moves accuracy by a net six questions (-0.02 points [-0.20, +0.16]) while 436 of its decisions get worse (exploratory), and NVFP4 costs Clef-flash 0.95 points and Clef 0.65. We release the code, quantization recipes, per-record outputs and the pre-registration.",
-      "description_zh": "通常通过将量化模型与 BF16 原始模型进行比较来判断量化模型，但这种比较的变化大于权重的变化。它经常更改服务引擎，它总是在不同的服务器实例上运行，它可能会更改请求的批处理方式，并且在某些堆栈上，库仅根据导入的包选择不同的内核。我们在 NVIDIA GB10 上对 Cloudflare 的两个决策模型 Clef-flash (9B) 和 Clef (27B) 的相同 2,400 个公共决策来测量这些来源中的每一个，并将每个量化效果表示为超出它们的部分。未量化的源在决策的 0 到 0.92% 之间移动。两个模型的每条记录上的 llama.cpp 重新启动都是相同的。 vLLM 在 Clef-flash 上的 BF16、FP8 和 NVFP4 以及 Clef 上的 4、0 和 22 处重新启动翻转 0、5 和 20 决策； Clef 量化构建的第三个实例（探索性）将 FP8 保留为 0，并将 NVFP4 置于 4 到 22，具体取决于比较的是哪两个实例。 BF16 的引擎更改翻转 6 到 16，批量大小更改 8 到 15，门控 DeltaNet 内核变换器选择未请求的 10 到 14。一个引擎内的量化移动更多：对于 Clef-flash 和 Clef，Q8_0 为 0.88% 和 1.04%，FP8 为 2.12% 和 1.62%，FP8 为 5.79% 和Q4_K_M 为 3.50%，NVFP4 为 5.79% 和 5.67%。在这两种模型上，每个 4 位间隔都排除所有非量化源。我们的五个预先注册的预测中有两个失败了，当在 27B 上重新运行测试时，同样的两个失败了：FP8 不在重启噪声内，并且更改引擎移动的决策比 8 位量化要少。准确性隐藏了大部分内容。在全部 31,275 个公共问题中，Clef 的 Q4_K_M 构建将准确性净提高了 6 个问题（-0.02 分 [-0.20，+0.16]），而 436 个决策变得更糟（探索性），并且 NVFP4 花费了 Clef-flash 0.95 分和 Clef 0.65 分。我们发布代码、量化配方、每条记录的输出和预注册。",
-      "authors": "Aleks Blagojevich, Trevor Sunderland",
-      "url": "https://huggingface.co/papers/2611.15671",
+      "id": "2611.16933",
+      "title": "Kezek: Splitting Mono Two-Person Conversations into Per-Speaker Tracks for Full-Duplex Dialogue Data",
+      "title_zh": "Kezek：将单声道两人对话拆分为每个讲话者的轨道以获得全双工对话数据",
+      "description": "Full-duplex spoken dialogue models learn turn-taking, overlaps and backchannels from conversations recorded with one channel per speaker, but most available conversational audio is a single mono mix. We present Kezek, a model that turns a mono recording of exactly two people into one track per person with the original length and timing; overlaps and short replies (\"yeah\", \"mm-hm\") stay on the track of the person who said them. Kezek decides who speaks when and who is who once for the whole recording (stage 1: a two-voice activity model guided by a speaker fingerprint trained to be insensitive to phase), and a conditioned time-domain separator only carries out that decision (stage 2), with outputs that always sum to the input. Standard separation metrics miss the failures that matter for dialogue data, so we report short-reply retention, leakage onto the other person's solo, channel swaps and coverage. Against the open pipeline pyannote -> DialogueSidon on the same recordings, Kezek keeps more short replies (0.83 vs. 0.69 on Open Yap test; 0.80 vs. 0.71 over the other's speech on unseen telephone speech from CallHome English), mostly because it returns the whole recording while the external pipeline drops part of it (on the audio both return, reply retention is about the same: 0.859 vs. 0.865 on Open Yap); it also leaks less, swaps channels less often, and runs 4-5 times faster (about 230 hours of audio per GPU-hour). We also report negative results and an ideal-mask ceiling that locate the remaining gap: quiet replies under a louder voice. Code and weights are released under permissive licences.",
+      "description_zh": "全双工口语对话模型从每个扬声器一个通道录制的对话中学习轮流、重叠和反向通道，但大多数可用的对话音频是单一单声道混合。我们推出了 Kezek，这是一种模型，可以将两个人的单声道录音转换为每人一首具有原始长度和时间的曲目；重叠和简短的回复（“是的”，“嗯嗯”）会留在说话者的轨道上。 Kezek 在整个录音过程中决定谁在何时发言以及谁是谁（第 1 阶段：由经过训练对相位不敏感的说话者指纹引导的双声活动模型），而条件时域分离器仅执行该决定（第 2 阶段），输出始终与输入相加。标准分离指标忽略了对对话数据至关重要的故障，因此我们报告简短回复保留、泄漏到其他人的独奏、频道交换和覆盖范围。与相同录音上的开放管道 pyannote -> DialogueSidon 相比，Kezek 保留了更多简短的回复（在 Open Yap 测试中为 0.83 vs. 0.69；在 CallHome English 中未见过的电话语音上为 0.80 vs. 0.71），主要是因为它返回整个录音，而外部管道则丢弃部分录音（在两者都返回的音频上，回复保留率大致相同：0.859 vs. 0.859）。 Open Yap 为 0.865）；它还减少了泄漏，减少了通道交换频率，并且运行速度提高了 4-5 倍（每 GPU 小时约 230 小时的音频）。我们还报告了负面结果和理想掩模上限，以找到剩余的差距：在更大的声音下安静的答复。代码和权重根据许可发布。",
+      "authors": "Bagzhan Karl, Alizhan Karl",
+      "url": "https://huggingface.co/papers/2611.16933",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2611.15671"
+        "paperId": "2611.16933"
+      }
+    },
+    {
+      "id": "2611.23257",
+      "title": "StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software",
+      "title_zh": "StatePortal：用于测试交互式软件中深层状态的代理检查点综合",
+      "description": "Large language models have reduced the effort to generate code for interactive software with graphical user interfaces (GUIs). For such software, a key testing bottleneck is reaching a deep state, one that requires a long interaction history. The cost of reaching it recurs across commits, and the GUI automation that could amortize it assumes a DOM or accessibility tree that self-rendered engines do not expose. We introduce StatePortal, an agent that synthesizes a checkpoint, an artifact that restores that state and can be versioned and replayed, from a natural-language functional test case and read-only access to the target's source code. The checkpoint is restored through a per-application hook that an onboarding agent binds or synthesizes once without hand-written hook code. Because a checkpoint can satisfy state checks while rendering incorrectly, checkpoints are scored by hybrid programmatic-state and visual evaluation: acceptance requires both a programmatic-state oracle and a visual oracle to pass. We calibrate the visual oracle against a blinded cross-VLM reference. We release DeepStateBench, 61 deep-state tasks across 10 interactive applications that span five language families and six rendering stacks, with source sizes from 874 to 7.2M lines. Across three registered models, a GUI agent seeded with synthesized checkpoints completes 10.4% of trials, compared with 0% without seeding under the same pixel action space, while StatePortal, which also delivers the target action through the hook, completes 27.5%. Over 1,361 replays of 112 checkpoints, 98.90% reproduce the original verdict with zero model calls, and the hybrid oracle detects 96.25% (77/80) of controlled visual faults invisible to programmatic-state checks alone. We open-source our code at https://github.com/pzy2000/State_Portal and website at https://stateportal.mineyosemite.chatgpt.site",
+      "description_zh": "大型语言模型减少了为具有图形用户界面 (GUI) 的交互式软件生成代码的工作量。对于此类软件，一个关键的测试瓶颈是达到深层状态，需要很长的交互历史记录。达到它的成本在提交中重复出现，并且可以摊销它的 GUI 自动化假设自渲染引擎不公开的 DOM 或可访问性树。我们引入了 StatePortal，它是一个合成检查点的代理，它是一个可以从自然语言功能测试用例和对目标源代码的只读访问中恢复状态并可以进行版本控制和重放的工件。检查点通过每个应用程序的钩子来恢复，登录代理可以绑定或合成一次该钩子，而无需手写钩子代码。由于检查点可以在渲染不正确时满足状态检查，因此检查点通过混合编程状态和视觉评估进行评分：接受需要编程状态预言机和视觉预言机都通过。我们根据盲法交叉 VLM 参考来校准视觉预言机。我们发布了 DeepStateBench，跨 10 个交互式应用程序的 61 个深度状态任务，涵盖 5 个语言系列和 6 个渲染堆栈，源大小从 874 行到 720 万行。在三个注册模型中，使用合成检查点进行播种的 GUI 代理完成了 10.4% 的试验，而在相同像素动作空间下不进行播种的试验完成率为 0%，而同样通过钩子传递目标动作的 StatePortal 则完成了 27.5%。对 112 个检查点进行超过 1,361 次重播，98.90% 的结果在零模型调用的情况下重现了原始判决，并且混合预言机检测到了 96.25% (77/80) 的受控视觉错误，这些错误对于单独的程序状态检查来说是不可见的。我们在 https://github.com/pzy2000/State_Portal 开源代码，网站 https://stateportal.mineyosemite.chatgpt.site",
+      "authors": "Zhiyuan Peng, Wei Tao, Chenhao Ying, Yuan Luo, Yiwen Guo",
+      "url": "https://huggingface.co/papers/2611.23257",
+      "score": 9,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "9",
+        "paperId": "2611.23257"
+      }
+    },
+    {
+      "id": "2611.23994",
+      "title": "WaveView: The Novel View Is in the Noise",
+      "title_zh": "WaveView：噪音中的新颖视角",
+      "description": "Generative novel view synthesis (NVS) employs a diffusion model to render a static or dynamic scene from a target camera view. Explicit warp methods complete a reprojection of the source with video diffusion models, and implicit methods encode the camera parameters or 3D cues. Both add inference overhead, and the generated layout often drifts from the ground truth. We present WaveView, which injects the warped source into the phase of the initial noise of a pretrained generator. The Dual-Tree Complex Wavelet Packet Transform (DT-CWPT) allows local and anisotropic phase injection. The generator is thus constrained less in disoccluded regions and along the epipolar line. WaveView keeps the architecture and adds negligible overhead. On the DL3DV benchmark, it outperforms all baselines in every overlap bin. In the hardest bin, it gains 0.84 dB PSNR on the covisible region over MetaView, which shares its generator, while running 2.1 times faster. For dynamic NVS, fine-tuning AnyView with the same noise raises its zero-shot PSNR on AnyViewBench from 11.58 to 12.35 dB.",
+      "description_zh": "生成式新颖视图合成 (NVS) 采用扩散模型从目标摄像机视图渲染静态或动态场景。显式扭曲方法使用视频扩散模型完成源的重新投影，隐式方法对相机参数或 3D 线索进行编码。两者都会增加推理开销，并且生成的布局通常会偏离真实情况。我们提出了 WaveView，它将扭曲的源注入到预训练生成器的初始噪声相位中。双树复小波包变换 (DT-CWPT) 允许局部和各向异性相位注入。因此，���生器在未遮挡区域和沿极线的约束较少。 WaveView 保留了架构并增加了可以忽略不计的开销。在 DL3DV 基准测试中，它优于每个重叠箱中的所有基线。在最难的 bin 中，与共享其生成器的 MetaView 相比，它在可见区域上获得了 0.84 dB PSNR，同时运行速度提高了 2.1 倍。对于动态 NVS，使用相同的噪声对 AnyView 进行微调可将其在 AnyViewBench 上的零样本 PSNR 从 11.58 dB 提高到 12.35 dB。",
+      "authors": "Kaiwen Wang, Jan-Hendrik Pauls, Yinzhe Shen, Frank Bieder, Christoph Stiller",
+      "url": "https://huggingface.co/papers/2611.23994",
+      "score": 8,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "8",
+        "paperId": "2611.23994"
+      }
+    },
+    {
+      "id": "2611.24408",
+      "title": "StrideWorld: Benchmarking Scene Rigidity and Action Consistency in Interactive Video World Model",
+      "title_zh": "StrideWorld：交互式视频世界模型中场景刚性和动作一致性的基准测试",
+      "description": "Interactive video world models turn user commands into the exploration of a generated scene, which requires the scene to keep its 3D structure as the camera moves and each action to keep a stable effect. Existing benchmarks mostly evaluate these properties against references fitted to the video under test, either a scene reconstructed from its own frames or a camera trajectory aligned to the command path with a free scale. Such references can absorb gradual scene deformation and changes in pace and route length, so these errors can pass undetected. We therefore introduce StrideWorld, a benchmark whose references are fixed before the motion they judge. It evaluates scene rigidity against the ground-truth geometry of the start view, and action consistency against the stride of each action, the camera motion of one command. The stride is measured on the model's first steps and then used to test the steps that follow, so each model is judged only against its own steps. Its measurements are validated on rendered videos with known camera motion, and its scores agree with human judgments. Across  videos generated by  open models from 140 start views, all models but one deform their scenes as the camera moves, with offsets up to 7.3 times those of a rigid rendering along the same camera path. Most models keep a steady pace when a single action is held. Along composed routes, several models often stall, and most completed routes end away from the positions predicted by each model's own strides. Only the two models that scale commands by the estimated scene depth bring most routes close to these positions. Fine-tuning two models on a few rendered clips removes most of their mid-route stalls. Code, data, and a leaderboard are publicly available at https://github.com/chuangwang123/strideworld.",
+      "description_zh": "交互式视频世界模型将用户命令转化为对生成场景的探索，这要求场景在摄像机移动时保持其3D结构，并且每个动作保持稳定的效果。现有的基准测试主要根据适合测试视频的参考来评估这些属性，无论是从其自己的帧重建的场景，还是与自由缩放的命令路径对齐的相机轨迹。此类参考可以吸收逐渐的场景变形以及步速和路线长度的变化，因此这些错误可能不会被发现。因此，我们引入了 StrideWorld，这是一个基准，其参考在其判断运动之前是固定的。它根据开始视图的真实几何形状评估场景刚性，并根据每个动作的步幅、一个命令的相机运动来评估动作一致性。步幅是在模型的第一步上测量的，然后用于测试接下来的步骤，因此每个模型仅根据自己的步骤进行判断。它的测量结果在具有已知相机运动的渲染视频上进行了验证，并且其分数与人类的判断一致。在开放模型从 140 个起始视图生成的视频中，除一个模型外，所有模型都会随着摄像机移动而变形其场景，其偏移量高达沿同一摄像机路径的刚性渲染的 7.3 倍。大多数模型在执行单个动作时都会保持稳定的步伐。沿着组合路线，多个模型经常停顿，并且大多数完成的路线都远离每个模型自己的步幅预测的位置。只有两个按估计场景深度缩放命令的模型才能使大多数路线接近这些位置。在几个渲染片段上微调两个模型可以消除大部分中途停顿。代码、数据和排行榜可在 https://github.com/chuangwang123/strideworld 上公开获取。",
+      "authors": "Chuang Wang, Rui Nie, Jie Song, Junyuan Gao, Jiahe Song, Haitao Zhou, Boyu Zhu, Xing Li, Jiang Wu, Conghui He, Qian Yu, Weijia Li",
+      "url": "https://huggingface.co/papers/2611.24408",
+      "score": 13,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "13",
+        "paperId": "2611.24408"
+      }
+    },
+    {
+      "id": "2611.24161",
+      "title": "AVTR: Adaptive Multimodal Reasoning with Visual Imagination",
+      "title_zh": "AVTR：具有视觉想象力的自适应多模态推理",
+      "description": "Vision-Language Models increasingly rely on textual reasoning to solve advanced multimodal tasks. Despite its effectiveness, this paradigm faces two fundamental limitations. First, relying on textual reasoning alone can limit perceptual ability in vision-centric questions, where accurate answers depend on interpreting task-relevant visual evidence. Second, applying textual reasoning uniformly across inputs overlooks question-dependent variation in both reasoning modality and depth, often producing verbose and unnecessary traces when little logical inference is required. To this end, we propose Adaptive Visual-Textual Reasoning (AVTR), which introduces visual imagination as a complementary reasoning modality to textual thinking, enabling the model to revisit its visual observations and distill the salient evidence through generative visual reflection. Furthermore, we formulate reasoning-modality selection as a learned routing problem, allowing a single policy to adaptively harness the complementary strengths of visual reflection and textual reasoning in response to the perceptual and inferential demands of the input. Across 16 benchmarks, AVTR improves the average score by 4.5 points over Qwen3.5 baseline, while reducing inference latency by 33\\%. It also scales effectively into a smaller size backbone, outperforming the evaluated 2B-scale baselines.",
+      "description_zh": "视觉语言模型越来越依赖文本推理来解决高级多模态任务。尽管它很有效，但这种范式面临两个基本限制。首先，仅依靠文本推理可能会限制以视觉为中心的问题的感知能力，其中准确的答案取决于对与任务相关的视觉证据的解释。其次，在输入中统一应用文本推理会忽略推理模式和深度上与问题相关的变化，当几乎不需要逻辑推理时，通常会产生冗长和不必要的痕迹。为此，我们提出了自适应视觉文本推理（AVTR），它将视觉想象作为文本思维的补充���理方式，使模型能够重新审视其视觉观察并通过生成视觉反射提炼显着的证据。此外，我们将推理模态选择制定为学习的路由问题，允许单个策略自适应地利用视觉反射和文本推理的互补优势来响应输入的感知和推理需求。在 16 个基准测试中，AVTR 的平均得分比 Qwen3.5 基线提高了 4.5 分，同时将推理延迟降低了 33%。它还可以有效地扩展到较小尺寸的骨干网，其性能优于评估的 2B 规模基线。",
+      "authors": "Xiaoqian Shen, Yunyang Xiong, Changsheng Zhao, Saksham Suri, Chong Zhou, Zechun Liu, Zhipeng Cai, Zhuang Liu, Qi Qian, Wei Wen, Hongyu Xu, Hanxian Huang, Ernie Chang, Yanbei Chen, Vikas Chandra, Raghuraman Krishnamoorthi, Mohamed Elhoseiny, Lemeng Wu",
+      "url": "https://huggingface.co/papers/2611.24161",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.24161"
+      }
+    },
+    {
+      "id": "2611.17600",
+      "title": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+      "title_zh": "LightTAR：用于多模态表格学习的轻量且快速的目标感知表示",
+      "description": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial least squares (PLS). We evaluate LightTAR with 21 tabular models, including tree ensembles, neural networks, and tabular foundation models. LightTAR improves average predictive performance for all models and, averaged across models, improves prediction on almost every MulTaBench dataset. These gains come with a small increase in total runtime relative to PCA representations. LightTAR integrates directly into existing encoding pipelines, improving tabular learners' predictive performance without modifying the encoder or the learner.",
+      "description_zh": "多模态表格学习涉及将结构化数字和分类特征与非结构化文本和图像相结合的表格的分类和回归。这些非结构化字段通常由通过主成分分析 (PCA) 减少的预训练编码器嵌入来表示。这种减少优先考虑输入方差，但可能会忽略与预测目标相关的信息。我们引入了 LightTAR，这是一种简单、廉价的方法，可以根据预测任务进行降维。 LightTAR 通过使用正则化偏最小二乘 (PLS) 从最终和中间编码器层联合提取的一些目标感知特征来增强标准 PCA 表示。我们使用 21 个表格模型评估 LightTAR，包括树集成、神经网络和表格基础模型。 LightTAR 提高了所有模型的平均预测性能，并且跨模型进行平均，提高了几乎每个 MulTaBench 数据集的预测。相对于 PCA 表示，这些收益伴随着总运行时间的小幅增加。 LightTAR 直接集成到现有的编码管道中，提高表格学习器的预测性能，而无需修改编码器或学习器。",
+      "authors": "Eilam Shapira, Alan Arazi, Shoham Grunblat, Roi Reichart",
+      "url": "https://huggingface.co/papers/2611.17600",
+      "score": 20,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "20",
+        "paperId": "2611.17600"
+      }
+    },
+    {
+      "id": "2611.23499",
+      "title": "BiCAT: Bimanual Coordination Action Tokenization",
+      "title_zh": "BiCAT：双手协调动作标记化",
+      "description": "Autoregressive vision-language-action (VLA) models predict discrete action tokens with the next-token objective of their vision-language backbone, so the action tokenizer defines the interface between the policy and the robot. In bimanual manipulation, the two arms share a repertoire of movements yet coordinate through complementary roles, and an action representation should capture both. However, most existing tokenizers encode both arms as a single concatenated action vector, in which motion patterns common to the two arms are not shared and cross-arm dependencies remain entangled within each token. The policy must therefore learn both aspects implicitly. We propose Bimanual Coordination Action Tokenization (BiCAT), which shares one motion representation across arms while conditioning each arm's tokens on its partner through symmetric cross-arm attention and a joint decoder. The policy then predicts all tokens of each arm in parallel, generating the left arm first and the right arm conditioned on it. Across ten RoboTwin 2.0 tasks and six real-world tasks on three embodiments, BiCAT achieves the highest success among the compared tokenizers. In simulation, it improves mean success by 17.6 percentage points over the strongest of eight baselines, with the largest gains on tasks that require close coordination between the arms, while requiring only 40.5 ms per action chunk. These results suggest that the action tokenizer is a natural place to model bimanual coordination.",
+      "description_zh": "自回归视觉语言动作（VLA）模型使用其视觉语言主干的下一个令牌目标来预测离散动作令牌，因此动作令牌生成器定义了策略和机器人之间的接口。在双手操纵中，两只手臂共享一系列动作，但通过互补的角色进行协调，并且动作表示应该捕获这两种动作。然而，大多数现有的分词器将两个臂编码为单个串联动作向量，其中两个臂共同的运动模式不共享，并且跨臂依赖性仍然纠缠在每个令牌内。因此，政策必须隐含地了解这两个方面。我们提出了双手协调动作标记化（BiCAT），它在手臂之间共享一种运动表示，同时通过对称的交叉手臂注意力和联合解码器将每个手臂的标记调节到其伙伴身上。然后，该策略并行预测每个臂的所有令牌，首先生成左臂，并以其为条件生成右臂。在三个实施例的十个 RoboTwin 2.0 任务和六个现实世界任务中，BiCAT 在比较的分词器中取得了最高的成功。在模拟中，与八个基线中最强的基线相比，它的平均成功率提高了 17.6 个百分点，在需要手臂之间密切协调的任务上收益最大，而每个动作块只需要 40.5 毫秒。这些结果表明动作标记器是模拟双手协调的自然场所。",
+      "authors": "Xuanwei Liu, Guipu Cao, Zhongyi Luo, Jiafei Duan",
+      "url": "https://huggingface.co/papers/2611.23499",
+      "score": 3,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "3",
+        "paperId": "2611.23499"
+      }
+    },
+    {
+      "id": "2611.23236",
+      "title": "PGPO: Prototype-Guided Progressive Obfuscation for Privacy-Preserving LLM-Enhanced Recommendation",
+      "title_zh": "PGPO：用于保护隐私的 LLM 增强推荐的原型引导渐进式混淆",
+      "description": "LLM-enhanced recommender systems encode item side information into semantic embeddings, but these embeddings may leak sensitive textual attributes through inversion attacks. Existing input-side defenses rely on trusted collection or local token perturbation, often disrupting the inter-item semantic topology needed for recommendation. To address it, we introduce relational fidelity as the key objective, requiring semantic shift for privacy while preserving relative item relations for utility. Based on this principle, we propose prototype-guided progressive obfuscation (PGPO), which learns topology-aware obfuscation anchors for high-influence prototype words and propagates them through a static semantic graph. PGPO is optimized with GRPO using individual dissimilarity, structural consistency, and semantic constraint rewards. Experiments on two benchmarks show strong inversion defense with near-upper-bound recommendation performance. The code is available at https://github.com/Shengxiang-Lin/PGPO.",
+      "description_zh": "LLM 增强的推荐系统将项目辅助信息编码为语义嵌入，但这些嵌入可能会通过反转攻击泄漏敏感的文本属性。现有的输入端防御依赖于可信集合或本地令牌扰动，通常会破坏推荐所需的项目间语义拓扑。为了解决这个问题，我们引入关系保真度作为关键目标，要求隐私的语义转移，同时保留相对项目关系的实用性。基于这一原则，我们提出了原型引导渐进混淆（PGPO），它学习高影响力原型词的拓扑感知混淆锚，并通过静态语义图传播它们。 PGPO 使用个体差异性、结构一致性和语义约束奖励与 GRPO 进行优化。两个基准测试的实验显示出强大的反转防御和接近上限的推荐性能。代码可在 https://github.com/Shengxiang-Lin/PGPO 获取。",
+      "authors": "Shengxiang Lin, Jiajie Su, Pengyang Zhou, Xiang Chen, Xiaolin Zheng, Feng Tian, Chaochao Chen",
+      "url": "https://huggingface.co/papers/2611.23236",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.23236"
       }
     }
   ]
