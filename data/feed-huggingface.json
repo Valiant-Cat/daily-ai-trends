@@ -1,20 +1,50 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-21T00:56:07.569Z",
+  "updatedAt": "2026-11-21T23:54:45.222Z",
   "count": 15,
   "items": [
+    {
+      "id": "2611.26232",
+      "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+      "title_zh": "具有局部因果父发现的时间序列结构学习",
+      "description": "Learning and inference on time series can pose significant statistical challenges, including autocorrelated observations, distribution shift over time, and the curse of dimensionality. These challenges complicate the practical application of causal discovery algorithms, which already suffer from high computational and sample complexity in the general case. To mitigate these issues, this work introduces Iterative Temporal Parent Discovery (ITPD): a sound and complete constraint-based procedure for causal structure learning on multivariate time series with causal nonstationarity. ITPD takes a local-to-global learning approach that discovers the global graph by sequentially discovering the parent set for each variable. ITPD exploits temporal structural priors, graph partitioning, and the local Markov condition to swap higher-order conditional independence tests for lower-order alternatives. With an exact oracle, ITPD performed the least number of tests and used the smallest average conditioning set sizes relative to baselines. In benchmarking simulations, ITPD sat on the Pareto frontier with respect to F1 and wall-clock time and was faster than baselines on large graphs (geq 1000 nodes). For graphs with 2000 nodes, ITPD ran 2.3times, 9.1times, and 40.9times faster than iterative IAMB, DF-PC, and PCMCI, respectively.",
+      "description_zh": "时间序列的学习和推理可能会带来重大的统计挑战，包括自相关观察、分布随时间的变化以及维数灾难。这些挑战使因果发现算法的实际应用变得复杂，在一般情况下，因果发现算法已经受到高计算和样本复杂性的影响。为了缓解这些问题，这项工作引入了迭代时间父发现（ITPD）：一种健全且完整的基于约束的程序，用于对具有因果非平稳性的多元时间序列进行因果结构学习。 ITPD 采用从局部到全局的学习方法，通过顺序发现每个变量的父集来发现全局图。 ITPD 利用时间结构先验、图分区和局部马尔可夫条件将高阶条件独立性测试替换为低阶替代方案。通过精确预言，ITPD 执行了最少数量的测试，并使用了相对于基线的最小平均条件集大小。在基准测试模拟中，ITPD 就 F1 和挂钟时间而言位于帕累托前沿，并且比大型图（geq 1000 个节点）上的基线更快。对于具有 2000 个节点的图，ITPD 的运行速度分别比迭代 IAMB、DF-PC 和 PCMCI 快 2.3 倍、9.1 倍和 40.9 倍。",
+      "authors": "Jacqueline Maasch, Shu Wan, Hank Zhu, Huan Liu, Zhiguang Wang",
+      "url": "https://huggingface.co/papers/2611.26232",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.26232"
+      }
+    },
+    {
+      "id": "2611.26239",
+      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "title_zh": "教授视觉-语言-动作模型如何安全停止",
+      "description": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across LIBERO and BadLIBERO tasks evaluate prohibited completion, physical incidents, and retained-task performance. On the evaluated LIBERO tasks, SAFI reduces aggregate target success after takeover to 1.3\\%, with no recorded physical incidents or action saturation, while preserving high retained-task success.",
+      "description_zh": "视觉-语言-动作（VLA）模型使机器人能够通过视觉观察和语言指令执行各种任务。虽然之前的工作已经探索了任务抑制和拒绝，但一旦执行开始就停止被禁止的行为并控制由此产生的身体反应仍然具有挑战性。我们的评估表明，从初始状态抑制任务的策略在执行中途接管时仍然可以完成该任务。即使任务尚未完成，机器人也可能会掉落所持有的物体，从而使未完成成为不完整的安全措施。为了应对这些挑战，我们针对持有提供适当替代响应的任务引入了状态感知回退模仿（SAFI）。 SAFI 包括两个阶段，(1) 后备目标构建，在整个禁止任务演示过程中分配固定臂指令和一致的抓手目标；(2) 联合政策适应，在保留任务的原始行动中学习这些目标。这种监督教导在中间执行状态下的明确的替代响应，同时保持机器人的其他技能。使用 OpenVLA-OFT 在 LIBERO 和 BadLIBERO 任务中进行广泛的实验，评估禁止完成、物理事件和保留任务性能。在评估的 LIBERO 任务中，SAFI 将接管后的总体目标成功率降低至 1.3%，没有记录物理事件或行动饱和度，同时保持较高的保留任务成功率。",
+      "authors": "Zheyuan Liu, Chuhan Wang, Jinduo Guo, Yue Huang, Xiangchi Yuan, Ningshan Ma, Meng Jiang",
+      "url": "https://huggingface.co/papers/2611.26239",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2611.26239"
+      }
+    },
     {
       "id": "2611.25604",
       "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
       "title_zh": "PAD：自动驾驶的政策感知数据评估",
       "description": "End-to-end autonomous driving increasingly depends on scaling training demonstrations, yet data growth does not guarantee proportional gains. However, additional data do not guarantee better policies: a demonstration that benefits one planner may be redundant or harmful to another. Existing curation methods typically infer data value from intrinsic sample properties or training-dependent proxies that do not measure downstream policy utility. To address this, we introduce Policy-Aware Data Valuation (PAD), a framework that assigns each candidate demonstration a utility specific to the target driving policy. PAD combines scene-level calibration feedback with projected policy gradients and a regularized approximation of local training geometry, producing scalable influence-based values for the policy. A controlled group-removal study establishes the directional fidelity of these values, while cross-planner analysis shows that the same candidate pool induces markedly different rankings across planner families. On DiffusionDrive, PAD improves EPDMS over real-only training by 3.5 points on NavTest and 5.0 points on NavHard. Policy-specific curation consistently outperforms real-only and full-pool training across diffusion-, regression-, and flow-matching-based planners while substantially reducing scene-level regressions. These results establish policy-aware data valuation as a basis for replacing indiscriminate data accumulation with targeted policy improvement, enabling more efficient and reliable scaling of autonomous-driving systems.",
-      "description_zh": "端到端自动驾驶越来越依赖于规模化训练演示，但数据增长并不能保证比例收益。然而，额外的数据并不能保证更好的政策：对一个规划者有利的论证可能对另一个规划者来说是多余的或有害的。现有的管理方法通常从内在样本属性或依赖于训练的代理来推断数据价值，而这些代理不衡量下游政策效用。为了解决这个问题，我们引入了策略感知数据评估（PAD），这是一个框架，为每个候选演示分配一个特定于目标驱动策略的实用程序。 PAD 将场景级校准反馈与投影策略梯度和局部训练几何的正则化近似相结合，为策略生成可扩展的基于影响的值。一项受控的组去除研究确定了这些值的方向保真度，而跨规划者分析表明，相同的候选池会在规划者家族之间产生明显不同的排名。在 DiffusionDrive 上，PAD 将 EPDMS 与纯真实训练相比，在 NavTest 上提高了 3.5 点，在 NavHard 上提高了 5.0 点。在基于扩散、回归和流匹配的规划器中，特定于策略的管理始终优于纯真实和全池训练，同时大大减少了场景级回归。这些结果建立了政策感知数据评估的基础，以有针对性的政策改进取代不加区别的数据积累，从而实现更高效、更可靠的自动驾驶系统扩展。",
+      "description_zh": "端到端自动驾驶越来越依赖于规模化训练演示，但数据增长并不能保证成比例的收益。然而，额外的数据并不能保证更好的政策：对一个规划者有利的论证可能对另一个规划者来说是多余的或有害的。现有的管理方法通常从内在样本属性或依赖于训练的代理来推断数据价值，而这些代理不衡量下游政策效用。为了解决这个问题，我们引入了策略感知数据评估（PAD），这是一个框架，为每个候选演示分配一个特定于目标驱动策略的实用程序。 PAD 将场景级校准反馈与投影策略梯度和局部训练几何的正则化近似相结合，为策略生成可扩展的基于影响的值。一项受控的组去除研究确定了这些值的方向保真度，而跨规划者分析表明，相同的候选池会在规划者家族之间产生明显不同的排名。在 DiffusionDrive 上，PAD 将 EPDMS 与纯真实训练相比，在 NavTest 上提高了 3.5 点，在 NavHard 上提高了 5.0 点。在基于扩散、回归和流匹配的规划器中，特定于策略的管理始终优于纯真实和全池训练，同时大大减少了场景级回归。这些结果建立了政策感知数据评估的基础，以有针对性的政策改进取代不加区别的数据积累，从而实现更高效、更可靠的自动驾驶系统扩展。",
       "authors": "Chengkai Xu, Yicheng Guo, Jiaqi Liu, Yiming Cui, Shiyu Fang, Peng Hang, Hao Zhang, Jian Sun",
       "url": "https://huggingface.co/papers/2611.25604",
-      "score": 1,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "4",
         "paperId": "2611.25604"
       }
     },
@@ -38,13 +68,13 @@
       "title": "Squoosh Bench: Evaluating UX-1 on 318 Historical Website A/B Tests",
       "title_zh": "Squoosh Bench：在 318 个历史网站 A/B 测试中评估 UX-1",
       "description": "Experimentation teams must decide which proposed website changes to test with live traffic. We evaluated whether forecasts from simulated shoppers could inform that choice. We screened 412 historical website A/B tests and evaluated four systems on the 318 that ran longer than 21 days. Each system predicted an original win, a variant win, or an inconclusive result. Page roles were masked and recorded outcomes were withheld during inference. Squoosh UX-1, a model fine-tuned on human browsing data, simulated 1,000 shoppers per arm and correctly classified 267 of 318 outcomes (84.0%, 95% Wilson interval 79.5-87.6%, treating experiments as independent). Qwen3 Next 80B, the strongest general-purpose configuration on outcome accuracy, correctly classified 196 of 318 (61.6%). UX-1 favored the variant in 126 experiments. In the live tests, 118 of those variants won (93.7%), four lost, and four had inconclusive results. The remaining 192 experiments included 19 additional variant wins.",
-      "description_zh": "实验团队必须决定对哪些拟议的网站更改进行实时流量测试。我们评估了模拟购物者的预测是否可以影响这一选择。我们筛选了 412 个历史网站 A/B 测试，并在 318 个上评估了运行时间超过 21 天的四个系统。每个系统都预测原始胜利、变体胜利或不确定的结果。在推理过程中，页面角色被屏蔽，记录的结果被保留。 Squoosh UX-1 是一个根据人类浏览数据进行微调的模型，模拟了每只手臂 1,000 名购物者，并正确分类了 318 个结果中的 267 个（84.0%，95% Wilson 区间 79.5-87.6%，将实验视为独立）�� Qwen3 Next 80B 是结果准确性最强的通用配置，正确分类了 318 个中的 196 个（61.6%）。 UX-1 在 126 次实验中青睐该变体。在实时测试中，其中 118 个变体获胜（93.7%），4 个变体失败，4 个变体结果不确定。其余 192 项实验包括 19 项额外的变体胜利。",
+      "description_zh": "实验团队必须决定对哪些拟议的网站更改进行实时流量测试。我们评估了模拟购物者的预测是否可以影响这一选择。我们筛选了 412 个历史网站 A/B 测试，并在 318 个上评估了运行时间超过 21 天的四个系统。每个系统都预测原始胜利、变体胜利或不确定的结果。在推理过程中，页面角色被屏蔽，记录的结果被保留。 Squoosh UX-1 是一个根据人类浏览数据进行微调的模型，模拟了每只手臂 1,000 名购物者，并正确分类了 318 个结果中的 267 个（84.0%，95% Wilson 区间 79.5-87.6%，将实验视为独立���。 Qwen3 Next 80B 是结果准确性最强的通用配置，正确分类了 318 个中的 196 个（61.6%）。 UX-1 在 126 次实验中青睐该变体。在实时测试中，其中 118 个变体获胜（93.7%），4 个变体失败，4 个变体结果不确定。其余 192 项实验包括 19 项额外的变体胜利。",
       "authors": "Rohith Pasula, Johari Dramiga, Viraj Shah, Suzan Halim, Tyler Dooskin",
       "url": "https://huggingface.co/papers/2611.25200",
-      "score": 1,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "1",
+        "upvotes": "3",
         "paperId": "2611.25200"
       }
     },
@@ -53,13 +83,13 @@
       "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
       "title_zh": "扩散变压器中的 RL 后期训练是激活转向",
       "description": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward in the objective. Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models. Initialized at zero and trained with online RL, the vectors alone exceed the reward gains of weight-based RL on text rendering (OCR) and human preference (PickScore) on SD3.5-M. A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.",
-      "description_zh": "强化学习 (RL) 训练后可显着提高扩散变压器的视觉质量、文本渲染和构图准确性。由于渲染请求的文本或组合多个对象等功能本质上是依赖于提示的，因此一个自然的假设是，改进它们需要学习复杂的、依赖于输入的转换。为了隔离与输入无关的偏移可以解释多少增益，我们使用特意简单的参数化来探测每个 RL 调整的模型：将一组固定的转向向量添加到冻结基础模型的块输出中。在 SD3.5-M 上，这些向量保存的参数比 RL 调整的 LoRA 少 65 倍（0.29M 对 18.8M）。我们对它们进行拟合，以匹配公共 RL 调整检查点的速度预测，并且目标中没有奖励。尽管每个提示、令牌和采样种子的向量都是相同的，但它们恢复了六个 RL 调整的图像模型的奖励收益的 90.0-96.3%，以及两个 RL 调整的视频模型的 89.8% 和 111.9%。初始化为零并使用在线强化学习进行训练，仅向量就超过了基于权重的强化学习在 SD3.5-M 上的文本渲染 (OCR) 和人类偏好 (PickScore) 上的奖励增益。因此，持续的转变足以获得策略梯度 RL 训练后的大部分收益：无需新的依赖于输入的转换，它就能将预训练的���成器引导至其已经可以计算的方向。",
+      "description_zh": "强化学习 (RL) 训练后可显着提高扩散变压器的视觉质量、文本渲染和构图准确性。由于渲染请求的文本或组合多个对象等功能本质上是依赖于提示的，因此一个自然的假设是，改进它们需要学习复杂的、依赖于输入的转换。为了隔离与输入无关的偏移可以解释多少增益，我们使用特意简单的参数化来探测每个 RL 调整的模型：将一组固定的转向向量添加到冻结基础模型的块输出中。在 SD3.5-M 上，这些向量保存的参数比 RL 调整的 LoRA 少 65 倍（0.29M 对 18.8M）。我们对它们进行拟合，以匹配公共 RL 调整检查点的速度预测，并且目标中没有奖励。尽管每个提示、令牌和采样种子的向量都是相同的，但它们恢复了六个 RL 调整的图像模型的奖励收益的 90.0-96.3%，以及两个 RL 调整的视频模型的 89.8% 和 111.9%。初始化为零并使用在线强化学习进行训练，仅向量就超过了基于权重的强化学习在 SD3.5-M 上的文本渲染 (OCR) 和人类偏好 (PickScore) 上的奖励增益。因此，持续的转变足以获得策略梯度 RL 训练后的大部分收益：无需新的依赖于输入的转换，它就能将预训练��生成器引导至其已经可以计算的方向。",
       "authors": "Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara, Duen Horng Chau, Pinar Yanardag",
       "url": "https://huggingface.co/papers/2611.26627",
-      "score": 14,
+      "score": 17,
       "meta": {
         "source": "huggingface",
-        "upvotes": "14",
+        "upvotes": "17",
         "paperId": "2611.26627"
       }
     },
@@ -71,10 +101,10 @@
       "description_zh": "光神经网络有望实现快速、节能的计算，但每个设备都偏离其设计，必须使用硬件进行训练。现场训练依赖于专家为每个设备构建的校准数字模型或无梯度试错。编码代理，即编写和运行程序的大型语言模型，已经显示出理解和编辑数字神经网络权重的新兴能力。在这里，我们介绍光学即代码，这是一种编码代理仅通过测量来训练光学神经网络的方法，通过一个返回其探头的相机图像的线束，并根据每个请求要求一个假设。我们发现代理形成了对光学的物理理解，并通过在硬件上调整的可解释光学元件重新参数化网络。它在分类和图像编码方面优于无梯度方法，通过校准模型以一小部分成本实现反向传播。光学即代码不需要每台设备的校准，也不需要通过硬件进行梯度，并通过功能更强大的模型进行改进，为大型、可扩展的光学神经网络提供了一条实用的途径，以及用于校准和优化光学实验的通用工具。",
       "authors": "Ilker Oguz, Colin Christian, Christophe Moser, Demetri Psaltis, Gordon Wetzstein",
       "url": "https://huggingface.co/papers/2611.23875",
-      "score": 2,
+      "score": 3,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "3",
         "paperId": "2611.23875"
       }
     },
@@ -86,10 +116,10 @@
       "description_zh": "语言模型训练一次，冻结并部署：再次改进一个模型需要另一次训练，一旦任务结束，推理时的提示、支架或额外计算就会消失。前沿模型已被证明可以编辑一个小得多的模型的权重。我们询问一个模型是否可以重写自己的权重以使自己变得更好，并发现它可以通过自己的推理，无需梯度，无需训练；我们称之为自重写。考虑到其权重、分级答案和自行运行的能力，27B 模型会诊断其故障并编辑其背后的权重。它超越了自己：在预先修复的测试中，它自己的编辑使其在 490 个从未见过的问题上准确度提高了 6.6 分，而另一个会话的编辑也使其明显更好。它不断变得更好：只有当它自己的测试支持它时，它才会提交编辑，每次编辑都会替换最后一次，并且在前八次这样的会话中，它的准确性只会上升。与测试时间缩放不同，增益持续存在于其权重中，并且不会增加每个答案的成本；与训练不同，它不需要训练前或训练后的基础设施，只需要一个开放模型和一个 GPU 上的时间。它修复自身损坏的副本：它找到损坏的矩阵并用自己的值重写它，从不读取未损坏的权重；仅在文本数学问题上发现，修复将副本在从未见过的六个图像基准上的准确度从 7% 提升到 70%，相当于未损坏模型的 83%。这种能力随着规模的扩大而出现：在一个家庭的四种规模中，2B 模型不做任何编辑，4B 和 9B 模型则自我突破；只有 27B 模型像人类一样自行工作，将其隐藏状态与完成的答案和用完标记的答案进行比较，从而削弱了将它们分开的方向。像人类一样，模型不需要将训练与推理分开；改进语言模型可能需要进行对话而不是训练。",
       "authors": "Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu",
       "url": "https://huggingface.co/papers/2611.21885",
-      "score": 4,
+      "score": 8,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "8",
         "paperId": "2611.21885"
       }
     },
@@ -101,10 +131,10 @@
       "description_zh": "代理人工智能可以自动分析敏感的临床数据，但当前的代理依赖于大型语言模型（LLM）。云LLM公开患者数据。本地LLM产生幻觉，工具调用中发明的值会传播到后续的每个步骤。在这里，我们提出了一种构建系统 1 代理的方法：调用工具而不生成文本的本地代理。确定性编译器将每个工具的模式和请求转换为多项选择问题，其选项来自请求和模式，然后一次性决策模型回答它们。在对 157 种生物医学工具的 1,952 次请求中，最佳系统 1 代理选择了正确的工具，或正确拒绝了 97.0% 的请求，显着领先于所有 18 个本地 LLM 代理设置（最佳 95.2%）。系统 1 代理填充了 6,056 个指定参数值中的 97.0%。没有系统 1 的通话包含发明内容，而LLM通话的比例为 5.5-19.7%。 System 1 Agents 框架可作为开源软件免费提供，网址为 https://github.com/eltzanis/SystemOneAgents。",
       "authors": "Eleftherios Tzanis, Michail E. Klontzas",
       "url": "https://huggingface.co/papers/2611.21053",
-      "score": 3,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "6",
         "paperId": "2611.21053"
       }
     },
@@ -116,10 +146,10 @@
       "description_zh": "当助手能够在仍有时间恢复的情况下发现错误时，监视执行程序的人员是最有用的。这需要在视频展开时根据任务指令判断操作，识别尝试的步骤，及时定位它并评估其执行情况。现有的在线检测器不使用指令文本，而指令条件方法则离线运行。在本文中，我们研究了以自我为中心的视频中的在线、指令条件错误检测。我们的模型仅使用观察到的视频、任务说明和先前的预测来识别和定位已完成的行动尝试，并将其分类为正确、修改、失误、更正或添加；省略的步骤在视频结束后确定。我们将具有单独步骤识别、时间定位和执行验证的模块化管道与预测单个步骤中所有输出的联合模型进行比较。为了支持从错误中进行监督学习，我们对 EgoPER 进行了重新分区，以在所有分区中包含错误的视频。这些方法实现了类似的步进分割 F1@0.5（93.6% 和 92.1%），而联合模型实现了更高的二元错误检测 F1@0.5（84.1% vs. 80.7%），其中滑动方面的增益最大（56.4% vs. 37.5%）。组件级分析表明，阶段之间的错误传播导致模块化方法的检测得分较低。在包含错误的测试视频中，两种设计的性能均优于我们评估协议下发布的 AEM 和 ESTANet 检查点。",
       "authors": "Amit Feldman, Ilan Shimshoni, Rotem Dror",
       "url": "https://huggingface.co/papers/2611.25567",
-      "score": 9,
+      "score": 11,
       "meta": {
         "source": "huggingface",
-        "upvotes": "9",
+        "upvotes": "11",
         "paperId": "2611.25567"
       }
     },
@@ -128,7 +158,7 @@
       "title": "AURA: AUdio-dRiven streaming Avatar",
       "title_zh": "AURA：音频驱动的流媒体 Avatar",
       "description": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and reaches a quality comparable to TalkVerse at a lower resolution, and AURA 5B matches its TalkVerse teacher at 720p while running 17x faster. To support reproducibility and further research on streaming avatar generation, we release the weights of both models along with a dataset of 30K synthetic videos and their precomputed teacher trajectories.",
-      "description_zh": "当前的音频驱动视频扩散模型可以合成真实的头部说话视频，但通常需要对多秒视频块进行数十个扩散去噪步骤，这使得它们不适合语音助手和虚拟化身等流媒体应用，这些应用需要低延迟和在线因果生成特性。 AURA 使用滚动 KV 缓存逐块生成视频块，只需要当前块的音频即可开始生成，而不是像双向模型那样进行多秒音频前瞻。它有两种尺寸：AURA 1.3B 在单个 GPU 上实时传输 576p 视频（16 Hz 播放速率为 20.7 fps），使其适合交互式头像应用，AURA 5B 以 9.7 fps 传输 720p 视频。我们的两阶段蒸馏管道首先将因果学生与教师对齐，通过训练它以较少的扩散步骤和块式滑动窗口因果注意掩模来匹配教师的轨迹，然后应用分布匹配蒸馏（DMD）和后向模拟来缩小剩余的质量差距。在标准头部说话基准测试中，AURA 1.3B 的运行速度比其自己的双向教师快 23 倍，并在较低分辨率下达到与 TalkVerse 相当的质量，而 AURA 5B 在 720p 下与其 TalkVerse 教师相匹配，同时运行速度快 17 倍。为了支持流媒体头像生成的可重复性和进一步研究，我们发布了两个模型的权重以及 30K 合成视频及其预先计算的教师轨迹的数据集���",
+      "description_zh": "当前的音频驱动视频扩散模型可以合成真实的头部说话视频，但通常需要对多秒视频块进行数十个扩散去噪步骤，这使得它们不适合语音助手和虚拟化身等流媒体应用，这些应用需要低延迟和在线因果生成特性。 AURA 使用滚动 KV 缓存逐块生成视频块，只需要当前块的音频即可开始生成，而不是像双向模型那样进行多秒音频前瞻。它有两种尺寸：AURA 1.3B 在单个 GPU 上实时传输 576p 视频（16 Hz 播放速率为 20.7 fps），使其适合交互式头像应用，AURA 5B 以 9.7 fps 传输 720p 视频。我们的两阶段蒸馏管道首先将因果学生与教师对齐，通过训练它以较少的扩散步骤和块式滑动窗口因果注意掩模来匹配教师的轨迹，然后应用分布匹配蒸馏（DMD）和后向模拟来缩小剩余的质量差距。在标准头部说话基准测试中，AURA 1.3B 的运行速度比其自己的双向教师快 23 倍，并在较低分辨率下达到与 TalkVerse 相当的质量，而 AURA 5B 在 720p 下与其 TalkVerse 教师相匹配，同时运行速度快 17 倍。为了支持流媒体头像生成的可重复性和进一步研究，我们发布了两个模型的权重以及 30K 合成视频及其预先计算的教师轨迹的数据��。",
       "authors": "Nathaniel Cohen, Nicolas Dufour, Amélie Royer, Alasdair Newson, Patrick Pérez",
       "url": "https://huggingface.co/papers/2611.26540",
       "score": 2,
@@ -143,7 +173,7 @@
       "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
       "title_zh": "SpecWM：将验证转化为流世界模型的细化",
       "description": "Recently, video world models have advanced interactive generation, with large models offering higher quality and smaller models enabling faster inference. Existing speculative methods combine their strengths through fast draft generation and selective target regeneration guided by rewards on decoded frames. However, verification covers only the external scorer's evaluation dimensions and adds decoding and scoring costs. Moreover, these scores provide no correction, requiring costly target regeneration for rejected drafts. To address these limitations, we propose Speculative World Model (SpecWM), a unified, training-free inference framework for streaming world models. It verifies draft chunks using the target's latent velocity field. Verification also yields a reusable correction; two thresholds select Accept, Refine, or Reject. Specifically, one-step refinement reuses it to improve perceptual quality, while three-step refinement strengthens camera following and trajectory consistency. These findings motivate transition-aware refinement. On WBench Navigation, SpecWM improves visual quality at 1.63times speedup over the target and raises NavScore from the draft's 75.99 to 85.63, achieving the best quality-speed-control trade-off. Additionally, our LongSpecBench shows sustained quality and control over long, multi-turn rollouts, while experiments on Hy-Nomas validate SpecWM across backbones and denoising budgets.",
-      "description_zh": "最近，视频世界模型具有先进的交互式生成功能，大型模型可提供更高的质量，较小的模型可实现更快的推理。现有的推测方法通过快速草稿生成和由解码帧奖励引导的选择性目标再生结合了它们的优势。然而，验证仅涵盖外部评分者的评估维度，并增加了解码和评分成本。此外，这些分数不提供任何校正，需要昂贵的目标重新生成被拒绝的草稿。为了解决这些限制，我们提出了推测世界模型（SpecWM），这是一种用于流世界模型的统一的、免训练的推理框架。它使用目标的潜在速度场验证草稿块。验证还产生可重复使用的修正；两个阈值选择接受、优化或拒绝。具体来说，一步细化重用它来提高感知质量，而三步细化则增强了相机跟随和轨迹一致性。这些发现激发了转变意识的改进。在 WBench Navigation 上，SpecWM 以比目标加速 1.63 倍的速度提高了视觉质量，并将 NavScore 从草稿的 75.99 提高到 85.63，实现了最佳的质量与速度控制权衡。此外，我们的 LongSpecBench 在长期、多轮部署中显示出持续的质量和控制，而 Hy-Nomas 上的实验验证了跨主干网和去噪预算的 SpecWM。",
+      "description_zh": "最近，视频世界模型具有先进的交互式生成功能，大型模型可提供更高的质量，较小的模型可实现更快的推理。现有的推测方法通过快速草稿生成和由解码帧奖励引导的选择性目标再生结合了它们的优势。然而，验证仅涵盖外部评分者的评估维度，并增加了解码和评分成本。此外，这些分数不提供任何校正，需要昂贵的目标重新生成被拒绝的草稿。为了解决这些限制，我们提出了推测世界模型（SpecWM），这是一种用于流世界模型的统一的、免训练的推理框架。它使用目标的潜在速度场验证草图块。验证还产生可重复使用的修正；两个阈值选择接受、优化或拒绝。具体来说，一步细化重用它来提高感知质量，而三步细化则增强了相机跟随和轨迹一致性。这些发现激发了转变意识的改进。在 WBench Navigation 上，SpecWM 以比目标加速 1.63 倍的速度提高了视觉质量，并将 NavScore 从草稿的 75.99 提高到 85.63，实现了最佳的质量与速度控制权衡。此外，我们的 LongSpecBench 在长期、多轮部署中显示出持续的质量和控制，而 Hy-Nomas 上的实验验证了跨主干网和去噪预算的 SpecWM。",
       "authors": "Jiaming Li, Lingzhen Li, Xiaze Yang, Chenyu Zhu, Kaiqi Liu, Xiaotong Zhao, Songlian Li, Toyota Li, Alan Zhao, Haobin Zhong, Yue Ma, Zhiyuan Ma",
       "url": "https://huggingface.co/papers/2611.26211",
       "score": 2,
@@ -176,10 +206,10 @@
       "description_zh": "如果没有梯度微调或外部工具解释器，预训练语言模型 (LM) 在精确的多位算术上仍然不可靠。我们引入了封闭形式的零梯度电路移植原语，使用零训练示例和零运行时挂钩将确定性计算直接编译为预训练的 LM 权重，同时限制每层归一化漂移并保留自然语言 (NL) 能力。我们的构造结合了三种分析机制：（1）无偏差 SwiGLU/GeGLU 层上的两层 Mellin-GLU 求积，将未知的每个标记 RMSNorm 缩放转换为沿着具有 IEEE 754 误差范围的对数间隔门网格（>250 倍动态范围）的转换； (2) 通过签名 Chebyshev 不定-RoPE 自沉注意力和无记忆 SiLU-反对称 GatedDeltaNet 移位来消除跨代币规模； (3) 轴对齐宽度扩展（d 至 d+K），具有 d/(d+K) 范数补偿、Base-1000 规范 BPE 发射和差分（+254、-256）绑定非嵌入。自动 5 阶段编译器以恒定 TC^0 深度合成 4-8 位有符号 {+,-,times} 电路以及 3 文字布尔值（100%，N=1{,}728；加上 42 层 Gemma 4 E4B 审核）和 5 位多数/奇偶校验 (100%) 电路。在 6 位算术上（N=1{,}200，BF16），IBM Granite 4.2 3B（1.07M-1.33M 有效非零，le 0.036%）和阿里巴巴 Qwen 3.5 4B（2.25M-2.39M 非零，le 0.057%）达到 99.17% 和 100.00% ALU 前缀准确度（使用 FP32 sidecar 为 100%）和 98%-100% 的中间句子恢复，优于 12.8K 样本 LoRA（42.2% / 61.7%，0% 内联延续）。分解的块稀疏 sidecar 将 A100 内存保持为 7.89 / 10.65 GiB（在 INT8/INT4 + FP32 sidecar 下为 4.60 / 8.14 GiB），同时传递所有 14/14 预注册的 >2K 令牌 Tango 分割（N=4{,}392；0/11,134 OOD 触发器）。",
       "authors": "Tanmay Sah",
       "url": "https://huggingface.co/papers/2611.26450",
-      "score": 3,
+      "score": 5,
       "meta": {
         "source": "huggingface",
-        "upvotes": "3",
+        "upvotes": "5",
         "paperId": "2611.26450"
       }
     },
@@ -188,44 +218,14 @@
       "title": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
       "title_zh": "幻影成功，无声失败：审核模拟操作基准的成功检查器",
       "description": "Simulated manipulation benchmarks measure policy performance using hand-written success checkers that label each episode as a success or failure. Passing an expert demonstration shows that a checker accepts one way of completing the task. Learned policies, however, may stop after partial progress or complete the task in a different way. A checker may then accept an incomplete execution (phantom success) or reject an execution that satisfies the instruction (silent failure). In this paper, we introduce SimAudit, an LLM-based pipeline that audits success checkers against task instructions. SimAudit analyzes the instruction and checker code to identify scenarios where the two may disagree, recreates those scenarios in simulation, and runs the original checker. Multi-view renderings are then used to verify whether the observed behavior satisfies the instruction. Across RoboTwin 2.0, RoboCasa365, and RoboDojo, 183 simulated test cases produced the predicted checker verdict. Visual verification and deduplication yielded 61 distinct defects across 49 tasks, including 40 phantom successes and 21 silent failures. Most defects in RoboCasa365 accepted incomplete executions, most in RoboDojo rejected valid executions, and both error types were common in RoboTwin 2.0. These findings suggest that validating success checkers requires testing both incomplete executions and valid alternatives to expert demonstrations, and motivate more rigorous evaluation protocols for future benchmarks.",
-      "description_zh": "模拟操纵基准使用手写的成功检查器来衡量政策绩效，将每个事件标记为成功或失败。通过专家演示表明检查员接受一种完成任务的方法。然而，学习的策略可能会在部分进展后停止或以不同的方式完成任务。然后，检查器可以接受不完整的执行（虚拟成功）或拒绝满足指令的执行（静默失败）。在本文中，我们介绍了 SimAudit，这是一个基于 LLM 的管道，可根据任务指令审核成功检查器。 SimAudit 分析指令和检查器代码，以识别两者可能不一致的场景，在模拟中重新创建这些场景，并运行原始检查器。然后使用多视图渲染来验证观察到的行为是否满足指令。在 RoboTwin 2.0、RoboCasa365 和 RoboDojo 中，183 个模拟测试用例产生了预测的检查器结论。可视化验证和重复数据删除在 ​​49 项任务中产生了 61 个明显缺陷，其中包括 40 项虚拟成功和 21 项无声失败。 RoboCasa365 中的大多数缺陷接受不完整的执行，RoboDojo 中的大多数缺陷拒绝有效的执行，这两种错误类型在 RoboTwin 2.0 中都很常见。这些发现表明，验证成功检查器需要测试不完整的执行和专家演示的有效替代方案，并激励为未来的基准制定更严格的评估协议。",
+      "description_zh": "模拟操纵基准使用手写的成功检查器来衡量政策绩效，将每个事件标记为成功或失败。通过专家演示表明检查员接受一种完成任务的方法。然而，学习的策略可能会在部分进展后停止或以不同的方式完成任务。然后，检查器可以接受不完整的执行（虚拟成功）或拒绝满足指令的执行（静默失败）。在本文中，我们介绍了 SimAudit，这是一个基于 LLM 的管道，可根据任务指令审核成功检查器。 SimAudit 分析指令和检查器代码，以识别两者可能不一致的场景，在模拟中重新创建这些场景，并运行原始检查器。然后使用多视图渲染来验证观察到的行为是否满足指令。在 RoboTwin 2.0、RoboCasa365 和 RoboDojo 中，183 个模拟测试用例产生了预测的检查器结论。视觉验证和重复数据删除在 ​​49 项任务中产生了 61 项明显缺陷，其中包括 40 项虚拟成功和 21 项无声失败。 RoboCasa365 中的大多数缺陷接受不完整的执行，RoboDojo 中的大多数缺陷拒绝有效的执行，这两种错误类型在 RoboTwin 2.0 中都很常见。这些发现表明，验证成功检查器需要测试不完整的执行和专家演示的有效替代方案，并激励为未来的基准制定更严格的评估协议。",
       "authors": "Zirui Song, Jiadong Zhang, Zheng Lu, Xiaosong Ma, Xiaojun Chang, Xiuying Chen",
       "url": "https://huggingface.co/papers/2611.25179",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.25179"
-      }
-    },
-    {
-      "id": "2611.19499",
-      "title": "Do Probing and Steering Favor the Same Directions Within and Across Language Models?",
-      "title_zh": "探索和引导在语言模型内部和跨语言模型之间是否有相同的方向？",
-      "description": "A direction in a language model's hidden state can be used to probe whether a concept is present or to steer the model toward it. Although probe directions are often reused for steering, the direction that best detects a concept need not be the one that best changes it. We study this distinction in three instruction-tuned models from different families. We construct a one-parameter family of directions ranging from a covariance-adjusted discriminant to the mean difference, and evaluate probing and additive steering, which adds the direction to the hidden state, along the family at a fixed side effect. For truthfulness and sentiment, in every model, the best probe is not the best steering direction: steering consistently favors directions closer to the mean difference. This separation holds across 59 of 60 layer-model-concept combinations in a layer sweep, with matched probe and steering texts in all six model-concept combinations, and under a rotation-based steering operator. The exact steering optimum is less stable: for sentiment, an intermediate direction produces a 27-56% stronger steering effect than the mean difference, but this gain shrinks or disappears with matched texts and depends on the layer and the operator.\n  The two roles also transfer differently across models. A probe transferred by a linear map fitted on neutral text retains 81-91% of the target model's above-chance probing performance, while the transferred mean difference retains less of its steering effect in 11 of 12 model pairs. This is a consistent tendency, although our predefined criteria classify only three pairs, and nine remain inconclusive. Finally, as an application on PopQA, steering toward \"unknown\" increases abstention by 18-44 percentage points on uncertain errors, versus 2-5 on confident errors, while rarely correcting errors in cases where a correct answer is reachable.",
-      "description_zh": "语言模型隐藏状态中的方向可用于探测概念是否存在或引导模型走向该概念。尽管探测方向经常被重复用于转向，但最能检测概念的方向不一定是最能改变概念的方向。我们在来自不同系列的三个指令调整模型中研究了这种区别。我们构建了一个单参数方向族，范围从协方差调整判别式到均值差，并评估探测和加性转向，这会沿着该族以固定的副作用将方向添加到隐藏状态。对于真实性和情感而言，在每个模型中，最好的探测并���是最好的转向方向：转向始终倾向于更接近平均差的方向。这种分离在层扫描中包含 60 个层模型概念组合中的 59 个，并在所有六个模型概念组合中以及基于旋转的转向操作符下具有匹配的探测和转向文本。精确的转向最佳值不太稳定：对于情感来说，中间方向产生的转向效果比平均差强 27-56%，但这种增益会随着匹配的文本而缩小或消失，并且取决于层和操作员。\n  这两个角色在模型之间的转移也不同。通过安装在中性文本上的线性图传输的探测保留了目标模型的 81-91% 的高概率探测性能，而传输的平均差在 12 个模型对中的 11 个中保留了较少的转向效果。这是一个一致的趋势，尽管我们的预定义标准仅对三对进行分类，其中九对仍不确定。最后，作为 PopQA 上的应用程序，转向“未知”可以使不确定错误的弃权率提高 18-44 个百分点，而对于有把握的错误，弃权率提高 2-5 个百分点，而在可以得出正确答案的情况下很少纠正错误。",
-      "authors": "Afshin Sadeghi, Daniel Becker",
-      "url": "https://huggingface.co/papers/2611.19499",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2611.19499"
-      }
-    },
-    {
-      "id": "2611.26286",
-      "title": "Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era",
-      "title_zh": "两次批评：LLM时代同行评审的主张层面同质化",
-      "description": "Peer review relies on several readers finding different problems. We measure critique overlap in conference and journal reviews. At ICLR, measured overlap rose from 12.0% in 2026 to 21.3% in 2027, in reviews from the same stage of the review process, with year-on-year rises at NeurIPS, ICML and the F1000 and PLOS journals. A third ICLR review of a paper added 5.46 new problems to the other two in 2027, against 6.12 in 2026. We apply MELD, a detector of LLM-generated text, to all reviews. Within a paper, two reviews that MELD flags overlap more than two unflagged reviews: by 3.0 points at ICLR in 2024-2025, by 4.5 points in 2026-2027, and by 5.4 points across five journal sources. These results provide evidence that LLM-flagged reviews of one paper are less distinct from each other than unflagged reviews, and suggest that the diversity of critiques among reviews of a single paper is falling.",
-      "description_zh": "同行评审依赖于多个读者发现不同的问题。我们衡量会议和期刊评论中的批评重叠。在 ICLR，在审稿流程同一阶段的审稿中，测得的重叠率从 2026 年的 12.0% 上升到 2027 年的 21.3%，其中 NeurIPS、ICML 以及 F1000 和 PLOS 期刊的同比有所上升。 ICLR 对一篇论文的第三次审查在 2027 年为另外两篇论文增加了 5.46 个新问题，而 2026 年为 6.12 个。我们将 MELD（LLM 生成文本的检测器）应用于所有评论。在一篇论文中，MELD 标记的两篇评论与两篇以上未标记的评论重叠：2024-2025 年 ICLR 重叠 3.0 分，2026-2027 年重叠 4.5 分，五个期刊来源重�� 5.4 分。这些结果证明，一篇论文的带有 LLM 标记的评论彼此之间的区别不如未标记的评论，并且表明单篇论文评论之间的批评多样性正在下降。",
-      "authors": "Ilya Gusev",
-      "url": "https://huggingface.co/papers/2611.26286",
-      "score": 9,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "9",
-        "paperId": "2611.26286"
+        "paperId": "2611.25179"
       }
     }
   ]
