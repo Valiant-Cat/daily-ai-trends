@@ -3,6 +3,8 @@
 # daily-ai-trends
 
 A daily AI trends feed layer covering:
+
+[![Echo on StartupScores](https://startupscores.com/badge/echo.svg?style=shield&v=combo&theme=dark)](https://startupscores.com/open-source/echo)
 - GitHub Trending
 - Hugging Face Daily Papers
 - X builder signals
