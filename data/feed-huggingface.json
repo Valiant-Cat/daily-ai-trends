@@ -1,6 +1,6 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-21T23:54:45.222Z",
+  "updatedAt": "2026-11-23T00:27:35.460Z",
   "count": 15,
   "items": [
     {
@@ -23,13 +23,13 @@
       "title": "Teaching Vision-Language-Action Models to Stop Safely",
       "title_zh": "教授视觉-语言-动作模型如何安全停止",
       "description": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across LIBERO and BadLIBERO tasks evaluate prohibited completion, physical incidents, and retained-task performance. On the evaluated LIBERO tasks, SAFI reduces aggregate target success after takeover to 1.3\\%, with no recorded physical incidents or action saturation, while preserving high retained-task success.",
-      "description_zh": "视觉-语言-动作（VLA）模型使机器人能够通过视觉观察和语言指令执行各种任务。虽然之前的工作已经探索了任务抑制和拒绝，但一旦执行开始就停止被禁止的行为并控制由此产生的身体反应仍然具有挑战性。我们的评估表明，从初始状态抑制任务的策略在执行中途接管时仍然可以完成该任务。即使任务尚未完成，机器人也可能会掉落所持有的物体，从而使未完成成为不完整的安全措施。为了应对这些挑战，我们针对持有提供适当替代响应的任务引入了状态感知回退模仿（SAFI）。 SAFI 包括两个阶段，(1) 后备目标构建，在整个禁止任务演示过程中分配固定臂指令和一致的抓手目标；(2) 联合政策适应，在保留任务的原始行动中学习这些目标。这种监督教导在中间执行状态下的明确的替代响应，同时保持机器人的其他技能。使用 OpenVLA-OFT 在 LIBERO 和 BadLIBERO 任务中进行广泛的实验，评估禁止完成、物理事件和保留任务性能。在评估的 LIBERO 任务中，SAFI 将接管后的总体目标成功率降低至 1.3%，没有记录物理事件或行动饱和度，同时保持较高的保留任务成功率。",
+      "description_zh": "视觉-语言-动作（VLA）模型使机器人能够通过视觉观察和语言指令执行各种任务。虽然之前的工作已经探索了任务抑制和拒绝，但一旦执行开始就停止被禁止的行为并控制由此产生的身体反应仍然具有挑战性。我们的评估表明，从初始状态抑制任务的策略在执行中途接管时仍然可以完成该任务。即使任务尚未完成，机器人也可能会掉落所持有的物体，从而使未完成成为不完整的安全措施。为了应对这些挑战，我们针对持有提供适当替代响应的任务���入了状态感知回退模仿（SAFI）。 SAFI 包括两个阶段，(1) 后备目标构建，在整个禁止任务演示过程中分配固定臂指令和一致的抓手目标；(2) 联合政策适应，在保留任务的原始行动中学习这些目标。这种监督教导在中间执行状态下的明确的替代响应，同时保持机器人的其他技能。使用 OpenVLA-OFT 在 LIBERO 和 BadLIBERO 任务中进行广泛的实验，评估禁止完成、物理事件和保留任务性能。在评估的 LIBERO 任务中，SAFI 将接管后的总体目标成功率降低至 1.3%，没有记录物理事件或行动饱和度，同时保持较高的保留任务成功率。",
       "authors": "Zheyuan Liu, Chuhan Wang, Jinduo Guo, Yue Huang, Xiangchi Yuan, Ningshan Ma, Meng Jiang",
       "url": "https://huggingface.co/papers/2611.26239",
-      "score": 7,
+      "score": 9,
       "meta": {
         "source": "huggingface",
-        "upvotes": "7",
+        "upvotes": "9",
         "paperId": "2611.26239"
       }
     },
@@ -68,7 +68,7 @@
       "title": "Squoosh Bench: Evaluating UX-1 on 318 Historical Website A/B Tests",
       "title_zh": "Squoosh Bench：在 318 个历史网站 A/B 测试中评估 UX-1",
       "description": "Experimentation teams must decide which proposed website changes to test with live traffic. We evaluated whether forecasts from simulated shoppers could inform that choice. We screened 412 historical website A/B tests and evaluated four systems on the 318 that ran longer than 21 days. Each system predicted an original win, a variant win, or an inconclusive result. Page roles were masked and recorded outcomes were withheld during inference. Squoosh UX-1, a model fine-tuned on human browsing data, simulated 1,000 shoppers per arm and correctly classified 267 of 318 outcomes (84.0%, 95% Wilson interval 79.5-87.6%, treating experiments as independent). Qwen3 Next 80B, the strongest general-purpose configuration on outcome accuracy, correctly classified 196 of 318 (61.6%). UX-1 favored the variant in 126 experiments. In the live tests, 118 of those variants won (93.7%), four lost, and four had inconclusive results. The remaining 192 experiments included 19 additional variant wins.",
-      "description_zh": "实验团队必须决定对哪些拟议的网站更改进行实时流量测试。我们评估了模拟购物者的预测是否可以影响这一选择。我们筛选了 412 个历史网站 A/B 测试，并在 318 个上评估了运行时间超过 21 天的四个系统。每个系统都预测原始胜利、变体胜利或不确定的结果。在推理过程中，页面角色被屏蔽，记录的结果被保留。 Squoosh UX-1 是一个根据人类浏览数据进行微调的模型，模拟了每只手臂 1,000 名购物者，并正确分类了 318 个结果中的 267 个（84.0%，95% Wilson 区间 79.5-87.6%，将实验视为独立���。 Qwen3 Next 80B 是结果准确性最强的通用配置，正确分类了 318 个中的 196 个（61.6%）。 UX-1 在 126 次实验中青睐该变体。在实时测试中，其中 118 个变体获胜（93.7%），4 个变体失败，4 个变体结果不确定。其余 192 项实验包括 19 项额外的变体胜利。",
+      "description_zh": "实验团队必须决定对哪些拟议的网站更改进行实时流量测试。我们评估了模拟购物者的预测是否可以影响这一选择。我们筛选了 412 个历史网站 A/B 测试，并在 318 个上评估了运行时间超过 21 天的四个系统。每个系统都预测原始胜利、变体胜利或不确定的结果。在推理过程中，页面角色被屏蔽，记录的结果被保留。 Squoosh UX-1 是一个根据人类浏览数据进行微调的模型，模拟了每只手臂 1,000 名购物者，并正确分类了 318 个结果中的 267 个（84.0%，95% Wilson 区间 79.5-87.6%，将实验视为独立）。 Qwen3 Next 80B 是结果准确性最强的通用配置，正确分类了 318 个中的 196 个（61.6%）。 UX-1 在 126 次实验中青睐该变体。在实时测试中，其中 118 个变体获胜（93.7%），4 个变体失败，4 个变体结果不确定。其余 192 项实验包括 19 项额外的变体胜利。",
       "authors": "Rohith Pasula, Johari Dramiga, Viraj Shah, Suzan Halim, Tyler Dooskin",
       "url": "https://huggingface.co/papers/2611.25200",
       "score": 3,
@@ -81,15 +81,15 @@
     {
       "id": "2611.26627",
       "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
-      "title_zh": "扩散变压器中的 RL 后期训练是激活转向",
+      "title_zh": "扩散变压器中的强化学习后期训练是激活转向",
       "description": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward in the objective. Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models. Initialized at zero and trained with online RL, the vectors alone exceed the reward gains of weight-based RL on text rendering (OCR) and human preference (PickScore) on SD3.5-M. A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.",
-      "description_zh": "强化学习 (RL) 训练后可显着提高扩散变压器的视觉质量、文本渲染和构图准确性。由于渲染请求的文本或组合多个对象等功能本质上是依赖于提示的，因此一个自然的假设是，改进它们需要学习复杂的、依赖于输入的转换。为了隔离与输入无关的偏移可以解释多少增益，我们使用特意简单的参数化来探测每个 RL 调整的模型：将一组固定的转向向量添加到冻结基础模型的块输出中。在 SD3.5-M 上，这些向量保存的参数比 RL 调整的 LoRA 少 65 倍（0.29M 对 18.8M）。我们对它们进行拟合，以匹配公共 RL 调整检查点的速度预测，并且目标中没有奖励。尽管每个提示、令牌和采样种子的向量都是相同的，但它们恢复了六个 RL 调整的图像模型的奖励收益的 90.0-96.3%，以及两个 RL 调整的视频模型的 89.8% 和 111.9%。初始化为零并使用在线强化学习进行训练，仅向量就超过了基于权重的强化学习在 SD3.5-M 上的文本渲染 (OCR) 和人类偏好 (PickScore) 上的奖励增益。因此，持续的转变足以获得策略梯度 RL 训练后的大部分收益：无需新的依赖于输入的转换，它就能将预训练��生成器引导至其已经可以计算的方向。",
+      "description_zh": "强化学习 (RL) 训练后可显着提高扩散变压器的视觉质量、文本渲染和构图准确性。由于渲染请求的文本或组合多个对象等功能本质上是依赖于提示的，因此一个自然的假设是，改进它们需要学习复杂的、依赖于输入的转换。为了隔离与输入无关的偏移可以解释多少增益，我们使用特意简单的参数化来探测每个 RL 调整的模型：将一组固定的转向向量添加到冻结基础模型的块输出中。在 SD3.5-M 上，这些向量保存的参数比 RL 调整的 LoRA 少 65 倍（0.29M 对 18.8M）。我们对它们进行拟合，以匹配公共 RL 调整检查点的速度预测，并且目标中没有奖励。尽管每个提示、令牌和采样种子的向量都是相同的，但它们恢复了六个 RL 调整的图像模型的奖励收益的 90.0-96.3%，以及两个 RL 调整的视频模型的 89.8% 和 111.9%。初始化为零并使用在线强化学习进行训练，仅向量就超过了基于权重的强化学习在 SD3.5-M 上的文本渲染 (OCR) 和人类偏好 (PickScore) 上的奖励增益。因此，持续的转变足以获得策略梯度 RL 训练后的大部分收益：无需新的依赖于输入的转换，它就能将预训练的���成器引导至其已经可以计算的方向。",
       "authors": "Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara, Duen Horng Chau, Pinar Yanardag",
       "url": "https://huggingface.co/papers/2611.26627",
-      "score": 17,
+      "score": 20,
       "meta": {
         "source": "huggingface",
-        "upvotes": "17",
+        "upvotes": "20",
         "paperId": "2611.26627"
       }
     },
@@ -116,10 +116,10 @@
       "description_zh": "语言模型训练一次，冻结并部署：再次改进一个模型需要另一次训练，一旦任务结束，推理时的提示、支架或额外计算就会消失。前沿模型已被证明可以编辑一个小得多的模型的权重。我们询问一个模型是否可以重写自己的权重以使自己变得更好，并发现它可以通过自己的推理，无需梯度，无需训练；我们称之为自重写。考虑到其权重、分级答案和自行运行的能力，27B 模型会诊断其故障并编辑其背后的权重。它超越了自己：在预先修复的测试中，它自己的编辑使其在 490 个从未见过的问题上准确度提高了 6.6 分，而另一个会话的编辑也使其明显更好。它不断变得更好：只有当它自己的测试支持它时，它才会提交编辑，每次编辑都会替换最后一次，并且在前八次这样的会话中，它的准确性只会上升。与测试时间缩放不同，增益持续存在于其权重中，并且不会增加每个答案的成本；与训练不同，它不需要训练前或训练后的基础设施，只需要一个开放模型和一个 GPU 上的时间。它修复自身损坏的副本：它找到损坏的矩阵并用自己的值重写它，从不读取未损坏的权重；仅在文本数学问题上发现，修复将副本在从未见过的六个图像基准上的准确度从 7% 提升到 70%，相当于未损坏模型的 83%。这种能力随着规模的扩大而出现：在一个家庭的四种规模中，2B 模型不做任何编辑，4B 和 9B 模型则自我突破；只有 27B 模型像人类一样自行工作，将其隐藏状态与完成的答案和用完标记的答案进行比较，从而削弱了将它们分开的方向。像人类一样，模型不需要将训练与推理分开；改进语言模型可能需要进行对话而不是训练。",
       "authors": "Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu",
       "url": "https://huggingface.co/papers/2611.21885",
-      "score": 8,
+      "score": 19,
       "meta": {
         "source": "huggingface",
-        "upvotes": "8",
+        "upvotes": "19",
         "paperId": "2611.21885"
       }
     },
@@ -146,10 +146,10 @@
       "description_zh": "当助手能够在仍有时间恢复的情况下发现错误时，监视执行程序的人员是最有用的。这需要在视频展开时根据任务指令判断操作，识别尝试的步骤，及时定位它并评估其执行情况。现有的在线检测器不使用指令文本，而指令条件方法则离线运行。在本文中，我们研究了以自我为中心的视频中的在线、指令条件错误检测。我们的模型仅使用观察到的视频、任务说明和先前的预测来识别和定位已完成的行动尝试，并将其分类为正确、修改、失误、更正或添加；省略的步骤在视频结束后确定。我们将具有单独步骤识别、时间定位和执行验证的模块化管道与预测单个步骤中所有输出的联合模型进行比较。为了支持从错误中进行监督学习，我们对 EgoPER 进行了重新分区，以在所有分区中包含错误的视频。这些方法实现了类似的步进分割 F1@0.5（93.6% 和 92.1%），而联合模型实现了更高的二元错误检测 F1@0.5（84.1% vs. 80.7%），其中滑动方面的增益最大（56.4% vs. 37.5%）。组件级分析表明，阶段之间的错误传播导致模块化方法的检测得分较低。在包含错误的测试视频中，两种设计的性能均优于我们评估协议下发布的 AEM 和 ESTANet 检查点。",
       "authors": "Amit Feldman, Ilan Shimshoni, Rotem Dror",
       "url": "https://huggingface.co/papers/2611.25567",
-      "score": 11,
+      "score": 12,
       "meta": {
         "source": "huggingface",
-        "upvotes": "11",
+        "upvotes": "12",
         "paperId": "2611.25567"
       }
     },
@@ -158,13 +158,13 @@
       "title": "AURA: AUdio-dRiven streaming Avatar",
       "title_zh": "AURA：音频驱动的流媒体 Avatar",
       "description": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and reaches a quality comparable to TalkVerse at a lower resolution, and AURA 5B matches its TalkVerse teacher at 720p while running 17x faster. To support reproducibility and further research on streaming avatar generation, we release the weights of both models along with a dataset of 30K synthetic videos and their precomputed teacher trajectories.",
-      "description_zh": "当前的音频驱动视频扩散模型可以合成真实的头部说话视频，但通常需要对多秒视频块进行数十个扩散去噪步骤，这使得它们不适合语音助手和虚拟化身等流媒体应用，这些应用需要低延迟和在线因果生成特性。 AURA 使用滚动 KV 缓存逐块生成视频块，只需要当前块的音频即可开始生成，而不是像双向模型那样进行多秒音频前瞻。它有两种尺寸：AURA 1.3B 在单个 GPU 上实时传输 576p 视频（16 Hz 播放速率为 20.7 fps），使其适合交互式头像应用，AURA 5B 以 9.7 fps 传输 720p 视频。我们的两阶段蒸馏管道首先将因果学生与教师对齐，通过训练它以较少的扩散步骤和块式滑动窗口因果注意掩模来匹配教师的轨迹，然后应用分布匹配蒸馏（DMD）和后向模拟来缩小剩余的质量差距。在标准头部说话基准测试中，AURA 1.3B 的运行速度比其自己的双向教师快 23 倍，并在较低分辨率下达到与 TalkVerse 相当的质量，而 AURA 5B 在 720p 下与其 TalkVerse 教师相匹配，同时运行速度快 17 倍。为了支持流媒体头像生成的可重复性和进一步研究，我们发布了两个模型的权重以及 30K 合成视频及其预先计算的教师轨迹的数据��。",
+      "description_zh": "当前的音频驱动视频扩散模型可以合成真实的头部说话视频，但通常需要对多秒视频块进行数十个扩散去噪步骤，这使得它们不适合语音助手和虚拟化身等流媒体应用，这些应用需要低延迟和在线因果生成特性。 AURA 使用滚动 KV 缓存逐块生成视频块，只需要当前块的音频即可开始生成，而不是像双向模型那样进行多秒音频前瞻。它有两种尺寸：AURA 1.3B 在单个 GPU 上实时传输 576p 视频（16 Hz 播放速率为 20.7 fps），使其适合交互式头像应用，AURA 5B 以 9.7 fps 传输 720p 视频。我们的两阶段蒸馏管道首先将因果学生与教师对齐，通过训练它以较少的扩散步骤和块式滑动窗口因果注意掩模来匹配教师的轨迹，然后应用分布匹配蒸馏（DMD）和后向模拟来缩小剩余的质量差距。在标准头部说话基准测试中，AURA 1.3B 的运行速度比其自己的双向教师快 23 倍，并在较低分辨率下达到与 TalkVerse 相当的质量，而 AURA 5B 在 720p 下与其 TalkVerse 教师相匹配，同时运行速度快 17 倍。为了支持流媒体头像生成的可重复性和进一步研究，我们发布了两个模型的权重以及 30K 合成视频及其预先计算的教师轨迹的数据集���",
       "authors": "Nathaniel Cohen, Nicolas Dufour, Amélie Royer, Alasdair Newson, Patrick Pérez",
       "url": "https://huggingface.co/papers/2611.26540",
-      "score": 2,
+      "score": 4,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "4",
         "paperId": "2611.26540"
       }
     },
@@ -176,10 +176,10 @@
       "description_zh": "最近，视频世界模型具有先进的交互式生成功能，大型模型可提供更高的质量，较小的模型可实现更快的推理。现有的推测方法通过快速草稿生成和由解码帧奖励引导的选择性目标再生结合了它们的优势。然而，验证仅涵盖外部评分者的评估维度，并增加了解码和评分成本。此外，这些分数不提供任何校正，需要昂贵的目标重新生成被拒绝的草稿。为了解决这些限制，我们提出了推测世界模型（SpecWM），这是一种用于流世界模型的统一的、免训练的推理框架。它使用目标的潜在速度场验证草图块。验证还产生可重复使用的修正；两个阈值选择接受、优化或拒绝。具体来说，一步细化重用它来提高感知质量，而三步细化则增强了相机跟随和轨迹一致性。这些发现激发了转变意识的改进。在 WBench Navigation 上，SpecWM 以比目标加速 1.63 倍的速度提高了视觉质量，并将 NavScore 从草稿的 75.99 提高到 85.63，实现了最佳的质量与速度控制权衡。此外，我们的 LongSpecBench 在长期、多轮部署中显示出持续的质量和控制，而 Hy-Nomas 上的实验验证了跨主干网和去噪预算的 SpecWM。",
       "authors": "Jiaming Li, Lingzhen Li, Xiaze Yang, Chenyu Zhu, Kaiqi Liu, Xiaotong Zhao, Songlian Li, Toyota Li, Alan Zhao, Haobin Zhong, Yue Ma, Zhiyuan Ma",
       "url": "https://huggingface.co/papers/2611.26211",
-      "score": 2,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "2",
+        "upvotes": "7",
         "paperId": "2611.26211"
       }
     },
@@ -188,13 +188,13 @@
       "title": "Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain",
       "title_zh": "Direct3D-V3：本机体素域中的无潜在扩散变压器",
       "description": "Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their architectural differences, these methods all share the same premise: geometry is first compressed into a latent space and only then modeled by the generator. We take a different route and propose Direct3D-V3, a latent-free diffusion transformer (DiT) framework that discards the VAE altogether and operates in the native voxel domain, directly modeling raw SDF voxel grids during both training and sampling. To make this direct voxel formulation geometrically reliable, we introduce an implicit manifold regularization over neighboring voxels to suppress non-watertight surfaces, and convert predicted SDF grids into meshes via Marching Cubes so that rendered normal losses can supervise the model directly from its predicted SDF. To improve alignment between the conditioning image and generated geometry, Direct3D-V3 also predicts the camera parameters of the conditioning image as an auxiliary task, encouraging the DiT to learn the mapping from image observations to 3D shape. This latent-free design removes the reconstruction bottleneck, brings training under an objective in the native voxel domain, and yields meshes with substantially richer local detail. The predicted camera and native SDF voxel output further make Direct3D-V3 extensible to generative reconstruction, where diffusion is interleaved with normal-guided refinement to improve alignment with the observed view while the generative prior completes unseen regions. Project page: https://dreamtechai.github.io/Direct3D-V3.",
-      "description_zh": "原生 3D 生成很大程度上是围绕潜在扩散构建的，最近的进展集中在更强的变分自动编码器 (VAE) 和日益复杂的潜在表示，从 vecset 和三平面到结构化稀疏体素。尽管它们的架构存在差异，但这些方法都具有相同的前提：几何形状首先被压缩到潜在空间中，然后才由生成器建模。我们采取不同的路线并提出 Direct3D-V3，这是一种无潜在扩散变换器 (DiT) 框架，它完全丢弃 VAE 并在本机体素域中运行，在训练和采样期间直接对原始 SDF 体素网格进行建模。为了��这种直接体素公式在几何上可靠，我们在相邻体素上引入隐式流形正则化以抑制非水密表面，并通过移动立方体将预测的 SDF 网格转换为网格，以便渲染的法向损失可以直接从其预测的 SDF 监督模型。为了改善调节图像和生成的几何图形之间的对齐，Direct3D-V3 还将预测调节图像的相机参数作为辅助任务，鼓励 DiT 学习从图像观察到 3D 形状的映射。这种无潜在设计消除了重建瓶颈，将训练带入本地体素域的目标下，并产生具有更丰富局部细节的网格。预测的相机和原生 SDF 体素输出进一步使 Direct3D-V3 可扩展到生成重建，其中扩散与法线引导细化交织，以改善与观察到的视图的对齐，同时生成先验完成看不见的区域。项目页面：https://dreamtechai.github.io/Direct3D-V3。",
+      "description_zh": "原生 3D 生成很大程度上是围绕潜在扩散构建的，最近的进展集中在更强的变分自动编码器 (VAE) 和日益复杂的潜在表示，从 vecset 和三平面到结构化稀疏体素。尽管它们的架构存在差异，但这些方法都具有相同的前提：几何形状首先被压缩到潜在空间中，然后才由生成器建模。我们采取不同的路线并提出 Direct3D-V3，这是一种无潜在扩散变换器 (DiT) 框架，它完全丢弃 VAE 并在本机体素域中运行，在训练和采样期间直接对原始 SDF 体素网格进行建模。为了使这种直接体素公式在几何上可靠，我们在相邻体素上引入隐式流形正则化以抑制非水密表面，并通过移动立方体将预测的 SDF 网格转换为网格，以便渲染的法向损失可以直接从其预测的 SDF 监督模型。为了改善调节图像和生成的几何图形之间的对齐，Direct3D-V3 还将预测调节图像的相机参数作为辅助任务，鼓励 DiT 学习从图像观察到 3D 形状的映射。这种无潜在设计消除了重建瓶颈，将训练带入本地体素域的目标下，并产生具有更丰富局部细节的网格。预测的相机和原生 SDF 体素输出进一步使 Direct3D-V3 可扩展到生成重建，其中扩散与法线引导细化交织，以改善与观察到的视图的对齐，同时生成先验完成看不见的区域。项目页面：https://dreamtechai.github.io/Direct3D-V3。",
       "authors": "Shuang Wu, Jiachen Qian, Youtian Lin, Feihu Zhang, Philip Torr, Yao Yao, Xun Cao",
       "url": "https://huggingface.co/papers/2611.26511",
-      "score": 4,
+      "score": 6,
       "meta": {
         "source": "huggingface",
-        "upvotes": "4",
+        "upvotes": "6",
         "paperId": "2611.26511"
       }
     },
@@ -206,10 +206,10 @@
       "description_zh": "如果没有梯度微调或外部工具解释器，预训练语言模型 (LM) 在精确的多位算术上仍然不可靠。我们引入了封闭形式的零梯度电路移植原语，使用零训练示例和零运行时挂钩将确定性计算直接编译为预训练的 LM 权重，同时限制每层归一化漂移并保留自然语言 (NL) 能力。我们的构造结合了三种分析机制：（1）无偏差 SwiGLU/GeGLU 层上的两层 Mellin-GLU 求积，将未知的每个标记 RMSNorm 缩放转换为沿着具有 IEEE 754 误差范围的对数间隔门网格（>250 倍动态范围）的转换； (2) 通过签名 Chebyshev 不定-RoPE 自沉注意力和无记忆 SiLU-反对称 GatedDeltaNet 移位来消除跨代币规模； (3) 轴对齐宽度扩展（d 至 d+K），具有 d/(d+K) 范数补偿、Base-1000 规范 BPE 发射和差分（+254、-256）绑定非嵌入。自动 5 阶段编译器以恒定 TC^0 深度合成 4-8 位有符号 {+,-,times} 电路以及 3 文字布尔值（100%，N=1{,}728；加上 42 层 Gemma 4 E4B 审核）和 5 位多数/奇偶校验 (100%) 电路。在 6 位算术上（N=1{,}200，BF16），IBM Granite 4.2 3B（1.07M-1.33M 有效非零，le 0.036%）和阿里巴巴 Qwen 3.5 4B（2.25M-2.39M 非零，le 0.057%）达到 99.17% 和 100.00% ALU 前缀准确度（使用 FP32 sidecar 为 100%）和 98%-100% 的中间句子恢复，优于 12.8K 样本 LoRA（42.2% / 61.7%，0% 内联延续）。分解的块稀疏 sidecar 将 A100 内存保持为 7.89 / 10.65 GiB（在 INT8/INT4 + FP32 sidecar 下为 4.60 / 8.14 GiB），同时传递所有 14/14 预注册的 >2K 令牌 Tango 分割（N=4{,}392；0/11,134 OOD 触发器）。",
       "authors": "Tanmay Sah",
       "url": "https://huggingface.co/papers/2611.26450",
-      "score": 5,
+      "score": 7,
       "meta": {
         "source": "huggingface",
-        "upvotes": "5",
+        "upvotes": "7",
         "paperId": "2611.26450"
       }
     },
@@ -218,7 +218,7 @@
       "title": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
       "title_zh": "幻影成功，无声失败：审核模拟操作基准的成功检查器",
       "description": "Simulated manipulation benchmarks measure policy performance using hand-written success checkers that label each episode as a success or failure. Passing an expert demonstration shows that a checker accepts one way of completing the task. Learned policies, however, may stop after partial progress or complete the task in a different way. A checker may then accept an incomplete execution (phantom success) or reject an execution that satisfies the instruction (silent failure). In this paper, we introduce SimAudit, an LLM-based pipeline that audits success checkers against task instructions. SimAudit analyzes the instruction and checker code to identify scenarios where the two may disagree, recreates those scenarios in simulation, and runs the original checker. Multi-view renderings are then used to verify whether the observed behavior satisfies the instruction. Across RoboTwin 2.0, RoboCasa365, and RoboDojo, 183 simulated test cases produced the predicted checker verdict. Visual verification and deduplication yielded 61 distinct defects across 49 tasks, including 40 phantom successes and 21 silent failures. Most defects in RoboCasa365 accepted incomplete executions, most in RoboDojo rejected valid executions, and both error types were common in RoboTwin 2.0. These findings suggest that validating success checkers requires testing both incomplete executions and valid alternatives to expert demonstrations, and motivate more rigorous evaluation protocols for future benchmarks.",
-      "description_zh": "模拟操纵基准使用手写的成功检查器来衡量政策绩效，将每个事件标记为成功或失败。通过专家演示表明检查员接受一种完成任务的方法。然而，学习的策略可能会在部分进展后停止或以不同的方式完成任务。然后，检查器可以接受不完整的执行（虚拟成功）或拒绝满足指令的执行（静默失败）。在本文中，我们介绍了 SimAudit，这是一个基于 LLM 的管道，可根据任务指令审核成功检查器。 SimAudit 分析指令和检查器代码，以识别两者可能不一致的场景，在模拟中重新创建这些场景，并运行原始检查器。然后使用多视图渲染来验证观察到的行为是否满足指令。在 RoboTwin 2.0、RoboCasa365 和 RoboDojo 中，183 个模拟测试用例产生了预测的检查器结论。视觉验证和重复数据删除在 ​​49 项任务中产生了 61 项明显缺陷，其中包括 40 项虚拟成功和 21 项无声失败。 RoboCasa365 中的大多数缺陷接受不完整的执行，RoboDojo 中的大多数缺陷拒绝有效的执行，这两种错误类型在 RoboTwin 2.0 中都很常见。这些发现表明，验证成功检查器需要测试不完整的执行和专家演示的有效替代方案，并激励为未来的基准制定更严格的评估协议。",
+      "description_zh": "模拟操纵基准使用手写的成功检查器来衡量政策绩效，将每个事件标记为成功或失败。通过专家演示表明检查员接受一种完成任务的方法。然而，学习的策略可能会在部分进展后停止或以不同的方式完成任务。然后，检查器可以接受不完整的执行（虚拟成功）或拒绝满足指令的执行（静默失败）。在本文中，我们介绍了 SimAudit，这是一个基于 LLM 的管道，可根据任务指令审核成功检查器。 SimAudit 分析指令和检查器代码，以识别两者可能不一致的场景，在模拟中重新创建这些场景，并运行原始检查器。然后使用多视图渲染来验证观察到的行为是否满足指令。在 RoboTwin 2.0、RoboCasa365 和 RoboDojo 中，183 个模拟测试用例产生了预测的检查器结论。可视化验证和重复数据删除在 ​​49 项任务中产生了 61 个明显缺陷，其中包括 40 项虚拟成功和 21 项无声失败。 RoboCasa365 中的大多数缺陷接受不完整的执行，RoboDojo 中的大多数缺陷拒绝有效的执行，这两种错误类型在 RoboTwin 2.0 中都很常见。这些发现表明，验证成功检查器需要测试不完整的执行和专家演示的有效替代方案，并激励为未来的基准制定更严格的评估协议。",
       "authors": "Zirui Song, Jiadong Zhang, Zheng Lu, Xiaosong Ma, Xiaojun Chang, Xiuying Chen",
       "url": "https://huggingface.co/papers/2611.25179",
       "score": 4,
