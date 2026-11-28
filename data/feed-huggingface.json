@@ -1,231 +1,231 @@
 {
   "source": "huggingface",
-  "updatedAt": "2026-11-27T02:23:15.383Z",
+  "updatedAt": "2026-11-28T02:08:14.357Z",
   "count": 15,
   "items": [
     {
-      "id": "2611.20844",
-      "title": "DetourBench: Trajectory-Level Evaluation of Interactive Agents with Exact Minimum-Action Bounds",
-      "title_zh": "DetourBench：具有精确最小动作界限的交互式代理的轨迹级评估",
-      "description": "Benchmarks judge language-model agents mainly by whether they reach the correct final state, not by how they got there. Endpoint scoring cannot separate an agent that retrieved exactly the evidence a decision required from one that read most of the environment, nor an agent that never located the evidence from one that stopped a single action short. Settling this needs a reference cost, and authored solutions establish only that a task is solvable, not that no shorter route exists.\n  We present DetourBench, which constrains the environment until that minimum is computable. Each task is a finite, partially observable transition system with unit-cost accesses whose resources become globally addressable after discovery. Exhaustive search yields the full-information minimum action count L_0 with a replayable witness; from graph-recoverable terminal states it also yields exact residual work R_T, which separates an episode that stopped one access short from one that wandered, while an irreversible wrong commitment is recorded as having no finite residual distance rather than assigned one. Success, attainment, residual progress, and normalized detour are reported separately. Across 375 scored episodes --- five model endpoints, 25 integrated tasks, three repeats --- success ranges from 58.7% to 96.0% while conditional attainment ranges from 0.803 to 0.890 and orders the models differently. Among recoverable failures, residual work separates near-complete trajectories from costly incompletion and from irreversible commitment. We open-source the instances, oracle witnesses, and evaluation harness at https://github.com/DatagridsAI/DetourBench.",
-      "description_zh": "基准测试主要根据语言模型代理是否达到正确的最终状态来判断，而不是根据它们如何到达那里。端点评分无法将准确检索决策所需证据的代理与读取大部分环境的代理区分开来，也无法将从未找到证据的代理与短暂停止单个操作的代理区分开。解决这个问题需要参考成本，而编写的解决方案仅确定任务是可解决的，而不是不存在更短的路线。\n  我们提出了 DetourBench，它会限制环境，直到达到可计算的最小值。每个任务都是一个有限的、部分可��察的转换系统，具有单位成本访问，其资源在发现后变得可全局寻址。穷举搜索产生具有可重播见证的全信息最小动作计数 L_0；从图可恢复的终端状态来看，它还产生精确的剩余工作 R_T，它将停止一次访问的事件与徘徊的事件分开，而不可逆的错误承诺被记录为没有有限的剩余距离，而不是分配的剩余距离。成功、成就、剩余进度和标准化绕行分别报告。在 375 个评分片段中——五个模型端点、25 个集成任务、三个重复——成功率范围�� 58.7% 到 96.0%，而条件达到范围从 0.803 到 0.890，并且对模型的排序不同。在可恢复的故障中，剩余工作将接近完整的轨迹与代价高昂的不完成和不可逆转的承诺分开。我们在 https://github.com/DatagridsAI/DetourBench 上开源了实例、预言机见证和评估工具。",
-      "authors": "Hanlin Tian, Sihan Zhu, Zhao Yang, Yuxiang Wang, Zhiquan Hu, Yu Mi, Hongquan Zhu, Qiufei Hu",
-      "url": "https://huggingface.co/papers/2611.20844",
+      "id": "2611.33885",
+      "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+      "title_zh": "LayoutRecall：在多轮 3D 布局控制图像编辑中保留外观",
+      "description": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
+      "description_zh": "3D 布局控制的图像编辑使用户能够明确控制对象放置和相机视角。然而，在一系列编辑中，最新图像在被遮挡或离开视图时可能会丢失对象的外观。目标布局指定对象应重新出现的位置，而其外观必须从早期观察中恢复。我们引入了 LayoutRecall，这是一个多轮编辑器，可以存储和重用 3D 盒子局部坐标系中的外观。盒子表面潜在内存保留盒子表面的潜在图像，并沿着目标视图中的光线检索它们。几何对齐内存调节使用目标视图位置、共享框本地嵌入和对象级注意将检索到的标记提供给 FLUX.2 编辑器。通信丢失会鼓励编辑在去噪过程中注意匹配观察结果。我们还推出了 LayoutLoop，这是一种多轮 3D 布局控制图像编辑基准，具有校准布局和设计重访。我们对 LayoutLoop 和真实场景数据进行了广泛的实验，以验证我们方法的能力。项目页面位于 https://ykchizs.github.io/layoutrecall.github.io/。",
+      "authors": "Yankuan Chi, Xin Lin, Baihan Yang, Yuheng Liu, Jason Li, Truong Nguyen",
+      "url": "https://huggingface.co/papers/2611.33885",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2611.33885"
+      }
+    },
+    {
+      "id": "2611.30025",
+      "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
+      "title_zh": "阻尼原子波积分神经元 (DAWIN)：连续时空学习的通用原语",
+      "description": "Conventional artificial neurons separate spatial feature aggregation from continuous physical time, limiting their ability to model irregular observations. We introduce the Damped Atomic Wave Integration Neuron (DAWIN), a continuous-time primitive for replacing standard neural layers in MLPs, Transformers, and graph neural networks. DAWIN couples spatial projection with elapsed-time-dependent wave excitation and integrates it into a local complex state through closed-form damped evolution, avoiding numerical differential equation solvers. We show that DAWIN generalizes static sinusoidal and memoryless wave neurons on interval-augmented inputs, derive closed-form gradients, and establish bounded-input bounded-output stability for positive damping and sampling intervals bounded away from zero. An associative Triton prefix-scan implementation, DAWINLinear, uses FP32 accumulation and achieves O(log L) parallel depth for sequence length L. Across 11 parameter-matched tasks covering irregular oscillators, MuJoCo dynamics, pedestrian trajectories, and PhysioNet 2012 clinical sequences, DAWIN outperforms Neural CDE on 9 tasks and ReLU-MLP on 8. It achieves the lowest error on dense clinical dynamics (0.9531 NRMSE, winning across all 10 seeds) and ties for the best mortality prediction (0.9993 AUROC). Shuffling elapsed intervals increases error by 58.2%-77.4% on selected dynamics tasks, versus 0.06% on a time-irrelevant control, supporting reliance on physical timing. On NVIDIA B200 GPUs, parallel wave integration accelerates inference by up to 2,630 times over its serial implementation and reduces peak GPU memory by up to 97.6% relative to Mamba in the tested configurations.",
+      "description_zh": "传统的人工神经元将空间特征聚合与连续的物理时间分开，限制了它们对不规则观测进行建模的能力。我们引入阻尼原子波积分神经元 (DAWIN)，这是一种连续时间原语，用于替换 MLP、Transformers 和图神经网络中的标准神经层。 DAWIN 将空间投影与经过时间相关的波激励耦合起来，并通过闭合形式阻尼演化将其集成到局部复杂状态中，从而避免了数值微分方程求解器。我们证明 DAWIN 在间隔增强输入上推广静态正弦波和无记忆波神经元，导出封闭形式梯度，并为正阻尼和远离零的采样间隔建立有界输入有界输出稳定性。关联 Triton 前缀扫描实现 DAWINLinear 使用 FP32 累加，并在序列长度 L 上实现 O(log L) 并行深度。在涵盖不规则振荡器、MuJoCo 动力学、行人轨迹和 PhysioNet 2012 临床序列的 11 个参数匹配任务中，DAWIN 在 9 项任务上优于 Neural CDE，在 8 项任务上优于 ReLU-MLP。它在密集临床动力学上实现了最低误差（0.9531 NRMSE，在所有 10 个种子中获胜）并与最佳死亡率预测（0.9993 AUROC）并列。在选定的动态任务上，对经过的间隔进行打乱会增加 58.2%-77.4% 的误差，而与时间无关的控制则增加 0.06%，支持对物理计时的依赖。在 NVIDIA B200 GPU 上，在测试配置中，并行波集成的推理速度比串行实现提高了 2,630 倍，并且与 Mamba 相比，峰值 GPU 内存减少了 97.6%。",
+      "authors": "Byunggu Yu, Justin Kim",
+      "url": "https://huggingface.co/papers/2611.30025",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.30025"
+      }
+    },
+    {
+      "id": "2611.30723",
+      "title": "BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models",
+      "title_zh": "BiSAT：语音语言模型的双向对齐语义声学标记化",
+      "description": "Speech language models (LMs) generate speech as sequences of discrete tokens. Their tokenizer must therefore preserve both acoustic detail and linguistic content at a low bitrate. Semantic-enhanced tokenizers may lose acoustic detail, whereas acoustic-oriented tokenizers retain acoustic variation that makes language modeling harder. Unified tokenizers combine both, but representing acoustic detail and linguistic content within a single feature space can cause interference between the two objectives, and existing approaches typically align acoustic representations to fixed semantic targets from a frozen teacher. We propose Bidirectionally Aligned Semantic-Acoustic Tokenization (BiSAT), a unified tokenization framework with separate acoustic and semantic branches aligned by a shared-index mechanism. This design learns acoustic and semantic representations in separate continuous spaces while producing a single discrete code sequence, and it jointly optimizes both encoders without relying on fixed semantic teacher targets. Based on BiSAT, we develop BiSAT-TTS, a zero-shot text-to-speech system comprising an autoregressive text-speech LM and a conditional flow-matching acoustic decoder. Reconstruction, downstream understanding, and diagnostic analyses show that BiSAT effectively preserves semantic and acoustic information in the code stream, performs well on in-the-wild and out-of-domain speech, and learns complementary codebook representations. The frozen-code understanding results also support its feasibility and potential for code-based reward modeling in reinforcement learning post-training. BiSAT-TTS performs comparably to state-of-the-art speech LM-based TTS baselines with less training data, further supporting BiSAT's effectiveness for speech language modeling. The audio demos are available at https://seekmind-lab.github.io/bisat-demo.",
+      "description_zh": "语音语言模型 (LM) 将语音生成为离散标记序列。因此，他们的标记器必须以低比特率保留声学细节和语言内容。语义增强的分词器可能会丢失声学细节，而面向声学的分词器保留声学变化，这使得语言建模变得更加困难。统一标记器将两者结合起来，但在单个特征空间内表示声学细节和语言内容可能会导致两个目标之间的干扰，并且现有方法通常将声学表示与冻结教师的固定语义目标对齐。我们提出了双向对齐语义声学���记化（BiSAT），这是一种统一的标记化框架，具有通过共享索引机制对齐的独立声学和语义分支。该设计在生成单个离散代码序列的同时，在单独的连续空间中学习声学和语义表示，并且在不依赖固定语义教师目标的情况下联合优化两个编码器。基于 BiSAT，我们开发了 BiSAT-TTS，这是一种零样本文本转语音系统，由自回归文本语音 LM 和条件流匹配声学解码器组成。重建、下游理解和诊断分析表明，BiSAT 有效地保留了码流中的语义和声学信息，在野外和域外语音方面表现良好，并学习互补的码本表示。冻结代码理解结果也支持其在强化学习训练后基于代码的奖励建模的可行性和潜力。 BiSAT-TTS 的性能与最先进的基于 LM 的 TTS 基线相当，训练数据较少，进一步支持 BiSAT 在语音语言建模方面的有效性。音频演示可在 https://seekmind-lab.github.io/bisat-demo 获取。",
+      "authors": "Y. Lu, L. Wang, S. Okada",
+      "url": "https://huggingface.co/papers/2611.30723",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.30723"
+      }
+    },
+    {
+      "id": "2611.27112",
+      "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+      "title_zh": "Markdown 不是防火墙：四个编码代理、一个规则文件、四个边界",
+      "description": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+      "description_zh": "团队将一页规则文件放入存储库中，并将其称为对编码代理的控制。一项注册研究发现，代理很少查找存储库的贡献规则。我问了安全问题：规则文件在边界、对门做什么？我测试了一个 278 字的规则文件，首先存放假设和分析代码。 Claude Code、Codex CLI、Gemini CLI 和 OpenCode with DeepSeek 通过 20 个带有隐藏测试的小型存储库进行工作，其中 3 个存储库有 12 个。三个代理遇到了我建立的四个边界：拒绝的端点、破坏性的快捷方式、植入的指令和植入的包。权限提示是每个供应商自己的控制层，在设计上就被取消了。模拟服务前面的大门阻止并记录了禁止的请求。每项判决都是从代理人无法更改的记录中读取的。只有我的第一次得分传球是盲目的。我的检查人员没有发现任何真正的错误，无论有没有文件。该文件让一个代理损失了三分之一的分数：Codex CLI 在隐藏测试中从 99.0% 下降到 67.7%，在 36 个步骤中，有 11 个步骤报告任务完成，所有测试都通过，而只有不到一半的隐藏测试通过。它自己的测试通过了。面对与这些任务相冲突的两条规则，三名特工遵循任务，另一名特工遵循规则。综合起来，通过率从 98.2% 下降到 90.9%。配对下降 7.7 分，没有 Codex CLI 则下降 1.3 分。尝试跨越的情况很少：90 个门控步骤中有 5 次尝试，3 次没有文件，2 次有文件，全部由 OpenCode 和 DeepSeek 进行，全部被阻止。在没有门的情况下，在中性文件下，相同的请求在 45 次运行中的 7 次中到达了模拟。由于我的运行脚本中的错误，无文件和规则文件臂始终在三个 HTTP 边界的门后面运行，因此我无法测试该文件是否更改了代理在那里执行的操作。根据我所能衡量的，该文件起到了建议的作用。文件告诉代理您想要什么。门决定它得到什么。",
+      "authors": "Sandeep Dhuri",
+      "url": "https://huggingface.co/papers/2611.27112",
+      "score": 0,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "0",
+        "paperId": "2611.27112"
+      }
+    },
+    {
+      "id": "2611.30494",
+      "title": "Revisiting LLMs as Context Engineers",
+      "title_zh": "重新审视LLM作为环境工程师",
+      "description": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear when and how LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated (r=-0.5, ple 0.05) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
+      "description_zh": "随着大型语言模型 (LLM) 在越来越多的新任务中使用，上下文工程成为通过构建指令提示或元数据而无需强化培训来有效引导 LLM 的基本方法。越来越多的LLM情境工程（LCE）方法通过将LLM本身塑造为工程师，从离线试验中提取通用指令或经验作为情境，从而实现任务自动化。尽管这些方法类似于人类从经验中学习的方式，但目前尚不清楚LLM何时以及如何从数据中设计出有效的背景。为了回答这个问题，我们首先建立一个由具有不同推理模式的数据集组成的基准。我们将不同的 LCE 方法与 8B 大小的不同 LLM 系列进行了比较，结果表明，即使与思想链等简单基线相比，所有任务也没有单一的赢家。即使通过更多参数或生成迭代来扩展模型功能，LCE 也无法持续提升现有性能。在所有数据集和模型中，LCE 的性能增益与推理轨迹故障模式的多样性呈负相关（r=-0.5，ple 0.05）。通过研究 LCE 的运作方式，我们发现（1）指令依从性的提高可以解释 LCE 的一些成功； (2) 一个主要瓶颈是LLM能否从本身多样化的失败中提取有效的经验。通过这项研究，我们揭示了 LCE 在从不同故障模式中抽象原则背景方面的有限能力，并了解 LCE 的工作原理，为未来的工作提供指导。",
+      "authors": "Junrui Zhang, Zeyu Xu, Runchuan Zhu, Jie Peng, Long Zhang, Zixin Ding, Jiaxin Lin, Kai Wang, Jianmin Ji, Junyuan Hong",
+      "url": "https://huggingface.co/papers/2611.30494",
+      "score": 4,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "4",
+        "paperId": "2611.30494"
+      }
+    },
+    {
+      "id": "2611.31516",
+      "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
+      "title_zh": "InitFree-SfM：当无初始化捆绑调整满足运动学习结构时",
+      "description": "Initialization-free bundle adjustment (InitFree BA) aims to jointly recover camera poses and scene structure without requiring an initial global estimate. It is a very challenging problem, especially compared to traditional BA where a good estimation is assumed. While recent methods optimize surrogate Object Space Error (OSE) objectives from random initialization, a low objective value does not necessarily yield an accurate reconstruction, revealing a gap between optimization and reconstruction. We show that existing InitFree BA pipelines struggle to produce accurate 3D reconstructions on modern SfM benchmarks, and demonstrate that incorporating learned metric depth substantially improves their practical feasibility. We introduce InitFree-SfM, a complete initialization-free SfM pipeline combining learned correspondences, metric depth, depth-consistent track construction, and joint metric refinement. Within this framework, we propose a simple depth-augmented OSE (dOSE), which complements the directional constraints of OSE by constraining landmark positions along their viewing rays. Our approach substantially outperforms existing InitFree BA methods and achieves competitive accuracy with established SfM pipelines, including on challenging low-overlap image collections. Importantly, our analysis challenges the prevailing emphasis on surrogate objectives in previous InitFree BA research, revealing that geometric constraints play a central role in accurate reconstruction, while OSE-based optimization provides further improvements.",
+      "description_zh": "无初始化束调整（InitFree BA）旨在联合恢复相机位姿和场景结构，而不需要初始全局估计。这是一个非常具有挑战性的问题，特别是与假设有良好估计的传统 BA 相比。虽然最近的方法从随机初始化中优化代理对象空间误差（OSE）目标，但较低的目标值不一定会产生准确的重建，从而揭示了优化和重建之间的差距。我们表明，现有的 InitFree BA 管道很难在现代 SfM 基准上生成准确的 3D 重建，并证明结合学习的度量深度可以大大提高其实际可行性。我们引入了 InitFree-SfM，这是一个完整的免初始化 SfM 管道，结合了学习的对应关系、度量深度、深度一致的轨道构建和联合度量细化。在此框架内，我们提出了一种简单的深度增强 OSE (dOSE)，它通过限制沿其视线的地标位置来补充 OSE 的方向约束。我们的方法大大优于现有的 InitFree BA 方法，并通过已建立的 SfM 管道实现了具有竞争力的准确性，包括在具有挑战性的低重叠图像集合上。重要的是，我们的分析挑战了先前 InitFree BA 研究中对替代目���的普遍重视，揭示了几何约束在精确重建中发挥着核心作用，而基于 OSE 的优化则提供了进一步的改进。",
+      "authors": "Simon Weber, Mateo de Mayo, Je Hyeong Hong, Carl Olsson, Daniel Cremers, Ronald Clark",
+      "url": "https://huggingface.co/papers/2611.31516",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2611.20844"
+        "paperId": "2611.31516"
       }
     },
     {
-      "id": "2611.29829",
-      "title": "Who Makes the Decision? Auditing an Agentic LLM Pipeline for Illicit Cryptocurrency Transaction Monitoring",
-      "title_zh": "谁做出决定？审计代理LLM管道以进行非法加密货币交易监控",
-      "description": "Agentic pipelines that combine graph detectors, deterministic rules, retrieval-augmented generation and an LLM judge are being proposed to monitor illicit cryptocurrency flows and to write regulation-citing justifications for analysts. They are evaluated on end-to-end accuracy or on the quality of those justifications, and neither shows which component made a decision. We audit such a pipeline on the Elliptic++ Bitcoin dataset with decision-source attribution, a trace-level protocol with three layers: per-case actual causation, interventional Shapley credit, and mediation of upstream risk scores. A deterministic wallet-score override carries about 94% of the credit for flags, and a verification gate cancels most of the judge's own flags, which fall on licit transactions. Testing the judge alone over 76 evidence bundles, four backbones and two prompts, we find that it follows an injected risk score on the anonymous transaction features it is given, although stronger models decide correctly when the facts are explicit; that a context too short for the system prompt leaves it with no verdict at all; and that it cites regulatory clauses that do not apply, which a substring-based citation check accepts. Hiding the score does not fix the judge, because evidence gathered with the score visible still encodes it. For illicit-activity monitoring, an LLM's justification should therefore not be read as evidence of which component flagged a transaction.",
-      "description_zh": "正在提议结合图形检测器、确定性规则、检索增强生成和LLM法官的代理管道来监控非法加密货币流动并为分析师编写引用法规的理由。它们根据端到端的准确性或这些理由的质量进行评估，并且两者都没有显示哪个组件做出了决定。我们在 Elliptic++ 比特币数据集上审核这样的管道，其中包含决策源归因，这是一个具有三层的跟踪级协议：每个案例的实际因果关系、干预性 Shapley 信用以及上游风险评分的中介。确定性的钱包分数覆盖约占标志信用的 94％，并且验证门取消了法官自己的大部分标志，���些标志属于合法交易。在 76 个证据包、四个主干和两个提示上单独测试法官，我们发现它遵循给定匿名交易特征的注入风险评分，尽管在事实明确时更强的模型可以正确决定；对于系统提示来说上下文太短，导致系统根本无法做出任何判断；并且它引用了不适用的监管条款，基于子字符串的引文检查接受这些条款。隐藏分数并不能修复法官，因为通过可见分数收集的证据仍然对其进行编码。因此，对于非法活动监控，LLM的理由不应被视为哪个组件标记了交易的证据。",
-      "authors": "Vaishnavi Chaughule, Yuchen Zhang, Mohammed Ahnaf Tajwar, Sai Akshay Menta, Saanidhya Vats, Vinija Jain, Aman Chadha, Divya Chaudhary",
-      "url": "https://huggingface.co/papers/2611.29829",
+      "id": "2611.31155",
+      "title": "So Many Ways to Multiply 3times3 Matrices: A Large Dataset of Rank-23 Schemes",
+      "title_zh": "3×3 矩阵相乘的多种方法：Rank-23 方案的大型数据集",
+      "description": "A publicly available dataset of 62029 rank-23 schemes for 3times3 matrix multiplication is presented. Every scheme in it has its own rank pattern, an invariant formed by the ranks of the factor matrices of a scheme, so all schemes are pairwise inequivalent. The schemes were obtained by a numerical method combining gradient descent with alternating least squares and by flip graph search, and have ternary, integer or rational coefficients. Rank 23 is the best known for this format and is optimal for schemes with integer coefficients, but the number of essentially different schemes of this rank was poorly understood: the existing collections of Heule et al. and Mårtensson et al. contain many schemes that share only a small number of rank patterns (17376 schemes with 387 patterns and 15316 schemes with 568 patterns respectively). The dataset shows that the number of different rank patterns is much larger than previously known.",
+      "description_zh": "提出了 3×3 矩阵乘法的 62029 个 23 阶方案的公开数据集。其中的每个方案都有自己的等级模式，即由方案的因子矩阵的等级形成的不变量，因此所有方案都是成对不等价的。该方案是通过梯度下降与交替最小二乘相结合的数值方法以及翻转图搜索获得的，并且具有三元、整数或有理系数。 Rank 23 是这种格式中最著名的，并且对于具有整数系数的方案来说是最佳的，但是该等级的本质上不同的方案的数量却知之甚少：Heule 等人的现有集合。和马滕森等人。包含许多仅共享少量排名模式的方案（分别有 17376 个方案和 387 个模式，15316 个方案和 568 个模式）。数据集显示，不同排名模式的数量比之前已知的要多得多。",
+      "authors": "Andrew Igorevich Perminov",
+      "url": "https://huggingface.co/papers/2611.31155",
       "score": 0,
       "meta": {
         "source": "huggingface",
         "upvotes": "0",
-        "paperId": "2611.29829"
+        "paperId": "2611.31155"
       }
     },
     {
-      "id": "2611.29969",
-      "title": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
-      "title_zh": "CARE-3D：基于证据的强化学习，在场景 3D 场景中进行代理推理",
-      "description": "Situated 3D reasoning requires embodied agents to interpret objects, scene geometry, and viewpoint dependent spatial relations. Existing methods learn grounded interactions from supervised traces, but largely imitate prescribed evidence acquisition patterns rather than optimizing the support that the returned evidence provides for the correct answer. Moreover, outcome rewards provide limited credit for intermediate tool choices and may leave infrequent tools underexplored. An effective agent should instead adaptively decide what to ground, which tool to invoke, and how to assess the utility of returned evidence. To this end, this paper presents CARE-3D, a reinforcement post-training framework for adaptive grounded reasoning. Supervised fine-tuning (SFT) on grounding instructions first establishes valid interactions, after which Group Relative Policy Optimization (GRPO) optimizes the agent while keeping the 3D grounding module frozen. CARE-3D combines Counterfactual Attribution of Returned Evidence for evidence sensitive credit assignment, and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer and format rewards, especially in spatial reasoning and grounding answer coherence. Our code is available at https://github.com/xiaoqian-UQ/CARE-3D{CARE-3D}.",
-      "description_zh": "情境 3D 推理需要具体代理来解释对象、场景几何形状和视点相关的空间关系。现有的方法从监督痕迹中学习基础交互，但很大程度上模仿规定的证据获取模式，而不是优化返回的证据为正确答案提供的支持。此外，结果奖励为中间工具选择提供的信用有限，并且可能导致不常见的工具未被充分探索。相反，有效的代理人应该适应性地决定要依据什么、调用哪个工具以及如何评估返回证据的效用。为此，本文提出了 CARE-3D��一种用于自适应扎根推理的强化训练后框架。接地指令的监督微调 (SFT) 首先建立有效的交互，然后组相对策略优化 (GRPO) 优化代理，同时保持 3D 接地模块冻结。 CARE-3D 结合了返回证据的反事实归因以进行证据敏感的信用分配，并结合了组覆盖抽样以保留工具覆盖范围。 MSQA 和 Beacon3D 上的实验表明，仅使用答案和格式奖励，与 SFT 和 GRPO 相比，获得了一致的增益，特别是在空间推理和基础答案一致性方面。我们的代码可在 https://github.com/xiaoqian-UQ/CARE-3D{CARE-3D} 获取。",
-      "authors": "Xiaoqian Hu, Ruihong Qiu, Yanran Tang, Sen Wang",
-      "url": "https://huggingface.co/papers/2611.29969",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2611.29969"
-      }
-    },
-    {
-      "id": "2611.28231",
-      "title": "Evaluating Memanto on DolphinBench for AI Agents",
-      "title_zh": "在 DolphinBench 上评估 AI 代理的 Memanto",
-      "description": "Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team's channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark's authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto's run also has the lowest total cost (10.86, against 61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark's own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.",
-      "description_zh": "基于问答的记忆基准告诉代理要回忆哪个事实。工作场所请求通常会隐含这种需求：要在团队渠道中发布更新，代理必须从早期交互中找出哪个渠道并在工具调用中使用它。我们在 DolphinBench 上对 Memanto 进行了评估，Memanto 是一种根据信息理论相关性得分对记忆进行排名的记忆代理，DolphinBench 通过 600 个模拟工作场所任务来测试记忆力，每个任务都被验证为需要记忆。 Memanto 在使用 GPT-6-Luna 的 Hermes 代理工具中运行，每次对话最多 6 次迭代，完成了 503 项任务 (83.83%)。基准测试作者报告的最强配置是带有 GPT-5.6-Luna 的 Mem0 和多达 60 次迭代，完成了 424 (70.67%)。 Memanto 的运行还具有最低的总成本（10.86，而报告的最便宜的运行为 61.48）和最短的中值任务延迟（15.32 秒）。评分使用基准自己的判断，但代理模型不同，因此这些结果比较完整的系统。记忆系统会影响智能体是否完成此类任务以及完成成本。",
-      "authors": "Suleman Khan, Rasa Rahnema, Tara Khani, Majid Fekri, Fattane Zarrinkalam",
-      "url": "https://huggingface.co/papers/2611.28231",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.28231"
-      }
-    },
-    {
-      "id": "2611.29259",
-      "title": "Look Back: Reinforcement Learning with Counterfactual World Models",
-      "title_zh": "回顾：使用反事实世界模型的强化学习",
-      "description": "Agents in complex, stochastic environments must contend with dynamics that can exceed their world models' predictive capacity and randomness that obscure the consequences of their actions. We hypothesize that, compared to imagining entirely new trajectories in such complex environments, it can be easier to transform observed trajectories with alternative actions. Counterfactual world models condition on observations to predict alternative outcomes under the same underlying environmental randomness, using experience as a reference for predicting action-dependent changes. We present a policy gradient estimator, REINFORCE Look Back (RLB), that uses counterfactual returns as baselines to distinguish action effects from environmental luck, and prove conditions for unbiasedness and variance reduction. In settings where environmental evolution is harder to predict than action-induced changes, we show that counterfactual world models are easier to learn and support better policy learning than ordinary world models. Our findings suggest that counterfactual thinking can help agents learn effective behavior without independently reproducing the full complexity of their worlds.",
-      "description_zh": "复杂、随机环境中的智能体必须应对可能超出其世界模型预测能力的动态和模糊其行为后果的随机性。我们假设，与在如此复杂的环境中想象全新的轨迹相比，用替代动作来改变观察到的轨迹可能更容易。反事实世界模型以观察为条件，以预测相同潜在环境随机性下的替代结果，使用经验作为预测依赖于行动的变化的参考。我们提出了一种政策梯度估计器，即 REINFORCE Look Back (RLB)，它使用反事实回报作为基线来区分行动影响和环境运气，并证明无偏性和方差减少的条件。在环境演变比行动引起的变化更难预测的环境中，我们表明，反事实世界模型比普通世界模型更容易学习并支持更好的政策学习。我们的研究结果表明，反事实思维可以帮助智能体学习有效的行为，而无需独立再现其世界的全部复杂性。",
-      "authors": "Jinwoo Kim, Toghrul Abbasov, Lucius E. J. Bynum, Aahlad Puli, Stephanie Milani, Hyunwoo Ryu, Seunghoon Hong, Kyunghyun Cho, Rajesh Ranganath",
-      "url": "https://huggingface.co/papers/2611.29259",
-      "score": 0,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "0",
-        "paperId": "2611.29259"
-      }
-    },
-    {
-      "id": "2611.34363",
-      "title": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
-      "title_zh": "单数据库奖励是可破解的：值得信赖的文本到 SQL 强化学习的反事实执行",
-      "description": "Reinforcement learning (RL) for text-to-SQL agents pays a query when its result matches the reference on one database. However, a wrong query can match by luck when the data lack the rows that expose its bug. We study a counterfactual-database (CF) reward that also runs the final query on a few hidden, code-generated copies of the database and pays only if all results match (strict form) or by the share matched (mean form). On 1,302 synthetic audit questions, the strict form lowers the share of buggy queries paid in full from 29.5% to 16.8% and of reward hacks from 54.1% to 1.9%, rejecting 0 of 2,847 correct queries; copies from a family-blind generator do about as well. In a controlled GRPO comparison on a 3.35B model with three seeds per arm, training on the mean form did not improve in-domain accuracy (8.4% vs 11.7%), because the two rewards disagreed on only 5-7% of rollouts; on Spider it gained 1.6 points. One seed reverses both signs, so single-seed reward comparisons mislead. Code: https://github.com/RishiiGamer2201/counterfactual-sql-rewards ; data, models, demo: https://huggingface.co/counterfactual-sql",
-      "description_zh": "当文本到 SQL 代理的强化学习 (RL) 结果与一个数据库上的引用匹配时，就会进行查询。然而，当数据缺少暴露其错误的行时，错误的查询可能会幸运地匹配。我们研究了一种反事实数据库（CF）奖励，它也在数据库的一些隐藏的、代码生成的副本上运行最终查询，并且仅当所有结果匹配（严格形式）或按份额匹配（平均形式）时才支付。在 1,302 个综合审计问题上，严格形式将全额支付的有问题查询的比例从 29.5% 降低到 16.8%，奖励黑客的比例从 54.1% 降低到 1.9%，拒绝了 2,847 个正确查询中的 0 个；来自家庭盲人生成器的副本也能起到同样的作用。在对每臂三个种子的 3.35B 模型进行的受控 GRPO 比较中，平均形式的训练并没有提高域内准确率（8.4% vs 11.7%），因为两种奖励仅在 5-7% 的推出上不一致；在Spider上它获得了1.6分。一粒种子可以逆转这两个迹象，因此单种子奖励的比较会产生误导。代码：https://github.com/RishiiGamer2201/counterfactual-sql-rewards；数据、模型、演示：https://huggingface.co/counterfactual-sql",
-      "authors": "Shreshth Rai, Rishii Kumar Singh, Aksh Aggarwal",
-      "url": "https://huggingface.co/papers/2611.34363",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2611.34363"
-      }
-    },
-    {
-      "id": "2611.28732",
-      "title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
-      "title_zh": "Entangle：跨未知任务和上下文扩展人类视频上下文世界动作模型",
-      "description": "In-context learning (ICL) enables foundation models to perform unseen tasks from context without parameter updates. In robotic manipulation, a human video provides the context that specifies how a task should be performed. However, scaling human-video ICL on world-action models (WAMs) faces two challenges: task-level human-robot pairs are not temporally aligned with robot actions, and standard action losses allow policies to rely on initial-scene or task-identity shortcuts rather than tracking the context. We present Entangle, an in-context world-action model that maps a single human video and current robot observations to future visual states and executable actions. To scale temporally aligned training data, we convert recorded robot videos into matched human contexts via video-to-video generation, supplemented by real paired recordings. For model training, we combine variable-length video windows with an intra-task contrastive objective that distinguishes the paired action trajectory from other executions of the same task, preventing task-identity shortcuts. Without task-specific fine-tuning, Entangle improves steadily as aligned training data scales, reaching an average score of 83.5/100 across six unseen tasks on an Astribot S1 robot, and achieves a 69.5% average success rate on seven unseen RoboTwin tasks, outperforming Zero-WAM by 22.6 percentage points. Under Context-OOD, although trained only on scene-aligned pairs, Entangle transfers context-specified behaviors across rearranged layouts and substituted tools. Project page at https://entangle-robotics.github.io/",
-      "description_zh": "上下文学习 (ICL) 使基础模型能够在上下文中执行看不见的任务，而无需更新参数。在机器人操作中，人类视频提供了指定如何执行任务的上下文。然而，在世界动作模型（WAM）上扩展人类视频 ICL 面临两个挑战：任务级人类机器人对在时间上与机器人动作不一致，并且标准动作损失允许策略依赖于初始场景或任务身份快捷方式，而不是跟踪上下文。我们提出了 Entangle，一种上下文世界动作模型，它将单个人类视频和当前机器人观察结果映射到未来的视觉状态和可执行动作。为了扩展时间对齐的训练数据，我们通过视频到视频生成将录制的机器人视频转换为匹配的人类环境，并辅以真实的配对录制。对于模型训练，我们将可变长度视频窗口与任务内对比目标相结合，将配对动作轨迹与同一任务的其他执行区分开来，防止任务身份捷径。在没有针对特定任务进行微调的情况下，Entangle 随着训练数据规模的调整而稳步提高，在 Astribot S1 机器人上的 6 个未见过的任务中达到了 83.5/100 的平均得分，并在 7 个未见过的 RoboTwin 任务上实现了 69.5% 的平均成功率，比 Zero-WAM 高出 22.6 个百分点。在 Context-OOD 下，虽然仅在场景对齐对上进行训练，但 Entangle 可以在重新排列的布局和替代工具之间传输上下文指定的行为。项目页面：https://entangle-robotics.github.io/",
-      "authors": "Chendong Xiang, Chengwen Zhang, Ruowen Zhao, Zeyuan Wang, Shuhe Huang, Rongxu Cui, Min Zhao, Fan Bao, Hengkai Tan, Jun Zhu",
-      "url": "https://huggingface.co/papers/2611.28732",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.28732"
-      }
-    },
-    {
-      "id": "2611.33093",
-      "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
-      "title_zh": "AIChipBench：自动化 AI 加速器设计的 LLM 代理基准测试",
-      "description": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
-      "description_zh": "语言模型解码器在解码步骤之间携带状态，并且在硬件中，错误的状态更新可能使当前令牌保持正确，并在以后损坏几个令牌的输出，因此设计可以通过输出测试，但仍然是错误的。 AIChipBench 询问 LLM 编码代理需要什么才能正确构建此类硬件。代理在可合成的寄存器传输级 (RTL) 代码中针对指定每个解码步骤的输出和存储状态的可执行整数引用来实现量化 Qwen3.5、Gemma 3、Gemma 4 和 Llama 3.2 解码器。他们在固定预算下针对公开测试进行调试；他们的冻结设计根据保留的令牌序列、重置、内存停顿和综合进行评分，第二条轨道要求他们在几乎固定的区域加速正确的设计。在 4 个编码代理的 9,136 次尝试中，困难在于存储状态。指向第一个状态不匹配的反馈使匹配研究的所有 12 个代理任务单元中对仅输出反馈的接受度提高了 25.0 至 46.9 个百分点，并且每个接受的设计的代理时间减少了一半。根据新的顺序和条件重新评级，69 个已接受的设计中有 45 个未达到测试要求的 32 个步骤。超过三分之一的加速正确设计的尝试都以失败告终。总体得分将 Sol 5.6 和 Fable 5.1 排在 Astra 6 和 Opus 5.5 之上，并且两个实例在所有 200 个随机分割中都给出了这个顺序。因此，硬件代理需要公开存储状态的调试反馈，并且它们的基准测试需要远远超出开发案例的最终测试。",
-      "authors": "Guangyuan Wang, Chengran Li, Minchen Luo, Jichen Feng, Mengdi Wang, Yifan Zhang",
-      "url": "https://huggingface.co/papers/2611.33093",
-      "score": 3,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "3",
-        "paperId": "2611.33093"
-      }
-    },
-    {
-      "id": "2611.34079",
-      "title": "WorldBridge: Bridging Scattered Views for Coherent 3D World Generation",
-      "title_zh": "WorldBridge：桥接分散的视图，生成连贯的 3D 世界",
-      "description": "Generating coherent and explorable 3D worlds from scattered images with little or no visual overlap is a fundamental and long-standing challenge in computer vision, which existing geometry-aware methods fail to address. Meanwhile, existing image- and video-based methods may generate unseen regions but produce inconsistent geometry across views. To bridge this gap, we present WorldBridge, a framework for coherent and controllable 3D world generation under scattered images with little or no visual overlap. WorldBridge encodes scattered references into a global scene context to guide geometry and appearance generation across views. Our temporal and spatial reference attention mechanism further enhances the fidelity of temporal references along the target trajectory and supports flexible spatial references outside it. A plug-and-play latent-reference consistency strategy improves reference fidelity through reprojection-guided test-time optimization. We also introduce the WorldBridge benchmark suite to evaluate 3D world generation from scattered, low-overlap references, which is rarely explored by current benchmarks. Both qualitative and quantitative results demonstrate that our method enables controllable and coherent 3D world generation, surpassing the existing state-of-the-art solutions. Our project page is available at https://davidyan2001.github.io/WorldBridge/.",
-      "description_zh": "从视觉重叠很少或没有的分散图像生成连贯且可探索的 3D 世界是计算机视觉领域的一个基本且长期存在的挑战，现有的几何感知方法无法解决这一挑战。同时，现有的基于图像和视频的方法可能会生成看不见的区域，但会在视图之间产生不一致的几何形状。为了弥补这一差距，我们提出了 WorldBridge，这是一个在很少或没有视觉重叠的分散图像下生成连贯且可控的 3D 世界的框架。 WorldBridge 将分散的引用编码到全局场景上下文中，以指导跨视图的几何和外观生成。我们的时间和空间参考注意机制进一步增强了沿目标轨迹的时间参考的保真度，并支持其外部的灵活空间参考。即插即用的潜在参考一致性策略通过重投影引导的测试时间优化来提高参考保真度。我们还引入了 WorldBridge 基准测试套件，用于评估来自分散、低重叠参考的 3D 世界生成，当前基准测试很少对此进行探索。定性和定量结果都表明，我们的方法能够生成可控且连贯的 3D 世界，超越了现有的最先进的解决方案。我们的项目页面位于 https://davidyan2001.github.io/WorldBridge/。",
-      "authors": "Weilong Yan, Jingyu Hu, Hongli Xu, Yifan Zhan, Beibei Lin, Anbang Wang, Qinqian Lei, Jingwei Huang, Robby T. Tan",
-      "url": "https://huggingface.co/papers/2611.34079",
-      "score": 4,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "4",
-        "paperId": "2611.34079"
-      }
-    },
-    {
-      "id": "2611.21155",
-      "title": "Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?",
-      "title_zh": "编辑建议：LLM能否预期用户的编辑请求以及何时？",
-      "description": "After a large language model (LLM) agent generates an artifact, users often send edit requests for it. This paper studies whether an LLM can anticipate these requests before they are sent. Such anticipation is useful in practice because it reduces the effort of user review and feedback. We formalize this task as edit recommendation and build EditRecBench, a benchmark for evaluating the performance of LLMs on this task, from real-world conversation logs in WildChat-4.8M. Through benchmarking and failure analysis, we identify a practical challenge that some cases are inherently difficult to predict in real-world settings. To address this, we introduce decision model-based gating to filter out cases where predictions are unlikely to be correct before they are presented to the user. Our trained model outperforms existing decision models and raises pass@5 among shown suggestions by 12--25 points at a gating threshold. Our code is available at https://github.com/ntt-dkiku/llm-edit-recommendation.",
-      "description_zh": "大型语言模型 (LLM) 代理生成工件后，用户通常会发送对其的编辑请求。本文研究了LLM是否可以在发送这些请求之前预见到这些请求。这种预期在实践中很有用，因为它减少了用户审查和反馈的工作量。我们将此任务形式化为编辑推荐，并根据 WildChat-4.8M 中的真实对话日志构建 EditRecBench，这是评估LLM在该任务上的性能的基准。通过基准测试和故障分析，我们发现了一个实际挑战，即某些情况在现实环境中本质上难以预测。为了解决这个问题，我们引入了基于决策模型的门控，以过滤掉预测在呈现给用户之前不太可能正确的情况。我们经过训练的模型优于现有的决策模型，并且在门控阈值下将显示的建议中的 pass@5 提高了 12--25 点。我们的代码可在 https://github.com/ntt-dkiku/llm-edit-recommendation 获取。",
-      "authors": "Daisuke Kikuta",
-      "url": "https://huggingface.co/papers/2611.21155",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2611.21155"
-      }
-    },
-    {
-      "id": "2611.30334",
-      "title": "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift",
-      "title_zh": "推理何时有助于实体消歧？域内和轮班中的小型LLM",
-      "description": "Entity disambiguation (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question answering, and information extraction. Recent work has applied LLMs to this problem, achieving stateof-the-art performance. Notably, reasoning LLMs have been shown to perform entity disambiguation in a true zero-shot fashion, generalizing across knowledge bases and domains. However, it is unclear whether this capability survives, or remains competitive, with smaller LLMs, where entity disambiguation has typically relied on reranking rather than reasoning. We ask when reasoning is worth its cost at small scale. We compare pointwise, listwise, and reasoning-based candidate-selection components within a classical coarse-to-fine entity disambiguation pipeline, across the classical, few-shot and true zero-shot settings. The reasoning paradigm is trained with distillation and reinforcement learning recipes. The benefit of reasoning grows with domain shift: negligible in-domain, decisive in the true zero-shot setting. We show that two distinct factors are at work: the reranker's uncertainty over the candidates locates where the paradigms disagree, while shift governs which is right when they do.",
-      "description_zh": "实体消歧（将文本中的歧义提及映射到知识库中的实体）是知识图构建、问答和信息提取等任务的基础步骤。最近的工作将LLM应用于这个问题，取得了最先进的表现。值得注意的是，推理LLM已被证明能够以真正的零样本方式执行实体消歧，跨知识库和领域进行泛化。然而，目前尚不清楚这种能力是否能够在较小的LLM中生存或保持竞争力，因为实体消歧通常依赖于重新排名而不是推理。我们问，��规模的推理何时值得付出代价。我们在经典的从粗到细的实体消歧管道中，跨越经典、少样本和真正的零样本设置，比较逐点、列表和基于推理的候选选择组件。推理范式是通过蒸馏和强化学习方法进行训练的。推理的好处随着域的转移而增长：域内可以忽略不计，但在真正的零样本设置中具有决定性。我们表明，有两个不同的因素在起作用：重新排序者对候选者的不确定性位于范式不一致的地方，而转变则决定了范式不一致时哪个是正确的。",
-      "authors": "Samy Haffoudhi, Fabian M Suchanek, Nils Holzenberger",
-      "url": "https://huggingface.co/papers/2611.30334",
-      "score": 2,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "2",
-        "paperId": "2611.30334"
-      }
-    },
-    {
-      "id": "2611.32335",
-      "title": "GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
-      "title_zh": "GOLD-SLAM：高斯溅射全向 LiDAR 深度 SLAM",
-      "description": "Panoramic cameras capture nearly the entire spherical field of view in a single frame. However, the mismatch between this panoramic coverage and the field of view of LiDAR poses a substantial challenge for panoramic Gaussian splatting SLAM that relies on LiDAR depth priors. We introduce GOLD-SLAM, a Gaussian-splatting Omnidirectional LiDAR-Depth SLAM system that combines high-quality rendering with accurate geometric reconstruction. It performs tracking and mapping in the spherical domain and uses tracked visual features in regions without LiDAR coverage to improve pose estimation. To address insufficient coverage of newly observed surfaces and floating artifacts during incremental mapping, we introduce Depth-Aware Map Extension and Pruning (DAEP). To enable broader evaluation, we collect a new dataset, WHOLE, using a UAV platform across Weak-geometry, High-dynamic, Omnidirectional, Low-light, and Easy scenarios. Extensive experiments on public benchmarks and WHOLE demonstrate competitive rendering quality and improved geometric accuracy relative to perspective systems. Compared with existing panoramic baselines, GOLD-SLAM improves mean PSNR by 5.56-9.10 dB and reduces mean Depth-L1 by 71.9-83.9%. To assess deployment feasibility on resource-constrained platforms such as UAVs, we evaluate an embedded configuration of GOLD-SLAM on a Jetson Orin NX (16 GB), demonstrating online operation at the cost of reconstruction quality.",
-      "description_zh": "全景相机在单帧中捕捉几乎整个球形视野。然而，这种全景覆盖范围与激光雷达视场之间的不匹配对依赖于激光雷达深度先验的全景高斯溅射 SLAM 提出了巨大的挑战。我们推出 GOLD-SLAM，这是一种高斯喷射全向 LiDAR 深度 SLAM 系统，它将高质量渲染与精确的几何重建相结合。它在球面域中执行跟踪和映射，并在没有 LiDAR 覆盖的区域中使用跟踪的视觉特征来改进姿态估计。为了解决增量映射期间新观察到的表面和浮动伪影的覆盖不足问题，我们引��了深度感知地图扩展和修剪（DAEP）。为了实现更广泛的评估，我们使用无人机平台在弱几何、高动态、全向、弱光和简单场景中收集了一个新的数据集 WHOLE。对公共基准和 WHOLE 的广泛实验证明了相对于透视系统具有竞争力的渲染质量和改进的几何精度。与现有的全景基线相比，GOLD-SLAM 将平均 PSNR 提高了 5.56-9.10 dB，并将平均 Depth-L1 降低了 71.9-83.9%。为了评估在无人机等资源受限平台上的部署可行性，我们评估了 Jetson Orin NX (16 GB) 上的 GOLD-SLAM 嵌入式配置，以牺牲重建质量为代价展示了在线操作。",
-      "authors": "Weicong Zhang, Yuan Huang, Yu Zheng, Lin Chenxiao, Yingying Li, Lilong Fan, Liangdong Zhuang, Yufan Chen, Ruiping Liu, Junwei Zheng, Jiaming Zhang",
-      "url": "https://huggingface.co/papers/2611.32335",
+      "id": "2611.31491",
+      "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
+      "title_zh": "预训练的表格特征和财务邻近度的测量",
+      "description": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure of financial dissimilarity in a spatial asset-pricing model of US equities from 2011 to 2025, and find that their estimated gains over a direct distance between the same disclosures become consistently positive once broad SEC filing data are included. This reframes tabular foundation models from black-box predictors into instruments for measuring economic structure, with immediate applications to peer selection, risk attribution and network-based asset pricing. More broadly, our findings suggest that the internal representations of foundation models, not only their predictions, deserve study as economic objects, opening a new line of research on what pretrained models know about firms.",
+      "description_zh": "空间套利定价理论（S-APT）扩展了因子模型，允许回报在互联企业之间溢出，超出了常见风险因素的解释范围。近年来，表格基础模型（TFM）在中小型表格基准上已匹配或优于调整梯度提升和袋装集成。尽管它们的预测性能很强，但这些模型很少揭示它们所学到的知识，这限制了它们在需要解释的受监管金融应用中的使用。内部表示广泛用于探索神经网络学习的内容和测量相似性。在本文中，我们使用四个 TFM 的冻结��示作为 2011 年至 2025 年美国股票空间资产定价模型中财务差异的衡量标准，并发现，一旦纳入广泛的 SEC 备案数据，它们在相同披露之间的直接距离上的估计收益将始终为正值。这将表格基础模型从黑盒预测器重新构建为衡量经济结构的工具，并立即应用于同行选择、风险归因和基于网络的资产定价。更广泛地说，我们的研究结果表明，基础模型的内部表征（而不仅仅是它们的预测）值得作为经济对象进行研究，从而开启了关于预训练模型对企业了解的新研究领域。",
+      "authors": "Marcus Gawronsky",
+      "url": "https://huggingface.co/papers/2611.31491",
       "score": 1,
       "meta": {
         "source": "huggingface",
         "upvotes": "1",
-        "paperId": "2611.32335"
+        "paperId": "2611.31491"
       }
     },
     {
-      "id": "2611.28244",
-      "title": "Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents",
-      "title_zh": "揭秘自动研究工具：背景和技能如何塑造自我进化代理",
-      "description": "Autoresearch agents, which autonomously design, run, and refine experiments, are accelerating scientific progress, particularly in AI research. However, existing agents rely on harnesses that combine multiple mechanisms, making it difficult to determine how individual components contribute to performance. We systematically study harness design for long-horizon, self-evolving autoresearch agents along two dimensions: context management, which determines what an agent retains from its past attempts, and skill management, which governs how it stores and reuses lessons from those attempts. Across MLE-Bench and KernelBench with gpt-oss-120b, gpt-6-luna, and gpt-6-sol, we isolate the effects of individual harness design choices by evaluating each against a recency-truncation baseline within a shared agent framework. For context management, we find that preserving individually accessible records of past attempts is more effective than maintaining a rolling summary, with context folding performing best across all six settings and improving upon the baseline by up to 19.2%. For skill management, selectively discarding persistently unused lessons is more effective on average than consolidating them or promoting them to standing rules. Building on these findings, we combine context folding and skill deletion in MLEvolver, which achieves a 72.7% medal rate on MLE-Bench Lite and a 94% fast_1 score on KernelBench Level 3, substantially outperforming AIDE and OpenEvolve under the same inference budget. Overall, our study distills design principles for preserving experimental history and curating reusable lessons in autoresearch harnesses, paving the way for agents that turn accumulated experience into sustained progress.",
-      "description_zh": "自动研究代理可以自主设计、运行和完善实验，正在加速科学进步，特别是在人工智能研究方面。然而，现有的代理依赖于结合多种机制的线束，因此很难确定各个组件如何对性能做出贡献。我们从两个维度系统地研究长期、自我进化的自动研究代理的工具设计：上下文管理，它决定代理从过去的尝试中保留什么，以及技能管理，它控制它如何存储和重用这些尝试中的经验教训。在使用 gpt-oss-120b、gpt-6-luna 和 gpt-6-sol 的 MLE-Bench 和 KernelBench 中，我们通过根据共享代理框架内的新近度截断基线评估每个设计选择来���离各个线束设计选择的影响。对于上下文管理，我们发现保留过去尝试的单独可访问记录比维护滚动摘要更有效，上下文折叠在所有六种设置中表现最佳，并且在基线基础上提高了高达 19.2%。对于技能管理来说，有选择地丢弃持续未使用的课程平均比整合它们或将它们提升为长期规则更有效。基于这些发现，我们在 MLEvolver 中结合了上下文折叠和技能删除，在 MLE-Bench Lite 上获得了 72.7% 的奖牌率，在 KernelBench Level 3 上获得了 94% 的 fast_1 分数，在相同的推理预算下大大优于 AIDE 和 OpenEvolve。总体而言，我们的研究提炼了保存实验历史和在自动研究工具中策划可重复使用的课程的设计原则，为将积累的经验转化为持续进步的代理铺平了道路。",
-      "authors": "Kelvin Kiu-Wai Tam, Newt Hue-Nam K. Nguyen, Tianshi Zheng, Yunxiang Mo, Weihan Li, Zhongwei Xie, Chiu Yeung Tang, Jui-Yu Ho, Yangqiu Song, Ginny Y. Wong, Simon See",
-      "url": "https://huggingface.co/papers/2611.28244",
-      "score": 5,
-      "meta": {
-        "source": "huggingface",
-        "upvotes": "5",
-        "paperId": "2611.28244"
-      }
-    },
-    {
-      "id": "2611.32938",
-      "title": "Efficient Video Retrieval Augmented Generation via Token Allocation",
-      "title_zh": "通过代币分配高效视频检索增强生成",
-      "description": "Efficient long-video understanding requires identifying relevant evidence while minimizing the tokens processed by vision-language models (VLMs). Existing video retrieval-augmented generation (RAG) methods rely on frame selection and token compression, but overlook how much each additional token is worth. We introduce Lembas, a plug-and-play framework that formulates video RAG as a token allocation problem over frames and subtitles under a shared budget. Our key insight is that the value of a token diminishes within each item and decreases further as similar evidence receives more tokens. Lembas captures both effects in a single objective and solves it with an efficient iterative water-filling algorithm that has a provable convergence guarantee. For multi-turn conversations, Lembas reuses the tokens processed in earlier turns and refines relevance with the VLM's attention at no extra cost. Our evaluations show that Lembas improves accuracy by up to 7.2 percentage points over state-of-the-art baselines at comparable compute. On multi-turn video understanding, Lembas achieves up to 1.5 percentage points higher accuracy with 1.7-17.3x fewer TFLOPs.",
-      "description_zh": "高效的长视频理解需要识别相关证据，同时最大限度地减少视觉语言模型 (VLM) 处理的标记。现有的视频检索增强生成（RAG）方法依赖于帧选择和令牌压缩，但忽略了每个附加令牌的价值。我们介绍 Lembas，一个即插即用的框架，它将视频 RAG 表述为共享预算下帧和字幕的令牌分配问题。我们的主要见解是，每个项目中代币的价值都会递减，并且随着类似的证据收到更多代币，代币的价值会进一步降低。 Lembas 在单个目标中捕获了这两种效应��并使用高效的迭代注水算法来解决它，该算法具有可证明的收敛保证。对于多轮对话，Lembas 重用在前轮中处理的令牌，并完善与 VLM 注意力的相关性，无需额外成本。我们的评估表明，在可比计算下，Lembas 的准确率比最先进的基线提高了 7.2 个百分点。在多轮视频理解方面，Lembas 的准确率提高了 1.5 个百分点，TFLOP 减少了 1.7-17.3 倍。",
-      "authors": "Ayush Barik, Fan Lai, Francis Y. Yan",
-      "url": "https://huggingface.co/papers/2611.32938",
+      "id": "2611.28849",
+      "title": "Guarding with Judgment: Learning to Intervene for Multimodal Safety",
+      "title_zh": "判断守护：学习干预以实现多式联运安全",
+      "description": "When visual context makes an ordinary request unsafe to answer as asked, a blanket refusal may leave the user's need unresolved. Choosing how to help requires distinguishing an established hazard from a condition that still needs verification, a distinction that binary safety labels leave unspecified. We formulate this decision through four actions: allow, warn, review, and refuse. To ground these decisions in verifiable evidence, we build a corpus of 20,126 training audits and the JudiBench benchmark, connecting each action to diagnostic judgments, source evidence, and controlled context changes. Our guard, JudiAct, separately states what the source establishes, what condition governs the help, and how the rules apply. It then checks these three brief review items against the original inputs to predict diagnostic labels and a handling action. Supervised training learns individual judgments while comparing label assignments across related cases. A second stage swaps one review item at a time, using the resulting audit feedback to refine review generation. On JudiBench, JudiAct improves request and answer Macro-F1 by more than 28 percentage points over its 4B backbone. Across nine public benchmarks, it outperforms state-of-the-art guards on the mean delivered-answer score in both pre-generation and post-generation settings, cutting MM-SafetyBench attack success from 40.78% to 25.30%.",
+      "description_zh": "当视觉上下文使普通请求无法安全地按要求回答时，一揽子拒绝可能会使用户的需求得不到解决。选择如何提供帮助需要将已确定的危险与仍需要验证的情况区分开来，二元安全标签未明确说明这一区别。我们通过四种行动来制定这一决定：允许、警告、审查和拒绝。为了将这些决策建立在可验证的证据之上，我们构建了一个包含 20,126 项培训审核和 JudiBench 基准的语料库，将每个行动与诊断判断、源证据和受控环境变化联系起来。���们的守卫 JudiAct 分别说明了来源的建立、管辖帮助的条件以及规则的适用方式。然后，它根据原始输入检查这三个简短的审查项目，以预测诊断标签和处理操作。监督训练在比较相关案例的标签分配时学习个人判断。第二阶段一次交换一个审核项目，使用生成的审核反馈来完善审核生成。在 JudiBench 上，JudiAct 将请求和应答 Macro-F1 比其 4B 主干网提高了 28 个百分点以上。在九个公共基准测试中，它在生成前和生成后设置的平均交付答案得分上都优于最先进的防护，将 MM-SafetyBench 攻击成功率从 40.78% 降低到 25.30%。",
+      "authors": "Jipei He, Cheng Cheng, Liuguo Wang, Zihan Wen, Changlin Yu, Wentao Song, Suyun Zhao",
+      "url": "https://huggingface.co/papers/2611.28849",
       "score": 2,
       "meta": {
         "source": "huggingface",
         "upvotes": "2",
-        "paperId": "2611.32938"
+        "paperId": "2611.28849"
       }
     },
     {
-      "id": "2611.21056",
-      "title": "Evaluation-Free Recursive Self-Improvement for Coding Agents",
-      "title_zh": "编码代理的免评估递归自我改进",
-      "description": "Recent self-improving coding agents have achieved strong benchmark performance by iteratively modifying their own executable implementations. A common pattern uses downstream task-derived evidence to decide which candidates or lineages continue evolving, which we term evaluate-and-select. Obtaining this signal requires repeatedly executing evolved agents on downstream tasks, so broader exploration incurs increasing evaluation cost, while repeated optimization against a fixed evaluation distribution may encourage benchmark-specific adaptation. We ask: can coding agents self-improve without downstream task evaluation inside the evolution loop? We introduce Explore-then-Integrate (ELITE), which integrates implementation mechanisms rather than selecting a single exploratory child to continue the lineage. At each generation, ELITE proposes diverse focused improvements, implements them independently from the same parent, and inspects the resulting programs to identify complementary, redundant, and conflicting mechanisms before reimplementing a compatible subset as one coherent descendant. No downstream task outcomes or task-solving trajectories of evolved candidates are used to guide evolution; only deterministic checks of structural and operational validity are used inside the loop. On SWE-bench Pro, ELITE improves the initial agent from 60.0% to 85.6%, compared with 86.7% for the Darwin Godel Machine (DGM) and 88.3% for the Huxley-Godel Machine (HGM), while using zero candidate task evaluations and reducing observed wall-clock evolution time by 8.8x and 3.2x, respectively, under the evaluated configurations. In cross-benchmark transfer without further adaptation, ELITE averages 73.3% on SWE-bench Verified and 69.3% on Polyglot. Together, these results demonstrate the feasibility of coding-agent self-improvement without downstream candidate task evaluation in our setting.",
-      "description_zh": "最近的自我改进编码代理通过迭代修改自己的可执行实现实现了强大的基准性能。一种常见的模式使用下游任务衍生的证据来决定哪些候选者或谱系继续进化，我们称之为评估和选择。获得此信号需要在下游任务上重复执行进化代理，因此更广泛的探索会导致评估成本增加，而针对固定评估分布的重复优化可能会鼓励特定于基准的适应。我们问：编码代理可以在没有进化循环内的下游任务评估的情况下自我改进吗？我们引入了探索然后集成（ELITE），它集成了实现机制，而不是选择单个探索性子代来延续血统。在每一代，ELITE 都会提出不同的重点改进，独立于同一父代实现它们，并检查生成的程序以识别互补、冗余和冲突的机制，然后将兼容的子集重新实现为一个连贯的后代。没有使用进化候选者的下游任务结果或任务解决轨迹来指导进化；循环内部仅使用结构和操作有效性的确定性检查。在 SWE-bench Pro 上，ELITE 将初始代理从 60.0% 提高到 85.6%，而达尔文哥德尔机 (DGM) 为 86.7%，Huxley-Godel 机 (HGM) 为 88.3%，同时使用零候选任务评估，在评估的配置下，观察到的挂钟进化时间分别减少了 8.8 倍和 3.2 倍。在没有进一步适应的跨基准转移中，ELITE 在 SWE-bench Verified 上的平均成绩为 73.3%，在 Polyglot 上的平均成绩为 69.3%。总之，这些结果证明了在我们的设置中无需下游候选任务评估即可进行编码代理自我改进的可行性。",
-      "authors": "Zhe Ren, Guowei Rong, Yimeng Chen, Nanbo Li, Piotr Piękos, Mateusz Ostaszewski, Dandan Guo, Jürgen Schmidhuber",
-      "url": "https://huggingface.co/papers/2611.21056",
+      "id": "2611.31619",
+      "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+      "title_zh": "预测排行榜可以建立什么：零样本时间序列模型的分辨率报告",
+      "description": "A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, yet none of them states how small a difference its datasets can detect. We call that quantity the resolution of a board and introduce Vernier, a tool that computes it from the files a board already publishes. Vernier also reports which entries a board cannot separate from its leader and whether its order changes when unrelated parties submit. GIFT-Eval resolves 6.8 rank places, and its displayed neighbours sit 0.91 apart. The ten places of its top ten hold fewer than two resolvable steps. fev-bench, Chronos Benchmark II and TIME show the same pattern: their resolution is 3.6 to 19 times the gap between neighbours. With each of its 2,554 series as an independent source, BOOM is the one board that resolves its top ten. Below the resolution the order depends on who else submitted: across four boards, rules that rank against the pool reversed 43 top-ten pairs with neither entry rerun, in one update in seven. Boards also do not record how much history a model receives. On 70 configurations, shortening it raised the error of three of four open models, two of them by 15%. We release Vernier, which runs this report with one command on any leaderboard that publishes per-dataset scores: https://github.com/therealram18/vernier",
+      "description_zh": "时间序列的基础模型经过一次预训练，然后被要求预测它从未见过的序列，因此它的证据就是它在保留数据集上的得分。此类数据集很少，并且一些公共排行榜进行了大多数比较，但没有一个说明其数据集可以检测到的差异有多小。我们将该数量称为电路板的分辨率，并引入 Vernier，这是一种根据电路板已发布的文件计算该值的工具。 Vernier 还报告了董事会不能与其领导者分开的条目，以及当无关方提交时其顺序是否会发生变化。 GIFT-Eval 解��了 6.8 个排名位置，其显示的相邻位置相距 0.91。其前十名中的十个位置少于两个可解决的步骤。 fev-bench、Chronos Benchmark II 和 TIME 显示了相同的模式：它们的分辨率是邻居之间差距的 3.6 到 19 倍。 BOOM 的 2,554 系列中的每一款都是独立来源，因此是唯一能跻身前十名的主板。决议下方的顺序取决于其他提交者：在四个委员会中，针对池的排名规则逆转了 43 个前十对，没有任何条目重新运行，在七分之一的更新中。委员会也不记录模型接收了多少历史记录。在 70 个配置中，缩短它会提高四个开放模型中三个的误差，其中两个模型的误差提高了 15%。我们发布了 Vernier，它可以在任何发布每个数据集分数的排行榜上使用一个命令来运行此报告：https://github.com/therealram18/vernier",
+      "authors": "Arya Sikder, Sriram Pillutla",
+      "url": "https://huggingface.co/papers/2611.31619",
+      "score": 57,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "57",
+        "paperId": "2611.31619"
+      }
+    },
+    {
+      "id": "2611.34782",
+      "title": "Generation as Reverse Encoding",
+      "title_zh": "生成为反向编码",
+      "description": "Pretrained visual representations accelerate generative learning by abstracting away appearance and spatial detail. Yet the same abstraction makes the return to pixels far harder, shifting much of the burden onto a larger decoder. We ask why the representation-to-pixel path should be learned independently when the encoder already provides a learned pixel-to-semantics path (the semantic encoding path). We introduce RevFlow, based on the principle of generation as reverse encoding. RevFlow uses intermediate representations of a frozen encoder as successive generative targets, first generating deep semantic representations, then shallow representations that retain appearance and spatial detail, before decoding to pixels. To learn these transitions without training a separate generator for each stage, we develop HyC-DiT, a unified generative model with a standard DiT backbone shared across stages and stage-specific condition injection. We further show that native matching in semantic representation space enables few-step generation. RevFlow accelerates both learning and sampling. On ImageNet 256 times 256, RevFlow reaches 1.96 FID at 690M and 1.74 FID at 1.55B after only 5 training epochs. It also achieves 30.25 dB reconstruction PSNR with an 89M decoder. After a short native-matching adaptation phase, RevFlow-XL achieves 2.85 FID using a single sampling step in each stage. Our code repository is at https://github.com/ChengShiest/RevFlow",
+      "description_zh": "预训练的视觉表示通过抽象外观和空间细节来加速生成学习。然而，同样的抽象使得返回像素变得更加困难，将大部分负担转移到更大的解码器上。我们问，当编码器已经提供了学习的像素到语义路径（语义编码路径）时，为什么应该独立学习表示到像素路径。我们引入 RevFlow，基于反向编码的生成原理。 RevFlow 使用冻结编码器的中间表示作为连续的生成目标，首先生成深层语义表示，然后生成保留外观和空间细节的浅层表示，然后再解码为像素。为了在不为每个阶段训练单独的生成器的情况下学习这些转换，我们开发了 HyC-DiT，这是一个统一的生成模型，具有跨阶段共享的标准 DiT 主干和阶段特定的条件注入。我们进一步表明，语义表示空间中的本机匹配可以实现几步生成。 RevFlow 加速了学习和采样。在 ImageNet 256 × 256 上，仅 5 个训练周期后，RevFlow 在 690M 时达到 1.96 FID，在 1.55B 时达到 1.74 FID。它还���过 89M 解码器实现了 30.25 dB 的重建 PSNR。经过短暂的本地匹配适应阶段后，RevFlow-XL 在每个阶段使用单个采样步骤实现 2.85 FID。我们的代码存储库位于 https://github.com/ChengShiest/RevFlow",
+      "authors": "Cheng Shi, Sibei Yang, Hanzhong Guo, Yipeng Qin, Pietro Lio, Yizhou Yu",
+      "url": "https://huggingface.co/papers/2611.34782",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.34782"
+      }
+    },
+    {
+      "id": "2611.30483",
+      "title": "When an AI agent makes a mistake in a database, what decides the damage?",
+      "title_zh": "当人工智能代理在数据库中犯错时，什么决定了损害？",
+      "description": "AI agents now run statements against production databases, and several of the incidents that followed deleted production data, which came back only through backups or the provider's help. We ask what decides the damage when such an agent makes a mistake: the model, a guard layer in front of the database, or the database engine itself. The study has two preregistered layers. In Layer A, a frozen library of 22 canonical mistakes is applied by script, with no model involved, to four relational engines under five permission arms and two recovery arms, followed by an engine-native recovery drill (792 cells; 874 drill runs including 10-minute repeats). In Layer B, a minimal tool-calling agent driven by six small open-weight models (4B to 12B parameters, plus one 35B mixture-of-experts model with about 3B active, served locally) works on tasks that contain hazards across nine engines: PostgreSQL, MySQL, SQLite, ClickHouse, Apache Cassandra, MongoDB, Valkey, Apache Kafka and OpenSearch (9,468 trials). A secondary run added MariaDB, Redis and Elasticsearch (2,916 trials); each behaved like its closest core engine. Out of the box, the engines differ less in what a mistake destroys than in what they let you undo. Three of the seven preregistered hypotheses met their decision rule: H2 (for one of nine damage classes) and H3 largely by construction of the arms, and H4 only under its original measure. Four did not; one of them (H5) was uninformative, because in its task the agents never found the credential. The post-hoc analyses (S1-S13) are exploratory and uncorrected for multiple comparisons; on PostgreSQL, MySQL, OpenSearch and ClickHouse the preregistered outcome and original-row loss disagree about G1. We report all of them, with every deviation from the preregistration and its timing.",
+      "description_zh": "人工智能代理现在针对生产数据库运行语句，以及删除生产数据后发生的一些事件，这些数据只能通过备份或提供商的帮助才能恢复。我们要问的是，当这样的代理犯错误时，是什么决定了损害：模型、数据库前面的保护层或数据库引擎本身。该研究有两个预先注册的层。在 A 层中，通过脚本将包含 22 个规范错误的冻结库（不涉及模型）应用到五个许可臂和两个恢复臂下的四个关系引擎，然后进行引擎本机恢复演练（792 个单元；874 次演练运行，包括 10 分钟重复）。在 B 层中，由 6 个小型开放权重模型（4B 到 12B 参数，加上一个 35B 专家混合模型，大约 3B 活动，本地服务）驱动的最小工具调用代理，负责跨九个引擎包含危险的任务：PostgreSQL、MySQL、SQLite、ClickHouse、Apache Cassandra、MongoDB、Valkey、Apache Kafka 和 OpenSearch（9,468 次试验）。二次运行添加了 MariaDB、Redis 和 Elasticsearch（2,916 次试验）；每个引擎的行为都与其最接近的核心引擎相似。开箱即用后，这些引擎的区别并不在于错误会破坏什么，而在于它们让你撤销什么。七个预先注册的假设中的三个满足其决策规则：H2（针对九个损坏类别之一）和 H3 主要通过武器的构造，而 H4 仅根据其原始措施。四个没有；其中之一 (H5) 没有提供任何信息，因为在其任务中，代理从未找到凭证。事后分析（S1-S13）是探索性的，未经多重比较修正；在 PostgreSQL、MySQL、OpenSearch 和 ClickHouse 上，预注册结果和原始行丢失与 G1 不一致。我们会报告所有这些情况，以及与��注册及其时间安排的每一次偏差。",
+      "authors": "Abdullah Kaya, Cevheri Bozoglan, Yusuf Gundogdu",
+      "url": "https://huggingface.co/papers/2611.30483",
       "score": 4,
       "meta": {
         "source": "huggingface",
         "upvotes": "4",
-        "paperId": "2611.21056"
+        "paperId": "2611.30483"
+      }
+    },
+    {
+      "id": "2611.32238",
+      "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
+      "title_zh": "用于代理编排的机器人操作的边界感知策略学习",
+      "description": "Agent-orchestrated robot systems combine the general reasoning capability of multimodal agents with the precise physical control of learned visuomotor policies. Yet such systems often fail at the moment of handoff: a policy is reliable only from a limited set of start states, while the agent may invoke it outside this region. We call this region the policy's handoff boundary. Existing whole-task policies typically have handoff boundaries that are narrow and difficult for an agent to characterize, making reliable coordination challenging. We propose Boundary-Aware Policy Learning, which explicitly shapes and then expands the handoff boundary of a visuomotor policy. First, Boundary-Explicit Training fine-tunes the policy on contact segments with diverse start poses, yielding a wide and well-defined boundary that can be communicated to the agent through a simple handoff protocol. Second, Boundary-Expanding Self-Improvement retrains the policy on curated successful system rollouts, extending the boundary toward earlier stages of each task and allowing the agent to hand over sooner with fewer language-model calls. Across RoboTwin 2.0 and RoboDojo, our system outperforms the strongest baseline by over 26 percentage points, reaching 98.4% success in randomized RoboTwin 2.0 scenes, while further reducing its API cost and execution time by 41.3% and 37.5%, respectively. These results suggest that the key to robust agent-policy orchestration lies not only in improving either component individually, but also in explicitly shaping the boundary between them.",
+      "description_zh": "代理编排的机器人系统将多模式代理的一般推理能力与学习的视觉运动策略的精确物理控制结合起来。然而，这样的系统经常在切换时失败：策略仅在有限的一组启动状态下才是可靠的，而代理可以在该区域之外调用它。我们将该区域称为策略的切换边界。现有的整体任务策略通常具有狭窄且难以让智能体表征的切换边界，这使得可靠的协调具有挑战性。我们提出了边界感知策略学习，它明确地塑造并扩展了视觉运动策略的切换边界。首先，边界显式训练对具有不同起始姿势的接触段的策略进行微调，产生一个广泛且定义明确的边界，可以通过简单的切换协议将其传达给代理。其次，边界扩展自我改进重新训练了策划成功系统部署的策略，将边界扩展到每个任务的早期阶段，并允许代理以更少的语言模型调用更快地移交。在 RoboTwin 2.0 和 RoboDojo 中，我们的系统比最强基线高出超过 26 个百分点，在随机 RoboTwin 2.0 场景中达到 98.4% 的成功率，同时进一步将其 API 成本和执行时间分别降低了 41.3% 和 37.5%。这些结果表明，强大的代理策略编排的关键不仅在于单独改进任一组件，还在于明确地塑造它们之间的边界。",
+      "authors": "Kaipeng Fang, Yuhao Wang, Ji Zhang, Yunsong Zhou, Jingkuan Song, Lianli Gao",
+      "url": "https://huggingface.co/papers/2611.32238",
+      "score": 7,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "7",
+        "paperId": "2611.32238"
+      }
+    },
+    {
+      "id": "2611.34719",
+      "title": "Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection",
+      "title_zh": "阅读，而不是适应：解锁人工智能生成图像检测的冻结视觉知识",
+      "description": "Generalization to unseen image generators has driven efforts to adapt pretrained visual representations for detection. Yet recent findings show that vision foundation models already encode transferable detection knowledge, while further adaptation can impair generalization. This motivates a shift from backbone adaptation to knowledge readout. Conventional linear probing offers a direct way to read this knowledge but is limited to final-layer RGB features. Multi-cue detectors broaden the evidence base, but their designs introduce other tradeoffs: adaptation may compromise pretrained transferability, heterogeneous encoders complicate feature integration, and late fusion precludes intermediate cross-view interaction. To overcome these limitations, we propose ReMoT, a Mixture-of-Transformers-inspired framework that reads complementary knowledge from spatially aligned RGB and wavelet views within a fully frozen visual foundation. ReMoT employs staged joint attention to enable controlled local and global cross-view interaction, while learnable fusion queries progressively read complementary evidence across Transformer depth without writeback. ReMoT achieves 91.2% average accuracy across eight benchmark groups with 3,074 trainable parameters, attaining the highest overall average among the evaluated methods. These results support structured knowledge readout as a promising alternative to backbone adaptation. Code is available at https://github.com/yunncheng/ReMoT.",
+      "description_zh": "对看不见的图像生成器的推广推动了采用预训练视觉表示进行检测的努力。然而最近的研究结果表明，视觉基础模型已经编码了可转移的检测知识，而进一步的适应可能会损害泛化能力。这推动了从骨干适应到知识读出的转变。传统的线性探测提供了一种直接读取这些知识的方法，但仅限于最后一层 RGB 特征。多线索检测器扩大了证据基础，但它们的设计引入了其他权衡：适应可能会损害预训练的可转移性，异构编码器使特征集成复杂化，以及后期融合阻碍了中间的跨视图交互。为了克服这些限制，我们提出了 ReMoT，这是一种受变形金刚混合启发的框架，可以在完全冻结的视觉基础内从空间对齐的 RGB 和小波视图中读取互补的知识。 ReMoT 采用分阶段联合注意力来实现受控的本地和全局跨视图交互，而可学习的融合查询则逐步读取跨 Transformer 深度的补充证据，而无需回写。 ReMoT 在 8 个基准组中通过 3,074 个可训练参数实现了 91.2% 的平均准确率，在评估方法中达到了最高的总体平均值。这些结果支持结构化知识读出作为主干适应的有前途的替代方案。代码可在 https://github.com/yunn Cheng/ReMoT 获取。",
+      "authors": "Yuncheng Guo, Ying Dong, Xiaodong Gu",
+      "url": "https://huggingface.co/papers/2611.34719",
+      "score": 2,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "2",
+        "paperId": "2611.34719"
+      }
+    },
+    {
+      "id": "2611.34232",
+      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "title_zh": "OS-Omni：在跨平台的长期工作流上对通用计算机使用代理进行基准测试",
+      "description": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
+      "description_zh": "人们越来越期望使用计算机的代理完成实际的用户目标，而不是孤立的 GUI 操作。然而，现有的基准测试通常隔离 Web、移动或桌面环境，因此不清楚单个通用代理是否可以执行跨越多个操作系统和持久应用程序状态的长期工作流。我们推出了 OS-Omni，这是一个实时跨平台基准测试和执行环境，用于跨 Windows、Ubuntu、macOS、iOS、Android 和 Web 环境评估使用计算机的代理。 OS-Omni 分版本发布，每波包含 300 个任务；本文重点介绍第一个版本 v1��其中每个平台包含 48 个任务以及 12 个将桌面与 Android 手机配对的跨平台工作流程。 OS-Omni 提供可重复的初始化、特定于平台的适配器、轨迹记录和可执行的最终状态评估器，并包括用于涉及帐户、购物车、预算、日历、消息和其他持久状态的工作流程的受控服务支持的应用程序。人类研究表明，OS-Omni 任务需要 67.54 个交互步骤，大大超过 OSWorld 参考的 15.0 个步骤。在 v1 上，评估最强的智能体 Claude Opus 5.5 达到了 68.5% 的平均成功率，落后人类参考值 77.3% 8.8 个百分点；不同平台上的差距并不均衡，前沿模型在 Linux 上超过了人类，但在 iOS 和 macOS 上落后人类超过 25 个百分点。这些结果表明，当前的智能体距离平台稳健、长期的计算机使用还很远，特别是当成功需要持续的状态跟踪和持久的最终状态变化时。",
+      "authors": "Hui Shen, Yunta Hsieh, Jianing Ma, Zhuoran Yin, Zhuhan Bao, Ziyuan Liu, Qi Han, Xiuqi Xu, Xianbang Wang, Wenhao Chai, Sihan Xu, Chenyang Zhao, Yanheng Shang, Dongfu Jiang, Rui Sun, Xingzhi Li, Chenqi Yin, Zesen Zhao, Boyuan Zheng, Jisen Li, Xiaoxia Wu, Ruoyan Zhang, Ruiyao Liu, Jing Xiong, He Xiao, Nan Zheng, Hangxiang Chen, Shengyang Tao, Deyang Luorong, Yifeng Liu, Jingxuan Zhang, Chaofan Tao, Yuren Wang, Jiaqi Mo, Rui Hu, Xing Wei, Xiaofeng Liu, Xin Xu, Han Wu, Mengyao Wen, Guobin Zhang, Shatong Zhu, Hei Ting Una Chan, Sicheng Chen, Kai Zhang, Mengkang Hu, Zhongwei Wan, Xin Wang, Chuanyang Zheng, Ziheng Zhang, Hengyuan Zhang, Zunhai Su, Kanzhi Cheng, Dehan Kong, Yian Wang, Hanrong Zhang, Jiawei Lu, Yifan Zhang, Junnan Li, Changyi Yang, Jintao Qu, Wenyao Gao, Jiaxuan Luo, Jiaxin Deng, Yuhao Chen, Xuesong Ye, Jingwen Gu, Yichi Zhang, Qun Lou, Shen Yan, Ben Athiwaratkun, Qiushi Sun, Mi Zhang, Ping Luo, Wenhu Chen, Ngai Wong",
+      "url": "https://huggingface.co/papers/2611.34232",
+      "score": 103,
+      "meta": {
+        "source": "huggingface",
+        "upvotes": "103",
+        "paperId": "2611.34232"
       }
     }
   ]
